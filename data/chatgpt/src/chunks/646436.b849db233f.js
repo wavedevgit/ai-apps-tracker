@@ -1,1 +1,4012 @@
-export const __rspack_esm_ids=[646436];export const __webpack_modules__={hlVK:(function(e,t,n){var a=n("HT1b"),o=n("ASxG"),i=n("QdUF"),r=n("s4w7"),s=n("oHzU"),l=n("Kwur"),c=n("U861");let u=new Map,_=new Map,d=o.object({benefit_id:o.enum(["data_analysis_execution","saved_memory","response_personalization","writing_assistance","step_by_step_guidance","personalized_advice","professional_assistance","conversation_history_search","file_generation_download","document_analysis","connected_apps_access","scheduled_tasks","voice_conversation","health_experience","image_generation","deep_research","interactive_study","interactive_app_creation"]),copy_source:o.enum(["contextual","fixed","paid_social"]).optional().catch(void 0),copy_fallback_reason:o.enum(["disabled","missing","empty","too_long","invalid_format"]).optional().catch(void 0),copy_prompt_version:o.literal("v1").optional().catch(void 0)});n.d(t,{},{a:async function(e){let{beacon:t,eventType:n,eventCtaId:o,metadata:p,accountId:m,expectedIdentity:g=t[s.k],keepalive:f}=e,b=g?.accountId??m;if((0,c.e)(t.beacon_id)||p?.suppressLifecycle===!0||t.beacon_id===r.a&&null!=b&&_.has(b))return;let h=(async()=>{try{let e=null==g?"/beacons/event":"/beacons/v2/event";await l.Request.safePost(e,{keepalive:f,expectedIdentity:g,assertRequestCurrent:null!=b?()=>{if((0,i.isBrowserWorkspaceSwitchPending)())throw new DOMException("Workspace switch pending","AbortError")}:void 0,additionalHeaders:null==b?void 0:{"ChatGPT-Account-ID":b,...{[a.ac]:b},...null!=g?{"x-openai-use-sheep":"1"}:{}},requestBody:{beacon_id:t.beacon_id,conversation_id:p?.conversationId??void 0,event_type:n,event_cta_id:o,message_id:p?.messageId??void 0,tracking_id:t.tracking_id??void 0,...function(e){if("no_auth_login_upsell_banner"!==e.beacon_id)return{};let t=d.safeParse(e.custom_fields);if(!t.success)return{};let n=t.data;return{benefit_id:n.benefit_id,copy_source:n.copy_source,copy_fallback_reason:"fixed"===n.copy_source?n.copy_fallback_reason:void 0,copy_prompt_version:"contextual"===n.copy_source||"fixed"===n.copy_source?n.copy_prompt_version:void 0}}(t)}})}catch{}})();if(t.beacon_id===r.a&&null!=b){let e=u.get(b);null==e&&(e=new Set,u.set(b,e)),e.add(h),h.then(()=>{e.delete(h),0===e.size&&u.delete(b)})}await h}})}),IDma:(function(e,t,n){var a=n("Cslg");n.d(t,{},{a:function(e,t,n){let o=e.get(a.m);return"chatgpt"===o.authMethod&&!o.authLoading&&!o.accountLoading&&o.accountId===t&&o.authenticatedAccountId===t&&o.userId===n}})}),j1n5:(function(e,t,n){n.d(t,{a:()=>Q,b:()=>X,c:()=>Z,d:()=>J,e:()=>et,f:()=>en});var a=n("StMt"),o=n("twmu"),i=n("Cslg"),r=n("xcp1"),s=n("iLYI"),l=n("p4N2"),c=n("f19s"),u=n("kphc"),_=n("dFbl"),d=n("jUaO");n("AleY");var p=n("GaA7"),m=n("aepO"),g=n("CmBE"),f=n("n5GS"),b=n("Kwur"),h=n("SGsN"),v=n("svjy"),w=n("GDNt"),y=n("IDma"),I=n("BHyM");let k=new WeakMap;var x=n("d58w"),C=n("Nu9C"),A=n("E8Sp"),S=n("g2p6"),E=n("X6Vn"),P=n("liTb"),T=n("S3zc"),M=n("riYK"),O=n("dQRk"),j=n("nlNF"),L=n("lM2P");let B=new Set(["enterprise_dot_provisioned_home_takeover","enterprise_dot_provisioned_work_takeover","dot_retention_home_takeover","dot_retention_work_takeover"]);function N(e,t){let a=e.action_v2;switch(a.action_enum){case"authenticate_login":case"authenticate_signup":if("link"===t.source)return{status:"unsupported"};return{status:"supported",handler:async()=>{let{runBeaconAuthentication:o}=await Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(514085),n.e(840485)]).then(n.bind(n,"wxD9")),i=t.beacon.custom_fields?.benefit_id;return await o(t.scope,{screenHint:"authenticate_login"===a.action_enum?"login":"signup",mode:"modal"===a.auth_navigation_mode?"modal":"redirect",callbackPath:t.currentPath??"/",cta:e.id,beaconId:t.beacon.beacon_id,beaconBenefitId:"no_auth_login_upsell_banner"===t.beacon.beacon_id&&"string"==typeof i&&L.a.has(i)?i:void 0,navigate:t.navigate}),!0}};case"open_enterprise_value_survey_modal":{let e=t.scope.get(i.f),o=t.scope.get(i.k),r=t.scope.get(i.j);if(null==e||null==o||null==r||!(0,y.a)(t.scope,e,o))return{status:"unavailable"};return{status:"supported",handler:async()=>{let s,{loadEnterpriseSurveyDialog:l}=await n.e(219902).then(n.bind(n,"cyRY")),c=await l();if(!(0,y.a)(t.scope,e,o)||t.scope.get(i.j)!==r)return!1;let u=()=>{s?.(),s=void 0};return(0,E.f)(t.scope,c,{accountId:e,userId:r,surveyId:a.survey_id,surveyName:a.survey_name,surveyType:a.survey_type,onClose:u}),s=t.scope.watch(t=>{(0,E.d)(t,c)?(0,y.a)(t,e,o)&&t.get(i.j)===r||((0,E.b)(t,c),u()):u()}),!0}}}case"open_dot_with_draft":{if("link"===t.source||!B.has(t.beacon.beacon_id)||"beacon_homepage_takeover_info"!==t.beacon.ui_info.type||"primary"!==e.type)return{status:"unsupported"};let n=t.eventAccountId,o=t.scope.get(i.m);if(o.authLoading||o.accountLoading)return{status:"pending"};let r=o.userId;if(null==n||null==r||o.authenticatedUserId!==r||!(0,y.a)(t.scope,n,r))return{status:"unavailable"};return{status:"supported",handler:async()=>{if(t.isCurrentPresentation?.()===!1||t.scope.get(i.m).authenticatedUserId!==r||!(0,y.a)(t.scope,n,r))return!1;let e=(0,P.f)(a.dot_id);return(0,A.d)(t.scope,e,{state:t.eventMetadata?.suppressLifecycle===!0?void 0:{prefillPrompt:a.prompt,prefillPromptOnlyIfEmpty:!0,focusComposerNonce:Date.now()}})}}}case"open_pepper_onboarding_modal":{let e=t.scope.get(i.l),n=t.scope.get(S.n);if("loading"===e.status)return{status:"pending"};if("allowed"!==e.status||!("accountId"in e)||"personal"!==e.accountStructure||e.accountId!==n||null==n)return{status:"unavailable"};return{status:"supported",handler:async()=>{let e=await (0,C.b)();return t.scope.get(S.n)===n&&((0,E.f)(t.scope,e,{accountId:n}),!0)}}}case"age_verification":{let e=t.scope.get(i.l),a=t.scope.get(S.n);if("loading"===e.status)return{status:"pending"};if("allowed"!==e.status||!("accountId"in e)||"personal"!==e.accountStructure||e.accountId!==a||null==a)return{status:"unavailable"};return{status:"supported",handler:async()=>{if(t.scope.get(S.n)!==a)return!1;let{startAgeVerification:e}=await n.e(849638).then(n.bind(n,"rNxM")),o=t.scope.get(i.l);return t.scope.get(S.n)===a&&"allowed"===o.status&&"accountId"in o&&"personal"===o.accountStructure&&o.accountId===a&&new Promise(n=>{let o,i,r=!1,s=()=>{r||(r=!0,o?.())},l=e=>{i?.(),i=void 0,n(e)};o=e({accountId:a,onLoad:()=>{t.scope.get(S.n)!==a?(s(),l(!1)):n(!0)},onComplete:()=>l(!0),onCancel:()=>l(!1),onError:()=>l(!1)}),i=t.scope.watch(e=>{let{get:t}=e;return t(S.n)!==a&&(s(),l(!1)),s})})}}}default:return"link"===t.source?function(e,t){let a=e.action_v2;if("share_conversation"!==a.action_enum&&"open_connector_oauth_modal"!==a.action_enum&&"open_pca_connector_auth_modal"!==a.action_enum)return{status:"unsupported"};let{scope:o,conversation:r}=t,s=o.get(i.f),l=o.get(i.k),c=o.get(j.c),u=()=>null!=s&&(0,y.a)(o,s,l)&&o.get(j.c)===c&&(t.isCurrentPresentation?.()??!0);if(!t.allowExternalActions||!u())return{status:"unavailable"};if("share_conversation"===a.action_enum){if(null==r||!r.allowSharing||r.isTemporaryChat||(0,O.Bb)(o.get(O.ab,r.conversationId)))return{status:"unavailable"};let n=o.get(M.a,r.conversationId);if(null==n)return{status:"pending"};let i=o.get(O.j,r.conversationId);if(!n||null==i||a.conversation_id!==i||0===a.current_node_id.trim().length)return{status:"unavailable"};let s=(0,M.b)({scope:o,canShare:!0,conversationId:i,source:"link"===t.source?"CHATGPT_SHARE_FLOW_SOURCE_MESSAGE_INLINE_ACTION":"CHATGPT_SHARE_FLOW_SOURCE_BEACON"});return null==s?{status:"unavailable"}:{status:"supported",handler:async()=>!!u()&&s(e)}}if(!("connector_id"in a)||"string"!=typeof a.connector_id||0===a.connector_id.trim().length)return{status:"unavailable"};let _=a.connector_id;if("open_pca_connector_auth_modal"===a.action_enum){if("link"!==t.source&&null==r)return{status:"unavailable"};if("link"===t.source&&!1!==a.trigger_turn_after_link)return{status:"unsupported"};let e=o.get(T.b,[_]);if(e.isLoading)return{status:"pending"};if(e.isError||e.data?.has(_)!==!0)return{status:"unavailable"}}return{status:"supported",handler:async()=>{let e;if(!u())return!1;let[{CodexAppHomeBeaconConnectModal:i},{createChatGptPcaConnectorBeaconResumeTarget:d}]=await Promise.all([Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(514085),n.e(707645)]).then(n.bind(n,"ktQc")),Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(514085),n.e(574598)]).then(n.bind(n,"p4uj"))]);if(!u()||"open_pca_connector_auth_modal"===a.action_enum&&o.get(T.b,[_]).data?.has(_)!==!0)return!1;let p="open_pca_connector_auth_modal"===a.action_enum&&"link"!==t.source&&null!=r?d(o,{connectorId:_,conversationId:r.conversationId,includeConnectorSystemHint:!1!==a.include_connector_system_hint_after_link,triggerTurnAfterLink:!1!==a.trigger_turn_after_link}):void 0;return("open_pca_connector_auth_modal"!==a.action_enum||"link"===t.source||null!=p)&&((0,E.f)(o,i,{connectorId:_,pcaResumeTarget:p??void 0,oauthReferrer:"link"===t.source?"composer":"home_beacon",onOpenChange:e=>{e||(0,E.b)(o,i)}},{onDispose:()=>e?.()}),e=o.watch(n=>{(0,E.d)(n,i)?null!=s&&(0,y.a)(n,s,l)&&n.get(j.c)===c&&t.isCurrentPresentation?.()!==!1||((0,E.b)(n,i),e?.()):e?.()}),(0,E.d)(o,i)||e(),!0)}}}(e,t):{status:"unsupported"}}}var H=n("jqIZ"),R=n("aTcy"),U=n("G4Vg"),D=n("DVML"),q=n("LjYy"),V=n("ESoo"),z=n("nInK"),G=n("f5h2"),W=n("AVl4"),K=n("lg1r"),$=n("aoML"),F=n("RJnh"),Y=n("aqNX");let Q=Symbol("beacon-action-support-pending"),X=Symbol("beacon-action-unavailable");function Z(e,t){let n=ee(e,t);return"supported"===n.status?n.handler:void 0}function J(e,t){return"get_pro"!==e.action_v2.action_enum||null==e.action_v2.pro_offer||"upgradeAccountId"in t||null==t.featureAccessInputs?ee(e,t).status:ee(e,{...t,upgradeAccountId:(0,$.b)(t.featureAccessInputs)}).status}function ee(e,t){var n;let g=e.action_v2,C=g.action_enum;if(null==C||"dropdown"===C||("send_prompt"===C||"start_spark"===C)&&"primary"!==e.type||"open_dot_texting_setup"===C&&("link"===t.source||t.eventMetadata?.conversationId==null))return{status:"unsupported"};if(("enable_web_push"===C||"enable_web_push_and_responses_push"===C)&&!(0,c.a)())return{status:"unavailable"};if("create_presence_session"===g.action_enum)return"link"===t.source?{status:"unsupported"}:(0,W.b)(e,t);if("enable_codex_fast_mode"===C&&("link"===t.source||1)||("open_connector_oauth_modal"===C||"open_pca_connector_auth_modal"===C)&&0===g.connector_id.trim().length)return{status:"unsupported"};let A="get_pro"===C?g:void 0,S=A?.pro_offer!=null&&"link"!==(n=t).source&&null!=n.appBaseUrl&&"beacon_banner_info"===n.beacon.ui_info.type&&["homepage","work_tab_home"].includes(n.analyticsContext?.placement??"")?(0,U.f)(n.currentPath):null,E="link"===t.source?null:(0,_.a)(t.beacon,e);if("get_go"===C||"get_plus"===C||"get_pro"===C||"get_team"===C){if("link"===t.source&&"checkout_mode"in g&&"direct"===g.checkout_mode||!(A?.pro_offer==null?(0,$.d)(e,t,E??void 0):null!=S))return{status:"unsupported"};if("upgradeAccountId"in t&&null==t.upgradeAccountId||!t.allowExternalActions||!(0,$.f)(t.upsellHoldoutLayer,"link"===t.source?"conversation_followup_shelf_link":t.beacon))return{status:"unavailable"}}if("invite_domain_members"===C&&("link"===t.source||!(0,I.b)(t.beacon.beacon_id,t.headerConfirmation)||"beacon_modal_info"!==t.beacon.ui_info.type))return{status:"unsupported"};let P=t.getActionOverride?.(e);if(P===Q)return{status:"pending"};if(P===X)return{status:"unavailable"};if(null===P)return{status:"unsupported"};if(A?.pro_offer!=null&&null!=S)return function(e,t,n,a){let{userId:o,accountId:r}=n.scope.get(i.m);return null==o||null==r||r!==n.upgradeAccountId||null!=n.eventAccountId&&n.eventAccountId!==r?{status:"unavailable"}:{status:"supported",handler:async()=>((function(e,t,n,a,o){let i=new URL(a,"https://chatgpt.com"),r=new URL((0,R.v)(q.a.PROLITE));for(let[e,t]of(i.searchParams.delete("pro_variant"),r.searchParams))i.searchParams.set(e,t);let s={accountId:t.accountId,checkoutMode:"pricing",promoCampaignId:null,returnPath:a,sourceThreadId:null,targetPlan:q.a.PRO,upsellContextId:o};e.navigate((0,U.c)((0,H.y)((0,D.b)(i)),s),{beaconUpgrade:s,..."direct"===n&&{beaconProPlanChange:t},returnPath:a})})(n,{accountId:r,userId:o},e.checkout_mode,a,t??null),!0)}}(A.pro_offer,A.upsell_context_id,t,S);let T=P??t.actionOverrides?.[C];if(null!=T)return{status:"supported",handler:async()=>"link"===t.source?T(e,void 0,"link"):T(e,{beacon:t.beacon,eventMetadata:t.eventMetadata,isCurrentPresentation:t.isCurrentPresentation,onPresentationInvalidated:t.onPresentationInvalidated,useExternalBrowser:t.useExternalBrowser})};switch(g.action_enum){case void 0:case"dropdown":case"send_workspace_invite":default:return{status:"unsupported"};case"copy_to_clipboard":return{status:"supported",handler:async e=>{let n="link"===t.source?g.copy_text:g.copy_text.trim().replace(/^\$\s*/,"");return(0,m.c)(n,e)}};case"dismiss":if(g.composer_text&&null==t.onComposerText)return{status:"unsupported"};return{status:"supported",handler:async()=>t.beacon?.beacon_id==="violence_interstitial_modal_beacon"&&"violence_interstitial_close"===e.id?(t.navigate("/",void 0,!0),!0):(g.composer_text&&t.onComposerText?.(g.composer_text),t.beacon?.custom_fields?.dismiss_action_behavior!=="dismiss"||(t.onDismiss(),!1))};case"get_go":case"get_plus":case"get_pro":case"get_team":if("link"===t.source)return{status:"supported",handler:async()=>(0,$.e)(e,t)};return{status:"supported",handler:async()=>{if(null==t.upgradeAccountId||null==t.appBaseUrl||null==t.currentPath)return!1;let n="get_pro"===g.action_enum?(0,d.c)(g.rejoin_pro_cta_variant):void 0,a=null==n?null:(0,d.b)(t.scope.get(i.m),t.upgradeAccountId),r=null==E?null:t.scope.get(i.m);if(null!=E&&(r?.authMethod!=="chatgpt"||r.authLoading||r.accountLoading||!0!==r.hasChatGptToken||r.accountId!==t.upgradeAccountId||r.authenticatedAccountId!==t.upgradeAccountId||t.requestIdentity?.accountId!==t.upgradeAccountId||t.requestIdentity?.userId==null||t.requestIdentity.userId!==r.authenticatedUserId||null==r.userId))return!1;let s=null!=E&&r?.plan==="go"&&null!=r.authenticatedUserId&&!(0,_.b)()&&(0,_.c)(t.scope.query.getData(o.b,t.upgradeAccountId)?.accounts[t.upgradeAccountId]),l=(0,$.c)(e,{accountId:t.upgradeAccountId,appBaseUrl:t.appBaseUrl,currentPath:t.currentPath,eventMetadata:t.eventMetadata,rejoinPro:null!=n&&null!=a&&a.accountId===t.requestIdentity?.accountId&&a.userId===t.requestIdentity.userId?(0,d.a)({...a,variant:n}):void 0,goRejoinPlusTreatment:E??void 0});if(null==l)return!1;if(l.deferCompletion){let n=(0,x.c)({accountId:t.upgradeAccountId,action:e,analyticsContext:t.analyticsContext,beacon:t.beacon,eventMetadata:t.eventMetadata});return null!=n&&(t.navigate(l.href,{beaconUpgrade:l.intent,[x.a]:n}),!1)}return t.navigate(l.href,{beaconUpgrade:l.intent,...null==l.rejoinPro?{}:{rejoinPro:l.rejoinPro},...s&&r?.userId!=null?{goRejoinPlus:{accountId:t.upgradeAccountId,userId:r.userId,requestUserId:r.authenticatedUserId,treatment:E}}:{}}),!0}};case"open_local_url":case"open_url":{if("link"!==t.source&&(0,V.a)(e,t.beacon))return t.allowExternalActions?{status:"supported",handler:async()=>(0,V.b)(e,t)}:{status:"unavailable"};if("open_local_url"===g.action_enum&&!0===g.trigger_turn)return{status:"unsupported"};let n=(0,f.b)(e,t);if(null!=n)return n;let o=(0,F.b)(e);if(null==o||!t.allowExternalActions&&!(0,F.f)(o))return null==o?{status:"unsupported"}:{status:"unavailable"};if((0,G.a)(e)&&(!t.allowExternalActions||null==p.a.systemPermissions))return{status:"unavailable"};if((0,F.i)(e)){let e=t.scope.get(a.a,{name:"chatgpt.workspace-discovery"});if(e.isLoading)return{status:"pending"};if(!e.isCapable)return{status:"unavailable"}}if("open_local_url"===g.action_enum&&(null!=(0,r.a)(o)||null!=(0,K.a)(o))&&!t.allowExternalActions)return{status:"unavailable"};return{status:"supported",handler:n=>(0,z.b)(e,t,o,n)}}case"open_work_tab":if(!(0,u.h)(t.scope))return{status:"unavailable"};return{status:"supported",handler:async()=>{let e=await (0,Y.a)(t.scope,t.isCurrentPresentation);if(null==e)return!1;let{model:n}=e;if(null!=n){let e=(0,s.g)(t.scope,[]);(0,l.f)(t.scope,e,n),(0,u.m)(t.scope,"work"),t.navigate("/",{focusComposerNonce:Date.now(),initialChatGptConversationId:e})}else(0,u.m)(t.scope,"work"),t.navigate("/");return!0}};case"send_prompt":if(null==t.onSendPrompt)return{status:"unsupported"};return{status:"supported",handler:async()=>await t.onSendPrompt?.(g.prompt)!==!1};case"enable_web_push":return{status:"supported",handler:c.c};case"enable_web_push_and_responses_push":return t.allowExternalActions?{status:"supported",handler:function(e){let{scope:t,accountId:n,accountUserId:a,onPermissionDenied:o}=e;return async()=>{let e=t.get(i.m),r=e.authenticatedUserId,s=()=>(0,y.a)(t,n,e.userId)&&t.get(i.m).accountUserId===a;if(null==r||!s()||t.get(i.b))return!1;try{if(!await (0,c.c)()){if(!(0,c.a)())return o(),!1;throw Error("Notification registration failed")}if(await b.Request.safePatch("/notifications/settings",{expectedIdentity:{accountId:n,userId:r},requestBody:{updates:{responses:{push:!0}}},signal:AbortSignal.timeout(1e4)}),!s())return!1;let e=["chatgpt-notification-settings",r,n];if(await t.queryClient.cancelQueries({queryKey:e,exact:!0}),!s())return!1;return t.queryClient.invalidateQueries({queryKey:e,exact:!0}),!0}catch{return s()&&(0,G.b)(t),!1}}}({scope:t.scope,accountId:g.account_id,accountUserId:g.account_user_id,onPermissionDenied:()=>t.onActionComplete?.(e)})}:{status:"unavailable"};case"start_voice":if(null==t.onStartVoice)return{status:"unsupported"};return{status:"supported",handler:async()=>await t.onStartVoice?.()!==!1};case"invite_domain_members":return"link"===t.source?{status:"unsupported"}:function(e,t){let n=e.action_v2;if("invite_domain_members"!==n.action_enum||!(0,I.b)(t.beacon.beacon_id,t.headerConfirmation)||"beacon_modal_info"!==t.beacon.ui_info.type)return{status:"unsupported"};let{scope:a,beacon:o}=t,r=t.featureAccessInputs,{account_id:s}=n;if(null==r||r.authLoading||r.accountLoading)return{status:"pending"};let l=r.authenticatedUserId,c=()=>(0,y.a)(a,s,r.userId)&&a.get(i.m).authenticatedUserId===l,u=()=>c()&&(t.isCurrentPresentation?.()??!0);return null==l||"chatgpt"!==r.authMethod||r.accountId!==s||r.authenticatedAccountId!==s||null!=t.eventAccountId&&t.eventAccountId!==s?{status:"unavailable"}:{status:"supported",handler:async()=>{if(!u())return!1;let n=k.get(a);null==n&&(n=new WeakMap,k.set(a,n));let i=n.get(o);null==i&&(i=new Set,n.set(o,i));let r=JSON.stringify([s,l]);if(i.has(r))return!1;i.add(r);let _=a.get(v.a);try{let n=b.Request.safePost("/referrals/workspace/domain-members/invite",{requestBody:t.headerConfirmation?.request,expectedIdentity:{accountId:s,userId:l},retry:"never"});t.headerConfirmation?.onRequestStarted?.(n);let o=await n,i=c();if(null!=t.headerConfirmation&&!i)return!1;let r=i&&(t.isCurrentPresentation?.()??!0);if(r&&(o.failed_invite_count>0?a.get(h.f).info(_.formatMessage({id:"chatgpt.beacons.business_domain_members.toast.incomplete_unconfirmed",defaultMessage:"Some invitations weren't confirmed."})):a.get(h.f).success(_.formatMessage({id:"chatgpt.beacons.business_domain_members.toast.success",defaultMessage:"{count, plural, =0 {Your coworkers are already invited.} one {# coworker invited.} other {# coworkers invited.}}"},{count:o.accepted_invite_count}))),null!=t.headerConfirmation&&0===o.accepted_invite_count)return r&&t.onActionComplete?.(e),!1;return{didComplete:!0,eventAccountId:s,shouldResolve:r}}catch(n){if(null!=t.headerConfirmation&&n instanceof w.a&&412===n.responseStatus)return u()&&(a.get(h.f).info(_.formatMessage({id:"chatgpt.businessTeamInviteHeader.previewChanged",defaultMessage:"The list of eligible teammates changed. Review the updated invitation before sending."})),t.headerConfirmation.onPreviewChanged()),!1;if(n instanceof w.a&&"network"!==n.errorKind&&null!=n.responseStatus&&[400,401,403,422].includes(n.responseStatus))return i.delete(r),u()&&a.get(h.f).danger(_.formatMessage({id:"chatgpt.beacons.business_domain_members.toast.rejected",defaultMessage:"Invitations weren't sent. Please try again."}),{errorAnalytics:{toastId:"chatgpt.beacons.business_domain_members.toast.rejected"}}),!1;return u()&&(a.get(h.f).danger(_.formatMessage({id:"chatgpt.beacons.business_domain_members.toast.error_unconfirmed",defaultMessage:"We couldn't confirm all invitations."}),{errorAnalytics:{toastId:"chatgpt.beacons.business_domain_members.toast.error"}}),t.onActionComplete?.(e)),!1}}}}(e,t);case"open_dot_with_draft":case"open_pepper_onboarding_modal":case"age_verification":case"authenticate_login":case"authenticate_signup":case"open_enterprise_value_survey_modal":return N(e,t);case"activate_feature_trial":case"citron_disable":case"citron_enable":case"codex_download_email":case"connect_finances_and_send_work_prompt":case"connect_ledger_accounts":case"create_prompt":case"enable_workspace_auto_join":case"enable_codex_fast_mode":case"file_upload":case"free_thinking_sample_regenerate":case"install_mobile_widget":case"install_plugin":case"invite_team_members":case"open_claim_business_workspace_modal":case"open_connector_oauth_modal":case"open_connectors_onboarding_modal":case"open_dot_texting_setup":case"open_external_agent_import":case"open_pca_connector_auth_modal":case"open_work_tab_and_send_prompt":case"photo_upload":case"regenerate":case"request_account_team_contact":case"request_premium_seat":case"request_workspace_upgrade_seat":case"request_workspace_credits":case"set_atlas_as_default_browser":case"share_conversation":case"share_group_chat":case"share_location":case"share_message_slice":case"start_jobs_mock_interview_voice":case"start_spark":case"submit_personalized_information_questionnaire_feedback":case"system_hint":case"update_model_picker":case"update_personality_trait":case"update_user_personalization_setting":return"link"===t.source?N(e,t):{status:"unsupported"}}}function et(e){return null!=(0,g.d)(e)}function en(e){return("primary"===e.type||"secondary"===e.type)&&"submit_personalized_information_questionnaire_feedback"!==e.action_v2.action_enum}}),CmBE:(function(e,t,n){function a(e){let t=e.text??("copy_to_clipboard"===e.action_v2.action_enum?e.action_v2.text:e.id);return null==t||0===t.trim().length?null:t}n.d(t,{},{a:function(e){return"accent"===e.appearance?"accent":null==e.type||"primary"===e.type?"primary":"secondary"},b:function(e){return"authUpsell"===e?"authUpsell":"takeover"===e||"takeoverHero"===e?"takeoverHero"===e?"takeoverHeroAction":"large":"workNux"===e||"tasksNux"===e?"workNux":"expressiveModal"===e||"cloudWelcome"===e?"expressiveBeaconAction":"equalWeightModal"===e?"onboardingAction":"modal"===e?"beaconAction":"banner"===e?"dialog":"inline"===e?"composerSm":"beaconCarousel"},c:function(e){return a(e)},d:a})}),SPzj:(function(e,t,n){var a=n("mBJV"),o=n("b2Wp"),i=n("BolX"),r=n("U861");n("mmXj");var s=n("yGJW"),l=n("OWtl"),c=n("ycSk"),u=n("ytyy");let _={click:"CHATGPT_BEACON_LIFECYCLE_ACTION_CLICK",closed_without_dismiss:"CHATGPT_BEACON_LIFECYCLE_ACTION_CLOSED_WITHOUT_DISMISS",composer_tip_presented:"CHATGPT_BEACON_LIFECYCLE_ACTION_COMPOSER_TIP_PRESENTED",dismiss:"CHATGPT_BEACON_LIFECYCLE_ACTION_DISMISS",ignored:"CHATGPT_BEACON_LIFECYCLE_ACTION_IGNORED",impression:"CHATGPT_BEACON_LIFECYCLE_ACTION_IMPRESSION"},d={codex_home:"CHATGPT_BEACON_PLACEMENT_CODEX_HOME",homepage:"CHATGPT_BEACON_PLACEMENT_HOMEPAGE",in_conversation:"CHATGPT_BEACON_PLACEMENT_IN_CONVERSATION",work_tab_home:"CHATGPT_BEACON_PLACEMENT_WORK_TAB_HOME"},p={chat:"CHATGPT_BEACON_PRODUCT_EXPERIENCE_CHAT",work:"CHATGPT_BEACON_PRODUCT_EXPERIENCE_WORK"},m={container:"CHATGPT_BEACON_UI_TREATMENT_CONTAINER",banner:"CHATGPT_BEACON_UI_TREATMENT_BANNER",conversation_inline:"CHATGPT_BEACON_UI_TREATMENT_CONVERSATION_INLINE",homepage_takeover:"CHATGPT_BEACON_UI_TREATMENT_HOMEPAGE_TAKEOVER",modal:"CHATGPT_BEACON_UI_TREATMENT_MODAL",tooltip:"CHATGPT_BEACON_UI_TREATMENT_TOOLTIP"},g=(0,i.u)(l.a,()=>new Set),f=(0,i.u)(l.a,()=>new Set);function b(e){return"beacon_tooltip_info"===e.ui_info.type||"beacon_container_info"===e.ui_info.type?"tooltip":"beacon_banner_info"===e.ui_info.type?"banner":"beacon_homepage_takeover_info"===e.ui_info.type?"homepage_takeover":"beacon_conversation_inline_info"===e.ui_info.type?"conversation_inline":"modal"}function h(e,t){let{beaconId:n,diagnostic:a,placement:i,suppressLifecycle:l,treatment:c}=t;if(!0===l||(0,r.e)(n))return;let u=v(n),_="malformed_action_payload"===a.reason?"unknown":v(a.actionId),p="malformed_action_payload"===a.reason?"unknown":v(a.actionEnum),g=[i,c,u,_,p,a.reason].join(":");e.get(f).has(g)||(e.set(f,e=>{let t=new Set(e);for(t.add(g);t.size>256;){let e=t.values().next().value;if(null==e)break;t.delete(e)}return t}),(0,s.a)(e,o.CodexBeaconsActionUnsupported,{actionEnum:p,actionId:_,beaconId:u,beaconType:m[c],placement:d[i],reason:a.reason,actionIndex:a.actionIndex?.toString()}))}function v(e){let t=e.replace(/[^a-zA-Z0-9_.:-]/g,"_").slice(0,128);return 0===t.length?"unknown":t}function w(e,t,n){e.get(s.c).logProductEvent(o.CodexBeaconsQuestionnaireAction,{action:{answer_submitted:o.CodexBeaconsQuestionnaireActionType.CODEX_BEACONS_QUESTIONNAIRE_ACTION_TYPE_ANSWER_SUBMITTED,dismissed:o.CodexBeaconsQuestionnaireActionType.CODEX_BEACONS_QUESTIONNAIRE_ACTION_TYPE_DISMISSED,shown:o.CodexBeaconsQuestionnaireActionType.CODEX_BEACONS_QUESTIONNAIRE_ACTION_TYPE_SHOWN}[t],conversationContextType:n.conversation_context_type,questionId:n.question_id,questionnaireId:n.questionnaire_id,surface:n.surface})}n.d(t,{},{a:b,b:function(e,t){let{action:n,actionId:o,actionType:i,beacon:l,destinationAction:g,copyVariant:f,expectedAccountId:b,placement:h,productExperience:v,suppressLifecycle:w,treatment:y,viewLatencyMs:I,visibilityDurationMs:k}=t;if(!0===w||(0,r.e)(l.beacon_id))return;"impression"===n&&["android_mweb_image_turn_app_upsell","android_mweb_conversation_turn_app_upsell","android_mweb_paid_conversation_turn_app_upsell","android_mweb_contextual_app_upsell","mweb_app_install_turn_count"].includes(l.beacon_id)&&(0,c.a)(e);let x={action:_[n],actionId:o,actionType:"click"===n?i??"unknown":void 0,beaconId:l.beacon_id,beaconName:l.beacon_name??"unknown",copyVariant:f??(0,u.b)(l)?.copyVariant,benefitId:("click"===n||"impression"===n&&"conversation_inline"===y)&&"string"==typeof l.custom_fields?.benefit_id?l.custom_fields.benefit_id:void 0,destinationAction:g,placement:d[h],productExperience:null==v?void 0:p[v],uiTreatment:m[y],viewLatencyMs:null==I?void 0:String(I),visibilityDurationMs:null==k?void 0:String(k)};null==b?(0,s.a)(e,a.g,x):(0,s.a)(e,a.g,x,void 0,void 0,{expectedAccountId:b}),l.onLifecycle?.(e,{action:n,actionId:o})},c:function(e,t,n){e.get(s.c).logProductEvent(o.CodexBeaconsFooterLinkClicked,{beaconId:t.beacon_id,linkId:n.id})},d:function(e,t,n){if((0,r.e)(t.beacon_id))return;let a=Array.from(n).sort().join(",");if(0===a.length)return;let i=[t.beacon_id,"beacons",a].join(":");e.get(g).has(i)||(e.set(g,e=>{let t=new Set(e);return t.add(i),t}),(0,s.a)(e,o.CodexBeaconsPageContextSuppressed,{beaconId:t.beacon_id,beaconName:t.beacon_name,uiTreatment:m[b(t)],pageContextClaims:a}))},e:function(e,t,n){if((0,r.e)(n.beacon_id))return;let a=`${t}:${n.beacon_id}:typing`;e.get(g).has(a)||(e.set(g,e=>{let t=new Set(e);return t.add(a),t}),e.get(s.c).logProductEvent(o.CodexBeaconsTypingSuppressed,{beaconId:n.beacon_id,uiTreatment:m[b(n)]}))},f:function(e,t,n){let{direction:a,fromPage:i,fromPageIndex:r,toPage:l,toPageIndex:c}=n;e.get(s.c).logProductEvent(o.CodexBeaconsCarouselArrowClicked,{beaconId:t.beacon_id,direction:a,cardCount:String(t.ui_info.pages.length),fromCardId:i.id,fromCardIndex:String(r),toCardId:l.id,toCardIndex:String(c)})},g:function(e,t,n){let{navigationMethod:a,page:i,pageIndex:r}=n;e.get(s.c).logProductEvent(o.CodexBeaconsCarouselCardShown,{beaconId:t.beacon_id,cardCount:String(t.ui_info.pages.length),cardId:i.id,cardIndex:String(r),navigationMethod:a})},h:function(e,t){w(e,"answer_submitted",t)},i:function(e,t){w(e,"dismissed",t)},j:function(e,t){w(e,"shown",t)},k:h,l:function(e,t){let{beacon:n,diagnostic:a,placement:o,suppressLifecycle:i,treatment:r}=t;h(e,{beaconId:n.beacon_id,diagnostic:a,placement:o,suppressLifecycle:i,treatment:r})}})}),sb2P:(function(e,t,n){var a=n("BolX"),o=n("OWtl");let i={status:"pending"},r=(0,a.u)(o.a,()=>new Map),s=(0,a.u)(o.a,()=>new Set),l=(0,a.d)(o.a,(e,t)=>{let{get:n}=t;return n(r).get(e)?.state??i},{autoDispose:6e4});function c(e){let{accountId:t,locale:n,navigationKey:a,pathname:o,product:i}=e;return JSON.stringify([t,n,i,o,a])}function u(e,t){return e+":session:"+t}n.d(t,{},{a:class{scope;constructor(e){this.scope=e}touchHomeVisit(e){let t=this.scope.get(r).get(e.visitKey);null!=t?this.setHomeVisit(e,t.state):this.setHomeVisit(e,i)}getHomeVisit(e){return this.scope.get(r).get(e.visitKey)?.state??i}canQueryHomeBeacon(e){return"pending"===this.getHomeVisit(e).status}applyHomeQueryResult(e,t){var n,a;let o=this.getHomeVisit(e);return n=e,a=t,n.accountId===a.accountId&&n.locale===a.locale&&n.pathname===a.pathname&&n.product===a.product&&n.visitKey===a.visitKey&&"pending"===o.status&&(null==t.beacon||this.isHomeBeaconDismissed(e.accountId,t.beacon.beacon_id)?this.setHomeVisit(e,{status:"empty"}):!0===o.suppressOnSelection?this.setHomeVisit(e,{status:"suppressed",beaconId:t.beacon.beacon_id}):this.setHomeVisit(e,{status:"selected",beacon:t.beacon}),!0)}getSelectedHomeBeacon(e){let t=this.getHomeVisit(e);return"selected"===t.status?t.beacon:null}requestHomeBeaconSuppression(e){let t=this.getHomeVisit(e);return"pending"===t.status?!0!==t.suppressOnSelection&&(this.setHomeVisit(e,{status:"pending",suppressOnSelection:!0}),!0):"selected"===t.status&&this.terminateHomeBeacon(e,t.beacon.beacon_id,"suppressed")}terminateHomeBeacon(e,t,n){let a=this.getHomeVisit(e);return"selected"===a.status&&a.beacon.beacon_id===t&&(this.setHomeVisit(e,{status:n,beaconId:t}),!0)}terminateSelectedHomeBeacon(e,t,n){let a=!1;return this.scope.set(r,o=>{let i=new Map(o);for(let[r,s]of o)s.identity.accountId===e&&"selected"===s.state.status&&s.state.beacon.beacon_id===t&&(i.set(r,{...s,state:{status:n,beaconId:t}}),a=!0);return a?i:o}),a}isHomeBeaconDismissed(e,t){return this.scope.get(s).has(u(e,t))}dismissHomeBeacon(e,t){return!this.isHomeBeaconDismissed(e,t)&&(this.terminateSelectedHomeBeacon(e,t,"dismissed"),this.markHomeBeaconDismissed(e,t),!0)}consumeHomeBeacon(e,t){this.terminateSelectedHomeBeacon(e,t,"consumed"),this.markHomeBeaconDismissed(e,t)}suppressUnsupportedHomeBeacon(e,t){this.terminateSelectedHomeBeacon(e,t,"unsupported")}setHomeVisit(e,t){this.scope.set(r,n=>{let a=new Map(n);for(a.delete(e.visitKey),a.set(e.visitKey,{identity:e,state:t});a.size>20;){let e=a.keys().next().value;if(null==e)break;a.delete(e)}return a})}markHomeBeaconDismissed(e,t){let n=u(e,t);this.scope.set(s,e=>{if(e.has(n))return e;let t=new Set(e);return t.add(n),t})}},b:c,c:function(e){let{auth:t,locale:n,location:a,product:o}=e;return"chatgpt"!==o||"/"!==a.pathname||"chatgpt"!==t.authMethod||null==t.accountId?null:c({accountId:t.accountId,locale:n,navigationKey:a.key,pathname:a.pathname,product:o})},d:l,e:function(e){let{windowType:t,accountId:n,currentAccountId:a,statsigAccountId:o,userId:i}=e;return"browser"===t?n??null:n??a??o??i??null}})}),RNtx:(function(e,t,n){var a=n("ABep"),o=n("QosV"),i=n("on57"),r=n("Wf1j"),s=n("wD9O"),l=n("bf6R"),c=n("nzx4"),u=n("yC2B");function _(e){return e.preventDefault()}function d(e){return e.preventDefault()}function p(e){return e.preventDefault()}function m(e){let t,n,r,s,l,c=(0,o.c)(13),{align:u,isRtl:_}=e,d="start"===u&&"start-4",p="end"===u&&"end-4",m="center"===u&&"left-1/2 -translate-x-1/2";c[0]!==d||c[1]!==p||c[2]!==m?(t=(0,i.b)("pointer-events-none absolute hidden h-3.5 w-9 origin-top overflow-visible group-data-[side=bottom]:top-0 group-data-[side=bottom]:block group-data-[side=bottom]:-scale-y-100 group-data-[side=top]:top-full group-data-[side=top]:block",d,p,m),c[0]=d,c[1]=p,c[2]=m,c[3]=t):t=c[3];let g="center"===u?"M0 0C8.1 0 10.95 3.42222 14.4 8.24444L16.05 10.5778C17.025 11.9778 18.975 11.9778 19.95 10.5778L21.6 8.24444C25.05 3.42222 27.9 0 36 0V-1H0Z":"M0 0C4 0 6.5 1.2963 8 4.40741C9.5 7.77778 9 10.8889 11 12.7037C12.25 13.7407 13.75 13.7407 15 12.4444C19.25 7.51852 25.5 2.59259 32 0.777778C33.75 0.259259 34.75 0 36 0V-1H0Z",f="start"===u&&_||"end"===u&&!_?"translate(36 0) scale(-1 1)":void 0;return c[4]!==g||c[5]!==f?(n=(0,a.jsx)("path",{d:g,transform:f}),c[4]=g,c[5]=f,c[6]=n):n=c[6],c[7]!==t||c[8]!==n?(r=(0,a.jsx)("svg",{"aria-hidden":"true",className:t,fill:"var(--color-background-coachmark)",viewBox:"0 0 36 14",children:n}),c[7]=t,c[8]=n,c[9]=r):r=c[9],c[10]===Symbol.for("react.memo_cache_sentinel")?(s=(0,a.jsx)("svg",{"aria-hidden":"true",className:"pointer-events-none absolute top-1/2 hidden h-9 w-3.5 origin-left -translate-y-1/2 overflow-visible group-data-[side=left]:left-full group-data-[side=left]:block group-data-[side=right]:left-0 group-data-[side=right]:block group-data-[side=right]:-scale-x-100",fill:"var(--color-background-coachmark)",viewBox:"0 0 14 36",children:(0,a.jsx)("path",{d:"M0 0C8.1 0 10.95 3.42222 14.4 8.24444L16.05 10.5778C17.025 11.9778 18.975 11.9778 19.95 10.5778L21.6 8.24444C25.05 3.42222 27.9 0 36 0V-1H0Z",transform:"matrix(0 -1 1 0 0 36)"})}),c[10]=s):s=c[10],c[11]!==r?(l=(0,a.jsxs)(a.Fragment,{children:[r,s]}),c[11]=r,c[12]=l):l=c[12],l}n.d(t,{},{a:function(e){let t,n,g,f,b,h,v,w,y,I,k,x,C,A,S,E,P=(0,o.c)(54),{id:T,align:M,anchor:O,body:j,direction:L,onDismiss:B,side:N,size:H,title:R,updatePositionStrategy:U}=e,D=void 0===M?"center":M,q=void 0===H?"default":H,V=void 0===U?"always":U,z=(0,r.a)(),G=(0,s.c)();P[0]!==L||P[1]!==z.locale?(t=L??(0,u.a)(z.locale),P[0]=L,P[1]=z.locale,P[2]=t):t=P[2];let W="rtl"===t,K=W?"right":"left",$=W?"left":"right";P[3]!==K||P[4]!==$?(n={top:"top",bottom:"bottom",start:K,end:$},P[3]=K,P[4]=$,P[5]=n):n=P[5];let F=n;P[6]!==O||P[7]!==B?(g=()=>{B(),O.focus()},P[6]=O,P[7]=B,P[8]=g):g=P[8];let Y=g;P[9]!==Y?(f=e=>{e||Y()},P[9]=Y,P[10]=f):f=P[10],P[11]!==O?(b=(0,a.jsx)(c.b,{virtualRef:{current:O}}),P[11]=O,P[12]=b):b=P[12];let Q="default"===q&&"w-60",X="wide"===q&&"w-72",Z="large"===q&&"w-90";P[13]!==Q||P[14]!==X||P[15]!==Z?(h=(0,i.b)("no-drag group relative z-50 flex items-start gap-2 rounded-xl bg-coachmark p-3 text-sm text-coachmark shadow-lg outline-hidden select-none",Q,X,Z),P[13]=Q,P[14]=X,P[15]=Z,P[16]=h):h=P[16];let J="center"===D?0:-11*G,ee=null!=R?`${T}-body`:void 0,et=null!=R?`${T}-title`:`${T}-body`,en=F[N],ea=("center"===D?19:21)*G;P[17]!==T||P[18]!==R?(v=null!=R&&(0,a.jsx)("div",{id:`${T}-title`,className:"font-semibold",children:R}),P[17]=T,P[18]=R,P[19]=v):v=P[19];let eo=`${T}-body`;return P[20]!==j||P[21]!==eo?(w=(0,a.jsx)("div",{id:eo,children:j}),P[20]=j,P[21]=eo,P[22]=w):w=P[22],P[23]!==v||P[24]!==w?(y=(0,a.jsxs)("div",{className:"flex min-w-0 flex-1 flex-col gap-0.5",children:[v,w]}),P[23]=v,P[24]=w,P[25]=y):y=P[25],P[26]!==z?(I=z.formatMessage({id:"beacons.homeTooltip.close",defaultMessage:"Close tooltip"}),P[26]=z,P[27]=I):I=P[27],P[28]!==Y?(k=e=>{e.stopPropagation(),Y()},P[28]=Y,P[29]=k):k=P[29],P[30]===Symbol.for("react.memo_cache_sentinel")?(x=(0,a.jsx)(l.xj,{}),P[30]=x):x=P[30],P[31]!==I||P[32]!==k?(C=(0,a.jsx)("button",{className:"relative flex size-4 shrink-0 cursor-interaction items-center justify-center rounded-sm before:absolute before:-inset-1 focus-visible:outline-2 focus-visible:outline-current","aria-label":I,onClick:k,type:"button",children:x}),P[31]=I,P[32]=k,P[33]=C):C=P[33],P[34]!==D||P[35]!==W?(A=(0,a.jsx)(m,{align:D,isRtl:W}),P[34]=D,P[35]=W,P[36]=A):A=P[36],P[37]!==D||P[38]!==T||P[39]!==h||P[40]!==J||P[41]!==ee||P[42]!==et||P[43]!==en||P[44]!==ea||P[45]!==y||P[46]!==C||P[47]!==A||P[48]!==V?(S=(0,a.jsxs)(c.c,{id:T,className:h,align:D,alignOffset:J,"aria-describedby":ee,"aria-labelledby":et,collisionPadding:8,onCloseAutoFocus:p,onInteractOutside:d,onOpenAutoFocus:_,role:"dialog",side:en,sideOffset:ea,unstyled:!0,updatePositionStrategy:V,children:[y,C,A]}),P[37]=D,P[38]=T,P[39]=h,P[40]=J,P[41]=ee,P[42]=et,P[43]=en,P[44]=ea,P[45]=y,P[46]=C,P[47]=A,P[48]=V,P[49]=S):S=P[49],P[50]!==b||P[51]!==S||P[52]!==f?(E=(0,a.jsxs)(c.a,{open:!0,onOpenChange:f,children:[b,S]}),P[50]=b,P[51]=S,P[52]=f,P[53]=E):E=P[53],E}})}),n5GS:(function(e,t,n){var a=n("Cslg"),o=n("SHW6");n("aTcy");var i=n("IDma");function r(e){if("open_local_url"!==e.action_v2.action_enum)return!1;let t=e.action_v2.web_url;if(!t.startsWith("/")||t.startsWith("//"))return!1;let n=(0,o.a)(e);return null!=n&&"/admin/billing"===n.pathname&&"add_credits"===n.searchParams.get("codex_credit_action")}n("nInK"),n.d(t,{},{a:r,b:function(e,t){if("open_local_url"!==e.action_v2.action_enum)return;let s=e.action_v2.web_url;if(!s.startsWith("/")||s.startsWith("//"))return;let l=(0,o.a)(e);if(null==l)return;let c="/?open=plan-renew-confirmation"===s||"/?open=plan-renew-pricing"===s,u=r(e),_="/admin/billing/manage_member_usage_limit"===l.pathname;if(!c&&!u&&!_)return;if("link"===t.source)return{status:"unsupported"};let d=t.scope.get(a.m);if(d.authLoading||d.accountLoading)return{status:"pending"};if(!t.allowExternalActions||null==d.accountId||null==d.userId||!(0,i.a)(t.scope,d.accountId,d.userId)||null!=t.eventAccountId&&t.eventAccountId!==d.accountId)return{status:"unavailable"};let{accountId:p,userId:m}=d;return{status:"supported",handler:async e=>{let{loadBillingBeaconAction:a}=await Promise.resolve().then(n.bind(n,"XyTt"));if(!(0,i.a)(t.scope,p,m)||!(t.isCurrentPresentation?.()??!0))return!1;let o=await a();return!!(0,i.a)(t.scope,p,m)&&!!(t.isCurrentPresentation?.()??!0)&&o(t,l,p,m,e)}}}})}),vOxw:(function(e,t,n){var a=n("BolX"),o=n("OWtl");let i=(0,a.u)(o.a,()=>new Map);n.d(t,{},{a:i,b:function(e,t,n){let a=e.get(i),o=a.get(t);null==o||o.routeCommitted||e.set(i,new Map(a).set(t,{...o,routeCommitted:!0,routingLayer:n?null:o.routingLayer}))}})}),BHyM:(function(e,t,n){let a="business_owner_team_invite_confirmation";n.d(t,{},{a:a,b:function(e,t){return null!=t?e===a:"business_domain_coworkers"===e||"business_owner_domain_invites"===e}})}),nY8G:(function(e,t,n){n("AleY"),n("ReGc"),n.d(t,{},{a:async function(e){}})}),h6ff:(function(e,t,n){var a=n("zMIV"),o=n.n(a),i=n("ASxG"),r=n("G4Vg"),s=n("jUaO");let l=i.string().nullable().optional().transform(e=>e??null),c=i.object({id:i.string(),text:i.string(),url:i.string()}),u=i.object({banner_design:i.enum(["default","composer","eyebrow_composer"]).optional().default("default"),banner_position:i.literal("composer").nullable().optional().transform(e=>e??null),description:i.string(),dismiss_variant:i.enum(["dismiss_on_send","persistent"]).optional().default("dismiss_on_send"),icon_image_size:i.enum(["small","medium","large"]).optional().default("small"),icon_image_url:l,icon_image_url_dark:l,informational_link:c.nullable().optional().transform(e=>e??null),title:i.string(),type:i.literal("beacon_banner_info")}).loose(),_=i.object({alignment:i.enum(["start","center"]).nullish(),bullet_points:i.array(i.object({icon:i.enum(["speedometer","chat-dots","clock-history"]),text:i.string()})).nullish(),description_format:i.enum(["plain","markdown"]).optional(),supporting_text:i.string().nullish(),supporting_text_format:i.enum(["plain","markdown"]).optional(),description:i.string(),footer_link:c.nullable().optional().transform(e=>e??null),footer_text:l,header_image_alt:l,header_image_url:l,header_image_url_dark:l,title:i.string(),type:i.literal("beacon_modal_info"),web_design:i.enum(["default","announcement_nux"]).optional().default("default")}).loose(),d=i.object({close_aria_label:l,pages:i.array(i.object({cta_action_item_id:l,cta_text:i.string(),description:i.string(),footnote:l,id:i.string(),image_variant_urls:i.array(i.string()).nullable().optional().transform(e=>e??null),media_alt:i.string(),media_type:i.enum(["image","video"]).optional().default("image"),media_url:i.string(),title:i.string(),video_poster_url:l}).loose()).min(1),type:i.literal("beacon_multi_page_modal_info")}).loose(),p=i.object({approval_info_text:l,design:i.enum(["default","card"]).nullable().optional().transform(e=>e??"default"),primary_info_text:l,type:i.literal("beacon_conversation_inline_info")}).loose(),m=i.object({container_id:i.string().min(1),type:i.literal("beacon_container_info")}).loose(),g=i.object({background_image_url:l,background_image_url_dark:l,foreground_image_layout:i.union([i.object({type:i.literal("none")}),i.object({type:i.literal("centered"),clip_shape:i.enum(["none","circle"]),size:i.enum(["extra_small","small","regular"])}),i.object({type:i.literal("wide"),sizing:i.object({type:i.literal("width_to_height_ratio"),ratio:i.number().gt(1)})})]),foreground_image_url:i.string(),foreground_image_url_dark:l,subtitle:l,title:i.string(),type:i.literal("beacon_homepage_takeover_info")}).loose(),f=i.string().nullable().optional(),b=i.boolean().nullable().transform(e=>e??void 0).optional(),h=i.enum(["codex","file_upload","image_gen","personal_finance","tasks","thinking","work"]),v={activate_feature_trial:B("activate_feature_trial",{feature_key:i.string(),model_behavior:i.object({regeneration_model_slug:f,update_model_picker:b}).loose().nullable().optional()}),age_verification:B("age_verification",{}),authenticate_login:B("authenticate_login",{auth_navigation_mode:i.enum(["redirect","modal"]).nullable().transform(e=>e??void 0).optional()}),authenticate_signup:B("authenticate_signup",{auth_navigation_mode:i.enum(["redirect","modal"]).nullable().transform(e=>e??void 0).optional()}),citron_disable:B("citron_disable",{failure_toast_message:f,success_toast_message:f}),citron_enable:B("citron_enable",{}),codex_download_email:B("codex_download_email",{}),connect_finances_and_send_work_prompt:B("connect_finances_and_send_work_prompt",{prompt:i.string().refine(e=>e.trim().length>0)}),connect_ledger_accounts:B("connect_ledger_accounts",{composer_text:f}),copy_to_clipboard:B("copy_to_clipboard",{copy_text:i.string(),text:i.string()}),create_presence_session:B("create_presence_session",{conversation_id:i.string(),message_id:i.string(),launch_attempt_id:i.string()}),create_prompt:B("create_prompt",{open_in_modal:b,prompt_description:f,prompt_name:f,prompt_text:f}),dismiss:B("dismiss",{composer_text:f}),enable_codex_fast_mode:B("enable_codex_fast_mode",{}),enable_web_push:B("enable_web_push",{}),enable_web_push_and_responses_push:B("enable_web_push_and_responses_push",{account_id:i.string().min(1),account_user_id:i.string().min(1)}),file_upload:B("file_upload",{composer_text:f}),free_thinking_sample_regenerate:B("free_thinking_sample_regenerate",{model_slug:i.string(),update_model_picker:b}),get_go:B("get_go",{promo_campaign_id:f,upsell_context_id:h.nullable().optional()}),get_plus:B("get_plus",{checkout_mode:i.literal("direct").nullable().optional(),promo_campaign_id:f,upsell_context_id:h.nullable().optional()}),get_pro:B("get_pro",{rejoin_pro_cta_variant:i.unknown().transform(s.c).optional(),pro_offer:r.b.nullish(),upsell_context_id:h.nullable().optional()}),get_team:B("get_team",{checkout_mode:i.literal("direct").nullable().optional(),upsell_context_id:h.nullable().optional()}),install_mobile_widget:B("install_mobile_widget",{}),install_plugin:B("install_plugin",{plugin_reference_id:i.string(),post_install_prompt:f}),enable_workspace_auto_join:B("enable_workspace_auto_join",{}),invite_domain_members:B("invite_domain_members",{account_id:i.uuid()}),send_workspace_invite:B("send_workspace_invite",{account_id:i.uuid()}),invite_team_members:B("invite_team_members",{emails:i.array(i.string()).nullable().optional()}),open_claim_business_workspace_modal:B("open_claim_business_workspace_modal",{}),open_connector_oauth_modal:B("open_connector_oauth_modal",{connector_id:i.string()}),open_connectors_onboarding_modal:B("open_connectors_onboarding_modal",{}),open_dot_texting_setup:B("open_dot_texting_setup",{}),open_enterprise_value_survey_modal:B("open_enterprise_value_survey_modal",{survey_id:i.string(),survey_name:i.string(),survey_type:f}),open_external_agent_import:B("open_external_agent_import",{}),open_dot_with_draft:B("open_dot_with_draft",{dot_id:i.string().min(1),prompt:i.string().regex(/\S/u)}),open_local_url:B("open_local_url",{android_url:i.string(),ios_url:i.string(),trigger_turn:b,url:i.string().nullable().transform(e=>e??void 0).optional(),web_url:i.string()}),open_pca_connector_auth_modal:B("open_pca_connector_auth_modal",{connector_id:i.string(),include_connector_system_hint_after_link:b,trigger_turn_after_link:b}),open_pepper_onboarding_modal:B("open_pepper_onboarding_modal",{}),open_url:B("open_url",{url:i.string()}),open_work_tab:B("open_work_tab",{}),open_work_tab_and_send_prompt:B("open_work_tab_and_send_prompt",{prompt:i.string()}),photo_upload:B("photo_upload",{composer_text:f}),regenerate:B("regenerate",{model_slug:i.string(),update_model_picker:i.boolean()}),request_account_team_contact:B("request_account_team_contact",{campaign_id:i.string(),notification_type:i.enum(["beacon_account_signal","beacon_account_signal_smb"])}),request_premium_seat:B("request_premium_seat",{}),request_workspace_upgrade_seat:B("request_workspace_upgrade_seat",{seat_type:i.literal("prolite").nullable().optional()}),request_workspace_credits:B("request_workspace_credits",{}),send_prompt:B("send_prompt",{cta_source:f,developer_prompt:i.string(),hint:f,prompt:i.string()}),set_atlas_as_default_browser:B("set_atlas_as_default_browser",{}),share_conversation:B("share_conversation",{conversation_id:i.string(),current_node_id:i.string(),title:i.string()}),share_group_chat:B("share_group_chat",{room_name:f}),share_location:B("share_location",{}),share_message_slice:B("share_message_slice",{}),start_jobs_mock_interview_voice:B("start_jobs_mock_interview_voice",{}),start_voice:B("start_voice",{requested_default_model:f,voice_landing:f}),start_spark:B("start_spark",{spark_id:i.string().regex(/\S/),user_message:i.string().regex(/\S/),preferred_model_slug:f,preferred_thinking_effort:f}),submit_personalized_information_questionnaire_feedback:B("submit_personalized_information_questionnaire_feedback",{answer:i.enum(["yes","no"]),citation_uuid:i.string(),conversation_context_type:i.enum(["user_memory","general_memory","past_conversation"]),conversation_id:i.string(),details_max_length:i.number().nullable().transform(e=>e??void 0).optional(),details_placeholder:i.string(),details_submit_button_text:i.string(),message_id:i.string(),question_id:i.literal("citation_relevance"),questionnaire_id:i.literal("personalized_citation_relevance"),success_toast_message:i.string(),surface:i.literal("personalization_questionnaire")}),system_hint:B("system_hint",{composer_text:f,hint:i.string(),new_chat:b,trigger_turn:b}),update_model_picker:B("update_model_picker",{composer_text:f,model_slug:i.string(),thinking_effort:f,service_tier:i.enum(["standard","fast","ultrafast"]).nullable().optional()}),update_personality_trait:B("update_personality_trait",{level:i.string(),trait:i.string(),updated_trait_settings_dict:i.record(i.string(),i.string())}),update_user_personalization_setting:B("update_user_personalization_setting",{memory_enabled:i.boolean(),success_toast_message:f})},w=i.union(Object.values(v)),y=i.union(Object.values(o()(v,["connect_finances_and_send_work_prompt","create_presence_session","invite_domain_members","send_workspace_invite","enable_codex_fast_mode","enable_workspace_auto_join","enable_web_push_and_responses_push","open_dot_texting_setup","open_dot_with_draft","open_external_agent_import","start_spark"]))),I=i.object({action_enum:i.null().transform(()=>void 0).optional()}).loose(),k=i.object({action_v2:i.union([I,y]),icon_url:f,id:i.string(),text:i.string()}).loose(),x=i.object({action_enum:i.literal("dropdown"),footer_text:f,header_text:f,items:i.array(k)}).loose(),C=i.object({action_v2:i.union([I,y,x]),icon_url:f,id:i.string(),text:i.string()}).loose(),A=i.object({action_enum:i.literal("dropdown"),footer_text:f,header_text:f,items:i.array(C)}).loose(),S=i.object({appearance:i.enum(["standard","accent"]).catch("standard").optional(),action_v2:i.union([I,w,A]),description:f,icon_url:f,id:i.string(),text:f,type:i.enum(["primary","secondary","copy","dropdown"]).nullable().optional().transform(e=>e??"primary")}).loose(),E=i.array(S),P=i.array(S).min(1).max(2).refine(e=>e[0]?.type==="primary"&&(1===e.length||e[1]?.type==="secondary")),T={action_items:E,beacon_id:i.string(),beacon_name:i.string(),custom_fields:i.record(i.string(),i.unknown()).optional(),show_timing:i.enum(["immediate","wait_until_conversation_refresh"]).optional().default("immediate"),type:i.literal("beacon_ui_response")},M=i.union([i.object({...T,ui_info:u}).loose(),i.object({...T,ui_info:_}).loose(),i.object({...T,ui_info:d}).loose(),i.object({...T,ui_info:p}).loose()]),O=i.object({...T,beacon_id:i.literal("library_provider_onboarding_refresh"),ui_info:i.object({type:i.literal("beacon_container_info"),container_id:i.literal("library_google_drive_sidebar_tooltip")})}).loose().refine(e=>{let t=e.action_items[0]?.action_v2;return t?.action_enum==="open_local_url"&&!0!==t.trigger_turn&&t.web_url.startsWith("/library?")&&"intro"===new URLSearchParams(t.web_url.slice(9)).get("library_onboarding")}),j=i.union([O,i.object({...T,ui_info:u}).loose(),i.object({...T,ui_info:_}).loose(),i.object({...T,ui_info:d}).loose(),i.object({...T,action_items:P,ui_info:g}).loose()]),L=i.object({...T,ui_info:m}).loose();function B(e,t){return i.object({action_enum:i.literal(e),...t}).loose()}n.d(t,{},{a:M,b:L,c:function(e){var t;let n=i.object({action_items:i.array(i.unknown()),beacon_id:i.string(),custom_fields:i.record(i.string(),i.unknown()).optional(),ui_info:i.object({type:i.enum(["beacon_banner_info","beacon_conversation_inline_info","beacon_homepage_takeover_info","beacon_modal_info","beacon_multi_page_modal_info"])}).loose()}).loose().safeParse(e);if(!n.success)return null;let a=n.data.action_items.findIndex(e=>!S.safeParse(e).success);return -1===a?null:{beaconId:n.data.beacon_id,diagnostic:{actionEnum:"unknown",actionId:"unknown",actionIndex:a,reason:"malformed_action_payload"},suppressLifecycle:n.data.custom_fields?.debug_forced_in_conversation_beacon===!0,treatment:"beacon_banner_info"===(t=n.data.ui_info.type)?"banner":"beacon_homepage_takeover_info"===t?"homepage_takeover":"beacon_conversation_inline_info"===t?"conversation_inline":"modal"}},d:j,e:w})}),d58w:(function(e,t,n){var a=n("ASxG"),o=n("hlVK"),i=n("SPzj"),r=n("U861"),s=n("h6ff"),l=n("oHzU");let c="deferredBeaconUpgradeEvent",u=a.object({accountId:a.string().min(1),actionId:a.string().min(1),analyticsContext:a.object({placement:a.enum(["codex_home","homepage","in_conversation","work_tab_home"]),productExperience:a.enum(["chat","work"]).optional(),suppressLifecycle:a.boolean().optional(),treatment:a.enum(["banner","conversation_inline","homepage_takeover","modal"])}).nullable(),beacon:a.union([s.a,s.d]),expectedIdentity:a.object({accountId:a.string(),userId:a.string()}).optional(),eventMetadata:a.object({conversationId:a.string().nullable(),messageId:a.string().nullable(),suppressLifecycle:a.boolean().optional()}).nullable()});function _(e,t){return function e(t,n){for(let a of t){if(a.id===n&&"get_team"===a.action_v2.action_enum&&"direct"===a.action_v2.checkout_mode)return a;if("dropdown"===a.action_v2.action_enum){let t=e(a.action_v2.items,n);if(null!=t)return t}}return null}(e.action_items,t)}n.d(t,{},{a:c,b:async function(e,t,n){if(null==n||n.accountId!==t)return!1;let a=_(n.beacon,n.actionId);return null!=a&&(!!(0,r.e)(n.beacon.beacon_id)||n.analyticsContext?.suppressLifecycle===!0||n.eventMetadata?.suppressLifecycle===!0||(null!=n.analyticsContext&&(0,i.b)(e,{action:"click",actionId:n.actionId,actionType:a.type,beacon:n.beacon,destinationAction:"get_team",...n.analyticsContext}),await (0,o.a)({accountId:t,beacon:n.beacon,expectedIdentity:n.expectedIdentity,eventCtaId:n.actionId,eventType:"click",metadata:n.eventMetadata??void 0}),!0))},c:function(e){let{accountId:t,action:n,analyticsContext:a,beacon:o,eventMetadata:i}=e;if("get_team"!==n.action_v2.action_enum||"direct"!==n.action_v2.checkout_mode||null==_(o,n.id))return null;let{onLifecycle:r,[l.k]:s,...c}=o;return{accountId:t,actionId:n.id,analyticsContext:a??null,beacon:c,expectedIdentity:s,eventMetadata:i??null}},d:function(e){if(null==e||"object"!=typeof e||!(c in e))return null;let t=u.safeParse(e[c]);return t.success&&null!=_(t.data.beacon,t.data.actionId)?t.data:null}})}),oaZE:(function(e,t,n){var a=n("QosV"),o=n("BolX"),i=n("zd8w"),r=n("StMt"),s=n("EOo5"),l=n("OWtl"),c=n("WFY2");n.d(t,{},{a:function(e){let t,u,_,d=(0,a.c)(10),{enabled:p}=e,m=(0,o.y)(l.a),g=(0,s.a)();d[0]===Symbol.for("react.memo_cache_sentinel")?(t={name:"chatgpt"},d[0]=t):t=d[0];let f=(0,o.x)(r.a,t);return d[1]!==g.accountId||d[2]!==g.authMethod||d[3]!==g.isLoading||d[4]!==g.userId||d[5]!==f.isCapable||d[6]!==p||d[7]!==m?(u=()=>{let e;if(g.isLoading||!f.isCapable||!p||null==g.accountId||null==g.userId||"chatgpt"!==g.authMethod&&"chatgptAuthTokens"!==g.authMethod)return;let t=g.accountId,a=g.userId,o=!1;return(async function(){return(await Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(514085),n.e(338646)]).then(n.bind(n,"wmPg"))).observeFamilyNotifications})().then(n=>{o||(e=n(m,{accountId:t,userId:a}))}).catch(()=>{o||c.a.warning("family_workspace_notifications_initialization_failed")}),()=>{o=!0,e?.()}},_=[m,g.accountId,g.userId,g.authMethod,g.isLoading,f.isCapable,p],d[1]=g.accountId,d[2]=g.authMethod,d[3]=g.isLoading,d[4]=g.userId,d[5]=f.isCapable,d[6]=p,d[7]=m,d[8]=u,d[9]=_):(u=d[8],_=d[9]),(0,i.useEffect)(u,_),null}})}),j6fD:(function(e,t,n){var a=n("Hl6a"),o=n("ASxG"),i=n("fDv2"),r=n("OWtl"),s=n("oHzU");let l=new Set(["family_workspace_notification_banner","family_workspace_notification_modal","family_workspace_notification_work_banner","family_workspace_notification_work_modal","family_workspace_notification_codex_banner","family_workspace_notification_codex_modal"]),c=o.object({notification_id:o.string().min(1),presented_at:i.datetime({offset:!0}),expires_at:i.datetime({offset:!0}),workspace_id:o.string().min(1),invitation_id:o.string().nullable(),occurrence_id:o.string().min(1)}),u=(0,a.g)(r.a,e=>({pending:new Map,acknowledged:new Map,acknowledgedThrough:new Map,removedInvitations:new Map,viewed:new Set}));function _(e){if(!l.has(e.beacon_id)||"beacon_banner_info"!==e.ui_info.type&&"beacon_modal_info"!==e.ui_info.type)return null;let t=c.safeParse(e.custom_fields?.family_notification);return t.success?t.data:null}function d(e){let t=/^invite:.*:(\d+)$/.exec(e),n=null==t?0/0:Number(t[1]);return Number.isSafeInteger(n)?n:null}function p(e,t){if(null==t)return!0;if(e===t)return!1;let n=d(e),a=d(t);return null==n||null==a||n<a}n.d(t,{},{a:function(e,t,n){let a=_(n);null!=a&&e.set(u,t,e=>{let t="beacon_modal_info"===n.ui_info.type,o=Math.max(Date.now(),Date.parse(a.presented_at)),i=new Map([...e.pending].filter(e=>{let[,n]=e,a=_(n);return"beacon_modal_info"===n.ui_info.type!==t||null!=a&&Date.parse(a.presented_at)>o}));return{...e,pending:i,acknowledgedThrough:new Map(e.acknowledgedThrough).set(t,o),acknowledged:new Map(e.acknowledged).set(a.notification_id,Date.parse(a.expires_at))}})},b:function(e,t){e.set(u,t,e=>({...e,pending:new Map}))},c:_,d:u,e:function(e,t){return[...e.get(u,t).pending.values()]},f:function(e,t,n){let a=_(n),o=e.get(u,t);return!(null==a||o.viewed.has(a.notification_id))&&(e.set(u,t,{...o,viewed:new Set(o.viewed).add(a.notification_id)}),!0)},g:function(e,t){return e.watch(n=>{let a=Math.min(...[...n.get(u,t).pending.values()].map(e=>Date.parse(_(e)?.expires_at??"")));if(!Number.isFinite(a))return;let o=setTimeout(()=>{e.set(u,t,e=>({...e,pending:new Map([...e.pending].filter(e=>{let[,t]=e;return Date.parse(_(t)?.expires_at??"")>Date.now()}))}))},Math.min(Math.max(0,a-Date.now()),0x7fffffff));return()=>clearTimeout(o)})},h:function(e,t,n){let a=_(n);if(null==a)return!1;let o=Date.parse(a.expires_at),i=Date.now(),r=e.get(u,t),s=JSON.stringify([a.workspace_id,a.invitation_id]);return!!(o<=i||r.acknowledged.has(a.notification_id)||Date.parse(a.presented_at)<=(r.acknowledgedThrough.get("beacon_modal_info"===n.ui_info.type)??0)||r.removedInvitations.has(s)&&p(a.occurrence_id,r.removedInvitations.get(s)??null))||(e.set(u,t,{...r,pending:new Map(r.pending).set(a.notification_id,n),acknowledged:new Map([...r.acknowledged].filter(e=>{let[,t]=e;return t>i}))}),!0)},i:function(e,t,n,a,o){e.set(u,t,e=>{let t=JSON.stringify([n,a]),i=e.removedInvitations.get(t),r=e.removedInvitations.has(t)&&null==i||null!=i&&null!=o&&(d(i)??0)>(d(o)??0)?i??null:o;return{...e,removedInvitations:new Map(e.removedInvitations).set(t,r),pending:new Map([...e.pending].filter(e=>{let[,t]=e,o=_(t);return null==o||o.workspace_id!==n||o.invitation_id!==a||!p(o.occurrence_id,r)}))}})},j:function(e){return[...e.pending.values()].find(s.a)??null}})}),fM3G:(function(e,t,n){n.d(t,{a:()=>B,b:()=>L,c:()=>j});var a=n("BolX"),o=n("HT1b"),i=n("SPzj"),r=n("Vz4D"),s=n("eac5"),l=n("SDxg"),c=n("vOxw"),u=n("nY8G"),_=n("h6ff"),d=n("svjy"),p=n("cus3"),m=n("OMIV"),g=n("oHzU"),f=n("Eso4"),b=n("prHy"),h=n("s4w7"),v=n("EZRW"),w=n("mRsi"),y=n("a2O9"),I=n("un4u"),k=n("Kwur"),x=n("M8lA"),C=n("htGh"),A=n("V9B1"),S=n("OTgW"),E=n("SClg"),P=n("OWtl"),T=n("O666"),M=n("j6fD");let O={chatgpt:"homepage",codex:"codex_home",work_tab:"work_tab_home"},j=()=>!1,L=(0,a.q)(P.a,(e,t)=>{let{accountId:a,browserTooltipTargets:P,clientContext:j,composerSelectionContext:L,locale:B,pathname:N,product:H,shouldSuppressFocusedModal:R,userId:U,visitKey:D}=e,{scope:q}=t,V=q.get(c.a).get(D),z=V?.routeCommitted&&null!=a&&null!=U&&"chatgpt"===H&&"/"===N&&null==P?V.routingLayer:null;return{queryKey:["codex-app-home-beacon",a,U,B,N,H,D,P,null!=z&&V?.routingEnabled===!0],refetchOnMount:!1,refetchOnReconnect:!1,refetchOnWindowFocus:!1,retry:!1,staleTime:6e4,gcTime:null==P?0:1/0,queryFn:async e=>{let{signal:t}=e,c=z?.get("enabled",!1)===!0,j=z?.get("write_events",!1)===!0,V=null;if(null==P&&"chatgpt"===H&&"/"===N&&null!=a&&null!=U&&/Android/.test(navigator.userAgent)){let e=(0,x.getClientBootstrap)().authHomepageAppUpsellAdmission;V=e?.accountId===a&&e.userId===U?async function(e,t,n){let a=new AbortController;try{return await (0,s.a)(async function(e,t,n){try{n.throwIfAborted();let a=(document.documentElement.dataset.routerBasename??"").replace(/\/$/u,""),{data:o,response:i}=await r.a.GET(l.a,{baseUrl:`${window.location.origin}${a}`,fetch,signal:n,credentials:"same-origin",cache:"no-store",redirect:"error",params:{header:{"x-codex-statsig-user-id":t,"x-codex-statsig-account-id":e}}});if(!i.ok||204===i.status)return!1;let s=l.b.parse(o);if(n.aborted||s.accountId!==e||s.userId!==t)return!1;return!0}catch{return!1}}(e,t,AbortSignal.any([n,a.signal])),!1,Date.now()+1e3)}finally{a.abort()}}(a,U,t):Promise.resolve(!1)}let G=window.electronBridge?.getDesktopUserAgent?.()??null,W=null!=a&&"chatgpt"===H&&"/"===N&&null==P,K=null==G?void 0:q.get(S.a),$=null==G?void 0:q.get(A.a),F="chatgpt"===H&&null==P,Y=(0,v.a)(),Q=null==a?void 0:await (0,u.a)(q),X={home_sms_backup_supported:W,pepper_home_banner_supported:F,pro_offer_checkout_supported:!!(null==P&&("chatgpt"===H||"work_tab"===H)&&q.get(T.b,{layer:"3780044865",parameter:"send_pro_offer_checkout_capability",disableExposureLog:!0}))||void 0,browser_family:Y??void 0,browser_extension_installed:null==Y?void 0:q.get(w.b),browser_tab_search_available:null==Y?void 0:(0,y.a)(q,H)},Z,J=(0,h.g)(q,H,N,D),ee=J?[h.b]:void 0,et=P??("chatgpt"===H?void 0:ee),en=null!=G&&"codex"===H&&null==P&&null!=a?await q.query.fetch(C.a).catch(()=>null)??void 0:void 0,ea=c&&null!=a&&null!=U?{beacon_ui_response:(await k.Request.safeGet("/beacons_v2",{cache:"no-store",retry:"never",signal:t,expectedIdentity:{accountId:a,userId:U},additionalHeaders:{"Cache-Control":"no-store","oai-client-version":(0,E.b)(),"x-openai-use-sheep":"1"},parameters:{query:{surface:["home"],...X}}})).surfaces.home??null}:await k.Request.safeGet("/beacons/home",{signal:t,additionalHeaders:{...null==a?{}:{"ChatGPT-Account-ID":a,...{[o.ac]:a}},"Cache-Control":"no-store",...{"oai-client-version":(0,E.b)()},...null==G?{}:{"User-Agent":G}},parameters:{query:{product:H,...null==Q?{}:{preload_installation_id:Q},selected_model_slug:null==L?void 0:q.get(I.f,L).selectedModel.slug,web_frontend:"codex_webview",codex_window_type:"browser",desktop_voice_available:$,desktop_voice_nux_seen:K,notification_state:en,...X,space_tooltip_ready:J,supported_home_tooltip_targets:null==et?void 0:[...et],codex_fast_mode_eligible:Z?.codex_fast_mode_eligible,codex_fast_mode_saved_ms:Z?.codex_fast_mode_saved_ms,codex_fast_mode_thread_count:Z?.codex_fast_mode_thread_count}}}),eo=[];"chatgpt"===H&&null==P&&(eo=f.b);let{beacon:ei,rejection:er}=function(e,t){let n=e.beacon_ui_response;if(null==n)return{beacon:null,rejection:null};let a=(0,b.a)(n,t);return null==a?{beacon:null,rejection:(0,_.c)(n)}:{beacon:a,rejection:null}}(ea,eo),es=null==ei?null:await async function(e,t){if(!(0,g.b)(t))return t;let{createClinicianPersonalWorkspaceModal:a}=await n.e(123655).then(n.bind(n,"quFz"));return a(t,{intl:e.get(d.a),copyVariant:(0,p.a)(e.get(m.f))})}(q,ei);if(es?.beacon_id!=="auth_app_install_turn_count_banner"||null==V||await V||(es=null),null!=es&&(0,A.b)(es)&&null==G&&(es=null),es?.beacon_id==="codex_fast_mode_home_banner"&&(Z?.codex_fast_mode_eligible!==!0||"beacon_banner_info"!==es.ui_info.type)&&(es=null),null!=P&&ei?.ui_info.type!=="beacon_tooltip_info"&&(es=null),ei?.ui_info.type==="beacon_tooltip_info"){let e=ei.ui_info.target;(P??ee)?.some(t=>t===e)||(es=null)}null!=er&&(0,i.k)(q,{beaconId:er.beaconId,diagnostic:er.diagnostic,placement:O[H],suppressLifecycle:er.suppressLifecycle,treatment:er.treatment});let el=!t.aborted&&null!=es&&((0,g.h)(es)||(0,g.i)(es))&&R();el&&null!=a&&null!=es&&(0,g.e)(es)&&(0,i.e)(q,a,es);let ec=t.aborted||el||null==a||null==U?null:{accountId:a,userId:U};if(null!=ec&&null!=es&&j&&(es={...es,[g.k]:ec}),null!=ec&&null!=es&&(0,g.e)(es)&&(0,M.h)(q,ec,es)){let e=es,t=(0,M.c)(e)?.notification_id;es="beacon_banner_info"!==e.ui_info.type&&(0,M.e)(q,ec).some(e=>(0,M.c)(e)?.notification_id===t)?{...e,onLifecycle:(t,n)=>{("dismiss"===n.action||"click"===n.action)&&(0,M.a)(t,ec,e)}}:null}return{accountId:a,beacon:el?null:es,locale:B,pathname:N,product:H,visitKey:D}}}},{excludeFieldsFromKey:["shouldSuppressFocusedModal"]});function B(e,t){let{queryKey:n}=e.query.getOptions(L,t);(0,a.f)(e,L,t),e.queryClient.removeQueries({queryKey:n,exact:!0})}}),xW5B:(function(e,t,n){var a=n("BolX"),o=n("StMt"),i=n("Cslg"),r=n("OFP1"),s=n("SPzj"),l=n("sb2P"),c=n("vOxw"),u=n("fM3G"),_=n("DYuz"),d=n("s4w7"),p=n("oHzU"),m=n("un4u"),g=n("g2p6"),f=n("U861"),b=n("jWQ7"),h=n("ad0f"),v=n("AGHv"),w=n("mmXj"),y=n("e1xH"),I=n("V9B1"),k=n("OWtl"),x=n("OMIV"),C=n("O666"),A=n("pyOZ");let S={status:"pending"},E={chatgpt:"chat",codex:"codex",work_tab:"work"},P=(0,a.r)(k.a,e=>{let{get:t}=e,n=t(v.onboardingIdentity$);return(0,b.a)({authMethod:"chatgpt",enabled:t(x.d,"3856252093"),userId:n?.userId??null,workspaceId:n?.accountId})}),T=(0,a.v)(k.a,e=>null),M=(0,a.v)(k.a,e=>!1,{onMount:(e,t)=>{if(t.get(d.h,t.key))return void e(!0);let n=!1,a=window.setTimeout(()=>{n||(n=!0,t.set(d.h,t.key,!0),e(!0))},5e3),i=t.watch(t=>{if(n||(e(!1),null==t.get(d.c)))return;let i=t.get(o.a,{name:"chatgpt"});if(i.isLoading||i.isCapable&&!t.get(x.d,"2200939124")&&t.get(x.g,"2200939124"))return;let r=!0;return queueMicrotask(()=>{r&&(n=!0,window.clearTimeout(a),e(!0))}),()=>{r=!1}});return()=>{window.clearTimeout(a),i()}}},{autoDispose:!0}),O=(0,a.v)(k.a,(e,t)=>{let{scope:n}=t,a=j(e);return null==a?S:n.get(l.d,a.visitKey)},{onMount:(e,t)=>{let n=j(t.key);return null!=n&&(t.key.shouldFetch||null!=t.key.browserTooltipTargets)?(new l.a(t).touchHomeVisit(n),t.watch(a=>{e(function e(t,n,a){var o,b;let k,S=new l.a(t),O=t.get(f.d);if(O?.accountId===a.accountId&&(null!=n.browserTooltipTargets||O.destination===E[n.product]&&"beacon_tooltip_info"===O.beacon.ui_info.type))return S.applyHomeQueryResult(a,{...a,beacon:null}),S.getHomeVisit(a);let j=t.get(f.c),B=t.get(l.d,a.visitKey),N=j?"unrestricted":function(e,t){if("work_tab"!==t.product)return"unrestricted";let n=e.get(i.l);if("allowed"!==n.status||!("plan"in n))return"blocked";if(!(0,v.isEnterpriseClientPlan)(n.plan))return"unrestricted";let a=e.get(v.onboardingIdentity$),o=e.get(r.r);if(null==a||a.accountId!==t.accountId||a.userId!==t.userId||"allowed"!==o.status||!("accountId"in o)||o.accountId!==t.accountId)return"blocked";let s=e.get(g.p).data;if(null==s)return"blocked";if(s.seenAnnouncements?.[v.COMPLETION_ANNOUNCEMENT]!=null)return"unrestricted";if(!e.get(x.d,"1625797156"))return _.a;let l=[];if(e.get(C.b,{layer:"2912878776",parameter:"enabled",disableExposureLog:!0})&&l.push("tpp_work_default_announcement_modal"),e.get(x.d,"3033586454")&&e.get(C.b,{layer:"2220584304",parameter:"experiment_enabled",disableExposureLog:!0})&&l.push("tpp_work_reonboarding_modal"),0===l.length)return _.a;if(!e.get(x.d,"3856252093"))return[..._.a,...l];let{data:c,isPending:u}=e.get(P);return u?"finance_pending":c?.enabled?_.a:[..._.a,...l]}(t,n);if("blocked"===N)return{status:"ineligible"};"selected"===B.status&&L(t,n,B.beacon)&&S.suppressUnsupportedHomeBeacon(a.accountId,B.beacon.beacon_id);let H=t.get(w.h),R=t.get(w.j),U=!j&&(0,w.l)({activeClaims:H,isCurrentHomeBeacon:!0,isHomepageTakeoverOwner:(o=S,b=a,null!=(k=o.getSelectedHomeBeacon(b))&&(0,p.f)(k)),isPageContextUpsellSuppressionEnabled:R}),D=!j&&(t.get(w.d)||U),q=n.browserTooltipTargets,V=null!=n.browserTooltipTargets||!(0,h.b)(n.pathname)||t.get(M,a.visitKey),z=!t.get(d.h,a.visitKey)&&(0,d.d)(t,n.product,n.pathname);if(null!=q){let e=t.get(T,a.visitKey);null!=e&&e.length>0?q=e:t.set(T,a.visitKey,q)}let G=null!=n.composerSelectionContext&&(t.get(m.f,n.composerSelectionContext).savedModelPending||t.get(m.c,{conversationOrigin:n.composerSelectionContext.conversationOrigin,gizmoId:n.composerSelectionContext.gizmoId,useMergedPicker:n.composerSelectionContext.useMergedPicker}).modelsQuery.isPending);V&&!z&&(0,c.b)(t,n.visitKey,(0,d.g)(t,n.product,n.pathname,n.visitKey));let W=t.get(u.b,{accountId:n.accountId,userId:n.userId,clientContext:n.clientContext,composerSelectionContext:n.composerSelectionContext,browserTooltipTargets:q,locale:n.locale,pathname:n.pathname,product:n.product,shouldSuppressFocusedModal:n.shouldSuppressFocusedModal,visitKey:n.visitKey},{enabled:n.shouldFetch&&!1!==n.clientContextReady&&!G&&V&&!z&&!j&&(window.electronBridge?.getDesktopUserAgent?.()==null||!t.get(x.h)&&t.get(A.a)&&void 0!==t.get(I.a))&&"pending"===B.status});if(j)return S.getHomeVisit(a);let K=W.data?.beacon!=null&&(0,I.b)(W.data.beacon)&&void 0===t.get(I.a);if(null!=n.browserTooltipTargets&&"pending"===B.status&&null!=W.data&&null==W.data.beacon&&q?.join(",")!==n.browserTooltipTargets.join(","))return t.set(T,a.visitKey,n.browserTooltipTargets),e(t,n,a);if("finance_pending"===N&&W.data?.beacon!=null&&!(0,_.c)(W.data.beacon.beacon_id)||W.data?.accountId==null||null!=n.browserTooltipTargets&&null==W.data.beacon||K)W.isError&&S.applyHomeQueryResult(a,{...a,beacon:null});else{let e=S.applyHomeQueryResult(a,{accountId:W.data.accountId,beacon:"string"==typeof N||N.includes(W.data.beacon?.beacon_id??"")?W.data.beacon:null,locale:W.data.locale,pathname:W.data.pathname,product:W.data.product,visitKey:W.data.visitKey});if(e&&null!=W.data.beacon&&L(t,n,W.data.beacon))return S.suppressUnsupportedHomeBeacon(a.accountId,W.data.beacon.beacon_id),S.getHomeVisit(a);e&&null!=W.data.beacon&&"empty"!==S.getHomeVisit(a).status&&D&&(S.requestHomeBeaconSuppression(a),U&&(0,p.e)(W.data.beacon)&&(0,s.d)(t,W.data.beacon,H))}let $=S.getSelectedHomeBeacon(a);t.get(y.pagesEnabled$)&&null!=$&&(0,p.g)($)&&S.suppressUnsupportedHomeBeacon(a.accountId,$.beacon_id);let F=S.getSelectedHomeBeacon(a);return null!=F&&((0,I.b)(F)&&!1===t.get(I.a)||"codex_fast_mode_home_banner"===F.beacon_id&&n.clientContext?.codex_fast_mode_eligible!==!0)?S.suppressUnsupportedHomeBeacon(a.accountId,F.beacon_id):D&&(S.requestHomeBeaconSuppression(a),U&&null!=F&&(0,p.e)(F)&&(0,s.d)(t,F,H)),S.getHomeVisit(a)}(a,t.key,n))})):void e(S)}},{autoDispose:!0,excludeFieldsFromKey:["shouldSuppressFocusedModal"]});function j(e){return null==e.accountId||0===e.visitKey.length?null:{accountId:e.accountId,locale:e.locale,pathname:e.pathname,product:e.product,visitKey:e.visitKey}}function L(e,t,n){if("beacon_tooltip_info"!==n.ui_info.type)return!1;let a=n.ui_info.target;return null!=t.browserTooltipTargets?!t.browserTooltipTargets.some(e=>e===a):(0,d.e)(e,t.product,a)}n.d(t,{},{a:T,b:O})}),Eso4:(function(e,t,n){n.d(t,{},{a:function(e,t){return t.some(t=>t.beaconId===e.beacon_id&&t.containerId===e.ui_info.container_id)},b:[{beaconId:"cfc_personal_workspace_beacon",containerId:"cfc_personal_workspace_beacon"}]})}),prHy:(function(e,t,n){var a=n("ASxG"),o=n("s4w7"),i=n("h6ff"),r=n("Eso4");let s=a.string().refine(e=>e.trim().length>0,"Home tooltip title must not be blank"),l=a.string().nullable().optional().transform(e=>e??null),c={action_items:a.array(a.never()).length(0),beacon_name:a.string(),show_timing:a.enum(["immediate","wait_until_conversation_refresh"]).optional().default("immediate"),type:a.literal("beacon_ui_response")},u=a.union([a.object({...c,beacon_id:a.literal("voice_mode_tooltip"),ui_info:a.object({subtitle:l,target:a.literal("composer-voice-button"),title:s,type:a.literal("beacon_tooltip_info")}).loose()}).loose(),a.object({...c,beacon_id:a.literal("tpp_nux_tooltip"),ui_info:a.object({subtitle:l,target:a.literal("tpp-surface-mode-toggle"),title:s,type:a.literal("beacon_tooltip_info")}).loose()}).loose()]),_=a.union([u,o.j]),d=a.union([i.d,_]);n.d(t,{},{a:function(e,t){let n=d.safeParse(e);if(n.success)return n.data;let a=i.b.safeParse(e);return a.success&&(0,r.a)(a.data,t)?a.data:null},b:d,c:function(e){return _.safeParse(e).success}})}),fHnT:(function(e,t,n){var a=n("BolX"),o=n("OWtl");let i=Object.freeze([]),r=(0,a.u)(o.a,()=>i);n.d(t,{},{a:r,b:function(e,t,n){e.set(r,e=>{if(e.includes(t)===n)return e;if(!n){let n=e.filter(e=>e!==t);return 0===n.length?i:Object.freeze(n)}return Object.freeze([...e,t].sort())})}})}),W44r:(function(e,t,n){var a=n("ABep"),o=n("BolX"),i=n("zd8w"),r=n("Wf1j"),s=n("jqIZ"),l=n("Cslg"),c=n("EOo5"),u=n("hlVK"),_=n("SPzj"),d=n("sb2P"),p=n("prHy"),m=n("KXZK"),g=n("U861"),f=n("kphc"),b=n("ad0f"),h=n("bdDz"),v=n("vkjh"),w=n("mmXj"),y=n("OWtl"),I=n("RNtx"),k=n("fHnT"),x=n("s4w7");let C={chatgpt:{placement:"homepage",productExperience:"chat",treatment:"tooltip"},work_tab:{placement:"work_tab_home",productExperience:"work",treatment:"tooltip"},codex:{placement:"codex_home",productExperience:"chat",treatment:"tooltip"}};n.d(t,{},{a:function(e){let{activationAction:t="dismiss",allowDesktop:n=!1,children:A,enabled:S,minimumVisibleRatio:E,onReadinessChange:P,previewEnabled:T=S,product:M="chatgpt",side:O,size:j,target:L}=e,B=(0,o.y)(y.a),N=(0,i.useId)(),{accountId:H,userId:R}=(0,c.a)(),{locale:U}=(0,r.a)(),D=(0,s.Y)(),q=(0,o.z)(g.d),V=(0,o.z)(f.b),z=(0,o.z)(h.c)??!1,[G,W]=(0,i.useState)(null),K=(0,i.useRef)(null),[$,F]=(0,i.useState)(null);(0,i.useEffect)(()=>{if(null==E||null==G)return;let e=new IntersectionObserver(e=>{let[t]=e;F(t?.isIntersecting===!0&&t.intersectionRatio>=E)},{threshold:E});return e.observe(G),()=>e.disconnect()},[E,G]);let Y=null==H?null:(0,d.b)({accountId:H,locale:U,navigationKey:D.key,pathname:D.pathname,product:M}),Q=(0,o.x)(d.d,Y??""),X="chat";"work_tab"===M?X="work":"codex"===M&&(X="codex");let Z=(0,g.f)(q,{accountId:H,destination:X,pathname:D.pathname,userId:R}),J="selected"===Q.status?Q.beacon:null,ee=Z?q?.beacon??null:J,et=null!=ee&&(0,p.c)(ee)&&ee.ui_info.target===L?ee:null,en=Z&&null!=q,ea=en&&null!=et?T:S,eo=(null==E||!0===$)&&!0===ea&&null!=H&&("chatgpt"===M?"/"===D.pathname&&"chat"===V:(0,b.b)(D.pathname))&&null!=G,ei=eo&&null!=et&&(!(0,h.l)({hideFirstNewThreadOnboardingPromos:z,pathname:D.pathname})||(0,x.f)(et.beacon_id)||et.custom_fields?.show_after_onboarding===!0),er=null;null!=et&&(er=en?`debug:${q.intentId}`:`${Y??""}:${et.beacon_id}`);let es=null!=E&&(null==$||$&&null==ea);(0,i.useEffect)(()=>{if(!es||null==P)return;let e=window.setTimeout(()=>{P(B,!1)},5e3);return()=>window.clearTimeout(e)},[es,P,B]),(0,i.useLayoutEffect)(()=>null!=E?((0,k.b)(B,L,eo),P?.(B,es),()=>{(0,k.b)(B,L,!1)}):eo?((0,k.b)(B,L,!0),()=>{(0,k.b)(B,L,!1)}):void 0,[es,eo,E,P,B,L]),(0,i.useEffect)(()=>{ei&&!en&&null!=H&&null!=et&&((0,m.e)(B,H,et),(0,m.d)(B,H,et,C[M]))},[H,en,ei,M,B,et]);let el=()=>{null==et||null==er||K.current!==er&&(K.current=er,en?(0,g.b)(B,q.intentId):null!=H&&((0,_.b)(B,{action:"dismiss",beacon:et,...C[M]}),(0,m.b)(B,H,et)))},ec=A({ariaDescribedBy:ei?N:void 0,isOpen:ei,onActivate:()=>{if(ei&&null!=et&&null!=er&&K.current!==er&&B.get(l.f)===H){if("click"!==t)return void el();K.current=er,en?(0,g.b)(B,q.intentId):null!=H&&((0,_.b)(B,{action:"click",beacon:et,...C[M]}),(0,u.a)({beacon:et,eventType:"click",accountId:H}),(0,m.a)(B,H,et))}},triggerRef:W});return(0,a.jsxs)(v.a,{active:ei,claim:w.a.HomeBeacon,children:[ec,ei&&null!=et?(0,a.jsx)(I.a,{id:N,align:"composer-voice-button"===L?"end":"center",anchor:G,onDismiss:el,side:O??("composer-voice-button"===L?"top":"bottom"),size:j,title:et.ui_info.subtitle?et.ui_info.title:void 0,body:et.ui_info.subtitle||et.ui_info.title}):null]})}})}),DYuz:(function(e,t,n){let a="enterprise_dot_provisioned_home_takeover",o="enterprise_dot_provisioned_work_takeover",i="dot_retention_home_takeover",r="dot_retention_work_takeover",s="dot_create_home_takeover",l="dot_create_work_takeover",c=[a,o,i,r,s,l];n.d(t,{},{a:c,b:function(e){return e===a?o:e===o?a:e===i?r:e===r?i:e===s?l:e===l?s:null},c:function(e){return c.includes(e)}})}),lM2P:(function(e,t,n){let a=new Set(["data_analysis_execution","saved_memory","response_personalization","writing_assistance","step_by_step_guidance","personalized_advice","professional_assistance","conversation_history_search","file_generation_download","document_analysis","connected_apps_access","voice_conversation","health_experience","image_generation","scheduled_tasks","deep_research","interactive_study","interactive_app_creation"]);n.d(t,{},{a:a})}),ESoo:(function(e,t,n){n.d(t,{a:()=>g,b:()=>f});var a=n("ASxG"),o=n("hlVK"),i=n("M8lA"),r=n("yGJW"),s=n("wVL6"),l=n("eac5"),c=n("SPzj"),u=n("ycSk"),_=n("wJ7T"),d=n("RJnh");let p=a.enum(["turn_5","turn_10","image_gen_turn","homepage","conversation_turn","contextual_conversation_turn"]),m=new Set(["auth_app_install_turn_count_banner","logged_in_ios_mweb_homepage_app_upsell","no_auth_app_install_turn_count_bottom_sheet","no_auth_app_install_turn_count_inline_banner","mweb_app_install_turn_count","android_mweb_image_turn_app_upsell","android_mweb_conversation_turn_app_upsell","android_mweb_paid_conversation_turn_app_upsell","android_mweb_contextual_app_upsell","ios_mweb_image_turn_app_upsell","ios_mweb_conversation_turn_app_upsell","ios_mweb_contextual_app_upsell","no_auth_android_mweb_contextual_app_upsell"]);function g(e,t){return"open_url"===e.action_v2.action_enum&&null!=(0,d.b)(e)&&m.has(t.beacon_id)&&p.safeParse(t.custom_fields?.app_install_source).success}async function f(e,t){let n=p.safeParse(t.beacon.custom_fields?.app_install_source);if(!n.success||!t.allowExternalActions||"open_url"!==e.action_v2.action_enum||!g(e,t.beacon))return!1;let a=t.beacon.custom_fields?.dlid,d="string"==typeof a?a:crypto.randomUUID(),m="logged_in_ios_mweb_homepage_app_upsell"===t.beacon.beacon_id&&t.beacon.custom_fields?.app_install_destination==="singular"?{href:e.action_v2.url,appLink:e.action_v2.url,deepLinkId:d}:function(e){let{source:t,conversationId:n,deepLinkId:a,medium:o,userAgent:i,appBaseUrl:r,hasAccountSelector:s=!1}=e,l=n?`c/${encodeURIComponent(n)}`:void 0,c=new URL(l?`/app/${l}`:"/app","https://chat.openai.com"),u=new URL(l?`/${l}`:"/app","https://chatgpt.com");for(let e of[c,u])e.searchParams.set("dlid",a),e.searchParams.set("utm_campaign","mweb_app_install"),e.searchParams.set("utm_content",t);c.searchParams.set("referrer",new URLSearchParams({utm_source:"chatgpt_web",utm_medium:o,dlid:a}).toString());let d=c.href;if(!(/Android/.test(i)&&i.includes("Chrome"))||/; wv|webview|fbav|fb_iab|fban|instagram|line\/|kakaotalk|snapchat|tiktok/i.test(i)||/Version\/\d+\.\d+/.test(i))return{href:d,appLink:d,deepLinkId:a};let p=new URLSearchParams({dlid:a,utm_source:"chatgpt_web",utm_medium:o,utm_campaign:"mweb_app_install",utm_content:t}),m=l?`${l}?${p}`:`app?${p}`,g=new URL("https://play.google.com/store/apps/details?id=com.openai.chatgpt");g.searchParams.set("referrer",m);let f=("conversation_turn"===t||"homepage"===t||"contextual_conversation_turn"===t)&&(0,_.a)(i),b=null!=r&&(s||f)?new URL(`${r.pathname.replace(/\/$/,"")}/update-app`,r):g;return b!==g&&(b.searchParams.set("referrer",m),f&&b.searchParams.set("force_account_selector","true")),{href:`intent://${u.host}${u.pathname}${u.search}#Intent;scheme=https;package=com.openai.chatgpt;S.browser_fallback_url=${encodeURIComponent(b.href)};end`,appLink:d,deepLinkId:a}}({source:n.data,conversationId:"auth_app_install_turn_count_banner"===t.beacon.beacon_id||"logged_in_ios_mweb_homepage_app_upsell"===t.beacon.beacon_id||"no_auth_app_install_turn_count_bottom_sheet"===t.beacon.beacon_id||"no_auth_app_install_turn_count_inline_banner"===t.beacon.beacon_id||"no_auth_android_mweb_contextual_app_upsell"===t.beacon.beacon_id?void 0:t.eventMetadata?.conversationId,deepLinkId:d,medium:t.analyticsContext?.treatment==="modal"?"mweb_bottomsheet":"mweb_banner",userAgent:navigator.userAgent,appBaseUrl:t.appBaseUrl,hasAccountSelector:null!=(0,i.getClientBootstrap)().androidInstallAccountSelector});if("primary"===e.type)try{window.localStorage.removeItem("oai/apps/contextualUpsellId")}catch{}if(null!=t.analyticsContext)try{(0,c.b)(t.scope,{action:"click",actionId:e.id,actionType:e.type,beacon:t.beacon,destinationAction:e.action_v2.action_enum,...t.analyticsContext})}catch{}if((0,o.a)({beacon:t.beacon,eventType:"click",eventCtaId:e.id,metadata:t.eventMetadata,accountId:t.eventAccountId,keepalive:!0}),t.onActionComplete?.(e),(0,u.b)(t.scope,m.deepLinkId,m.appLink),"homepage"===n.data&&"auth_app_install_turn_count_banner"===t.beacon.beacon_id&&"primary"===e.type&&"auth_app_install_turn_count_banner_get_app"===e.id)try{let e=t.scope.get(r.c);if("logged_in"===(0,i.getClientBootstrap)().authStatus&&"android_web"===(0,s.a)()&&"allowed"===e.getAnalyticsAdmission()){let t=Date.now()+250;await (0,l.a)(e.flush(250),void 0,t)}}catch{}return window.location.assign(m.href),{didComplete:!0,eventAccountId:t.eventAccountId,shouldResolve:!1}}}),ycSk:(function(e,t,n){var a=n("wJ7T"),o=n("jsDG"),i=n("MVHH"),r=n("M8lA"),s=n("yGJW"),l=n("OMIV");let c=new Set(["turn_5","turn_10","image_gen_turn","homepage","conversation_turn","contextual_conversation_turn"]);n.d(t,{},{a:function(e){try{let t=(0,r.getClientBootstrap)();if(!t.session?.user?.id||!(0,a.a)(navigator.userAgent))return;let n=e.get(l.f),o="1506327862";n?.getLayer(o,{disableExposureLog:!0}).get("account_selector_log_exposure",!1)&&n.getLayer(o).get("account_selector_enabled",!1)}catch{}},b:function(e,t,n){let a=!1,r=()=>{a=!0};try{let o=e.get(s.c);window.addEventListener("pagehide",r,{capture:!0,once:!0}),(0,s.a)(e,i.c,{dlid:t,url:function(e,t){let n=new URL(e);for(let[e,a]of(n.username="",n.password="",n.hash="",Array.from(n.searchParams)))if(!("dlid"===e&&a===t||"utm_campaign"===e&&"mweb_app_install"===a||"utm_content"===e&&c.has(a)))if("referrer"===e){let o=new URLSearchParams(a);for(let[e,n]of Array.from(o))("dlid"!==e||n!==t)&&("utm_source"!==e||"chatgpt_web"!==n)&&("utm_medium"!==e||"mweb_banner"!==n&&"mweb_bottomsheet"!==n)&&o.set(e,"<redacted>");n.searchParams.set(e,o.toString())}else n.searchParams.set(e,"<redacted>");return n.href}(n,t)},e=>{window.removeEventListener("pagehide",r,!0),"sent"===e.status&&(a||"hidden"===document.visibilityState)&&o.flush().catch(()=>{})})}catch{window.removeEventListener("pagehide",r,!0)}try{let t;if(e.get(l.f)?.checkGate("2830112640"))return;let a=new URL(window.location.href),i=e=>a.searchParams.get(e)?.trim()||void 0,r={source:i("utm_source"),medium:i("utm_medium"),campaign:i("utm_campaign"),content:i("utm_content"),term:i("utm_term")},c={notificationId:i("notification_id"),notificationChannelId:i("notification_channel_id"),entryId:i("entry_id"),deepLinkId:i("deep_link_id")};try{t=document.referrer?new URL(document.referrer).hostname.toLowerCase():void 0}catch{}t===a.hostname.toLowerCase()&&(t=void 0);let u=Object.values(r).some(e=>null!=e),_=Object.values(c).some(e=>null!=e),d=["gclid","fbclid","rdt_cid","ttclid","li_fat_id","msclkid","oppref","gbraid","wbraid"].some(e=>null!=i(e));if(!u&&!_&&!d&&!t)return;let p=r.source?.toLowerCase()==="sendgrid"&&r.medium?.toLowerCase()==="email",m=new URL(n);for(let e of(m.hash="",m.searchParams.keys()))m.searchParams.set(e,"redacted");let g="APP_ENTRY_CHANNEL_UNSPECIFIED";p?g="APP_ENTRY_CHANNEL_EMAIL_NOTIFICATION":null!=c.notificationId&&(g="APP_ENTRY_CHANNEL_PUSH_NOTIFICATION"),(0,s.a)(e,o.g,{attribution:{source:p?"notification_email":"unspecified",utm:u?r:void 0,channel:g,...c,referrerDomain:t},destination:{redactedUrl:m.href},client:{surface:"browser"},fromSurface:"browser",toSurface:"native_app",reason:"mobile_app_upsell"})}catch{}}})}),nInK:(function(e,t,n){var a=n("nM73"),o=n("MwLV"),i=n("Cslg"),r=n("SHW6"),s=n("xcp1"),l=n("AOHi"),c=n("Kwur"),u=n("M8lA"),_=n("Ot7V"),d=n("X6Vn"),p=n("DAA7"),m=n("GaA7"),g=n("RlnO"),f=n("GDNt"),b=n("IDma"),h=n("f5h2"),v=n("lg1r"),w=n("RJnh"),y=n("ytyy");function I(e,t,n){return(0,w.d)(t)?(window.open(t,"_blank","noopener,noreferrer"),!0):null!=n?(0,_.e)({event:n,href:t,initiator:"open_in_browser_bridge",openTarget:e.useExternalBrowser?"external-browser":void 0}):(0,_.f)({href:t,initiator:"open_in_browser_bridge",openTarget:e.useExternalBrowser?"external-browser":void 0})}n.d(t,{},{a:I,b:async function(e,t,_,k){if((0,h.a)(e)){let e=m.a.systemPermissions;if(!t.allowExternalActions||null==e)return!1;let n=await e.getNotificationPermissionStatus();if(t.isCurrentPresentation?.()===!1||null==n)return!1;"not-determined"===n&&await e.openNotificationSettings();let a=t.eventAccountId,o=t.featureAccessInputs;if(t.beacon?.beacon_id==="codex_home_notification_banner"&&!t.eventMetadata?.suppressLifecycle&&!t.analyticsContext?.suppressLifecycle&&null!=a&&o?.authenticatedUserId!=null){let i="not-determined"===n?await e.getNotificationPermissionStatus():n,r=()=>t.isCurrentPresentation?.()!==!1&&(0,b.a)(t.scope,a,o.userId);if(!r())return!1;if("enabled"!==i)return"disabled"===i;let s=o.authenticatedUserId;try{await c.Request.safePatch("/notifications/settings",{expectedIdentity:{accountId:a,userId:s},requestBody:{updates:{library:{push:!0}}},signal:AbortSignal.timeout(1e4)})}catch(e){if(!r())return!1;if(e instanceof f.a&&403===e.status&&"Notification setting is not editable"===(0,l.c)(e))return!0;return(0,h.b)(t.scope),!1}let u={queryKey:["chatgpt-notification-settings",s,a],exact:!0};await t.scope.queryClient.cancelQueries(u),t.scope.queryClient.invalidateQueries({...u,refetchType:(0,b.a)(t.scope,a,o.userId)?"active":"none"})}return!0}let x=_;if("open_local_url"===e.action_v2.action_enum){if("/settings/cloud-environments?select=default"===x&&t.beacon?.beacon_id==="codex_cloud_home_modal_v2"){let[{canSelectBlankCloudEnvironment$:e},{startNewConversation:a}]=await Promise.all([Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(514085),n.e(226913),n.e(804608)]).then(n.bind(n,"nluz")),Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(514085),n.e(226913),n.e(701292)]).then(n.bind(n,"Q8aV"))]),o=t.eventAccountId;if(t.isCurrentPresentation?.()===!1||null==o||!(0,b.a)(t.scope,o,t.featureAccessInputs?.userId))return!1;if(t.scope.get(e,null)){let e=!1;return a(t.scope,{codexAppMode:"codex",defaultCloudEnvironment:!0,prefillComposerMode:"local",prefillCloudThreadPrototype:!0,freshDraft:!0,onNavigate:()=>{e=!0}}),e}return t.navigate("/settings/cloud-environments"),!0}if(/^\/admin\/members(?:[?#]|$)/u.test(e.action_v2.web_url)){let t;(0,o.c)()&&!/^local-[a-z0-9-]+\.chatgpt-staging\.com$/i.test(window.location.hostname)?t=window.location.origin:"openai-dev"===(0,u.getClientBootstrap)().auth.provider&&(t="https://chatgpt-staging.com"),null!=t&&(x=new URL(e.action_v2.web_url,t).toString())}let r=(0,v.a)(x);if(null!=r){let e=t.scope.get(i.f),n=t.scope.get(i.k);if(!t.allowExternalActions||null==e||null==n||"allowed"!==t.scope.get(g.a).status)return!1;let o=await (0,a.a)();return t.isCurrentPresentation?.()!==!1&&!!(0,b.a)(t.scope,e,n)&&"allowed"===t.scope.get(g.a).status&&((0,d.f)(t.scope,o,{...r,accountId:e,userId:n}),!0)}let l=(0,s.a)(x);if(null!=l){if(!t.allowExternalActions)return!1;let{openTrustedContactBeaconAction:e}=await Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(514085),n.e(904661)]).then(n.bind(n,"bLYh"));return e(l,{scope:t.scope,navigate:t.navigate}),!0}if("/?open=workspace-discovery"===x){let e=t.scope.get(i.f),a=t.scope.get(i.k);if(null==e||null==a||!(0,b.a)(t.scope,e,a))return!1;let{loadWorkspaceDiscoveryOpener:o}=await Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(514085)]).then(n.bind(n,"gv9R")),r=await o();return!!(0,b.a)(t.scope,e,a)&&(r(t.scope,a,"link"===t.source?void 0:(0,y.b)(t.beacon)),!0)}}if(t.allowExternalActions&&/^(?:https:\/\/[^/]+)?\/admin(?:[/?#]|$)/u.test(x)){let e=(0,p.c)(t.scope,x,t.featureAccessInputs?.accountId),n=null==e?null:await e;if(null!=n)return t.isCurrentPresentation?.()!==!1&&I({...t,useExternalBrowser:!0},n,k)}if((0,w.f)(x)){let n=(0,r.a)(e),a=n?.searchParams.get("prompt");return"open_local_url"===e.action_v2.action_enum&&!0!==e.action_v2.trigger_turn&&n?.pathname==="/"&&a?t.navigate(x,{prefillPrompt:a.replace(/\r\n/g,"\n"),focusComposerNonce:Date.now()}):t.navigate(x),!0}return I(t,x,k)}})}),f5h2:(function(e,t,n){var a=n("SGsN"),o=n("svjy");n.d(t,{},{a:function(e){return"open_local_url"===e.action_v2.action_enum&&"/?open=notification-settings"===e.action_v2.web_url},b:function(e){e.get(a.f).danger(e.get(o.a).formatMessage({id:"chatgpt.beacons.notifications.toast.enable_failed",defaultMessage:"Couldn't turn on notifications. Try again later."}),{errorAnalytics:{toastId:"chatgpt.beacons.notifications.toast.enable_failed"}})}})}),AVl4:(function(e,t,n){var a=n("BolX"),o=n("AuIy"),i=n("hlVK"),r=n("Kwur"),s=n("dQRk"),l=n("hx97"),c=n("Ot7V"),u=n("OWtl"),_=n("IDma"),d=n("SPzj");let p=new WeakMap,m=(0,a.d)(u.a,(e,t)=>{let{get:n}=t;if(e?.conversationId==null||null==e.messageId)return null;let a=n(s.N,e.conversationId);if(null==a)return;let i=(0,o.a)({mapping:a,current_node:e.messageId}).findLast(l.m);return i?.author.role==="user"?i.id:null});n.d(t,{},{a:m,b:function(e,t){let n=e.action_v2;if("create_presence_session"!==n.action_enum||!e.id||!n.launch_attempt_id||t.eventMetadata?.conversationId!==n.conversation_id||!t.eventMetadata.messageId)return{status:"unsupported"};let a=t.featureAccessInputs;if(void 0===t.presencePromptId||null==a||a.authLoading||a.accountLoading)return{status:"pending"};if(t.presencePromptId!==n.message_id)return{status:"unsupported"};let o=t.eventAccountId??a.authenticatedAccountId,s=a.userId;if(!t.allowExternalActions||null==o||null==s||"chatgpt"!==a.authMethod||a.accountId!==o||a.authenticatedAccountId!==o)return{status:"unavailable"};let l=()=>(0,_.a)(t.scope,o,s)&&(t.isCurrentPresentation?.()??!1);return{status:"supported",handler:async()=>{if(!l())return!1;let a=p.get(t.scope);null==a&&(a=new WeakMap,p.set(t.scope,a));let u=a.get(t.beacon);null==u&&(u=new Map,a.set(t.beacon,u));let _=JSON.stringify([o,s,n.conversation_id,n.message_id,n.launch_attempt_id]),m=u.get(_);(null==m||m.completed||null===m.result)&&(m={creation:Promise.resolve().then(async()=>{if(!l())return null;try{let e=await r.Request.safePost("/buying-advisor/session",{additionalHeaders:{"ChatGPT-Account-ID":o,"x-openai-use-sheep":"1"},expectedIdentity:{accountId:o,userId:s},expectedErrorStatuses:[403,404,409,429],requestBody:{conversation_id:n.conversation_id,message_id:n.message_id,launch_attempt_id:n.launch_attempt_id},retry:"never",signal:AbortSignal.timeout(55e3)});return e.client_secret?.trim()&&Number.isFinite(e.client_secret_expires_at)&&e.client_secret_expires_at>Date.now()/1e3?{clientSecret:e.client_secret,expiresAt:e.client_secret_expires_at}:null}catch{return null}}),completed:!1},u.set(_,m),(0,i.a)({beacon:t.beacon,eventType:"click",eventCtaId:e.id,metadata:t.eventMetadata,accountId:o,keepalive:!0}),null!=t.analyticsContext&&(0,d.b)(t.scope,{action:"click",actionId:e.id,actionType:e.type,beacon:t.beacon,destinationAction:n.action_enum,...t.analyticsContext}));let g=await m.creation;if(m.result=g,!l()||m.completed)return!1;m.completed=!0,t.onActionComplete?.(e);let f=new URL("https://openai.com/buying-agent/");return f.search=new URLSearchParams({utm_source:"chatgpt.com",utm_medium:"beacon",utm_campaign:"enterprise_plan_comparison_intent"}).toString(),null!=g&&g.expiresAt>Date.now()/1e3&&(f.hash=new URLSearchParams({baps:g.clientSecret}).toString()),(0,c.f)({href:f.href,disposition:"current-tab",initiator:"open_in_browser_bridge"}),{didComplete:!0,eventAccountId:o,shouldResolve:!1}}}}})}),s4w7:(function(e,t,n){var a=n("BolX"),o=n("ASxG"),i=n("fHnT"),r=n("kphc"),s=n("ad0f"),l=n("OWtl"),c=n("qixt");let u="space_onboarding",_="sidebar-space-button",d=(0,a.c)(l.a,e=>{let{get:t}=e;if(!t(c.d))return"codex";let n=t(r.b);return"chat"===n?"chatgpt":"work"===n?"work_tab":null}),p=(0,a.u)(l.a,!1),m=(0,a.v)(l.a,e=>!1),g=o.object({action_items:o.array(o.never()).length(0),beacon_id:o.literal(u),beacon_name:o.string(),show_timing:o.enum(["immediate","wait_until_conversation_refresh"]).optional().default("immediate"),type:o.literal("beacon_ui_response"),ui_info:o.object({subtitle:o.string().refine(e=>e.trim().length>0),target:o.literal(_),title:o.string().refine(e=>e.trim().length>0),type:o.literal("beacon_tooltip_info")}).loose()}).loose();n.d(t,{},{a:u,b:_,c:d,d:function(e,t,n){return e.get(d)===t&&(0,s.b)(n)&&e.get(p)},e:function(e,t,n){return n===_&&(e.get(d)!==t||!e.get(i.a).includes(_))},f:function(e){return e===u},g:function(e,t,n,a){return e.get(d)===t&&(0,s.b)(n)&&!e.get(m,a)&&e.get(i.a).includes(_)},h:m,i:p,j:g})}),tMkG:(function(e,t,n){var a=n("ABep"),o=n("QosV"),i=n("BolX"),r=n("zd8w"),s=n("s4w7"),l=n("Bbed"),c=n("OWtl");let u=(0,l.a)(async()=>(await Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(514085),n.e(128462)]).then(n.bind(n,"q2wP"))).SpaceHomeTooltipTarget,{suspendToParent:!0,errorFallback:e=>(0,a.jsx)(_,{...e})});function _(e){let t,n,a,l=(0,o.c)(5),{children:u}=e,_=(0,i.y)(c.a);return l[0]!==_?(t=()=>{_.set(s.i,!1)},n=[_],l[0]=_,l[1]=t,l[2]=n):(t=l[1],n=l[2]),(0,r.useLayoutEffect)(t,n),l[3]!==u?(a=u({ariaDescribedBy:void 0,isOpen:!1,onActivate:p,triggerRef:d}),l[3]=u,l[4]=a):a=l[4],a}function d(){}function p(){}n.d(t,{},{a:function(e){let{children:t,...n}=e,o=(0,i.y)(c.a),l=(0,r.useRef)(null),_=(0,r.useCallback)(()=>{null!=l.current&&(window.clearTimeout(l.current),l.current=null)},[]),d=e=>(0,r.cloneElement)(t(e),n);(0,r.useEffect)(()=>()=>{_(),o.set(s.i,!1)},[_,o]);let p=d({ariaDescribedBy:void 0,isOpen:!1,onActivate:()=>void 0,triggerRef:e=>{if(null!=e){o.set(s.i,!0),_();let e=window.setTimeout(()=>{l.current===e&&(l.current=null),o.set(s.i,!1)},5e3);return l.current=e,()=>{window.clearTimeout(e),l.current===e&&(l.current=null)}}}});return(0,a.jsx)(r.Suspense,{fallback:p,children:(0,a.jsx)(u,{onMount:_,children:d})})}})}),oHzU:(function(e,t,n){let a=Symbol("sheepHomeEventIdentity");function o(e){return"beacon_banner_info"===e.ui_info.type}function i(e){return"beacon_modal_info"===e.ui_info.type}function r(e){return"beacon_multi_page_modal_info"===e.ui_info.type}function s(e){return"beacon_container_info"===e.ui_info.type}function l(e){return"beacon_homepage_takeover_info"===e.ui_info.type}function c(e){return"library_provider_onboarding_refresh"===e.beacon_id&&"beacon_container_info"===e.ui_info.type&&"library_google_drive_sidebar_tooltip"===e.ui_info.container_id}n.d(t,{},{a:o,b:function(e){return null!=e&&s(e)&&"cfc_personal_workspace_beacon"===e.beacon_id&&"cfc_personal_workspace_beacon"===e.ui_info.container_id},c:s,d:function(e){return"beacon_conversation_inline_info"===e.ui_info.type},e:function(e){return o(e)||c(e)||l(e)||i(e)||r(e)||"beacon_tooltip_info"===e.ui_info.type},f:l,g:c,h:i,i:r,j:function(e){return"personalized_information_questionnaire"===e.beacon_id&&2===e.action_items.length&&e.action_items.every(e=>"submit_personalized_information_questionnaire_feedback"===e.action_v2.action_enum)},k:a})}),lg1r:(function(e,t,n){n.d(t,{},{a:function(e){let t;try{t=new URL(e,"https://chatgpt.com")}catch{return null}if("https://chatgpt.com"!==t.origin||"/u18-graduation/no-parent"!==t.pathname&&"/u18-graduation/teen-unlink"!==t.pathname)return null;let n="/u18-graduation/no-parent"===t.pathname?"no-parent":"teen-unlink",a=t.searchParams.get("help_url");if(null!=a)try{let e=new URL(a);if("https://help.openai.com"===e.origin&&""===e.username&&""===e.password)return{kind:n,helpUrl:e.href}}catch{}return{kind:n,helpUrl:"https://help.openai.com/en/articles/20001262"}}})}),aoML:(function(e,t,n){var a=n("BolX"),o=n("jqIZ"),i=n("aTcy"),r=n("G4Vg"),s=n("laUo"),l=n("DVML"),c=n("AleY"),u=n("vV6o"),_=n("OWtl"),d=n("hZax"),p=n("OMIV"),m=n("LjYy");let g="1648954249",f=(0,a.h)(_.a,e=>{let{get:t}=e,n=t(p.f);return null==n?null:(0,d.d)(n,g)},e=>{let{get:t,set:n}=e,a=t(p.f);if(null==a)return;let o=()=>{n((0,d.d)(a,g))};return a.on("values_updated",o),()=>{a.off("values_updated",o)}});function b(e,t){let n,{accountId:a,appBaseUrl:i,currentPath:c,eventMetadata:_,rejoinPro:d,goRejoinPlusTreatment:p}=t,g=e.action_v2,f="pricing",b="",h=null;switch(g.action_enum){case"get_go":h=g.promo_campaign_id??null,n=m.a.GO;break;case"get_plus":h=g.promo_campaign_id??null,n=m.a.PLUS,"direct"===g.checkout_mode&&null==p&&(f="direct",b=(0,u.e)(s.f,i)??"");break;case"get_pro":if(null!=g.pro_offer)return null;n=m.a.PRO;break;case"get_team":n=m.a.SELF_SERVE_BUSINESS,"direct"===g.checkout_mode&&(f="direct",b=(0,u.e)(s.c,i)??"");break;default:return null}if("direct"===f&&0===b.length)return null;let v=n===m.a.SELF_SERVE_BUSINESS?null:function(e,t){if(null==t)return null;let n=(0,r.g)(e);return null!=n&&new URL(n,"https://chatgpt.com").pathname===`/c/${encodeURIComponent(t)}`?t:null}(c,_?.conversationId),w=null==v?"/":(0,r.g)(c)??"/",y={accountId:a,checkoutMode:f,promoCampaignId:h,returnPath:w,sourceThreadId:v,targetPlan:n,upsellContextId:g.upsell_context_id??null},I=(0,r.c)("pricing"===f?(0,o.y)((0,l.b)({pathname:new URL(w,i).pathname})):b,y),k="get_pro"===g.action_enum&&d?.accountId===a?d:void 0;if(null!=k){let e=new URL(I,i);e.searchParams.set("cta_tab","personal"),e.searchParams.set("highlight_plan","pro"),e.searchParams.set("pro_variant","2x"),I=(0,o.y)(e)}return null==(0,r.j)(new URL(I,"https://chatgpt.com").search)?null:{deferCompletion:"direct"===f&&n===m.a.SELF_SERVE_BUSINESS,href:I,intent:y,...null==k?{}:{rejoinPro:k}}}n.d(t,{},{a:f,b:function(e){return e.accountLoading||e.authLoading||"chatgpt"!==e.authMethod||!0!==e.supportedSurface||null==e.accountId||e.accountId!==e.authenticatedAccountId?null:e.accountId},c:b,d:function(e,t,n){return null!=t.appBaseUrl&&null!=b(e,{accountId:t.upgradeAccountId??"beacon-preflight",appBaseUrl:t.appBaseUrl,currentPath:t.currentPath??"/",eventMetadata:t.eventMetadata,goRejoinPlusTreatment:n})},e:function(e,t){let n=function(e){let t,n,a=e.action_v2;if("get_go"!==a.action_enum&&"get_plus"!==a.action_enum&&"get_pro"!==a.action_enum&&"get_team"!==a.action_enum)return null;switch(a.action_enum){case"get_go":t=(n=a.promo_campaign_id)?i.i:i.g;break;case"get_plus":n=a.promo_campaign_id,t="direct"===a.checkout_mode?s.f:(0,i.v)(m.a.PLUS);break;case"get_pro":if(null!=a.pro_offer)return null;t=(0,i.v)(m.a.PRO);break;case"get_team":{let e=new URL("direct"===a.checkout_mode?s.c:i.g);return(0,c.a)(e,void 0),e.href}}if(!n)return t;let o=new URL(t);return o.searchParams.set("promo_campaign",n),o.toString()}(e);if(null==n||null==t.upgradeAccountId||null==t.currentPath||t.isCurrentPresentation?.()===!1)return!1;let a=new URL(t.currentPath,"https://chatgpt.com"),r=new URL(n),u=null==t.appBaseUrl?null:b(e,{accountId:t.upgradeAccountId,appBaseUrl:t.appBaseUrl,currentPath:t.currentPath,eventMetadata:t.eventMetadata});if(u?.intent.checkoutMode!=="pricing")return!1;let _=u.intent.targetPlan===m.a.SELF_SERVE_BUSINESS;r.searchParams.set("cta_tab",_?"business":"personal"),r.searchParams.set("highlight_plan",u.intent.targetPlan);let d=`${a.pathname}${a.search}${a.hash}`;for(let[e,t]of r.searchParams)a.searchParams.set(e,t);return t.navigate((0,o.y)((0,l.b)({pathname:a.pathname,search:a.search})),{defaultTab:_?"business":"personal",returnPath:d,source:"conversation_followup_shelf_link"}),!0},f:function(e,t){let n="string"==typeof t?t:function(e){switch(e.ui_info.type){case"beacon_banner_info":return`beacon-banner-${e.beacon_id}`;case"beacon_conversation_inline_info":return`beacon-conversation-inline-${e.beacon_id}`;case"beacon_homepage_takeover_info":return`beacon-homepage-takeover-${e.beacon_id}`;case"beacon_modal_info":return`beacon-modal-${e.beacon_id}`;case"beacon_bottom_sheet_info":case"beacon_container_info":case"beacon_multi_page_modal_info":case"beacon_tooltip_info":return null}}(t);if(null==e||"LocalOverride"!==e.details.reason&&e.details.reason?.endsWith(":Recognized")!==!0||null==n)return!1;if(!e.get("suppress_upsell",!1))return!0;let a=e.get("allowed_frontend_entry_point_locations_for_upsell_suppression",[]);return Array.isArray(a)&&a.every(e=>"string"==typeof e)&&a.includes(n)}})}),RJnh:(function(e,t,n){n.d(t,{a:()=>f,b:()=>l,c:()=>g,d:()=>p,e:()=>c,f:()=>d,g:()=>_,h:()=>m,i:()=>u});var a=n("jqIZ"),o=n("dQkk"),i=n("aTcy"),r=n("ASxG");let s=r.object({background_valdi_artwork_url:r.string().optional().catch(void 0),background_valdi_artwork_url_dark:r.string().optional().catch(void 0)});function l(e){let t=e.action_v2,n=null;if("open_url"===t.action_enum)n=t.url;else if("open_local_url"===t.action_enum&&(n=c(e)?"/automations":t.web_url,/^\/admin\/members(?:[?#]|$)/.test(n)))return new URL(n,i.h).toString();if(null!=n&&(/^\/codex(?:\/get-started)?\/?(?:[?#]|$)/.test(n)||/^\/students\/2026\/?(?:[?#]|$)/.test(n)))return`https://chatgpt.com${n}`;if(n?.startsWith("#")){let e=(0,o.a)({pathname:"/",search:"",hash:n});if(null!=e)return(0,a.y)(e)}return null!=n&&_(n)?n:null}function c(e){return"open_local_url"===e.action_v2.action_enum&&"/tasks"===e.action_v2.web_url}function u(e){return"open_local_url"===e.action_v2.action_enum&&"/?open=workspace-discovery"===l(e)}function _(e){return e.startsWith("http://")||e.startsWith("https://")||e.startsWith("codex://")&&!1||d(e)||p(e)}function d(e){return e.startsWith("/")&&!e.startsWith("//")}function p(e){return/^(?:vscode|cursor|windsurf):extension\/openai\.chatgpt$/.test(e)}function m(e){return e.startsWith("https://")||e.startsWith("http://")||/^data:image\/svg\+xml;base64,(?=[A-Za-z0-9+/])(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(e)}function g(e,t){let n=!(arguments.length>2)||void 0===arguments[2]||arguments[2];if(!n||"none"===e.foreground_image_layout.type)return null;let a=t&&null!=e.foreground_image_url_dark?e.foreground_image_url_dark:e.foreground_image_url;return m(a)?a:null}function f(e,t){let n=s.parse(e.custom_fields??{}),a=t?n.background_valdi_artwork_url_dark??n.background_valdi_artwork_url:n.background_valdi_artwork_url;return null!=a&&function(e){try{let t=new URL(e);return"https://cdn.openai.com"===t.origin&&""===t.username&&""===t.password&&t.pathname.startsWith("/beacons/")&&t.pathname.endsWith(".json")}catch{return!1}}(a)?a:null}}),aqNX:(function(e,t,n){var a=n("E8Sp"),o=n("Cslg"),i=n("kYSX"),r=n("LLIt"),s=n("lTvi"),l=n("TFzY"),c=n("g2p6"),u=n("sMGP"),_=n("qJjJ"),d=n("kphc"),p=n("nlNF"),m=n("Q3tq"),g=n("tzYO");n.d(t,{},{a:async function(e,t){if(!e.get(i.g))return{};let n=e.get(o.f),f=e.get(o.k),b=e.get(a.b).pathname,h=e.get(p.e);if(null==n||null==f)return null;try{if(await Promise.all([e.query.getOrFetch(s.b),e.query.getOrFetch(u.a),(0,g.a)(e)]),e.get(_.f)&&await e.query.getOrFetch(c.p),t?.()===!1||e.get(a.b).pathname!==b||e.get(p.e)!==h||e.get(o.f)!==n||e.get(o.k)!==f||!(0,d.h)(e)||!e.get(i.g))return null;let v=e.get(s.b).data,w=v&&function(e,t){let{selection:n,hasExplicitThinkingEffort:a}=e.get(_.e),o=e=>{let n=t.modelConfigBySlug?.[e];return n?.isWorkModeModel===!0&&!0!==n.disabledByAdmin},i=t.versionOptions??[],s=new Set([...t.disabledVersionSlugs??[],...i.flatMap(e=>[...e.slugs,...e.options.map(e=>e.slug)])]),c=(t.sliderSettings??[]).map(e=>{let{modelSlug:t,thinkingEffort:n}=e;return{slug:t,thinkingEffort:n,versionId:null}}).filter(e=>o(e.slug)&&!s.has(e.slug)&&(0,l.e)(t,e)?.isAvailable!==!1),u=new Set(c.map(e=>e.slug)),d=t.options.filter(e=>!s.has(e.slug)&&(null!=e.thinkingEffort||!u.has(e.slug))),p=[...i.filter(e=>!1!==e.enabled),{id:null,options:d}].flatMap(e=>{let{id:t,options:n}=e;return n.filter(e=>o(e.slug)&&!1!==e.isAvailable).map(e=>(0,l.j)(e,t))});p.push(...c);let g=e.get(m.b),f=e=>null==e||g.has(r.a[e]),b=p.filter(e=>f(e.thinkingEffort)),h=(0,l.m)(t);for(let e of[n,h]){if(null==e||!o(e.slug))continue;let i=e.thinkingEffort??t.defaultThinkingEffortByModelSlug?.[e.slug]??null,r=null!=e.thinkingEffort&&(e===h||e===n&&a);if(b.length>0&&!f(i)&&!r)continue;let c=p.filter(t=>t.slug===e.slug&&t.thinkingEffort===i),_=c.find(t=>t.versionId===e.versionId)??c[0];if(null!=_)return _;if(!s.has(e.slug)&&!u.has(e.slug)){let n=(0,l.e)(t,e);if(null!=n&&!1!==n.isAvailable)return(0,l.j)(n,null)}}let v=b.length>0?b:p;return v.find(e=>e.slug===n.slug)??v.find(e=>e.slug===t.defaultModelSlug)??v[0]}(e,v);return null==w?null:{model:w}}catch{return null}}})}),ytyy:(function(e,t,n){var a=n("ASxG");let o="workspace_discovery_plugin_usage_banner",i=a.object({beaconId:a.enum(["workspace_discovery_home_banner",o]),copyVariant:a.enum(["company_pays","bring_your_work"]).optional().catch(void 0)});n.d(t,{},{a:o,b:function(e){let t=i.safeParse({beaconId:e.beacon_id,copyVariant:"workspace_discovery_home_banner"===e.beacon_id?e.custom_fields?.workspace_discovery_copy_variant:void 0});return t.success?t.data:void 0}})})};
+export const __rspack_esm_ids = [646436];
+export const __webpack_modules__ = {
+    hlVK: (function(e, t, n) {
+        var a = n("HT1b"),
+            o = n("ASxG"),
+            i = n("QdUF"),
+            r = n("s4w7"),
+            s = n("oHzU"),
+            l = n("Kwur"),
+            c = n("U861");
+        let u = new Map,
+            _ = new Map,
+            d = o.object({
+                benefit_id: o.enum(["data_analysis_execution", "saved_memory", "response_personalization", "writing_assistance", "step_by_step_guidance", "personalized_advice", "professional_assistance", "conversation_history_search", "file_generation_download", "document_analysis", "connected_apps_access", "scheduled_tasks", "voice_conversation", "health_experience", "image_generation", "deep_research", "interactive_study", "interactive_app_creation"]),
+                copy_source: o.enum(["contextual", "fixed", "paid_social"]).optional().catch(void 0),
+                copy_fallback_reason: o.enum(["disabled", "missing", "empty", "too_long", "invalid_format"]).optional().catch(void 0),
+                copy_prompt_version: o.literal("v1").optional().catch(void 0)
+            });
+        n.d(t, {}, {
+            a: async function(e) {
+                let {
+                    beacon: t,
+                    eventType: n,
+                    eventCtaId: o,
+                    metadata: p,
+                    accountId: m,
+                    expectedIdentity: g = t[s.k],
+                    keepalive: f
+                } = e, b = g?.accountId ?? m;
+                if ((0, c.e)(t.beacon_id) || p?.suppressLifecycle === !0 || t.beacon_id === r.a && null != b && _.has(b)) return;
+                let h = (async () => {
+                    try {
+                        let e = null == g ? "/beacons/event" : "/beacons/v2/event";
+                        await l.Request.safePost(e, {
+                            keepalive: f,
+                            expectedIdentity: g,
+                            assertRequestCurrent: null != b ? () => {
+                                if ((0, i.isBrowserWorkspaceSwitchPending)()) throw new DOMException("Workspace switch pending", "AbortError")
+                            } : void 0,
+                            additionalHeaders: null == b ? void 0 : {
+                                "ChatGPT-Account-ID": b,
+                                ...{
+                                    [a.ac]: b
+                                },
+                                ...null != g ? {
+                                    "x-openai-use-sheep": "1"
+                                } : {}
+                            },
+                            requestBody: {
+                                beacon_id: t.beacon_id,
+                                conversation_id: p?.conversationId ?? void 0,
+                                event_type: n,
+                                event_cta_id: o,
+                                message_id: p?.messageId ?? void 0,
+                                tracking_id: t.tracking_id ?? void 0,
+                                ... function(e) {
+                                    if ("no_auth_login_upsell_banner" !== e.beacon_id) return {};
+                                    let t = d.safeParse(e.custom_fields);
+                                    if (!t.success) return {};
+                                    let n = t.data;
+                                    return {
+                                        benefit_id: n.benefit_id,
+                                        copy_source: n.copy_source,
+                                        copy_fallback_reason: "fixed" === n.copy_source ? n.copy_fallback_reason : void 0,
+                                        copy_prompt_version: "contextual" === n.copy_source || "fixed" === n.copy_source ? n.copy_prompt_version : void 0
+                                    }
+                                }(t)
+                            }
+                        })
+                    } catch {}
+                })();
+                if (t.beacon_id === r.a && null != b) {
+                    let e = u.get(b);
+                    null == e && (e = new Set, u.set(b, e)), e.add(h), h.then(() => {
+                        e.delete(h), 0 === e.size && u.delete(b)
+                    })
+                }
+                await h
+            }
+        })
+    }),
+    IDma: (function(e, t, n) {
+        var a = n("Cslg");
+        n.d(t, {}, {
+            a: function(e, t, n) {
+                let o = e.get(a.m);
+                return "chatgpt" === o.authMethod && !o.authLoading && !o.accountLoading && o.accountId === t && o.authenticatedAccountId === t && o.userId === n
+            }
+        })
+    }),
+    j1n5: (function(e, t, n) {
+        n.d(t, {
+            a: () => Q,
+            b: () => X,
+            c: () => Z,
+            d: () => J,
+            e: () => et,
+            f: () => en
+        });
+        var a = n("StMt"),
+            o = n("twmu"),
+            i = n("Cslg"),
+            r = n("xcp1"),
+            s = n("iLYI"),
+            l = n("p4N2"),
+            c = n("f19s"),
+            u = n("kphc"),
+            _ = n("dFbl"),
+            d = n("jUaO");
+        n("AleY");
+        var p = n("GaA7"),
+            m = n("aepO"),
+            g = n("CmBE"),
+            f = n("n5GS"),
+            b = n("Kwur"),
+            h = n("SGsN"),
+            v = n("svjy"),
+            w = n("GDNt"),
+            y = n("IDma"),
+            I = n("BHyM");
+        let k = new WeakMap;
+        var x = n("d58w"),
+            C = n("Nu9C"),
+            A = n("E8Sp"),
+            S = n("g2p6"),
+            E = n("X6Vn"),
+            P = n("liTb"),
+            T = n("S3zc"),
+            M = n("riYK"),
+            O = n("dQRk"),
+            j = n("nlNF"),
+            L = n("lM2P");
+        let B = new Set(["enterprise_dot_provisioned_home_takeover", "enterprise_dot_provisioned_work_takeover", "dot_retention_home_takeover", "dot_retention_work_takeover"]);
+
+        function N(e, t) {
+            let a = e.action_v2;
+            switch (a.action_enum) {
+                case "authenticate_login":
+                case "authenticate_signup":
+                    if ("link" === t.source) return {
+                        status: "unsupported"
+                    };
+                    return {
+                        status: "supported", handler: async () => {
+                            let {
+                                runBeaconAuthentication: o
+                            } = await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(840485)]).then(n.bind(n, "wxD9")), i = t.beacon.custom_fields?.benefit_id;
+                            return await o(t.scope, {
+                                screenHint: "authenticate_login" === a.action_enum ? "login" : "signup",
+                                mode: "modal" === a.auth_navigation_mode ? "modal" : "redirect",
+                                callbackPath: t.currentPath ?? "/",
+                                cta: e.id,
+                                beaconId: t.beacon.beacon_id,
+                                beaconBenefitId: "no_auth_login_upsell_banner" === t.beacon.beacon_id && "string" == typeof i && L.a.has(i) ? i : void 0,
+                                navigate: t.navigate
+                            }), !0
+                        }
+                    };
+                case "open_enterprise_value_survey_modal": {
+                    let e = t.scope.get(i.f),
+                        o = t.scope.get(i.k),
+                        r = t.scope.get(i.j);
+                    if (null == e || null == o || null == r || !(0, y.a)(t.scope, e, o)) return {
+                        status: "unavailable"
+                    };
+                    return {
+                        status: "supported",
+                        handler: async () => {
+                            let s, {
+                                    loadEnterpriseSurveyDialog: l
+                                } = await n.e(219902).then(n.bind(n, "cyRY")),
+                                c = await l();
+                            if (!(0, y.a)(t.scope, e, o) || t.scope.get(i.j) !== r) return !1;
+                            let u = () => {
+                                s?.(), s = void 0
+                            };
+                            return (0, E.f)(t.scope, c, {
+                                accountId: e,
+                                userId: r,
+                                surveyId: a.survey_id,
+                                surveyName: a.survey_name,
+                                surveyType: a.survey_type,
+                                onClose: u
+                            }), s = t.scope.watch(t => {
+                                (0, E.d)(t, c) ? (0, y.a)(t, e, o) && t.get(i.j) === r || ((0, E.b)(t, c), u()): u()
+                            }), !0
+                        }
+                    }
+                }
+                case "open_dot_with_draft": {
+                    if ("link" === t.source || !B.has(t.beacon.beacon_id) || "beacon_homepage_takeover_info" !== t.beacon.ui_info.type || "primary" !== e.type) return {
+                        status: "unsupported"
+                    };
+                    let n = t.eventAccountId,
+                        o = t.scope.get(i.m);
+                    if (o.authLoading || o.accountLoading) return {
+                        status: "pending"
+                    };
+                    let r = o.userId;
+                    if (null == n || null == r || o.authenticatedUserId !== r || !(0, y.a)(t.scope, n, r)) return {
+                        status: "unavailable"
+                    };
+                    return {
+                        status: "supported",
+                        handler: async () => {
+                            if (t.isCurrentPresentation?.() === !1 || t.scope.get(i.m).authenticatedUserId !== r || !(0, y.a)(t.scope, n, r)) return !1;
+                            let e = (0, P.f)(a.dot_id);
+                            return (0, A.d)(t.scope, e, {
+                                state: t.eventMetadata?.suppressLifecycle === !0 ? void 0 : {
+                                    prefillPrompt: a.prompt,
+                                    prefillPromptOnlyIfEmpty: !0,
+                                    focusComposerNonce: Date.now()
+                                }
+                            })
+                        }
+                    }
+                }
+                case "open_pepper_onboarding_modal": {
+                    let e = t.scope.get(i.l),
+                        n = t.scope.get(S.n);
+                    if ("loading" === e.status) return {
+                        status: "pending"
+                    };
+                    if ("allowed" !== e.status || !("accountId" in e) || "personal" !== e.accountStructure || e.accountId !== n || null == n) return {
+                        status: "unavailable"
+                    };
+                    return {
+                        status: "supported",
+                        handler: async () => {
+                            let e = await (0, C.b)();
+                            return t.scope.get(S.n) === n && ((0, E.f)(t.scope, e, {
+                                accountId: n
+                            }), !0)
+                        }
+                    }
+                }
+                case "age_verification": {
+                    let e = t.scope.get(i.l),
+                        a = t.scope.get(S.n);
+                    if ("loading" === e.status) return {
+                        status: "pending"
+                    };
+                    if ("allowed" !== e.status || !("accountId" in e) || "personal" !== e.accountStructure || e.accountId !== a || null == a) return {
+                        status: "unavailable"
+                    };
+                    return {
+                        status: "supported",
+                        handler: async () => {
+                            if (t.scope.get(S.n) !== a) return !1;
+                            let {
+                                startAgeVerification: e
+                            } = await n.e(849638).then(n.bind(n, "rNxM")), o = t.scope.get(i.l);
+                            return t.scope.get(S.n) === a && "allowed" === o.status && "accountId" in o && "personal" === o.accountStructure && o.accountId === a && new Promise(n => {
+                                let o, i, r = !1,
+                                    s = () => {
+                                        r || (r = !0, o?.())
+                                    },
+                                    l = e => {
+                                        i?.(), i = void 0, n(e)
+                                    };
+                                o = e({
+                                    accountId: a,
+                                    onLoad: () => {
+                                        t.scope.get(S.n) !== a ? (s(), l(!1)) : n(!0)
+                                    },
+                                    onComplete: () => l(!0),
+                                    onCancel: () => l(!1),
+                                    onError: () => l(!1)
+                                }), i = t.scope.watch(e => {
+                                    let {
+                                        get: t
+                                    } = e;
+                                    return t(S.n) !== a && (s(), l(!1)), s
+                                })
+                            })
+                        }
+                    }
+                }
+                default:
+                    return "link" === t.source ? function(e, t) {
+                        let a = e.action_v2;
+                        if ("share_conversation" !== a.action_enum && "open_connector_oauth_modal" !== a.action_enum && "open_pca_connector_auth_modal" !== a.action_enum) return {
+                            status: "unsupported"
+                        };
+                        let {
+                            scope: o,
+                            conversation: r
+                        } = t, s = o.get(i.f), l = o.get(i.k), c = o.get(j.c), u = () => null != s && (0, y.a)(o, s, l) && o.get(j.c) === c && (t.isCurrentPresentation?.() ?? !0);
+                        if (!t.allowExternalActions || !u()) return {
+                            status: "unavailable"
+                        };
+                        if ("share_conversation" === a.action_enum) {
+                            if (null == r || !r.allowSharing || r.isTemporaryChat || (0, O.Bb)(o.get(O.ab, r.conversationId))) return {
+                                status: "unavailable"
+                            };
+                            let n = o.get(M.a, r.conversationId);
+                            if (null == n) return {
+                                status: "pending"
+                            };
+                            let i = o.get(O.j, r.conversationId);
+                            if (!n || null == i || a.conversation_id !== i || 0 === a.current_node_id.trim().length) return {
+                                status: "unavailable"
+                            };
+                            let s = (0, M.b)({
+                                scope: o,
+                                canShare: !0,
+                                conversationId: i,
+                                source: "link" === t.source ? "CHATGPT_SHARE_FLOW_SOURCE_MESSAGE_INLINE_ACTION" : "CHATGPT_SHARE_FLOW_SOURCE_BEACON"
+                            });
+                            return null == s ? {
+                                status: "unavailable"
+                            } : {
+                                status: "supported",
+                                handler: async () => !!u() && s(e)
+                            }
+                        }
+                        if (!("connector_id" in a) || "string" != typeof a.connector_id || 0 === a.connector_id.trim().length) return {
+                            status: "unavailable"
+                        };
+                        let _ = a.connector_id;
+                        if ("open_pca_connector_auth_modal" === a.action_enum) {
+                            if ("link" !== t.source && null == r) return {
+                                status: "unavailable"
+                            };
+                            if ("link" === t.source && !1 !== a.trigger_turn_after_link) return {
+                                status: "unsupported"
+                            };
+                            let e = o.get(T.b, [_]);
+                            if (e.isLoading) return {
+                                status: "pending"
+                            };
+                            if (e.isError || e.data?.has(_) !== !0) return {
+                                status: "unavailable"
+                            }
+                        }
+                        return {
+                            status: "supported",
+                            handler: async () => {
+                                let e;
+                                if (!u()) return !1;
+                                let [{
+                                    CodexAppHomeBeaconConnectModal: i
+                                }, {
+                                    createChatGptPcaConnectorBeaconResumeTarget: d
+                                }] = await Promise.all([Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(707645)]).then(n.bind(n, "ktQc")), Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(574598)]).then(n.bind(n, "p4uj"))]);
+                                if (!u() || "open_pca_connector_auth_modal" === a.action_enum && o.get(T.b, [_]).data?.has(_) !== !0) return !1;
+                                let p = "open_pca_connector_auth_modal" === a.action_enum && "link" !== t.source && null != r ? d(o, {
+                                    connectorId: _,
+                                    conversationId: r.conversationId,
+                                    includeConnectorSystemHint: !1 !== a.include_connector_system_hint_after_link,
+                                    triggerTurnAfterLink: !1 !== a.trigger_turn_after_link
+                                }) : void 0;
+                                return ("open_pca_connector_auth_modal" !== a.action_enum || "link" === t.source || null != p) && ((0, E.f)(o, i, {
+                                    connectorId: _,
+                                    pcaResumeTarget: p ?? void 0,
+                                    oauthReferrer: "link" === t.source ? "composer" : "home_beacon",
+                                    onOpenChange: e => {
+                                        e || (0, E.b)(o, i)
+                                    }
+                                }, {
+                                    onDispose: () => e?.()
+                                }), e = o.watch(n => {
+                                    (0, E.d)(n, i) ? null != s && (0, y.a)(n, s, l) && n.get(j.c) === c && t.isCurrentPresentation?.() !== !1 || ((0, E.b)(n, i), e?.()): e?.()
+                                }), (0, E.d)(o, i) || e(), !0)
+                            }
+                        }
+                    }(e, t) : {
+                        status: "unsupported"
+                    }
+            }
+        }
+        var H = n("jqIZ"),
+            R = n("aTcy"),
+            U = n("G4Vg"),
+            D = n("DVML"),
+            q = n("LjYy"),
+            V = n("ESoo"),
+            z = n("nInK"),
+            G = n("f5h2"),
+            W = n("AVl4"),
+            K = n("lg1r"),
+            $ = n("aoML"),
+            F = n("RJnh"),
+            Y = n("aqNX");
+        let Q = Symbol("beacon-action-support-pending"),
+            X = Symbol("beacon-action-unavailable");
+
+        function Z(e, t) {
+            let n = ee(e, t);
+            return "supported" === n.status ? n.handler : void 0
+        }
+
+        function J(e, t) {
+            return "get_pro" !== e.action_v2.action_enum || null == e.action_v2.pro_offer || "upgradeAccountId" in t || null == t.featureAccessInputs ? ee(e, t).status : ee(e, {
+                ...t,
+                upgradeAccountId: (0, $.b)(t.featureAccessInputs)
+            }).status
+        }
+
+        function ee(e, t) {
+            var n;
+            let g = e.action_v2,
+                C = g.action_enum;
+            if (null == C || "dropdown" === C || ("send_prompt" === C || "start_spark" === C) && "primary" !== e.type || "open_dot_texting_setup" === C && ("link" === t.source || t.eventMetadata?.conversationId == null)) return {
+                status: "unsupported"
+            };
+            if (("enable_web_push" === C || "enable_web_push_and_responses_push" === C) && !(0, c.a)()) return {
+                status: "unavailable"
+            };
+            if ("create_presence_session" === g.action_enum) return "link" === t.source ? {
+                status: "unsupported"
+            } : (0, W.b)(e, t);
+            if ("enable_codex_fast_mode" === C && ("link" === t.source || 1) || ("open_connector_oauth_modal" === C || "open_pca_connector_auth_modal" === C) && 0 === g.connector_id.trim().length) return {
+                status: "unsupported"
+            };
+            let A = "get_pro" === C ? g : void 0,
+                S = A?.pro_offer != null && "link" !== (n = t).source && null != n.appBaseUrl && "beacon_banner_info" === n.beacon.ui_info.type && ["homepage", "work_tab_home"].includes(n.analyticsContext?.placement ?? "") ? (0, U.f)(n.currentPath) : null,
+                E = "link" === t.source ? null : (0, _.a)(t.beacon, e);
+            if ("get_go" === C || "get_plus" === C || "get_pro" === C || "get_team" === C) {
+                if ("link" === t.source && "checkout_mode" in g && "direct" === g.checkout_mode || !(A?.pro_offer == null ? (0, $.d)(e, t, E ?? void 0) : null != S)) return {
+                    status: "unsupported"
+                };
+                if ("upgradeAccountId" in t && null == t.upgradeAccountId || !t.allowExternalActions || !(0, $.f)(t.upsellHoldoutLayer, "link" === t.source ? "conversation_followup_shelf_link" : t.beacon)) return {
+                    status: "unavailable"
+                }
+            }
+            if ("invite_domain_members" === C && ("link" === t.source || !(0, I.b)(t.beacon.beacon_id, t.headerConfirmation) || "beacon_modal_info" !== t.beacon.ui_info.type)) return {
+                status: "unsupported"
+            };
+            let P = t.getActionOverride?.(e);
+            if (P === Q) return {
+                status: "pending"
+            };
+            if (P === X) return {
+                status: "unavailable"
+            };
+            if (null === P) return {
+                status: "unsupported"
+            };
+            if (A?.pro_offer != null && null != S) return function(e, t, n, a) {
+                let {
+                    userId: o,
+                    accountId: r
+                } = n.scope.get(i.m);
+                return null == o || null == r || r !== n.upgradeAccountId || null != n.eventAccountId && n.eventAccountId !== r ? {
+                    status: "unavailable"
+                } : {
+                    status: "supported",
+                    handler: async () => ((function(e, t, n, a, o) {
+                        let i = new URL(a, "https://chatgpt.com"),
+                            r = new URL((0, R.v)(q.a.PROLITE));
+                        for (let [e, t] of(i.searchParams.delete("pro_variant"), r.searchParams)) i.searchParams.set(e, t);
+                        let s = {
+                            accountId: t.accountId,
+                            checkoutMode: "pricing",
+                            promoCampaignId: null,
+                            returnPath: a,
+                            sourceThreadId: null,
+                            targetPlan: q.a.PRO,
+                            upsellContextId: o
+                        };
+                        e.navigate((0, U.c)((0, H.y)((0, D.b)(i)), s), {
+                            beaconUpgrade: s,
+                            ..."direct" === n && {
+                                beaconProPlanChange: t
+                            },
+                            returnPath: a
+                        })
+                    })(n, {
+                        accountId: r,
+                        userId: o
+                    }, e.checkout_mode, a, t ?? null), !0)
+                }
+            }(A.pro_offer, A.upsell_context_id, t, S);
+            let T = P ?? t.actionOverrides?.[C];
+            if (null != T) return {
+                status: "supported",
+                handler: async () => "link" === t.source ? T(e, void 0, "link") : T(e, {
+                    beacon: t.beacon,
+                    eventMetadata: t.eventMetadata,
+                    isCurrentPresentation: t.isCurrentPresentation,
+                    onPresentationInvalidated: t.onPresentationInvalidated,
+                    useExternalBrowser: t.useExternalBrowser
+                })
+            };
+            switch (g.action_enum) {
+                case void 0:
+                case "dropdown":
+                case "send_workspace_invite":
+                default:
+                    return {
+                        status: "unsupported"
+                    };
+                case "copy_to_clipboard":
+                    return {
+                        status: "supported", handler: async e => {
+                            let n = "link" === t.source ? g.copy_text : g.copy_text.trim().replace(/^\$\s*/, "");
+                            return (0, m.c)(n, e)
+                        }
+                    };
+                case "dismiss":
+                    if (g.composer_text && null == t.onComposerText) return {
+                        status: "unsupported"
+                    };
+                    return {
+                        status: "supported", handler: async () => t.beacon?.beacon_id === "violence_interstitial_modal_beacon" && "violence_interstitial_close" === e.id ? (t.navigate("/", void 0, !0), !0) : (g.composer_text && t.onComposerText?.(g.composer_text), t.beacon?.custom_fields?.dismiss_action_behavior !== "dismiss" || (t.onDismiss(), !1))
+                    };
+                case "get_go":
+                case "get_plus":
+                case "get_pro":
+                case "get_team":
+                    if ("link" === t.source) return {
+                        status: "supported",
+                        handler: async () => (0, $.e)(e, t)
+                    };
+                    return {
+                        status: "supported", handler: async () => {
+                            if (null == t.upgradeAccountId || null == t.appBaseUrl || null == t.currentPath) return !1;
+                            let n = "get_pro" === g.action_enum ? (0, d.c)(g.rejoin_pro_cta_variant) : void 0,
+                                a = null == n ? null : (0, d.b)(t.scope.get(i.m), t.upgradeAccountId),
+                                r = null == E ? null : t.scope.get(i.m);
+                            if (null != E && (r?.authMethod !== "chatgpt" || r.authLoading || r.accountLoading || !0 !== r.hasChatGptToken || r.accountId !== t.upgradeAccountId || r.authenticatedAccountId !== t.upgradeAccountId || t.requestIdentity?.accountId !== t.upgradeAccountId || t.requestIdentity?.userId == null || t.requestIdentity.userId !== r.authenticatedUserId || null == r.userId)) return !1;
+                            let s = null != E && r?.plan === "go" && null != r.authenticatedUserId && !(0, _.b)() && (0, _.c)(t.scope.query.getData(o.b, t.upgradeAccountId)?.accounts[t.upgradeAccountId]),
+                                l = (0, $.c)(e, {
+                                    accountId: t.upgradeAccountId,
+                                    appBaseUrl: t.appBaseUrl,
+                                    currentPath: t.currentPath,
+                                    eventMetadata: t.eventMetadata,
+                                    rejoinPro: null != n && null != a && a.accountId === t.requestIdentity?.accountId && a.userId === t.requestIdentity.userId ? (0, d.a)({
+                                        ...a,
+                                        variant: n
+                                    }) : void 0,
+                                    goRejoinPlusTreatment: E ?? void 0
+                                });
+                            if (null == l) return !1;
+                            if (l.deferCompletion) {
+                                let n = (0, x.c)({
+                                    accountId: t.upgradeAccountId,
+                                    action: e,
+                                    analyticsContext: t.analyticsContext,
+                                    beacon: t.beacon,
+                                    eventMetadata: t.eventMetadata
+                                });
+                                return null != n && (t.navigate(l.href, {
+                                    beaconUpgrade: l.intent,
+                                    [x.a]: n
+                                }), !1)
+                            }
+                            return t.navigate(l.href, {
+                                beaconUpgrade: l.intent,
+                                ...null == l.rejoinPro ? {} : {
+                                    rejoinPro: l.rejoinPro
+                                },
+                                ...s && r?.userId != null ? {
+                                    goRejoinPlus: {
+                                        accountId: t.upgradeAccountId,
+                                        userId: r.userId,
+                                        requestUserId: r.authenticatedUserId,
+                                        treatment: E
+                                    }
+                                } : {}
+                            }), !0
+                        }
+                    };
+                case "open_local_url":
+                case "open_url": {
+                    if ("link" !== t.source && (0, V.a)(e, t.beacon)) return t.allowExternalActions ? {
+                        status: "supported",
+                        handler: async () => (0, V.b)(e, t)
+                    } : {
+                        status: "unavailable"
+                    };
+                    if ("open_local_url" === g.action_enum && !0 === g.trigger_turn) return {
+                        status: "unsupported"
+                    };
+                    let n = (0, f.b)(e, t);
+                    if (null != n) return n;
+                    let o = (0, F.b)(e);
+                    if (null == o || !t.allowExternalActions && !(0, F.f)(o)) return null == o ? {
+                        status: "unsupported"
+                    } : {
+                        status: "unavailable"
+                    };
+                    if ((0, G.a)(e) && (!t.allowExternalActions || null == p.a.systemPermissions)) return {
+                        status: "unavailable"
+                    };
+                    if ((0, F.i)(e)) {
+                        let e = t.scope.get(a.a, {
+                            name: "chatgpt.workspace-discovery"
+                        });
+                        if (e.isLoading) return {
+                            status: "pending"
+                        };
+                        if (!e.isCapable) return {
+                            status: "unavailable"
+                        }
+                    }
+                    if ("open_local_url" === g.action_enum && (null != (0, r.a)(o) || null != (0, K.a)(o)) && !t.allowExternalActions) return {
+                        status: "unavailable"
+                    };
+                    return {
+                        status: "supported",
+                        handler: n => (0, z.b)(e, t, o, n)
+                    }
+                }
+                case "open_work_tab":
+                    if (!(0, u.h)(t.scope)) return {
+                        status: "unavailable"
+                    };
+                    return {
+                        status: "supported", handler: async () => {
+                            let e = await (0, Y.a)(t.scope, t.isCurrentPresentation);
+                            if (null == e) return !1;
+                            let {
+                                model: n
+                            } = e;
+                            if (null != n) {
+                                let e = (0, s.g)(t.scope, []);
+                                (0, l.f)(t.scope, e, n), (0, u.m)(t.scope, "work"), t.navigate("/", {
+                                    focusComposerNonce: Date.now(),
+                                    initialChatGptConversationId: e
+                                })
+                            } else(0, u.m)(t.scope, "work"), t.navigate("/");
+                            return !0
+                        }
+                    };
+                case "send_prompt":
+                    if (null == t.onSendPrompt) return {
+                        status: "unsupported"
+                    };
+                    return {
+                        status: "supported", handler: async () => await t.onSendPrompt?.(g.prompt) !== !1
+                    };
+                case "enable_web_push":
+                    return {
+                        status: "supported", handler: c.c
+                    };
+                case "enable_web_push_and_responses_push":
+                    return t.allowExternalActions ? {
+                        status: "supported",
+                        handler: function(e) {
+                            let {
+                                scope: t,
+                                accountId: n,
+                                accountUserId: a,
+                                onPermissionDenied: o
+                            } = e;
+                            return async () => {
+                                let e = t.get(i.m),
+                                    r = e.authenticatedUserId,
+                                    s = () => (0, y.a)(t, n, e.userId) && t.get(i.m).accountUserId === a;
+                                if (null == r || !s() || t.get(i.b)) return !1;
+                                try {
+                                    if (!await (0, c.c)()) {
+                                        if (!(0, c.a)()) return o(), !1;
+                                        throw Error("Notification registration failed")
+                                    }
+                                    if (await b.Request.safePatch("/notifications/settings", {
+                                            expectedIdentity: {
+                                                accountId: n,
+                                                userId: r
+                                            },
+                                            requestBody: {
+                                                updates: {
+                                                    responses: {
+                                                        push: !0
+                                                    }
+                                                }
+                                            },
+                                            signal: AbortSignal.timeout(1e4)
+                                        }), !s()) return !1;
+                                    let e = ["chatgpt-notification-settings", r, n];
+                                    if (await t.queryClient.cancelQueries({
+                                            queryKey: e,
+                                            exact: !0
+                                        }), !s()) return !1;
+                                    return t.queryClient.invalidateQueries({
+                                        queryKey: e,
+                                        exact: !0
+                                    }), !0
+                                } catch {
+                                    return s() && (0, G.b)(t), !1
+                                }
+                            }
+                        }({
+                            scope: t.scope,
+                            accountId: g.account_id,
+                            accountUserId: g.account_user_id,
+                            onPermissionDenied: () => t.onActionComplete?.(e)
+                        })
+                    } : {
+                        status: "unavailable"
+                    };
+                case "start_voice":
+                    if (null == t.onStartVoice) return {
+                        status: "unsupported"
+                    };
+                    return {
+                        status: "supported", handler: async () => await t.onStartVoice?.() !== !1
+                    };
+                case "invite_domain_members":
+                    return "link" === t.source ? {
+                        status: "unsupported"
+                    } : function(e, t) {
+                        let n = e.action_v2;
+                        if ("invite_domain_members" !== n.action_enum || !(0, I.b)(t.beacon.beacon_id, t.headerConfirmation) || "beacon_modal_info" !== t.beacon.ui_info.type) return {
+                            status: "unsupported"
+                        };
+                        let {
+                            scope: a,
+                            beacon: o
+                        } = t, r = t.featureAccessInputs, {
+                            account_id: s
+                        } = n;
+                        if (null == r || r.authLoading || r.accountLoading) return {
+                            status: "pending"
+                        };
+                        let l = r.authenticatedUserId,
+                            c = () => (0, y.a)(a, s, r.userId) && a.get(i.m).authenticatedUserId === l,
+                            u = () => c() && (t.isCurrentPresentation?.() ?? !0);
+                        return null == l || "chatgpt" !== r.authMethod || r.accountId !== s || r.authenticatedAccountId !== s || null != t.eventAccountId && t.eventAccountId !== s ? {
+                            status: "unavailable"
+                        } : {
+                            status: "supported",
+                            handler: async () => {
+                                if (!u()) return !1;
+                                let n = k.get(a);
+                                null == n && (n = new WeakMap, k.set(a, n));
+                                let i = n.get(o);
+                                null == i && (i = new Set, n.set(o, i));
+                                let r = JSON.stringify([s, l]);
+                                if (i.has(r)) return !1;
+                                i.add(r);
+                                let _ = a.get(v.a);
+                                try {
+                                    let n = b.Request.safePost("/referrals/workspace/domain-members/invite", {
+                                        requestBody: t.headerConfirmation?.request,
+                                        expectedIdentity: {
+                                            accountId: s,
+                                            userId: l
+                                        },
+                                        retry: "never"
+                                    });
+                                    t.headerConfirmation?.onRequestStarted?.(n);
+                                    let o = await n,
+                                        i = c();
+                                    if (null != t.headerConfirmation && !i) return !1;
+                                    let r = i && (t.isCurrentPresentation?.() ?? !0);
+                                    if (r && (o.failed_invite_count > 0 ? a.get(h.f).info(_.formatMessage({
+                                            id: "chatgpt.beacons.business_domain_members.toast.incomplete_unconfirmed",
+                                            defaultMessage: "Some invitations weren't confirmed."
+                                        })) : a.get(h.f).success(_.formatMessage({
+                                            id: "chatgpt.beacons.business_domain_members.toast.success",
+                                            defaultMessage: "{count, plural, =0 {Your coworkers are already invited.} one {# coworker invited.} other {# coworkers invited.}}"
+                                        }, {
+                                            count: o.accepted_invite_count
+                                        }))), null != t.headerConfirmation && 0 === o.accepted_invite_count) return r && t.onActionComplete?.(e), !1;
+                                    return {
+                                        didComplete: !0,
+                                        eventAccountId: s,
+                                        shouldResolve: r
+                                    }
+                                } catch (n) {
+                                    if (null != t.headerConfirmation && n instanceof w.a && 412 === n.responseStatus) return u() && (a.get(h.f).info(_.formatMessage({
+                                        id: "chatgpt.businessTeamInviteHeader.previewChanged",
+                                        defaultMessage: "The list of eligible teammates changed. Review the updated invitation before sending."
+                                    })), t.headerConfirmation.onPreviewChanged()), !1;
+                                    if (n instanceof w.a && "network" !== n.errorKind && null != n.responseStatus && [400, 401, 403, 422].includes(n.responseStatus)) return i.delete(r), u() && a.get(h.f).danger(_.formatMessage({
+                                        id: "chatgpt.beacons.business_domain_members.toast.rejected",
+                                        defaultMessage: "Invitations weren't sent. Please try again."
+                                    }), {
+                                        errorAnalytics: {
+                                            toastId: "chatgpt.beacons.business_domain_members.toast.rejected"
+                                        }
+                                    }), !1;
+                                    return u() && (a.get(h.f).danger(_.formatMessage({
+                                        id: "chatgpt.beacons.business_domain_members.toast.error_unconfirmed",
+                                        defaultMessage: "We couldn't confirm all invitations."
+                                    }), {
+                                        errorAnalytics: {
+                                            toastId: "chatgpt.beacons.business_domain_members.toast.error"
+                                        }
+                                    }), t.onActionComplete?.(e)), !1
+                                }
+                            }
+                        }
+                    }(e, t);
+                case "open_dot_with_draft":
+                case "open_pepper_onboarding_modal":
+                case "age_verification":
+                case "authenticate_login":
+                case "authenticate_signup":
+                case "open_enterprise_value_survey_modal":
+                    return N(e, t);
+                case "activate_feature_trial":
+                case "citron_disable":
+                case "citron_enable":
+                case "codex_download_email":
+                case "connect_finances_and_send_work_prompt":
+                case "connect_ledger_accounts":
+                case "create_prompt":
+                case "enable_workspace_auto_join":
+                case "enable_codex_fast_mode":
+                case "file_upload":
+                case "free_thinking_sample_regenerate":
+                case "install_mobile_widget":
+                case "install_plugin":
+                case "invite_team_members":
+                case "open_claim_business_workspace_modal":
+                case "open_connector_oauth_modal":
+                case "open_connectors_onboarding_modal":
+                case "open_dot_texting_setup":
+                case "open_external_agent_import":
+                case "open_pca_connector_auth_modal":
+                case "open_work_tab_and_send_prompt":
+                case "photo_upload":
+                case "regenerate":
+                case "request_account_team_contact":
+                case "request_premium_seat":
+                case "request_workspace_upgrade_seat":
+                case "request_workspace_credits":
+                case "set_atlas_as_default_browser":
+                case "share_conversation":
+                case "share_group_chat":
+                case "share_location":
+                case "share_message_slice":
+                case "start_jobs_mock_interview_voice":
+                case "start_spark":
+                case "submit_personalized_information_questionnaire_feedback":
+                case "system_hint":
+                case "update_model_picker":
+                case "update_personality_trait":
+                case "update_user_personalization_setting":
+                    return "link" === t.source ? N(e, t) : {
+                        status: "unsupported"
+                    }
+            }
+        }
+
+        function et(e) {
+            return null != (0, g.d)(e)
+        }
+
+        function en(e) {
+            return ("primary" === e.type || "secondary" === e.type) && "submit_personalized_information_questionnaire_feedback" !== e.action_v2.action_enum
+        }
+    }),
+    CmBE: (function(e, t, n) {
+        function a(e) {
+            let t = e.text ?? ("copy_to_clipboard" === e.action_v2.action_enum ? e.action_v2.text : e.id);
+            return null == t || 0 === t.trim().length ? null : t
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                return "accent" === e.appearance ? "accent" : null == e.type || "primary" === e.type ? "primary" : "secondary"
+            },
+            b: function(e) {
+                return "authUpsell" === e ? "authUpsell" : "takeover" === e || "takeoverHero" === e ? "takeoverHero" === e ? "takeoverHeroAction" : "large" : "workNux" === e || "tasksNux" === e ? "workNux" : "expressiveModal" === e || "cloudWelcome" === e ? "expressiveBeaconAction" : "equalWeightModal" === e ? "onboardingAction" : "modal" === e ? "beaconAction" : "banner" === e ? "dialog" : "inline" === e ? "composerSm" : "beaconCarousel"
+            },
+            c: function(e) {
+                return a(e)
+            },
+            d: a
+        })
+    }),
+    SPzj: (function(e, t, n) {
+        var a = n("mBJV"),
+            o = n("b2Wp"),
+            i = n("BolX"),
+            r = n("U861");
+        n("mmXj");
+        var s = n("yGJW"),
+            l = n("OWtl"),
+            c = n("ycSk"),
+            u = n("ytyy");
+        let _ = {
+                click: "CHATGPT_BEACON_LIFECYCLE_ACTION_CLICK",
+                closed_without_dismiss: "CHATGPT_BEACON_LIFECYCLE_ACTION_CLOSED_WITHOUT_DISMISS",
+                composer_tip_presented: "CHATGPT_BEACON_LIFECYCLE_ACTION_COMPOSER_TIP_PRESENTED",
+                dismiss: "CHATGPT_BEACON_LIFECYCLE_ACTION_DISMISS",
+                ignored: "CHATGPT_BEACON_LIFECYCLE_ACTION_IGNORED",
+                impression: "CHATGPT_BEACON_LIFECYCLE_ACTION_IMPRESSION"
+            },
+            d = {
+                codex_home: "CHATGPT_BEACON_PLACEMENT_CODEX_HOME",
+                homepage: "CHATGPT_BEACON_PLACEMENT_HOMEPAGE",
+                in_conversation: "CHATGPT_BEACON_PLACEMENT_IN_CONVERSATION",
+                work_tab_home: "CHATGPT_BEACON_PLACEMENT_WORK_TAB_HOME"
+            },
+            p = {
+                chat: "CHATGPT_BEACON_PRODUCT_EXPERIENCE_CHAT",
+                work: "CHATGPT_BEACON_PRODUCT_EXPERIENCE_WORK"
+            },
+            m = {
+                container: "CHATGPT_BEACON_UI_TREATMENT_CONTAINER",
+                banner: "CHATGPT_BEACON_UI_TREATMENT_BANNER",
+                conversation_inline: "CHATGPT_BEACON_UI_TREATMENT_CONVERSATION_INLINE",
+                homepage_takeover: "CHATGPT_BEACON_UI_TREATMENT_HOMEPAGE_TAKEOVER",
+                modal: "CHATGPT_BEACON_UI_TREATMENT_MODAL",
+                tooltip: "CHATGPT_BEACON_UI_TREATMENT_TOOLTIP"
+            },
+            g = (0, i.u)(l.a, () => new Set),
+            f = (0, i.u)(l.a, () => new Set);
+
+        function b(e) {
+            return "beacon_tooltip_info" === e.ui_info.type || "beacon_container_info" === e.ui_info.type ? "tooltip" : "beacon_banner_info" === e.ui_info.type ? "banner" : "beacon_homepage_takeover_info" === e.ui_info.type ? "homepage_takeover" : "beacon_conversation_inline_info" === e.ui_info.type ? "conversation_inline" : "modal"
+        }
+
+        function h(e, t) {
+            let {
+                beaconId: n,
+                diagnostic: a,
+                placement: i,
+                suppressLifecycle: l,
+                treatment: c
+            } = t;
+            if (!0 === l || (0, r.e)(n)) return;
+            let u = v(n),
+                _ = "malformed_action_payload" === a.reason ? "unknown" : v(a.actionId),
+                p = "malformed_action_payload" === a.reason ? "unknown" : v(a.actionEnum),
+                g = [i, c, u, _, p, a.reason].join(":");
+            e.get(f).has(g) || (e.set(f, e => {
+                let t = new Set(e);
+                for (t.add(g); t.size > 256;) {
+                    let e = t.values().next().value;
+                    if (null == e) break;
+                    t.delete(e)
+                }
+                return t
+            }), (0, s.a)(e, o.CodexBeaconsActionUnsupported, {
+                actionEnum: p,
+                actionId: _,
+                beaconId: u,
+                beaconType: m[c],
+                placement: d[i],
+                reason: a.reason,
+                actionIndex: a.actionIndex?.toString()
+            }))
+        }
+
+        function v(e) {
+            let t = e.replace(/[^a-zA-Z0-9_.:-]/g, "_").slice(0, 128);
+            return 0 === t.length ? "unknown" : t
+        }
+
+        function w(e, t, n) {
+            e.get(s.c).logProductEvent(o.CodexBeaconsQuestionnaireAction, {
+                action: {
+                    answer_submitted: o.CodexBeaconsQuestionnaireActionType.CODEX_BEACONS_QUESTIONNAIRE_ACTION_TYPE_ANSWER_SUBMITTED,
+                    dismissed: o.CodexBeaconsQuestionnaireActionType.CODEX_BEACONS_QUESTIONNAIRE_ACTION_TYPE_DISMISSED,
+                    shown: o.CodexBeaconsQuestionnaireActionType.CODEX_BEACONS_QUESTIONNAIRE_ACTION_TYPE_SHOWN
+                } [t],
+                conversationContextType: n.conversation_context_type,
+                questionId: n.question_id,
+                questionnaireId: n.questionnaire_id,
+                surface: n.surface
+            })
+        }
+        n.d(t, {}, {
+            a: b,
+            b: function(e, t) {
+                let {
+                    action: n,
+                    actionId: o,
+                    actionType: i,
+                    beacon: l,
+                    destinationAction: g,
+                    copyVariant: f,
+                    expectedAccountId: b,
+                    placement: h,
+                    productExperience: v,
+                    suppressLifecycle: w,
+                    treatment: y,
+                    viewLatencyMs: I,
+                    visibilityDurationMs: k
+                } = t;
+                if (!0 === w || (0, r.e)(l.beacon_id)) return;
+                "impression" === n && ["android_mweb_image_turn_app_upsell", "android_mweb_conversation_turn_app_upsell", "android_mweb_paid_conversation_turn_app_upsell", "android_mweb_contextual_app_upsell", "mweb_app_install_turn_count"].includes(l.beacon_id) && (0, c.a)(e);
+                let x = {
+                    action: _[n],
+                    actionId: o,
+                    actionType: "click" === n ? i ?? "unknown" : void 0,
+                    beaconId: l.beacon_id,
+                    beaconName: l.beacon_name ?? "unknown",
+                    copyVariant: f ?? (0, u.b)(l)?.copyVariant,
+                    benefitId: ("click" === n || "impression" === n && "conversation_inline" === y) && "string" == typeof l.custom_fields?.benefit_id ? l.custom_fields.benefit_id : void 0,
+                    destinationAction: g,
+                    placement: d[h],
+                    productExperience: null == v ? void 0 : p[v],
+                    uiTreatment: m[y],
+                    viewLatencyMs: null == I ? void 0 : String(I),
+                    visibilityDurationMs: null == k ? void 0 : String(k)
+                };
+                null == b ? (0, s.a)(e, a.g, x) : (0, s.a)(e, a.g, x, void 0, void 0, {
+                    expectedAccountId: b
+                }), l.onLifecycle?.(e, {
+                    action: n,
+                    actionId: o
+                })
+            },
+            c: function(e, t, n) {
+                e.get(s.c).logProductEvent(o.CodexBeaconsFooterLinkClicked, {
+                    beaconId: t.beacon_id,
+                    linkId: n.id
+                })
+            },
+            d: function(e, t, n) {
+                if ((0, r.e)(t.beacon_id)) return;
+                let a = Array.from(n).sort().join(",");
+                if (0 === a.length) return;
+                let i = [t.beacon_id, "beacons", a].join(":");
+                e.get(g).has(i) || (e.set(g, e => {
+                    let t = new Set(e);
+                    return t.add(i), t
+                }), (0, s.a)(e, o.CodexBeaconsPageContextSuppressed, {
+                    beaconId: t.beacon_id,
+                    beaconName: t.beacon_name,
+                    uiTreatment: m[b(t)],
+                    pageContextClaims: a
+                }))
+            },
+            e: function(e, t, n) {
+                if ((0, r.e)(n.beacon_id)) return;
+                let a = `${t}:${n.beacon_id}:typing`;
+                e.get(g).has(a) || (e.set(g, e => {
+                    let t = new Set(e);
+                    return t.add(a), t
+                }), e.get(s.c).logProductEvent(o.CodexBeaconsTypingSuppressed, {
+                    beaconId: n.beacon_id,
+                    uiTreatment: m[b(n)]
+                }))
+            },
+            f: function(e, t, n) {
+                let {
+                    direction: a,
+                    fromPage: i,
+                    fromPageIndex: r,
+                    toPage: l,
+                    toPageIndex: c
+                } = n;
+                e.get(s.c).logProductEvent(o.CodexBeaconsCarouselArrowClicked, {
+                    beaconId: t.beacon_id,
+                    direction: a,
+                    cardCount: String(t.ui_info.pages.length),
+                    fromCardId: i.id,
+                    fromCardIndex: String(r),
+                    toCardId: l.id,
+                    toCardIndex: String(c)
+                })
+            },
+            g: function(e, t, n) {
+                let {
+                    navigationMethod: a,
+                    page: i,
+                    pageIndex: r
+                } = n;
+                e.get(s.c).logProductEvent(o.CodexBeaconsCarouselCardShown, {
+                    beaconId: t.beacon_id,
+                    cardCount: String(t.ui_info.pages.length),
+                    cardId: i.id,
+                    cardIndex: String(r),
+                    navigationMethod: a
+                })
+            },
+            h: function(e, t) {
+                w(e, "answer_submitted", t)
+            },
+            i: function(e, t) {
+                w(e, "dismissed", t)
+            },
+            j: function(e, t) {
+                w(e, "shown", t)
+            },
+            k: h,
+            l: function(e, t) {
+                let {
+                    beacon: n,
+                    diagnostic: a,
+                    placement: o,
+                    suppressLifecycle: i,
+                    treatment: r
+                } = t;
+                h(e, {
+                    beaconId: n.beacon_id,
+                    diagnostic: a,
+                    placement: o,
+                    suppressLifecycle: i,
+                    treatment: r
+                })
+            }
+        })
+    }),
+    sb2P: (function(e, t, n) {
+        var a = n("BolX"),
+            o = n("OWtl");
+        let i = {
+                status: "pending"
+            },
+            r = (0, a.u)(o.a, () => new Map),
+            s = (0, a.u)(o.a, () => new Set),
+            l = (0, a.d)(o.a, (e, t) => {
+                let {
+                    get: n
+                } = t;
+                return n(r).get(e)?.state ?? i
+            }, {
+                autoDispose: 6e4
+            });
+
+        function c(e) {
+            let {
+                accountId: t,
+                locale: n,
+                navigationKey: a,
+                pathname: o,
+                product: i
+            } = e;
+            return JSON.stringify([t, n, i, o, a])
+        }
+
+        function u(e, t) {
+            return e + ":session:" + t
+        }
+        n.d(t, {}, {
+            a: class {
+                scope;
+                constructor(e) {
+                    this.scope = e
+                }
+                touchHomeVisit(e) {
+                    let t = this.scope.get(r).get(e.visitKey);
+                    null != t ? this.setHomeVisit(e, t.state) : this.setHomeVisit(e, i)
+                }
+                getHomeVisit(e) {
+                    return this.scope.get(r).get(e.visitKey)?.state ?? i
+                }
+                canQueryHomeBeacon(e) {
+                    return "pending" === this.getHomeVisit(e).status
+                }
+                applyHomeQueryResult(e, t) {
+                    var n, a;
+                    let o = this.getHomeVisit(e);
+                    return n = e, a = t, n.accountId === a.accountId && n.locale === a.locale && n.pathname === a.pathname && n.product === a.product && n.visitKey === a.visitKey && "pending" === o.status && (null == t.beacon || this.isHomeBeaconDismissed(e.accountId, t.beacon.beacon_id) ? this.setHomeVisit(e, {
+                        status: "empty"
+                    }) : !0 === o.suppressOnSelection ? this.setHomeVisit(e, {
+                        status: "suppressed",
+                        beaconId: t.beacon.beacon_id
+                    }) : this.setHomeVisit(e, {
+                        status: "selected",
+                        beacon: t.beacon
+                    }), !0)
+                }
+                getSelectedHomeBeacon(e) {
+                    let t = this.getHomeVisit(e);
+                    return "selected" === t.status ? t.beacon : null
+                }
+                requestHomeBeaconSuppression(e) {
+                    let t = this.getHomeVisit(e);
+                    return "pending" === t.status ? !0 !== t.suppressOnSelection && (this.setHomeVisit(e, {
+                        status: "pending",
+                        suppressOnSelection: !0
+                    }), !0) : "selected" === t.status && this.terminateHomeBeacon(e, t.beacon.beacon_id, "suppressed")
+                }
+                terminateHomeBeacon(e, t, n) {
+                    let a = this.getHomeVisit(e);
+                    return "selected" === a.status && a.beacon.beacon_id === t && (this.setHomeVisit(e, {
+                        status: n,
+                        beaconId: t
+                    }), !0)
+                }
+                terminateSelectedHomeBeacon(e, t, n) {
+                    let a = !1;
+                    return this.scope.set(r, o => {
+                        let i = new Map(o);
+                        for (let [r, s] of o) s.identity.accountId === e && "selected" === s.state.status && s.state.beacon.beacon_id === t && (i.set(r, {
+                            ...s,
+                            state: {
+                                status: n,
+                                beaconId: t
+                            }
+                        }), a = !0);
+                        return a ? i : o
+                    }), a
+                }
+                isHomeBeaconDismissed(e, t) {
+                    return this.scope.get(s).has(u(e, t))
+                }
+                dismissHomeBeacon(e, t) {
+                    return !this.isHomeBeaconDismissed(e, t) && (this.terminateSelectedHomeBeacon(e, t, "dismissed"), this.markHomeBeaconDismissed(e, t), !0)
+                }
+                consumeHomeBeacon(e, t) {
+                    this.terminateSelectedHomeBeacon(e, t, "consumed"), this.markHomeBeaconDismissed(e, t)
+                }
+                suppressUnsupportedHomeBeacon(e, t) {
+                    this.terminateSelectedHomeBeacon(e, t, "unsupported")
+                }
+                setHomeVisit(e, t) {
+                    this.scope.set(r, n => {
+                        let a = new Map(n);
+                        for (a.delete(e.visitKey), a.set(e.visitKey, {
+                                identity: e,
+                                state: t
+                            }); a.size > 20;) {
+                            let e = a.keys().next().value;
+                            if (null == e) break;
+                            a.delete(e)
+                        }
+                        return a
+                    })
+                }
+                markHomeBeaconDismissed(e, t) {
+                    let n = u(e, t);
+                    this.scope.set(s, e => {
+                        if (e.has(n)) return e;
+                        let t = new Set(e);
+                        return t.add(n), t
+                    })
+                }
+            },
+            b: c,
+            c: function(e) {
+                let {
+                    auth: t,
+                    locale: n,
+                    location: a,
+                    product: o
+                } = e;
+                return "chatgpt" !== o || "/" !== a.pathname || "chatgpt" !== t.authMethod || null == t.accountId ? null : c({
+                    accountId: t.accountId,
+                    locale: n,
+                    navigationKey: a.key,
+                    pathname: a.pathname,
+                    product: o
+                })
+            },
+            d: l,
+            e: function(e) {
+                let {
+                    windowType: t,
+                    accountId: n,
+                    currentAccountId: a,
+                    statsigAccountId: o,
+                    userId: i
+                } = e;
+                return "browser" === t ? n ?? null : n ?? a ?? o ?? i ?? null
+            }
+        })
+    }),
+    RNtx: (function(e, t, n) {
+        var a = n("ABep"),
+            o = n("QosV"),
+            i = n("on57"),
+            r = n("Wf1j"),
+            s = n("wD9O"),
+            l = n("bf6R"),
+            c = n("nzx4"),
+            u = n("yC2B");
+
+        function _(e) {
+            return e.preventDefault()
+        }
+
+        function d(e) {
+            return e.preventDefault()
+        }
+
+        function p(e) {
+            return e.preventDefault()
+        }
+
+        function m(e) {
+            let t, n, r, s, l, c = (0, o.c)(13),
+                {
+                    align: u,
+                    isRtl: _
+                } = e,
+                d = "start" === u && "start-4",
+                p = "end" === u && "end-4",
+                m = "center" === u && "left-1/2 -translate-x-1/2";
+            c[0] !== d || c[1] !== p || c[2] !== m ? (t = (0, i.b)("pointer-events-none absolute hidden h-3.5 w-9 origin-top overflow-visible group-data-[side=bottom]:top-0 group-data-[side=bottom]:block group-data-[side=bottom]:-scale-y-100 group-data-[side=top]:top-full group-data-[side=top]:block", d, p, m), c[0] = d, c[1] = p, c[2] = m, c[3] = t) : t = c[3];
+            let g = "center" === u ? "M0 0C8.1 0 10.95 3.42222 14.4 8.24444L16.05 10.5778C17.025 11.9778 18.975 11.9778 19.95 10.5778L21.6 8.24444C25.05 3.42222 27.9 0 36 0V-1H0Z" : "M0 0C4 0 6.5 1.2963 8 4.40741C9.5 7.77778 9 10.8889 11 12.7037C12.25 13.7407 13.75 13.7407 15 12.4444C19.25 7.51852 25.5 2.59259 32 0.777778C33.75 0.259259 34.75 0 36 0V-1H0Z",
+                f = "start" === u && _ || "end" === u && !_ ? "translate(36 0) scale(-1 1)" : void 0;
+            return c[4] !== g || c[5] !== f ? (n = (0, a.jsx)("path", {
+                d: g,
+                transform: f
+            }), c[4] = g, c[5] = f, c[6] = n) : n = c[6], c[7] !== t || c[8] !== n ? (r = (0, a.jsx)("svg", {
+                "aria-hidden": "true",
+                className: t,
+                fill: "var(--color-background-coachmark)",
+                viewBox: "0 0 36 14",
+                children: n
+            }), c[7] = t, c[8] = n, c[9] = r) : r = c[9], c[10] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, a.jsx)("svg", {
+                "aria-hidden": "true",
+                className: "pointer-events-none absolute top-1/2 hidden h-9 w-3.5 origin-left -translate-y-1/2 overflow-visible group-data-[side=left]:left-full group-data-[side=left]:block group-data-[side=right]:left-0 group-data-[side=right]:block group-data-[side=right]:-scale-x-100",
+                fill: "var(--color-background-coachmark)",
+                viewBox: "0 0 14 36",
+                children: (0, a.jsx)("path", {
+                    d: "M0 0C8.1 0 10.95 3.42222 14.4 8.24444L16.05 10.5778C17.025 11.9778 18.975 11.9778 19.95 10.5778L21.6 8.24444C25.05 3.42222 27.9 0 36 0V-1H0Z",
+                    transform: "matrix(0 -1 1 0 0 36)"
+                })
+            }), c[10] = s) : s = c[10], c[11] !== r ? (l = (0, a.jsxs)(a.Fragment, {
+                children: [r, s]
+            }), c[11] = r, c[12] = l) : l = c[12], l
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, g, f, b, h, v, w, y, I, k, x, C, A, S, E, P = (0, o.c)(54),
+                    {
+                        id: T,
+                        align: M,
+                        anchor: O,
+                        body: j,
+                        direction: L,
+                        onDismiss: B,
+                        side: N,
+                        size: H,
+                        title: R,
+                        updatePositionStrategy: U
+                    } = e,
+                    D = void 0 === M ? "center" : M,
+                    q = void 0 === H ? "default" : H,
+                    V = void 0 === U ? "always" : U,
+                    z = (0, r.a)(),
+                    G = (0, s.c)();
+                P[0] !== L || P[1] !== z.locale ? (t = L ?? (0, u.a)(z.locale), P[0] = L, P[1] = z.locale, P[2] = t) : t = P[2];
+                let W = "rtl" === t,
+                    K = W ? "right" : "left",
+                    $ = W ? "left" : "right";
+                P[3] !== K || P[4] !== $ ? (n = {
+                    top: "top",
+                    bottom: "bottom",
+                    start: K,
+                    end: $
+                }, P[3] = K, P[4] = $, P[5] = n) : n = P[5];
+                let F = n;
+                P[6] !== O || P[7] !== B ? (g = () => {
+                    B(), O.focus()
+                }, P[6] = O, P[7] = B, P[8] = g) : g = P[8];
+                let Y = g;
+                P[9] !== Y ? (f = e => {
+                    e || Y()
+                }, P[9] = Y, P[10] = f) : f = P[10], P[11] !== O ? (b = (0, a.jsx)(c.b, {
+                    virtualRef: {
+                        current: O
+                    }
+                }), P[11] = O, P[12] = b) : b = P[12];
+                let Q = "default" === q && "w-60",
+                    X = "wide" === q && "w-72",
+                    Z = "large" === q && "w-90";
+                P[13] !== Q || P[14] !== X || P[15] !== Z ? (h = (0, i.b)("no-drag group relative z-50 flex items-start gap-2 rounded-xl bg-coachmark p-3 text-sm text-coachmark shadow-lg outline-hidden select-none", Q, X, Z), P[13] = Q, P[14] = X, P[15] = Z, P[16] = h) : h = P[16];
+                let J = "center" === D ? 0 : -11 * G,
+                    ee = null != R ? `${T}-body` : void 0,
+                    et = null != R ? `${T}-title` : `${T}-body`,
+                    en = F[N],
+                    ea = ("center" === D ? 19 : 21) * G;
+                P[17] !== T || P[18] !== R ? (v = null != R && (0, a.jsx)("div", {
+                    id: `${T}-title`,
+                    className: "font-semibold",
+                    children: R
+                }), P[17] = T, P[18] = R, P[19] = v) : v = P[19];
+                let eo = `${T}-body`;
+                return P[20] !== j || P[21] !== eo ? (w = (0, a.jsx)("div", {
+                    id: eo,
+                    children: j
+                }), P[20] = j, P[21] = eo, P[22] = w) : w = P[22], P[23] !== v || P[24] !== w ? (y = (0, a.jsxs)("div", {
+                    className: "flex min-w-0 flex-1 flex-col gap-0.5",
+                    children: [v, w]
+                }), P[23] = v, P[24] = w, P[25] = y) : y = P[25], P[26] !== z ? (I = z.formatMessage({
+                    id: "beacons.homeTooltip.close",
+                    defaultMessage: "Close tooltip"
+                }), P[26] = z, P[27] = I) : I = P[27], P[28] !== Y ? (k = e => {
+                    e.stopPropagation(), Y()
+                }, P[28] = Y, P[29] = k) : k = P[29], P[30] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, a.jsx)(l.xj, {}), P[30] = x) : x = P[30], P[31] !== I || P[32] !== k ? (C = (0, a.jsx)("button", {
+                    className: "relative flex size-4 shrink-0 cursor-interaction items-center justify-center rounded-sm before:absolute before:-inset-1 focus-visible:outline-2 focus-visible:outline-current",
+                    "aria-label": I,
+                    onClick: k,
+                    type: "button",
+                    children: x
+                }), P[31] = I, P[32] = k, P[33] = C) : C = P[33], P[34] !== D || P[35] !== W ? (A = (0, a.jsx)(m, {
+                    align: D,
+                    isRtl: W
+                }), P[34] = D, P[35] = W, P[36] = A) : A = P[36], P[37] !== D || P[38] !== T || P[39] !== h || P[40] !== J || P[41] !== ee || P[42] !== et || P[43] !== en || P[44] !== ea || P[45] !== y || P[46] !== C || P[47] !== A || P[48] !== V ? (S = (0, a.jsxs)(c.c, {
+                    id: T,
+                    className: h,
+                    align: D,
+                    alignOffset: J,
+                    "aria-describedby": ee,
+                    "aria-labelledby": et,
+                    collisionPadding: 8,
+                    onCloseAutoFocus: p,
+                    onInteractOutside: d,
+                    onOpenAutoFocus: _,
+                    role: "dialog",
+                    side: en,
+                    sideOffset: ea,
+                    unstyled: !0,
+                    updatePositionStrategy: V,
+                    children: [y, C, A]
+                }), P[37] = D, P[38] = T, P[39] = h, P[40] = J, P[41] = ee, P[42] = et, P[43] = en, P[44] = ea, P[45] = y, P[46] = C, P[47] = A, P[48] = V, P[49] = S) : S = P[49], P[50] !== b || P[51] !== S || P[52] !== f ? (E = (0, a.jsxs)(c.a, {
+                    open: !0,
+                    onOpenChange: f,
+                    children: [b, S]
+                }), P[50] = b, P[51] = S, P[52] = f, P[53] = E) : E = P[53], E
+            }
+        })
+    }),
+    n5GS: (function(e, t, n) {
+        var a = n("Cslg"),
+            o = n("SHW6");
+        n("aTcy");
+        var i = n("IDma");
+
+        function r(e) {
+            if ("open_local_url" !== e.action_v2.action_enum) return !1;
+            let t = e.action_v2.web_url;
+            if (!t.startsWith("/") || t.startsWith("//")) return !1;
+            let n = (0, o.a)(e);
+            return null != n && "/admin/billing" === n.pathname && "add_credits" === n.searchParams.get("codex_credit_action")
+        }
+        n("nInK"), n.d(t, {}, {
+            a: r,
+            b: function(e, t) {
+                if ("open_local_url" !== e.action_v2.action_enum) return;
+                let s = e.action_v2.web_url;
+                if (!s.startsWith("/") || s.startsWith("//")) return;
+                let l = (0, o.a)(e);
+                if (null == l) return;
+                let c = "/?open=plan-renew-confirmation" === s || "/?open=plan-renew-pricing" === s,
+                    u = r(e),
+                    _ = "/admin/billing/manage_member_usage_limit" === l.pathname;
+                if (!c && !u && !_) return;
+                if ("link" === t.source) return {
+                    status: "unsupported"
+                };
+                let d = t.scope.get(a.m);
+                if (d.authLoading || d.accountLoading) return {
+                    status: "pending"
+                };
+                if (!t.allowExternalActions || null == d.accountId || null == d.userId || !(0, i.a)(t.scope, d.accountId, d.userId) || null != t.eventAccountId && t.eventAccountId !== d.accountId) return {
+                    status: "unavailable"
+                };
+                let {
+                    accountId: p,
+                    userId: m
+                } = d;
+                return {
+                    status: "supported",
+                    handler: async e => {
+                        let {
+                            loadBillingBeaconAction: a
+                        } = await Promise.resolve().then(n.bind(n, "XyTt"));
+                        if (!(0, i.a)(t.scope, p, m) || !(t.isCurrentPresentation?.() ?? !0)) return !1;
+                        let o = await a();
+                        return !!(0, i.a)(t.scope, p, m) && !!(t.isCurrentPresentation?.() ?? !0) && o(t, l, p, m, e)
+                    }
+                }
+            }
+        })
+    }),
+    vOxw: (function(e, t, n) {
+        var a = n("BolX"),
+            o = n("OWtl");
+        let i = (0, a.u)(o.a, () => new Map);
+        n.d(t, {}, {
+            a: i,
+            b: function(e, t, n) {
+                let a = e.get(i),
+                    o = a.get(t);
+                null == o || o.routeCommitted || e.set(i, new Map(a).set(t, {
+                    ...o,
+                    routeCommitted: !0,
+                    routingLayer: n ? null : o.routingLayer
+                }))
+            }
+        })
+    }),
+    BHyM: (function(e, t, n) {
+        let a = "business_owner_team_invite_confirmation";
+        n.d(t, {}, {
+            a: a,
+            b: function(e, t) {
+                return null != t ? e === a : "business_domain_coworkers" === e || "business_owner_domain_invites" === e
+            }
+        })
+    }),
+    nY8G: (function(e, t, n) {
+        n("AleY"), n("ReGc"), n.d(t, {}, {
+            a: async function(e) {}
+        })
+    }),
+    h6ff: (function(e, t, n) {
+        var a = n("zMIV"),
+            o = n.n(a),
+            i = n("ASxG"),
+            r = n("G4Vg"),
+            s = n("jUaO");
+        let l = i.string().nullable().optional().transform(e => e ?? null),
+            c = i.object({
+                id: i.string(),
+                text: i.string(),
+                url: i.string()
+            }),
+            u = i.object({
+                banner_design: i.enum(["default", "composer", "eyebrow_composer"]).optional().default("default"),
+                banner_position: i.literal("composer").nullable().optional().transform(e => e ?? null),
+                description: i.string(),
+                dismiss_variant: i.enum(["dismiss_on_send", "persistent"]).optional().default("dismiss_on_send"),
+                icon_image_size: i.enum(["small", "medium", "large"]).optional().default("small"),
+                icon_image_url: l,
+                icon_image_url_dark: l,
+                informational_link: c.nullable().optional().transform(e => e ?? null),
+                title: i.string(),
+                type: i.literal("beacon_banner_info")
+            }).loose(),
+            _ = i.object({
+                alignment: i.enum(["start", "center"]).nullish(),
+                bullet_points: i.array(i.object({
+                    icon: i.enum(["speedometer", "chat-dots", "clock-history"]),
+                    text: i.string()
+                })).nullish(),
+                description_format: i.enum(["plain", "markdown"]).optional(),
+                supporting_text: i.string().nullish(),
+                supporting_text_format: i.enum(["plain", "markdown"]).optional(),
+                description: i.string(),
+                footer_link: c.nullable().optional().transform(e => e ?? null),
+                footer_text: l,
+                header_image_alt: l,
+                header_image_url: l,
+                header_image_url_dark: l,
+                title: i.string(),
+                type: i.literal("beacon_modal_info"),
+                web_design: i.enum(["default", "announcement_nux"]).optional().default("default")
+            }).loose(),
+            d = i.object({
+                close_aria_label: l,
+                pages: i.array(i.object({
+                    cta_action_item_id: l,
+                    cta_text: i.string(),
+                    description: i.string(),
+                    footnote: l,
+                    id: i.string(),
+                    image_variant_urls: i.array(i.string()).nullable().optional().transform(e => e ?? null),
+                    media_alt: i.string(),
+                    media_type: i.enum(["image", "video"]).optional().default("image"),
+                    media_url: i.string(),
+                    title: i.string(),
+                    video_poster_url: l
+                }).loose()).min(1),
+                type: i.literal("beacon_multi_page_modal_info")
+            }).loose(),
+            p = i.object({
+                approval_info_text: l,
+                design: i.enum(["default", "card"]).nullable().optional().transform(e => e ?? "default"),
+                primary_info_text: l,
+                type: i.literal("beacon_conversation_inline_info")
+            }).loose(),
+            m = i.object({
+                container_id: i.string().min(1),
+                type: i.literal("beacon_container_info")
+            }).loose(),
+            g = i.object({
+                background_image_url: l,
+                background_image_url_dark: l,
+                foreground_image_layout: i.union([i.object({
+                    type: i.literal("none")
+                }), i.object({
+                    type: i.literal("centered"),
+                    clip_shape: i.enum(["none", "circle"]),
+                    size: i.enum(["extra_small", "small", "regular"])
+                }), i.object({
+                    type: i.literal("wide"),
+                    sizing: i.object({
+                        type: i.literal("width_to_height_ratio"),
+                        ratio: i.number().gt(1)
+                    })
+                })]),
+                foreground_image_url: i.string(),
+                foreground_image_url_dark: l,
+                subtitle: l,
+                title: i.string(),
+                type: i.literal("beacon_homepage_takeover_info")
+            }).loose(),
+            f = i.string().nullable().optional(),
+            b = i.boolean().nullable().transform(e => e ?? void 0).optional(),
+            h = i.enum(["codex", "file_upload", "image_gen", "personal_finance", "tasks", "thinking", "work"]),
+            v = {
+                activate_feature_trial: B("activate_feature_trial", {
+                    feature_key: i.string(),
+                    model_behavior: i.object({
+                        regeneration_model_slug: f,
+                        update_model_picker: b
+                    }).loose().nullable().optional()
+                }),
+                age_verification: B("age_verification", {}),
+                authenticate_login: B("authenticate_login", {
+                    auth_navigation_mode: i.enum(["redirect", "modal"]).nullable().transform(e => e ?? void 0).optional()
+                }),
+                authenticate_signup: B("authenticate_signup", {
+                    auth_navigation_mode: i.enum(["redirect", "modal"]).nullable().transform(e => e ?? void 0).optional()
+                }),
+                citron_disable: B("citron_disable", {
+                    failure_toast_message: f,
+                    success_toast_message: f
+                }),
+                citron_enable: B("citron_enable", {}),
+                codex_download_email: B("codex_download_email", {}),
+                connect_finances_and_send_work_prompt: B("connect_finances_and_send_work_prompt", {
+                    prompt: i.string().refine(e => e.trim().length > 0)
+                }),
+                connect_ledger_accounts: B("connect_ledger_accounts", {
+                    composer_text: f
+                }),
+                copy_to_clipboard: B("copy_to_clipboard", {
+                    copy_text: i.string(),
+                    text: i.string()
+                }),
+                create_presence_session: B("create_presence_session", {
+                    conversation_id: i.string(),
+                    message_id: i.string(),
+                    launch_attempt_id: i.string()
+                }),
+                create_prompt: B("create_prompt", {
+                    open_in_modal: b,
+                    prompt_description: f,
+                    prompt_name: f,
+                    prompt_text: f
+                }),
+                dismiss: B("dismiss", {
+                    composer_text: f
+                }),
+                enable_codex_fast_mode: B("enable_codex_fast_mode", {}),
+                enable_web_push: B("enable_web_push", {}),
+                enable_web_push_and_responses_push: B("enable_web_push_and_responses_push", {
+                    account_id: i.string().min(1),
+                    account_user_id: i.string().min(1)
+                }),
+                file_upload: B("file_upload", {
+                    composer_text: f
+                }),
+                free_thinking_sample_regenerate: B("free_thinking_sample_regenerate", {
+                    model_slug: i.string(),
+                    update_model_picker: b
+                }),
+                get_go: B("get_go", {
+                    promo_campaign_id: f,
+                    upsell_context_id: h.nullable().optional()
+                }),
+                get_plus: B("get_plus", {
+                    checkout_mode: i.literal("direct").nullable().optional(),
+                    promo_campaign_id: f,
+                    upsell_context_id: h.nullable().optional()
+                }),
+                get_pro: B("get_pro", {
+                    rejoin_pro_cta_variant: i.unknown().transform(s.c).optional(),
+                    pro_offer: r.b.nullish(),
+                    upsell_context_id: h.nullable().optional()
+                }),
+                get_team: B("get_team", {
+                    checkout_mode: i.literal("direct").nullable().optional(),
+                    upsell_context_id: h.nullable().optional()
+                }),
+                install_mobile_widget: B("install_mobile_widget", {}),
+                install_plugin: B("install_plugin", {
+                    plugin_reference_id: i.string(),
+                    post_install_prompt: f
+                }),
+                enable_workspace_auto_join: B("enable_workspace_auto_join", {}),
+                invite_domain_members: B("invite_domain_members", {
+                    account_id: i.uuid()
+                }),
+                send_workspace_invite: B("send_workspace_invite", {
+                    account_id: i.uuid()
+                }),
+                invite_team_members: B("invite_team_members", {
+                    emails: i.array(i.string()).nullable().optional()
+                }),
+                open_claim_business_workspace_modal: B("open_claim_business_workspace_modal", {}),
+                open_connector_oauth_modal: B("open_connector_oauth_modal", {
+                    connector_id: i.string()
+                }),
+                open_connectors_onboarding_modal: B("open_connectors_onboarding_modal", {}),
+                open_dot_texting_setup: B("open_dot_texting_setup", {}),
+                open_enterprise_value_survey_modal: B("open_enterprise_value_survey_modal", {
+                    survey_id: i.string(),
+                    survey_name: i.string(),
+                    survey_type: f
+                }),
+                open_external_agent_import: B("open_external_agent_import", {}),
+                open_dot_with_draft: B("open_dot_with_draft", {
+                    dot_id: i.string().min(1),
+                    prompt: i.string().regex(/\S/u)
+                }),
+                open_local_url: B("open_local_url", {
+                    android_url: i.string(),
+                    ios_url: i.string(),
+                    trigger_turn: b,
+                    url: i.string().nullable().transform(e => e ?? void 0).optional(),
+                    web_url: i.string()
+                }),
+                open_pca_connector_auth_modal: B("open_pca_connector_auth_modal", {
+                    connector_id: i.string(),
+                    include_connector_system_hint_after_link: b,
+                    trigger_turn_after_link: b
+                }),
+                open_pepper_onboarding_modal: B("open_pepper_onboarding_modal", {}),
+                open_url: B("open_url", {
+                    url: i.string()
+                }),
+                open_work_tab: B("open_work_tab", {}),
+                open_work_tab_and_send_prompt: B("open_work_tab_and_send_prompt", {
+                    prompt: i.string()
+                }),
+                photo_upload: B("photo_upload", {
+                    composer_text: f
+                }),
+                regenerate: B("regenerate", {
+                    model_slug: i.string(),
+                    update_model_picker: i.boolean()
+                }),
+                request_account_team_contact: B("request_account_team_contact", {
+                    campaign_id: i.string(),
+                    notification_type: i.enum(["beacon_account_signal", "beacon_account_signal_smb"])
+                }),
+                request_premium_seat: B("request_premium_seat", {}),
+                request_workspace_upgrade_seat: B("request_workspace_upgrade_seat", {
+                    seat_type: i.literal("prolite").nullable().optional()
+                }),
+                request_workspace_credits: B("request_workspace_credits", {}),
+                send_prompt: B("send_prompt", {
+                    cta_source: f,
+                    developer_prompt: i.string(),
+                    hint: f,
+                    prompt: i.string()
+                }),
+                set_atlas_as_default_browser: B("set_atlas_as_default_browser", {}),
+                share_conversation: B("share_conversation", {
+                    conversation_id: i.string(),
+                    current_node_id: i.string(),
+                    title: i.string()
+                }),
+                share_group_chat: B("share_group_chat", {
+                    room_name: f
+                }),
+                share_location: B("share_location", {}),
+                share_message_slice: B("share_message_slice", {}),
+                start_jobs_mock_interview_voice: B("start_jobs_mock_interview_voice", {}),
+                start_voice: B("start_voice", {
+                    requested_default_model: f,
+                    voice_landing: f
+                }),
+                start_spark: B("start_spark", {
+                    spark_id: i.string().regex(/\S/),
+                    user_message: i.string().regex(/\S/),
+                    preferred_model_slug: f,
+                    preferred_thinking_effort: f
+                }),
+                submit_personalized_information_questionnaire_feedback: B("submit_personalized_information_questionnaire_feedback", {
+                    answer: i.enum(["yes", "no"]),
+                    citation_uuid: i.string(),
+                    conversation_context_type: i.enum(["user_memory", "general_memory", "past_conversation"]),
+                    conversation_id: i.string(),
+                    details_max_length: i.number().nullable().transform(e => e ?? void 0).optional(),
+                    details_placeholder: i.string(),
+                    details_submit_button_text: i.string(),
+                    message_id: i.string(),
+                    question_id: i.literal("citation_relevance"),
+                    questionnaire_id: i.literal("personalized_citation_relevance"),
+                    success_toast_message: i.string(),
+                    surface: i.literal("personalization_questionnaire")
+                }),
+                system_hint: B("system_hint", {
+                    composer_text: f,
+                    hint: i.string(),
+                    new_chat: b,
+                    trigger_turn: b
+                }),
+                update_model_picker: B("update_model_picker", {
+                    composer_text: f,
+                    model_slug: i.string(),
+                    thinking_effort: f,
+                    service_tier: i.enum(["standard", "fast", "ultrafast"]).nullable().optional()
+                }),
+                update_personality_trait: B("update_personality_trait", {
+                    level: i.string(),
+                    trait: i.string(),
+                    updated_trait_settings_dict: i.record(i.string(), i.string())
+                }),
+                update_user_personalization_setting: B("update_user_personalization_setting", {
+                    memory_enabled: i.boolean(),
+                    success_toast_message: f
+                })
+            },
+            w = i.union(Object.values(v)),
+            y = i.union(Object.values(o()(v, ["connect_finances_and_send_work_prompt", "create_presence_session", "invite_domain_members", "send_workspace_invite", "enable_codex_fast_mode", "enable_workspace_auto_join", "enable_web_push_and_responses_push", "open_dot_texting_setup", "open_dot_with_draft", "open_external_agent_import", "start_spark"]))),
+            I = i.object({
+                action_enum: i.null().transform(() => void 0).optional()
+            }).loose(),
+            k = i.object({
+                action_v2: i.union([I, y]),
+                icon_url: f,
+                id: i.string(),
+                text: i.string()
+            }).loose(),
+            x = i.object({
+                action_enum: i.literal("dropdown"),
+                footer_text: f,
+                header_text: f,
+                items: i.array(k)
+            }).loose(),
+            C = i.object({
+                action_v2: i.union([I, y, x]),
+                icon_url: f,
+                id: i.string(),
+                text: i.string()
+            }).loose(),
+            A = i.object({
+                action_enum: i.literal("dropdown"),
+                footer_text: f,
+                header_text: f,
+                items: i.array(C)
+            }).loose(),
+            S = i.object({
+                appearance: i.enum(["standard", "accent"]).catch("standard").optional(),
+                action_v2: i.union([I, w, A]),
+                description: f,
+                icon_url: f,
+                id: i.string(),
+                text: f,
+                type: i.enum(["primary", "secondary", "copy", "dropdown"]).nullable().optional().transform(e => e ?? "primary")
+            }).loose(),
+            E = i.array(S),
+            P = i.array(S).min(1).max(2).refine(e => e[0]?.type === "primary" && (1 === e.length || e[1]?.type === "secondary")),
+            T = {
+                action_items: E,
+                beacon_id: i.string(),
+                beacon_name: i.string(),
+                custom_fields: i.record(i.string(), i.unknown()).optional(),
+                show_timing: i.enum(["immediate", "wait_until_conversation_refresh"]).optional().default("immediate"),
+                type: i.literal("beacon_ui_response")
+            },
+            M = i.union([i.object({
+                ...T,
+                ui_info: u
+            }).loose(), i.object({
+                ...T,
+                ui_info: _
+            }).loose(), i.object({
+                ...T,
+                ui_info: d
+            }).loose(), i.object({
+                ...T,
+                ui_info: p
+            }).loose()]),
+            O = i.object({
+                ...T,
+                beacon_id: i.literal("library_provider_onboarding_refresh"),
+                ui_info: i.object({
+                    type: i.literal("beacon_container_info"),
+                    container_id: i.literal("library_google_drive_sidebar_tooltip")
+                })
+            }).loose().refine(e => {
+                let t = e.action_items[0]?.action_v2;
+                return t?.action_enum === "open_local_url" && !0 !== t.trigger_turn && t.web_url.startsWith("/library?") && "intro" === new URLSearchParams(t.web_url.slice(9)).get("library_onboarding")
+            }),
+            j = i.union([O, i.object({
+                ...T,
+                ui_info: u
+            }).loose(), i.object({
+                ...T,
+                ui_info: _
+            }).loose(), i.object({
+                ...T,
+                ui_info: d
+            }).loose(), i.object({
+                ...T,
+                action_items: P,
+                ui_info: g
+            }).loose()]),
+            L = i.object({
+                ...T,
+                ui_info: m
+            }).loose();
+
+        function B(e, t) {
+            return i.object({
+                action_enum: i.literal(e),
+                ...t
+            }).loose()
+        }
+        n.d(t, {}, {
+            a: M,
+            b: L,
+            c: function(e) {
+                var t;
+                let n = i.object({
+                    action_items: i.array(i.unknown()),
+                    beacon_id: i.string(),
+                    custom_fields: i.record(i.string(), i.unknown()).optional(),
+                    ui_info: i.object({
+                        type: i.enum(["beacon_banner_info", "beacon_conversation_inline_info", "beacon_homepage_takeover_info", "beacon_modal_info", "beacon_multi_page_modal_info"])
+                    }).loose()
+                }).loose().safeParse(e);
+                if (!n.success) return null;
+                let a = n.data.action_items.findIndex(e => !S.safeParse(e).success);
+                return -1 === a ? null : {
+                    beaconId: n.data.beacon_id,
+                    diagnostic: {
+                        actionEnum: "unknown",
+                        actionId: "unknown",
+                        actionIndex: a,
+                        reason: "malformed_action_payload"
+                    },
+                    suppressLifecycle: n.data.custom_fields?.debug_forced_in_conversation_beacon === !0,
+                    treatment: "beacon_banner_info" === (t = n.data.ui_info.type) ? "banner" : "beacon_homepage_takeover_info" === t ? "homepage_takeover" : "beacon_conversation_inline_info" === t ? "conversation_inline" : "modal"
+                }
+            },
+            d: j,
+            e: w
+        })
+    }),
+    d58w: (function(e, t, n) {
+        var a = n("ASxG"),
+            o = n("hlVK"),
+            i = n("SPzj"),
+            r = n("U861"),
+            s = n("h6ff"),
+            l = n("oHzU");
+        let c = "deferredBeaconUpgradeEvent",
+            u = a.object({
+                accountId: a.string().min(1),
+                actionId: a.string().min(1),
+                analyticsContext: a.object({
+                    placement: a.enum(["codex_home", "homepage", "in_conversation", "work_tab_home"]),
+                    productExperience: a.enum(["chat", "work"]).optional(),
+                    suppressLifecycle: a.boolean().optional(),
+                    treatment: a.enum(["banner", "conversation_inline", "homepage_takeover", "modal"])
+                }).nullable(),
+                beacon: a.union([s.a, s.d]),
+                expectedIdentity: a.object({
+                    accountId: a.string(),
+                    userId: a.string()
+                }).optional(),
+                eventMetadata: a.object({
+                    conversationId: a.string().nullable(),
+                    messageId: a.string().nullable(),
+                    suppressLifecycle: a.boolean().optional()
+                }).nullable()
+            });
+
+        function _(e, t) {
+            return function e(t, n) {
+                for (let a of t) {
+                    if (a.id === n && "get_team" === a.action_v2.action_enum && "direct" === a.action_v2.checkout_mode) return a;
+                    if ("dropdown" === a.action_v2.action_enum) {
+                        let t = e(a.action_v2.items, n);
+                        if (null != t) return t
+                    }
+                }
+                return null
+            }(e.action_items, t)
+        }
+        n.d(t, {}, {
+            a: c,
+            b: async function(e, t, n) {
+                if (null == n || n.accountId !== t) return !1;
+                let a = _(n.beacon, n.actionId);
+                return null != a && (!!(0, r.e)(n.beacon.beacon_id) || n.analyticsContext?.suppressLifecycle === !0 || n.eventMetadata?.suppressLifecycle === !0 || (null != n.analyticsContext && (0, i.b)(e, {
+                    action: "click",
+                    actionId: n.actionId,
+                    actionType: a.type,
+                    beacon: n.beacon,
+                    destinationAction: "get_team",
+                    ...n.analyticsContext
+                }), await (0, o.a)({
+                    accountId: t,
+                    beacon: n.beacon,
+                    expectedIdentity: n.expectedIdentity,
+                    eventCtaId: n.actionId,
+                    eventType: "click",
+                    metadata: n.eventMetadata ?? void 0
+                }), !0))
+            },
+            c: function(e) {
+                let {
+                    accountId: t,
+                    action: n,
+                    analyticsContext: a,
+                    beacon: o,
+                    eventMetadata: i
+                } = e;
+                if ("get_team" !== n.action_v2.action_enum || "direct" !== n.action_v2.checkout_mode || null == _(o, n.id)) return null;
+                let {
+                    onLifecycle: r,
+                    [l.k]: s,
+                    ...c
+                } = o;
+                return {
+                    accountId: t,
+                    actionId: n.id,
+                    analyticsContext: a ?? null,
+                    beacon: c,
+                    expectedIdentity: s,
+                    eventMetadata: i ?? null
+                }
+            },
+            d: function(e) {
+                if (null == e || "object" != typeof e || !(c in e)) return null;
+                let t = u.safeParse(e[c]);
+                return t.success && null != _(t.data.beacon, t.data.actionId) ? t.data : null
+            }
+        })
+    }),
+    oaZE: (function(e, t, n) {
+        var a = n("QosV"),
+            o = n("BolX"),
+            i = n("zd8w"),
+            r = n("StMt"),
+            s = n("EOo5"),
+            l = n("OWtl"),
+            c = n("WFY2");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, u, _, d = (0, a.c)(10),
+                    {
+                        enabled: p
+                    } = e,
+                    m = (0, o.y)(l.a),
+                    g = (0, s.a)();
+                d[0] === Symbol.for("react.memo_cache_sentinel") ? (t = {
+                    name: "chatgpt"
+                }, d[0] = t) : t = d[0];
+                let f = (0, o.x)(r.a, t);
+                return d[1] !== g.accountId || d[2] !== g.authMethod || d[3] !== g.isLoading || d[4] !== g.userId || d[5] !== f.isCapable || d[6] !== p || d[7] !== m ? (u = () => {
+                    let e;
+                    if (g.isLoading || !f.isCapable || !p || null == g.accountId || null == g.userId || "chatgpt" !== g.authMethod && "chatgptAuthTokens" !== g.authMethod) return;
+                    let t = g.accountId,
+                        a = g.userId,
+                        o = !1;
+                    return (async function() {
+                        return (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(338646)]).then(n.bind(n, "wmPg"))).observeFamilyNotifications
+                    })().then(n => {
+                        o || (e = n(m, {
+                            accountId: t,
+                            userId: a
+                        }))
+                    }).catch(() => {
+                        o || c.a.warning("family_workspace_notifications_initialization_failed")
+                    }), () => {
+                        o = !0, e?.()
+                    }
+                }, _ = [m, g.accountId, g.userId, g.authMethod, g.isLoading, f.isCapable, p], d[1] = g.accountId, d[2] = g.authMethod, d[3] = g.isLoading, d[4] = g.userId, d[5] = f.isCapable, d[6] = p, d[7] = m, d[8] = u, d[9] = _) : (u = d[8], _ = d[9]), (0, i.useEffect)(u, _), null
+            }
+        })
+    }),
+    j6fD: (function(e, t, n) {
+        var a = n("Hl6a"),
+            o = n("ASxG"),
+            i = n("fDv2"),
+            r = n("OWtl"),
+            s = n("oHzU");
+        let l = new Set(["family_workspace_notification_banner", "family_workspace_notification_modal", "family_workspace_notification_work_banner", "family_workspace_notification_work_modal", "family_workspace_notification_codex_banner", "family_workspace_notification_codex_modal"]),
+            c = o.object({
+                notification_id: o.string().min(1),
+                presented_at: i.datetime({
+                    offset: !0
+                }),
+                expires_at: i.datetime({
+                    offset: !0
+                }),
+                workspace_id: o.string().min(1),
+                invitation_id: o.string().nullable(),
+                occurrence_id: o.string().min(1)
+            }),
+            u = (0, a.g)(r.a, e => ({
+                pending: new Map,
+                acknowledged: new Map,
+                acknowledgedThrough: new Map,
+                removedInvitations: new Map,
+                viewed: new Set
+            }));
+
+        function _(e) {
+            if (!l.has(e.beacon_id) || "beacon_banner_info" !== e.ui_info.type && "beacon_modal_info" !== e.ui_info.type) return null;
+            let t = c.safeParse(e.custom_fields?.family_notification);
+            return t.success ? t.data : null
+        }
+
+        function d(e) {
+            let t = /^invite:.*:(\d+)$/.exec(e),
+                n = null == t ? 0 / 0 : Number(t[1]);
+            return Number.isSafeInteger(n) ? n : null
+        }
+
+        function p(e, t) {
+            if (null == t) return !0;
+            if (e === t) return !1;
+            let n = d(e),
+                a = d(t);
+            return null == n || null == a || n < a
+        }
+        n.d(t, {}, {
+            a: function(e, t, n) {
+                let a = _(n);
+                null != a && e.set(u, t, e => {
+                    let t = "beacon_modal_info" === n.ui_info.type,
+                        o = Math.max(Date.now(), Date.parse(a.presented_at)),
+                        i = new Map([...e.pending].filter(e => {
+                            let [, n] = e, a = _(n);
+                            return "beacon_modal_info" === n.ui_info.type !== t || null != a && Date.parse(a.presented_at) > o
+                        }));
+                    return {
+                        ...e,
+                        pending: i,
+                        acknowledgedThrough: new Map(e.acknowledgedThrough).set(t, o),
+                        acknowledged: new Map(e.acknowledged).set(a.notification_id, Date.parse(a.expires_at))
+                    }
+                })
+            },
+            b: function(e, t) {
+                e.set(u, t, e => ({
+                    ...e,
+                    pending: new Map
+                }))
+            },
+            c: _,
+            d: u,
+            e: function(e, t) {
+                return [...e.get(u, t).pending.values()]
+            },
+            f: function(e, t, n) {
+                let a = _(n),
+                    o = e.get(u, t);
+                return !(null == a || o.viewed.has(a.notification_id)) && (e.set(u, t, {
+                    ...o,
+                    viewed: new Set(o.viewed).add(a.notification_id)
+                }), !0)
+            },
+            g: function(e, t) {
+                return e.watch(n => {
+                    let a = Math.min(...[...n.get(u, t).pending.values()].map(e => Date.parse(_(e)?.expires_at ?? "")));
+                    if (!Number.isFinite(a)) return;
+                    let o = setTimeout(() => {
+                        e.set(u, t, e => ({
+                            ...e,
+                            pending: new Map([...e.pending].filter(e => {
+                                let [, t] = e;
+                                return Date.parse(_(t)?.expires_at ?? "") > Date.now()
+                            }))
+                        }))
+                    }, Math.min(Math.max(0, a - Date.now()), 0x7fffffff));
+                    return () => clearTimeout(o)
+                })
+            },
+            h: function(e, t, n) {
+                let a = _(n);
+                if (null == a) return !1;
+                let o = Date.parse(a.expires_at),
+                    i = Date.now(),
+                    r = e.get(u, t),
+                    s = JSON.stringify([a.workspace_id, a.invitation_id]);
+                return !!(o <= i || r.acknowledged.has(a.notification_id) || Date.parse(a.presented_at) <= (r.acknowledgedThrough.get("beacon_modal_info" === n.ui_info.type) ?? 0) || r.removedInvitations.has(s) && p(a.occurrence_id, r.removedInvitations.get(s) ?? null)) || (e.set(u, t, {
+                    ...r,
+                    pending: new Map(r.pending).set(a.notification_id, n),
+                    acknowledged: new Map([...r.acknowledged].filter(e => {
+                        let [, t] = e;
+                        return t > i
+                    }))
+                }), !0)
+            },
+            i: function(e, t, n, a, o) {
+                e.set(u, t, e => {
+                    let t = JSON.stringify([n, a]),
+                        i = e.removedInvitations.get(t),
+                        r = e.removedInvitations.has(t) && null == i || null != i && null != o && (d(i) ?? 0) > (d(o) ?? 0) ? i ?? null : o;
+                    return {
+                        ...e,
+                        removedInvitations: new Map(e.removedInvitations).set(t, r),
+                        pending: new Map([...e.pending].filter(e => {
+                            let [, t] = e, o = _(t);
+                            return null == o || o.workspace_id !== n || o.invitation_id !== a || !p(o.occurrence_id, r)
+                        }))
+                    }
+                })
+            },
+            j: function(e) {
+                return [...e.pending.values()].find(s.a) ?? null
+            }
+        })
+    }),
+    fM3G: (function(e, t, n) {
+        n.d(t, {
+            a: () => B,
+            b: () => L,
+            c: () => j
+        });
+        var a = n("BolX"),
+            o = n("HT1b"),
+            i = n("SPzj"),
+            r = n("Vz4D"),
+            s = n("eac5"),
+            l = n("SDxg"),
+            c = n("vOxw"),
+            u = n("nY8G"),
+            _ = n("h6ff"),
+            d = n("svjy"),
+            p = n("cus3"),
+            m = n("OMIV"),
+            g = n("oHzU"),
+            f = n("Eso4"),
+            b = n("prHy"),
+            h = n("s4w7"),
+            v = n("EZRW"),
+            w = n("mRsi"),
+            y = n("a2O9"),
+            I = n("un4u"),
+            k = n("Kwur"),
+            x = n("M8lA"),
+            C = n("htGh"),
+            A = n("V9B1"),
+            S = n("OTgW"),
+            E = n("SClg"),
+            P = n("OWtl"),
+            T = n("O666"),
+            M = n("j6fD");
+        let O = {
+                chatgpt: "homepage",
+                codex: "codex_home",
+                work_tab: "work_tab_home"
+            },
+            j = () => !1,
+            L = (0, a.q)(P.a, (e, t) => {
+                let {
+                    accountId: a,
+                    browserTooltipTargets: P,
+                    clientContext: j,
+                    composerSelectionContext: L,
+                    locale: B,
+                    pathname: N,
+                    product: H,
+                    shouldSuppressFocusedModal: R,
+                    userId: U,
+                    visitKey: D
+                } = e, {
+                    scope: q
+                } = t, V = q.get(c.a).get(D), z = V?.routeCommitted && null != a && null != U && "chatgpt" === H && "/" === N && null == P ? V.routingLayer : null;
+                return {
+                    queryKey: ["codex-app-home-beacon", a, U, B, N, H, D, P, null != z && V?.routingEnabled === !0],
+                    refetchOnMount: !1,
+                    refetchOnReconnect: !1,
+                    refetchOnWindowFocus: !1,
+                    retry: !1,
+                    staleTime: 6e4,
+                    gcTime: null == P ? 0 : 1 / 0,
+                    queryFn: async e => {
+                        let {
+                            signal: t
+                        } = e, c = z?.get("enabled", !1) === !0, j = z?.get("write_events", !1) === !0, V = null;
+                        if (null == P && "chatgpt" === H && "/" === N && null != a && null != U && /Android/.test(navigator.userAgent)) {
+                            let e = (0, x.getClientBootstrap)().authHomepageAppUpsellAdmission;
+                            V = e?.accountId === a && e.userId === U ? async function(e, t, n) {
+                                let a = new AbortController;
+                                try {
+                                    return await (0, s.a)(async function(e, t, n) {
+                                        try {
+                                            n.throwIfAborted();
+                                            let a = (document.documentElement.dataset.routerBasename ?? "").replace(/\/$/u, ""),
+                                                {
+                                                    data: o,
+                                                    response: i
+                                                } = await r.a.GET(l.a, {
+                                                    baseUrl: `${window.location.origin}${a}`,
+                                                    fetch,
+                                                    signal: n,
+                                                    credentials: "same-origin",
+                                                    cache: "no-store",
+                                                    redirect: "error",
+                                                    params: {
+                                                        header: {
+                                                            "x-codex-statsig-user-id": t,
+                                                            "x-codex-statsig-account-id": e
+                                                        }
+                                                    }
+                                                });
+                                            if (!i.ok || 204 === i.status) return !1;
+                                            let s = l.b.parse(o);
+                                            if (n.aborted || s.accountId !== e || s.userId !== t) return !1;
+                                            return !0
+                                        } catch {
+                                            return !1
+                                        }
+                                    }(e, t, AbortSignal.any([n, a.signal])), !1, Date.now() + 1e3)
+                                } finally {
+                                    a.abort()
+                                }
+                            }(a, U, t): Promise.resolve(!1)
+                        }
+                        let G = window.electronBridge?.getDesktopUserAgent?.() ?? null,
+                            W = null != a && "chatgpt" === H && "/" === N && null == P,
+                            K = null == G ? void 0 : q.get(S.a),
+                            $ = null == G ? void 0 : q.get(A.a),
+                            F = "chatgpt" === H && null == P,
+                            Y = (0, v.a)(),
+                            Q = null == a ? void 0 : await (0, u.a)(q),
+                            X = {
+                                home_sms_backup_supported: W,
+                                pepper_home_banner_supported: F,
+                                pro_offer_checkout_supported: !!(null == P && ("chatgpt" === H || "work_tab" === H) && q.get(T.b, {
+                                    layer: "3780044865",
+                                    parameter: "send_pro_offer_checkout_capability",
+                                    disableExposureLog: !0
+                                })) || void 0,
+                                browser_family: Y ?? void 0,
+                                browser_extension_installed: null == Y ? void 0 : q.get(w.b),
+                                browser_tab_search_available: null == Y ? void 0 : (0, y.a)(q, H)
+                            },
+                            Z, J = (0, h.g)(q, H, N, D),
+                            ee = J ? [h.b] : void 0,
+                            et = P ?? ("chatgpt" === H ? void 0 : ee),
+                            en = null != G && "codex" === H && null == P && null != a ? await q.query.fetch(C.a).catch(() => null) ?? void 0 : void 0,
+                            ea = c && null != a && null != U ? {
+                                beacon_ui_response: (await k.Request.safeGet("/beacons_v2", {
+                                    cache: "no-store",
+                                    retry: "never",
+                                    signal: t,
+                                    expectedIdentity: {
+                                        accountId: a,
+                                        userId: U
+                                    },
+                                    additionalHeaders: {
+                                        "Cache-Control": "no-store",
+                                        "oai-client-version": (0, E.b)(),
+                                        "x-openai-use-sheep": "1"
+                                    },
+                                    parameters: {
+                                        query: {
+                                            surface: ["home"],
+                                            ...X
+                                        }
+                                    }
+                                })).surfaces.home ?? null
+                            } : await k.Request.safeGet("/beacons/home", {
+                                signal: t,
+                                additionalHeaders: {
+                                    ...null == a ? {} : {
+                                        "ChatGPT-Account-ID": a,
+                                        ...{
+                                            [o.ac]: a
+                                        }
+                                    },
+                                    "Cache-Control": "no-store",
+                                    ...{
+                                        "oai-client-version": (0, E.b)()
+                                    },
+                                    ...null == G ? {} : {
+                                        "User-Agent": G
+                                    }
+                                },
+                                parameters: {
+                                    query: {
+                                        product: H,
+                                        ...null == Q ? {} : {
+                                            preload_installation_id: Q
+                                        },
+                                        selected_model_slug: null == L ? void 0 : q.get(I.f, L).selectedModel.slug,
+                                        web_frontend: "codex_webview",
+                                        codex_window_type: "browser",
+                                        desktop_voice_available: $,
+                                        desktop_voice_nux_seen: K,
+                                        notification_state: en,
+                                        ...X,
+                                        space_tooltip_ready: J,
+                                        supported_home_tooltip_targets: null == et ? void 0 : [...et],
+                                        codex_fast_mode_eligible: Z?.codex_fast_mode_eligible,
+                                        codex_fast_mode_saved_ms: Z?.codex_fast_mode_saved_ms,
+                                        codex_fast_mode_thread_count: Z?.codex_fast_mode_thread_count
+                                    }
+                                }
+                            }),
+                            eo = [];
+                        "chatgpt" === H && null == P && (eo = f.b);
+                        let {
+                            beacon: ei,
+                            rejection: er
+                        } = function(e, t) {
+                            let n = e.beacon_ui_response;
+                            if (null == n) return {
+                                beacon: null,
+                                rejection: null
+                            };
+                            let a = (0, b.a)(n, t);
+                            return null == a ? {
+                                beacon: null,
+                                rejection: (0, _.c)(n)
+                            } : {
+                                beacon: a,
+                                rejection: null
+                            }
+                        }(ea, eo), es = null == ei ? null : await async function(e, t) {
+                            if (!(0, g.b)(t)) return t;
+                            let {
+                                createClinicianPersonalWorkspaceModal: a
+                            } = await n.e(123655).then(n.bind(n, "quFz"));
+                            return a(t, {
+                                intl: e.get(d.a),
+                                copyVariant: (0, p.a)(e.get(m.f))
+                            })
+                        }(q, ei);
+                        if (es?.beacon_id !== "auth_app_install_turn_count_banner" || null == V || await V || (es = null), null != es && (0, A.b)(es) && null == G && (es = null), es?.beacon_id === "codex_fast_mode_home_banner" && (Z?.codex_fast_mode_eligible !== !0 || "beacon_banner_info" !== es.ui_info.type) && (es = null), null != P && ei?.ui_info.type !== "beacon_tooltip_info" && (es = null), ei?.ui_info.type === "beacon_tooltip_info") {
+                            let e = ei.ui_info.target;
+                            (P ?? ee)?.some(t => t === e) || (es = null)
+                        }
+                        null != er && (0, i.k)(q, {
+                            beaconId: er.beaconId,
+                            diagnostic: er.diagnostic,
+                            placement: O[H],
+                            suppressLifecycle: er.suppressLifecycle,
+                            treatment: er.treatment
+                        });
+                        let el = !t.aborted && null != es && ((0, g.h)(es) || (0, g.i)(es)) && R();
+                        el && null != a && null != es && (0, g.e)(es) && (0, i.e)(q, a, es);
+                        let ec = t.aborted || el || null == a || null == U ? null : {
+                            accountId: a,
+                            userId: U
+                        };
+                        if (null != ec && null != es && j && (es = {
+                                ...es,
+                                [g.k]: ec
+                            }), null != ec && null != es && (0, g.e)(es) && (0, M.h)(q, ec, es)) {
+                            let e = es,
+                                t = (0, M.c)(e)?.notification_id;
+                            es = "beacon_banner_info" !== e.ui_info.type && (0, M.e)(q, ec).some(e => (0, M.c)(e)?.notification_id === t) ? {
+                                ...e,
+                                onLifecycle: (t, n) => {
+                                    ("dismiss" === n.action || "click" === n.action) && (0, M.a)(t, ec, e)
+                                }
+                            } : null
+                        }
+                        return {
+                            accountId: a,
+                            beacon: el ? null : es,
+                            locale: B,
+                            pathname: N,
+                            product: H,
+                            visitKey: D
+                        }
+                    }
+                }
+            }, {
+                excludeFieldsFromKey: ["shouldSuppressFocusedModal"]
+            });
+
+        function B(e, t) {
+            let {
+                queryKey: n
+            } = e.query.getOptions(L, t);
+            (0, a.f)(e, L, t), e.queryClient.removeQueries({
+                queryKey: n,
+                exact: !0
+            })
+        }
+    }),
+    xW5B: (function(e, t, n) {
+        var a = n("BolX"),
+            o = n("StMt"),
+            i = n("Cslg"),
+            r = n("OFP1"),
+            s = n("SPzj"),
+            l = n("sb2P"),
+            c = n("vOxw"),
+            u = n("fM3G"),
+            _ = n("DYuz"),
+            d = n("s4w7"),
+            p = n("oHzU"),
+            m = n("un4u"),
+            g = n("g2p6"),
+            f = n("U861"),
+            b = n("jWQ7"),
+            h = n("ad0f"),
+            v = n("AGHv"),
+            w = n("mmXj"),
+            y = n("e1xH"),
+            I = n("V9B1"),
+            k = n("OWtl"),
+            x = n("OMIV"),
+            C = n("O666"),
+            A = n("pyOZ");
+        let S = {
+                status: "pending"
+            },
+            E = {
+                chatgpt: "chat",
+                codex: "codex",
+                work_tab: "work"
+            },
+            P = (0, a.r)(k.a, e => {
+                let {
+                    get: t
+                } = e, n = t(v.onboardingIdentity$);
+                return (0, b.a)({
+                    authMethod: "chatgpt",
+                    enabled: t(x.d, "3856252093"),
+                    userId: n?.userId ?? null,
+                    workspaceId: n?.accountId
+                })
+            }),
+            T = (0, a.v)(k.a, e => null),
+            M = (0, a.v)(k.a, e => !1, {
+                onMount: (e, t) => {
+                    if (t.get(d.h, t.key)) return void e(!0);
+                    let n = !1,
+                        a = window.setTimeout(() => {
+                            n || (n = !0, t.set(d.h, t.key, !0), e(!0))
+                        }, 5e3),
+                        i = t.watch(t => {
+                            if (n || (e(!1), null == t.get(d.c))) return;
+                            let i = t.get(o.a, {
+                                name: "chatgpt"
+                            });
+                            if (i.isLoading || i.isCapable && !t.get(x.d, "2200939124") && t.get(x.g, "2200939124")) return;
+                            let r = !0;
+                            return queueMicrotask(() => {
+                                r && (n = !0, window.clearTimeout(a), e(!0))
+                            }), () => {
+                                r = !1
+                            }
+                        });
+                    return () => {
+                        window.clearTimeout(a), i()
+                    }
+                }
+            }, {
+                autoDispose: !0
+            }),
+            O = (0, a.v)(k.a, (e, t) => {
+                let {
+                    scope: n
+                } = t, a = j(e);
+                return null == a ? S : n.get(l.d, a.visitKey)
+            }, {
+                onMount: (e, t) => {
+                    let n = j(t.key);
+                    return null != n && (t.key.shouldFetch || null != t.key.browserTooltipTargets) ? (new l.a(t).touchHomeVisit(n), t.watch(a => {
+                        e(function e(t, n, a) {
+                            var o, b;
+                            let k, S = new l.a(t),
+                                O = t.get(f.d);
+                            if (O?.accountId === a.accountId && (null != n.browserTooltipTargets || O.destination === E[n.product] && "beacon_tooltip_info" === O.beacon.ui_info.type)) return S.applyHomeQueryResult(a, {
+                                ...a,
+                                beacon: null
+                            }), S.getHomeVisit(a);
+                            let j = t.get(f.c),
+                                B = t.get(l.d, a.visitKey),
+                                N = j ? "unrestricted" : function(e, t) {
+                                    if ("work_tab" !== t.product) return "unrestricted";
+                                    let n = e.get(i.l);
+                                    if ("allowed" !== n.status || !("plan" in n)) return "blocked";
+                                    if (!(0, v.isEnterpriseClientPlan)(n.plan)) return "unrestricted";
+                                    let a = e.get(v.onboardingIdentity$),
+                                        o = e.get(r.r);
+                                    if (null == a || a.accountId !== t.accountId || a.userId !== t.userId || "allowed" !== o.status || !("accountId" in o) || o.accountId !== t.accountId) return "blocked";
+                                    let s = e.get(g.p).data;
+                                    if (null == s) return "blocked";
+                                    if (s.seenAnnouncements?.[v.COMPLETION_ANNOUNCEMENT] != null) return "unrestricted";
+                                    if (!e.get(x.d, "1625797156")) return _.a;
+                                    let l = [];
+                                    if (e.get(C.b, {
+                                            layer: "2912878776",
+                                            parameter: "enabled",
+                                            disableExposureLog: !0
+                                        }) && l.push("tpp_work_default_announcement_modal"), e.get(x.d, "3033586454") && e.get(C.b, {
+                                            layer: "2220584304",
+                                            parameter: "experiment_enabled",
+                                            disableExposureLog: !0
+                                        }) && l.push("tpp_work_reonboarding_modal"), 0 === l.length) return _.a;
+                                    if (!e.get(x.d, "3856252093")) return [..._.a, ...l];
+                                    let {
+                                        data: c,
+                                        isPending: u
+                                    } = e.get(P);
+                                    return u ? "finance_pending" : c?.enabled ? _.a : [..._.a, ...l]
+                                }(t, n);
+                            if ("blocked" === N) return {
+                                status: "ineligible"
+                            };
+                            "selected" === B.status && L(t, n, B.beacon) && S.suppressUnsupportedHomeBeacon(a.accountId, B.beacon.beacon_id);
+                            let H = t.get(w.h),
+                                R = t.get(w.j),
+                                U = !j && (0, w.l)({
+                                    activeClaims: H,
+                                    isCurrentHomeBeacon: !0,
+                                    isHomepageTakeoverOwner: (o = S, b = a, null != (k = o.getSelectedHomeBeacon(b)) && (0, p.f)(k)),
+                                    isPageContextUpsellSuppressionEnabled: R
+                                }),
+                                D = !j && (t.get(w.d) || U),
+                                q = n.browserTooltipTargets,
+                                V = null != n.browserTooltipTargets || !(0, h.b)(n.pathname) || t.get(M, a.visitKey),
+                                z = !t.get(d.h, a.visitKey) && (0, d.d)(t, n.product, n.pathname);
+                            if (null != q) {
+                                let e = t.get(T, a.visitKey);
+                                null != e && e.length > 0 ? q = e : t.set(T, a.visitKey, q)
+                            }
+                            let G = null != n.composerSelectionContext && (t.get(m.f, n.composerSelectionContext).savedModelPending || t.get(m.c, {
+                                conversationOrigin: n.composerSelectionContext.conversationOrigin,
+                                gizmoId: n.composerSelectionContext.gizmoId,
+                                useMergedPicker: n.composerSelectionContext.useMergedPicker
+                            }).modelsQuery.isPending);
+                            V && !z && (0, c.b)(t, n.visitKey, (0, d.g)(t, n.product, n.pathname, n.visitKey));
+                            let W = t.get(u.b, {
+                                accountId: n.accountId,
+                                userId: n.userId,
+                                clientContext: n.clientContext,
+                                composerSelectionContext: n.composerSelectionContext,
+                                browserTooltipTargets: q,
+                                locale: n.locale,
+                                pathname: n.pathname,
+                                product: n.product,
+                                shouldSuppressFocusedModal: n.shouldSuppressFocusedModal,
+                                visitKey: n.visitKey
+                            }, {
+                                enabled: n.shouldFetch && !1 !== n.clientContextReady && !G && V && !z && !j && (window.electronBridge?.getDesktopUserAgent?.() == null || !t.get(x.h) && t.get(A.a) && void 0 !== t.get(I.a)) && "pending" === B.status
+                            });
+                            if (j) return S.getHomeVisit(a);
+                            let K = W.data?.beacon != null && (0, I.b)(W.data.beacon) && void 0 === t.get(I.a);
+                            if (null != n.browserTooltipTargets && "pending" === B.status && null != W.data && null == W.data.beacon && q?.join(",") !== n.browserTooltipTargets.join(",")) return t.set(T, a.visitKey, n.browserTooltipTargets), e(t, n, a);
+                            if ("finance_pending" === N && W.data?.beacon != null && !(0, _.c)(W.data.beacon.beacon_id) || W.data?.accountId == null || null != n.browserTooltipTargets && null == W.data.beacon || K) W.isError && S.applyHomeQueryResult(a, {
+                                ...a,
+                                beacon: null
+                            });
+                            else {
+                                let e = S.applyHomeQueryResult(a, {
+                                    accountId: W.data.accountId,
+                                    beacon: "string" == typeof N || N.includes(W.data.beacon?.beacon_id ?? "") ? W.data.beacon : null,
+                                    locale: W.data.locale,
+                                    pathname: W.data.pathname,
+                                    product: W.data.product,
+                                    visitKey: W.data.visitKey
+                                });
+                                if (e && null != W.data.beacon && L(t, n, W.data.beacon)) return S.suppressUnsupportedHomeBeacon(a.accountId, W.data.beacon.beacon_id), S.getHomeVisit(a);
+                                e && null != W.data.beacon && "empty" !== S.getHomeVisit(a).status && D && (S.requestHomeBeaconSuppression(a), U && (0, p.e)(W.data.beacon) && (0, s.d)(t, W.data.beacon, H))
+                            }
+                            let $ = S.getSelectedHomeBeacon(a);
+                            t.get(y.pagesEnabled$) && null != $ && (0, p.g)($) && S.suppressUnsupportedHomeBeacon(a.accountId, $.beacon_id);
+                            let F = S.getSelectedHomeBeacon(a);
+                            return null != F && ((0, I.b)(F) && !1 === t.get(I.a) || "codex_fast_mode_home_banner" === F.beacon_id && n.clientContext?.codex_fast_mode_eligible !== !0) ? S.suppressUnsupportedHomeBeacon(a.accountId, F.beacon_id) : D && (S.requestHomeBeaconSuppression(a), U && null != F && (0, p.e)(F) && (0, s.d)(t, F, H)), S.getHomeVisit(a)
+                        }(a, t.key, n))
+                    })) : void e(S)
+                }
+            }, {
+                autoDispose: !0,
+                excludeFieldsFromKey: ["shouldSuppressFocusedModal"]
+            });
+
+        function j(e) {
+            return null == e.accountId || 0 === e.visitKey.length ? null : {
+                accountId: e.accountId,
+                locale: e.locale,
+                pathname: e.pathname,
+                product: e.product,
+                visitKey: e.visitKey
+            }
+        }
+
+        function L(e, t, n) {
+            if ("beacon_tooltip_info" !== n.ui_info.type) return !1;
+            let a = n.ui_info.target;
+            return null != t.browserTooltipTargets ? !t.browserTooltipTargets.some(e => e === a) : (0, d.e)(e, t.product, a)
+        }
+        n.d(t, {}, {
+            a: T,
+            b: O
+        })
+    }),
+    Eso4: (function(e, t, n) {
+        n.d(t, {}, {
+            a: function(e, t) {
+                return t.some(t => t.beaconId === e.beacon_id && t.containerId === e.ui_info.container_id)
+            },
+            b: [{
+                beaconId: "cfc_personal_workspace_beacon",
+                containerId: "cfc_personal_workspace_beacon"
+            }]
+        })
+    }),
+    prHy: (function(e, t, n) {
+        var a = n("ASxG"),
+            o = n("s4w7"),
+            i = n("h6ff"),
+            r = n("Eso4");
+        let s = a.string().refine(e => e.trim().length > 0, "Home tooltip title must not be blank"),
+            l = a.string().nullable().optional().transform(e => e ?? null),
+            c = {
+                action_items: a.array(a.never()).length(0),
+                beacon_name: a.string(),
+                show_timing: a.enum(["immediate", "wait_until_conversation_refresh"]).optional().default("immediate"),
+                type: a.literal("beacon_ui_response")
+            },
+            u = a.union([a.object({
+                ...c,
+                beacon_id: a.literal("voice_mode_tooltip"),
+                ui_info: a.object({
+                    subtitle: l,
+                    target: a.literal("composer-voice-button"),
+                    title: s,
+                    type: a.literal("beacon_tooltip_info")
+                }).loose()
+            }).loose(), a.object({
+                ...c,
+                beacon_id: a.literal("tpp_nux_tooltip"),
+                ui_info: a.object({
+                    subtitle: l,
+                    target: a.literal("tpp-surface-mode-toggle"),
+                    title: s,
+                    type: a.literal("beacon_tooltip_info")
+                }).loose()
+            }).loose()]),
+            _ = a.union([u, o.j]),
+            d = a.union([i.d, _]);
+        n.d(t, {}, {
+            a: function(e, t) {
+                let n = d.safeParse(e);
+                if (n.success) return n.data;
+                let a = i.b.safeParse(e);
+                return a.success && (0, r.a)(a.data, t) ? a.data : null
+            },
+            b: d,
+            c: function(e) {
+                return _.safeParse(e).success
+            }
+        })
+    }),
+    fHnT: (function(e, t, n) {
+        var a = n("BolX"),
+            o = n("OWtl");
+        let i = Object.freeze([]),
+            r = (0, a.u)(o.a, () => i);
+        n.d(t, {}, {
+            a: r,
+            b: function(e, t, n) {
+                e.set(r, e => {
+                    if (e.includes(t) === n) return e;
+                    if (!n) {
+                        let n = e.filter(e => e !== t);
+                        return 0 === n.length ? i : Object.freeze(n)
+                    }
+                    return Object.freeze([...e, t].sort())
+                })
+            }
+        })
+    }),
+    W44r: (function(e, t, n) {
+        var a = n("ABep"),
+            o = n("BolX"),
+            i = n("zd8w"),
+            r = n("Wf1j"),
+            s = n("jqIZ"),
+            l = n("Cslg"),
+            c = n("EOo5"),
+            u = n("hlVK"),
+            _ = n("SPzj"),
+            d = n("sb2P"),
+            p = n("prHy"),
+            m = n("KXZK"),
+            g = n("U861"),
+            f = n("kphc"),
+            b = n("ad0f"),
+            h = n("bdDz"),
+            v = n("vkjh"),
+            w = n("mmXj"),
+            y = n("OWtl"),
+            I = n("RNtx"),
+            k = n("fHnT"),
+            x = n("s4w7");
+        let C = {
+            chatgpt: {
+                placement: "homepage",
+                productExperience: "chat",
+                treatment: "tooltip"
+            },
+            work_tab: {
+                placement: "work_tab_home",
+                productExperience: "work",
+                treatment: "tooltip"
+            },
+            codex: {
+                placement: "codex_home",
+                productExperience: "chat",
+                treatment: "tooltip"
+            }
+        };
+        n.d(t, {}, {
+            a: function(e) {
+                let {
+                    activationAction: t = "dismiss",
+                    allowDesktop: n = !1,
+                    children: A,
+                    enabled: S,
+                    minimumVisibleRatio: E,
+                    onReadinessChange: P,
+                    previewEnabled: T = S,
+                    product: M = "chatgpt",
+                    side: O,
+                    size: j,
+                    target: L
+                } = e, B = (0, o.y)(y.a), N = (0, i.useId)(), {
+                    accountId: H,
+                    userId: R
+                } = (0, c.a)(), {
+                    locale: U
+                } = (0, r.a)(), D = (0, s.Y)(), q = (0, o.z)(g.d), V = (0, o.z)(f.b), z = (0, o.z)(h.c) ?? !1, [G, W] = (0, i.useState)(null), K = (0, i.useRef)(null), [$, F] = (0, i.useState)(null);
+                (0, i.useEffect)(() => {
+                    if (null == E || null == G) return;
+                    let e = new IntersectionObserver(e => {
+                        let [t] = e;
+                        F(t?.isIntersecting === !0 && t.intersectionRatio >= E)
+                    }, {
+                        threshold: E
+                    });
+                    return e.observe(G), () => e.disconnect()
+                }, [E, G]);
+                let Y = null == H ? null : (0, d.b)({
+                        accountId: H,
+                        locale: U,
+                        navigationKey: D.key,
+                        pathname: D.pathname,
+                        product: M
+                    }),
+                    Q = (0, o.x)(d.d, Y ?? ""),
+                    X = "chat";
+                "work_tab" === M ? X = "work" : "codex" === M && (X = "codex");
+                let Z = (0, g.f)(q, {
+                        accountId: H,
+                        destination: X,
+                        pathname: D.pathname,
+                        userId: R
+                    }),
+                    J = "selected" === Q.status ? Q.beacon : null,
+                    ee = Z ? q?.beacon ?? null : J,
+                    et = null != ee && (0, p.c)(ee) && ee.ui_info.target === L ? ee : null,
+                    en = Z && null != q,
+                    ea = en && null != et ? T : S,
+                    eo = (null == E || !0 === $) && !0 === ea && null != H && ("chatgpt" === M ? "/" === D.pathname && "chat" === V : (0, b.b)(D.pathname)) && null != G,
+                    ei = eo && null != et && (!(0, h.l)({
+                        hideFirstNewThreadOnboardingPromos: z,
+                        pathname: D.pathname
+                    }) || (0, x.f)(et.beacon_id) || et.custom_fields?.show_after_onboarding === !0),
+                    er = null;
+                null != et && (er = en ? `debug:${q.intentId}` : `${Y??""}:${et.beacon_id}`);
+                let es = null != E && (null == $ || $ && null == ea);
+                (0, i.useEffect)(() => {
+                    if (!es || null == P) return;
+                    let e = window.setTimeout(() => {
+                        P(B, !1)
+                    }, 5e3);
+                    return () => window.clearTimeout(e)
+                }, [es, P, B]), (0, i.useLayoutEffect)(() => null != E ? ((0, k.b)(B, L, eo), P?.(B, es), () => {
+                    (0, k.b)(B, L, !1)
+                }) : eo ? ((0, k.b)(B, L, !0), () => {
+                    (0, k.b)(B, L, !1)
+                }) : void 0, [es, eo, E, P, B, L]), (0, i.useEffect)(() => {
+                    ei && !en && null != H && null != et && ((0, m.e)(B, H, et), (0, m.d)(B, H, et, C[M]))
+                }, [H, en, ei, M, B, et]);
+                let el = () => {
+                        null == et || null == er || K.current !== er && (K.current = er, en ? (0, g.b)(B, q.intentId) : null != H && ((0, _.b)(B, {
+                            action: "dismiss",
+                            beacon: et,
+                            ...C[M]
+                        }), (0, m.b)(B, H, et)))
+                    },
+                    ec = A({
+                        ariaDescribedBy: ei ? N : void 0,
+                        isOpen: ei,
+                        onActivate: () => {
+                            if (ei && null != et && null != er && K.current !== er && B.get(l.f) === H) {
+                                if ("click" !== t) return void el();
+                                K.current = er, en ? (0, g.b)(B, q.intentId) : null != H && ((0, _.b)(B, {
+                                    action: "click",
+                                    beacon: et,
+                                    ...C[M]
+                                }), (0, u.a)({
+                                    beacon: et,
+                                    eventType: "click",
+                                    accountId: H
+                                }), (0, m.a)(B, H, et))
+                            }
+                        },
+                        triggerRef: W
+                    });
+                return (0, a.jsxs)(v.a, {
+                    active: ei,
+                    claim: w.a.HomeBeacon,
+                    children: [ec, ei && null != et ? (0, a.jsx)(I.a, {
+                        id: N,
+                        align: "composer-voice-button" === L ? "end" : "center",
+                        anchor: G,
+                        onDismiss: el,
+                        side: O ?? ("composer-voice-button" === L ? "top" : "bottom"),
+                        size: j,
+                        title: et.ui_info.subtitle ? et.ui_info.title : void 0,
+                        body: et.ui_info.subtitle || et.ui_info.title
+                    }) : null]
+                })
+            }
+        })
+    }),
+    DYuz: (function(e, t, n) {
+        let a = "enterprise_dot_provisioned_home_takeover",
+            o = "enterprise_dot_provisioned_work_takeover",
+            i = "dot_retention_home_takeover",
+            r = "dot_retention_work_takeover",
+            s = "dot_create_home_takeover",
+            l = "dot_create_work_takeover",
+            c = [a, o, i, r, s, l];
+        n.d(t, {}, {
+            a: c,
+            b: function(e) {
+                return e === a ? o : e === o ? a : e === i ? r : e === r ? i : e === s ? l : e === l ? s : null
+            },
+            c: function(e) {
+                return c.includes(e)
+            }
+        })
+    }),
+    lM2P: (function(e, t, n) {
+        let a = new Set(["data_analysis_execution", "saved_memory", "response_personalization", "writing_assistance", "step_by_step_guidance", "personalized_advice", "professional_assistance", "conversation_history_search", "file_generation_download", "document_analysis", "connected_apps_access", "voice_conversation", "health_experience", "image_generation", "scheduled_tasks", "deep_research", "interactive_study", "interactive_app_creation"]);
+        n.d(t, {}, {
+            a: a
+        })
+    }),
+    ESoo: (function(e, t, n) {
+        n.d(t, {
+            a: () => g,
+            b: () => f
+        });
+        var a = n("ASxG"),
+            o = n("hlVK"),
+            i = n("M8lA"),
+            r = n("yGJW"),
+            s = n("wVL6"),
+            l = n("eac5"),
+            c = n("SPzj"),
+            u = n("ycSk"),
+            _ = n("wJ7T"),
+            d = n("RJnh");
+        let p = a.enum(["turn_5", "turn_10", "image_gen_turn", "homepage", "conversation_turn", "contextual_conversation_turn"]),
+            m = new Set(["auth_app_install_turn_count_banner", "logged_in_ios_mweb_homepage_app_upsell", "no_auth_app_install_turn_count_bottom_sheet", "no_auth_app_install_turn_count_inline_banner", "mweb_app_install_turn_count", "android_mweb_image_turn_app_upsell", "android_mweb_conversation_turn_app_upsell", "android_mweb_paid_conversation_turn_app_upsell", "android_mweb_contextual_app_upsell", "ios_mweb_image_turn_app_upsell", "ios_mweb_conversation_turn_app_upsell", "ios_mweb_contextual_app_upsell", "no_auth_android_mweb_contextual_app_upsell"]);
+
+        function g(e, t) {
+            return "open_url" === e.action_v2.action_enum && null != (0, d.b)(e) && m.has(t.beacon_id) && p.safeParse(t.custom_fields?.app_install_source).success
+        }
+        async function f(e, t) {
+            let n = p.safeParse(t.beacon.custom_fields?.app_install_source);
+            if (!n.success || !t.allowExternalActions || "open_url" !== e.action_v2.action_enum || !g(e, t.beacon)) return !1;
+            let a = t.beacon.custom_fields?.dlid,
+                d = "string" == typeof a ? a : crypto.randomUUID(),
+                m = "logged_in_ios_mweb_homepage_app_upsell" === t.beacon.beacon_id && t.beacon.custom_fields?.app_install_destination === "singular" ? {
+                    href: e.action_v2.url,
+                    appLink: e.action_v2.url,
+                    deepLinkId: d
+                } : function(e) {
+                    let {
+                        source: t,
+                        conversationId: n,
+                        deepLinkId: a,
+                        medium: o,
+                        userAgent: i,
+                        appBaseUrl: r,
+                        hasAccountSelector: s = !1
+                    } = e, l = n ? `c/${encodeURIComponent(n)}` : void 0, c = new URL(l ? `/app/${l}` : "/app", "https://chat.openai.com"), u = new URL(l ? `/${l}` : "/app", "https://chatgpt.com");
+                    for (let e of [c, u]) e.searchParams.set("dlid", a), e.searchParams.set("utm_campaign", "mweb_app_install"), e.searchParams.set("utm_content", t);
+                    c.searchParams.set("referrer", new URLSearchParams({
+                        utm_source: "chatgpt_web",
+                        utm_medium: o,
+                        dlid: a
+                    }).toString());
+                    let d = c.href;
+                    if (!(/Android/.test(i) && i.includes("Chrome")) || /; wv|webview|fbav|fb_iab|fban|instagram|line\/|kakaotalk|snapchat|tiktok/i.test(i) || /Version\/\d+\.\d+/.test(i)) return {
+                        href: d,
+                        appLink: d,
+                        deepLinkId: a
+                    };
+                    let p = new URLSearchParams({
+                            dlid: a,
+                            utm_source: "chatgpt_web",
+                            utm_medium: o,
+                            utm_campaign: "mweb_app_install",
+                            utm_content: t
+                        }),
+                        m = l ? `${l}?${p}` : `app?${p}`,
+                        g = new URL("https://play.google.com/store/apps/details?id=com.openai.chatgpt");
+                    g.searchParams.set("referrer", m);
+                    let f = ("conversation_turn" === t || "homepage" === t || "contextual_conversation_turn" === t) && (0, _.a)(i),
+                        b = null != r && (s || f) ? new URL(`${r.pathname.replace(/\/$/,"")}/update-app`, r) : g;
+                    return b !== g && (b.searchParams.set("referrer", m), f && b.searchParams.set("force_account_selector", "true")), {
+                        href: `intent://${u.host}${u.pathname}${u.search}#Intent;scheme=https;package=com.openai.chatgpt;S.browser_fallback_url=${encodeURIComponent(b.href)};end`,
+                        appLink: d,
+                        deepLinkId: a
+                    }
+                }({
+                    source: n.data,
+                    conversationId: "auth_app_install_turn_count_banner" === t.beacon.beacon_id || "logged_in_ios_mweb_homepage_app_upsell" === t.beacon.beacon_id || "no_auth_app_install_turn_count_bottom_sheet" === t.beacon.beacon_id || "no_auth_app_install_turn_count_inline_banner" === t.beacon.beacon_id || "no_auth_android_mweb_contextual_app_upsell" === t.beacon.beacon_id ? void 0 : t.eventMetadata?.conversationId,
+                    deepLinkId: d,
+                    medium: t.analyticsContext?.treatment === "modal" ? "mweb_bottomsheet" : "mweb_banner",
+                    userAgent: navigator.userAgent,
+                    appBaseUrl: t.appBaseUrl,
+                    hasAccountSelector: null != (0, i.getClientBootstrap)().androidInstallAccountSelector
+                });
+            if ("primary" === e.type) try {
+                window.localStorage.removeItem("oai/apps/contextualUpsellId")
+            } catch {}
+            if (null != t.analyticsContext) try {
+                (0, c.b)(t.scope, {
+                    action: "click",
+                    actionId: e.id,
+                    actionType: e.type,
+                    beacon: t.beacon,
+                    destinationAction: e.action_v2.action_enum,
+                    ...t.analyticsContext
+                })
+            } catch {}
+            if ((0, o.a)({
+                    beacon: t.beacon,
+                    eventType: "click",
+                    eventCtaId: e.id,
+                    metadata: t.eventMetadata,
+                    accountId: t.eventAccountId,
+                    keepalive: !0
+                }), t.onActionComplete?.(e), (0, u.b)(t.scope, m.deepLinkId, m.appLink), "homepage" === n.data && "auth_app_install_turn_count_banner" === t.beacon.beacon_id && "primary" === e.type && "auth_app_install_turn_count_banner_get_app" === e.id) try {
+                let e = t.scope.get(r.c);
+                if ("logged_in" === (0, i.getClientBootstrap)().authStatus && "android_web" === (0, s.a)() && "allowed" === e.getAnalyticsAdmission()) {
+                    let t = Date.now() + 250;
+                    await (0, l.a)(e.flush(250), void 0, t)
+                }
+            } catch {}
+            return window.location.assign(m.href), {
+                didComplete: !0,
+                eventAccountId: t.eventAccountId,
+                shouldResolve: !1
+            }
+        }
+    }),
+    ycSk: (function(e, t, n) {
+        var a = n("wJ7T"),
+            o = n("jsDG"),
+            i = n("MVHH"),
+            r = n("M8lA"),
+            s = n("yGJW"),
+            l = n("OMIV");
+        let c = new Set(["turn_5", "turn_10", "image_gen_turn", "homepage", "conversation_turn", "contextual_conversation_turn"]);
+        n.d(t, {}, {
+            a: function(e) {
+                try {
+                    let t = (0, r.getClientBootstrap)();
+                    if (!t.session?.user?.id || !(0, a.a)(navigator.userAgent)) return;
+                    let n = e.get(l.f),
+                        o = "1506327862";
+                    n?.getLayer(o, {
+                        disableExposureLog: !0
+                    }).get("account_selector_log_exposure", !1) && n.getLayer(o).get("account_selector_enabled", !1)
+                } catch {}
+            },
+            b: function(e, t, n) {
+                let a = !1,
+                    r = () => {
+                        a = !0
+                    };
+                try {
+                    let o = e.get(s.c);
+                    window.addEventListener("pagehide", r, {
+                        capture: !0,
+                        once: !0
+                    }), (0, s.a)(e, i.c, {
+                        dlid: t,
+                        url: function(e, t) {
+                            let n = new URL(e);
+                            for (let [e, a] of(n.username = "", n.password = "", n.hash = "", Array.from(n.searchParams)))
+                                if (!("dlid" === e && a === t || "utm_campaign" === e && "mweb_app_install" === a || "utm_content" === e && c.has(a)))
+                                    if ("referrer" === e) {
+                                        let o = new URLSearchParams(a);
+                                        for (let [e, n] of Array.from(o))("dlid" !== e || n !== t) && ("utm_source" !== e || "chatgpt_web" !== n) && ("utm_medium" !== e || "mweb_banner" !== n && "mweb_bottomsheet" !== n) && o.set(e, "<redacted>");
+                                        n.searchParams.set(e, o.toString())
+                                    } else n.searchParams.set(e, "<redacted>");
+                            return n.href
+                        }(n, t)
+                    }, e => {
+                        window.removeEventListener("pagehide", r, !0), "sent" === e.status && (a || "hidden" === document.visibilityState) && o.flush().catch(() => {})
+                    })
+                } catch {
+                    window.removeEventListener("pagehide", r, !0)
+                }
+                try {
+                    let t;
+                    if (e.get(l.f)?.checkGate("2830112640")) return;
+                    let a = new URL(window.location.href),
+                        i = e => a.searchParams.get(e)?.trim() || void 0,
+                        r = {
+                            source: i("utm_source"),
+                            medium: i("utm_medium"),
+                            campaign: i("utm_campaign"),
+                            content: i("utm_content"),
+                            term: i("utm_term")
+                        },
+                        c = {
+                            notificationId: i("notification_id"),
+                            notificationChannelId: i("notification_channel_id"),
+                            entryId: i("entry_id"),
+                            deepLinkId: i("deep_link_id")
+                        };
+                    try {
+                        t = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : void 0
+                    } catch {}
+                    t === a.hostname.toLowerCase() && (t = void 0);
+                    let u = Object.values(r).some(e => null != e),
+                        _ = Object.values(c).some(e => null != e),
+                        d = ["gclid", "fbclid", "rdt_cid", "ttclid", "li_fat_id", "msclkid", "oppref", "gbraid", "wbraid"].some(e => null != i(e));
+                    if (!u && !_ && !d && !t) return;
+                    let p = r.source?.toLowerCase() === "sendgrid" && r.medium?.toLowerCase() === "email",
+                        m = new URL(n);
+                    for (let e of (m.hash = "", m.searchParams.keys())) m.searchParams.set(e, "redacted");
+                    let g = "APP_ENTRY_CHANNEL_UNSPECIFIED";
+                    p ? g = "APP_ENTRY_CHANNEL_EMAIL_NOTIFICATION" : null != c.notificationId && (g = "APP_ENTRY_CHANNEL_PUSH_NOTIFICATION"), (0, s.a)(e, o.g, {
+                        attribution: {
+                            source: p ? "notification_email" : "unspecified",
+                            utm: u ? r : void 0,
+                            channel: g,
+                            ...c,
+                            referrerDomain: t
+                        },
+                        destination: {
+                            redactedUrl: m.href
+                        },
+                        client: {
+                            surface: "browser"
+                        },
+                        fromSurface: "browser",
+                        toSurface: "native_app",
+                        reason: "mobile_app_upsell"
+                    })
+                } catch {}
+            }
+        })
+    }),
+    nInK: (function(e, t, n) {
+        var a = n("nM73"),
+            o = n("MwLV"),
+            i = n("Cslg"),
+            r = n("SHW6"),
+            s = n("xcp1"),
+            l = n("AOHi"),
+            c = n("Kwur"),
+            u = n("M8lA"),
+            _ = n("Ot7V"),
+            d = n("X6Vn"),
+            p = n("DAA7"),
+            m = n("GaA7"),
+            g = n("RlnO"),
+            f = n("GDNt"),
+            b = n("IDma"),
+            h = n("f5h2"),
+            v = n("lg1r"),
+            w = n("RJnh"),
+            y = n("ytyy");
+
+        function I(e, t, n) {
+            return (0, w.d)(t) ? (window.open(t, "_blank", "noopener,noreferrer"), !0) : null != n ? (0, _.e)({
+                event: n,
+                href: t,
+                initiator: "open_in_browser_bridge",
+                openTarget: e.useExternalBrowser ? "external-browser" : void 0
+            }) : (0, _.f)({
+                href: t,
+                initiator: "open_in_browser_bridge",
+                openTarget: e.useExternalBrowser ? "external-browser" : void 0
+            })
+        }
+        n.d(t, {}, {
+            a: I,
+            b: async function(e, t, _, k) {
+                if ((0, h.a)(e)) {
+                    let e = m.a.systemPermissions;
+                    if (!t.allowExternalActions || null == e) return !1;
+                    let n = await e.getNotificationPermissionStatus();
+                    if (t.isCurrentPresentation?.() === !1 || null == n) return !1;
+                    "not-determined" === n && await e.openNotificationSettings();
+                    let a = t.eventAccountId,
+                        o = t.featureAccessInputs;
+                    if (t.beacon?.beacon_id === "codex_home_notification_banner" && !t.eventMetadata?.suppressLifecycle && !t.analyticsContext?.suppressLifecycle && null != a && o?.authenticatedUserId != null) {
+                        let i = "not-determined" === n ? await e.getNotificationPermissionStatus() : n,
+                            r = () => t.isCurrentPresentation?.() !== !1 && (0, b.a)(t.scope, a, o.userId);
+                        if (!r()) return !1;
+                        if ("enabled" !== i) return "disabled" === i;
+                        let s = o.authenticatedUserId;
+                        try {
+                            await c.Request.safePatch("/notifications/settings", {
+                                expectedIdentity: {
+                                    accountId: a,
+                                    userId: s
+                                },
+                                requestBody: {
+                                    updates: {
+                                        library: {
+                                            push: !0
+                                        }
+                                    }
+                                },
+                                signal: AbortSignal.timeout(1e4)
+                            })
+                        } catch (e) {
+                            if (!r()) return !1;
+                            if (e instanceof f.a && 403 === e.status && "Notification setting is not editable" === (0, l.c)(e)) return !0;
+                            return (0, h.b)(t.scope), !1
+                        }
+                        let u = {
+                            queryKey: ["chatgpt-notification-settings", s, a],
+                            exact: !0
+                        };
+                        await t.scope.queryClient.cancelQueries(u), t.scope.queryClient.invalidateQueries({
+                            ...u,
+                            refetchType: (0, b.a)(t.scope, a, o.userId) ? "active" : "none"
+                        })
+                    }
+                    return !0
+                }
+                let x = _;
+                if ("open_local_url" === e.action_v2.action_enum) {
+                    if ("/settings/cloud-environments?select=default" === x && t.beacon?.beacon_id === "codex_cloud_home_modal_v2") {
+                        let [{
+                            canSelectBlankCloudEnvironment$: e
+                        }, {
+                            startNewConversation: a
+                        }] = await Promise.all([Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(226913), n.e(804608)]).then(n.bind(n, "nluz")), Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(226913), n.e(701292)]).then(n.bind(n, "Q8aV"))]), o = t.eventAccountId;
+                        if (t.isCurrentPresentation?.() === !1 || null == o || !(0, b.a)(t.scope, o, t.featureAccessInputs?.userId)) return !1;
+                        if (t.scope.get(e, null)) {
+                            let e = !1;
+                            return a(t.scope, {
+                                codexAppMode: "codex",
+                                defaultCloudEnvironment: !0,
+                                prefillComposerMode: "local",
+                                prefillCloudThreadPrototype: !0,
+                                freshDraft: !0,
+                                onNavigate: () => {
+                                    e = !0
+                                }
+                            }), e
+                        }
+                        return t.navigate("/settings/cloud-environments"), !0
+                    }
+                    if (/^\/admin\/members(?:[?#]|$)/u.test(e.action_v2.web_url)) {
+                        let t;
+                        (0, o.c)() && !/^local-[a-z0-9-]+\.chatgpt-staging\.com$/i.test(window.location.hostname) ? t = window.location.origin : "openai-dev" === (0, u.getClientBootstrap)().auth.provider && (t = "https://chatgpt-staging.com"), null != t && (x = new URL(e.action_v2.web_url, t).toString())
+                    }
+                    let r = (0, v.a)(x);
+                    if (null != r) {
+                        let e = t.scope.get(i.f),
+                            n = t.scope.get(i.k);
+                        if (!t.allowExternalActions || null == e || null == n || "allowed" !== t.scope.get(g.a).status) return !1;
+                        let o = await (0, a.a)();
+                        return t.isCurrentPresentation?.() !== !1 && !!(0, b.a)(t.scope, e, n) && "allowed" === t.scope.get(g.a).status && ((0, d.f)(t.scope, o, {
+                            ...r,
+                            accountId: e,
+                            userId: n
+                        }), !0)
+                    }
+                    let l = (0, s.a)(x);
+                    if (null != l) {
+                        if (!t.allowExternalActions) return !1;
+                        let {
+                            openTrustedContactBeaconAction: e
+                        } = await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(904661)]).then(n.bind(n, "bLYh"));
+                        return e(l, {
+                            scope: t.scope,
+                            navigate: t.navigate
+                        }), !0
+                    }
+                    if ("/?open=workspace-discovery" === x) {
+                        let e = t.scope.get(i.f),
+                            a = t.scope.get(i.k);
+                        if (null == e || null == a || !(0, b.a)(t.scope, e, a)) return !1;
+                        let {
+                            loadWorkspaceDiscoveryOpener: o
+                        } = await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085)]).then(n.bind(n, "gv9R")), r = await o();
+                        return !!(0, b.a)(t.scope, e, a) && (r(t.scope, a, "link" === t.source ? void 0 : (0, y.b)(t.beacon)), !0)
+                    }
+                }
+                if (t.allowExternalActions && /^(?:https:\/\/[^/]+)?\/admin(?:[/?#]|$)/u.test(x)) {
+                    let e = (0, p.c)(t.scope, x, t.featureAccessInputs?.accountId),
+                        n = null == e ? null : await e;
+                    if (null != n) return t.isCurrentPresentation?.() !== !1 && I({
+                        ...t,
+                        useExternalBrowser: !0
+                    }, n, k)
+                }
+                if ((0, w.f)(x)) {
+                    let n = (0, r.a)(e),
+                        a = n?.searchParams.get("prompt");
+                    return "open_local_url" === e.action_v2.action_enum && !0 !== e.action_v2.trigger_turn && n?.pathname === "/" && a ? t.navigate(x, {
+                        prefillPrompt: a.replace(/\r\n/g, "\n"),
+                        focusComposerNonce: Date.now()
+                    }) : t.navigate(x), !0
+                }
+                return I(t, x, k)
+            }
+        })
+    }),
+    f5h2: (function(e, t, n) {
+        var a = n("SGsN"),
+            o = n("svjy");
+        n.d(t, {}, {
+            a: function(e) {
+                return "open_local_url" === e.action_v2.action_enum && "/?open=notification-settings" === e.action_v2.web_url
+            },
+            b: function(e) {
+                e.get(a.f).danger(e.get(o.a).formatMessage({
+                    id: "chatgpt.beacons.notifications.toast.enable_failed",
+                    defaultMessage: "Couldn't turn on notifications. Try again later."
+                }), {
+                    errorAnalytics: {
+                        toastId: "chatgpt.beacons.notifications.toast.enable_failed"
+                    }
+                })
+            }
+        })
+    }),
+    AVl4: (function(e, t, n) {
+        var a = n("BolX"),
+            o = n("AuIy"),
+            i = n("hlVK"),
+            r = n("Kwur"),
+            s = n("dQRk"),
+            l = n("hx97"),
+            c = n("Ot7V"),
+            u = n("OWtl"),
+            _ = n("IDma"),
+            d = n("SPzj");
+        let p = new WeakMap,
+            m = (0, a.d)(u.a, (e, t) => {
+                let {
+                    get: n
+                } = t;
+                if (e?.conversationId == null || null == e.messageId) return null;
+                let a = n(s.N, e.conversationId);
+                if (null == a) return;
+                let i = (0, o.a)({
+                    mapping: a,
+                    current_node: e.messageId
+                }).findLast(l.m);
+                return i?.author.role === "user" ? i.id : null
+            });
+        n.d(t, {}, {
+            a: m,
+            b: function(e, t) {
+                let n = e.action_v2;
+                if ("create_presence_session" !== n.action_enum || !e.id || !n.launch_attempt_id || t.eventMetadata?.conversationId !== n.conversation_id || !t.eventMetadata.messageId) return {
+                    status: "unsupported"
+                };
+                let a = t.featureAccessInputs;
+                if (void 0 === t.presencePromptId || null == a || a.authLoading || a.accountLoading) return {
+                    status: "pending"
+                };
+                if (t.presencePromptId !== n.message_id) return {
+                    status: "unsupported"
+                };
+                let o = t.eventAccountId ?? a.authenticatedAccountId,
+                    s = a.userId;
+                if (!t.allowExternalActions || null == o || null == s || "chatgpt" !== a.authMethod || a.accountId !== o || a.authenticatedAccountId !== o) return {
+                    status: "unavailable"
+                };
+                let l = () => (0, _.a)(t.scope, o, s) && (t.isCurrentPresentation?.() ?? !1);
+                return {
+                    status: "supported",
+                    handler: async () => {
+                        if (!l()) return !1;
+                        let a = p.get(t.scope);
+                        null == a && (a = new WeakMap, p.set(t.scope, a));
+                        let u = a.get(t.beacon);
+                        null == u && (u = new Map, a.set(t.beacon, u));
+                        let _ = JSON.stringify([o, s, n.conversation_id, n.message_id, n.launch_attempt_id]),
+                            m = u.get(_);
+                        (null == m || m.completed || null === m.result) && (m = {
+                            creation: Promise.resolve().then(async () => {
+                                if (!l()) return null;
+                                try {
+                                    let e = await r.Request.safePost("/buying-advisor/session", {
+                                        additionalHeaders: {
+                                            "ChatGPT-Account-ID": o,
+                                            "x-openai-use-sheep": "1"
+                                        },
+                                        expectedIdentity: {
+                                            accountId: o,
+                                            userId: s
+                                        },
+                                        expectedErrorStatuses: [403, 404, 409, 429],
+                                        requestBody: {
+                                            conversation_id: n.conversation_id,
+                                            message_id: n.message_id,
+                                            launch_attempt_id: n.launch_attempt_id
+                                        },
+                                        retry: "never",
+                                        signal: AbortSignal.timeout(55e3)
+                                    });
+                                    return e.client_secret?.trim() && Number.isFinite(e.client_secret_expires_at) && e.client_secret_expires_at > Date.now() / 1e3 ? {
+                                        clientSecret: e.client_secret,
+                                        expiresAt: e.client_secret_expires_at
+                                    } : null
+                                } catch {
+                                    return null
+                                }
+                            }),
+                            completed: !1
+                        }, u.set(_, m), (0, i.a)({
+                            beacon: t.beacon,
+                            eventType: "click",
+                            eventCtaId: e.id,
+                            metadata: t.eventMetadata,
+                            accountId: o,
+                            keepalive: !0
+                        }), null != t.analyticsContext && (0, d.b)(t.scope, {
+                            action: "click",
+                            actionId: e.id,
+                            actionType: e.type,
+                            beacon: t.beacon,
+                            destinationAction: n.action_enum,
+                            ...t.analyticsContext
+                        }));
+                        let g = await m.creation;
+                        if (m.result = g, !l() || m.completed) return !1;
+                        m.completed = !0, t.onActionComplete?.(e);
+                        let f = new URL("https://openai.com/buying-agent/");
+                        return f.search = new URLSearchParams({
+                            utm_source: "chatgpt.com",
+                            utm_medium: "beacon",
+                            utm_campaign: "enterprise_plan_comparison_intent"
+                        }).toString(), null != g && g.expiresAt > Date.now() / 1e3 && (f.hash = new URLSearchParams({
+                            baps: g.clientSecret
+                        }).toString()), (0, c.f)({
+                            href: f.href,
+                            disposition: "current-tab",
+                            initiator: "open_in_browser_bridge"
+                        }), {
+                            didComplete: !0,
+                            eventAccountId: o,
+                            shouldResolve: !1
+                        }
+                    }
+                }
+            }
+        })
+    }),
+    s4w7: (function(e, t, n) {
+        var a = n("BolX"),
+            o = n("ASxG"),
+            i = n("fHnT"),
+            r = n("kphc"),
+            s = n("ad0f"),
+            l = n("OWtl"),
+            c = n("qixt");
+        let u = "space_onboarding",
+            _ = "sidebar-space-button",
+            d = (0, a.c)(l.a, e => {
+                let {
+                    get: t
+                } = e;
+                if (!t(c.d)) return "codex";
+                let n = t(r.b);
+                return "chat" === n ? "chatgpt" : "work" === n ? "work_tab" : null
+            }),
+            p = (0, a.u)(l.a, !1),
+            m = (0, a.v)(l.a, e => !1),
+            g = o.object({
+                action_items: o.array(o.never()).length(0),
+                beacon_id: o.literal(u),
+                beacon_name: o.string(),
+                show_timing: o.enum(["immediate", "wait_until_conversation_refresh"]).optional().default("immediate"),
+                type: o.literal("beacon_ui_response"),
+                ui_info: o.object({
+                    subtitle: o.string().refine(e => e.trim().length > 0),
+                    target: o.literal(_),
+                    title: o.string().refine(e => e.trim().length > 0),
+                    type: o.literal("beacon_tooltip_info")
+                }).loose()
+            }).loose();
+        n.d(t, {}, {
+            a: u,
+            b: _,
+            c: d,
+            d: function(e, t, n) {
+                return e.get(d) === t && (0, s.b)(n) && e.get(p)
+            },
+            e: function(e, t, n) {
+                return n === _ && (e.get(d) !== t || !e.get(i.a).includes(_))
+            },
+            f: function(e) {
+                return e === u
+            },
+            g: function(e, t, n, a) {
+                return e.get(d) === t && (0, s.b)(n) && !e.get(m, a) && e.get(i.a).includes(_)
+            },
+            h: m,
+            i: p,
+            j: g
+        })
+    }),
+    tMkG: (function(e, t, n) {
+        var a = n("ABep"),
+            o = n("QosV"),
+            i = n("BolX"),
+            r = n("zd8w"),
+            s = n("s4w7"),
+            l = n("Bbed"),
+            c = n("OWtl");
+        let u = (0, l.a)(async () => (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(128462)]).then(n.bind(n, "q2wP"))).SpaceHomeTooltipTarget, {
+            suspendToParent: !0,
+            errorFallback: e => (0, a.jsx)(_, {
+                ...e
+            })
+        });
+
+        function _(e) {
+            let t, n, a, l = (0, o.c)(5),
+                {
+                    children: u
+                } = e,
+                _ = (0, i.y)(c.a);
+            return l[0] !== _ ? (t = () => {
+                _.set(s.i, !1)
+            }, n = [_], l[0] = _, l[1] = t, l[2] = n) : (t = l[1], n = l[2]), (0, r.useLayoutEffect)(t, n), l[3] !== u ? (a = u({
+                ariaDescribedBy: void 0,
+                isOpen: !1,
+                onActivate: p,
+                triggerRef: d
+            }), l[3] = u, l[4] = a) : a = l[4], a
+        }
+
+        function d() {}
+
+        function p() {}
+        n.d(t, {}, {
+            a: function(e) {
+                let {
+                    children: t,
+                    ...n
+                } = e, o = (0, i.y)(c.a), l = (0, r.useRef)(null), _ = (0, r.useCallback)(() => {
+                    null != l.current && (window.clearTimeout(l.current), l.current = null)
+                }, []), d = e => (0, r.cloneElement)(t(e), n);
+                (0, r.useEffect)(() => () => {
+                    _(), o.set(s.i, !1)
+                }, [_, o]);
+                let p = d({
+                    ariaDescribedBy: void 0,
+                    isOpen: !1,
+                    onActivate: () => void 0,
+                    triggerRef: e => {
+                        if (null != e) {
+                            o.set(s.i, !0), _();
+                            let e = window.setTimeout(() => {
+                                l.current === e && (l.current = null), o.set(s.i, !1)
+                            }, 5e3);
+                            return l.current = e, () => {
+                                window.clearTimeout(e), l.current === e && (l.current = null)
+                            }
+                        }
+                    }
+                });
+                return (0, a.jsx)(r.Suspense, {
+                    fallback: p,
+                    children: (0, a.jsx)(u, {
+                        onMount: _,
+                        children: d
+                    })
+                })
+            }
+        })
+    }),
+    oHzU: (function(e, t, n) {
+        let a = Symbol("sheepHomeEventIdentity");
+
+        function o(e) {
+            return "beacon_banner_info" === e.ui_info.type
+        }
+
+        function i(e) {
+            return "beacon_modal_info" === e.ui_info.type
+        }
+
+        function r(e) {
+            return "beacon_multi_page_modal_info" === e.ui_info.type
+        }
+
+        function s(e) {
+            return "beacon_container_info" === e.ui_info.type
+        }
+
+        function l(e) {
+            return "beacon_homepage_takeover_info" === e.ui_info.type
+        }
+
+        function c(e) {
+            return "library_provider_onboarding_refresh" === e.beacon_id && "beacon_container_info" === e.ui_info.type && "library_google_drive_sidebar_tooltip" === e.ui_info.container_id
+        }
+        n.d(t, {}, {
+            a: o,
+            b: function(e) {
+                return null != e && s(e) && "cfc_personal_workspace_beacon" === e.beacon_id && "cfc_personal_workspace_beacon" === e.ui_info.container_id
+            },
+            c: s,
+            d: function(e) {
+                return "beacon_conversation_inline_info" === e.ui_info.type
+            },
+            e: function(e) {
+                return o(e) || c(e) || l(e) || i(e) || r(e) || "beacon_tooltip_info" === e.ui_info.type
+            },
+            f: l,
+            g: c,
+            h: i,
+            i: r,
+            j: function(e) {
+                return "personalized_information_questionnaire" === e.beacon_id && 2 === e.action_items.length && e.action_items.every(e => "submit_personalized_information_questionnaire_feedback" === e.action_v2.action_enum)
+            },
+            k: a
+        })
+    }),
+    lg1r: (function(e, t, n) {
+        n.d(t, {}, {
+            a: function(e) {
+                let t;
+                try {
+                    t = new URL(e, "https://chatgpt.com")
+                } catch {
+                    return null
+                }
+                if ("https://chatgpt.com" !== t.origin || "/u18-graduation/no-parent" !== t.pathname && "/u18-graduation/teen-unlink" !== t.pathname) return null;
+                let n = "/u18-graduation/no-parent" === t.pathname ? "no-parent" : "teen-unlink",
+                    a = t.searchParams.get("help_url");
+                if (null != a) try {
+                    let e = new URL(a);
+                    if ("https://help.openai.com" === e.origin && "" === e.username && "" === e.password) return {
+                        kind: n,
+                        helpUrl: e.href
+                    }
+                } catch {}
+                return {
+                    kind: n,
+                    helpUrl: "https://help.openai.com/en/articles/20001262"
+                }
+            }
+        })
+    }),
+    aoML: (function(e, t, n) {
+        var a = n("BolX"),
+            o = n("jqIZ"),
+            i = n("aTcy"),
+            r = n("G4Vg"),
+            s = n("laUo"),
+            l = n("DVML"),
+            c = n("AleY"),
+            u = n("vV6o"),
+            _ = n("OWtl"),
+            d = n("hZax"),
+            p = n("OMIV"),
+            m = n("LjYy");
+        let g = "1648954249",
+            f = (0, a.h)(_.a, e => {
+                let {
+                    get: t
+                } = e, n = t(p.f);
+                return null == n ? null : (0, d.d)(n, g)
+            }, e => {
+                let {
+                    get: t,
+                    set: n
+                } = e, a = t(p.f);
+                if (null == a) return;
+                let o = () => {
+                    n((0, d.d)(a, g))
+                };
+                return a.on("values_updated", o), () => {
+                    a.off("values_updated", o)
+                }
+            });
+
+        function b(e, t) {
+            let n, {
+                    accountId: a,
+                    appBaseUrl: i,
+                    currentPath: c,
+                    eventMetadata: _,
+                    rejoinPro: d,
+                    goRejoinPlusTreatment: p
+                } = t,
+                g = e.action_v2,
+                f = "pricing",
+                b = "",
+                h = null;
+            switch (g.action_enum) {
+                case "get_go":
+                    h = g.promo_campaign_id ?? null, n = m.a.GO;
+                    break;
+                case "get_plus":
+                    h = g.promo_campaign_id ?? null, n = m.a.PLUS, "direct" === g.checkout_mode && null == p && (f = "direct", b = (0, u.e)(s.f, i) ?? "");
+                    break;
+                case "get_pro":
+                    if (null != g.pro_offer) return null;
+                    n = m.a.PRO;
+                    break;
+                case "get_team":
+                    n = m.a.SELF_SERVE_BUSINESS, "direct" === g.checkout_mode && (f = "direct", b = (0, u.e)(s.c, i) ?? "");
+                    break;
+                default:
+                    return null
+            }
+            if ("direct" === f && 0 === b.length) return null;
+            let v = n === m.a.SELF_SERVE_BUSINESS ? null : function(e, t) {
+                    if (null == t) return null;
+                    let n = (0, r.g)(e);
+                    return null != n && new URL(n, "https://chatgpt.com").pathname === `/c/${encodeURIComponent(t)}` ? t : null
+                }(c, _?.conversationId),
+                w = null == v ? "/" : (0, r.g)(c) ?? "/",
+                y = {
+                    accountId: a,
+                    checkoutMode: f,
+                    promoCampaignId: h,
+                    returnPath: w,
+                    sourceThreadId: v,
+                    targetPlan: n,
+                    upsellContextId: g.upsell_context_id ?? null
+                },
+                I = (0, r.c)("pricing" === f ? (0, o.y)((0, l.b)({
+                    pathname: new URL(w, i).pathname
+                })) : b, y),
+                k = "get_pro" === g.action_enum && d?.accountId === a ? d : void 0;
+            if (null != k) {
+                let e = new URL(I, i);
+                e.searchParams.set("cta_tab", "personal"), e.searchParams.set("highlight_plan", "pro"), e.searchParams.set("pro_variant", "2x"), I = (0, o.y)(e)
+            }
+            return null == (0, r.j)(new URL(I, "https://chatgpt.com").search) ? null : {
+                deferCompletion: "direct" === f && n === m.a.SELF_SERVE_BUSINESS,
+                href: I,
+                intent: y,
+                ...null == k ? {} : {
+                    rejoinPro: k
+                }
+            }
+        }
+        n.d(t, {}, {
+            a: f,
+            b: function(e) {
+                return e.accountLoading || e.authLoading || "chatgpt" !== e.authMethod || !0 !== e.supportedSurface || null == e.accountId || e.accountId !== e.authenticatedAccountId ? null : e.accountId
+            },
+            c: b,
+            d: function(e, t, n) {
+                return null != t.appBaseUrl && null != b(e, {
+                    accountId: t.upgradeAccountId ?? "beacon-preflight",
+                    appBaseUrl: t.appBaseUrl,
+                    currentPath: t.currentPath ?? "/",
+                    eventMetadata: t.eventMetadata,
+                    goRejoinPlusTreatment: n
+                })
+            },
+            e: function(e, t) {
+                let n = function(e) {
+                    let t, n, a = e.action_v2;
+                    if ("get_go" !== a.action_enum && "get_plus" !== a.action_enum && "get_pro" !== a.action_enum && "get_team" !== a.action_enum) return null;
+                    switch (a.action_enum) {
+                        case "get_go":
+                            t = (n = a.promo_campaign_id) ? i.i : i.g;
+                            break;
+                        case "get_plus":
+                            n = a.promo_campaign_id, t = "direct" === a.checkout_mode ? s.f : (0, i.v)(m.a.PLUS);
+                            break;
+                        case "get_pro":
+                            if (null != a.pro_offer) return null;
+                            t = (0, i.v)(m.a.PRO);
+                            break;
+                        case "get_team": {
+                            let e = new URL("direct" === a.checkout_mode ? s.c : i.g);
+                            return (0, c.a)(e, void 0), e.href
+                        }
+                    }
+                    if (!n) return t;
+                    let o = new URL(t);
+                    return o.searchParams.set("promo_campaign", n), o.toString()
+                }(e);
+                if (null == n || null == t.upgradeAccountId || null == t.currentPath || t.isCurrentPresentation?.() === !1) return !1;
+                let a = new URL(t.currentPath, "https://chatgpt.com"),
+                    r = new URL(n),
+                    u = null == t.appBaseUrl ? null : b(e, {
+                        accountId: t.upgradeAccountId,
+                        appBaseUrl: t.appBaseUrl,
+                        currentPath: t.currentPath,
+                        eventMetadata: t.eventMetadata
+                    });
+                if (u?.intent.checkoutMode !== "pricing") return !1;
+                let _ = u.intent.targetPlan === m.a.SELF_SERVE_BUSINESS;
+                r.searchParams.set("cta_tab", _ ? "business" : "personal"), r.searchParams.set("highlight_plan", u.intent.targetPlan);
+                let d = `${a.pathname}${a.search}${a.hash}`;
+                for (let [e, t] of r.searchParams) a.searchParams.set(e, t);
+                return t.navigate((0, o.y)((0, l.b)({
+                    pathname: a.pathname,
+                    search: a.search
+                })), {
+                    defaultTab: _ ? "business" : "personal",
+                    returnPath: d,
+                    source: "conversation_followup_shelf_link"
+                }), !0
+            },
+            f: function(e, t) {
+                let n = "string" == typeof t ? t : function(e) {
+                    switch (e.ui_info.type) {
+                        case "beacon_banner_info":
+                            return `beacon-banner-${e.beacon_id}`;
+                        case "beacon_conversation_inline_info":
+                            return `beacon-conversation-inline-${e.beacon_id}`;
+                        case "beacon_homepage_takeover_info":
+                            return `beacon-homepage-takeover-${e.beacon_id}`;
+                        case "beacon_modal_info":
+                            return `beacon-modal-${e.beacon_id}`;
+                        case "beacon_bottom_sheet_info":
+                        case "beacon_container_info":
+                        case "beacon_multi_page_modal_info":
+                        case "beacon_tooltip_info":
+                            return null
+                    }
+                }(t);
+                if (null == e || "LocalOverride" !== e.details.reason && e.details.reason?.endsWith(":Recognized") !== !0 || null == n) return !1;
+                if (!e.get("suppress_upsell", !1)) return !0;
+                let a = e.get("allowed_frontend_entry_point_locations_for_upsell_suppression", []);
+                return Array.isArray(a) && a.every(e => "string" == typeof e) && a.includes(n)
+            }
+        })
+    }),
+    RJnh: (function(e, t, n) {
+        n.d(t, {
+            a: () => f,
+            b: () => l,
+            c: () => g,
+            d: () => p,
+            e: () => c,
+            f: () => d,
+            g: () => _,
+            h: () => m,
+            i: () => u
+        });
+        var a = n("jqIZ"),
+            o = n("dQkk"),
+            i = n("aTcy"),
+            r = n("ASxG");
+        let s = r.object({
+            background_valdi_artwork_url: r.string().optional().catch(void 0),
+            background_valdi_artwork_url_dark: r.string().optional().catch(void 0)
+        });
+
+        function l(e) {
+            let t = e.action_v2,
+                n = null;
+            if ("open_url" === t.action_enum) n = t.url;
+            else if ("open_local_url" === t.action_enum && (n = c(e) ? "/automations" : t.web_url, /^\/admin\/members(?:[?#]|$)/.test(n))) return new URL(n, i.h).toString();
+            if (null != n && (/^\/codex(?:\/get-started)?\/?(?:[?#]|$)/.test(n) || /^\/students\/2026\/?(?:[?#]|$)/.test(n))) return `https://chatgpt.com${n}`;
+            if (n?.startsWith("#")) {
+                let e = (0, o.a)({
+                    pathname: "/",
+                    search: "",
+                    hash: n
+                });
+                if (null != e) return (0, a.y)(e)
+            }
+            return null != n && _(n) ? n : null
+        }
+
+        function c(e) {
+            return "open_local_url" === e.action_v2.action_enum && "/tasks" === e.action_v2.web_url
+        }
+
+        function u(e) {
+            return "open_local_url" === e.action_v2.action_enum && "/?open=workspace-discovery" === l(e)
+        }
+
+        function _(e) {
+            return e.startsWith("http://") || e.startsWith("https://") || e.startsWith("codex://") && !1 || d(e) || p(e)
+        }
+
+        function d(e) {
+            return e.startsWith("/") && !e.startsWith("//")
+        }
+
+        function p(e) {
+            return /^(?:vscode|cursor|windsurf):extension\/openai\.chatgpt$/.test(e)
+        }
+
+        function m(e) {
+            return e.startsWith("https://") || e.startsWith("http://") || /^data:image\/svg\+xml;base64,(?=[A-Za-z0-9+/])(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(e)
+        }
+
+        function g(e, t) {
+            let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+            if (!n || "none" === e.foreground_image_layout.type) return null;
+            let a = t && null != e.foreground_image_url_dark ? e.foreground_image_url_dark : e.foreground_image_url;
+            return m(a) ? a : null
+        }
+
+        function f(e, t) {
+            let n = s.parse(e.custom_fields ?? {}),
+                a = t ? n.background_valdi_artwork_url_dark ?? n.background_valdi_artwork_url : n.background_valdi_artwork_url;
+            return null != a && function(e) {
+                try {
+                    let t = new URL(e);
+                    return "https://cdn.openai.com" === t.origin && "" === t.username && "" === t.password && t.pathname.startsWith("/beacons/") && t.pathname.endsWith(".json")
+                } catch {
+                    return !1
+                }
+            }(a) ? a : null
+        }
+    }),
+    aqNX: (function(e, t, n) {
+        var a = n("E8Sp"),
+            o = n("Cslg"),
+            i = n("kYSX"),
+            r = n("LLIt"),
+            s = n("lTvi"),
+            l = n("TFzY"),
+            c = n("g2p6"),
+            u = n("sMGP"),
+            _ = n("qJjJ"),
+            d = n("kphc"),
+            p = n("nlNF"),
+            m = n("Q3tq"),
+            g = n("tzYO");
+        n.d(t, {}, {
+            a: async function(e, t) {
+                if (!e.get(i.g)) return {};
+                let n = e.get(o.f),
+                    f = e.get(o.k),
+                    b = e.get(a.b).pathname,
+                    h = e.get(p.e);
+                if (null == n || null == f) return null;
+                try {
+                    if (await Promise.all([e.query.getOrFetch(s.b), e.query.getOrFetch(u.a), (0, g.a)(e)]), e.get(_.f) && await e.query.getOrFetch(c.p), t?.() === !1 || e.get(a.b).pathname !== b || e.get(p.e) !== h || e.get(o.f) !== n || e.get(o.k) !== f || !(0, d.h)(e) || !e.get(i.g)) return null;
+                    let v = e.get(s.b).data,
+                        w = v && function(e, t) {
+                            let {
+                                selection: n,
+                                hasExplicitThinkingEffort: a
+                            } = e.get(_.e), o = e => {
+                                let n = t.modelConfigBySlug?.[e];
+                                return n?.isWorkModeModel === !0 && !0 !== n.disabledByAdmin
+                            }, i = t.versionOptions ?? [], s = new Set([...t.disabledVersionSlugs ?? [], ...i.flatMap(e => [...e.slugs, ...e.options.map(e => e.slug)])]), c = (t.sliderSettings ?? []).map(e => {
+                                let {
+                                    modelSlug: t,
+                                    thinkingEffort: n
+                                } = e;
+                                return {
+                                    slug: t,
+                                    thinkingEffort: n,
+                                    versionId: null
+                                }
+                            }).filter(e => o(e.slug) && !s.has(e.slug) && (0, l.e)(t, e)?.isAvailable !== !1), u = new Set(c.map(e => e.slug)), d = t.options.filter(e => !s.has(e.slug) && (null != e.thinkingEffort || !u.has(e.slug))), p = [...i.filter(e => !1 !== e.enabled), {
+                                id: null,
+                                options: d
+                            }].flatMap(e => {
+                                let {
+                                    id: t,
+                                    options: n
+                                } = e;
+                                return n.filter(e => o(e.slug) && !1 !== e.isAvailable).map(e => (0, l.j)(e, t))
+                            });
+                            p.push(...c);
+                            let g = e.get(m.b),
+                                f = e => null == e || g.has(r.a[e]),
+                                b = p.filter(e => f(e.thinkingEffort)),
+                                h = (0, l.m)(t);
+                            for (let e of [n, h]) {
+                                if (null == e || !o(e.slug)) continue;
+                                let i = e.thinkingEffort ?? t.defaultThinkingEffortByModelSlug?.[e.slug] ?? null,
+                                    r = null != e.thinkingEffort && (e === h || e === n && a);
+                                if (b.length > 0 && !f(i) && !r) continue;
+                                let c = p.filter(t => t.slug === e.slug && t.thinkingEffort === i),
+                                    _ = c.find(t => t.versionId === e.versionId) ?? c[0];
+                                if (null != _) return _;
+                                if (!s.has(e.slug) && !u.has(e.slug)) {
+                                    let n = (0, l.e)(t, e);
+                                    if (null != n && !1 !== n.isAvailable) return (0, l.j)(n, null)
+                                }
+                            }
+                            let v = b.length > 0 ? b : p;
+                            return v.find(e => e.slug === n.slug) ?? v.find(e => e.slug === t.defaultModelSlug) ?? v[0]
+                        }(e, v);
+                    return null == w ? null : {
+                        model: w
+                    }
+                } catch {
+                    return null
+                }
+            }
+        })
+    }),
+    ytyy: (function(e, t, n) {
+        var a = n("ASxG");
+        let o = "workspace_discovery_plugin_usage_banner",
+            i = a.object({
+                beaconId: a.enum(["workspace_discovery_home_banner", o]),
+                copyVariant: a.enum(["company_pays", "bring_your_work"]).optional().catch(void 0)
+            });
+        n.d(t, {}, {
+            a: o,
+            b: function(e) {
+                let t = i.safeParse({
+                    beaconId: e.beacon_id,
+                    copyVariant: "workspace_discovery_home_banner" === e.beacon_id ? e.custom_fields?.workspace_discovery_copy_variant : void 0
+                });
+                return t.success ? t.data : void 0
+            }
+        })
+    })
+};

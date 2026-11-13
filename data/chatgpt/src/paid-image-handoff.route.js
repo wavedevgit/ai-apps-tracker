@@ -30,8 +30,8 @@ export const __webpack_modules__ = {
             n = t("jqIZ"),
             i = t("Kwur"),
             l = t("jVlT"),
-            m = t("M8lA"),
-            f = t("WWY6");
+            f = t("M8lA"),
+            m = t("WWY6");
         let c = /^[A-Za-z0-9_-]{43}$/;
         t.d(r, {}, {
             BrowserPaidImageHandoffPage: function() {
@@ -42,14 +42,14 @@ export const __webpack_modules__ = {
                         a = t.getAll("token");
                     e = null != (r = 1 === t.size && 1 === a.length ? a[0] : null) && c.test(r), g[0] = _.search, g[1] = e, g[2] = r
                 } else e = g[1], r = g[2];
-                let w = e;
-                g[3] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, m.getClientBootstrap)(), g[3] = t) : t = g[3];
-                let j = "logged_in" === t.authStatus;
+                let b = e;
+                g[3] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, f.getClientBootstrap)(), g[3] = t) : t = g[3];
+                let w = "logged_in" === t.authStatus;
                 g[4] !== r ? (p = ["paid-image-handoff-redeem", r], d = async e => {
                     let {
                         signal: t
                     } = e, a = (0, l.c)();
-                    if ((0, f.a)(), null == r || null == a) throw Error("Missing handoff token");
+                    if ((0, m.a)(), null == r || null == a) throw Error("Missing handoff token");
                     let {
                         prompt: o,
                         hints: C,
@@ -65,24 +65,24 @@ export const __webpack_modules__ = {
                     for (let e of (n.searchParams.set(l.a, "submit"), n.searchParams.set("skip_instant_query", "1"), Object.keys(s))) n.searchParams.set(e, s[e]);
                     return n.toString()
                 }, g[4] = r, g[5] = p, g[6] = d) : (p = g[5], d = g[6]);
-                let V = j && w;
-                g[7] !== p || g[8] !== d || g[9] !== V ? (u = {
+                let j = w && b;
+                g[7] !== p || g[8] !== d || g[9] !== j ? (u = {
                     queryKey: p,
                     queryFn: d,
-                    enabled: V,
+                    enabled: j,
                     staleTime: 1 / 0,
                     gcTime: 0,
                     retry: !1,
                     refetchOnWindowFocus: !1,
                     refetchOnReconnect: !1
-                }, g[7] = p, g[8] = d, g[9] = V, g[10] = u) : u = g[10];
+                }, g[7] = p, g[8] = d, g[9] = j, g[10] = u) : u = g[10];
                 let {
-                    data: b,
+                    data: V,
                     isError: M
                 } = (0, C.a)(u);
-                if (g[11] !== b ? (h = () => {
-                        null != b && window.location.replace(b)
-                    }, L = [b], g[11] = b, g[12] = h, g[13] = L) : (h = g[12], L = g[13]), (0, s.useEffect)(h, L), w && !j) {
+                if (g[11] !== V ? (h = () => {
+                        null != V && window.location.replace(V)
+                    }, L = [V], g[11] = V, g[12] = h, g[13] = L) : (h = g[12], L = g[13]), (0, s.useEffect)(h, L), b && !w) {
                     let e, t, o = `/paid-image-handoff?token=${encodeURIComponent(r)}`;
                     g[14] !== o ? (e = new URLSearchParams({
                         callback_path: o
@@ -93,7 +93,7 @@ export const __webpack_modules__ = {
                         to: C
                     }), g[16] = C, g[17] = t) : t = g[17], t
                 }
-                if (!w || M) {
+                if (!b || M) {
                     let e;
                     return g[18] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(n.l, {
                         to: "/?paid_image_handoff_carryover=unavailable",
@@ -140,8 +140,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.4981d79ae4.js";
-import * as r from "./418851.7f18e986d5.js";
+} from "./633146.d376de6326.js";
+import * as r from "./418851.b915ffe930.js";
 e.C(r);
 import * as t from "./109308.e66696cd0d.js";
 e.C(t);
@@ -149,44 +149,44 @@ import * as a from "./399565.6af208675d.js";
 e.C(a);
 import * as o from "./257798.b51742efd5.js";
 e.C(o);
-import * as C from "./447351.7f028af5cc.js";
+import * as C from "./447351.dafe7b7b5e.js";
 e.C(C);
 import * as s from "./617936.e33610e0b9.js";
 e.C(s);
-import * as n from "./807489.b2a4c99bd1.js";
+import * as n from "./807489.01dbb0865d.js";
 e.C(n);
-import * as i from "./337882.240014b3db.js";
+import * as i from "./337882.7119120a0c.js";
 e.C(i);
-import * as l from "./955979.cac5f7aa7e.js";
+import * as l from "./955979.cdc247a476.js";
 e.C(l);
-import * as m from "./646436.b849db233f.js";
-e.C(m);
-import * as f from "./7078.73ded76a8d.js";
+import * as f from "./646436.2bf4f5cfd6.js";
 e.C(f);
-import * as c from "./200429.f68bf8c5d0.js";
+import * as m from "./7078.89396f9757.js";
+e.C(m);
+import * as c from "./200429.ddc1bbef02.js";
 e.C(c);
-import * as p from "./698524.5c1f88ec3d.js";
+import * as p from "./698524.21708788d0.js";
 e.C(p);
-import * as d from "./956483.da8bcbe744.js";
+import * as d from "./956483.c322d2995f.js";
 e.C(d);
-import * as u from "./87162.47f0360b7c.js";
+import * as u from "./87162.b460b44fcb.js";
 e.C(u);
-import * as h from "./396705.bfc19c0c6a.js";
+import * as h from "./396705.f9a5e3185a.js";
 e.C(h);
-import * as L from "./155568.fb329e6a3b.js";
+import * as L from "./155568.be3429758e.js";
 e.C(L);
-import * as g from "./731863.850a24e1c0.js";
+import * as g from "./731863.f2322456e0.js";
 e.C(g);
-import * as _ from "./767086.b68e569328.js";
+import * as _ from "./767086.ab7a1efc0d.js";
 e.C(_);
-import * as w from "./76629.ca4c17c8af.js";
-e.C(w);
-import * as j from "./514085.6514ba1a89.js";
-e.C(j);
-import * as V from "./226913.27c93050ff.js";
-e.C(V);
-import * as b from "./518881.ee54e0ddcd.js";
+import * as b from "./76629.3c6cad96ca.js";
 e.C(b);
+import * as w from "./514085.2befcfe573.js";
+e.C(w);
+import * as j from "./226913.27c93050ff.js";
+e.C(j);
+import * as V from "./518881.2725a2dca9.js";
+e.C(V);
 var M = e(e.s = "VR1s").a;
 export {
     M as

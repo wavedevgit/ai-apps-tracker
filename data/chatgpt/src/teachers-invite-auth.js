@@ -2,23 +2,23 @@ export const __rspack_esm_ids = [331938];
 export const __webpack_modules__ = {
     aU9K: (function(C, e, s) {
         s.d(e, {
-            a: () => f
+            a: () => n
         });
         var r = s("jqIZ"),
             o = s("ABep"),
             a = s("QosV"),
             t = s("zd8w"),
             m = s("v4LA"),
-            i = s("AXDI");
-        let n = (0, m.a)(async function() {
+            f = s("AXDI");
+        let i = (0, m.a)(async function() {
             return (await Promise.all([s.e(418851), s.e(109308), s.e(399565), s.e(257798), s.e(447351), s.e(617936), s.e(807489), s.e(337882), s.e(955979), s.e(646436), s.e(7078), s.e(200429), s.e(698524), s.e(956483), s.e(87162), s.e(396705), s.e(155568), s.e(731863), s.e(767086), s.e(76629), s.e(514085), s.e(226913), s.e(988650)]).then(s.bind(s, "aziH"))).TeachersInvitePage
         });
-        var f = (0, r.hb)(function() {
+        var n = (0, r.hb)(function() {
             let C, e = (0, a.c)(1);
-            return e[0] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, o.jsx)(i.a, {
+            return e[0] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, o.jsx)(f.a, {
                 children: (0, o.jsx)(t.Suspense, {
-                    fallback: (0, o.jsx)(i.b, {}),
-                    children: (0, o.jsx)(n, {})
+                    fallback: (0, o.jsx)(f.b, {}),
+                    children: (0, o.jsx)(i, {})
                 })
             }), e[0] = C) : C = e[0], C
         })
@@ -37,8 +37,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as C
-} from "./633146.4981d79ae4.js";
-import * as e from "./418851.7f18e986d5.js";
+} from "./633146.d376de6326.js";
+import * as e from "./418851.b915ffe930.js";
 C.C(e);
 import * as s from "./109308.e66696cd0d.js";
 C.C(s);
@@ -46,43 +46,43 @@ import * as r from "./399565.6af208675d.js";
 C.C(r);
 import * as o from "./257798.b51742efd5.js";
 C.C(o);
-import * as a from "./447351.7f028af5cc.js";
+import * as a from "./447351.dafe7b7b5e.js";
 C.C(a);
 import * as t from "./617936.e33610e0b9.js";
 C.C(t);
-import * as m from "./807489.b2a4c99bd1.js";
+import * as m from "./807489.01dbb0865d.js";
 C.C(m);
-import * as i from "./337882.240014b3db.js";
-C.C(i);
-import * as n from "./955979.cac5f7aa7e.js";
-C.C(n);
-import * as f from "./646436.b849db233f.js";
+import * as f from "./337882.7119120a0c.js";
 C.C(f);
-import * as L from "./7078.73ded76a8d.js";
+import * as i from "./955979.cdc247a476.js";
+C.C(i);
+import * as n from "./646436.2bf4f5cfd6.js";
+C.C(n);
+import * as L from "./7078.89396f9757.js";
 C.C(L);
-import * as p from "./200429.f68bf8c5d0.js";
+import * as p from "./200429.ddc1bbef02.js";
 C.C(p);
-import * as c from "./698524.5c1f88ec3d.js";
+import * as c from "./698524.21708788d0.js";
 C.C(c);
-import * as j from "./956483.da8bcbe744.js";
+import * as j from "./956483.c322d2995f.js";
 C.C(j);
-import * as d from "./87162.47f0360b7c.js";
-C.C(d);
-import * as l from "./396705.bfc19c0c6a.js";
-C.C(l);
-import * as V from "./155568.fb329e6a3b.js";
-C.C(V);
-import * as b from "./731863.850a24e1c0.js";
+import * as b from "./87162.b460b44fcb.js";
 C.C(b);
-import * as h from "./767086.b68e569328.js";
+import * as d from "./396705.f9a5e3185a.js";
+C.C(d);
+import * as l from "./155568.be3429758e.js";
+C.C(l);
+import * as V from "./731863.f2322456e0.js";
+C.C(V);
+import * as h from "./767086.ab7a1efc0d.js";
 C.C(h);
-import * as Z from "./76629.ca4c17c8af.js";
+import * as Z from "./76629.3c6cad96ca.js";
 C.C(Z);
-import * as w from "./514085.6514ba1a89.js";
+import * as w from "./514085.2befcfe573.js";
 C.C(w);
 import * as M from "./226913.27c93050ff.js";
 C.C(M);
-import * as _ from "./331938.fb741df351.js";
+import * as _ from "./331938.65284464a3.js";
 C.C(_);
 var x = C(C.s = "aU9K").a;
 export {

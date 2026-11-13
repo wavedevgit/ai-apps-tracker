@@ -1,1 +1,2451 @@
-export const __rspack_esm_ids=[355084];export const __webpack_modules__={wrxv:(function(e,t,n){n.d(t,{},{a:{type:"none"},b:{type:"pending"}})}),nb0y:(function(e,t,n){n.d(t,{a:()=>ez});var i=n("ABep"),a=n("QosV"),l=n("on57"),o=n("h24K"),r=n("K45w"),s=n("W5pg"),c=n("jCHb"),u=n("p5Yg"),d=n("IPUh"),h=n("suct"),m=n("BolX"),p=n("zd8w"),f=n("v7qY"),g=n("Wf1j"),v=n("oyxz"),b=n("I7bK"),x=n("XExW"),y=n("Q2Qp"),w=n("QcW8"),S=n("ZU27"),z=n("BzS0"),C=n("DUYS"),k=n("wD9O"),j=n("rsCP"),E=n("AclY"),M=n("sArP");let P={height:640,width:560};var R=n("hZax"),N=n("V8uZ"),T=n("HgLj"),L=n("h7RI");function D(e){let t,n,o,r,s,c,u,h,m,p,f=(0,a.c)(62),{allowCompactResize:g,animateSurface:v,background:b,children:x,currentSize:y,contentStyle:w,contentRef:S,fixedHorizontalEdge:z,resizeFromCenter:C,heightLabel:k,isCompact:D,isCompactChromeRevealed:q,isMinimized:_,keepSurfaceInset:F,maximumSize:I,minimizedContent:A,minimizedSurfaceBounds:W,minimumSize:B,onResize:H,onResizeEnd:O,onResizingChange:$,prefersCompactPresentation:K,resizable:V,sectionProps:X,sectionRef:Y,surfaceStyle:Z,shouldReduceMotion:U,variant:Q,verticalResizeEdge:G,widthLabel:J}=e,ee=void 0!==g&&g,et=void 0===v||v,en=void 0!==C&&C,ei=void 0===V||V,ea=(0,R.f)("2163293173"),el=!_&&(F||D&&!q)?6:0;f[0]!==_||f[1]!==W||f[2]!==el?(t=_&&null!=W?W:{top:0,right:el,bottom:el,left:el},f[0]=_,f[1]=W,f[2]=el,f[3]=t):t=f[3];let eo=t,er="panel"!==b&&"rounded-[inherit]";f[4]!==er?(n=(0,l.b)("pointer-events-none absolute group-focus-visible/chat-frame:ring-2 group-focus-visible/chat-frame:ring-ring group-focus-visible/chat-frame:ring-offset-0 forced-colors:group-focus-visible/chat-frame:outline-auto",er),f[4]=er,f[5]=n):n=f[5];let es=n,ec="panel"!==b||K;f[6]!==X.ref||f[7]!==Y?(o=(0,T.a)(Y,X.ref,E.c),f[6]=X.ref,f[7]=Y,f[8]=o):o=f[8];let eu=!ea&&K&&"frame-Xbg62r",ed=K&&"group/chat-frame focus:outline-none",eh=null!=W?"pointer-events-none":"pointer-events-auto",em=K&&L.a.floatingSurface,ep=F&&L.a.singleLineSurface,ef="floating"===Q?"fixed top-0 left-0 z-30 max-h-[calc(100dvh/var(--codex-window-zoom)-var(--height-toolbar)-2rem)] max-w-[calc(50vw/var(--codex-window-zoom))]":"absolute top-0 left-0 z-30 max-h-full max-w-full",eg=K?"overflow-visible":"overflow-hidden";f[9]!==eu||f[10]!==ed||f[11]!==eh||f[12]!==em||f[13]!==ep||f[14]!==ef||f[15]!==eg?(r=(0,l.b)("flex flex-col text-default",eu,ed,eh,em,ep,ef,eg),f[9]=eu,f[10]=ed,f[11]=eh,f[12]=em,f[13]=ep,f[14]=ef,f[15]=eg,f[16]=r):r=f[16];let ev=null!=w?"relative flex h-full min-h-0 w-full shrink-0 flex-col rounded-[inherit]":"contents";f[17]!==ev?(s=(0,l.b)(ev),f[17]=ev,f[18]=s):s=f[18],f[19]!==et||f[20]!==b||f[21]!==es||f[22]!==F||f[23]!==A||f[24]!==K||f[25]!==U||f[26]!==eo||f[27]!==Z?(c=K?(0,i.jsx)(j.c,{asChild:!0,unstyled:"panel"!==b,variant:F?"single-line":"default",children:null!=Z?(0,i.jsx)(d.a.div,{className:es,"aria-hidden":null==A||void 0,style:Z},"panel-background"):(0,i.jsx)(d.a.div,{className:es,"aria-hidden":null==A||void 0,animate:eo,initial:!1,transition:U||!et?{duration:0}:{duration:.3,ease:N.e},children:A},"legacy-background")}):null,f[19]=et,f[20]=b,f[21]=es,f[22]=F,f[23]=A,f[24]=K,f[25]=U,f[26]=eo,f[27]=Z,f[28]=c):c=f[28],f[29]!==ee||f[30]!==y||f[31]!==z||f[32]!==k||f[33]!==D||f[34]!==_||f[35]!==I||f[36]!==B||f[37]!==H||f[38]!==O||f[39]!==$||f[40]!==ei||f[41]!==en||f[42]!==eo||f[43]!==G||f[44]!==J?(u=ei&&(!D||ee)&&!_?(0,i.jsx)("div",{className:"pointer-events-none absolute",style:eo,children:(0,i.jsx)("div",{className:"pointer-events-auto contents",children:(0,i.jsx)(M.a,{currentSize:y,defaultSize:P,extendIntoToolbar:!1,fixedHorizontalEdge:z,resizeFromCenter:en,heightLabel:k,maximumSize:I,minimumSize:B,verticalEdge:D?null:G,widthLabel:J,onResize:H,onResizeEnd:O,onResizingChange:$})})}):null,f[29]=ee,f[30]=y,f[31]=z,f[32]=k,f[33]=D,f[34]=_,f[35]=I,f[36]=B,f[37]=H,f[38]=O,f[39]=$,f[40]=ei,f[41]=en,f[42]=eo,f[43]=G,f[44]=J,f[45]=u):u=f[45];let eb=null==Z?null:A;return f[46]!==x||f[47]!==S||f[48]!==w||f[49]!==s||f[50]!==c||f[51]!==u||f[52]!==eb?(h=(0,i.jsxs)(d.a.div,{ref:S,className:s,style:w,children:[c,u,eb,x]}),f[46]=x,f[47]=S,f[48]=w,f[49]=s,f[50]=c,f[51]=u,f[52]=eb,f[53]=h):h=f[53],f[54]!==X||f[55]!==r||f[56]!==h||f[57]!==o?(m=(0,i.jsx)(d.a.section,{...X,ref:o,className:r,children:h}),f[54]=X,f[55]=r,f[56]=h,f[57]=o,f[58]=m):m=f[58],f[59]!==m||f[60]!==ec?(p=(0,i.jsx)(j.c,{asChild:!0,unstyled:ec,children:m}),f[59]=m,f[60]=ec,f[61]=p):p=f[61],p}var q=n("Sm6l"),_=n("bf6R");function F(e){let t,n,l,o,r,s,c,u,d,h,m,f=(0,a.c)(56),{title:b,preview:x,onOpen:y,onDismiss:w,isWorking:S,workingContent:z}=e,C=void 0!==S&&S,k=(0,R.f)("2163293173"),E=(0,g.a)();f[0]!==E||f[1]!==b?(t=b??E.formatMessage({id:"quickChat.mainConversation",defaultMessage:"Chat"}),f[0]=E,f[1]=b,f[2]=t):t=f[2];let M=t,P=(0,p.useEffectEvent)(w);if(f[3]!==k||f[4]!==P||f[5]!==C?(n=()=>{if(!k||C)return;let e=window.setTimeout(()=>P(),1e4);return()=>window.clearTimeout(e)},f[3]=k,f[4]=P,f[5]=C,f[6]=n):n=f[6],f[7]!==k||f[8]!==C?(l=[k,C],f[7]=k,f[8]=C,f[9]=l):l=f[9],(0,p.useEffect)(n,l),!k){let e,t,n,a,l,o,r,s,c,u;return f[10]!==E||f[11]!==M?(e=E.formatMessage({id:"quickChat.openCompletedResponse",defaultMessage:"Open completed response: {title}"},{title:M}),f[10]=E,f[11]=M,f[12]=e):e=f[12],f[13]===Symbol.for("react.memo_cache_sentinel")?(t=(0,i.jsx)(_.lc,{className:"text-success"}),f[13]=t):t=f[13],f[14]!==M?(n=(0,i.jsxs)("span",{className:"flex min-w-0 items-center gap-2 text-sm font-semibold text-default",children:[t,(0,i.jsx)("span",{className:"truncate",children:M})]}),f[14]=M,f[15]=n):n=f[15],f[16]!==x?(a=x||(0,i.jsx)(v.a,{id:"quickChat.responseReady",defaultMessage:"Response ready"}),f[16]=x,f[17]=a):a=f[17],f[18]!==a?(l=(0,i.jsx)("span",{className:"block truncate text-sm text-secondary",children:a}),f[18]=a,f[19]=l):l=f[19],f[20]!==y||f[21]!==e||f[22]!==n||f[23]!==l?(o=(0,i.jsxs)("button",{className:"min-w-0 flex-1 cursor-interaction rounded-[inherit] px-4 py-3 text-start focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-inset","aria-label":e,type:"button",onClick:y,children:[n,l]}),f[20]=y,f[21]=e,f[22]=n,f[23]=l,f[24]=o):o=f[24],f[25]!==E?(r=E.formatMessage({id:"quickChat.dismissCompletedResponse",defaultMessage:"Dismiss and mark as read"}),f[25]=E,f[26]=r):r=f[26],f[27]===Symbol.for("react.memo_cache_sentinel")?(s=(0,i.jsx)(_.xj,{className:"pointer-events-none"}),f[27]=s):s=f[27],f[28]!==w||f[29]!==r?(c=(0,i.jsx)("div",{className:"absolute -top-1 -left-1 flex rounded-full bg-surface",children:(0,i.jsx)(q.a,{"aria-label":r,color:"outlineSurface",radius:"full",size:"iconCircleSm",onClick:w,children:s})}),f[28]=w,f[29]=r,f[30]=c):c=f[30],f[31]!==o||f[32]!==c?(u=(0,i.jsxs)(j.c,{className:"relative flex shrink-0 select-none",role:"status",variant:"notice",children:[o,c]}),f[31]=o,f[32]=c,f[33]=u):u=f[33],u}return f[34]!==E||f[35]!==M?(o=E.formatMessage({id:"quickChat.openCompletedResponse",defaultMessage:"Open completed response: {title}"},{title:M}),f[34]=E,f[35]=M,f[36]=o):o=f[36],f[37]!==C||f[38]!==x||f[39]!==z?(r=C?z??(0,i.jsx)(v.a,{id:"quickChat.responseWorking",defaultMessage:"Working…"}):x||(0,i.jsx)(v.a,{id:"quickChat.responseReady",defaultMessage:"Response ready"}),f[37]=C,f[38]=x,f[39]=z,f[40]=r):r=f[40],f[41]!==r?(s=(0,i.jsx)("span",{className:"line-clamp-2 min-w-0 flex-1 text-sm whitespace-normal text-default",children:r}),f[41]=r,f[42]=s):s=f[42],f[43]!==y||f[44]!==o||f[45]!==s?(c=(0,i.jsx)(q.a,{unstyled:!0,focusRing:"inset",className:"min-w-0 flex-1 rounded-[inherit] px-4 py-3 pe-10 text-start","aria-label":o,type:"button",onClick:y,children:s}),f[43]=y,f[44]=o,f[45]=s,f[46]=c):c=f[46],f[47]!==E?(u=E.formatMessage({id:"quickChat.dismissResponsePreview",defaultMessage:"Dismiss response preview"}),f[47]=E,f[48]=u):u=f[48],f[49]===Symbol.for("react.memo_cache_sentinel")?(d=(0,i.jsx)(_.xj,{className:"pointer-events-none"}),f[49]=d):d=f[49],f[50]!==w||f[51]!==u?(h=(0,i.jsx)("div",{className:"absolute top-3 right-2 flex rounded-full",children:(0,i.jsx)(q.a,{"aria-label":u,color:"ghostSecondary",radius:"full",size:"iconCircleSm",onClick:w,children:d})}),f[50]=w,f[51]=u,f[52]=h):h=f[52],f[53]!==h||f[54]!==c?(m=(0,i.jsxs)("div",{className:"relative flex shrink-0 select-none",role:"status",children:[c,h]}),f[53]=h,f[54]=c,f[55]=m):m=f[55],m}var I=n("v0Gf"),A=n("nsuH");function W(e){let t,n,l,o,r,s,c=(0,a.c)(23),{items:u,availableHeight:h,isDockedTop:m,shouldReduceMotion:f}=e,g=(0,R.f)("2163293173"),[v,b]=(0,p.useState)(null);c[0]===Symbol.for("react.memo_cache_sentinel")?(t=(e,t)=>{let n=t.firstElementChild;n instanceof HTMLElement&&b(n.offsetHeight)},c[0]=t):t=c[0];let x=(0,A.b)(t),y=Math.min(null==v?h:3*v+24,Math.max(0,h-16)),w=.3*!f;c[1]!==w?(n={duration:w,ease:N.e},c[1]=w,c[2]=n):n=c[2];let S=n,z=g?"min-w-0":"-mx-6 -my-2",C=g?"overflow-y-auto overscroll-contain":"overflow-y-auto overscroll-contain px-6 py-2",k=y+16;c[3]!==k?(l={style:{maxHeight:k}},c[3]=k,c[4]=l):l=c[4];let j=g?"relative flex flex-col":"relative flex flex-col gap-3";if(c[5]!==m||c[6]!==u||c[7]!==f||c[8]!==S){let e;c[10]!==m||c[11]!==f||c[12]!==S?(e=e=>{let{id:t,content:n}=e;return(0,i.jsx)(d.a.div,{className:"shrink-0",layout:!f&&"position",transition:S,children:(0,i.jsx)(d.a.div,{initial:{opacity:0,transform:`translateY(${f?0:8*(m?-1:1)}px)`},animate:{opacity:1,transform:"translateY(0px)"},transition:{...S,opacity:{ease:"linear"}},children:n})},t)},c[10]=m,c[11]=f,c[12]=S,c[13]=e):e=c[13],o=u.map(e),c[5]=m,c[6]=u,c[7]=f,c[8]=S,c[9]=o}else o=c[9];return c[14]!==x||c[15]!==j||c[16]!==o?(r=(0,i.jsx)("div",{ref:x,className:j,children:o}),c[14]=x,c[15]=j,c[16]=o,c[17]=r):r=c[17],c[18]!==r||c[19]!==z||c[20]!==C||c[21]!==l?(s=(0,i.jsx)(I.a,{className:z,fade:"mask",scrollClassName:C,scrollProps:l,children:r}),c[18]=r,c[19]=z,c[20]=C,c[21]=l,c[22]=s):s=c[22],s}var B=n("wrxv"),H=n("oNzN"),O="active-PrspLR";let $=null;var K=n("EFj1"),V=n("BjWL"),X=n("vi3X"),Y=n("fDIZ"),Z=n("AKr5"),U=n("X7C7"),Q=n("rmk3"),G=n("giDA"),J=n("YzWZ"),ee=n("eeV6"),et=n("Xyz8"),en=n("zj7j"),ei=n("Z2JT");let ea=(0,n("Nwp9").b)("quick-chat-size-v1",P);function el(e,t,n){let i=e.get(ea);e.set(ea,t),(null==i||i.height!==t.height||i.width!==t.width)&&n?.()}var eo=n("T1PX"),er=n("TL6G"),es=n("rkZ2"),ec=n("f4Vb"),eu=n("OWtl"),ed=n("tSEg"),eh=n("j89V"),em=n("El6m"),ep=n("KkZX"),ef=n("XMPL"),eg=n("ZDXf"),ev=n("fRoJ"),eb=n("bIvi");let ex=["bottom-center","bottom-left","bottom-right"],ey="inset(0px 0px 0px 0px round var(--floating-panel-radius))",ew={type:"spring",bounce:.16,duration:.42},eS=(0,m.u)(eu.a,eR,{getServerSnapshot:()=>({width:0,height:0}),isEqual:(e,t)=>e.width===t.width&&e.height===t.height,onMount:e=>{let t=window.visualViewport,n=()=>e(eR());return window.addEventListener("resize",n),t?.addEventListener("resize",n),n(),()=>{window.removeEventListener("resize",n),t?.removeEventListener("resize",n)}}});function ez(e){let t,n,l,o,r=(0,a.c)(10);r[0]!==e?({contentChat:t,...n}=e,r[0]=e,r[1]=t,r[2]=n):(t=r[1],n=r[2]);let s=null!=t;return r[3]!==t||r[4]!==n?(l=null==t?n.renderMenu:e=>e.contextMenuTrigger??n.renderMenu?.(e),r[3]=t,r[4]=n,r[5]=l):l=r[5],r[6]!==n||r[7]!==s||r[8]!==l?(o=(0,i.jsx)(eC,{...n,isContentChat:s,renderMenu:l}),r[6]=n,r[7]=s,r[8]=l,r[9]=o):o=r[9],o}function eC(e){let t,n,M,I,ez,eC,eR,eN,eT,eL,eD,eq,e_,eF,eI,eA,eW,eB,eH,eO,e$,eK,eV,eX,eY,eZ,eU,eQ,eG,eJ,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9,te,tt,tn,ti,ta,tl,to,tr,ts,tc,tu,td,th,tm,tp,tf,tg,tv,tb,tx,ty,tw,tS,tz,tC,tk,tj,tE,tM,tP,tR,tN,tT,tL,tD,tq,t_,tF,tI,tA,tW,tB,tH,tO,t$,tK,tV,tX,tY,tZ,tU,tQ,tG,tJ,t0,t1,t2,t3,t4,t5,t6,t7,t8,t9,ne,nt,nn,ni,na,nl,no,nr,ns,nc,nu,nd,nh,nm,np,nf,ng,nv,nb,nx,ny,nw,nS,nz,nC,nk,nj,nE,nM,nP,nR,nN,nT,nL,nD,nq,n_,nF,nI,nA,nW,nB,nH,nO,n$,nK,nV,nX,nY,nZ,nU,nQ,nG,nJ,n0,n1,n2,n3,n4,n5,n6,n7,n8,n9,ie,it,ii,ia,il,io,ir,is,ic,iu=(0,a.c)(867),{ref:id,animateOnMount:ih,background:im,renderComposer:ip,containerSize:ig,previewSide:iv,hasPagePicker:ib,dockThreadKey:ix,canDock:iy,compactInputPosition:iw,reservedDockPosition:iS,footer:iz,overlay:iC,renderHeaderContent:ik,headerInteractionDisabled:ij,allowLegacyHeaderToggle:iE,renderMenu:iM,forceExpanded:iP,hasConversation:iR,isHidden:iN,isContentChat:iT,isMinimized:iL,isCollisionObstacle:iD,onDragOver:iq,onDragEnd:i_,onEscape:iF,onMinimizedChange:iI,onResize:iA,presentation:iW,onPresentationChange:iB,title:iH,titleContent:iO,minimizedIcon:i$,minimizedMenuItems:iK,restoreLabel:iV,statusState:iX,titleStatusState:iY,notifications:iZ,workingPreview:iU,responsePreview:iQ,showResponsePreview:iG,previewBubble:iJ,emptyState:i0,renderTranscript:i1,hasTranscript:i2,pendingFormId:i3,showComposerDivider:i4,showHeader:i5}=e,i6=void 0!==ih&&ih,i7=void 0===iy||iy,i8=void 0!==ij&&ij,i9=void 0===iE||iE,ae=void 0!==iP&&iP,at=void 0!==iN&&iN,an=void 0!==iT&&iT,ai=void 0===iY?iX:iY,aa=void 0===i5||i5,al=(0,m.y)(eu.a),ao=(0,m.y)(ed.a),ar=(0,m.z)(void 0===i3?null:i3),as=null!=ar,ac=(0,R.f)("2163293173"),au=(0,p.useContext)(y.a),ad=(0,p.useContext)(x.a)?.workspaceTargetWidth,ah=(0,p.useContext)(b.c),am=ac&&!at&&null!=iv&&null!=ah&&null!=au,ap=(0,m.z)(!!ac&&void 0!==iv&&es.c),af=am&&!ap,ag=(0,m.z)(am?w.eb:null),av=(0,p.useRef)(null),ab=(0,m.z)(!!am&&w.hb),ax=ac?i0:void 0,ay=i2??null!=i1,aw=ay||null!=ax,aS=(0,m.z)(ix)??void 0,az=void 0===iD||iD?"quick-chat":void 0,aC=(0,p.useContext)(em.b),ak=(0,m.z)(iZ),aj=as?B.a:ak??B.a,aE=(0,m.z)(iX);iu[0]!==aE||iu[1]!==aj.type?(t="ready"===aj.type?{...aE,type:aE?.type??"idle",unread:!0}:aE,iu[0]=aE,iu[1]=aj.type,iu[2]=t):t=iu[2];let aM=t,aP=(0,m.z)(ai),aR=ai===iX?aM:aP;iu[3]!==ac||iu[4]!==iQ?(n=(0,m.c)(eu.a,e=>{let{get:t}=e;return!!ac&&null!=iQ&&!!("string"==typeof iQ?iQ:t(iQ))}),iu[3]=ac,iu[4]=iQ,iu[5]=n):n=iu[5];let aN=(0,m.z)(n),aT=(0,g.a)(),aL=(0,p.useId)(),aD=(0,p.useId)(),aq=(0,k.c)(),a_=(0,eo.a)(),aF=(0,m.z)(eS);iu[6]!==aF.height||iu[7]!==aq?(M=(0,k.b)(aF.height,aq),iu[6]=aF.height,iu[7]=aq,iu[8]=M):M=iu[8];let aI=M,aA=(0,k.b)(aF.width,aq),[aW,aB]=(0,p.useState)(0),[aH,aO]=(0,p.useState)(!1),[a$,aK]=(0,p.useState)(0),[aV,aX]=(0,p.useState)(null),[aY,aZ]=(0,p.useState)(null),[aU,aQ]=(0,p.useState)(0),[aG,aJ]=(0,p.useState)(null);iu[9]===Symbol.for("react.memo_cache_sentinel")?(I=e=>{e.contentRect.width>0&&aJ(e.contentRect.width)},iu[9]=I):I=iu[9];let a0=(0,A.b)(I);iu[10]===Symbol.for("react.memo_cache_sentinel")?(ez=e=>{aQ((0,ec.a)(e).height)},iu[10]=ez):ez=iu[10];let a1=(0,A.b)(ez);iu[11]===Symbol.for("react.memo_cache_sentinel")?(eC=e=>{aK((0,ec.a)(e).height)},iu[11]=eC):eC=iu[11];let a2=(0,A.b)(eC);iu[12]!==a2?(eR=e=>{aX(e),a2(e)},iu[12]=a2,iu[13]=eR):eR=iu[13];let a3=(0,eb.a)(eR);iu[14]===Symbol.for("react.memo_cache_sentinel")?(eN=e=>{aB((0,ec.a)(e).height)},iu[14]=eN):eN=iu[14];let a4=(0,A.b)(eN),[a5,a6]=(0,p.useState)(0);iu[15]===Symbol.for("react.memo_cache_sentinel")?(eT=e=>{a6((0,ec.a)(e).height)},iu[15]=eT):eT=iu[15];let a7=(0,A.b)(eT),a8=ig?.width??aA,a9=aA<640;iu[16]!==i7||iu[17]!==ac?(eL=()=>i7?ac?"bottom-right":(0,J.a)():"bottom-center",iu[16]=i7,iu[17]=ac,iu[18]=eL):eL=iu[18];let[le]=(0,p.useState)(eL),lt=aS??null;iu[19]!==lt?(eD={threadKey:lt,minimized:!1},iu[19]=lt,iu[20]=eD):eD=iu[20];let ln=(0,m.x)(i7?en.a:void 0,eD),li=aS??null;iu[21]!==li?(eq={threadKey:li,minimized:!0},iu[21]=li,iu[22]=eq):eq=iu[22];let la=(0,m.x)(i7?en.a:void 0,eq);iu[23]===Symbol.for("react.memo_cache_sentinel")?(e_={},iu[23]=e_):e_=iu[23];let[ll,lo]=(0,p.useState)(e_),lr=ac?"bottom-right":(null==aS?ll.minimized:null)??la??"bottom-right",ls=(null!=aS||ac?null:ll.expanded)??ln??le,lc=null==iw?ls:ll.expanded??iw,lu=iL?lr:lc,ld=i7?(0,et.f)(a9&&!iL?"bottom-center":lu,iS):"bottom-center",lh=ld.startsWith("top"),lm=(0,m.z)(ea),lp=(0,o.a)(),lf=(0,p.useRef)(!1);iu[24]===Symbol.for("react.memo_cache_sentinel")?(eF={x:0,y:0},iu[24]=eF):eF=iu[24];let lg=(0,p.useRef)(eF),lv=(0,p.useRef)(null),lb=(0,p.useRef)(null),lx=(0,r.a)(0),ly=(0,r.a)(0),lw=(0,p.useRef)(null),lS=(0,p.useRef)(null),lz=(0,p.useRef)(null),lC=(0,p.useRef)(null),[lk,lj]=(0,p.useState)("compact"),[lE,lM]=(0,p.useState)(null),lP=iJ?.id??"",lR=lE===lP,lN=iW??lk;iu[25]!==aw||iu[26]!==iW||iu[27]!==an||iu[28]!==iB?(eI=e=>{(an||"expanded"!==e||aw)&&(null==iW&&lj(e),lM(null),iB?.(e))},iu[25]=aw,iu[26]=iW,iu[27]=an,iu[28]=iB,iu[29]=eI):eI=iu[29];let lT=eI,[lL,lD]=(0,p.useState)(null),[lq,l_]=(0,p.useState)(!1),[lF,lI]=(0,p.useState)(!1),[lA,lW]=(0,p.useState)(!1),[lB,lH]=(0,p.useState)(!1),lO=(0,p.useRef)(null);iu[30]===Symbol.for("react.memo_cache_sentinel")?(eA=e=>{(null!=lO.current&&(cancelAnimationFrame(lO.current),lO.current=null),null!=e)?lH(!0):lO.current=requestAnimationFrame(()=>{lO.current=null,lH(!1)})},iu[30]=eA):eA=iu[30];let l$=eA;iu[31]===Symbol.for("react.memo_cache_sentinel")?(eW=()=>()=>{null!=lO.current&&cancelAnimationFrame(lO.current)},eB=[],iu[31]=eW,iu[32]=eB):(eW=iu[31],eB=iu[32]),(0,p.useEffect)(eW,eB);let[lK,lV]=(0,p.useState)(!1),[lX,lY]=(0,p.useState)(!1),[lZ,lU]=(0,p.useState)(!1),[lQ,lG]=(0,p.useState)(!0),[lJ,l0]=(0,p.useState)(null),l1=(0,p.useRef)(!1),[l2,l3]=(0,p.useState)(!1),[l4,l5]=(0,p.useState)(0),[l6,l7]=(0,p.useState)(0),[l8,l9]=(0,p.useState)(!1);iu[33]!==ac||iu[34]!==aq?(eH=(e,t)=>{l5(ac?(0,ec.a)(e).height:e.contentRect.height),l9(e.contentRect.width<640);let n=t.querySelector(`[${V.a}]`)?.getBoundingClientRect().height??0;l7(Math.max(0,e.contentRect.height-(0,k.b)(n,aq)))},iu[33]=ac,iu[34]=aq,iu[35]=eH):eH=iu[35];let oe=(0,A.b)(eH),[ot,on]=(0,p.useState)(null),[oi,oa]=(0,p.useState)(!1),[ol,oo]=(0,p.useState)(aS);ol!==aS&&(oo(aS),lo({}),lY(!1),lU(!1),l0(null),lD(null),lW(!1),oa(!1),lM(null));let[or,os]=(0,p.useState)(ar);or!==ar&&(os(ar),l0(null),lD(null));let oc=!am&&(iL||lJ?.stage==="minimized"),ou=(0,r.a)(+!!oc);iu[36]!==ou?(eO=()=>1-ou.get(),iu[36]=ou,iu[37]=eO):eO=iu[37];let od=(0,s.a)(eO);iu[38]!==ou?(e$=e=>ou.on("change",e),iu[38]=ou,iu[39]=e$):e$=iu[39];let oh=e$;iu[40]!==ou?(eK=()=>1===ou.get(),iu[40]=ou,iu[41]=eK):eK=iu[41];let om=eK;iu[42]!==oc?(eV=()=>oc,iu[42]=oc,iu[43]=eV):eV=iu[43];let op=(0,p.useSyncExternalStore)(oh,om,eV);lL?.target!=="minimized"||oc||lD({target:lN}),iu[44]!==aw||iu[45]!==ae||iu[46]!==ar||iu[47]!==lN?(eX=(0,ei.b)({pendingFormId:ar,presentation:lN,forceExpanded:ae,hasTranscript:aw}),iu[44]=aw,iu[45]=ae,iu[46]=ar,iu[47]=lN,iu[48]=eX):eX=iu[48];let{isCompact:of,isChatCompact:og,canTogglePresentation:ov}=eX,ob=of&&!am,ox=iL&&!am,oy=ac&&!an?!of:aa;(!an||at||iL||!oy)&&lA&&lW(!1);let ow=(void 0===iG||iG)&&ac&&!as&&!lR&&ay&&(aN||aR?.type==="loading"),oS=of&&ow,oz=ac&&ob&&!at&&!ox&&!as&&void 0!==iJ,oC=oz&&!lR&&null!=iJ,ok=oS||oC&&iJ.transient,oj=void 0!==i4&&i4||ac;iu[49]!==an||iu[50]!==at||iu[51]!==iL||iu[52]!==oy?(eY=()=>{let e,t=lS.current;if(null==t||!an||at||iL||!oy)return;let n=()=>{clearTimeout(e),e=void 0},i=t=>{"touch"!==t.pointerType&&(n(),e=setTimeout(()=>{e=void 0,lW(!0)},300))},a=()=>{n(),lW(!1)},l=()=>{document.hidden&&a()};return t.addEventListener("pointerenter",i),t.addEventListener("pointerleave",a),window.addEventListener("blur",a),document.addEventListener("visibilitychange",l),()=>{n(),t.removeEventListener("pointerenter",i),t.removeEventListener("pointerleave",a),window.removeEventListener("blur",a),document.removeEventListener("visibilitychange",l)}},iu[49]=an,iu[50]=at,iu[51]=iL,iu[52]=oy,iu[53]=eY):eY=iu[53],iu[54]!==aS||iu[55]!==an||iu[56]!==at||iu[57]!==iL||iu[58]!==oy?(eZ=[aS,an,at,iL,oy],iu[54]=aS,iu[55]=an,iu[56]=at,iu[57]=iL,iu[58]=oy,iu[59]=eZ):eZ=iu[59],(0,p.useEffect)(eY,eZ);let oE=!at&&!of&&!iL&&!ae&&!lX&&!l2;iu[60]!==aD||iu[61]!==lT||iu[62]!==lD?(eU=e=>{null==lS.current||null!=e&&eM(lS.current,e.target,aD)||(lD(null),lT("compact"))},iu[60]=aD,iu[61]=lT,iu[62]=lD,iu[63]=eU):eU=iu[63];let oM=(0,p.useEffectEvent)(eU);iu[64]!==oM||iu[65]!==aD?(eQ=()=>{let e=lS.current,t=document.activeElement;null!=e&&t instanceof HTMLIFrameElement&&!eM(e,t,aD)&&oM()},iu[64]=oM,iu[65]=aD,iu[66]=eQ):eQ=iu[66];let oP=(0,p.useEffectEvent)(eQ);iu[67]!==ac||iu[68]!==oP||iu[69]!==oM||iu[70]!==oE?(eG=()=>{if(!oE)return;document.addEventListener("pointerdown",oM,!0);let e=!0,t=()=>{queueMicrotask(()=>{e&&oP()})};window.addEventListener("blur",t);let n=ac?er.c.subscribe("browser-sidebar-web-contents-pointer-down",()=>oM()):void 0;return()=>{e=!1,window.removeEventListener("blur",t),n?.(),document.removeEventListener("pointerdown",oM,!0)}},iu[67]=ac,iu[68]=oP,iu[69]=oM,iu[70]=oE,iu[71]=eG):eG=iu[71],iu[72]!==ac||iu[73]!==oE?(eJ=[ac,oE],iu[72]=ac,iu[73]=oE,iu[74]=eJ):eJ=iu[74],(0,p.useEffect)(eG,eJ);let oR=aM?.type==="loading";iu[75]!==iI||iu[76]!==l_||iu[77]!==lT||iu[78]!==lD?(e0=()=>{lS.current?.focus({preventScroll:!0}),l_(!1),lD(null),iI(!1),lT("expanded")},iu[75]=iI,iu[76]=l_,iu[77]=lT,iu[78]=lD,iu[79]=e0):e0=iu[79];let oN=(0,eb.a)(e0),[oT,oL]=(0,p.useState)(ek);iu[80]===Symbol.for("react.memo_cache_sentinel")?(e1=e=>{oL(t=>new Set([...t,e]))},iu[80]=e1):e1=iu[80];let oD=(0,eb.a)(e1);iu[81]!==ac||iu[82]!==oD||iu[83]!==oN||iu[84]!==aj?(e2="ready"!==aj.type?aj:{type:"ready",value:aj.value.map(e=>({id:e.id,content:(0,i.jsx)(F,{title:e.title,preview:e.preview,onOpen:()=>{e.onOpen(),oN()},onDismiss:ac?()=>oD(e.id):e.onDismiss})}))},iu[81]=ac,iu[82]=oD,iu[83]=oN,iu[84]=aj,iu[85]=e2):e2=iu[85];let oq=e2,[o_,oF]=(0,p.useState)(oR);if(o_!==oR&&(oF(oR),oa(!1),lM(null)),iu[86]!==at||iu[87]!==iL||iu[88]!==oR||iu[89]!==lP||iu[90]!==ok?(e3=()=>{if(!ok||at||iL||oR)return;let e=window.setTimeout(()=>lM(lP),1e4);return()=>window.clearTimeout(e)},iu[86]=at,iu[87]=iL,iu[88]=oR,iu[89]=lP,iu[90]=ok,iu[91]=e3):e3=iu[91],iu[92]!==aS||iu[93]!==at||iu[94]!==iL||iu[95]!==oR||iu[96]!==lP||iu[97]!==ok?(e4=[aS,ok,at,iL,oR,lP],iu[92]=aS,iu[93]=at,iu[94]=iL,iu[95]=oR,iu[96]=lP,iu[97]=ok,iu[98]=e4):e4=iu[98],(0,p.useEffect)(e3,e4),iu[99]!==oq||iu[100]!==ac||iu[101]!==oT||iu[102]!==oN||iu[103]!==oR||iu[104]!==iH||iu[105]!==iU||iu[106]!==oi){if(e5=oq,ac&&oR&&!oi){let e,t;iu[108]===Symbol.for("react.memo_cache_sentinel")?(e=()=>oa(!0),iu[108]=e):e=iu[108],iu[109]!==oN||iu[110]!==iH||iu[111]!==iU?(t=[{id:"working",content:(0,i.jsx)(F,{title:iH,preview:"",isWorking:!0,workingContent:iU,onOpen:oN,onDismiss:e})}],iu[109]=oN,iu[110]=iH,iu[111]=iU,iu[112]=t):t=iu[112],e5={type:"ready",value:t}}else if(ac&&"ready"===oq.type){let e;if(iu[113]!==oq.value||iu[114]!==oT){let t;iu[116]!==oT?(t=e=>!oT.has(e.id),iu[116]=oT,iu[117]=t):t=iu[117],e=oq.value.filter(t),iu[113]=oq.value,iu[114]=oT,iu[115]=e}else e=iu[115];e5={...oq,value:e}}iu[99]=oq,iu[100]=ac,iu[101]=oT,iu[102]=oN,iu[103]=oR,iu[104]=iH,iu[105]=iU,iu[106]=oi,iu[107]=e5}else e5=iu[107];"ready"!==e5.type&&lq&&l_(!1);let oI="ready"===e5.type&&e5.value.length>0&&(oc?iL&&(ac?op:lq)&&!lX:!ac&&of),oA=!ac&&(aR?.type==="loading"||aR?.unread===!0&&!oI),oW=oR||aM?.unread===!0&&(iL||!oI);iu[118]!==e5.type||iu[119]!==e5.value||iu[120]!==ac||iu[121]!==oD||iu[122]!==oR||iu[123]!==l_?(e6=e=>{if("Escape"===e.key&&!e.defaultPrevented)if(e.preventDefault(),lC.current?.contains(document.activeElement)&&lz.current?.focus({preventScroll:!0}),ac){if(oR)oa(!0);else if("ready"===e5.type)for(let e of e5.value)oD(e.id)}else l_(!1)},iu[118]=e5.type,iu[119]=e5.value,iu[120]=ac,iu[121]=oD,iu[122]=oR,iu[123]=l_,iu[124]=e6):e6=iu[124];let oB=(0,p.useEffectEvent)(e6);iu[125]!==oB||iu[126]!==oI||iu[127]!==at||iu[128]!==iL?(e7=()=>{if(!at&&iL&&oI)return document.addEventListener("keydown",oB),()=>document.removeEventListener("keydown",oB)},iu[125]=oB,iu[126]=oI,iu[127]=at,iu[128]=iL,iu[129]=e7):e7=iu[129],iu[130]!==oI||iu[131]!==at||iu[132]!==iL?(e8=[oI,at,iL],iu[130]=oI,iu[131]=at,iu[132]=iL,iu[133]=e8):e8=iu[133],(0,p.useEffect)(e7,e8);let oH=!iL&&!oc&&(ac&&!an||!of||lF||lB||lA||lX||aH),oO=(oy||am)&&(an?!iL&&!oc:ac||oH),o$=oy&&oO&&!ox&&null==ik;iu[134]!==aT?(e9=aT.formatMessage({id:"quickChat.running",defaultMessage:"Running"}),iu[134]=aT,iu[135]=e9):e9=iu[135];let oK=e9;iu[136]!==aT?(te=aT.formatMessage({id:"quickChat.unreadResponse",defaultMessage:"Unread response"}),iu[136]=aT,iu[137]=te):te=iu[137];let oV=te,oX=oR?oK:oV,oY=ld.endsWith("left"),oZ="bottom-center"===ld,oU=oY?"left":"right",oQ=lh&&!oc?a$:0,oG=46*(null==ig)+(lh||oc?0:a$),oJ=ot??lm??P,o0=oI&&!iL?a5:0,o1=(ig?.height??aI)-aW-(lh?o0+oQ:0),o2=Math.max(0,o1-32-oG-(lh?0:o0)),o3=null==ig?a8/2:Math.max(0,a8-20),o4=ac&&null!=aG?Math.min(o3,aG+12):o3,o5=(l4||46)+(oy&&oO?46:0)+(oS?aU:0)+6*!ac,o6=an&&oy&&oO,o7=(l4||46)+46*!!o6+(ow?aU:0)+6*!ac,o8=eP(oJ.height,Math.min(Math.max(400,l4+46),o2),o2),o9=Math.min(of?o5:Math.max(400,o5),o2),re=a9?o4:Math.min(372,o4),rt=eP(of?o5:oJ.height,o9,o2),rn=(0,r.a)(rt),ri=(0,p.useRef)(!1),ra=l4>0,rl=at||a_||l2||!ac&&(iL||null!=lL)?0:.3,ro=eP(oJ.width+12,re,o4),rr=(0,et.d)(ld,{height:rt,width:ro},o1,a8,12,oG),rs=(0,r.a)(0);iu[138]===Symbol.for("react.memo_cache_sentinel")?(tt={x:0,y:0,width:0,height:0},iu[138]=tt):tt=iu[138];let rc=(0,r.a)(tt);iu[139]!==ab||iu[140]!==am||iu[141]!==ah||iu[142]!==au||iu[143]!==rc||iu[144]!==rs||iu[145]!==iv||iu[146]!==a_||iu[147]!==aq||iu[148]!==ad?(tn=()=>{let e,t=am&&ah&&au?lS.current?.offsetParent:null;if(am&&ah&&au&&t instanceof HTMLElement){let n=au.getBoundingClientRect(),i=t.getBoundingClientRect(),a=(0,k.b)(n.width,aq),l=ad?.get()??a,o=(0,C.f)(ah.contentPaneWidthRatio.get(),l,"unified"),r=ab?o:l-o;e=`--floating-chat-dock-${iv}`,au.style.setProperty(e,`${r}px`),rc.set({x:(0,k.b)(n.left-i.left,aq)+(a-("left"===iv?l:r))+4-6,y:(0,k.b)(n.top-i.top,aq)+4,width:r-8+12,height:(0,k.b)(i.bottom-n.top,aq)-8+6})}let n=+!!am,i=rs.get()===n?null:(0,c.a)(rs,n,{duration:.15*!a_,ease:N.e});return()=>{i?.stop(),null!=e&&au?.style.removeProperty(e)}},iu[139]=ab,iu[140]=am,iu[141]=ah,iu[142]=au,iu[143]=rc,iu[144]=rs,iu[145]=iv,iu[146]=a_,iu[147]=aq,iu[148]=ad,iu[149]=tn):tn=iu[149],iu[150]!==ig||iu[151]!==ab||iu[152]!==am||iu[153]!==ah||iu[154]!==au||iu[155]!==rc||iu[156]!==rs||iu[157]!==iv||iu[158]!==a_||iu[159]!==aq||iu[160]!==ad?(ti=[ig,12,ab,am,ah,au,rc,rs,iv,a_,ad,aq],iu[150]=ig,iu[151]=ab,iu[152]=am,iu[153]=ah,iu[154]=au,iu[155]=rc,iu[156]=rs,iu[157]=iv,iu[158]=a_,iu[159]=aq,iu[160]=ad,iu[161]=ti):ti=iu[161],(0,p.useLayoutEffect)(tn,ti);let ru=(0,s.a)(()=>rs.get()*(rc.get().x-rr.x-lx.get())),rd=(0,s.a)(()=>rs.get()*(rc.get().y-rr.y-ly.get())),rh=(0,s.a)(()=>0===rs.get()?"100%":ro+rs.get()*(rc.get().width-ro));iu[162]!==rn||iu[163]!==rc||iu[164]!==rs?(ta=()=>rn.get()+rs.get()*(rc.get().height-rn.get()),iu[162]=rn,iu[163]=rc,iu[164]=rs,iu[165]=ta):ta=iu[165];let rm=(0,s.a)(ta);iu[166]!==rn||iu[167]!==o7||iu[168]!==o8||iu[169]!==an||iu[170]!==ob||iu[171]!==rs?(tl=()=>Math.max(rs.get(),an&&ob?0:eP((rn.get()-o7)/Math.max(1,o8-o7),0,1)),iu[166]=rn,iu[167]=o7,iu[168]=o8,iu[169]=an,iu[170]=ob,iu[171]=rs,iu[172]=tl):tl=iu[172];let rp=(0,s.a)(tl);iu[173]!==l4||iu[174]!==rp||iu[175]!==o6||iu[176]!==ap||iu[177]!==rm||iu[178]!==rs?(to=()=>Math.max(0,rm.get()-l4-46*((o6?1:rp.get())-(ap?0:rs.get()))),iu[173]=l4,iu[174]=rp,iu[175]=o6,iu[176]=ap,iu[177]=rm,iu[178]=rs,iu[179]=to):to=iu[179];let rf=(0,s.a)(to),rg=(0,r.a)(0),rv=(0,r.a)(0),rb=Math.max(0,o8-46-l4);iu[180]!==rg||iu[181]!==aU||iu[182]!==rb||iu[183]!==rp||iu[184]!==aN||iu[185]!==am?(tr=()=>am||!aN?0:(1-rp.get())*(rb-aU+12-rg.get()),iu[180]=rg,iu[181]=aU,iu[182]=rb,iu[183]=rp,iu[184]=aN,iu[185]=am,iu[186]=tr):tr=iu[186];let rx=(0,s.a)(tr);iu[187]!==rv||iu[188]!==rg||iu[189]!==rb||iu[190]!==rp||iu[191]!==aN?(ts=()=>{if(!aN||1===rp.get())return"none";let e=1-rp.get(),t=Math.max(0,rg.get())*e,n=Math.max(0,rb-rg.get()-rv.get())*e;return`inset(${t}px 0 ${n}px 0)`},iu[187]=rv,iu[188]=rg,iu[189]=rb,iu[190]=rp,iu[191]=aN,iu[192]=ts):ts=iu[192];let ry=(0,s.a)(ts);iu[193]!==rp||iu[194]!==aN?(tc=()=>aN?1:rp.get(),iu[193]=rp,iu[194]=aN,iu[195]=tc):tc=iu[195];let rw=(0,s.a)(tc);iu[196]!==rp?(tu=()=>1-rp.get(),iu[196]=rp,iu[197]=tu):tu=iu[197];let rS=(0,s.a)(tu);iu[198]!==rv||iu[199]!==rg||iu[200]!==aN||iu[201]!==aY||iu[202]!==aq?(td=()=>{if(null==aY||!aN)return null;let e=aY.querySelectorAll('[data-markdown-text-style="assistant-message"]'),t=e.item(e.length-1);if(null==t)return null;let n=t.getBoundingClientRect(),i=aY.getBoundingClientRect(),a=parseFloat(getComputedStyle(t.firstElementChild??t).lineHeight),l=Math.min((0,k.b)(n.height,aq),Number.isFinite(a)?2*a:56,56);return rg.set((0,k.b)(n.top-i.top,aq)),rv.set(l),aQ(l+24),t},iu[198]=rv,iu[199]=rg,iu[200]=aN,iu[201]=aY,iu[202]=aq,iu[203]=td):td=iu[203];let rz=(0,p.useEffectEvent)(td);iu[204]!==ac||iu[205]!==aN||iu[206]!==ob||iu[207]!==at||iu[208]!==rz||iu[209]!==aY?(th=()=>{if(!ac||at||null==aY||!aN)return;let e=null,t=new ResizeObserver(()=>u.b.read(n)),n=()=>{let n=rz();e!==n&&(t.disconnect(),e=n,null!=n&&t.observe(n))},i=()=>{u.b.read(n)};if(n(),!ob)return void t.disconnect();let a=new MutationObserver(i);return a.observe(aY,{childList:!0,subtree:!0}),aY.addEventListener("scroll",i,!0),()=>{(0,u.a)(n),t.disconnect(),a.disconnect(),aY.removeEventListener("scroll",i,!0)}},iu[204]=ac,iu[205]=aN,iu[206]=ob,iu[207]=at,iu[208]=rz,iu[209]=aY,iu[210]=th):th=iu[210],iu[211]!==ac||iu[212]!==aN||iu[213]!==ob||iu[214]!==at||iu[215]!==aY?(tm=[ac,aN,ob,at,aY],iu[211]=ac,iu[212]=aN,iu[213]=ob,iu[214]=at,iu[215]=aY,iu[216]=tm):tm=iu[216],(0,p.useLayoutEffect)(th,tm),iu[217]!==rn||iu[218]!==l4||iu[219]!==ac||iu[220]!==rt||iu[221]!==ra||iu[222]!==of||iu[223]!==lB||iu[224]!==rz||iu[225]!==rl?(tp=()=>{let e,t=!ri.current&&of;if(ra&&(ri.current=!0),lB||t||0===rl)return void rn.jump(rt);let n=()=>{if(ac){let e=lw.current;if(null!=e&&e.offsetHeight!==Math.round(l4))return void l5(e.offsetHeight);rz()}let t=(0,c.a)(rn,rt,{duration:rl,ease:N.e});e=()=>t.stop()};return ac?u.b.update(n):n(),()=>{(0,u.a)(n),e?.()}},iu[217]=rn,iu[218]=l4,iu[219]=ac,iu[220]=rt,iu[221]=ra,iu[222]=of,iu[223]=lB,iu[224]=rz,iu[225]=rl,iu[226]=tp):tp=iu[226];let rC=(0,p.useEffectEvent)(tp),rk=ac?l4:null,rj=ac?null:ra,rE=ac?null:of;iu[227]!==rC?(tf=()=>rC(),iu[227]=rC,iu[228]=tf):tf=iu[228],iu[229]!==rt||iu[230]!==rj||iu[231]!==rE||iu[232]!==rk||iu[233]!==rl?(tg=[rt,rl,rk,rj,rE],iu[229]=rt,iu[230]=rj,iu[231]=rE,iu[232]=rk,iu[233]=rl,iu[234]=tg):tg=iu[234],(0,p.useLayoutEffect)(tf,tg);let rM=ac?rp:void 0;iu[235]!==rM?(tv={"--quick-chat-expansion":rM},iu[235]=rM,iu[236]=tv):tv=iu[236];let rP=tv,rR={height:Math.min(36,o2),width:Math.min(36,o4)},rN=(0,et.f)(iL?ld:lJ?.dockPosition??lr,iS),rT=(0,et.d)(rN,rR,o1,a8,0,oG),rL=iL?rR:{height:rt,width:ro},rD=iL?rT:rr,rq=iL?16:10,r_=Math.max(rq,a8-rL.width-rq),rF=oG+rq,rI=Math.max(rq,o1-rL.height-rq);iu[237]!==rq||iu[238]!==r_||iu[239]!==rF||iu[240]!==rI?(tb={left:rq,right:r_,top:rF,bottom:rI},iu[237]=rq,iu[238]=r_,iu[239]=rF,iu[240]=rI,iu[241]=tb):tb=iu[241];let rA=tb;iu[242]===Symbol.for("react.memo_cache_sentinel")?(tx=()=>{lb.current=null},iu[242]=tx):tx=iu[242],iu[243]!==ig||iu[244]!==aq?(ty=[ig,aq],iu[243]=ig,iu[244]=aq,iu[245]=ty):ty=iu[245],(0,p.useLayoutEffect)(tx,ty);let rW=e=>{if(!i7)return;lb.current=null==ig?null:lS.current?.parentElement?.getBoundingClientRect()??null;let t={x:(0,k.b)(e.clientX-(lb.current?.left??0),aq),y:(0,k.b)(e.clientY-(lb.current?.top??0),aq)};lg.current={x:t.x-rD.x-lx.get(),y:t.y-rD.y-ly.get()},lv.current={point:t,target:null},lp.start(e)},rB=(0,et.d)(rN,{height:rt,width:ro},o1,a8,12,oG),rH=rT.x-rB.x,rO=rT.y-rB.y,r$=ro-rH-rR.width,rK=rt-rO-rR.height;iu[246]!==rH||iu[247]!==rO||iu[248]!==r$||iu[249]!==rK?(tw={top:rO,right:r$,bottom:rK,left:rH},iu[246]=rH,iu[247]=rO,iu[248]=r$,iu[249]=rK,iu[250]=tw):tw=iu[250];let rV=tw,rX=`inset(${rV.top}px ${rV.right}px ${rV.bottom}px ${rV.left}px round var(--floating-panel-radius))`,rY=(0,s.a)(()=>{let e=ou.get(),t=rn.get()-rt,n=e*(rV.top+(lh?0:t)),i=6+e*(rV.right-6),a=6+e*(rV.bottom+(lh?t:0)-6),l=6+e*(rV.left-6),o=rs.get(),r=0===o?"var(--radius-token-composer-single-line)":`calc(var(--radius-token-composer-single-line) * ${1-o} + var(--app-shell-sidebar-popover-radius) * ${o})`,s=oc||lX||0!==e||0!==t?`inset(${n}px ${i}px ${a}px ${l}px round ${r})`:"none";return{top:n,right:i,bottom:a,left:l,radius:r,clip:s}});iu[251]!==rY?(tS=()=>rY.get().top,iu[251]=rY,iu[252]=tS):tS=iu[252];let rZ=(0,s.a)(tS);iu[253]!==rY?(tz=()=>rY.get().right,iu[253]=rY,iu[254]=tz):tz=iu[254];let rU=(0,s.a)(tz);iu[255]!==rY?(tC=()=>rY.get().bottom,iu[255]=rY,iu[256]=tC):tC=iu[256];let rQ=(0,s.a)(tC);iu[257]!==rY?(tk=()=>rY.get().left,iu[257]=rY,iu[258]=tk):tk=iu[258];let rG=(0,s.a)(tk);iu[259]!==rY?(tj=()=>rY.get().radius,iu[259]=rY,iu[260]=tj):tj=iu[260];let rJ=(0,s.a)(tj);iu[261]!==rY?(tE=()=>rY.get().clip,iu[261]=rY,iu[262]=tE):tE=iu[262];let r0=(0,s.a)(tE);iu[263]!==ac||iu[264]!==oc||iu[265]!==ou||iu[266]!==a_?(tM=()=>{if(!ac)return;let e=(0,c.a)(ou,+!!oc,{duration:.3*!a_,ease:N.e});return()=>e.stop()},tP=[ac,oc,ou,a_],iu[263]=ac,iu[264]=oc,iu[265]=ou,iu[266]=a_,iu[267]=tM,iu[268]=tP):(tM=iu[267],tP=iu[268]),(0,p.useLayoutEffect)(tM,tP);let r1=lh?{top:rO+rR.height}:{bottom:rt-rO},r2=(0,p.useRef)({dockPosition:ld,dockThreadKey:aS,isMinimized:iL});iu[269]!==i_?(tR=()=>{i_?.(null)},iu[269]=i_,iu[270]=tR):tR=iu[270];let r3=(0,p.useEffectEvent)(tR),r4=(0,p.useEffectEvent)(e=>{let t=(0,et.d)(e,{height:rt,width:ro},o1,a8,12,oG);lx.stop(),ly.stop(),lx.jump(lx.get()+t.x-rr.x),ly.jump(ly.get()+t.y-rr.y);let n=a_?{duration:0}:ew;(0,c.a)(lx,0,n),(0,c.a)(ly,0,n)});(0,p.useLayoutEffect)(()=>{let e=r2.current;if(r2.current={dockPosition:ld,dockThreadKey:aS,isMinimized:iL},e.dockThreadKey!==aS){lf.current=!0,l1.current=!0,lp.cancel(),r3(),lx.jump(0),ly.jump(0);return}if(at){lx.jump(0),ly.jump(0);return}e.isMinimized!==iL&&r4(e.dockPosition)},[ld,aS,lp,lx,ly,at,iL]),iu[271]!==lx||iu[272]!==ly?(tN=()=>()=>{lx.stop(),ly.stop()},tT=[lx,ly],iu[271]=lx,iu[272]=ly,iu[273]=tN,iu[274]=tT):(tN=iu[273],tT=iu[274]),(0,p.useLayoutEffect)(tN,tT);let r5=e=>{let t,n={...rL,left:rD.x+lx.get(),top:rD.y+ly.get()};null!=ig&&null==lb.current&&(lb.current=lS.current?.parentElement?.getBoundingClientRect()??null);let i=null==ig?null:lb.current,a={x:e.point.x-(0,k.b)(i?.left??0,aq),y:e.point.y-(0,k.b)(i?.top??0,aq)};t=ac?(0,et.b)(n,o1,a8,ex.filter(e=>!iL||"bottom-right"===e).map(e=>(0,et.f)(e,iS)),12*!iL,oG):(0,et.e)({...n,left:n.width>=a8/2-2*rq?a.x-n.width/2:n.left},o1,a8,iL);let l=null==iS?t:(0,et.f)(t,iS),o={x:ac?a8-a.x:Math.min(a.x,a8-a.x),y:ac?o1-a.y:Math.min(a.y-oG,o1-a.y)},r=o.x<=16+rR.width&&o.y<=16+rR.height;if(ac&&!iL){let e=lv.current;if(null!=e){let t=a.x-e.point.x,n=a.y-e.point.y;Math.hypot(t,n)>=8&&(t>=0&&n>0&&n>=t?e.target="minimize":t>0&&t>2*Math.abs(n)?e.target=null:(t<0||n<0)&&(e.target=null),e.point=a)}let n=a.y-lg.current.y+rL.height-o1;return{dockPosition:l,requestedDockPosition:t,isNearDock:!1,suppressEdgeDrop:r,shouldMinimize:"bottom-right"===l&&e?.target==="minimize"&&n>=.5*rL.width}}let s=(0,et.d)(l,rL,o1,a8,12,oG),c=!iL&&"bottom-center"!==l&&16>=Math.abs(n.left-s.x)&&16>=Math.abs(n.top-s.y);return{dockPosition:l,requestedDockPosition:t,isNearDock:c,suppressEdgeDrop:r,shouldMinimize:c&&r}};iu[275]!==i7||iu[276]!==iw||iu[277]!==ac||iu[278]!==aS||iu[279]!==iR||iu[280]!==al?(tL=(e,t)=>{i7&&((null==iw||t)&&(null!=aS||ac&&!t)?(0,en.c)(al,{threadKey:aS??null,minimized:t},e,iR):lo(n=>({expanded:t?n.expanded:e,minimized:t?(0,et.a)(e):n.minimized})))},iu[275]=i7,iu[276]=iw,iu[277]=ac,iu[278]=aS,iu[279]=iR,iu[280]=al,iu[281]=tL):tL=iu[281];let r6=tL,r7=(e,t,n)=>{let i=void 0===n?rL:n,a=(0,et.d)(ld,rL,o1,a8,12*!iL,oG),l={x:a.x+lx.get(),y:a.y+ly.get()},o=(0,et.d)((0,et.f)(e,iS),i,o1,a8,12*!iL,oG);lx.stop(),ly.stop(),lx.jump(l.x-o.x),ly.jump(l.y-o.y),t&&(0,f.flushSync)(()=>{r6(e,iL)});let r=ac?{duration:.3,ease:N.e}:ew,s=a_?{duration:0}:r;lU(!0),Promise.all([(0,c.a)(lx,0,s),(0,c.a)(ly,0,s)]).then(()=>{lU(0!==lx.get()||0!==ly.get())})},r8=(0,p.useEffectEvent)(()=>{lf.current=!0,lp.cancel(),i_?.(null),r7(ld,!1),l0(null),lD(null),lY(!1)});iu[282]!==r8||iu[283]!==lp||iu[284]!==lX?(tD=()=>{if(!lX)return;let e=e=>{"Escape"===e.key&&(e.preventDefault(),e.stopPropagation(),r8())},t=()=>r8();return window.addEventListener("keydown",e,!0),window.addEventListener("blur",t),window.addEventListener("pointercancel",t,!0),()=>{lf.current=!0,lp.cancel(),window.removeEventListener("keydown",e,!0),window.removeEventListener("blur",t),window.removeEventListener("pointercancel",t,!0)}},iu[282]=r8,iu[283]=lp,iu[284]=lX,iu[285]=tD):tD=iu[285],iu[286]!==lp||iu[287]!==lX?(tq=[lp,lX],iu[286]=lp,iu[287]=lX,iu[288]=tq):tq=iu[288],(0,p.useLayoutEffect)(tD,tq);let r9=(e,t)=>{let n=ac&&oZ?0:(0,et.c)(ld,e,{height:rt,width:ro},lx.get(),t.width,o1,a8,12),i=rr.y+ly.get(),a=(0,et.d)(ld,t,o1,a8,12,oG),l=eP(i+(lh?0:rt-t.height),oG+10,o1-t.height-10);lx.stop(),ly.stop(),(0,f.flushSync)(()=>{on({height:of?oJ.height:t.height,width:t.width-12})}),lx.jump(n),ly.jump(l-a.y)},se=e=>{el(al,{height:of?oJ.height:e.height,width:e.width-12},()=>iA?.(ld)),r7(ld,!1,e)};iu[289]!==ac||iu[290]!==lX||iu[291]!==iI||iu[292]!==l_||iu[293]!==l0||iu[294]!==lD?(t_=()=>{l_(!1),lG(!lX),l0(null),lD(ac?null:{target:"minimized"}),iI(!0)},iu[289]=ac,iu[290]=lX,iu[291]=iI,iu[292]=l_,iu[293]=l0,iu[294]=lD,iu[295]=t_):t_=iu[295];let st=t_;if(iu[296]!==iw||iu[297]!==ac||iu[298]!==ae||iu[299]!==as||iu[300]!==of||iu[301]!==at||iu[302]!==iL||iu[303]!==iF||iu[304]!==iI||iu[305]!==lN||iu[306]!==l_||iu[307]!==lT||iu[308]!==lD){let e,t,n,i;tH=()=>{(0,f.flushSync)(()=>{l_(!1),lD(ac?null:{target:lN}),iI(!1)}),tA()},iu[316]!==of||iu[317]!==lT||iu[318]!==lD?(e=()=>{lD(null),lT(of?"expanded":"compact")},iu[316]=of,iu[317]=lT,iu[318]=lD,iu[319]=e):e=iu[319],tO=e,tF=!at&&!iL&&(null!=iF||!of&&!ae),iu[320]!==iF||iu[321]!==lT||iu[322]!==lD?(t=()=>{null!=iF?iF():(lD(null),lT("compact"))},iu[320]=iF,iu[321]=lT,iu[322]=lD,iu[323]=t):t=iu[323],tI=t,iu[324]!==tF||iu[325]!==tI?(n=e=>{!tF||"Escape"!==e.key||e.defaultPrevented||e.repeat||e.nativeEvent.isComposing||(e.preventDefault(),e.stopPropagation(),tI())},iu[324]=tF,iu[325]=tI,iu[326]=n):n=iu[326],tB=n,iu[327]!==as?(i=()=>{let e=lw.current;return as?(0,Z.a)(e):e?.querySelector("[contenteditable='true']")??null},iu[327]=as,iu[328]=i):i=iu[328],tW=i,tA=()=>{ac&&null==iw&&(lD(null),lT("expanded")),tW()?.focus({preventScroll:!0})},iu[296]=iw,iu[297]=ac,iu[298]=ae,iu[299]=as,iu[300]=of,iu[301]=at,iu[302]=iL,iu[303]=iF,iu[304]=iI,iu[305]=lN,iu[306]=l_,iu[307]=lT,iu[308]=lD,iu[309]=tF,iu[310]=tI,iu[311]=tA,iu[312]=tW,iu[313]=tB,iu[314]=tH,iu[315]=tO}else tF=iu[309],tI=iu[310],tA=iu[311],tW=iu[312],tB=iu[313],tH=iu[314],tO=iu[315];let sn=!at&&as;iu[329]!==tW||iu[330]!==as||iu[331]!==iL?(t$=()=>{if(null==lS.current||null!=lS.current.closest("[hidden], [inert], [aria-hidden=true]"))return!1;if(as)return iL;let e=tW();if(null==e)return!1;let t=e.closest("[hidden], [inert], [aria-hidden=true]");return null==t||!lw.current?.contains(t)||t===lw.current},iu[329]=tW,iu[330]=as,iu[331]=iL,iu[332]=t$):t$=iu[332],iu[333]!==t$||iu[334]!==sn?(tK={enabled:sn,isActive:t$},iu[333]=t$,iu[334]=sn,iu[335]=tK):tK=iu[335],(0,K.a)("focusMainChat",iL?tH:tA,tK),iu[336]!==aT||iu[337]!==of?(tV=aT.formatMessage(of?{id:"quickChat.expandFloatingChat",defaultMessage:"Expand floating chat"}:{id:"quickChat.showCompactFloatingChat",defaultMessage:"Show compact floating chat"}),iu[336]=aT,iu[337]=of,iu[338]=tV):tV=iu[338];let si=tV;iu[339]!==ov||iu[340]!==si||iu[341]!==tO?(tX=ov?{label:si,onToggle:tO}:void 0,iu[339]=ov,iu[340]=si,iu[341]=tO,iu[342]=tX):tX=iu[342];let sa=tX;iu[343]!==aT?(tY=aT.formatMessage({id:"quickChat.resizeWidth",defaultMessage:"Resize chat width"}),iu[343]=aT,iu[344]=tY):tY=iu[344];let sl=tY;iu[345]!==aT?(tZ=aT.formatMessage({id:"quickChat.resizeHeight",defaultMessage:"Resize chat height"}),iu[345]=aT,iu[346]=tZ):tZ=iu[346];let so=tZ;iu[347]!==an||iu[348]!==lT||iu[349]!==lD?(tU=()=>{lD(null),an&&lT("expanded")},iu[347]=an,iu[348]=lT,iu[349]=lD,iu[350]=tU):tU=iu[350];let sr=(0,eb.a)(tU);iu[351]!==ac||iu[352]!==sr||iu[353]!==an||iu[354]!==lD?(tQ=ac||an?sr:()=>lD(null),iu[351]=ac,iu[352]=sr,iu[353]=an,iu[354]=lD,iu[355]=tQ):tQ=iu[355];let ss={isCompact:ob,canShowPreviewBubble:oz,isNarrow:l8,isChromeRevealed:oH,isHeaderVisible:oO,isComposerFocused:ac?lK||lB:oH,isDockedTop:lh,isHidden:at,isMinimized:oc,shouldReduceMotion:a_,onSubmitStart:tQ},sc={isMoving:lX||l2||lZ,composerContentHeight:l6,dockedReservePx:l4>l6+6*!!ac?rt+10:0};iu[356]!==at||iu[357]!==iM?(tG=function(e){!at&&null!=iM&&(2===e.button||0===e.button&&e.ctrlKey)&&e.target instanceof Element&&(lS.current?.contains(e.target)||null!=e.target.closest("[data-composer-overlay-floating-ui]"))&&e.preventDefault()},iu[356]=at,iu[357]=iM,iu[358]=tG):tG=iu[358];let su=tG;iu[359]!==an?(tJ=function(e){!an&&e.target instanceof Element&&(!lS.current?.contains(e.target)||null!=e.target.closest("[data-composer-overlay-floating-ui]"))&&e.stopPropagation()},iu[359]=an,iu[360]=tJ):tJ=iu[360];let sd=tJ,sh=ip(ss,sc),sm=tF?tI:null;iu[361]!==oe?(t0=e=>{lw.current=e,oe(e)},iu[361]=oe,iu[362]=t0):t0=iu[362],iu[363]!==oj||iu[364]!==ob||iu[365]!==ox||iu[366]!==oS?(t1=oj&&!ox&&(!ob||oS)?(0,i.jsx)("div",{"aria-hidden":!0,className:"border-t border-default"}):null,iu[363]=oj,iu[364]=ob,iu[365]=ox,iu[366]=oS,iu[367]=t1):t1=iu[367],iu[368]!==aV?(t2={target:aV,homeBannerPlacement:"inline"},iu[368]=aV,iu[369]=t2):t2=iu[369];let sp=(0,i.jsxs)("div",{ref:t0,className:(0,l.b)(L.a.floatingComposerInset,"mt-auto shrink-0",of&&lh&&"[--composer-overlay-placement:bottom]"),onPointerDownCapture:su,onContextMenu:sd,children:[t1,(0,i.jsx)(em.b,{value:{...aC,hasComposerSurface:oj,isFloatingChatSurface:!0,isFloatingTranscriptOpen:!at&&!of&&!iL,floatingChatSurfaceRef:lS,onFloatingDictationRowChange:l$,floatingComposerPresentation:ss,transcriptTarget:aY,followLatestTranscript:ac?ob:aC.followLatestTranscript},children:(0,i.jsx)(Y.a,{value:sm,children:(0,i.jsx)(X.a,{value:t2,children:sh})})})]});iu[370]!==ac||iu[371]!==ob||iu[372]!==st?(t3=ac?null:(0,i.jsx)(ee.c,{isCompact:ob,onMinimize:st}),iu[370]=ac,iu[371]=ob,iu[372]=st,iu[373]=t3):t3=iu[373];let sf=t3;iu[374]!==ac||iu[375]!==oA||iu[376]!==sf||iu[377]!==aa||iu[378]!==ik||iu[379]!==oK||iu[380]!==iH||iu[381]!==iO||iu[382]!==aL||iu[383]!==aR||iu[384]!==oV?(t4=ik?ik({leadingControl:sf}):(0,i.jsxs)("div",{className:"flex min-w-0 flex-1 items-center gap-1",children:[sf,oA&&null!=aR?(0,i.jsx)("div",{className:"flex items-center justify-center",role:"status","aria-label":"loading"===aR.type?oK:oV,children:(0,i.jsx)(eh.a,{statusState:aR})}):null,(0,i.jsx)("h2",{id:aL,"data-dropdown-overlay-side":"auto",className:(0,l.b)("min-w-0 text-base font-medium text-secondary",(!ac||null==iO)&&"truncate"),children:iO??(ac?(0,i.jsx)(ee.b,{children:(0,i.jsx)("span",{className:"truncate",children:aa?iH:(0,i.jsx)(v.a,{id:"quickChat.newChatTitle",defaultMessage:"New chat"})})}):iH)})]}),iu[374]=ac,iu[375]=oA,iu[376]=sf,iu[377]=aa,iu[378]=ik,iu[379]=oK,iu[380]=iH,iu[381]=iO,iu[382]=aL,iu[383]=aR,iu[384]=oV,iu[385]=t4):t4=iu[385];let sg=t4;iu[386]!==aH||iu[387]!==ob||iu[388]!==lX||iu[389]!==st||iu[390]!==iM?(t5=iM?.({isCompact:ob,isDragging:lX,open:aH,onMinimize:st,onOpenChange:aO}),iu[386]=aH,iu[387]=ob,iu[388]=lX,iu[389]=st,iu[390]=iM,iu[391]=t5):t5=iu[391],iu[392]!==ac||iu[393]!==ob||iu[394]!==st?(t6=ac&&(0,i.jsx)(ee.c,{isCompact:ob,onMinimize:st}),iu[392]=ac,iu[393]=ob,iu[394]=st,iu[395]=t6):t6=iu[395],iu[396]!==sg||iu[397]!==t5||iu[398]!==t6?(t7=(0,i.jsxs)(i.Fragment,{children:[sg,t5,t6]}),iu[396]=sg,iu[397]=t5,iu[398]=t6,iu[399]=t7):t7=iu[399];let sv=t7,sb=af?"hidden":"contents";iu[400]!==i9||iu[401]!==ac||iu[402]!==sv||iu[403]!==i8||iu[404]!==an||iu[405]!==ob||iu[406]!==oO||iu[407]!==iL||iu[408]!==sa||iu[409]!==lL||iu[410]!==a_||iu[411]!==oy?(t8=ac?(0,i.jsx)(ee.a,{isCompact:an&&ob,isVisible:oO,isDisabled:i8,children:sv}):(0,i.jsx)(ee.d,{expandOnClick:an,animateChrome:!a_&&!iL&&null==lL,isChromeRevealed:oO,isCompact:ob,isDisabled:i8,reserveSpace:an&&oy&&!ob,presentationToggle:i9?sa:void 0,children:sv}),iu[400]=i9,iu[401]=ac,iu[402]=sv,iu[403]=i8,iu[404]=an,iu[405]=ob,iu[406]=oO,iu[407]=iL,iu[408]=sa,iu[409]=lL,iu[410]=a_,iu[411]=oy,iu[412]=t8):t8=iu[412],iu[413]!==sd||iu[414]!==su||iu[415]!==sb||iu[416]!==t8?(t9=(0,i.jsx)("div",{className:sb,onPointerDownCapture:su,onContextMenu:sd,children:t8}),iu[413]=sd,iu[414]=su,iu[415]=sb,iu[416]=t8,iu[417]=t9):t9=iu[417];let sx=t9,sy=ac?{top:rN.startsWith("top")?rO:void 0,bottom:rN.startsWith("top")?void 0:rV.bottom,left:rH,width:rR.width,height:rR.height,opacity:ou}:{inset:0},sw=!iL,sS=iL?az:void 0;iu[418]!==ac||iu[419]!==oc?(ne=ac?void 0:{opacity:+!!oc},iu[418]=ac,iu[419]=oc,iu[420]=ne):ne=iu[420];let sz=!iL||void 0;iu[421]!==a_?(nt=a_?{duration:0}:{duration:.3,ease:N.e},iu[421]=a_,iu[422]=nt):nt=iu[422];let sC=iL?"minimized":"preview",sk=iL&&"pointer-events-auto";iu[423]!==sk?(nn=(0,l.b)("absolute inset-0 m-auto touch-none",sk),iu[423]=sk,iu[424]=nn):nn=iu[424];let sj=oW?oX:void 0;iu[425]!==aT||iu[426]!==iV||iu[427]!==iH?(ni=iV??aT.formatMessage({id:"quickChat.restoreFloatingChat",defaultMessage:"Restore floating chat: {title}"},{title:iH}),iu[425]=aT,iu[426]=iV,iu[427]=iH,iu[428]=ni):ni=iu[428];let sE=!at&&iL&&lQ;iu[429]!==tH?(na=e=>{0!==e.detail&&l1.current||tH()},iu[429]=tH,iu[430]=na):na=iu[430],iu[431]!==ac||iu[432]!==l_?(nl=e=>{ac||"touch"===e.pointerType||l_(!0)},iu[431]=ac,iu[432]=l_,iu[433]=nl):nl=iu[433],iu[434]!==e5.type||iu[435]!==ac||iu[436]!==l_?(no=e=>{"ready"===e5.type&&("ArrowUp"===e.key||"ArrowDown"===e.key)&&(e.preventDefault(),ac||(0,f.flushSync)(()=>l_(!0)),lC.current?.querySelector("button")?.focus({preventScroll:!0}))},iu[434]=e5.type,iu[435]=ac,iu[436]=l_,iu[437]=no):no=iu[437],iu[438]!==a9||iu[439]!==rW?(nr=e=>{a9||0!==e.button||(l1.current=!1,e.currentTarget.setPointerCapture(e.pointerId),rW(e))},iu[438]=a9,iu[439]=rW,iu[440]=nr):nr=iu[440],iu[441]!==ac||iu[442]!==oW||iu[443]!==oR||iu[444]!==i$||iu[445]!==aM?(ns=oR&&null!=aM&&null==i$?(0,i.jsx)(eh.a,{statusState:aM,size:ac?"default":"compact"}):(0,i.jsx)(U.a,{badgeEnabled:oW,children:i$??(0,i.jsx)(_.Ib,{})}),iu[441]=ac,iu[442]=oW,iu[443]=oR,iu[444]=i$,iu[445]=aM,iu[446]=ns):ns=iu[446],iu[447]!==sC||iu[448]!==nn||iu[449]!==sj||iu[450]!==ni||iu[451]!==sE||iu[452]!==na||iu[453]!==nl||iu[454]!==no||iu[455]!==nr||iu[456]!==ns?(nc=(0,i.jsx)(q.a,{ref:lz,className:nn,"aria-description":sj,"aria-label":ni,autoFocus:sE,color:"ghostSecondary",size:"composer",uniform:!0,onClick:na,onPointerEnter:nl,onKeyDown:no,onPointerDown:nr,children:ns},sC),iu[447]=sC,iu[448]=nn,iu[449]=sj,iu[450]=ni,iu[451]=sE,iu[452]=na,iu[453]=nl,iu[454]=no,iu[455]=nr,iu[456]=ns,iu[457]=nc):nc=iu[457],iu[458]!==sy||iu[459]!==sw||iu[460]!==sS||iu[461]!==ne||iu[462]!==sz||iu[463]!==nt||iu[464]!==nc?(nu=(0,i.jsx)(d.a.div,{ref:E.c,className:"pointer-events-none absolute",style:sy,"aria-hidden":sw,"data-pip-obstacle":sS,animate:ne,initial:!1,inert:sz,transition:nt,children:nc}),iu[458]=sy,iu[459]=sw,iu[460]=sS,iu[461]=ne,iu[462]=sz,iu[463]=nt,iu[464]=nc,iu[465]=nu):nu=iu[465];let sM=nu,sP="ready"===e5.type?(0,i.jsx)(W,{items:e5.value,availableHeight:Math.max(0,(ig?.height??aI)-oG-aW-(iL?rR.height:o5)-32-12),isDockedTop:lh,shouldReduceMotion:a_}):null;!ac&&(nd=ey,oc?nd=rX:null!=lL||lX||(nd="none"));let sR=null!=lL||!iL;iu[466]!==ac||iu[467]!==rm||iu[468]!==rh||iu[469]!==ru||iu[470]!==rd||iu[471]!==rJ?(nh=ac?{x:ru,y:rd,width:rh,height:rm,borderRadius:rJ}:void 0,iu[466]=ac,iu[467]=rm,iu[468]=rh,iu[469]=ru,iu[470]=rd,iu[471]=rJ,iu[472]=nh):nh=iu[472],iu[473]!==ac||iu[474]!==rQ||iu[475]!==rG||iu[476]!==rJ||iu[477]!==rU||iu[478]!==rZ?(nm=ac?{top:rZ,right:rU,bottom:rQ,left:rG,borderRadius:rJ}:void 0,iu[473]=ac,iu[474]=rQ,iu[475]=rG,iu[476]=rJ,iu[477]=rU,iu[478]=rZ,iu[479]=nm):nm=iu[479],iu[480]!==rt||iu[481]!==ro?(np={height:rt,width:ro},iu[480]=rt,iu[481]=ro,iu[482]=np):np=iu[482];let sN=ac&&oZ,sT=ac&&!oZ?oU:void 0,sL=oy&&oO;iu[483]!==o2||iu[484]!==o4?(nf={height:o2,width:o4},iu[483]=o2,iu[484]=o4,iu[485]=nf):nf=iu[485],iu[486]!==sM||iu[487]!==iK?(ng=null==iK?sM:(0,i.jsx)(Q.a,{disableNative:!0,items:iK,children:(0,i.jsx)("div",{className:"contents",children:sM})}),iu[486]=sM,iu[487]=iK,iu[488]=ng):ng=iu[488],iu[489]!==o9||iu[490]!==re?(nv={height:o9,width:re},iu[489]=o9,iu[490]=re,iu[491]=nv):nv=iu[491];let sD=!a9&&!am,sq=oc||ac?"panel":im,s_=o$?void 0:iH,sF=o$?aL:void 0,sI=null!=ig&&void 0;iu[492]!==i6||iu[493]!==ra||iu[494]!==a_?(nb=i6?{opacity:+!!ra,translateY:8*(!ra&&!a_)}:{},iu[492]=i6,iu[493]=ra,iu[494]=a_,iu[495]=nb):nb=iu[495];let sA=ac||lJ?.stage!=="approaching"?1:.95;iu[496]!==ro||iu[497]!==nb||iu[498]!==sA?(nx={...nb,width:ro,scale:sA},iu[496]=ro,iu[497]=nb,iu[498]=sA,iu[499]=nx):nx=iu[499];let sW=!!ac&&void 0!==iv&&!!lX||void 0,sB=!ac&&of||void 0,sH=iL?void 0:az,sO=!a9,s$=null==ig?void 0:{left:rA.left-rD.x,right:rA.right-rD.x,top:rA.top-rD.y,bottom:rA.bottom-rD.y},sK=null==ig?void 0:0;iu[500]!==i6||iu[501]!==a_?(ny=!!i6&&!a_&&{opacity:0,translateY:8},iu[500]=i6,iu[501]=a_,iu[502]=ny):ny=iu[502];let sV=null==ig?"dialog":"region",sX=lh?oG+10:"auto",sY=lh?"auto":10+aW,sZ=oZ?"50%":"auto";iu[503]!==oU||iu[504]!==oZ?(nw=!oZ&&{[oU]:10},iu[503]=oU,iu[504]=oZ,iu[505]=nw):nw=iu[505];let sU=oZ?"-50% 0":void 0,sQ="bottom-center"===rN?.5:Number(rN.endsWith("right")),sG=+!rN.startsWith("top");iu[506]!==rn||iu[507]!==rP||iu[508]!==lx||iu[509]!==ly||iu[510]!==sX||iu[511]!==sY||iu[512]!==sZ||iu[513]!==nw||iu[514]!==sU||iu[515]!==sQ||iu[516]!==sG?(nS={...rP,height:rn,top:sX,bottom:sY,left:sZ,right:"auto",...nw,translate:sU,x:lx,y:ly,originX:sQ,originY:sG},iu[506]=rn,iu[507]=rP,iu[508]=lx,iu[509]=ly,iu[510]=sX,iu[511]=sY,iu[512]=sZ,iu[513]=nw,iu[514]=sU,iu[515]=sQ,iu[516]=sG,iu[517]=nS):nS=iu[517];let sJ=.3*!a_;iu[518]!==sJ?(nz={duration:sJ,ease:N.e},iu[518]=sJ,iu[519]=nz):nz=iu[519],iu[520]!==rl||iu[521]!==nz?(nC={duration:rl,ease:N.e,scale:nz},iu[520]=rl,iu[521]=nz,iu[522]=nC):nC=iu[522],iu[523]!==ac||iu[524]!==an||iu[525]!==at||iu[526]!==aD||iu[527]!==lV||iu[528]!==lI||iu[529]!==l_||iu[530]!==lT||iu[531]!==lD||iu[532]!==oE?(nk=e=>{if(!(at||eM(e.currentTarget,e.relatedTarget,aD))){if(null==e.relatedTarget){let t=e.currentTarget;queueMicrotask(()=>{t.ownerDocument.hasFocus()&&eM(t,t.ownerDocument.activeElement,aD)||(lI(!1),lV(!1),l_(!1))});return}lI(!1),lV(!1),l_(!1),(!ac||an)&&oE&&null==e.target.closest("[inert]")&&(lD(null),lT("compact"))}},iu[523]=ac,iu[524]=an,iu[525]=at,iu[526]=aD,iu[527]=lV,iu[528]=lI,iu[529]=l_,iu[530]=lT,iu[531]=lD,iu[532]=oE,iu[533]=nk):nk=iu[533],iu[534]!==ov||iu[535]!==ac||iu[536]!==tA||iu[537]!==of||iu[538]!==an||iu[539]!==iL||iu[540]!==lT||iu[541]!==lD||iu[542]!==oy||iu[543]!==tO?(nj=e=>{if(!(an&&(0!==e.button||e.ctrlKey)||iL||l1.current||e.defaultPrevented||!(e.target instanceof Element)||!e.currentTarget.contains(e.target)||e.target.closest("button, a, input, textarea, select, label, [contenteditable='true'], [role='button'], [role='menuitem'], [role='separator'], [data-composer-input-layout]"))){if(of&&(e.target===e.currentTarget||lw.current?.contains(e.target)))return void tA();if(an){if(!oy||!ov)return;of&&!e.currentTarget.contains(document.activeElement)&&e.currentTarget.focus({preventScroll:!0}),lD(null),lT("expanded");return}if(ac){of&&ov&&tA();return}oy&&ov&&e.target.closest("header[data-quick-chat-drag-handle]")&&(of&&!e.currentTarget.contains(document.activeElement)&&e.currentTarget.focus({preventScroll:!0}),tO())}},iu[534]=ov,iu[535]=ac,iu[536]=tA,iu[537]=of,iu[538]=an,iu[539]=iL,iu[540]=lT,iu[541]=lD,iu[542]=oy,iu[543]=tO,iu[544]=nj):nj=iu[544],iu[545]!==ac||iu[546]!==o2||iu[547]!==o4||iu[548]!==o9||iu[549]!==re||iu[550]!==iL||iu[551]!==iA||iu[552]!==al||iu[553]!==on||iu[554]!==lT||iu[555]!==lD||iu[556]!==r7?(nE=e=>{ac&&!iL&&!l1.current&&!e.defaultPrevented&&e.target instanceof Element&&e.target.closest("header[data-quick-chat-drag-handle]")&&!e.target.closest("button, a, select, [role='button'], [role='menuitem'], [role='separator']")&&(lD(null),lT("expanded"),on(null),el(al,P,()=>iA?.("bottom-right")),r7("bottom-right",!0,{height:eP(P.height,o9,o2),width:eP(P.width+12,re,o4)}))},iu[545]=ac,iu[546]=o2,iu[547]=o4,iu[548]=o9,iu[549]=re,iu[550]=iL,iu[551]=iA,iu[552]=al,iu[553]=on,iu[554]=lT,iu[555]=lD,iu[556]=r7,iu[557]=nE):nE=iu[557],iu[558]!==at?(nM=e=>{!at&&l1.current&&e.detail>0&&(e.preventDefault(),e.stopPropagation())},iu[558]=at,iu[559]=nM):nM=iu[559],iu[560]!==ac||iu[561]!==r5||iu[562]!==lJ||iu[563]!==iq||iu[564]!==lN||iu[565]!==l0||iu[566]!==lD?(nP=(e,t)=>{let n=r5(t);if(!iq?.(n.suppressEdgeDrop?null:e)&&null!=n.dockPosition&&(ac?n.shouldMinimize:n.isNearDock)){let e=n.shouldMinimize?"minimized":"approaching",t=ac?"bottom-right":n.dockPosition;(lJ?.stage!==e||lJ.dockPosition!==t)&&(l0({dockPosition:t,stage:e}),(n.shouldMinimize||lJ?.stage==="minimized")&&lD(ac?null:{target:n.shouldMinimize?"minimized":lN}))}else null!=lJ&&"restored"!==lJ.stage&&(l0({...lJ,stage:"restored"}),"minimized"===lJ.stage&&lD(ac?null:{target:lN}))},iu[560]=ac,iu[561]=r5,iu[562]=lJ,iu[563]=iq,iu[564]=lN,iu[565]=l0,iu[566]=lD,iu[567]=nP):nP=iu[567],iu[568]!==ac||iu[569]!==ag||iu[570]!==lx||iu[571]!==ly||iu[572]!==r5||iu[573]!==am||iu[574]!==st||iu[575]!==lJ||iu[576]!==i_||iu[577]!==iq||iu[578]!==lN||iu[579]!==ao||iu[580]!==r6||iu[581]!==lY||iu[582]!==l0||iu[583]!==lD||iu[584]!==a_||iu[585]!==r7?(nR=(e,t)=>{if(lf.current)return;let n=r5(t),i=n.suppressEdgeDrop?null:e,a=e=>!!i_?.(i,e)&&(lx.jump(0),ly.jump(0),l0(null),lD(null),lY(!1),!0),l=av.current;if(am&&ag&&l&&i&&iq?.(i))return void function(e){let{source:t,getTab:n,destination:i,update:a,reducedMotion:l}=e;$?.animation.skipTransition(),$?.cleanup();let o=t?.ownerDocument??document;if(l||null==t||"function"!=typeof o.startViewTransition)return a();let r=o.documentElement,s=(0,H.a)({...b.b,duration:300,keyframes:[0,1]}).toString();r.style.setProperty("--chat-pin-easing",s.slice(s.indexOf(" ")+1)),r.classList.add(O);let c=[],u=(e,t)=>{null!=e&&(e.classList.add(t),c.push(()=>e.classList.remove(t)))},d=e=>{for(let{element:t,className:n}of[{element:e,className:"surface-CrBPUX"},{element:e.querySelector("[data-docked-chat-toolbar] header"),className:"header-ccGAyF"},{element:e.querySelector("[data-composer-surface-variant]"),className:"composer-u_BJkO"},{element:e.querySelector("[data-composer-input]"),className:"input-RmFnoM"},{element:e.querySelector("[data-composer-leading-controls]"),className:"leading-Ty6zkf"},{element:e.querySelector("[data-composer-trailing-controls]"),className:"trailing-RPbF6R"}])u(t,n)},h=()=>{c.splice(0).forEach(e=>e())},m=!!n()?.getClientRects().length;d(t);let p=null,g=o.startViewTransition(()=>{if(h(),!t.isConnected)return void g.skipTransition();if((0,f.flushSync)(a),null==(p=i()))g.skipTransition();else{d(p),m||u(n()?.closest("[data-tab-id]")??null,"incomingTab-fuq1Db");let e=p.querySelector("[data-composer-surface-variant]");if(null!=e){let t=getComputedStyle(e);r.style.setProperty("--chat-pin-radius",t.borderRadius),r.style.setProperty("--chat-pin-background",t.backgroundColor),r.style.setProperty("--chat-pin-corner-shape",t.getPropertyValue("corner-shape"))}}}),v=()=>{$?.animation===g&&(h(),$=null,r.classList.remove(O),r.style.removeProperty("--chat-pin-easing"),r.style.removeProperty("--chat-pin-radius"),r.style.removeProperty("--chat-pin-background"),r.style.removeProperty("--chat-pin-corner-shape"))};$={animation:g,cleanup:v},g.ready.catch(()=>{}),g.finished.then(v,v)}({source:l,getTab:()=>{let e=ao.get(S.l.tabById$,ef.a);return null==e?null:l.ownerDocument.getElementById((0,z.a)(e.dndId))},destination:()=>ao.get(ev.a),reducedMotion:a_,update:()=>{!lf.current&&(a("pin")||(r7(n.requestedDockPosition,!0),lY(!1)))}});if(!a()){if(n.shouldMinimize&&null!=n.requestedDockPosition){let e=ac?"bottom-right":n.requestedDockPosition;(0,f.flushSync)(()=>{r6(e,!0),st()})}else r7(n.requestedDockPosition,!0),null!=lJ&&"restored"!==lJ.stage&&(l0({...lJ,stage:"restored"}),"minimized"===lJ.stage&&lD(ac?null:{target:lN}));lY(!1)}},iu[568]=ac,iu[569]=ag,iu[570]=lx,iu[571]=ly,iu[572]=r5,iu[573]=am,iu[574]=st,iu[575]=lJ,iu[576]=i_,iu[577]=iq,iu[578]=lN,iu[579]=ao,iu[580]=r6,iu[581]=lY,iu[582]=l0,iu[583]=lD,iu[584]=a_,iu[585]=r7,iu[586]=nR):nR=iu[586],iu[587]!==lx||iu[588]!==ly||iu[589]!==lY||iu[590]!==l_?(nN=()=>{l_(!1),lf.current=!1,l1.current=!0,lY(!0),lx.stop(),ly.stop()},iu[587]=lx,iu[588]=ly,iu[589]=lY,iu[590]=l_,iu[591]=nN):nN=iu[591],iu[592]!==ov||iu[593]!==iw||iu[594]!==ac||iu[595]!==an||iu[596]!==lB||iu[597]!==lV||iu[598]!==lI||iu[599]!==lT||iu[600]!==lD||iu[601]!==oy?(nT=e=>{e.currentTarget.contains(e.target)&&null!=e.target.closest("[data-composer-input], [data-codex-composer-request]")?((!ac||an)&&lI(!0),lV(!0),(an?oy&&ov:ac)&&null==iw&&!e.target.closest("[data-dictation-button], [data-dictation-recording-controls]")&&!(e.relatedTarget instanceof Element&&e.relatedTarget.closest("[data-dictation-button], [data-dictation-recording-controls]"))&&!lB&&null==lO.current&&(lD(null),lT("expanded"))):e.currentTarget.contains(e.target)&&!lw.current?.contains(e.target)&&(lV(!1),an&&e.target.closest("header[data-quick-chat-drag-handle]")&&lI(!0))},iu[592]=ov,iu[593]=iw,iu[594]=ac,iu[595]=an,iu[596]=lB,iu[597]=lV,iu[598]=lI,iu[599]=lT,iu[600]=lD,iu[601]=oy,iu[602]=nT):nT=iu[602],iu[603]!==lp||iu[604]!==at?(nL=e=>{at||"Escape"!==e.key||(l1.current=!0,lp.cancel())},iu[603]=lp,iu[604]=at,iu[605]=nL):nL=iu[605],iu[606]!==at||iu[607]!==a9||iu[608]!==rW?(nD=e=>{if(at||(l1.current=!1,a9||0!==e.button||e.ctrlKey||!(e.target instanceof Element)))return;let t=e.target.closest("[data-quick-chat-drag-handle]"),n=e.target.closest("button, a, input, textarea, select, label, [contenteditable='true'], [role='button'], [role='menuitem'], [role='separator'], [data-composer-input-layout]");null!=t&&(null==n||n===t)&&(e.preventDefault(),t.setPointerCapture(e.pointerId),rW(e))},iu[606]=at,iu[607]=a9,iu[608]=rW,iu[609]=nD):nD=iu[609],iu[610]!==l_?(nq=()=>{lC.current?.contains(document.activeElement)||l_(!1)},iu[610]=l_,iu[611]=nq):nq=iu[611],iu[612]!==lp||iu[613]!==tB||iu[614]!==id||iu[615]!==s_||iu[616]!==sF||iu[617]!==sI||iu[618]!==nx||iu[619]!==sW||iu[620]!==sB||iu[621]!==sH||iu[622]!==sO||iu[623]!==s$||iu[624]!==sK||iu[625]!==ny||iu[626]!==sV||iu[627]!==nS||iu[628]!==nC||iu[629]!==nk||iu[630]!==nj||iu[631]!==nE||iu[632]!==nM||iu[633]!==nP||iu[634]!==nR||iu[635]!==nN||iu[636]!==nT||iu[637]!==nL||iu[638]!==nD||iu[639]!==nq?(n_={ref:id,"aria-label":s_,"aria-labelledby":sF,"aria-modal":sI,animate:nx,"data-chat-pane-dragging":sW,"data-quick-chat-drag-handle":sB,"data-pip-obstacle":sH,"data-state":"open",drag:sO,dragConstraints:s$,dragElastic:sK,dragControls:lp,dragListener:!1,dragMomentum:!1,initial:ny,role:sV,tabIndex:-1,style:nS,transition:nC,onBlurCapture:nk,onClick:nj,onDoubleClick:nE,onClickCapture:nM,onDrag:nP,onDragEnd:nR,onDragStart:nN,onFocusCapture:nT,onKeyDown:tB,onKeyDownCapture:nL,onPointerDownCapture:nD,onPointerLeave:nq},iu[612]=lp,iu[613]=tB,iu[614]=id,iu[615]=s_,iu[616]=sF,iu[617]=sI,iu[618]=nx,iu[619]=sW,iu[620]=sB,iu[621]=sH,iu[622]=sO,iu[623]=s$,iu[624]=sK,iu[625]=ny,iu[626]=sV,iu[627]=nS,iu[628]=nC,iu[629]=nk,iu[630]=nj,iu[631]=nE,iu[632]=nM,iu[633]=nP,iu[634]=nR,iu[635]=nN,iu[636]=nT,iu[637]=nL,iu[638]=nD,iu[639]=nq,iu[640]=n_):n_=iu[640];let s0=null==ig?"floating":"content",s1=lh?"bottom":"top";iu[641]!==ac||iu[642]!==lx||iu[643]!==ly||iu[644]!==l3||iu[645]!==lT||iu[646]!==lD?(nF=e=>{l3(e),e&&(ac&&lT("expanded"),lD(null),lx.stop(),ly.stop())},iu[641]=ac,iu[642]=lx,iu[643]=ly,iu[644]=l3,iu[645]=lT,iu[646]=lD,iu[647]=nF):nF=iu[647],iu[648]!==e5.type||iu[649]!==sP||iu[650]!==ac||iu[651]!==oI||iu[652]!==lh||iu[653]!==iL||iu[654]!==a7||iu[655]!==r1||iu[656]!==az||iu[657]!==lI?(nI=!ac&&oI&&"ready"===e5.type?(0,i.jsx)("div",{ref:(0,T.a)(lC,a7,E.c),className:(0,l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset)",!iL&&(lh?"top-full":"bottom-full"),lh?"pt-3":"pb-3"),"data-pip-obstacle":az,onClickCapture:()=>{(iL?lz.current:lS.current)?.focus({preventScroll:!0}),lI(!1)},style:iL?r1:void 0,children:sP}):null,iu[648]=e5.type,iu[649]=sP,iu[650]=ac,iu[651]=oI,iu[652]=lh,iu[653]=iL,iu[654]=a7,iu[655]=r1,iu[656]=az,iu[657]=lI,iu[658]=nI):nI=iu[658],iu[659]!==sP||iu[660]!==ac||iu[661]!==oI||iu[662]!==lh||iu[663]!==iL||iu[664]!==a7||iu[665]!==r1||iu[666]!==lV||iu[667]!==lI||iu[668]!==a_?(nA=ac&&oI?(0,i.jsx)(d.a.div,{initial:{opacity:0,y:8*!a_},animate:{opacity:1,y:0},exit:{opacity:0,y:8*!a_},transition:{duration:.3*!a_,ease:N.e},ref:(0,T.a)(lC,a7,E.c),className:(0,l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset)",!iL&&(lh?"top-full":"bottom-full"),iL&&(lh?"pt-1":"pb-1")),"data-pip-obstacle":"quick-chat",onClickCapture:()=>{(iL?lz.current:lS.current)?.focus({preventScroll:!0}),lI(!1),lV(!1)},style:iL?r1:void 0,children:iL?(0,i.jsx)(j.c,{variant:"notice",children:sP}):sP},"response-preview"):null,iu[659]=sP,iu[660]=ac,iu[661]=oI,iu[662]=lh,iu[663]=iL,iu[664]=a7,iu[665]=r1,iu[666]=lV,iu[667]=lI,iu[668]=a_,iu[669]=nA):nA=iu[669],iu[670]!==nA?(nW=(0,i.jsx)(h.a,{initial:!1,children:nA}),iu[670]=nA,iu[671]=nW):nW=iu[671],iu[672]!==rS||iu[673]!==ac||iu[674]!==aS||iu[675]!==tA||iu[676]!==ob||iu[677]!==ox||iu[678]!==lh||iu[679]!==at||iu[680]!==iJ||iu[681]!==a_||iu[682]!==oC?(nB=ac&&void 0!==iJ&&!at&&!ox&&(0,i.jsx)(ej,{compact:ob,preview:oC?iJ:null,reduceMotion:a_,isDockedTop:lh,opacity:rS,onExpand:tA},aS),iu[672]=rS,iu[673]=ac,iu[674]=aS,iu[675]=tA,iu[676]=ob,iu[677]=ox,iu[678]=lh,iu[679]=at,iu[680]=iJ,iu[681]=a_,iu[682]=oC,iu[683]=nB):nB=iu[683];let s2=lh?"top-full pt-2":"bottom-full";iu[684]!==s2?(nH=(0,l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset) flex flex-col gap-3 pb-3 empty:hidden",s2),iu[684]=s2,iu[685]=nH):nH=iu[685],iu[686]!==a3||iu[687]!==oc||iu[688]!==nH?(nO=(0,i.jsx)("div",{ref:a3,className:nH,hidden:oc}),iu[686]=a3,iu[687]=oc,iu[688]=nH,iu[689]=nO):nO=iu[689];let s3=0===oQ&&"pt-2",s4=lh?"w-full":"w-80",s5=oZ&&"left-1/2 -translate-x-1/2",s6=!oZ&&(oY?"left-0":"right-0"),s7=oc&&lX&&"invisible";iu[690]!==s3||iu[691]!==s4||iu[692]!==s5||iu[693]!==s6||iu[694]!==s7?(n$=(0,l.b)(L.a.floatingComposerInset,"pointer-events-auto absolute top-full max-w-full empty:hidden",s3,s4,s5,s6,s7),iu[690]=s3,iu[691]=s4,iu[692]=s5,iu[693]=s6,iu[694]=s7,iu[695]=n$):n$=iu[695],iu[696]!==oQ?(nK={marginTop:oQ},iu[696]=oQ,iu[697]=nK):nK=iu[697],iu[698]!==iz||iu[699]!==a4||iu[700]!==az||iu[701]!==n$||iu[702]!==nK?(nV=(0,i.jsx)("div",{ref:a4,className:n$,style:nK,"data-pip-obstacle":az,children:iz}),iu[698]=iz,iu[699]=a4,iu[700]=az,iu[701]=n$,iu[702]=nK,iu[703]=nV):nV=iu[703],iu[704]!==nd||iu[705]!==ac||iu[706]!==oc?(nX=ac?void 0:{clipPath:nd,opacity:+!oc},iu[704]=nd,iu[705]=ac,iu[706]=oc,iu[707]=nX):nX=iu[707];let s8=!ox&&"pointer-events-auto";iu[708]!==s8?(nY=(0,l.b)("relative z-0 flex min-h-0 flex-1 flex-col",s8),iu[708]=s8,iu[709]=nY):nY=iu[709],iu[710]!==od||iu[711]!==ac||iu[712]!==r0?(nZ=ac?{clipPath:r0,opacity:od}:void 0,iu[710]=od,iu[711]=ac,iu[712]=r0,iu[713]=nZ):nZ=iu[713];let s9=!!ox||void 0;iu[714]!==ac||iu[715]!==lL||iu[716]!==a_?(nU=a_||!ac&&null==lL?{duration:0}:{duration:.3,ease:N.e},iu[714]=ac,iu[715]=lL,iu[716]=a_,iu[717]=nU):nU=iu[717],iu[718]!==oc||iu[719]!==rX||iu[720]!==lN||iu[721]!==lL||iu[722]!==lD?(nQ=e=>{lL?.target===(oc?"minimized":lN)&&"object"==typeof e&&"clipPath"in e&&e.clipPath===(oc?rX:ey)&&lD(e=>e===lL?null:e)},iu[718]=oc,iu[719]=rX,iu[720]=lN,iu[721]=lL,iu[722]=lD,iu[723]=nQ):nQ=iu[723],iu[724]!==ac||iu[725]!==of||iu[726]!==lh||iu[727]!==st||iu[728]!==oy?(nG=!ac&&!oy&&(0,i.jsx)("div",{className:(0,l.b)("minimizeButton-HmBp0q","absolute right-2 z-10",lh?"top-full pt-1":"bottom-full pb-1"),children:(0,i.jsx)(ee.c,{standalone:!0,isCompact:of,onMinimize:st})}),iu[724]=ac,iu[725]=of,iu[726]=lh,iu[727]=st,iu[728]=oy,iu[729]=nG):nG=iu[729],iu[730]!==ac||iu[731]!==sx||iu[732]!==ob||iu[733]!==lX||iu[734]!==st||iu[735]!==iM||iu[736]!==oy?(nJ=(ac||oy)&&(iM?.({contextMenuTrigger:sx,isCompact:ob,isDragging:lX,onMinimize:st})??sx),iu[730]=ac,iu[731]=sx,iu[732]=ob,iu[733]=lX,iu[734]=st,iu[735]=iM,iu[736]=oy,iu[737]=nJ):nJ=iu[737],iu[738]!==ib||iu[739]!==af?(n0=af&&(0,i.jsx)(eg.a,{hasPagePicker:ib}),iu[738]=ib,iu[739]=af,iu[740]=n0):n0=iu[740];let ce=ob&&"justify-end";iu[741]!==ce?(n1=(0,l.b)("relative flex min-h-0 flex-1 flex-col",ce),iu[741]=ce,iu[742]=n1):n1=iu[742];let ct=ac?ob:aC.followLatestTranscript;iu[743]!==aC||iu[744]!==ct?(n2={...aC,isFloatingChatSurface:!0,followLatestTranscript:ct},iu[743]=aC,iu[744]=ct,iu[745]=n2):n2=iu[745];let cn=ac?"absolute inset-x-0 overflow-hidden":"contents";iu[746]!==l4||iu[747]!==ac||iu[748]!==rf?(n3=ac?{bottom:l4,height:rf}:void 0,iu[746]=l4,iu[747]=ac,iu[748]=rf,iu[749]=n3):n3=iu[749],iu[750]!==rS||iu[751]!==ow||iu[752]!==aN||iu[753]!==ob||iu[754]!==a1||iu[755]!==iU?(n4=ow&&!aN&&(0,i.jsx)(d.a.div,{className:"pointer-events-none absolute inset-x-(--floating-panel-inset) bottom-0 px-4 py-3 text-sm text-default","aria-hidden":!ob,style:{opacity:rS},ref:a1,children:iU??(0,i.jsx)(v.a,{id:"quickChat.responseWorking",defaultMessage:"Working…"})}),iu[750]=rS,iu[751]=ow,iu[752]=aN,iu[753]=ob,iu[754]=a1,iu[755]=iU,iu[756]=n4):n4=iu[756];let ci=!ac&&(ob?"hidden":"flex"),ca=ac&&"absolute inset-x-0 bottom-0 flex",cl=ac&&"overflow-hidden";iu[757]!==ci||iu[758]!==ca||iu[759]!==cl?(n5=(0,l.b)("mx-(--floating-panel-inset) min-h-0 flex-1 flex-col",ci,ca,cl),iu[757]=ci,iu[758]=ca,iu[759]=cl,iu[760]=n5):n5=iu[760],iu[761]!==l4||iu[762]!==ac||iu[763]!==o8||iu[764]!==am||iu[765]!==ry||iu[766]!==rw||iu[767]!==rx?(n6=ac?{height:am?void 0:Math.max(0,o8-46-l4),top:am?0:void 0,opacity:rw,clipPath:ry,y:rx}:void 0,iu[761]=l4,iu[762]=ac,iu[763]=o8,iu[764]=am,iu[765]=ry,iu[766]=rw,iu[767]=rx,iu[768]=n6):n6=iu[768],iu[769]!==ac||iu[770]!==ay||iu[771]!==og||iu[772]!==ob||iu[773]!==at||iu[774]!==oc||iu[775]!==i1||iu[776]!==lT||iu[777]!==lD?(n7=ay&&(!og||ac)?i1?.(()=>{lD(null),lT("compact")},!ob&&!at&&!oc):null,iu[769]=ac,iu[770]=ay,iu[771]=og,iu[772]=ob,iu[773]=at,iu[774]=oc,iu[775]=i1,iu[776]=lT,iu[777]=lD,iu[778]=n7):n7=iu[778],iu[779]!==ac||iu[780]!==ax||iu[781]!==ay||iu[782]!==ob||iu[783]!==rl?(n8=!ay&&(0,i.jsx)(h.a,{initial:!1,children:(ac||!ob)&&null!=ax&&(0,i.jsx)(d.a.div,{className:"flex min-h-0 flex-1 flex-col",initial:!ac&&{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:rl,ease:N.e},children:ax},"empty-state")}),iu[779]=ac,iu[780]=ax,iu[781]=ay,iu[782]=ob,iu[783]=rl,iu[784]=n8):n8=iu[784],iu[785]!==ob||iu[786]!==aZ||iu[787]!==n5||iu[788]!==n6||iu[789]!==n7||iu[790]!==n8?(n9=(0,i.jsxs)(d.a.div,{ref:aZ,"aria-hidden":ob,className:n5,inert:ob,style:n6,children:[n7,n8]}),iu[785]=ob,iu[786]=aZ,iu[787]=n5,iu[788]=n6,iu[789]=n7,iu[790]=n8,iu[791]=n9):n9=iu[791],iu[792]!==ac||iu[793]!==tA||iu[794]!==ow||iu[795]!==ob||iu[796]!==si||iu[797]!==iQ?(ie=ac&&ob&&ow&&(0,i.jsx)(eE,{label:si,responsePreview:iQ,onExpand:tA}),iu[792]=ac,iu[793]=tA,iu[794]=ow,iu[795]=ob,iu[796]=si,iu[797]=iQ,iu[798]=ie):ie=iu[798],iu[799]!==cn||iu[800]!==n3||iu[801]!==n4||iu[802]!==n9||iu[803]!==ie?(it=(0,i.jsxs)(d.a.div,{className:cn,style:n3,children:[n4,n9,ie]}),iu[799]=cn,iu[800]=n3,iu[801]=n4,iu[802]=n9,iu[803]=ie,iu[804]=it):it=iu[804],iu[805]!==n2||iu[806]!==it?(ii=(0,i.jsx)(em.b,{value:n2,children:it}),iu[805]=n2,iu[806]=it,iu[807]=ii):ii=iu[807];let co=iM?.({contextMenuTrigger:sp,isCompact:ob,isDragging:lX,onMinimize:st})??sp;iu[808]!==n1||iu[809]!==ii||iu[810]!==co?(ia=(0,i.jsxs)("div",{className:n1,children:[ii,co]}),iu[808]=n1,iu[809]=ii,iu[810]=co,iu[811]=ia):ia=iu[811],iu[812]!==ld||iu[813]!==ox||iu[814]!==nX||iu[815]!==nY||iu[816]!==nZ||iu[817]!==s9||iu[818]!==nU||iu[819]!==nQ||iu[820]!==nG||iu[821]!==nJ||iu[822]!==n0||iu[823]!==ia?(il=(0,i.jsxs)(d.a.div,{"aria-hidden":ox,animate:nX,className:nY,"data-floating-chat-surface":!0,"data-floating-chat-dock-position":ld,style:nZ,initial:!1,inert:s9,transition:nU,onAnimationComplete:nQ,children:[nG,nJ,n0,ia]}),iu[812]=ld,iu[813]=ox,iu[814]=nX,iu[815]=nY,iu[816]=nZ,iu[817]=s9,iu[818]=nU,iu[819]=nQ,iu[820]=nG,iu[821]=nJ,iu[822]=n0,iu[823]=ia,iu[824]=il):il=iu[824],iu[825]!==D||iu[826]!==se||iu[827]!==of||iu[828]!==oc||iu[829]!==rV||iu[830]!==iC||iu[831]!==r9||iu[832]!==so||iu[833]!==sl||iu[834]!==a_||iu[835]!==sR||iu[836]!==nh||iu[837]!==nm||iu[838]!==np||iu[839]!==sN||iu[840]!==sT||iu[841]!==sL||iu[842]!==nf||iu[843]!==ng||iu[844]!==nv||iu[845]!==sD||iu[846]!==sq||iu[847]!==n_||iu[848]!==s0||iu[849]!==s1||iu[850]!==nF||iu[851]!==nI||iu[852]!==nW||iu[853]!==nB||iu[854]!==nO||iu[855]!==nV||iu[856]!==il?(io=(0,i.jsxs)(D,{contentRef:av,allowCompactResize:!0,animateSurface:sR,contentStyle:nh,surfaceStyle:nm,currentSize:np,heightLabel:so,resizeFromCenter:sN,fixedHorizontalEdge:sT,isCompact:of,isCompactChromeRevealed:sL,isMinimized:oc,keepSurfaceInset:!0,maximumSize:nf,minimizedContent:ng,minimizedSurfaceBounds:rV,minimumSize:nv,prefersCompactPresentation:!0,resizable:sD,background:sq,sectionRef:lS,sectionProps:n_,shouldReduceMotion:a_,variant:s0,verticalResizeEdge:s1,widthLabel:sl,onResize:r9,onResizeEnd:se,onResizingChange:nF,children:[nI,nW,nB,nO,nV,il,iC]}),iu[825]=D,iu[826]=se,iu[827]=of,iu[828]=oc,iu[829]=rV,iu[830]=iC,iu[831]=r9,iu[832]=so,iu[833]=sl,iu[834]=a_,iu[835]=sR,iu[836]=nh,iu[837]=nm,iu[838]=np,iu[839]=sN,iu[840]=sT,iu[841]=sL,iu[842]=nf,iu[843]=ng,iu[844]=nv,iu[845]=sD,iu[846]=sq,iu[847]=n_,iu[848]=s0,iu[849]=s1,iu[850]=nF,iu[851]=nI,iu[852]=nW,iu[853]=nB,iu[854]=nO,iu[855]=nV,iu[856]=il,iu[857]=io):io=iu[857];let cr=io;return iu[858]!==aD?(ir={id:aD},iu[858]=aD,iu[859]=ir):ir=iu[859],iu[860]!==ac||iu[861]!==a0?(is=ac&&(0,i.jsx)("div",{ref:a0,"aria-hidden":!0,className:(0,l.b)(ep.a,"pointer-events-none invisible absolute")}),iu[860]=ac,iu[861]=a0,iu[862]=is):is=iu[862],iu[863]!==cr||iu[864]!==ir||iu[865]!==is?(ic=(0,i.jsxs)(G.a,{value:ir,children:[is,cr]}),iu[863]=cr,iu[864]=ir,iu[865]=is,iu[866]=ic):ic=iu[866],ic}function ek(){return new Set}function ej(e){let t,n,o,r,s,c=(0,a.c)(17),{compact:u,preview:m,isDockedTop:p,opacity:f,reduceMotion:g,onExpand:v}=e,b=p?"top-full mt-2":"bottom-full mb-2";c[0]!==b?(t=(0,l.b)("pointer-events-none absolute inset-x-(--floating-panel-inset) -z-1 grid grid-cols-1 items-end justify-items-start px-4",b),c[0]=b,c[1]=t):t=c[1],c[2]!==f?(n={opacity:f},c[2]=f,c[3]=n):n=c[3];let x=!u||!m;return c[4]!==u||c[5]!==p||c[6]!==v||c[7]!==m||c[8]!==g?(o=u&&m&&(0,i.jsx)(d.a.div,{className:(0,l.b)("col-start-1 row-start-1 max-w-full",p?"origin-top-left":"origin-bottom-left"),initial:!g&&{y:16,scale:.94,opacity:0},animate:{y:0,scale:1,opacity:1},exit:{opacity:0},transition:g?{duration:0}:{type:"spring",duration:.3,bounce:.16,opacity:{duration:.15}},children:(0,i.jsx)(q.a,{unstyled:!0,className:"pointer-events-auto max-w-full text-start","data-quick-chat-drag-handle":!0,onClick:v,children:m.content})},m.id),c[4]=u,c[5]=p,c[6]=v,c[7]=m,c[8]=g,c[9]=o):o=c[9],c[10]!==o?(r=(0,i.jsx)(h.a,{children:o}),c[10]=o,c[11]=r):r=c[11],c[12]!==t||c[13]!==n||c[14]!==x||c[15]!==r?(s=(0,i.jsx)(d.a.div,{className:t,style:n,inert:x,children:r}),c[12]=t,c[13]=n,c[14]=x,c[15]=r,c[16]=s):s=c[16],s}function eE(e){let t,n=(0,a.c)(4),{label:l,responsePreview:o,onExpand:r}=e,s=(0,m.z)(o)??void 0;return n[0]!==l||n[1]!==r||n[2]!==s?(t=(0,i.jsx)(q.a,{unstyled:!0,focusRing:"inset",className:"absolute inset-0","aria-label":l,"aria-description":s,"data-quick-chat-drag-handle":!0,onClick:r}),n[0]=l,n[1]=r,n[2]=s,n[3]=t):t=n[3],t}function eM(e,t,n){return t instanceof Node&&(e.contains(t)||t instanceof Element&&(null!=t.closest("[data-composer-overlay-floating-ui], [data-content-search-bar], [data-composer-focus-target]")||null!=t.closest("[data-floating-chat-annotation-layer]")||t.closest("[data-overlay-owner]")?.getAttribute("data-overlay-owner")===n))}function eP(e,t,n){return Math.max(t,Math.min(e,n))}function eR(){return{width:window.visualViewport?.width??window.innerWidth,height:window.visualViewport?.height??window.innerHeight}}}),eeV6:(function(e,t,n){var i=n("ABep"),a=n("QosV"),l=n("on57"),o=n("IPUh"),r=n("Wf1j"),s=n("Sm6l"),c=n("HOLv"),u=n("V8uZ"),d=n("NBTh");n.d(t,{},{a:function(e){let t,n,o,r,s=(0,a.c)(12),{children:c,isCompact:u,isVisible:d,isDisabled:h}=e,m=void 0!==u&&u,p=!d||!!h||void 0,f=m?Number(d):"var(--quick-chat-expansion, 1)";s[0]!==f?(t={opacity:f},s[0]=f,s[1]=t):t=s[1];let g=!d||!!h||void 0,v=m&&"border-b border-default";return s[2]!==v?(n=(0,l.b)("flex h-toolbar cursor-interaction touch-none items-center justify-between px-2 select-none",v),s[2]=v,s[3]=n):n=s[3],s[4]!==c||s[5]!==n?(o=(0,i.jsx)("div",{className:n,children:c}),s[4]=c,s[5]=n,s[6]=o):o=s[6],s[7]!==p||s[8]!==t||s[9]!==g||s[10]!==o?(r=(0,i.jsx)("header",{className:"absolute inset-x-0 top-0 z-10 mx-(--floating-panel-inset) h-toolbar min-h-0 shrink-0 overflow-hidden","aria-hidden":p,style:t,"data-quick-chat-drag-handle":!0,inert:g,children:o}),s[7]=p,s[8]=t,s[9]=g,s[10]=o,s[11]=r):r=s[11],r},b:function(e){let t,n=(0,a.c)(2),{children:l}=e;return n[0]!==l?(t=(0,i.jsx)("span",{className:"flex button-toolbar max-w-full min-w-0 items-center gap-2 border border-transparent py-0 text-sm leading-[18px] font-normal",children:l}),n[0]=l,n[1]=t):t=n[1],t},c:function(e){let t,n,l,o,u=(0,a.c)(11),{isCompact:h,onMinimize:m,standalone:p}=e,f=void 0!==p&&p,g=(0,r.a)();u[0]!==g?(t=g.formatMessage({id:"quickChat.minimize",defaultMessage:"Minimize chat"}),u[0]=g,u[1]=t):t=u[1];let v=f?"outlineSurface":"ghostSecondary",b=h?"composer":"toolbar";return u[2]!==f?(n=e=>{f&&e.preventDefault()},u[2]=f,u[3]=n):n=u[3],u[4]===Symbol.for("react.memo_cache_sentinel")?(l=(0,i.jsx)(c.a,{"aria-hidden":!1,asset:d.a}),u[4]=l):l=u[4],u[5]!==m||u[6]!==t||u[7]!==v||u[8]!==b||u[9]!==n?(o=(0,i.jsx)(s.a,{"aria-label":t,color:v,size:b,uniform:!0,onClick:m,onPointerDown:n,children:l}),u[5]=m,u[6]=t,u[7]=v,u[8]=b,u[9]=n,u[10]=o):o=u[10],o},d:function(e){let t,n,r,s,c,d,h,m=(0,a.c)(28),{animateChrome:p,expandOnClick:f,children:g,isChromeRevealed:v,isCompact:b,isDisabled:x,presentationToggle:y,reserveSpace:w}=e,S=void 0!==f&&f,z=!b&&"shrink-0";m[0]!==z?(t=(0,l.b)("relative min-h-0 overflow-hidden",z),m[0]=z,m[1]=t):t=m[1];let C=!v||!!x||void 0,k=v||w?46:0,j=+!!v;m[2]!==k||m[3]!==j?(n={height:k,opacity:j},m[2]=k,m[3]=j,m[4]=n):n=m[4];let E=!v||!!x||void 0;m[5]!==p||m[6]!==S?(r=p?{duration:.3,ease:u.e,...S?{opacity:{duration:0}}:{}}:{duration:0},m[5]=p,m[6]=S,m[7]=r):r=m[7],m[8]!==b||m[9]!==y?(s=null!=y?(0,i.jsx)("button",{className:"pointer-events-none absolute inset-0 rounded-[inherit] focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset","aria-label":y.label,"aria-expanded":!b,type:"button",onClick:y.onToggle}):null,m[8]=b,m[9]=y,m[10]=s):s=m[10];let M=!S&&null!=y&&b&&"cursor-n-resize",P=!S&&null!=y&&!b&&"cursor-s-resize",R=(S||null==y)&&"cursor-interaction",N=b&&"mx-1.5 border-b border-default px-2",T=!b&&"px-3";return m[11]!==M||m[12]!==P||m[13]!==R||m[14]!==N||m[15]!==T?(c=(0,l.b)("flex h-toolbar touch-none select-none items-center justify-between",M,P,R,N,T),m[11]=M,m[12]=P,m[13]=R,m[14]=N,m[15]=T,m[16]=c):c=m[16],m[17]!==g||m[18]!==c?(d=(0,i.jsx)("div",{className:c,children:g}),m[17]=g,m[18]=c,m[19]=d):d=m[19],m[20]!==s||m[21]!==d||m[22]!==t||m[23]!==C||m[24]!==n||m[25]!==E||m[26]!==r?(h=(0,i.jsxs)(o.a.header,{className:t,"aria-hidden":C,animate:n,"data-quick-chat-drag-handle":!0,initial:!1,inert:E,transition:r,children:[s,d]}),m[20]=s,m[21]=d,m[22]=t,m[23]=C,m[24]=n,m[25]=E,m[26]=r,m[27]=h):h=m[27],h}})}),sArP:(function(e,t,n){n.d(t,{a:()=>h});var i=n("ABep"),a=n("QosV"),l=n("FHYD"),o=n("on57"),r=n("zd8w"),s=n("wD9O");function c(e){let t,n,l,c,d,h,m,p,f,g=(0,a.c)(35),{edge:v,getCurrentSize:b,maximumSize:x,resizeFromCenter:y,minimumSize:w,onResizeEnd:S,onResizingChange:z,setSize:C,verticalEdge:k}=e,j=void 0===v?"left":v,E=void 0!==y&&y,M=void 0===k?"top":k,P=(0,s.c)(),R=(0,r.useRef)(null);g[0]!==j||g[1]!==x||g[2]!==w||g[3]!==E||g[4]!==C||g[5]!==M||g[6]!==P?(t=e=>{let t=R.current;if(null==t||t.pointerId!==e.pointerId)return;e.preventDefault();let n={height:u(t.startSize.height+("top"===M?-1:1)*((0,s.b)(e.clientY,P)-t.startPointer.y),w.height,x.height),width:u(t.startSize.width+(E?2:1)*("left"===j?-1:1)*((0,s.b)(e.clientX,P)-t.startPointer.x),w.width,x.width)};t.didMove||(t.didMove=n.height!==t.startSize.height||n.width!==t.startSize.width),t.lastSize=n,C(n)},g[0]=j,g[1]=x,g[2]=w,g[3]=E,g[4]=C,g[5]=M,g[6]=P,g[7]=t):t=g[7];let N=t;g[8]!==S||g[9]!==z?(n=(e,t)=>{let n=R.current;n?.pointerId===e.pointerId&&(R.current=null,z?.(!1),t&&n.didMove&&S?.(n.lastSize))},g[8]=S,g[9]=z,g[10]=n):n=g[10];let T=n,L="top"===M?"top-0":"bottom-0",D="left"===j?"left-0":"right-0",q="left"===j==("top"===M)?"cursor-nwse-resize":"cursor-nesw-resize";return g[11]!==L||g[12]!==D||g[13]!==q?(l=(0,o.b)("group absolute z-50 flex size-4 touch-none select-none",L,D,q),g[11]=L,g[12]=D,g[13]=q,g[14]=l):l=g[14],g[15]!==T?(c=e=>{T(e,!1)},g[15]=T,g[16]=c):c=g[16],g[17]!==N||g[18]!==T?(d=e=>{N(e),T(e,!0)},g[17]=N,g[18]=T,g[19]=d):d=g[19],g[20]!==b||g[21]!==z||g[22]!==P?(h=e=>{if(0!==e.button)return;e.preventDefault(),e.currentTarget.setPointerCapture?.(e.pointerId);let t=b();R.current={didMove:!1,lastSize:t,pointerId:e.pointerId,startPointer:{x:(0,s.b)(e.clientX,P),y:(0,s.b)(e.clientY,P)},startSize:t},z?.(!0)},g[20]=b,g[21]=z,g[22]=P,g[23]=h):h=g[23],g[24]!==N||g[25]!==T?(m=e=>{N(e),T(e,!0)},g[24]=N,g[25]=T,g[26]=m):m=g[26],g[27]===Symbol.for("react.memo_cache_sentinel")?(p=(0,i.jsx)("div",{className:"pointer-events-none m-auto h-px w-2 rotate-45 bg-text/25 opacity-0 group-hover:opacity-100 group-active:opacity-100"}),g[27]=p):p=g[27],g[28]!==N||g[29]!==c||g[30]!==d||g[31]!==h||g[32]!==m||g[33]!==l?(f=(0,i.jsx)("div",{"aria-hidden":!0,className:l,onLostPointerCapture:c,onPointerCancel:d,onPointerDown:h,onPointerMove:N,onPointerUp:m,children:p}),g[28]=N,g[29]=c,g[30]=d,g[31]=h,g[32]=m,g[33]=l,g[34]=f):f=g[34],f}function u(e,t,n){return Math.min(Math.max(e,t),n)}let d=["left","right"];function h(e){let t,n,o,r,s=(0,a.c)(43),{currentSize:u,defaultSize:h,extendIntoToolbar:m,fixedHorizontalEdge:p,resizeFromCenter:f,heightLabel:g,maximumSize:v,minimumSize:b,onResize:x,onResizeEnd:y,onResizingChange:w,verticalEdge:S,widthLabel:z}=e,C=void 0===m||m,k=void 0!==f&&f,j=void 0===S?"top":S;if(s[0]!==u||s[1]!==h||s[2]!==C||s[3]!==p||s[4]!==g||s[5]!==v||s[6]!==b||s[7]!==x||s[8]!==y||s[9]!==w||s[10]!==k||s[11]!==j||s[12]!==z){let e,a;s[16]!==p?(e=e=>e!==p,s[16]=p,s[17]=e):e=s[17];let r=d.filter(e);s[18]!==u||s[19]!==h||s[20]!==C||s[21]!==v||s[22]!==b||s[23]!==x||s[24]!==y||s[25]!==w||s[26]!==k||s[27]!==z?(a=e=>(0,i.jsx)(l.a,{ariaLabel:z,defaultSize:h.width,edge:e,resizeFromCenter:k,extendIntoToolbar:C,getCurrentSize:()=>u.width,maximumSize:v.width,minimumSize:b.width,onResizeEnd:e=>{y({...u,width:e})},onResizingChange:w,setSize:t=>{x(e,{...u,width:t})}},e),s[18]=u,s[19]=h,s[20]=C,s[21]=v,s[22]=b,s[23]=x,s[24]=y,s[25]=w,s[26]=k,s[27]=z,s[28]=a):a=s[28],t=r.map(a),s[29]!==u||s[30]!==h||s[31]!==g||s[32]!==v||s[33]!==b||s[34]!==x||s[35]!==y||s[36]!==w||s[37]!==j?(n=null!=j&&(0,i.jsx)(l.a,{ariaLabel:g,defaultSize:h.height,edge:j,getCurrentSize:()=>u.height,maximumSize:v.height,minimumSize:b.height,onResizeEnd:e=>{y({...u,height:e})},onResizingChange:w,setSize:e=>{x("right",{...u,height:e})}}),s[29]=u,s[30]=h,s[31]=g,s[32]=v,s[33]=b,s[34]=x,s[35]=y,s[36]=w,s[37]=j,s[38]=n):n=s[38],o=null!=j&&r.map(e=>(0,i.jsx)(c,{edge:e,resizeFromCenter:k,getCurrentSize:()=>u,maximumSize:v,minimumSize:b,verticalEdge:j,onResizeEnd:y,onResizingChange:w,setSize:t=>{x(e,t)}},e)),s[0]=u,s[1]=h,s[2]=C,s[3]=p,s[4]=g,s[5]=v,s[6]=b,s[7]=x,s[8]=y,s[9]=w,s[10]=k,s[11]=j,s[12]=z,s[13]=t,s[14]=n,s[15]=o}else t=s[13],n=s[14],o=s[15];return s[39]!==t||s[40]!==n||s[41]!==o?(r=(0,i.jsxs)(i.Fragment,{children:[t,n,o]}),s[39]=t,s[40]=n,s[41]=o,s[42]=r):r=s[42],r}})};
+export const __rspack_esm_ids = [355084];
+export const __webpack_modules__ = {
+    wrxv: (function(e, t, n) {
+        n.d(t, {}, {
+            a: {
+                type: "none"
+            },
+            b: {
+                type: "pending"
+            }
+        })
+    }),
+    nb0y: (function(e, t, n) {
+        n.d(t, {
+            a: () => ez
+        });
+        var i = n("ABep"),
+            a = n("QosV"),
+            l = n("on57"),
+            o = n("h24K"),
+            r = n("K45w"),
+            s = n("W5pg"),
+            c = n("jCHb"),
+            u = n("p5Yg"),
+            d = n("IPUh"),
+            h = n("suct"),
+            m = n("BolX"),
+            p = n("zd8w"),
+            f = n("v7qY"),
+            g = n("Wf1j"),
+            v = n("oyxz"),
+            b = n("I7bK"),
+            x = n("XExW"),
+            y = n("Q2Qp"),
+            w = n("QcW8"),
+            S = n("ZU27"),
+            z = n("BzS0"),
+            C = n("DUYS"),
+            k = n("wD9O"),
+            j = n("rsCP"),
+            E = n("AclY"),
+            M = n("sArP");
+        let P = {
+            height: 640,
+            width: 560
+        };
+        var R = n("hZax"),
+            N = n("V8uZ"),
+            T = n("HgLj"),
+            L = n("h7RI");
+
+        function D(e) {
+            let t, n, o, r, s, c, u, h, m, p, f = (0, a.c)(62),
+                {
+                    allowCompactResize: g,
+                    animateSurface: v,
+                    background: b,
+                    children: x,
+                    currentSize: y,
+                    contentStyle: w,
+                    contentRef: S,
+                    fixedHorizontalEdge: z,
+                    resizeFromCenter: C,
+                    heightLabel: k,
+                    isCompact: D,
+                    isCompactChromeRevealed: q,
+                    isMinimized: _,
+                    keepSurfaceInset: F,
+                    maximumSize: I,
+                    minimizedContent: A,
+                    minimizedSurfaceBounds: W,
+                    minimumSize: B,
+                    onResize: H,
+                    onResizeEnd: O,
+                    onResizingChange: $,
+                    prefersCompactPresentation: K,
+                    resizable: V,
+                    sectionProps: X,
+                    sectionRef: Y,
+                    surfaceStyle: Z,
+                    shouldReduceMotion: U,
+                    variant: Q,
+                    verticalResizeEdge: G,
+                    widthLabel: J
+                } = e,
+                ee = void 0 !== g && g,
+                et = void 0 === v || v,
+                en = void 0 !== C && C,
+                ei = void 0 === V || V,
+                ea = (0, R.f)("2163293173"),
+                el = !_ && (F || D && !q) ? 6 : 0;
+            f[0] !== _ || f[1] !== W || f[2] !== el ? (t = _ && null != W ? W : {
+                top: 0,
+                right: el,
+                bottom: el,
+                left: el
+            }, f[0] = _, f[1] = W, f[2] = el, f[3] = t) : t = f[3];
+            let eo = t,
+                er = "panel" !== b && "rounded-[inherit]";
+            f[4] !== er ? (n = (0, l.b)("pointer-events-none absolute group-focus-visible/chat-frame:ring-2 group-focus-visible/chat-frame:ring-ring group-focus-visible/chat-frame:ring-offset-0 forced-colors:group-focus-visible/chat-frame:outline-auto", er), f[4] = er, f[5] = n) : n = f[5];
+            let es = n,
+                ec = "panel" !== b || K;
+            f[6] !== X.ref || f[7] !== Y ? (o = (0, T.a)(Y, X.ref, E.c), f[6] = X.ref, f[7] = Y, f[8] = o) : o = f[8];
+            let eu = !ea && K && "frame-Xbg62r",
+                ed = K && "group/chat-frame focus:outline-none",
+                eh = null != W ? "pointer-events-none" : "pointer-events-auto",
+                em = K && L.a.floatingSurface,
+                ep = F && L.a.singleLineSurface,
+                ef = "floating" === Q ? "fixed top-0 left-0 z-30 max-h-[calc(100dvh/var(--codex-window-zoom)-var(--height-toolbar)-2rem)] max-w-[calc(50vw/var(--codex-window-zoom))]" : "absolute top-0 left-0 z-30 max-h-full max-w-full",
+                eg = K ? "overflow-visible" : "overflow-hidden";
+            f[9] !== eu || f[10] !== ed || f[11] !== eh || f[12] !== em || f[13] !== ep || f[14] !== ef || f[15] !== eg ? (r = (0, l.b)("flex flex-col text-default", eu, ed, eh, em, ep, ef, eg), f[9] = eu, f[10] = ed, f[11] = eh, f[12] = em, f[13] = ep, f[14] = ef, f[15] = eg, f[16] = r) : r = f[16];
+            let ev = null != w ? "relative flex h-full min-h-0 w-full shrink-0 flex-col rounded-[inherit]" : "contents";
+            f[17] !== ev ? (s = (0, l.b)(ev), f[17] = ev, f[18] = s) : s = f[18], f[19] !== et || f[20] !== b || f[21] !== es || f[22] !== F || f[23] !== A || f[24] !== K || f[25] !== U || f[26] !== eo || f[27] !== Z ? (c = K ? (0, i.jsx)(j.c, {
+                asChild: !0,
+                unstyled: "panel" !== b,
+                variant: F ? "single-line" : "default",
+                children: null != Z ? (0, i.jsx)(d.a.div, {
+                    className: es,
+                    "aria-hidden": null == A || void 0,
+                    style: Z
+                }, "panel-background") : (0, i.jsx)(d.a.div, {
+                    className: es,
+                    "aria-hidden": null == A || void 0,
+                    animate: eo,
+                    initial: !1,
+                    transition: U || !et ? {
+                        duration: 0
+                    } : {
+                        duration: .3,
+                        ease: N.e
+                    },
+                    children: A
+                }, "legacy-background")
+            }) : null, f[19] = et, f[20] = b, f[21] = es, f[22] = F, f[23] = A, f[24] = K, f[25] = U, f[26] = eo, f[27] = Z, f[28] = c) : c = f[28], f[29] !== ee || f[30] !== y || f[31] !== z || f[32] !== k || f[33] !== D || f[34] !== _ || f[35] !== I || f[36] !== B || f[37] !== H || f[38] !== O || f[39] !== $ || f[40] !== ei || f[41] !== en || f[42] !== eo || f[43] !== G || f[44] !== J ? (u = ei && (!D || ee) && !_ ? (0, i.jsx)("div", {
+                className: "pointer-events-none absolute",
+                style: eo,
+                children: (0, i.jsx)("div", {
+                    className: "pointer-events-auto contents",
+                    children: (0, i.jsx)(M.a, {
+                        currentSize: y,
+                        defaultSize: P,
+                        extendIntoToolbar: !1,
+                        fixedHorizontalEdge: z,
+                        resizeFromCenter: en,
+                        heightLabel: k,
+                        maximumSize: I,
+                        minimumSize: B,
+                        verticalEdge: D ? null : G,
+                        widthLabel: J,
+                        onResize: H,
+                        onResizeEnd: O,
+                        onResizingChange: $
+                    })
+                })
+            }) : null, f[29] = ee, f[30] = y, f[31] = z, f[32] = k, f[33] = D, f[34] = _, f[35] = I, f[36] = B, f[37] = H, f[38] = O, f[39] = $, f[40] = ei, f[41] = en, f[42] = eo, f[43] = G, f[44] = J, f[45] = u) : u = f[45];
+            let eb = null == Z ? null : A;
+            return f[46] !== x || f[47] !== S || f[48] !== w || f[49] !== s || f[50] !== c || f[51] !== u || f[52] !== eb ? (h = (0, i.jsxs)(d.a.div, {
+                ref: S,
+                className: s,
+                style: w,
+                children: [c, u, eb, x]
+            }), f[46] = x, f[47] = S, f[48] = w, f[49] = s, f[50] = c, f[51] = u, f[52] = eb, f[53] = h) : h = f[53], f[54] !== X || f[55] !== r || f[56] !== h || f[57] !== o ? (m = (0, i.jsx)(d.a.section, {
+                ...X,
+                ref: o,
+                className: r,
+                children: h
+            }), f[54] = X, f[55] = r, f[56] = h, f[57] = o, f[58] = m) : m = f[58], f[59] !== m || f[60] !== ec ? (p = (0, i.jsx)(j.c, {
+                asChild: !0,
+                unstyled: ec,
+                children: m
+            }), f[59] = m, f[60] = ec, f[61] = p) : p = f[61], p
+        }
+        var q = n("Sm6l"),
+            _ = n("bf6R");
+
+        function F(e) {
+            let t, n, l, o, r, s, c, u, d, h, m, f = (0, a.c)(56),
+                {
+                    title: b,
+                    preview: x,
+                    onOpen: y,
+                    onDismiss: w,
+                    isWorking: S,
+                    workingContent: z
+                } = e,
+                C = void 0 !== S && S,
+                k = (0, R.f)("2163293173"),
+                E = (0, g.a)();
+            f[0] !== E || f[1] !== b ? (t = b ?? E.formatMessage({
+                id: "quickChat.mainConversation",
+                defaultMessage: "Chat"
+            }), f[0] = E, f[1] = b, f[2] = t) : t = f[2];
+            let M = t,
+                P = (0, p.useEffectEvent)(w);
+            if (f[3] !== k || f[4] !== P || f[5] !== C ? (n = () => {
+                    if (!k || C) return;
+                    let e = window.setTimeout(() => P(), 1e4);
+                    return () => window.clearTimeout(e)
+                }, f[3] = k, f[4] = P, f[5] = C, f[6] = n) : n = f[6], f[7] !== k || f[8] !== C ? (l = [k, C], f[7] = k, f[8] = C, f[9] = l) : l = f[9], (0, p.useEffect)(n, l), !k) {
+                let e, t, n, a, l, o, r, s, c, u;
+                return f[10] !== E || f[11] !== M ? (e = E.formatMessage({
+                    id: "quickChat.openCompletedResponse",
+                    defaultMessage: "Open completed response: {title}"
+                }, {
+                    title: M
+                }), f[10] = E, f[11] = M, f[12] = e) : e = f[12], f[13] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, i.jsx)(_.lc, {
+                    className: "text-success"
+                }), f[13] = t) : t = f[13], f[14] !== M ? (n = (0, i.jsxs)("span", {
+                    className: "flex min-w-0 items-center gap-2 text-sm font-semibold text-default",
+                    children: [t, (0, i.jsx)("span", {
+                        className: "truncate",
+                        children: M
+                    })]
+                }), f[14] = M, f[15] = n) : n = f[15], f[16] !== x ? (a = x || (0, i.jsx)(v.a, {
+                    id: "quickChat.responseReady",
+                    defaultMessage: "Response ready"
+                }), f[16] = x, f[17] = a) : a = f[17], f[18] !== a ? (l = (0, i.jsx)("span", {
+                    className: "block truncate text-sm text-secondary",
+                    children: a
+                }), f[18] = a, f[19] = l) : l = f[19], f[20] !== y || f[21] !== e || f[22] !== n || f[23] !== l ? (o = (0, i.jsxs)("button", {
+                    className: "min-w-0 flex-1 cursor-interaction rounded-[inherit] px-4 py-3 text-start focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-inset",
+                    "aria-label": e,
+                    type: "button",
+                    onClick: y,
+                    children: [n, l]
+                }), f[20] = y, f[21] = e, f[22] = n, f[23] = l, f[24] = o) : o = f[24], f[25] !== E ? (r = E.formatMessage({
+                    id: "quickChat.dismissCompletedResponse",
+                    defaultMessage: "Dismiss and mark as read"
+                }), f[25] = E, f[26] = r) : r = f[26], f[27] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, i.jsx)(_.xj, {
+                    className: "pointer-events-none"
+                }), f[27] = s) : s = f[27], f[28] !== w || f[29] !== r ? (c = (0, i.jsx)("div", {
+                    className: "absolute -top-1 -left-1 flex rounded-full bg-surface",
+                    children: (0, i.jsx)(q.a, {
+                        "aria-label": r,
+                        color: "outlineSurface",
+                        radius: "full",
+                        size: "iconCircleSm",
+                        onClick: w,
+                        children: s
+                    })
+                }), f[28] = w, f[29] = r, f[30] = c) : c = f[30], f[31] !== o || f[32] !== c ? (u = (0, i.jsxs)(j.c, {
+                    className: "relative flex shrink-0 select-none",
+                    role: "status",
+                    variant: "notice",
+                    children: [o, c]
+                }), f[31] = o, f[32] = c, f[33] = u) : u = f[33], u
+            }
+            return f[34] !== E || f[35] !== M ? (o = E.formatMessage({
+                id: "quickChat.openCompletedResponse",
+                defaultMessage: "Open completed response: {title}"
+            }, {
+                title: M
+            }), f[34] = E, f[35] = M, f[36] = o) : o = f[36], f[37] !== C || f[38] !== x || f[39] !== z ? (r = C ? z ?? (0, i.jsx)(v.a, {
+                id: "quickChat.responseWorking",
+                defaultMessage: "Working…"
+            }) : x || (0, i.jsx)(v.a, {
+                id: "quickChat.responseReady",
+                defaultMessage: "Response ready"
+            }), f[37] = C, f[38] = x, f[39] = z, f[40] = r) : r = f[40], f[41] !== r ? (s = (0, i.jsx)("span", {
+                className: "line-clamp-2 min-w-0 flex-1 text-sm whitespace-normal text-default",
+                children: r
+            }), f[41] = r, f[42] = s) : s = f[42], f[43] !== y || f[44] !== o || f[45] !== s ? (c = (0, i.jsx)(q.a, {
+                unstyled: !0,
+                focusRing: "inset",
+                className: "min-w-0 flex-1 rounded-[inherit] px-4 py-3 pe-10 text-start",
+                "aria-label": o,
+                type: "button",
+                onClick: y,
+                children: s
+            }), f[43] = y, f[44] = o, f[45] = s, f[46] = c) : c = f[46], f[47] !== E ? (u = E.formatMessage({
+                id: "quickChat.dismissResponsePreview",
+                defaultMessage: "Dismiss response preview"
+            }), f[47] = E, f[48] = u) : u = f[48], f[49] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, i.jsx)(_.xj, {
+                className: "pointer-events-none"
+            }), f[49] = d) : d = f[49], f[50] !== w || f[51] !== u ? (h = (0, i.jsx)("div", {
+                className: "absolute top-3 right-2 flex rounded-full",
+                children: (0, i.jsx)(q.a, {
+                    "aria-label": u,
+                    color: "ghostSecondary",
+                    radius: "full",
+                    size: "iconCircleSm",
+                    onClick: w,
+                    children: d
+                })
+            }), f[50] = w, f[51] = u, f[52] = h) : h = f[52], f[53] !== h || f[54] !== c ? (m = (0, i.jsxs)("div", {
+                className: "relative flex shrink-0 select-none",
+                role: "status",
+                children: [c, h]
+            }), f[53] = h, f[54] = c, f[55] = m) : m = f[55], m
+        }
+        var I = n("v0Gf"),
+            A = n("nsuH");
+
+        function W(e) {
+            let t, n, l, o, r, s, c = (0, a.c)(23),
+                {
+                    items: u,
+                    availableHeight: h,
+                    isDockedTop: m,
+                    shouldReduceMotion: f
+                } = e,
+                g = (0, R.f)("2163293173"),
+                [v, b] = (0, p.useState)(null);
+            c[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (e, t) => {
+                let n = t.firstElementChild;
+                n instanceof HTMLElement && b(n.offsetHeight)
+            }, c[0] = t) : t = c[0];
+            let x = (0, A.b)(t),
+                y = Math.min(null == v ? h : 3 * v + 24, Math.max(0, h - 16)),
+                w = .3 * !f;
+            c[1] !== w ? (n = {
+                duration: w,
+                ease: N.e
+            }, c[1] = w, c[2] = n) : n = c[2];
+            let S = n,
+                z = g ? "min-w-0" : "-mx-6 -my-2",
+                C = g ? "overflow-y-auto overscroll-contain" : "overflow-y-auto overscroll-contain px-6 py-2",
+                k = y + 16;
+            c[3] !== k ? (l = {
+                style: {
+                    maxHeight: k
+                }
+            }, c[3] = k, c[4] = l) : l = c[4];
+            let j = g ? "relative flex flex-col" : "relative flex flex-col gap-3";
+            if (c[5] !== m || c[6] !== u || c[7] !== f || c[8] !== S) {
+                let e;
+                c[10] !== m || c[11] !== f || c[12] !== S ? (e = e => {
+                    let {
+                        id: t,
+                        content: n
+                    } = e;
+                    return (0, i.jsx)(d.a.div, {
+                        className: "shrink-0",
+                        layout: !f && "position",
+                        transition: S,
+                        children: (0, i.jsx)(d.a.div, {
+                            initial: {
+                                opacity: 0,
+                                transform: `translateY(${f?0:8*(m?-1:1)}px)`
+                            },
+                            animate: {
+                                opacity: 1,
+                                transform: "translateY(0px)"
+                            },
+                            transition: {
+                                ...S,
+                                opacity: {
+                                    ease: "linear"
+                                }
+                            },
+                            children: n
+                        })
+                    }, t)
+                }, c[10] = m, c[11] = f, c[12] = S, c[13] = e) : e = c[13], o = u.map(e), c[5] = m, c[6] = u, c[7] = f, c[8] = S, c[9] = o
+            } else o = c[9];
+            return c[14] !== x || c[15] !== j || c[16] !== o ? (r = (0, i.jsx)("div", {
+                ref: x,
+                className: j,
+                children: o
+            }), c[14] = x, c[15] = j, c[16] = o, c[17] = r) : r = c[17], c[18] !== r || c[19] !== z || c[20] !== C || c[21] !== l ? (s = (0, i.jsx)(I.a, {
+                className: z,
+                fade: "mask",
+                scrollClassName: C,
+                scrollProps: l,
+                children: r
+            }), c[18] = r, c[19] = z, c[20] = C, c[21] = l, c[22] = s) : s = c[22], s
+        }
+        var B = n("wrxv"),
+            H = n("oNzN"),
+            O = "active-PrspLR";
+        let $ = null;
+        var K = n("EFj1"),
+            V = n("BjWL"),
+            X = n("vi3X"),
+            Y = n("fDIZ"),
+            Z = n("AKr5"),
+            U = n("X7C7"),
+            Q = n("rmk3"),
+            G = n("giDA"),
+            J = n("YzWZ"),
+            ee = n("eeV6"),
+            et = n("Xyz8"),
+            en = n("zj7j"),
+            ei = n("Z2JT");
+        let ea = (0, n("Nwp9").b)("quick-chat-size-v1", P);
+
+        function el(e, t, n) {
+            let i = e.get(ea);
+            e.set(ea, t), (null == i || i.height !== t.height || i.width !== t.width) && n?.()
+        }
+        var eo = n("T1PX"),
+            er = n("TL6G"),
+            es = n("rkZ2"),
+            ec = n("f4Vb"),
+            eu = n("OWtl"),
+            ed = n("tSEg"),
+            eh = n("j89V"),
+            em = n("El6m"),
+            ep = n("KkZX"),
+            ef = n("XMPL"),
+            eg = n("ZDXf"),
+            ev = n("fRoJ"),
+            eb = n("bIvi");
+        let ex = ["bottom-center", "bottom-left", "bottom-right"],
+            ey = "inset(0px 0px 0px 0px round var(--floating-panel-radius))",
+            ew = {
+                type: "spring",
+                bounce: .16,
+                duration: .42
+            },
+            eS = (0, m.u)(eu.a, eR, {
+                getServerSnapshot: () => ({
+                    width: 0,
+                    height: 0
+                }),
+                isEqual: (e, t) => e.width === t.width && e.height === t.height,
+                onMount: e => {
+                    let t = window.visualViewport,
+                        n = () => e(eR());
+                    return window.addEventListener("resize", n), t?.addEventListener("resize", n), n(), () => {
+                        window.removeEventListener("resize", n), t?.removeEventListener("resize", n)
+                    }
+                }
+            });
+
+        function ez(e) {
+            let t, n, l, o, r = (0, a.c)(10);
+            r[0] !== e ? ({
+                contentChat: t,
+                ...n
+            } = e, r[0] = e, r[1] = t, r[2] = n) : (t = r[1], n = r[2]);
+            let s = null != t;
+            return r[3] !== t || r[4] !== n ? (l = null == t ? n.renderMenu : e => e.contextMenuTrigger ?? n.renderMenu?.(e), r[3] = t, r[4] = n, r[5] = l) : l = r[5], r[6] !== n || r[7] !== s || r[8] !== l ? (o = (0, i.jsx)(eC, {
+                ...n,
+                isContentChat: s,
+                renderMenu: l
+            }), r[6] = n, r[7] = s, r[8] = l, r[9] = o) : o = r[9], o
+        }
+
+        function eC(e) {
+            let t, n, M, I, ez, eC, eR, eN, eT, eL, eD, eq, e_, eF, eI, eA, eW, eB, eH, eO, e$, eK, eV, eX, eY, eZ, eU, eQ, eG, eJ, e0, e1, e2, e3, e4, e5, e6, e7, e8, e9, te, tt, tn, ti, ta, tl, to, tr, ts, tc, tu, td, th, tm, tp, tf, tg, tv, tb, tx, ty, tw, tS, tz, tC, tk, tj, tE, tM, tP, tR, tN, tT, tL, tD, tq, t_, tF, tI, tA, tW, tB, tH, tO, t$, tK, tV, tX, tY, tZ, tU, tQ, tG, tJ, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, ne, nt, nn, ni, na, nl, no, nr, ns, nc, nu, nd, nh, nm, np, nf, ng, nv, nb, nx, ny, nw, nS, nz, nC, nk, nj, nE, nM, nP, nR, nN, nT, nL, nD, nq, n_, nF, nI, nA, nW, nB, nH, nO, n$, nK, nV, nX, nY, nZ, nU, nQ, nG, nJ, n0, n1, n2, n3, n4, n5, n6, n7, n8, n9, ie, it, ii, ia, il, io, ir, is, ic, iu = (0, a.c)(867),
+                {
+                    ref: id,
+                    animateOnMount: ih,
+                    background: im,
+                    renderComposer: ip,
+                    containerSize: ig,
+                    previewSide: iv,
+                    hasPagePicker: ib,
+                    dockThreadKey: ix,
+                    canDock: iy,
+                    compactInputPosition: iw,
+                    reservedDockPosition: iS,
+                    footer: iz,
+                    overlay: iC,
+                    renderHeaderContent: ik,
+                    headerInteractionDisabled: ij,
+                    allowLegacyHeaderToggle: iE,
+                    renderMenu: iM,
+                    forceExpanded: iP,
+                    hasConversation: iR,
+                    isHidden: iN,
+                    isContentChat: iT,
+                    isMinimized: iL,
+                    isCollisionObstacle: iD,
+                    onDragOver: iq,
+                    onDragEnd: i_,
+                    onEscape: iF,
+                    onMinimizedChange: iI,
+                    onResize: iA,
+                    presentation: iW,
+                    onPresentationChange: iB,
+                    title: iH,
+                    titleContent: iO,
+                    minimizedIcon: i$,
+                    minimizedMenuItems: iK,
+                    restoreLabel: iV,
+                    statusState: iX,
+                    titleStatusState: iY,
+                    notifications: iZ,
+                    workingPreview: iU,
+                    responsePreview: iQ,
+                    showResponsePreview: iG,
+                    previewBubble: iJ,
+                    emptyState: i0,
+                    renderTranscript: i1,
+                    hasTranscript: i2,
+                    pendingFormId: i3,
+                    showComposerDivider: i4,
+                    showHeader: i5
+                } = e,
+                i6 = void 0 !== ih && ih,
+                i7 = void 0 === iy || iy,
+                i8 = void 0 !== ij && ij,
+                i9 = void 0 === iE || iE,
+                ae = void 0 !== iP && iP,
+                at = void 0 !== iN && iN,
+                an = void 0 !== iT && iT,
+                ai = void 0 === iY ? iX : iY,
+                aa = void 0 === i5 || i5,
+                al = (0, m.y)(eu.a),
+                ao = (0, m.y)(ed.a),
+                ar = (0, m.z)(void 0 === i3 ? null : i3),
+                as = null != ar,
+                ac = (0, R.f)("2163293173"),
+                au = (0, p.useContext)(y.a),
+                ad = (0, p.useContext)(x.a)?.workspaceTargetWidth,
+                ah = (0, p.useContext)(b.c),
+                am = ac && !at && null != iv && null != ah && null != au,
+                ap = (0, m.z)(!!ac && void 0 !== iv && es.c),
+                af = am && !ap,
+                ag = (0, m.z)(am ? w.eb : null),
+                av = (0, p.useRef)(null),
+                ab = (0, m.z)(!!am && w.hb),
+                ax = ac ? i0 : void 0,
+                ay = i2 ?? null != i1,
+                aw = ay || null != ax,
+                aS = (0, m.z)(ix) ?? void 0,
+                az = void 0 === iD || iD ? "quick-chat" : void 0,
+                aC = (0, p.useContext)(em.b),
+                ak = (0, m.z)(iZ),
+                aj = as ? B.a : ak ?? B.a,
+                aE = (0, m.z)(iX);
+            iu[0] !== aE || iu[1] !== aj.type ? (t = "ready" === aj.type ? {
+                ...aE,
+                type: aE?.type ?? "idle",
+                unread: !0
+            } : aE, iu[0] = aE, iu[1] = aj.type, iu[2] = t) : t = iu[2];
+            let aM = t,
+                aP = (0, m.z)(ai),
+                aR = ai === iX ? aM : aP;
+            iu[3] !== ac || iu[4] !== iQ ? (n = (0, m.c)(eu.a, e => {
+                let {
+                    get: t
+                } = e;
+                return !!ac && null != iQ && !!("string" == typeof iQ ? iQ : t(iQ))
+            }), iu[3] = ac, iu[4] = iQ, iu[5] = n) : n = iu[5];
+            let aN = (0, m.z)(n),
+                aT = (0, g.a)(),
+                aL = (0, p.useId)(),
+                aD = (0, p.useId)(),
+                aq = (0, k.c)(),
+                a_ = (0, eo.a)(),
+                aF = (0, m.z)(eS);
+            iu[6] !== aF.height || iu[7] !== aq ? (M = (0, k.b)(aF.height, aq), iu[6] = aF.height, iu[7] = aq, iu[8] = M) : M = iu[8];
+            let aI = M,
+                aA = (0, k.b)(aF.width, aq),
+                [aW, aB] = (0, p.useState)(0),
+                [aH, aO] = (0, p.useState)(!1),
+                [a$, aK] = (0, p.useState)(0),
+                [aV, aX] = (0, p.useState)(null),
+                [aY, aZ] = (0, p.useState)(null),
+                [aU, aQ] = (0, p.useState)(0),
+                [aG, aJ] = (0, p.useState)(null);
+            iu[9] === Symbol.for("react.memo_cache_sentinel") ? (I = e => {
+                e.contentRect.width > 0 && aJ(e.contentRect.width)
+            }, iu[9] = I) : I = iu[9];
+            let a0 = (0, A.b)(I);
+            iu[10] === Symbol.for("react.memo_cache_sentinel") ? (ez = e => {
+                aQ((0, ec.a)(e).height)
+            }, iu[10] = ez) : ez = iu[10];
+            let a1 = (0, A.b)(ez);
+            iu[11] === Symbol.for("react.memo_cache_sentinel") ? (eC = e => {
+                aK((0, ec.a)(e).height)
+            }, iu[11] = eC) : eC = iu[11];
+            let a2 = (0, A.b)(eC);
+            iu[12] !== a2 ? (eR = e => {
+                aX(e), a2(e)
+            }, iu[12] = a2, iu[13] = eR) : eR = iu[13];
+            let a3 = (0, eb.a)(eR);
+            iu[14] === Symbol.for("react.memo_cache_sentinel") ? (eN = e => {
+                aB((0, ec.a)(e).height)
+            }, iu[14] = eN) : eN = iu[14];
+            let a4 = (0, A.b)(eN),
+                [a5, a6] = (0, p.useState)(0);
+            iu[15] === Symbol.for("react.memo_cache_sentinel") ? (eT = e => {
+                a6((0, ec.a)(e).height)
+            }, iu[15] = eT) : eT = iu[15];
+            let a7 = (0, A.b)(eT),
+                a8 = ig?.width ?? aA,
+                a9 = aA < 640;
+            iu[16] !== i7 || iu[17] !== ac ? (eL = () => i7 ? ac ? "bottom-right" : (0, J.a)() : "bottom-center", iu[16] = i7, iu[17] = ac, iu[18] = eL) : eL = iu[18];
+            let [le] = (0, p.useState)(eL), lt = aS ?? null;
+            iu[19] !== lt ? (eD = {
+                threadKey: lt,
+                minimized: !1
+            }, iu[19] = lt, iu[20] = eD) : eD = iu[20];
+            let ln = (0, m.x)(i7 ? en.a : void 0, eD),
+                li = aS ?? null;
+            iu[21] !== li ? (eq = {
+                threadKey: li,
+                minimized: !0
+            }, iu[21] = li, iu[22] = eq) : eq = iu[22];
+            let la = (0, m.x)(i7 ? en.a : void 0, eq);
+            iu[23] === Symbol.for("react.memo_cache_sentinel") ? (e_ = {}, iu[23] = e_) : e_ = iu[23];
+            let [ll, lo] = (0, p.useState)(e_), lr = ac ? "bottom-right" : (null == aS ? ll.minimized : null) ?? la ?? "bottom-right", ls = (null != aS || ac ? null : ll.expanded) ?? ln ?? le, lc = null == iw ? ls : ll.expanded ?? iw, lu = iL ? lr : lc, ld = i7 ? (0, et.f)(a9 && !iL ? "bottom-center" : lu, iS) : "bottom-center", lh = ld.startsWith("top"), lm = (0, m.z)(ea), lp = (0, o.a)(), lf = (0, p.useRef)(!1);
+            iu[24] === Symbol.for("react.memo_cache_sentinel") ? (eF = {
+                x: 0,
+                y: 0
+            }, iu[24] = eF) : eF = iu[24];
+            let lg = (0, p.useRef)(eF),
+                lv = (0, p.useRef)(null),
+                lb = (0, p.useRef)(null),
+                lx = (0, r.a)(0),
+                ly = (0, r.a)(0),
+                lw = (0, p.useRef)(null),
+                lS = (0, p.useRef)(null),
+                lz = (0, p.useRef)(null),
+                lC = (0, p.useRef)(null),
+                [lk, lj] = (0, p.useState)("compact"),
+                [lE, lM] = (0, p.useState)(null),
+                lP = iJ?.id ?? "",
+                lR = lE === lP,
+                lN = iW ?? lk;
+            iu[25] !== aw || iu[26] !== iW || iu[27] !== an || iu[28] !== iB ? (eI = e => {
+                (an || "expanded" !== e || aw) && (null == iW && lj(e), lM(null), iB?.(e))
+            }, iu[25] = aw, iu[26] = iW, iu[27] = an, iu[28] = iB, iu[29] = eI) : eI = iu[29];
+            let lT = eI,
+                [lL, lD] = (0, p.useState)(null),
+                [lq, l_] = (0, p.useState)(!1),
+                [lF, lI] = (0, p.useState)(!1),
+                [lA, lW] = (0, p.useState)(!1),
+                [lB, lH] = (0, p.useState)(!1),
+                lO = (0, p.useRef)(null);
+            iu[30] === Symbol.for("react.memo_cache_sentinel") ? (eA = e => {
+                (null != lO.current && (cancelAnimationFrame(lO.current), lO.current = null), null != e) ? lH(!0): lO.current = requestAnimationFrame(() => {
+                    lO.current = null, lH(!1)
+                })
+            }, iu[30] = eA) : eA = iu[30];
+            let l$ = eA;
+            iu[31] === Symbol.for("react.memo_cache_sentinel") ? (eW = () => () => {
+                null != lO.current && cancelAnimationFrame(lO.current)
+            }, eB = [], iu[31] = eW, iu[32] = eB) : (eW = iu[31], eB = iu[32]), (0, p.useEffect)(eW, eB);
+            let [lK, lV] = (0, p.useState)(!1), [lX, lY] = (0, p.useState)(!1), [lZ, lU] = (0, p.useState)(!1), [lQ, lG] = (0, p.useState)(!0), [lJ, l0] = (0, p.useState)(null), l1 = (0, p.useRef)(!1), [l2, l3] = (0, p.useState)(!1), [l4, l5] = (0, p.useState)(0), [l6, l7] = (0, p.useState)(0), [l8, l9] = (0, p.useState)(!1);
+            iu[33] !== ac || iu[34] !== aq ? (eH = (e, t) => {
+                l5(ac ? (0, ec.a)(e).height : e.contentRect.height), l9(e.contentRect.width < 640);
+                let n = t.querySelector(`[${V.a}]`)?.getBoundingClientRect().height ?? 0;
+                l7(Math.max(0, e.contentRect.height - (0, k.b)(n, aq)))
+            }, iu[33] = ac, iu[34] = aq, iu[35] = eH) : eH = iu[35];
+            let oe = (0, A.b)(eH),
+                [ot, on] = (0, p.useState)(null),
+                [oi, oa] = (0, p.useState)(!1),
+                [ol, oo] = (0, p.useState)(aS);
+            ol !== aS && (oo(aS), lo({}), lY(!1), lU(!1), l0(null), lD(null), lW(!1), oa(!1), lM(null));
+            let [or, os] = (0, p.useState)(ar);
+            or !== ar && (os(ar), l0(null), lD(null));
+            let oc = !am && (iL || lJ?.stage === "minimized"),
+                ou = (0, r.a)(+!!oc);
+            iu[36] !== ou ? (eO = () => 1 - ou.get(), iu[36] = ou, iu[37] = eO) : eO = iu[37];
+            let od = (0, s.a)(eO);
+            iu[38] !== ou ? (e$ = e => ou.on("change", e), iu[38] = ou, iu[39] = e$) : e$ = iu[39];
+            let oh = e$;
+            iu[40] !== ou ? (eK = () => 1 === ou.get(), iu[40] = ou, iu[41] = eK) : eK = iu[41];
+            let om = eK;
+            iu[42] !== oc ? (eV = () => oc, iu[42] = oc, iu[43] = eV) : eV = iu[43];
+            let op = (0, p.useSyncExternalStore)(oh, om, eV);
+            lL?.target !== "minimized" || oc || lD({
+                target: lN
+            }), iu[44] !== aw || iu[45] !== ae || iu[46] !== ar || iu[47] !== lN ? (eX = (0, ei.b)({
+                pendingFormId: ar,
+                presentation: lN,
+                forceExpanded: ae,
+                hasTranscript: aw
+            }), iu[44] = aw, iu[45] = ae, iu[46] = ar, iu[47] = lN, iu[48] = eX) : eX = iu[48];
+            let {
+                isCompact: of,
+                isChatCompact: og,
+                canTogglePresentation: ov
+            } = eX, ob = of && !am, ox = iL && !am, oy = ac && !an ? !of : aa;
+            (!an || at || iL || !oy) && lA && lW(!1);
+            let ow = (void 0 === iG || iG) && ac && !as && !lR && ay && (aN || aR?.type === "loading"),
+                oS = of && ow,
+                oz = ac && ob && !at && !ox && !as && void 0 !== iJ,
+                oC = oz && !lR && null != iJ,
+                ok = oS || oC && iJ.transient,
+                oj = void 0 !== i4 && i4 || ac;
+            iu[49] !== an || iu[50] !== at || iu[51] !== iL || iu[52] !== oy ? (eY = () => {
+                let e, t = lS.current;
+                if (null == t || !an || at || iL || !oy) return;
+                let n = () => {
+                        clearTimeout(e), e = void 0
+                    },
+                    i = t => {
+                        "touch" !== t.pointerType && (n(), e = setTimeout(() => {
+                            e = void 0, lW(!0)
+                        }, 300))
+                    },
+                    a = () => {
+                        n(), lW(!1)
+                    },
+                    l = () => {
+                        document.hidden && a()
+                    };
+                return t.addEventListener("pointerenter", i), t.addEventListener("pointerleave", a), window.addEventListener("blur", a), document.addEventListener("visibilitychange", l), () => {
+                    n(), t.removeEventListener("pointerenter", i), t.removeEventListener("pointerleave", a), window.removeEventListener("blur", a), document.removeEventListener("visibilitychange", l)
+                }
+            }, iu[49] = an, iu[50] = at, iu[51] = iL, iu[52] = oy, iu[53] = eY) : eY = iu[53], iu[54] !== aS || iu[55] !== an || iu[56] !== at || iu[57] !== iL || iu[58] !== oy ? (eZ = [aS, an, at, iL, oy], iu[54] = aS, iu[55] = an, iu[56] = at, iu[57] = iL, iu[58] = oy, iu[59] = eZ) : eZ = iu[59], (0, p.useEffect)(eY, eZ);
+            let oE = !at && !of && !iL && !ae && !lX && !l2;
+            iu[60] !== aD || iu[61] !== lT || iu[62] !== lD ? (eU = e => {
+                null == lS.current || null != e && eM(lS.current, e.target, aD) || (lD(null), lT("compact"))
+            }, iu[60] = aD, iu[61] = lT, iu[62] = lD, iu[63] = eU) : eU = iu[63];
+            let oM = (0, p.useEffectEvent)(eU);
+            iu[64] !== oM || iu[65] !== aD ? (eQ = () => {
+                let e = lS.current,
+                    t = document.activeElement;
+                null != e && t instanceof HTMLIFrameElement && !eM(e, t, aD) && oM()
+            }, iu[64] = oM, iu[65] = aD, iu[66] = eQ) : eQ = iu[66];
+            let oP = (0, p.useEffectEvent)(eQ);
+            iu[67] !== ac || iu[68] !== oP || iu[69] !== oM || iu[70] !== oE ? (eG = () => {
+                if (!oE) return;
+                document.addEventListener("pointerdown", oM, !0);
+                let e = !0,
+                    t = () => {
+                        queueMicrotask(() => {
+                            e && oP()
+                        })
+                    };
+                window.addEventListener("blur", t);
+                let n = ac ? er.c.subscribe("browser-sidebar-web-contents-pointer-down", () => oM()) : void 0;
+                return () => {
+                    e = !1, window.removeEventListener("blur", t), n?.(), document.removeEventListener("pointerdown", oM, !0)
+                }
+            }, iu[67] = ac, iu[68] = oP, iu[69] = oM, iu[70] = oE, iu[71] = eG) : eG = iu[71], iu[72] !== ac || iu[73] !== oE ? (eJ = [ac, oE], iu[72] = ac, iu[73] = oE, iu[74] = eJ) : eJ = iu[74], (0, p.useEffect)(eG, eJ);
+            let oR = aM?.type === "loading";
+            iu[75] !== iI || iu[76] !== l_ || iu[77] !== lT || iu[78] !== lD ? (e0 = () => {
+                lS.current?.focus({
+                    preventScroll: !0
+                }), l_(!1), lD(null), iI(!1), lT("expanded")
+            }, iu[75] = iI, iu[76] = l_, iu[77] = lT, iu[78] = lD, iu[79] = e0) : e0 = iu[79];
+            let oN = (0, eb.a)(e0),
+                [oT, oL] = (0, p.useState)(ek);
+            iu[80] === Symbol.for("react.memo_cache_sentinel") ? (e1 = e => {
+                oL(t => new Set([...t, e]))
+            }, iu[80] = e1) : e1 = iu[80];
+            let oD = (0, eb.a)(e1);
+            iu[81] !== ac || iu[82] !== oD || iu[83] !== oN || iu[84] !== aj ? (e2 = "ready" !== aj.type ? aj : {
+                type: "ready",
+                value: aj.value.map(e => ({
+                    id: e.id,
+                    content: (0, i.jsx)(F, {
+                        title: e.title,
+                        preview: e.preview,
+                        onOpen: () => {
+                            e.onOpen(), oN()
+                        },
+                        onDismiss: ac ? () => oD(e.id) : e.onDismiss
+                    })
+                }))
+            }, iu[81] = ac, iu[82] = oD, iu[83] = oN, iu[84] = aj, iu[85] = e2) : e2 = iu[85];
+            let oq = e2,
+                [o_, oF] = (0, p.useState)(oR);
+            if (o_ !== oR && (oF(oR), oa(!1), lM(null)), iu[86] !== at || iu[87] !== iL || iu[88] !== oR || iu[89] !== lP || iu[90] !== ok ? (e3 = () => {
+                    if (!ok || at || iL || oR) return;
+                    let e = window.setTimeout(() => lM(lP), 1e4);
+                    return () => window.clearTimeout(e)
+                }, iu[86] = at, iu[87] = iL, iu[88] = oR, iu[89] = lP, iu[90] = ok, iu[91] = e3) : e3 = iu[91], iu[92] !== aS || iu[93] !== at || iu[94] !== iL || iu[95] !== oR || iu[96] !== lP || iu[97] !== ok ? (e4 = [aS, ok, at, iL, oR, lP], iu[92] = aS, iu[93] = at, iu[94] = iL, iu[95] = oR, iu[96] = lP, iu[97] = ok, iu[98] = e4) : e4 = iu[98], (0, p.useEffect)(e3, e4), iu[99] !== oq || iu[100] !== ac || iu[101] !== oT || iu[102] !== oN || iu[103] !== oR || iu[104] !== iH || iu[105] !== iU || iu[106] !== oi) {
+                if (e5 = oq, ac && oR && !oi) {
+                    let e, t;
+                    iu[108] === Symbol.for("react.memo_cache_sentinel") ? (e = () => oa(!0), iu[108] = e) : e = iu[108], iu[109] !== oN || iu[110] !== iH || iu[111] !== iU ? (t = [{
+                        id: "working",
+                        content: (0, i.jsx)(F, {
+                            title: iH,
+                            preview: "",
+                            isWorking: !0,
+                            workingContent: iU,
+                            onOpen: oN,
+                            onDismiss: e
+                        })
+                    }], iu[109] = oN, iu[110] = iH, iu[111] = iU, iu[112] = t) : t = iu[112], e5 = {
+                        type: "ready",
+                        value: t
+                    }
+                } else if (ac && "ready" === oq.type) {
+                    let e;
+                    if (iu[113] !== oq.value || iu[114] !== oT) {
+                        let t;
+                        iu[116] !== oT ? (t = e => !oT.has(e.id), iu[116] = oT, iu[117] = t) : t = iu[117], e = oq.value.filter(t), iu[113] = oq.value, iu[114] = oT, iu[115] = e
+                    } else e = iu[115];
+                    e5 = {
+                        ...oq,
+                        value: e
+                    }
+                }
+                iu[99] = oq, iu[100] = ac, iu[101] = oT, iu[102] = oN, iu[103] = oR, iu[104] = iH, iu[105] = iU, iu[106] = oi, iu[107] = e5
+            } else e5 = iu[107];
+            "ready" !== e5.type && lq && l_(!1);
+            let oI = "ready" === e5.type && e5.value.length > 0 && (oc ? iL && (ac ? op : lq) && !lX : !ac && of),
+                oA = !ac && (aR?.type === "loading" || aR?.unread === !0 && !oI),
+                oW = oR || aM?.unread === !0 && (iL || !oI);
+            iu[118] !== e5.type || iu[119] !== e5.value || iu[120] !== ac || iu[121] !== oD || iu[122] !== oR || iu[123] !== l_ ? (e6 = e => {
+                if ("Escape" === e.key && !e.defaultPrevented)
+                    if (e.preventDefault(), lC.current?.contains(document.activeElement) && lz.current?.focus({
+                            preventScroll: !0
+                        }), ac) {
+                        if (oR) oa(!0);
+                        else if ("ready" === e5.type)
+                            for (let e of e5.value) oD(e.id)
+                    } else l_(!1)
+            }, iu[118] = e5.type, iu[119] = e5.value, iu[120] = ac, iu[121] = oD, iu[122] = oR, iu[123] = l_, iu[124] = e6) : e6 = iu[124];
+            let oB = (0, p.useEffectEvent)(e6);
+            iu[125] !== oB || iu[126] !== oI || iu[127] !== at || iu[128] !== iL ? (e7 = () => {
+                if (!at && iL && oI) return document.addEventListener("keydown", oB), () => document.removeEventListener("keydown", oB)
+            }, iu[125] = oB, iu[126] = oI, iu[127] = at, iu[128] = iL, iu[129] = e7) : e7 = iu[129], iu[130] !== oI || iu[131] !== at || iu[132] !== iL ? (e8 = [oI, at, iL], iu[130] = oI, iu[131] = at, iu[132] = iL, iu[133] = e8) : e8 = iu[133], (0, p.useEffect)(e7, e8);
+            let oH = !iL && !oc && (ac && !an || !of || lF || lB || lA || lX || aH),
+                oO = (oy || am) && (an ? !iL && !oc : ac || oH),
+                o$ = oy && oO && !ox && null == ik;
+            iu[134] !== aT ? (e9 = aT.formatMessage({
+                id: "quickChat.running",
+                defaultMessage: "Running"
+            }), iu[134] = aT, iu[135] = e9) : e9 = iu[135];
+            let oK = e9;
+            iu[136] !== aT ? (te = aT.formatMessage({
+                id: "quickChat.unreadResponse",
+                defaultMessage: "Unread response"
+            }), iu[136] = aT, iu[137] = te) : te = iu[137];
+            let oV = te,
+                oX = oR ? oK : oV,
+                oY = ld.endsWith("left"),
+                oZ = "bottom-center" === ld,
+                oU = oY ? "left" : "right",
+                oQ = lh && !oc ? a$ : 0,
+                oG = 46 * (null == ig) + (lh || oc ? 0 : a$),
+                oJ = ot ?? lm ?? P,
+                o0 = oI && !iL ? a5 : 0,
+                o1 = (ig?.height ?? aI) - aW - (lh ? o0 + oQ : 0),
+                o2 = Math.max(0, o1 - 32 - oG - (lh ? 0 : o0)),
+                o3 = null == ig ? a8 / 2 : Math.max(0, a8 - 20),
+                o4 = ac && null != aG ? Math.min(o3, aG + 12) : o3,
+                o5 = (l4 || 46) + (oy && oO ? 46 : 0) + (oS ? aU : 0) + 6 * !ac,
+                o6 = an && oy && oO,
+                o7 = (l4 || 46) + 46 * !!o6 + (ow ? aU : 0) + 6 * !ac,
+                o8 = eP(oJ.height, Math.min(Math.max(400, l4 + 46), o2), o2),
+                o9 = Math.min(of ? o5 : Math.max(400, o5), o2),
+                re = a9 ? o4 : Math.min(372, o4),
+                rt = eP(of ? o5 : oJ.height, o9, o2),
+                rn = (0, r.a)(rt),
+                ri = (0, p.useRef)(!1),
+                ra = l4 > 0,
+                rl = at || a_ || l2 || !ac && (iL || null != lL) ? 0 : .3,
+                ro = eP(oJ.width + 12, re, o4),
+                rr = (0, et.d)(ld, {
+                    height: rt,
+                    width: ro
+                }, o1, a8, 12, oG),
+                rs = (0, r.a)(0);
+            iu[138] === Symbol.for("react.memo_cache_sentinel") ? (tt = {
+                x: 0,
+                y: 0,
+                width: 0,
+                height: 0
+            }, iu[138] = tt) : tt = iu[138];
+            let rc = (0, r.a)(tt);
+            iu[139] !== ab || iu[140] !== am || iu[141] !== ah || iu[142] !== au || iu[143] !== rc || iu[144] !== rs || iu[145] !== iv || iu[146] !== a_ || iu[147] !== aq || iu[148] !== ad ? (tn = () => {
+                let e, t = am && ah && au ? lS.current?.offsetParent : null;
+                if (am && ah && au && t instanceof HTMLElement) {
+                    let n = au.getBoundingClientRect(),
+                        i = t.getBoundingClientRect(),
+                        a = (0, k.b)(n.width, aq),
+                        l = ad?.get() ?? a,
+                        o = (0, C.f)(ah.contentPaneWidthRatio.get(), l, "unified"),
+                        r = ab ? o : l - o;
+                    e = `--floating-chat-dock-${iv}`, au.style.setProperty(e, `${r}px`), rc.set({
+                        x: (0, k.b)(n.left - i.left, aq) + (a - ("left" === iv ? l : r)) + 4 - 6,
+                        y: (0, k.b)(n.top - i.top, aq) + 4,
+                        width: r - 8 + 12,
+                        height: (0, k.b)(i.bottom - n.top, aq) - 8 + 6
+                    })
+                }
+                let n = +!!am,
+                    i = rs.get() === n ? null : (0, c.a)(rs, n, {
+                        duration: .15 * !a_,
+                        ease: N.e
+                    });
+                return () => {
+                    i?.stop(), null != e && au?.style.removeProperty(e)
+                }
+            }, iu[139] = ab, iu[140] = am, iu[141] = ah, iu[142] = au, iu[143] = rc, iu[144] = rs, iu[145] = iv, iu[146] = a_, iu[147] = aq, iu[148] = ad, iu[149] = tn) : tn = iu[149], iu[150] !== ig || iu[151] !== ab || iu[152] !== am || iu[153] !== ah || iu[154] !== au || iu[155] !== rc || iu[156] !== rs || iu[157] !== iv || iu[158] !== a_ || iu[159] !== aq || iu[160] !== ad ? (ti = [ig, 12, ab, am, ah, au, rc, rs, iv, a_, ad, aq], iu[150] = ig, iu[151] = ab, iu[152] = am, iu[153] = ah, iu[154] = au, iu[155] = rc, iu[156] = rs, iu[157] = iv, iu[158] = a_, iu[159] = aq, iu[160] = ad, iu[161] = ti) : ti = iu[161], (0, p.useLayoutEffect)(tn, ti);
+            let ru = (0, s.a)(() => rs.get() * (rc.get().x - rr.x - lx.get())),
+                rd = (0, s.a)(() => rs.get() * (rc.get().y - rr.y - ly.get())),
+                rh = (0, s.a)(() => 0 === rs.get() ? "100%" : ro + rs.get() * (rc.get().width - ro));
+            iu[162] !== rn || iu[163] !== rc || iu[164] !== rs ? (ta = () => rn.get() + rs.get() * (rc.get().height - rn.get()), iu[162] = rn, iu[163] = rc, iu[164] = rs, iu[165] = ta) : ta = iu[165];
+            let rm = (0, s.a)(ta);
+            iu[166] !== rn || iu[167] !== o7 || iu[168] !== o8 || iu[169] !== an || iu[170] !== ob || iu[171] !== rs ? (tl = () => Math.max(rs.get(), an && ob ? 0 : eP((rn.get() - o7) / Math.max(1, o8 - o7), 0, 1)), iu[166] = rn, iu[167] = o7, iu[168] = o8, iu[169] = an, iu[170] = ob, iu[171] = rs, iu[172] = tl) : tl = iu[172];
+            let rp = (0, s.a)(tl);
+            iu[173] !== l4 || iu[174] !== rp || iu[175] !== o6 || iu[176] !== ap || iu[177] !== rm || iu[178] !== rs ? (to = () => Math.max(0, rm.get() - l4 - 46 * ((o6 ? 1 : rp.get()) - (ap ? 0 : rs.get()))), iu[173] = l4, iu[174] = rp, iu[175] = o6, iu[176] = ap, iu[177] = rm, iu[178] = rs, iu[179] = to) : to = iu[179];
+            let rf = (0, s.a)(to),
+                rg = (0, r.a)(0),
+                rv = (0, r.a)(0),
+                rb = Math.max(0, o8 - 46 - l4);
+            iu[180] !== rg || iu[181] !== aU || iu[182] !== rb || iu[183] !== rp || iu[184] !== aN || iu[185] !== am ? (tr = () => am || !aN ? 0 : (1 - rp.get()) * (rb - aU + 12 - rg.get()), iu[180] = rg, iu[181] = aU, iu[182] = rb, iu[183] = rp, iu[184] = aN, iu[185] = am, iu[186] = tr) : tr = iu[186];
+            let rx = (0, s.a)(tr);
+            iu[187] !== rv || iu[188] !== rg || iu[189] !== rb || iu[190] !== rp || iu[191] !== aN ? (ts = () => {
+                if (!aN || 1 === rp.get()) return "none";
+                let e = 1 - rp.get(),
+                    t = Math.max(0, rg.get()) * e,
+                    n = Math.max(0, rb - rg.get() - rv.get()) * e;
+                return `inset(${t}px 0 ${n}px 0)`
+            }, iu[187] = rv, iu[188] = rg, iu[189] = rb, iu[190] = rp, iu[191] = aN, iu[192] = ts) : ts = iu[192];
+            let ry = (0, s.a)(ts);
+            iu[193] !== rp || iu[194] !== aN ? (tc = () => aN ? 1 : rp.get(), iu[193] = rp, iu[194] = aN, iu[195] = tc) : tc = iu[195];
+            let rw = (0, s.a)(tc);
+            iu[196] !== rp ? (tu = () => 1 - rp.get(), iu[196] = rp, iu[197] = tu) : tu = iu[197];
+            let rS = (0, s.a)(tu);
+            iu[198] !== rv || iu[199] !== rg || iu[200] !== aN || iu[201] !== aY || iu[202] !== aq ? (td = () => {
+                if (null == aY || !aN) return null;
+                let e = aY.querySelectorAll('[data-markdown-text-style="assistant-message"]'),
+                    t = e.item(e.length - 1);
+                if (null == t) return null;
+                let n = t.getBoundingClientRect(),
+                    i = aY.getBoundingClientRect(),
+                    a = parseFloat(getComputedStyle(t.firstElementChild ?? t).lineHeight),
+                    l = Math.min((0, k.b)(n.height, aq), Number.isFinite(a) ? 2 * a : 56, 56);
+                return rg.set((0, k.b)(n.top - i.top, aq)), rv.set(l), aQ(l + 24), t
+            }, iu[198] = rv, iu[199] = rg, iu[200] = aN, iu[201] = aY, iu[202] = aq, iu[203] = td) : td = iu[203];
+            let rz = (0, p.useEffectEvent)(td);
+            iu[204] !== ac || iu[205] !== aN || iu[206] !== ob || iu[207] !== at || iu[208] !== rz || iu[209] !== aY ? (th = () => {
+                if (!ac || at || null == aY || !aN) return;
+                let e = null,
+                    t = new ResizeObserver(() => u.b.read(n)),
+                    n = () => {
+                        let n = rz();
+                        e !== n && (t.disconnect(), e = n, null != n && t.observe(n))
+                    },
+                    i = () => {
+                        u.b.read(n)
+                    };
+                if (n(), !ob) return void t.disconnect();
+                let a = new MutationObserver(i);
+                return a.observe(aY, {
+                    childList: !0,
+                    subtree: !0
+                }), aY.addEventListener("scroll", i, !0), () => {
+                    (0, u.a)(n), t.disconnect(), a.disconnect(), aY.removeEventListener("scroll", i, !0)
+                }
+            }, iu[204] = ac, iu[205] = aN, iu[206] = ob, iu[207] = at, iu[208] = rz, iu[209] = aY, iu[210] = th) : th = iu[210], iu[211] !== ac || iu[212] !== aN || iu[213] !== ob || iu[214] !== at || iu[215] !== aY ? (tm = [ac, aN, ob, at, aY], iu[211] = ac, iu[212] = aN, iu[213] = ob, iu[214] = at, iu[215] = aY, iu[216] = tm) : tm = iu[216], (0, p.useLayoutEffect)(th, tm), iu[217] !== rn || iu[218] !== l4 || iu[219] !== ac || iu[220] !== rt || iu[221] !== ra || iu[222] !== of || iu[223] !== lB || iu[224] !== rz || iu[225] !== rl ? (tp = () => {
+                let e, t = !ri.current && of;
+                if (ra && (ri.current = !0), lB || t || 0 === rl) return void rn.jump(rt);
+                let n = () => {
+                    if (ac) {
+                        let e = lw.current;
+                        if (null != e && e.offsetHeight !== Math.round(l4)) return void l5(e.offsetHeight);
+                        rz()
+                    }
+                    let t = (0, c.a)(rn, rt, {
+                        duration: rl,
+                        ease: N.e
+                    });
+                    e = () => t.stop()
+                };
+                return ac ? u.b.update(n) : n(), () => {
+                    (0, u.a)(n), e?.()
+                }
+            }, iu[217] = rn, iu[218] = l4, iu[219] = ac, iu[220] = rt, iu[221] = ra, iu[222] = of, iu[223] = lB, iu[224] = rz, iu[225] = rl, iu[226] = tp) : tp = iu[226];
+            let rC = (0, p.useEffectEvent)(tp),
+                rk = ac ? l4 : null,
+                rj = ac ? null : ra,
+                rE = ac ? null : of;
+            iu[227] !== rC ? (tf = () => rC(), iu[227] = rC, iu[228] = tf) : tf = iu[228], iu[229] !== rt || iu[230] !== rj || iu[231] !== rE || iu[232] !== rk || iu[233] !== rl ? (tg = [rt, rl, rk, rj, rE], iu[229] = rt, iu[230] = rj, iu[231] = rE, iu[232] = rk, iu[233] = rl, iu[234] = tg) : tg = iu[234], (0, p.useLayoutEffect)(tf, tg);
+            let rM = ac ? rp : void 0;
+            iu[235] !== rM ? (tv = {
+                "--quick-chat-expansion": rM
+            }, iu[235] = rM, iu[236] = tv) : tv = iu[236];
+            let rP = tv,
+                rR = {
+                    height: Math.min(36, o2),
+                    width: Math.min(36, o4)
+                },
+                rN = (0, et.f)(iL ? ld : lJ?.dockPosition ?? lr, iS),
+                rT = (0, et.d)(rN, rR, o1, a8, 0, oG),
+                rL = iL ? rR : {
+                    height: rt,
+                    width: ro
+                },
+                rD = iL ? rT : rr,
+                rq = iL ? 16 : 10,
+                r_ = Math.max(rq, a8 - rL.width - rq),
+                rF = oG + rq,
+                rI = Math.max(rq, o1 - rL.height - rq);
+            iu[237] !== rq || iu[238] !== r_ || iu[239] !== rF || iu[240] !== rI ? (tb = {
+                left: rq,
+                right: r_,
+                top: rF,
+                bottom: rI
+            }, iu[237] = rq, iu[238] = r_, iu[239] = rF, iu[240] = rI, iu[241] = tb) : tb = iu[241];
+            let rA = tb;
+            iu[242] === Symbol.for("react.memo_cache_sentinel") ? (tx = () => {
+                lb.current = null
+            }, iu[242] = tx) : tx = iu[242], iu[243] !== ig || iu[244] !== aq ? (ty = [ig, aq], iu[243] = ig, iu[244] = aq, iu[245] = ty) : ty = iu[245], (0, p.useLayoutEffect)(tx, ty);
+            let rW = e => {
+                    if (!i7) return;
+                    lb.current = null == ig ? null : lS.current?.parentElement?.getBoundingClientRect() ?? null;
+                    let t = {
+                        x: (0, k.b)(e.clientX - (lb.current?.left ?? 0), aq),
+                        y: (0, k.b)(e.clientY - (lb.current?.top ?? 0), aq)
+                    };
+                    lg.current = {
+                        x: t.x - rD.x - lx.get(),
+                        y: t.y - rD.y - ly.get()
+                    }, lv.current = {
+                        point: t,
+                        target: null
+                    }, lp.start(e)
+                },
+                rB = (0, et.d)(rN, {
+                    height: rt,
+                    width: ro
+                }, o1, a8, 12, oG),
+                rH = rT.x - rB.x,
+                rO = rT.y - rB.y,
+                r$ = ro - rH - rR.width,
+                rK = rt - rO - rR.height;
+            iu[246] !== rH || iu[247] !== rO || iu[248] !== r$ || iu[249] !== rK ? (tw = {
+                top: rO,
+                right: r$,
+                bottom: rK,
+                left: rH
+            }, iu[246] = rH, iu[247] = rO, iu[248] = r$, iu[249] = rK, iu[250] = tw) : tw = iu[250];
+            let rV = tw,
+                rX = `inset(${rV.top}px ${rV.right}px ${rV.bottom}px ${rV.left}px round var(--floating-panel-radius))`,
+                rY = (0, s.a)(() => {
+                    let e = ou.get(),
+                        t = rn.get() - rt,
+                        n = e * (rV.top + (lh ? 0 : t)),
+                        i = 6 + e * (rV.right - 6),
+                        a = 6 + e * (rV.bottom + (lh ? t : 0) - 6),
+                        l = 6 + e * (rV.left - 6),
+                        o = rs.get(),
+                        r = 0 === o ? "var(--radius-token-composer-single-line)" : `calc(var(--radius-token-composer-single-line) * ${1-o} + var(--app-shell-sidebar-popover-radius) * ${o})`,
+                        s = oc || lX || 0 !== e || 0 !== t ? `inset(${n}px ${i}px ${a}px ${l}px round ${r})` : "none";
+                    return {
+                        top: n,
+                        right: i,
+                        bottom: a,
+                        left: l,
+                        radius: r,
+                        clip: s
+                    }
+                });
+            iu[251] !== rY ? (tS = () => rY.get().top, iu[251] = rY, iu[252] = tS) : tS = iu[252];
+            let rZ = (0, s.a)(tS);
+            iu[253] !== rY ? (tz = () => rY.get().right, iu[253] = rY, iu[254] = tz) : tz = iu[254];
+            let rU = (0, s.a)(tz);
+            iu[255] !== rY ? (tC = () => rY.get().bottom, iu[255] = rY, iu[256] = tC) : tC = iu[256];
+            let rQ = (0, s.a)(tC);
+            iu[257] !== rY ? (tk = () => rY.get().left, iu[257] = rY, iu[258] = tk) : tk = iu[258];
+            let rG = (0, s.a)(tk);
+            iu[259] !== rY ? (tj = () => rY.get().radius, iu[259] = rY, iu[260] = tj) : tj = iu[260];
+            let rJ = (0, s.a)(tj);
+            iu[261] !== rY ? (tE = () => rY.get().clip, iu[261] = rY, iu[262] = tE) : tE = iu[262];
+            let r0 = (0, s.a)(tE);
+            iu[263] !== ac || iu[264] !== oc || iu[265] !== ou || iu[266] !== a_ ? (tM = () => {
+                if (!ac) return;
+                let e = (0, c.a)(ou, +!!oc, {
+                    duration: .3 * !a_,
+                    ease: N.e
+                });
+                return () => e.stop()
+            }, tP = [ac, oc, ou, a_], iu[263] = ac, iu[264] = oc, iu[265] = ou, iu[266] = a_, iu[267] = tM, iu[268] = tP) : (tM = iu[267], tP = iu[268]), (0, p.useLayoutEffect)(tM, tP);
+            let r1 = lh ? {
+                    top: rO + rR.height
+                } : {
+                    bottom: rt - rO
+                },
+                r2 = (0, p.useRef)({
+                    dockPosition: ld,
+                    dockThreadKey: aS,
+                    isMinimized: iL
+                });
+            iu[269] !== i_ ? (tR = () => {
+                i_?.(null)
+            }, iu[269] = i_, iu[270] = tR) : tR = iu[270];
+            let r3 = (0, p.useEffectEvent)(tR),
+                r4 = (0, p.useEffectEvent)(e => {
+                    let t = (0, et.d)(e, {
+                        height: rt,
+                        width: ro
+                    }, o1, a8, 12, oG);
+                    lx.stop(), ly.stop(), lx.jump(lx.get() + t.x - rr.x), ly.jump(ly.get() + t.y - rr.y);
+                    let n = a_ ? {
+                        duration: 0
+                    } : ew;
+                    (0, c.a)(lx, 0, n), (0, c.a)(ly, 0, n)
+                });
+            (0, p.useLayoutEffect)(() => {
+                let e = r2.current;
+                if (r2.current = {
+                        dockPosition: ld,
+                        dockThreadKey: aS,
+                        isMinimized: iL
+                    }, e.dockThreadKey !== aS) {
+                    lf.current = !0, l1.current = !0, lp.cancel(), r3(), lx.jump(0), ly.jump(0);
+                    return
+                }
+                if (at) {
+                    lx.jump(0), ly.jump(0);
+                    return
+                }
+                e.isMinimized !== iL && r4(e.dockPosition)
+            }, [ld, aS, lp, lx, ly, at, iL]), iu[271] !== lx || iu[272] !== ly ? (tN = () => () => {
+                lx.stop(), ly.stop()
+            }, tT = [lx, ly], iu[271] = lx, iu[272] = ly, iu[273] = tN, iu[274] = tT) : (tN = iu[273], tT = iu[274]), (0, p.useLayoutEffect)(tN, tT);
+            let r5 = e => {
+                let t, n = {
+                    ...rL,
+                    left: rD.x + lx.get(),
+                    top: rD.y + ly.get()
+                };
+                null != ig && null == lb.current && (lb.current = lS.current?.parentElement?.getBoundingClientRect() ?? null);
+                let i = null == ig ? null : lb.current,
+                    a = {
+                        x: e.point.x - (0, k.b)(i?.left ?? 0, aq),
+                        y: e.point.y - (0, k.b)(i?.top ?? 0, aq)
+                    };
+                t = ac ? (0, et.b)(n, o1, a8, ex.filter(e => !iL || "bottom-right" === e).map(e => (0, et.f)(e, iS)), 12 * !iL, oG) : (0, et.e)({
+                    ...n,
+                    left: n.width >= a8 / 2 - 2 * rq ? a.x - n.width / 2 : n.left
+                }, o1, a8, iL);
+                let l = null == iS ? t : (0, et.f)(t, iS),
+                    o = {
+                        x: ac ? a8 - a.x : Math.min(a.x, a8 - a.x),
+                        y: ac ? o1 - a.y : Math.min(a.y - oG, o1 - a.y)
+                    },
+                    r = o.x <= 16 + rR.width && o.y <= 16 + rR.height;
+                if (ac && !iL) {
+                    let e = lv.current;
+                    if (null != e) {
+                        let t = a.x - e.point.x,
+                            n = a.y - e.point.y;
+                        Math.hypot(t, n) >= 8 && (t >= 0 && n > 0 && n >= t ? e.target = "minimize" : t > 0 && t > 2 * Math.abs(n) ? e.target = null : (t < 0 || n < 0) && (e.target = null), e.point = a)
+                    }
+                    let n = a.y - lg.current.y + rL.height - o1;
+                    return {
+                        dockPosition: l,
+                        requestedDockPosition: t,
+                        isNearDock: !1,
+                        suppressEdgeDrop: r,
+                        shouldMinimize: "bottom-right" === l && e?.target === "minimize" && n >= .5 * rL.width
+                    }
+                }
+                let s = (0, et.d)(l, rL, o1, a8, 12, oG),
+                    c = !iL && "bottom-center" !== l && 16 >= Math.abs(n.left - s.x) && 16 >= Math.abs(n.top - s.y);
+                return {
+                    dockPosition: l,
+                    requestedDockPosition: t,
+                    isNearDock: c,
+                    suppressEdgeDrop: r,
+                    shouldMinimize: c && r
+                }
+            };
+            iu[275] !== i7 || iu[276] !== iw || iu[277] !== ac || iu[278] !== aS || iu[279] !== iR || iu[280] !== al ? (tL = (e, t) => {
+                i7 && ((null == iw || t) && (null != aS || ac && !t) ? (0, en.c)(al, {
+                    threadKey: aS ?? null,
+                    minimized: t
+                }, e, iR) : lo(n => ({
+                    expanded: t ? n.expanded : e,
+                    minimized: t ? (0, et.a)(e) : n.minimized
+                })))
+            }, iu[275] = i7, iu[276] = iw, iu[277] = ac, iu[278] = aS, iu[279] = iR, iu[280] = al, iu[281] = tL) : tL = iu[281];
+            let r6 = tL,
+                r7 = (e, t, n) => {
+                    let i = void 0 === n ? rL : n,
+                        a = (0, et.d)(ld, rL, o1, a8, 12 * !iL, oG),
+                        l = {
+                            x: a.x + lx.get(),
+                            y: a.y + ly.get()
+                        },
+                        o = (0, et.d)((0, et.f)(e, iS), i, o1, a8, 12 * !iL, oG);
+                    lx.stop(), ly.stop(), lx.jump(l.x - o.x), ly.jump(l.y - o.y), t && (0, f.flushSync)(() => {
+                        r6(e, iL)
+                    });
+                    let r = ac ? {
+                            duration: .3,
+                            ease: N.e
+                        } : ew,
+                        s = a_ ? {
+                            duration: 0
+                        } : r;
+                    lU(!0), Promise.all([(0, c.a)(lx, 0, s), (0, c.a)(ly, 0, s)]).then(() => {
+                        lU(0 !== lx.get() || 0 !== ly.get())
+                    })
+                },
+                r8 = (0, p.useEffectEvent)(() => {
+                    lf.current = !0, lp.cancel(), i_?.(null), r7(ld, !1), l0(null), lD(null), lY(!1)
+                });
+            iu[282] !== r8 || iu[283] !== lp || iu[284] !== lX ? (tD = () => {
+                if (!lX) return;
+                let e = e => {
+                        "Escape" === e.key && (e.preventDefault(), e.stopPropagation(), r8())
+                    },
+                    t = () => r8();
+                return window.addEventListener("keydown", e, !0), window.addEventListener("blur", t), window.addEventListener("pointercancel", t, !0), () => {
+                    lf.current = !0, lp.cancel(), window.removeEventListener("keydown", e, !0), window.removeEventListener("blur", t), window.removeEventListener("pointercancel", t, !0)
+                }
+            }, iu[282] = r8, iu[283] = lp, iu[284] = lX, iu[285] = tD) : tD = iu[285], iu[286] !== lp || iu[287] !== lX ? (tq = [lp, lX], iu[286] = lp, iu[287] = lX, iu[288] = tq) : tq = iu[288], (0, p.useLayoutEffect)(tD, tq);
+            let r9 = (e, t) => {
+                    let n = ac && oZ ? 0 : (0, et.c)(ld, e, {
+                            height: rt,
+                            width: ro
+                        }, lx.get(), t.width, o1, a8, 12),
+                        i = rr.y + ly.get(),
+                        a = (0, et.d)(ld, t, o1, a8, 12, oG),
+                        l = eP(i + (lh ? 0 : rt - t.height), oG + 10, o1 - t.height - 10);
+                    lx.stop(), ly.stop(), (0, f.flushSync)(() => {
+                        on({
+                            height: of ? oJ.height : t.height,
+                            width: t.width - 12
+                        })
+                    }), lx.jump(n), ly.jump(l - a.y)
+                },
+                se = e => {
+                    el(al, {
+                        height: of ? oJ.height : e.height,
+                        width: e.width - 12
+                    }, () => iA?.(ld)), r7(ld, !1, e)
+                };
+            iu[289] !== ac || iu[290] !== lX || iu[291] !== iI || iu[292] !== l_ || iu[293] !== l0 || iu[294] !== lD ? (t_ = () => {
+                l_(!1), lG(!lX), l0(null), lD(ac ? null : {
+                    target: "minimized"
+                }), iI(!0)
+            }, iu[289] = ac, iu[290] = lX, iu[291] = iI, iu[292] = l_, iu[293] = l0, iu[294] = lD, iu[295] = t_) : t_ = iu[295];
+            let st = t_;
+            if (iu[296] !== iw || iu[297] !== ac || iu[298] !== ae || iu[299] !== as || iu[300] !== of || iu[301] !== at || iu[302] !== iL || iu[303] !== iF || iu[304] !== iI || iu[305] !== lN || iu[306] !== l_ || iu[307] !== lT || iu[308] !== lD) {
+                let e, t, n, i;
+                tH = () => {
+                    (0, f.flushSync)(() => {
+                        l_(!1), lD(ac ? null : {
+                            target: lN
+                        }), iI(!1)
+                    }), tA()
+                }, iu[316] !== of || iu[317] !== lT || iu[318] !== lD ? (e = () => {
+                    lD(null), lT(of ? "expanded" : "compact")
+                }, iu[316] = of, iu[317] = lT, iu[318] = lD, iu[319] = e) : e = iu[319], tO = e, tF = !at && !iL && (null != iF || !of && !ae), iu[320] !== iF || iu[321] !== lT || iu[322] !== lD ? (t = () => {
+                    null != iF ? iF() : (lD(null), lT("compact"))
+                }, iu[320] = iF, iu[321] = lT, iu[322] = lD, iu[323] = t) : t = iu[323], tI = t, iu[324] !== tF || iu[325] !== tI ? (n = e => {
+                    !tF || "Escape" !== e.key || e.defaultPrevented || e.repeat || e.nativeEvent.isComposing || (e.preventDefault(), e.stopPropagation(), tI())
+                }, iu[324] = tF, iu[325] = tI, iu[326] = n) : n = iu[326], tB = n, iu[327] !== as ? (i = () => {
+                    let e = lw.current;
+                    return as ? (0, Z.a)(e) : e?.querySelector("[contenteditable='true']") ?? null
+                }, iu[327] = as, iu[328] = i) : i = iu[328], tW = i, tA = () => {
+                    ac && null == iw && (lD(null), lT("expanded")), tW()?.focus({
+                        preventScroll: !0
+                    })
+                }, iu[296] = iw, iu[297] = ac, iu[298] = ae, iu[299] = as, iu[300] = of, iu[301] = at, iu[302] = iL, iu[303] = iF, iu[304] = iI, iu[305] = lN, iu[306] = l_, iu[307] = lT, iu[308] = lD, iu[309] = tF, iu[310] = tI, iu[311] = tA, iu[312] = tW, iu[313] = tB, iu[314] = tH, iu[315] = tO
+            } else tF = iu[309], tI = iu[310], tA = iu[311], tW = iu[312], tB = iu[313], tH = iu[314], tO = iu[315];
+            let sn = !at && as;
+            iu[329] !== tW || iu[330] !== as || iu[331] !== iL ? (t$ = () => {
+                if (null == lS.current || null != lS.current.closest("[hidden], [inert], [aria-hidden=true]")) return !1;
+                if (as) return iL;
+                let e = tW();
+                if (null == e) return !1;
+                let t = e.closest("[hidden], [inert], [aria-hidden=true]");
+                return null == t || !lw.current?.contains(t) || t === lw.current
+            }, iu[329] = tW, iu[330] = as, iu[331] = iL, iu[332] = t$) : t$ = iu[332], iu[333] !== t$ || iu[334] !== sn ? (tK = {
+                enabled: sn,
+                isActive: t$
+            }, iu[333] = t$, iu[334] = sn, iu[335] = tK) : tK = iu[335], (0, K.a)("focusMainChat", iL ? tH : tA, tK), iu[336] !== aT || iu[337] !== of ? (tV = aT.formatMessage(of ? {
+                id: "quickChat.expandFloatingChat",
+                defaultMessage: "Expand floating chat"
+            } : {
+                id: "quickChat.showCompactFloatingChat",
+                defaultMessage: "Show compact floating chat"
+            }), iu[336] = aT, iu[337] = of, iu[338] = tV) : tV = iu[338];
+            let si = tV;
+            iu[339] !== ov || iu[340] !== si || iu[341] !== tO ? (tX = ov ? {
+                label: si,
+                onToggle: tO
+            } : void 0, iu[339] = ov, iu[340] = si, iu[341] = tO, iu[342] = tX) : tX = iu[342];
+            let sa = tX;
+            iu[343] !== aT ? (tY = aT.formatMessage({
+                id: "quickChat.resizeWidth",
+                defaultMessage: "Resize chat width"
+            }), iu[343] = aT, iu[344] = tY) : tY = iu[344];
+            let sl = tY;
+            iu[345] !== aT ? (tZ = aT.formatMessage({
+                id: "quickChat.resizeHeight",
+                defaultMessage: "Resize chat height"
+            }), iu[345] = aT, iu[346] = tZ) : tZ = iu[346];
+            let so = tZ;
+            iu[347] !== an || iu[348] !== lT || iu[349] !== lD ? (tU = () => {
+                lD(null), an && lT("expanded")
+            }, iu[347] = an, iu[348] = lT, iu[349] = lD, iu[350] = tU) : tU = iu[350];
+            let sr = (0, eb.a)(tU);
+            iu[351] !== ac || iu[352] !== sr || iu[353] !== an || iu[354] !== lD ? (tQ = ac || an ? sr : () => lD(null), iu[351] = ac, iu[352] = sr, iu[353] = an, iu[354] = lD, iu[355] = tQ) : tQ = iu[355];
+            let ss = {
+                    isCompact: ob,
+                    canShowPreviewBubble: oz,
+                    isNarrow: l8,
+                    isChromeRevealed: oH,
+                    isHeaderVisible: oO,
+                    isComposerFocused: ac ? lK || lB : oH,
+                    isDockedTop: lh,
+                    isHidden: at,
+                    isMinimized: oc,
+                    shouldReduceMotion: a_,
+                    onSubmitStart: tQ
+                },
+                sc = {
+                    isMoving: lX || l2 || lZ,
+                    composerContentHeight: l6,
+                    dockedReservePx: l4 > l6 + 6 * !!ac ? rt + 10 : 0
+                };
+            iu[356] !== at || iu[357] !== iM ? (tG = function(e) {
+                !at && null != iM && (2 === e.button || 0 === e.button && e.ctrlKey) && e.target instanceof Element && (lS.current?.contains(e.target) || null != e.target.closest("[data-composer-overlay-floating-ui]")) && e.preventDefault()
+            }, iu[356] = at, iu[357] = iM, iu[358] = tG) : tG = iu[358];
+            let su = tG;
+            iu[359] !== an ? (tJ = function(e) {
+                !an && e.target instanceof Element && (!lS.current?.contains(e.target) || null != e.target.closest("[data-composer-overlay-floating-ui]")) && e.stopPropagation()
+            }, iu[359] = an, iu[360] = tJ) : tJ = iu[360];
+            let sd = tJ,
+                sh = ip(ss, sc),
+                sm = tF ? tI : null;
+            iu[361] !== oe ? (t0 = e => {
+                lw.current = e, oe(e)
+            }, iu[361] = oe, iu[362] = t0) : t0 = iu[362], iu[363] !== oj || iu[364] !== ob || iu[365] !== ox || iu[366] !== oS ? (t1 = oj && !ox && (!ob || oS) ? (0, i.jsx)("div", {
+                "aria-hidden": !0,
+                className: "border-t border-default"
+            }) : null, iu[363] = oj, iu[364] = ob, iu[365] = ox, iu[366] = oS, iu[367] = t1) : t1 = iu[367], iu[368] !== aV ? (t2 = {
+                target: aV,
+                homeBannerPlacement: "inline"
+            }, iu[368] = aV, iu[369] = t2) : t2 = iu[369];
+            let sp = (0, i.jsxs)("div", {
+                ref: t0,
+                className: (0, l.b)(L.a.floatingComposerInset, "mt-auto shrink-0", of && lh && "[--composer-overlay-placement:bottom]"),
+                onPointerDownCapture: su,
+                onContextMenu: sd,
+                children: [t1, (0, i.jsx)(em.b, {
+                    value: {
+                        ...aC,
+                        hasComposerSurface: oj,
+                        isFloatingChatSurface: !0,
+                        isFloatingTranscriptOpen: !at && !of && !iL,
+                        floatingChatSurfaceRef: lS,
+                        onFloatingDictationRowChange: l$,
+                        floatingComposerPresentation: ss,
+                        transcriptTarget: aY,
+                        followLatestTranscript: ac ? ob : aC.followLatestTranscript
+                    },
+                    children: (0, i.jsx)(Y.a, {
+                        value: sm,
+                        children: (0, i.jsx)(X.a, {
+                            value: t2,
+                            children: sh
+                        })
+                    })
+                })]
+            });
+            iu[370] !== ac || iu[371] !== ob || iu[372] !== st ? (t3 = ac ? null : (0, i.jsx)(ee.c, {
+                isCompact: ob,
+                onMinimize: st
+            }), iu[370] = ac, iu[371] = ob, iu[372] = st, iu[373] = t3) : t3 = iu[373];
+            let sf = t3;
+            iu[374] !== ac || iu[375] !== oA || iu[376] !== sf || iu[377] !== aa || iu[378] !== ik || iu[379] !== oK || iu[380] !== iH || iu[381] !== iO || iu[382] !== aL || iu[383] !== aR || iu[384] !== oV ? (t4 = ik ? ik({
+                leadingControl: sf
+            }) : (0, i.jsxs)("div", {
+                className: "flex min-w-0 flex-1 items-center gap-1",
+                children: [sf, oA && null != aR ? (0, i.jsx)("div", {
+                    className: "flex items-center justify-center",
+                    role: "status",
+                    "aria-label": "loading" === aR.type ? oK : oV,
+                    children: (0, i.jsx)(eh.a, {
+                        statusState: aR
+                    })
+                }) : null, (0, i.jsx)("h2", {
+                    id: aL,
+                    "data-dropdown-overlay-side": "auto",
+                    className: (0, l.b)("min-w-0 text-base font-medium text-secondary", (!ac || null == iO) && "truncate"),
+                    children: iO ?? (ac ? (0, i.jsx)(ee.b, {
+                        children: (0, i.jsx)("span", {
+                            className: "truncate",
+                            children: aa ? iH : (0, i.jsx)(v.a, {
+                                id: "quickChat.newChatTitle",
+                                defaultMessage: "New chat"
+                            })
+                        })
+                    }) : iH)
+                })]
+            }), iu[374] = ac, iu[375] = oA, iu[376] = sf, iu[377] = aa, iu[378] = ik, iu[379] = oK, iu[380] = iH, iu[381] = iO, iu[382] = aL, iu[383] = aR, iu[384] = oV, iu[385] = t4) : t4 = iu[385];
+            let sg = t4;
+            iu[386] !== aH || iu[387] !== ob || iu[388] !== lX || iu[389] !== st || iu[390] !== iM ? (t5 = iM?.({
+                isCompact: ob,
+                isDragging: lX,
+                open: aH,
+                onMinimize: st,
+                onOpenChange: aO
+            }), iu[386] = aH, iu[387] = ob, iu[388] = lX, iu[389] = st, iu[390] = iM, iu[391] = t5) : t5 = iu[391], iu[392] !== ac || iu[393] !== ob || iu[394] !== st ? (t6 = ac && (0, i.jsx)(ee.c, {
+                isCompact: ob,
+                onMinimize: st
+            }), iu[392] = ac, iu[393] = ob, iu[394] = st, iu[395] = t6) : t6 = iu[395], iu[396] !== sg || iu[397] !== t5 || iu[398] !== t6 ? (t7 = (0, i.jsxs)(i.Fragment, {
+                children: [sg, t5, t6]
+            }), iu[396] = sg, iu[397] = t5, iu[398] = t6, iu[399] = t7) : t7 = iu[399];
+            let sv = t7,
+                sb = af ? "hidden" : "contents";
+            iu[400] !== i9 || iu[401] !== ac || iu[402] !== sv || iu[403] !== i8 || iu[404] !== an || iu[405] !== ob || iu[406] !== oO || iu[407] !== iL || iu[408] !== sa || iu[409] !== lL || iu[410] !== a_ || iu[411] !== oy ? (t8 = ac ? (0, i.jsx)(ee.a, {
+                isCompact: an && ob,
+                isVisible: oO,
+                isDisabled: i8,
+                children: sv
+            }) : (0, i.jsx)(ee.d, {
+                expandOnClick: an,
+                animateChrome: !a_ && !iL && null == lL,
+                isChromeRevealed: oO,
+                isCompact: ob,
+                isDisabled: i8,
+                reserveSpace: an && oy && !ob,
+                presentationToggle: i9 ? sa : void 0,
+                children: sv
+            }), iu[400] = i9, iu[401] = ac, iu[402] = sv, iu[403] = i8, iu[404] = an, iu[405] = ob, iu[406] = oO, iu[407] = iL, iu[408] = sa, iu[409] = lL, iu[410] = a_, iu[411] = oy, iu[412] = t8) : t8 = iu[412], iu[413] !== sd || iu[414] !== su || iu[415] !== sb || iu[416] !== t8 ? (t9 = (0, i.jsx)("div", {
+                className: sb,
+                onPointerDownCapture: su,
+                onContextMenu: sd,
+                children: t8
+            }), iu[413] = sd, iu[414] = su, iu[415] = sb, iu[416] = t8, iu[417] = t9) : t9 = iu[417];
+            let sx = t9,
+                sy = ac ? {
+                    top: rN.startsWith("top") ? rO : void 0,
+                    bottom: rN.startsWith("top") ? void 0 : rV.bottom,
+                    left: rH,
+                    width: rR.width,
+                    height: rR.height,
+                    opacity: ou
+                } : {
+                    inset: 0
+                },
+                sw = !iL,
+                sS = iL ? az : void 0;
+            iu[418] !== ac || iu[419] !== oc ? (ne = ac ? void 0 : {
+                opacity: +!!oc
+            }, iu[418] = ac, iu[419] = oc, iu[420] = ne) : ne = iu[420];
+            let sz = !iL || void 0;
+            iu[421] !== a_ ? (nt = a_ ? {
+                duration: 0
+            } : {
+                duration: .3,
+                ease: N.e
+            }, iu[421] = a_, iu[422] = nt) : nt = iu[422];
+            let sC = iL ? "minimized" : "preview",
+                sk = iL && "pointer-events-auto";
+            iu[423] !== sk ? (nn = (0, l.b)("absolute inset-0 m-auto touch-none", sk), iu[423] = sk, iu[424] = nn) : nn = iu[424];
+            let sj = oW ? oX : void 0;
+            iu[425] !== aT || iu[426] !== iV || iu[427] !== iH ? (ni = iV ?? aT.formatMessage({
+                id: "quickChat.restoreFloatingChat",
+                defaultMessage: "Restore floating chat: {title}"
+            }, {
+                title: iH
+            }), iu[425] = aT, iu[426] = iV, iu[427] = iH, iu[428] = ni) : ni = iu[428];
+            let sE = !at && iL && lQ;
+            iu[429] !== tH ? (na = e => {
+                0 !== e.detail && l1.current || tH()
+            }, iu[429] = tH, iu[430] = na) : na = iu[430], iu[431] !== ac || iu[432] !== l_ ? (nl = e => {
+                ac || "touch" === e.pointerType || l_(!0)
+            }, iu[431] = ac, iu[432] = l_, iu[433] = nl) : nl = iu[433], iu[434] !== e5.type || iu[435] !== ac || iu[436] !== l_ ? (no = e => {
+                "ready" === e5.type && ("ArrowUp" === e.key || "ArrowDown" === e.key) && (e.preventDefault(), ac || (0, f.flushSync)(() => l_(!0)), lC.current?.querySelector("button")?.focus({
+                    preventScroll: !0
+                }))
+            }, iu[434] = e5.type, iu[435] = ac, iu[436] = l_, iu[437] = no) : no = iu[437], iu[438] !== a9 || iu[439] !== rW ? (nr = e => {
+                a9 || 0 !== e.button || (l1.current = !1, e.currentTarget.setPointerCapture(e.pointerId), rW(e))
+            }, iu[438] = a9, iu[439] = rW, iu[440] = nr) : nr = iu[440], iu[441] !== ac || iu[442] !== oW || iu[443] !== oR || iu[444] !== i$ || iu[445] !== aM ? (ns = oR && null != aM && null == i$ ? (0, i.jsx)(eh.a, {
+                statusState: aM,
+                size: ac ? "default" : "compact"
+            }) : (0, i.jsx)(U.a, {
+                badgeEnabled: oW,
+                children: i$ ?? (0, i.jsx)(_.Ib, {})
+            }), iu[441] = ac, iu[442] = oW, iu[443] = oR, iu[444] = i$, iu[445] = aM, iu[446] = ns) : ns = iu[446], iu[447] !== sC || iu[448] !== nn || iu[449] !== sj || iu[450] !== ni || iu[451] !== sE || iu[452] !== na || iu[453] !== nl || iu[454] !== no || iu[455] !== nr || iu[456] !== ns ? (nc = (0, i.jsx)(q.a, {
+                ref: lz,
+                className: nn,
+                "aria-description": sj,
+                "aria-label": ni,
+                autoFocus: sE,
+                color: "ghostSecondary",
+                size: "composer",
+                uniform: !0,
+                onClick: na,
+                onPointerEnter: nl,
+                onKeyDown: no,
+                onPointerDown: nr,
+                children: ns
+            }, sC), iu[447] = sC, iu[448] = nn, iu[449] = sj, iu[450] = ni, iu[451] = sE, iu[452] = na, iu[453] = nl, iu[454] = no, iu[455] = nr, iu[456] = ns, iu[457] = nc) : nc = iu[457], iu[458] !== sy || iu[459] !== sw || iu[460] !== sS || iu[461] !== ne || iu[462] !== sz || iu[463] !== nt || iu[464] !== nc ? (nu = (0, i.jsx)(d.a.div, {
+                ref: E.c,
+                className: "pointer-events-none absolute",
+                style: sy,
+                "aria-hidden": sw,
+                "data-pip-obstacle": sS,
+                animate: ne,
+                initial: !1,
+                inert: sz,
+                transition: nt,
+                children: nc
+            }), iu[458] = sy, iu[459] = sw, iu[460] = sS, iu[461] = ne, iu[462] = sz, iu[463] = nt, iu[464] = nc, iu[465] = nu) : nu = iu[465];
+            let sM = nu,
+                sP = "ready" === e5.type ? (0, i.jsx)(W, {
+                    items: e5.value,
+                    availableHeight: Math.max(0, (ig?.height ?? aI) - oG - aW - (iL ? rR.height : o5) - 32 - 12),
+                    isDockedTop: lh,
+                    shouldReduceMotion: a_
+                }) : null;
+            !ac && (nd = ey, oc ? nd = rX : null != lL || lX || (nd = "none"));
+            let sR = null != lL || !iL;
+            iu[466] !== ac || iu[467] !== rm || iu[468] !== rh || iu[469] !== ru || iu[470] !== rd || iu[471] !== rJ ? (nh = ac ? {
+                x: ru,
+                y: rd,
+                width: rh,
+                height: rm,
+                borderRadius: rJ
+            } : void 0, iu[466] = ac, iu[467] = rm, iu[468] = rh, iu[469] = ru, iu[470] = rd, iu[471] = rJ, iu[472] = nh) : nh = iu[472], iu[473] !== ac || iu[474] !== rQ || iu[475] !== rG || iu[476] !== rJ || iu[477] !== rU || iu[478] !== rZ ? (nm = ac ? {
+                top: rZ,
+                right: rU,
+                bottom: rQ,
+                left: rG,
+                borderRadius: rJ
+            } : void 0, iu[473] = ac, iu[474] = rQ, iu[475] = rG, iu[476] = rJ, iu[477] = rU, iu[478] = rZ, iu[479] = nm) : nm = iu[479], iu[480] !== rt || iu[481] !== ro ? (np = {
+                height: rt,
+                width: ro
+            }, iu[480] = rt, iu[481] = ro, iu[482] = np) : np = iu[482];
+            let sN = ac && oZ,
+                sT = ac && !oZ ? oU : void 0,
+                sL = oy && oO;
+            iu[483] !== o2 || iu[484] !== o4 ? (nf = {
+                height: o2,
+                width: o4
+            }, iu[483] = o2, iu[484] = o4, iu[485] = nf) : nf = iu[485], iu[486] !== sM || iu[487] !== iK ? (ng = null == iK ? sM : (0, i.jsx)(Q.a, {
+                disableNative: !0,
+                items: iK,
+                children: (0, i.jsx)("div", {
+                    className: "contents",
+                    children: sM
+                })
+            }), iu[486] = sM, iu[487] = iK, iu[488] = ng) : ng = iu[488], iu[489] !== o9 || iu[490] !== re ? (nv = {
+                height: o9,
+                width: re
+            }, iu[489] = o9, iu[490] = re, iu[491] = nv) : nv = iu[491];
+            let sD = !a9 && !am,
+                sq = oc || ac ? "panel" : im,
+                s_ = o$ ? void 0 : iH,
+                sF = o$ ? aL : void 0,
+                sI = null != ig && void 0;
+            iu[492] !== i6 || iu[493] !== ra || iu[494] !== a_ ? (nb = i6 ? {
+                opacity: +!!ra,
+                translateY: 8 * (!ra && !a_)
+            } : {}, iu[492] = i6, iu[493] = ra, iu[494] = a_, iu[495] = nb) : nb = iu[495];
+            let sA = ac || lJ?.stage !== "approaching" ? 1 : .95;
+            iu[496] !== ro || iu[497] !== nb || iu[498] !== sA ? (nx = {
+                ...nb,
+                width: ro,
+                scale: sA
+            }, iu[496] = ro, iu[497] = nb, iu[498] = sA, iu[499] = nx) : nx = iu[499];
+            let sW = !!ac && void 0 !== iv && !!lX || void 0,
+                sB = !ac && of || void 0,
+                sH = iL ? void 0 : az,
+                sO = !a9,
+                s$ = null == ig ? void 0 : {
+                    left: rA.left - rD.x,
+                    right: rA.right - rD.x,
+                    top: rA.top - rD.y,
+                    bottom: rA.bottom - rD.y
+                },
+                sK = null == ig ? void 0 : 0;
+            iu[500] !== i6 || iu[501] !== a_ ? (ny = !!i6 && !a_ && {
+                opacity: 0,
+                translateY: 8
+            }, iu[500] = i6, iu[501] = a_, iu[502] = ny) : ny = iu[502];
+            let sV = null == ig ? "dialog" : "region",
+                sX = lh ? oG + 10 : "auto",
+                sY = lh ? "auto" : 10 + aW,
+                sZ = oZ ? "50%" : "auto";
+            iu[503] !== oU || iu[504] !== oZ ? (nw = !oZ && {
+                [oU]: 10
+            }, iu[503] = oU, iu[504] = oZ, iu[505] = nw) : nw = iu[505];
+            let sU = oZ ? "-50% 0" : void 0,
+                sQ = "bottom-center" === rN ? .5 : Number(rN.endsWith("right")),
+                sG = +!rN.startsWith("top");
+            iu[506] !== rn || iu[507] !== rP || iu[508] !== lx || iu[509] !== ly || iu[510] !== sX || iu[511] !== sY || iu[512] !== sZ || iu[513] !== nw || iu[514] !== sU || iu[515] !== sQ || iu[516] !== sG ? (nS = {
+                ...rP,
+                height: rn,
+                top: sX,
+                bottom: sY,
+                left: sZ,
+                right: "auto",
+                ...nw,
+                translate: sU,
+                x: lx,
+                y: ly,
+                originX: sQ,
+                originY: sG
+            }, iu[506] = rn, iu[507] = rP, iu[508] = lx, iu[509] = ly, iu[510] = sX, iu[511] = sY, iu[512] = sZ, iu[513] = nw, iu[514] = sU, iu[515] = sQ, iu[516] = sG, iu[517] = nS) : nS = iu[517];
+            let sJ = .3 * !a_;
+            iu[518] !== sJ ? (nz = {
+                duration: sJ,
+                ease: N.e
+            }, iu[518] = sJ, iu[519] = nz) : nz = iu[519], iu[520] !== rl || iu[521] !== nz ? (nC = {
+                duration: rl,
+                ease: N.e,
+                scale: nz
+            }, iu[520] = rl, iu[521] = nz, iu[522] = nC) : nC = iu[522], iu[523] !== ac || iu[524] !== an || iu[525] !== at || iu[526] !== aD || iu[527] !== lV || iu[528] !== lI || iu[529] !== l_ || iu[530] !== lT || iu[531] !== lD || iu[532] !== oE ? (nk = e => {
+                if (!(at || eM(e.currentTarget, e.relatedTarget, aD))) {
+                    if (null == e.relatedTarget) {
+                        let t = e.currentTarget;
+                        queueMicrotask(() => {
+                            t.ownerDocument.hasFocus() && eM(t, t.ownerDocument.activeElement, aD) || (lI(!1), lV(!1), l_(!1))
+                        });
+                        return
+                    }
+                    lI(!1), lV(!1), l_(!1), (!ac || an) && oE && null == e.target.closest("[inert]") && (lD(null), lT("compact"))
+                }
+            }, iu[523] = ac, iu[524] = an, iu[525] = at, iu[526] = aD, iu[527] = lV, iu[528] = lI, iu[529] = l_, iu[530] = lT, iu[531] = lD, iu[532] = oE, iu[533] = nk) : nk = iu[533], iu[534] !== ov || iu[535] !== ac || iu[536] !== tA || iu[537] !== of || iu[538] !== an || iu[539] !== iL || iu[540] !== lT || iu[541] !== lD || iu[542] !== oy || iu[543] !== tO ? (nj = e => {
+                if (!(an && (0 !== e.button || e.ctrlKey) || iL || l1.current || e.defaultPrevented || !(e.target instanceof Element) || !e.currentTarget.contains(e.target) || e.target.closest("button, a, input, textarea, select, label, [contenteditable='true'], [role='button'], [role='menuitem'], [role='separator'], [data-composer-input-layout]"))) {
+                    if (of && (e.target === e.currentTarget || lw.current?.contains(e.target))) return void tA();
+                    if (an) {
+                        if (!oy || !ov) return;
+                        of && !e.currentTarget.contains(document.activeElement) && e.currentTarget.focus({
+                            preventScroll: !0
+                        }), lD(null), lT("expanded");
+                        return
+                    }
+                    if (ac) {
+                        of && ov && tA();
+                        return
+                    }
+                    oy && ov && e.target.closest("header[data-quick-chat-drag-handle]") && (of && !e.currentTarget.contains(document.activeElement) && e.currentTarget.focus({
+                        preventScroll: !0
+                    }), tO())
+                }
+            }, iu[534] = ov, iu[535] = ac, iu[536] = tA, iu[537] = of, iu[538] = an, iu[539] = iL, iu[540] = lT, iu[541] = lD, iu[542] = oy, iu[543] = tO, iu[544] = nj) : nj = iu[544], iu[545] !== ac || iu[546] !== o2 || iu[547] !== o4 || iu[548] !== o9 || iu[549] !== re || iu[550] !== iL || iu[551] !== iA || iu[552] !== al || iu[553] !== on || iu[554] !== lT || iu[555] !== lD || iu[556] !== r7 ? (nE = e => {
+                ac && !iL && !l1.current && !e.defaultPrevented && e.target instanceof Element && e.target.closest("header[data-quick-chat-drag-handle]") && !e.target.closest("button, a, select, [role='button'], [role='menuitem'], [role='separator']") && (lD(null), lT("expanded"), on(null), el(al, P, () => iA?.("bottom-right")), r7("bottom-right", !0, {
+                    height: eP(P.height, o9, o2),
+                    width: eP(P.width + 12, re, o4)
+                }))
+            }, iu[545] = ac, iu[546] = o2, iu[547] = o4, iu[548] = o9, iu[549] = re, iu[550] = iL, iu[551] = iA, iu[552] = al, iu[553] = on, iu[554] = lT, iu[555] = lD, iu[556] = r7, iu[557] = nE) : nE = iu[557], iu[558] !== at ? (nM = e => {
+                !at && l1.current && e.detail > 0 && (e.preventDefault(), e.stopPropagation())
+            }, iu[558] = at, iu[559] = nM) : nM = iu[559], iu[560] !== ac || iu[561] !== r5 || iu[562] !== lJ || iu[563] !== iq || iu[564] !== lN || iu[565] !== l0 || iu[566] !== lD ? (nP = (e, t) => {
+                let n = r5(t);
+                if (!iq?.(n.suppressEdgeDrop ? null : e) && null != n.dockPosition && (ac ? n.shouldMinimize : n.isNearDock)) {
+                    let e = n.shouldMinimize ? "minimized" : "approaching",
+                        t = ac ? "bottom-right" : n.dockPosition;
+                    (lJ?.stage !== e || lJ.dockPosition !== t) && (l0({
+                        dockPosition: t,
+                        stage: e
+                    }), (n.shouldMinimize || lJ?.stage === "minimized") && lD(ac ? null : {
+                        target: n.shouldMinimize ? "minimized" : lN
+                    }))
+                } else null != lJ && "restored" !== lJ.stage && (l0({
+                    ...lJ,
+                    stage: "restored"
+                }), "minimized" === lJ.stage && lD(ac ? null : {
+                    target: lN
+                }))
+            }, iu[560] = ac, iu[561] = r5, iu[562] = lJ, iu[563] = iq, iu[564] = lN, iu[565] = l0, iu[566] = lD, iu[567] = nP) : nP = iu[567], iu[568] !== ac || iu[569] !== ag || iu[570] !== lx || iu[571] !== ly || iu[572] !== r5 || iu[573] !== am || iu[574] !== st || iu[575] !== lJ || iu[576] !== i_ || iu[577] !== iq || iu[578] !== lN || iu[579] !== ao || iu[580] !== r6 || iu[581] !== lY || iu[582] !== l0 || iu[583] !== lD || iu[584] !== a_ || iu[585] !== r7 ? (nR = (e, t) => {
+                if (lf.current) return;
+                let n = r5(t),
+                    i = n.suppressEdgeDrop ? null : e,
+                    a = e => !!i_?.(i, e) && (lx.jump(0), ly.jump(0), l0(null), lD(null), lY(!1), !0),
+                    l = av.current;
+                if (am && ag && l && i && iq?.(i)) return void
+                function(e) {
+                    let {
+                        source: t,
+                        getTab: n,
+                        destination: i,
+                        update: a,
+                        reducedMotion: l
+                    } = e;
+                    $?.animation.skipTransition(), $?.cleanup();
+                    let o = t?.ownerDocument ?? document;
+                    if (l || null == t || "function" != typeof o.startViewTransition) return a();
+                    let r = o.documentElement,
+                        s = (0, H.a)({
+                            ...b.b,
+                            duration: 300,
+                            keyframes: [0, 1]
+                        }).toString();
+                    r.style.setProperty("--chat-pin-easing", s.slice(s.indexOf(" ") + 1)), r.classList.add(O);
+                    let c = [],
+                        u = (e, t) => {
+                            null != e && (e.classList.add(t), c.push(() => e.classList.remove(t)))
+                        },
+                        d = e => {
+                            for (let {
+                                    element: t,
+                                    className: n
+                                }
+                                of [{
+                                    element: e,
+                                    className: "surface-CrBPUX"
+                                }, {
+                                    element: e.querySelector("[data-docked-chat-toolbar] header"),
+                                    className: "header-ccGAyF"
+                                }, {
+                                    element: e.querySelector("[data-composer-surface-variant]"),
+                                    className: "composer-u_BJkO"
+                                }, {
+                                    element: e.querySelector("[data-composer-input]"),
+                                    className: "input-RmFnoM"
+                                }, {
+                                    element: e.querySelector("[data-composer-leading-controls]"),
+                                    className: "leading-Ty6zkf"
+                                }, {
+                                    element: e.querySelector("[data-composer-trailing-controls]"),
+                                    className: "trailing-RPbF6R"
+                                }]) u(t, n)
+                        },
+                        h = () => {
+                            c.splice(0).forEach(e => e())
+                        },
+                        m = !!n()?.getClientRects().length;
+                    d(t);
+                    let p = null,
+                        g = o.startViewTransition(() => {
+                            if (h(), !t.isConnected) return void g.skipTransition();
+                            if ((0, f.flushSync)(a), null == (p = i())) g.skipTransition();
+                            else {
+                                d(p), m || u(n()?.closest("[data-tab-id]") ?? null, "incomingTab-fuq1Db");
+                                let e = p.querySelector("[data-composer-surface-variant]");
+                                if (null != e) {
+                                    let t = getComputedStyle(e);
+                                    r.style.setProperty("--chat-pin-radius", t.borderRadius), r.style.setProperty("--chat-pin-background", t.backgroundColor), r.style.setProperty("--chat-pin-corner-shape", t.getPropertyValue("corner-shape"))
+                                }
+                            }
+                        }),
+                        v = () => {
+                            $?.animation === g && (h(), $ = null, r.classList.remove(O), r.style.removeProperty("--chat-pin-easing"), r.style.removeProperty("--chat-pin-radius"), r.style.removeProperty("--chat-pin-background"), r.style.removeProperty("--chat-pin-corner-shape"))
+                        };
+                    $ = {
+                        animation: g,
+                        cleanup: v
+                    }, g.ready.catch(() => {}), g.finished.then(v, v)
+                }({
+                    source: l,
+                    getTab: () => {
+                        let e = ao.get(S.l.tabById$, ef.a);
+                        return null == e ? null : l.ownerDocument.getElementById((0, z.a)(e.dndId))
+                    },
+                    destination: () => ao.get(ev.a),
+                    reducedMotion: a_,
+                    update: () => {
+                        !lf.current && (a("pin") || (r7(n.requestedDockPosition, !0), lY(!1)))
+                    }
+                });
+                if (!a()) {
+                    if (n.shouldMinimize && null != n.requestedDockPosition) {
+                        let e = ac ? "bottom-right" : n.requestedDockPosition;
+                        (0, f.flushSync)(() => {
+                            r6(e, !0), st()
+                        })
+                    } else r7(n.requestedDockPosition, !0), null != lJ && "restored" !== lJ.stage && (l0({
+                        ...lJ,
+                        stage: "restored"
+                    }), "minimized" === lJ.stage && lD(ac ? null : {
+                        target: lN
+                    }));
+                    lY(!1)
+                }
+            }, iu[568] = ac, iu[569] = ag, iu[570] = lx, iu[571] = ly, iu[572] = r5, iu[573] = am, iu[574] = st, iu[575] = lJ, iu[576] = i_, iu[577] = iq, iu[578] = lN, iu[579] = ao, iu[580] = r6, iu[581] = lY, iu[582] = l0, iu[583] = lD, iu[584] = a_, iu[585] = r7, iu[586] = nR) : nR = iu[586], iu[587] !== lx || iu[588] !== ly || iu[589] !== lY || iu[590] !== l_ ? (nN = () => {
+                l_(!1), lf.current = !1, l1.current = !0, lY(!0), lx.stop(), ly.stop()
+            }, iu[587] = lx, iu[588] = ly, iu[589] = lY, iu[590] = l_, iu[591] = nN) : nN = iu[591], iu[592] !== ov || iu[593] !== iw || iu[594] !== ac || iu[595] !== an || iu[596] !== lB || iu[597] !== lV || iu[598] !== lI || iu[599] !== lT || iu[600] !== lD || iu[601] !== oy ? (nT = e => {
+                e.currentTarget.contains(e.target) && null != e.target.closest("[data-composer-input], [data-codex-composer-request]") ? ((!ac || an) && lI(!0), lV(!0), (an ? oy && ov : ac) && null == iw && !e.target.closest("[data-dictation-button], [data-dictation-recording-controls]") && !(e.relatedTarget instanceof Element && e.relatedTarget.closest("[data-dictation-button], [data-dictation-recording-controls]")) && !lB && null == lO.current && (lD(null), lT("expanded"))) : e.currentTarget.contains(e.target) && !lw.current?.contains(e.target) && (lV(!1), an && e.target.closest("header[data-quick-chat-drag-handle]") && lI(!0))
+            }, iu[592] = ov, iu[593] = iw, iu[594] = ac, iu[595] = an, iu[596] = lB, iu[597] = lV, iu[598] = lI, iu[599] = lT, iu[600] = lD, iu[601] = oy, iu[602] = nT) : nT = iu[602], iu[603] !== lp || iu[604] !== at ? (nL = e => {
+                at || "Escape" !== e.key || (l1.current = !0, lp.cancel())
+            }, iu[603] = lp, iu[604] = at, iu[605] = nL) : nL = iu[605], iu[606] !== at || iu[607] !== a9 || iu[608] !== rW ? (nD = e => {
+                if (at || (l1.current = !1, a9 || 0 !== e.button || e.ctrlKey || !(e.target instanceof Element))) return;
+                let t = e.target.closest("[data-quick-chat-drag-handle]"),
+                    n = e.target.closest("button, a, input, textarea, select, label, [contenteditable='true'], [role='button'], [role='menuitem'], [role='separator'], [data-composer-input-layout]");
+                null != t && (null == n || n === t) && (e.preventDefault(), t.setPointerCapture(e.pointerId), rW(e))
+            }, iu[606] = at, iu[607] = a9, iu[608] = rW, iu[609] = nD) : nD = iu[609], iu[610] !== l_ ? (nq = () => {
+                lC.current?.contains(document.activeElement) || l_(!1)
+            }, iu[610] = l_, iu[611] = nq) : nq = iu[611], iu[612] !== lp || iu[613] !== tB || iu[614] !== id || iu[615] !== s_ || iu[616] !== sF || iu[617] !== sI || iu[618] !== nx || iu[619] !== sW || iu[620] !== sB || iu[621] !== sH || iu[622] !== sO || iu[623] !== s$ || iu[624] !== sK || iu[625] !== ny || iu[626] !== sV || iu[627] !== nS || iu[628] !== nC || iu[629] !== nk || iu[630] !== nj || iu[631] !== nE || iu[632] !== nM || iu[633] !== nP || iu[634] !== nR || iu[635] !== nN || iu[636] !== nT || iu[637] !== nL || iu[638] !== nD || iu[639] !== nq ? (n_ = {
+                ref: id,
+                "aria-label": s_,
+                "aria-labelledby": sF,
+                "aria-modal": sI,
+                animate: nx,
+                "data-chat-pane-dragging": sW,
+                "data-quick-chat-drag-handle": sB,
+                "data-pip-obstacle": sH,
+                "data-state": "open",
+                drag: sO,
+                dragConstraints: s$,
+                dragElastic: sK,
+                dragControls: lp,
+                dragListener: !1,
+                dragMomentum: !1,
+                initial: ny,
+                role: sV,
+                tabIndex: -1,
+                style: nS,
+                transition: nC,
+                onBlurCapture: nk,
+                onClick: nj,
+                onDoubleClick: nE,
+                onClickCapture: nM,
+                onDrag: nP,
+                onDragEnd: nR,
+                onDragStart: nN,
+                onFocusCapture: nT,
+                onKeyDown: tB,
+                onKeyDownCapture: nL,
+                onPointerDownCapture: nD,
+                onPointerLeave: nq
+            }, iu[612] = lp, iu[613] = tB, iu[614] = id, iu[615] = s_, iu[616] = sF, iu[617] = sI, iu[618] = nx, iu[619] = sW, iu[620] = sB, iu[621] = sH, iu[622] = sO, iu[623] = s$, iu[624] = sK, iu[625] = ny, iu[626] = sV, iu[627] = nS, iu[628] = nC, iu[629] = nk, iu[630] = nj, iu[631] = nE, iu[632] = nM, iu[633] = nP, iu[634] = nR, iu[635] = nN, iu[636] = nT, iu[637] = nL, iu[638] = nD, iu[639] = nq, iu[640] = n_) : n_ = iu[640];
+            let s0 = null == ig ? "floating" : "content",
+                s1 = lh ? "bottom" : "top";
+            iu[641] !== ac || iu[642] !== lx || iu[643] !== ly || iu[644] !== l3 || iu[645] !== lT || iu[646] !== lD ? (nF = e => {
+                l3(e), e && (ac && lT("expanded"), lD(null), lx.stop(), ly.stop())
+            }, iu[641] = ac, iu[642] = lx, iu[643] = ly, iu[644] = l3, iu[645] = lT, iu[646] = lD, iu[647] = nF) : nF = iu[647], iu[648] !== e5.type || iu[649] !== sP || iu[650] !== ac || iu[651] !== oI || iu[652] !== lh || iu[653] !== iL || iu[654] !== a7 || iu[655] !== r1 || iu[656] !== az || iu[657] !== lI ? (nI = !ac && oI && "ready" === e5.type ? (0, i.jsx)("div", {
+                ref: (0, T.a)(lC, a7, E.c),
+                className: (0, l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset)", !iL && (lh ? "top-full" : "bottom-full"), lh ? "pt-3" : "pb-3"),
+                "data-pip-obstacle": az,
+                onClickCapture: () => {
+                    (iL ? lz.current : lS.current)?.focus({
+                        preventScroll: !0
+                    }), lI(!1)
+                },
+                style: iL ? r1 : void 0,
+                children: sP
+            }) : null, iu[648] = e5.type, iu[649] = sP, iu[650] = ac, iu[651] = oI, iu[652] = lh, iu[653] = iL, iu[654] = a7, iu[655] = r1, iu[656] = az, iu[657] = lI, iu[658] = nI) : nI = iu[658], iu[659] !== sP || iu[660] !== ac || iu[661] !== oI || iu[662] !== lh || iu[663] !== iL || iu[664] !== a7 || iu[665] !== r1 || iu[666] !== lV || iu[667] !== lI || iu[668] !== a_ ? (nA = ac && oI ? (0, i.jsx)(d.a.div, {
+                initial: {
+                    opacity: 0,
+                    y: 8 * !a_
+                },
+                animate: {
+                    opacity: 1,
+                    y: 0
+                },
+                exit: {
+                    opacity: 0,
+                    y: 8 * !a_
+                },
+                transition: {
+                    duration: .3 * !a_,
+                    ease: N.e
+                },
+                ref: (0, T.a)(lC, a7, E.c),
+                className: (0, l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset)", !iL && (lh ? "top-full" : "bottom-full"), iL && (lh ? "pt-1" : "pb-1")),
+                "data-pip-obstacle": "quick-chat",
+                onClickCapture: () => {
+                    (iL ? lz.current : lS.current)?.focus({
+                        preventScroll: !0
+                    }), lI(!1), lV(!1)
+                },
+                style: iL ? r1 : void 0,
+                children: iL ? (0, i.jsx)(j.c, {
+                    variant: "notice",
+                    children: sP
+                }) : sP
+            }, "response-preview") : null, iu[659] = sP, iu[660] = ac, iu[661] = oI, iu[662] = lh, iu[663] = iL, iu[664] = a7, iu[665] = r1, iu[666] = lV, iu[667] = lI, iu[668] = a_, iu[669] = nA) : nA = iu[669], iu[670] !== nA ? (nW = (0, i.jsx)(h.a, {
+                initial: !1,
+                children: nA
+            }), iu[670] = nA, iu[671] = nW) : nW = iu[671], iu[672] !== rS || iu[673] !== ac || iu[674] !== aS || iu[675] !== tA || iu[676] !== ob || iu[677] !== ox || iu[678] !== lh || iu[679] !== at || iu[680] !== iJ || iu[681] !== a_ || iu[682] !== oC ? (nB = ac && void 0 !== iJ && !at && !ox && (0, i.jsx)(ej, {
+                compact: ob,
+                preview: oC ? iJ : null,
+                reduceMotion: a_,
+                isDockedTop: lh,
+                opacity: rS,
+                onExpand: tA
+            }, aS), iu[672] = rS, iu[673] = ac, iu[674] = aS, iu[675] = tA, iu[676] = ob, iu[677] = ox, iu[678] = lh, iu[679] = at, iu[680] = iJ, iu[681] = a_, iu[682] = oC, iu[683] = nB) : nB = iu[683];
+            let s2 = lh ? "top-full pt-2" : "bottom-full";
+            iu[684] !== s2 ? (nH = (0, l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset) flex flex-col gap-3 pb-3 empty:hidden", s2), iu[684] = s2, iu[685] = nH) : nH = iu[685], iu[686] !== a3 || iu[687] !== oc || iu[688] !== nH ? (nO = (0, i.jsx)("div", {
+                ref: a3,
+                className: nH,
+                hidden: oc
+            }), iu[686] = a3, iu[687] = oc, iu[688] = nH, iu[689] = nO) : nO = iu[689];
+            let s3 = 0 === oQ && "pt-2",
+                s4 = lh ? "w-full" : "w-80",
+                s5 = oZ && "left-1/2 -translate-x-1/2",
+                s6 = !oZ && (oY ? "left-0" : "right-0"),
+                s7 = oc && lX && "invisible";
+            iu[690] !== s3 || iu[691] !== s4 || iu[692] !== s5 || iu[693] !== s6 || iu[694] !== s7 ? (n$ = (0, l.b)(L.a.floatingComposerInset, "pointer-events-auto absolute top-full max-w-full empty:hidden", s3, s4, s5, s6, s7), iu[690] = s3, iu[691] = s4, iu[692] = s5, iu[693] = s6, iu[694] = s7, iu[695] = n$) : n$ = iu[695], iu[696] !== oQ ? (nK = {
+                marginTop: oQ
+            }, iu[696] = oQ, iu[697] = nK) : nK = iu[697], iu[698] !== iz || iu[699] !== a4 || iu[700] !== az || iu[701] !== n$ || iu[702] !== nK ? (nV = (0, i.jsx)("div", {
+                ref: a4,
+                className: n$,
+                style: nK,
+                "data-pip-obstacle": az,
+                children: iz
+            }), iu[698] = iz, iu[699] = a4, iu[700] = az, iu[701] = n$, iu[702] = nK, iu[703] = nV) : nV = iu[703], iu[704] !== nd || iu[705] !== ac || iu[706] !== oc ? (nX = ac ? void 0 : {
+                clipPath: nd,
+                opacity: +!oc
+            }, iu[704] = nd, iu[705] = ac, iu[706] = oc, iu[707] = nX) : nX = iu[707];
+            let s8 = !ox && "pointer-events-auto";
+            iu[708] !== s8 ? (nY = (0, l.b)("relative z-0 flex min-h-0 flex-1 flex-col", s8), iu[708] = s8, iu[709] = nY) : nY = iu[709], iu[710] !== od || iu[711] !== ac || iu[712] !== r0 ? (nZ = ac ? {
+                clipPath: r0,
+                opacity: od
+            } : void 0, iu[710] = od, iu[711] = ac, iu[712] = r0, iu[713] = nZ) : nZ = iu[713];
+            let s9 = !!ox || void 0;
+            iu[714] !== ac || iu[715] !== lL || iu[716] !== a_ ? (nU = a_ || !ac && null == lL ? {
+                duration: 0
+            } : {
+                duration: .3,
+                ease: N.e
+            }, iu[714] = ac, iu[715] = lL, iu[716] = a_, iu[717] = nU) : nU = iu[717], iu[718] !== oc || iu[719] !== rX || iu[720] !== lN || iu[721] !== lL || iu[722] !== lD ? (nQ = e => {
+                lL?.target === (oc ? "minimized" : lN) && "object" == typeof e && "clipPath" in e && e.clipPath === (oc ? rX : ey) && lD(e => e === lL ? null : e)
+            }, iu[718] = oc, iu[719] = rX, iu[720] = lN, iu[721] = lL, iu[722] = lD, iu[723] = nQ) : nQ = iu[723], iu[724] !== ac || iu[725] !== of || iu[726] !== lh || iu[727] !== st || iu[728] !== oy ? (nG = !ac && !oy && (0, i.jsx)("div", {
+                className: (0, l.b)("minimizeButton-HmBp0q", "absolute right-2 z-10", lh ? "top-full pt-1" : "bottom-full pb-1"),
+                children: (0, i.jsx)(ee.c, {
+                    standalone: !0,
+                    isCompact: of,
+                    onMinimize: st
+                })
+            }), iu[724] = ac, iu[725] = of, iu[726] = lh, iu[727] = st, iu[728] = oy, iu[729] = nG) : nG = iu[729], iu[730] !== ac || iu[731] !== sx || iu[732] !== ob || iu[733] !== lX || iu[734] !== st || iu[735] !== iM || iu[736] !== oy ? (nJ = (ac || oy) && (iM?.({
+                contextMenuTrigger: sx,
+                isCompact: ob,
+                isDragging: lX,
+                onMinimize: st
+            }) ?? sx), iu[730] = ac, iu[731] = sx, iu[732] = ob, iu[733] = lX, iu[734] = st, iu[735] = iM, iu[736] = oy, iu[737] = nJ) : nJ = iu[737], iu[738] !== ib || iu[739] !== af ? (n0 = af && (0, i.jsx)(eg.a, {
+                hasPagePicker: ib
+            }), iu[738] = ib, iu[739] = af, iu[740] = n0) : n0 = iu[740];
+            let ce = ob && "justify-end";
+            iu[741] !== ce ? (n1 = (0, l.b)("relative flex min-h-0 flex-1 flex-col", ce), iu[741] = ce, iu[742] = n1) : n1 = iu[742];
+            let ct = ac ? ob : aC.followLatestTranscript;
+            iu[743] !== aC || iu[744] !== ct ? (n2 = {
+                ...aC,
+                isFloatingChatSurface: !0,
+                followLatestTranscript: ct
+            }, iu[743] = aC, iu[744] = ct, iu[745] = n2) : n2 = iu[745];
+            let cn = ac ? "absolute inset-x-0 overflow-hidden" : "contents";
+            iu[746] !== l4 || iu[747] !== ac || iu[748] !== rf ? (n3 = ac ? {
+                bottom: l4,
+                height: rf
+            } : void 0, iu[746] = l4, iu[747] = ac, iu[748] = rf, iu[749] = n3) : n3 = iu[749], iu[750] !== rS || iu[751] !== ow || iu[752] !== aN || iu[753] !== ob || iu[754] !== a1 || iu[755] !== iU ? (n4 = ow && !aN && (0, i.jsx)(d.a.div, {
+                className: "pointer-events-none absolute inset-x-(--floating-panel-inset) bottom-0 px-4 py-3 text-sm text-default",
+                "aria-hidden": !ob,
+                style: {
+                    opacity: rS
+                },
+                ref: a1,
+                children: iU ?? (0, i.jsx)(v.a, {
+                    id: "quickChat.responseWorking",
+                    defaultMessage: "Working…"
+                })
+            }), iu[750] = rS, iu[751] = ow, iu[752] = aN, iu[753] = ob, iu[754] = a1, iu[755] = iU, iu[756] = n4) : n4 = iu[756];
+            let ci = !ac && (ob ? "hidden" : "flex"),
+                ca = ac && "absolute inset-x-0 bottom-0 flex",
+                cl = ac && "overflow-hidden";
+            iu[757] !== ci || iu[758] !== ca || iu[759] !== cl ? (n5 = (0, l.b)("mx-(--floating-panel-inset) min-h-0 flex-1 flex-col", ci, ca, cl), iu[757] = ci, iu[758] = ca, iu[759] = cl, iu[760] = n5) : n5 = iu[760], iu[761] !== l4 || iu[762] !== ac || iu[763] !== o8 || iu[764] !== am || iu[765] !== ry || iu[766] !== rw || iu[767] !== rx ? (n6 = ac ? {
+                height: am ? void 0 : Math.max(0, o8 - 46 - l4),
+                top: am ? 0 : void 0,
+                opacity: rw,
+                clipPath: ry,
+                y: rx
+            } : void 0, iu[761] = l4, iu[762] = ac, iu[763] = o8, iu[764] = am, iu[765] = ry, iu[766] = rw, iu[767] = rx, iu[768] = n6) : n6 = iu[768], iu[769] !== ac || iu[770] !== ay || iu[771] !== og || iu[772] !== ob || iu[773] !== at || iu[774] !== oc || iu[775] !== i1 || iu[776] !== lT || iu[777] !== lD ? (n7 = ay && (!og || ac) ? i1?.(() => {
+                lD(null), lT("compact")
+            }, !ob && !at && !oc) : null, iu[769] = ac, iu[770] = ay, iu[771] = og, iu[772] = ob, iu[773] = at, iu[774] = oc, iu[775] = i1, iu[776] = lT, iu[777] = lD, iu[778] = n7) : n7 = iu[778], iu[779] !== ac || iu[780] !== ax || iu[781] !== ay || iu[782] !== ob || iu[783] !== rl ? (n8 = !ay && (0, i.jsx)(h.a, {
+                initial: !1,
+                children: (ac || !ob) && null != ax && (0, i.jsx)(d.a.div, {
+                    className: "flex min-h-0 flex-1 flex-col",
+                    initial: !ac && {
+                        opacity: 0
+                    },
+                    animate: {
+                        opacity: 1
+                    },
+                    exit: {
+                        opacity: 0
+                    },
+                    transition: {
+                        duration: rl,
+                        ease: N.e
+                    },
+                    children: ax
+                }, "empty-state")
+            }), iu[779] = ac, iu[780] = ax, iu[781] = ay, iu[782] = ob, iu[783] = rl, iu[784] = n8) : n8 = iu[784], iu[785] !== ob || iu[786] !== aZ || iu[787] !== n5 || iu[788] !== n6 || iu[789] !== n7 || iu[790] !== n8 ? (n9 = (0, i.jsxs)(d.a.div, {
+                ref: aZ,
+                "aria-hidden": ob,
+                className: n5,
+                inert: ob,
+                style: n6,
+                children: [n7, n8]
+            }), iu[785] = ob, iu[786] = aZ, iu[787] = n5, iu[788] = n6, iu[789] = n7, iu[790] = n8, iu[791] = n9) : n9 = iu[791], iu[792] !== ac || iu[793] !== tA || iu[794] !== ow || iu[795] !== ob || iu[796] !== si || iu[797] !== iQ ? (ie = ac && ob && ow && (0, i.jsx)(eE, {
+                label: si,
+                responsePreview: iQ,
+                onExpand: tA
+            }), iu[792] = ac, iu[793] = tA, iu[794] = ow, iu[795] = ob, iu[796] = si, iu[797] = iQ, iu[798] = ie) : ie = iu[798], iu[799] !== cn || iu[800] !== n3 || iu[801] !== n4 || iu[802] !== n9 || iu[803] !== ie ? (it = (0, i.jsxs)(d.a.div, {
+                className: cn,
+                style: n3,
+                children: [n4, n9, ie]
+            }), iu[799] = cn, iu[800] = n3, iu[801] = n4, iu[802] = n9, iu[803] = ie, iu[804] = it) : it = iu[804], iu[805] !== n2 || iu[806] !== it ? (ii = (0, i.jsx)(em.b, {
+                value: n2,
+                children: it
+            }), iu[805] = n2, iu[806] = it, iu[807] = ii) : ii = iu[807];
+            let co = iM?.({
+                contextMenuTrigger: sp,
+                isCompact: ob,
+                isDragging: lX,
+                onMinimize: st
+            }) ?? sp;
+            iu[808] !== n1 || iu[809] !== ii || iu[810] !== co ? (ia = (0, i.jsxs)("div", {
+                className: n1,
+                children: [ii, co]
+            }), iu[808] = n1, iu[809] = ii, iu[810] = co, iu[811] = ia) : ia = iu[811], iu[812] !== ld || iu[813] !== ox || iu[814] !== nX || iu[815] !== nY || iu[816] !== nZ || iu[817] !== s9 || iu[818] !== nU || iu[819] !== nQ || iu[820] !== nG || iu[821] !== nJ || iu[822] !== n0 || iu[823] !== ia ? (il = (0, i.jsxs)(d.a.div, {
+                "aria-hidden": ox,
+                animate: nX,
+                className: nY,
+                "data-floating-chat-surface": !0,
+                "data-floating-chat-dock-position": ld,
+                style: nZ,
+                initial: !1,
+                inert: s9,
+                transition: nU,
+                onAnimationComplete: nQ,
+                children: [nG, nJ, n0, ia]
+            }), iu[812] = ld, iu[813] = ox, iu[814] = nX, iu[815] = nY, iu[816] = nZ, iu[817] = s9, iu[818] = nU, iu[819] = nQ, iu[820] = nG, iu[821] = nJ, iu[822] = n0, iu[823] = ia, iu[824] = il) : il = iu[824], iu[825] !== D || iu[826] !== se || iu[827] !== of || iu[828] !== oc || iu[829] !== rV || iu[830] !== iC || iu[831] !== r9 || iu[832] !== so || iu[833] !== sl || iu[834] !== a_ || iu[835] !== sR || iu[836] !== nh || iu[837] !== nm || iu[838] !== np || iu[839] !== sN || iu[840] !== sT || iu[841] !== sL || iu[842] !== nf || iu[843] !== ng || iu[844] !== nv || iu[845] !== sD || iu[846] !== sq || iu[847] !== n_ || iu[848] !== s0 || iu[849] !== s1 || iu[850] !== nF || iu[851] !== nI || iu[852] !== nW || iu[853] !== nB || iu[854] !== nO || iu[855] !== nV || iu[856] !== il ? (io = (0, i.jsxs)(D, {
+                contentRef: av,
+                allowCompactResize: !0,
+                animateSurface: sR,
+                contentStyle: nh,
+                surfaceStyle: nm,
+                currentSize: np,
+                heightLabel: so,
+                resizeFromCenter: sN,
+                fixedHorizontalEdge: sT,
+                isCompact: of,
+                isCompactChromeRevealed: sL,
+                isMinimized: oc,
+                keepSurfaceInset: !0,
+                maximumSize: nf,
+                minimizedContent: ng,
+                minimizedSurfaceBounds: rV,
+                minimumSize: nv,
+                prefersCompactPresentation: !0,
+                resizable: sD,
+                background: sq,
+                sectionRef: lS,
+                sectionProps: n_,
+                shouldReduceMotion: a_,
+                variant: s0,
+                verticalResizeEdge: s1,
+                widthLabel: sl,
+                onResize: r9,
+                onResizeEnd: se,
+                onResizingChange: nF,
+                children: [nI, nW, nB, nO, nV, il, iC]
+            }), iu[825] = D, iu[826] = se, iu[827] = of, iu[828] = oc, iu[829] = rV, iu[830] = iC, iu[831] = r9, iu[832] = so, iu[833] = sl, iu[834] = a_, iu[835] = sR, iu[836] = nh, iu[837] = nm, iu[838] = np, iu[839] = sN, iu[840] = sT, iu[841] = sL, iu[842] = nf, iu[843] = ng, iu[844] = nv, iu[845] = sD, iu[846] = sq, iu[847] = n_, iu[848] = s0, iu[849] = s1, iu[850] = nF, iu[851] = nI, iu[852] = nW, iu[853] = nB, iu[854] = nO, iu[855] = nV, iu[856] = il, iu[857] = io) : io = iu[857];
+            let cr = io;
+            return iu[858] !== aD ? (ir = {
+                id: aD
+            }, iu[858] = aD, iu[859] = ir) : ir = iu[859], iu[860] !== ac || iu[861] !== a0 ? (is = ac && (0, i.jsx)("div", {
+                ref: a0,
+                "aria-hidden": !0,
+                className: (0, l.b)(ep.a, "pointer-events-none invisible absolute")
+            }), iu[860] = ac, iu[861] = a0, iu[862] = is) : is = iu[862], iu[863] !== cr || iu[864] !== ir || iu[865] !== is ? (ic = (0, i.jsxs)(G.a, {
+                value: ir,
+                children: [is, cr]
+            }), iu[863] = cr, iu[864] = ir, iu[865] = is, iu[866] = ic) : ic = iu[866], ic
+        }
+
+        function ek() {
+            return new Set
+        }
+
+        function ej(e) {
+            let t, n, o, r, s, c = (0, a.c)(17),
+                {
+                    compact: u,
+                    preview: m,
+                    isDockedTop: p,
+                    opacity: f,
+                    reduceMotion: g,
+                    onExpand: v
+                } = e,
+                b = p ? "top-full mt-2" : "bottom-full mb-2";
+            c[0] !== b ? (t = (0, l.b)("pointer-events-none absolute inset-x-(--floating-panel-inset) -z-1 grid grid-cols-1 items-end justify-items-start px-4", b), c[0] = b, c[1] = t) : t = c[1], c[2] !== f ? (n = {
+                opacity: f
+            }, c[2] = f, c[3] = n) : n = c[3];
+            let x = !u || !m;
+            return c[4] !== u || c[5] !== p || c[6] !== v || c[7] !== m || c[8] !== g ? (o = u && m && (0, i.jsx)(d.a.div, {
+                className: (0, l.b)("col-start-1 row-start-1 max-w-full", p ? "origin-top-left" : "origin-bottom-left"),
+                initial: !g && {
+                    y: 16,
+                    scale: .94,
+                    opacity: 0
+                },
+                animate: {
+                    y: 0,
+                    scale: 1,
+                    opacity: 1
+                },
+                exit: {
+                    opacity: 0
+                },
+                transition: g ? {
+                    duration: 0
+                } : {
+                    type: "spring",
+                    duration: .3,
+                    bounce: .16,
+                    opacity: {
+                        duration: .15
+                    }
+                },
+                children: (0, i.jsx)(q.a, {
+                    unstyled: !0,
+                    className: "pointer-events-auto max-w-full text-start",
+                    "data-quick-chat-drag-handle": !0,
+                    onClick: v,
+                    children: m.content
+                })
+            }, m.id), c[4] = u, c[5] = p, c[6] = v, c[7] = m, c[8] = g, c[9] = o) : o = c[9], c[10] !== o ? (r = (0, i.jsx)(h.a, {
+                children: o
+            }), c[10] = o, c[11] = r) : r = c[11], c[12] !== t || c[13] !== n || c[14] !== x || c[15] !== r ? (s = (0, i.jsx)(d.a.div, {
+                className: t,
+                style: n,
+                inert: x,
+                children: r
+            }), c[12] = t, c[13] = n, c[14] = x, c[15] = r, c[16] = s) : s = c[16], s
+        }
+
+        function eE(e) {
+            let t, n = (0, a.c)(4),
+                {
+                    label: l,
+                    responsePreview: o,
+                    onExpand: r
+                } = e,
+                s = (0, m.z)(o) ?? void 0;
+            return n[0] !== l || n[1] !== r || n[2] !== s ? (t = (0, i.jsx)(q.a, {
+                unstyled: !0,
+                focusRing: "inset",
+                className: "absolute inset-0",
+                "aria-label": l,
+                "aria-description": s,
+                "data-quick-chat-drag-handle": !0,
+                onClick: r
+            }), n[0] = l, n[1] = r, n[2] = s, n[3] = t) : t = n[3], t
+        }
+
+        function eM(e, t, n) {
+            return t instanceof Node && (e.contains(t) || t instanceof Element && (null != t.closest("[data-composer-overlay-floating-ui], [data-content-search-bar], [data-composer-focus-target]") || null != t.closest("[data-floating-chat-annotation-layer]") || t.closest("[data-overlay-owner]")?.getAttribute("data-overlay-owner") === n))
+        }
+
+        function eP(e, t, n) {
+            return Math.max(t, Math.min(e, n))
+        }
+
+        function eR() {
+            return {
+                width: window.visualViewport?.width ?? window.innerWidth,
+                height: window.visualViewport?.height ?? window.innerHeight
+            }
+        }
+    }),
+    eeV6: (function(e, t, n) {
+        var i = n("ABep"),
+            a = n("QosV"),
+            l = n("on57"),
+            o = n("IPUh"),
+            r = n("Wf1j"),
+            s = n("Sm6l"),
+            c = n("HOLv"),
+            u = n("V8uZ"),
+            d = n("NBTh");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, o, r, s = (0, a.c)(12),
+                    {
+                        children: c,
+                        isCompact: u,
+                        isVisible: d,
+                        isDisabled: h
+                    } = e,
+                    m = void 0 !== u && u,
+                    p = !d || !!h || void 0,
+                    f = m ? Number(d) : "var(--quick-chat-expansion, 1)";
+                s[0] !== f ? (t = {
+                    opacity: f
+                }, s[0] = f, s[1] = t) : t = s[1];
+                let g = !d || !!h || void 0,
+                    v = m && "border-b border-default";
+                return s[2] !== v ? (n = (0, l.b)("flex h-toolbar cursor-interaction touch-none items-center justify-between px-2 select-none", v), s[2] = v, s[3] = n) : n = s[3], s[4] !== c || s[5] !== n ? (o = (0, i.jsx)("div", {
+                    className: n,
+                    children: c
+                }), s[4] = c, s[5] = n, s[6] = o) : o = s[6], s[7] !== p || s[8] !== t || s[9] !== g || s[10] !== o ? (r = (0, i.jsx)("header", {
+                    className: "absolute inset-x-0 top-0 z-10 mx-(--floating-panel-inset) h-toolbar min-h-0 shrink-0 overflow-hidden",
+                    "aria-hidden": p,
+                    style: t,
+                    "data-quick-chat-drag-handle": !0,
+                    inert: g,
+                    children: o
+                }), s[7] = p, s[8] = t, s[9] = g, s[10] = o, s[11] = r) : r = s[11], r
+            },
+            b: function(e) {
+                let t, n = (0, a.c)(2),
+                    {
+                        children: l
+                    } = e;
+                return n[0] !== l ? (t = (0, i.jsx)("span", {
+                    className: "flex button-toolbar max-w-full min-w-0 items-center gap-2 border border-transparent py-0 text-sm leading-[18px] font-normal",
+                    children: l
+                }), n[0] = l, n[1] = t) : t = n[1], t
+            },
+            c: function(e) {
+                let t, n, l, o, u = (0, a.c)(11),
+                    {
+                        isCompact: h,
+                        onMinimize: m,
+                        standalone: p
+                    } = e,
+                    f = void 0 !== p && p,
+                    g = (0, r.a)();
+                u[0] !== g ? (t = g.formatMessage({
+                    id: "quickChat.minimize",
+                    defaultMessage: "Minimize chat"
+                }), u[0] = g, u[1] = t) : t = u[1];
+                let v = f ? "outlineSurface" : "ghostSecondary",
+                    b = h ? "composer" : "toolbar";
+                return u[2] !== f ? (n = e => {
+                    f && e.preventDefault()
+                }, u[2] = f, u[3] = n) : n = u[3], u[4] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, i.jsx)(c.a, {
+                    "aria-hidden": !1,
+                    asset: d.a
+                }), u[4] = l) : l = u[4], u[5] !== m || u[6] !== t || u[7] !== v || u[8] !== b || u[9] !== n ? (o = (0, i.jsx)(s.a, {
+                    "aria-label": t,
+                    color: v,
+                    size: b,
+                    uniform: !0,
+                    onClick: m,
+                    onPointerDown: n,
+                    children: l
+                }), u[5] = m, u[6] = t, u[7] = v, u[8] = b, u[9] = n, u[10] = o) : o = u[10], o
+            },
+            d: function(e) {
+                let t, n, r, s, c, d, h, m = (0, a.c)(28),
+                    {
+                        animateChrome: p,
+                        expandOnClick: f,
+                        children: g,
+                        isChromeRevealed: v,
+                        isCompact: b,
+                        isDisabled: x,
+                        presentationToggle: y,
+                        reserveSpace: w
+                    } = e,
+                    S = void 0 !== f && f,
+                    z = !b && "shrink-0";
+                m[0] !== z ? (t = (0, l.b)("relative min-h-0 overflow-hidden", z), m[0] = z, m[1] = t) : t = m[1];
+                let C = !v || !!x || void 0,
+                    k = v || w ? 46 : 0,
+                    j = +!!v;
+                m[2] !== k || m[3] !== j ? (n = {
+                    height: k,
+                    opacity: j
+                }, m[2] = k, m[3] = j, m[4] = n) : n = m[4];
+                let E = !v || !!x || void 0;
+                m[5] !== p || m[6] !== S ? (r = p ? {
+                    duration: .3,
+                    ease: u.e,
+                    ...S ? {
+                        opacity: {
+                            duration: 0
+                        }
+                    } : {}
+                } : {
+                    duration: 0
+                }, m[5] = p, m[6] = S, m[7] = r) : r = m[7], m[8] !== b || m[9] !== y ? (s = null != y ? (0, i.jsx)("button", {
+                    className: "pointer-events-none absolute inset-0 rounded-[inherit] focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset",
+                    "aria-label": y.label,
+                    "aria-expanded": !b,
+                    type: "button",
+                    onClick: y.onToggle
+                }) : null, m[8] = b, m[9] = y, m[10] = s) : s = m[10];
+                let M = !S && null != y && b && "cursor-n-resize",
+                    P = !S && null != y && !b && "cursor-s-resize",
+                    R = (S || null == y) && "cursor-interaction",
+                    N = b && "mx-1.5 border-b border-default px-2",
+                    T = !b && "px-3";
+                return m[11] !== M || m[12] !== P || m[13] !== R || m[14] !== N || m[15] !== T ? (c = (0, l.b)("flex h-toolbar touch-none select-none items-center justify-between", M, P, R, N, T), m[11] = M, m[12] = P, m[13] = R, m[14] = N, m[15] = T, m[16] = c) : c = m[16], m[17] !== g || m[18] !== c ? (d = (0, i.jsx)("div", {
+                    className: c,
+                    children: g
+                }), m[17] = g, m[18] = c, m[19] = d) : d = m[19], m[20] !== s || m[21] !== d || m[22] !== t || m[23] !== C || m[24] !== n || m[25] !== E || m[26] !== r ? (h = (0, i.jsxs)(o.a.header, {
+                    className: t,
+                    "aria-hidden": C,
+                    animate: n,
+                    "data-quick-chat-drag-handle": !0,
+                    initial: !1,
+                    inert: E,
+                    transition: r,
+                    children: [s, d]
+                }), m[20] = s, m[21] = d, m[22] = t, m[23] = C, m[24] = n, m[25] = E, m[26] = r, m[27] = h) : h = m[27], h
+            }
+        })
+    }),
+    sArP: (function(e, t, n) {
+        n.d(t, {
+            a: () => h
+        });
+        var i = n("ABep"),
+            a = n("QosV"),
+            l = n("FHYD"),
+            o = n("on57"),
+            r = n("zd8w"),
+            s = n("wD9O");
+
+        function c(e) {
+            let t, n, l, c, d, h, m, p, f, g = (0, a.c)(35),
+                {
+                    edge: v,
+                    getCurrentSize: b,
+                    maximumSize: x,
+                    resizeFromCenter: y,
+                    minimumSize: w,
+                    onResizeEnd: S,
+                    onResizingChange: z,
+                    setSize: C,
+                    verticalEdge: k
+                } = e,
+                j = void 0 === v ? "left" : v,
+                E = void 0 !== y && y,
+                M = void 0 === k ? "top" : k,
+                P = (0, s.c)(),
+                R = (0, r.useRef)(null);
+            g[0] !== j || g[1] !== x || g[2] !== w || g[3] !== E || g[4] !== C || g[5] !== M || g[6] !== P ? (t = e => {
+                let t = R.current;
+                if (null == t || t.pointerId !== e.pointerId) return;
+                e.preventDefault();
+                let n = {
+                    height: u(t.startSize.height + ("top" === M ? -1 : 1) * ((0, s.b)(e.clientY, P) - t.startPointer.y), w.height, x.height),
+                    width: u(t.startSize.width + (E ? 2 : 1) * ("left" === j ? -1 : 1) * ((0, s.b)(e.clientX, P) - t.startPointer.x), w.width, x.width)
+                };
+                t.didMove || (t.didMove = n.height !== t.startSize.height || n.width !== t.startSize.width), t.lastSize = n, C(n)
+            }, g[0] = j, g[1] = x, g[2] = w, g[3] = E, g[4] = C, g[5] = M, g[6] = P, g[7] = t) : t = g[7];
+            let N = t;
+            g[8] !== S || g[9] !== z ? (n = (e, t) => {
+                let n = R.current;
+                n?.pointerId === e.pointerId && (R.current = null, z?.(!1), t && n.didMove && S?.(n.lastSize))
+            }, g[8] = S, g[9] = z, g[10] = n) : n = g[10];
+            let T = n,
+                L = "top" === M ? "top-0" : "bottom-0",
+                D = "left" === j ? "left-0" : "right-0",
+                q = "left" === j == ("top" === M) ? "cursor-nwse-resize" : "cursor-nesw-resize";
+            return g[11] !== L || g[12] !== D || g[13] !== q ? (l = (0, o.b)("group absolute z-50 flex size-4 touch-none select-none", L, D, q), g[11] = L, g[12] = D, g[13] = q, g[14] = l) : l = g[14], g[15] !== T ? (c = e => {
+                T(e, !1)
+            }, g[15] = T, g[16] = c) : c = g[16], g[17] !== N || g[18] !== T ? (d = e => {
+                N(e), T(e, !0)
+            }, g[17] = N, g[18] = T, g[19] = d) : d = g[19], g[20] !== b || g[21] !== z || g[22] !== P ? (h = e => {
+                if (0 !== e.button) return;
+                e.preventDefault(), e.currentTarget.setPointerCapture?.(e.pointerId);
+                let t = b();
+                R.current = {
+                    didMove: !1,
+                    lastSize: t,
+                    pointerId: e.pointerId,
+                    startPointer: {
+                        x: (0, s.b)(e.clientX, P),
+                        y: (0, s.b)(e.clientY, P)
+                    },
+                    startSize: t
+                }, z?.(!0)
+            }, g[20] = b, g[21] = z, g[22] = P, g[23] = h) : h = g[23], g[24] !== N || g[25] !== T ? (m = e => {
+                N(e), T(e, !0)
+            }, g[24] = N, g[25] = T, g[26] = m) : m = g[26], g[27] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, i.jsx)("div", {
+                className: "pointer-events-none m-auto h-px w-2 rotate-45 bg-text/25 opacity-0 group-hover:opacity-100 group-active:opacity-100"
+            }), g[27] = p) : p = g[27], g[28] !== N || g[29] !== c || g[30] !== d || g[31] !== h || g[32] !== m || g[33] !== l ? (f = (0, i.jsx)("div", {
+                "aria-hidden": !0,
+                className: l,
+                onLostPointerCapture: c,
+                onPointerCancel: d,
+                onPointerDown: h,
+                onPointerMove: N,
+                onPointerUp: m,
+                children: p
+            }), g[28] = N, g[29] = c, g[30] = d, g[31] = h, g[32] = m, g[33] = l, g[34] = f) : f = g[34], f
+        }
+
+        function u(e, t, n) {
+            return Math.min(Math.max(e, t), n)
+        }
+        let d = ["left", "right"];
+
+        function h(e) {
+            let t, n, o, r, s = (0, a.c)(43),
+                {
+                    currentSize: u,
+                    defaultSize: h,
+                    extendIntoToolbar: m,
+                    fixedHorizontalEdge: p,
+                    resizeFromCenter: f,
+                    heightLabel: g,
+                    maximumSize: v,
+                    minimumSize: b,
+                    onResize: x,
+                    onResizeEnd: y,
+                    onResizingChange: w,
+                    verticalEdge: S,
+                    widthLabel: z
+                } = e,
+                C = void 0 === m || m,
+                k = void 0 !== f && f,
+                j = void 0 === S ? "top" : S;
+            if (s[0] !== u || s[1] !== h || s[2] !== C || s[3] !== p || s[4] !== g || s[5] !== v || s[6] !== b || s[7] !== x || s[8] !== y || s[9] !== w || s[10] !== k || s[11] !== j || s[12] !== z) {
+                let e, a;
+                s[16] !== p ? (e = e => e !== p, s[16] = p, s[17] = e) : e = s[17];
+                let r = d.filter(e);
+                s[18] !== u || s[19] !== h || s[20] !== C || s[21] !== v || s[22] !== b || s[23] !== x || s[24] !== y || s[25] !== w || s[26] !== k || s[27] !== z ? (a = e => (0, i.jsx)(l.a, {
+                    ariaLabel: z,
+                    defaultSize: h.width,
+                    edge: e,
+                    resizeFromCenter: k,
+                    extendIntoToolbar: C,
+                    getCurrentSize: () => u.width,
+                    maximumSize: v.width,
+                    minimumSize: b.width,
+                    onResizeEnd: e => {
+                        y({
+                            ...u,
+                            width: e
+                        })
+                    },
+                    onResizingChange: w,
+                    setSize: t => {
+                        x(e, {
+                            ...u,
+                            width: t
+                        })
+                    }
+                }, e), s[18] = u, s[19] = h, s[20] = C, s[21] = v, s[22] = b, s[23] = x, s[24] = y, s[25] = w, s[26] = k, s[27] = z, s[28] = a) : a = s[28], t = r.map(a), s[29] !== u || s[30] !== h || s[31] !== g || s[32] !== v || s[33] !== b || s[34] !== x || s[35] !== y || s[36] !== w || s[37] !== j ? (n = null != j && (0, i.jsx)(l.a, {
+                    ariaLabel: g,
+                    defaultSize: h.height,
+                    edge: j,
+                    getCurrentSize: () => u.height,
+                    maximumSize: v.height,
+                    minimumSize: b.height,
+                    onResizeEnd: e => {
+                        y({
+                            ...u,
+                            height: e
+                        })
+                    },
+                    onResizingChange: w,
+                    setSize: e => {
+                        x("right", {
+                            ...u,
+                            height: e
+                        })
+                    }
+                }), s[29] = u, s[30] = h, s[31] = g, s[32] = v, s[33] = b, s[34] = x, s[35] = y, s[36] = w, s[37] = j, s[38] = n) : n = s[38], o = null != j && r.map(e => (0, i.jsx)(c, {
+                    edge: e,
+                    resizeFromCenter: k,
+                    getCurrentSize: () => u,
+                    maximumSize: v,
+                    minimumSize: b,
+                    verticalEdge: j,
+                    onResizeEnd: y,
+                    onResizingChange: w,
+                    setSize: t => {
+                        x(e, t)
+                    }
+                }, e)), s[0] = u, s[1] = h, s[2] = C, s[3] = p, s[4] = g, s[5] = v, s[6] = b, s[7] = x, s[8] = y, s[9] = w, s[10] = k, s[11] = j, s[12] = z, s[13] = t, s[14] = n, s[15] = o
+            } else t = s[13], n = s[14], o = s[15];
+            return s[39] !== t || s[40] !== n || s[41] !== o ? (r = (0, i.jsxs)(i.Fragment, {
+                children: [t, n, o]
+            }), s[39] = t, s[40] = n, s[41] = o, s[42] = r) : r = s[42], r
+        }
+    })
+};

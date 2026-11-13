@@ -168,10 +168,10 @@ export const __webpack_modules__ = {
             d = i("Sm6l"),
             u = i("bf6R"),
             p = i("PYqD");
-        let h = new Set(["web_homepage_beacon", "ios_app_homepage_beacon", "android_app_homepage_beacon", "web_cyber_home"]);
+        let h = new Set(["web_homepage_beacon", "ios_app_homepage_beacon", "ios_app_settings", "android_app_homepage_beacon", "web_cyber_home"]);
 
         function f() {
-            let e, t, d, f, x, v, b, j, S, w, C, A, _, T, k, M, D, N, H, P, V, E, I, L, q, G, Z, B, O, R, U, Y, W, z, F, Q, J, K, X, $, ee, et, ei = (0, r.c)(73),
+            let e, t, d, f, x, v, b, j, S, w, C, A, _, T, k, M, D, N, H, P, V, E, I, L, q, G, Z, B, R, O, U, Y, W, z, F, Q, J, K, X, $, ee, et, ei = (0, r.c)(73),
                 ea = (0, c.a)(),
                 [en] = (0, a.gb)();
             ei[0] !== en ? (e = en.get("originator"), ei[0] = en, ei[1] = e) : e = ei[1];
@@ -290,7 +290,7 @@ export const __webpack_modules__ = {
                     ...s.featuresTitle
                 })
             }), ei[35] = H) : H = ei[35], ei[36] === Symbol.for("react.memo_cache_sentinel") ? (P = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.se, {}),
+                icon: (0, n.jsx)(u.re, {}),
                 title: (0, n.jsx)(l.a, {
                     ...s.strongerSignInTitle
                 }),
@@ -298,7 +298,7 @@ export const __webpack_modules__ = {
                     ...s.strongerSignInDescription
                 })
             }), ei[36] = P) : P = ei[36], ei[37] === Symbol.for("react.memo_cache_sentinel") ? (V = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.Se, {}),
+                icon: (0, n.jsx)(u.Re, {}),
                 title: (0, n.jsx)(l.a, {
                     ...s.recoveryTitle
                 }),
@@ -306,7 +306,7 @@ export const __webpack_modules__ = {
                     ...s.recoveryDescription
                 })
             }), ei[37] = V) : V = ei[37], ei[38] === Symbol.for("react.memo_cache_sentinel") ? (E = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.mh, {}),
+                icon: (0, n.jsx)(u.lh, {}),
                 title: (0, n.jsx)(l.a, {
                     ...s.trainingTitle
                 }),
@@ -355,7 +355,7 @@ export const __webpack_modules__ = {
                 children: (0, n.jsx)(l.a, {
                     ...s.warningTitle
                 })
-            }), ei[44] = B) : B = ei[44], ei[45] === Symbol.for("react.memo_cache_sentinel") ? (O = (0, n.jsxs)("section", {
+            }), ei[44] = B) : B = ei[44], ei[45] === Symbol.for("react.memo_cache_sentinel") ? (R = (0, n.jsxs)("section", {
                 className: "flex w-full max-w-2xl flex-col gap-6 rounded-2xl bg-surface-secondary p-6",
                 children: [Z, (0, n.jsxs)("div", {
                     className: "flex flex-col gap-2",
@@ -366,14 +366,14 @@ export const __webpack_modules__ = {
                         })
                     })]
                 })]
-            }), ei[45] = O) : O = ei[45], ei[46] === Symbol.for("react.memo_cache_sentinel") ? (R = (0, n.jsx)("h2", {
+            }), ei[45] = R) : R = ei[45], ei[46] === Symbol.for("react.memo_cache_sentinel") ? (O = (0, n.jsx)("h2", {
                 className: "text-2xl font-normal",
                 children: (0, n.jsx)(l.a, {
                     ...s.readyTitle
                 })
-            }), ei[46] = R) : R = ei[46], ei[47] === Symbol.for("react.memo_cache_sentinel") ? (U = (0, n.jsxs)("div", {
+            }), ei[46] = O) : O = ei[46], ei[47] === Symbol.for("react.memo_cache_sentinel") ? (U = (0, n.jsxs)("div", {
                 className: "flex flex-col gap-4",
-                children: [R, (0, n.jsxs)("p", {
+                children: [O, (0, n.jsxs)("p", {
                     className: "text-base leading-relaxed",
                     children: [(0, n.jsx)(l.a, {
                         ...s.readyDescription
@@ -405,7 +405,7 @@ export const __webpack_modules__ = {
                 children: [U, W, z, Q]
             }), ei[59] = W, ei[60] = z, ei[61] = Q, ei[62] = J) : J = ei[62], ei[63] !== T || ei[64] !== D || ei[65] !== J ? (K = (0, n.jsxs)("main", {
                 className: "mx-auto flex w-full max-w-5xl flex-1 flex-col items-center gap-16 px-6 py-12 md:gap-24 md:py-24",
-                children: [T, k, D, N, q, G, O, J]
+                children: [T, k, D, N, q, G, R, J]
             }), ei[63] = T, ei[64] = D, ei[65] = J, ei[66] = K) : K = ei[66], ei[67] === Symbol.for("react.memo_cache_sentinel") ? (X = (0, n.jsx)("a", {
                 className: "underline underline-offset-4",
                 href: "https://openai.com/policies/terms-of-use",
@@ -555,8 +555,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.4981d79ae4.js";
-import * as t from "./418851.7f18e986d5.js";
+} from "./633146.d376de6326.js";
+import * as t from "./418851.b915ffe930.js";
 e.C(t);
 import * as i from "./109308.e66696cd0d.js";
 e.C(i);
@@ -564,43 +564,43 @@ import * as a from "./399565.6af208675d.js";
 e.C(a);
 import * as n from "./257798.b51742efd5.js";
 e.C(n);
-import * as r from "./447351.7f028af5cc.js";
+import * as r from "./447351.dafe7b7b5e.js";
 e.C(r);
 import * as s from "./617936.e33610e0b9.js";
 e.C(s);
-import * as o from "./807489.b2a4c99bd1.js";
+import * as o from "./807489.01dbb0865d.js";
 e.C(o);
-import * as c from "./337882.240014b3db.js";
+import * as c from "./337882.7119120a0c.js";
 e.C(c);
-import * as l from "./955979.cac5f7aa7e.js";
+import * as l from "./955979.cdc247a476.js";
 e.C(l);
-import * as d from "./646436.b849db233f.js";
+import * as d from "./646436.2bf4f5cfd6.js";
 e.C(d);
-import * as u from "./7078.73ded76a8d.js";
+import * as u from "./7078.89396f9757.js";
 e.C(u);
-import * as p from "./200429.f68bf8c5d0.js";
+import * as p from "./200429.ddc1bbef02.js";
 e.C(p);
-import * as h from "./698524.5c1f88ec3d.js";
+import * as h from "./698524.21708788d0.js";
 e.C(h);
-import * as f from "./956483.da8bcbe744.js";
+import * as f from "./956483.c322d2995f.js";
 e.C(f);
-import * as m from "./87162.47f0360b7c.js";
+import * as m from "./87162.b460b44fcb.js";
 e.C(m);
-import * as g from "./396705.bfc19c0c6a.js";
+import * as g from "./396705.f9a5e3185a.js";
 e.C(g);
-import * as y from "./155568.fb329e6a3b.js";
+import * as y from "./155568.be3429758e.js";
 e.C(y);
-import * as x from "./731863.850a24e1c0.js";
+import * as x from "./731863.f2322456e0.js";
 e.C(x);
-import * as v from "./767086.b68e569328.js";
+import * as v from "./767086.ab7a1efc0d.js";
 e.C(v);
-import * as b from "./76629.ca4c17c8af.js";
+import * as b from "./76629.3c6cad96ca.js";
 e.C(b);
-import * as j from "./514085.6514ba1a89.js";
+import * as j from "./514085.2befcfe573.js";
 e.C(j);
 import * as S from "./226913.27c93050ff.js";
 e.C(S);
-import * as w from "./392067.f6573c735b.js";
+import * as w from "./392067.278545ae03.js";
 e.C(w);
 var C = e(e.s = "P0UP"),
     A = C.a,
