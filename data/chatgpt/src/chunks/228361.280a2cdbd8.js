@@ -1,1 +1,1500 @@
-export const __rspack_esm_ids=[228361];export const __webpack_modules__={XK0l:(function(e,t,i){var s=i("ABep"),n=i("QosV");t.default=e=>{let t,i,r,l,a,o=(0,n.c)(6);return o[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,s.jsxs)("g",{filter:"url(#filter0_d_8150_6803)",children:[(0,s.jsx)("mask",{id:"path-1-inside-1_8150_6803",fill:"white",children:(0,s.jsx)("path",{fillRule:"evenodd",clipRule:"evenodd",d:"M23 7.85169C23 7.59052 23.0001 7.32933 22.9985 7.06813C22.9972 6.84811 22.9947 6.62813 22.9887 6.40822C22.9758 5.92889 22.9475 5.44545 22.8622 4.97147C22.7758 4.49065 22.6346 4.04314 22.4121 3.60627C22.1934 3.17687 21.9077 2.78394 21.5668 2.44329C21.226 2.10264 20.833 1.81712 20.4034 1.59854C19.9661 1.376 19.5181 1.23487 19.0367 1.14845C18.5627 1.06333 18.0791 1.03511 17.5998 1.02216C17.3797 1.01621 17.1597 1.0137 16.9395 1.01233C16.6782 1.01073 16.4169 1.01087 16.1555 1.01087L13.1213 1H10.8519L7.87129 1.01087C7.60946 1.01087 7.34762 1.01073 7.08578 1.01233C6.8652 1.0137 6.64472 1.01621 6.42421 1.02216C5.94377 1.03511 5.45911 1.06336 4.98395 1.14858C4.50195 1.23498 4.05331 1.37605 3.61539 1.59843C3.18493 1.81704 2.79104 2.10259 2.44951 2.44329C2.10803 2.78392 1.82179 3.17676 1.60267 3.60608C1.37958 4.04317 1.23813 4.49094 1.15146 4.97203C1.06613 5.44583 1.03786 5.9291 1.02486 6.40822C1.01893 6.62816 1.01637 6.84813 1.01503 7.06813C1.01343 7.32936 1 7.65383 1 7.91502L1.00008 10.8543L1 13.148L1.01356 16.1497C1.01356 16.4113 1.01346 16.6728 1.01503 16.9344C1.01637 17.1547 1.01893 17.375 1.02488 17.5952C1.03786 18.0751 1.06619 18.5593 1.1516 19.0339C1.23823 19.5154 1.37966 19.9635 1.60257 20.4009C1.82171 20.831 2.108 21.2244 2.44951 21.5655C2.79101 21.9067 3.18479 22.1925 3.61518 22.4114C4.05336 22.6343 4.50222 22.7756 4.98451 22.8621C5.45945 22.9474 5.94396 22.9757 6.42421 22.9886C6.64472 22.9946 6.86523 22.9971 7.08581 22.9984C7.34765 23 7.60946 22.9999 7.87129 22.9999L10.8788 23H13.1538L16.1555 22.9999C16.4169 22.9999 16.6782 23 16.9395 22.9984C17.1597 22.9971 17.3797 22.9946 17.5998 22.9886C18.0793 22.9756 18.5631 22.9473 19.0373 22.862C19.5184 22.7755 19.9661 22.6342 20.4032 22.4115C20.8329 22.1927 21.226 21.9067 21.5668 21.5655C21.9076 21.2244 22.1933 20.8311 22.412 20.4011C22.6347 19.9635 22.7758 19.5151 22.8623 19.0333C22.9475 18.5589 22.9758 18.075 22.9887 17.5952C22.9947 17.3749 22.9972 17.1547 22.9985 16.9344C23.0001 16.6728 23 16.4113 23 16.1497C23 16.1497 22.9998 13.201 22.9998 13.148V10.8519C22.9998 10.8128 23 7.85169 23 7.85169Z"})}),(0,s.jsx)("path",{fillRule:"evenodd",clipRule:"evenodd",d:"M23 7.85169C23 7.59052 23.0001 7.32933 22.9985 7.06813C22.9972 6.84811 22.9947 6.62813 22.9887 6.40822C22.9758 5.92889 22.9475 5.44545 22.8622 4.97147C22.7758 4.49065 22.6346 4.04314 22.4121 3.60627C22.1934 3.17687 21.9077 2.78394 21.5668 2.44329C21.226 2.10264 20.833 1.81712 20.4034 1.59854C19.9661 1.376 19.5181 1.23487 19.0367 1.14845C18.5627 1.06333 18.0791 1.03511 17.5998 1.02216C17.3797 1.01621 17.1597 1.0137 16.9395 1.01233C16.6782 1.01073 16.4169 1.01087 16.1555 1.01087L13.1213 1H10.8519L7.87129 1.01087C7.60946 1.01087 7.34762 1.01073 7.08578 1.01233C6.8652 1.0137 6.64472 1.01621 6.42421 1.02216C5.94377 1.03511 5.45911 1.06336 4.98395 1.14858C4.50195 1.23498 4.05331 1.37605 3.61539 1.59843C3.18493 1.81704 2.79104 2.10259 2.44951 2.44329C2.10803 2.78392 1.82179 3.17676 1.60267 3.60608C1.37958 4.04317 1.23813 4.49094 1.15146 4.97203C1.06613 5.44583 1.03786 5.9291 1.02486 6.40822C1.01893 6.62816 1.01637 6.84813 1.01503 7.06813C1.01343 7.32936 1 7.65383 1 7.91502L1.00008 10.8543L1 13.148L1.01356 16.1497C1.01356 16.4113 1.01346 16.6728 1.01503 16.9344C1.01637 17.1547 1.01893 17.375 1.02488 17.5952C1.03786 18.0751 1.06619 18.5593 1.1516 19.0339C1.23823 19.5154 1.37966 19.9635 1.60257 20.4009C1.82171 20.831 2.108 21.2244 2.44951 21.5655C2.79101 21.9067 3.18479 22.1925 3.61518 22.4114C4.05336 22.6343 4.50222 22.7756 4.98451 22.8621C5.45945 22.9474 5.94396 22.9757 6.42421 22.9886C6.64472 22.9946 6.86523 22.9971 7.08581 22.9984C7.34765 23 7.60946 22.9999 7.87129 22.9999L10.8788 23H13.1538L16.1555 22.9999C16.4169 22.9999 16.6782 23 16.9395 22.9984C17.1597 22.9971 17.3797 22.9946 17.5998 22.9886C18.0793 22.9756 18.5631 22.9473 19.0373 22.862C19.5184 22.7755 19.9661 22.6342 20.4032 22.4115C20.8329 22.1927 21.226 21.9067 21.5668 21.5655C21.9076 21.2244 22.1933 20.8311 22.412 20.4011C22.6347 19.9635 22.7758 19.5151 22.8623 19.0333C22.9475 18.5589 22.9758 18.075 22.9887 17.5952C22.9947 17.3749 22.9972 17.1547 22.9985 16.9344C23.0001 16.6728 23 16.4113 23 16.1497C23 16.1497 22.9998 13.201 22.9998 13.148V10.8519C22.9998 10.8128 23 7.85169 23 7.85169Z",fill:"url(#paint0_linear_8150_6803)"}),(0,s.jsx)("path",{d:"M22.9985 7.06813L22.4985 7.07111L22.4985 7.0712L22.9985 7.06813ZM22.9887 6.40822L22.4889 6.42169L22.4889 6.42181L22.9887 6.40822ZM22.8622 4.97147L22.3701 5.05995L22.3701 5.05997L22.8622 4.97147ZM22.4121 3.60627L22.8577 3.37937L22.8577 3.37933L22.4121 3.60627ZM21.5668 2.44329L21.2133 2.79693L21.2134 2.79697L21.5668 2.44329ZM20.4034 1.59854L20.6302 1.15291L20.6302 1.15291L20.4034 1.59854ZM19.0367 1.14845L18.9484 1.64058L18.9484 1.64058L19.0367 1.14845ZM17.5998 1.02216L17.5863 1.52198L17.5863 1.52198L17.5998 1.02216ZM16.9395 1.01233L16.9426 0.512344L16.9426 0.512344L16.9395 1.01233ZM16.1555 1.01087L16.1537 1.51087H16.1555V1.01087ZM13.1213 1L13.1231 0.5H13.1213V1ZM10.8519 1V0.499997L10.85 0.500003L10.8519 1ZM7.87129 1.01087V1.51087L7.87311 1.51086L7.87129 1.01087ZM7.08578 1.01233L7.08273 0.512344L7.0827 0.512344L7.08578 1.01233ZM6.42421 1.02216L6.43769 1.52198L6.43771 1.52198L6.42421 1.02216ZM4.98395 1.14858L5.07217 1.64074L5.07222 1.64073L4.98395 1.14858ZM3.61539 1.59843L3.389 1.15262L3.38899 1.15262L3.61539 1.59843ZM2.44951 2.44329L2.80262 2.79729L2.80263 2.79727L2.44951 2.44329ZM1.60267 3.60608L2.04802 3.83339L2.04802 3.83338L1.60267 3.60608ZM1.15146 4.97203L0.659383 4.88338L0.659379 4.8834L1.15146 4.97203ZM1.02486 6.40822L0.525041 6.39465L0.525038 6.39475L1.02486 6.40822ZM1.01503 7.06813L1.51502 7.0712L1.51502 7.07117L1.01503 7.06813ZM1 7.91502H0.5V7.91504L1 7.91502ZM1.00008 10.8543L1.50008 10.8543V10.8543L1.00008 10.8543ZM1 13.148L0.499995 13.148L0.500005 13.1503L1 13.148ZM1.01356 16.1497H1.51357L1.51356 16.1475L1.01356 16.1497ZM1.01503 16.9344L0.515041 16.9374L0.515041 16.9374L1.01503 16.9344ZM1.02488 17.5952L0.525066 17.6087L0.525066 17.6087L1.02488 17.5952ZM1.1516 19.0339L1.64369 18.9453L1.64369 18.9453L1.1516 19.0339ZM1.60257 20.4009L1.15707 20.628L1.15708 20.628L1.60257 20.4009ZM3.61518 22.4114L3.3885 22.8571L3.38853 22.8571L3.61518 22.4114ZM4.98451 22.8621L5.07284 22.37L5.07281 22.37L4.98451 22.8621ZM6.42421 22.9886L6.43771 22.4888H6.43769L6.42421 22.9886ZM7.08581 22.9984L7.08887 22.4984H7.08884L7.08581 22.9984ZM7.87129 22.9999L7.8713 22.4999H7.87129V22.9999ZM10.8788 23L10.8788 23.5H10.8788V23ZM13.1538 23V23.5H13.1539L13.1538 23ZM16.1555 22.9999V22.4999H16.1555L16.1555 22.9999ZM16.9395 22.9984L16.9365 22.4984H16.9365L16.9395 22.9984ZM17.5998 22.9886L17.6133 23.4884H17.6133L17.5998 22.9886ZM19.0373 22.862L19.1258 23.3541H19.1258L19.0373 22.862ZM20.4032 22.4115L20.1762 21.966L20.1762 21.966L20.4032 22.4115ZM21.5668 21.5655L21.2131 21.2121L21.2131 21.2121L21.5668 21.5655ZM22.412 20.4011L22.8577 20.6278L22.8577 20.6278L22.412 20.4011ZM22.8623 19.0333L23.3545 19.1217L23.3545 19.1217L22.8623 19.0333ZM22.9887 17.5952L22.4889 17.5817V17.5817L22.9887 17.5952ZM22.9985 16.9344L22.4985 16.9313L22.4985 16.9314L22.9985 16.9344ZM23 16.1497H23.5V16.1497L23 16.1497ZM23 7.85169H23.5C23.5 7.59099 23.5001 7.32812 23.4985 7.06507L22.9985 7.06813L22.4985 7.0712C22.5001 7.33054 22.5 7.59006 22.5 7.85169H23ZM22.9985 7.06813L23.4985 7.06516C23.4972 6.84347 23.4946 6.61956 23.4885 6.39462L22.9887 6.40822L22.4889 6.42181C22.4947 6.63671 22.4972 6.85274 22.4985 7.07111L22.9985 7.06813ZM22.9887 6.40822L23.4885 6.39474C23.4753 5.90713 23.4463 5.39412 23.3543 4.88296L22.8622 4.97147L22.3701 5.05997C22.4487 5.49679 22.4762 5.95065 22.4889 6.42169L22.9887 6.40822ZM22.8622 4.97147L23.3543 4.88299C23.2604 4.36025 23.1051 3.86518 22.8577 3.37937L22.4121 3.60627L21.9666 3.83317C22.1641 4.22111 22.2912 4.62104 22.3701 5.05995L22.8622 4.97147ZM22.4121 3.60627L22.8577 3.37933C22.615 2.90303 22.2982 2.46734 21.9202 2.08961L21.5668 2.44329L21.2134 2.79697C21.5172 3.10054 21.7718 3.45071 21.9666 3.8332L22.4121 3.60627ZM21.5668 2.44329L21.9203 2.08966C21.5424 1.71195 21.1066 1.39536 20.6302 1.15291L20.4034 1.59854L20.1766 2.04416C20.5593 2.23888 20.9096 2.49333 21.2133 2.79693L21.5668 2.44329ZM20.4034 1.59854L20.6302 1.15291C20.1439 0.905457 19.6483 0.750255 19.1251 0.656315L19.0367 1.14845L18.9484 1.64058C19.3879 1.71949 19.7883 1.84654 20.1766 2.04416L20.4034 1.59854ZM19.0367 1.14845L19.1251 0.656316C18.614 0.564535 18.1009 0.535513 17.6133 0.522342L17.5998 1.02216L17.5863 1.52198C18.0574 1.5347 18.5115 1.56212 18.9484 1.64058L19.0367 1.14845ZM17.5998 1.02216L17.6133 0.522343C17.3883 0.516254 17.1643 0.513716 16.9426 0.512344L16.9395 1.01233L16.9364 1.51233C17.155 1.51368 17.3712 1.51616 17.5863 1.52198L17.5998 1.02216ZM16.9395 1.01233L16.9426 0.512344C16.6794 0.510731 16.4163 0.510866 16.1555 0.510866V1.01087V1.51087C16.4174 1.51087 16.677 1.51074 16.9365 1.51233L16.9395 1.01233ZM16.1555 1.01087L16.1573 0.51087L13.1231 0.500003L13.1213 1L13.1195 1.5L16.1537 1.51086L16.1555 1.01087ZM13.1213 1V0.5H10.8519V1V1.5H13.1213V1ZM10.8519 1L10.85 0.500003L7.86947 0.51087L7.87129 1.01087L7.87311 1.51086L10.8537 1.5L10.8519 1ZM7.87129 1.01087V0.510866C7.60997 0.510866 7.34642 0.510731 7.08273 0.512344L7.08578 1.01233L7.08884 1.51233C7.34882 1.51074 7.60894 1.51087 7.87129 1.51087V1.01087ZM7.08578 1.01233L7.0827 0.512344C6.86059 0.513715 6.63621 0.516254 6.41072 0.522342L6.42421 1.02216L6.43771 1.52198C6.65323 1.51616 6.86981 1.51368 7.08887 1.51233L7.08578 1.01233ZM6.42421 1.02216L6.41074 0.522342C5.92208 0.535512 5.40792 0.564559 4.89568 0.656433L4.98395 1.14858L5.07222 1.64073C5.51029 1.56215 5.96546 1.53471 6.43769 1.52198L6.42421 1.02216ZM4.98395 1.14858L4.89573 0.656424C4.37197 0.750308 3.87583 0.905404 3.389 1.15262L3.61539 1.59843L3.84178 2.04424C4.23078 1.84671 4.63194 1.71965 5.07217 1.64074L4.98395 1.14858ZM3.61539 1.59843L3.38899 1.15262C2.91168 1.39503 2.47503 1.71157 2.09638 2.08931L2.44951 2.44329L2.80263 2.79727C3.10704 2.4936 3.45817 2.23905 3.84179 2.04424L3.61539 1.59843ZM2.44951 2.44329L2.0964 2.0893C1.71781 2.46693 1.40041 2.90251 1.15732 3.37878L1.60267 3.60608L2.04802 3.83338C2.24317 3.45102 2.49825 3.1009 2.80262 2.79729L2.44951 2.44329ZM1.60267 3.60608L1.15733 3.37877C0.909192 3.86492 0.753601 4.36036 0.659383 4.88338L1.15146 4.97203L1.64354 5.06067C1.72265 4.62151 1.84996 4.22142 2.04802 3.83339L1.60267 3.60608ZM1.15146 4.97203L0.659379 4.8834C0.567345 5.39443 0.538266 5.90732 0.525041 6.39465L1.02486 6.40822L1.52467 6.42178C1.53745 5.95088 1.56492 5.49722 1.64355 5.06065L1.15146 4.97203ZM1.02486 6.40822L0.525038 6.39475C0.518979 6.6196 0.516386 6.84343 0.515041 7.0651L1.01503 7.06813L1.51502 7.07117C1.51635 6.85284 1.51888 6.63672 1.52468 6.42168L1.02486 6.40822ZM1.01503 7.06813L0.515041 7.06507C0.514274 7.19006 0.510666 7.33114 0.507063 7.47944C0.503525 7.62505 0.5 7.77741 0.5 7.91502H1H1.5C1.5 7.79144 1.50319 7.65097 1.50677 7.50373C1.51028 7.35919 1.51419 7.20742 1.51502 7.0712L1.01503 7.06813ZM1 7.91502L0.5 7.91504L0.50008 10.8543L1.00008 10.8543L1.50008 10.8543L1.5 7.91501L1 7.91502ZM1.00008 10.8543L0.50008 10.8543L0.5 13.148L1 13.148L1.5 13.148L1.50008 10.8543L1.00008 10.8543ZM1 13.148L0.500005 13.1503L0.513568 16.152L1.01356 16.1497L1.51356 16.1475L1.49999 13.1458L1 13.148ZM1.01356 16.1497H0.513563C0.513563 16.4108 0.513454 16.674 0.515041 16.9374L1.01503 16.9344L1.51502 16.9314C1.51346 16.6716 1.51356 16.4118 1.51356 16.1497H1.01356ZM1.01503 16.9344L0.515041 16.9374C0.516386 17.1594 0.518979 17.3835 0.525066 17.6087L1.02488 17.5952L1.5247 17.5817C1.51888 17.3664 1.51635 17.15 1.51502 16.9313L1.01503 16.9344ZM1.02488 17.5952L0.525066 17.6087C0.538265 18.0969 0.567398 18.6106 0.6595 19.1225L1.1516 19.0339L1.64369 18.9453C1.56497 18.5079 1.53745 18.0534 1.5247 17.5817L1.02488 17.5952ZM1.1516 19.0339L0.6595 19.1225C0.753676 19.6458 0.909205 20.1415 1.15707 20.628L1.60257 20.4009L2.04806 20.1739C1.85011 19.7855 1.72279 19.3849 1.64369 18.9453L1.1516 19.0339ZM1.60257 20.4009L1.15708 20.628C1.40015 21.1049 1.71757 21.5411 2.09615 21.9193L2.44951 21.5655L2.80287 21.2118C2.49843 20.9077 2.24327 20.557 2.04805 20.1739L1.60257 20.4009ZM2.44951 21.5655L2.09615 21.9193C2.47473 22.2974 2.91125 22.6144 3.3885 22.8571L3.61518 22.4114L3.84185 21.9658C3.45834 21.7707 3.10729 21.5159 2.80287 21.2118L2.44951 21.5655ZM3.61518 22.4114L3.38853 22.8571C3.87567 23.1049 4.37209 23.2602 4.89621 23.3543L4.98451 22.8621L5.07281 22.37C4.63235 22.291 4.23104 22.1637 3.84182 21.9658L3.61518 22.4114ZM4.98451 22.8621L4.89617 23.3543C5.40822 23.4462 5.92224 23.4752 6.41074 23.4884L6.42421 22.9886L6.43769 22.4888C5.96567 22.4761 5.51068 22.4486 5.07284 22.37L4.98451 22.8621ZM6.42421 22.9886L6.41072 23.4884C6.63619 23.4945 6.86058 23.4971 7.08279 23.4984L7.08581 22.9984L7.08884 22.4984C6.86987 22.4971 6.65325 22.4946 6.43771 22.4888L6.42421 22.9886ZM7.08581 22.9984L7.08275 23.4984C7.34644 23.5 7.60992 23.4999 7.87129 23.4999V22.9999V22.4999C7.60899 22.4999 7.34886 22.5 7.08887 22.4984L7.08581 22.9984ZM7.87129 22.9999L7.87128 23.4999L10.8788 23.5L10.8788 23L10.8788 22.5L7.8713 22.4999L7.87129 22.9999ZM10.8788 23V23.5H13.1538V23V22.5H10.8788V23ZM13.1538 23L13.1539 23.5L16.1556 23.4999L16.1555 22.9999L16.1555 22.4999L13.1538 22.5L13.1538 23ZM16.1555 22.9999V23.4999C16.4163 23.4999 16.6794 23.5 16.9426 23.4984L16.9395 22.9984L16.9365 22.4984C16.677 22.5 16.4174 22.4999 16.1555 22.4999V22.9999ZM16.9395 22.9984L16.9426 23.4984C17.1643 23.4971 17.3883 23.4945 17.6133 23.4884L17.5998 22.9886L17.5863 22.4888C17.3712 22.4946 17.155 22.4971 16.9365 22.4984L16.9395 22.9984ZM17.5998 22.9886L17.6133 23.4884C18.1011 23.4752 18.6144 23.4461 19.1258 23.3541L19.0373 22.862L18.9488 22.3699C18.5117 22.4485 18.0575 22.476 17.5863 22.4888L17.5998 22.9886ZM19.0373 22.862L19.1258 23.3541C19.6488 23.2601 20.1441 23.1047 20.6302 22.857L20.4032 22.4115L20.1762 21.966C19.7881 22.1638 19.388 22.2909 18.9488 22.3699L19.0373 22.862ZM20.4032 22.4115L20.6302 22.857C21.1068 22.6143 21.5426 22.2972 21.9205 21.9189L21.5668 21.5655L21.2131 21.2121C20.9093 21.5162 20.5589 21.771 20.1762 21.966L20.4032 22.4115ZM21.5668 21.5655L21.9205 21.9189C22.2984 21.5408 22.6151 21.1047 22.8577 20.6278L22.412 20.4011L21.9664 20.1744C21.7715 20.5575 21.5169 20.9081 21.2131 21.2121L21.5668 21.5655ZM22.412 20.4011L22.8577 20.6278C23.1052 20.1412 23.2605 19.6453 23.3545 19.1217L22.8623 19.0333L22.3702 18.945C22.2912 19.385 22.1641 19.7858 21.9664 20.1744L22.412 20.4011ZM22.8623 19.0333L23.3545 19.1217C23.4463 18.6101 23.4754 18.0967 23.4885 17.6087L22.9887 17.5952L22.4889 17.5817C22.4762 18.0532 22.4487 18.5077 22.3702 18.945L22.8623 19.0333ZM22.9887 17.5952L23.4885 17.6087C23.4946 17.3835 23.4972 17.1593 23.4985 16.9373L22.9985 16.9344L22.4985 16.9314C22.4972 17.15 22.4947 17.3664 22.4889 17.5817L22.9887 17.5952ZM22.9985 16.9344L23.4985 16.9375C23.5001 16.6741 23.5 16.4108 23.5 16.1497H23H22.5C22.5 16.4118 22.5001 16.6716 22.4985 16.9313L22.9985 16.9344ZM23 16.1497C23.5 16.1497 23.5 16.1497 23.5 16.1497C23.5 16.1497 23.5 16.1496 23.5 16.1496C23.5 16.1495 23.5 16.1494 23.5 16.1492C23.5 16.1488 23.5 16.1483 23.5 16.1476C23.5 16.1462 23.5 16.1441 23.5 16.1413C23.5 16.1357 23.5 16.1274 23.5 16.1166C23.5 16.095 23.5 16.0633 23.5 16.0229C23.5 15.9422 23.5 15.8268 23.5 15.6882C23.5 15.4109 23.4999 15.0406 23.4999 14.6687C23.4999 13.9249 23.4998 13.1745 23.4998 13.148H22.9998H22.4998C22.4998 13.1745 22.4999 13.925 22.4999 14.6688C22.4999 15.0407 22.5 15.4109 22.5 15.6882C22.5 15.8268 22.5 15.9422 22.5 16.023C22.5 16.0633 22.5 16.095 22.5 16.1166C22.5 16.1275 22.5 16.1357 22.5 16.1413C22.5 16.1441 22.5 16.1462 22.5 16.1476C22.5 16.1483 22.5 16.1489 22.5 16.1492C22.5 16.1494 22.5 16.1496 22.5 16.1496C22.5 16.1497 22.5 16.1497 22.5 16.1497C22.5 16.1498 22.5 16.1498 23 16.1497ZM22.9998 13.148H23.4998V10.8519H22.9998H22.4998V13.148H22.9998ZM22.9998 10.8519H23.4998C23.4998 10.8324 23.4999 10.0823 23.4999 9.33715C23.4999 8.96457 23.5 8.59321 23.5 8.315C23.5 8.17589 23.5 8.06007 23.5 7.97903C23.5 7.93851 23.5 7.90668 23.5 7.88498C23.5 7.87414 23.5 7.86582 23.5 7.86022C23.5 7.85741 23.5 7.85529 23.5 7.85387C23.5 7.85316 23.5 7.85262 23.5 7.85226C23.5 7.85208 23.5 7.85195 23.5 7.85186C23.5 7.85181 23.5 7.85178 23.5 7.85175C23.5 7.85173 23.5 7.85172 23 7.85169C22.5 7.85167 22.5 7.85168 22.5 7.8517C22.5 7.85172 22.5 7.85176 22.5 7.8518C22.5 7.85189 22.5 7.85203 22.5 7.85221C22.5 7.85256 22.5 7.8531 22.5 7.85381C22.5 7.85523 22.5 7.85736 22.5 7.86016C22.5 7.86576 22.5 7.87408 22.5 7.88493C22.5 7.90663 22.5 7.93846 22.5 7.97898C22.5 8.06002 22.5 8.17584 22.5 8.31495C22.5 8.59316 22.4999 8.96451 22.4999 9.3371C22.4999 10.0822 22.4998 10.8323 22.4998 10.8519H22.9998Z",fill:"#C0CBDA",fillOpacity:.8,mask:"url(#path-1-inside-1_8150_6803)"})]}),i=(0,s.jsx)("path",{d:"M13.2038 20C12.6705 20 12.1638 19.8987 11.6838 19.696C11.2038 19.4933 10.7772 19.2107 10.4038 18.848C9.9985 18.9867 9.57716 19.056 9.13983 19.056C8.42516 19.056 7.76383 18.88 7.15583 18.528C6.54783 18.176 6.05716 17.696 5.68383 17.088C5.32116 16.48 5.13983 15.8027 5.13983 15.056C5.13983 14.7467 5.18249 14.4107 5.26783 14.048C4.84116 13.6533 4.51049 13.2 4.27583 12.688C4.04116 12.1653 3.92383 11.6213 3.92383 11.056C3.92383 10.48 4.04649 9.92533 4.29183 9.392C4.53716 8.85867 4.87849 8.4 5.31583 8.016C5.76383 7.62133 6.28116 7.34933 6.86783 7.2C6.98516 6.592 7.23049 6.048 7.60383 5.568C7.98783 5.07733 8.45716 4.69333 9.01183 4.416C9.56649 4.13867 10.1585 4 10.7878 4C11.3212 4 11.8278 4.10133 12.3078 4.304C12.7878 4.50667 13.2145 4.78933 13.5878 5.152C13.9932 5.01333 14.4145 4.944 14.8518 4.944C15.5665 4.944 16.2278 5.12 16.8358 5.472C17.4438 5.824 17.9292 6.304 18.2918 6.912C18.6652 7.52 18.8518 8.19733 18.8518 8.944C18.8518 9.25333 18.8092 9.58933 18.7238 9.952C19.1505 10.3467 19.4812 10.8053 19.7158 11.328C19.9505 11.84 20.0678 12.3787 20.0678 12.944C20.0678 13.52 19.9452 14.0747 19.6998 14.608C19.4545 15.1413 19.1078 15.6053 18.6598 16C18.2225 16.384 17.7105 16.6507 17.1238 16.8C17.0065 17.408 16.7558 17.952 16.3718 18.432C15.9985 18.9227 15.5345 19.3067 14.9798 19.584C14.4252 19.8613 13.8332 20 13.2038 20ZM9.28383 17.824C9.78516 17.824 10.2278 17.712 10.6118 17.488L13.5078 15.824C13.6252 15.7493 13.6838 15.648 13.6838 15.52V14.4L10.1158 16.448C9.78516 16.64 9.45449 16.64 9.12383 16.448L6.37183 14.864C6.37183 14.8747 6.37183 14.8907 6.37183 14.912C6.37183 14.9333 6.37183 14.96 6.37183 14.992C6.37183 15.5147 6.4945 15.9947 6.73983 16.432C6.99583 16.8587 7.34783 17.1947 7.79583 17.44C8.24383 17.696 8.73983 17.824 9.28383 17.824ZM9.42783 15.216C9.49183 15.2587 9.5505 15.28 9.60383 15.28C9.65716 15.2693 9.71583 15.248 9.77983 15.216L10.7558 14.672L7.20383 12.592C6.87316 12.4107 6.70783 12.1227 6.70783 11.728V8.576C6.23849 8.82133 5.86516 9.168 5.58783 9.616C5.32116 10.0533 5.18783 10.5387 5.18783 11.072C5.18783 11.5733 5.3105 12.0533 5.55583 12.512C5.81183 12.96 6.14249 13.3013 6.54783 13.536L9.42783 15.216ZM13.1878 18.752C13.7318 18.752 14.2225 18.6293 14.6598 18.384C15.0972 18.1387 15.4385 17.8027 15.6838 17.376C15.9398 16.9493 16.0678 16.4747 16.0678 15.952V12.624C16.0678 12.4853 16.0092 12.384 15.8918 12.32L14.9158 11.728V15.856C14.9158 16.2507 14.7505 16.5387 14.4198 16.72L11.6838 18.304C12.1532 18.6027 12.6545 18.752 13.1878 18.752ZM13.6838 13.008V10.992L12.0038 10.032L10.3078 10.992V13.008L12.0038 13.968L13.6838 13.008ZM9.07583 8.144C9.07583 7.74933 9.24116 7.46133 9.57183 7.28L12.3078 5.696C11.8385 5.39733 11.3372 5.248 10.8038 5.248C10.2705 5.248 9.78516 5.37067 9.34783 5.616C8.9105 5.86133 8.56383 6.19733 8.30783 6.624C8.0625 7.05067 7.93983 7.52533 7.93983 8.048V11.36C7.93983 11.488 7.9985 11.5947 8.11583 11.68L9.07583 12.272V8.144ZM17.2998 15.424C17.7585 15.1893 18.1212 14.848 18.3878 14.4C18.6652 13.952 18.8038 13.4613 18.8038 12.928C18.8038 12.4267 18.6758 11.952 18.4198 11.504C18.1745 11.0453 17.8492 10.6987 17.4438 10.464L14.5638 8.8C14.4998 8.75733 14.4412 8.74133 14.3878 8.752C14.3345 8.752 14.2758 8.768 14.2118 8.8L13.2358 9.328L16.8038 11.424C16.9745 11.52 17.0972 11.6373 17.1718 11.776C17.2572 11.904 17.2998 12.0693 17.2998 12.272V15.424ZM13.8758 7.52C14.2065 7.31733 14.5372 7.31733 14.8678 7.52L17.6198 9.136C17.6198 9.104 17.6198 9.072 17.6198 9.04C17.6198 8.54933 17.4972 8.08533 17.2518 7.648C17.0172 7.2 16.6758 6.84267 16.2278 6.576C15.7905 6.30933 15.2838 6.176 14.7078 6.176C14.2065 6.176 13.7638 6.288 13.3798 6.512L10.4838 8.176C10.3665 8.25067 10.3078 8.352 10.3078 8.48V9.6L13.8758 7.52Z",fill:"#2C3339"}),o[0]=t,o[1]=i):(t=o[0],i=o[1]),o[2]===Symbol.for("react.memo_cache_sentinel")?(r=(0,s.jsxs)("filter",{id:"filter0_d_8150_6803",x:.583333,y:1,width:22.8333,height:22.8333,filterUnits:"userSpaceOnUse",colorInterpolationFilters:"sRGB",children:[(0,s.jsx)("feFlood",{floodOpacity:0,result:"BackgroundImageFix"}),(0,s.jsx)("feColorMatrix",{in:"SourceAlpha",type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",result:"hardAlpha"}),(0,s.jsx)("feOffset",{dy:.416667}),(0,s.jsx)("feGaussianBlur",{stdDeviation:.208333}),(0,s.jsx)("feComposite",{in2:"hardAlpha",operator:"out"}),(0,s.jsx)("feColorMatrix",{type:"matrix",values:"0 0 0 0 0.172549 0 0 0 0 0.2 0 0 0 0 0.223529 0 0 0 0.36 0"}),(0,s.jsx)("feBlend",{mode:"normal",in2:"BackgroundImageFix",result:"effect1_dropShadow_8150_6803"}),(0,s.jsx)("feBlend",{mode:"normal",in:"SourceGraphic",in2:"effect1_dropShadow_8150_6803",result:"shape"})]}),o[2]=r):r=o[2],o[3]===Symbol.for("react.memo_cache_sentinel")?(l=(0,s.jsxs)("defs",{children:[r,(0,s.jsxs)("linearGradient",{id:"paint0_linear_8150_6803",x1:12,y1:1,x2:12,y2:23,gradientUnits:"userSpaceOnUse",children:[(0,s.jsx)("stop",{stopColor:"white"}),(0,s.jsx)("stop",{offset:1,stopColor:"#E2EAF3"})]})]}),o[3]=l):l=o[3],o[4]!==e?(a=(0,s.jsxs)("svg",{width:"1em",height:"1em",viewBox:"0 0 24 24",fill:"currentColor",...e,children:[t,i,l]}),o[4]=e,o[5]=a):a=o[5],a}}),QxH2:(function(e,t,i){var s=i("SKhr");function n(){return new Promise(e=>{window.requestAnimationFrame(()=>{window.requestAnimationFrame(()=>{e()})})})}i.d(t,{},{a:function(e,t){return e?.querySelector(`[data-content-search-turn-key="${CSS.escape(t)}"]`)??null},b:function(e){let{container:t,matchId:i,includeShadowRoots:n,scrollBehavior:r="smooth",signal:l,timeoutMs:a=1500}=e,o=()=>(0,s.j)({container:t,matchId:i,includeShadowRoots:n});if(l?.aborted)return Promise.resolve();let c=o();return null!=c?(c.scrollIntoView({block:"center",behavior:r}),Promise.resolve()):new Promise(e=>{let t=null,i=null;function s(s){null!=t&&(window.cancelAnimationFrame(t),t=null),null!=i&&(window.clearTimeout(i),i=null),l?.removeEventListener("abort",n),null!=s&&s.scrollIntoView({block:"center",behavior:r}),e()}function n(){s()}l?.addEventListener("abort",n,{once:!0}),i=window.setTimeout(()=>{s()},a),t=window.requestAnimationFrame(function e(){if(l?.aborted)return void s();let i=o();null!=i?s(i):t=window.requestAnimationFrame(e)})})},c:async function(e,t,i){if(!i?.signal?.aborted&&null!=t){if(null==e)throw Error("Conversation search requested before the turn list was ready");await e.scrollToKey(t,void 0,i),i?.signal?.aborted||await n()}},d:n})}),AO3k:(function(e,t,i){i.d(t,{a:()=>u});var s=i("ABep"),n=i("QosV"),r=i("on57"),l=i("rFhZ"),a=i("zd8w"),o=i("NxDs"),c=i("lbSx"),d=i("Uv0t");function u(e){let t,i,u,h,f,p,m,L,y,C,g,v,_,M=(0,n.c)(38),{value:I,ariaLabel:b,size:R,portrait:w,children:x,fallback:S}=e,Z=void 0===R?"default":R,[E,A]=(0,a.useState)(null);M[0]!==w?.crop||M[1]!==w?.src?(t=JSON.stringify([w?.src,w?.crop]),M[0]=w?.crop,M[1]=w?.src,M[2]=t):t=M[2];let T=t;if(M[3]!==S||M[4]!==T||M[5]!==E||M[6]!==w||M[7]!==I){f=Symbol.for("react.early_return_sentinel");e:{try{u=null==w?(0,l.a)(I,{errorCorrectionLevel:"M"}).modules:function(e,t,i){let s=(0,l.a)(e,{errorCorrectionLevel:"H"}),n=Math.max(10,s.version),r=n===s.version?s.modules:(0,l.a)(e,{errorCorrectionLevel:"H",version:n}).modules;if(null==t)return r;let{width:a,height:u,data:h}=t,f=new Float32Array(a*u),p=a,m=u,L=-1,y=-1;for(let e=0;e<u;e++)for(let t=0;t<a;t++){let i=(e*a+t)*4,s=h[i],n=h[i+1],r=h[i+2],l=1-(.2126*s+.7152*n+.0722*r)/255,o=(Math.max(s,n,r)-Math.min(s,n,r))/255,c=h[i+3]/255*Math.max(l,.65*o);f[e*a+t]=c,c>.08&&(p=Math.min(p,t),L=Math.max(L,t),m=Math.min(m,e),y=Math.max(y,e))}if(L<p||y<m||f.every(e=>e===f[0]))return r;let C=Array.from({length:8},(t,i)=>(0,l.a)(e,{errorCorrectionLevel:"H",version:n,maskPattern:i}).modules),g=function(e,t){let i=new Int16Array(e.data.length).fill(-1),s=0,n=e.size-1,r=-1;for(let t=e.size-1;t>0;t-=2){for(6===t&&t--;n>=0&&n<e.size;){for(let r=0;r<2;r++){let l=n*e.size+t-r;e.reservedBit[l]||(i[l]=Math.floor(s++/8))}n+=r}n-=r,r=-r}let l=Math.floor(s/8),a=(0,c.getBlocksCount)(t,d.H),o=(0,c.getTotalCodewordsCount)(t,d.H);if(null==a||null==o)return()=>!1;let u=l-o,h=Math.floor(u/a),f=a-l%a,p=new Int16Array(l);for(let e=0;e<l;e++)e>=u?p[e]=(e-u)%a:e<h*a?p[e]=e%a:p[e]=f+e-h*a;let m=Math.floor(o/a/2)-4;return(e,t)=>{let s=new Set,n=new Uint8Array(a);for(let[r,a]of t){let t=i[r];if(e.data[r]===a||t<0||t>=l||s.has(t))continue;s.add(t);let o=p[t];if(++n[o]>m)return!1}return!0}}(r,n),v=r.size,_=(v-1)/2,M=(0,o.getRowColCoords)(n).find(e=>2>=Math.abs(e-_));for(let e=29;e>=5;e-=2){let t=(v-e)/2,s=e-2,n=(L-p+1)/(y-m+1),l=n>1?s:s*n,o=n>1?s/n:s,c=t+(e-l)/2,d=t+(e-o)/2,u=new Float32Array(v*v),h=new Float32Array(v*v);for(let i=t;i<t+e;i++)for(let s=t;s<t+e;s++){if(s+.5<c||s+.5>=c+l||i+.5<d||i+.5>=d+o)continue;let e=i*v+s;for(let t of[-.4,-.2,0,.2,.4])for(let n of[-.4,-.2,0,.2,.4]){let r=f[Math.max(m,Math.min(y,m+Math.floor((i+.5+t-d)/o*(y-m+1))))*a+Math.max(p,Math.min(L,p+Math.floor((s+.5+n-c)/l*(L-p+1))))];u[e]+=r/25,h[e]=Math.max(h[e],r)}}let _=new Map,I=e=>u[e]>.12,b=new Set,R=[(t-1)*v+t-1];for(let i=0;i<R.length;i++){let s=R[i];if(b.has(s)||I(s))continue;b.add(s);let n=s%v,r=Math.floor(s/v);n>t-1&&R.push(s-1),n<t+e&&R.push(s+1),r>t-1&&R.push(s-v),r<t+e&&R.push(s+v)}for(let s=t-1;s<=t+e;s++)for(let n=t-1;n<=t+e;n++){let e=s*v+n,t=null!=M&&2>=Math.abs(n-M)&&2>=Math.abs(s-M);if(r.reservedBit[e]&&!t)continue;let l=[e-1,e+1,e-v,e+v];if(I(e)){let t=l.some(e=>!I(e));_.set(e,Number(i||t||h[e]>.65))}else(!b.has(e)||l.some(I)||t)&&_.set(e,0)}let w=null,x=1/0;for(let e of C){let t=0;for(let[i,s]of _)e.data[i]!==s&&t++;t<x&&g(e,_)&&(x=t,w=e)}if(null!=w){for(let[e,t]of _)w.data[e]=t;return w}}return r}(I,E?.key===T?E.pixels:null,w.fillSilhouette??!1)}catch{f=S;break e}i=u.size+8,h=Array.from(u.data)}M[3]=S,M[4]=T,M[5]=E,M[6]=w,M[7]=I,M[8]=i,M[9]=u,M[10]=h,M[11]=f}else i=M[8],u=M[9],h=M[10],f=M[11];if(f!==Symbol.for("react.early_return_sentinel"))return f;M[12]!==u||M[13]!==w||M[14]!==h?(p=h.flatMap((e,t)=>{if(!e)return[];let i=t%u.size+4,s=Math.floor(t/u.size)+4;return[null==w?`M${i},${s}h1v1h-1z`:`M${i+.205},${s+.025}h.59a.18,.18 0 0 1 .18,.18v.59a.18,.18 0 0 1 -.18,.18h-.59a.18,.18 0 0 1 -.18,-.18v-.59a.18,.18 0 0 1 .18,-.18z`]}),M[12]=u,M[13]=w,M[14]=h,M[15]=p):p=M[15];let V=p.join("");M[16]!==Z?(m=(0,r.b)("max-w-full shrink-0 self-center",{inline:"size-18.5",compact:"size-40",default:"size-60"}[Z]),M[16]=Z,M[17]=m):m=M[17];let q=null==w?"crispEdges":"geometricPrecision",H=`0 0 ${i} ${i}`;return M[18]!==i?(L=(0,s.jsx)("rect",{width:i,height:i,fill:"white"}),M[18]=i,M[19]=L):L=M[19],M[20]!==V?(y=(0,s.jsx)("path",{d:V,fill:"black"}),M[20]=V,M[21]=y):y=M[21],M[22]!==b||M[23]!==y||M[24]!==q||M[25]!==H||M[26]!==L?(C=(0,s.jsxs)("svg",{className:"size-full rounded-xl","aria-label":b,"data-dd-privacy":"hidden",focusable:"false",role:"img",shapeRendering:q,viewBox:H,children:[L,y]}),M[22]=b,M[23]=y,M[24]=q,M[25]=H,M[26]=L,M[27]=C):C=M[27],M[28]!==T||M[29]!==w?(g=null!=w?(0,s.jsx)("img",{src:w.src,alt:"",hidden:!0,crossOrigin:"anonymous",onLoad:e=>{let{currentTarget:t}=e,i=w.crop??{x:0,y:0,width:1,height:1},s=t.naturalWidth*i.width,n=t.naturalHeight*i.height,r=Math.min(1,256/Math.max(s,n)),l=document.createElement("canvas");l.width=Math.max(1,Math.round(s*r)),l.height=Math.max(1,Math.round(n*r));let a=l.getContext("2d");if(null!=a)try{a.drawImage(t,t.naturalWidth*i.x,t.naturalHeight*i.y,s,n,0,0,l.width,l.height),A({key:T,pixels:a.getImageData(0,0,l.width,l.height)})}catch{}}},T):null,M[28]=T,M[29]=w,M[30]=g):g=M[30],M[31]!==C||M[32]!==g||M[33]!==m?(v=(0,s.jsxs)("div",{className:m,"data-dd-privacy":"hidden",children:[C,g]}),M[31]=C,M[32]=g,M[33]=m,M[34]=v):v=M[34],M[35]!==x||M[36]!==v?(_=(0,s.jsxs)("div",{className:"flex flex-col items-center gap-3",children:[v,x]}),M[35]=x,M[36]=v,M[37]=_):_=M[37],_}}),p1kG:(function(e,t,i){var s=i("ABep"),n=i("QosV"),r=i("oyxz"),l=i("Sm6l"),a=i("JNtf"),o=i("mUDD"),c=i("b8ru"),d=i("HgLj");function u(){(0,c.a)()}i.d(t,{},{a:function(e){let t,i,c,h,f,p,m=(0,n.c)(13),{image:L,onClose:y,onCloseAutoFocus:C,onOpenAutoFocus:g}=e;return m[0]!==y?(t=e=>!e&&y(),m[0]=y,m[1]=t):t=m[1],m[2]!==L||m[3]!==g?(i=e=>{(0,d.a)(L.imageRef)(null),g?.(e)},m[2]=L,m[3]=g,m[4]=i):i=m[4],m[5]!==C||m[6]!==i?(c={onCloseAutoFocus:C,onOpenAutoFocus:i},m[5]=C,m[6]=i,m[7]=c):c=m[7],m[8]===Symbol.for("react.memo_cache_sentinel")?(h=(0,s.jsx)(o.e,{children:(0,s.jsx)(o.d,{title:(0,s.jsx)(a.e,{children:(0,s.jsx)(r.a,{id:"codex.imagePreview.loadError.title",defaultMessage:"Couldn’t open image preview"})})})}),m[8]=h):h=m[8],m[9]===Symbol.for("react.memo_cache_sentinel")?(f=(0,s.jsxs)(o.b,{children:[h,(0,s.jsx)(o.c,{children:(0,s.jsx)(l.a,{onClick:u,children:(0,s.jsx)(r.a,{id:"codex.imagePreview.loadError.reload",defaultMessage:"Reload"})})})]}),m[9]=f):f=m[9],m[10]!==t||m[11]!==c?(p=(0,s.jsx)(a.a,{open:!0,size:"compact",onOpenChange:t,contentProps:c,children:f}),m[10]=t,m[11]=c,m[12]=p):p=m[12],p}})}),WvjI:(function(e,t,i){var s=i("BolX"),n=i("tl5a"),r=i("tSEg");let l=(0,s.c)(r.a,e=>{let{get:t,scope:i}=e;if("local-thread"!==i.value.routeKind)return null;let s=t(n.bb,i.value.conversationId);return null==s?null:{threadId:i.value.conversationId,turnId:s}});i.d(t,{},{a:l})}),SpQB:(function(e,t,i){i.d(t,{a:()=>v,b:()=>_,c:()=>g});var s=i("QosV"),n=i("T0Rc"),r=i("BolX");i("I07G");var l=i("zd8w"),a=i("Wf1j"),o=i("SGsN"),c=i("A8rN"),d=i("Igf5"),u=i("WvjI"),h=i("yGJW"),f=i("tSEg"),p=i("kl6F"),m=i("rvFo"),L=i("GaA7"),y=i("q77y");function C(e,t,i,s,n){s?.aborted||e.setQueryData(t,e=>{if(null==e)return e;let t=e.targets.map(e=>e.id===i?{...e,...n}:e);return{...e,availableTargets:t.flatMap(e=>e.available?[e.target]:[]),targets:t}})}function g(e){let t,i,n,l,m,L,y=(0,s.c)(30),{turnId:C,cwd:g,deferEnrichment:v,getOpenPath:I,hostId:b,openPath:R}=e,w=void 0!==v&&v;y[0]!==g||y[1]!==w||y[2]!==I||y[3]!==b||y[4]!==R?(t={cwd:g,hostId:b,isQueryEnabled:w,getOpenPath:I,openPath:R,deferEnrichment:w},y[0]=g,y[1]=w,y[2]=I,y[3]=b,y[4]=R,y[5]=t):t=y[5];let{data:x,isFetching:S}=M(t),Z=x?.targets;y[6]!==g||y[7]!==w||y[8]!==b||y[9]!==R||y[10]!==Z||y[11]!==C?(i={turnId:C,cwd:g,deferEnrichment:w,hostId:b,openPath:R,targets:Z},y[6]=g,y[7]=w,y[8]=b,y[9]=R,y[10]=Z,y[11]=C,y[12]=i):i=y[12];let E=function(e){let t,i,n=(0,s.c)(12),{turnId:l,cwd:m,deferEnrichment:L,hostId:y,openPath:C,targets:g}=e,v=(0,r.y)(f.a),_=(0,a.a)();n[0]!==_||n[1]!==v?(t=()=>{v.get(o.f).danger(_.formatMessage({id:"localConversation.openTarget.error",defaultMessage:"Unable to open item"}),{errorAnalytics:{toastId:"localConversation.openTarget.error"}})},n[0]=_,n[1]=v,n[2]=t):t=n[2];let M=t;return n[3]!==m||n[4]!==L||n[5]!==y||n[6]!==C||n[7]!==v||n[8]!==M||n[9]!==g||n[10]!==l?(i=(e,t)=>{let{appPath:i,environmentId:s,openMode:n,persistPreferred:r,line:a,column:o,path:_}=t,I=_??C??m;if(!I)return;let b=g?.find(t=>t.target===e&&(t.appPath??null)===(i??null));if(b?.kind==="editor"&&null!=l){let t=v.get(u.a);null!=t&&v.get(h.c).submitCodexAnalyticsEvent?.({action:"open_in_ide",eventKind:"action",metadata:{target:e},threadId:t.threadId,turnId:l})}r&&m&&v.query.setData(c.a,{cwd:m,hostId:y,path:C,...L?{deferEnrichment:!0}:{}},t=>t?{...t,preferredTarget:e,targets:t.targets.map(t=>({...t,default:t.target===e||void 0}))}:t),v.get(d.a).mutate({recentFilesThreadId:v.getOwnValue(p.a).clientThreadId,path:I,conversationId:(0,f.d)(v.value)??void 0,environmentId:s,cwd:m??null,target:e,appPath:i,line:a,column:o,openMode:n,...r&&m?{persistPreferredTargetPath:m}:{},hostId:y},{onSuccess:e=>{e.success||M()},onError:M})},n[3]=m,n[4]=L,n[5]=y,n[6]=C,n[7]=v,n[8]=M,n[9]=g,n[10]=l,n[11]=i):i=n[11],i}(i);y[13]!==g||y[14]!==b||y[15]!==R?(n=_({cwd:g,hostId:b,openPath:R}),y[13]=g,y[14]=b,y[15]=R,y[16]=n):n=y[16];let A=n,T=x?.preferredTarget??null;y[17]!==x?.targets?(l=x?.targets??[],y[17]=x?.targets,y[18]=l):l=y[18],y[19]!==x?.availableTargets?(m=x?.availableTargets??[],y[19]=x?.availableTargets,y[20]=m):m=y[20];let V=x?.mode,q=null!=x;return y[21]!==A||y[22]!==S||y[23]!==E||y[24]!==q||y[25]!==T||y[26]!==l||y[27]!==m||y[28]!==V?(L={canLoadTargets:A,preferredTarget:T,targets:l,availableTargets:m,mode:V,hasLoadedTargets:q,isLoadingTargets:S,open:E},y[21]=A,y[22]=S,y[23]=E,y[24]=q,y[25]=T,y[26]=l,y[27]=m,y[28]=V,y[29]=L):L=y[29],L}function v(e){let t,i,n,r,a,o=(0,s.c)(26),{cwd:c,delayMs:d,getOpenPath:u,hostId:h,openPath:f}=e,p=void 0===d?0:d;o[0]!==c||o[1]!==h||o[2]!==f?(t=_({cwd:c,hostId:h,openPath:f}),o[0]=c,o[1]=h,o[2]=f,o[3]=t):t=o[3];let m=t,L=p<=0;o[4]!==c||o[5]!==u||o[6]!==h||o[7]!==f||o[8]!==L?(i={cwd:c,hostId:h,isQueryEnabled:L,getOpenPath:u,openPath:f},o[4]=c,o[5]=u,o[6]=h,o[7]=f,o[8]=L,o[9]=i):i=o[9];let{data:y,refetch:C}=M(i);o[10]!==C?(n=()=>{C()},o[10]=C,o[11]=n):n=o[11];let g=(0,l.useEffectEvent)(n);return o[12]!==m||o[13]!==y||o[14]!==p||o[15]!==g||o[16]!==L?(r=()=>{if(L||!m||null!=y)return;let e=window.setTimeout(g,p);return()=>{window.clearTimeout(e)}},o[12]=m,o[13]=y,o[14]=p,o[15]=g,o[16]=L,o[17]=r):r=o[17],o[18]!==m||o[19]!==c||o[20]!==y||o[21]!==p||o[22]!==h||o[23]!==f||o[24]!==L?(a=[m,c,y,p,h,f,L],o[18]=m,o[19]=c,o[20]=y,o[21]=p,o[22]=h,o[23]=f,o[24]=L,o[25]=a):a=o[25],(0,l.useEffect)(r,a),null}function _(e){let{cwd:t,hostId:i,openPath:s}=e;return!!(t??s)&&!1}function M(e){let t,i,l,a,o,d=(0,s.c)(21),{cwd:u,deferEnrichment:h,getOpenPath:p,hostId:g,isQueryEnabled:v,openPath:M}=e,I=void 0!==h&&h,b=(0,r.y)(f.a);d[0]!==u||d[1]!==I||d[2]!==g||d[3]!==M||d[4]!==b.query?(t={cwd:u,hostId:g,path:M,...I?{deferEnrichment:!0}:{}},i=b.query.getOptions(c.a,t),d[0]=u,d[1]=I,d[2]=g,d[3]=M,d[4]=b.query,d[5]=t,d[6]=i):(t=d[5],i=d[6]);let R=i;return d[7]!==p||d[8]!==t||d[9]!==R||d[10]!==b.queryClient?(l=async e=>{let{signal:i}=e;return async function(e){var t,i;let{params:s,queryClient:n,queryKey:r,signal:l}=e;if(s.deferEnrichment)return async function(e){let{params:t,queryClient:i,queryKey:s,signal:n}=e,r=L.a.openIn,l=await (0,c.c)(t,n);return n?.aborted?l:(i.setQueryData(s,l),await Promise.all(l.targets.map(async e=>{let t;try{t=(await (0,y.a)(r.detectTarget({target:e.target}),n)).available}catch{C(i,s,e.id,n,{available:!1,resolvedIcon:null});return}if(C(i,s,e.id,n,{available:t,...!t?{resolvedIcon:null}:{}}),!(!t||n?.aborted))try{let{icon:t}=await (0,y.a)(r.loadTargetIcon({target:e.target}),n);C(i,s,e.id,n,{resolvedIcon:t})}catch{C(i,s,e.id,n,{resolvedIcon:null})}})),i.getQueryData(s)??l)}({params:s,queryClient:n,queryKey:r,signal:l});(null==(t=s.hostId)||"local"===t)&&(i=s.path,0);return(0,c.c)(s,l)}({params:null==p?t:{...t,path:await p()},queryClient:b.queryClient,queryKey:R.queryKey,signal:i})},d[7]=p,d[8]=t,d[9]=R,d[10]=b.queryClient,d[11]=l):l=d[11],d[12]!==u||d[13]!==g||d[14]!==v||d[15]!==M?(a=_({cwd:u,hostId:g,openPath:M})&&v,d[12]=u,d[13]=g,d[14]=v,d[15]=M,d[16]=a):a=d[16],d[17]!==R||d[18]!==l||d[19]!==a?(o={...R,queryFn:l,enabled:a,staleTime:m.b.ONE_MINUTE},d[17]=R,d[18]=l,d[19]=a,d[20]=o):o=d[20],(0,n.a)(o)}}),wbP4:(function(e,t,i){var s=i("ABep"),n=i("QosV"),r=i("on57"),l=i("Sm6l"),a=i("bf6R");i.d(t,{},{a:function(e){let t,i,o,c,d,u,h,f,p=(0,n.c)(16);p[0]!==e?({icon:o,accessory:t,children:i,...c}=e,p[0]=e,p[1]=t,p[2]=i,p[3]=o,p[4]=c):(t=p[1],i=p[2],o=p[3],c=p[4]);let m=!0===c["aria-busy"]&&"loading-shimmer-pure-text";return p[5]!==m?(d=(0,r.b)("min-w-0 truncate",m),p[5]=m,p[6]=d):d=p[6],p[7]!==i||p[8]!==d?(u=(0,s.jsx)("span",{className:d,children:i}),p[7]=i,p[8]=d,p[9]=u):u=p[9],p[10]===Symbol.for("react.memo_cache_sentinel")?(h=(0,s.jsx)(a.fc,{className:"text-tertiary"}),p[10]=h):h=p[10],p[11]!==t||p[12]!==o||p[13]!==c||p[14]!==u?(f=(0,s.jsxs)(l.a,{...c,className:"w-fit max-w-full text-start",allowShrink:!0,color:"outlineSurface",size:"messageChip",radius:"full",children:[o,u,t,h]}),p[11]=t,p[12]=o,p[13]=c,p[14]=u,p[15]=f):f=p[15],f},b:function(e){let t,i=(0,n.c)(2),{emoji:r}=e;return i[0]!==r?(t=(0,s.jsx)("span",{"aria-hidden":!0,className:"flex size-5 shrink-0 items-center justify-center p-0.5 leading-none",children:r}),i[0]=r,i[1]=t):t=i[1],t}})}),uWtN:(function(e,t,i){i.d(t,{a:()=>M});var s=i("BolX"),n=i("PFjh"),r=i("Cslg"),l=i("IYFr"),a=i("OWtl"),o=i("fVOX");let c={$type:"protobuf_analytics_events.v1.DotMessageLifecycleEvent"};i("ReGc");var d=i("yGJW"),u=i("SClg"),h=i("w5lF"),f=i("v9CB"),p=i("pwwq"),m=i("WFY2");class L{roomId;options;sends=new Map;inputs=new Map;replies=new Map;lifecycleSends=new Map;lifecycleReplies=new Map;lifecycleListeners=new Map;operations=new Set;wallOrigin=Date.now()-performance.now();views=new Map;reactionSenderId;roomKind="unknown";visibilityChanged=()=>{"visible"!==document.visibilityState&&this.interruptObservations()};constructor(e,t={}){this.roomId=e,this.options=t}setActive(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:this,i=this.active;this.views.set(t,e),this.active||this.interruptObservations(),i!==this.active&&this.notifyLifecycleReplies()}release(e){let t=this.active;this.views.delete(e),this.active||this.interruptObservations(),t!==this.active&&this.notifyLifecycleReplies()}setReactionSender(e){if(this.reactionSenderId!==e){for(let t of(this.reactionSenderId=e,this.replies.values()))this.emitLifecycleReply(t);for(let e of this.lifecycleReplies.values())this.emitLifecycleReply(e);this.notifyLifecycleReplies()}}setRoomKind(e){this.roomKind=e}get idle(){return 0===this.views.size&&0===this.sends.size&&0===this.lifecycleSends.size&&0===this.operations.size}get active(){for(let e of this.views.values())if(e)return!0;return!1}startSend(e,t){let i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"messages",s=arguments.length>3&&void 0!==arguments[3]&&arguments[3],n=arguments.length>4?arguments[4]:void 0;var r=this;let l=this.sends.get(e);if(s||null==l||this.finish(l,"aborted",performance.now()),!s&&this.sends.size>=64){let e=this.sends.values().next().value;null!=e&&this.finish(e,"aborted",performance.now())}let a=performance.now(),o=void 0===t?void 0:y(t),c=(s?l?.measurementId:void 0)??crypto.randomUUID(),d=(s?l?.roomKind:void 0)??this.roomKind,u={client_request_id:e,measurement_id:c,room_kind:d,is_retry:s,metadata_kinds:n,input_text_characters:o,entry_point:i},f=s?l?.trace??null:(0,p.f)({name:"orbit.messaging.client.message_flow",attributes:C(this.roomId,this.options.surface??"unknown",u)}),m=this.operation("client.http_send",u,f?.trace);if(s)null!=l&&(l.finishHttp=m.finish);else{let t={metadataKinds:n,clientRequestId:e,measurementId:c,roomKind:d,entryPoint:i,inputTextCharacters:o,startedAt:a,firstResponseRecorded:!1,interruptedAt:this.active&&"visible"===document.visibilityState?void 0:a,trace:f,finishHttp:m.finish,timeout:setTimeout(()=>{this.finish(t,"timeout",performance.now()),this.expireLifecycle(t)},3e5)};if(l=t,this.sends.set(e,l),this.tracksLifecycle(l)){let t=this.lifecycleSends.get(e);if(null!=t&&this.expireLifecycle(t),this.lifecycleSends.size>=64){let e=this.lifecycleSends.values().next().value;null!=e&&this.expireLifecycle(e)}this.lifecycleSends.set(e,l)}document.addEventListener("visibilitychange",this.visibilityChanged),this.options.onPendingChange?.(!0),this.emit("client.send","started",u,a,f?.trace),this.emitLifecycle(l,"DOT_MESSAGE_LIFECYCLE_EVENT_TYPE_SEND_MESSAGE",{at:a,active:this.active,visible:"visible"===document.visibilityState}),this.notifyLifecycleReplies()}return{headers:m.headers,responseHeaders:e=>{if(this.operations.has(m.finish))try{this.emit("client.http_response_headers","success",{...u,server_request_id:h.j.parse(e.get("x-oai-request-id"))},performance.now())}catch{}},accepted:t=>{m.finish(void 0,{message_id:t}),null!=l&&this.sends.get(e)===l&&l.finishHttp===m.finish&&this.associateInput(l,t)},failed:function(t){let i=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"request";if(m.finish(t,{failure_stage:i}),null==l||r.sends.get(e)!==l||l.finishHttp!==m.finish)return;let n=v(t);s||"delivery_unknown"===n||r.finish(l,n,performance.now())}}}startRead(e){let t=[...this.replies.values()].filter(e=>null!=e.send&&null==e.availableAt),i=1===t.length?t[0]:void 0;return this.operation("history"===e?"client.history_fetch":"client.room_fetch",null==i?{}:{...g(i.identity),client_request_id:i.send?.clientRequestId,measurement_id:i.send?.measurementId,room_kind:i.send?.roomKind,input_text_characters:i.send?.inputTextCharacters,entry_point:i.send?.entryPoint},i?.send?.trace?.trace)}received(e,t){let i=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(e!==this.roomId)return;let s=performance.now(),n=t.clientRequestId?this.sends.get(t.clientRequestId):void 0;if(t.self&&null!=n){this.emit("client.pubsub_received","success",{client_request_id:n.clientRequestId,measurement_id:n.measurementId,room_kind:n.roomKind,input_text_characters:n.inputTextCharacters,entry_point:n.entryPoint,message_id:t.messageId},s,n.trace?.trace),this.associateInput(n,t.messageId);return}let r=this.reply(t);if(null==r)return void this.emit("client.pubsub_received","unmatched",g(t),s);if(null!=r.receivedAt){this.emitLifecycleReply(r),this.emit("client.pubsub_received","duplicate",{...g(t),measurement_id:r.send?.measurementId,room_kind:r.send?.roomKind},s);return}r.receivedAt=this.moment(),this.recordLifecycleReceipt(r,r.receivedAt,i?"DOT_MESSAGE_LIFECYCLE_DELIVERY_SOURCE_HISTORY":"DOT_MESSAGE_LIFECYCLE_DELIVERY_SOURCE_LIVE_UPDATE"),null==r.send&&this.emit("client.pubsub_received","unmatched",g(t),s),this.emitReply(r)}projected(e,t,i){if(e.roomId!==this.roomId||""!==e.deliveryState)return;let s=this.sends.get(e.requestId);if(e.self&&null!=s)return void this.associateInput(s,e.id);let n={messageId:e.id,clientRequestId:e.requestId,replyToMessageId:e.replyTo?.messageId,self:e.self,role:e.role,accountUserId:e.senderId},r=this.reply(n);null!=r&&(r.identity.role=n.role,r.identity.accountUserId=n.accountUserId,r.availableAt=r.availableAt??this.moment(),r.lifecycleDeleted=!!e.deletedAt,r.lifecycleDeleted||this.recordLifecycleReceipt(r,this.moment(),i),null!=r.textCharacters||void 0===t||e.deletedAt||(r.textCharacters=y(t??"")),this.emitReply(r),this.notifyLifecycleReply(e.id))}committed(e){let t=this.replies.get(e);null!=t&&(t.committedAt=t.committedAt??this.moment(),this.emitReply(t))}observeRenderedMessage(e,t){let i=this.reply({messageId:e,self:!1},!0);null!=i&&(i.availableAt=i.availableAt??this.moment(),this.recordLifecycleReceipt(i,i.availableAt),null==i.textCharacters&&void 0!==t&&(i.textCharacters=y(t??"")),this.emitReply(i))}hasPendingReply(e){return this.replies.has(e)}hasLifecycleCandidate(e){let t=this.lifecycleReplies.get(e);return null!=t&&null==t.lifecycleRenderedAt}hasPendingLifecycleReply(e){if(!this.active)return!1;let t=this.lifecycleReplies.get(e);if(null==t||null!=t.lifecycleRenderedAt||t.lifecycleDeleted||null!=t.identity.role&&"user"!==t.identity.role||null!=this.reactionSenderId&&null!=t.identity.accountUserId&&t.identity.accountUserId!==this.reactionSenderId)return!1;for(let e of null==t.send?this.lifecycleSends.values():[t.send])if(this.lifecycleSends.get(e.clientRequestId)===e&&(null!=t.send||null==t.identity.replyToMessageId||null==e.messageId)&&performance.now()-e.startedAt<3e5)return!0;return!1}subscribeLifecycleReply(e,t){if(!this.hasLifecycleCandidate(e))return()=>{};let i=this.lifecycleListeners.get(e);return null==i&&(i=new Set,this.lifecycleListeners.set(e,i)),i.add(t),()=>{i.delete(t),0===i.size&&this.lifecycleListeners.get(e)===i&&this.lifecycleListeners.delete(e)}}rendered(e){if(!this.hasPendingLifecycleReply(e)||"visible"!==document.visibilityState)return;let t=this.lifecycleReplies.get(e);null!=t&&(t.lifecycleRenderedAt=this.moment(),this.emitLifecycleReply(t),this.notifyLifecycleReply(e))}hasPendingReaction(e){let t=this.inputs.get(e.id),i=this.reactionSenderId;return e.roomId===this.roomId&&e.self&&!e.deletedAt&&t?.entryPoint==="messages"&&!t.firstResponseRecorded&&null!=i&&e.reactions.some(e=>e.accountUserIds.includes(i))}reactionPaintOpportunity(e){if(!this.hasPendingReaction(e)||!this.active||"visible"!==document.visibilityState)return;let t=this.inputs.get(e.id);null!=t&&this.firstResponse(t,"success",performance.now(),{response_type:"reaction"})}paintOpportunity(e){let t=this.replies.get(e);null!=t&&this.active&&"visible"===document.visibilityState&&(t.paintedAt=t.paintedAt??this.moment(),this.emitReply(t))}paintPreviewOpportunity(e){let t=this.replies.get(e);null!=t&&"visible"===document.visibilityState&&(t.paintedAt=t.paintedAt??this.moment(),this.emitReply(t))}subscription(e){this.emit("client.subscription",e?"success":"aborted",{},performance.now())}dispose(){this.views.clear();let e=new DOMException("Messaging session closed","AbortError");for(let t of this.operations)t(e);for(let e of this.sends.values())this.finish(e,"aborted",performance.now());for(let e of(this.inputs.clear(),this.replies.clear(),this.lifecycleSends.values()))this.expireLifecycle(e);this.lifecycleReplies.clear(),this.notifyLifecycleReplies()}associateInput(e,t){for(let i of(e.messageId=t,this.inputs.set(t,e),this.replies.values()))i.identity.replyToMessageId===t&&(i.send=e,this.retainLifecycleReply(i),this.emitReply(i));for(let i of this.lifecycleReplies.values())i.identity.replyToMessageId===t&&(i.send=e,this.emitLifecycleReply(i));this.notifyLifecycleReplies()}reply(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];if(e.self||!e.replyToMessageId&&!t||0===this.sends.size&&0===this.lifecycleSends.size)return;let i=this.replies.get(e.messageId)??this.lifecycleReplies.get(e.messageId);if(null!=i)return i.identity.role=e.role??i.identity.role,i.identity.accountUserId=e.accountUserId??i.identity.accountUserId,!i.identity.replyToMessageId&&e.replyToMessageId&&(i.identity=e,i.send=this.findSend(e.replyToMessageId)),this.retainLifecycleReply(i),this.notifyLifecycleReply(e.messageId),i;if(this.replies.size>=64){let e=this.replies.keys().next().value;null!=e&&(this.replies.delete(e),this.notifyLifecycleReply(e))}let s={identity:e,send:e.replyToMessageId?this.findSend(e.replyToMessageId):void 0,emitted:new Set};return this.sends.size>0&&this.replies.set(e.messageId,s),this.lifecycleSends.size>0&&this.retainLifecycleReply(s),this.notifyLifecycleReply(e.messageId),s}emitReply(e){this.emitLifecycleReply(e);let t=e.send;if(null==t||this.sends.get(t.clientRequestId)!==t)return;let i={...g(e.identity),client_request_id:t.clientRequestId,measurement_id:t.measurementId,room_kind:t.roomKind,input_text_characters:t.inputTextCharacters,reply_text_characters:e.textCharacters,entry_point:t.entryPoint};for(let[s,n]of[["client.pubsub_received",e.receivedAt],["client.message_available",e.availableAt],["client.message_committed",e.committedAt],["client.message_paint_opportunity",e.paintedAt]])null==n||e.emitted.has(s)||(e.emitted.add(s),this.emit(s,"success",i,n.at,t.trace?.trace,t.startedAt,n));null!=e.paintedAt&&null!=e.committedAt&&this.finish(t,"success",e.paintedAt.at,i,e.paintedAt)}finish(e,t,i){let s=arguments.length>3&&void 0!==arguments[3]?arguments[3]:{},n=arguments.length>4?arguments[4]:void 0;if(this.sends.get(e.clientRequestId)===e){for(let[r,l]of("success"!==t&&this.expireLifecycle(e),this.lifecycleSends.get(e.clientRequestId)!==e&&clearTimeout(e.timeout),"success"!==t&&e.finishHttp(new DOMException("Message observation ended","AbortError")),this.firstResponse(e,t,i,{...s,response_type:"success"===t?"reply":void 0},n),this.emit("client.round_trip",t,{measurement_id:e.measurementId,room_kind:e.roomKind,client_request_id:e.clientRequestId,input_text_characters:e.inputTextCharacters,entry_point:e.entryPoint,message_id:e.messageId,observation_interrupted:null!=e.interruptedAt&&e.interruptedAt<=i,...s},i,e.trace?.trace,e.startedAt,n),e.trace?.finish(void 0,{outcome:"success"===t||"aborted"===t?t:"failure",reason:"success"===t?null:t}),this.sends.delete(e.clientRequestId),null!=e.messageId&&this.inputs.delete(e.messageId),this.replies))l.send===e&&this.replies.delete(r);0===this.sends.size&&(document.removeEventListener("visibilitychange",this.visibilityChanged),this.replies.clear(),0===this.lifecycleSends.size&&this.options.onPendingChange?.(!1)),this.notifyLifecycleReplies()}}tracksLifecycle(e){return null!=this.options.onLifecycle&&"orbit"===this.options.surface&&"dot"===e.roomKind}recordLifecycleReceipt(e,t,i){null!=this.options.onLifecycle&&null==e.lifecycleReceipt&&(e.lifecycleReceipt={moment:t,source:i})}emitLifecycleReply(e){let t=e.send;!(null==t||!this.tracksLifecycle(t)||!this.isLifecycleReply(e)||performance.now()-t.startedAt>=3e5)&&this.lifecycleSends.get(t.clientRequestId)===t&&(null==e.lifecycleReceipt||e.lifecycleReceivedEmitted||(e.lifecycleReceivedEmitted=!0,this.emitLifecycle(t,"DOT_MESSAGE_LIFECYCLE_EVENT_TYPE_RECEIVE_MESSAGE",e.lifecycleReceipt.moment,e)),null==e.lifecycleRenderedAt||e.lifecycleRenderedEmitted||(e.lifecycleRenderedEmitted=!0,this.emitLifecycle(t,"DOT_MESSAGE_LIFECYCLE_EVENT_TYPE_RENDER_MESSAGE",e.lifecycleRenderedAt,e)))}emitLifecycle(e,t,i,s){this.tracksLifecycle(e)&&this.options.onLifecycle?.({type:t,observationId:e.measurementId,metadataKinds:e.metadataKinds,roomId:this.roomId,clientRequestId:e.clientRequestId,inputMessageId:null==s?void 0:e.messageId,replyMessageId:s?.identity.messageId,elapsedMs:String(Math.max(0,Math.ceil(i.at-e.startedAt))),isAppVisible:i.visible,isActiveRoom:i.active,deliverySource:s?.lifecycleReceipt?.source},this.wallOrigin+i.at)}isLifecycleReply(e){return!e.lifecycleDeleted&&"user"===e.identity.role&&null!=this.reactionSenderId&&e.identity.accountUserId===this.reactionSenderId}retainLifecycleReply(e){if(0!==this.lifecycleSends.size&&(null==e.send||this.lifecycleSends.get(e.send.clientRequestId)===e.send)&&(null!=e.send||null==e.identity.replyToMessageId||[...this.lifecycleSends.values()].some(e=>null==e.messageId))&&!this.lifecycleReplies.has(e.identity.messageId)){if(this.lifecycleReplies.size>=64){let t=[...this.lifecycleReplies.values()].find(e=>null==e.send);if(null==t&&null==e.send)return;let i=t??this.lifecycleReplies.values().next().value;null!=i&&(this.lifecycleReplies.delete(i.identity.messageId),null!=i.send&&this.expireLifecycle(i.send),this.notifyLifecycleReply(i.identity.messageId))}this.lifecycleSends.size>0&&(null==e.send||this.lifecycleSends.get(e.send.clientRequestId)===e.send)&&this.lifecycleReplies.set(e.identity.messageId,e)}}findSend(e){let t=this.inputs.get(e);if(null!=t)return t;for(let t of this.lifecycleSends.values())if(t.messageId===e)return t}expireLifecycle(e){if(this.lifecycleSends.get(e.clientRequestId)===e){for(let[t,i]of(this.lifecycleSends.delete(e.clientRequestId),this.lifecycleReplies))(i.send===e||0===this.lifecycleSends.size)&&(this.lifecycleReplies.delete(t),this.notifyLifecycleReply(t));this.sends.get(e.clientRequestId)!==e&&clearTimeout(e.timeout),0===this.sends.size&&0===this.lifecycleSends.size&&this.options.onPendingChange?.(!1)}}notifyLifecycleReply(e){for(let t of this.lifecycleListeners.get(e)??[])t();this.hasLifecycleCandidate(e)||this.lifecycleListeners.delete(e)}notifyLifecycleReplies(){for(let e of this.lifecycleListeners.keys())this.notifyLifecycleReply(e)}firstResponse(e,t,i,s,n){"messages"!==e.entryPoint||e.firstResponseRecorded||(e.firstResponseRecorded=!0,this.emit("client.first_response",t,{measurement_id:e.measurementId,room_kind:e.roomKind,client_request_id:e.clientRequestId,message_id:e.messageId,input_text_characters:e.inputTextCharacters,entry_point:e.entryPoint,observation_interrupted:null!=e.interruptedAt&&e.interruptedAt<=i,...s},i,e.trace?.trace,e.startedAt,n))}interruptObservations(){let e=performance.now();for(let t of this.sends.values())t.interruptedAt=t.interruptedAt??e}operation(e,t,i){var s=this;this.operations.size>=64&&this.operations.values().next().value?.(new DOMException("Message observation capacity exceeded","AbortError"));let n=performance.now(),r=(0,p.f)({name:`orbit.messaging.${e}`,attributes:C(this.roomId,this.options.surface??"unknown",t),trace:i}),l={...t,trace_id:r?.trace.traceparent.split("-")[1]};this.emit(e,"started",l,n);let a=function(t){let i=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};if(!s.operations.delete(a))return;clearTimeout(o);let c=null==t?"success":v(t);s.emit(e,c,{...l,...i},performance.now(),void 0,n),r?.finish(t)},o=setTimeout(()=>{a(new DOMException("Message observation timed out","TimeoutError"))},3e5);this.operations.add(a);let c={};return null!=r&&(c.traceparent=r.trace.traceparent,null!=r.trace.tracestate&&(c.tracestate=r.trace.tracestate)),{headers:c,finish:a}}emit(e,t,i,s,n,r,l){let a=null==r?void 0:Math.max(0,s-r),o="instant";null!=r&&(o="client.round_trip"===e||"client.first_response"===e||"client.http_send"===e||"client.history_fetch"===e||"client.room_fetch"===e?"duration":"elapsed_since_send");let c={event:"orbit.messaging.stage",surface:this.options.surface??"unknown",stage:e,outcome:t,durationMs:a,measurement:o,clientTimestampMs:this.wallOrigin+s,sessionActive:l?.active??this.active,documentVisible:l?.visible??"visible"===document.visibilityState,inputTextCharacters:i.input_text_characters,replyTextCharacters:i.reply_text_characters,entryPoint:i.entry_point,responseType:i.response_type,observationInterrupted:i.observation_interrupted,measurementId:i.measurement_id,serverRequestId:i.server_request_id,roomKind:i.room_kind??this.roomKind,isRetry:i.is_retry,metadataKinds:i.metadata_kinds,failureStage:i.failure_stage},d=C(this.roomId,c.surface,{...i,trace_id:n?.traceparent.split("-")[1]??i.trace_id});m.a.info("Orbit messaging stage",{safe:c,sensitive:{roomId:this.roomId,clientRequestId:i.client_request_id,messageId:i.message_id,replyToMessageId:i.reply_to_message_id,traceId:d.trace_id}}),this.options.onRecord?.(c);let u=`orbit.messaging.${e}`,h={...c,...d};performance.clearMarks(u),performance.mark(u,{startTime:s,detail:h}),null!=r&&(performance.clearMeasures(u),performance.measure(u,{start:r,end:s,detail:h})),null!=n&&(0,p.c)({name:u,trace:n,attributes:{stage:e,outcome:t,...d},startTimeMs:this.wallOrigin+("client.round_trip"===e||"client.first_response"===e?r??s:s),endTimeMs:this.wallOrigin+s,failed:"failure"===t||"timeout"===t})}moment(){return{at:performance.now(),active:this.active,visible:"visible"===document.visibilityState}}}function y(e){let t=0;for(let i of e)t++;return t}function C(e,t,i){let s={room_id:e,surface:t};for(let[e,t]of Object.entries(i))null!=t&&(s[e]=t);return s}function g(e){return{message_id:e.messageId,client_request_id:e.clientRequestId||void 0,reply_to_message_id:e.replyToMessageId||void 0}}function v(e){if(e instanceof Error||e instanceof DOMException){if("AbortError"===e.name)return"aborted";if("TimeoutError"===e.name)return"timeout"}return e instanceof f.b&&e.deliveryUnknown?"delivery_unknown":"failure"}let _=(0,s.j)(a.a,()=>new I);function M(e,t){return e.get(_,void 0).get(e,t)}class I{identityKey=null;rooms=new Map;pendingRooms=new Set;stopWatching;stopSubscription;get(e,t){let{accountId:i,userId:s,accountUserId:a,roomId:h}=t,f=JSON.stringify([i,s,a]);if(this.identityKey!==f){this.dispose(),this.identityKey=f;let t=e.watch(e=>{let{get:t}=e;(t(r.f)!==i||t(r.k)!==s)&&this.dispose()});this.identityKey===f?this.stopWatching=t:t()}let p=this.rooms.get(h);if(null!=p)return p;let m=(0,n.c)(e),y=new L(h,{surface:"orbit",onLifecycle:(t,n)=>{try{if(e.get(r.f)!==i||e.get(r.k)!==s)return;let l=(0,u.c)(),a=l?.trim();(0,d.a)(e,c,{...t,client:{type:"DOT_MESSAGE_LIFECYCLE_CLIENT_TYPE_WEB",version:""===a||"dev"===a||"browser-dev"===a||"development"===a||"0.0.0"===a?void 0:a}},void 0,void 0,{expectedUserId:s,expectedAccountId:i,eventCreatedAt:new Date(n).toISOString()})}catch{}},onRecord:t=>{!function(e,t){if("client.first_response"!==t.stage&&"client.round_trip"!==t.stage||"started"===t.outcome)return;let i={stage:t.stage,outcome:t.outcome,entry_point:t.entryPoint??"unknown",observation_interrupted:String(t.observationInterrupted??!1)};e.count("default","orbit.messaging.client.response_result",i),null!=t.durationMs&&e.hist("default","orbit.messaging.client.response_duration_ms",i,t.durationMs)}(m,t),e.get(o.a).log({message:"Orbit messaging stage",status:"info",context:{event:t.event,surface:t.surface,stage:t.stage,outcome:t.outcome,measurement:t.measurement,durationMs:t.durationMs,clientTimestampMs:t.clientTimestampMs,sessionActive:t.sessionActive,documentVisible:t.documentVisible,inputTextCharacters:t.inputTextCharacters,replyTextCharacters:t.replyTextCharacters,entryPoint:t.entryPoint,responseType:t.responseType,observationInterrupted:t.observationInterrupted,measurementId:t.measurementId,serverRequestId:t.serverRequestId,roomKind:t.roomKind,isRetry:t.isRetry,metadataKinds:t.metadataKinds,failureStage:t.failureStage}})},onPendingChange:e=>{this.rooms.get(h)===y&&(e?this.pendingRooms.add(h):this.pendingRooms.delete(h),0===this.pendingRooms.size?(this.stopSubscription?.(),this.stopSubscription=void 0):null==this.stopSubscription&&(this.stopSubscription=(0,l.a)({accountId:i,userId:s,onUpdate:()=>{},onMessageReceived:(e,t,i)=>{null!=t.id&&this.pendingRooms.has(e)&&this.rooms.get(e)?.received(e,{messageId:t.id,clientRequestId:t.request_id,replyToMessageId:t.reply_to?.message_id,role:t.role,accountUserId:t.account_user_id,self:"user"===t.role&&t.account_user_id===a},i)}})))}}),C=[...this.rooms.values()].filter(e=>e.idle).length;for(let[e,t]of this.rooms)t.idle&&C>=64&&(t.dispose(),this.rooms.delete(e),C--);return this.rooms.set(h,y),y}dispose(){this.identityKey=null,this.stopWatching?.(),this.stopWatching=void 0,this.stopSubscription?.(),this.stopSubscription=void 0,this.pendingRooms.clear();let e=[...this.rooms.values()];for(let t of(this.rooms.clear(),e))t.dispose()}}})};
+export const __rspack_esm_ids = [228361];
+export const __webpack_modules__ = {
+        XK0l: (function(e, t, i) {
+            var s = i("ABep"),
+                n = i("QosV");
+            t.default = e => {
+                let t, i, r, l, a, o = (0, n.c)(6);
+                return o[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, s.jsxs)("g", {
+                    filter: "url(#filter0_d_8150_6803)",
+                    children: [(0, s.jsx)("mask", {
+                        id: "path-1-inside-1_8150_6803",
+                        fill: "white",
+                        children: (0, s.jsx)("path", {
+                            fillRule: "evenodd",
+                            clipRule: "evenodd",
+                            d: "M23 7.85169C23 7.59052 23.0001 7.32933 22.9985 7.06813C22.9972 6.84811 22.9947 6.62813 22.9887 6.40822C22.9758 5.92889 22.9475 5.44545 22.8622 4.97147C22.7758 4.49065 22.6346 4.04314 22.4121 3.60627C22.1934 3.17687 21.9077 2.78394 21.5668 2.44329C21.226 2.10264 20.833 1.81712 20.4034 1.59854C19.9661 1.376 19.5181 1.23487 19.0367 1.14845C18.5627 1.06333 18.0791 1.03511 17.5998 1.02216C17.3797 1.01621 17.1597 1.0137 16.9395 1.01233C16.6782 1.01073 16.4169 1.01087 16.1555 1.01087L13.1213 1H10.8519L7.87129 1.01087C7.60946 1.01087 7.34762 1.01073 7.08578 1.01233C6.8652 1.0137 6.64472 1.01621 6.42421 1.02216C5.94377 1.03511 5.45911 1.06336 4.98395 1.14858C4.50195 1.23498 4.05331 1.37605 3.61539 1.59843C3.18493 1.81704 2.79104 2.10259 2.44951 2.44329C2.10803 2.78392 1.82179 3.17676 1.60267 3.60608C1.37958 4.04317 1.23813 4.49094 1.15146 4.97203C1.06613 5.44583 1.03786 5.9291 1.02486 6.40822C1.01893 6.62816 1.01637 6.84813 1.01503 7.06813C1.01343 7.32936 1 7.65383 1 7.91502L1.00008 10.8543L1 13.148L1.01356 16.1497C1.01356 16.4113 1.01346 16.6728 1.01503 16.9344C1.01637 17.1547 1.01893 17.375 1.02488 17.5952C1.03786 18.0751 1.06619 18.5593 1.1516 19.0339C1.23823 19.5154 1.37966 19.9635 1.60257 20.4009C1.82171 20.831 2.108 21.2244 2.44951 21.5655C2.79101 21.9067 3.18479 22.1925 3.61518 22.4114C4.05336 22.6343 4.50222 22.7756 4.98451 22.8621C5.45945 22.9474 5.94396 22.9757 6.42421 22.9886C6.64472 22.9946 6.86523 22.9971 7.08581 22.9984C7.34765 23 7.60946 22.9999 7.87129 22.9999L10.8788 23H13.1538L16.1555 22.9999C16.4169 22.9999 16.6782 23 16.9395 22.9984C17.1597 22.9971 17.3797 22.9946 17.5998 22.9886C18.0793 22.9756 18.5631 22.9473 19.0373 22.862C19.5184 22.7755 19.9661 22.6342 20.4032 22.4115C20.8329 22.1927 21.226 21.9067 21.5668 21.5655C21.9076 21.2244 22.1933 20.8311 22.412 20.4011C22.6347 19.9635 22.7758 19.5151 22.8623 19.0333C22.9475 18.5589 22.9758 18.075 22.9887 17.5952C22.9947 17.3749 22.9972 17.1547 22.9985 16.9344C23.0001 16.6728 23 16.4113 23 16.1497C23 16.1497 22.9998 13.201 22.9998 13.148V10.8519C22.9998 10.8128 23 7.85169 23 7.85169Z"
+                        })
+                    }), (0, s.jsx)("path", {
+                        fillRule: "evenodd",
+                        clipRule: "evenodd",
+                        d: "M23 7.85169C23 7.59052 23.0001 7.32933 22.9985 7.06813C22.9972 6.84811 22.9947 6.62813 22.9887 6.40822C22.9758 5.92889 22.9475 5.44545 22.8622 4.97147C22.7758 4.49065 22.6346 4.04314 22.4121 3.60627C22.1934 3.17687 21.9077 2.78394 21.5668 2.44329C21.226 2.10264 20.833 1.81712 20.4034 1.59854C19.9661 1.376 19.5181 1.23487 19.0367 1.14845C18.5627 1.06333 18.0791 1.03511 17.5998 1.02216C17.3797 1.01621 17.1597 1.0137 16.9395 1.01233C16.6782 1.01073 16.4169 1.01087 16.1555 1.01087L13.1213 1H10.8519L7.87129 1.01087C7.60946 1.01087 7.34762 1.01073 7.08578 1.01233C6.8652 1.0137 6.64472 1.01621 6.42421 1.02216C5.94377 1.03511 5.45911 1.06336 4.98395 1.14858C4.50195 1.23498 4.05331 1.37605 3.61539 1.59843C3.18493 1.81704 2.79104 2.10259 2.44951 2.44329C2.10803 2.78392 1.82179 3.17676 1.60267 3.60608C1.37958 4.04317 1.23813 4.49094 1.15146 4.97203C1.06613 5.44583 1.03786 5.9291 1.02486 6.40822C1.01893 6.62816 1.01637 6.84813 1.01503 7.06813C1.01343 7.32936 1 7.65383 1 7.91502L1.00008 10.8543L1 13.148L1.01356 16.1497C1.01356 16.4113 1.01346 16.6728 1.01503 16.9344C1.01637 17.1547 1.01893 17.375 1.02488 17.5952C1.03786 18.0751 1.06619 18.5593 1.1516 19.0339C1.23823 19.5154 1.37966 19.9635 1.60257 20.4009C1.82171 20.831 2.108 21.2244 2.44951 21.5655C2.79101 21.9067 3.18479 22.1925 3.61518 22.4114C4.05336 22.6343 4.50222 22.7756 4.98451 22.8621C5.45945 22.9474 5.94396 22.9757 6.42421 22.9886C6.64472 22.9946 6.86523 22.9971 7.08581 22.9984C7.34765 23 7.60946 22.9999 7.87129 22.9999L10.8788 23H13.1538L16.1555 22.9999C16.4169 22.9999 16.6782 23 16.9395 22.9984C17.1597 22.9971 17.3797 22.9946 17.5998 22.9886C18.0793 22.9756 18.5631 22.9473 19.0373 22.862C19.5184 22.7755 19.9661 22.6342 20.4032 22.4115C20.8329 22.1927 21.226 21.9067 21.5668 21.5655C21.9076 21.2244 22.1933 20.8311 22.412 20.4011C22.6347 19.9635 22.7758 19.5151 22.8623 19.0333C22.9475 18.5589 22.9758 18.075 22.9887 17.5952C22.9947 17.3749 22.9972 17.1547 22.9985 16.9344C23.0001 16.6728 23 16.4113 23 16.1497C23 16.1497 22.9998 13.201 22.9998 13.148V10.8519C22.9998 10.8128 23 7.85169 23 7.85169Z",
+                        fill: "url(#paint0_linear_8150_6803)"
+                    }), (0, s.jsx)("path", {
+                        d: "M22.9985 7.06813L22.4985 7.07111L22.4985 7.0712L22.9985 7.06813ZM22.9887 6.40822L22.4889 6.42169L22.4889 6.42181L22.9887 6.40822ZM22.8622 4.97147L22.3701 5.05995L22.3701 5.05997L22.8622 4.97147ZM22.4121 3.60627L22.8577 3.37937L22.8577 3.37933L22.4121 3.60627ZM21.5668 2.44329L21.2133 2.79693L21.2134 2.79697L21.5668 2.44329ZM20.4034 1.59854L20.6302 1.15291L20.6302 1.15291L20.4034 1.59854ZM19.0367 1.14845L18.9484 1.64058L18.9484 1.64058L19.0367 1.14845ZM17.5998 1.02216L17.5863 1.52198L17.5863 1.52198L17.5998 1.02216ZM16.9395 1.01233L16.9426 0.512344L16.9426 0.512344L16.9395 1.01233ZM16.1555 1.01087L16.1537 1.51087H16.1555V1.01087ZM13.1213 1L13.1231 0.5H13.1213V1ZM10.8519 1V0.499997L10.85 0.500003L10.8519 1ZM7.87129 1.01087V1.51087L7.87311 1.51086L7.87129 1.01087ZM7.08578 1.01233L7.08273 0.512344L7.0827 0.512344L7.08578 1.01233ZM6.42421 1.02216L6.43769 1.52198L6.43771 1.52198L6.42421 1.02216ZM4.98395 1.14858L5.07217 1.64074L5.07222 1.64073L4.98395 1.14858ZM3.61539 1.59843L3.389 1.15262L3.38899 1.15262L3.61539 1.59843ZM2.44951 2.44329L2.80262 2.79729L2.80263 2.79727L2.44951 2.44329ZM1.60267 3.60608L2.04802 3.83339L2.04802 3.83338L1.60267 3.60608ZM1.15146 4.97203L0.659383 4.88338L0.659379 4.8834L1.15146 4.97203ZM1.02486 6.40822L0.525041 6.39465L0.525038 6.39475L1.02486 6.40822ZM1.01503 7.06813L1.51502 7.0712L1.51502 7.07117L1.01503 7.06813ZM1 7.91502H0.5V7.91504L1 7.91502ZM1.00008 10.8543L1.50008 10.8543V10.8543L1.00008 10.8543ZM1 13.148L0.499995 13.148L0.500005 13.1503L1 13.148ZM1.01356 16.1497H1.51357L1.51356 16.1475L1.01356 16.1497ZM1.01503 16.9344L0.515041 16.9374L0.515041 16.9374L1.01503 16.9344ZM1.02488 17.5952L0.525066 17.6087L0.525066 17.6087L1.02488 17.5952ZM1.1516 19.0339L1.64369 18.9453L1.64369 18.9453L1.1516 19.0339ZM1.60257 20.4009L1.15707 20.628L1.15708 20.628L1.60257 20.4009ZM3.61518 22.4114L3.3885 22.8571L3.38853 22.8571L3.61518 22.4114ZM4.98451 22.8621L5.07284 22.37L5.07281 22.37L4.98451 22.8621ZM6.42421 22.9886L6.43771 22.4888H6.43769L6.42421 22.9886ZM7.08581 22.9984L7.08887 22.4984H7.08884L7.08581 22.9984ZM7.87129 22.9999L7.8713 22.4999H7.87129V22.9999ZM10.8788 23L10.8788 23.5H10.8788V23ZM13.1538 23V23.5H13.1539L13.1538 23ZM16.1555 22.9999V22.4999H16.1555L16.1555 22.9999ZM16.9395 22.9984L16.9365 22.4984H16.9365L16.9395 22.9984ZM17.5998 22.9886L17.6133 23.4884H17.6133L17.5998 22.9886ZM19.0373 22.862L19.1258 23.3541H19.1258L19.0373 22.862ZM20.4032 22.4115L20.1762 21.966L20.1762 21.966L20.4032 22.4115ZM21.5668 21.5655L21.2131 21.2121L21.2131 21.2121L21.5668 21.5655ZM22.412 20.4011L22.8577 20.6278L22.8577 20.6278L22.412 20.4011ZM22.8623 19.0333L23.3545 19.1217L23.3545 19.1217L22.8623 19.0333ZM22.9887 17.5952L22.4889 17.5817V17.5817L22.9887 17.5952ZM22.9985 16.9344L22.4985 16.9313L22.4985 16.9314L22.9985 16.9344ZM23 16.1497H23.5V16.1497L23 16.1497ZM23 7.85169H23.5C23.5 7.59099 23.5001 7.32812 23.4985 7.06507L22.9985 7.06813L22.4985 7.0712C22.5001 7.33054 22.5 7.59006 22.5 7.85169H23ZM22.9985 7.06813L23.4985 7.06516C23.4972 6.84347 23.4946 6.61956 23.4885 6.39462L22.9887 6.40822L22.4889 6.42181C22.4947 6.63671 22.4972 6.85274 22.4985 7.07111L22.9985 7.06813ZM22.9887 6.40822L23.4885 6.39474C23.4753 5.90713 23.4463 5.39412 23.3543 4.88296L22.8622 4.97147L22.3701 5.05997C22.4487 5.49679 22.4762 5.95065 22.4889 6.42169L22.9887 6.40822ZM22.8622 4.97147L23.3543 4.88299C23.2604 4.36025 23.1051 3.86518 22.8577 3.37937L22.4121 3.60627L21.9666 3.83317C22.1641 4.22111 22.2912 4.62104 22.3701 5.05995L22.8622 4.97147ZM22.4121 3.60627L22.8577 3.37933C22.615 2.90303 22.2982 2.46734 21.9202 2.08961L21.5668 2.44329L21.2134 2.79697C21.5172 3.10054 21.7718 3.45071 21.9666 3.8332L22.4121 3.60627ZM21.5668 2.44329L21.9203 2.08966C21.5424 1.71195 21.1066 1.39536 20.6302 1.15291L20.4034 1.59854L20.1766 2.04416C20.5593 2.23888 20.9096 2.49333 21.2133 2.79693L21.5668 2.44329ZM20.4034 1.59854L20.6302 1.15291C20.1439 0.905457 19.6483 0.750255 19.1251 0.656315L19.0367 1.14845L18.9484 1.64058C19.3879 1.71949 19.7883 1.84654 20.1766 2.04416L20.4034 1.59854ZM19.0367 1.14845L19.1251 0.656316C18.614 0.564535 18.1009 0.535513 17.6133 0.522342L17.5998 1.02216L17.5863 1.52198C18.0574 1.5347 18.5115 1.56212 18.9484 1.64058L19.0367 1.14845ZM17.5998 1.02216L17.6133 0.522343C17.3883 0.516254 17.1643 0.513716 16.9426 0.512344L16.9395 1.01233L16.9364 1.51233C17.155 1.51368 17.3712 1.51616 17.5863 1.52198L17.5998 1.02216ZM16.9395 1.01233L16.9426 0.512344C16.6794 0.510731 16.4163 0.510866 16.1555 0.510866V1.01087V1.51087C16.4174 1.51087 16.677 1.51074 16.9365 1.51233L16.9395 1.01233ZM16.1555 1.01087L16.1573 0.51087L13.1231 0.500003L13.1213 1L13.1195 1.5L16.1537 1.51086L16.1555 1.01087ZM13.1213 1V0.5H10.8519V1V1.5H13.1213V1ZM10.8519 1L10.85 0.500003L7.86947 0.51087L7.87129 1.01087L7.87311 1.51086L10.8537 1.5L10.8519 1ZM7.87129 1.01087V0.510866C7.60997 0.510866 7.34642 0.510731 7.08273 0.512344L7.08578 1.01233L7.08884 1.51233C7.34882 1.51074 7.60894 1.51087 7.87129 1.51087V1.01087ZM7.08578 1.01233L7.0827 0.512344C6.86059 0.513715 6.63621 0.516254 6.41072 0.522342L6.42421 1.02216L6.43771 1.52198C6.65323 1.51616 6.86981 1.51368 7.08887 1.51233L7.08578 1.01233ZM6.42421 1.02216L6.41074 0.522342C5.92208 0.535512 5.40792 0.564559 4.89568 0.656433L4.98395 1.14858L5.07222 1.64073C5.51029 1.56215 5.96546 1.53471 6.43769 1.52198L6.42421 1.02216ZM4.98395 1.14858L4.89573 0.656424C4.37197 0.750308 3.87583 0.905404 3.389 1.15262L3.61539 1.59843L3.84178 2.04424C4.23078 1.84671 4.63194 1.71965 5.07217 1.64074L4.98395 1.14858ZM3.61539 1.59843L3.38899 1.15262C2.91168 1.39503 2.47503 1.71157 2.09638 2.08931L2.44951 2.44329L2.80263 2.79727C3.10704 2.4936 3.45817 2.23905 3.84179 2.04424L3.61539 1.59843ZM2.44951 2.44329L2.0964 2.0893C1.71781 2.46693 1.40041 2.90251 1.15732 3.37878L1.60267 3.60608L2.04802 3.83338C2.24317 3.45102 2.49825 3.1009 2.80262 2.79729L2.44951 2.44329ZM1.60267 3.60608L1.15733 3.37877C0.909192 3.86492 0.753601 4.36036 0.659383 4.88338L1.15146 4.97203L1.64354 5.06067C1.72265 4.62151 1.84996 4.22142 2.04802 3.83339L1.60267 3.60608ZM1.15146 4.97203L0.659379 4.8834C0.567345 5.39443 0.538266 5.90732 0.525041 6.39465L1.02486 6.40822L1.52467 6.42178C1.53745 5.95088 1.56492 5.49722 1.64355 5.06065L1.15146 4.97203ZM1.02486 6.40822L0.525038 6.39475C0.518979 6.6196 0.516386 6.84343 0.515041 7.0651L1.01503 7.06813L1.51502 7.07117C1.51635 6.85284 1.51888 6.63672 1.52468 6.42168L1.02486 6.40822ZM1.01503 7.06813L0.515041 7.06507C0.514274 7.19006 0.510666 7.33114 0.507063 7.47944C0.503525 7.62505 0.5 7.77741 0.5 7.91502H1H1.5C1.5 7.79144 1.50319 7.65097 1.50677 7.50373C1.51028 7.35919 1.51419 7.20742 1.51502 7.0712L1.01503 7.06813ZM1 7.91502L0.5 7.91504L0.50008 10.8543L1.00008 10.8543L1.50008 10.8543L1.5 7.91501L1 7.91502ZM1.00008 10.8543L0.50008 10.8543L0.5 13.148L1 13.148L1.5 13.148L1.50008 10.8543L1.00008 10.8543ZM1 13.148L0.500005 13.1503L0.513568 16.152L1.01356 16.1497L1.51356 16.1475L1.49999 13.1458L1 13.148ZM1.01356 16.1497H0.513563C0.513563 16.4108 0.513454 16.674 0.515041 16.9374L1.01503 16.9344L1.51502 16.9314C1.51346 16.6716 1.51356 16.4118 1.51356 16.1497H1.01356ZM1.01503 16.9344L0.515041 16.9374C0.516386 17.1594 0.518979 17.3835 0.525066 17.6087L1.02488 17.5952L1.5247 17.5817C1.51888 17.3664 1.51635 17.15 1.51502 16.9313L1.01503 16.9344ZM1.02488 17.5952L0.525066 17.6087C0.538265 18.0969 0.567398 18.6106 0.6595 19.1225L1.1516 19.0339L1.64369 18.9453C1.56497 18.5079 1.53745 18.0534 1.5247 17.5817L1.02488 17.5952ZM1.1516 19.0339L0.6595 19.1225C0.753676 19.6458 0.909205 20.1415 1.15707 20.628L1.60257 20.4009L2.04806 20.1739C1.85011 19.7855 1.72279 19.3849 1.64369 18.9453L1.1516 19.0339ZM1.60257 20.4009L1.15708 20.628C1.40015 21.1049 1.71757 21.5411 2.09615 21.9193L2.44951 21.5655L2.80287 21.2118C2.49843 20.9077 2.24327 20.557 2.04805 20.1739L1.60257 20.4009ZM2.44951 21.5655L2.09615 21.9193C2.47473 22.2974 2.91125 22.6144 3.3885 22.8571L3.61518 22.4114L3.84185 21.9658C3.45834 21.7707 3.10729 21.5159 2.80287 21.2118L2.44951 21.5655ZM3.61518 22.4114L3.38853 22.8571C3.87567 23.1049 4.37209 23.2602 4.89621 23.3543L4.98451 22.8621L5.07281 22.37C4.63235 22.291 4.23104 22.1637 3.84182 21.9658L3.61518 22.4114ZM4.98451 22.8621L4.89617 23.3543C5.40822 23.4462 5.92224 23.4752 6.41074 23.4884L6.42421 22.9886L6.43769 22.4888C5.96567 22.4761 5.51068 22.4486 5.07284 22.37L4.98451 22.8621ZM6.42421 22.9886L6.41072 23.4884C6.63619 23.4945 6.86058 23.4971 7.08279 23.4984L7.08581 22.9984L7.08884 22.4984C6.86987 22.4971 6.65325 22.4946 6.43771 22.4888L6.42421 22.9886ZM7.08581 22.9984L7.08275 23.4984C7.34644 23.5 7.60992 23.4999 7.87129 23.4999V22.9999V22.4999C7.60899 22.4999 7.34886 22.5 7.08887 22.4984L7.08581 22.9984ZM7.87129 22.9999L7.87128 23.4999L10.8788 23.5L10.8788 23L10.8788 22.5L7.8713 22.4999L7.87129 22.9999ZM10.8788 23V23.5H13.1538V23V22.5H10.8788V23ZM13.1538 23L13.1539 23.5L16.1556 23.4999L16.1555 22.9999L16.1555 22.4999L13.1538 22.5L13.1538 23ZM16.1555 22.9999V23.4999C16.4163 23.4999 16.6794 23.5 16.9426 23.4984L16.9395 22.9984L16.9365 22.4984C16.677 22.5 16.4174 22.4999 16.1555 22.4999V22.9999ZM16.9395 22.9984L16.9426 23.4984C17.1643 23.4971 17.3883 23.4945 17.6133 23.4884L17.5998 22.9886L17.5863 22.4888C17.3712 22.4946 17.155 22.4971 16.9365 22.4984L16.9395 22.9984ZM17.5998 22.9886L17.6133 23.4884C18.1011 23.4752 18.6144 23.4461 19.1258 23.3541L19.0373 22.862L18.9488 22.3699C18.5117 22.4485 18.0575 22.476 17.5863 22.4888L17.5998 22.9886ZM19.0373 22.862L19.1258 23.3541C19.6488 23.2601 20.1441 23.1047 20.6302 22.857L20.4032 22.4115L20.1762 21.966C19.7881 22.1638 19.388 22.2909 18.9488 22.3699L19.0373 22.862ZM20.4032 22.4115L20.6302 22.857C21.1068 22.6143 21.5426 22.2972 21.9205 21.9189L21.5668 21.5655L21.2131 21.2121C20.9093 21.5162 20.5589 21.771 20.1762 21.966L20.4032 22.4115ZM21.5668 21.5655L21.9205 21.9189C22.2984 21.5408 22.6151 21.1047 22.8577 20.6278L22.412 20.4011L21.9664 20.1744C21.7715 20.5575 21.5169 20.9081 21.2131 21.2121L21.5668 21.5655ZM22.412 20.4011L22.8577 20.6278C23.1052 20.1412 23.2605 19.6453 23.3545 19.1217L22.8623 19.0333L22.3702 18.945C22.2912 19.385 22.1641 19.7858 21.9664 20.1744L22.412 20.4011ZM22.8623 19.0333L23.3545 19.1217C23.4463 18.6101 23.4754 18.0967 23.4885 17.6087L22.9887 17.5952L22.4889 17.5817C22.4762 18.0532 22.4487 18.5077 22.3702 18.945L22.8623 19.0333ZM22.9887 17.5952L23.4885 17.6087C23.4946 17.3835 23.4972 17.1593 23.4985 16.9373L22.9985 16.9344L22.4985 16.9314C22.4972 17.15 22.4947 17.3664 22.4889 17.5817L22.9887 17.5952ZM22.9985 16.9344L23.4985 16.9375C23.5001 16.6741 23.5 16.4108 23.5 16.1497H23H22.5C22.5 16.4118 22.5001 16.6716 22.4985 16.9313L22.9985 16.9344ZM23 16.1497C23.5 16.1497 23.5 16.1497 23.5 16.1497C23.5 16.1497 23.5 16.1496 23.5 16.1496C23.5 16.1495 23.5 16.1494 23.5 16.1492C23.5 16.1488 23.5 16.1483 23.5 16.1476C23.5 16.1462 23.5 16.1441 23.5 16.1413C23.5 16.1357 23.5 16.1274 23.5 16.1166C23.5 16.095 23.5 16.0633 23.5 16.0229C23.5 15.9422 23.5 15.8268 23.5 15.6882C23.5 15.4109 23.4999 15.0406 23.4999 14.6687C23.4999 13.9249 23.4998 13.1745 23.4998 13.148H22.9998H22.4998C22.4998 13.1745 22.4999 13.925 22.4999 14.6688C22.4999 15.0407 22.5 15.4109 22.5 15.6882C22.5 15.8268 22.5 15.9422 22.5 16.023C22.5 16.0633 22.5 16.095 22.5 16.1166C22.5 16.1275 22.5 16.1357 22.5 16.1413C22.5 16.1441 22.5 16.1462 22.5 16.1476C22.5 16.1483 22.5 16.1489 22.5 16.1492C22.5 16.1494 22.5 16.1496 22.5 16.1496C22.5 16.1497 22.5 16.1497 22.5 16.1497C22.5 16.1498 22.5 16.1498 23 16.1497ZM22.9998 13.148H23.4998V10.8519H22.9998H22.4998V13.148H22.9998ZM22.9998 10.8519H23.4998C23.4998 10.8324 23.4999 10.0823 23.4999 9.33715C23.4999 8.96457 23.5 8.59321 23.5 8.315C23.5 8.17589 23.5 8.06007 23.5 7.97903C23.5 7.93851 23.5 7.90668 23.5 7.88498C23.5 7.87414 23.5 7.86582 23.5 7.86022C23.5 7.85741 23.5 7.85529 23.5 7.85387C23.5 7.85316 23.5 7.85262 23.5 7.85226C23.5 7.85208 23.5 7.85195 23.5 7.85186C23.5 7.85181 23.5 7.85178 23.5 7.85175C23.5 7.85173 23.5 7.85172 23 7.85169C22.5 7.85167 22.5 7.85168 22.5 7.8517C22.5 7.85172 22.5 7.85176 22.5 7.8518C22.5 7.85189 22.5 7.85203 22.5 7.85221C22.5 7.85256 22.5 7.8531 22.5 7.85381C22.5 7.85523 22.5 7.85736 22.5 7.86016C22.5 7.86576 22.5 7.87408 22.5 7.88493C22.5 7.90663 22.5 7.93846 22.5 7.97898C22.5 8.06002 22.5 8.17584 22.5 8.31495C22.5 8.59316 22.4999 8.96451 22.4999 9.3371C22.4999 10.0822 22.4998 10.8323 22.4998 10.8519H22.9998Z",
+                        fill: "#C0CBDA",
+                        fillOpacity: .8,
+                        mask: "url(#path-1-inside-1_8150_6803)"
+                    })]
+                }), i = (0, s.jsx)("path", {
+                    d: "M13.2038 20C12.6705 20 12.1638 19.8987 11.6838 19.696C11.2038 19.4933 10.7772 19.2107 10.4038 18.848C9.9985 18.9867 9.57716 19.056 9.13983 19.056C8.42516 19.056 7.76383 18.88 7.15583 18.528C6.54783 18.176 6.05716 17.696 5.68383 17.088C5.32116 16.48 5.13983 15.8027 5.13983 15.056C5.13983 14.7467 5.18249 14.4107 5.26783 14.048C4.84116 13.6533 4.51049 13.2 4.27583 12.688C4.04116 12.1653 3.92383 11.6213 3.92383 11.056C3.92383 10.48 4.04649 9.92533 4.29183 9.392C4.53716 8.85867 4.87849 8.4 5.31583 8.016C5.76383 7.62133 6.28116 7.34933 6.86783 7.2C6.98516 6.592 7.23049 6.048 7.60383 5.568C7.98783 5.07733 8.45716 4.69333 9.01183 4.416C9.56649 4.13867 10.1585 4 10.7878 4C11.3212 4 11.8278 4.10133 12.3078 4.304C12.7878 4.50667 13.2145 4.78933 13.5878 5.152C13.9932 5.01333 14.4145 4.944 14.8518 4.944C15.5665 4.944 16.2278 5.12 16.8358 5.472C17.4438 5.824 17.9292 6.304 18.2918 6.912C18.6652 7.52 18.8518 8.19733 18.8518 8.944C18.8518 9.25333 18.8092 9.58933 18.7238 9.952C19.1505 10.3467 19.4812 10.8053 19.7158 11.328C19.9505 11.84 20.0678 12.3787 20.0678 12.944C20.0678 13.52 19.9452 14.0747 19.6998 14.608C19.4545 15.1413 19.1078 15.6053 18.6598 16C18.2225 16.384 17.7105 16.6507 17.1238 16.8C17.0065 17.408 16.7558 17.952 16.3718 18.432C15.9985 18.9227 15.5345 19.3067 14.9798 19.584C14.4252 19.8613 13.8332 20 13.2038 20ZM9.28383 17.824C9.78516 17.824 10.2278 17.712 10.6118 17.488L13.5078 15.824C13.6252 15.7493 13.6838 15.648 13.6838 15.52V14.4L10.1158 16.448C9.78516 16.64 9.45449 16.64 9.12383 16.448L6.37183 14.864C6.37183 14.8747 6.37183 14.8907 6.37183 14.912C6.37183 14.9333 6.37183 14.96 6.37183 14.992C6.37183 15.5147 6.4945 15.9947 6.73983 16.432C6.99583 16.8587 7.34783 17.1947 7.79583 17.44C8.24383 17.696 8.73983 17.824 9.28383 17.824ZM9.42783 15.216C9.49183 15.2587 9.5505 15.28 9.60383 15.28C9.65716 15.2693 9.71583 15.248 9.77983 15.216L10.7558 14.672L7.20383 12.592C6.87316 12.4107 6.70783 12.1227 6.70783 11.728V8.576C6.23849 8.82133 5.86516 9.168 5.58783 9.616C5.32116 10.0533 5.18783 10.5387 5.18783 11.072C5.18783 11.5733 5.3105 12.0533 5.55583 12.512C5.81183 12.96 6.14249 13.3013 6.54783 13.536L9.42783 15.216ZM13.1878 18.752C13.7318 18.752 14.2225 18.6293 14.6598 18.384C15.0972 18.1387 15.4385 17.8027 15.6838 17.376C15.9398 16.9493 16.0678 16.4747 16.0678 15.952V12.624C16.0678 12.4853 16.0092 12.384 15.8918 12.32L14.9158 11.728V15.856C14.9158 16.2507 14.7505 16.5387 14.4198 16.72L11.6838 18.304C12.1532 18.6027 12.6545 18.752 13.1878 18.752ZM13.6838 13.008V10.992L12.0038 10.032L10.3078 10.992V13.008L12.0038 13.968L13.6838 13.008ZM9.07583 8.144C9.07583 7.74933 9.24116 7.46133 9.57183 7.28L12.3078 5.696C11.8385 5.39733 11.3372 5.248 10.8038 5.248C10.2705 5.248 9.78516 5.37067 9.34783 5.616C8.9105 5.86133 8.56383 6.19733 8.30783 6.624C8.0625 7.05067 7.93983 7.52533 7.93983 8.048V11.36C7.93983 11.488 7.9985 11.5947 8.11583 11.68L9.07583 12.272V8.144ZM17.2998 15.424C17.7585 15.1893 18.1212 14.848 18.3878 14.4C18.6652 13.952 18.8038 13.4613 18.8038 12.928C18.8038 12.4267 18.6758 11.952 18.4198 11.504C18.1745 11.0453 17.8492 10.6987 17.4438 10.464L14.5638 8.8C14.4998 8.75733 14.4412 8.74133 14.3878 8.752C14.3345 8.752 14.2758 8.768 14.2118 8.8L13.2358 9.328L16.8038 11.424C16.9745 11.52 17.0972 11.6373 17.1718 11.776C17.2572 11.904 17.2998 12.0693 17.2998 12.272V15.424ZM13.8758 7.52C14.2065 7.31733 14.5372 7.31733 14.8678 7.52L17.6198 9.136C17.6198 9.104 17.6198 9.072 17.6198 9.04C17.6198 8.54933 17.4972 8.08533 17.2518 7.648C17.0172 7.2 16.6758 6.84267 16.2278 6.576C15.7905 6.30933 15.2838 6.176 14.7078 6.176C14.2065 6.176 13.7638 6.288 13.3798 6.512L10.4838 8.176C10.3665 8.25067 10.3078 8.352 10.3078 8.48V9.6L13.8758 7.52Z",
+                    fill: "#2C3339"
+                }), o[0] = t, o[1] = i) : (t = o[0], i = o[1]), o[2] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, s.jsxs)("filter", {
+                    id: "filter0_d_8150_6803",
+                    x: .583333,
+                    y: 1,
+                    width: 22.8333,
+                    height: 22.8333,
+                    filterUnits: "userSpaceOnUse",
+                    colorInterpolationFilters: "sRGB",
+                    children: [(0, s.jsx)("feFlood", {
+                        floodOpacity: 0,
+                        result: "BackgroundImageFix"
+                    }), (0, s.jsx)("feColorMatrix", {
+                        in: "SourceAlpha",
+                        type: "matrix",
+                        values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+                        result: "hardAlpha"
+                    }), (0, s.jsx)("feOffset", {
+                        dy: .416667
+                    }), (0, s.jsx)("feGaussianBlur", {
+                        stdDeviation: .208333
+                    }), (0, s.jsx)("feComposite", {
+                        in2: "hardAlpha",
+                        operator: "out"
+                    }), (0, s.jsx)("feColorMatrix", {
+                        type: "matrix",
+                        values: "0 0 0 0 0.172549 0 0 0 0 0.2 0 0 0 0 0.223529 0 0 0 0.36 0"
+                    }), (0, s.jsx)("feBlend", {
+                        mode: "normal",
+                        in2: "BackgroundImageFix",
+                        result: "effect1_dropShadow_8150_6803"
+                    }), (0, s.jsx)("feBlend", {
+                        mode: "normal",
+                        in: "SourceGraphic",
+                        in2: "effect1_dropShadow_8150_6803",
+                        result: "shape"
+                    })]
+                }), o[2] = r) : r = o[2], o[3] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, s.jsxs)("defs", {
+                    children: [r, (0, s.jsxs)("linearGradient", {
+                        id: "paint0_linear_8150_6803",
+                        x1: 12,
+                        y1: 1,
+                        x2: 12,
+                        y2: 23,
+                        gradientUnits: "userSpaceOnUse",
+                        children: [(0, s.jsx)("stop", {
+                            stopColor: "white"
+                        }), (0, s.jsx)("stop", {
+                            offset: 1,
+                            stopColor: "#E2EAF3"
+                        })]
+                    })]
+                }), o[3] = l) : l = o[3], o[4] !== e ? (a = (0, s.jsxs)("svg", {
+                    width: "1em",
+                    height: "1em",
+                    viewBox: "0 0 24 24",
+                    fill: "currentColor",
+                    ...e,
+                    children: [t, i, l]
+                }), o[4] = e, o[5] = a) : a = o[5], a
+            }
+        }),
+        QxH2: (function(e, t, i) {
+            var s = i("SKhr");
+
+            function n() {
+                return new Promise(e => {
+                    window.requestAnimationFrame(() => {
+                        window.requestAnimationFrame(() => {
+                            e()
+                        })
+                    })
+                })
+            }
+            i.d(t, {}, {
+                a: function(e, t) {
+                    return e?.querySelector(`[data-content-search-turn-key="${CSS.escape(t)}"]`) ?? null
+                },
+                b: function(e) {
+                    let {
+                        container: t,
+                        matchId: i,
+                        includeShadowRoots: n,
+                        scrollBehavior: r = "smooth",
+                        signal: l,
+                        timeoutMs: a = 1500
+                    } = e, o = () => (0, s.j)({
+                        container: t,
+                        matchId: i,
+                        includeShadowRoots: n
+                    });
+                    if (l?.aborted) return Promise.resolve();
+                    let c = o();
+                    return null != c ? (c.scrollIntoView({
+                        block: "center",
+                        behavior: r
+                    }), Promise.resolve()) : new Promise(e => {
+                        let t = null,
+                            i = null;
+
+                        function s(s) {
+                            null != t && (window.cancelAnimationFrame(t), t = null), null != i && (window.clearTimeout(i), i = null), l?.removeEventListener("abort", n), null != s && s.scrollIntoView({
+                                block: "center",
+                                behavior: r
+                            }), e()
+                        }
+
+                        function n() {
+                            s()
+                        }
+                        l?.addEventListener("abort", n, {
+                            once: !0
+                        }), i = window.setTimeout(() => {
+                            s()
+                        }, a), t = window.requestAnimationFrame(function e() {
+                            if (l?.aborted) return void s();
+                            let i = o();
+                            null != i ? s(i) : t = window.requestAnimationFrame(e)
+                        })
+                    })
+                },
+                c: async function(e, t, i) {
+                    if (!i?.signal?.aborted && null != t) {
+                        if (null == e) throw Error("Conversation search requested before the turn list was ready");
+                        await e.scrollToKey(t, void 0, i), i?.signal?.aborted || await n()
+                    }
+                },
+                d: n
+            })
+        }),
+        AO3k: (function(e, t, i) {
+                    i.d(t, {
+                        a: () => u
+                    });
+                    var s = i("ABep"),
+                        n = i("QosV"),
+                        r = i("on57"),
+                        l = i("rFhZ"),
+                        a = i("zd8w"),
+                        o = i("NxDs"),
+                        c = i("lbSx"),
+                        d = i("Uv0t");
+
+                    function u(e) {
+                        let t, i, u, h, f, p, m, L, y, C, g, v, _, M = (0, n.c)(38),
+                            {
+                                value: I,
+                                ariaLabel: b,
+                                size: R,
+                                portrait: w,
+                                children: x,
+                                fallback: S
+                            } = e,
+                            Z = void 0 === R ? "default" : R,
+                            [E, A] = (0, a.useState)(null);
+                        M[0] !== w?.crop || M[1] !== w?.src ? (t = JSON.stringify([w?.src, w?.crop]), M[0] = w?.crop, M[1] = w?.src, M[2] = t) : t = M[2];
+                        let T = t;
+                        if (M[3] !== S || M[4] !== T || M[5] !== E || M[6] !== w || M[7] !== I) {
+                            f = Symbol.for("react.early_return_sentinel");
+                            e: {
+                                try {
+                                    u = null == w ? (0, l.a)(I, {
+                                        errorCorrectionLevel: "M"
+                                    }).modules : function(e, t, i) {
+                                        let s = (0, l.a)(e, {
+                                                errorCorrectionLevel: "H"
+                                            }),
+                                            n = Math.max(10, s.version),
+                                            r = n === s.version ? s.modules : (0, l.a)(e, {
+                                                errorCorrectionLevel: "H",
+                                                version: n
+                                            }).modules;
+                                        if (null == t) return r;
+                                        let {
+                                            width: a,
+                                            height: u,
+                                            data: h
+                                        } = t, f = new Float32Array(a * u), p = a, m = u, L = -1, y = -1;
+                                        for (let e = 0; e < u; e++)
+                                            for (let t = 0; t < a; t++) {
+                                                let i = (e * a + t) * 4,
+                                                    s = h[i],
+                                                    n = h[i + 1],
+                                                    r = h[i + 2],
+                                                    l = 1 - (.2126 * s + .7152 * n + .0722 * r) / 255,
+                                                    o = (Math.max(s, n, r) - Math.min(s, n, r)) / 255,
+                                                    c = h[i + 3] / 255 * Math.max(l, .65 * o);
+                                                f[e * a + t] = c, c > .08 && (p = Math.min(p, t), L = Math.max(L, t), m = Math.min(m, e), y = Math.max(y, e))
+                                            }
+                                        if (L < p || y < m || f.every(e => e === f[0])) return r;
+                                        let C = Array.from({
+                                                length: 8
+                                            }, (t, i) => (0, l.a)(e, {
+                                                errorCorrectionLevel: "H",
+                                                version: n,
+                                                maskPattern: i
+                                            }).modules),
+                                            g = function(e, t) {
+                                                let i = new Int16Array(e.data.length).fill(-1),
+                                                    s = 0,
+                                                    n = e.size - 1,
+                                                    r = -1;
+                                                for (let t = e.size - 1; t > 0; t -= 2) {
+                                                    for (6 === t && t--; n >= 0 && n < e.size;) {
+                                                        for (let r = 0; r < 2; r++) {
+                                                            let l = n * e.size + t - r;
+                                                            e.reservedBit[l] || (i[l] = Math.floor(s++/8))}n+=r}n-=r,r=-r}let l=Math.floor(s/
+                                                                    8), a = (0, c.getBlocksCount)(t, d.H), o = (0, c.getTotalCodewordsCount)(t, d.H);
+                                                                if (null == a || null == o) return () => !1;
+                                                                let u = l - o, h = Math.floor(u / a), f = a - l % a, p = new Int16Array(l);
+                                                                for (let e = 0; e < l; e++) e >= u ? p[e] = (e - u) % a : e < h * a ? p[e] = e % a : p[e] = f + e - h * a;
+                                                                let m = Math.floor(o / a / 2) - 4;
+                                                                return (e, t) => {
+                                                                    let s = new Set,
+                                                                        n = new Uint8Array(a);
+                                                                    for (let [r, a] of t) {
+                                                                        let t = i[r];
+                                                                        if (e.data[r] === a || t < 0 || t >= l || s.has(t)) continue;
+                                                                        s.add(t);
+                                                                        let o = p[t];
+                                                                        if (++n[o] > m) return !1
+                                                                    }
+                                                                    return !0
+                                                                }
+                                                            }(r, n), v = r.size, _ = (v - 1) / 2, M = (0, o.getRowColCoords)(n).find(e => 2 >= Math.abs(e - _));
+                                                            for (let e = 29; e >= 5; e -= 2) {
+                                                                let t = (v - e) / 2,
+                                                                    s = e - 2,
+                                                                    n = (L - p + 1) / (y - m + 1),
+                                                                    l = n > 1 ? s : s * n,
+                                                                    o = n > 1 ? s / n : s,
+                                                                    c = t + (e - l) / 2,
+                                                                    d = t + (e - o) / 2,
+                                                                    u = new Float32Array(v * v),
+                                                                    h = new Float32Array(v * v);
+                                                                for (let i = t; i < t + e; i++)
+                                                                    for (let s = t; s < t + e; s++) {
+                                                                        if (s + .5 < c || s + .5 >= c + l || i + .5 < d || i + .5 >= d + o) continue;
+                                                                        let e = i * v + s;
+                                                                        for (let t of [-.4, -.2, 0, .2, .4])
+                                                                            for (let n of [-.4, -.2, 0, .2, .4]) {
+                                                                                let r = f[Math.max(m, Math.min(y, m + Math.floor((i + .5 + t - d) / o * (y - m + 1)))) * a + Math.max(p, Math.min(L, p + Math.floor((s + .5 + n - c) / l * (L - p + 1))))];
+                                                                                u[e] += r / 25, h[e] = Math.max(h[e], r)
+                                                                            }
+                                                                    }
+                                                                let _ = new Map,
+                                                                    I = e => u[e] > .12,
+                                                                    b = new Set,
+                                                                    R = [(t - 1) * v + t - 1];
+                                                                for (let i = 0; i < R.length; i++) {
+                                                                    let s = R[i];
+                                                                    if (b.has(s) || I(s)) continue;
+                                                                    b.add(s);
+                                                                    let n = s % v,
+                                                                        r = Math.floor(s / v);
+                                                                    n > t - 1 && R.push(s - 1), n < t + e && R.push(s + 1), r > t - 1 && R.push(s - v), r < t + e && R.push(s + v)
+                                                                }
+                                                                for (let s = t - 1; s <= t + e; s++)
+                                                                    for (let n = t - 1; n <= t + e; n++) {
+                                                                        let e = s * v + n,
+                                                                            t = null != M && 2 >= Math.abs(n - M) && 2 >= Math.abs(s - M);
+                                                                        if (r.reservedBit[e] && !t) continue;
+                                                                        let l = [e - 1, e + 1, e - v, e + v];
+                                                                        if (I(e)) {
+                                                                            let t = l.some(e => !I(e));
+                                                                            _.set(e, Number(i || t || h[e] > .65))
+                                                                        } else(!b.has(e) || l.some(I) || t) && _.set(e, 0)
+                                                                    }
+                                                                let w = null,
+                                                                    x = 1 / 0;
+                                                                for (let e of C) {
+                                                                    let t = 0;
+                                                                    for (let [i, s] of _) e.data[i] !== s && t++;
+                                                                    t < x && g(e, _) && (x = t, w = e)
+                                                                }
+                                                                if (null != w) {
+                                                                    for (let [e, t] of _) w.data[e] = t;
+                                                                    return w
+                                                                }
+                                                            }
+                                                            return r
+                                                        }(I, E?.key === T ? E.pixels : null, w.fillSilhouette ?? !1)
+                                                    } catch {
+                                                        f = S;
+                                                        break e
+                                                    }
+                                                    i = u.size + 8, h = Array.from(u.data)
+                                                }
+                                                M[3] = S, M[4] = T, M[5] = E, M[6] = w, M[7] = I, M[8] = i, M[9] = u, M[10] = h, M[11] = f
+                                            } else i = M[8], u = M[9], h = M[10], f = M[11];
+                                        if (f !== Symbol.for("react.early_return_sentinel")) return f;
+                                        M[12] !== u || M[13] !== w || M[14] !== h ? (p = h.flatMap((e, t) => {
+                                            if (!e) return [];
+                                            let i = t % u.size + 4,
+                                                s = Math.floor(t / u.size) + 4;
+                                            return [null == w ? `M${i},${s}h1v1h-1z` : `M${i+.205},${s+.025}h.59a.18,.18 0 0 1 .18,.18v.59a.18,.18 0 0 1 -.18,.18h-.59a.18,.18 0 0 1 -.18,-.18v-.59a.18,.18 0 0 1 .18,-.18z`]
+                                        }), M[12] = u, M[13] = w, M[14] = h, M[15] = p) : p = M[15];
+                                        let V = p.join("");
+                                        M[16] !== Z ? (m = (0, r.b)("max-w-full shrink-0 self-center", {
+                                            inline: "size-18.5",
+                                            compact: "size-40",
+                                            default: "size-60"
+                                        } [Z]), M[16] = Z, M[17] = m) : m = M[17];
+                                        let q = null == w ? "crispEdges" : "geometricPrecision",
+                                            H = `0 0 ${i} ${i}`;
+                                        return M[18] !== i ? (L = (0, s.jsx)("rect", {
+                                            width: i,
+                                            height: i,
+                                            fill: "white"
+                                        }), M[18] = i, M[19] = L) : L = M[19], M[20] !== V ? (y = (0, s.jsx)("path", {
+                                            d: V,
+                                            fill: "black"
+                                        }), M[20] = V, M[21] = y) : y = M[21], M[22] !== b || M[23] !== y || M[24] !== q || M[25] !== H || M[26] !== L ? (C = (0, s.jsxs)("svg", {
+                                            className: "size-full rounded-xl",
+                                            "aria-label": b,
+                                            "data-dd-privacy": "hidden",
+                                            focusable: "false",
+                                            role: "img",
+                                            shapeRendering: q,
+                                            viewBox: H,
+                                            children: [L, y]
+                                        }), M[22] = b, M[23] = y, M[24] = q, M[25] = H, M[26] = L, M[27] = C) : C = M[27], M[28] !== T || M[29] !== w ? (g = null != w ? (0, s.jsx)("img", {
+                                            src: w.src,
+                                            alt: "",
+                                            hidden: !0,
+                                            crossOrigin: "anonymous",
+                                            onLoad: e => {
+                                                let {
+                                                    currentTarget: t
+                                                } = e, i = w.crop ?? {
+                                                    x: 0,
+                                                    y: 0,
+                                                    width: 1,
+                                                    height: 1
+                                                }, s = t.naturalWidth * i.width, n = t.naturalHeight * i.height, r = Math.min(1, 256 / Math.max(s, n)), l = document.createElement("canvas");
+                                                l.width = Math.max(1, Math.round(s * r)), l.height = Math.max(1, Math.round(n * r));
+                                                let a = l.getContext("2d");
+                                                if (null != a) try {
+                                                    a.drawImage(t, t.naturalWidth * i.x, t.naturalHeight * i.y, s, n, 0, 0, l.width, l.height), A({
+                                                        key: T,
+                                                        pixels: a.getImageData(0, 0, l.width, l.height)
+                                                    })
+                                                } catch {}
+                                            }
+                                        }, T) : null, M[28] = T, M[29] = w, M[30] = g) : g = M[30], M[31] !== C || M[32] !== g || M[33] !== m ? (v = (0, s.jsxs)("div", {
+                                            className: m,
+                                            "data-dd-privacy": "hidden",
+                                            children: [C, g]
+                                        }), M[31] = C, M[32] = g, M[33] = m, M[34] = v) : v = M[34], M[35] !== x || M[36] !== v ? (_ = (0, s.jsxs)("div", {
+                                            className: "flex flex-col items-center gap-3",
+                                            children: [v, x]
+                                        }), M[35] = x, M[36] = v, M[37] = _) : _ = M[37], _
+                                    }
+                                }), p1kG: (function(e, t, i) {
+                                var s = i("ABep"),
+                                    n = i("QosV"),
+                                    r = i("oyxz"),
+                                    l = i("Sm6l"),
+                                    a = i("JNtf"),
+                                    o = i("mUDD"),
+                                    c = i("b8ru"),
+                                    d = i("HgLj");
+
+                                function u() {
+                                    (0, c.a)()
+                                }
+                                i.d(t, {}, {
+                                    a: function(e) {
+                                        let t, i, c, h, f, p, m = (0, n.c)(13),
+                                            {
+                                                image: L,
+                                                onClose: y,
+                                                onCloseAutoFocus: C,
+                                                onOpenAutoFocus: g
+                                            } = e;
+                                        return m[0] !== y ? (t = e => !e && y(), m[0] = y, m[1] = t) : t = m[1], m[2] !== L || m[3] !== g ? (i = e => {
+                                            (0, d.a)(L.imageRef)(null), g?.(e)
+                                        }, m[2] = L, m[3] = g, m[4] = i) : i = m[4], m[5] !== C || m[6] !== i ? (c = {
+                                            onCloseAutoFocus: C,
+                                            onOpenAutoFocus: i
+                                        }, m[5] = C, m[6] = i, m[7] = c) : c = m[7], m[8] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, s.jsx)(o.e, {
+                                            children: (0, s.jsx)(o.d, {
+                                                title: (0, s.jsx)(a.e, {
+                                                    children: (0, s.jsx)(r.a, {
+                                                        id: "codex.imagePreview.loadError.title",
+                                                        defaultMessage: "Couldn’t open image preview"
+                                                    })
+                                                })
+                                            })
+                                        }), m[8] = h) : h = m[8], m[9] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, s.jsxs)(o.b, {
+                                            children: [h, (0, s.jsx)(o.c, {
+                                                children: (0, s.jsx)(l.a, {
+                                                    onClick: u,
+                                                    children: (0, s.jsx)(r.a, {
+                                                        id: "codex.imagePreview.loadError.reload",
+                                                        defaultMessage: "Reload"
+                                                    })
+                                                })
+                                            })]
+                                        }), m[9] = f) : f = m[9], m[10] !== t || m[11] !== c ? (p = (0, s.jsx)(a.a, {
+                                            open: !0,
+                                            size: "compact",
+                                            onOpenChange: t,
+                                            contentProps: c,
+                                            children: f
+                                        }), m[10] = t, m[11] = c, m[12] = p) : p = m[12], p
+                                    }
+                                })
+                            }), WvjI: (function(e, t, i) {
+                                var s = i("BolX"),
+                                    n = i("tl5a"),
+                                    r = i("tSEg");
+                                let l = (0, s.c)(r.a, e => {
+                                    let {
+                                        get: t,
+                                        scope: i
+                                    } = e;
+                                    if ("local-thread" !== i.value.routeKind) return null;
+                                    let s = t(n.bb, i.value.conversationId);
+                                    return null == s ? null : {
+                                        threadId: i.value.conversationId,
+                                        turnId: s
+                                    }
+                                });
+                                i.d(t, {}, {
+                                    a: l
+                                })
+                            }), SpQB: (function(e, t, i) {
+                                i.d(t, {
+                                    a: () => v,
+                                    b: () => _,
+                                    c: () => g
+                                });
+                                var s = i("QosV"),
+                                    n = i("T0Rc"),
+                                    r = i("BolX");
+                                i("I07G");
+                                var l = i("zd8w"),
+                                    a = i("Wf1j"),
+                                    o = i("SGsN"),
+                                    c = i("A8rN"),
+                                    d = i("Igf5"),
+                                    u = i("WvjI"),
+                                    h = i("yGJW"),
+                                    f = i("tSEg"),
+                                    p = i("kl6F"),
+                                    m = i("rvFo"),
+                                    L = i("GaA7"),
+                                    y = i("q77y");
+
+                                function C(e, t, i, s, n) {
+                                    s?.aborted || e.setQueryData(t, e => {
+                                        if (null == e) return e;
+                                        let t = e.targets.map(e => e.id === i ? {
+                                            ...e,
+                                            ...n
+                                        } : e);
+                                        return {
+                                            ...e,
+                                            availableTargets: t.flatMap(e => e.available ? [e.target] : []),
+                                            targets: t
+                                        }
+                                    })
+                                }
+
+                                function g(e) {
+                                    let t, i, n, l, m, L, y = (0, s.c)(30),
+                                        {
+                                            turnId: C,
+                                            cwd: g,
+                                            deferEnrichment: v,
+                                            getOpenPath: I,
+                                            hostId: b,
+                                            openPath: R
+                                        } = e,
+                                        w = void 0 !== v && v;
+                                    y[0] !== g || y[1] !== w || y[2] !== I || y[3] !== b || y[4] !== R ? (t = {
+                                        cwd: g,
+                                        hostId: b,
+                                        isQueryEnabled: w,
+                                        getOpenPath: I,
+                                        openPath: R,
+                                        deferEnrichment: w
+                                    }, y[0] = g, y[1] = w, y[2] = I, y[3] = b, y[4] = R, y[5] = t) : t = y[5];
+                                    let {
+                                        data: x,
+                                        isFetching: S
+                                    } = M(t), Z = x?.targets;
+                                    y[6] !== g || y[7] !== w || y[8] !== b || y[9] !== R || y[10] !== Z || y[11] !== C ? (i = {
+                                        turnId: C,
+                                        cwd: g,
+                                        deferEnrichment: w,
+                                        hostId: b,
+                                        openPath: R,
+                                        targets: Z
+                                    }, y[6] = g, y[7] = w, y[8] = b, y[9] = R, y[10] = Z, y[11] = C, y[12] = i) : i = y[12];
+                                    let E = function(e) {
+                                        let t, i, n = (0, s.c)(12),
+                                            {
+                                                turnId: l,
+                                                cwd: m,
+                                                deferEnrichment: L,
+                                                hostId: y,
+                                                openPath: C,
+                                                targets: g
+                                            } = e,
+                                            v = (0, r.y)(f.a),
+                                            _ = (0, a.a)();
+                                        n[0] !== _ || n[1] !== v ? (t = () => {
+                                            v.get(o.f).danger(_.formatMessage({
+                                                id: "localConversation.openTarget.error",
+                                                defaultMessage: "Unable to open item"
+                                            }), {
+                                                errorAnalytics: {
+                                                    toastId: "localConversation.openTarget.error"
+                                                }
+                                            })
+                                        }, n[0] = _, n[1] = v, n[2] = t) : t = n[2];
+                                        let M = t;
+                                        return n[3] !== m || n[4] !== L || n[5] !== y || n[6] !== C || n[7] !== v || n[8] !== M || n[9] !== g || n[10] !== l ? (i = (e, t) => {
+                                            let {
+                                                appPath: i,
+                                                environmentId: s,
+                                                openMode: n,
+                                                persistPreferred: r,
+                                                line: a,
+                                                column: o,
+                                                path: _
+                                            } = t, I = _ ?? C ?? m;
+                                            if (!I) return;
+                                            let b = g?.find(t => t.target === e && (t.appPath ?? null) === (i ?? null));
+                                            if (b?.kind === "editor" && null != l) {
+                                                let t = v.get(u.a);
+                                                null != t && v.get(h.c).submitCodexAnalyticsEvent?.({
+                                                    action: "open_in_ide",
+                                                    eventKind: "action",
+                                                    metadata: {
+                                                        target: e
+                                                    },
+                                                    threadId: t.threadId,
+                                                    turnId: l
+                                                })
+                                            }
+                                            r && m && v.query.setData(c.a, {
+                                                cwd: m,
+                                                hostId: y,
+                                                path: C,
+                                                ...L ? {
+                                                    deferEnrichment: !0
+                                                } : {}
+                                            }, t => t ? {
+                                                ...t,
+                                                preferredTarget: e,
+                                                targets: t.targets.map(t => ({
+                                                    ...t,
+                                                    default: t.target === e || void 0
+                                                }))
+                                            } : t), v.get(d.a).mutate({
+                                                recentFilesThreadId: v.getOwnValue(p.a).clientThreadId,
+                                                path: I,
+                                                conversationId: (0, f.d)(v.value) ?? void 0,
+                                                environmentId: s,
+                                                cwd: m ?? null,
+                                                target: e,
+                                                appPath: i,
+                                                line: a,
+                                                column: o,
+                                                openMode: n,
+                                                ...r && m ? {
+                                                    persistPreferredTargetPath: m
+                                                } : {},
+                                                hostId: y
+                                            }, {
+                                                onSuccess: e => {
+                                                    e.success || M()
+                                                },
+                                                onError: M
+                                            })
+                                        }, n[3] = m, n[4] = L, n[5] = y, n[6] = C, n[7] = v, n[8] = M, n[9] = g, n[10] = l, n[11] = i) : i = n[11], i
+                                    }(i);
+                                    y[13] !== g || y[14] !== b || y[15] !== R ? (n = _({
+                                        cwd: g,
+                                        hostId: b,
+                                        openPath: R
+                                    }), y[13] = g, y[14] = b, y[15] = R, y[16] = n) : n = y[16];
+                                    let A = n,
+                                        T = x?.preferredTarget ?? null;
+                                    y[17] !== x?.targets ? (l = x?.targets ?? [], y[17] = x?.targets, y[18] = l) : l = y[18], y[19] !== x?.availableTargets ? (m = x?.availableTargets ?? [], y[19] = x?.availableTargets, y[20] = m) : m = y[20];
+                                    let V = x?.mode,
+                                        q = null != x;
+                                    return y[21] !== A || y[22] !== S || y[23] !== E || y[24] !== q || y[25] !== T || y[26] !== l || y[27] !== m || y[28] !== V ? (L = {
+                                        canLoadTargets: A,
+                                        preferredTarget: T,
+                                        targets: l,
+                                        availableTargets: m,
+                                        mode: V,
+                                        hasLoadedTargets: q,
+                                        isLoadingTargets: S,
+                                        open: E
+                                    }, y[21] = A, y[22] = S, y[23] = E, y[24] = q, y[25] = T, y[26] = l, y[27] = m, y[28] = V, y[29] = L) : L = y[29], L
+                                }
+
+                                function v(e) {
+                                    let t, i, n, r, a, o = (0, s.c)(26),
+                                        {
+                                            cwd: c,
+                                            delayMs: d,
+                                            getOpenPath: u,
+                                            hostId: h,
+                                            openPath: f
+                                        } = e,
+                                        p = void 0 === d ? 0 : d;
+                                    o[0] !== c || o[1] !== h || o[2] !== f ? (t = _({
+                                        cwd: c,
+                                        hostId: h,
+                                        openPath: f
+                                    }), o[0] = c, o[1] = h, o[2] = f, o[3] = t) : t = o[3];
+                                    let m = t,
+                                        L = p <= 0;
+                                    o[4] !== c || o[5] !== u || o[6] !== h || o[7] !== f || o[8] !== L ? (i = {
+                                        cwd: c,
+                                        hostId: h,
+                                        isQueryEnabled: L,
+                                        getOpenPath: u,
+                                        openPath: f
+                                    }, o[4] = c, o[5] = u, o[6] = h, o[7] = f, o[8] = L, o[9] = i) : i = o[9];
+                                    let {
+                                        data: y,
+                                        refetch: C
+                                    } = M(i);
+                                    o[10] !== C ? (n = () => {
+                                        C()
+                                    }, o[10] = C, o[11] = n) : n = o[11];
+                                    let g = (0, l.useEffectEvent)(n);
+                                    return o[12] !== m || o[13] !== y || o[14] !== p || o[15] !== g || o[16] !== L ? (r = () => {
+                                        if (L || !m || null != y) return;
+                                        let e = window.setTimeout(g, p);
+                                        return () => {
+                                            window.clearTimeout(e)
+                                        }
+                                    }, o[12] = m, o[13] = y, o[14] = p, o[15] = g, o[16] = L, o[17] = r) : r = o[17], o[18] !== m || o[19] !== c || o[20] !== y || o[21] !== p || o[22] !== h || o[23] !== f || o[24] !== L ? (a = [m, c, y, p, h, f, L], o[18] = m, o[19] = c, o[20] = y, o[21] = p, o[22] = h, o[23] = f, o[24] = L, o[25] = a) : a = o[25], (0, l.useEffect)(r, a), null
+                                }
+
+                                function _(e) {
+                                    let {
+                                        cwd: t,
+                                        hostId: i,
+                                        openPath: s
+                                    } = e;
+                                    return !!(t ?? s) && !1
+                                }
+
+                                function M(e) {
+                                    let t, i, l, a, o, d = (0, s.c)(21),
+                                        {
+                                            cwd: u,
+                                            deferEnrichment: h,
+                                            getOpenPath: p,
+                                            hostId: g,
+                                            isQueryEnabled: v,
+                                            openPath: M
+                                        } = e,
+                                        I = void 0 !== h && h,
+                                        b = (0, r.y)(f.a);
+                                    d[0] !== u || d[1] !== I || d[2] !== g || d[3] !== M || d[4] !== b.query ? (t = {
+                                        cwd: u,
+                                        hostId: g,
+                                        path: M,
+                                        ...I ? {
+                                            deferEnrichment: !0
+                                        } : {}
+                                    }, i = b.query.getOptions(c.a, t), d[0] = u, d[1] = I, d[2] = g, d[3] = M, d[4] = b.query, d[5] = t, d[6] = i) : (t = d[5], i = d[6]);
+                                    let R = i;
+                                    return d[7] !== p || d[8] !== t || d[9] !== R || d[10] !== b.queryClient ? (l = async e => {
+                                        let {
+                                            signal: i
+                                        } = e;
+                                        return async function(e) {
+                                            var t, i;
+                                            let {
+                                                params: s,
+                                                queryClient: n,
+                                                queryKey: r,
+                                                signal: l
+                                            } = e;
+                                            if (s.deferEnrichment) return async function(e) {
+                                                let {
+                                                    params: t,
+                                                    queryClient: i,
+                                                    queryKey: s,
+                                                    signal: n
+                                                } = e, r = L.a.openIn, l = await (0, c.c)(t, n);
+                                                return n?.aborted ? l : (i.setQueryData(s, l), await Promise.all(l.targets.map(async e => {
+                                                    let t;
+                                                    try {
+                                                        t = (await (0, y.a)(r.detectTarget({
+                                                            target: e.target
+                                                        }), n)).available
+                                                    } catch {
+                                                        C(i, s, e.id, n, {
+                                                            available: !1,
+                                                            resolvedIcon: null
+                                                        });
+                                                        return
+                                                    }
+                                                    if (C(i, s, e.id, n, {
+                                                            available: t,
+                                                            ...!t ? {
+                                                                resolvedIcon: null
+                                                            } : {}
+                                                        }), !(!t || n?.aborted)) try {
+                                                        let {
+                                                            icon: t
+                                                        } = await (0, y.a)(r.loadTargetIcon({
+                                                            target: e.target
+                                                        }), n);
+                                                        C(i, s, e.id, n, {
+                                                            resolvedIcon: t
+                                                        })
+                                                    } catch {
+                                                        C(i, s, e.id, n, {
+                                                            resolvedIcon: null
+                                                        })
+                                                    }
+                                                })), i.getQueryData(s) ?? l)
+                                            }({
+                                                params: s,
+                                                queryClient: n,
+                                                queryKey: r,
+                                                signal: l
+                                            });
+                                            (null == (t = s.hostId) || "local" === t) && (i = s.path, 0);
+                                            return (0, c.c)(s, l)
+                                        }({
+                                            params: null == p ? t : {
+                                                ...t,
+                                                path: await p()
+                                            },
+                                            queryClient: b.queryClient,
+                                            queryKey: R.queryKey,
+                                            signal: i
+                                        })
+                                    }, d[7] = p, d[8] = t, d[9] = R, d[10] = b.queryClient, d[11] = l) : l = d[11], d[12] !== u || d[13] !== g || d[14] !== v || d[15] !== M ? (a = _({
+                                        cwd: u,
+                                        hostId: g,
+                                        openPath: M
+                                    }) && v, d[12] = u, d[13] = g, d[14] = v, d[15] = M, d[16] = a) : a = d[16], d[17] !== R || d[18] !== l || d[19] !== a ? (o = {
+                                        ...R,
+                                        queryFn: l,
+                                        enabled: a,
+                                        staleTime: m.b.ONE_MINUTE
+                                    }, d[17] = R, d[18] = l, d[19] = a, d[20] = o) : o = d[20], (0, n.a)(o)
+                                }
+                            }), wbP4: (function(e, t, i) {
+                                var s = i("ABep"),
+                                    n = i("QosV"),
+                                    r = i("on57"),
+                                    l = i("Sm6l"),
+                                    a = i("bf6R");
+                                i.d(t, {}, {
+                                    a: function(e) {
+                                        let t, i, o, c, d, u, h, f, p = (0, n.c)(16);
+                                        p[0] !== e ? ({
+                                            icon: o,
+                                            accessory: t,
+                                            children: i,
+                                            ...c
+                                        } = e, p[0] = e, p[1] = t, p[2] = i, p[3] = o, p[4] = c) : (t = p[1], i = p[2], o = p[3], c = p[4]);
+                                        let m = !0 === c["aria-busy"] && "loading-shimmer-pure-text";
+                                        return p[5] !== m ? (d = (0, r.b)("min-w-0 truncate", m), p[5] = m, p[6] = d) : d = p[6], p[7] !== i || p[8] !== d ? (u = (0, s.jsx)("span", {
+                                            className: d,
+                                            children: i
+                                        }), p[7] = i, p[8] = d, p[9] = u) : u = p[9], p[10] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, s.jsx)(a.fc, {
+                                            className: "text-tertiary"
+                                        }), p[10] = h) : h = p[10], p[11] !== t || p[12] !== o || p[13] !== c || p[14] !== u ? (f = (0, s.jsxs)(l.a, {
+                                            ...c,
+                                            className: "w-fit max-w-full text-start",
+                                            allowShrink: !0,
+                                            color: "outlineSurface",
+                                            size: "messageChip",
+                                            radius: "full",
+                                            children: [o, u, t, h]
+                                        }), p[11] = t, p[12] = o, p[13] = c, p[14] = u, p[15] = f) : f = p[15], f
+                                    },
+                                    b: function(e) {
+                                        let t, i = (0, n.c)(2),
+                                            {
+                                                emoji: r
+                                            } = e;
+                                        return i[0] !== r ? (t = (0, s.jsx)("span", {
+                                            "aria-hidden": !0,
+                                            className: "flex size-5 shrink-0 items-center justify-center p-0.5 leading-none",
+                                            children: r
+                                        }), i[0] = r, i[1] = t) : t = i[1], t
+                                    }
+                                })
+                            }), uWtN: (function(e, t, i) {
+                                i.d(t, {
+                                    a: () => M
+                                });
+                                var s = i("BolX"),
+                                    n = i("PFjh"),
+                                    r = i("Cslg"),
+                                    l = i("IYFr"),
+                                    a = i("OWtl"),
+                                    o = i("fVOX");
+                                let c = {
+                                    $type: "protobuf_analytics_events.v1.DotMessageLifecycleEvent"
+                                };
+                                i("ReGc");
+                                var d = i("yGJW"),
+                                    u = i("SClg"),
+                                    h = i("w5lF"),
+                                    f = i("v9CB"),
+                                    p = i("pwwq"),
+                                    m = i("WFY2");
+                                class L {
+                                    roomId;
+                                    options;
+                                    sends = new Map;
+                                    inputs = new Map;
+                                    replies = new Map;
+                                    lifecycleSends = new Map;
+                                    lifecycleReplies = new Map;
+                                    lifecycleListeners = new Map;
+                                    operations = new Set;
+                                    wallOrigin = Date.now() - performance.now();
+                                    views = new Map;
+                                    reactionSenderId;
+                                    roomKind = "unknown";
+                                    visibilityChanged = () => {
+                                        "visible" !== document.visibilityState && this.interruptObservations()
+                                    };
+                                    constructor(e, t = {}) {
+                                        this.roomId = e, this.options = t
+                                    }
+                                    setActive(e) {
+                                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : this,
+                                            i = this.active;
+                                        this.views.set(t, e), this.active || this.interruptObservations(), i !== this.active && this.notifyLifecycleReplies()
+                                    }
+                                    release(e) {
+                                        let t = this.active;
+                                        this.views.delete(e), this.active || this.interruptObservations(), t !== this.active && this.notifyLifecycleReplies()
+                                    }
+                                    setReactionSender(e) {
+                                        if (this.reactionSenderId !== e) {
+                                            for (let t of (this.reactionSenderId = e, this.replies.values())) this.emitLifecycleReply(t);
+                                            for (let e of this.lifecycleReplies.values()) this.emitLifecycleReply(e);
+                                            this.notifyLifecycleReplies()
+                                        }
+                                    }
+                                    setRoomKind(e) {
+                                        this.roomKind = e
+                                    }
+                                    get idle() {
+                                        return 0 === this.views.size && 0 === this.sends.size && 0 === this.lifecycleSends.size && 0 === this.operations.size
+                                    }
+                                    get active() {
+                                        for (let e of this.views.values())
+                                            if (e) return !0;
+                                        return !1
+                                    }
+                                    startSend(e, t) {
+                                        let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "messages",
+                                            s = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+                                            n = arguments.length > 4 ? arguments[4] : void 0;
+                                        var r = this;
+                                        let l = this.sends.get(e);
+                                        if (s || null == l || this.finish(l, "aborted", performance.now()), !s && this.sends.size >= 64) {
+                                            let e = this.sends.values().next().value;
+                                            null != e && this.finish(e, "aborted", performance.now())
+                                        }
+                                        let a = performance.now(),
+                                            o = void 0 === t ? void 0 : y(t),
+                                            c = (s ? l?.measurementId : void 0) ?? crypto.randomUUID(),
+                                            d = (s ? l?.roomKind : void 0) ?? this.roomKind,
+                                            u = {
+                                                client_request_id: e,
+                                                measurement_id: c,
+                                                room_kind: d,
+                                                is_retry: s,
+                                                metadata_kinds: n,
+                                                input_text_characters: o,
+                                                entry_point: i
+                                            },
+                                            f = s ? l?.trace ?? null : (0, p.f)({
+                                                name: "orbit.messaging.client.message_flow",
+                                                attributes: C(this.roomId, this.options.surface ?? "unknown", u)
+                                            }),
+                                            m = this.operation("client.http_send", u, f?.trace);
+                                        if (s) null != l && (l.finishHttp = m.finish);
+                                        else {
+                                            let t = {
+                                                metadataKinds: n,
+                                                clientRequestId: e,
+                                                measurementId: c,
+                                                roomKind: d,
+                                                entryPoint: i,
+                                                inputTextCharacters: o,
+                                                startedAt: a,
+                                                firstResponseRecorded: !1,
+                                                interruptedAt: this.active && "visible" === document.visibilityState ? void 0 : a,
+                                                trace: f,
+                                                finishHttp: m.finish,
+                                                timeout: setTimeout(() => {
+                                                    this.finish(t, "timeout", performance.now()), this.expireLifecycle(t)
+                                                }, 3e5)
+                                            };
+                                            if (l = t, this.sends.set(e, l), this.tracksLifecycle(l)) {
+                                                let t = this.lifecycleSends.get(e);
+                                                if (null != t && this.expireLifecycle(t), this.lifecycleSends.size >= 64) {
+                                                    let e = this.lifecycleSends.values().next().value;
+                                                    null != e && this.expireLifecycle(e)
+                                                }
+                                                this.lifecycleSends.set(e, l)
+                                            }
+                                            document.addEventListener("visibilitychange", this.visibilityChanged), this.options.onPendingChange?.(!0), this.emit("client.send", "started", u, a, f?.trace), this.emitLifecycle(l, "DOT_MESSAGE_LIFECYCLE_EVENT_TYPE_SEND_MESSAGE", {
+                                                at: a,
+                                                active: this.active,
+                                                visible: "visible" === document.visibilityState
+                                            }), this.notifyLifecycleReplies()
+                                        }
+                                        return {
+                                            headers: m.headers,
+                                            responseHeaders: e => {
+                                                if (this.operations.has(m.finish)) try {
+                                                    this.emit("client.http_response_headers", "success", {
+                                                        ...u,
+                                                        server_request_id: h.j.parse(e.get("x-oai-request-id"))
+                                                    }, performance.now())
+                                                } catch {}
+                                            },
+                                            accepted: t => {
+                                                m.finish(void 0, {
+                                                    message_id: t
+                                                }), null != l && this.sends.get(e) === l && l.finishHttp === m.finish && this.associateInput(l, t)
+                                            },
+                                            failed: function(t) {
+                                                let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "request";
+                                                if (m.finish(t, {
+                                                        failure_stage: i
+                                                    }), null == l || r.sends.get(e) !== l || l.finishHttp !== m.finish) return;
+                                                let n = v(t);
+                                                s || "delivery_unknown" === n || r.finish(l, n, performance.now())
+                                            }
+                                        }
+                                    }
+                                    startRead(e) {
+                                        let t = [...this.replies.values()].filter(e => null != e.send && null == e.availableAt),
+                                            i = 1 === t.length ? t[0] : void 0;
+                                        return this.operation("history" === e ? "client.history_fetch" : "client.room_fetch", null == i ? {} : {
+                                            ...g(i.identity),
+                                            client_request_id: i.send?.clientRequestId,
+                                            measurement_id: i.send?.measurementId,
+                                            room_kind: i.send?.roomKind,
+                                            input_text_characters: i.send?.inputTextCharacters,
+                                            entry_point: i.send?.entryPoint
+                                        }, i?.send?.trace?.trace)
+                                    }
+                                    received(e, t) {
+                                        let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+                                        if (e !== this.roomId) return;
+                                        let s = performance.now(),
+                                            n = t.clientRequestId ? this.sends.get(t.clientRequestId) : void 0;
+                                        if (t.self && null != n) {
+                                            this.emit("client.pubsub_received", "success", {
+                                                client_request_id: n.clientRequestId,
+                                                measurement_id: n.measurementId,
+                                                room_kind: n.roomKind,
+                                                input_text_characters: n.inputTextCharacters,
+                                                entry_point: n.entryPoint,
+                                                message_id: t.messageId
+                                            }, s, n.trace?.trace), this.associateInput(n, t.messageId);
+                                            return
+                                        }
+                                        let r = this.reply(t);
+                                        if (null == r) return void this.emit("client.pubsub_received", "unmatched", g(t), s);
+                                        if (null != r.receivedAt) {
+                                            this.emitLifecycleReply(r), this.emit("client.pubsub_received", "duplicate", {
+                                                ...g(t),
+                                                measurement_id: r.send?.measurementId,
+                                                room_kind: r.send?.roomKind
+                                            }, s);
+                                            return
+                                        }
+                                        r.receivedAt = this.moment(), this.recordLifecycleReceipt(r, r.receivedAt, i ? "DOT_MESSAGE_LIFECYCLE_DELIVERY_SOURCE_HISTORY" : "DOT_MESSAGE_LIFECYCLE_DELIVERY_SOURCE_LIVE_UPDATE"), null == r.send && this.emit("client.pubsub_received", "unmatched", g(t), s), this.emitReply(r)
+                                    }
+                                    projected(e, t, i) {
+                                        if (e.roomId !== this.roomId || "" !== e.deliveryState) return;
+                                        let s = this.sends.get(e.requestId);
+                                        if (e.self && null != s) return void this.associateInput(s, e.id);
+                                        let n = {
+                                                messageId: e.id,
+                                                clientRequestId: e.requestId,
+                                                replyToMessageId: e.replyTo?.messageId,
+                                                self: e.self,
+                                                role: e.role,
+                                                accountUserId: e.senderId
+                                            },
+                                            r = this.reply(n);
+                                        null != r && (r.identity.role = n.role, r.identity.accountUserId = n.accountUserId, r.availableAt = r.availableAt ?? this.moment(), r.lifecycleDeleted = !!e.deletedAt, r.lifecycleDeleted || this.recordLifecycleReceipt(r, this.moment(), i), null != r.textCharacters || void 0 === t || e.deletedAt || (r.textCharacters = y(t ?? "")), this.emitReply(r), this.notifyLifecycleReply(e.id))
+                                    }
+                                    committed(e) {
+                                        let t = this.replies.get(e);
+                                        null != t && (t.committedAt = t.committedAt ?? this.moment(), this.emitReply(t))
+                                    }
+                                    observeRenderedMessage(e, t) {
+                                        let i = this.reply({
+                                            messageId: e,
+                                            self: !1
+                                        }, !0);
+                                        null != i && (i.availableAt = i.availableAt ?? this.moment(), this.recordLifecycleReceipt(i, i.availableAt), null == i.textCharacters && void 0 !== t && (i.textCharacters = y(t ?? "")), this.emitReply(i))
+                                    }
+                                    hasPendingReply(e) {
+                                        return this.replies.has(e)
+                                    }
+                                    hasLifecycleCandidate(e) {
+                                        let t = this.lifecycleReplies.get(e);
+                                        return null != t && null == t.lifecycleRenderedAt
+                                    }
+                                    hasPendingLifecycleReply(e) {
+                                        if (!this.active) return !1;
+                                        let t = this.lifecycleReplies.get(e);
+                                        if (null == t || null != t.lifecycleRenderedAt || t.lifecycleDeleted || null != t.identity.role && "user" !== t.identity.role || null != this.reactionSenderId && null != t.identity.accountUserId && t.identity.accountUserId !== this.reactionSenderId) return !1;
+                                        for (let e of null == t.send ? this.lifecycleSends.values() : [t.send])
+                                            if (this.lifecycleSends.get(e.clientRequestId) === e && (null != t.send || null == t.identity.replyToMessageId || null == e.messageId) && performance.now() - e.startedAt < 3e5) return !0;
+                                        return !1
+                                    }
+                                    subscribeLifecycleReply(e, t) {
+                                        if (!this.hasLifecycleCandidate(e)) return () => {};
+                                        let i = this.lifecycleListeners.get(e);
+                                        return null == i && (i = new Set, this.lifecycleListeners.set(e, i)), i.add(t), () => {
+                                            i.delete(t), 0 === i.size && this.lifecycleListeners.get(e) === i && this.lifecycleListeners.delete(e)
+                                        }
+                                    }
+                                    rendered(e) {
+                                        if (!this.hasPendingLifecycleReply(e) || "visible" !== document.visibilityState) return;
+                                        let t = this.lifecycleReplies.get(e);
+                                        null != t && (t.lifecycleRenderedAt = this.moment(), this.emitLifecycleReply(t), this.notifyLifecycleReply(e))
+                                    }
+                                    hasPendingReaction(e) {
+                                        let t = this.inputs.get(e.id),
+                                            i = this.reactionSenderId;
+                                        return e.roomId === this.roomId && e.self && !e.deletedAt && t?.entryPoint === "messages" && !t.firstResponseRecorded && null != i && e.reactions.some(e => e.accountUserIds.includes(i))
+                                    }
+                                    reactionPaintOpportunity(e) {
+                                        if (!this.hasPendingReaction(e) || !this.active || "visible" !== document.visibilityState) return;
+                                        let t = this.inputs.get(e.id);
+                                        null != t && this.firstResponse(t, "success", performance.now(), {
+                                            response_type: "reaction"
+                                        })
+                                    }
+                                    paintOpportunity(e) {
+                                        let t = this.replies.get(e);
+                                        null != t && this.active && "visible" === document.visibilityState && (t.paintedAt = t.paintedAt ?? this.moment(), this.emitReply(t))
+                                    }
+                                    paintPreviewOpportunity(e) {
+                                        let t = this.replies.get(e);
+                                        null != t && "visible" === document.visibilityState && (t.paintedAt = t.paintedAt ?? this.moment(), this.emitReply(t))
+                                    }
+                                    subscription(e) {
+                                        this.emit("client.subscription", e ? "success" : "aborted", {}, performance.now())
+                                    }
+                                    dispose() {
+                                        this.views.clear();
+                                        let e = new DOMException("Messaging session closed", "AbortError");
+                                        for (let t of this.operations) t(e);
+                                        for (let e of this.sends.values()) this.finish(e, "aborted", performance.now());
+                                        for (let e of (this.inputs.clear(), this.replies.clear(), this.lifecycleSends.values())) this.expireLifecycle(e);
+                                        this.lifecycleReplies.clear(), this.notifyLifecycleReplies()
+                                    }
+                                    associateInput(e, t) {
+                                        for (let i of (e.messageId = t, this.inputs.set(t, e), this.replies.values())) i.identity.replyToMessageId === t && (i.send = e, this.retainLifecycleReply(i), this.emitReply(i));
+                                        for (let i of this.lifecycleReplies.values()) i.identity.replyToMessageId === t && (i.send = e, this.emitLifecycleReply(i));
+                                        this.notifyLifecycleReplies()
+                                    }
+                                    reply(e) {
+                                        let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                                        if (e.self || !e.replyToMessageId && !t || 0 === this.sends.size && 0 === this.lifecycleSends.size) return;
+                                        let i = this.replies.get(e.messageId) ?? this.lifecycleReplies.get(e.messageId);
+                                        if (null != i) return i.identity.role = e.role ?? i.identity.role, i.identity.accountUserId = e.accountUserId ?? i.identity.accountUserId, !i.identity.replyToMessageId && e.replyToMessageId && (i.identity = e, i.send = this.findSend(e.replyToMessageId)), this.retainLifecycleReply(i), this.notifyLifecycleReply(e.messageId), i;
+                                        if (this.replies.size >= 64) {
+                                            let e = this.replies.keys().next().value;
+                                            null != e && (this.replies.delete(e), this.notifyLifecycleReply(e))
+                                        }
+                                        let s = {
+                                            identity: e,
+                                            send: e.replyToMessageId ? this.findSend(e.replyToMessageId) : void 0,
+                                            emitted: new Set
+                                        };
+                                        return this.sends.size > 0 && this.replies.set(e.messageId, s), this.lifecycleSends.size > 0 && this.retainLifecycleReply(s), this.notifyLifecycleReply(e.messageId), s
+                                    }
+                                    emitReply(e) {
+                                        this.emitLifecycleReply(e);
+                                        let t = e.send;
+                                        if (null == t || this.sends.get(t.clientRequestId) !== t) return;
+                                        let i = {
+                                            ...g(e.identity),
+                                            client_request_id: t.clientRequestId,
+                                            measurement_id: t.measurementId,
+                                            room_kind: t.roomKind,
+                                            input_text_characters: t.inputTextCharacters,
+                                            reply_text_characters: e.textCharacters,
+                                            entry_point: t.entryPoint
+                                        };
+                                        for (let [s, n] of [
+                                                ["client.pubsub_received", e.receivedAt],
+                                                ["client.message_available", e.availableAt],
+                                                ["client.message_committed", e.committedAt],
+                                                ["client.message_paint_opportunity", e.paintedAt]
+                                            ]) null == n || e.emitted.has(s) || (e.emitted.add(s), this.emit(s, "success", i, n.at, t.trace?.trace, t.startedAt, n));
+                                        null != e.paintedAt && null != e.committedAt && this.finish(t, "success", e.paintedAt.at, i, e.paintedAt)
+                                    }
+                                    finish(e, t, i) {
+                                        let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
+                                            n = arguments.length > 4 ? arguments[4] : void 0;
+                                        if (this.sends.get(e.clientRequestId) === e) {
+                                            for (let [r, l] of("success" !== t && this.expireLifecycle(e), this.lifecycleSends.get(e.clientRequestId) !== e && clearTimeout(e.timeout), "success" !== t && e.finishHttp(new DOMException("Message observation ended", "AbortError")), this.firstResponse(e, t, i, {
+                                                    ...s,
+                                                    response_type: "success" === t ? "reply" : void 0
+                                                }, n), this.emit("client.round_trip", t, {
+                                                    measurement_id: e.measurementId,
+                                                    room_kind: e.roomKind,
+                                                    client_request_id: e.clientRequestId,
+                                                    input_text_characters: e.inputTextCharacters,
+                                                    entry_point: e.entryPoint,
+                                                    message_id: e.messageId,
+                                                    observation_interrupted: null != e.interruptedAt && e.interruptedAt <= i,
+                                                    ...s
+                                                }, i, e.trace?.trace, e.startedAt, n), e.trace?.finish(void 0, {
+                                                    outcome: "success" === t || "aborted" === t ? t : "failure",
+                                                    reason: "success" === t ? null : t
+                                                }), this.sends.delete(e.clientRequestId), null != e.messageId && this.inputs.delete(e.messageId), this.replies)) l.send === e && this.replies.delete(r);
+                                            0 === this.sends.size && (document.removeEventListener("visibilitychange", this.visibilityChanged), this.replies.clear(), 0 === this.lifecycleSends.size && this.options.onPendingChange?.(!1)), this.notifyLifecycleReplies()
+                                        }
+                                    }
+                                    tracksLifecycle(e) {
+                                        return null != this.options.onLifecycle && "orbit" === this.options.surface && "dot" === e.roomKind
+                                    }
+                                    recordLifecycleReceipt(e, t, i) {
+                                        null != this.options.onLifecycle && null == e.lifecycleReceipt && (e.lifecycleReceipt = {
+                                            moment: t,
+                                            source: i
+                                        })
+                                    }
+                                    emitLifecycleReply(e) {
+                                        let t = e.send;
+                                        !(null == t || !this.tracksLifecycle(t) || !this.isLifecycleReply(e) || performance.now() - t.startedAt >= 3e5) && this.lifecycleSends.get(t.clientRequestId) === t && (null == e.lifecycleReceipt || e.lifecycleReceivedEmitted || (e.lifecycleReceivedEmitted = !0, this.emitLifecycle(t, "DOT_MESSAGE_LIFECYCLE_EVENT_TYPE_RECEIVE_MESSAGE", e.lifecycleReceipt.moment, e)), null == e.lifecycleRenderedAt || e.lifecycleRenderedEmitted || (e.lifecycleRenderedEmitted = !0, this.emitLifecycle(t, "DOT_MESSAGE_LIFECYCLE_EVENT_TYPE_RENDER_MESSAGE", e.lifecycleRenderedAt, e)))
+                                    }
+                                    emitLifecycle(e, t, i, s) {
+                                        this.tracksLifecycle(e) && this.options.onLifecycle?.({
+                                            type: t,
+                                            observationId: e.measurementId,
+                                            metadataKinds: e.metadataKinds,
+                                            roomId: this.roomId,
+                                            clientRequestId: e.clientRequestId,
+                                            inputMessageId: null == s ? void 0 : e.messageId,
+                                            replyMessageId: s?.identity.messageId,
+                                            elapsedMs: String(Math.max(0, Math.ceil(i.at - e.startedAt))),
+                                            isAppVisible: i.visible,
+                                            isActiveRoom: i.active,
+                                            deliverySource: s?.lifecycleReceipt?.source
+                                        }, this.wallOrigin + i.at)
+                                    }
+                                    isLifecycleReply(e) {
+                                        return !e.lifecycleDeleted && "user" === e.identity.role && null != this.reactionSenderId && e.identity.accountUserId === this.reactionSenderId
+                                    }
+                                    retainLifecycleReply(e) {
+                                        if (0 !== this.lifecycleSends.size && (null == e.send || this.lifecycleSends.get(e.send.clientRequestId) === e.send) && (null != e.send || null == e.identity.replyToMessageId || [...this.lifecycleSends.values()].some(e => null == e.messageId)) && !this.lifecycleReplies.has(e.identity.messageId)) {
+                                            if (this.lifecycleReplies.size >= 64) {
+                                                let t = [...this.lifecycleReplies.values()].find(e => null == e.send);
+                                                if (null == t && null == e.send) return;
+                                                let i = t ?? this.lifecycleReplies.values().next().value;
+                                                null != i && (this.lifecycleReplies.delete(i.identity.messageId), null != i.send && this.expireLifecycle(i.send), this.notifyLifecycleReply(i.identity.messageId))
+                                            }
+                                            this.lifecycleSends.size > 0 && (null == e.send || this.lifecycleSends.get(e.send.clientRequestId) === e.send) && this.lifecycleReplies.set(e.identity.messageId, e)
+                                        }
+                                    }
+                                    findSend(e) {
+                                        let t = this.inputs.get(e);
+                                        if (null != t) return t;
+                                        for (let t of this.lifecycleSends.values())
+                                            if (t.messageId === e) return t
+                                    }
+                                    expireLifecycle(e) {
+                                        if (this.lifecycleSends.get(e.clientRequestId) === e) {
+                                            for (let [t, i] of(this.lifecycleSends.delete(e.clientRequestId), this.lifecycleReplies))(i.send === e || 0 === this.lifecycleSends.size) && (this.lifecycleReplies.delete(t), this.notifyLifecycleReply(t));
+                                            this.sends.get(e.clientRequestId) !== e && clearTimeout(e.timeout), 0 === this.sends.size && 0 === this.lifecycleSends.size && this.options.onPendingChange?.(!1)
+                                        }
+                                    }
+                                    notifyLifecycleReply(e) {
+                                        for (let t of this.lifecycleListeners.get(e) ?? []) t();
+                                        this.hasLifecycleCandidate(e) || this.lifecycleListeners.delete(e)
+                                    }
+                                    notifyLifecycleReplies() {
+                                        for (let e of this.lifecycleListeners.keys()) this.notifyLifecycleReply(e)
+                                    }
+                                    firstResponse(e, t, i, s, n) {
+                                        "messages" !== e.entryPoint || e.firstResponseRecorded || (e.firstResponseRecorded = !0, this.emit("client.first_response", t, {
+                                            measurement_id: e.measurementId,
+                                            room_kind: e.roomKind,
+                                            client_request_id: e.clientRequestId,
+                                            message_id: e.messageId,
+                                            input_text_characters: e.inputTextCharacters,
+                                            entry_point: e.entryPoint,
+                                            observation_interrupted: null != e.interruptedAt && e.interruptedAt <= i,
+                                            ...s
+                                        }, i, e.trace?.trace, e.startedAt, n))
+                                    }
+                                    interruptObservations() {
+                                        let e = performance.now();
+                                        for (let t of this.sends.values()) t.interruptedAt = t.interruptedAt ?? e
+                                    }
+                                    operation(e, t, i) {
+                                        var s = this;
+                                        this.operations.size >= 64 && this.operations.values().next().value?.(new DOMException("Message observation capacity exceeded", "AbortError"));
+                                        let n = performance.now(),
+                                            r = (0, p.f)({
+                                                name: `orbit.messaging.${e}`,
+                                                attributes: C(this.roomId, this.options.surface ?? "unknown", t),
+                                                trace: i
+                                            }),
+                                            l = {
+                                                ...t,
+                                                trace_id: r?.trace.traceparent.split("-")[1]
+                                            };
+                                        this.emit(e, "started", l, n);
+                                        let a = function(t) {
+                                                let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                                                if (!s.operations.delete(a)) return;
+                                                clearTimeout(o);
+                                                let c = null == t ? "success" : v(t);
+                                                s.emit(e, c, {
+                                                    ...l,
+                                                    ...i
+                                                }, performance.now(), void 0, n), r?.finish(t)
+                                            },
+                                            o = setTimeout(() => {
+                                                a(new DOMException("Message observation timed out", "TimeoutError"))
+                                            }, 3e5);
+                                        this.operations.add(a);
+                                        let c = {};
+                                        return null != r && (c.traceparent = r.trace.traceparent, null != r.trace.tracestate && (c.tracestate = r.trace.tracestate)), {
+                                            headers: c,
+                                            finish: a
+                                        }
+                                    }
+                                    emit(e, t, i, s, n, r, l) {
+                                        let a = null == r ? void 0 : Math.max(0, s - r),
+                                            o = "instant";
+                                        null != r && (o = "client.round_trip" === e || "client.first_response" === e || "client.http_send" === e || "client.history_fetch" === e || "client.room_fetch" === e ? "duration" : "elapsed_since_send");
+                                        let c = {
+                                                event: "orbit.messaging.stage",
+                                                surface: this.options.surface ?? "unknown",
+                                                stage: e,
+                                                outcome: t,
+                                                durationMs: a,
+                                                measurement: o,
+                                                clientTimestampMs: this.wallOrigin + s,
+                                                sessionActive: l?.active ?? this.active,
+                                                documentVisible: l?.visible ?? "visible" === document.visibilityState,
+                                                inputTextCharacters: i.input_text_characters,
+                                                replyTextCharacters: i.reply_text_characters,
+                                                entryPoint: i.entry_point,
+                                                responseType: i.response_type,
+                                                observationInterrupted: i.observation_interrupted,
+                                                measurementId: i.measurement_id,
+                                                serverRequestId: i.server_request_id,
+                                                roomKind: i.room_kind ?? this.roomKind,
+                                                isRetry: i.is_retry,
+                                                metadataKinds: i.metadata_kinds,
+                                                failureStage: i.failure_stage
+                                            },
+                                            d = C(this.roomId, c.surface, {
+                                                ...i,
+                                                trace_id: n?.traceparent.split("-")[1] ?? i.trace_id
+                                            });
+                                        m.a.info("Orbit messaging stage", {
+                                            safe: c,
+                                            sensitive: {
+                                                roomId: this.roomId,
+                                                clientRequestId: i.client_request_id,
+                                                messageId: i.message_id,
+                                                replyToMessageId: i.reply_to_message_id,
+                                                traceId: d.trace_id
+                                            }
+                                        }), this.options.onRecord?.(c);
+                                        let u = `orbit.messaging.${e}`,
+                                            h = {
+                                                ...c,
+                                                ...d
+                                            };
+                                        performance.clearMarks(u), performance.mark(u, {
+                                            startTime: s,
+                                            detail: h
+                                        }), null != r && (performance.clearMeasures(u), performance.measure(u, {
+                                            start: r,
+                                            end: s,
+                                            detail: h
+                                        })), null != n && (0, p.c)({
+                                            name: u,
+                                            trace: n,
+                                            attributes: {
+                                                stage: e,
+                                                outcome: t,
+                                                ...d
+                                            },
+                                            startTimeMs: this.wallOrigin + ("client.round_trip" === e || "client.first_response" === e ? r ?? s : s),
+                                            endTimeMs: this.wallOrigin + s,
+                                            failed: "failure" === t || "timeout" === t
+                                        })
+                                    }
+                                    moment() {
+                                        return {
+                                            at: performance.now(),
+                                            active: this.active,
+                                            visible: "visible" === document.visibilityState
+                                        }
+                                    }
+                                }
+
+                                function y(e) {
+                                    let t = 0;
+                                    for (let i of e) t++;
+                                    return t
+                                }
+
+                                function C(e, t, i) {
+                                    let s = {
+                                        room_id: e,
+                                        surface: t
+                                    };
+                                    for (let [e, t] of Object.entries(i)) null != t && (s[e] = t);
+                                    return s
+                                }
+
+                                function g(e) {
+                                    return {
+                                        message_id: e.messageId,
+                                        client_request_id: e.clientRequestId || void 0,
+                                        reply_to_message_id: e.replyToMessageId || void 0
+                                    }
+                                }
+
+                                function v(e) {
+                                    if (e instanceof Error || e instanceof DOMException) {
+                                        if ("AbortError" === e.name) return "aborted";
+                                        if ("TimeoutError" === e.name) return "timeout"
+                                    }
+                                    return e instanceof f.b && e.deliveryUnknown ? "delivery_unknown" : "failure"
+                                }
+                                let _ = (0, s.j)(a.a, () => new I);
+
+                                function M(e, t) {
+                                    return e.get(_, void 0).get(e, t)
+                                }
+                                class I {
+                                    identityKey = null;
+                                    rooms = new Map;
+                                    pendingRooms = new Set;
+                                    stopWatching;
+                                    stopSubscription;
+                                    get(e, t) {
+                                        let {
+                                            accountId: i,
+                                            userId: s,
+                                            accountUserId: a,
+                                            roomId: h
+                                        } = t, f = JSON.stringify([i, s, a]);
+                                        if (this.identityKey !== f) {
+                                            this.dispose(), this.identityKey = f;
+                                            let t = e.watch(e => {
+                                                let {
+                                                    get: t
+                                                } = e;
+                                                (t(r.f) !== i || t(r.k) !== s) && this.dispose()
+                                            });
+                                            this.identityKey === f ? this.stopWatching = t : t()
+                                        }
+                                        let p = this.rooms.get(h);
+                                        if (null != p) return p;
+                                        let m = (0, n.c)(e),
+                                            y = new L(h, {
+                                                surface: "orbit",
+                                                onLifecycle: (t, n) => {
+                                                    try {
+                                                        if (e.get(r.f) !== i || e.get(r.k) !== s) return;
+                                                        let l = (0, u.c)(),
+                                                            a = l?.trim();
+                                                        (0, d.a)(e, c, {
+                                                            ...t,
+                                                            client: {
+                                                                type: "DOT_MESSAGE_LIFECYCLE_CLIENT_TYPE_WEB",
+                                                                version: "" === a || "dev" === a || "browser-dev" === a || "development" === a || "0.0.0" === a ? void 0 : a
+                                                            }
+                                                        }, void 0, void 0, {
+                                                            expectedUserId: s,
+                                                            expectedAccountId: i,
+                                                            eventCreatedAt: new Date(n).toISOString()
+                                                        })
+                                                    } catch {}
+                                                },
+                                                onRecord: t => {
+                                                    ! function(e, t) {
+                                                        if ("client.first_response" !== t.stage && "client.round_trip" !== t.stage || "started" === t.outcome) return;
+                                                        let i = {
+                                                            stage: t.stage,
+                                                            outcome: t.outcome,
+                                                            entry_point: t.entryPoint ?? "unknown",
+                                                            observation_interrupted: String(t.observationInterrupted ?? !1)
+                                                        };
+                                                        e.count("default", "orbit.messaging.client.response_result", i), null != t.durationMs && e.hist("default", "orbit.messaging.client.response_duration_ms", i, t.durationMs)
+                                                    }(m, t), e.get(o.a).log({
+                                                        message: "Orbit messaging stage",
+                                                        status: "info",
+                                                        context: {
+                                                            event: t.event,
+                                                            surface: t.surface,
+                                                            stage: t.stage,
+                                                            outcome: t.outcome,
+                                                            measurement: t.measurement,
+                                                            durationMs: t.durationMs,
+                                                            clientTimestampMs: t.clientTimestampMs,
+                                                            sessionActive: t.sessionActive,
+                                                            documentVisible: t.documentVisible,
+                                                            inputTextCharacters: t.inputTextCharacters,
+                                                            replyTextCharacters: t.replyTextCharacters,
+                                                            entryPoint: t.entryPoint,
+                                                            responseType: t.responseType,
+                                                            observationInterrupted: t.observationInterrupted,
+                                                            measurementId: t.measurementId,
+                                                            serverRequestId: t.serverRequestId,
+                                                            roomKind: t.roomKind,
+                                                            isRetry: t.isRetry,
+                                                            metadataKinds: t.metadataKinds,
+                                                            failureStage: t.failureStage
+                                                        }
+                                                    })
+                                                },
+                                                onPendingChange: e => {
+                                                    this.rooms.get(h) === y && (e ? this.pendingRooms.add(h) : this.pendingRooms.delete(h), 0 === this.pendingRooms.size ? (this.stopSubscription?.(), this.stopSubscription = void 0) : null == this.stopSubscription && (this.stopSubscription = (0, l.a)({
+                                                        accountId: i,
+                                                        userId: s,
+                                                        onUpdate: () => {},
+                                                        onMessageReceived: (e, t, i) => {
+                                                            null != t.id && this.pendingRooms.has(e) && this.rooms.get(e)?.received(e, {
+                                                                messageId: t.id,
+                                                                clientRequestId: t.request_id,
+                                                                replyToMessageId: t.reply_to?.message_id,
+                                                                role: t.role,
+                                                                accountUserId: t.account_user_id,
+                                                                self: "user" === t.role && t.account_user_id === a
+                                                            }, i)
+                                                        }
+                                                    })))
+                                                }
+                                            }),
+                                            C = [...this.rooms.values()].filter(e => e.idle).length;
+                                        for (let [e, t] of this.rooms) t.idle && C >= 64 && (t.dispose(), this.rooms.delete(e), C--);
+                                        return this.rooms.set(h, y), y
+                                    }
+                                    dispose() {
+                                        this.identityKey = null, this.stopWatching?.(), this.stopWatching = void 0, this.stopSubscription?.(), this.stopSubscription = void 0, this.pendingRooms.clear();
+                                        let e = [...this.rooms.values()];
+                                        for (let t of (this.rooms.clear(), e)) t.dispose()
+                                    }
+                                }
+                            })
+                        };

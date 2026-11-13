@@ -1,1 +1,2910 @@
-export const __rspack_esm_ids=[842376];export const __webpack_modules__={ULZ9:(function(e,t,a){a.d(t,{a:()=>s}),a("iYCA"),a("yCBR");var l=a("ABep"),n=a("QosV"),i=a("ylLY");function s(e){let t,a,s=(0,n.c)(8),{children:r,linkComponent:o,allowedWidgetTypes:c,radixPortalContainer:d,hydrationSafe:m}=e,u=void 0===o?"a":o,p=void 0===c?"GA":c,f=void 0!==m&&m;return s[0]!==p||s[1]!==f||s[2]!==u||s[3]!==d?(t={linkComponent:u,allowedWidgetTypes:p,radixPortalContainer:d,hydrationSafe:f},s[0]=p,s[1]=f,s[2]=u,s[3]=d,s[4]=t):t=s[4],s[5]!==r||s[6]!==t?(a=(0,l.jsx)(i.a.Provider,{value:t,children:r}),s[5]=r,s[6]=t,s[7]=a):a=s[7],a}}),QRIH:(function(e,t,a){a.d(t,{a:()=>x,b:()=>g});var l=a("ABep"),n=a("QosV"),i=a("on57"),s=a("zd8w"),r=a("Wf1j"),o=a("oyxz"),c=a("sAQ3"),d=a("Sm6l"),m=a("JNtf"),u=a("mUDD"),p=a("bf6R"),f=e=>(0,l.jsxs)("svg",{xmlns:"http://www.w3.org/2000/svg",width:32,height:32,fill:"none",viewBox:"0 0 24 24",...e,children:[(0,l.jsx)("path",{fill:"#4D6FE6",d:"M12 2.75c.248 0 .492.059.712.172l6 3.077A1.6 1.6 0 0 1 19.6 7.42v4.067c0 4.328-2.861 8.043-6.9 9.287a2.362 2.362 0 0 1-1.4 0c-4.039-1.244-6.9-4.959-6.9-9.287V7.42c0-.6.338-1.148.888-1.42l6-3.077A1.55 1.55 0 0 1 12 2.75Z"}),(0,l.jsx)("path",{fill:"#86A0F2",d:"M12 5.154 7.4 7.512v3.975c0 3.084 1.862 5.812 4.6 7.05V5.154Z"})]}),h=e=>(0,l.jsxs)("svg",{xmlns:"http://www.w3.org/2000/svg",width:24,height:24,fill:"none",viewBox:"0 0 24 24",...e,children:[(0,l.jsx)("path",{fill:"#4D6FE6",d:"M12 2.75c.248 0 .492.059.712.172l6 3.077A1.6 1.6 0 0 1 19.6 7.42v4.067c0 4.328-2.861 8.043-6.9 9.287a2.362 2.362 0 0 1-1.4 0c-4.039-1.244-6.9-4.959-6.9-9.287V7.42c0-.6.338-1.148.888-1.42l6-3.077A1.55 1.55 0 0 1 12 2.75Z"}),(0,l.jsx)("path",{fill:"#86A0F2",d:"M12 5.154 7.4 7.512v3.975c0 3.084 1.862 5.812 4.6 7.05V5.154Z"})]});function x(e){let t,a,x,b,v,y,j,w,N,k,S,C,F,A,M,I,E,P,L,z,D,T,O=(0,n.c)(67),{presentation:_,message:q,disabled:R,isSubmitting:U,completed:B,standalone:K,onOpen:V,onOpenInThread:W,onConfirm:H,onCancel:Q}=e,Z=void 0!==B&&B,G=void 0!==K&&K,Y=(0,r.a)(),[J,X]=(0,s.useState)(G);O[0]!==G?(t=(0,i.b)("flex flex-wrap items-center gap-2",{"justify-center":G}),O[0]=G,O[1]=t):t=O[1];let $="shield"===_.icon?"actionChipWithIcon":"actionChip",ee=R&&!Z;O[2]!==Z||O[3]!==V||O[4]!==W?(a=()=>{null==W||Z?(V?.(),X(!0)):W()},O[2]=Z,O[3]=V,O[4]=W,O[5]=a):a=O[5],O[6]!==_.icon?(x="shield"===_.icon&&(0,l.jsx)("span",{className:"flex shrink-0 items-center justify-center rounded-full bg-white p-0.5",children:(0,l.jsx)(h,{"aria-hidden":"true"})}),O[6]=_.icon,O[7]=x):x=O[7],O[8]!==_.triggerLabel?(b=(0,l.jsx)("span",{className:"min-w-0 break-words whitespace-normal",children:_.triggerLabel}),O[8]=_.triggerLabel,O[9]=b):b=O[9],O[10]!==Z||O[11]!==Y?(v=Z&&(0,l.jsx)(p.Ub,{"aria-label":Y.formatMessage({id:"mcpConfirmation.completed",defaultMessage:"Completed"})}),O[10]=Z,O[11]=Y,O[12]=v):v=O[12],O[13]!==U||O[14]!==$||O[15]!==ee||O[16]!==a||O[17]!==x||O[18]!==b||O[19]!==v?(y=(0,l.jsxs)(c.a,{color:"conversationAccentSubtle",size:$,radius:"messageBubble",type:"button",className:"max-w-full",disabled:ee,loading:U,"aria-haspopup":"dialog",onClick:a,children:[x,b,v]}),O[13]=U,O[14]=$,O[15]=ee,O[16]=a,O[17]=x,O[18]=b,O[19]=v,O[20]=y):y=O[20],O[21]!==y||O[22]!==t?(j=(0,l.jsx)("div",{"data-mcp-confirmation-chip":!0,className:t,children:y}),O[21]=y,O[22]=t,O[23]=j):j=O[23],O[24]===Symbol.for("react.memo_cache_sentinel")?(w={"aria-describedby":void 0},O[24]=w):w=O[24],O[25]!==Z||O[26]!==R||O[27]!==H?(N=e=>{e.preventDefault(),R||Z||(H(),X(!1))},O[25]=Z,O[26]=R,O[27]=H,O[28]=N):N=O[28],O[29]!==_.icon?(k="shield"===_.icon&&(0,l.jsx)("span",{className:"flex shrink-0 items-center justify-center rounded-xl border border-default bg-white p-3",children:(0,l.jsx)(f,{"aria-hidden":"true"})}),O[29]=_.icon,O[30]=k):k=O[30],O[31]!==_.title?(S=(0,l.jsx)(m.e,{variant:"confirmation",className:"text-center",children:_.title}),O[31]=_.title,O[32]=S):S=O[32],O[33]!==k||O[34]!==S?(C=(0,l.jsxs)("div",{className:"flex flex-col items-center gap-3",children:[k,S]}),O[33]=k,O[34]=S,O[35]=C):C=O[35],O[36]!==q||O[37]!==_?(F=(0,l.jsx)(g,{presentation:_,message:q}),O[36]=q,O[37]=_,O[38]=F):F=O[38];let et=_.destructive?"dangerSolid":"primary",ea=R||Z;return O[39]!==_.confirmLabel?(A=(0,l.jsx)("span",{className:"min-w-0 break-words whitespace-normal",children:_.confirmLabel}),O[39]=_.confirmLabel,O[40]=A):A=O[40],O[41]!==U||O[42]!==et||O[43]!==ea||O[44]!==A?(M=(0,l.jsx)(u.c,{children:(0,l.jsx)(d.a,{color:et,size:"modalPrimary",radius:"full",type:"submit",disabled:ea,loading:U,children:A})}),O[41]=U,O[42]=et,O[43]=ea,O[44]=A,O[45]=M):M=O[45],O[46]!==Z||O[47]!==R||O[48]!==Q?(I=()=>{R||Z||Q?.(),X(!1)},O[46]=Z,O[47]=R,O[48]=Q,O[49]=I):I=O[49],O[50]===Symbol.for("react.memo_cache_sentinel")?(E=(0,l.jsx)(o.a,{id:"mcpConfirmation.cancel",defaultMessage:"Cancel"}),O[50]=E):E=O[50],O[51]!==I?(P=(0,l.jsx)(u.c,{children:(0,l.jsx)(d.a,{color:"secondary",size:"modalPrimary",radius:"full",type:"button",onClick:I,children:E})}),O[51]=I,O[52]=P):P=O[52],O[53]!==M||O[54]!==P?(L=(0,l.jsxs)("div",{className:"flex flex-col gap-2",children:[M,P]}),O[53]=M,O[54]=P,O[55]=L):L=O[55],O[56]!==N||O[57]!==C||O[58]!==F||O[59]!==L?(z=(0,l.jsxs)(u.b,{as:"form",size:"viewport",variant:"confirmation",onSubmit:N,children:[C,F,L]}),O[56]=N,O[57]=C,O[58]=F,O[59]=L,O[60]=z):z=O[60],O[61]!==J||O[62]!==z?(D=(0,l.jsx)(m.a,{open:J,onOpenChange:X,widthHint:480,variant:"confirmation",closeButtonSize:"large",contentProps:w,children:z}),O[61]=J,O[62]=z,O[63]=D):D=O[63],O[64]!==j||O[65]!==D?(T=(0,l.jsxs)(l.Fragment,{children:[j,D]}),O[64]=j,O[65]=D,O[66]=T):T=O[66],T}function g(e){let t,a=(0,n.c)(10),{message:i,presentation:s}=e;if(s?.sections!=null){let e,t;return a[0]!==s.sections?(e=s.sections.map(v),a[0]=s.sections,a[1]=e):e=a[1],a[2]!==e?(t=(0,l.jsx)("div",{className:"flex flex-col gap-5 select-text",children:e}),a[2]=e,a[3]=t):t=a[3],t}if(s?.fields!=null){let e,t;return a[4]!==s.fields?(e=s.fields.map(b),a[4]=s.fields,a[5]=e):e=a[5],a[6]!==e?(t=(0,l.jsx)("dl",{className:"flex flex-col gap-4 rounded-2xl border border-default p-5 text-document leading-5 font-normal break-words text-default select-text",children:e}),a[6]=e,a[7]=t):t=a[7],t}return a[8]!==i?(t=(0,l.jsx)("div",{className:"text-sm break-words whitespace-pre-wrap text-default select-text",children:i}),a[8]=i,a[9]=t):t=a[9],t}function b(e,t){let{label:a,value:n}=e;return(0,l.jsxs)("div",{className:"flex flex-col gap-1",children:[(0,l.jsx)("dt",{className:"text-secondary",children:a}),(0,l.jsx)("dd",{className:"whitespace-pre-wrap",children:n})]},t)}function v(e,t){let{title:a,body:n,caption:i}=e;return(0,l.jsxs)("section",{className:"flex flex-col gap-2",children:[a&&(0,l.jsx)("h3",{className:"text-base font-medium text-secondary",children:a}),(0,l.jsxs)("dl",{className:"flex flex-col gap-4 rounded-2xl border border-default p-5 break-words",children:[(0,l.jsxs)("div",{className:"flex flex-col gap-1",children:[(0,l.jsx)("dt",{className:"text-sm text-secondary",children:n.label}),(0,l.jsx)("dd",{className:"text-document whitespace-pre-wrap text-default",children:n.value})]}),(0,l.jsxs)("div",{className:"flex flex-col gap-1 border-t border-default pt-4",children:[(0,l.jsx)("dt",{className:"text-sm text-secondary",children:i.label}),(0,l.jsx)("dd",{className:"text-document whitespace-pre-wrap text-default",children:i.value})]})]})]},t)}}),nxd2:(function(e,t,a){var l=a("ASxG");let n=l.object({version:l.literal(1),field:l.string().min(1),presentation:l.object({title:l.string().trim().min(1).max(120),triggerLabel:l.string().trim().min(1).max(80),confirmLabel:l.string().trim().min(1).max(80),icon:l.literal("shield").optional().catch(void 0),destructive:l.boolean().optional().catch(void 0),fields:l.array(l.object({label:l.string().trim().min(1).max(120),value:l.string().min(1).max(1e4).refine(e=>e.trim().length>0)})).min(1).max(20).optional().catch(void 0),sections:l.array(l.object({title:l.string().trim().min(1).max(120).optional(),bodyField:l.number().int().min(0).max(19),captionField:l.number().int().min(0).max(19)})).min(1).max(10).optional().catch(void 0)}).transform(e=>{let{sections:t,...a}=e,{fields:l}=a,n=t?.flatMap(e=>{let{bodyField:t,captionField:a}=e;return[t,a]}),i=null!=l&&n?.length===l.length&&new Set(n).size===l.length&&n.every(e=>e<l.length);return{...a,sections:i?t?.map(e=>{let{title:t,bodyField:a,captionField:n}=e;return{title:t,body:l[a],caption:l[n]}}):void 0}}).optional().catch(void 0)});a.d(t,{},{a:function(e){let t=n.safeParse(e.confirmation);if(!t.success||!e.message.trim())return null;let{field:a}=t.data;return 1!==Object.keys(e.schema.properties).length||e.schema.properties[a]?.type!=="boolean"||e.schema.required?.length!==1||e.schema.required[0]!==a?null:t.data}})}),vPGU:(function(e,t,a){var l=a("ABep"),n=a("QosV"),i=a("BolX"),s=a("I3F6"),r=a("zd8w"),o=a("oyxz"),c=a("Dgwo"),d=a("WNfT"),m=a("KRWX"),u=a("Sm6l"),p=a("OWtl");function f(){}a.d(t,{},{a:function(e){let t,a,h,x,g,b,v,y,j,w=(0,n.c)(26),{conversationId:N,hostId:k,requestId:S,serverName:C,onReply:F,onStandaloneResponseChange:A,isSubmitting:M}=e,I=void 0!==M&&M,E=(0,i.y)(p.a),P=(0,m.b)(),[L,z]=(0,r.useState)(!1),D=(0,r.useRef)(!1);w[0]!==N||w[1]!==k||w[2]!==I||w[3]!==F||w[4]!==A||w[5]!==S||w[6]!==E?(t=e=>{if(I||D.current)return;let t=()=>null!=F?F(e):(0,c.b)(E,k).replyWithMcpServerElicitationResponse(N,S,(0,s.b)(e));null==A?t().catch(f):(D.current=!0,z(!0),A("submitting"),Promise.resolve().then(t).then(()=>A("decline"===e?"declined":"canceled"),()=>A("failed")).finally(()=>{D.current=!1,z(!1)}))},w[0]=N,w[1]=k,w[2]=I,w[3]=F,w[4]=A,w[5]=S,w[6]=E,w[7]=t):t=w[7];let T=t;w[8]!==T?(a=e=>{"Escape"===e.key&&(e.preventDefault(),T("cancel"))},w[8]=T,w[9]=a):a=w[9],w[10]!==C?(h=(0,l.jsxs)("div",{className:"text-sm font-medium",children:[(0,l.jsx)(l.Fragment,{children:(0,l.jsx)(o.a,{id:"composer.openAIForm.invalidInput.serverTitle",defaultMessage:"{serverName} requested a form that cannot be displayed",values:{serverName:C}})}),null]}),w[10]=C,w[11]=h):h=w[11],w[12]===Symbol.for("react.memo_cache_sentinel")?(x=(0,l.jsxs)("div",{className:"text-size-chat-sm text-codex-description",children:[(0,l.jsx)(l.Fragment,{children:(0,l.jsx)(o.a,{id:"composer.openAIForm.invalidInput.dismissInstruction",defaultMessage:"Dismiss the request to close it"})}),null]}),w[12]=x):x=w[12],w[13]!==h?(g=(0,l.jsxs)("div",{className:"flex flex-col gap-1 p-4",children:[h,x]}),w[13]=h,w[14]=g):g=w[14];let O=I||L;return w[15]!==T?(b=()=>T("cancel"),w[15]=T,w[16]=b):b=w[16],w[17]===Symbol.for("react.memo_cache_sentinel")?(v=(0,l.jsx)(o.a,{id:"composer.openAIForm.unsupported.dismiss",defaultMessage:"Dismiss"}),w[17]=v):v=w[17],w[18]!==P||w[19]!==O||w[20]!==b?(y=(0,l.jsxs)("div",{className:"flex justify-end gap-2 px-4 py-3",children:[(0,l.jsx)(l.Fragment,{children:(0,l.jsx)(u.a,{autoFocus:P,color:"primary",size:"composer",disabled:O,onClick:b,children:v})}),null]}),w[18]=P,w[19]=O,w[20]=b,w[21]=y):y=w[21],w[22]!==y||w[23]!==a||w[24]!==g?(j=(0,l.jsx)(d.a,{children:(0,l.jsxs)("div",{className:"flex flex-col",role:"presentation",onKeyDown:a,children:[g,y]})}),w[22]=y,w[23]=a,w[24]=g,w[25]=j):j=w[25],j}})}),JEWd:(function(e,t,a){var l=a("ABep"),n=a("QosV"),i=a("on57"),s=a("zd8w"),r=a("Sm6l"),o=a("IxWh"),c=a("HOLv"),d=a("bIvi"),m=a("J6nW"),u=a("aAps");let p={form:{color:"secondarySurface",size:"actionSm"},gallery:{color:"outlineSurface",size:"dialog"},compact:{color:"ghost",size:"compact"}};a.d(t,{},{a:function(e){let t,a,f,h,x,g,b,v,y,j,w,N=(0,n.c)(38),{ariaInvalid:k,ariaLabel:S,backLabel:C,children:F,forwardLabel:A,header:M,layout:I,role:E,shouldUseReducedMotion:P}=e,L=void 0===I?"form":I,z=void 0===E?"group":E;N[0]!==F?(t=s.Children.count(F),N[0]=F,N[1]=t):t=N[1];let D=t,T=(0,s.useRef)(null),[O,_]=(0,s.useState)("ltr"),[q,R]=(0,s.useState)(!1),[U,B]=(0,s.useState)(!1);N[2]===Symbol.for("react.memo_cache_sentinel")?(a=e=>{let t="rtl"===getComputedStyle(e).direction?"rtl":"ltr";_(t);let{maximum:a,minimum:l}=(0,o.a)(e,t);"rtl"===t?(R(e.scrollLeft<a-1),B(e.scrollLeft>l+1)):(R(e.scrollLeft>l+1),B(e.scrollLeft<a-1))},N[2]=a):a=N[2];let K=(0,d.a)(a),V=e=>{if(T.current=e,null==e||0===D||(K(e),"u"<typeof ResizeObserver))return;let t=()=>K(e),a=new ResizeObserver(t),l=new MutationObserver(t);return l.observe(e,{childList:!0}),a.observe(e),null!=e.firstElementChild&&a.observe(e.firstElementChild),null!=e.lastElementChild&&a.observe(e.lastElementChild),()=>{a.disconnect(),l.disconnect(),T.current=null}},W="form"===L&&"pointer-events-none absolute inset-x-0 top-1 z-10 h-34 justify-between px-3",H="gallery"===L&&"gap-2";N[3]!==W||N[4]!==H?(f=(0,i.b)("flex items-center",W,H),N[3]=W,N[4]=H,N[5]=f):f=N[5];let Q=[-1,1].map(e=>{let t=-1===e?q:U,a=-1===e?C:A;return(0,l.jsx)(r.a,{className:(0,i.b)("pointer-events-auto","form"===L&&!t&&"invisible"),"aria-label":a,...p[L],disabled:!t,onClick:()=>{let t;null!=(t=T.current)&&t.scrollTo({left:(0,o.b)(t,e,"rtl"===getComputedStyle(t).direction?"rtl":"ltr"),behavior:P?"instant":"smooth"})},radius:"compact"===L?void 0:"full",title:a,uniform:!0,children:(0,l.jsx)(c.a,{className:e===("rtl"===O?1:-1)?"rotate-180":void 0,asset:"gallery"===L?m.a:u.a})},e)});N[6]!==f||N[7]!==Q?(h=(0,l.jsx)("div",{className:f,children:Q}),N[6]=f,N[7]=Q,N[8]=h):h=N[8];let Z=h,G="gallery"===L&&"gap-4",Y="compact"===L&&"gap-2",J="form"===L&&"gap-1.5";N[9]!==G||N[10]!==Y||N[11]!==J?(x=(0,i.b)("flex min-w-0 flex-col",G,Y,J),N[9]=G,N[10]=Y,N[11]=J,N[12]=x):x=N[12],N[13]!==M||N[14]!==L||N[15]!==Z?(g=null!=M||"form"!==L?(0,l.jsxs)("div",{className:(0,i.b)("flex min-w-0 items-center","form"===L&&"gap-1 px-4 py-1.5","compact"===L&&"gap-3","gallery"===L&&"min-h-9 gap-3"),children:[(0,l.jsx)("div",{className:"min-w-0 flex-1",children:M}),"form"!==L?Z:null]}):null,N[13]=M,N[14]=L,N[15]=Z,N[16]=g):g=N[16];let X="form"===L?"snap-x snap-mandatory scroll-px-4 gap-4 px-4 py-1":"-my-1.5 py-1.5",$="gallery"===L&&"gap-3",ee="compact"===L&&"gap-2";N[17]!==X||N[18]!==$||N[19]!==ee?(b=(0,i.b)("hide-scrollbar flex overflow-x-auto overscroll-x-contain",X,$,ee),N[17]=X,N[18]=$,N[19]=ee,N[20]=b):b=N[20];let et=k||void 0;N[21]!==K?(v=e=>K(e.currentTarget),N[21]=K,N[22]=v):v=N[22],N[23]!==S||N[24]!==F||N[25]!==z||N[26]!==V||N[27]!==b||N[28]!==et||N[29]!==v?(y=(0,l.jsx)("div",{ref:V,className:b,"data-horizontal-scroll":!0,role:z,"aria-invalid":et,"aria-label":S,onScroll:v,children:F}),N[23]=S,N[24]=F,N[25]=z,N[26]=V,N[27]=b,N[28]=et,N[29]=v,N[30]=y):y=N[30];let ea="form"===L?Z:null;return N[31]!==y||N[32]!==ea?(j=(0,l.jsxs)("div",{className:"relative min-w-0",children:[y,ea]}),N[31]=y,N[32]=ea,N[33]=j):j=N[33],N[34]!==x||N[35]!==g||N[36]!==j?(w=(0,l.jsxs)("div",{className:x,children:[g,j]}),N[34]=x,N[35]=g,N[36]=j,N[37]=w):w=N[37],w}})}),K1S5:(function(e,t,a){a.d(t,{a:()=>e2});var l=a("ABep"),n=a("QosV"),i=a("MnTr"),s=a("on57"),r=a("BolX"),o=a("I07G"),c=a("I3F6"),d=a("zd8w"),m=a("Wf1j"),u=a("Telb"),p=a("Dgwo"),f=a("WNfT"),h=a("KRWX"),x=a("NySd"),g=a("M7Ra"),b=a("SGsN"),v=a("rP0s"),y=a("oyxz"),j=a("Sm6l"),w=a("jDEJ");function N(e){let t,a,i,s,r,o,c=(0,n.c)(14),{disabled:d,isSubmitting:m,hotkeysEnabled:u,onDecline:p}=e;return c[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,l.jsx)(y.a,{id:"composer.mcpConfirmation.button.decline",defaultMessage:"Decline"}),c[0]=t):t=c[0],c[1]!==m||c[2]!==p?(a=(0,l.jsx)(j.a,{color:"ghost",size:"composer",disabled:m,type:"button",onClick:p,children:t}),c[1]=m,c[2]=p,c[3]=a):a=c[3],c[4]===Symbol.for("react.memo_cache_sentinel")?(i=(0,l.jsx)(y.a,{id:"composer.mcpConfirmation.button.accept",defaultMessage:"Accept"}),c[4]=i):i=c[4],c[5]!==u?(s=u&&(0,l.jsx)(f.b,{variant:"primary",children:(0,w.b)("Enter")}),c[5]=u,c[6]=s):s=c[6],c[7]!==d||c[8]!==m||c[9]!==s?(r=(0,l.jsxs)(j.a,{color:"primary",size:"composer",type:"submit",disabled:d,loading:m,children:[i,s]}),c[7]=d,c[8]=m,c[9]=s,c[10]=r):r=c[10],c[11]!==a||c[12]!==r?(o=(0,l.jsxs)("div",{className:"flex shrink-0 items-center justify-end gap-2 px-4 py-3",children:[a,r]}),c[11]=a,c[12]=r,c[13]=o):o=c[13],o}var k=a("QRIH"),S=a("nxd2"),C=a("OWtl"),F=a("tSEg"),A=a("LVsP"),M=a("pHQ8"),I=a("AqHC"),E=a("q475"),P=a("K0rn"),L=a("IRP0");function z(e){let t=(0,M.c)(e.schema);return{kind:e.kind,customDrafts:{},values:(0,M.a)(t.flatMap(e=>{let{schema:t,...a}=e;return(0,E.c)(t)||(0,P.b)(t)?[]:[{...a,schema:t}]})),fileOptions:Object.fromEntries(t.flatMap(e=>{let{name:t,schema:a}=e;return(0,E.c)(a)?[[t,(0,E.a)(a)]]:[]}))}}function D(e,t){return t?.selected&&t.text.length>0&&Array.isArray(e)?[...e,t.text]:e}var T=a("tO3J");function O(e,t){return!e.defaultPrevented&&!e.nativeEvent.isComposing&&229!==e.nativeEvent.keyCode&&!!(0,T.b)(e.nativeEvent,"Enter")&&(e.preventDefault(),e.repeat||t(),!0)}var _=a("vPGU"),q=a("slpy"),R=a("g2Gi"),U=a("bf6R"),B=a("bqtn"),K=a("HOLv"),V=a("x1Lh");function W(e){let t,a=(0,n.c)(4),{options:i,disabled:s,onAccept:r}=e;return a[0]!==s||a[1]!==r||a[2]!==i?(t=(0,l.jsx)("div",{className:"me-auto max-w-full min-w-0",children:1===i.length?(0,l.jsx)(q.a,{content:(0,l.jsxs)(l.Fragment,{children:[i[0].title,i[0].description&&(0,l.jsx)("p",{children:i[0].description})]}),children:(0,l.jsx)(j.a,{color:"outlineSurface",radius:"full",size:"composer",type:"button",className:"max-w-full",disabled:s,"aria-description":i[0].description,onClick:()=>r(i[0].const),children:(0,l.jsx)("span",{className:"min-w-0 truncate",children:i[0].title})})}):(0,l.jsx)(B.a,{align:"start",disabled:s,triggerButton:(0,l.jsxs)(j.a,{color:"outlineSurface",radius:"full",size:"composer",type:"button",disabled:s,children:[(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.moreAcceptActions",defaultMessage:"More actions"}),(0,l.jsx)(K.a,{"aria-hidden":!1,asset:V.a})]}),children:i.map(e=>(0,l.jsx)(B.c.Item,{disabled:s,allowWrap:!0,subTextAllowWrap:!0,SubText:null==e.description?null:(0,l.jsx)(l.Fragment,{children:e.description}),onSelect:()=>r(e.const),children:e.title},e.const))})}),a[0]=s,a[1]=r,a[2]=i,a[3]=t):t=a[3],t}function H(e){let t,a,i,r,o,c,d,m,u=(0,n.c)(49),{autoResolution:p,disabled:h,isSubmitting:x,submitDisabled:g,acceptOptions:b,primaryActionRef:v,fieldCount:N,isLastGroup:k,onBack:S,hotkeysEnabled:C,isStandardForm:F,showSubmit:A,showHeader:M,onCancel:I,onDecline:E,onDismissLegacyImagePicker:P,onViewAll:L}=e,z=void 0!==x&&x,D=b?.required===!0&&b.options.length>1,T=b?.required?b.options[0]:void 0;u[0]!==b?.options||u[1]!==b?.options.slice||u[2]!==T?(t=b?.options.slice(+(null!=T))??[],u[0]=b?.options,u[1]=b?.options.slice,u[2]=T,u[3]=t):t=u[3];let O=t;if(null!=P){let e,t=p?.deadlineMs??"no-deadline",n=p?.deadlineMs,i=p?.nowMs;u[4]!==z||u[5]!==P||u[6]!==t||u[7]!==n||u[8]!==i?(e=(0,l.jsx)(R.a,{disabled:z,deadlineMs:n,nowMs:i,variant:"button",onDismiss:P},t),u[4]=z,u[5]=P,u[6]=t,u[7]=n,u[8]=i,u[9]=e):e=u[9],a=e}else{let e,t;u[10]===Symbol.for("react.memo_cache_sentinel")?(e=(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.deny",defaultMessage:"Deny"}),u[10]=e):e=u[10],u[11]!==h||u[12]!==E?(t=(0,l.jsx)(j.a,{color:"outlineSurface",radius:"full",size:"composer",disabled:h,onClick:E,children:e}),u[11]=h,u[12]=E,u[13]=t):t=u[13],a=t}return u[14]!==h||u[15]!==S?(i=null!=S&&(0,l.jsx)(j.a,{color:"outlineSurface",radius:"full",size:"composer",disabled:h,onClick:S,children:(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.back",defaultMessage:"Back"})}),u[14]=h,u[15]=S,u[16]=i):i=u[16],u[17]!==b||u[18]!==h||u[19]!==L?(r=null!=L?(0,l.jsx)("div",{className:null==b?"me-auto":void 0,children:(0,l.jsxs)(j.a,{color:"outlineSurface",radius:"full",size:"composer",disabled:h,onClick:L,children:[(0,l.jsx)(U.Xh,{}),(0,l.jsx)(y.a,{id:"composer.openAIForm.viewAll",defaultMessage:"View all"})]})}):null,u[17]=b,u[18]=h,u[19]=L,u[20]=r):r=u[20],u[21]!==z||u[22]!==I||u[23]!==P||u[24]!==M?(o=!M&&null==P&&(0,l.jsx)(j.a,{color:"ghost",size:"composer",disabled:z,onClick:I,children:(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.cancel",defaultMessage:"Cancel"})}),u[21]=z,u[22]=I,u[23]=P,u[24]=M,u[25]=o):o=u[25],u[26]!==b||u[27]!==O||u[28]!==g?(c=null!=b&&O.length>0&&(0,l.jsx)(W,{options:O,disabled:g,onAccept:b.onSelect}),u[26]=b,u[27]=O,u[28]=g,u[29]=c):c=u[29],u[30]!==b||u[31]!==N||u[32]!==C||u[33]!==k||u[34]!==F||u[35]!==z||u[36]!==v||u[37]!==T||u[38]!==D||u[39]!==A||u[40]!==g?(d=(null!=b||A)&&(0,l.jsx)(q.a,{content:T&&(0,l.jsxs)(l.Fragment,{children:[T.title,T.description&&(0,l.jsx)("p",{children:T.description})]}),children:(0,l.jsxs)(j.a,{autoFocus:C&&0===N,className:"max-w-full",color:"primary",size:"composer",type:D?"button":"submit",ref:v,onClick:null!=T&&null!=b&&D?()=>b.onSelect(T.const):void 0,"aria-description":T?.description,disabled:g,loading:z,children:[(0,l.jsx)("span",{className:(0,s.b)("min-w-0 truncate",F&&"text-sm font-medium"),children:k?T?.title??(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.accept",defaultMessage:"Accept"}):(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.next",defaultMessage:"Next"})}),C&&!D&&(0,l.jsx)(f.b,{variant:"primary",children:(0,w.b)("Enter")})]})}),u[30]=b,u[31]=N,u[32]=C,u[33]=k,u[34]=F,u[35]=z,u[36]=v,u[37]=T,u[38]=D,u[39]=A,u[40]=g,u[41]=d):d=u[41],u[42]!==a||u[43]!==i||u[44]!==r||u[45]!==o||u[46]!==c||u[47]!==d?(m=(0,l.jsxs)("div",{className:"flex shrink-0 flex-wrap items-center justify-end gap-2 px-4 py-3",children:[i,r,o,c,a,d]}),u[42]=a,u[43]=i,u[44]=r,u[45]=o,u[46]=c,u[47]=d,u[48]=m):m=u[48],m}var Q=a("Wyro"),Z=a.n(Q),G=a("Qr2V"),Y=a("zLIa"),J=a("E6P3"),X=a("A9Yt"),$=a("ue8o"),ee=a("zSQm"),et=a.p+"assets/icon.6b02567b2b.png",ea=a.p+"assets/icon.4e392f38ad.png",el=a.p+"assets/icon.9b2a0253b8.png";let en={"application/msword":et,"application/vnd.google-apps.document":et,"application/vnd.openxmlformats-officedocument.wordprocessingml.document":et,"text/markdown":et,"text/plain":et,"application/vnd.google-apps.presentation":ea,"application/vnd.ms-powerpoint":ea,"application/vnd.openxmlformats-officedocument.presentationml.presentation":ea,"application/vnd.google-apps.spreadsheet":el,"application/vnd.ms-excel":el,"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet":el,"text/csv":el,"text/tab-separated-values":el};function ei(e){let t,a,i,r,o,c=(0,n.c)(22),{layout:m,src:u,mimeType:p}=e,f=void 0===m?"thumbnail":m,[h,x]=(0,d.useState)(),g=null!=u&&URL.canParse(u)&&"https:"===new URL(u).protocol?u:void 0,{safeUrl:b}=(0,$.d)(g,null!=g);c[0]!==b||c[1]!==u?(t=null!=u&&(0,ee.c)(u)?u:b,c[0]=b,c[1]=u,c[2]=t):t=c[2];let v=t,y=p?.split(";")[0]?.trim().toLowerCase(),j=en[y??""],w="icon"===f?"size-5":"size-10";c[3]===Symbol.for("react.memo_cache_sentinel")?(a=(0,l.jsx)(U.Rc,{}),c[3]=a):a=c[3];let N=a;if(null!=j){let e,t;c[4]===Symbol.for("react.memo_cache_sentinel")?(e=(0,l.jsx)(U.Rc,{}),c[4]=e):e=c[4],c[5]!==w||c[6]!==j?(t=(0,l.jsx)(J.a,{className:w,alt:"",fallback:e,src:j}),c[5]=w,c[6]=j,c[7]=t):t=c[7],N=t}else if("text/html"===y||"application/xhtml+xml"===y){let e;c[8]!==w?(e=(0,l.jsx)(X.a,{className:w}),c[8]=w,c[9]=e):e=c[9],N=e}let k="card"===f||"card-icon"===f,S="icon"===f,C="thumbnail"===f;return c[10]!==k||c[11]!==S||c[12]!==C?(i=(0,s.b)("flex items-center justify-center overflow-hidden",{"h-full w-full":k,"size-5 shrink-0 rounded-xs":S,"size-10 shrink-0 rounded-md bg-surface":C}),c[10]=k,c[11]=S,c[12]=C,c[13]=i):i=c[13],c[14]!==h||c[15]!==N||c[16]!==v||c[17]!==f?(r=null==v||h===v?N:(0,l.jsx)("img",{alt:"",className:(0,s.b)("card-icon"===f?"size-10":"h-full w-full","icon"===f||"card-icon"===f?"object-contain":"object-scale-down","card"===f&&"block"),decoding:"async",draggable:!1,loading:"lazy",referrerPolicy:"no-referrer",src:v,onError:()=>x(v)}),c[14]=h,c[15]=N,c[16]=v,c[17]=f,c[18]=r):r=c[18],c[19]!==i||c[20]!==r?(o=(0,l.jsx)("span",{className:i,children:r}),c[19]=i,c[20]=r,c[21]=o):o=c[21],o}function es(e){let t,a,i,s,r,o,c,m,u=(0,n.c)(61),{autoFocus:p,submitOnEnter:f,showOptionNumbers:h,customOption:x,invalid:g,multiple:b,options:v,value:y,onChange:j}=e,w=void 0===f||f,N=(0,d.useId)(),k=(void 0===h||h)&&v.length>1,S=b?G.a:G.b,C="string"==typeof y?y:void 0;u[0]!==y?(t=Array.isArray(y)?y:[],u[0]=y,u[1]=t):t=u[1];let F=t;u[2]!==v?(a=v.some(er),u[2]=v,u[3]=a):a=u[3];let A=a;u[4]!==b||u[5]!==v||u[6]!==C?(i=b?0:Math.max(0,v.findIndex(e=>e.const===C)),u[4]=b,u[5]=v,u[6]=C,u[7]=i):i=u[7];let M=i;u[8]!==x||u[9]!==b||u[10]!==j||u[11]!==v||u[12]!==w?(s=e=>{let t=e.target;if(!(t instanceof HTMLInputElement||t instanceof HTMLButtonElement)||!t.matches('input[type="radio"], button[role="checkbox"]')||O(e,()=>{b||!w||t instanceof HTMLInputElement&&!t.checked?t.click():t.form?.requestSubmit()})||e.defaultPrevented||e.nativeEvent.isComposing||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||"ArrowDown"!==e.key&&"ArrowUp"!==e.key)return;let a=Array.from(e.currentTarget.querySelectorAll('input[type="radio"], button[role="checkbox"]')),l=(a.indexOf(t)+("ArrowDown"===e.key?1:-1)+a.length)%a.length,n=a[l];if(null!=n&&(e.preventDefault(),n.focus(),!b)){let e=v[l];null!=e?j(e.const):x?.onSelect(!0)}},u[8]=x,u[9]=b,u[10]=j,u[11]=v,u[12]=w,u[13]=s):s=u[13];let I=s;if(u[14]!==S||u[15]!==p||u[16]!==x?.selected||u[17]!==M||u[18]!==A||u[19]!==N||u[20]!==g||u[21]!==b||u[22]!==j||u[23]!==v||u[24]!==C||u[25]!==F||u[26]!==k){let e;u[28]!==S||u[29]!==p||u[30]!==x?.selected||u[31]!==M||u[32]!==A||u[33]!==N||u[34]!==g||u[35]!==b||u[36]!==j||u[37]!==C||u[38]!==F||u[39]!==k?(e=(e,t)=>{let a=F.indexOf(e.const),n=b?-1!==a:!x?.selected&&C===e.const;return(0,l.jsxs)(S,{autoFocus:p&&!x?.selected&&t===M,checked:n,invalid:g,name:N,type:b?"checkbox":"radio",value:e.const,onChange:()=>{b?j(n?F.filter((e,t)=>t!==a):[...F,e.const]):j(e.const)},children:[!b&&(0,l.jsx)(G.c,{selected:n,showNumber:k,variant:"number",index:t+1,verticalAlignment:"start"}),A?(0,l.jsx)(ei,{src:e["x-openai-thumbnail"]?.src}):null,(0,l.jsxs)("span",{className:"flex min-w-0 flex-1 flex-wrap items-baseline gap-x-2 gap-y-0.5 @max-5xl/request-card:flex-col @max-5xl/request-card:items-stretch",children:[(0,l.jsx)("span",{className:"min-w-0 text-sm font-medium wrap-anywhere",children:e.title}),null==e.description?null:(0,l.jsx)("span",{className:"min-w-0 text-sm wrap-anywhere text-codex-description",children:e.description})]})]},e.const)},u[28]=S,u[29]=p,u[30]=x?.selected,u[31]=M,u[32]=A,u[33]=N,u[34]=g,u[35]=b,u[36]=j,u[37]=C,u[38]=F,u[39]=k,u[40]=e):e=u[40],r=v.map(e),u[14]=S,u[15]=p,u[16]=x?.selected,u[17]=M,u[18]=A,u[19]=N,u[20]=g,u[21]=b,u[22]=j,u[23]=v,u[24]=C,u[25]=F,u[26]=k,u[27]=r}else r=u[27];return u[41]!==x||u[42]!==g||u[43]!==b||u[44]!==j||u[45]!==v||u[46]!==F?(o=null!=x&&b?F.map((e,t)=>v.some(t=>t.const===e)&&F.indexOf(e)===t?null:(0,l.jsx)(G.a,{autoFocus:!1,checked:!0,invalid:g,onChange:()=>j(F.filter((e,a)=>a!==t)),children:(0,l.jsx)("span",{className:"min-w-0 text-sm font-medium wrap-anywhere",children:v.find(t=>t.const===e)?.title??e})},t)):null,u[41]=x,u[42]=g,u[43]=b,u[44]=j,u[45]=v,u[46]=F,u[47]=o):o=u[47],u[48]!==S||u[49]!==p||u[50]!==x||u[51]!==N||u[52]!==g||u[53]!==b||u[54]!==v.length?(c=null!=x?(0,l.jsx)("div",{"data-mcp-form-custom-choice":!0,children:(0,l.jsx)(S,{accessibilityLabel:x.label,autoFocus:p&&(0===v.length||x.selected),checked:x.selected,invalid:g,name:N,type:b?"checkbox":"radio",onChange:()=>x.onSelect(!b||!x.selected),editor:x.editor,children:!b&&(0,l.jsx)(G.c,{selected:x.selected,variant:"custom"})})}):null,u[48]=S,u[49]=p,u[50]=x,u[51]=N,u[52]=g,u[53]=b,u[54]=v.length,u[55]=c):c=u[55],u[56]!==I||u[57]!==r||u[58]!==o||u[59]!==c?(m=(0,l.jsxs)("div",{className:"flex flex-col gap-1","data-mcp-form-choices":!0,role:"group",onKeyDownCapture:I,children:[r,o,c]}),u[56]=I,u[57]=r,u[58]=o,u[59]=c,u[60]=m):m=u[60],m}function er(e){return null!=e["x-openai-thumbnail"]}function eo(e){let t,a,i,s,r,o,c=(0,n.c)(29),{schema:d,value:m}=e;if("array"===d.type&&Array.isArray(m)&&m.length>=Number(d.minItems??0)&&(null==d.maxItems||m.length<=Number(d.maxItems))&&"type"in d.items&&"string"===d.items.type&&!("x-openai-input"in d.items)){let e;return c[0]!==d.items?(e=(0,l.jsx)(eo,{schema:d.items}),c[0]=d.items,c[1]=e):e=c[1],e}let u="string"!==d.type||"x-openai-input"in d?null:d,p="number"===d.type||"integer"===d.type?d:null,f=p?.minimum,h=p?.maximum;"array"===d.type?(f=null==d.minItems||0===Number(d.minItems)?void 0:Number(d.minItems),h=null==d.maxItems?void 0:Number(d.maxItems)):null!=u&&("minLength"in u&&(f=u.minLength||void 0),"maxLength"in u&&(h=u.maxLength));let x="none";null!=f&&null!=h?x=f===h?"exact":"both":null!=f?x="minimum":null!=h&&(x="maximum");let g=null!=u&&"format"in u?u.format:void 0;return c[2]!==x||c[3]!==h||c[4]!==f||c[5]!==d.type?(t="array"===d.type&&"none"!==x?(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.selectionCount",defaultMessage:"{bounds, select, exact {Choose exactly {minimum, plural, one {# item} other {# items}}} both {Choose {minimum}–{maximum} items} minimum {Choose at least {minimum, plural, one {# item} other {# items}}} other {Choose up to {maximum, plural, one {# item} other {# items}}}}",values:{bounds:x,minimum:f,maximum:h}}):null,c[2]=x,c[3]=h,c[4]=f,c[5]=d.type,c[6]=t):t=c[6],c[7]!==x||c[8]!==h||c[9]!==f||c[10]!==u?(a=null!=u&&"none"!==x?(0,l.jsx)("div",{children:(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.textLength",defaultMessage:"{bounds, select, exact {Use exactly {minimum, plural, one {# character} other {# characters}}} both {Use {minimum}–{maximum} characters} minimum {Use at least {minimum, plural, one {# character} other {# characters}}} other {Use up to {maximum, plural, one {# character} other {# characters}}}}",values:{bounds:x,minimum:f,maximum:h}})}):null,c[7]=x,c[8]=h,c[9]=f,c[10]=u,c[11]=a):a=c[11],c[12]!==x||c[13]!==h||c[14]!==f||c[15]!==p?(i=null!=p?(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.numberRange",defaultMessage:"{kind, select, integer {Enter a whole number} other {Enter a number}}{bounds, select, exact { equal to {minimum}} both { from {minimum} to {maximum}} minimum { of at least {minimum}} maximum { of at most {maximum}} other {}}",values:{kind:p.type,bounds:x,minimum:f,maximum:h}}):null,c[12]=x,c[13]=h,c[14]=f,c[15]=p,c[16]=i):i=c[16],c[17]!==g?(s=null!=g?(0,l.jsx)("div",{children:(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.requiredFormat",defaultMessage:"Use a valid {format, select, email {email address} uri {URL} date {date} datetime {date and time, such as 2026-01-30T14:30:00Z} other {value}}",values:{format:"date-time"===g?"datetime":g}})}):null,c[17]=g,c[18]=s):s=c[18],c[19]!==x||c[20]!==g||c[21]!==p?(r="none"===x&&null==p&&null==g?(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.invalidField",defaultMessage:"Check this answer and try again"}):null,c[19]=x,c[20]=g,c[21]=p,c[22]=r):r=c[22],c[23]!==t||c[24]!==a||c[25]!==i||c[26]!==s||c[27]!==r?(o=(0,l.jsxs)("div",{role:"alert",children:[t,a,i,s,r]}),c[23]=t,c[24]=a,c[25]=i,c[26]=s,c[27]=r,c[28]=o):o=c[28],o}function ec(e){let t,a=(0,n.c)(15),{id:i,autoFocus:r,disabled:o,invalid:c,label:d,placeholder:m,variant:u,format:p,maxLength:f,value:h,onChange:x,onKeyDown:g,onFocus:b}=e,v=void 0!==o&&o,y=void 0===u?"default":u,j=(f??0)>=160,w="choice"===y?"block w-full resize-none bg-transparent text-default outline-none placeholder:text-tertiary":"w-full rounded-xl border border-default px-3 outline-none focus:border-text/30 aria-invalid:border-text-danger";return a[0]!==r||a[1]!==v||a[2]!==w||a[3]!==p||a[4]!==i||a[5]!==c||a[6]!==j||a[7]!==d||a[8]!==x||a[9]!==b||a[10]!==g||a[11]!==m||a[12]!==h||a[13]!==y?(t=null==p?(0,l.jsx)("textarea",{id:i,ref:r?ed:void 0,autoFocus:r,disabled:v,"aria-invalid":c||void 0,"aria-label":d,placeholder:m,className:(0,s.b)(w,"[field-sizing:content] max-h-48 resize-none overflow-y-auto","default"===y&&"py-2",j?"min-h-20":"default"===y&&"min-h-8"),rows:j?3:1,value:h,onChange:e=>x(e.currentTarget.value),onKeyDown:g,onFocus:b}):(0,l.jsx)("input",{id:i,autoFocus:r,disabled:v,"aria-invalid":c||void 0,"aria-label":d,placeholder:m,className:(0,s.b)(w,"default"===y&&"h-8"),type:function(e){switch(e){case"date":return"date";case"date-time":case void 0:return"text";case"email":return"email";case"uri":return"url"}}(p),value:h,onChange:e=>x(e.currentTarget.value),onKeyDown:g,onFocus:b}),a[0]=r,a[1]=v,a[2]=w,a[3]=p,a[4]=i,a[5]=c,a[6]=j,a[7]=d,a[8]=x,a[9]=b,a[10]=g,a[11]=m,a[12]=h,a[13]=y,a[14]=t):t=a[14],t}function ed(e){null!=e&&e.setSelectionRange(e.value.length,e.value.length)}function em(e){let t,a,i,s,r,o,c,d,u,p,f,h,x,g=(0,n.c)(62),{autoFocus:b,showOptionNumbers:v,disabled:y,label:j,format:w,maxLength:N,invalid:k,multiple:S,options:C,value:F,draft:A,onDraftChange:M,onChange:I}=e,E=void 0===v||v,P=(0,m.a)(),L=S||"string"!=typeof F||C.some(e=>e.const===F)?"":F;g[0]!==A||g[1]!==L?(t=A??{text:L,selected:""!==L},g[0]=A,g[1]=L,g[2]=t):t=g[2];let z=t;g[3]!==P?(a=P.formatMessage({id:"composer.mcpFormElicitation.customChoice",defaultMessage:"Something else"}),g[3]=P,g[4]=a):a=g[4];let D=a;g[5]!==z||g[6]!==S||g[7]!==I||g[8]!==M?(i=e=>{e!==z.selected&&(M({...z,selected:e}),S||I(e?z.text:""))},g[5]=z,g[6]=S,g[7]=I,g[8]=M,g[9]=i):i=g[9];let T=i;g[10]!==z.selected||g[11]!==z.text||g[12]!==I||g[13]!==M||g[14]!==F?(s=()=>{z.selected&&""!==z.text&&(I([...Array.isArray(F)?F:[],z.text]),M({text:"",selected:!1}))},g[10]=z.selected,g[11]=z.text,g[12]=I,g[13]=M,g[14]=F,g[15]=s):s=g[15];let _=s;g[16]!==z||g[17]!==S||g[18]!==I||g[19]!==M?(r=e=>{S||M({...z,selected:!1}),I(e)},g[16]=z,g[17]=S,g[18]=I,g[19]=M,g[20]=r):r=g[20];let q=z.selected;return g[21]!==P?(o=P.formatMessage({id:"composer.mcpFormElicitation.customPlaceholder",defaultMessage:"Or write your own response"}),g[21]=P,g[22]=o):o=g[22],g[23]!==T?(c=()=>T(!0),g[23]=T,g[24]=c):c=g[24],g[25]!==S||g[26]!==I||g[27]!==M?(d=e=>{M({text:e,selected:!0}),S||I(e)},g[25]=S,g[26]=I,g[27]=M,g[28]=d):d=g[28],g[29]!==_||g[30]!==z.selected||g[31]!==z.text||g[32]!==S?(u=e=>{if(!S){"date"!==e.currentTarget.type&&O(e,()=>e.currentTarget.form?.requestSubmit());return}z.selected&&""!==z.text&&O(e,_)&&e.stopPropagation()},g[29]=_,g[30]=z.selected,g[31]=z.text,g[32]=S,g[33]=u):u=g[33],g[34]!==z.text||g[35]!==y||g[36]!==w||g[37]!==k||g[38]!==j||g[39]!==N||g[40]!==d||g[41]!==u||g[42]!==o||g[43]!==c?(p=(0,l.jsx)(ec,{autoFocus:!1,disabled:y,label:j,placeholder:o,variant:"choice",invalid:k,format:w,maxLength:N,value:z.text,onFocus:c,onChange:d,onKeyDown:u}),g[34]=z.text,g[35]=y,g[36]=w,g[37]=k,g[38]=j,g[39]=N,g[40]=d,g[41]=u,g[42]=o,g[43]=c,g[44]=p):p=g[44],g[45]!==z.selected||g[46]!==D||g[47]!==T||g[48]!==p?(f={label:D,selected:q,onSelect:T,editor:p},g[45]=z.selected,g[46]=D,g[47]=T,g[48]=p,g[49]=f):f=g[49],g[50]!==b||g[51]!==k||g[52]!==S||g[53]!==C||g[54]!==E||g[55]!==f||g[56]!==r||g[57]!==F?(h=(0,l.jsx)(es,{autoFocus:b,submitOnEnter:!1,showOptionNumbers:E,invalid:k,multiple:S,options:C,value:F,onChange:r,customOption:f}),g[50]=b,g[51]=k,g[52]=S,g[53]=C,g[54]=E,g[55]=f,g[56]=r,g[57]=F,g[58]=h):h=g[58],g[59]!==y||g[60]!==h?(x=(0,l.jsx)("fieldset",{disabled:y,className:"min-w-0",children:h}),g[59]=y,g[60]=h,g[61]=x):x=g[61],x}function eu(e){let t,a,i,r=(0,n.c)(101),{autoFocus:o,showOptionNumbers:c,disabled:u,field:p,hideLabel:f,hideDescription:h,invalid:x,value:g,customDraft:b,onCustomDraftChange:v,onChange:y}=e,j=void 0===c||c,w=void 0!==u&&u,N=(0,d.useId)(),k=(0,m.a)();r[0]!==p.name||r[1]!==p.schema.title?(t=p.schema.title??Z()(p.name),r[0]=p.name,r[1]=p.schema.title,r[2]=t):t=r[2];let S=t,C=!f&&null!=p.schema.title,F=void 0!==h&&h?null:p.schema.description??null,A="boolean"===p.schema.type&&p.required&&null==p.schema.default;r[3]!==p.schema||r[4]!==A?(a="array"===p.schema.type||(0,M.e)(p.schema)||A,r[3]=p.schema,r[4]=A,r[5]=a):a=r[5];let I=a,E="array"===p.schema.type?p.schema.items:p.schema,P=I&&(0,M.f)(p.schema)?E:null;r[6]!==b||r[7]!==p.schema||r[8]!==x||r[9]!==I||r[10]!==g?(i=x?(0,l.jsx)("div",{className:(0,s.b)("pt-1 text-size-chat-sm text-danger",(I||"boolean"===p.schema.type)&&"px-2"),children:(0,l.jsx)(eo,{schema:p.schema,value:D(g,b)})}):null,r[6]=b,r[7]=p.schema,r[8]=x,r[9]=I,r[10]=g,r[11]=i):i=r[11];let L=i;if("array"===p.schema.type||(0,M.e)(p.schema)||A){let e,t,a,n;return r[12]!==S||r[13]!==C?(e=C&&(0,l.jsx)("legend",{className:"px-2 text-size-chat-sm font-medium wrap-anywhere text-default",children:S}),r[12]=S,r[13]=C,r[14]=e):e=r[14],r[15]!==F?(t=(0,l.jsx)(ex,{description:F}),r[15]=F,r[16]=t):t=r[16],r[17]!==o||r[18]!==b||r[19]!==w||r[20]!==p.schema||r[21]!==k||r[22]!==x||r[23]!==S||r[24]!==y||r[25]!==v||r[26]!==A||r[27]!==j||r[28]!==P||r[29]!==g?(a=null!=P?(0,l.jsx)(em,{showOptionNumbers:j,autoFocus:o,disabled:w,label:S,format:"format"in P?P.format:void 0,maxLength:"maxLength"in P?P.maxLength:void 0,invalid:x,multiple:"array"===p.schema.type,options:(0,M.d)(p.schema),value:g,draft:b,onDraftChange:v,onChange:y}):(0,l.jsx)(es,{showOptionNumbers:j&&!A,autoFocus:o,invalid:x,multiple:"array"===p.schema.type,options:A?[{const:"true",title:k.formatMessage({id:"composer.mcpFormElicitation.booleanYes",defaultMessage:"Yes"})},{const:"false",title:k.formatMessage({id:"composer.mcpFormElicitation.booleanNo",defaultMessage:"No"})}]:(0,M.d)(p.schema),value:A&&"boolean"==typeof g?String(g):g,onChange:A?e=>y("true"===e):y}),r[17]=o,r[18]=b,r[19]=w,r[20]=p.schema,r[21]=k,r[22]=x,r[23]=S,r[24]=y,r[25]=v,r[26]=A,r[27]=j,r[28]=P,r[29]=g,r[30]=a):a=r[30],r[31]!==L||r[32]!==S||r[33]!==e||r[34]!==t||r[35]!==a?(n=(0,l.jsxs)("fieldset",{"aria-label":S,className:"flex flex-col gap-1",children:[e,t,a,L]}),r[31]=L,r[32]=S,r[33]=e,r[34]=t,r[35]=a,r[36]=n):n=r[36],n}switch(p.schema.type){case"string":{let e,t,a,n;r[37]!==N||r[38]!==S||r[39]!==C?(e=C&&(0,l.jsx)("label",{htmlFor:N,className:"text-size-chat-sm font-medium wrap-anywhere text-default",children:S}),r[37]=N,r[38]=S,r[39]=C,r[40]=e):e=r[40],r[41]!==F?(t=(0,l.jsx)(ex,{description:F,inset:!1}),r[41]=F,r[42]=t):t=r[42];let i="format"in p.schema?p.schema.format:void 0,s="maxLength"in p.schema?p.schema.maxLength:void 0,c="string"==typeof g?g:"";return r[43]!==o||r[44]!==w||r[45]!==N||r[46]!==x||r[47]!==S||r[48]!==y||r[49]!==s||r[50]!==c||r[51]!==i?(a=(0,l.jsx)(ec,{id:N,disabled:w,autoFocus:o,invalid:x,label:S,format:i,maxLength:s,value:c,onChange:y,onKeyDown:eh}),r[43]=o,r[44]=w,r[45]=N,r[46]=x,r[47]=S,r[48]=y,r[49]=s,r[50]=c,r[51]=i,r[52]=a):a=r[52],r[53]!==L||r[54]!==a||r[55]!==e||r[56]!==t?(n=(0,l.jsxs)("div",{className:"flex flex-col gap-1 px-2 text-sm",children:[e,t,a,L]}),r[53]=L,r[54]=a,r[55]=e,r[56]=t,r[57]=n):n=r[57],n}case"boolean":{let e,t,a,n,i,s,c=!0===g;r[58]!==y||r[59]!==g?(e=()=>y(!0!==g),r[58]=y,r[59]=g,r[60]=e):e=r[60];let d=!0===g;return r[61]!==d?(t=(0,l.jsx)("span",{className:"flex h-5 items-center",children:(0,l.jsx)(G.c,{selected:d,variant:"checkbox"})}),r[61]=d,r[62]=t):t=r[62],r[63]!==p.schema.title?(a=null!=p.schema.title&&(0,l.jsx)("span",{className:"min-w-0 text-sm font-medium wrap-anywhere",children:p.schema.title}),r[63]=p.schema.title,r[64]=a):a=r[64],r[65]!==o||r[66]!==N||r[67]!==x||r[68]!==S||r[69]!==t||r[70]!==a||r[71]!==c||r[72]!==e?(n=(0,l.jsxs)(G.b,{accessibilityLabel:S,autoFocus:o,checked:c,invalid:x,name:N,type:"checkbox",onChange:e,onKeyDown:ef,children:[t,a]}),r[65]=o,r[66]=N,r[67]=x,r[68]=S,r[69]=t,r[70]=a,r[71]=c,r[72]=e,r[73]=n):n=r[73],r[74]!==F?(i=(0,l.jsx)(ex,{description:F}),r[74]=F,r[75]=i):i=r[75],r[76]!==L||r[77]!==n||r[78]!==i?(s=(0,l.jsxs)("div",{className:"flex flex-col gap-1",children:[n,i,L]}),r[76]=L,r[77]=n,r[78]=i,r[79]=s):s=r[79],s}case"integer":case"number":{let e,t,a,n,i;r[80]!==S||r[81]!==C?(e=C&&(0,l.jsx)("div",{className:"text-size-chat-sm font-medium wrap-anywhere text-default",children:S}),r[80]=S,r[81]=C,r[82]=e):e=r[82],r[83]!==F?(t=(0,l.jsx)(ex,{description:F,inset:!1}),r[83]=F,r[84]=t):t=r[84];let s=x||void 0,c="integer"===p.schema.type&&null!=p.schema.minimum?Math.ceil(p.schema.minimum):p.schema.minimum,d="integer"===p.schema.type?1:"any",m="number"==typeof g||"string"==typeof g?g:"";return r[85]!==y?(a=e=>y(e.currentTarget.value),r[85]=y,r[86]=a):a=r[86],r[87]!==o||r[88]!==p.schema.maximum||r[89]!==S||r[90]!==c||r[91]!==d||r[92]!==m||r[93]!==a||r[94]!==s?(n=(0,l.jsx)(Y.a,{autoFocus:o,"aria-label":S,"aria-invalid":s,max:p.schema.maximum,min:c,step:d,type:"number",value:m,onChange:a,onKeyDown:ep}),r[87]=o,r[88]=p.schema.maximum,r[89]=S,r[90]=c,r[91]=d,r[92]=m,r[93]=a,r[94]=s,r[95]=n):n=r[95],r[96]!==L||r[97]!==n||r[98]!==e||r[99]!==t?(i=(0,l.jsxs)("label",{className:"flex flex-col gap-1 px-2 text-sm",children:[e,t,n,L]}),r[96]=L,r[97]=n,r[98]=e,r[99]=t,r[100]=i):i=r[100],i}}}function ep(e){O(e,()=>e.currentTarget.form?.requestSubmit())}function ef(e){O(e,()=>e.currentTarget.click())}function eh(e){"date"!==e.currentTarget.type&&O(e,()=>e.currentTarget.form?.requestSubmit())}function ex(e){let t,a,i=(0,n.c)(5),{description:r,inset:o}=e;if(null==r)return null;let c=(void 0===o||o)&&"px-2";return i[0]!==c?(t=(0,s.b)("text-size-chat-sm wrap-anywhere text-codex-description",c),i[0]=c,i[1]=t):t=i[1],i[2]!==r||i[3]!==t?(a=(0,l.jsx)("div",{className:t,children:r}),i[2]=r,i[3]=t,i[4]=a):a=i[4],a}var eg=a("i5ac"),eb=a.n(eg),ev=a("Ug8F"),ey=a("dxKw"),ej=a("Bbed"),ew=a("GaA7"),eN=a("eGPX"),ek=a("YgCO"),eS=a("bnxy");function eC(e){let t,a,i,r,o,c,d,m,u,p,f,h,x,g,b=(0,n.c)(63),{action:v,previewAction:y,metadata:j,layout:w,autoFocus:N,children:k,disabled:S,invalid:C,isPortrait:F,selected:A,highlighted:M,separatorBefore:I,title:E}=e,P=void 0===w?"carousel":w,L=void 0!==F&&F,z=void 0!==M&&M,D="button"===e.type||"preview"===e.type;b[0]===Symbol.for("react.memo_cache_sentinel")?(t={button:"button",preview:"button",static:"div",checkbox:"label",radio:"label"},b[0]=t):t=b[0];let T=t[e.type],_=I&&"ps-4";b[1]!==_?(a=(0,s.b)("group/composer-attachment relative min-w-0 shrink-0 snap-start",_),b[1]=_,b[2]=a):a=b[2],b[3]!==I?(i=I&&(0,l.jsx)("div",{"aria-hidden":!0,className:"absolute start-0 top-0 h-34 border-s border-subtle"}),b[3]=I,b[4]=i):i=b[4];let q=D&&N,R="carousel"===P?"w-fit":"w-full",B="carousel"===P&&"-m-1 p-1",K=S?"cursor-default opacity-50":"static"!==e.type&&"cursor-interaction";b[5]!==K||b[6]!==R||b[7]!==B?(r=(0,s.b)("group relative flex flex-col gap-1.5 rounded-2xl text-start select-none focus:outline-none",R,B,K),b[5]=K,b[6]=R,b[7]=B,b[8]=r):r=b[8];let V=D?S:void 0,W=D?"button":void 0,H=D?e.onClick:void 0;return b[9]!==N||b[10]!==S||b[11]!==e.name||b[12]!==e.onChange||b[13]!==e.type||b[14]!==e.value||b[15]!==A?(o="checkbox"===e.type||"radio"===e.type?(0,l.jsx)("input",{autoFocus:N,checked:A,className:"sr-only",disabled:S,name:e.name,type:e.type,value:e.value,onChange:e.onChange,onKeyDown:t=>{"checkbox"===e.type&&O(t,()=>t.currentTarget.click())}}):null,b[9]=N,b[10]=S,b[11]=e.name,b[12]=e.onChange,b[13]=e.type,b[14]=e.value,b[15]=A,b[16]=o):o=b[16],b[17]!==S||b[18]!==z||b[19]!==C||b[20]!==L||b[21]!==P||b[22]!==e.type||b[23]!==A?(c=(0,s.b)("relative overflow-hidden rounded-xl border ring-4 group-focus-visible:ring-ring group-has-[:focus-visible]:ring-ring","button"===e.type?"bg-surface-secondary":"bg-surface shadow-sm","standalone"===P&&"h-40 w-full","grid"===P&&"w-full","carousel"===P&&"h-34","button"===e.type&&"flex flex-col items-center justify-center gap-2 text-secondary","standalone"!==P&&{"aspect-square":"button"===e.type,"aspect-[4/5]":"button"!==e.type&&L,"aspect-video":"button"!==e.type&&!L},{"border-strong":A,"border-text-danger":!A&&C,"border-default":!A&&!C},{"ring-ring":z,"ring-border-strong":!z&&A,"ring-text-danger/20":!z&&!A&&C,"ring-transparent":!z&&!A&&!C},"static"!==e.type&&"preview"!==e.type&&!S&&!A&&!z&&"group-hover:ring-border-subtle"),b[17]=S,b[18]=z,b[19]=C,b[20]=L,b[21]=P,b[22]=e.type,b[23]=A,b[24]=c):c=b[24],b[25]!==P||b[26]!==e.type||b[27]!==E?(d="button"===e.type&&"standalone"===P?(0,l.jsx)("span",{className:"text-sm",children:E}):null,b[25]=P,b[26]=e.type,b[27]=E,b[28]=d):d=b[28],b[29]!==j?(m=null==j?null:(0,l.jsx)("div",{"aria-hidden":!0,className:"pointer-events-none absolute inset-x-0 bottom-0 flex items-center gap-2 bg-surface px-2 py-1.5 text-sm opacity-0 group-focus-within/composer-attachment:opacity-100 group-hover/composer-attachment:opacity-100",children:j}),b[29]=j,b[30]=m):m=b[30],b[31]!==v||b[32]!==A?(u=A?(0,l.jsx)("span",{className:(0,s.b)("absolute top-2 right-2 flex size-4 items-center justify-center rounded-full bg-primary-solid text-primary-solid shadow-sm",null!=v&&"group-hover/composer-attachment:opacity-0 group-has-focus-visible/composer-attachment:opacity-0"),children:(0,l.jsx)(U.Ub,{})}):null,b[31]=v,b[32]=A,b[33]=u):u=b[33],b[34]!==k||b[35]!==c||b[36]!==d||b[37]!==m||b[38]!==u?(p=(0,l.jsxs)("div",{className:c,children:[k,d,m,u]}),b[34]=k,b[35]=c,b[36]=d,b[37]=m,b[38]=u,b[39]=p):p=b[39],b[40]!==P||b[41]!==e.type||b[42]!==E?(f="button"===e.type&&"standalone"===P?null:(0,l.jsx)("div",{className:"w-0 min-w-full truncate ps-0.5 pe-2 pb-1 text-sm leading-5 font-normal tracking-normal text-secondary",children:E}),b[40]=P,b[41]=e.type,b[42]=E,b[43]=f):f=b[43],b[44]!==T||b[45]!==r||b[46]!==V||b[47]!==W||b[48]!==H||b[49]!==o||b[50]!==p||b[51]!==f||b[52]!==q?(h=(0,l.jsxs)(T,{autoFocus:q,className:r,disabled:V,type:W,onClick:H,children:[o,p,f]}),b[44]=T,b[45]=r,b[46]=V,b[47]=W,b[48]=H,b[49]=o,b[50]=p,b[51]=f,b[52]=q,b[53]=h):h=b[53],b[54]!==y||b[55]!==I?(x=null==y?null:(0,l.jsx)("div",{className:(0,s.b)("pointer-events-none absolute top-2 opacity-0 group-hover/composer-attachment:pointer-events-auto group-hover/composer-attachment:opacity-100 group-focus-within/composer-attachment:pointer-events-auto group-focus-within/composer-attachment:opacity-100",I?"start-6":"start-2"),children:y}),b[54]=y,b[55]=I,b[56]=x):x=b[56],b[57]!==v||b[58]!==h||b[59]!==x||b[60]!==a||b[61]!==i?(g=(0,l.jsxs)("div",{className:a,children:[i,h,x,v]}),b[57]=v,b[58]=h,b[59]=x,b[60]=a,b[61]=i,b[62]=g):g=b[62],g}var eF=a("JEWd"),eA=a("kSHG"),eM=a("Y8CA"),eI=a("ASxG"),eE=a("w7Qu"),eP=a("YvRg"),eL=a("t3y3"),ez=a("zUz7"),eD=a("a6Zv");let eT=eI.object({target:eM.a});function eO(e){let t,a,i,s,r,o,c,d,u,p,f,h,x,g,b=(0,n.c)(60),{option:v,hostId:w,layout:N,name:k,multiple:S,implicit:C,disabled:F,invalid:A,separatorBefore:M,onChange:I,onRemove:E,onPreview:P}=e,L=(0,m.a)(),z=(0,eD.a)();b[0]!==v?(t=(0,ez.a)(v),b[0]=v,b[1]=t):t=b[1];let D=t,T=v.title??v.name;b[2]!==v._meta?(a=eA.v.safeParse(v._meta?.["openai/thumbnail"]??v._meta?.["openai/preview"]),b[2]=v._meta,b[3]=a):a=b[3];let{data:O}=a;b[4]!==v._meta?(i=eT.safeParse(v._meta?.["openai/preview"]),b[4]=v._meta,b[5]=i):i=b[5];let{data:_}=i;b[6]!==v._meta||b[7]!==_?.target?(s=_?.target??eM.a.safeParse(v._meta?.["openai/preview"]).data??eM.a.safeParse(v._meta?.["openai/target"]).data,b[6]=v._meta,b[7]=_?.target,b[8]=s):s=b[8];let q=s;b[9]!==P||b[10]!==q||b[11]!==T?(r=null==q||null==P?void 0:()=>P(q,T),b[9]=P,b[10]=q,b[11]=T,b[12]=r):r=b[12];let R=r;b[13]!==R?(o=null==R?{type:"static"}:{type:"preview",onClick:R},b[13]=R,b[14]=o):o=b[14];let U=o;b[15]!==F||b[16]!==C||b[17]!==R?(c=C||null==R?null:(0,l.jsx)(j.a,{color:"outlineSurface",radius:"full",size:"composer",disabled:F,onClick:R,children:(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.preview",defaultMessage:"Preview"})}),b[15]=F,b[16]=C,b[17]=R,b[18]=c):c=b[18];let B=z?D?.logoDarkUrl:D?.logoUrl;b[19]!==v.mimeType||b[20]!==B?(d=(0,l.jsx)(ei,{layout:"icon",mimeType:v.mimeType,src:B}),b[19]=v.mimeType,b[20]=B,b[21]=d):d=b[21];let K=v.mimeType??T;b[22]!==K?(u=(0,l.jsx)("span",{className:"truncate",children:K}),b[22]=K,b[23]=u):u=b[23],b[24]!==u||b[25]!==d?(p=(0,l.jsxs)(l.Fragment,{children:[d,u]}),b[24]=u,b[25]=d,b[26]=p):p=b[26],b[27]!==F||b[28]!==L||b[29]!==E||b[30]!==T?(f=F||null==E?void 0:(0,l.jsx)(eP.a,{className:"top-2 right-2",size:"composer",ariaLabel:L.formatMessage({id:"composer.openAIForm.removeFile",defaultMessage:"Remove {filename}"},{filename:T}),onRemove:E}),b[27]=F,b[28]=L,b[29]=E,b[30]=T,b[31]=f):f=b[31];let V=!C&&v.selected;return b[32]!==C||b[33]!==S||b[34]!==k||b[35]!==I||b[36]!==v.uri||b[37]!==U?(h=C?U:{type:S?"checkbox":"radio",name:k,value:v.uri,onChange:I},b[32]=C,b[33]=S,b[34]=k,b[35]=I,b[36]=v.uri,b[37]=U,b[38]=h):h=b[38],b[39]!==w||b[40]!==D?.logoDarkUrl||b[41]!==D?.logoUrl||b[42]!==z||b[43]!==v.localPath||b[44]!==v.mimeType||b[45]!==v.name||b[46]!==O?.src?(x=null==v.localPath?(0,l.jsx)(ei,{layout:O?.src==null?"card-icon":"card",mimeType:v.mimeType,src:O?.src??(z?D?.logoDarkUrl:D?.logoUrl)}):(0,l.jsx)(eL.a,{hostId:w,imageFit:"scale-down",path:v.localPath,importKind:(0,eE.a)(v.name),fallback:(0,l.jsx)(ei,{layout:"card",mimeType:v.mimeType,src:void 0})}),b[39]=w,b[40]=D?.logoDarkUrl,b[41]=D?.logoUrl,b[42]=z,b[43]=v.localPath,b[44]=v.mimeType,b[45]=v.name,b[46]=O?.src,b[47]=x):x=b[47],b[48]!==F||b[49]!==A||b[50]!==N||b[51]!==M||b[52]!==p||b[53]!==f||b[54]!==V||b[55]!==h||b[56]!==x||b[57]!==c||b[58]!==T?(g=(0,l.jsx)(eC,{layout:N,previewAction:c,metadata:p,action:f,autoFocus:!1,disabled:F,invalid:A,selected:V,separatorBefore:M,title:T,...h,children:x}),b[48]=F,b[49]=A,b[50]=N,b[51]=M,b[52]=p,b[53]=f,b[54]=V,b[55]=h,b[56]=x,b[57]=c,b[58]=T,b[59]=g):g=b[59],g}let e_=(0,ej.a)(async()=>(await Promise.all([a.e(418851),a.e(109308),a.e(399565),a.e(257798),a.e(447351),a.e(617936),a.e(807489),a.e(337882),a.e(955979),a.e(646436),a.e(7078),a.e(200429),a.e(698524),a.e(956483),a.e(87162),a.e(396705),a.e(155568),a.e(731863),a.e(767086),a.e(76629),a.e(514085),a.e(525677)]).then(a.bind(a,"OMbd"))).FileOptionsDialog);function eq(e){let t,a,i,s,c,u,p,f,h,g,b,w,N,k,S,F,A,M=(0,n.c)(57),{field:I,disabled:E,expanded:P,hideDescription:L,showTitle:z,hostId:D,invalid:T,name:O,options:_,required:q,onChange:R,onPickingChange:B,onPickFiles:K,onCloseExpanded:V,onPreview:W,onViewAll:H}=e,Q=void 0!==E&&E,G=void 0!==L&&L,Y=void 0!==z&&z,J=(0,r.y)(C.a),X=(0,m.a)(),$=(0,ey.a)(),ee=(0,r.z)(eN.c),et=(0,d.useRef)(null),ea=(0,d.useRef)(null);M[0]===Symbol.for("react.memo_cache_sentinel")?(t=()=>()=>ea.current?.abort(),a=[],M[0]=t,M[1]=a):(t=M[0],a=M[1]),(0,d.useEffect)(t,a);let[el,en]=(0,d.useState)(!1),[ei,es]=(0,d.useState)(!1),[er,ec]=(0,d.useState)(!1),[ed,em]=(0,d.useState)(null),eu=I["x-openai-input"],ep=eu.userOptions?.kind??"file",ef=(0,ek.a)("file"===ep?eu.userOptions?.accept:void 0);M[2]!==I.title||M[3]!==O?(i=I.title??Z()(O),M[2]=I.title,M[3]=O,M[4]=i):i=M[4];let eh=i,ex="array"===I.type,eg=ex&&"implicit"===eu.selection,ej=null==K&&!Q&&!ei&&null!=eu.userOptions&&"local"===D&&window.electronBridge?.getPathForFile!=null;M[5]!==I.minItems||M[6]!==I.type||M[7]!==q?(s=0,q&&(s="array"===I.type?I.minItems??0:1),M[5]=I.minItems,M[6]=I.type,M[7]=q,M[8]=s):s=M[8],M[9]!==eu.options?(c=new Set(eu.options.map(eK)),M[9]=eu.options,M[10]=c):c=M[10];let eA=c;M[11]!==eA?(u=e=>!eA.has(e.uri),M[11]=eA,M[12]=u):u=M[12];let eM=_.filter(u);M[13]!==eA?(p=e=>eA.has(e.uri),M[13]=eA,M[14]=p):p=M[14];let eI=[...eM,..._.filter(p)],eE=e=>{Array.from(et.current?.querySelectorAll("input")??[]).find(t=>t.value===e)?.parentElement?.scrollIntoView({block:"nearest",inline:"nearest",behavior:ee?"instant":"smooth"})},eP=()=>{document.activeElement===document.body&&et.current?.closest("form")?.focus()};M[15]!==ex||M[16]!==R||M[17]!==_?(f=(e,t)=>{if(t.aborted||0===e.length)return;let a=new Set(e.map(eB));R(eb()([..._,...e.map(eU)],"uri").map(t=>({...t,selected:ex?t.selected||a.has(t.uri):t.uri===e[0].uri})))},M[15]=ex,M[16]=R,M[17]=_,M[18]=f):f=M[18];let eL=f,ez=e=>{let t=!1,a=()=>{!t&&(t=!0,e.signal.removeEventListener("abort",a),B?.(!1),e.signal.aborted||(es(!1),eP()))};return e.signal.addEventListener("abort",a,{once:!0}),es(!0),em(null),B?.(!0),a},eD=async(e,t)=>{if(Q||ei||null==eu.userOptions||0===e.length)return;let a=ez(t),l=Error("File type is not accepted");await Promise.all(e.map(async e=>{let{appServerPath:t,fsPath:a,label:n}=e,i=await ew.a.workspaceFiles.getMetadata?.({hostId:D,path:a});if(i?.kind!==ep)throw Error("Selection does not match the requested kind");if("file"===i.kind&&!(0,ek.b)(a,ef))throw l;return{uri:(0,eS.f)(t??a),localPath:a,name:(0,eS.j)(a),title:n,selected:!0}})).then(e=>eL(e,t.signal)).catch(e=>{t.signal.aborted||em(e===l?"type":"selection")}).finally(a)};M[19]===Symbol.for("react.memo_cache_sentinel")?(h=(0,l.jsx)(y.a,{id:"composer.openAIForm.uploadTile",defaultMessage:"Upload"}),M[19]=h):h=M[19];let eT=h;if("directory"===ep){let e;M[20]===Symbol.for("react.memo_cache_sentinel")?(e=(0,l.jsx)(y.a,{id:"composer.openAIForm.addFolder",defaultMessage:"Choose folder"}),M[20]=e):e=M[20],eT=e}else if(0===_.length){let e;M[21]===Symbol.for("react.memo_cache_sentinel")?(e=(0,l.jsx)(y.a,{id:"composer.openAIForm.addFiles",defaultMessage:"Upload files"}),M[21]=e):e=M[21],eT=e}let eq=null==eu.userOptions?null:(0,l.jsx)(eC,{autoFocus:!1,highlighted:el,layout:0===_.length?"standalone":"carousel",disabled:Q||ei,invalid:!1,selected:!1,title:eT,type:"button",onClick:()=>{ea.current?.abort();let e=new AbortController;if(ea.current=e,null!=K){let t=ez(e);K(e.signal).then(t=>eL(t,e.signal)).catch(()=>{e.signal.aborted||em("selection")}).finally(t);return}null!=(0,o.Ag)(D)||(0,o.Ai)((0,v.a)(J,D))?ec(!0):$({accept:"file"===ep?eu.userOptions?.accept:void 0,kind:ep,allowMultiple:ex}).then(t=>{if(!e.signal.aborted)return eD(t,e)}).catch(()=>{e.signal.aborted||em("selection")}).finally(()=>{e.signal.aborted||eP()})},children:"directory"===ep?(0,l.jsx)(U.Cd,{className:"text-tertiary"}):(0,l.jsx)(U.M,{className:"text-tertiary"})}),eV=(e,t,a)=>(0,l.jsx)(eO,{option:e,hostId:D,layout:a,name:"grid"===a?`${O}-expanded`:O,multiple:ex,implicit:eg,disabled:Q||ei,invalid:T||null!=ed,separatorBefore:"carousel"===a&&0===t&&null!=eq,onChange:()=>{R(_.map(t=>({...t,selected:t.uri===e.uri?!ex||!t.selected:ex&&t.selected}))),"carousel"===a&&eE(e.uri)},onRemove:!eg||null==eu.userOptions&&_.length<=1||eA.has(e.uri)&&_.length<=s?void 0:()=>R(_.filter(t=>t.uri!==e.uri)),onPreview:null==W?void 0:(e,t)=>{V?.(),W(e,t)}},e.uri);M[22]!==ej?(g=e=>{(0,x.b)(e.dataTransfer)&&(e.preventDefault(),e.stopPropagation(),"dragenter"===e.type?en(ej):e.dataTransfer.dropEffect=ej?"copy":"none")},M[22]=ej,M[23]=g):g=M[23];let eW=g;M[24]!==I.description||M[25]!==I.title||M[26]!==G||M[27]!==Y?(b=Y&&I.title||!G&&I.description?(0,l.jsxs)("div",{className:"flex min-w-0 flex-1 flex-col gap-1 wrap-anywhere",children:[Y&&I.title&&(0,l.jsx)("div",{className:"text-size-chat-sm font-medium text-default",children:I.title}),!G&&I.description&&(0,l.jsx)("div",{className:"text-size-chat-sm text-codex-description",children:I.description})]}):null,M[24]=I.description,M[25]=I.title,M[26]=G,M[27]=Y,M[28]=b):b=M[28];let eH=b;M[29]!==eH||M[30]!==H?(w=null!=eH||null!=H?(0,l.jsxs)("div",{className:"flex items-start gap-3",children:[eH,null!=H&&(0,l.jsxs)(j.a,{className:"ms-auto shrink-0",color:"outlineSurface",radius:"full",size:"composer",onClick:H,children:[(0,l.jsx)(U.Xh,{}),(0,l.jsx)(y.a,{id:"composer.openAIForm.viewAll",defaultMessage:"View all"})]})]}):null,M[29]=eH,M[30]=H,M[31]=w):w=M[31];let eQ=w;M[32]===Symbol.for("react.memo_cache_sentinel")?(N=e=>{e.stopPropagation(),e.relatedTarget instanceof Node&&e.currentTarget.contains(e.relatedTarget)||en(!1)},M[32]=N):N=M[32];let eZ=e=>{if(!(0,x.b)(e.dataTransfer)||(e.preventDefault(),e.stopPropagation(),en(!1),!ej))return;let t=(0,x.f)(Array.from(e.dataTransfer.files),window.electronBridge?.getPathForFile,e.dataTransfer);if(0===t.length||!ex&&t.length>1)return void em("selection");ea.current?.abort();let a=new AbortController;ea.current=a,eD(t,a)},eG=0===_.length&&null!=eq?(0,l.jsxs)("div",{className:"flex flex-col gap-2 px-4",role:"group","aria-label":eh,children:[eQ,eq]}):(0,l.jsxs)(eF.a,{ariaInvalid:T||null!=ed,ariaLabel:eh,backLabel:X.formatMessage({id:"composer.openAIForm.previousFiles",defaultMessage:"Show previous files"}),forwardLabel:X.formatMessage({id:"composer.openAIForm.moreFiles",defaultMessage:"Show more files"}),header:eQ,role:ex?"group":"radiogroup",shouldUseReducedMotion:ee,children:[eq,eI.map((e,t)=>eV(e,t,"carousel"))]}),eY=void 0!==P&&P&&null!=V?(0,l.jsx)(e_,{title:I.title,accessibilityLabel:eh,multiple:ex,options:eI,renderOption:(e,t)=>eV(e,t,"grid"),onClose:V,onOptionActivate:eE,onRestoreFocus:()=>{let e=et.current?.querySelector("input:not(:disabled), button:not(:disabled)")??et.current?.closest("form")?.querySelector('button[type="submit"]');e?.focus()}}):null;return M[33]!==ef||M[34]!==eD||M[35]!==D||M[36]!==ep||M[37]!==ex||M[38]!==er||M[39]!==eP||M[40]!==ec?(k=er?(0,l.jsx)(ev.a,{acceptedFileExtensions:ef,hostId:D,kind:ep,multiple:ex,onClose:()=>ec(!1),onRestoreFocus:eP,onSelect:e=>{let t=ea.current;null==t||t.signal.aborted||eD(e.map(eR),t)}}):null,M[33]=ef,M[34]=eD,M[35]=D,M[36]=ep,M[37]=ex,M[38]=er,M[39]=eP,M[40]=ec,M[41]=k):k=M[41],M[42]!==ed?(S=ed?(0,l.jsx)("div",{className:"px-4 text-size-chat-sm text-danger",role:"alert",children:"selection"===ed?(0,l.jsx)(y.a,{id:"composer.openAIForm.fileSelectionFailed",defaultMessage:"These files or folders could not be added"}):(0,l.jsx)(y.a,{id:"composer.openAIForm.fileTypeRejected",defaultMessage:"Choose a file of an allowed type"})}):null,M[42]=ed,M[43]=S):S=M[43],M[44]!==I||M[45]!==T?(F=T?(0,l.jsx)("div",{className:"px-4 text-size-chat-sm text-danger",children:(0,l.jsx)(eo,{schema:I})}):null,M[44]=I,M[45]=T,M[46]=F):F=M[46],M[47]!==et||M[48]!==eW||M[49]!==N||M[50]!==eZ||M[51]!==eG||M[52]!==eY||M[53]!==k||M[54]!==S||M[55]!==F?(A=(0,l.jsxs)("div",{ref:et,className:"flex w-full min-w-0 flex-col gap-2","data-mcp-form-file-drop":!0,onDragEnter:eW,onDragOver:eW,onDragLeave:N,onDrop:eZ,children:[eG,eY,k,S,F]}),M[47]=et,M[48]=eW,M[49]=N,M[50]=eZ,M[51]=eG,M[52]=eY,M[53]=k,M[54]=S,M[55]=F,M[56]=A):A=M[56],A}function eR(e){return{path:e,fsPath:e,label:(0,eS.j)(e)}}function eU(e){return{...e,selected:!0}}function eB(e){return e.uri}function eK(e){return e.uri}var eV=a("BALR"),eW=a("rlkT");function eH(e){let t,a,i,o,c,u,p,f,h,x,g=(0,n.c)(56),{autoFocus:b,field:v,hideLabel:j,hostId:w,invalid:N,name:k,value:S,onChange:C,onPickFile:F}=e,A=void 0!==j&&j,M=(0,m.a)(),I=(0,ey.a)(),E=(0,r.z)(eN.c),[L,z]=(0,d.useState)(!1),[D,T]=(0,d.useState)(!1),O=D?"aspect-[4/5]":"aspect-video";g[0]!==v.title||g[1]!==k?(t=v.title??Z()(k),g[0]=v.title,g[1]=k,g[2]=t):t=g[2];let _=t,q=null!=v.file&&(0,P.c)(v,S)&&!v.items.some(e=>e.id===S)?S:null;if(g[3]!==M?(a=M.formatMessage({id:"composer.imagePicker.previous",defaultMessage:"Show previous templates"}),g[3]=M,g[4]=a):a=g[4],g[5]!==M?(i=M.formatMessage({id:"composer.imagePicker.next",defaultMessage:"Show more templates"}),g[5]=M,g[6]=i):i=g[6],g[7]!==v.description||g[8]!==v.title||g[9]!==A?(o=A?null:(0,l.jsxs)("div",{className:"flex flex-col gap-1 wrap-anywhere",children:[v.title&&(0,l.jsx)("div",{className:"text-sm font-medium",children:v.title}),v.description&&(0,l.jsx)("div",{className:"text-xs text-tertiary",children:v.description})]}),g[7]=v.description,g[8]=v.title,g[9]=A,g[10]=o):o=g[10],g[11]!==v.file||g[12]!==v.title||g[13]!==w||g[14]!==N||g[15]!==C||g[16]!==F||g[17]!==I||g[18]!==O||g[19]!==q?(c=null==v.file?null:null!=F?(0,l.jsx)(l.Fragment,{children:(0,l.jsxs)("button",{className:"group -m-1 flex w-fit shrink-0 cursor-interaction snap-start flex-col gap-1.5 rounded-2xl p-1 text-start select-none",type:"button",onClick:()=>{null!=F?F().then(e=>{null!=e&&C(e)}):"local"!==w?z(!0):I({accept:v.file?.accept,allowMultiple:!1,pickerTitle:v.file?.title??v.title}).then(e=>{let[t]=e;null!=t&&C((0,eS.f)(t.fsPath))})},children:[(0,l.jsx)("div",{className:(0,s.b)("flex h-34 items-center justify-center overflow-hidden rounded-xl border bg-surface shadow-sm ring-4 group-focus-within:ring-border-strong",O,null==q?"border-default ring-transparent group-hover:ring-border-subtle":"border-strong ring-border-strong",N&&null==q&&"border-text-danger ring-text-danger/20"),children:null==q?(0,l.jsx)(K.a,{className:"text-secondary",asset:eW.a,"aria-hidden":!0}):(0,l.jsxs)("div",{className:"flex max-w-full flex-col items-center gap-2 px-4 text-secondary",children:[(0,l.jsx)(K.a,{asset:eV.a,"aria-hidden":!0}),(0,l.jsx)("span",{className:"max-w-full truncate text-sm",children:(0,eS.j)(decodeURIComponent(new URL(q).pathname))})]})}),(0,l.jsx)("div",{className:"w-0 min-w-full truncate ps-0.5 pe-2 pb-1 text-sm leading-5 font-normal tracking-normal text-secondary",children:v.file.title??(0,l.jsx)(y.a,{id:"composer.imagePicker.chooseFile",defaultMessage:"Choose a file"})})]})}):null,g[11]=v.file,g[12]=v.title,g[13]=w,g[14]=N,g[15]=C,g[16]=F,g[17]=I,g[18]=O,g[19]=q,g[20]=c):c=g[20],g[21]!==b||g[22]!==v.items||g[23]!==N||g[24]!==D||g[25]!==k||g[26]!==C||g[27]!==S){let e;g[29]!==b||g[30]!==N||g[31]!==D||g[32]!==k||g[33]!==C||g[34]!==S?(e=(e,t)=>(0,l.jsx)(eC,{autoFocus:b&&0===t,invalid:N,isPortrait:D,name:k,selected:S===e.id,title:e.title,type:"radio",value:e.id,onChange:()=>C(e.id),children:(0,l.jsx)("img",{alt:"",className:"block h-full w-full object-scale-down",decoding:"async",draggable:!1,loading:"lazy",onLoad:0===t?e=>{T(e.currentTarget.naturalHeight>e.currentTarget.naturalWidth)}:void 0,src:e.image})},e.id),g[29]=b,g[30]=N,g[31]=D,g[32]=k,g[33]=C,g[34]=S,g[35]=e):e=g[35],u=v.items.map(e),g[21]=b,g[22]=v.items,g[23]=N,g[24]=D,g[25]=k,g[26]=C,g[27]=S,g[28]=u}else u=g[28];return g[36]!==N||g[37]!==E||g[38]!==a||g[39]!==i||g[40]!==o||g[41]!==c||g[42]!==u||g[43]!==_?(p=(0,l.jsxs)(eF.a,{ariaInvalid:N,ariaLabel:_,backLabel:a,forwardLabel:i,header:o,role:"radiogroup",shouldUseReducedMotion:E,children:[c,u]}),g[36]=N,g[37]=E,g[38]=a,g[39]=i,g[40]=o,g[41]=c,g[42]=u,g[43]=_,g[44]=p):p=g[44],g[45]!==w||g[46]!==L||g[47]!==C?(f=L?(0,l.jsx)(ev.a,{hostId:w,multiple:!1,onClose:()=>z(!1),onSelect:e=>{let t=e[0];null!=t&&C((0,eS.f)(t))}}):null,g[45]=w,g[46]=L,g[47]=C,g[48]=f):f=g[48],g[49]!==v||g[50]!==N?(h=N?(0,l.jsx)("div",{className:"px-4 text-size-chat-sm text-danger",children:(0,l.jsx)(eo,{schema:v})}):null,g[49]=v,g[50]=N,g[51]=h):h=g[51],g[52]!==h||g[53]!==p||g[54]!==f?(x=(0,l.jsxs)("div",{className:"flex w-full min-w-0 flex-col gap-2",children:[p,f,h]}),g[52]=h,g[53]=p,g[54]=f,g[55]=x):x=g[55],x}function eQ(e){let t,a,i,r,o=(0,n.c)(72),{autoFocus:c,isOnlyField:d,disabled:m,interactionDisabled:u,field:p,draft:f,expanded:h,hostId:x,invalid:g,metadataInHeader:b,onCloseExpanded:v,onDraftChange:y,onValueChange:j,onPickLegacyFile:w,onPickingChange:N,onPickFiles:k,onPreview:S,onViewAll:C}=e;o[0]!==p.schema?(t=(0,E.c)(p.schema)||(0,P.b)(p.schema),o[0]=p.schema,o[1]=t):t=o[1];let F=t,{name:A,schema:M,required:I}=p;if((0,E.c)(M)){let e,t,n,i=!b,s=f.fileOptions[A];o[2]!==A||o[3]!==y?(e=e=>y(t=>({...t,fileOptions:{...t.fileOptions,[A]:e}}),A),o[2]=A,o[3]=y,o[4]=e):e=o[4],o[5]!==A||o[6]!==k?(t=null==k?void 0:e=>k(A,e),o[5]=A,o[6]=k,o[7]=t):t=o[7],o[8]!==m||o[9]!==h||o[10]!==A||o[11]!==x||o[12]!==g||o[13]!==b||o[14]!==v||o[15]!==N||o[16]!==S||o[17]!==C||o[18]!==I||o[19]!==M||o[20]!==i||o[21]!==s||o[22]!==e||o[23]!==t?(n=(0,l.jsx)(eq,{field:M,disabled:m,expanded:h,hideDescription:b,showTitle:i,onCloseExpanded:v,onViewAll:C,hostId:x,invalid:g,name:A,options:s,required:I,onPreview:S,onChange:e,onPickingChange:N,onPickFiles:t}),o[8]=m,o[9]=h,o[10]=A,o[11]=x,o[12]=g,o[13]=b,o[14]=v,o[15]=N,o[16]=S,o[17]=C,o[18]=I,o[19]=M,o[20]=i,o[21]=s,o[22]=e,o[23]=t,o[24]=n):n=o[24],a=n}else if((0,P.b)(M)){let e,t,n,i=f.values[A];o[25]!==A||o[26]!==j?(e=e=>j(A,e),o[25]=A,o[26]=j,o[27]=e):e=o[27],o[28]!==A||o[29]!==w?(t=null==w?void 0:()=>w(A),o[28]=A,o[29]=w,o[30]=t):t=o[30],o[31]!==c||o[32]!==A||o[33]!==x||o[34]!==g||o[35]!==b||o[36]!==M||o[37]!==i||o[38]!==e||o[39]!==t?(n=(0,l.jsx)(eH,{autoFocus:c,field:M,hideLabel:b,hostId:x,invalid:g,name:A,value:i,onChange:e,onPickFile:t}),o[31]=c,o[32]=A,o[33]=x,o[34]=g,o[35]=b,o[36]=M,o[37]=i,o[38]=e,o[39]=t,o[40]=n):n=o[40],a=n}else{let e,t,n,i;o[41]!==A||o[42]!==I||o[43]!==M?(e={name:A,required:I,schema:M},o[41]=A,o[42]=I,o[43]=M,o[44]=e):e=o[44];let s=f.customDrafts[A];o[45]!==A||o[46]!==y?(t=e=>y(t=>({...t,customDrafts:{...t.customDrafts,[A]:e}}),A),o[45]=A,o[46]=y,o[47]=t):t=o[47];let r=b&&"boolean"!==M.type,m=f.values[A];o[48]!==A||o[49]!==j?(n=e=>j(A,e),o[48]=A,o[49]=j,o[50]=n):n=o[50],o[51]!==c||o[52]!==u||o[53]!==g||o[54]!==d||o[55]!==b||o[56]!==e||o[57]!==s||o[58]!==t||o[59]!==r||o[60]!==m||o[61]!==n?(i=(0,l.jsx)(eu,{disabled:u,autoFocus:c,showOptionNumbers:d,field:e,customDraft:s,onCustomDraftChange:t,hideLabel:r,hideDescription:b,invalid:g,value:m,onChange:n}),o[51]=c,o[52]=u,o[53]=g,o[54]=d,o[55]=b,o[56]=e,o[57]=s,o[58]=t,o[59]=r,o[60]=m,o[61]=n,o[62]=i):i=o[62],a=i}let L=c&&F?eZ:void 0,z=p.name,D=!F&&"px-2",T=b&&F&&"pt-1";return o[63]!==D||o[64]!==T?(i=(0,s.b)("flex min-w-0 flex-col gap-2 outline-none",D,T),o[63]=D,o[64]=T,o[65]=i):i=o[65],o[66]!==p.name||o[67]!==a||o[68]!==u||o[69]!==L||o[70]!==i?(r=(0,l.jsx)("fieldset",{ref:L,"data-mcp-form-field":z,tabIndex:-1,className:i,disabled:u,children:a}),o[66]=p.name,o[67]=a,o[68]=u,o[69]=L,o[70]=i,o[71]=r):r=o[71],r}function eZ(e){null==e||e.contains(document.activeElement)||e.focus()}var eG=a("sM3V"),eY=a("buWh"),eJ=a("mjcS"),eX=a("N0Xk"),e$=a("PpLh");function e0(e){let t,a,i,s,o,c,d,u,p,f,h,x,g,b,v=(0,n.c)(40),{isSubmitting:w,elicitation:N,field:k,hostId:S,conversationId:C,groupIndex:F,groupCount:A,onCancel:M}=e,I=void 0!==w&&w,E=(0,m.a)(),{serverName:P}=N;v[0]!==C||v[1]!==S||v[2]!==P?(t={hostId:S,serverName:P,threadId:C},v[0]=C,v[1]=S,v[2]=P,v[3]=t):t=v[3];let L=(0,r.x)(eG.a,t);v[4]!==L?(a=L??{},v[4]=L,v[5]=a):a=v[5];let{pluginId:z,serverInfo:D}=a,T=void 0===z?P:z;v[6]!==D?(i=(0,ez.a)(D),v[6]=D,v[7]=i):i=v[7];let O=i;return v[8]!==S||v[9]!==O||v[10]!==T||v[11]!==P?(s=null!=O||null==T?(0,l.jsx)(eX.a,{className:"icon-sm shrink-0",icon:O}):(0,l.jsx)(eJ.a,{alt:P,className:"icon-sm",fallback:(0,l.jsx)(eY.a,{}),hostId:S,pluginId:T,preferComposerIcon:!0}),v[8]=S,v[9]=O,v[10]=T,v[11]=P,v[12]=s):s=v[12],v[13]!==N.message?(o=(0,l.jsx)("span",{className:"min-w-0 text-base leading-5 font-medium break-words whitespace-pre-wrap text-default",children:N.message}),v[13]=N.message,v[14]=o):o=v[14],v[15]!==A||v[16]!==F?(c=A>1&&(0,l.jsx)(y.a,{id:"composer.mcpFormElicitation.progress",defaultMessage:"{current} of {total}",values:{current:F+1,total:A}}),v[15]=A,v[16]=F,v[17]=c):c=v[17],v[18]!==E?(d=E.formatMessage({id:"composer.mcpFormElicitation.cancel.ariaLabel",defaultMessage:"Cancel"}),v[18]=E,v[19]=d):d=v[19],v[20]===Symbol.for("react.memo_cache_sentinel")?(u=(0,l.jsx)(K.a,{"aria-hidden":!1,asset:e$.a}),v[20]=u):u=v[20],v[21]!==I||v[22]!==M||v[23]!==d?(p=(0,l.jsx)(j.a,{"aria-label":d,color:"ghostSecondary",size:"compact",uniform:!0,disabled:I,onClick:M,children:u}),v[21]=I,v[22]=M,v[23]=d,v[24]=p):p=v[24],v[25]!==p||v[26]!==c?(f=(0,l.jsxs)("div",{className:"ms-auto flex h-5 shrink-0 items-center gap-1 text-xs leading-5 text-codex-description select-none",children:[c,p]}),v[25]=p,v[26]=c,v[27]=f):f=v[27],v[28]!==f||v[29]!==s||v[30]!==o?(h=(0,l.jsxs)("div",{className:"flex items-start justify-between gap-3",children:[s,o,f]}),v[28]=f,v[29]=s,v[30]=o,v[31]=h):h=v[31],v[32]!==k?(x=k?.type!=="boolean"&&k?.title&&(0,l.jsx)("div",{className:"text-base leading-5 font-medium break-words whitespace-pre-wrap text-secondary",children:k.title}),v[32]=k,v[33]=x):x=v[33],v[34]!==k?(g=k?.description&&(0,l.jsx)("div",{className:"text-xs leading-4 font-normal break-words whitespace-pre-wrap text-tertiary",children:k.description}),v[34]=k,v[35]=g):g=v[35],v[36]!==h||v[37]!==x||v[38]!==g?(b=(0,l.jsxs)("div",{className:"flex shrink-0 flex-col gap-1 px-4 py-3",children:[h,x,g]}),v[36]=h,v[37]=x,v[38]=g,v[39]=b):b=v[39],b}let e1=(0,r.d)(C.a,(e,t)=>{let{get:a}=t;return null!=(0,o.Ag)(e)||(0,o.Ai)(a(v.b,e))});function e2(e){let t,a=(0,n.c)(2);return a[0]!==e?(t=null!=e.onReply?(0,l.jsx)(e3,{...e}):(0,l.jsx)(e9,{...e}),a[0]=e,a[1]=t):t=a[1],t}function e3(e){let t,a,o,m,b,v,y,j,w,F,T,q=(0,n.c)(41),{attribution:R,formType:U,autoResolution:B,confirmationPresentation:K,confirmationCompleted:V,conversationId:W,elicitation:Q,hostId:Z,requestId:G,turnId:Y,onUserInteraction:J,onOpenInThread:X,onStandaloneResponseChange:$,onReply:ee,retainDraft:et,onPickLegacyFile:ea,onPickFiles:el,validateContent:en,disabled:ei,isSubmitting:es,onPreview:er}=e,eo=void 0!==et&&et,ec=void 0!==ei&&ei,ed=void 0!==es&&es,em=(0,r.y)(C.a),eu=(0,d.useRef)(null),ep=(0,d.useRef)(null),ef=(0,h.b)(),eh="formElicitation"===Q.kind;q[0]!==Q?(t=(0,S.a)(Q),q[0]=Q,q[1]=t):t=q[1];let ex=t,eg=ex?.field??null,eb=(0,M.c)(Q.schema),ev=function(e){if("openaiForm"!==e.kind)return;let t=e.schema[A.a],a=null==t?void 0:e.schema.properties[t];if(null!=t&&a?.type==="string"&&("oneOf"in a&&null!=a.oneOf&&a.oneOf.length>0||"enum"in a&&null!=a.enum&&a.enum.length>0))return{name:t,options:(0,M.d)(a),required:e.schema.required?.includes(t)===!0}}(Q),ey=eb[0],ej=1===eb.length&&null!=ey&&(0,P.b)(ey.schema)?ey.schema:null,ew=null!=ej,eN=(0,g.b)(Z,W,G),ek=(0,r.z)(g.c).get(eN);q[2]!==Q?(a=()=>z(Q),q[2]=Q,q[3]=a):a=q[3];let[eS,eC]=(0,d.useState)(a),eF=ek?.requestId===G&&"kind"in ek.draft&&ek.draft.kind===Q.kind?ek.draft:z(Q),eA=null==ee||eo?eF:eS,{values:eM}=eA,eI=eb.filter(e=>e.name!==ev?.name),eE=Object.fromEntries(eI.map(e8)),eP="openaiForm"===Q.kind?Q.schema["x-openai-groups"]:void 0;q[4]!==eP?(o=new Set(eP?.flatMap(e7)),q[4]=eP,q[5]=o):o=q[5];let eL=o;q[6]!==eL?(m=e=>!eL.has(e.name),q[6]=eL,q[7]=m):m=q[7];let ez=eI.filter(m),eD=eP?.map(e=>e.properties.map(e=>eE[e]))??[];(ez.length>0||0===eD.length)&&eD.push(ez);let eT=!ew&&(Q.message.trim().length>0||eD.length>1),eO=Math.min(eA.groupIndex??0,eD.length-1),e_=eO===eD.length-1,eq=eD[eO],eR=1===eq.length?eq[0]:void 0,eU=eR?.schema.type==="string"&&(0,M.e)(eR.schema)?(0,M.d)(eR.schema):null,eB=null==eR?void 0:eM[eR.name],[eK,eV]=(0,d.useState)(null),[eW,eH]=(0,d.useState)(0),[eZ,eG]=(0,d.useState)(!1),eY=(0,d.useRef)(!1),eJ=ed||eZ,eX=ec||eJ||eW>0;q[8]===Symbol.for("react.memo_cache_sentinel")?(b=[],q[8]=b):b=q[8];let[e$,e2]=(0,d.useState)(b);(0,d.useEffect)(()=>{null!=ej&&null==ee&&(0,u.d)(em,{hostId:Z,requestId:G},ej.items.length,{threadId:W,turnId:Y})},[W,Z,ee,G,em,ej,Y]);let e3=(e,t)=>{if(null==ee||eo){let t=em.get(g.c).get(eN),a=null!=t&&"kind"in t.draft&&t.draft.kind===Q.kind?t.draft:z(Q);(0,g.d)(em,eN,{conversationId:W,draft:e(a),requestId:G,cleanupOwner:eo?"hosted":void 0})}else eC(e);null!=t&&e2(e=>e.filter(e=>e!==t))},e9=(e,t)=>{eX||e3(a=>({...a,values:{...a.values,[e]:t}}),e)},te=(e,t)=>{if(ed||eY.current)return Promise.resolve(!1);if(null!=X)return eX||X(),Promise.resolve(!1);if((0,I.a)(em,{action:e,formType:U??(eh?"mcp":"openai"),identity:R}),null!=ee)return ee(e,t);let a=()=>(0,p.b)(em,Z).replyWithMcpServerElicitationResponse(W,G,(0,c.b)(e,null,t??{}));return null==$?a().then(e6,e5):(eY.current=!0,eG(!0),$("submitting"),Promise.resolve().then(a).then(()=>($({accept:"accepted",decline:"declined",cancel:"canceled"}[e]),!0),()=>($("failed"),!1)).finally(()=>{eY.current=!1,eG(!1)}))},tt=e=>{if(!eX){if(null!=X)return void X();eV(null),e3(t=>({...t,groupIndex:e}))}},ta=e=>{if(eX)return;if(null!=X)return void X();let t=e;if(e_&&ev?.required&&null==t){let e=ev.options;if(1!==e.length)return void ep.current?.focus();t=e[0].const}let a={...eA.values};null!=ev&&(null==t?delete a[ev.name]:(0,M.g)(a,ev.name,t));let l=function(e,t,a){let l={...t.values};for(let[e,a]of Object.entries(t.customDrafts))l[e]=D(l[e],a);switch(e.kind){case"formElicitation":return(0,L.a)(e.schema,l);case"openaiForm":return(0,E.b)(e.schema,l,t.fileOptions,a);case"legacyOpenAIForm":return(0,P.a)(e.schema,l)}}(Q,{...eA,values:null==eg?a:{[eg]:!0}},en),n=e_?l.invalidFieldNames:l.invalidFieldNames.filter(e=>eq.some(t=>t.name===e));if(e2(n),n.length>0){let e=n[0],t=eD.findIndex(t=>t.some(t=>t.name===e));if(t>=0&&t!==eO)return void tt(t);let a=Array.from(eu.current?.querySelectorAll("[data-mcp-form-field]")??[]).find(t=>t.dataset.mcpFormField===e),l=a?.querySelector('input:not([type="hidden"]):not(:disabled), textarea:not(:disabled), select:not(:disabled), [contenteditable="true"], button:not(:disabled)');return void(l??a)?.focus()}if(!e_)return void tt(eO+1);if(null==l.content)return;let i=te("accept",l.content);if(null!=ee||null==ej||null==ey)return;let s=l.content[ey.name];if("string"!=typeof s)return;let r=ej.items.findIndex(e=>e.id===s);r<0||i.then(e=>{!1!==e&&(0,u.e)(em,{hostId:Z,requestId:G},s,r)})},tl=e=>{if(!e.defaultPrevented&&!e.nativeEvent.isComposing&&e.target instanceof HTMLElement&&e.currentTarget.contains(e.target)){if("Escape"===e.key){e.preventDefault(),te("cancel");return}if(!(eX||null==e.target.closest('button, a[href], input, textarea, select, [contenteditable]:not([contenteditable="false"]), [data-mcp-form-file-drop], [role="button"], [role="checkbox"], [role="radiogroup"]')&&O(e,()=>e.currentTarget.requestSubmit()))&&!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&null==e.target.closest('textarea, select, input:not([type="radio"]):not([type="checkbox"]), [contenteditable]:not([contenteditable="false"]), [data-mcp-form-file-drop], [role="radiogroup"]')&&1===eq.length&&/^[1-9]$/.test(e.key)){let t=e.currentTarget.querySelectorAll('[data-mcp-form-choices] :is(input[type="radio"], button[role="checkbox"]):not(:disabled):not([data-mcp-form-custom-choice] *)')[Number(e.key)-1];null!=t&&(e.preventDefault(),e.repeat||t.click())}}},tn=null==el&&eb.some(e4),ti=(0,r.x)(null==ee&&tn?e1:null,Z);if(ex?.presentation!=null){let e;return q[9]!==Q||q[10]!==G?(e=JSON.stringify([G,Q]),q[9]=Q,q[10]=G,q[11]=e):e=q[11],(0,l.jsx)(i.a,{className:"contents",children:(0,l.jsx)(k.a,{presentation:ex.presentation,message:Q.message,disabled:eX,isSubmitting:eJ,completed:V,standalone:"standalone"===K,onOpen:J,onOpenInThread:X,onConfirm:ta,onCancel:()=>void te("cancel")},e)})}if(tn&&!ti){let e;return q[12]!==W||q[13]!==Q.serverName||q[14]!==Z||q[15]!==ee||q[16]!==$||q[17]!==G||q[18]!==eJ?(e=(0,l.jsx)(_.a,{conversationId:W,hostId:Z,isSubmitting:eJ,requestId:G,serverName:Q.serverName,onReply:ee,onStandaloneResponseChange:$}),q[12]=W,q[13]=Q.serverName,q[14]=Z,q[15]=ee,q[16]=$,q[17]=G,q[18]=eJ,q[19]=e):e=q[19],e}let ts=i.a,tr=f.a,to=null!=J||void 0;q[20]!==J?(v=e=>{"Escape"===e.key||e.target instanceof Element&&null!=e.target.closest("[data-request-input-dismiss]")||J?.()},y=e=>{e.target instanceof Element&&null!=e.target.closest("[data-request-input-dismiss]")||J?.()},j=e=>{(0,x.b)(e.dataTransfer)&&J?.()},q[20]=J,q[21]=v,q[22]=y,q[23]=j):(v=q[21],y=q[22],j=q[23]);let tc=e=>{e.preventDefault(),ta()},td=eT&&(0,l.jsx)(e0,{isSubmitting:eJ,elicitation:Q,field:eR?.schema,hostId:Z,conversationId:W,groupIndex:eO,groupCount:eD.length,onCancel:()=>void te("cancel")}),tm=null==eg&&eq.length>0&&(0,l.jsx)("div",{className:(0,s.b)("flex max-h-96 min-h-0 scrollbar-stable flex-col gap-4 overflow-y-auto overscroll-contain pb-3",!eT&&"pt-3"),children:eq.map((e,t)=>(0,l.jsx)(eQ,{autoFocus:ef&&0===t,disabled:ec,interactionDisabled:eX,field:e,isOnlyField:1===eq.length,draft:eA,expanded:eK===e.name,hostId:Z,invalid:e$.includes(e.name),metadataInHeader:eT&&1===eq.length,onCloseExpanded:()=>eV(null),onDraftChange:X??e3,onValueChange:X??e9,onPickLegacyFile:ea,onPickingChange:e=>eH(t=>t+(e?1:-1)),onPickFiles:el,onPreview:er,onViewAll:eq.length>1&&(0,E.c)(e.schema)&&eA.fileOptions[e.name].length>1?X??(()=>eV(e.name)):void 0},e.name))},eO),tu=null!=eg?(0,l.jsx)(N,{disabled:eX,isSubmitting:eJ,hotkeysEnabled:ef,onDecline:()=>void te("decline")}):(0,l.jsx)(H,{primaryActionRef:ep,isSubmitting:eJ,autoResolution:B,disabled:eX,submitDisabled:eX||null!=eR&&eR.required&&(0,P.b)(eR.schema)&&!(0,P.c)(eR.schema,eM[eR.name]),fieldCount:eq.length,isLastGroup:e_,onBack:eO>0?()=>tt(eO-1):void 0,hotkeysEnabled:ef,acceptOptions:e_&&null!=ev?{options:ev.options,required:ev.required,onSelect:ta}:void 0,isStandardForm:eh,showSubmit:eR?.required!==!0||null==eU||"string"==typeof eB&&(""!==eB||eU.some(e=>e.const===eB)),showHeader:eT,onCancel:()=>void te("cancel"),onDecline:()=>void te("decline"),onDismissLegacyImagePicker:ew?()=>{null==ee&&(0,u.b)(em,{hostId:Z,requestId:G}),te("decline")}:void 0,onViewAll:null!=eR&&(0,E.c)(eR.schema)&&eA.fileOptions[eR.name].length>1?X??(()=>eV(eR.name)):void 0});return q[24]!==eu||q[25]!==tl||q[26]!==to||q[27]!==v||q[28]!==y||q[29]!==j||q[30]!==tc||q[31]!==td||q[32]!==tm||q[33]!==tu?(w=(0,l.jsxs)("form",{ref:eu,className:"flex max-h-[calc(100dvh/var(--codex-window-zoom)-var(--height-toolbar)-2rem)] min-h-0 flex-col outline-none",noValidate:!0,tabIndex:-1,"data-codex-character-input-boundary":!0,"data-codex-escape-boundary":!0,"data-user-input-auto-resolution":to,onKeyDownCapture:v,onPointerDownCapture:y,onDropCapture:j,onKeyDown:tl,onSubmit:tc,children:[td,tm,tu]}),q[24]=eu,q[25]=tl,q[26]=to,q[27]=v,q[28]=y,q[29]=j,q[30]=tc,q[31]=td,q[32]=tm,q[33]=tu,q[34]=w):w=q[34],q[35]!==tr||q[36]!==w?(F=(0,l.jsx)(tr,{className:"@container/request-card",children:w}),q[35]=tr,q[36]=w,q[37]=F):F=q[37],q[38]!==ts||q[39]!==F?(T=(0,l.jsx)(ts,{className:"contents",children:F}),q[38]=ts,q[39]=F,q[40]=T):T=q[40],T}function e4(e){let{schema:t}=e;return(0,E.c)(t)&&null!=t["x-openai-input"].userOptions}function e5(){return!1}function e6(){return!0}function e7(e){return e.properties}function e8(e){return[e.name,e]}function e9(e){let t,i,s=(0,n.c)(9),o=(0,r.y)(F.a),c=(0,m.a)();s[0]!==c||s[1]!==e.conversationId||s[2]!==e.elicitation||s[3]!==e.hostId||s[4]!==o?(t=(t,l)=>{Promise.all([a.e(418851),a.e(109308),a.e(399565),a.e(257798),a.e(447351),a.e(617936),a.e(807489),a.e(337882),a.e(955979),a.e(646436),a.e(7078),a.e(200429),a.e(698524),a.e(956483),a.e(87162),a.e(396705),a.e(155568),a.e(731863),a.e(767086),a.e(76629),a.e(514085),a.e(858617)]).then(a.bind(a,"sJLg")).then(a=>{let{openFormPreview:n}=a;return n(o,{hostId:e.hostId,threadId:e.conversationId,server:e.elicitation.serverName,target:t,title:l})}).catch(te).then(e=>{e||o.get(b.f).danger(c.formatMessage({id:"composer.mcpFormElicitation.previewUnavailable",defaultMessage:"Couldn't open preview"}),{errorAnalytics:{toastId:"composer.mcpFormElicitation.previewUnavailable"}})})},s[0]=c,s[1]=e.conversationId,s[2]=e.elicitation,s[3]=e.hostId,s[4]=o,s[5]=t):t=s[5];let d=t;return s[6]!==d||s[7]!==e?(i=(0,l.jsx)(e3,{...e,onPreview:d}),s[6]=d,s[7]=e,s[8]=i):i=s[8],i}function te(){return!1}}),MnTr:(function(e,t,a){a.d(t,{a:()=>m,b:()=>u});var l=a("ABep"),n=a("QosV"),i=a("ULZ9"),s=a("on57"),r=a("zd8w"),o=a("v7qY"),c="PortalBoundary-TFj9W2";let d=(0,r.createContext)({container:null});function m(e){let t,a,o,m,u,p,f,h,x=(0,n.c)(20),{children:g,className:b,theme:v,themeClassName:y}=e,[j,w]=(0,r.useState)(null);x[0]!==j?(t=()=>{if(null==j)return;let e=()=>{let e=String(j.currentCSSZoom??1);j.style.getPropertyValue("--puik-portal-zoom")!==e&&j.style.setProperty("--puik-portal-zoom",e)};e();let t=new MutationObserver(e);for(let e=j;null!=e;e=e.parentElement)t.observe(e,{attributes:!0,attributeFilter:["class","style"]});return()=>t.disconnect()},a=[j],x[0]=j,x[1]=t,x[2]=a):(t=x[1],a=x[2]),(0,r.useLayoutEffect)(t,a),x[3]===Symbol.for("react.memo_cache_sentinel")?(o=e=>{null!=e&&w(e)},x[3]=o):o=x[3],x[4]!==b||x[5]!==y?(m=(0,s.b)("relative",c,y,b),x[4]=b,x[5]=y,x[6]=m):m=x[6];let N=j??void 0;return x[7]!==j||x[8]!==y?(u={container:j,themeClassName:y},x[7]=j,x[8]=y,x[9]=u):u=x[9],x[10]!==g||x[11]!==u?(p=(0,l.jsx)(d.Provider,{value:u,children:g}),x[10]=g,x[11]=u,x[12]=p):p=x[12],x[13]!==N||x[14]!==p?(f=(0,l.jsx)(i.a,{radixPortalContainer:N,children:p}),x[13]=N,x[14]=p,x[15]=f):f=x[15],x[16]!==m||x[17]!==f||x[18]!==v?(h=(0,l.jsx)("div",{ref:o,className:m,"data-theme":v,children:f}),x[16]=m,x[17]=f,x[18]=v,x[19]=h):h=x[19],h}function u(e){let t,a,m,u,p,f,h,x=(0,n.c)(24),{children:g,theme:b}=e,{container:v,themeClassName:y}=(0,r.useContext)(d);x[0]!==v?(t=v?.closest("dialog:modal"),x[0]=v,x[1]=t):t=x[1];let j=t,[w,N]=(0,r.useState)(null);x[2]!==v||x[3]!==j?.currentCSSZoom||x[4]!==w?(a=()=>{if(null==v||null==w)return;let e=v.ownerDocument.defaultView;if(null==e)return;let t=[];for(let e=v;null!=e;e=e.parentElement)t.push(e);let a=()=>{let a=v.currentCSSZoom??1,l=j?.currentCSSZoom??1,n=t.map(t=>e.getComputedStyle(t)),i=t.some((e,t)=>{let a=n[t];return e.hasAttribute("inert")||e.hidden||"true"===e.getAttribute("aria-hidden")||"none"===a.display||"hidden"===a.visibility||"collapse"===a.visibility||"hidden"===a.contentVisibility});w.style.setProperty("zoom",String(a/l)),w.style.setProperty("--puik-portal-zoom",String(a)),w.toggleAttribute("inert",i),w.toggleAttribute("hidden",i)},l=new MutationObserver(a),n=!1,i=()=>{let i=null!=w.querySelector('[data-radix-popper-content-wrapper], [role="tooltip"]');if(i!==n)if(n=i,i){for(let e of(a(),t))l.observe(e,{attributes:!0,attributeFilter:["class","style","hidden","inert","aria-hidden","data-theme"]});e.addEventListener("resize",a)}else l.disconnect(),e.removeEventListener("resize",a)},s=new MutationObserver(i);return s.observe(w,{childList:!0,subtree:!0}),i(),()=>{s.disconnect(),l.disconnect(),e.removeEventListener("resize",a),w.setAttribute("hidden",""),w.setAttribute("inert","")}},x[2]=v,x[3]=j?.currentCSSZoom,x[4]=w,x[5]=a):a=x[5],x[6]!==v||x[7]!==j||x[8]!==w?(m=[v,j,w],x[6]=v,x[7]=j,x[8]=w,x[9]=m):m=x[9],(0,r.useLayoutEffect)(a,m);let k=w??void 0;return x[10]!==g||x[11]!==w?(u="function"==typeof g?g(w):g,x[10]=g,x[11]=w,x[12]=u):u=x[12],x[13]!==k||x[14]!==u?(p=(0,l.jsx)(i.a,{radixPortalContainer:k,children:u}),x[13]=k,x[14]=u,x[15]=p):p=x[15],x[16]!==v||x[17]!==j||x[18]!==b||x[19]!==y?(f=null!=v&&(0,o.createPortal)((0,l.jsx)("div",{ref:e=>{null!=e&&N(e)},className:(0,s.b)("relative",c,"PortalSurface-LW3Uz2",y),"data-theme":b}),j??v.ownerDocument.body),x[16]=v,x[17]=j,x[18]=b,x[19]=y,x[20]=f):f=x[20],x[21]!==p||x[22]!==f?(h=(0,l.jsxs)(l.Fragment,{children:[p,f]}),x[21]=p,x[22]=f,x[23]=h):h=x[23],h}})};
+export const __rspack_esm_ids = [842376];
+export const __webpack_modules__ = {
+    ULZ9: (function(e, t, a) {
+        a.d(t, {
+            a: () => s
+        }), a("iYCA"), a("yCBR");
+        var l = a("ABep"),
+            n = a("QosV"),
+            i = a("ylLY");
+
+        function s(e) {
+            let t, a, s = (0, n.c)(8),
+                {
+                    children: r,
+                    linkComponent: o,
+                    allowedWidgetTypes: c,
+                    radixPortalContainer: d,
+                    hydrationSafe: m
+                } = e,
+                u = void 0 === o ? "a" : o,
+                p = void 0 === c ? "GA" : c,
+                f = void 0 !== m && m;
+            return s[0] !== p || s[1] !== f || s[2] !== u || s[3] !== d ? (t = {
+                linkComponent: u,
+                allowedWidgetTypes: p,
+                radixPortalContainer: d,
+                hydrationSafe: f
+            }, s[0] = p, s[1] = f, s[2] = u, s[3] = d, s[4] = t) : t = s[4], s[5] !== r || s[6] !== t ? (a = (0, l.jsx)(i.a.Provider, {
+                value: t,
+                children: r
+            }), s[5] = r, s[6] = t, s[7] = a) : a = s[7], a
+        }
+    }),
+    QRIH: (function(e, t, a) {
+        a.d(t, {
+            a: () => x,
+            b: () => g
+        });
+        var l = a("ABep"),
+            n = a("QosV"),
+            i = a("on57"),
+            s = a("zd8w"),
+            r = a("Wf1j"),
+            o = a("oyxz"),
+            c = a("sAQ3"),
+            d = a("Sm6l"),
+            m = a("JNtf"),
+            u = a("mUDD"),
+            p = a("bf6R"),
+            f = e => (0, l.jsxs)("svg", {
+                xmlns: "http://www.w3.org/2000/svg",
+                width: 32,
+                height: 32,
+                fill: "none",
+                viewBox: "0 0 24 24",
+                ...e,
+                children: [(0, l.jsx)("path", {
+                    fill: "#4D6FE6",
+                    d: "M12 2.75c.248 0 .492.059.712.172l6 3.077A1.6 1.6 0 0 1 19.6 7.42v4.067c0 4.328-2.861 8.043-6.9 9.287a2.362 2.362 0 0 1-1.4 0c-4.039-1.244-6.9-4.959-6.9-9.287V7.42c0-.6.338-1.148.888-1.42l6-3.077A1.55 1.55 0 0 1 12 2.75Z"
+                }), (0, l.jsx)("path", {
+                    fill: "#86A0F2",
+                    d: "M12 5.154 7.4 7.512v3.975c0 3.084 1.862 5.812 4.6 7.05V5.154Z"
+                })]
+            }),
+            h = e => (0, l.jsxs)("svg", {
+                xmlns: "http://www.w3.org/2000/svg",
+                width: 24,
+                height: 24,
+                fill: "none",
+                viewBox: "0 0 24 24",
+                ...e,
+                children: [(0, l.jsx)("path", {
+                    fill: "#4D6FE6",
+                    d: "M12 2.75c.248 0 .492.059.712.172l6 3.077A1.6 1.6 0 0 1 19.6 7.42v4.067c0 4.328-2.861 8.043-6.9 9.287a2.362 2.362 0 0 1-1.4 0c-4.039-1.244-6.9-4.959-6.9-9.287V7.42c0-.6.338-1.148.888-1.42l6-3.077A1.55 1.55 0 0 1 12 2.75Z"
+                }), (0, l.jsx)("path", {
+                    fill: "#86A0F2",
+                    d: "M12 5.154 7.4 7.512v3.975c0 3.084 1.862 5.812 4.6 7.05V5.154Z"
+                })]
+            });
+
+        function x(e) {
+            let t, a, x, b, v, y, j, w, N, k, S, C, F, A, M, I, E, P, L, z, D, T, O = (0, n.c)(67),
+                {
+                    presentation: _,
+                    message: q,
+                    disabled: R,
+                    isSubmitting: U,
+                    completed: B,
+                    standalone: K,
+                    onOpen: V,
+                    onOpenInThread: W,
+                    onConfirm: H,
+                    onCancel: Q
+                } = e,
+                Z = void 0 !== B && B,
+                G = void 0 !== K && K,
+                Y = (0, r.a)(),
+                [J, X] = (0, s.useState)(G);
+            O[0] !== G ? (t = (0, i.b)("flex flex-wrap items-center gap-2", {
+                "justify-center": G
+            }), O[0] = G, O[1] = t) : t = O[1];
+            let $ = "shield" === _.icon ? "actionChipWithIcon" : "actionChip",
+                ee = R && !Z;
+            O[2] !== Z || O[3] !== V || O[4] !== W ? (a = () => {
+                null == W || Z ? (V?.(), X(!0)) : W()
+            }, O[2] = Z, O[3] = V, O[4] = W, O[5] = a) : a = O[5], O[6] !== _.icon ? (x = "shield" === _.icon && (0, l.jsx)("span", {
+                className: "flex shrink-0 items-center justify-center rounded-full bg-white p-0.5",
+                children: (0, l.jsx)(h, {
+                    "aria-hidden": "true"
+                })
+            }), O[6] = _.icon, O[7] = x) : x = O[7], O[8] !== _.triggerLabel ? (b = (0, l.jsx)("span", {
+                className: "min-w-0 break-words whitespace-normal",
+                children: _.triggerLabel
+            }), O[8] = _.triggerLabel, O[9] = b) : b = O[9], O[10] !== Z || O[11] !== Y ? (v = Z && (0, l.jsx)(p.Ub, {
+                "aria-label": Y.formatMessage({
+                    id: "mcpConfirmation.completed",
+                    defaultMessage: "Completed"
+                })
+            }), O[10] = Z, O[11] = Y, O[12] = v) : v = O[12], O[13] !== U || O[14] !== $ || O[15] !== ee || O[16] !== a || O[17] !== x || O[18] !== b || O[19] !== v ? (y = (0, l.jsxs)(c.a, {
+                color: "conversationAccentSubtle",
+                size: $,
+                radius: "messageBubble",
+                type: "button",
+                className: "max-w-full",
+                disabled: ee,
+                loading: U,
+                "aria-haspopup": "dialog",
+                onClick: a,
+                children: [x, b, v]
+            }), O[13] = U, O[14] = $, O[15] = ee, O[16] = a, O[17] = x, O[18] = b, O[19] = v, O[20] = y) : y = O[20], O[21] !== y || O[22] !== t ? (j = (0, l.jsx)("div", {
+                "data-mcp-confirmation-chip": !0,
+                className: t,
+                children: y
+            }), O[21] = y, O[22] = t, O[23] = j) : j = O[23], O[24] === Symbol.for("react.memo_cache_sentinel") ? (w = {
+                "aria-describedby": void 0
+            }, O[24] = w) : w = O[24], O[25] !== Z || O[26] !== R || O[27] !== H ? (N = e => {
+                e.preventDefault(), R || Z || (H(), X(!1))
+            }, O[25] = Z, O[26] = R, O[27] = H, O[28] = N) : N = O[28], O[29] !== _.icon ? (k = "shield" === _.icon && (0, l.jsx)("span", {
+                className: "flex shrink-0 items-center justify-center rounded-xl border border-default bg-white p-3",
+                children: (0, l.jsx)(f, {
+                    "aria-hidden": "true"
+                })
+            }), O[29] = _.icon, O[30] = k) : k = O[30], O[31] !== _.title ? (S = (0, l.jsx)(m.e, {
+                variant: "confirmation",
+                className: "text-center",
+                children: _.title
+            }), O[31] = _.title, O[32] = S) : S = O[32], O[33] !== k || O[34] !== S ? (C = (0, l.jsxs)("div", {
+                className: "flex flex-col items-center gap-3",
+                children: [k, S]
+            }), O[33] = k, O[34] = S, O[35] = C) : C = O[35], O[36] !== q || O[37] !== _ ? (F = (0, l.jsx)(g, {
+                presentation: _,
+                message: q
+            }), O[36] = q, O[37] = _, O[38] = F) : F = O[38];
+            let et = _.destructive ? "dangerSolid" : "primary",
+                ea = R || Z;
+            return O[39] !== _.confirmLabel ? (A = (0, l.jsx)("span", {
+                className: "min-w-0 break-words whitespace-normal",
+                children: _.confirmLabel
+            }), O[39] = _.confirmLabel, O[40] = A) : A = O[40], O[41] !== U || O[42] !== et || O[43] !== ea || O[44] !== A ? (M = (0, l.jsx)(u.c, {
+                children: (0, l.jsx)(d.a, {
+                    color: et,
+                    size: "modalPrimary",
+                    radius: "full",
+                    type: "submit",
+                    disabled: ea,
+                    loading: U,
+                    children: A
+                })
+            }), O[41] = U, O[42] = et, O[43] = ea, O[44] = A, O[45] = M) : M = O[45], O[46] !== Z || O[47] !== R || O[48] !== Q ? (I = () => {
+                R || Z || Q?.(), X(!1)
+            }, O[46] = Z, O[47] = R, O[48] = Q, O[49] = I) : I = O[49], O[50] === Symbol.for("react.memo_cache_sentinel") ? (E = (0, l.jsx)(o.a, {
+                id: "mcpConfirmation.cancel",
+                defaultMessage: "Cancel"
+            }), O[50] = E) : E = O[50], O[51] !== I ? (P = (0, l.jsx)(u.c, {
+                children: (0, l.jsx)(d.a, {
+                    color: "secondary",
+                    size: "modalPrimary",
+                    radius: "full",
+                    type: "button",
+                    onClick: I,
+                    children: E
+                })
+            }), O[51] = I, O[52] = P) : P = O[52], O[53] !== M || O[54] !== P ? (L = (0, l.jsxs)("div", {
+                className: "flex flex-col gap-2",
+                children: [M, P]
+            }), O[53] = M, O[54] = P, O[55] = L) : L = O[55], O[56] !== N || O[57] !== C || O[58] !== F || O[59] !== L ? (z = (0, l.jsxs)(u.b, {
+                as: "form",
+                size: "viewport",
+                variant: "confirmation",
+                onSubmit: N,
+                children: [C, F, L]
+            }), O[56] = N, O[57] = C, O[58] = F, O[59] = L, O[60] = z) : z = O[60], O[61] !== J || O[62] !== z ? (D = (0, l.jsx)(m.a, {
+                open: J,
+                onOpenChange: X,
+                widthHint: 480,
+                variant: "confirmation",
+                closeButtonSize: "large",
+                contentProps: w,
+                children: z
+            }), O[61] = J, O[62] = z, O[63] = D) : D = O[63], O[64] !== j || O[65] !== D ? (T = (0, l.jsxs)(l.Fragment, {
+                children: [j, D]
+            }), O[64] = j, O[65] = D, O[66] = T) : T = O[66], T
+        }
+
+        function g(e) {
+            let t, a = (0, n.c)(10),
+                {
+                    message: i,
+                    presentation: s
+                } = e;
+            if (s?.sections != null) {
+                let e, t;
+                return a[0] !== s.sections ? (e = s.sections.map(v), a[0] = s.sections, a[1] = e) : e = a[1], a[2] !== e ? (t = (0, l.jsx)("div", {
+                    className: "flex flex-col gap-5 select-text",
+                    children: e
+                }), a[2] = e, a[3] = t) : t = a[3], t
+            }
+            if (s?.fields != null) {
+                let e, t;
+                return a[4] !== s.fields ? (e = s.fields.map(b), a[4] = s.fields, a[5] = e) : e = a[5], a[6] !== e ? (t = (0, l.jsx)("dl", {
+                    className: "flex flex-col gap-4 rounded-2xl border border-default p-5 text-document leading-5 font-normal break-words text-default select-text",
+                    children: e
+                }), a[6] = e, a[7] = t) : t = a[7], t
+            }
+            return a[8] !== i ? (t = (0, l.jsx)("div", {
+                className: "text-sm break-words whitespace-pre-wrap text-default select-text",
+                children: i
+            }), a[8] = i, a[9] = t) : t = a[9], t
+        }
+
+        function b(e, t) {
+            let {
+                label: a,
+                value: n
+            } = e;
+            return (0, l.jsxs)("div", {
+                className: "flex flex-col gap-1",
+                children: [(0, l.jsx)("dt", {
+                    className: "text-secondary",
+                    children: a
+                }), (0, l.jsx)("dd", {
+                    className: "whitespace-pre-wrap",
+                    children: n
+                })]
+            }, t)
+        }
+
+        function v(e, t) {
+            let {
+                title: a,
+                body: n,
+                caption: i
+            } = e;
+            return (0, l.jsxs)("section", {
+                className: "flex flex-col gap-2",
+                children: [a && (0, l.jsx)("h3", {
+                    className: "text-base font-medium text-secondary",
+                    children: a
+                }), (0, l.jsxs)("dl", {
+                    className: "flex flex-col gap-4 rounded-2xl border border-default p-5 break-words",
+                    children: [(0, l.jsxs)("div", {
+                        className: "flex flex-col gap-1",
+                        children: [(0, l.jsx)("dt", {
+                            className: "text-sm text-secondary",
+                            children: n.label
+                        }), (0, l.jsx)("dd", {
+                            className: "text-document whitespace-pre-wrap text-default",
+                            children: n.value
+                        })]
+                    }), (0, l.jsxs)("div", {
+                        className: "flex flex-col gap-1 border-t border-default pt-4",
+                        children: [(0, l.jsx)("dt", {
+                            className: "text-sm text-secondary",
+                            children: i.label
+                        }), (0, l.jsx)("dd", {
+                            className: "text-document whitespace-pre-wrap text-default",
+                            children: i.value
+                        })]
+                    })]
+                })]
+            }, t)
+        }
+    }),
+    nxd2: (function(e, t, a) {
+        var l = a("ASxG");
+        let n = l.object({
+            version: l.literal(1),
+            field: l.string().min(1),
+            presentation: l.object({
+                title: l.string().trim().min(1).max(120),
+                triggerLabel: l.string().trim().min(1).max(80),
+                confirmLabel: l.string().trim().min(1).max(80),
+                icon: l.literal("shield").optional().catch(void 0),
+                destructive: l.boolean().optional().catch(void 0),
+                fields: l.array(l.object({
+                    label: l.string().trim().min(1).max(120),
+                    value: l.string().min(1).max(1e4).refine(e => e.trim().length > 0)
+                })).min(1).max(20).optional().catch(void 0),
+                sections: l.array(l.object({
+                    title: l.string().trim().min(1).max(120).optional(),
+                    bodyField: l.number().int().min(0).max(19),
+                    captionField: l.number().int().min(0).max(19)
+                })).min(1).max(10).optional().catch(void 0)
+            }).transform(e => {
+                let {
+                    sections: t,
+                    ...a
+                } = e, {
+                    fields: l
+                } = a, n = t?.flatMap(e => {
+                    let {
+                        bodyField: t,
+                        captionField: a
+                    } = e;
+                    return [t, a]
+                }), i = null != l && n?.length === l.length && new Set(n).size === l.length && n.every(e => e < l.length);
+                return {
+                    ...a,
+                    sections: i ? t?.map(e => {
+                        let {
+                            title: t,
+                            bodyField: a,
+                            captionField: n
+                        } = e;
+                        return {
+                            title: t,
+                            body: l[a],
+                            caption: l[n]
+                        }
+                    }) : void 0
+                }
+            }).optional().catch(void 0)
+        });
+        a.d(t, {}, {
+            a: function(e) {
+                let t = n.safeParse(e.confirmation);
+                if (!t.success || !e.message.trim()) return null;
+                let {
+                    field: a
+                } = t.data;
+                return 1 !== Object.keys(e.schema.properties).length || e.schema.properties[a]?.type !== "boolean" || e.schema.required?.length !== 1 || e.schema.required[0] !== a ? null : t.data
+            }
+        })
+    }),
+    vPGU: (function(e, t, a) {
+        var l = a("ABep"),
+            n = a("QosV"),
+            i = a("BolX"),
+            s = a("I3F6"),
+            r = a("zd8w"),
+            o = a("oyxz"),
+            c = a("Dgwo"),
+            d = a("WNfT"),
+            m = a("KRWX"),
+            u = a("Sm6l"),
+            p = a("OWtl");
+
+        function f() {}
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, h, x, g, b, v, y, j, w = (0, n.c)(26),
+                    {
+                        conversationId: N,
+                        hostId: k,
+                        requestId: S,
+                        serverName: C,
+                        onReply: F,
+                        onStandaloneResponseChange: A,
+                        isSubmitting: M
+                    } = e,
+                    I = void 0 !== M && M,
+                    E = (0, i.y)(p.a),
+                    P = (0, m.b)(),
+                    [L, z] = (0, r.useState)(!1),
+                    D = (0, r.useRef)(!1);
+                w[0] !== N || w[1] !== k || w[2] !== I || w[3] !== F || w[4] !== A || w[5] !== S || w[6] !== E ? (t = e => {
+                    if (I || D.current) return;
+                    let t = () => null != F ? F(e) : (0, c.b)(E, k).replyWithMcpServerElicitationResponse(N, S, (0, s.b)(e));
+                    null == A ? t().catch(f) : (D.current = !0, z(!0), A("submitting"), Promise.resolve().then(t).then(() => A("decline" === e ? "declined" : "canceled"), () => A("failed")).finally(() => {
+                        D.current = !1, z(!1)
+                    }))
+                }, w[0] = N, w[1] = k, w[2] = I, w[3] = F, w[4] = A, w[5] = S, w[6] = E, w[7] = t) : t = w[7];
+                let T = t;
+                w[8] !== T ? (a = e => {
+                    "Escape" === e.key && (e.preventDefault(), T("cancel"))
+                }, w[8] = T, w[9] = a) : a = w[9], w[10] !== C ? (h = (0, l.jsxs)("div", {
+                    className: "text-sm font-medium",
+                    children: [(0, l.jsx)(l.Fragment, {
+                        children: (0, l.jsx)(o.a, {
+                            id: "composer.openAIForm.invalidInput.serverTitle",
+                            defaultMessage: "{serverName} requested a form that cannot be displayed",
+                            values: {
+                                serverName: C
+                            }
+                        })
+                    }), null]
+                }), w[10] = C, w[11] = h) : h = w[11], w[12] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, l.jsxs)("div", {
+                    className: "text-size-chat-sm text-codex-description",
+                    children: [(0, l.jsx)(l.Fragment, {
+                        children: (0, l.jsx)(o.a, {
+                            id: "composer.openAIForm.invalidInput.dismissInstruction",
+                            defaultMessage: "Dismiss the request to close it"
+                        })
+                    }), null]
+                }), w[12] = x) : x = w[12], w[13] !== h ? (g = (0, l.jsxs)("div", {
+                    className: "flex flex-col gap-1 p-4",
+                    children: [h, x]
+                }), w[13] = h, w[14] = g) : g = w[14];
+                let O = I || L;
+                return w[15] !== T ? (b = () => T("cancel"), w[15] = T, w[16] = b) : b = w[16], w[17] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, l.jsx)(o.a, {
+                    id: "composer.openAIForm.unsupported.dismiss",
+                    defaultMessage: "Dismiss"
+                }), w[17] = v) : v = w[17], w[18] !== P || w[19] !== O || w[20] !== b ? (y = (0, l.jsxs)("div", {
+                    className: "flex justify-end gap-2 px-4 py-3",
+                    children: [(0, l.jsx)(l.Fragment, {
+                        children: (0, l.jsx)(u.a, {
+                            autoFocus: P,
+                            color: "primary",
+                            size: "composer",
+                            disabled: O,
+                            onClick: b,
+                            children: v
+                        })
+                    }), null]
+                }), w[18] = P, w[19] = O, w[20] = b, w[21] = y) : y = w[21], w[22] !== y || w[23] !== a || w[24] !== g ? (j = (0, l.jsx)(d.a, {
+                    children: (0, l.jsxs)("div", {
+                        className: "flex flex-col",
+                        role: "presentation",
+                        onKeyDown: a,
+                        children: [g, y]
+                    })
+                }), w[22] = y, w[23] = a, w[24] = g, w[25] = j) : j = w[25], j
+            }
+        })
+    }),
+    JEWd: (function(e, t, a) {
+        var l = a("ABep"),
+            n = a("QosV"),
+            i = a("on57"),
+            s = a("zd8w"),
+            r = a("Sm6l"),
+            o = a("IxWh"),
+            c = a("HOLv"),
+            d = a("bIvi"),
+            m = a("J6nW"),
+            u = a("aAps");
+        let p = {
+            form: {
+                color: "secondarySurface",
+                size: "actionSm"
+            },
+            gallery: {
+                color: "outlineSurface",
+                size: "dialog"
+            },
+            compact: {
+                color: "ghost",
+                size: "compact"
+            }
+        };
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, f, h, x, g, b, v, y, j, w, N = (0, n.c)(38),
+                    {
+                        ariaInvalid: k,
+                        ariaLabel: S,
+                        backLabel: C,
+                        children: F,
+                        forwardLabel: A,
+                        header: M,
+                        layout: I,
+                        role: E,
+                        shouldUseReducedMotion: P
+                    } = e,
+                    L = void 0 === I ? "form" : I,
+                    z = void 0 === E ? "group" : E;
+                N[0] !== F ? (t = s.Children.count(F), N[0] = F, N[1] = t) : t = N[1];
+                let D = t,
+                    T = (0, s.useRef)(null),
+                    [O, _] = (0, s.useState)("ltr"),
+                    [q, R] = (0, s.useState)(!1),
+                    [U, B] = (0, s.useState)(!1);
+                N[2] === Symbol.for("react.memo_cache_sentinel") ? (a = e => {
+                    let t = "rtl" === getComputedStyle(e).direction ? "rtl" : "ltr";
+                    _(t);
+                    let {
+                        maximum: a,
+                        minimum: l
+                    } = (0, o.a)(e, t);
+                    "rtl" === t ? (R(e.scrollLeft < a - 1), B(e.scrollLeft > l + 1)) : (R(e.scrollLeft > l + 1), B(e.scrollLeft < a - 1))
+                }, N[2] = a) : a = N[2];
+                let K = (0, d.a)(a),
+                    V = e => {
+                        if (T.current = e, null == e || 0 === D || (K(e), "u" < typeof ResizeObserver)) return;
+                        let t = () => K(e),
+                            a = new ResizeObserver(t),
+                            l = new MutationObserver(t);
+                        return l.observe(e, {
+                            childList: !0
+                        }), a.observe(e), null != e.firstElementChild && a.observe(e.firstElementChild), null != e.lastElementChild && a.observe(e.lastElementChild), () => {
+                            a.disconnect(), l.disconnect(), T.current = null
+                        }
+                    },
+                    W = "form" === L && "pointer-events-none absolute inset-x-0 top-1 z-10 h-34 justify-between px-3",
+                    H = "gallery" === L && "gap-2";
+                N[3] !== W || N[4] !== H ? (f = (0, i.b)("flex items-center", W, H), N[3] = W, N[4] = H, N[5] = f) : f = N[5];
+                let Q = [-1, 1].map(e => {
+                    let t = -1 === e ? q : U,
+                        a = -1 === e ? C : A;
+                    return (0, l.jsx)(r.a, {
+                        className: (0, i.b)("pointer-events-auto", "form" === L && !t && "invisible"),
+                        "aria-label": a,
+                        ...p[L],
+                        disabled: !t,
+                        onClick: () => {
+                            let t;
+                            null != (t = T.current) && t.scrollTo({
+                                left: (0, o.b)(t, e, "rtl" === getComputedStyle(t).direction ? "rtl" : "ltr"),
+                                behavior: P ? "instant" : "smooth"
+                            })
+                        },
+                        radius: "compact" === L ? void 0 : "full",
+                        title: a,
+                        uniform: !0,
+                        children: (0, l.jsx)(c.a, {
+                            className: e === ("rtl" === O ? 1 : -1) ? "rotate-180" : void 0,
+                            asset: "gallery" === L ? m.a : u.a
+                        })
+                    }, e)
+                });
+                N[6] !== f || N[7] !== Q ? (h = (0, l.jsx)("div", {
+                    className: f,
+                    children: Q
+                }), N[6] = f, N[7] = Q, N[8] = h) : h = N[8];
+                let Z = h,
+                    G = "gallery" === L && "gap-4",
+                    Y = "compact" === L && "gap-2",
+                    J = "form" === L && "gap-1.5";
+                N[9] !== G || N[10] !== Y || N[11] !== J ? (x = (0, i.b)("flex min-w-0 flex-col", G, Y, J), N[9] = G, N[10] = Y, N[11] = J, N[12] = x) : x = N[12], N[13] !== M || N[14] !== L || N[15] !== Z ? (g = null != M || "form" !== L ? (0, l.jsxs)("div", {
+                    className: (0, i.b)("flex min-w-0 items-center", "form" === L && "gap-1 px-4 py-1.5", "compact" === L && "gap-3", "gallery" === L && "min-h-9 gap-3"),
+                    children: [(0, l.jsx)("div", {
+                        className: "min-w-0 flex-1",
+                        children: M
+                    }), "form" !== L ? Z : null]
+                }) : null, N[13] = M, N[14] = L, N[15] = Z, N[16] = g) : g = N[16];
+                let X = "form" === L ? "snap-x snap-mandatory scroll-px-4 gap-4 px-4 py-1" : "-my-1.5 py-1.5",
+                    $ = "gallery" === L && "gap-3",
+                    ee = "compact" === L && "gap-2";
+                N[17] !== X || N[18] !== $ || N[19] !== ee ? (b = (0, i.b)("hide-scrollbar flex overflow-x-auto overscroll-x-contain", X, $, ee), N[17] = X, N[18] = $, N[19] = ee, N[20] = b) : b = N[20];
+                let et = k || void 0;
+                N[21] !== K ? (v = e => K(e.currentTarget), N[21] = K, N[22] = v) : v = N[22], N[23] !== S || N[24] !== F || N[25] !== z || N[26] !== V || N[27] !== b || N[28] !== et || N[29] !== v ? (y = (0, l.jsx)("div", {
+                    ref: V,
+                    className: b,
+                    "data-horizontal-scroll": !0,
+                    role: z,
+                    "aria-invalid": et,
+                    "aria-label": S,
+                    onScroll: v,
+                    children: F
+                }), N[23] = S, N[24] = F, N[25] = z, N[26] = V, N[27] = b, N[28] = et, N[29] = v, N[30] = y) : y = N[30];
+                let ea = "form" === L ? Z : null;
+                return N[31] !== y || N[32] !== ea ? (j = (0, l.jsxs)("div", {
+                    className: "relative min-w-0",
+                    children: [y, ea]
+                }), N[31] = y, N[32] = ea, N[33] = j) : j = N[33], N[34] !== x || N[35] !== g || N[36] !== j ? (w = (0, l.jsxs)("div", {
+                    className: x,
+                    children: [g, j]
+                }), N[34] = x, N[35] = g, N[36] = j, N[37] = w) : w = N[37], w
+            }
+        })
+    }),
+    K1S5: (function(e, t, a) {
+        a.d(t, {
+            a: () => e2
+        });
+        var l = a("ABep"),
+            n = a("QosV"),
+            i = a("MnTr"),
+            s = a("on57"),
+            r = a("BolX"),
+            o = a("I07G"),
+            c = a("I3F6"),
+            d = a("zd8w"),
+            m = a("Wf1j"),
+            u = a("Telb"),
+            p = a("Dgwo"),
+            f = a("WNfT"),
+            h = a("KRWX"),
+            x = a("NySd"),
+            g = a("M7Ra"),
+            b = a("SGsN"),
+            v = a("rP0s"),
+            y = a("oyxz"),
+            j = a("Sm6l"),
+            w = a("jDEJ");
+
+        function N(e) {
+            let t, a, i, s, r, o, c = (0, n.c)(14),
+                {
+                    disabled: d,
+                    isSubmitting: m,
+                    hotkeysEnabled: u,
+                    onDecline: p
+                } = e;
+            return c[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, l.jsx)(y.a, {
+                id: "composer.mcpConfirmation.button.decline",
+                defaultMessage: "Decline"
+            }), c[0] = t) : t = c[0], c[1] !== m || c[2] !== p ? (a = (0, l.jsx)(j.a, {
+                color: "ghost",
+                size: "composer",
+                disabled: m,
+                type: "button",
+                onClick: p,
+                children: t
+            }), c[1] = m, c[2] = p, c[3] = a) : a = c[3], c[4] === Symbol.for("react.memo_cache_sentinel") ? (i = (0, l.jsx)(y.a, {
+                id: "composer.mcpConfirmation.button.accept",
+                defaultMessage: "Accept"
+            }), c[4] = i) : i = c[4], c[5] !== u ? (s = u && (0, l.jsx)(f.b, {
+                variant: "primary",
+                children: (0, w.b)("Enter")
+            }), c[5] = u, c[6] = s) : s = c[6], c[7] !== d || c[8] !== m || c[9] !== s ? (r = (0, l.jsxs)(j.a, {
+                color: "primary",
+                size: "composer",
+                type: "submit",
+                disabled: d,
+                loading: m,
+                children: [i, s]
+            }), c[7] = d, c[8] = m, c[9] = s, c[10] = r) : r = c[10], c[11] !== a || c[12] !== r ? (o = (0, l.jsxs)("div", {
+                className: "flex shrink-0 items-center justify-end gap-2 px-4 py-3",
+                children: [a, r]
+            }), c[11] = a, c[12] = r, c[13] = o) : o = c[13], o
+        }
+        var k = a("QRIH"),
+            S = a("nxd2"),
+            C = a("OWtl"),
+            F = a("tSEg"),
+            A = a("LVsP"),
+            M = a("pHQ8"),
+            I = a("AqHC"),
+            E = a("q475"),
+            P = a("K0rn"),
+            L = a("IRP0");
+
+        function z(e) {
+            let t = (0, M.c)(e.schema);
+            return {
+                kind: e.kind,
+                customDrafts: {},
+                values: (0, M.a)(t.flatMap(e => {
+                    let {
+                        schema: t,
+                        ...a
+                    } = e;
+                    return (0, E.c)(t) || (0, P.b)(t) ? [] : [{
+                        ...a,
+                        schema: t
+                    }]
+                })),
+                fileOptions: Object.fromEntries(t.flatMap(e => {
+                    let {
+                        name: t,
+                        schema: a
+                    } = e;
+                    return (0, E.c)(a) ? [
+                        [t, (0, E.a)(a)]
+                    ] : []
+                }))
+            }
+        }
+
+        function D(e, t) {
+            return t?.selected && t.text.length > 0 && Array.isArray(e) ? [...e, t.text] : e
+        }
+        var T = a("tO3J");
+
+        function O(e, t) {
+            return !e.defaultPrevented && !e.nativeEvent.isComposing && 229 !== e.nativeEvent.keyCode && !!(0, T.b)(e.nativeEvent, "Enter") && (e.preventDefault(), e.repeat || t(), !0)
+        }
+        var _ = a("vPGU"),
+            q = a("slpy"),
+            R = a("g2Gi"),
+            U = a("bf6R"),
+            B = a("bqtn"),
+            K = a("HOLv"),
+            V = a("x1Lh");
+
+        function W(e) {
+            let t, a = (0, n.c)(4),
+                {
+                    options: i,
+                    disabled: s,
+                    onAccept: r
+                } = e;
+            return a[0] !== s || a[1] !== r || a[2] !== i ? (t = (0, l.jsx)("div", {
+                className: "me-auto max-w-full min-w-0",
+                children: 1 === i.length ? (0, l.jsx)(q.a, {
+                    content: (0, l.jsxs)(l.Fragment, {
+                        children: [i[0].title, i[0].description && (0, l.jsx)("p", {
+                            children: i[0].description
+                        })]
+                    }),
+                    children: (0, l.jsx)(j.a, {
+                        color: "outlineSurface",
+                        radius: "full",
+                        size: "composer",
+                        type: "button",
+                        className: "max-w-full",
+                        disabled: s,
+                        "aria-description": i[0].description,
+                        onClick: () => r(i[0].const),
+                        children: (0, l.jsx)("span", {
+                            className: "min-w-0 truncate",
+                            children: i[0].title
+                        })
+                    })
+                }) : (0, l.jsx)(B.a, {
+                    align: "start",
+                    disabled: s,
+                    triggerButton: (0, l.jsxs)(j.a, {
+                        color: "outlineSurface",
+                        radius: "full",
+                        size: "composer",
+                        type: "button",
+                        disabled: s,
+                        children: [(0, l.jsx)(y.a, {
+                            id: "composer.mcpFormElicitation.moreAcceptActions",
+                            defaultMessage: "More actions"
+                        }), (0, l.jsx)(K.a, {
+                            "aria-hidden": !1,
+                            asset: V.a
+                        })]
+                    }),
+                    children: i.map(e => (0, l.jsx)(B.c.Item, {
+                        disabled: s,
+                        allowWrap: !0,
+                        subTextAllowWrap: !0,
+                        SubText: null == e.description ? null : (0, l.jsx)(l.Fragment, {
+                            children: e.description
+                        }),
+                        onSelect: () => r(e.const),
+                        children: e.title
+                    }, e.const))
+                })
+            }), a[0] = s, a[1] = r, a[2] = i, a[3] = t) : t = a[3], t
+        }
+
+        function H(e) {
+            let t, a, i, r, o, c, d, m, u = (0, n.c)(49),
+                {
+                    autoResolution: p,
+                    disabled: h,
+                    isSubmitting: x,
+                    submitDisabled: g,
+                    acceptOptions: b,
+                    primaryActionRef: v,
+                    fieldCount: N,
+                    isLastGroup: k,
+                    onBack: S,
+                    hotkeysEnabled: C,
+                    isStandardForm: F,
+                    showSubmit: A,
+                    showHeader: M,
+                    onCancel: I,
+                    onDecline: E,
+                    onDismissLegacyImagePicker: P,
+                    onViewAll: L
+                } = e,
+                z = void 0 !== x && x,
+                D = b?.required === !0 && b.options.length > 1,
+                T = b?.required ? b.options[0] : void 0;
+            u[0] !== b?.options || u[1] !== b?.options.slice || u[2] !== T ? (t = b?.options.slice(+(null != T)) ?? [], u[0] = b?.options, u[1] = b?.options.slice, u[2] = T, u[3] = t) : t = u[3];
+            let O = t;
+            if (null != P) {
+                let e, t = p?.deadlineMs ?? "no-deadline",
+                    n = p?.deadlineMs,
+                    i = p?.nowMs;
+                u[4] !== z || u[5] !== P || u[6] !== t || u[7] !== n || u[8] !== i ? (e = (0, l.jsx)(R.a, {
+                    disabled: z,
+                    deadlineMs: n,
+                    nowMs: i,
+                    variant: "button",
+                    onDismiss: P
+                }, t), u[4] = z, u[5] = P, u[6] = t, u[7] = n, u[8] = i, u[9] = e) : e = u[9], a = e
+            } else {
+                let e, t;
+                u[10] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, l.jsx)(y.a, {
+                    id: "composer.mcpFormElicitation.deny",
+                    defaultMessage: "Deny"
+                }), u[10] = e) : e = u[10], u[11] !== h || u[12] !== E ? (t = (0, l.jsx)(j.a, {
+                    color: "outlineSurface",
+                    radius: "full",
+                    size: "composer",
+                    disabled: h,
+                    onClick: E,
+                    children: e
+                }), u[11] = h, u[12] = E, u[13] = t) : t = u[13], a = t
+            }
+            return u[14] !== h || u[15] !== S ? (i = null != S && (0, l.jsx)(j.a, {
+                color: "outlineSurface",
+                radius: "full",
+                size: "composer",
+                disabled: h,
+                onClick: S,
+                children: (0, l.jsx)(y.a, {
+                    id: "composer.mcpFormElicitation.back",
+                    defaultMessage: "Back"
+                })
+            }), u[14] = h, u[15] = S, u[16] = i) : i = u[16], u[17] !== b || u[18] !== h || u[19] !== L ? (r = null != L ? (0, l.jsx)("div", {
+                className: null == b ? "me-auto" : void 0,
+                children: (0, l.jsxs)(j.a, {
+                    color: "outlineSurface",
+                    radius: "full",
+                    size: "composer",
+                    disabled: h,
+                    onClick: L,
+                    children: [(0, l.jsx)(U.Xh, {}), (0, l.jsx)(y.a, {
+                        id: "composer.openAIForm.viewAll",
+                        defaultMessage: "View all"
+                    })]
+                })
+            }) : null, u[17] = b, u[18] = h, u[19] = L, u[20] = r) : r = u[20], u[21] !== z || u[22] !== I || u[23] !== P || u[24] !== M ? (o = !M && null == P && (0, l.jsx)(j.a, {
+                color: "ghost",
+                size: "composer",
+                disabled: z,
+                onClick: I,
+                children: (0, l.jsx)(y.a, {
+                    id: "composer.mcpFormElicitation.cancel",
+                    defaultMessage: "Cancel"
+                })
+            }), u[21] = z, u[22] = I, u[23] = P, u[24] = M, u[25] = o) : o = u[25], u[26] !== b || u[27] !== O || u[28] !== g ? (c = null != b && O.length > 0 && (0, l.jsx)(W, {
+                options: O,
+                disabled: g,
+                onAccept: b.onSelect
+            }), u[26] = b, u[27] = O, u[28] = g, u[29] = c) : c = u[29], u[30] !== b || u[31] !== N || u[32] !== C || u[33] !== k || u[34] !== F || u[35] !== z || u[36] !== v || u[37] !== T || u[38] !== D || u[39] !== A || u[40] !== g ? (d = (null != b || A) && (0, l.jsx)(q.a, {
+                content: T && (0, l.jsxs)(l.Fragment, {
+                    children: [T.title, T.description && (0, l.jsx)("p", {
+                        children: T.description
+                    })]
+                }),
+                children: (0, l.jsxs)(j.a, {
+                    autoFocus: C && 0 === N,
+                    className: "max-w-full",
+                    color: "primary",
+                    size: "composer",
+                    type: D ? "button" : "submit",
+                    ref: v,
+                    onClick: null != T && null != b && D ? () => b.onSelect(T.const) : void 0,
+                    "aria-description": T?.description,
+                    disabled: g,
+                    loading: z,
+                    children: [(0, l.jsx)("span", {
+                        className: (0, s.b)("min-w-0 truncate", F && "text-sm font-medium"),
+                        children: k ? T?.title ?? (0, l.jsx)(y.a, {
+                            id: "composer.mcpFormElicitation.accept",
+                            defaultMessage: "Accept"
+                        }) : (0, l.jsx)(y.a, {
+                            id: "composer.mcpFormElicitation.next",
+                            defaultMessage: "Next"
+                        })
+                    }), C && !D && (0, l.jsx)(f.b, {
+                        variant: "primary",
+                        children: (0, w.b)("Enter")
+                    })]
+                })
+            }), u[30] = b, u[31] = N, u[32] = C, u[33] = k, u[34] = F, u[35] = z, u[36] = v, u[37] = T, u[38] = D, u[39] = A, u[40] = g, u[41] = d) : d = u[41], u[42] !== a || u[43] !== i || u[44] !== r || u[45] !== o || u[46] !== c || u[47] !== d ? (m = (0, l.jsxs)("div", {
+                className: "flex shrink-0 flex-wrap items-center justify-end gap-2 px-4 py-3",
+                children: [i, r, o, c, a, d]
+            }), u[42] = a, u[43] = i, u[44] = r, u[45] = o, u[46] = c, u[47] = d, u[48] = m) : m = u[48], m
+        }
+        var Q = a("Wyro"),
+            Z = a.n(Q),
+            G = a("Qr2V"),
+            Y = a("zLIa"),
+            J = a("E6P3"),
+            X = a("A9Yt"),
+            $ = a("ue8o"),
+            ee = a("zSQm"),
+            et = a.p + "assets/icon.6b02567b2b.png",
+            ea = a.p + "assets/icon.4e392f38ad.png",
+            el = a.p + "assets/icon.9b2a0253b8.png";
+        let en = {
+            "application/msword": et,
+            "application/vnd.google-apps.document": et,
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document": et,
+            "text/markdown": et,
+            "text/plain": et,
+            "application/vnd.google-apps.presentation": ea,
+            "application/vnd.ms-powerpoint": ea,
+            "application/vnd.openxmlformats-officedocument.presentationml.presentation": ea,
+            "application/vnd.google-apps.spreadsheet": el,
+            "application/vnd.ms-excel": el,
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": el,
+            "text/csv": el,
+            "text/tab-separated-values": el
+        };
+
+        function ei(e) {
+            let t, a, i, r, o, c = (0, n.c)(22),
+                {
+                    layout: m,
+                    src: u,
+                    mimeType: p
+                } = e,
+                f = void 0 === m ? "thumbnail" : m,
+                [h, x] = (0, d.useState)(),
+                g = null != u && URL.canParse(u) && "https:" === new URL(u).protocol ? u : void 0,
+                {
+                    safeUrl: b
+                } = (0, $.d)(g, null != g);
+            c[0] !== b || c[1] !== u ? (t = null != u && (0, ee.c)(u) ? u : b, c[0] = b, c[1] = u, c[2] = t) : t = c[2];
+            let v = t,
+                y = p?.split(";")[0]?.trim().toLowerCase(),
+                j = en[y ?? ""],
+                w = "icon" === f ? "size-5" : "size-10";
+            c[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, l.jsx)(U.Rc, {}), c[3] = a) : a = c[3];
+            let N = a;
+            if (null != j) {
+                let e, t;
+                c[4] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, l.jsx)(U.Rc, {}), c[4] = e) : e = c[4], c[5] !== w || c[6] !== j ? (t = (0, l.jsx)(J.a, {
+                    className: w,
+                    alt: "",
+                    fallback: e,
+                    src: j
+                }), c[5] = w, c[6] = j, c[7] = t) : t = c[7], N = t
+            } else if ("text/html" === y || "application/xhtml+xml" === y) {
+                let e;
+                c[8] !== w ? (e = (0, l.jsx)(X.a, {
+                    className: w
+                }), c[8] = w, c[9] = e) : e = c[9], N = e
+            }
+            let k = "card" === f || "card-icon" === f,
+                S = "icon" === f,
+                C = "thumbnail" === f;
+            return c[10] !== k || c[11] !== S || c[12] !== C ? (i = (0, s.b)("flex items-center justify-center overflow-hidden", {
+                "h-full w-full": k,
+                "size-5 shrink-0 rounded-xs": S,
+                "size-10 shrink-0 rounded-md bg-surface": C
+            }), c[10] = k, c[11] = S, c[12] = C, c[13] = i) : i = c[13], c[14] !== h || c[15] !== N || c[16] !== v || c[17] !== f ? (r = null == v || h === v ? N : (0, l.jsx)("img", {
+                alt: "",
+                className: (0, s.b)("card-icon" === f ? "size-10" : "h-full w-full", "icon" === f || "card-icon" === f ? "object-contain" : "object-scale-down", "card" === f && "block"),
+                decoding: "async",
+                draggable: !1,
+                loading: "lazy",
+                referrerPolicy: "no-referrer",
+                src: v,
+                onError: () => x(v)
+            }), c[14] = h, c[15] = N, c[16] = v, c[17] = f, c[18] = r) : r = c[18], c[19] !== i || c[20] !== r ? (o = (0, l.jsx)("span", {
+                className: i,
+                children: r
+            }), c[19] = i, c[20] = r, c[21] = o) : o = c[21], o
+        }
+
+        function es(e) {
+            let t, a, i, s, r, o, c, m, u = (0, n.c)(61),
+                {
+                    autoFocus: p,
+                    submitOnEnter: f,
+                    showOptionNumbers: h,
+                    customOption: x,
+                    invalid: g,
+                    multiple: b,
+                    options: v,
+                    value: y,
+                    onChange: j
+                } = e,
+                w = void 0 === f || f,
+                N = (0, d.useId)(),
+                k = (void 0 === h || h) && v.length > 1,
+                S = b ? G.a : G.b,
+                C = "string" == typeof y ? y : void 0;
+            u[0] !== y ? (t = Array.isArray(y) ? y : [], u[0] = y, u[1] = t) : t = u[1];
+            let F = t;
+            u[2] !== v ? (a = v.some(er), u[2] = v, u[3] = a) : a = u[3];
+            let A = a;
+            u[4] !== b || u[5] !== v || u[6] !== C ? (i = b ? 0 : Math.max(0, v.findIndex(e => e.const === C)), u[4] = b, u[5] = v, u[6] = C, u[7] = i) : i = u[7];
+            let M = i;
+            u[8] !== x || u[9] !== b || u[10] !== j || u[11] !== v || u[12] !== w ? (s = e => {
+                let t = e.target;
+                if (!(t instanceof HTMLInputElement || t instanceof HTMLButtonElement) || !t.matches('input[type="radio"], button[role="checkbox"]') || O(e, () => {
+                        b || !w || t instanceof HTMLInputElement && !t.checked ? t.click() : t.form?.requestSubmit()
+                    }) || e.defaultPrevented || e.nativeEvent.isComposing || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || "ArrowDown" !== e.key && "ArrowUp" !== e.key) return;
+                let a = Array.from(e.currentTarget.querySelectorAll('input[type="radio"], button[role="checkbox"]')),
+                    l = (a.indexOf(t) + ("ArrowDown" === e.key ? 1 : -1) + a.length) % a.length,
+                    n = a[l];
+                if (null != n && (e.preventDefault(), n.focus(), !b)) {
+                    let e = v[l];
+                    null != e ? j(e.const) : x?.onSelect(!0)
+                }
+            }, u[8] = x, u[9] = b, u[10] = j, u[11] = v, u[12] = w, u[13] = s) : s = u[13];
+            let I = s;
+            if (u[14] !== S || u[15] !== p || u[16] !== x?.selected || u[17] !== M || u[18] !== A || u[19] !== N || u[20] !== g || u[21] !== b || u[22] !== j || u[23] !== v || u[24] !== C || u[25] !== F || u[26] !== k) {
+                let e;
+                u[28] !== S || u[29] !== p || u[30] !== x?.selected || u[31] !== M || u[32] !== A || u[33] !== N || u[34] !== g || u[35] !== b || u[36] !== j || u[37] !== C || u[38] !== F || u[39] !== k ? (e = (e, t) => {
+                    let a = F.indexOf(e.const),
+                        n = b ? -1 !== a : !x?.selected && C === e.const;
+                    return (0, l.jsxs)(S, {
+                        autoFocus: p && !x?.selected && t === M,
+                        checked: n,
+                        invalid: g,
+                        name: N,
+                        type: b ? "checkbox" : "radio",
+                        value: e.const,
+                        onChange: () => {
+                            b ? j(n ? F.filter((e, t) => t !== a) : [...F, e.const]) : j(e.const)
+                        },
+                        children: [!b && (0, l.jsx)(G.c, {
+                            selected: n,
+                            showNumber: k,
+                            variant: "number",
+                            index: t + 1,
+                            verticalAlignment: "start"
+                        }), A ? (0, l.jsx)(ei, {
+                            src: e["x-openai-thumbnail"]?.src
+                        }) : null, (0, l.jsxs)("span", {
+                            className: "flex min-w-0 flex-1 flex-wrap items-baseline gap-x-2 gap-y-0.5 @max-5xl/request-card:flex-col @max-5xl/request-card:items-stretch",
+                            children: [(0, l.jsx)("span", {
+                                className: "min-w-0 text-sm font-medium wrap-anywhere",
+                                children: e.title
+                            }), null == e.description ? null : (0, l.jsx)("span", {
+                                className: "min-w-0 text-sm wrap-anywhere text-codex-description",
+                                children: e.description
+                            })]
+                        })]
+                    }, e.const)
+                }, u[28] = S, u[29] = p, u[30] = x?.selected, u[31] = M, u[32] = A, u[33] = N, u[34] = g, u[35] = b, u[36] = j, u[37] = C, u[38] = F, u[39] = k, u[40] = e) : e = u[40], r = v.map(e), u[14] = S, u[15] = p, u[16] = x?.selected, u[17] = M, u[18] = A, u[19] = N, u[20] = g, u[21] = b, u[22] = j, u[23] = v, u[24] = C, u[25] = F, u[26] = k, u[27] = r
+            } else r = u[27];
+            return u[41] !== x || u[42] !== g || u[43] !== b || u[44] !== j || u[45] !== v || u[46] !== F ? (o = null != x && b ? F.map((e, t) => v.some(t => t.const === e) && F.indexOf(e) === t ? null : (0, l.jsx)(G.a, {
+                autoFocus: !1,
+                checked: !0,
+                invalid: g,
+                onChange: () => j(F.filter((e, a) => a !== t)),
+                children: (0, l.jsx)("span", {
+                    className: "min-w-0 text-sm font-medium wrap-anywhere",
+                    children: v.find(t => t.const === e)?.title ?? e
+                })
+            }, t)) : null, u[41] = x, u[42] = g, u[43] = b, u[44] = j, u[45] = v, u[46] = F, u[47] = o) : o = u[47], u[48] !== S || u[49] !== p || u[50] !== x || u[51] !== N || u[52] !== g || u[53] !== b || u[54] !== v.length ? (c = null != x ? (0, l.jsx)("div", {
+                "data-mcp-form-custom-choice": !0,
+                children: (0, l.jsx)(S, {
+                    accessibilityLabel: x.label,
+                    autoFocus: p && (0 === v.length || x.selected),
+                    checked: x.selected,
+                    invalid: g,
+                    name: N,
+                    type: b ? "checkbox" : "radio",
+                    onChange: () => x.onSelect(!b || !x.selected),
+                    editor: x.editor,
+                    children: !b && (0, l.jsx)(G.c, {
+                        selected: x.selected,
+                        variant: "custom"
+                    })
+                })
+            }) : null, u[48] = S, u[49] = p, u[50] = x, u[51] = N, u[52] = g, u[53] = b, u[54] = v.length, u[55] = c) : c = u[55], u[56] !== I || u[57] !== r || u[58] !== o || u[59] !== c ? (m = (0, l.jsxs)("div", {
+                className: "flex flex-col gap-1",
+                "data-mcp-form-choices": !0,
+                role: "group",
+                onKeyDownCapture: I,
+                children: [r, o, c]
+            }), u[56] = I, u[57] = r, u[58] = o, u[59] = c, u[60] = m) : m = u[60], m
+        }
+
+        function er(e) {
+            return null != e["x-openai-thumbnail"]
+        }
+
+        function eo(e) {
+            let t, a, i, s, r, o, c = (0, n.c)(29),
+                {
+                    schema: d,
+                    value: m
+                } = e;
+            if ("array" === d.type && Array.isArray(m) && m.length >= Number(d.minItems ?? 0) && (null == d.maxItems || m.length <= Number(d.maxItems)) && "type" in d.items && "string" === d.items.type && !("x-openai-input" in d.items)) {
+                let e;
+                return c[0] !== d.items ? (e = (0, l.jsx)(eo, {
+                    schema: d.items
+                }), c[0] = d.items, c[1] = e) : e = c[1], e
+            }
+            let u = "string" !== d.type || "x-openai-input" in d ? null : d,
+                p = "number" === d.type || "integer" === d.type ? d : null,
+                f = p?.minimum,
+                h = p?.maximum;
+            "array" === d.type ? (f = null == d.minItems || 0 === Number(d.minItems) ? void 0 : Number(d.minItems), h = null == d.maxItems ? void 0 : Number(d.maxItems)) : null != u && ("minLength" in u && (f = u.minLength || void 0), "maxLength" in u && (h = u.maxLength));
+            let x = "none";
+            null != f && null != h ? x = f === h ? "exact" : "both" : null != f ? x = "minimum" : null != h && (x = "maximum");
+            let g = null != u && "format" in u ? u.format : void 0;
+            return c[2] !== x || c[3] !== h || c[4] !== f || c[5] !== d.type ? (t = "array" === d.type && "none" !== x ? (0, l.jsx)(y.a, {
+                id: "composer.mcpFormElicitation.selectionCount",
+                defaultMessage: "{bounds, select, exact {Choose exactly {minimum, plural, one {# item} other {# items}}} both {Choose {minimum}–{maximum} items} minimum {Choose at least {minimum, plural, one {# item} other {# items}}} other {Choose up to {maximum, plural, one {# item} other {# items}}}}",
+                values: {
+                    bounds: x,
+                    minimum: f,
+                    maximum: h
+                }
+            }) : null, c[2] = x, c[3] = h, c[4] = f, c[5] = d.type, c[6] = t) : t = c[6], c[7] !== x || c[8] !== h || c[9] !== f || c[10] !== u ? (a = null != u && "none" !== x ? (0, l.jsx)("div", {
+                children: (0, l.jsx)(y.a, {
+                    id: "composer.mcpFormElicitation.textLength",
+                    defaultMessage: "{bounds, select, exact {Use exactly {minimum, plural, one {# character} other {# characters}}} both {Use {minimum}–{maximum} characters} minimum {Use at least {minimum, plural, one {# character} other {# characters}}} other {Use up to {maximum, plural, one {# character} other {# characters}}}}",
+                    values: {
+                        bounds: x,
+                        minimum: f,
+                        maximum: h
+                    }
+                })
+            }) : null, c[7] = x, c[8] = h, c[9] = f, c[10] = u, c[11] = a) : a = c[11], c[12] !== x || c[13] !== h || c[14] !== f || c[15] !== p ? (i = null != p ? (0, l.jsx)(y.a, {
+                id: "composer.mcpFormElicitation.numberRange",
+                defaultMessage: "{kind, select, integer {Enter a whole number} other {Enter a number}}{bounds, select, exact { equal to {minimum}} both { from {minimum} to {maximum}} minimum { of at least {minimum}} maximum { of at most {maximum}} other {}}",
+                values: {
+                    kind: p.type,
+                    bounds: x,
+                    minimum: f,
+                    maximum: h
+                }
+            }) : null, c[12] = x, c[13] = h, c[14] = f, c[15] = p, c[16] = i) : i = c[16], c[17] !== g ? (s = null != g ? (0, l.jsx)("div", {
+                children: (0, l.jsx)(y.a, {
+                    id: "composer.mcpFormElicitation.requiredFormat",
+                    defaultMessage: "Use a valid {format, select, email {email address} uri {URL} date {date} datetime {date and time, such as 2026-01-30T14:30:00Z} other {value}}",
+                    values: {
+                        format: "date-time" === g ? "datetime" : g
+                    }
+                })
+            }) : null, c[17] = g, c[18] = s) : s = c[18], c[19] !== x || c[20] !== g || c[21] !== p ? (r = "none" === x && null == p && null == g ? (0, l.jsx)(y.a, {
+                id: "composer.mcpFormElicitation.invalidField",
+                defaultMessage: "Check this answer and try again"
+            }) : null, c[19] = x, c[20] = g, c[21] = p, c[22] = r) : r = c[22], c[23] !== t || c[24] !== a || c[25] !== i || c[26] !== s || c[27] !== r ? (o = (0, l.jsxs)("div", {
+                role: "alert",
+                children: [t, a, i, s, r]
+            }), c[23] = t, c[24] = a, c[25] = i, c[26] = s, c[27] = r, c[28] = o) : o = c[28], o
+        }
+
+        function ec(e) {
+            let t, a = (0, n.c)(15),
+                {
+                    id: i,
+                    autoFocus: r,
+                    disabled: o,
+                    invalid: c,
+                    label: d,
+                    placeholder: m,
+                    variant: u,
+                    format: p,
+                    maxLength: f,
+                    value: h,
+                    onChange: x,
+                    onKeyDown: g,
+                    onFocus: b
+                } = e,
+                v = void 0 !== o && o,
+                y = void 0 === u ? "default" : u,
+                j = (f ?? 0) >= 160,
+                w = "choice" === y ? "block w-full resize-none bg-transparent text-default outline-none placeholder:text-tertiary" : "w-full rounded-xl border border-default px-3 outline-none focus:border-text/30 aria-invalid:border-text-danger";
+            return a[0] !== r || a[1] !== v || a[2] !== w || a[3] !== p || a[4] !== i || a[5] !== c || a[6] !== j || a[7] !== d || a[8] !== x || a[9] !== b || a[10] !== g || a[11] !== m || a[12] !== h || a[13] !== y ? (t = null == p ? (0, l.jsx)("textarea", {
+                id: i,
+                ref: r ? ed : void 0,
+                autoFocus: r,
+                disabled: v,
+                "aria-invalid": c || void 0,
+                "aria-label": d,
+                placeholder: m,
+                className: (0, s.b)(w, "[field-sizing:content] max-h-48 resize-none overflow-y-auto", "default" === y && "py-2", j ? "min-h-20" : "default" === y && "min-h-8"),
+                rows: j ? 3 : 1,
+                value: h,
+                onChange: e => x(e.currentTarget.value),
+                onKeyDown: g,
+                onFocus: b
+            }) : (0, l.jsx)("input", {
+                id: i,
+                autoFocus: r,
+                disabled: v,
+                "aria-invalid": c || void 0,
+                "aria-label": d,
+                placeholder: m,
+                className: (0, s.b)(w, "default" === y && "h-8"),
+                type: function(e) {
+                    switch (e) {
+                        case "date":
+                            return "date";
+                        case "date-time":
+                        case void 0:
+                            return "text";
+                        case "email":
+                            return "email";
+                        case "uri":
+                            return "url"
+                    }
+                }(p),
+                value: h,
+                onChange: e => x(e.currentTarget.value),
+                onKeyDown: g,
+                onFocus: b
+            }), a[0] = r, a[1] = v, a[2] = w, a[3] = p, a[4] = i, a[5] = c, a[6] = j, a[7] = d, a[8] = x, a[9] = b, a[10] = g, a[11] = m, a[12] = h, a[13] = y, a[14] = t) : t = a[14], t
+        }
+
+        function ed(e) {
+            null != e && e.setSelectionRange(e.value.length, e.value.length)
+        }
+
+        function em(e) {
+            let t, a, i, s, r, o, c, d, u, p, f, h, x, g = (0, n.c)(62),
+                {
+                    autoFocus: b,
+                    showOptionNumbers: v,
+                    disabled: y,
+                    label: j,
+                    format: w,
+                    maxLength: N,
+                    invalid: k,
+                    multiple: S,
+                    options: C,
+                    value: F,
+                    draft: A,
+                    onDraftChange: M,
+                    onChange: I
+                } = e,
+                E = void 0 === v || v,
+                P = (0, m.a)(),
+                L = S || "string" != typeof F || C.some(e => e.const === F) ? "" : F;
+            g[0] !== A || g[1] !== L ? (t = A ?? {
+                text: L,
+                selected: "" !== L
+            }, g[0] = A, g[1] = L, g[2] = t) : t = g[2];
+            let z = t;
+            g[3] !== P ? (a = P.formatMessage({
+                id: "composer.mcpFormElicitation.customChoice",
+                defaultMessage: "Something else"
+            }), g[3] = P, g[4] = a) : a = g[4];
+            let D = a;
+            g[5] !== z || g[6] !== S || g[7] !== I || g[8] !== M ? (i = e => {
+                e !== z.selected && (M({
+                    ...z,
+                    selected: e
+                }), S || I(e ? z.text : ""))
+            }, g[5] = z, g[6] = S, g[7] = I, g[8] = M, g[9] = i) : i = g[9];
+            let T = i;
+            g[10] !== z.selected || g[11] !== z.text || g[12] !== I || g[13] !== M || g[14] !== F ? (s = () => {
+                z.selected && "" !== z.text && (I([...Array.isArray(F) ? F : [], z.text]), M({
+                    text: "",
+                    selected: !1
+                }))
+            }, g[10] = z.selected, g[11] = z.text, g[12] = I, g[13] = M, g[14] = F, g[15] = s) : s = g[15];
+            let _ = s;
+            g[16] !== z || g[17] !== S || g[18] !== I || g[19] !== M ? (r = e => {
+                S || M({
+                    ...z,
+                    selected: !1
+                }), I(e)
+            }, g[16] = z, g[17] = S, g[18] = I, g[19] = M, g[20] = r) : r = g[20];
+            let q = z.selected;
+            return g[21] !== P ? (o = P.formatMessage({
+                id: "composer.mcpFormElicitation.customPlaceholder",
+                defaultMessage: "Or write your own response"
+            }), g[21] = P, g[22] = o) : o = g[22], g[23] !== T ? (c = () => T(!0), g[23] = T, g[24] = c) : c = g[24], g[25] !== S || g[26] !== I || g[27] !== M ? (d = e => {
+                M({
+                    text: e,
+                    selected: !0
+                }), S || I(e)
+            }, g[25] = S, g[26] = I, g[27] = M, g[28] = d) : d = g[28], g[29] !== _ || g[30] !== z.selected || g[31] !== z.text || g[32] !== S ? (u = e => {
+                if (!S) {
+                    "date" !== e.currentTarget.type && O(e, () => e.currentTarget.form?.requestSubmit());
+                    return
+                }
+                z.selected && "" !== z.text && O(e, _) && e.stopPropagation()
+            }, g[29] = _, g[30] = z.selected, g[31] = z.text, g[32] = S, g[33] = u) : u = g[33], g[34] !== z.text || g[35] !== y || g[36] !== w || g[37] !== k || g[38] !== j || g[39] !== N || g[40] !== d || g[41] !== u || g[42] !== o || g[43] !== c ? (p = (0, l.jsx)(ec, {
+                autoFocus: !1,
+                disabled: y,
+                label: j,
+                placeholder: o,
+                variant: "choice",
+                invalid: k,
+                format: w,
+                maxLength: N,
+                value: z.text,
+                onFocus: c,
+                onChange: d,
+                onKeyDown: u
+            }), g[34] = z.text, g[35] = y, g[36] = w, g[37] = k, g[38] = j, g[39] = N, g[40] = d, g[41] = u, g[42] = o, g[43] = c, g[44] = p) : p = g[44], g[45] !== z.selected || g[46] !== D || g[47] !== T || g[48] !== p ? (f = {
+                label: D,
+                selected: q,
+                onSelect: T,
+                editor: p
+            }, g[45] = z.selected, g[46] = D, g[47] = T, g[48] = p, g[49] = f) : f = g[49], g[50] !== b || g[51] !== k || g[52] !== S || g[53] !== C || g[54] !== E || g[55] !== f || g[56] !== r || g[57] !== F ? (h = (0, l.jsx)(es, {
+                autoFocus: b,
+                submitOnEnter: !1,
+                showOptionNumbers: E,
+                invalid: k,
+                multiple: S,
+                options: C,
+                value: F,
+                onChange: r,
+                customOption: f
+            }), g[50] = b, g[51] = k, g[52] = S, g[53] = C, g[54] = E, g[55] = f, g[56] = r, g[57] = F, g[58] = h) : h = g[58], g[59] !== y || g[60] !== h ? (x = (0, l.jsx)("fieldset", {
+                disabled: y,
+                className: "min-w-0",
+                children: h
+            }), g[59] = y, g[60] = h, g[61] = x) : x = g[61], x
+        }
+
+        function eu(e) {
+            let t, a, i, r = (0, n.c)(101),
+                {
+                    autoFocus: o,
+                    showOptionNumbers: c,
+                    disabled: u,
+                    field: p,
+                    hideLabel: f,
+                    hideDescription: h,
+                    invalid: x,
+                    value: g,
+                    customDraft: b,
+                    onCustomDraftChange: v,
+                    onChange: y
+                } = e,
+                j = void 0 === c || c,
+                w = void 0 !== u && u,
+                N = (0, d.useId)(),
+                k = (0, m.a)();
+            r[0] !== p.name || r[1] !== p.schema.title ? (t = p.schema.title ?? Z()(p.name), r[0] = p.name, r[1] = p.schema.title, r[2] = t) : t = r[2];
+            let S = t,
+                C = !f && null != p.schema.title,
+                F = void 0 !== h && h ? null : p.schema.description ?? null,
+                A = "boolean" === p.schema.type && p.required && null == p.schema.default;
+            r[3] !== p.schema || r[4] !== A ? (a = "array" === p.schema.type || (0, M.e)(p.schema) || A, r[3] = p.schema, r[4] = A, r[5] = a) : a = r[5];
+            let I = a,
+                E = "array" === p.schema.type ? p.schema.items : p.schema,
+                P = I && (0, M.f)(p.schema) ? E : null;
+            r[6] !== b || r[7] !== p.schema || r[8] !== x || r[9] !== I || r[10] !== g ? (i = x ? (0, l.jsx)("div", {
+                className: (0, s.b)("pt-1 text-size-chat-sm text-danger", (I || "boolean" === p.schema.type) && "px-2"),
+                children: (0, l.jsx)(eo, {
+                    schema: p.schema,
+                    value: D(g, b)
+                })
+            }) : null, r[6] = b, r[7] = p.schema, r[8] = x, r[9] = I, r[10] = g, r[11] = i) : i = r[11];
+            let L = i;
+            if ("array" === p.schema.type || (0, M.e)(p.schema) || A) {
+                let e, t, a, n;
+                return r[12] !== S || r[13] !== C ? (e = C && (0, l.jsx)("legend", {
+                    className: "px-2 text-size-chat-sm font-medium wrap-anywhere text-default",
+                    children: S
+                }), r[12] = S, r[13] = C, r[14] = e) : e = r[14], r[15] !== F ? (t = (0, l.jsx)(ex, {
+                    description: F
+                }), r[15] = F, r[16] = t) : t = r[16], r[17] !== o || r[18] !== b || r[19] !== w || r[20] !== p.schema || r[21] !== k || r[22] !== x || r[23] !== S || r[24] !== y || r[25] !== v || r[26] !== A || r[27] !== j || r[28] !== P || r[29] !== g ? (a = null != P ? (0, l.jsx)(em, {
+                    showOptionNumbers: j,
+                    autoFocus: o,
+                    disabled: w,
+                    label: S,
+                    format: "format" in P ? P.format : void 0,
+                    maxLength: "maxLength" in P ? P.maxLength : void 0,
+                    invalid: x,
+                    multiple: "array" === p.schema.type,
+                    options: (0, M.d)(p.schema),
+                    value: g,
+                    draft: b,
+                    onDraftChange: v,
+                    onChange: y
+                }) : (0, l.jsx)(es, {
+                    showOptionNumbers: j && !A,
+                    autoFocus: o,
+                    invalid: x,
+                    multiple: "array" === p.schema.type,
+                    options: A ? [{
+                        const: "true",
+                        title: k.formatMessage({
+                            id: "composer.mcpFormElicitation.booleanYes",
+                            defaultMessage: "Yes"
+                        })
+                    }, {
+                        const: "false",
+                        title: k.formatMessage({
+                            id: "composer.mcpFormElicitation.booleanNo",
+                            defaultMessage: "No"
+                        })
+                    }] : (0, M.d)(p.schema),
+                    value: A && "boolean" == typeof g ? String(g) : g,
+                    onChange: A ? e => y("true" === e) : y
+                }), r[17] = o, r[18] = b, r[19] = w, r[20] = p.schema, r[21] = k, r[22] = x, r[23] = S, r[24] = y, r[25] = v, r[26] = A, r[27] = j, r[28] = P, r[29] = g, r[30] = a) : a = r[30], r[31] !== L || r[32] !== S || r[33] !== e || r[34] !== t || r[35] !== a ? (n = (0, l.jsxs)("fieldset", {
+                    "aria-label": S,
+                    className: "flex flex-col gap-1",
+                    children: [e, t, a, L]
+                }), r[31] = L, r[32] = S, r[33] = e, r[34] = t, r[35] = a, r[36] = n) : n = r[36], n
+            }
+            switch (p.schema.type) {
+                case "string": {
+                    let e, t, a, n;
+                    r[37] !== N || r[38] !== S || r[39] !== C ? (e = C && (0, l.jsx)("label", {
+                        htmlFor: N,
+                        className: "text-size-chat-sm font-medium wrap-anywhere text-default",
+                        children: S
+                    }), r[37] = N, r[38] = S, r[39] = C, r[40] = e) : e = r[40], r[41] !== F ? (t = (0, l.jsx)(ex, {
+                        description: F,
+                        inset: !1
+                    }), r[41] = F, r[42] = t) : t = r[42];
+                    let i = "format" in p.schema ? p.schema.format : void 0,
+                        s = "maxLength" in p.schema ? p.schema.maxLength : void 0,
+                        c = "string" == typeof g ? g : "";
+                    return r[43] !== o || r[44] !== w || r[45] !== N || r[46] !== x || r[47] !== S || r[48] !== y || r[49] !== s || r[50] !== c || r[51] !== i ? (a = (0, l.jsx)(ec, {
+                        id: N,
+                        disabled: w,
+                        autoFocus: o,
+                        invalid: x,
+                        label: S,
+                        format: i,
+                        maxLength: s,
+                        value: c,
+                        onChange: y,
+                        onKeyDown: eh
+                    }), r[43] = o, r[44] = w, r[45] = N, r[46] = x, r[47] = S, r[48] = y, r[49] = s, r[50] = c, r[51] = i, r[52] = a) : a = r[52], r[53] !== L || r[54] !== a || r[55] !== e || r[56] !== t ? (n = (0, l.jsxs)("div", {
+                        className: "flex flex-col gap-1 px-2 text-sm",
+                        children: [e, t, a, L]
+                    }), r[53] = L, r[54] = a, r[55] = e, r[56] = t, r[57] = n) : n = r[57], n
+                }
+                case "boolean": {
+                    let e, t, a, n, i, s, c = !0 === g;
+                    r[58] !== y || r[59] !== g ? (e = () => y(!0 !== g), r[58] = y, r[59] = g, r[60] = e) : e = r[60];
+                    let d = !0 === g;
+                    return r[61] !== d ? (t = (0, l.jsx)("span", {
+                        className: "flex h-5 items-center",
+                        children: (0, l.jsx)(G.c, {
+                            selected: d,
+                            variant: "checkbox"
+                        })
+                    }), r[61] = d, r[62] = t) : t = r[62], r[63] !== p.schema.title ? (a = null != p.schema.title && (0, l.jsx)("span", {
+                        className: "min-w-0 text-sm font-medium wrap-anywhere",
+                        children: p.schema.title
+                    }), r[63] = p.schema.title, r[64] = a) : a = r[64], r[65] !== o || r[66] !== N || r[67] !== x || r[68] !== S || r[69] !== t || r[70] !== a || r[71] !== c || r[72] !== e ? (n = (0, l.jsxs)(G.b, {
+                        accessibilityLabel: S,
+                        autoFocus: o,
+                        checked: c,
+                        invalid: x,
+                        name: N,
+                        type: "checkbox",
+                        onChange: e,
+                        onKeyDown: ef,
+                        children: [t, a]
+                    }), r[65] = o, r[66] = N, r[67] = x, r[68] = S, r[69] = t, r[70] = a, r[71] = c, r[72] = e, r[73] = n) : n = r[73], r[74] !== F ? (i = (0, l.jsx)(ex, {
+                        description: F
+                    }), r[74] = F, r[75] = i) : i = r[75], r[76] !== L || r[77] !== n || r[78] !== i ? (s = (0, l.jsxs)("div", {
+                        className: "flex flex-col gap-1",
+                        children: [n, i, L]
+                    }), r[76] = L, r[77] = n, r[78] = i, r[79] = s) : s = r[79], s
+                }
+                case "integer":
+                case "number": {
+                    let e, t, a, n, i;
+                    r[80] !== S || r[81] !== C ? (e = C && (0, l.jsx)("div", {
+                        className: "text-size-chat-sm font-medium wrap-anywhere text-default",
+                        children: S
+                    }), r[80] = S, r[81] = C, r[82] = e) : e = r[82], r[83] !== F ? (t = (0, l.jsx)(ex, {
+                        description: F,
+                        inset: !1
+                    }), r[83] = F, r[84] = t) : t = r[84];
+                    let s = x || void 0,
+                        c = "integer" === p.schema.type && null != p.schema.minimum ? Math.ceil(p.schema.minimum) : p.schema.minimum,
+                        d = "integer" === p.schema.type ? 1 : "any",
+                        m = "number" == typeof g || "string" == typeof g ? g : "";
+                    return r[85] !== y ? (a = e => y(e.currentTarget.value), r[85] = y, r[86] = a) : a = r[86], r[87] !== o || r[88] !== p.schema.maximum || r[89] !== S || r[90] !== c || r[91] !== d || r[92] !== m || r[93] !== a || r[94] !== s ? (n = (0, l.jsx)(Y.a, {
+                        autoFocus: o,
+                        "aria-label": S,
+                        "aria-invalid": s,
+                        max: p.schema.maximum,
+                        min: c,
+                        step: d,
+                        type: "number",
+                        value: m,
+                        onChange: a,
+                        onKeyDown: ep
+                    }), r[87] = o, r[88] = p.schema.maximum, r[89] = S, r[90] = c, r[91] = d, r[92] = m, r[93] = a, r[94] = s, r[95] = n) : n = r[95], r[96] !== L || r[97] !== n || r[98] !== e || r[99] !== t ? (i = (0, l.jsxs)("label", {
+                        className: "flex flex-col gap-1 px-2 text-sm",
+                        children: [e, t, n, L]
+                    }), r[96] = L, r[97] = n, r[98] = e, r[99] = t, r[100] = i) : i = r[100], i
+                }
+            }
+        }
+
+        function ep(e) {
+            O(e, () => e.currentTarget.form?.requestSubmit())
+        }
+
+        function ef(e) {
+            O(e, () => e.currentTarget.click())
+        }
+
+        function eh(e) {
+            "date" !== e.currentTarget.type && O(e, () => e.currentTarget.form?.requestSubmit())
+        }
+
+        function ex(e) {
+            let t, a, i = (0, n.c)(5),
+                {
+                    description: r,
+                    inset: o
+                } = e;
+            if (null == r) return null;
+            let c = (void 0 === o || o) && "px-2";
+            return i[0] !== c ? (t = (0, s.b)("text-size-chat-sm wrap-anywhere text-codex-description", c), i[0] = c, i[1] = t) : t = i[1], i[2] !== r || i[3] !== t ? (a = (0, l.jsx)("div", {
+                className: t,
+                children: r
+            }), i[2] = r, i[3] = t, i[4] = a) : a = i[4], a
+        }
+        var eg = a("i5ac"),
+            eb = a.n(eg),
+            ev = a("Ug8F"),
+            ey = a("dxKw"),
+            ej = a("Bbed"),
+            ew = a("GaA7"),
+            eN = a("eGPX"),
+            ek = a("YgCO"),
+            eS = a("bnxy");
+
+        function eC(e) {
+            let t, a, i, r, o, c, d, m, u, p, f, h, x, g, b = (0, n.c)(63),
+                {
+                    action: v,
+                    previewAction: y,
+                    metadata: j,
+                    layout: w,
+                    autoFocus: N,
+                    children: k,
+                    disabled: S,
+                    invalid: C,
+                    isPortrait: F,
+                    selected: A,
+                    highlighted: M,
+                    separatorBefore: I,
+                    title: E
+                } = e,
+                P = void 0 === w ? "carousel" : w,
+                L = void 0 !== F && F,
+                z = void 0 !== M && M,
+                D = "button" === e.type || "preview" === e.type;
+            b[0] === Symbol.for("react.memo_cache_sentinel") ? (t = {
+                button: "button",
+                preview: "button",
+                static: "div",
+                checkbox: "label",
+                radio: "label"
+            }, b[0] = t) : t = b[0];
+            let T = t[e.type],
+                _ = I && "ps-4";
+            b[1] !== _ ? (a = (0, s.b)("group/composer-attachment relative min-w-0 shrink-0 snap-start", _), b[1] = _, b[2] = a) : a = b[2], b[3] !== I ? (i = I && (0, l.jsx)("div", {
+                "aria-hidden": !0,
+                className: "absolute start-0 top-0 h-34 border-s border-subtle"
+            }), b[3] = I, b[4] = i) : i = b[4];
+            let q = D && N,
+                R = "carousel" === P ? "w-fit" : "w-full",
+                B = "carousel" === P && "-m-1 p-1",
+                K = S ? "cursor-default opacity-50" : "static" !== e.type && "cursor-interaction";
+            b[5] !== K || b[6] !== R || b[7] !== B ? (r = (0, s.b)("group relative flex flex-col gap-1.5 rounded-2xl text-start select-none focus:outline-none", R, B, K), b[5] = K, b[6] = R, b[7] = B, b[8] = r) : r = b[8];
+            let V = D ? S : void 0,
+                W = D ? "button" : void 0,
+                H = D ? e.onClick : void 0;
+            return b[9] !== N || b[10] !== S || b[11] !== e.name || b[12] !== e.onChange || b[13] !== e.type || b[14] !== e.value || b[15] !== A ? (o = "checkbox" === e.type || "radio" === e.type ? (0, l.jsx)("input", {
+                autoFocus: N,
+                checked: A,
+                className: "sr-only",
+                disabled: S,
+                name: e.name,
+                type: e.type,
+                value: e.value,
+                onChange: e.onChange,
+                onKeyDown: t => {
+                    "checkbox" === e.type && O(t, () => t.currentTarget.click())
+                }
+            }) : null, b[9] = N, b[10] = S, b[11] = e.name, b[12] = e.onChange, b[13] = e.type, b[14] = e.value, b[15] = A, b[16] = o) : o = b[16], b[17] !== S || b[18] !== z || b[19] !== C || b[20] !== L || b[21] !== P || b[22] !== e.type || b[23] !== A ? (c = (0, s.b)("relative overflow-hidden rounded-xl border ring-4 group-focus-visible:ring-ring group-has-[:focus-visible]:ring-ring", "button" === e.type ? "bg-surface-secondary" : "bg-surface shadow-sm", "standalone" === P && "h-40 w-full", "grid" === P && "w-full", "carousel" === P && "h-34", "button" === e.type && "flex flex-col items-center justify-center gap-2 text-secondary", "standalone" !== P && {
+                "aspect-square": "button" === e.type,
+                "aspect-[4/5]": "button" !== e.type && L,
+                "aspect-video": "button" !== e.type && !L
+            }, {
+                "border-strong": A,
+                "border-text-danger": !A && C,
+                "border-default": !A && !C
+            }, {
+                "ring-ring": z,
+                "ring-border-strong": !z && A,
+                "ring-text-danger/20": !z && !A && C,
+                "ring-transparent": !z && !A && !C
+            }, "static" !== e.type && "preview" !== e.type && !S && !A && !z && "group-hover:ring-border-subtle"), b[17] = S, b[18] = z, b[19] = C, b[20] = L, b[21] = P, b[22] = e.type, b[23] = A, b[24] = c) : c = b[24], b[25] !== P || b[26] !== e.type || b[27] !== E ? (d = "button" === e.type && "standalone" === P ? (0, l.jsx)("span", {
+                className: "text-sm",
+                children: E
+            }) : null, b[25] = P, b[26] = e.type, b[27] = E, b[28] = d) : d = b[28], b[29] !== j ? (m = null == j ? null : (0, l.jsx)("div", {
+                "aria-hidden": !0,
+                className: "pointer-events-none absolute inset-x-0 bottom-0 flex items-center gap-2 bg-surface px-2 py-1.5 text-sm opacity-0 group-focus-within/composer-attachment:opacity-100 group-hover/composer-attachment:opacity-100",
+                children: j
+            }), b[29] = j, b[30] = m) : m = b[30], b[31] !== v || b[32] !== A ? (u = A ? (0, l.jsx)("span", {
+                className: (0, s.b)("absolute top-2 right-2 flex size-4 items-center justify-center rounded-full bg-primary-solid text-primary-solid shadow-sm", null != v && "group-hover/composer-attachment:opacity-0 group-has-focus-visible/composer-attachment:opacity-0"),
+                children: (0, l.jsx)(U.Ub, {})
+            }) : null, b[31] = v, b[32] = A, b[33] = u) : u = b[33], b[34] !== k || b[35] !== c || b[36] !== d || b[37] !== m || b[38] !== u ? (p = (0, l.jsxs)("div", {
+                className: c,
+                children: [k, d, m, u]
+            }), b[34] = k, b[35] = c, b[36] = d, b[37] = m, b[38] = u, b[39] = p) : p = b[39], b[40] !== P || b[41] !== e.type || b[42] !== E ? (f = "button" === e.type && "standalone" === P ? null : (0, l.jsx)("div", {
+                className: "w-0 min-w-full truncate ps-0.5 pe-2 pb-1 text-sm leading-5 font-normal tracking-normal text-secondary",
+                children: E
+            }), b[40] = P, b[41] = e.type, b[42] = E, b[43] = f) : f = b[43], b[44] !== T || b[45] !== r || b[46] !== V || b[47] !== W || b[48] !== H || b[49] !== o || b[50] !== p || b[51] !== f || b[52] !== q ? (h = (0, l.jsxs)(T, {
+                autoFocus: q,
+                className: r,
+                disabled: V,
+                type: W,
+                onClick: H,
+                children: [o, p, f]
+            }), b[44] = T, b[45] = r, b[46] = V, b[47] = W, b[48] = H, b[49] = o, b[50] = p, b[51] = f, b[52] = q, b[53] = h) : h = b[53], b[54] !== y || b[55] !== I ? (x = null == y ? null : (0, l.jsx)("div", {
+                className: (0, s.b)("pointer-events-none absolute top-2 opacity-0 group-hover/composer-attachment:pointer-events-auto group-hover/composer-attachment:opacity-100 group-focus-within/composer-attachment:pointer-events-auto group-focus-within/composer-attachment:opacity-100", I ? "start-6" : "start-2"),
+                children: y
+            }), b[54] = y, b[55] = I, b[56] = x) : x = b[56], b[57] !== v || b[58] !== h || b[59] !== x || b[60] !== a || b[61] !== i ? (g = (0, l.jsxs)("div", {
+                className: a,
+                children: [i, h, x, v]
+            }), b[57] = v, b[58] = h, b[59] = x, b[60] = a, b[61] = i, b[62] = g) : g = b[62], g
+        }
+        var eF = a("JEWd"),
+            eA = a("kSHG"),
+            eM = a("Y8CA"),
+            eI = a("ASxG"),
+            eE = a("w7Qu"),
+            eP = a("YvRg"),
+            eL = a("t3y3"),
+            ez = a("zUz7"),
+            eD = a("a6Zv");
+        let eT = eI.object({
+            target: eM.a
+        });
+
+        function eO(e) {
+            let t, a, i, s, r, o, c, d, u, p, f, h, x, g, b = (0, n.c)(60),
+                {
+                    option: v,
+                    hostId: w,
+                    layout: N,
+                    name: k,
+                    multiple: S,
+                    implicit: C,
+                    disabled: F,
+                    invalid: A,
+                    separatorBefore: M,
+                    onChange: I,
+                    onRemove: E,
+                    onPreview: P
+                } = e,
+                L = (0, m.a)(),
+                z = (0, eD.a)();
+            b[0] !== v ? (t = (0, ez.a)(v), b[0] = v, b[1] = t) : t = b[1];
+            let D = t,
+                T = v.title ?? v.name;
+            b[2] !== v._meta ? (a = eA.v.safeParse(v._meta?.["openai/thumbnail"] ?? v._meta?.["openai/preview"]), b[2] = v._meta, b[3] = a) : a = b[3];
+            let {
+                data: O
+            } = a;
+            b[4] !== v._meta ? (i = eT.safeParse(v._meta?.["openai/preview"]), b[4] = v._meta, b[5] = i) : i = b[5];
+            let {
+                data: _
+            } = i;
+            b[6] !== v._meta || b[7] !== _?.target ? (s = _?.target ?? eM.a.safeParse(v._meta?.["openai/preview"]).data ?? eM.a.safeParse(v._meta?.["openai/target"]).data, b[6] = v._meta, b[7] = _?.target, b[8] = s) : s = b[8];
+            let q = s;
+            b[9] !== P || b[10] !== q || b[11] !== T ? (r = null == q || null == P ? void 0 : () => P(q, T), b[9] = P, b[10] = q, b[11] = T, b[12] = r) : r = b[12];
+            let R = r;
+            b[13] !== R ? (o = null == R ? {
+                type: "static"
+            } : {
+                type: "preview",
+                onClick: R
+            }, b[13] = R, b[14] = o) : o = b[14];
+            let U = o;
+            b[15] !== F || b[16] !== C || b[17] !== R ? (c = C || null == R ? null : (0, l.jsx)(j.a, {
+                color: "outlineSurface",
+                radius: "full",
+                size: "composer",
+                disabled: F,
+                onClick: R,
+                children: (0, l.jsx)(y.a, {
+                    id: "composer.mcpFormElicitation.preview",
+                    defaultMessage: "Preview"
+                })
+            }), b[15] = F, b[16] = C, b[17] = R, b[18] = c) : c = b[18];
+            let B = z ? D?.logoDarkUrl : D?.logoUrl;
+            b[19] !== v.mimeType || b[20] !== B ? (d = (0, l.jsx)(ei, {
+                layout: "icon",
+                mimeType: v.mimeType,
+                src: B
+            }), b[19] = v.mimeType, b[20] = B, b[21] = d) : d = b[21];
+            let K = v.mimeType ?? T;
+            b[22] !== K ? (u = (0, l.jsx)("span", {
+                className: "truncate",
+                children: K
+            }), b[22] = K, b[23] = u) : u = b[23], b[24] !== u || b[25] !== d ? (p = (0, l.jsxs)(l.Fragment, {
+                children: [d, u]
+            }), b[24] = u, b[25] = d, b[26] = p) : p = b[26], b[27] !== F || b[28] !== L || b[29] !== E || b[30] !== T ? (f = F || null == E ? void 0 : (0, l.jsx)(eP.a, {
+                className: "top-2 right-2",
+                size: "composer",
+                ariaLabel: L.formatMessage({
+                    id: "composer.openAIForm.removeFile",
+                    defaultMessage: "Remove {filename}"
+                }, {
+                    filename: T
+                }),
+                onRemove: E
+            }), b[27] = F, b[28] = L, b[29] = E, b[30] = T, b[31] = f) : f = b[31];
+            let V = !C && v.selected;
+            return b[32] !== C || b[33] !== S || b[34] !== k || b[35] !== I || b[36] !== v.uri || b[37] !== U ? (h = C ? U : {
+                type: S ? "checkbox" : "radio",
+                name: k,
+                value: v.uri,
+                onChange: I
+            }, b[32] = C, b[33] = S, b[34] = k, b[35] = I, b[36] = v.uri, b[37] = U, b[38] = h) : h = b[38], b[39] !== w || b[40] !== D?.logoDarkUrl || b[41] !== D?.logoUrl || b[42] !== z || b[43] !== v.localPath || b[44] !== v.mimeType || b[45] !== v.name || b[46] !== O?.src ? (x = null == v.localPath ? (0, l.jsx)(ei, {
+                layout: O?.src == null ? "card-icon" : "card",
+                mimeType: v.mimeType,
+                src: O?.src ?? (z ? D?.logoDarkUrl : D?.logoUrl)
+            }) : (0, l.jsx)(eL.a, {
+                hostId: w,
+                imageFit: "scale-down",
+                path: v.localPath,
+                importKind: (0, eE.a)(v.name),
+                fallback: (0, l.jsx)(ei, {
+                    layout: "card",
+                    mimeType: v.mimeType,
+                    src: void 0
+                })
+            }), b[39] = w, b[40] = D?.logoDarkUrl, b[41] = D?.logoUrl, b[42] = z, b[43] = v.localPath, b[44] = v.mimeType, b[45] = v.name, b[46] = O?.src, b[47] = x) : x = b[47], b[48] !== F || b[49] !== A || b[50] !== N || b[51] !== M || b[52] !== p || b[53] !== f || b[54] !== V || b[55] !== h || b[56] !== x || b[57] !== c || b[58] !== T ? (g = (0, l.jsx)(eC, {
+                layout: N,
+                previewAction: c,
+                metadata: p,
+                action: f,
+                autoFocus: !1,
+                disabled: F,
+                invalid: A,
+                selected: V,
+                separatorBefore: M,
+                title: T,
+                ...h,
+                children: x
+            }), b[48] = F, b[49] = A, b[50] = N, b[51] = M, b[52] = p, b[53] = f, b[54] = V, b[55] = h, b[56] = x, b[57] = c, b[58] = T, b[59] = g) : g = b[59], g
+        }
+        let e_ = (0, ej.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(525677)]).then(a.bind(a, "OMbd"))).FileOptionsDialog);
+
+        function eq(e) {
+            let t, a, i, s, c, u, p, f, h, g, b, w, N, k, S, F, A, M = (0, n.c)(57),
+                {
+                    field: I,
+                    disabled: E,
+                    expanded: P,
+                    hideDescription: L,
+                    showTitle: z,
+                    hostId: D,
+                    invalid: T,
+                    name: O,
+                    options: _,
+                    required: q,
+                    onChange: R,
+                    onPickingChange: B,
+                    onPickFiles: K,
+                    onCloseExpanded: V,
+                    onPreview: W,
+                    onViewAll: H
+                } = e,
+                Q = void 0 !== E && E,
+                G = void 0 !== L && L,
+                Y = void 0 !== z && z,
+                J = (0, r.y)(C.a),
+                X = (0, m.a)(),
+                $ = (0, ey.a)(),
+                ee = (0, r.z)(eN.c),
+                et = (0, d.useRef)(null),
+                ea = (0, d.useRef)(null);
+            M[0] === Symbol.for("react.memo_cache_sentinel") ? (t = () => () => ea.current?.abort(), a = [], M[0] = t, M[1] = a) : (t = M[0], a = M[1]), (0, d.useEffect)(t, a);
+            let [el, en] = (0, d.useState)(!1), [ei, es] = (0, d.useState)(!1), [er, ec] = (0, d.useState)(!1), [ed, em] = (0, d.useState)(null), eu = I["x-openai-input"], ep = eu.userOptions?.kind ?? "file", ef = (0, ek.a)("file" === ep ? eu.userOptions?.accept : void 0);
+            M[2] !== I.title || M[3] !== O ? (i = I.title ?? Z()(O), M[2] = I.title, M[3] = O, M[4] = i) : i = M[4];
+            let eh = i,
+                ex = "array" === I.type,
+                eg = ex && "implicit" === eu.selection,
+                ej = null == K && !Q && !ei && null != eu.userOptions && "local" === D && window.electronBridge?.getPathForFile != null;
+            M[5] !== I.minItems || M[6] !== I.type || M[7] !== q ? (s = 0, q && (s = "array" === I.type ? I.minItems ?? 0 : 1), M[5] = I.minItems, M[6] = I.type, M[7] = q, M[8] = s) : s = M[8], M[9] !== eu.options ? (c = new Set(eu.options.map(eK)), M[9] = eu.options, M[10] = c) : c = M[10];
+            let eA = c;
+            M[11] !== eA ? (u = e => !eA.has(e.uri), M[11] = eA, M[12] = u) : u = M[12];
+            let eM = _.filter(u);
+            M[13] !== eA ? (p = e => eA.has(e.uri), M[13] = eA, M[14] = p) : p = M[14];
+            let eI = [...eM, ..._.filter(p)],
+                eE = e => {
+                    Array.from(et.current?.querySelectorAll("input") ?? []).find(t => t.value === e)?.parentElement?.scrollIntoView({
+                        block: "nearest",
+                        inline: "nearest",
+                        behavior: ee ? "instant" : "smooth"
+                    })
+                },
+                eP = () => {
+                    document.activeElement === document.body && et.current?.closest("form")?.focus()
+                };
+            M[15] !== ex || M[16] !== R || M[17] !== _ ? (f = (e, t) => {
+                if (t.aborted || 0 === e.length) return;
+                let a = new Set(e.map(eB));
+                R(eb()([..._, ...e.map(eU)], "uri").map(t => ({
+                    ...t,
+                    selected: ex ? t.selected || a.has(t.uri) : t.uri === e[0].uri
+                })))
+            }, M[15] = ex, M[16] = R, M[17] = _, M[18] = f) : f = M[18];
+            let eL = f,
+                ez = e => {
+                    let t = !1,
+                        a = () => {
+                            !t && (t = !0, e.signal.removeEventListener("abort", a), B?.(!1), e.signal.aborted || (es(!1), eP()))
+                        };
+                    return e.signal.addEventListener("abort", a, {
+                        once: !0
+                    }), es(!0), em(null), B?.(!0), a
+                },
+                eD = async (e, t) => {
+                    if (Q || ei || null == eu.userOptions || 0 === e.length) return;
+                    let a = ez(t),
+                        l = Error("File type is not accepted");
+                    await Promise.all(e.map(async e => {
+                        let {
+                            appServerPath: t,
+                            fsPath: a,
+                            label: n
+                        } = e, i = await ew.a.workspaceFiles.getMetadata?.({
+                            hostId: D,
+                            path: a
+                        });
+                        if (i?.kind !== ep) throw Error("Selection does not match the requested kind");
+                        if ("file" === i.kind && !(0, ek.b)(a, ef)) throw l;
+                        return {
+                            uri: (0, eS.f)(t ?? a),
+                            localPath: a,
+                            name: (0, eS.j)(a),
+                            title: n,
+                            selected: !0
+                        }
+                    })).then(e => eL(e, t.signal)).catch(e => {
+                        t.signal.aborted || em(e === l ? "type" : "selection")
+                    }).finally(a)
+                };
+            M[19] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, l.jsx)(y.a, {
+                id: "composer.openAIForm.uploadTile",
+                defaultMessage: "Upload"
+            }), M[19] = h) : h = M[19];
+            let eT = h;
+            if ("directory" === ep) {
+                let e;
+                M[20] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, l.jsx)(y.a, {
+                    id: "composer.openAIForm.addFolder",
+                    defaultMessage: "Choose folder"
+                }), M[20] = e) : e = M[20], eT = e
+            } else if (0 === _.length) {
+                let e;
+                M[21] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, l.jsx)(y.a, {
+                    id: "composer.openAIForm.addFiles",
+                    defaultMessage: "Upload files"
+                }), M[21] = e) : e = M[21], eT = e
+            }
+            let eq = null == eu.userOptions ? null : (0, l.jsx)(eC, {
+                    autoFocus: !1,
+                    highlighted: el,
+                    layout: 0 === _.length ? "standalone" : "carousel",
+                    disabled: Q || ei,
+                    invalid: !1,
+                    selected: !1,
+                    title: eT,
+                    type: "button",
+                    onClick: () => {
+                        ea.current?.abort();
+                        let e = new AbortController;
+                        if (ea.current = e, null != K) {
+                            let t = ez(e);
+                            K(e.signal).then(t => eL(t, e.signal)).catch(() => {
+                                e.signal.aborted || em("selection")
+                            }).finally(t);
+                            return
+                        }
+                        null != (0, o.Ag)(D) || (0, o.Ai)((0, v.a)(J, D)) ? ec(!0) : $({
+                            accept: "file" === ep ? eu.userOptions?.accept : void 0,
+                            kind: ep,
+                            allowMultiple: ex
+                        }).then(t => {
+                            if (!e.signal.aborted) return eD(t, e)
+                        }).catch(() => {
+                            e.signal.aborted || em("selection")
+                        }).finally(() => {
+                            e.signal.aborted || eP()
+                        })
+                    },
+                    children: "directory" === ep ? (0, l.jsx)(U.Cd, {
+                        className: "text-tertiary"
+                    }) : (0, l.jsx)(U.M, {
+                        className: "text-tertiary"
+                    })
+                }),
+                eV = (e, t, a) => (0, l.jsx)(eO, {
+                    option: e,
+                    hostId: D,
+                    layout: a,
+                    name: "grid" === a ? `${O}-expanded` : O,
+                    multiple: ex,
+                    implicit: eg,
+                    disabled: Q || ei,
+                    invalid: T || null != ed,
+                    separatorBefore: "carousel" === a && 0 === t && null != eq,
+                    onChange: () => {
+                        R(_.map(t => ({
+                            ...t,
+                            selected: t.uri === e.uri ? !ex || !t.selected : ex && t.selected
+                        }))), "carousel" === a && eE(e.uri)
+                    },
+                    onRemove: !eg || null == eu.userOptions && _.length <= 1 || eA.has(e.uri) && _.length <= s ? void 0 : () => R(_.filter(t => t.uri !== e.uri)),
+                    onPreview: null == W ? void 0 : (e, t) => {
+                        V?.(), W(e, t)
+                    }
+                }, e.uri);
+            M[22] !== ej ? (g = e => {
+                (0, x.b)(e.dataTransfer) && (e.preventDefault(), e.stopPropagation(), "dragenter" === e.type ? en(ej) : e.dataTransfer.dropEffect = ej ? "copy" : "none")
+            }, M[22] = ej, M[23] = g) : g = M[23];
+            let eW = g;
+            M[24] !== I.description || M[25] !== I.title || M[26] !== G || M[27] !== Y ? (b = Y && I.title || !G && I.description ? (0, l.jsxs)("div", {
+                className: "flex min-w-0 flex-1 flex-col gap-1 wrap-anywhere",
+                children: [Y && I.title && (0, l.jsx)("div", {
+                    className: "text-size-chat-sm font-medium text-default",
+                    children: I.title
+                }), !G && I.description && (0, l.jsx)("div", {
+                    className: "text-size-chat-sm text-codex-description",
+                    children: I.description
+                })]
+            }) : null, M[24] = I.description, M[25] = I.title, M[26] = G, M[27] = Y, M[28] = b) : b = M[28];
+            let eH = b;
+            M[29] !== eH || M[30] !== H ? (w = null != eH || null != H ? (0, l.jsxs)("div", {
+                className: "flex items-start gap-3",
+                children: [eH, null != H && (0, l.jsxs)(j.a, {
+                    className: "ms-auto shrink-0",
+                    color: "outlineSurface",
+                    radius: "full",
+                    size: "composer",
+                    onClick: H,
+                    children: [(0, l.jsx)(U.Xh, {}), (0, l.jsx)(y.a, {
+                        id: "composer.openAIForm.viewAll",
+                        defaultMessage: "View all"
+                    })]
+                })]
+            }) : null, M[29] = eH, M[30] = H, M[31] = w) : w = M[31];
+            let eQ = w;
+            M[32] === Symbol.for("react.memo_cache_sentinel") ? (N = e => {
+                e.stopPropagation(), e.relatedTarget instanceof Node && e.currentTarget.contains(e.relatedTarget) || en(!1)
+            }, M[32] = N) : N = M[32];
+            let eZ = e => {
+                    if (!(0, x.b)(e.dataTransfer) || (e.preventDefault(), e.stopPropagation(), en(!1), !ej)) return;
+                    let t = (0, x.f)(Array.from(e.dataTransfer.files), window.electronBridge?.getPathForFile, e.dataTransfer);
+                    if (0 === t.length || !ex && t.length > 1) return void em("selection");
+                    ea.current?.abort();
+                    let a = new AbortController;
+                    ea.current = a, eD(t, a)
+                },
+                eG = 0 === _.length && null != eq ? (0, l.jsxs)("div", {
+                    className: "flex flex-col gap-2 px-4",
+                    role: "group",
+                    "aria-label": eh,
+                    children: [eQ, eq]
+                }) : (0, l.jsxs)(eF.a, {
+                    ariaInvalid: T || null != ed,
+                    ariaLabel: eh,
+                    backLabel: X.formatMessage({
+                        id: "composer.openAIForm.previousFiles",
+                        defaultMessage: "Show previous files"
+                    }),
+                    forwardLabel: X.formatMessage({
+                        id: "composer.openAIForm.moreFiles",
+                        defaultMessage: "Show more files"
+                    }),
+                    header: eQ,
+                    role: ex ? "group" : "radiogroup",
+                    shouldUseReducedMotion: ee,
+                    children: [eq, eI.map((e, t) => eV(e, t, "carousel"))]
+                }),
+                eY = void 0 !== P && P && null != V ? (0, l.jsx)(e_, {
+                    title: I.title,
+                    accessibilityLabel: eh,
+                    multiple: ex,
+                    options: eI,
+                    renderOption: (e, t) => eV(e, t, "grid"),
+                    onClose: V,
+                    onOptionActivate: eE,
+                    onRestoreFocus: () => {
+                        let e = et.current?.querySelector("input:not(:disabled), button:not(:disabled)") ?? et.current?.closest("form")?.querySelector('button[type="submit"]');
+                        e?.focus()
+                    }
+                }) : null;
+            return M[33] !== ef || M[34] !== eD || M[35] !== D || M[36] !== ep || M[37] !== ex || M[38] !== er || M[39] !== eP || M[40] !== ec ? (k = er ? (0, l.jsx)(ev.a, {
+                acceptedFileExtensions: ef,
+                hostId: D,
+                kind: ep,
+                multiple: ex,
+                onClose: () => ec(!1),
+                onRestoreFocus: eP,
+                onSelect: e => {
+                    let t = ea.current;
+                    null == t || t.signal.aborted || eD(e.map(eR), t)
+                }
+            }) : null, M[33] = ef, M[34] = eD, M[35] = D, M[36] = ep, M[37] = ex, M[38] = er, M[39] = eP, M[40] = ec, M[41] = k) : k = M[41], M[42] !== ed ? (S = ed ? (0, l.jsx)("div", {
+                className: "px-4 text-size-chat-sm text-danger",
+                role: "alert",
+                children: "selection" === ed ? (0, l.jsx)(y.a, {
+                    id: "composer.openAIForm.fileSelectionFailed",
+                    defaultMessage: "These files or folders could not be added"
+                }) : (0, l.jsx)(y.a, {
+                    id: "composer.openAIForm.fileTypeRejected",
+                    defaultMessage: "Choose a file of an allowed type"
+                })
+            }) : null, M[42] = ed, M[43] = S) : S = M[43], M[44] !== I || M[45] !== T ? (F = T ? (0, l.jsx)("div", {
+                className: "px-4 text-size-chat-sm text-danger",
+                children: (0, l.jsx)(eo, {
+                    schema: I
+                })
+            }) : null, M[44] = I, M[45] = T, M[46] = F) : F = M[46], M[47] !== et || M[48] !== eW || M[49] !== N || M[50] !== eZ || M[51] !== eG || M[52] !== eY || M[53] !== k || M[54] !== S || M[55] !== F ? (A = (0, l.jsxs)("div", {
+                ref: et,
+                className: "flex w-full min-w-0 flex-col gap-2",
+                "data-mcp-form-file-drop": !0,
+                onDragEnter: eW,
+                onDragOver: eW,
+                onDragLeave: N,
+                onDrop: eZ,
+                children: [eG, eY, k, S, F]
+            }), M[47] = et, M[48] = eW, M[49] = N, M[50] = eZ, M[51] = eG, M[52] = eY, M[53] = k, M[54] = S, M[55] = F, M[56] = A) : A = M[56], A
+        }
+
+        function eR(e) {
+            return {
+                path: e,
+                fsPath: e,
+                label: (0, eS.j)(e)
+            }
+        }
+
+        function eU(e) {
+            return {
+                ...e,
+                selected: !0
+            }
+        }
+
+        function eB(e) {
+            return e.uri
+        }
+
+        function eK(e) {
+            return e.uri
+        }
+        var eV = a("BALR"),
+            eW = a("rlkT");
+
+        function eH(e) {
+            let t, a, i, o, c, u, p, f, h, x, g = (0, n.c)(56),
+                {
+                    autoFocus: b,
+                    field: v,
+                    hideLabel: j,
+                    hostId: w,
+                    invalid: N,
+                    name: k,
+                    value: S,
+                    onChange: C,
+                    onPickFile: F
+                } = e,
+                A = void 0 !== j && j,
+                M = (0, m.a)(),
+                I = (0, ey.a)(),
+                E = (0, r.z)(eN.c),
+                [L, z] = (0, d.useState)(!1),
+                [D, T] = (0, d.useState)(!1),
+                O = D ? "aspect-[4/5]" : "aspect-video";
+            g[0] !== v.title || g[1] !== k ? (t = v.title ?? Z()(k), g[0] = v.title, g[1] = k, g[2] = t) : t = g[2];
+            let _ = t,
+                q = null != v.file && (0, P.c)(v, S) && !v.items.some(e => e.id === S) ? S : null;
+            if (g[3] !== M ? (a = M.formatMessage({
+                    id: "composer.imagePicker.previous",
+                    defaultMessage: "Show previous templates"
+                }), g[3] = M, g[4] = a) : a = g[4], g[5] !== M ? (i = M.formatMessage({
+                    id: "composer.imagePicker.next",
+                    defaultMessage: "Show more templates"
+                }), g[5] = M, g[6] = i) : i = g[6], g[7] !== v.description || g[8] !== v.title || g[9] !== A ? (o = A ? null : (0, l.jsxs)("div", {
+                    className: "flex flex-col gap-1 wrap-anywhere",
+                    children: [v.title && (0, l.jsx)("div", {
+                        className: "text-sm font-medium",
+                        children: v.title
+                    }), v.description && (0, l.jsx)("div", {
+                        className: "text-xs text-tertiary",
+                        children: v.description
+                    })]
+                }), g[7] = v.description, g[8] = v.title, g[9] = A, g[10] = o) : o = g[10], g[11] !== v.file || g[12] !== v.title || g[13] !== w || g[14] !== N || g[15] !== C || g[16] !== F || g[17] !== I || g[18] !== O || g[19] !== q ? (c = null == v.file ? null : null != F ? (0, l.jsx)(l.Fragment, {
+                    children: (0, l.jsxs)("button", {
+                        className: "group -m-1 flex w-fit shrink-0 cursor-interaction snap-start flex-col gap-1.5 rounded-2xl p-1 text-start select-none",
+                        type: "button",
+                        onClick: () => {
+                            null != F ? F().then(e => {
+                                null != e && C(e)
+                            }) : "local" !== w ? z(!0) : I({
+                                accept: v.file?.accept,
+                                allowMultiple: !1,
+                                pickerTitle: v.file?.title ?? v.title
+                            }).then(e => {
+                                let [t] = e;
+                                null != t && C((0, eS.f)(t.fsPath))
+                            })
+                        },
+                        children: [(0, l.jsx)("div", {
+                            className: (0, s.b)("flex h-34 items-center justify-center overflow-hidden rounded-xl border bg-surface shadow-sm ring-4 group-focus-within:ring-border-strong", O, null == q ? "border-default ring-transparent group-hover:ring-border-subtle" : "border-strong ring-border-strong", N && null == q && "border-text-danger ring-text-danger/20"),
+                            children: null == q ? (0, l.jsx)(K.a, {
+                                className: "text-secondary",
+                                asset: eW.a,
+                                "aria-hidden": !0
+                            }) : (0, l.jsxs)("div", {
+                                className: "flex max-w-full flex-col items-center gap-2 px-4 text-secondary",
+                                children: [(0, l.jsx)(K.a, {
+                                    asset: eV.a,
+                                    "aria-hidden": !0
+                                }), (0, l.jsx)("span", {
+                                    className: "max-w-full truncate text-sm",
+                                    children: (0, eS.j)(decodeURIComponent(new URL(q).pathname))
+                                })]
+                            })
+                        }), (0, l.jsx)("div", {
+                            className: "w-0 min-w-full truncate ps-0.5 pe-2 pb-1 text-sm leading-5 font-normal tracking-normal text-secondary",
+                            children: v.file.title ?? (0, l.jsx)(y.a, {
+                                id: "composer.imagePicker.chooseFile",
+                                defaultMessage: "Choose a file"
+                            })
+                        })]
+                    })
+                }) : null, g[11] = v.file, g[12] = v.title, g[13] = w, g[14] = N, g[15] = C, g[16] = F, g[17] = I, g[18] = O, g[19] = q, g[20] = c) : c = g[20], g[21] !== b || g[22] !== v.items || g[23] !== N || g[24] !== D || g[25] !== k || g[26] !== C || g[27] !== S) {
+                let e;
+                g[29] !== b || g[30] !== N || g[31] !== D || g[32] !== k || g[33] !== C || g[34] !== S ? (e = (e, t) => (0, l.jsx)(eC, {
+                    autoFocus: b && 0 === t,
+                    invalid: N,
+                    isPortrait: D,
+                    name: k,
+                    selected: S === e.id,
+                    title: e.title,
+                    type: "radio",
+                    value: e.id,
+                    onChange: () => C(e.id),
+                    children: (0, l.jsx)("img", {
+                        alt: "",
+                        className: "block h-full w-full object-scale-down",
+                        decoding: "async",
+                        draggable: !1,
+                        loading: "lazy",
+                        onLoad: 0 === t ? e => {
+                            T(e.currentTarget.naturalHeight > e.currentTarget.naturalWidth)
+                        } : void 0,
+                        src: e.image
+                    })
+                }, e.id), g[29] = b, g[30] = N, g[31] = D, g[32] = k, g[33] = C, g[34] = S, g[35] = e) : e = g[35], u = v.items.map(e), g[21] = b, g[22] = v.items, g[23] = N, g[24] = D, g[25] = k, g[26] = C, g[27] = S, g[28] = u
+            } else u = g[28];
+            return g[36] !== N || g[37] !== E || g[38] !== a || g[39] !== i || g[40] !== o || g[41] !== c || g[42] !== u || g[43] !== _ ? (p = (0, l.jsxs)(eF.a, {
+                ariaInvalid: N,
+                ariaLabel: _,
+                backLabel: a,
+                forwardLabel: i,
+                header: o,
+                role: "radiogroup",
+                shouldUseReducedMotion: E,
+                children: [c, u]
+            }), g[36] = N, g[37] = E, g[38] = a, g[39] = i, g[40] = o, g[41] = c, g[42] = u, g[43] = _, g[44] = p) : p = g[44], g[45] !== w || g[46] !== L || g[47] !== C ? (f = L ? (0, l.jsx)(ev.a, {
+                hostId: w,
+                multiple: !1,
+                onClose: () => z(!1),
+                onSelect: e => {
+                    let t = e[0];
+                    null != t && C((0, eS.f)(t))
+                }
+            }) : null, g[45] = w, g[46] = L, g[47] = C, g[48] = f) : f = g[48], g[49] !== v || g[50] !== N ? (h = N ? (0, l.jsx)("div", {
+                className: "px-4 text-size-chat-sm text-danger",
+                children: (0, l.jsx)(eo, {
+                    schema: v
+                })
+            }) : null, g[49] = v, g[50] = N, g[51] = h) : h = g[51], g[52] !== h || g[53] !== p || g[54] !== f ? (x = (0, l.jsxs)("div", {
+                className: "flex w-full min-w-0 flex-col gap-2",
+                children: [p, f, h]
+            }), g[52] = h, g[53] = p, g[54] = f, g[55] = x) : x = g[55], x
+        }
+
+        function eQ(e) {
+            let t, a, i, r, o = (0, n.c)(72),
+                {
+                    autoFocus: c,
+                    isOnlyField: d,
+                    disabled: m,
+                    interactionDisabled: u,
+                    field: p,
+                    draft: f,
+                    expanded: h,
+                    hostId: x,
+                    invalid: g,
+                    metadataInHeader: b,
+                    onCloseExpanded: v,
+                    onDraftChange: y,
+                    onValueChange: j,
+                    onPickLegacyFile: w,
+                    onPickingChange: N,
+                    onPickFiles: k,
+                    onPreview: S,
+                    onViewAll: C
+                } = e;
+            o[0] !== p.schema ? (t = (0, E.c)(p.schema) || (0, P.b)(p.schema), o[0] = p.schema, o[1] = t) : t = o[1];
+            let F = t,
+                {
+                    name: A,
+                    schema: M,
+                    required: I
+                } = p;
+            if ((0, E.c)(M)) {
+                let e, t, n, i = !b,
+                    s = f.fileOptions[A];
+                o[2] !== A || o[3] !== y ? (e = e => y(t => ({
+                    ...t,
+                    fileOptions: {
+                        ...t.fileOptions,
+                        [A]: e
+                    }
+                }), A), o[2] = A, o[3] = y, o[4] = e) : e = o[4], o[5] !== A || o[6] !== k ? (t = null == k ? void 0 : e => k(A, e), o[5] = A, o[6] = k, o[7] = t) : t = o[7], o[8] !== m || o[9] !== h || o[10] !== A || o[11] !== x || o[12] !== g || o[13] !== b || o[14] !== v || o[15] !== N || o[16] !== S || o[17] !== C || o[18] !== I || o[19] !== M || o[20] !== i || o[21] !== s || o[22] !== e || o[23] !== t ? (n = (0, l.jsx)(eq, {
+                    field: M,
+                    disabled: m,
+                    expanded: h,
+                    hideDescription: b,
+                    showTitle: i,
+                    onCloseExpanded: v,
+                    onViewAll: C,
+                    hostId: x,
+                    invalid: g,
+                    name: A,
+                    options: s,
+                    required: I,
+                    onPreview: S,
+                    onChange: e,
+                    onPickingChange: N,
+                    onPickFiles: t
+                }), o[8] = m, o[9] = h, o[10] = A, o[11] = x, o[12] = g, o[13] = b, o[14] = v, o[15] = N, o[16] = S, o[17] = C, o[18] = I, o[19] = M, o[20] = i, o[21] = s, o[22] = e, o[23] = t, o[24] = n) : n = o[24], a = n
+            } else if ((0, P.b)(M)) {
+                let e, t, n, i = f.values[A];
+                o[25] !== A || o[26] !== j ? (e = e => j(A, e), o[25] = A, o[26] = j, o[27] = e) : e = o[27], o[28] !== A || o[29] !== w ? (t = null == w ? void 0 : () => w(A), o[28] = A, o[29] = w, o[30] = t) : t = o[30], o[31] !== c || o[32] !== A || o[33] !== x || o[34] !== g || o[35] !== b || o[36] !== M || o[37] !== i || o[38] !== e || o[39] !== t ? (n = (0, l.jsx)(eH, {
+                    autoFocus: c,
+                    field: M,
+                    hideLabel: b,
+                    hostId: x,
+                    invalid: g,
+                    name: A,
+                    value: i,
+                    onChange: e,
+                    onPickFile: t
+                }), o[31] = c, o[32] = A, o[33] = x, o[34] = g, o[35] = b, o[36] = M, o[37] = i, o[38] = e, o[39] = t, o[40] = n) : n = o[40], a = n
+            } else {
+                let e, t, n, i;
+                o[41] !== A || o[42] !== I || o[43] !== M ? (e = {
+                    name: A,
+                    required: I,
+                    schema: M
+                }, o[41] = A, o[42] = I, o[43] = M, o[44] = e) : e = o[44];
+                let s = f.customDrafts[A];
+                o[45] !== A || o[46] !== y ? (t = e => y(t => ({
+                    ...t,
+                    customDrafts: {
+                        ...t.customDrafts,
+                        [A]: e
+                    }
+                }), A), o[45] = A, o[46] = y, o[47] = t) : t = o[47];
+                let r = b && "boolean" !== M.type,
+                    m = f.values[A];
+                o[48] !== A || o[49] !== j ? (n = e => j(A, e), o[48] = A, o[49] = j, o[50] = n) : n = o[50], o[51] !== c || o[52] !== u || o[53] !== g || o[54] !== d || o[55] !== b || o[56] !== e || o[57] !== s || o[58] !== t || o[59] !== r || o[60] !== m || o[61] !== n ? (i = (0, l.jsx)(eu, {
+                    disabled: u,
+                    autoFocus: c,
+                    showOptionNumbers: d,
+                    field: e,
+                    customDraft: s,
+                    onCustomDraftChange: t,
+                    hideLabel: r,
+                    hideDescription: b,
+                    invalid: g,
+                    value: m,
+                    onChange: n
+                }), o[51] = c, o[52] = u, o[53] = g, o[54] = d, o[55] = b, o[56] = e, o[57] = s, o[58] = t, o[59] = r, o[60] = m, o[61] = n, o[62] = i) : i = o[62], a = i
+            }
+            let L = c && F ? eZ : void 0,
+                z = p.name,
+                D = !F && "px-2",
+                T = b && F && "pt-1";
+            return o[63] !== D || o[64] !== T ? (i = (0, s.b)("flex min-w-0 flex-col gap-2 outline-none", D, T), o[63] = D, o[64] = T, o[65] = i) : i = o[65], o[66] !== p.name || o[67] !== a || o[68] !== u || o[69] !== L || o[70] !== i ? (r = (0, l.jsx)("fieldset", {
+                ref: L,
+                "data-mcp-form-field": z,
+                tabIndex: -1,
+                className: i,
+                disabled: u,
+                children: a
+            }), o[66] = p.name, o[67] = a, o[68] = u, o[69] = L, o[70] = i, o[71] = r) : r = o[71], r
+        }
+
+        function eZ(e) {
+            null == e || e.contains(document.activeElement) || e.focus()
+        }
+        var eG = a("sM3V"),
+            eY = a("buWh"),
+            eJ = a("mjcS"),
+            eX = a("N0Xk"),
+            e$ = a("PpLh");
+
+        function e0(e) {
+            let t, a, i, s, o, c, d, u, p, f, h, x, g, b, v = (0, n.c)(40),
+                {
+                    isSubmitting: w,
+                    elicitation: N,
+                    field: k,
+                    hostId: S,
+                    conversationId: C,
+                    groupIndex: F,
+                    groupCount: A,
+                    onCancel: M
+                } = e,
+                I = void 0 !== w && w,
+                E = (0, m.a)(),
+                {
+                    serverName: P
+                } = N;
+            v[0] !== C || v[1] !== S || v[2] !== P ? (t = {
+                hostId: S,
+                serverName: P,
+                threadId: C
+            }, v[0] = C, v[1] = S, v[2] = P, v[3] = t) : t = v[3];
+            let L = (0, r.x)(eG.a, t);
+            v[4] !== L ? (a = L ?? {}, v[4] = L, v[5] = a) : a = v[5];
+            let {
+                pluginId: z,
+                serverInfo: D
+            } = a, T = void 0 === z ? P : z;
+            v[6] !== D ? (i = (0, ez.a)(D), v[6] = D, v[7] = i) : i = v[7];
+            let O = i;
+            return v[8] !== S || v[9] !== O || v[10] !== T || v[11] !== P ? (s = null != O || null == T ? (0, l.jsx)(eX.a, {
+                className: "icon-sm shrink-0",
+                icon: O
+            }) : (0, l.jsx)(eJ.a, {
+                alt: P,
+                className: "icon-sm",
+                fallback: (0, l.jsx)(eY.a, {}),
+                hostId: S,
+                pluginId: T,
+                preferComposerIcon: !0
+            }), v[8] = S, v[9] = O, v[10] = T, v[11] = P, v[12] = s) : s = v[12], v[13] !== N.message ? (o = (0, l.jsx)("span", {
+                className: "min-w-0 text-base leading-5 font-medium break-words whitespace-pre-wrap text-default",
+                children: N.message
+            }), v[13] = N.message, v[14] = o) : o = v[14], v[15] !== A || v[16] !== F ? (c = A > 1 && (0, l.jsx)(y.a, {
+                id: "composer.mcpFormElicitation.progress",
+                defaultMessage: "{current} of {total}",
+                values: {
+                    current: F + 1,
+                    total: A
+                }
+            }), v[15] = A, v[16] = F, v[17] = c) : c = v[17], v[18] !== E ? (d = E.formatMessage({
+                id: "composer.mcpFormElicitation.cancel.ariaLabel",
+                defaultMessage: "Cancel"
+            }), v[18] = E, v[19] = d) : d = v[19], v[20] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, l.jsx)(K.a, {
+                "aria-hidden": !1,
+                asset: e$.a
+            }), v[20] = u) : u = v[20], v[21] !== I || v[22] !== M || v[23] !== d ? (p = (0, l.jsx)(j.a, {
+                "aria-label": d,
+                color: "ghostSecondary",
+                size: "compact",
+                uniform: !0,
+                disabled: I,
+                onClick: M,
+                children: u
+            }), v[21] = I, v[22] = M, v[23] = d, v[24] = p) : p = v[24], v[25] !== p || v[26] !== c ? (f = (0, l.jsxs)("div", {
+                className: "ms-auto flex h-5 shrink-0 items-center gap-1 text-xs leading-5 text-codex-description select-none",
+                children: [c, p]
+            }), v[25] = p, v[26] = c, v[27] = f) : f = v[27], v[28] !== f || v[29] !== s || v[30] !== o ? (h = (0, l.jsxs)("div", {
+                className: "flex items-start justify-between gap-3",
+                children: [s, o, f]
+            }), v[28] = f, v[29] = s, v[30] = o, v[31] = h) : h = v[31], v[32] !== k ? (x = k?.type !== "boolean" && k?.title && (0, l.jsx)("div", {
+                className: "text-base leading-5 font-medium break-words whitespace-pre-wrap text-secondary",
+                children: k.title
+            }), v[32] = k, v[33] = x) : x = v[33], v[34] !== k ? (g = k?.description && (0, l.jsx)("div", {
+                className: "text-xs leading-4 font-normal break-words whitespace-pre-wrap text-tertiary",
+                children: k.description
+            }), v[34] = k, v[35] = g) : g = v[35], v[36] !== h || v[37] !== x || v[38] !== g ? (b = (0, l.jsxs)("div", {
+                className: "flex shrink-0 flex-col gap-1 px-4 py-3",
+                children: [h, x, g]
+            }), v[36] = h, v[37] = x, v[38] = g, v[39] = b) : b = v[39], b
+        }
+        let e1 = (0, r.d)(C.a, (e, t) => {
+            let {
+                get: a
+            } = t;
+            return null != (0, o.Ag)(e) || (0, o.Ai)(a(v.b, e))
+        });
+
+        function e2(e) {
+            let t, a = (0, n.c)(2);
+            return a[0] !== e ? (t = null != e.onReply ? (0, l.jsx)(e3, {
+                ...e
+            }) : (0, l.jsx)(e9, {
+                ...e
+            }), a[0] = e, a[1] = t) : t = a[1], t
+        }
+
+        function e3(e) {
+            let t, a, o, m, b, v, y, j, w, F, T, q = (0, n.c)(41),
+                {
+                    attribution: R,
+                    formType: U,
+                    autoResolution: B,
+                    confirmationPresentation: K,
+                    confirmationCompleted: V,
+                    conversationId: W,
+                    elicitation: Q,
+                    hostId: Z,
+                    requestId: G,
+                    turnId: Y,
+                    onUserInteraction: J,
+                    onOpenInThread: X,
+                    onStandaloneResponseChange: $,
+                    onReply: ee,
+                    retainDraft: et,
+                    onPickLegacyFile: ea,
+                    onPickFiles: el,
+                    validateContent: en,
+                    disabled: ei,
+                    isSubmitting: es,
+                    onPreview: er
+                } = e,
+                eo = void 0 !== et && et,
+                ec = void 0 !== ei && ei,
+                ed = void 0 !== es && es,
+                em = (0, r.y)(C.a),
+                eu = (0, d.useRef)(null),
+                ep = (0, d.useRef)(null),
+                ef = (0, h.b)(),
+                eh = "formElicitation" === Q.kind;
+            q[0] !== Q ? (t = (0, S.a)(Q), q[0] = Q, q[1] = t) : t = q[1];
+            let ex = t,
+                eg = ex?.field ?? null,
+                eb = (0, M.c)(Q.schema),
+                ev = function(e) {
+                    if ("openaiForm" !== e.kind) return;
+                    let t = e.schema[A.a],
+                        a = null == t ? void 0 : e.schema.properties[t];
+                    if (null != t && a?.type === "string" && ("oneOf" in a && null != a.oneOf && a.oneOf.length > 0 || "enum" in a && null != a.enum && a.enum.length > 0)) return {
+                        name: t,
+                        options: (0, M.d)(a),
+                        required: e.schema.required?.includes(t) === !0
+                    }
+                }(Q),
+                ey = eb[0],
+                ej = 1 === eb.length && null != ey && (0, P.b)(ey.schema) ? ey.schema : null,
+                ew = null != ej,
+                eN = (0, g.b)(Z, W, G),
+                ek = (0, r.z)(g.c).get(eN);
+            q[2] !== Q ? (a = () => z(Q), q[2] = Q, q[3] = a) : a = q[3];
+            let [eS, eC] = (0, d.useState)(a), eF = ek?.requestId === G && "kind" in ek.draft && ek.draft.kind === Q.kind ? ek.draft : z(Q), eA = null == ee || eo ? eF : eS, {
+                values: eM
+            } = eA, eI = eb.filter(e => e.name !== ev?.name), eE = Object.fromEntries(eI.map(e8)), eP = "openaiForm" === Q.kind ? Q.schema["x-openai-groups"] : void 0;
+            q[4] !== eP ? (o = new Set(eP?.flatMap(e7)), q[4] = eP, q[5] = o) : o = q[5];
+            let eL = o;
+            q[6] !== eL ? (m = e => !eL.has(e.name), q[6] = eL, q[7] = m) : m = q[7];
+            let ez = eI.filter(m),
+                eD = eP?.map(e => e.properties.map(e => eE[e])) ?? [];
+            (ez.length > 0 || 0 === eD.length) && eD.push(ez);
+            let eT = !ew && (Q.message.trim().length > 0 || eD.length > 1),
+                eO = Math.min(eA.groupIndex ?? 0, eD.length - 1),
+                e_ = eO === eD.length - 1,
+                eq = eD[eO],
+                eR = 1 === eq.length ? eq[0] : void 0,
+                eU = eR?.schema.type === "string" && (0, M.e)(eR.schema) ? (0, M.d)(eR.schema) : null,
+                eB = null == eR ? void 0 : eM[eR.name],
+                [eK, eV] = (0, d.useState)(null),
+                [eW, eH] = (0, d.useState)(0),
+                [eZ, eG] = (0, d.useState)(!1),
+                eY = (0, d.useRef)(!1),
+                eJ = ed || eZ,
+                eX = ec || eJ || eW > 0;
+            q[8] === Symbol.for("react.memo_cache_sentinel") ? (b = [], q[8] = b) : b = q[8];
+            let [e$, e2] = (0, d.useState)(b);
+            (0, d.useEffect)(() => {
+                null != ej && null == ee && (0, u.d)(em, {
+                    hostId: Z,
+                    requestId: G
+                }, ej.items.length, {
+                    threadId: W,
+                    turnId: Y
+                })
+            }, [W, Z, ee, G, em, ej, Y]);
+            let e3 = (e, t) => {
+                    if (null == ee || eo) {
+                        let t = em.get(g.c).get(eN),
+                            a = null != t && "kind" in t.draft && t.draft.kind === Q.kind ? t.draft : z(Q);
+                        (0, g.d)(em, eN, {
+                            conversationId: W,
+                            draft: e(a),
+                            requestId: G,
+                            cleanupOwner: eo ? "hosted" : void 0
+                        })
+                    } else eC(e);
+                    null != t && e2(e => e.filter(e => e !== t))
+                },
+                e9 = (e, t) => {
+                    eX || e3(a => ({
+                        ...a,
+                        values: {
+                            ...a.values,
+                            [e]: t
+                        }
+                    }), e)
+                },
+                te = (e, t) => {
+                    if (ed || eY.current) return Promise.resolve(!1);
+                    if (null != X) return eX || X(), Promise.resolve(!1);
+                    if ((0, I.a)(em, {
+                            action: e,
+                            formType: U ?? (eh ? "mcp" : "openai"),
+                            identity: R
+                        }), null != ee) return ee(e, t);
+                    let a = () => (0, p.b)(em, Z).replyWithMcpServerElicitationResponse(W, G, (0, c.b)(e, null, t ?? {}));
+                    return null == $ ? a().then(e6, e5) : (eY.current = !0, eG(!0), $("submitting"), Promise.resolve().then(a).then(() => ($({
+                        accept: "accepted",
+                        decline: "declined",
+                        cancel: "canceled"
+                    } [e]), !0), () => ($("failed"), !1)).finally(() => {
+                        eY.current = !1, eG(!1)
+                    }))
+                },
+                tt = e => {
+                    if (!eX) {
+                        if (null != X) return void X();
+                        eV(null), e3(t => ({
+                            ...t,
+                            groupIndex: e
+                        }))
+                    }
+                },
+                ta = e => {
+                    if (eX) return;
+                    if (null != X) return void X();
+                    let t = e;
+                    if (e_ && ev?.required && null == t) {
+                        let e = ev.options;
+                        if (1 !== e.length) return void ep.current?.focus();
+                        t = e[0].const
+                    }
+                    let a = {
+                        ...eA.values
+                    };
+                    null != ev && (null == t ? delete a[ev.name] : (0, M.g)(a, ev.name, t));
+                    let l = function(e, t, a) {
+                            let l = {
+                                ...t.values
+                            };
+                            for (let [e, a] of Object.entries(t.customDrafts)) l[e] = D(l[e], a);
+                            switch (e.kind) {
+                                case "formElicitation":
+                                    return (0, L.a)(e.schema, l);
+                                case "openaiForm":
+                                    return (0, E.b)(e.schema, l, t.fileOptions, a);
+                                case "legacyOpenAIForm":
+                                    return (0, P.a)(e.schema, l)
+                            }
+                        }(Q, {
+                            ...eA,
+                            values: null == eg ? a : {
+                                [eg]: !0
+                            }
+                        }, en),
+                        n = e_ ? l.invalidFieldNames : l.invalidFieldNames.filter(e => eq.some(t => t.name === e));
+                    if (e2(n), n.length > 0) {
+                        let e = n[0],
+                            t = eD.findIndex(t => t.some(t => t.name === e));
+                        if (t >= 0 && t !== eO) return void tt(t);
+                        let a = Array.from(eu.current?.querySelectorAll("[data-mcp-form-field]") ?? []).find(t => t.dataset.mcpFormField === e),
+                            l = a?.querySelector('input:not([type="hidden"]):not(:disabled), textarea:not(:disabled), select:not(:disabled), [contenteditable="true"], button:not(:disabled)');
+                        return void(l ?? a)?.focus()
+                    }
+                    if (!e_) return void tt(eO + 1);
+                    if (null == l.content) return;
+                    let i = te("accept", l.content);
+                    if (null != ee || null == ej || null == ey) return;
+                    let s = l.content[ey.name];
+                    if ("string" != typeof s) return;
+                    let r = ej.items.findIndex(e => e.id === s);
+                    r < 0 || i.then(e => {
+                        !1 !== e && (0, u.e)(em, {
+                            hostId: Z,
+                            requestId: G
+                        }, s, r)
+                    })
+                },
+                tl = e => {
+                    if (!e.defaultPrevented && !e.nativeEvent.isComposing && e.target instanceof HTMLElement && e.currentTarget.contains(e.target)) {
+                        if ("Escape" === e.key) {
+                            e.preventDefault(), te("cancel");
+                            return
+                        }
+                        if (!(eX || null == e.target.closest('button, a[href], input, textarea, select, [contenteditable]:not([contenteditable="false"]), [data-mcp-form-file-drop], [role="button"], [role="checkbox"], [role="radiogroup"]') && O(e, () => e.currentTarget.requestSubmit())) && !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && null == e.target.closest('textarea, select, input:not([type="radio"]):not([type="checkbox"]), [contenteditable]:not([contenteditable="false"]), [data-mcp-form-file-drop], [role="radiogroup"]') && 1 === eq.length && /^[1-9]$/.test(e.key)) {
+                            let t = e.currentTarget.querySelectorAll('[data-mcp-form-choices] :is(input[type="radio"], button[role="checkbox"]):not(:disabled):not([data-mcp-form-custom-choice] *)')[Number(e.key) - 1];
+                            null != t && (e.preventDefault(), e.repeat || t.click())
+                        }
+                    }
+                },
+                tn = null == el && eb.some(e4),
+                ti = (0, r.x)(null == ee && tn ? e1 : null, Z);
+            if (ex?.presentation != null) {
+                let e;
+                return q[9] !== Q || q[10] !== G ? (e = JSON.stringify([G, Q]), q[9] = Q, q[10] = G, q[11] = e) : e = q[11], (0, l.jsx)(i.a, {
+                    className: "contents",
+                    children: (0, l.jsx)(k.a, {
+                        presentation: ex.presentation,
+                        message: Q.message,
+                        disabled: eX,
+                        isSubmitting: eJ,
+                        completed: V,
+                        standalone: "standalone" === K,
+                        onOpen: J,
+                        onOpenInThread: X,
+                        onConfirm: ta,
+                        onCancel: () => void te("cancel")
+                    }, e)
+                })
+            }
+            if (tn && !ti) {
+                let e;
+                return q[12] !== W || q[13] !== Q.serverName || q[14] !== Z || q[15] !== ee || q[16] !== $ || q[17] !== G || q[18] !== eJ ? (e = (0, l.jsx)(_.a, {
+                    conversationId: W,
+                    hostId: Z,
+                    isSubmitting: eJ,
+                    requestId: G,
+                    serverName: Q.serverName,
+                    onReply: ee,
+                    onStandaloneResponseChange: $
+                }), q[12] = W, q[13] = Q.serverName, q[14] = Z, q[15] = ee, q[16] = $, q[17] = G, q[18] = eJ, q[19] = e) : e = q[19], e
+            }
+            let ts = i.a,
+                tr = f.a,
+                to = null != J || void 0;
+            q[20] !== J ? (v = e => {
+                "Escape" === e.key || e.target instanceof Element && null != e.target.closest("[data-request-input-dismiss]") || J?.()
+            }, y = e => {
+                e.target instanceof Element && null != e.target.closest("[data-request-input-dismiss]") || J?.()
+            }, j = e => {
+                (0, x.b)(e.dataTransfer) && J?.()
+            }, q[20] = J, q[21] = v, q[22] = y, q[23] = j) : (v = q[21], y = q[22], j = q[23]);
+            let tc = e => {
+                    e.preventDefault(), ta()
+                },
+                td = eT && (0, l.jsx)(e0, {
+                    isSubmitting: eJ,
+                    elicitation: Q,
+                    field: eR?.schema,
+                    hostId: Z,
+                    conversationId: W,
+                    groupIndex: eO,
+                    groupCount: eD.length,
+                    onCancel: () => void te("cancel")
+                }),
+                tm = null == eg && eq.length > 0 && (0, l.jsx)("div", {
+                    className: (0, s.b)("flex max-h-96 min-h-0 scrollbar-stable flex-col gap-4 overflow-y-auto overscroll-contain pb-3", !eT && "pt-3"),
+                    children: eq.map((e, t) => (0, l.jsx)(eQ, {
+                        autoFocus: ef && 0 === t,
+                        disabled: ec,
+                        interactionDisabled: eX,
+                        field: e,
+                        isOnlyField: 1 === eq.length,
+                        draft: eA,
+                        expanded: eK === e.name,
+                        hostId: Z,
+                        invalid: e$.includes(e.name),
+                        metadataInHeader: eT && 1 === eq.length,
+                        onCloseExpanded: () => eV(null),
+                        onDraftChange: X ?? e3,
+                        onValueChange: X ?? e9,
+                        onPickLegacyFile: ea,
+                        onPickingChange: e => eH(t => t + (e ? 1 : -1)),
+                        onPickFiles: el,
+                        onPreview: er,
+                        onViewAll: eq.length > 1 && (0, E.c)(e.schema) && eA.fileOptions[e.name].length > 1 ? X ?? (() => eV(e.name)) : void 0
+                    }, e.name))
+                }, eO),
+                tu = null != eg ? (0, l.jsx)(N, {
+                    disabled: eX,
+                    isSubmitting: eJ,
+                    hotkeysEnabled: ef,
+                    onDecline: () => void te("decline")
+                }) : (0, l.jsx)(H, {
+                    primaryActionRef: ep,
+                    isSubmitting: eJ,
+                    autoResolution: B,
+                    disabled: eX,
+                    submitDisabled: eX || null != eR && eR.required && (0, P.b)(eR.schema) && !(0, P.c)(eR.schema, eM[eR.name]),
+                    fieldCount: eq.length,
+                    isLastGroup: e_,
+                    onBack: eO > 0 ? () => tt(eO - 1) : void 0,
+                    hotkeysEnabled: ef,
+                    acceptOptions: e_ && null != ev ? {
+                        options: ev.options,
+                        required: ev.required,
+                        onSelect: ta
+                    } : void 0,
+                    isStandardForm: eh,
+                    showSubmit: eR?.required !== !0 || null == eU || "string" == typeof eB && ("" !== eB || eU.some(e => e.const === eB)),
+                    showHeader: eT,
+                    onCancel: () => void te("cancel"),
+                    onDecline: () => void te("decline"),
+                    onDismissLegacyImagePicker: ew ? () => {
+                        null == ee && (0, u.b)(em, {
+                            hostId: Z,
+                            requestId: G
+                        }), te("decline")
+                    } : void 0,
+                    onViewAll: null != eR && (0, E.c)(eR.schema) && eA.fileOptions[eR.name].length > 1 ? X ?? (() => eV(eR.name)) : void 0
+                });
+            return q[24] !== eu || q[25] !== tl || q[26] !== to || q[27] !== v || q[28] !== y || q[29] !== j || q[30] !== tc || q[31] !== td || q[32] !== tm || q[33] !== tu ? (w = (0, l.jsxs)("form", {
+                ref: eu,
+                className: "flex max-h-[calc(100dvh/var(--codex-window-zoom)-var(--height-toolbar)-2rem)] min-h-0 flex-col outline-none",
+                noValidate: !0,
+                tabIndex: -1,
+                "data-codex-character-input-boundary": !0,
+                "data-codex-escape-boundary": !0,
+                "data-user-input-auto-resolution": to,
+                onKeyDownCapture: v,
+                onPointerDownCapture: y,
+                onDropCapture: j,
+                onKeyDown: tl,
+                onSubmit: tc,
+                children: [td, tm, tu]
+            }), q[24] = eu, q[25] = tl, q[26] = to, q[27] = v, q[28] = y, q[29] = j, q[30] = tc, q[31] = td, q[32] = tm, q[33] = tu, q[34] = w) : w = q[34], q[35] !== tr || q[36] !== w ? (F = (0, l.jsx)(tr, {
+                className: "@container/request-card",
+                children: w
+            }), q[35] = tr, q[36] = w, q[37] = F) : F = q[37], q[38] !== ts || q[39] !== F ? (T = (0, l.jsx)(ts, {
+                className: "contents",
+                children: F
+            }), q[38] = ts, q[39] = F, q[40] = T) : T = q[40], T
+        }
+
+        function e4(e) {
+            let {
+                schema: t
+            } = e;
+            return (0, E.c)(t) && null != t["x-openai-input"].userOptions
+        }
+
+        function e5() {
+            return !1
+        }
+
+        function e6() {
+            return !0
+        }
+
+        function e7(e) {
+            return e.properties
+        }
+
+        function e8(e) {
+            return [e.name, e]
+        }
+
+        function e9(e) {
+            let t, i, s = (0, n.c)(9),
+                o = (0, r.y)(F.a),
+                c = (0, m.a)();
+            s[0] !== c || s[1] !== e.conversationId || s[2] !== e.elicitation || s[3] !== e.hostId || s[4] !== o ? (t = (t, l) => {
+                Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(858617)]).then(a.bind(a, "sJLg")).then(a => {
+                    let {
+                        openFormPreview: n
+                    } = a;
+                    return n(o, {
+                        hostId: e.hostId,
+                        threadId: e.conversationId,
+                        server: e.elicitation.serverName,
+                        target: t,
+                        title: l
+                    })
+                }).catch(te).then(e => {
+                    e || o.get(b.f).danger(c.formatMessage({
+                        id: "composer.mcpFormElicitation.previewUnavailable",
+                        defaultMessage: "Couldn't open preview"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "composer.mcpFormElicitation.previewUnavailable"
+                        }
+                    })
+                })
+            }, s[0] = c, s[1] = e.conversationId, s[2] = e.elicitation, s[3] = e.hostId, s[4] = o, s[5] = t) : t = s[5];
+            let d = t;
+            return s[6] !== d || s[7] !== e ? (i = (0, l.jsx)(e3, {
+                ...e,
+                onPreview: d
+            }), s[6] = d, s[7] = e, s[8] = i) : i = s[8], i
+        }
+
+        function te() {
+            return !1
+        }
+    }),
+    MnTr: (function(e, t, a) {
+        a.d(t, {
+            a: () => m,
+            b: () => u
+        });
+        var l = a("ABep"),
+            n = a("QosV"),
+            i = a("ULZ9"),
+            s = a("on57"),
+            r = a("zd8w"),
+            o = a("v7qY"),
+            c = "PortalBoundary-TFj9W2";
+        let d = (0, r.createContext)({
+            container: null
+        });
+
+        function m(e) {
+            let t, a, o, m, u, p, f, h, x = (0, n.c)(20),
+                {
+                    children: g,
+                    className: b,
+                    theme: v,
+                    themeClassName: y
+                } = e,
+                [j, w] = (0, r.useState)(null);
+            x[0] !== j ? (t = () => {
+                if (null == j) return;
+                let e = () => {
+                    let e = String(j.currentCSSZoom ?? 1);
+                    j.style.getPropertyValue("--puik-portal-zoom") !== e && j.style.setProperty("--puik-portal-zoom", e)
+                };
+                e();
+                let t = new MutationObserver(e);
+                for (let e = j; null != e; e = e.parentElement) t.observe(e, {
+                    attributes: !0,
+                    attributeFilter: ["class", "style"]
+                });
+                return () => t.disconnect()
+            }, a = [j], x[0] = j, x[1] = t, x[2] = a) : (t = x[1], a = x[2]), (0, r.useLayoutEffect)(t, a), x[3] === Symbol.for("react.memo_cache_sentinel") ? (o = e => {
+                null != e && w(e)
+            }, x[3] = o) : o = x[3], x[4] !== b || x[5] !== y ? (m = (0, s.b)("relative", c, y, b), x[4] = b, x[5] = y, x[6] = m) : m = x[6];
+            let N = j ?? void 0;
+            return x[7] !== j || x[8] !== y ? (u = {
+                container: j,
+                themeClassName: y
+            }, x[7] = j, x[8] = y, x[9] = u) : u = x[9], x[10] !== g || x[11] !== u ? (p = (0, l.jsx)(d.Provider, {
+                value: u,
+                children: g
+            }), x[10] = g, x[11] = u, x[12] = p) : p = x[12], x[13] !== N || x[14] !== p ? (f = (0, l.jsx)(i.a, {
+                radixPortalContainer: N,
+                children: p
+            }), x[13] = N, x[14] = p, x[15] = f) : f = x[15], x[16] !== m || x[17] !== f || x[18] !== v ? (h = (0, l.jsx)("div", {
+                ref: o,
+                className: m,
+                "data-theme": v,
+                children: f
+            }), x[16] = m, x[17] = f, x[18] = v, x[19] = h) : h = x[19], h
+        }
+
+        function u(e) {
+            let t, a, m, u, p, f, h, x = (0, n.c)(24),
+                {
+                    children: g,
+                    theme: b
+                } = e,
+                {
+                    container: v,
+                    themeClassName: y
+                } = (0, r.useContext)(d);
+            x[0] !== v ? (t = v?.closest("dialog:modal"), x[0] = v, x[1] = t) : t = x[1];
+            let j = t,
+                [w, N] = (0, r.useState)(null);
+            x[2] !== v || x[3] !== j?.currentCSSZoom || x[4] !== w ? (a = () => {
+                if (null == v || null == w) return;
+                let e = v.ownerDocument.defaultView;
+                if (null == e) return;
+                let t = [];
+                for (let e = v; null != e; e = e.parentElement) t.push(e);
+                let a = () => {
+                        let a = v.currentCSSZoom ?? 1,
+                            l = j?.currentCSSZoom ?? 1,
+                            n = t.map(t => e.getComputedStyle(t)),
+                            i = t.some((e, t) => {
+                                let a = n[t];
+                                return e.hasAttribute("inert") || e.hidden || "true" === e.getAttribute("aria-hidden") || "none" === a.display || "hidden" === a.visibility || "collapse" === a.visibility || "hidden" === a.contentVisibility
+                            });
+                        w.style.setProperty("zoom", String(a / l)), w.style.setProperty("--puik-portal-zoom", String(a)), w.toggleAttribute("inert", i), w.toggleAttribute("hidden", i)
+                    },
+                    l = new MutationObserver(a),
+                    n = !1,
+                    i = () => {
+                        let i = null != w.querySelector('[data-radix-popper-content-wrapper], [role="tooltip"]');
+                        if (i !== n)
+                            if (n = i, i) {
+                                for (let e of (a(), t)) l.observe(e, {
+                                    attributes: !0,
+                                    attributeFilter: ["class", "style", "hidden", "inert", "aria-hidden", "data-theme"]
+                                });
+                                e.addEventListener("resize", a)
+                            } else l.disconnect(), e.removeEventListener("resize", a)
+                    },
+                    s = new MutationObserver(i);
+                return s.observe(w, {
+                    childList: !0,
+                    subtree: !0
+                }), i(), () => {
+                    s.disconnect(), l.disconnect(), e.removeEventListener("resize", a), w.setAttribute("hidden", ""), w.setAttribute("inert", "")
+                }
+            }, x[2] = v, x[3] = j?.currentCSSZoom, x[4] = w, x[5] = a) : a = x[5], x[6] !== v || x[7] !== j || x[8] !== w ? (m = [v, j, w], x[6] = v, x[7] = j, x[8] = w, x[9] = m) : m = x[9], (0, r.useLayoutEffect)(a, m);
+            let k = w ?? void 0;
+            return x[10] !== g || x[11] !== w ? (u = "function" == typeof g ? g(w) : g, x[10] = g, x[11] = w, x[12] = u) : u = x[12], x[13] !== k || x[14] !== u ? (p = (0, l.jsx)(i.a, {
+                radixPortalContainer: k,
+                children: u
+            }), x[13] = k, x[14] = u, x[15] = p) : p = x[15], x[16] !== v || x[17] !== j || x[18] !== b || x[19] !== y ? (f = null != v && (0, o.createPortal)((0, l.jsx)("div", {
+                ref: e => {
+                    null != e && N(e)
+                },
+                className: (0, s.b)("relative", c, "PortalSurface-LW3Uz2", y),
+                "data-theme": b
+            }), j ?? v.ownerDocument.body), x[16] = v, x[17] = j, x[18] = b, x[19] = y, x[20] = f) : f = x[20], x[21] !== p || x[22] !== f ? (h = (0, l.jsxs)(l.Fragment, {
+                children: [p, f]
+            }), x[21] = p, x[22] = f, x[23] = h) : h = x[23], h
+        }
+    })
+};
