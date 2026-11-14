@@ -1,1 +1,2501 @@
-export const __rspack_esm_ids=[355084];export const __webpack_modules__={wrxv:(function(e,t,n){n.d(t,{},{a:{type:"none"},b:{type:"pending"}})}),nb0y:(function(e,t,n){n.d(t,{a:()=>ej});var i=n("ABep"),a=n("QosV"),l=n("on57"),o=n("h24K"),r=n("K45w"),s=n("W5pg"),c=n("jCHb"),u=n("p5Yg"),d=n("IPUh"),h=n("suct"),p=n("BolX"),m=n("zd8w"),f=n("v7qY"),g=n("Wf1j"),v=n("oyxz"),b=n("I7bK"),x=n("XExW"),y=n("Q2Qp"),w=n("QcW8"),S=n("ZU27"),z=n("BzS0"),j=n("DUYS"),k=n("wD9O"),C=n("rsCP"),E=n("AclY"),M=n("sArP");let P={height:640,width:560};var R=n("hZax"),N=n("V8uZ"),T=n("HgLj"),D=n("DGC8");function L(e){let t,n,o,r,s,c,u,h,p,m,f=(0,a.c)(62),{allowCompactResize:g,animateSurface:v,background:b,children:x,currentSize:y,contentStyle:w,contentRef:S,fixedHorizontalEdge:z,resizeFromCenter:j,heightLabel:k,isCompact:L,isCompactChromeRevealed:q,isMinimized:_,keepSurfaceInset:F,maximumSize:I,minimizedContent:A,minimizedSurfaceBounds:W,minimumSize:H,onResize:B,onResizeEnd:O,onResizingChange:K,prefersCompactPresentation:V,resizable:$,sectionProps:X,sectionRef:Y,surfaceStyle:Z,shouldReduceMotion:U,variant:G,verticalResizeEdge:Q,widthLabel:J}=e,ee=void 0!==g&&g,et=void 0===v||v,en=void 0!==j&&j,ei=void 0===$||$,ea=(0,R.f)("2163293173"),el=!_&&(F||L&&!q)?6:0;f[0]!==_||f[1]!==W||f[2]!==el?(t=_&&null!=W?W:{top:0,right:el,bottom:el,left:el},f[0]=_,f[1]=W,f[2]=el,f[3]=t):t=f[3];let eo=t,er="panel"!==b&&"rounded-[inherit]";f[4]!==er?(n=(0,l.b)("pointer-events-none absolute group-focus-visible/chat-frame:ring-2 group-focus-visible/chat-frame:ring-ring group-focus-visible/chat-frame:ring-offset-0 forced-colors:group-focus-visible/chat-frame:outline-auto",er),f[4]=er,f[5]=n):n=f[5];let es=n,ec="panel"!==b||V;f[6]!==X.ref||f[7]!==Y?(o=(0,T.a)(Y,X.ref,E.c),f[6]=X.ref,f[7]=Y,f[8]=o):o=f[8];let eu=!ea&&V&&"frame-Xbg62r",ed=V&&"group/chat-frame focus:outline-none",eh=null!=W?"pointer-events-none":"pointer-events-auto",ep=V&&D.a.floatingSurface,em=F&&D.a.singleLineSurface,ef="floating"===G?"fixed top-0 left-0 z-30 max-h-[calc(100dvh/var(--codex-window-zoom)-var(--height-toolbar)-2rem)] max-w-[calc(50vw/var(--codex-window-zoom))]":"absolute top-0 left-0 z-30 max-h-full max-w-full",eg=V?"overflow-visible":"overflow-hidden";f[9]!==eu||f[10]!==ed||f[11]!==eh||f[12]!==ep||f[13]!==em||f[14]!==ef||f[15]!==eg?(r=(0,l.b)("flex flex-col text-default",eu,ed,eh,ep,em,ef,eg),f[9]=eu,f[10]=ed,f[11]=eh,f[12]=ep,f[13]=em,f[14]=ef,f[15]=eg,f[16]=r):r=f[16];let ev=null!=w?"relative flex h-full min-h-0 w-full shrink-0 flex-col rounded-[inherit]":"contents";f[17]!==ev?(s=(0,l.b)(ev),f[17]=ev,f[18]=s):s=f[18],f[19]!==et||f[20]!==b||f[21]!==es||f[22]!==F||f[23]!==A||f[24]!==V||f[25]!==U||f[26]!==eo||f[27]!==Z?(c=V?(0,i.jsx)(C.c,{asChild:!0,unstyled:"panel"!==b,variant:F?"single-line":"default",children:null!=Z?(0,i.jsx)(d.a.div,{className:es,"aria-hidden":null==A||void 0,style:Z},"panel-background"):(0,i.jsx)(d.a.div,{className:es,"aria-hidden":null==A||void 0,animate:eo,initial:!1,transition:U||!et?{duration:0}:{duration:.3,ease:N.e},children:A},"legacy-background")}):null,f[19]=et,f[20]=b,f[21]=es,f[22]=F,f[23]=A,f[24]=V,f[25]=U,f[26]=eo,f[27]=Z,f[28]=c):c=f[28],f[29]!==ee||f[30]!==y||f[31]!==z||f[32]!==k||f[33]!==L||f[34]!==_||f[35]!==I||f[36]!==H||f[37]!==B||f[38]!==O||f[39]!==K||f[40]!==ei||f[41]!==en||f[42]!==eo||f[43]!==Q||f[44]!==J?(u=ei&&(!L||ee)&&!_?(0,i.jsx)("div",{className:"pointer-events-none absolute",style:eo,children:(0,i.jsx)("div",{className:"pointer-events-auto contents",children:(0,i.jsx)(M.a,{currentSize:y,defaultSize:P,extendIntoToolbar:!1,fixedHorizontalEdge:z,resizeFromCenter:en,heightLabel:k,maximumSize:I,minimumSize:H,verticalEdge:L?null:Q,widthLabel:J,onResize:B,onResizeEnd:O,onResizingChange:K})})}):null,f[29]=ee,f[30]=y,f[31]=z,f[32]=k,f[33]=L,f[34]=_,f[35]=I,f[36]=H,f[37]=B,f[38]=O,f[39]=K,f[40]=ei,f[41]=en,f[42]=eo,f[43]=Q,f[44]=J,f[45]=u):u=f[45];let eb=null==Z?null:A;return f[46]!==x||f[47]!==S||f[48]!==w||f[49]!==s||f[50]!==c||f[51]!==u||f[52]!==eb?(h=(0,i.jsxs)(d.a.div,{ref:S,className:s,style:w,children:[c,u,eb,x]}),f[46]=x,f[47]=S,f[48]=w,f[49]=s,f[50]=c,f[51]=u,f[52]=eb,f[53]=h):h=f[53],f[54]!==X||f[55]!==r||f[56]!==h||f[57]!==o?(p=(0,i.jsx)(d.a.section,{...X,ref:o,className:r,children:h}),f[54]=X,f[55]=r,f[56]=h,f[57]=o,f[58]=p):p=f[58],f[59]!==p||f[60]!==ec?(m=(0,i.jsx)(C.c,{asChild:!0,unstyled:ec,children:p}),f[59]=p,f[60]=ec,f[61]=m):m=f[61],m}var q=n("Sm6l"),_=n("bf6R");function F(e){let t,n,l,o,r,s,c,u,d,h,p,f=(0,a.c)(56),{title:b,preview:x,onOpen:y,onDismiss:w,isWorking:S,workingContent:z}=e,j=void 0!==S&&S,k=(0,R.f)("2163293173"),E=(0,g.a)();f[0]!==E||f[1]!==b?(t=b??E.formatMessage({id:"quickChat.mainConversation",defaultMessage:"Chat"}),f[0]=E,f[1]=b,f[2]=t):t=f[2];let M=t,P=(0,m.useEffectEvent)(w);if(f[3]!==k||f[4]!==P||f[5]!==j?(n=()=>{if(!k||j)return;let e=window.setTimeout(()=>P(),1e4);return()=>window.clearTimeout(e)},f[3]=k,f[4]=P,f[5]=j,f[6]=n):n=f[6],f[7]!==k||f[8]!==j?(l=[k,j],f[7]=k,f[8]=j,f[9]=l):l=f[9],(0,m.useEffect)(n,l),!k){let e,t,n,a,l,o,r,s,c,u;return f[10]!==E||f[11]!==M?(e=E.formatMessage({id:"quickChat.openCompletedResponse",defaultMessage:"Open completed response: {title}"},{title:M}),f[10]=E,f[11]=M,f[12]=e):e=f[12],f[13]===Symbol.for("react.memo_cache_sentinel")?(t=(0,i.jsx)(_.mc,{className:"text-success"}),f[13]=t):t=f[13],f[14]!==M?(n=(0,i.jsxs)("span",{className:"flex min-w-0 items-center gap-2 text-sm font-semibold text-default",children:[t,(0,i.jsx)("span",{className:"truncate",children:M})]}),f[14]=M,f[15]=n):n=f[15],f[16]!==x?(a=x||(0,i.jsx)(v.a,{id:"quickChat.responseReady",defaultMessage:"Response ready"}),f[16]=x,f[17]=a):a=f[17],f[18]!==a?(l=(0,i.jsx)("span",{className:"block truncate text-sm text-secondary",children:a}),f[18]=a,f[19]=l):l=f[19],f[20]!==y||f[21]!==e||f[22]!==n||f[23]!==l?(o=(0,i.jsxs)("button",{className:"min-w-0 flex-1 cursor-interaction rounded-[inherit] px-4 py-3 text-start focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-inset","aria-label":e,type:"button",onClick:y,children:[n,l]}),f[20]=y,f[21]=e,f[22]=n,f[23]=l,f[24]=o):o=f[24],f[25]!==E?(r=E.formatMessage({id:"quickChat.dismissCompletedResponse",defaultMessage:"Dismiss and mark as read"}),f[25]=E,f[26]=r):r=f[26],f[27]===Symbol.for("react.memo_cache_sentinel")?(s=(0,i.jsx)(_.uj,{className:"pointer-events-none"}),f[27]=s):s=f[27],f[28]!==w||f[29]!==r?(c=(0,i.jsx)("div",{className:"absolute -top-1 -left-1 flex rounded-full bg-surface",children:(0,i.jsx)(q.a,{"aria-label":r,color:"outlineSurface",radius:"full",size:"iconCircleSm",onClick:w,children:s})}),f[28]=w,f[29]=r,f[30]=c):c=f[30],f[31]!==o||f[32]!==c?(u=(0,i.jsxs)(C.c,{className:"relative flex shrink-0 select-none",role:"status",variant:"notice",children:[o,c]}),f[31]=o,f[32]=c,f[33]=u):u=f[33],u}return f[34]!==E||f[35]!==M?(o=E.formatMessage({id:"quickChat.openCompletedResponse",defaultMessage:"Open completed response: {title}"},{title:M}),f[34]=E,f[35]=M,f[36]=o):o=f[36],f[37]!==j||f[38]!==x||f[39]!==z?(r=j?z??(0,i.jsx)(v.a,{id:"quickChat.responseWorking",defaultMessage:"Working…"}):x||(0,i.jsx)(v.a,{id:"quickChat.responseReady",defaultMessage:"Response ready"}),f[37]=j,f[38]=x,f[39]=z,f[40]=r):r=f[40],f[41]!==r?(s=(0,i.jsx)("span",{className:"line-clamp-2 min-w-0 flex-1 text-sm whitespace-normal text-default",children:r}),f[41]=r,f[42]=s):s=f[42],f[43]!==y||f[44]!==o||f[45]!==s?(c=(0,i.jsx)(q.a,{unstyled:!0,focusRing:"inset",className:"min-w-0 flex-1 rounded-[inherit] px-4 py-3 pe-10 text-start","aria-label":o,type:"button",onClick:y,children:s}),f[43]=y,f[44]=o,f[45]=s,f[46]=c):c=f[46],f[47]!==E?(u=E.formatMessage({id:"quickChat.dismissResponsePreview",defaultMessage:"Dismiss response preview"}),f[47]=E,f[48]=u):u=f[48],f[49]===Symbol.for("react.memo_cache_sentinel")?(d=(0,i.jsx)(_.uj,{className:"pointer-events-none"}),f[49]=d):d=f[49],f[50]!==w||f[51]!==u?(h=(0,i.jsx)("div",{className:"absolute top-3 right-2 flex rounded-full",children:(0,i.jsx)(q.a,{"aria-label":u,color:"ghostSecondary",radius:"full",size:"iconCircleSm",onClick:w,children:d})}),f[50]=w,f[51]=u,f[52]=h):h=f[52],f[53]!==h||f[54]!==c?(p=(0,i.jsxs)("div",{className:"relative flex shrink-0 select-none",role:"status",children:[c,h]}),f[53]=h,f[54]=c,f[55]=p):p=f[55],p}var I=n("v0Gf"),A=n("nsuH");function W(e){let t,n,l,o,r,s,c=(0,a.c)(23),{items:u,availableHeight:h,isDockedTop:p,shouldReduceMotion:f}=e,g=(0,R.f)("2163293173"),[v,b]=(0,m.useState)(null);c[0]===Symbol.for("react.memo_cache_sentinel")?(t=(e,t)=>{let n=t.firstElementChild;n instanceof HTMLElement&&b(n.offsetHeight)},c[0]=t):t=c[0];let x=(0,A.b)(t),y=Math.min(null==v?h:3*v+24,Math.max(0,h-16)),w=.3*!f;c[1]!==w?(n={duration:w,ease:N.e},c[1]=w,c[2]=n):n=c[2];let S=n,z=g?"min-w-0":"-mx-6 -my-2",j=g?"overflow-y-auto overscroll-contain":"overflow-y-auto overscroll-contain px-6 py-2",k=y+16;c[3]!==k?(l={style:{maxHeight:k}},c[3]=k,c[4]=l):l=c[4];let C=g?"relative flex flex-col":"relative flex flex-col gap-3";if(c[5]!==p||c[6]!==u||c[7]!==f||c[8]!==S){let e;c[10]!==p||c[11]!==f||c[12]!==S?(e=e=>{let{id:t,content:n}=e;return(0,i.jsx)(d.a.div,{className:"shrink-0",layout:!f&&"position",transition:S,children:(0,i.jsx)(d.a.div,{initial:{opacity:0,transform:`translateY(${f?0:8*(p?-1:1)}px)`},animate:{opacity:1,transform:"translateY(0px)"},transition:{...S,opacity:{ease:"linear"}},children:n})},t)},c[10]=p,c[11]=f,c[12]=S,c[13]=e):e=c[13],o=u.map(e),c[5]=p,c[6]=u,c[7]=f,c[8]=S,c[9]=o}else o=c[9];return c[14]!==x||c[15]!==C||c[16]!==o?(r=(0,i.jsx)("div",{ref:x,className:C,children:o}),c[14]=x,c[15]=C,c[16]=o,c[17]=r):r=c[17],c[18]!==r||c[19]!==z||c[20]!==j||c[21]!==l?(s=(0,i.jsx)(I.a,{className:z,fade:"mask",scrollClassName:j,scrollProps:l,children:r}),c[18]=r,c[19]=z,c[20]=j,c[21]=l,c[22]=s):s=c[22],s}var H=n("wrxv"),B=n("oNzN"),O="active-PrspLR";let K=null;var V=n("EFj1"),$=n("BjWL"),X=n("vi3X"),Y=n("fDIZ"),Z=n("AKr5"),U=n("X7C7"),G=n("rmk3"),Q=n("giDA"),J=n("YzWZ"),ee=n("eeV6"),et=n("Xyz8"),en=n("zj7j"),ei=n("Z2JT");let ea=(0,n("Nwp9").b)("quick-chat-size-v1",P);function el(e,t,n){let i=e.get(ea);e.set(ea,t),(null==i||i.height!==t.height||i.width!==t.width)&&n?.()}var eo=n("mphG"),er=n("T1PX"),es=n("TL6G"),ec=n("rkZ2"),eu=n("f4Vb"),ed=n("OWtl"),eh=n("tSEg"),ep=n("j89V"),em=n("El6m"),ef=n("KkZX"),eg=n("XMPL"),ev=n("ZDXf"),eb=n("fRoJ"),ex=n("bIvi");let ey=["bottom-center","bottom-left","bottom-right"],ew="inset(0px 0px 0px 0px round var(--floating-panel-radius))",eS={type:"spring",bounce:.16,duration:.42},ez=(0,p.u)(ed.a,eR,{getServerSnapshot:()=>({width:0,height:0}),isEqual:(e,t)=>e.width===t.width&&e.height===t.height,onMount:e=>{let t=window.visualViewport,n=()=>e(eR());return window.addEventListener("resize",n),t?.addEventListener("resize",n),n(),()=>{window.removeEventListener("resize",n),t?.removeEventListener("resize",n)}}});function ej(e){let t,n,l,o,r=(0,a.c)(10);return r[0]!==e?({contentChat:t,...n}=e,r[0]=e,r[1]=t,r[2]=n):(t=r[1],n=r[2]),r[3]!==t||r[4]!==n?(l=null==t?n.renderMenu:e=>e.contextMenuTrigger??(null==t.onOpenRightPane&&n.renderMenu?.(e)),r[3]=t,r[4]=n,r[5]=l):l=r[5],r[6]!==t||r[7]!==n||r[8]!==l?(o=(0,i.jsx)(ek,{...n,contentChat:t,renderMenu:l}),r[6]=t,r[7]=n,r[8]=l,r[9]=o):o=r[9],o}function ek(e){let t,n,M,I,ej,ek,eR,eN,eT,eD,eL,eq,e_,eF,eI,eA,eW,eH,eB,eO,eK,eV,e$,eX,eY,eZ,eU,eG,eQ,eJ,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9,te,tt,tn,ti,ta,tl,to,tr,ts,tc,tu,td,th,tp,tm,tf,tg,tv,tb,tx,ty,tw,tS,tz,tj,tk,tC,tE,tM,tP,tR,tN,tT,tD,tL,tq,t_,tF,tI,tA,tW,tH,tB,tO,tK,tV,t$,tX,tY,tZ,tU,tG,tQ,tJ,t0,t1,t2,t3,t4,t5,t6,t7,t8,t9,ne,nt,nn,ni,na,nl,no,nr,ns,nc,nu,nd,nh,np,nm,nf,ng,nv,nb,nx,ny,nw,nS,nz,nj,nk,nC,nE,nM,nP,nR,nN,nT,nD,nL,nq,n_,nF,nI,nA,nW,nH,nB,nO,nK,nV,n$,nX,nY,nZ,nU,nG,nQ,nJ,n0,n1,n2,n3,n4,n5,n6,n7,n8,n9,ie,it,ii,ia,il=(0,a.c)(870),{ref:io,animateOnMount:ir,background:is,renderComposer:ic,containerSize:iu,previewSide:id,hasPagePicker:ih,dockThreadKey:ip,canDock:im,preserveLayoutOnEscape:ig,compactInputPosition:iv,reservedDockPosition:ib,footer:ix,overlay:iy,renderHeaderContent:iw,headerInteractionDisabled:iS,allowLegacyHeaderToggle:iz,renderMenu:ij,forceExpanded:ik,hasConversation:iC,isHidden:iE,contentChat:iM,isMinimized:iP,isCollisionObstacle:iR,onDragOver:iN,onDragEnd:iT,onEscape:iD,onMinimizedChange:iL,onResize:iq,presentation:i_,onPresentationChange:iF,title:iI,titleContent:iA,minimizedIcon:iW,minimizedMenuItems:iH,restoreLabel:iB,statusState:iO,titleStatusState:iK,notifications:iV,workingPreview:i$,compactWorkingPreview:iX,responsePreview:iY,showResponsePreview:iZ,previewBubble:iU,emptyState:iG,renderTranscript:iQ,hasTranscript:iJ,pendingFormId:i0,showComposerDivider:i1,showHeader:i2}=e,i3=void 0!==ir&&ir,i4=void 0===im||im,i5=void 0!==ig&&ig,i6=void 0!==iS&&iS,i7=void 0===iz||iz,i8=void 0!==ik&&ik,i9=void 0!==iE&&iE,ae=void 0===iK?iO:iK,at=void 0===iZ||iZ,an=void 0===i2||i2,ai=(0,p.y)(ed.a),aa=(0,p.y)(eh.a),al=null!=iM,ao=iM?.onOpenRightPane,ar=(0,p.z)(void 0===i0?null:i0),as=null!=ar,ac=(0,R.f)("2163293173"),au=(0,m.useContext)(y.a),ad=(0,m.useContext)(x.a)?.workspaceTargetWidth,ah=(0,m.useContext)(b.c),ap=ac&&!i9&&null!=id&&null!=ah&&null!=au,am=(0,p.z)(!!ac&&void 0!==id&&ec.c),af=ap&&!am,ag=(0,p.z)(ap?w.gb:null),av=(0,m.useRef)(null),ab=(0,p.z)(!!ap&&w.jb),ax=ac?iG:void 0,ay=iJ??null!=iQ,aw=ay||null!=ax,aS=(0,p.z)(ip)??void 0,az=void 0===iR||iR?"quick-chat":void 0,aj=(0,m.useContext)(em.b),ak=(0,p.z)(iV),aC=as?H.a:ak??H.a,aE=(0,p.z)(iO);il[0]!==aE||il[1]!==aC.type?(t="ready"===aC.type?{...aE,type:aE?.type??"idle",unread:!0}:aE,il[0]=aE,il[1]=aC.type,il[2]=t):t=il[2];let aM=t,aP=(0,p.z)(ae),aR=ae===iO?aM:aP,aN=(0,p.z)(ac&&at?iY:null),aT=!!aN,aD=(0,g.a)(),aL=(0,m.useId)(),aq=(0,m.useId)(),a_=(0,k.c)(),aF=(0,er.a)(),aI=(0,p.z)(ez);il[3]!==aI.height||il[4]!==a_?(n=(0,k.b)(aI.height,a_),il[3]=aI.height,il[4]=a_,il[5]=n):n=il[5];let aA=n,aW=(0,k.b)(aI.width,a_),[aH,aB]=(0,m.useState)(0),[aO,aK]=(0,m.useState)(!1),[aV,a$]=(0,m.useState)(0),[aX,aY]=(0,m.useState)(null),[aZ,aU]=(0,m.useState)(null),[aG,aQ]=(0,m.useState)(0),[aJ,a0]=(0,m.useState)(null);il[6]===Symbol.for("react.memo_cache_sentinel")?(M=e=>{e.contentRect.width>0&&a0(e.contentRect.width)},il[6]=M):M=il[6];let a1=(0,A.b)(M);il[7]===Symbol.for("react.memo_cache_sentinel")?(I=e=>{aQ((0,eu.a)(e).height)},il[7]=I):I=il[7];let a2=(0,A.b)(I);il[8]===Symbol.for("react.memo_cache_sentinel")?(ej=e=>{a$((0,eu.a)(e).height)},il[8]=ej):ej=il[8];let a3=(0,A.b)(ej);il[9]!==a3?(ek=e=>{aY(e),a3(e)},il[9]=a3,il[10]=ek):ek=il[10];let a4=(0,ex.a)(ek);il[11]===Symbol.for("react.memo_cache_sentinel")?(eR=e=>{aB((0,eu.a)(e).height)},il[11]=eR):eR=il[11];let a5=(0,A.b)(eR),[a6,a7]=(0,m.useState)(0);il[12]===Symbol.for("react.memo_cache_sentinel")?(eN=e=>{a7((0,eu.a)(e).height)},il[12]=eN):eN=il[12];let a8=(0,A.b)(eN),a9=iu?.width??aW,le=aW<640;il[13]!==i4||il[14]!==ac?(eT=()=>i4?ac?"bottom-right":(0,J.a)():"bottom-center",il[13]=i4,il[14]=ac,il[15]=eT):eT=il[15];let[lt]=(0,m.useState)(eT),ln=aS??null;il[16]!==ln?(eD={threadKey:ln,minimized:!1},il[16]=ln,il[17]=eD):eD=il[17];let li=(0,p.x)(i4?en.a:void 0,eD),la=al&&i4,ll=aS??null;il[18]!==ll?(eL={threadKey:ll,minimized:!0},il[18]=ll,il[19]=eL):eL=il[19];let lo=(0,p.x)(i4&&!al?en.a:void 0,eL);il[20]===Symbol.for("react.memo_cache_sentinel")?(eq={},il[20]=eq):eq=il[20];let[lr,ls]=(0,m.useState)(eq),lc=(null!=aS||ac?null:lr.expanded)??li??lt,lu=null==iv?lc:lr.expanded??iv,ld=le?"bottom-center":lu;il[21]!==ac||il[22]!==aS||il[23]!==ld||il[24]!==la||il[25]!==lr||il[26]!==lo?(e_="bottom-right",la?e_=(0,et.a)(ld):ac||(e_=(null==aS?lr.minimized:null)??lo??"bottom-right"),il[21]=ac,il[22]=aS,il[23]=ld,il[24]=la,il[25]=lr,il[26]=lo,il[27]=e_):e_=il[27];let lh=i4?(0,et.f)(iP?e_:ld,ib):"bottom-center",lp=lh.startsWith("top"),lm=(0,p.z)(ea),lf=(0,o.a)(),lg=(0,m.useRef)(!1);il[28]===Symbol.for("react.memo_cache_sentinel")?(eF={x:0,y:0},il[28]=eF):eF=il[28];let lv=(0,m.useRef)(eF),lb=(0,m.useRef)(null),lx=(0,m.useRef)(null),ly=(0,r.a)(0),lw=(0,r.a)(0),lS=(0,m.useRef)(null),lz=(0,m.useRef)(null),lj=(0,m.useRef)(null),lk=(0,m.useRef)(null),[lC,lE]=(0,m.useState)("compact"),[lM,lP]=(0,m.useState)(null),lR=iU?.id??"",lN=lM===lR,lT=i_??lC;il[29]!==aw||il[30]!==i_||il[31]!==al||il[32]!==iF?(eI=e=>{(al||"expanded"!==e||aw)&&(null==i_&&lE(e),lP(null),iF?.(e))},il[29]=aw,il[30]=i_,il[31]=al,il[32]=iF,il[33]=eI):eI=il[33];let lD=eI,[lL,lq]=(0,m.useState)(null),[l_,lF]=(0,m.useState)(!1),[lI,lA]=(0,m.useState)(!1),[lW,lH]=(0,m.useState)(!1),[lB,lO]=(0,m.useState)(!1),lK=(0,m.useRef)(null);il[34]===Symbol.for("react.memo_cache_sentinel")?(eA=e=>{(null!=lK.current&&(cancelAnimationFrame(lK.current),lK.current=null),null!=e)?lO(!0):lK.current=requestAnimationFrame(()=>{lK.current=null,lO(!1)})},il[34]=eA):eA=il[34];let lV=eA;il[35]===Symbol.for("react.memo_cache_sentinel")?(eW=()=>()=>{null!=lK.current&&cancelAnimationFrame(lK.current)},eH=[],il[35]=eW,il[36]=eH):(eW=il[35],eH=il[36]),(0,m.useEffect)(eW,eH);let[l$,lX]=(0,m.useState)(!1),[lY,lZ]=(0,m.useState)(!1),[lU,lG]=(0,m.useState)(!1),[lQ,lJ]=(0,m.useState)(!0),[l0,l1]=(0,m.useState)(null),l2=(0,m.useRef)(!1),[l3,l4]=(0,m.useState)(!1),[l5,l6]=(0,m.useState)(0),[l7,l8]=(0,m.useState)(0),[l9,oe]=(0,m.useState)(!1);il[37]!==ac||il[38]!==a_?(eB=(e,t)=>{l6(ac?(0,eu.a)(e).height:e.contentRect.height),oe(e.contentRect.width<640);let n=t.querySelector(`[${$.a}]`)?.getBoundingClientRect().height??0;l8(Math.max(0,e.contentRect.height-(0,k.b)(n,a_)))},il[37]=ac,il[38]=a_,il[39]=eB):eB=il[39];let ot=(0,A.b)(eB),[on,oi]=(0,m.useState)(null),[oa,ol]=(0,m.useState)(!1),[oo,or]=(0,m.useState)(aS);oo!==aS&&(or(aS),ls({}),lZ(!1),lG(!1),l1(null),lq(null),lH(!1),ol(!1),lP(null));let[os,oc]=(0,m.useState)(ar);os!==ar&&(oc(ar),l1(null),lq(null));let ou=!ap&&(iP||l0?.stage==="minimized"),od=(0,r.a)(+!!ou);il[40]!==od?(eO=()=>1-od.get(),il[40]=od,il[41]=eO):eO=il[41];let oh=(0,s.a)(eO);il[42]!==od?(eK=e=>od.on("change",e),il[42]=od,il[43]=eK):eK=il[43];let op=eK;il[44]!==od?(eV=()=>1===od.get(),il[44]=od,il[45]=eV):eV=il[45];let om=eV;il[46]!==ou?(e$=()=>ou,il[46]=ou,il[47]=e$):e$=il[47];let of=(0,m.useSyncExternalStore)(op,om,e$);lL?.target!=="minimized"||ou||lq({target:lT}),il[48]!==aw||il[49]!==i8||il[50]!==ar||il[51]!==lT?(eX=(0,ei.b)({pendingFormId:ar,presentation:lT,forceExpanded:i8,hasTranscript:aw}),il[48]=aw,il[49]=i8,il[50]=ar,il[51]=lT,il[52]=eX):eX=il[52];let{isCompact:og,isChatCompact:ov,canTogglePresentation:ob}=eX,ox=og&&!ap,oy=iP&&!ap,ow=ac&&!al?!og:an;(!al||i9||iP||!ow)&&lW&&lH(!1);let oS=!iP&&!ou&&(ac&&!al||!og||lI||lB||lW||lY||aO),oz=(ow||ap)&&(al?!iP&&!ou:ac||oS),oj=ac&&al&&ox&&oz&&!i9&&!as&&!am&&null!=iX&&aR?.type==="loading",ok=at&&ac&&!as&&!lN&&ay&&(aT||!oj&&aR?.type==="loading"),oC=og&&ok,oE=ac&&ox&&!i9&&!oy&&!as&&void 0!==iU,oM=oE&&!lN&&null!=iU,oP=oC||oM&&iU.transient,oR=void 0!==i1&&i1||ac;il[53]!==al||il[54]!==i9||il[55]!==iP||il[56]!==ow?(eY=()=>{let e,t=lz.current;if(null==t||!al||i9||iP||!ow)return;let n=()=>{clearTimeout(e),e=void 0},i=t=>{"touch"!==t.pointerType&&(n(),e=setTimeout(()=>{e=void 0,lH(!0)},300))},a=()=>{n(),lH(!1)},l=()=>{document.hidden&&a()};return t.addEventListener("pointerenter",i),t.addEventListener("pointerleave",a),window.addEventListener("blur",a),document.addEventListener("visibilitychange",l),()=>{n(),t.removeEventListener("pointerenter",i),t.removeEventListener("pointerleave",a),window.removeEventListener("blur",a),document.removeEventListener("visibilitychange",l)}},il[53]=al,il[54]=i9,il[55]=iP,il[56]=ow,il[57]=eY):eY=il[57],il[58]!==aS||il[59]!==al||il[60]!==i9||il[61]!==iP||il[62]!==ow?(eZ=[aS,al,i9,iP,ow],il[58]=aS,il[59]=al,il[60]=i9,il[61]=iP,il[62]=ow,il[63]=eZ):eZ=il[63],(0,m.useEffect)(eY,eZ);let oN=!i9&&!og&&!iP&&!i8&&!lY&&!l3;il[64]!==aq||il[65]!==lD||il[66]!==lq?(eU=e=>{null==lz.current||null!=e&&eM(lz.current,e.target,aq)||(lq(null),lD("compact"))},il[64]=aq,il[65]=lD,il[66]=lq,il[67]=eU):eU=il[67];let oT=(0,m.useEffectEvent)(eU);il[68]!==oT||il[69]!==aq?(eG=()=>{let e=lz.current,t=document.activeElement;null!=e&&t instanceof HTMLIFrameElement&&!eM(e,t,aq)&&oT()},il[68]=oT,il[69]=aq,il[70]=eG):eG=il[70];let oD=(0,m.useEffectEvent)(eG);il[71]!==ac||il[72]!==oD||il[73]!==oT||il[74]!==oN?(eQ=()=>{if(!oN)return;document.addEventListener("pointerdown",oT,!0);let e=!0,t=()=>{queueMicrotask(()=>{e&&oD()})};window.addEventListener("blur",t);let n=ac?es.c.subscribe("browser-sidebar-web-contents-pointer-down",()=>oT()):void 0;return()=>{e=!1,window.removeEventListener("blur",t),n?.(),document.removeEventListener("pointerdown",oT,!0)}},il[71]=ac,il[72]=oD,il[73]=oT,il[74]=oN,il[75]=eQ):eQ=il[75],il[76]!==ac||il[77]!==oN?(eJ=[ac,oN],il[76]=ac,il[77]=oN,il[78]=eJ):eJ=il[78],(0,m.useEffect)(eQ,eJ);let oL=aM?.type==="loading";il[79]!==iL||il[80]!==lF||il[81]!==lD||il[82]!==lq?(e0=()=>{lz.current?.focus({preventScroll:!0}),lF(!1),lq(null),iL(!1),lD("expanded")},il[79]=iL,il[80]=lF,il[81]=lD,il[82]=lq,il[83]=e0):e0=il[83];let oq=(0,ex.a)(e0),[o_,oF]=(0,m.useState)(eC);il[84]===Symbol.for("react.memo_cache_sentinel")?(e1=e=>{oF(t=>new Set([...t,e]))},il[84]=e1):e1=il[84];let oI=(0,ex.a)(e1);il[85]!==ac||il[86]!==oI||il[87]!==oq||il[88]!==aC?(e2="ready"!==aC.type?aC:{type:"ready",value:aC.value.map(e=>({id:e.id,content:(0,i.jsx)(F,{title:e.title,preview:e.preview,onOpen:()=>{e.onOpen(),oq()},onDismiss:ac?()=>oI(e.id):e.onDismiss})}))},il[85]=ac,il[86]=oI,il[87]=oq,il[88]=aC,il[89]=e2):e2=il[89];let oA=e2,[oW,oH]=(0,m.useState)(oL);if(oW!==oL&&(oH(oL),ol(!1),lP(null)),il[90]!==i9||il[91]!==iP||il[92]!==oL||il[93]!==lR||il[94]!==oP?(e3=()=>{if(!oP||i9||iP||oL)return;let e=window.setTimeout(()=>lP(lR),1e4);return()=>window.clearTimeout(e)},il[90]=i9,il[91]=iP,il[92]=oL,il[93]=lR,il[94]=oP,il[95]=e3):e3=il[95],il[96]!==aS||il[97]!==i9||il[98]!==iP||il[99]!==oL||il[100]!==lR||il[101]!==oP?(e4=[aS,oP,i9,iP,oL,lR],il[96]=aS,il[97]=i9,il[98]=iP,il[99]=oL,il[100]=lR,il[101]=oP,il[102]=e4):e4=il[102],(0,m.useEffect)(e3,e4),il[103]!==oA||il[104]!==ac||il[105]!==o_||il[106]!==oq||il[107]!==oL||il[108]!==iI||il[109]!==i$||il[110]!==oa){if(e5=oA,ac&&oL&&!oa){let e,t;il[112]===Symbol.for("react.memo_cache_sentinel")?(e=()=>ol(!0),il[112]=e):e=il[112],il[113]!==oq||il[114]!==iI||il[115]!==i$?(t=[{id:"working",content:(0,i.jsx)(F,{title:iI,preview:"",isWorking:!0,workingContent:i$,onOpen:oq,onDismiss:e})}],il[113]=oq,il[114]=iI,il[115]=i$,il[116]=t):t=il[116],e5={type:"ready",value:t}}else if(ac&&"ready"===oA.type){let e;if(il[117]!==oA.value||il[118]!==o_){let t;il[120]!==o_?(t=e=>!o_.has(e.id),il[120]=o_,il[121]=t):t=il[121],e=oA.value.filter(t),il[117]=oA.value,il[118]=o_,il[119]=e}else e=il[119];e5={...oA,value:e}}il[103]=oA,il[104]=ac,il[105]=o_,il[106]=oq,il[107]=oL,il[108]=iI,il[109]=i$,il[110]=oa,il[111]=e5}else e5=il[111];"ready"!==e5.type&&l_&&lF(!1);let oB="ready"===e5.type&&e5.value.length>0&&(ou?iP&&(ac?of:l_)&&!lY:!ac&&og),oO=!ac&&(aR?.type==="loading"||aR?.unread===!0&&!oB),oK=oL||aM?.unread===!0&&(iP||!oB);il[122]!==e5.type||il[123]!==e5.value||il[124]!==ac||il[125]!==oI||il[126]!==oL||il[127]!==lF?(e6=e=>{if("Escape"===e.key&&!e.defaultPrevented)if(e.preventDefault(),lk.current?.contains(document.activeElement)&&lj.current?.focus({preventScroll:!0}),ac){if(oL)ol(!0);else if("ready"===e5.type)for(let e of e5.value)oI(e.id)}else lF(!1)},il[122]=e5.type,il[123]=e5.value,il[124]=ac,il[125]=oI,il[126]=oL,il[127]=lF,il[128]=e6):e6=il[128];let oV=(0,m.useEffectEvent)(e6);il[129]!==oV||il[130]!==oB||il[131]!==i9||il[132]!==iP?(e7=()=>{if(!i9&&iP&&oB)return document.addEventListener("keydown",oV),()=>document.removeEventListener("keydown",oV)},il[129]=oV,il[130]=oB,il[131]=i9,il[132]=iP,il[133]=e7):e7=il[133],il[134]!==oB||il[135]!==i9||il[136]!==iP?(e8=[oB,i9,iP],il[134]=oB,il[135]=i9,il[136]=iP,il[137]=e8):e8=il[137],(0,m.useEffect)(e7,e8);let o$=ow&&oz&&!oy&&!oj&&null==iw,oX=ac&&al&&o$&&aR?.unread===!0;il[138]!==aD?(e9=aD.formatMessage({id:"quickChat.running",defaultMessage:"Running"}),il[138]=aD,il[139]=e9):e9=il[139];let oY=e9;il[140]!==aD?(te=aD.formatMessage({id:"quickChat.unreadResponse",defaultMessage:"Unread response"}),il[140]=aD,il[141]=te):te=il[141];let oZ=te,oU=oL?oY:oZ,oG=lh.endsWith("left"),oQ="bottom-center"===lh,oJ=oG?"left":"right",o0=lp&&!ou?aV:0,o1=46*(null==iu)+(lp||ou?0:aV),o2=on??lm??P,o3=oB&&!iP?a6:0,o4=(iu?.height??aA)-aH-(lp?o3+o0:0),o5=Math.max(0,o4-32-o1-(lp?0:o3)),o6=null==iu?a9/2:Math.max(0,a9-20),o7=ac&&null!=aJ?Math.min(o6,aJ+12):o6,o8=(l5||46)+(ow&&oz?46:0)+(oC?aG:0)+6*!ac,o9=al&&ow&&oz,re=(l5||46)+46*!!o9+(ok?aG:0)+6*!ac,rt=eP(o2.height,Math.min(Math.max(400,l5+46),o5),o5),rn=Math.min(og?o8:Math.max(400,o8),o5),ri=le?o7:Math.min(372,o7),ra=eP(og?o8:o2.height,rn,o5),rl=(0,r.a)(ra),ro=(0,m.useRef)(!1),rr=l5>0,rs=i9||aF||l3||!ac&&(iP||null!=lL)?0:.3,rc=eP(o2.width+12,ri,o7),ru=(0,et.d)(lh,{height:ra,width:rc},o4,a9,12,o1),rd=(0,r.a)(0);il[142]===Symbol.for("react.memo_cache_sentinel")?(tt={x:0,y:0,width:0,height:0},il[142]=tt):tt=il[142];let rh=(0,r.a)(tt);il[143]!==ab||il[144]!==ap||il[145]!==ah||il[146]!==au||il[147]!==rh||il[148]!==rd||il[149]!==id||il[150]!==aF||il[151]!==a_||il[152]!==ad?(tn=()=>{let e,t=ap&&ah&&au?lz.current?.offsetParent:null;if(ap&&ah&&au&&t instanceof HTMLElement){let n=au.getBoundingClientRect(),i=t.getBoundingClientRect(),a=(0,k.b)(n.width,a_),l=ad?.get()??a,o=(0,j.f)(ah.contentPaneWidthRatio.get(),l,"unified"),r=ab?o:l-o;e=`--floating-chat-dock-${id}`,au.style.setProperty(e,`${r}px`),rh.set({x:(0,k.b)(n.left-i.left,a_)+(a-("left"===id?l:r))+4-6,y:(0,k.b)(n.top-i.top,a_)+4,width:r-8+12,height:(0,k.b)(i.bottom-n.top,a_)-8+6})}let n=+!!ap,i=rd.get()===n?null:(0,c.a)(rd,n,{duration:.15*!aF,ease:N.e});return()=>{i?.stop(),null!=e&&au?.style.removeProperty(e)}},il[143]=ab,il[144]=ap,il[145]=ah,il[146]=au,il[147]=rh,il[148]=rd,il[149]=id,il[150]=aF,il[151]=a_,il[152]=ad,il[153]=tn):tn=il[153],il[154]!==iu||il[155]!==ab||il[156]!==ap||il[157]!==ah||il[158]!==au||il[159]!==rh||il[160]!==rd||il[161]!==id||il[162]!==aF||il[163]!==a_||il[164]!==ad?(ti=[iu,12,ab,ap,ah,au,rh,rd,id,aF,ad,a_],il[154]=iu,il[155]=ab,il[156]=ap,il[157]=ah,il[158]=au,il[159]=rh,il[160]=rd,il[161]=id,il[162]=aF,il[163]=a_,il[164]=ad,il[165]=ti):ti=il[165],(0,m.useLayoutEffect)(tn,ti);let rp=(0,s.a)(()=>rd.get()*(rh.get().x-ru.x-ly.get())),rm=(0,s.a)(()=>rd.get()*(rh.get().y-ru.y-lw.get())),rf=(0,s.a)(()=>0===rd.get()?"100%":rc+rd.get()*(rh.get().width-rc));il[166]!==rl||il[167]!==rh||il[168]!==rd?(ta=()=>rl.get()+rd.get()*(rh.get().height-rl.get()),il[166]=rl,il[167]=rh,il[168]=rd,il[169]=ta):ta=il[169];let rg=(0,s.a)(ta);il[170]!==rl||il[171]!==re||il[172]!==rt||il[173]!==al||il[174]!==ox||il[175]!==rd?(tl=()=>Math.max(rd.get(),al&&ox?0:eP((rl.get()-re)/Math.max(1,rt-re),0,1)),il[170]=rl,il[171]=re,il[172]=rt,il[173]=al,il[174]=ox,il[175]=rd,il[176]=tl):tl=il[176];let rv=(0,s.a)(tl);il[177]!==l5||il[178]!==rv||il[179]!==o9||il[180]!==am||il[181]!==rg||il[182]!==rd?(to=()=>Math.max(0,rg.get()-l5-46*((o9?1:rv.get())-(am?0:rd.get()))),il[177]=l5,il[178]=rv,il[179]=o9,il[180]=am,il[181]=rg,il[182]=rd,il[183]=to):to=il[183];let rb=(0,s.a)(to);il[184]!==rv?(tr=()=>1-rv.get(),il[184]=rv,il[185]=tr):tr=il[185];let rx=(0,s.a)(tr);il[186]!==rl||il[187]!==l5||il[188]!==ac||il[189]!==ra||il[190]!==rr||il[191]!==og||il[192]!==lB||il[193]!==rs?(ts=()=>{let e,t=!ro.current&&og;if(rr&&(ro.current=!0),lB||t||0===rs)return void rl.jump(ra);let n=()=>{if(ac){let e=lS.current;if(null!=e&&e.offsetHeight!==Math.round(l5))return void l6(e.offsetHeight)}let t=(0,c.a)(rl,ra,{duration:rs,ease:N.e});e=()=>t.stop()};return ac?u.b.update(n):n(),()=>{(0,u.a)(n),e?.()}},il[186]=rl,il[187]=l5,il[188]=ac,il[189]=ra,il[190]=rr,il[191]=og,il[192]=lB,il[193]=rs,il[194]=ts):ts=il[194];let ry=(0,m.useEffectEvent)(ts),rw=ac?l5:null,rS=ac?null:rr,rz=ac?null:og;il[195]!==ry?(tc=()=>ry(),il[195]=ry,il[196]=tc):tc=il[196],il[197]!==ra||il[198]!==rS||il[199]!==rz||il[200]!==rw||il[201]!==rs?(tu=[ra,rs,rw,rS,rz],il[197]=ra,il[198]=rS,il[199]=rz,il[200]=rw,il[201]=rs,il[202]=tu):tu=il[202],(0,m.useLayoutEffect)(tc,tu);let rj=ac?rv:void 0;il[203]!==rj?(td={"--quick-chat-expansion":rj},il[203]=rj,il[204]=td):td=il[204];let rk=td,rC={height:Math.min(36,o5),width:Math.min(36,o7)},rE=(0,et.f)(iP?lh:l0?.dockPosition??e_,ib),rM=(0,et.d)(rE,rC,o4,a9,0,o1),rP=iP?rC:{height:ra,width:rc},rR=iP?rM:ru,rN=iP?16:10,rT=Math.max(rN,a9-rP.width-rN),rD=o1+rN,rL=Math.max(rN,o4-rP.height-rN);il[205]!==rN||il[206]!==rT||il[207]!==rD||il[208]!==rL?(th={left:rN,right:rT,top:rD,bottom:rL},il[205]=rN,il[206]=rT,il[207]=rD,il[208]=rL,il[209]=th):th=il[209];let rq=th;il[210]===Symbol.for("react.memo_cache_sentinel")?(tp=()=>{lx.current=null},il[210]=tp):tp=il[210],il[211]!==iu||il[212]!==a_?(tm=[iu,a_],il[211]=iu,il[212]=a_,il[213]=tm):tm=il[213],(0,m.useLayoutEffect)(tp,tm);let r_=e=>{if(!i4)return;lx.current=null==iu?null:lz.current?.parentElement?.getBoundingClientRect()??null;let t={x:(0,k.b)(e.clientX-(lx.current?.left??0),a_),y:(0,k.b)(e.clientY-(lx.current?.top??0),a_)};lv.current={x:t.x-rR.x-ly.get(),y:t.y-rR.y-lw.get()},lb.current={point:t,target:null},lf.start(e)},rF=(0,et.d)(rE,{height:ra,width:rc},o4,a9,12,o1),rI=rM.x-rF.x,rA=rM.y-rF.y,rW=rc-rI-rC.width,rH=ra-rA-rC.height;il[214]!==rI||il[215]!==rA||il[216]!==rW||il[217]!==rH?(tf={top:rA,right:rW,bottom:rH,left:rI},il[214]=rI,il[215]=rA,il[216]=rW,il[217]=rH,il[218]=tf):tf=il[218];let rB=tf,rO=`inset(${rB.top}px ${rB.right}px ${rB.bottom}px ${rB.left}px round var(--floating-panel-radius))`,rK=(0,s.a)(()=>{let e=od.get(),t=rl.get()-ra,n=e*(rB.top+(lp?0:t)),i=6+e*(rB.right-6),a=6+e*(rB.bottom+(lp?t:0)-6),l=6+e*(rB.left-6),o=rd.get(),r=0===o?"var(--radius-token-composer-single-line)":`calc(var(--radius-token-composer-single-line) * ${1-o} + var(--app-shell-sidebar-popover-radius) * ${o})`,s=ou||lY||0!==e||0!==t?`inset(${n}px ${i}px ${a}px ${l}px round ${r})`:"none";return{top:n,right:i,bottom:a,left:l,radius:r,clip:s}});il[219]!==rK?(tg=()=>rK.get().top,il[219]=rK,il[220]=tg):tg=il[220];let rV=(0,s.a)(tg);il[221]!==rK?(tv=()=>rK.get().right,il[221]=rK,il[222]=tv):tv=il[222];let r$=(0,s.a)(tv);il[223]!==rK?(tb=()=>rK.get().bottom,il[223]=rK,il[224]=tb):tb=il[224];let rX=(0,s.a)(tb);il[225]!==rK?(tx=()=>rK.get().left,il[225]=rK,il[226]=tx):tx=il[226];let rY=(0,s.a)(tx);il[227]!==rK?(ty=()=>rK.get().radius,il[227]=rK,il[228]=ty):ty=il[228];let rZ=(0,s.a)(ty);il[229]!==rK?(tw=()=>rK.get().clip,il[229]=rK,il[230]=tw):tw=il[230];let rU=(0,s.a)(tw);il[231]!==ac||il[232]!==ou||il[233]!==od||il[234]!==aF?(tS=()=>{if(!ac)return;let e=(0,c.a)(od,+!!ou,{duration:.3*!aF,ease:N.e});return()=>e.stop()},tz=[ac,ou,od,aF],il[231]=ac,il[232]=ou,il[233]=od,il[234]=aF,il[235]=tS,il[236]=tz):(tS=il[235],tz=il[236]),(0,m.useLayoutEffect)(tS,tz);let rG=lp?{top:rA+rC.height}:{bottom:ra-rA},rQ=(0,m.useRef)({dockPosition:lh,dockThreadKey:aS,isMinimized:iP});il[237]!==iT?(tj=()=>{iT?.(null)},il[237]=iT,il[238]=tj):tj=il[238];let rJ=(0,m.useEffectEvent)(tj),r0=(0,m.useEffectEvent)(e=>{let t=(0,et.d)(e,{height:ra,width:rc},o4,a9,12,o1);ly.stop(),lw.stop(),ly.jump(ly.get()+t.x-ru.x),lw.jump(lw.get()+t.y-ru.y);let n=aF?{duration:0}:eS;(0,c.a)(ly,0,n),(0,c.a)(lw,0,n)});(0,m.useLayoutEffect)(()=>{let e=rQ.current;if(rQ.current={dockPosition:lh,dockThreadKey:aS,isMinimized:iP},e.dockThreadKey!==aS){lg.current=!0,l2.current=!0,lf.cancel(),rJ(),ly.jump(0),lw.jump(0);return}if(i9){ly.jump(0),lw.jump(0);return}e.isMinimized!==iP&&r0(e.dockPosition)},[lh,aS,lf,ly,lw,i9,iP]),il[239]!==ly||il[240]!==lw?(tk=()=>()=>{ly.stop(),lw.stop()},tC=[ly,lw],il[239]=ly,il[240]=lw,il[241]=tk,il[242]=tC):(tk=il[241],tC=il[242]),(0,m.useLayoutEffect)(tk,tC);let r1=e=>{let t,n={...rP,left:rR.x+ly.get(),top:rR.y+lw.get()};null!=iu&&null==lx.current&&(lx.current=lz.current?.parentElement?.getBoundingClientRect()??null);let i=null==iu?null:lx.current,a={x:e.point.x-(0,k.b)(i?.left??0,a_),y:e.point.y-(0,k.b)(i?.top??0,a_)};t=ac?(0,et.b)(n,o4,a9,ey.filter(e=>!iP||"bottom-right"===e||la&&"bottom-left"===e).map(e=>(0,et.f)(e,ib)),12*!iP,o1):(0,et.e)({...n,left:n.width>=a9/2-2*rN?a.x-n.width/2:n.left},o4,a9,iP);let l=null==ib?t:(0,et.f)(t,ib),o={x:!ac||iP&&la?Math.min(a.x,a9-a.x):a9-a.x,y:ac?o4-a.y:Math.min(a.y-o1,o4-a.y)},r=o.x<=16+rC.width&&o.y<=16+rC.height;if(ac&&!iP){let e=lb.current;if(null!=e){let t=a.x-e.point.x,n=a.y-e.point.y;Math.hypot(t,n)>=8&&(t>=0&&n>0&&n>=t?e.target="minimize":t>0&&t>2*Math.abs(n)?e.target=null:(t<0||n<0)&&(e.target=null),e.point=a)}let n=a.y-lv.current.y+rP.height-o4;return{dockPosition:l,requestedDockPosition:t,isNearDock:!1,suppressEdgeDrop:r,shouldMinimize:"bottom-right"===l&&e?.target==="minimize"&&n>=.5*rP.width}}let s=(0,et.d)(l,rP,o4,a9,12,o1),c=!iP&&"bottom-center"!==l&&16>=Math.abs(n.left-s.x)&&16>=Math.abs(n.top-s.y);return{dockPosition:l,requestedDockPosition:t,isNearDock:c,suppressEdgeDrop:r,shouldMinimize:c&&r}};il[243]!==i4||il[244]!==iv||il[245]!==ac||il[246]!==aS||il[247]!==iC||il[248]!==la||il[249]!==ai?(tE=(e,t)=>{if(!i4)return;let n=t&&!la;(null==iv||n)&&(null!=aS||ac&&!n)?(0,en.c)(ai,{threadKey:aS??null,minimized:n},e,iC):ls(t=>({expanded:n?t.expanded:e,minimized:n?(0,et.a)(e):t.minimized}))},il[243]=i4,il[244]=iv,il[245]=ac,il[246]=aS,il[247]=iC,il[248]=la,il[249]=ai,il[250]=tE):tE=il[250];let r2=tE,r3=(e,t,n)=>{let i=void 0===n?rP:n,a=(0,et.d)(lh,rP,o4,a9,12*!iP,o1),l={x:a.x+ly.get(),y:a.y+lw.get()},o=(0,et.d)((0,et.f)(e,ib),i,o4,a9,12*!iP,o1);ly.stop(),lw.stop(),ly.jump(l.x-o.x),lw.jump(l.y-o.y),t&&(0,f.flushSync)(()=>{r2(e,iP)});let r=ac?{duration:.3,ease:N.e}:eS,s=aF?{duration:0}:r;lG(!0),Promise.all([(0,c.a)(ly,0,s),(0,c.a)(lw,0,s)]).then(()=>{lG(0!==ly.get()||0!==lw.get())})},r4=(0,m.useEffectEvent)(()=>{lg.current=!0,lf.cancel(),iT?.(null),r3(lh,!1),l1(null),lq(null),lZ(!1)});il[251]!==r4||il[252]!==lf||il[253]!==lY?(tM=()=>{if(!lY)return;let e=e=>{"Escape"===e.key&&(e.preventDefault(),e.stopPropagation(),r4())},t=()=>r4();return window.addEventListener("keydown",e,!0),window.addEventListener("blur",t),window.addEventListener("pointercancel",t,!0),()=>{lg.current=!0,lf.cancel(),window.removeEventListener("keydown",e,!0),window.removeEventListener("blur",t),window.removeEventListener("pointercancel",t,!0)}},il[251]=r4,il[252]=lf,il[253]=lY,il[254]=tM):tM=il[254],il[255]!==lf||il[256]!==lY?(tP=[lf,lY],il[255]=lf,il[256]=lY,il[257]=tP):tP=il[257],(0,m.useLayoutEffect)(tM,tP);let r5=(e,t)=>{let n=ac&&oQ?0:(0,et.c)(lh,e,{height:ra,width:rc},ly.get(),t.width,o4,a9,12),i=ru.y+lw.get(),a=(0,et.d)(lh,t,o4,a9,12,o1),l=eP(i+(lp?0:ra-t.height),o1+10,o4-t.height-10);ly.stop(),lw.stop(),(0,f.flushSync)(()=>{oi({height:og?o2.height:t.height,width:t.width-12})}),ly.jump(n),lw.jump(l-a.y)},r6=e=>{el(ai,{height:og?o2.height:e.height,width:e.width-12},()=>iq?.(lh)),r3(lh,!1,e)};il[258]!==ac||il[259]!==lY||il[260]!==iL||il[261]!==lF||il[262]!==l1||il[263]!==lq?(tR=()=>{lF(!1),lJ(!lY),l1(null),lq(ac?null:{target:"minimized"}),iL(!0)},il[258]=ac,il[259]=lY,il[260]=iL,il[261]=lF,il[262]=l1,il[263]=lq,il[264]=tR):tR=il[264];let r7=tR;if(il[265]!==iv||il[266]!==ac||il[267]!==i8||il[268]!==as||il[269]!==og||il[270]!==i9||il[271]!==iP||il[272]!==iD||il[273]!==iL||il[274]!==lT||il[275]!==i5||il[276]!==lF||il[277]!==lD||il[278]!==lq){let e,t,n,i;t_=()=>{(0,f.flushSync)(()=>{lF(!1),lq(ac?null:{target:lT}),iL(!1)}),tD()},il[286]!==og||il[287]!==lD||il[288]!==lq?(e=()=>{lq(null),lD(og?"expanded":"compact")},il[286]=og,il[287]=lD,il[288]=lq,il[289]=e):e=il[289],tF=e;let a=!i9&&!iP;tN=a&&(null!=iD||!i5&&!og&&!i8),il[290]!==iD||il[291]!==lD||il[292]!==lq?(t=()=>{null!=iD?iD():(lq(null),lD("compact"))},il[290]=iD,il[291]=lD,il[292]=lq,il[293]=t):t=il[293],tT=t,il[294]!==tN||il[295]!==a||il[296]!==tT||il[297]!==i5?(n=e=>{if(!a||"Escape"!==e.key||e.defaultPrevented||e.nativeEvent.isComposing)return;let t=tN&&!e.repeat;!t&&(!i5||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)||(e.preventDefault(),e.stopPropagation(),t&&tT())},il[294]=tN,il[295]=a,il[296]=tT,il[297]=i5,il[298]=n):n=il[298],tq=n,il[299]!==as?(i=()=>{let e=lS.current;return as?(0,Z.a)(e):e?.querySelector("[contenteditable='true']")??null},il[299]=as,il[300]=i):i=il[300],tL=i,tD=()=>{ac&&null==iv&&(lq(null),lD("expanded")),tL()?.focus({preventScroll:!0})},il[265]=iv,il[266]=ac,il[267]=i8,il[268]=as,il[269]=og,il[270]=i9,il[271]=iP,il[272]=iD,il[273]=iL,il[274]=lT,il[275]=i5,il[276]=lF,il[277]=lD,il[278]=lq,il[279]=tN,il[280]=tT,il[281]=tD,il[282]=tL,il[283]=tq,il[284]=t_,il[285]=tF}else tN=il[279],tT=il[280],tD=il[281],tL=il[282],tq=il[283],t_=il[284],tF=il[285];let r8=!i9&&as;il[301]!==tL||il[302]!==as||il[303]!==iP?(tI=()=>{if(null==lz.current||null!=lz.current.closest("[hidden], [inert], [aria-hidden=true]"))return!1;if(as)return iP;let e=tL();if(null==e)return!1;let t=e.closest("[hidden], [inert], [aria-hidden=true]");return null==t||!lS.current?.contains(t)||t===lS.current},il[301]=tL,il[302]=as,il[303]=iP,il[304]=tI):tI=il[304],il[305]!==r8||il[306]!==tI?(tA={enabled:r8,isActive:tI},il[305]=r8,il[306]=tI,il[307]=tA):tA=il[307],(0,V.a)("focusMainChat",iP?t_:tD,tA),il[308]!==aD||il[309]!==og?(tW=aD.formatMessage(og?{id:"quickChat.expandFloatingChat",defaultMessage:"Expand floating chat"}:{id:"quickChat.showCompactFloatingChat",defaultMessage:"Show compact floating chat"}),il[308]=aD,il[309]=og,il[310]=tW):tW=il[310];let r9=tW;il[311]!==ob||il[312]!==r9||il[313]!==tF?(tH=ob?{label:r9,onToggle:tF}:void 0,il[311]=ob,il[312]=r9,il[313]=tF,il[314]=tH):tH=il[314];let se=tH;il[315]!==aD?(tB=aD.formatMessage({id:"quickChat.resizeWidth",defaultMessage:"Resize chat width"}),il[315]=aD,il[316]=tB):tB=il[316];let st=tB;il[317]!==aD?(tO=aD.formatMessage({id:"quickChat.resizeHeight",defaultMessage:"Resize chat height"}),il[317]=aD,il[318]=tO):tO=il[318];let sn=tO;il[319]!==al||il[320]!==lD||il[321]!==lq?(tK=()=>{lq(null),al&&lD("expanded")},il[319]=al,il[320]=lD,il[321]=lq,il[322]=tK):tK=il[322];let si=(0,ex.a)(tK);il[323]!==ac||il[324]!==si||il[325]!==al||il[326]!==lq?(tV=ac||al?si:()=>lq(null),il[323]=ac,il[324]=si,il[325]=al,il[326]=lq,il[327]=tV):tV=il[327];let sa={isCompact:ox,canShowPreviewBubble:oE,isNarrow:l9,isChromeRevealed:oS,isHeaderVisible:oz,isComposerFocused:ac?l$||lB:oS,isDockedTop:lp,isHidden:i9,isMinimized:ou,shouldReduceMotion:aF,onSubmitStart:tV},sl={isMoving:lY||l3||lU,composerContentHeight:l7,dockedReservePx:l5>l7+6*!!ac?ra+10:0};il[328]!==i9||il[329]!==ij?(t$=function(e){!i9&&null!=ij&&(2===e.button||0===e.button&&e.ctrlKey)&&e.target instanceof Element&&(lz.current?.contains(e.target)||null!=e.target.closest("[data-composer-overlay-floating-ui]"))&&e.preventDefault()},il[328]=i9,il[329]=ij,il[330]=t$):t$=il[330];let so=t$;il[331]!==al?(tX=function(e){!al&&e.target instanceof Element&&(!lz.current?.contains(e.target)||null!=e.target.closest("[data-composer-overlay-floating-ui]"))&&e.stopPropagation()},il[331]=al,il[332]=tX):tX=il[332];let sr=tX,ss=ic(sa,sl),sc=i5?"editor-only":null;il[333]!==ot?(tY=e=>{lS.current=e,ot(e)},il[333]=ot,il[334]=tY):tY=il[334],il[335]!==tD?(tZ=e=>{e.target===e.currentTarget&&e.currentTarget.hasPointerCapture(e.pointerId)&&!l2.current&&tD()},il[335]=tD,il[336]=tZ):tZ=il[336],il[337]!==oR||il[338]!==ox||il[339]!==oy||il[340]!==oC?(tU=oR&&!oy&&(!ox||oC)?(0,i.jsx)("div",{"aria-hidden":!0,className:"border-t border-default"}):null,il[337]=oR,il[338]=ox,il[339]=oy,il[340]=oC,il[341]=tU):tU=il[341],il[342]!==aX?(tG={target:aX,homeBannerPlacement:"inline"},il[342]=aX,il[343]=tG):tG=il[343];let su=(0,i.jsxs)("div",{ref:tY,className:(0,l.b)(D.a.floatingComposerInset,"mt-auto shrink-0",i4&&!le&&"[&_[data-composer-input]:has([contenteditable=true]_[data-placeholder])]:touch-none",og&&lp&&"[--composer-overlay-placement:bottom]"),onPointerDownCapture:so,onPointerUp:tZ,onContextMenu:sr,children:[tU,(0,i.jsx)(em.b,{value:{...aj,hasComposerSurface:oR,isFloatingChatSurface:!0,isFloatingTranscriptOpen:!i9&&!og&&!iP,floatingChatSurfaceRef:lz,onFloatingDictationRowChange:lV,floatingComposerPresentation:sa,transcriptTarget:aZ,followLatestTranscript:ac?ox:aj.followLatestTranscript},children:(0,i.jsx)(Y.a,{value:tN?tT:sc,children:(0,i.jsx)(X.a,{value:tG,children:ss})})})]});il[344]!==ox||il[345]!==r7?(tQ=(0,i.jsx)(ee.c,{isCompact:ox,onMinimize:r7}),il[344]=ox,il[345]=r7,il[346]=tQ):tQ=il[346];let sd=tQ,sh=ac||null!=ao?null:sd;if(oj){let e,t,n;il[347]!==tL||il[348]!==tF?(e=()=>{tF(),tL()?.focus({preventScroll:!0})},il[347]=tL,il[348]=tF,il[349]=e):e=il[349],il[350]!==iX||il[351]!==aL?(t=(0,i.jsx)("span",{id:aL,className:"min-w-0 truncate",children:iX}),il[350]=iX,il[351]=aL,il[352]=t):t=il[352],il[353]!==r9||il[354]!==e||il[355]!==t||il[356]!==aL?(n=(0,i.jsx)(q.a,{unstyled:!0,focusRing:"inset",className:"min-w-0 flex-1 px-2 text-start text-sm text-secondary","aria-label":r9,"aria-describedby":aL,"data-quick-chat-drag-handle":!0,onClick:e,children:t}),il[353]=r9,il[354]=e,il[355]=t,il[356]=aL,il[357]=n):n=il[357],tJ=n}else if(null!=iw){let e;il[358]!==sh||il[359]!==iw?(e=iw({leadingControl:sh}),il[358]=sh,il[359]=iw,il[360]=e):e=il[360],tJ=e}else{let e,t,n,a,o,r;il[361]!==oX||il[362]!==oZ?(e=oX&&(0,i.jsx)("span",{className:"sr-only",role:"status","aria-label":oZ}),il[361]=oX,il[362]=oZ,il[363]=e):e=il[363],il[364]!==oO||il[365]!==oY||il[366]!==aR||il[367]!==oZ?(t=oO&&null!=aR?(0,i.jsx)("div",{className:"flex items-center justify-center",role:"status","aria-label":"loading"===aR.type?oY:oZ,children:(0,i.jsx)(ep.a,{statusState:aR})}):null,il[364]=oO,il[365]=oY,il[366]=aR,il[367]=oZ,il[368]=t):t=il[368];let s=oX||void 0,c=(!ac||null==iA)&&"truncate";il[369]!==c?(n=(0,l.b)("group/floating-title min-w-0 text-base font-medium text-secondary",c),il[369]=c,il[370]=n):n=il[370],il[371]!==ac||il[372]!==an||il[373]!==iI||il[374]!==iA?(a=iA??(ac?(0,i.jsx)(ee.b,{children:(0,i.jsx)(eo.a,{children:an?iI:(0,i.jsx)(v.a,{id:"quickChat.newChatTitle",defaultMessage:"New chat"})})}):iI),il[371]=ac,il[372]=an,il[373]=iI,il[374]=iA,il[375]=a):a=il[375],il[376]!==s||il[377]!==n||il[378]!==a||il[379]!==aL?(o=(0,i.jsx)("h2",{id:aL,"data-unread":s,"data-dropdown-overlay-side":"auto",className:n,children:a}),il[376]=s,il[377]=n,il[378]=a,il[379]=aL,il[380]=o):o=il[380],il[381]!==sh||il[382]!==e||il[383]!==t||il[384]!==o?(r=(0,i.jsxs)("div",{className:"flex min-w-0 flex-1 items-center gap-1",children:[sh,e,t,o]}),il[381]=sh,il[382]=e,il[383]=t,il[384]=o,il[385]=r):r=il[385],tJ=r}il[386]!==aO||il[387]!==ox||il[388]!==lY||il[389]!==r7||il[390]!==ij?(t0=ij?.({isCompact:ox,isDragging:lY,open:aO,onMinimize:r7,onOpenChange:aK}),il[386]=aO,il[387]=ox,il[388]=lY,il[389]=r7,il[390]=ij,il[391]=t0):t0=il[391];let sp=ac&&null==ao&&sd;il[392]!==iM?.openRightPaneDisabled||il[393]!==sd||il[394]!==ao?(t1=null!=ao&&(0,i.jsx)(ee.d,{minimizeButton:sd,disabled:iM?.openRightPaneDisabled,onOpenRightPane:ao}),il[392]=iM?.openRightPaneDisabled,il[393]=sd,il[394]=ao,il[395]=t1):t1=il[395],il[396]!==tJ||il[397]!==t0||il[398]!==sp||il[399]!==t1?(t2=(0,i.jsxs)(i.Fragment,{children:[tJ,t0,sp,t1]}),il[396]=tJ,il[397]=t0,il[398]=sp,il[399]=t1,il[400]=t2):t2=il[400];let sm=t2,sf=af?"hidden":"contents";il[401]!==i7||il[402]!==ac||il[403]!==sm||il[404]!==i6||il[405]!==al||il[406]!==ox||il[407]!==oz||il[408]!==iP||il[409]!==se||il[410]!==lL||il[411]!==aF||il[412]!==ow?(t3=ac?(0,i.jsx)(ee.a,{isCompact:al&&ox,isVisible:oz,isDisabled:i6,children:sm}):(0,i.jsx)(ee.e,{expandOnClick:al,animateChrome:!aF&&!iP&&null==lL,isChromeRevealed:oz,isCompact:ox,isDisabled:i6,reserveSpace:al&&ow&&!ox,presentationToggle:i7?se:void 0,children:sm}),il[401]=i7,il[402]=ac,il[403]=sm,il[404]=i6,il[405]=al,il[406]=ox,il[407]=oz,il[408]=iP,il[409]=se,il[410]=lL,il[411]=aF,il[412]=ow,il[413]=t3):t3=il[413],il[414]!==sr||il[415]!==so||il[416]!==sf||il[417]!==t3?(t4=(0,i.jsx)("div",{className:sf,onPointerDownCapture:so,onContextMenu:sr,children:t3}),il[414]=sr,il[415]=so,il[416]=sf,il[417]=t3,il[418]=t4):t4=il[418];let sg=t4,sv=ac?{top:rE.startsWith("top")?rA:void 0,bottom:rE.startsWith("top")?void 0:rB.bottom,left:rI,width:rC.width,height:rC.height,opacity:od}:{inset:0},sb=!iP,sx=iP?az:void 0;il[419]!==ac||il[420]!==ou?(t5=ac?void 0:{opacity:+!!ou},il[419]=ac,il[420]=ou,il[421]=t5):t5=il[421];let sy=!iP||void 0;il[422]!==aF?(t6=aF?{duration:0}:{duration:.3,ease:N.e},il[422]=aF,il[423]=t6):t6=il[423];let sw=iP?"minimized":"preview",sS=iP&&"pointer-events-auto";il[424]!==sS?(t7=(0,l.b)("absolute inset-0 m-auto touch-none",sS),il[424]=sS,il[425]=t7):t7=il[425];let sz=oK?oU:void 0;il[426]!==aD||il[427]!==iB||il[428]!==iI?(t8=iB??aD.formatMessage({id:"quickChat.restoreFloatingChat",defaultMessage:"Restore floating chat: {title}"},{title:iI}),il[426]=aD,il[427]=iB,il[428]=iI,il[429]=t8):t8=il[429];let sj=!i9&&iP&&lQ;il[430]!==t_?(t9=e=>{0!==e.detail&&l2.current||t_()},il[430]=t_,il[431]=t9):t9=il[431],il[432]!==ac||il[433]!==lF?(ne=e=>{ac||"touch"===e.pointerType||lF(!0)},il[432]=ac,il[433]=lF,il[434]=ne):ne=il[434],il[435]!==e5.type||il[436]!==ac||il[437]!==lF?(nt=e=>{"ready"===e5.type&&("ArrowUp"===e.key||"ArrowDown"===e.key)&&(e.preventDefault(),ac||(0,f.flushSync)(()=>lF(!0)),lk.current?.querySelector("button")?.focus({preventScroll:!0}))},il[435]=e5.type,il[436]=ac,il[437]=lF,il[438]=nt):nt=il[438],il[439]!==le||il[440]!==r_?(nn=e=>{le||0!==e.button||(l2.current=!1,e.currentTarget.setPointerCapture(e.pointerId),r_(e))},il[439]=le,il[440]=r_,il[441]=nn):nn=il[441],il[442]!==ac||il[443]!==oK||il[444]!==oL||il[445]!==iW||il[446]!==aM?(ni=oL&&null!=aM&&null==iW?(0,i.jsx)(ep.a,{statusState:aM,size:ac?"default":"compact"}):(0,i.jsx)(U.a,{badgeEnabled:oK,children:iW??(0,i.jsx)(_.Jb,{})}),il[442]=ac,il[443]=oK,il[444]=oL,il[445]=iW,il[446]=aM,il[447]=ni):ni=il[447],il[448]!==sw||il[449]!==t7||il[450]!==sz||il[451]!==t8||il[452]!==sj||il[453]!==t9||il[454]!==ne||il[455]!==nt||il[456]!==nn||il[457]!==ni?(na=(0,i.jsx)(q.a,{ref:lj,className:t7,"aria-description":sz,"aria-label":t8,autoFocus:sj,color:"ghostSecondary",size:"composer",uniform:!0,onClick:t9,onPointerEnter:ne,onKeyDown:nt,onPointerDown:nn,children:ni},sw),il[448]=sw,il[449]=t7,il[450]=sz,il[451]=t8,il[452]=sj,il[453]=t9,il[454]=ne,il[455]=nt,il[456]=nn,il[457]=ni,il[458]=na):na=il[458],il[459]!==sv||il[460]!==sb||il[461]!==sx||il[462]!==t5||il[463]!==sy||il[464]!==t6||il[465]!==na?(nl=(0,i.jsx)(d.a.div,{ref:E.c,className:"pointer-events-none absolute",style:sv,"aria-hidden":sb,"data-pip-obstacle":sx,animate:t5,initial:!1,inert:sy,transition:t6,children:na}),il[459]=sv,il[460]=sb,il[461]=sx,il[462]=t5,il[463]=sy,il[464]=t6,il[465]=na,il[466]=nl):nl=il[466];let sk=nl,sC="ready"===e5.type?(0,i.jsx)(W,{items:e5.value,availableHeight:Math.max(0,(iu?.height??aA)-o1-aH-(iP?rC.height:o8)-32-12),isDockedTop:lp,shouldReduceMotion:aF}):null;!ac&&(no=ew,ou?no=rO:null!=lL||lY||(no="none"));let sE=null!=lL||!iP;il[467]!==ac||il[468]!==rg||il[469]!==rf||il[470]!==rp||il[471]!==rm||il[472]!==rZ?(nr=ac?{x:rp,y:rm,width:rf,height:rg,borderRadius:rZ}:void 0,il[467]=ac,il[468]=rg,il[469]=rf,il[470]=rp,il[471]=rm,il[472]=rZ,il[473]=nr):nr=il[473],il[474]!==ac||il[475]!==rX||il[476]!==rY||il[477]!==rZ||il[478]!==r$||il[479]!==rV?(ns=ac?{top:rV,right:r$,bottom:rX,left:rY,borderRadius:rZ}:void 0,il[474]=ac,il[475]=rX,il[476]=rY,il[477]=rZ,il[478]=r$,il[479]=rV,il[480]=ns):ns=il[480],il[481]!==ra||il[482]!==rc?(nc={height:ra,width:rc},il[481]=ra,il[482]=rc,il[483]=nc):nc=il[483];let sM=ac&&oQ,sP=ac&&!oQ?oJ:void 0,sR=ow&&oz;il[484]!==o5||il[485]!==o7?(nu={height:o5,width:o7},il[484]=o5,il[485]=o7,il[486]=nu):nu=il[486],il[487]!==sk||il[488]!==iH?(nd=null==iH?sk:(0,i.jsx)(G.a,{disableNative:!0,items:iH,children:(0,i.jsx)("div",{className:"contents",children:sk})}),il[487]=sk,il[488]=iH,il[489]=nd):nd=il[489],il[490]!==rn||il[491]!==ri?(nh={height:rn,width:ri},il[490]=rn,il[491]=ri,il[492]=nh):nh=il[492];let sN=!le&&!ap,sT=ou||ac?"panel":is,sD=o$?void 0:iI,sL=o$?aL:void 0,sq=null!=iu&&void 0;il[493]!==i3||il[494]!==rr||il[495]!==aF?(np=i3?{opacity:+!!rr,translateY:8*(!rr&&!aF)}:{},il[493]=i3,il[494]=rr,il[495]=aF,il[496]=np):np=il[496];let s_=ac||l0?.stage!=="approaching"?1:.95;il[497]!==rc||il[498]!==np||il[499]!==s_?(nm={...np,width:rc,scale:s_},il[497]=rc,il[498]=np,il[499]=s_,il[500]=nm):nm=il[500];let sF=!!ac&&void 0!==id&&!!lY||void 0,sI=!ac&&og||void 0,sA=iP?void 0:az,sW=!le,sH=null==iu?void 0:{left:rq.left-rR.x,right:rq.right-rR.x,top:rq.top-rR.y,bottom:rq.bottom-rR.y},sB=null==iu?void 0:0;il[501]!==i3||il[502]!==aF?(nf=!!i3&&!aF&&{opacity:0,translateY:8},il[501]=i3,il[502]=aF,il[503]=nf):nf=il[503];let sO=null==iu?"dialog":"region",sK=lp?o1+10:"auto",sV=lp?"auto":10+aH,s$=oQ?"50%":"auto";il[504]!==oJ||il[505]!==oQ?(ng=!oQ&&{[oJ]:10},il[504]=oJ,il[505]=oQ,il[506]=ng):ng=il[506];let sX=oQ?"-50% 0":void 0,sY="bottom-center"===rE?.5:Number(rE.endsWith("right")),sZ=+!rE.startsWith("top");il[507]!==rl||il[508]!==rk||il[509]!==ly||il[510]!==lw||il[511]!==sK||il[512]!==sV||il[513]!==s$||il[514]!==ng||il[515]!==sX||il[516]!==sY||il[517]!==sZ?(nv={...rk,height:rl,top:sK,bottom:sV,left:s$,right:"auto",...ng,translate:sX,x:ly,y:lw,originX:sY,originY:sZ},il[507]=rl,il[508]=rk,il[509]=ly,il[510]=lw,il[511]=sK,il[512]=sV,il[513]=s$,il[514]=ng,il[515]=sX,il[516]=sY,il[517]=sZ,il[518]=nv):nv=il[518];let sU=.3*!aF;il[519]!==sU?(nb={duration:sU,ease:N.e},il[519]=sU,il[520]=nb):nb=il[520],il[521]!==rs||il[522]!==nb?(nx={duration:rs,ease:N.e,scale:nb},il[521]=rs,il[522]=nb,il[523]=nx):nx=il[523],il[524]!==ac||il[525]!==al||il[526]!==i9||il[527]!==aq||il[528]!==lX||il[529]!==lA||il[530]!==lF||il[531]!==lD||il[532]!==lq||il[533]!==oN?(ny=e=>{if(!(i9||eM(e.currentTarget,e.relatedTarget,aq))){if(null==e.relatedTarget){let t=e.currentTarget;queueMicrotask(()=>{t.ownerDocument.hasFocus()&&eM(t,t.ownerDocument.activeElement,aq)||(lA(!1),lX(!1),lF(!1))});return}lA(!1),lX(!1),lF(!1),(!ac||al)&&oN&&null==e.target.closest("[inert]")&&(lq(null),lD("compact"))}},il[524]=ac,il[525]=al,il[526]=i9,il[527]=aq,il[528]=lX,il[529]=lA,il[530]=lF,il[531]=lD,il[532]=lq,il[533]=oN,il[534]=ny):ny=il[534],il[535]!==ob||il[536]!==ac||il[537]!==tD||il[538]!==og||il[539]!==al||il[540]!==iP||il[541]!==lD||il[542]!==lq||il[543]!==ow||il[544]!==tF?(nw=e=>{if(!(al&&(0!==e.button||e.ctrlKey)||iP||l2.current||e.defaultPrevented||!(e.target instanceof Element)||!e.currentTarget.contains(e.target)||e.target.closest("button, a, input, textarea, select, label, [contenteditable='true'], [role='button'], [role='menuitem'], [role='separator'], [data-composer-input-layout]"))){if(og&&(e.target===e.currentTarget||lS.current?.contains(e.target)))return void tD();if(al){if(!ow||!ob)return;og&&!e.currentTarget.contains(document.activeElement)&&e.currentTarget.focus({preventScroll:!0}),lq(null),lD("expanded");return}if(ac){og&&ob&&tD();return}ow&&ob&&e.target.closest("header[data-quick-chat-drag-handle]")&&(og&&!e.currentTarget.contains(document.activeElement)&&e.currentTarget.focus({preventScroll:!0}),tF())}},il[535]=ob,il[536]=ac,il[537]=tD,il[538]=og,il[539]=al,il[540]=iP,il[541]=lD,il[542]=lq,il[543]=ow,il[544]=tF,il[545]=nw):nw=il[545],il[546]!==ac||il[547]!==o5||il[548]!==o7||il[549]!==rn||il[550]!==ri||il[551]!==iP||il[552]!==iq||il[553]!==ai||il[554]!==oi||il[555]!==lD||il[556]!==lq||il[557]!==r3?(nS=e=>{ac&&!iP&&!l2.current&&!e.defaultPrevented&&e.target instanceof Element&&e.target.closest("header[data-quick-chat-drag-handle]")&&!e.target.closest("button, a, select, [role='button'], [role='menuitem'], [role='separator']")&&(lq(null),lD("expanded"),oi(null),el(ai,P,()=>iq?.("bottom-right")),r3("bottom-right",!0,{height:eP(P.height,rn,o5),width:eP(P.width+12,ri,o7)}))},il[546]=ac,il[547]=o5,il[548]=o7,il[549]=rn,il[550]=ri,il[551]=iP,il[552]=iq,il[553]=ai,il[554]=oi,il[555]=lD,il[556]=lq,il[557]=r3,il[558]=nS):nS=il[558],il[559]!==i9?(nz=e=>{!i9&&l2.current&&e.detail>0&&(e.preventDefault(),e.stopPropagation())},il[559]=i9,il[560]=nz):nz=il[560],il[561]!==ac||il[562]!==r1||il[563]!==l0||il[564]!==e_||il[565]!==iN||il[566]!==lT||il[567]!==l1||il[568]!==lq?(nj=(e,t)=>{let n=r1(t);if(!iN?.(n.suppressEdgeDrop?null:e)&&null!=n.dockPosition&&(ac?n.shouldMinimize:n.isNearDock)){let e=n.shouldMinimize?"minimized":"approaching",t=ac?e_:n.dockPosition;(l0?.stage!==e||l0.dockPosition!==t)&&(l1({dockPosition:t,stage:e}),(n.shouldMinimize||l0?.stage==="minimized")&&lq(ac?null:{target:n.shouldMinimize?"minimized":lT}))}else null!=l0&&"restored"!==l0.stage&&(l1({...l0,stage:"restored"}),"minimized"===l0.stage&&lq(ac?null:{target:lT}))},il[561]=ac,il[562]=r1,il[563]=l0,il[564]=e_,il[565]=iN,il[566]=lT,il[567]=l1,il[568]=lq,il[569]=nj):nj=il[569],il[570]!==ac||il[571]!==ag||il[572]!==ly||il[573]!==lw||il[574]!==r1||il[575]!==ap||il[576]!==la||il[577]!==r7||il[578]!==l0||il[579]!==e_||il[580]!==iT||il[581]!==iN||il[582]!==lT||il[583]!==aa||il[584]!==r2||il[585]!==lZ||il[586]!==l1||il[587]!==lq||il[588]!==aF||il[589]!==r3?(nk=(e,t)=>{if(lg.current)return;let n=r1(t),i=n.suppressEdgeDrop?null:e,a=e=>!!iT?.(i,e)&&(ly.jump(0),lw.jump(0),l1(null),lq(null),lZ(!1),!0),l=av.current;ap&&ag&&l&&i&&iN?.(i)?function(e){let{source:t,getTab:n,destination:i,update:a,reducedMotion:l}=e;K?.animation.skipTransition(),K?.cleanup();let o=t?.ownerDocument??document;if(l||null==t||"function"!=typeof o.startViewTransition)return a();let r=o.documentElement,s=(0,B.a)({...b.b,duration:300,keyframes:[0,1]}).toString();r.style.setProperty("--chat-pin-easing",s.slice(s.indexOf(" ")+1)),r.classList.add(O);let c=[],u=(e,t)=>{null!=e&&(e.classList.add(t),c.push(()=>e.classList.remove(t)))},d=e=>{for(let{element:t,className:n}of[{element:e,className:"surface-CrBPUX"},{element:e.querySelector("[data-docked-chat-toolbar] header"),className:"header-ccGAyF"},{element:e.querySelector("[data-composer-surface-variant]"),className:"composer-u_BJkO"},{element:e.querySelector("[data-composer-input]"),className:"input-RmFnoM"},{element:e.querySelector("[data-composer-leading-controls]"),className:"leading-Ty6zkf"},{element:e.querySelector("[data-composer-trailing-controls]"),className:"trailing-RPbF6R"}])u(t,n)},h=()=>{c.splice(0).forEach(e=>e())},p=!!n()?.getClientRects().length;d(t);let m=null,g=o.startViewTransition(()=>{if(h(),!t.isConnected)return void g.skipTransition();if((0,f.flushSync)(a),null==(m=i()))g.skipTransition();else{d(m),p||u(n()?.closest("[data-tab-id]")??null,"incomingTab-fuq1Db");let e=m.querySelector("[data-composer-surface-variant]");if(null!=e){let t=getComputedStyle(e);r.style.setProperty("--chat-pin-radius",t.borderRadius),r.style.setProperty("--chat-pin-background",t.backgroundColor),r.style.setProperty("--chat-pin-corner-shape",t.getPropertyValue("corner-shape"))}}}),v=()=>{K?.animation===g&&(h(),K=null,r.classList.remove(O),r.style.removeProperty("--chat-pin-easing"),r.style.removeProperty("--chat-pin-radius"),r.style.removeProperty("--chat-pin-background"),r.style.removeProperty("--chat-pin-corner-shape"))};K={animation:g,cleanup:v},g.ready.catch(()=>{}),g.finished.then(v,v)}({source:l,getTab:()=>{let e=aa.get(S.l.tabById$,eg.a);return null==e?null:l.ownerDocument.getElementById((0,z.a)(e.dndId))},destination:()=>aa.get(eb.b),reducedMotion:aF,update:()=>{!lg.current&&(a("pin")||(r3(n.requestedDockPosition,!0),lZ(!1)))}}):a()||(n.shouldMinimize?(0,f.flushSync)(()=>{ac&&la||r2(ac?e_:n.requestedDockPosition,!0),r7()}):(r3(n.requestedDockPosition,!0),null!=l0&&"restored"!==l0.stage&&(l1({...l0,stage:"restored"}),"minimized"===l0.stage&&lq(ac?null:{target:lT}))),lZ(!1))},il[570]=ac,il[571]=ag,il[572]=ly,il[573]=lw,il[574]=r1,il[575]=ap,il[576]=la,il[577]=r7,il[578]=l0,il[579]=e_,il[580]=iT,il[581]=iN,il[582]=lT,il[583]=aa,il[584]=r2,il[585]=lZ,il[586]=l1,il[587]=lq,il[588]=aF,il[589]=r3,il[590]=nk):nk=il[590],il[591]!==ly||il[592]!==lw||il[593]!==lZ||il[594]!==lF?(nC=()=>{lF(!1),lg.current=!1,l2.current=!0,lZ(!0),ly.stop(),lw.stop()},il[591]=ly,il[592]=lw,il[593]=lZ,il[594]=lF,il[595]=nC):nC=il[595],il[596]!==ob||il[597]!==iv||il[598]!==ac||il[599]!==al||il[600]!==lB||il[601]!==lX||il[602]!==lA||il[603]!==lD||il[604]!==lq||il[605]!==ow?(nE=e=>{e.currentTarget.contains(e.target)&&null!=e.target.closest("[data-composer-input], [data-codex-composer-request]")?((!ac||al)&&lA(!0),lX(!0),(al?ow&&ob:ac)&&null==iv&&!e.target.closest("[data-dictation-button], [data-dictation-recording-controls]")&&!(e.relatedTarget instanceof Element&&e.relatedTarget.closest("[data-dictation-button], [data-dictation-recording-controls]"))&&!lB&&null==lK.current&&(lq(null),lD("expanded"))):e.currentTarget.contains(e.target)&&!lS.current?.contains(e.target)&&(lX(!1),al&&e.target.closest("header[data-quick-chat-drag-handle]")&&lA(!0))},il[596]=ob,il[597]=iv,il[598]=ac,il[599]=al,il[600]=lB,il[601]=lX,il[602]=lA,il[603]=lD,il[604]=lq,il[605]=ow,il[606]=nE):nE=il[606],il[607]!==lf||il[608]!==i9?(nM=e=>{i9||"Escape"!==e.key||(l2.current=!0,lf.cancel())},il[607]=lf,il[608]=i9,il[609]=nM):nM=il[609],il[610]!==i4||il[611]!==i9||il[612]!==le||il[613]!==r_?(nP=e=>{if(i9||(l2.current=!1,le||0!==e.button||e.ctrlKey||!(e.target instanceof Element)))return;let t=e.target.closest("[data-quick-chat-drag-handle]"),n=e.target.closest("button, a, input, textarea, select, label, [contenteditable], [role='button'], [role='menuitem'], [role='separator'], [data-composer-input-layout]"),i=lS.current,a=e.target.closest("[data-composer-input]")?.querySelector("[contenteditable='true']:has([data-placeholder])");if(i4&&null!=a&&i?.contains(a)&&(n===a||e.target.contains(a)))t=i;else if(null==t||null!=n&&n!==t)return;e.preventDefault(),t.setPointerCapture(e.pointerId),r_(e)},il[610]=i4,il[611]=i9,il[612]=le,il[613]=r_,il[614]=nP):nP=il[614],il[615]!==lF?(nR=()=>{lk.current?.contains(document.activeElement)||lF(!1)},il[615]=lF,il[616]=nR):nR=il[616],il[617]!==lf||il[618]!==tq||il[619]!==io||il[620]!==sD||il[621]!==sL||il[622]!==sq||il[623]!==nm||il[624]!==sF||il[625]!==sI||il[626]!==sA||il[627]!==sW||il[628]!==sH||il[629]!==sB||il[630]!==nf||il[631]!==sO||il[632]!==nv||il[633]!==nx||il[634]!==ny||il[635]!==nw||il[636]!==nS||il[637]!==nz||il[638]!==nj||il[639]!==nk||il[640]!==nC||il[641]!==nE||il[642]!==nM||il[643]!==nP||il[644]!==nR?(nN={ref:io,"aria-label":sD,"aria-labelledby":sL,"aria-modal":sq,animate:nm,"data-chat-pane-dragging":sF,"data-quick-chat-drag-handle":sI,"data-pip-obstacle":sA,"data-state":"open",drag:sW,dragConstraints:sH,dragElastic:sB,dragControls:lf,dragListener:!1,dragMomentum:!1,initial:nf,role:sO,tabIndex:-1,style:nv,transition:nx,onBlurCapture:ny,onClick:nw,onDoubleClick:nS,onClickCapture:nz,onDrag:nj,onDragEnd:nk,onDragStart:nC,onFocusCapture:nE,onKeyDown:tq,onKeyDownCapture:nM,onPointerDownCapture:nP,onPointerLeave:nR},il[617]=lf,il[618]=tq,il[619]=io,il[620]=sD,il[621]=sL,il[622]=sq,il[623]=nm,il[624]=sF,il[625]=sI,il[626]=sA,il[627]=sW,il[628]=sH,il[629]=sB,il[630]=nf,il[631]=sO,il[632]=nv,il[633]=nx,il[634]=ny,il[635]=nw,il[636]=nS,il[637]=nz,il[638]=nj,il[639]=nk,il[640]=nC,il[641]=nE,il[642]=nM,il[643]=nP,il[644]=nR,il[645]=nN):nN=il[645];let sG=null==iu?"floating":"content",sQ=lp?"bottom":"top";il[646]!==ly||il[647]!==lw||il[648]!==l4||il[649]!==lq?(nT=e=>{l4(e),e&&(lq(null),ly.stop(),lw.stop())},il[646]=ly,il[647]=lw,il[648]=l4,il[649]=lq,il[650]=nT):nT=il[650],il[651]!==e5.type||il[652]!==sC||il[653]!==ac||il[654]!==oB||il[655]!==lp||il[656]!==iP||il[657]!==a8||il[658]!==rG||il[659]!==az||il[660]!==lA?(nD=!ac&&oB&&"ready"===e5.type?(0,i.jsx)("div",{ref:(0,T.a)(lk,a8,E.c),className:(0,l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset)",!iP&&(lp?"top-full":"bottom-full"),lp?"pt-3":"pb-3"),"data-pip-obstacle":az,onClickCapture:()=>{(iP?lj.current:lz.current)?.focus({preventScroll:!0}),lA(!1)},style:iP?rG:void 0,children:sC}):null,il[651]=e5.type,il[652]=sC,il[653]=ac,il[654]=oB,il[655]=lp,il[656]=iP,il[657]=a8,il[658]=rG,il[659]=az,il[660]=lA,il[661]=nD):nD=il[661],il[662]!==sC||il[663]!==ac||il[664]!==oB||il[665]!==lp||il[666]!==iP||il[667]!==a8||il[668]!==rG||il[669]!==lX||il[670]!==lA||il[671]!==aF?(nL=ac&&oB?(0,i.jsx)(d.a.div,{initial:{opacity:0,y:8*!aF},animate:{opacity:1,y:0},exit:{opacity:0,y:8*!aF},transition:{duration:.3*!aF,ease:N.e},ref:(0,T.a)(lk,a8,E.c),className:(0,l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset)",!iP&&(lp?"top-full":"bottom-full"),iP&&(lp?"pt-1":"pb-1")),"data-pip-obstacle":"quick-chat",onClickCapture:()=>{(iP?lj.current:lz.current)?.focus({preventScroll:!0}),lA(!1),lX(!1)},style:iP?rG:void 0,children:iP?(0,i.jsx)(C.c,{variant:"notice",children:sC}):sC},"response-preview"):null,il[662]=sC,il[663]=ac,il[664]=oB,il[665]=lp,il[666]=iP,il[667]=a8,il[668]=rG,il[669]=lX,il[670]=lA,il[671]=aF,il[672]=nL):nL=il[672],il[673]!==nL?(nq=(0,i.jsx)(h.a,{initial:!1,children:nL}),il[673]=nL,il[674]=nq):nq=il[674],il[675]!==rx||il[676]!==ac||il[677]!==aS||il[678]!==tD||il[679]!==ox||il[680]!==oy||il[681]!==lp||il[682]!==i9||il[683]!==iU||il[684]!==aF||il[685]!==oM?(n_=ac&&void 0!==iU&&!i9&&!oy&&(0,i.jsx)(eE,{compact:ox,preview:oM?iU:null,reduceMotion:aF,isDockedTop:lp,opacity:rx,onExpand:tD},aS),il[675]=rx,il[676]=ac,il[677]=aS,il[678]=tD,il[679]=ox,il[680]=oy,il[681]=lp,il[682]=i9,il[683]=iU,il[684]=aF,il[685]=oM,il[686]=n_):n_=il[686];let sJ=lp?"top-full pt-2":"bottom-full";il[687]!==sJ?(nF=(0,l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset) flex flex-col gap-3 pb-3 empty:hidden",sJ),il[687]=sJ,il[688]=nF):nF=il[688],il[689]!==a4||il[690]!==ou||il[691]!==nF?(nI=(0,i.jsx)("div",{ref:a4,className:nF,hidden:ou}),il[689]=a4,il[690]=ou,il[691]=nF,il[692]=nI):nI=il[692];let s0=0===o0&&"pt-2",s1=lp?"w-full":"w-80",s2=oQ&&"left-1/2 -translate-x-1/2",s3=!oQ&&(oG?"left-0":"right-0"),s4=ou&&lY&&"invisible";il[693]!==s0||il[694]!==s1||il[695]!==s2||il[696]!==s3||il[697]!==s4?(nA=(0,l.b)(D.a.floatingComposerInset,"pointer-events-auto absolute top-full max-w-full empty:hidden",s0,s1,s2,s3,s4),il[693]=s0,il[694]=s1,il[695]=s2,il[696]=s3,il[697]=s4,il[698]=nA):nA=il[698],il[699]!==o0?(nW={marginTop:o0},il[699]=o0,il[700]=nW):nW=il[700],il[701]!==ix||il[702]!==a5||il[703]!==az||il[704]!==nA||il[705]!==nW?(nH=(0,i.jsx)("div",{ref:a5,className:nA,style:nW,"data-pip-obstacle":az,children:ix}),il[701]=ix,il[702]=a5,il[703]=az,il[704]=nA,il[705]=nW,il[706]=nH):nH=il[706],il[707]!==no||il[708]!==ac||il[709]!==ou?(nB=ac?void 0:{clipPath:no,opacity:+!ou},il[707]=no,il[708]=ac,il[709]=ou,il[710]=nB):nB=il[710];let s5=!oy&&"pointer-events-auto";il[711]!==s5?(nO=(0,l.b)("relative z-0 flex min-h-0 flex-1 flex-col",s5),il[711]=s5,il[712]=nO):nO=il[712],il[713]!==oh||il[714]!==ac||il[715]!==rU?(nK=ac?{clipPath:rU,opacity:oh}:void 0,il[713]=oh,il[714]=ac,il[715]=rU,il[716]=nK):nK=il[716];let s6=!!oy||void 0;il[717]!==ac||il[718]!==lL||il[719]!==aF?(nV=aF||!ac&&null==lL?{duration:0}:{duration:.3,ease:N.e},il[717]=ac,il[718]=lL,il[719]=aF,il[720]=nV):nV=il[720],il[721]!==ou||il[722]!==rO||il[723]!==lT||il[724]!==lL||il[725]!==lq?(n$=e=>{lL?.target===(ou?"minimized":lT)&&"object"==typeof e&&"clipPath"in e&&e.clipPath===(ou?rO:ew)&&lq(e=>e===lL?null:e)},il[721]=ou,il[722]=rO,il[723]=lT,il[724]=lL,il[725]=lq,il[726]=n$):n$=il[726],il[727]!==ac||il[728]!==og||il[729]!==lp||il[730]!==r7||il[731]!==ow?(nX=!ac&&!ow&&(0,i.jsx)("div",{className:(0,l.b)("minimizeButton-HmBp0q","absolute right-2 z-10",lp?"top-full pt-1":"bottom-full pb-1"),children:(0,i.jsx)(ee.c,{standalone:!0,isCompact:og,onMinimize:r7})}),il[727]=ac,il[728]=og,il[729]=lp,il[730]=r7,il[731]=ow,il[732]=nX):nX=il[732],il[733]!==ac||il[734]!==sg||il[735]!==ox||il[736]!==lY||il[737]!==r7||il[738]!==ij||il[739]!==ow?(nY=(ac||ow)&&(ij?.({contextMenuTrigger:sg,isCompact:ox,isDragging:lY,onMinimize:r7})??sg),il[733]=ac,il[734]=sg,il[735]=ox,il[736]=lY,il[737]=r7,il[738]=ij,il[739]=ow,il[740]=nY):nY=il[740],il[741]!==ih||il[742]!==af?(nZ=af&&(0,i.jsx)(ev.a,{hasPagePicker:ih}),il[741]=ih,il[742]=af,il[743]=nZ):nZ=il[743];let s7=ox&&"justify-end";il[744]!==s7?(nU=(0,l.b)("relative flex min-h-0 flex-1 flex-col",s7),il[744]=s7,il[745]=nU):nU=il[745];let s8=ac?ox:aj.followLatestTranscript;il[746]!==aj||il[747]!==s8?(nG={...aj,isFloatingChatSurface:!0,followLatestTranscript:s8},il[746]=aj,il[747]=s8,il[748]=nG):nG=il[748];let s9=ac?"absolute inset-x-0 overflow-hidden":"contents";il[749]!==l5||il[750]!==ac||il[751]!==rb?(nQ=ac?{bottom:l5,height:rb}:void 0,il[749]=l5,il[750]=ac,il[751]=rb,il[752]=nQ):nQ=il[752],il[753]!==rx||il[754]!==ok||il[755]!==aT||il[756]!==ox||il[757]!==a2||il[758]!==aN||il[759]!==i$?(nJ=ok&&(0,i.jsx)(d.a.div,{className:"pointer-events-none absolute inset-x-(--floating-panel-inset) bottom-0 px-4 py-3 text-sm text-default","aria-hidden":aT||!ox,style:{opacity:rx},ref:a2,children:aT?(0,i.jsx)("span",{className:"line-clamp-2 wrap-anywhere select-none",dir:"auto",children:aN}):i$??(0,i.jsx)(v.a,{id:"quickChat.responseWorking",defaultMessage:"Working…"})}),il[753]=rx,il[754]=ok,il[755]=aT,il[756]=ox,il[757]=a2,il[758]=aN,il[759]=i$,il[760]=nJ):nJ=il[760];let ce=!ac&&(ox?"hidden":"flex"),ct=ac&&"absolute inset-x-0 bottom-0 flex",cn=ac&&"overflow-hidden";il[761]!==ce||il[762]!==ct||il[763]!==cn?(n0=(0,l.b)("mx-(--floating-panel-inset) min-h-0 flex-1 flex-col",ce,ct,cn),il[761]=ce,il[762]=ct,il[763]=cn,il[764]=n0):n0=il[764],il[765]!==l5||il[766]!==ac||il[767]!==rt||il[768]!==rv||il[769]!==ox||il[770]!==ap?(n1=ac?{height:ap?void 0:Math.max(0,rt-46-l5),top:ap?0:void 0,opacity:ox?0:rv}:void 0,il[765]=l5,il[766]=ac,il[767]=rt,il[768]=rv,il[769]=ox,il[770]=ap,il[771]=n1):n1=il[771],il[772]!==ac||il[773]!==ay||il[774]!==ov||il[775]!==ox||il[776]!==i9||il[777]!==ou||il[778]!==iQ||il[779]!==lD||il[780]!==lq?(n2=ay&&(!ov||ac)?iQ?.(()=>{lq(null),lD("compact")},!ox&&!i9&&!ou):null,il[772]=ac,il[773]=ay,il[774]=ov,il[775]=ox,il[776]=i9,il[777]=ou,il[778]=iQ,il[779]=lD,il[780]=lq,il[781]=n2):n2=il[781],il[782]!==ac||il[783]!==ax||il[784]!==ay||il[785]!==ox||il[786]!==rs?(n3=!ay&&(0,i.jsx)(h.a,{initial:!1,children:(ac||!ox)&&null!=ax&&(0,i.jsx)(d.a.div,{className:"flex min-h-0 flex-1 flex-col",initial:!ac&&{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:rs,ease:N.e},children:ax},"empty-state")}),il[782]=ac,il[783]=ax,il[784]=ay,il[785]=ox,il[786]=rs,il[787]=n3):n3=il[787],il[788]!==ox||il[789]!==aU||il[790]!==n0||il[791]!==n1||il[792]!==n2||il[793]!==n3?(n4=(0,i.jsxs)(d.a.div,{ref:aU,"aria-hidden":ox,className:n0,inert:ox,style:n1,children:[n2,n3]}),il[788]=ox,il[789]=aU,il[790]=n0,il[791]=n1,il[792]=n2,il[793]=n3,il[794]=n4):n4=il[794],il[795]!==ac||il[796]!==tD||il[797]!==ok||il[798]!==ox||il[799]!==r9||il[800]!==aN?(n5=ac&&ox&&ok&&(0,i.jsx)(q.a,{unstyled:!0,focusRing:"inset",className:"absolute inset-0","aria-label":r9,"aria-description":aN??void 0,"data-quick-chat-drag-handle":!0,onClick:tD}),il[795]=ac,il[796]=tD,il[797]=ok,il[798]=ox,il[799]=r9,il[800]=aN,il[801]=n5):n5=il[801],il[802]!==s9||il[803]!==nQ||il[804]!==nJ||il[805]!==n4||il[806]!==n5?(n6=(0,i.jsxs)(d.a.div,{className:s9,style:nQ,children:[nJ,n4,n5]}),il[802]=s9,il[803]=nQ,il[804]=nJ,il[805]=n4,il[806]=n5,il[807]=n6):n6=il[807],il[808]!==nG||il[809]!==n6?(n7=(0,i.jsx)(em.b,{value:nG,children:n6}),il[808]=nG,il[809]=n6,il[810]=n7):n7=il[810];let ci=ij?.({contextMenuTrigger:su,isCompact:ox,isDragging:lY,onMinimize:r7})??su;il[811]!==nU||il[812]!==n7||il[813]!==ci?(n8=(0,i.jsxs)("div",{className:nU,children:[n7,ci]}),il[811]=nU,il[812]=n7,il[813]=ci,il[814]=n8):n8=il[814],il[815]!==lh||il[816]!==oy||il[817]!==nB||il[818]!==nO||il[819]!==nK||il[820]!==s6||il[821]!==nV||il[822]!==n$||il[823]!==nX||il[824]!==nY||il[825]!==nZ||il[826]!==n8?(n9=(0,i.jsxs)(d.a.div,{"aria-hidden":oy,animate:nB,className:nO,"data-floating-chat-surface":!0,"data-floating-chat-dock-position":lh,style:nK,initial:!1,inert:s6,transition:nV,onAnimationComplete:n$,children:[nX,nY,nZ,n8]}),il[815]=lh,il[816]=oy,il[817]=nB,il[818]=nO,il[819]=nK,il[820]=s6,il[821]=nV,il[822]=n$,il[823]=nX,il[824]=nY,il[825]=nZ,il[826]=n8,il[827]=n9):n9=il[827],il[828]!==L||il[829]!==r6||il[830]!==og||il[831]!==ou||il[832]!==rB||il[833]!==iy||il[834]!==r5||il[835]!==sn||il[836]!==st||il[837]!==aF||il[838]!==sE||il[839]!==nr||il[840]!==ns||il[841]!==nc||il[842]!==sM||il[843]!==sP||il[844]!==sR||il[845]!==nu||il[846]!==nd||il[847]!==nh||il[848]!==sN||il[849]!==sT||il[850]!==nN||il[851]!==sG||il[852]!==sQ||il[853]!==nT||il[854]!==nD||il[855]!==nq||il[856]!==n_||il[857]!==nI||il[858]!==nH||il[859]!==n9?(ie=(0,i.jsxs)(L,{contentRef:av,allowCompactResize:!0,animateSurface:sE,contentStyle:nr,surfaceStyle:ns,currentSize:nc,heightLabel:sn,resizeFromCenter:sM,fixedHorizontalEdge:sP,isCompact:og,isCompactChromeRevealed:sR,isMinimized:ou,keepSurfaceInset:!0,maximumSize:nu,minimizedContent:nd,minimizedSurfaceBounds:rB,minimumSize:nh,prefersCompactPresentation:!0,resizable:sN,background:sT,sectionRef:lz,sectionProps:nN,shouldReduceMotion:aF,variant:sG,verticalResizeEdge:sQ,widthLabel:st,onResize:r5,onResizeEnd:r6,onResizingChange:nT,children:[nD,nq,n_,nI,nH,n9,iy]}),il[828]=L,il[829]=r6,il[830]=og,il[831]=ou,il[832]=rB,il[833]=iy,il[834]=r5,il[835]=sn,il[836]=st,il[837]=aF,il[838]=sE,il[839]=nr,il[840]=ns,il[841]=nc,il[842]=sM,il[843]=sP,il[844]=sR,il[845]=nu,il[846]=nd,il[847]=nh,il[848]=sN,il[849]=sT,il[850]=nN,il[851]=sG,il[852]=sQ,il[853]=nT,il[854]=nD,il[855]=nq,il[856]=n_,il[857]=nI,il[858]=nH,il[859]=n9,il[860]=ie):ie=il[860];let ca=ie;return il[861]!==aq?(it={id:aq},il[861]=aq,il[862]=it):it=il[862],il[863]!==ac||il[864]!==a1?(ii=ac&&(0,i.jsx)("div",{ref:a1,"aria-hidden":!0,className:(0,l.b)(ef.a,"pointer-events-none invisible absolute")}),il[863]=ac,il[864]=a1,il[865]=ii):ii=il[865],il[866]!==ca||il[867]!==it||il[868]!==ii?(ia=(0,i.jsxs)(Q.a,{value:it,children:[ii,ca]}),il[866]=ca,il[867]=it,il[868]=ii,il[869]=ia):ia=il[869],ia}function eC(){return new Set}function eE(e){let t,n,o,r,s,c=(0,a.c)(17),{compact:u,preview:p,isDockedTop:m,opacity:f,reduceMotion:g,onExpand:v}=e,b=m?"top-full mt-2":"bottom-full mb-2";c[0]!==b?(t=(0,l.b)("pointer-events-none absolute inset-x-(--floating-panel-inset) -z-1 grid grid-cols-1 items-end justify-items-start px-4",b),c[0]=b,c[1]=t):t=c[1],c[2]!==f?(n={opacity:f},c[2]=f,c[3]=n):n=c[3];let x=!u||!p;return c[4]!==u||c[5]!==m||c[6]!==v||c[7]!==p||c[8]!==g?(o=u&&p&&(0,i.jsx)(d.a.div,{className:(0,l.b)("col-start-1 row-start-1 max-w-full",m?"origin-top-left":"origin-bottom-left"),initial:!g&&{y:16,scale:.94,opacity:0},animate:{y:0,scale:1,opacity:1},exit:{opacity:0},transition:g?{duration:0}:{type:"spring",duration:.3,bounce:.16,opacity:{duration:.15}},children:(0,i.jsx)(q.a,{unstyled:!0,className:"pointer-events-auto max-w-full text-start","data-quick-chat-drag-handle":!0,onClick:v,children:p.content})},p.id),c[4]=u,c[5]=m,c[6]=v,c[7]=p,c[8]=g,c[9]=o):o=c[9],c[10]!==o?(r=(0,i.jsx)(h.a,{children:o}),c[10]=o,c[11]=r):r=c[11],c[12]!==t||c[13]!==n||c[14]!==x||c[15]!==r?(s=(0,i.jsx)(d.a.div,{className:t,style:n,inert:x,children:r}),c[12]=t,c[13]=n,c[14]=x,c[15]=r,c[16]=s):s=c[16],s}function eM(e,t,n){return t instanceof Node&&(e.contains(t)||t instanceof Element&&(null!=t.closest("[data-composer-overlay-floating-ui], [data-content-search-bar], [data-composer-focus-target]")||null!=t.closest("[data-floating-chat-annotation-layer]")||t.closest("[data-overlay-owner]")?.getAttribute("data-overlay-owner")===n))}function eP(e,t,n){return Math.max(t,Math.min(e,n))}function eR(){return{width:window.visualViewport?.width??window.innerWidth,height:window.visualViewport?.height??window.innerHeight}}}),eeV6:(function(e,t,n){var i=n("ABep"),a=n("QosV"),l=n("slpy"),o=n("on57"),r=n("IPUh"),s=n("Wf1j"),c=n("Sm6l"),u=n("HOLv"),d=n("V8uZ"),h=n("vRRZ"),p=n("mG0J");n.d(t,{},{a:function(e){let t,n,l,r,s=(0,a.c)(12),{children:c,isCompact:u,isVisible:d,isDisabled:h}=e,p=void 0!==u&&u,m=!d||!!h||void 0,f=p?Number(d):"var(--quick-chat-expansion, 1)";s[0]!==f?(t={opacity:f},s[0]=f,s[1]=t):t=s[1];let g=!d||!!h||void 0,v=p&&"border-b border-default";return s[2]!==v?(n=(0,o.b)("flex h-toolbar cursor-interaction touch-none items-center justify-between px-2 select-none",v),s[2]=v,s[3]=n):n=s[3],s[4]!==c||s[5]!==n?(l=(0,i.jsx)("div",{className:n,children:c}),s[4]=c,s[5]=n,s[6]=l):l=s[6],s[7]!==m||s[8]!==t||s[9]!==g||s[10]!==l?(r=(0,i.jsx)("header",{className:"absolute inset-x-0 top-0 z-10 mx-(--floating-panel-inset) h-toolbar min-h-0 shrink-0 overflow-hidden","aria-hidden":m,style:t,"data-quick-chat-drag-handle":!0,inert:g,children:l}),s[7]=m,s[8]=t,s[9]=g,s[10]=l,s[11]=r):r=s[11],r},b:function(e){let t,n=(0,a.c)(2),{children:l}=e;return n[0]!==l?(t=(0,i.jsx)("span",{className:"flex button-toolbar max-w-full min-w-0 items-center gap-2 border border-transparent py-0 text-sm leading-[18px] font-normal",children:l}),n[0]=l,n[1]=t):t=n[1],t},c:function(e){let t,n,l,o,r=(0,a.c)(11),{isCompact:d,onMinimize:p,standalone:m}=e,f=void 0!==m&&m,g=(0,s.a)();r[0]!==g?(t=g.formatMessage({id:"quickChat.minimize",defaultMessage:"Minimize chat"}),r[0]=g,r[1]=t):t=r[1];let v=f?"outlineSurface":"ghostSecondary",b=d?"composer":"toolbar";return r[2]!==f?(n=e=>{f&&e.preventDefault()},r[2]=f,r[3]=n):n=r[3],r[4]===Symbol.for("react.memo_cache_sentinel")?(l=(0,i.jsx)(u.a,{"aria-hidden":!1,asset:h.a}),r[4]=l):l=r[4],r[5]!==p||r[6]!==t||r[7]!==v||r[8]!==b||r[9]!==n?(o=(0,i.jsx)(c.a,{"aria-label":t,color:v,size:b,uniform:!0,onClick:p,onPointerDown:n,children:l}),r[5]=p,r[6]=t,r[7]=v,r[8]=b,r[9]=n,r[10]=o):o=r[10],o},d:function(e){let t,n,o,r,d,h=(0,a.c)(13),{minimizeButton:m,onOpenRightPane:f,disabled:g}=e,v=(0,s.a)();h[0]!==v?(t=v.formatMessage({id:"quickChat.dock.openInRightPanel",defaultMessage:"Open chat in right panel"}),h[0]=v,h[1]=t):t=h[1];let b=t;return h[2]===Symbol.for("react.memo_cache_sentinel")?(n=(0,i.jsx)(u.a,{className:"rotate-180",asset:p.a}),h[2]=n):n=h[2],h[3]!==g||h[4]!==b||h[5]!==f?(o=(0,i.jsx)(c.a,{"aria-label":b,color:"ghostSecondary",disabled:g,size:"toolbar",uniform:!0,onClick:f,children:n}),h[3]=g,h[4]=b,h[5]=f,h[6]=o):o=h[6],h[7]!==b||h[8]!==o?(r=(0,i.jsx)(l.a,{content:b,children:o}),h[7]=b,h[8]=o,h[9]=r):r=h[9],h[10]!==m||h[11]!==r?(d=(0,i.jsxs)("div",{className:"-me-0.5 flex shrink-0 items-center [--spacing-token-button-composer:--spacing(8)]",children:[m,r]}),h[10]=m,h[11]=r,h[12]=d):d=h[12],d},e:function(e){let t,n,l,s,c,u,h,p=(0,a.c)(28),{animateChrome:m,expandOnClick:f,children:g,isChromeRevealed:v,isCompact:b,isDisabled:x,presentationToggle:y,reserveSpace:w}=e,S=void 0!==f&&f,z=!b&&"shrink-0";p[0]!==z?(t=(0,o.b)("relative min-h-0 overflow-hidden",z),p[0]=z,p[1]=t):t=p[1];let j=!v||!!x||void 0,k=v||w?46:0,C=+!!v;p[2]!==k||p[3]!==C?(n={height:k,opacity:C},p[2]=k,p[3]=C,p[4]=n):n=p[4];let E=!v||!!x||void 0;p[5]!==m||p[6]!==S?(l=m?{duration:.3,ease:d.e,...S?{opacity:{duration:0}}:{}}:{duration:0},p[5]=m,p[6]=S,p[7]=l):l=p[7],p[8]!==b||p[9]!==y?(s=null!=y?(0,i.jsx)("button",{className:"pointer-events-none absolute inset-0 rounded-[inherit] focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset","aria-label":y.label,"aria-expanded":!b,type:"button",onClick:y.onToggle}):null,p[8]=b,p[9]=y,p[10]=s):s=p[10];let M=!S&&null!=y&&b&&"cursor-n-resize",P=!S&&null!=y&&!b&&"cursor-s-resize",R=(S||null==y)&&"cursor-interaction",N=b&&"mx-1.5 border-b border-default px-2",T=!b&&"px-3";return p[11]!==M||p[12]!==P||p[13]!==R||p[14]!==N||p[15]!==T?(c=(0,o.b)("flex h-toolbar touch-none select-none items-center justify-between",M,P,R,N,T),p[11]=M,p[12]=P,p[13]=R,p[14]=N,p[15]=T,p[16]=c):c=p[16],p[17]!==g||p[18]!==c?(u=(0,i.jsx)("div",{className:c,children:g}),p[17]=g,p[18]=c,p[19]=u):u=p[19],p[20]!==s||p[21]!==u||p[22]!==t||p[23]!==j||p[24]!==n||p[25]!==E||p[26]!==l?(h=(0,i.jsxs)(r.a.header,{className:t,"aria-hidden":j,animate:n,"data-quick-chat-drag-handle":!0,initial:!1,inert:E,transition:l,children:[s,u]}),p[20]=s,p[21]=u,p[22]=t,p[23]=j,p[24]=n,p[25]=E,p[26]=l,p[27]=h):h=p[27],h}})}),sArP:(function(e,t,n){n.d(t,{a:()=>h});var i=n("ABep"),a=n("QosV"),l=n("FHYD"),o=n("on57"),r=n("zd8w"),s=n("wD9O");function c(e){let t,n,l,c,d,h,p,m,f,g=(0,a.c)(35),{edge:v,getCurrentSize:b,maximumSize:x,resizeFromCenter:y,minimumSize:w,onResizeEnd:S,onResizingChange:z,setSize:j,verticalEdge:k}=e,C=void 0===v?"left":v,E=void 0!==y&&y,M=void 0===k?"top":k,P=(0,s.c)(),R=(0,r.useRef)(null);g[0]!==C||g[1]!==x||g[2]!==w||g[3]!==E||g[4]!==j||g[5]!==M||g[6]!==P?(t=e=>{let t=R.current;if(null==t||t.pointerId!==e.pointerId)return;e.preventDefault();let n={height:u(t.startSize.height+("top"===M?-1:1)*((0,s.b)(e.clientY,P)-t.startPointer.y),w.height,x.height),width:u(t.startSize.width+(E?2:1)*("left"===C?-1:1)*((0,s.b)(e.clientX,P)-t.startPointer.x),w.width,x.width)};t.didMove||(t.didMove=n.height!==t.startSize.height||n.width!==t.startSize.width),t.lastSize=n,j(n)},g[0]=C,g[1]=x,g[2]=w,g[3]=E,g[4]=j,g[5]=M,g[6]=P,g[7]=t):t=g[7];let N=t;g[8]!==S||g[9]!==z?(n=(e,t)=>{let n=R.current;n?.pointerId===e.pointerId&&(R.current=null,z?.(!1),t&&n.didMove&&S?.(n.lastSize))},g[8]=S,g[9]=z,g[10]=n):n=g[10];let T=n,D="top"===M?"top-0":"bottom-0",L="left"===C?"left-0":"right-0",q="left"===C==("top"===M)?"cursor-nwse-resize":"cursor-nesw-resize";return g[11]!==D||g[12]!==L||g[13]!==q?(l=(0,o.b)("group absolute z-50 flex size-4 touch-none select-none",D,L,q),g[11]=D,g[12]=L,g[13]=q,g[14]=l):l=g[14],g[15]!==T?(c=e=>{T(e,!1)},g[15]=T,g[16]=c):c=g[16],g[17]!==N||g[18]!==T?(d=e=>{N(e),T(e,!0)},g[17]=N,g[18]=T,g[19]=d):d=g[19],g[20]!==b||g[21]!==z||g[22]!==P?(h=e=>{if(0!==e.button)return;e.preventDefault(),e.currentTarget.setPointerCapture?.(e.pointerId);let t=b();R.current={didMove:!1,lastSize:t,pointerId:e.pointerId,startPointer:{x:(0,s.b)(e.clientX,P),y:(0,s.b)(e.clientY,P)},startSize:t},z?.(!0)},g[20]=b,g[21]=z,g[22]=P,g[23]=h):h=g[23],g[24]!==N||g[25]!==T?(p=e=>{N(e),T(e,!0)},g[24]=N,g[25]=T,g[26]=p):p=g[26],g[27]===Symbol.for("react.memo_cache_sentinel")?(m=(0,i.jsx)("div",{className:"pointer-events-none m-auto h-px w-2 rotate-45 bg-text/25 opacity-0 group-hover:opacity-100 group-active:opacity-100"}),g[27]=m):m=g[27],g[28]!==N||g[29]!==c||g[30]!==d||g[31]!==h||g[32]!==p||g[33]!==l?(f=(0,i.jsx)("div",{"aria-hidden":!0,className:l,onLostPointerCapture:c,onPointerCancel:d,onPointerDown:h,onPointerMove:N,onPointerUp:p,children:m}),g[28]=N,g[29]=c,g[30]=d,g[31]=h,g[32]=p,g[33]=l,g[34]=f):f=g[34],f}function u(e,t,n){return Math.min(Math.max(e,t),n)}let d=["left","right"];function h(e){let t,n,o,r,s=(0,a.c)(43),{currentSize:u,defaultSize:h,extendIntoToolbar:p,fixedHorizontalEdge:m,resizeFromCenter:f,heightLabel:g,maximumSize:v,minimumSize:b,onResize:x,onResizeEnd:y,onResizingChange:w,verticalEdge:S,widthLabel:z}=e,j=void 0===p||p,k=void 0!==f&&f,C=void 0===S?"top":S;if(s[0]!==u||s[1]!==h||s[2]!==j||s[3]!==m||s[4]!==g||s[5]!==v||s[6]!==b||s[7]!==x||s[8]!==y||s[9]!==w||s[10]!==k||s[11]!==C||s[12]!==z){let e,a;s[16]!==m?(e=e=>e!==m,s[16]=m,s[17]=e):e=s[17];let r=d.filter(e);s[18]!==u||s[19]!==h||s[20]!==j||s[21]!==v||s[22]!==b||s[23]!==x||s[24]!==y||s[25]!==w||s[26]!==k||s[27]!==z?(a=e=>(0,i.jsx)(l.a,{ariaLabel:z,defaultSize:h.width,edge:e,resizeFromCenter:k,extendIntoToolbar:j,getCurrentSize:()=>u.width,maximumSize:v.width,minimumSize:b.width,onResizeEnd:e=>{y({...u,width:e})},onResizingChange:w,setSize:t=>{x(e,{...u,width:t})}},e),s[18]=u,s[19]=h,s[20]=j,s[21]=v,s[22]=b,s[23]=x,s[24]=y,s[25]=w,s[26]=k,s[27]=z,s[28]=a):a=s[28],t=r.map(a),s[29]!==u||s[30]!==h||s[31]!==g||s[32]!==v||s[33]!==b||s[34]!==x||s[35]!==y||s[36]!==w||s[37]!==C?(n=null!=C&&(0,i.jsx)(l.a,{ariaLabel:g,defaultSize:h.height,edge:C,getCurrentSize:()=>u.height,maximumSize:v.height,minimumSize:b.height,onResizeEnd:e=>{y({...u,height:e})},onResizingChange:w,setSize:e=>{x("right",{...u,height:e})}}),s[29]=u,s[30]=h,s[31]=g,s[32]=v,s[33]=b,s[34]=x,s[35]=y,s[36]=w,s[37]=C,s[38]=n):n=s[38],o=null!=C&&r.map(e=>(0,i.jsx)(c,{edge:e,resizeFromCenter:k,getCurrentSize:()=>u,maximumSize:v,minimumSize:b,verticalEdge:C,onResizeEnd:y,onResizingChange:w,setSize:t=>{x(e,t)}},e)),s[0]=u,s[1]=h,s[2]=j,s[3]=m,s[4]=g,s[5]=v,s[6]=b,s[7]=x,s[8]=y,s[9]=w,s[10]=k,s[11]=C,s[12]=z,s[13]=t,s[14]=n,s[15]=o}else t=s[13],n=s[14],o=s[15];return s[39]!==t||s[40]!==n||s[41]!==o?(r=(0,i.jsxs)(i.Fragment,{children:[t,n,o]}),s[39]=t,s[40]=n,s[41]=o,s[42]=r):r=s[42],r}}),mphG:(function(e,t,n){var i=n("ABep"),a=n("QosV"),l=n("jsiH");n.d(t,{},{a:function(e){let t,n,o=(0,a.c)(4),{children:r,className:s}=e,c=void 0===s?"truncate":s;return o[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,i.jsx)("span",{className:"hidden group-data-[unread=true]/floating-title:contents",children:(0,i.jsx)(l.a,{className:"bg-accent"})}),o[0]=t):t=o[0],o[1]!==r||o[2]!==c?(n=(0,i.jsxs)("span",{className:"contents min-w-0 items-center gap-2 group-data-[unread=true]/floating-title:flex",children:[t,(0,i.jsx)("span",{className:c,children:r})]}),o[1]=r,o[2]=c,o[3]=n):n=o[3],n}})})};
+export const __rspack_esm_ids = [355084];
+export const __webpack_modules__ = {
+    wrxv: (function(e, t, n) {
+        n.d(t, {}, {
+            a: {
+                type: "none"
+            },
+            b: {
+                type: "pending"
+            }
+        })
+    }),
+    nb0y: (function(e, t, n) {
+        n.d(t, {
+            a: () => ej
+        });
+        var i = n("ABep"),
+            a = n("QosV"),
+            l = n("on57"),
+            o = n("h24K"),
+            r = n("K45w"),
+            s = n("W5pg"),
+            c = n("jCHb"),
+            u = n("p5Yg"),
+            d = n("IPUh"),
+            h = n("suct"),
+            p = n("BolX"),
+            m = n("zd8w"),
+            f = n("v7qY"),
+            g = n("Wf1j"),
+            v = n("oyxz"),
+            b = n("I7bK"),
+            x = n("XExW"),
+            y = n("Q2Qp"),
+            w = n("QcW8"),
+            S = n("ZU27"),
+            z = n("BzS0"),
+            j = n("DUYS"),
+            k = n("wD9O"),
+            C = n("rsCP"),
+            E = n("AclY"),
+            M = n("sArP");
+        let P = {
+            height: 640,
+            width: 560
+        };
+        var R = n("hZax"),
+            N = n("V8uZ"),
+            T = n("HgLj"),
+            D = n("DGC8");
+
+        function L(e) {
+            let t, n, o, r, s, c, u, h, p, m, f = (0, a.c)(62),
+                {
+                    allowCompactResize: g,
+                    animateSurface: v,
+                    background: b,
+                    children: x,
+                    currentSize: y,
+                    contentStyle: w,
+                    contentRef: S,
+                    fixedHorizontalEdge: z,
+                    resizeFromCenter: j,
+                    heightLabel: k,
+                    isCompact: L,
+                    isCompactChromeRevealed: q,
+                    isMinimized: _,
+                    keepSurfaceInset: F,
+                    maximumSize: I,
+                    minimizedContent: A,
+                    minimizedSurfaceBounds: W,
+                    minimumSize: H,
+                    onResize: B,
+                    onResizeEnd: O,
+                    onResizingChange: K,
+                    prefersCompactPresentation: V,
+                    resizable: $,
+                    sectionProps: X,
+                    sectionRef: Y,
+                    surfaceStyle: Z,
+                    shouldReduceMotion: U,
+                    variant: G,
+                    verticalResizeEdge: Q,
+                    widthLabel: J
+                } = e,
+                ee = void 0 !== g && g,
+                et = void 0 === v || v,
+                en = void 0 !== j && j,
+                ei = void 0 === $ || $,
+                ea = (0, R.f)("2163293173"),
+                el = !_ && (F || L && !q) ? 6 : 0;
+            f[0] !== _ || f[1] !== W || f[2] !== el ? (t = _ && null != W ? W : {
+                top: 0,
+                right: el,
+                bottom: el,
+                left: el
+            }, f[0] = _, f[1] = W, f[2] = el, f[3] = t) : t = f[3];
+            let eo = t,
+                er = "panel" !== b && "rounded-[inherit]";
+            f[4] !== er ? (n = (0, l.b)("pointer-events-none absolute group-focus-visible/chat-frame:ring-2 group-focus-visible/chat-frame:ring-ring group-focus-visible/chat-frame:ring-offset-0 forced-colors:group-focus-visible/chat-frame:outline-auto", er), f[4] = er, f[5] = n) : n = f[5];
+            let es = n,
+                ec = "panel" !== b || V;
+            f[6] !== X.ref || f[7] !== Y ? (o = (0, T.a)(Y, X.ref, E.c), f[6] = X.ref, f[7] = Y, f[8] = o) : o = f[8];
+            let eu = !ea && V && "frame-Xbg62r",
+                ed = V && "group/chat-frame focus:outline-none",
+                eh = null != W ? "pointer-events-none" : "pointer-events-auto",
+                ep = V && D.a.floatingSurface,
+                em = F && D.a.singleLineSurface,
+                ef = "floating" === G ? "fixed top-0 left-0 z-30 max-h-[calc(100dvh/var(--codex-window-zoom)-var(--height-toolbar)-2rem)] max-w-[calc(50vw/var(--codex-window-zoom))]" : "absolute top-0 left-0 z-30 max-h-full max-w-full",
+                eg = V ? "overflow-visible" : "overflow-hidden";
+            f[9] !== eu || f[10] !== ed || f[11] !== eh || f[12] !== ep || f[13] !== em || f[14] !== ef || f[15] !== eg ? (r = (0, l.b)("flex flex-col text-default", eu, ed, eh, ep, em, ef, eg), f[9] = eu, f[10] = ed, f[11] = eh, f[12] = ep, f[13] = em, f[14] = ef, f[15] = eg, f[16] = r) : r = f[16];
+            let ev = null != w ? "relative flex h-full min-h-0 w-full shrink-0 flex-col rounded-[inherit]" : "contents";
+            f[17] !== ev ? (s = (0, l.b)(ev), f[17] = ev, f[18] = s) : s = f[18], f[19] !== et || f[20] !== b || f[21] !== es || f[22] !== F || f[23] !== A || f[24] !== V || f[25] !== U || f[26] !== eo || f[27] !== Z ? (c = V ? (0, i.jsx)(C.c, {
+                asChild: !0,
+                unstyled: "panel" !== b,
+                variant: F ? "single-line" : "default",
+                children: null != Z ? (0, i.jsx)(d.a.div, {
+                    className: es,
+                    "aria-hidden": null == A || void 0,
+                    style: Z
+                }, "panel-background") : (0, i.jsx)(d.a.div, {
+                    className: es,
+                    "aria-hidden": null == A || void 0,
+                    animate: eo,
+                    initial: !1,
+                    transition: U || !et ? {
+                        duration: 0
+                    } : {
+                        duration: .3,
+                        ease: N.e
+                    },
+                    children: A
+                }, "legacy-background")
+            }) : null, f[19] = et, f[20] = b, f[21] = es, f[22] = F, f[23] = A, f[24] = V, f[25] = U, f[26] = eo, f[27] = Z, f[28] = c) : c = f[28], f[29] !== ee || f[30] !== y || f[31] !== z || f[32] !== k || f[33] !== L || f[34] !== _ || f[35] !== I || f[36] !== H || f[37] !== B || f[38] !== O || f[39] !== K || f[40] !== ei || f[41] !== en || f[42] !== eo || f[43] !== Q || f[44] !== J ? (u = ei && (!L || ee) && !_ ? (0, i.jsx)("div", {
+                className: "pointer-events-none absolute",
+                style: eo,
+                children: (0, i.jsx)("div", {
+                    className: "pointer-events-auto contents",
+                    children: (0, i.jsx)(M.a, {
+                        currentSize: y,
+                        defaultSize: P,
+                        extendIntoToolbar: !1,
+                        fixedHorizontalEdge: z,
+                        resizeFromCenter: en,
+                        heightLabel: k,
+                        maximumSize: I,
+                        minimumSize: H,
+                        verticalEdge: L ? null : Q,
+                        widthLabel: J,
+                        onResize: B,
+                        onResizeEnd: O,
+                        onResizingChange: K
+                    })
+                })
+            }) : null, f[29] = ee, f[30] = y, f[31] = z, f[32] = k, f[33] = L, f[34] = _, f[35] = I, f[36] = H, f[37] = B, f[38] = O, f[39] = K, f[40] = ei, f[41] = en, f[42] = eo, f[43] = Q, f[44] = J, f[45] = u) : u = f[45];
+            let eb = null == Z ? null : A;
+            return f[46] !== x || f[47] !== S || f[48] !== w || f[49] !== s || f[50] !== c || f[51] !== u || f[52] !== eb ? (h = (0, i.jsxs)(d.a.div, {
+                ref: S,
+                className: s,
+                style: w,
+                children: [c, u, eb, x]
+            }), f[46] = x, f[47] = S, f[48] = w, f[49] = s, f[50] = c, f[51] = u, f[52] = eb, f[53] = h) : h = f[53], f[54] !== X || f[55] !== r || f[56] !== h || f[57] !== o ? (p = (0, i.jsx)(d.a.section, {
+                ...X,
+                ref: o,
+                className: r,
+                children: h
+            }), f[54] = X, f[55] = r, f[56] = h, f[57] = o, f[58] = p) : p = f[58], f[59] !== p || f[60] !== ec ? (m = (0, i.jsx)(C.c, {
+                asChild: !0,
+                unstyled: ec,
+                children: p
+            }), f[59] = p, f[60] = ec, f[61] = m) : m = f[61], m
+        }
+        var q = n("Sm6l"),
+            _ = n("bf6R");
+
+        function F(e) {
+            let t, n, l, o, r, s, c, u, d, h, p, f = (0, a.c)(56),
+                {
+                    title: b,
+                    preview: x,
+                    onOpen: y,
+                    onDismiss: w,
+                    isWorking: S,
+                    workingContent: z
+                } = e,
+                j = void 0 !== S && S,
+                k = (0, R.f)("2163293173"),
+                E = (0, g.a)();
+            f[0] !== E || f[1] !== b ? (t = b ?? E.formatMessage({
+                id: "quickChat.mainConversation",
+                defaultMessage: "Chat"
+            }), f[0] = E, f[1] = b, f[2] = t) : t = f[2];
+            let M = t,
+                P = (0, m.useEffectEvent)(w);
+            if (f[3] !== k || f[4] !== P || f[5] !== j ? (n = () => {
+                    if (!k || j) return;
+                    let e = window.setTimeout(() => P(), 1e4);
+                    return () => window.clearTimeout(e)
+                }, f[3] = k, f[4] = P, f[5] = j, f[6] = n) : n = f[6], f[7] !== k || f[8] !== j ? (l = [k, j], f[7] = k, f[8] = j, f[9] = l) : l = f[9], (0, m.useEffect)(n, l), !k) {
+                let e, t, n, a, l, o, r, s, c, u;
+                return f[10] !== E || f[11] !== M ? (e = E.formatMessage({
+                    id: "quickChat.openCompletedResponse",
+                    defaultMessage: "Open completed response: {title}"
+                }, {
+                    title: M
+                }), f[10] = E, f[11] = M, f[12] = e) : e = f[12], f[13] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, i.jsx)(_.mc, {
+                    className: "text-success"
+                }), f[13] = t) : t = f[13], f[14] !== M ? (n = (0, i.jsxs)("span", {
+                    className: "flex min-w-0 items-center gap-2 text-sm font-semibold text-default",
+                    children: [t, (0, i.jsx)("span", {
+                        className: "truncate",
+                        children: M
+                    })]
+                }), f[14] = M, f[15] = n) : n = f[15], f[16] !== x ? (a = x || (0, i.jsx)(v.a, {
+                    id: "quickChat.responseReady",
+                    defaultMessage: "Response ready"
+                }), f[16] = x, f[17] = a) : a = f[17], f[18] !== a ? (l = (0, i.jsx)("span", {
+                    className: "block truncate text-sm text-secondary",
+                    children: a
+                }), f[18] = a, f[19] = l) : l = f[19], f[20] !== y || f[21] !== e || f[22] !== n || f[23] !== l ? (o = (0, i.jsxs)("button", {
+                    className: "min-w-0 flex-1 cursor-interaction rounded-[inherit] px-4 py-3 text-start focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-inset",
+                    "aria-label": e,
+                    type: "button",
+                    onClick: y,
+                    children: [n, l]
+                }), f[20] = y, f[21] = e, f[22] = n, f[23] = l, f[24] = o) : o = f[24], f[25] !== E ? (r = E.formatMessage({
+                    id: "quickChat.dismissCompletedResponse",
+                    defaultMessage: "Dismiss and mark as read"
+                }), f[25] = E, f[26] = r) : r = f[26], f[27] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, i.jsx)(_.uj, {
+                    className: "pointer-events-none"
+                }), f[27] = s) : s = f[27], f[28] !== w || f[29] !== r ? (c = (0, i.jsx)("div", {
+                    className: "absolute -top-1 -left-1 flex rounded-full bg-surface",
+                    children: (0, i.jsx)(q.a, {
+                        "aria-label": r,
+                        color: "outlineSurface",
+                        radius: "full",
+                        size: "iconCircleSm",
+                        onClick: w,
+                        children: s
+                    })
+                }), f[28] = w, f[29] = r, f[30] = c) : c = f[30], f[31] !== o || f[32] !== c ? (u = (0, i.jsxs)(C.c, {
+                    className: "relative flex shrink-0 select-none",
+                    role: "status",
+                    variant: "notice",
+                    children: [o, c]
+                }), f[31] = o, f[32] = c, f[33] = u) : u = f[33], u
+            }
+            return f[34] !== E || f[35] !== M ? (o = E.formatMessage({
+                id: "quickChat.openCompletedResponse",
+                defaultMessage: "Open completed response: {title}"
+            }, {
+                title: M
+            }), f[34] = E, f[35] = M, f[36] = o) : o = f[36], f[37] !== j || f[38] !== x || f[39] !== z ? (r = j ? z ?? (0, i.jsx)(v.a, {
+                id: "quickChat.responseWorking",
+                defaultMessage: "Working…"
+            }) : x || (0, i.jsx)(v.a, {
+                id: "quickChat.responseReady",
+                defaultMessage: "Response ready"
+            }), f[37] = j, f[38] = x, f[39] = z, f[40] = r) : r = f[40], f[41] !== r ? (s = (0, i.jsx)("span", {
+                className: "line-clamp-2 min-w-0 flex-1 text-sm whitespace-normal text-default",
+                children: r
+            }), f[41] = r, f[42] = s) : s = f[42], f[43] !== y || f[44] !== o || f[45] !== s ? (c = (0, i.jsx)(q.a, {
+                unstyled: !0,
+                focusRing: "inset",
+                className: "min-w-0 flex-1 rounded-[inherit] px-4 py-3 pe-10 text-start",
+                "aria-label": o,
+                type: "button",
+                onClick: y,
+                children: s
+            }), f[43] = y, f[44] = o, f[45] = s, f[46] = c) : c = f[46], f[47] !== E ? (u = E.formatMessage({
+                id: "quickChat.dismissResponsePreview",
+                defaultMessage: "Dismiss response preview"
+            }), f[47] = E, f[48] = u) : u = f[48], f[49] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, i.jsx)(_.uj, {
+                className: "pointer-events-none"
+            }), f[49] = d) : d = f[49], f[50] !== w || f[51] !== u ? (h = (0, i.jsx)("div", {
+                className: "absolute top-3 right-2 flex rounded-full",
+                children: (0, i.jsx)(q.a, {
+                    "aria-label": u,
+                    color: "ghostSecondary",
+                    radius: "full",
+                    size: "iconCircleSm",
+                    onClick: w,
+                    children: d
+                })
+            }), f[50] = w, f[51] = u, f[52] = h) : h = f[52], f[53] !== h || f[54] !== c ? (p = (0, i.jsxs)("div", {
+                className: "relative flex shrink-0 select-none",
+                role: "status",
+                children: [c, h]
+            }), f[53] = h, f[54] = c, f[55] = p) : p = f[55], p
+        }
+        var I = n("v0Gf"),
+            A = n("nsuH");
+
+        function W(e) {
+            let t, n, l, o, r, s, c = (0, a.c)(23),
+                {
+                    items: u,
+                    availableHeight: h,
+                    isDockedTop: p,
+                    shouldReduceMotion: f
+                } = e,
+                g = (0, R.f)("2163293173"),
+                [v, b] = (0, m.useState)(null);
+            c[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (e, t) => {
+                let n = t.firstElementChild;
+                n instanceof HTMLElement && b(n.offsetHeight)
+            }, c[0] = t) : t = c[0];
+            let x = (0, A.b)(t),
+                y = Math.min(null == v ? h : 3 * v + 24, Math.max(0, h - 16)),
+                w = .3 * !f;
+            c[1] !== w ? (n = {
+                duration: w,
+                ease: N.e
+            }, c[1] = w, c[2] = n) : n = c[2];
+            let S = n,
+                z = g ? "min-w-0" : "-mx-6 -my-2",
+                j = g ? "overflow-y-auto overscroll-contain" : "overflow-y-auto overscroll-contain px-6 py-2",
+                k = y + 16;
+            c[3] !== k ? (l = {
+                style: {
+                    maxHeight: k
+                }
+            }, c[3] = k, c[4] = l) : l = c[4];
+            let C = g ? "relative flex flex-col" : "relative flex flex-col gap-3";
+            if (c[5] !== p || c[6] !== u || c[7] !== f || c[8] !== S) {
+                let e;
+                c[10] !== p || c[11] !== f || c[12] !== S ? (e = e => {
+                    let {
+                        id: t,
+                        content: n
+                    } = e;
+                    return (0, i.jsx)(d.a.div, {
+                        className: "shrink-0",
+                        layout: !f && "position",
+                        transition: S,
+                        children: (0, i.jsx)(d.a.div, {
+                            initial: {
+                                opacity: 0,
+                                transform: `translateY(${f?0:8*(p?-1:1)}px)`
+                            },
+                            animate: {
+                                opacity: 1,
+                                transform: "translateY(0px)"
+                            },
+                            transition: {
+                                ...S,
+                                opacity: {
+                                    ease: "linear"
+                                }
+                            },
+                            children: n
+                        })
+                    }, t)
+                }, c[10] = p, c[11] = f, c[12] = S, c[13] = e) : e = c[13], o = u.map(e), c[5] = p, c[6] = u, c[7] = f, c[8] = S, c[9] = o
+            } else o = c[9];
+            return c[14] !== x || c[15] !== C || c[16] !== o ? (r = (0, i.jsx)("div", {
+                ref: x,
+                className: C,
+                children: o
+            }), c[14] = x, c[15] = C, c[16] = o, c[17] = r) : r = c[17], c[18] !== r || c[19] !== z || c[20] !== j || c[21] !== l ? (s = (0, i.jsx)(I.a, {
+                className: z,
+                fade: "mask",
+                scrollClassName: j,
+                scrollProps: l,
+                children: r
+            }), c[18] = r, c[19] = z, c[20] = j, c[21] = l, c[22] = s) : s = c[22], s
+        }
+        var H = n("wrxv"),
+            B = n("oNzN"),
+            O = "active-PrspLR";
+        let K = null;
+        var V = n("EFj1"),
+            $ = n("BjWL"),
+            X = n("vi3X"),
+            Y = n("fDIZ"),
+            Z = n("AKr5"),
+            U = n("X7C7"),
+            G = n("rmk3"),
+            Q = n("giDA"),
+            J = n("YzWZ"),
+            ee = n("eeV6"),
+            et = n("Xyz8"),
+            en = n("zj7j"),
+            ei = n("Z2JT");
+        let ea = (0, n("Nwp9").b)("quick-chat-size-v1", P);
+
+        function el(e, t, n) {
+            let i = e.get(ea);
+            e.set(ea, t), (null == i || i.height !== t.height || i.width !== t.width) && n?.()
+        }
+        var eo = n("mphG"),
+            er = n("T1PX"),
+            es = n("TL6G"),
+            ec = n("rkZ2"),
+            eu = n("f4Vb"),
+            ed = n("OWtl"),
+            eh = n("tSEg"),
+            ep = n("j89V"),
+            em = n("El6m"),
+            ef = n("KkZX"),
+            eg = n("XMPL"),
+            ev = n("ZDXf"),
+            eb = n("fRoJ"),
+            ex = n("bIvi");
+        let ey = ["bottom-center", "bottom-left", "bottom-right"],
+            ew = "inset(0px 0px 0px 0px round var(--floating-panel-radius))",
+            eS = {
+                type: "spring",
+                bounce: .16,
+                duration: .42
+            },
+            ez = (0, p.u)(ed.a, eR, {
+                getServerSnapshot: () => ({
+                    width: 0,
+                    height: 0
+                }),
+                isEqual: (e, t) => e.width === t.width && e.height === t.height,
+                onMount: e => {
+                    let t = window.visualViewport,
+                        n = () => e(eR());
+                    return window.addEventListener("resize", n), t?.addEventListener("resize", n), n(), () => {
+                        window.removeEventListener("resize", n), t?.removeEventListener("resize", n)
+                    }
+                }
+            });
+
+        function ej(e) {
+            let t, n, l, o, r = (0, a.c)(10);
+            return r[0] !== e ? ({
+                contentChat: t,
+                ...n
+            } = e, r[0] = e, r[1] = t, r[2] = n) : (t = r[1], n = r[2]), r[3] !== t || r[4] !== n ? (l = null == t ? n.renderMenu : e => e.contextMenuTrigger ?? (null == t.onOpenRightPane && n.renderMenu?.(e)), r[3] = t, r[4] = n, r[5] = l) : l = r[5], r[6] !== t || r[7] !== n || r[8] !== l ? (o = (0, i.jsx)(ek, {
+                ...n,
+                contentChat: t,
+                renderMenu: l
+            }), r[6] = t, r[7] = n, r[8] = l, r[9] = o) : o = r[9], o
+        }
+
+        function ek(e) {
+            let t, n, M, I, ej, ek, eR, eN, eT, eD, eL, eq, e_, eF, eI, eA, eW, eH, eB, eO, eK, eV, e$, eX, eY, eZ, eU, eG, eQ, eJ, e0, e1, e2, e3, e4, e5, e6, e7, e8, e9, te, tt, tn, ti, ta, tl, to, tr, ts, tc, tu, td, th, tp, tm, tf, tg, tv, tb, tx, ty, tw, tS, tz, tj, tk, tC, tE, tM, tP, tR, tN, tT, tD, tL, tq, t_, tF, tI, tA, tW, tH, tB, tO, tK, tV, t$, tX, tY, tZ, tU, tG, tQ, tJ, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, ne, nt, nn, ni, na, nl, no, nr, ns, nc, nu, nd, nh, np, nm, nf, ng, nv, nb, nx, ny, nw, nS, nz, nj, nk, nC, nE, nM, nP, nR, nN, nT, nD, nL, nq, n_, nF, nI, nA, nW, nH, nB, nO, nK, nV, n$, nX, nY, nZ, nU, nG, nQ, nJ, n0, n1, n2, n3, n4, n5, n6, n7, n8, n9, ie, it, ii, ia, il = (0, a.c)(870),
+                {
+                    ref: io,
+                    animateOnMount: ir,
+                    background: is,
+                    renderComposer: ic,
+                    containerSize: iu,
+                    previewSide: id,
+                    hasPagePicker: ih,
+                    dockThreadKey: ip,
+                    canDock: im,
+                    preserveLayoutOnEscape: ig,
+                    compactInputPosition: iv,
+                    reservedDockPosition: ib,
+                    footer: ix,
+                    overlay: iy,
+                    renderHeaderContent: iw,
+                    headerInteractionDisabled: iS,
+                    allowLegacyHeaderToggle: iz,
+                    renderMenu: ij,
+                    forceExpanded: ik,
+                    hasConversation: iC,
+                    isHidden: iE,
+                    contentChat: iM,
+                    isMinimized: iP,
+                    isCollisionObstacle: iR,
+                    onDragOver: iN,
+                    onDragEnd: iT,
+                    onEscape: iD,
+                    onMinimizedChange: iL,
+                    onResize: iq,
+                    presentation: i_,
+                    onPresentationChange: iF,
+                    title: iI,
+                    titleContent: iA,
+                    minimizedIcon: iW,
+                    minimizedMenuItems: iH,
+                    restoreLabel: iB,
+                    statusState: iO,
+                    titleStatusState: iK,
+                    notifications: iV,
+                    workingPreview: i$,
+                    compactWorkingPreview: iX,
+                    responsePreview: iY,
+                    showResponsePreview: iZ,
+                    previewBubble: iU,
+                    emptyState: iG,
+                    renderTranscript: iQ,
+                    hasTranscript: iJ,
+                    pendingFormId: i0,
+                    showComposerDivider: i1,
+                    showHeader: i2
+                } = e,
+                i3 = void 0 !== ir && ir,
+                i4 = void 0 === im || im,
+                i5 = void 0 !== ig && ig,
+                i6 = void 0 !== iS && iS,
+                i7 = void 0 === iz || iz,
+                i8 = void 0 !== ik && ik,
+                i9 = void 0 !== iE && iE,
+                ae = void 0 === iK ? iO : iK,
+                at = void 0 === iZ || iZ,
+                an = void 0 === i2 || i2,
+                ai = (0, p.y)(ed.a),
+                aa = (0, p.y)(eh.a),
+                al = null != iM,
+                ao = iM?.onOpenRightPane,
+                ar = (0, p.z)(void 0 === i0 ? null : i0),
+                as = null != ar,
+                ac = (0, R.f)("2163293173"),
+                au = (0, m.useContext)(y.a),
+                ad = (0, m.useContext)(x.a)?.workspaceTargetWidth,
+                ah = (0, m.useContext)(b.c),
+                ap = ac && !i9 && null != id && null != ah && null != au,
+                am = (0, p.z)(!!ac && void 0 !== id && ec.c),
+                af = ap && !am,
+                ag = (0, p.z)(ap ? w.gb : null),
+                av = (0, m.useRef)(null),
+                ab = (0, p.z)(!!ap && w.jb),
+                ax = ac ? iG : void 0,
+                ay = iJ ?? null != iQ,
+                aw = ay || null != ax,
+                aS = (0, p.z)(ip) ?? void 0,
+                az = void 0 === iR || iR ? "quick-chat" : void 0,
+                aj = (0, m.useContext)(em.b),
+                ak = (0, p.z)(iV),
+                aC = as ? H.a : ak ?? H.a,
+                aE = (0, p.z)(iO);
+            il[0] !== aE || il[1] !== aC.type ? (t = "ready" === aC.type ? {
+                ...aE,
+                type: aE?.type ?? "idle",
+                unread: !0
+            } : aE, il[0] = aE, il[1] = aC.type, il[2] = t) : t = il[2];
+            let aM = t,
+                aP = (0, p.z)(ae),
+                aR = ae === iO ? aM : aP,
+                aN = (0, p.z)(ac && at ? iY : null),
+                aT = !!aN,
+                aD = (0, g.a)(),
+                aL = (0, m.useId)(),
+                aq = (0, m.useId)(),
+                a_ = (0, k.c)(),
+                aF = (0, er.a)(),
+                aI = (0, p.z)(ez);
+            il[3] !== aI.height || il[4] !== a_ ? (n = (0, k.b)(aI.height, a_), il[3] = aI.height, il[4] = a_, il[5] = n) : n = il[5];
+            let aA = n,
+                aW = (0, k.b)(aI.width, a_),
+                [aH, aB] = (0, m.useState)(0),
+                [aO, aK] = (0, m.useState)(!1),
+                [aV, a$] = (0, m.useState)(0),
+                [aX, aY] = (0, m.useState)(null),
+                [aZ, aU] = (0, m.useState)(null),
+                [aG, aQ] = (0, m.useState)(0),
+                [aJ, a0] = (0, m.useState)(null);
+            il[6] === Symbol.for("react.memo_cache_sentinel") ? (M = e => {
+                e.contentRect.width > 0 && a0(e.contentRect.width)
+            }, il[6] = M) : M = il[6];
+            let a1 = (0, A.b)(M);
+            il[7] === Symbol.for("react.memo_cache_sentinel") ? (I = e => {
+                aQ((0, eu.a)(e).height)
+            }, il[7] = I) : I = il[7];
+            let a2 = (0, A.b)(I);
+            il[8] === Symbol.for("react.memo_cache_sentinel") ? (ej = e => {
+                a$((0, eu.a)(e).height)
+            }, il[8] = ej) : ej = il[8];
+            let a3 = (0, A.b)(ej);
+            il[9] !== a3 ? (ek = e => {
+                aY(e), a3(e)
+            }, il[9] = a3, il[10] = ek) : ek = il[10];
+            let a4 = (0, ex.a)(ek);
+            il[11] === Symbol.for("react.memo_cache_sentinel") ? (eR = e => {
+                aB((0, eu.a)(e).height)
+            }, il[11] = eR) : eR = il[11];
+            let a5 = (0, A.b)(eR),
+                [a6, a7] = (0, m.useState)(0);
+            il[12] === Symbol.for("react.memo_cache_sentinel") ? (eN = e => {
+                a7((0, eu.a)(e).height)
+            }, il[12] = eN) : eN = il[12];
+            let a8 = (0, A.b)(eN),
+                a9 = iu?.width ?? aW,
+                le = aW < 640;
+            il[13] !== i4 || il[14] !== ac ? (eT = () => i4 ? ac ? "bottom-right" : (0, J.a)() : "bottom-center", il[13] = i4, il[14] = ac, il[15] = eT) : eT = il[15];
+            let [lt] = (0, m.useState)(eT), ln = aS ?? null;
+            il[16] !== ln ? (eD = {
+                threadKey: ln,
+                minimized: !1
+            }, il[16] = ln, il[17] = eD) : eD = il[17];
+            let li = (0, p.x)(i4 ? en.a : void 0, eD),
+                la = al && i4,
+                ll = aS ?? null;
+            il[18] !== ll ? (eL = {
+                threadKey: ll,
+                minimized: !0
+            }, il[18] = ll, il[19] = eL) : eL = il[19];
+            let lo = (0, p.x)(i4 && !al ? en.a : void 0, eL);
+            il[20] === Symbol.for("react.memo_cache_sentinel") ? (eq = {}, il[20] = eq) : eq = il[20];
+            let [lr, ls] = (0, m.useState)(eq), lc = (null != aS || ac ? null : lr.expanded) ?? li ?? lt, lu = null == iv ? lc : lr.expanded ?? iv, ld = le ? "bottom-center" : lu;
+            il[21] !== ac || il[22] !== aS || il[23] !== ld || il[24] !== la || il[25] !== lr || il[26] !== lo ? (e_ = "bottom-right", la ? e_ = (0, et.a)(ld) : ac || (e_ = (null == aS ? lr.minimized : null) ?? lo ?? "bottom-right"), il[21] = ac, il[22] = aS, il[23] = ld, il[24] = la, il[25] = lr, il[26] = lo, il[27] = e_) : e_ = il[27];
+            let lh = i4 ? (0, et.f)(iP ? e_ : ld, ib) : "bottom-center",
+                lp = lh.startsWith("top"),
+                lm = (0, p.z)(ea),
+                lf = (0, o.a)(),
+                lg = (0, m.useRef)(!1);
+            il[28] === Symbol.for("react.memo_cache_sentinel") ? (eF = {
+                x: 0,
+                y: 0
+            }, il[28] = eF) : eF = il[28];
+            let lv = (0, m.useRef)(eF),
+                lb = (0, m.useRef)(null),
+                lx = (0, m.useRef)(null),
+                ly = (0, r.a)(0),
+                lw = (0, r.a)(0),
+                lS = (0, m.useRef)(null),
+                lz = (0, m.useRef)(null),
+                lj = (0, m.useRef)(null),
+                lk = (0, m.useRef)(null),
+                [lC, lE] = (0, m.useState)("compact"),
+                [lM, lP] = (0, m.useState)(null),
+                lR = iU?.id ?? "",
+                lN = lM === lR,
+                lT = i_ ?? lC;
+            il[29] !== aw || il[30] !== i_ || il[31] !== al || il[32] !== iF ? (eI = e => {
+                (al || "expanded" !== e || aw) && (null == i_ && lE(e), lP(null), iF?.(e))
+            }, il[29] = aw, il[30] = i_, il[31] = al, il[32] = iF, il[33] = eI) : eI = il[33];
+            let lD = eI,
+                [lL, lq] = (0, m.useState)(null),
+                [l_, lF] = (0, m.useState)(!1),
+                [lI, lA] = (0, m.useState)(!1),
+                [lW, lH] = (0, m.useState)(!1),
+                [lB, lO] = (0, m.useState)(!1),
+                lK = (0, m.useRef)(null);
+            il[34] === Symbol.for("react.memo_cache_sentinel") ? (eA = e => {
+                (null != lK.current && (cancelAnimationFrame(lK.current), lK.current = null), null != e) ? lO(!0): lK.current = requestAnimationFrame(() => {
+                    lK.current = null, lO(!1)
+                })
+            }, il[34] = eA) : eA = il[34];
+            let lV = eA;
+            il[35] === Symbol.for("react.memo_cache_sentinel") ? (eW = () => () => {
+                null != lK.current && cancelAnimationFrame(lK.current)
+            }, eH = [], il[35] = eW, il[36] = eH) : (eW = il[35], eH = il[36]), (0, m.useEffect)(eW, eH);
+            let [l$, lX] = (0, m.useState)(!1), [lY, lZ] = (0, m.useState)(!1), [lU, lG] = (0, m.useState)(!1), [lQ, lJ] = (0, m.useState)(!0), [l0, l1] = (0, m.useState)(null), l2 = (0, m.useRef)(!1), [l3, l4] = (0, m.useState)(!1), [l5, l6] = (0, m.useState)(0), [l7, l8] = (0, m.useState)(0), [l9, oe] = (0, m.useState)(!1);
+            il[37] !== ac || il[38] !== a_ ? (eB = (e, t) => {
+                l6(ac ? (0, eu.a)(e).height : e.contentRect.height), oe(e.contentRect.width < 640);
+                let n = t.querySelector(`[${$.a}]`)?.getBoundingClientRect().height ?? 0;
+                l8(Math.max(0, e.contentRect.height - (0, k.b)(n, a_)))
+            }, il[37] = ac, il[38] = a_, il[39] = eB) : eB = il[39];
+            let ot = (0, A.b)(eB),
+                [on, oi] = (0, m.useState)(null),
+                [oa, ol] = (0, m.useState)(!1),
+                [oo, or] = (0, m.useState)(aS);
+            oo !== aS && (or(aS), ls({}), lZ(!1), lG(!1), l1(null), lq(null), lH(!1), ol(!1), lP(null));
+            let [os, oc] = (0, m.useState)(ar);
+            os !== ar && (oc(ar), l1(null), lq(null));
+            let ou = !ap && (iP || l0?.stage === "minimized"),
+                od = (0, r.a)(+!!ou);
+            il[40] !== od ? (eO = () => 1 - od.get(), il[40] = od, il[41] = eO) : eO = il[41];
+            let oh = (0, s.a)(eO);
+            il[42] !== od ? (eK = e => od.on("change", e), il[42] = od, il[43] = eK) : eK = il[43];
+            let op = eK;
+            il[44] !== od ? (eV = () => 1 === od.get(), il[44] = od, il[45] = eV) : eV = il[45];
+            let om = eV;
+            il[46] !== ou ? (e$ = () => ou, il[46] = ou, il[47] = e$) : e$ = il[47];
+            let of = (0, m.useSyncExternalStore)(op, om, e$);
+            lL?.target !== "minimized" || ou || lq({
+                target: lT
+            }), il[48] !== aw || il[49] !== i8 || il[50] !== ar || il[51] !== lT ? (eX = (0, ei.b)({
+                pendingFormId: ar,
+                presentation: lT,
+                forceExpanded: i8,
+                hasTranscript: aw
+            }), il[48] = aw, il[49] = i8, il[50] = ar, il[51] = lT, il[52] = eX) : eX = il[52];
+            let {
+                isCompact: og,
+                isChatCompact: ov,
+                canTogglePresentation: ob
+            } = eX, ox = og && !ap, oy = iP && !ap, ow = ac && !al ? !og : an;
+            (!al || i9 || iP || !ow) && lW && lH(!1);
+            let oS = !iP && !ou && (ac && !al || !og || lI || lB || lW || lY || aO),
+                oz = (ow || ap) && (al ? !iP && !ou : ac || oS),
+                oj = ac && al && ox && oz && !i9 && !as && !am && null != iX && aR?.type === "loading",
+                ok = at && ac && !as && !lN && ay && (aT || !oj && aR?.type === "loading"),
+                oC = og && ok,
+                oE = ac && ox && !i9 && !oy && !as && void 0 !== iU,
+                oM = oE && !lN && null != iU,
+                oP = oC || oM && iU.transient,
+                oR = void 0 !== i1 && i1 || ac;
+            il[53] !== al || il[54] !== i9 || il[55] !== iP || il[56] !== ow ? (eY = () => {
+                let e, t = lz.current;
+                if (null == t || !al || i9 || iP || !ow) return;
+                let n = () => {
+                        clearTimeout(e), e = void 0
+                    },
+                    i = t => {
+                        "touch" !== t.pointerType && (n(), e = setTimeout(() => {
+                            e = void 0, lH(!0)
+                        }, 300))
+                    },
+                    a = () => {
+                        n(), lH(!1)
+                    },
+                    l = () => {
+                        document.hidden && a()
+                    };
+                return t.addEventListener("pointerenter", i), t.addEventListener("pointerleave", a), window.addEventListener("blur", a), document.addEventListener("visibilitychange", l), () => {
+                    n(), t.removeEventListener("pointerenter", i), t.removeEventListener("pointerleave", a), window.removeEventListener("blur", a), document.removeEventListener("visibilitychange", l)
+                }
+            }, il[53] = al, il[54] = i9, il[55] = iP, il[56] = ow, il[57] = eY) : eY = il[57], il[58] !== aS || il[59] !== al || il[60] !== i9 || il[61] !== iP || il[62] !== ow ? (eZ = [aS, al, i9, iP, ow], il[58] = aS, il[59] = al, il[60] = i9, il[61] = iP, il[62] = ow, il[63] = eZ) : eZ = il[63], (0, m.useEffect)(eY, eZ);
+            let oN = !i9 && !og && !iP && !i8 && !lY && !l3;
+            il[64] !== aq || il[65] !== lD || il[66] !== lq ? (eU = e => {
+                null == lz.current || null != e && eM(lz.current, e.target, aq) || (lq(null), lD("compact"))
+            }, il[64] = aq, il[65] = lD, il[66] = lq, il[67] = eU) : eU = il[67];
+            let oT = (0, m.useEffectEvent)(eU);
+            il[68] !== oT || il[69] !== aq ? (eG = () => {
+                let e = lz.current,
+                    t = document.activeElement;
+                null != e && t instanceof HTMLIFrameElement && !eM(e, t, aq) && oT()
+            }, il[68] = oT, il[69] = aq, il[70] = eG) : eG = il[70];
+            let oD = (0, m.useEffectEvent)(eG);
+            il[71] !== ac || il[72] !== oD || il[73] !== oT || il[74] !== oN ? (eQ = () => {
+                if (!oN) return;
+                document.addEventListener("pointerdown", oT, !0);
+                let e = !0,
+                    t = () => {
+                        queueMicrotask(() => {
+                            e && oD()
+                        })
+                    };
+                window.addEventListener("blur", t);
+                let n = ac ? es.c.subscribe("browser-sidebar-web-contents-pointer-down", () => oT()) : void 0;
+                return () => {
+                    e = !1, window.removeEventListener("blur", t), n?.(), document.removeEventListener("pointerdown", oT, !0)
+                }
+            }, il[71] = ac, il[72] = oD, il[73] = oT, il[74] = oN, il[75] = eQ) : eQ = il[75], il[76] !== ac || il[77] !== oN ? (eJ = [ac, oN], il[76] = ac, il[77] = oN, il[78] = eJ) : eJ = il[78], (0, m.useEffect)(eQ, eJ);
+            let oL = aM?.type === "loading";
+            il[79] !== iL || il[80] !== lF || il[81] !== lD || il[82] !== lq ? (e0 = () => {
+                lz.current?.focus({
+                    preventScroll: !0
+                }), lF(!1), lq(null), iL(!1), lD("expanded")
+            }, il[79] = iL, il[80] = lF, il[81] = lD, il[82] = lq, il[83] = e0) : e0 = il[83];
+            let oq = (0, ex.a)(e0),
+                [o_, oF] = (0, m.useState)(eC);
+            il[84] === Symbol.for("react.memo_cache_sentinel") ? (e1 = e => {
+                oF(t => new Set([...t, e]))
+            }, il[84] = e1) : e1 = il[84];
+            let oI = (0, ex.a)(e1);
+            il[85] !== ac || il[86] !== oI || il[87] !== oq || il[88] !== aC ? (e2 = "ready" !== aC.type ? aC : {
+                type: "ready",
+                value: aC.value.map(e => ({
+                    id: e.id,
+                    content: (0, i.jsx)(F, {
+                        title: e.title,
+                        preview: e.preview,
+                        onOpen: () => {
+                            e.onOpen(), oq()
+                        },
+                        onDismiss: ac ? () => oI(e.id) : e.onDismiss
+                    })
+                }))
+            }, il[85] = ac, il[86] = oI, il[87] = oq, il[88] = aC, il[89] = e2) : e2 = il[89];
+            let oA = e2,
+                [oW, oH] = (0, m.useState)(oL);
+            if (oW !== oL && (oH(oL), ol(!1), lP(null)), il[90] !== i9 || il[91] !== iP || il[92] !== oL || il[93] !== lR || il[94] !== oP ? (e3 = () => {
+                    if (!oP || i9 || iP || oL) return;
+                    let e = window.setTimeout(() => lP(lR), 1e4);
+                    return () => window.clearTimeout(e)
+                }, il[90] = i9, il[91] = iP, il[92] = oL, il[93] = lR, il[94] = oP, il[95] = e3) : e3 = il[95], il[96] !== aS || il[97] !== i9 || il[98] !== iP || il[99] !== oL || il[100] !== lR || il[101] !== oP ? (e4 = [aS, oP, i9, iP, oL, lR], il[96] = aS, il[97] = i9, il[98] = iP, il[99] = oL, il[100] = lR, il[101] = oP, il[102] = e4) : e4 = il[102], (0, m.useEffect)(e3, e4), il[103] !== oA || il[104] !== ac || il[105] !== o_ || il[106] !== oq || il[107] !== oL || il[108] !== iI || il[109] !== i$ || il[110] !== oa) {
+                if (e5 = oA, ac && oL && !oa) {
+                    let e, t;
+                    il[112] === Symbol.for("react.memo_cache_sentinel") ? (e = () => ol(!0), il[112] = e) : e = il[112], il[113] !== oq || il[114] !== iI || il[115] !== i$ ? (t = [{
+                        id: "working",
+                        content: (0, i.jsx)(F, {
+                            title: iI,
+                            preview: "",
+                            isWorking: !0,
+                            workingContent: i$,
+                            onOpen: oq,
+                            onDismiss: e
+                        })
+                    }], il[113] = oq, il[114] = iI, il[115] = i$, il[116] = t) : t = il[116], e5 = {
+                        type: "ready",
+                        value: t
+                    }
+                } else if (ac && "ready" === oA.type) {
+                    let e;
+                    if (il[117] !== oA.value || il[118] !== o_) {
+                        let t;
+                        il[120] !== o_ ? (t = e => !o_.has(e.id), il[120] = o_, il[121] = t) : t = il[121], e = oA.value.filter(t), il[117] = oA.value, il[118] = o_, il[119] = e
+                    } else e = il[119];
+                    e5 = {
+                        ...oA,
+                        value: e
+                    }
+                }
+                il[103] = oA, il[104] = ac, il[105] = o_, il[106] = oq, il[107] = oL, il[108] = iI, il[109] = i$, il[110] = oa, il[111] = e5
+            } else e5 = il[111];
+            "ready" !== e5.type && l_ && lF(!1);
+            let oB = "ready" === e5.type && e5.value.length > 0 && (ou ? iP && (ac ? of : l_) && !lY : !ac && og),
+                oO = !ac && (aR?.type === "loading" || aR?.unread === !0 && !oB),
+                oK = oL || aM?.unread === !0 && (iP || !oB);
+            il[122] !== e5.type || il[123] !== e5.value || il[124] !== ac || il[125] !== oI || il[126] !== oL || il[127] !== lF ? (e6 = e => {
+                if ("Escape" === e.key && !e.defaultPrevented)
+                    if (e.preventDefault(), lk.current?.contains(document.activeElement) && lj.current?.focus({
+                            preventScroll: !0
+                        }), ac) {
+                        if (oL) ol(!0);
+                        else if ("ready" === e5.type)
+                            for (let e of e5.value) oI(e.id)
+                    } else lF(!1)
+            }, il[122] = e5.type, il[123] = e5.value, il[124] = ac, il[125] = oI, il[126] = oL, il[127] = lF, il[128] = e6) : e6 = il[128];
+            let oV = (0, m.useEffectEvent)(e6);
+            il[129] !== oV || il[130] !== oB || il[131] !== i9 || il[132] !== iP ? (e7 = () => {
+                if (!i9 && iP && oB) return document.addEventListener("keydown", oV), () => document.removeEventListener("keydown", oV)
+            }, il[129] = oV, il[130] = oB, il[131] = i9, il[132] = iP, il[133] = e7) : e7 = il[133], il[134] !== oB || il[135] !== i9 || il[136] !== iP ? (e8 = [oB, i9, iP], il[134] = oB, il[135] = i9, il[136] = iP, il[137] = e8) : e8 = il[137], (0, m.useEffect)(e7, e8);
+            let o$ = ow && oz && !oy && !oj && null == iw,
+                oX = ac && al && o$ && aR?.unread === !0;
+            il[138] !== aD ? (e9 = aD.formatMessage({
+                id: "quickChat.running",
+                defaultMessage: "Running"
+            }), il[138] = aD, il[139] = e9) : e9 = il[139];
+            let oY = e9;
+            il[140] !== aD ? (te = aD.formatMessage({
+                id: "quickChat.unreadResponse",
+                defaultMessage: "Unread response"
+            }), il[140] = aD, il[141] = te) : te = il[141];
+            let oZ = te,
+                oU = oL ? oY : oZ,
+                oG = lh.endsWith("left"),
+                oQ = "bottom-center" === lh,
+                oJ = oG ? "left" : "right",
+                o0 = lp && !ou ? aV : 0,
+                o1 = 46 * (null == iu) + (lp || ou ? 0 : aV),
+                o2 = on ?? lm ?? P,
+                o3 = oB && !iP ? a6 : 0,
+                o4 = (iu?.height ?? aA) - aH - (lp ? o3 + o0 : 0),
+                o5 = Math.max(0, o4 - 32 - o1 - (lp ? 0 : o3)),
+                o6 = null == iu ? a9 / 2 : Math.max(0, a9 - 20),
+                o7 = ac && null != aJ ? Math.min(o6, aJ + 12) : o6,
+                o8 = (l5 || 46) + (ow && oz ? 46 : 0) + (oC ? aG : 0) + 6 * !ac,
+                o9 = al && ow && oz,
+                re = (l5 || 46) + 46 * !!o9 + (ok ? aG : 0) + 6 * !ac,
+                rt = eP(o2.height, Math.min(Math.max(400, l5 + 46), o5), o5),
+                rn = Math.min(og ? o8 : Math.max(400, o8), o5),
+                ri = le ? o7 : Math.min(372, o7),
+                ra = eP(og ? o8 : o2.height, rn, o5),
+                rl = (0, r.a)(ra),
+                ro = (0, m.useRef)(!1),
+                rr = l5 > 0,
+                rs = i9 || aF || l3 || !ac && (iP || null != lL) ? 0 : .3,
+                rc = eP(o2.width + 12, ri, o7),
+                ru = (0, et.d)(lh, {
+                    height: ra,
+                    width: rc
+                }, o4, a9, 12, o1),
+                rd = (0, r.a)(0);
+            il[142] === Symbol.for("react.memo_cache_sentinel") ? (tt = {
+                x: 0,
+                y: 0,
+                width: 0,
+                height: 0
+            }, il[142] = tt) : tt = il[142];
+            let rh = (0, r.a)(tt);
+            il[143] !== ab || il[144] !== ap || il[145] !== ah || il[146] !== au || il[147] !== rh || il[148] !== rd || il[149] !== id || il[150] !== aF || il[151] !== a_ || il[152] !== ad ? (tn = () => {
+                let e, t = ap && ah && au ? lz.current?.offsetParent : null;
+                if (ap && ah && au && t instanceof HTMLElement) {
+                    let n = au.getBoundingClientRect(),
+                        i = t.getBoundingClientRect(),
+                        a = (0, k.b)(n.width, a_),
+                        l = ad?.get() ?? a,
+                        o = (0, j.f)(ah.contentPaneWidthRatio.get(), l, "unified"),
+                        r = ab ? o : l - o;
+                    e = `--floating-chat-dock-${id}`, au.style.setProperty(e, `${r}px`), rh.set({
+                        x: (0, k.b)(n.left - i.left, a_) + (a - ("left" === id ? l : r)) + 4 - 6,
+                        y: (0, k.b)(n.top - i.top, a_) + 4,
+                        width: r - 8 + 12,
+                        height: (0, k.b)(i.bottom - n.top, a_) - 8 + 6
+                    })
+                }
+                let n = +!!ap,
+                    i = rd.get() === n ? null : (0, c.a)(rd, n, {
+                        duration: .15 * !aF,
+                        ease: N.e
+                    });
+                return () => {
+                    i?.stop(), null != e && au?.style.removeProperty(e)
+                }
+            }, il[143] = ab, il[144] = ap, il[145] = ah, il[146] = au, il[147] = rh, il[148] = rd, il[149] = id, il[150] = aF, il[151] = a_, il[152] = ad, il[153] = tn) : tn = il[153], il[154] !== iu || il[155] !== ab || il[156] !== ap || il[157] !== ah || il[158] !== au || il[159] !== rh || il[160] !== rd || il[161] !== id || il[162] !== aF || il[163] !== a_ || il[164] !== ad ? (ti = [iu, 12, ab, ap, ah, au, rh, rd, id, aF, ad, a_], il[154] = iu, il[155] = ab, il[156] = ap, il[157] = ah, il[158] = au, il[159] = rh, il[160] = rd, il[161] = id, il[162] = aF, il[163] = a_, il[164] = ad, il[165] = ti) : ti = il[165], (0, m.useLayoutEffect)(tn, ti);
+            let rp = (0, s.a)(() => rd.get() * (rh.get().x - ru.x - ly.get())),
+                rm = (0, s.a)(() => rd.get() * (rh.get().y - ru.y - lw.get())),
+                rf = (0, s.a)(() => 0 === rd.get() ? "100%" : rc + rd.get() * (rh.get().width - rc));
+            il[166] !== rl || il[167] !== rh || il[168] !== rd ? (ta = () => rl.get() + rd.get() * (rh.get().height - rl.get()), il[166] = rl, il[167] = rh, il[168] = rd, il[169] = ta) : ta = il[169];
+            let rg = (0, s.a)(ta);
+            il[170] !== rl || il[171] !== re || il[172] !== rt || il[173] !== al || il[174] !== ox || il[175] !== rd ? (tl = () => Math.max(rd.get(), al && ox ? 0 : eP((rl.get() - re) / Math.max(1, rt - re), 0, 1)), il[170] = rl, il[171] = re, il[172] = rt, il[173] = al, il[174] = ox, il[175] = rd, il[176] = tl) : tl = il[176];
+            let rv = (0, s.a)(tl);
+            il[177] !== l5 || il[178] !== rv || il[179] !== o9 || il[180] !== am || il[181] !== rg || il[182] !== rd ? (to = () => Math.max(0, rg.get() - l5 - 46 * ((o9 ? 1 : rv.get()) - (am ? 0 : rd.get()))), il[177] = l5, il[178] = rv, il[179] = o9, il[180] = am, il[181] = rg, il[182] = rd, il[183] = to) : to = il[183];
+            let rb = (0, s.a)(to);
+            il[184] !== rv ? (tr = () => 1 - rv.get(), il[184] = rv, il[185] = tr) : tr = il[185];
+            let rx = (0, s.a)(tr);
+            il[186] !== rl || il[187] !== l5 || il[188] !== ac || il[189] !== ra || il[190] !== rr || il[191] !== og || il[192] !== lB || il[193] !== rs ? (ts = () => {
+                let e, t = !ro.current && og;
+                if (rr && (ro.current = !0), lB || t || 0 === rs) return void rl.jump(ra);
+                let n = () => {
+                    if (ac) {
+                        let e = lS.current;
+                        if (null != e && e.offsetHeight !== Math.round(l5)) return void l6(e.offsetHeight)
+                    }
+                    let t = (0, c.a)(rl, ra, {
+                        duration: rs,
+                        ease: N.e
+                    });
+                    e = () => t.stop()
+                };
+                return ac ? u.b.update(n) : n(), () => {
+                    (0, u.a)(n), e?.()
+                }
+            }, il[186] = rl, il[187] = l5, il[188] = ac, il[189] = ra, il[190] = rr, il[191] = og, il[192] = lB, il[193] = rs, il[194] = ts) : ts = il[194];
+            let ry = (0, m.useEffectEvent)(ts),
+                rw = ac ? l5 : null,
+                rS = ac ? null : rr,
+                rz = ac ? null : og;
+            il[195] !== ry ? (tc = () => ry(), il[195] = ry, il[196] = tc) : tc = il[196], il[197] !== ra || il[198] !== rS || il[199] !== rz || il[200] !== rw || il[201] !== rs ? (tu = [ra, rs, rw, rS, rz], il[197] = ra, il[198] = rS, il[199] = rz, il[200] = rw, il[201] = rs, il[202] = tu) : tu = il[202], (0, m.useLayoutEffect)(tc, tu);
+            let rj = ac ? rv : void 0;
+            il[203] !== rj ? (td = {
+                "--quick-chat-expansion": rj
+            }, il[203] = rj, il[204] = td) : td = il[204];
+            let rk = td,
+                rC = {
+                    height: Math.min(36, o5),
+                    width: Math.min(36, o7)
+                },
+                rE = (0, et.f)(iP ? lh : l0?.dockPosition ?? e_, ib),
+                rM = (0, et.d)(rE, rC, o4, a9, 0, o1),
+                rP = iP ? rC : {
+                    height: ra,
+                    width: rc
+                },
+                rR = iP ? rM : ru,
+                rN = iP ? 16 : 10,
+                rT = Math.max(rN, a9 - rP.width - rN),
+                rD = o1 + rN,
+                rL = Math.max(rN, o4 - rP.height - rN);
+            il[205] !== rN || il[206] !== rT || il[207] !== rD || il[208] !== rL ? (th = {
+                left: rN,
+                right: rT,
+                top: rD,
+                bottom: rL
+            }, il[205] = rN, il[206] = rT, il[207] = rD, il[208] = rL, il[209] = th) : th = il[209];
+            let rq = th;
+            il[210] === Symbol.for("react.memo_cache_sentinel") ? (tp = () => {
+                lx.current = null
+            }, il[210] = tp) : tp = il[210], il[211] !== iu || il[212] !== a_ ? (tm = [iu, a_], il[211] = iu, il[212] = a_, il[213] = tm) : tm = il[213], (0, m.useLayoutEffect)(tp, tm);
+            let r_ = e => {
+                    if (!i4) return;
+                    lx.current = null == iu ? null : lz.current?.parentElement?.getBoundingClientRect() ?? null;
+                    let t = {
+                        x: (0, k.b)(e.clientX - (lx.current?.left ?? 0), a_),
+                        y: (0, k.b)(e.clientY - (lx.current?.top ?? 0), a_)
+                    };
+                    lv.current = {
+                        x: t.x - rR.x - ly.get(),
+                        y: t.y - rR.y - lw.get()
+                    }, lb.current = {
+                        point: t,
+                        target: null
+                    }, lf.start(e)
+                },
+                rF = (0, et.d)(rE, {
+                    height: ra,
+                    width: rc
+                }, o4, a9, 12, o1),
+                rI = rM.x - rF.x,
+                rA = rM.y - rF.y,
+                rW = rc - rI - rC.width,
+                rH = ra - rA - rC.height;
+            il[214] !== rI || il[215] !== rA || il[216] !== rW || il[217] !== rH ? (tf = {
+                top: rA,
+                right: rW,
+                bottom: rH,
+                left: rI
+            }, il[214] = rI, il[215] = rA, il[216] = rW, il[217] = rH, il[218] = tf) : tf = il[218];
+            let rB = tf,
+                rO = `inset(${rB.top}px ${rB.right}px ${rB.bottom}px ${rB.left}px round var(--floating-panel-radius))`,
+                rK = (0, s.a)(() => {
+                    let e = od.get(),
+                        t = rl.get() - ra,
+                        n = e * (rB.top + (lp ? 0 : t)),
+                        i = 6 + e * (rB.right - 6),
+                        a = 6 + e * (rB.bottom + (lp ? t : 0) - 6),
+                        l = 6 + e * (rB.left - 6),
+                        o = rd.get(),
+                        r = 0 === o ? "var(--radius-token-composer-single-line)" : `calc(var(--radius-token-composer-single-line) * ${1-o} + var(--app-shell-sidebar-popover-radius) * ${o})`,
+                        s = ou || lY || 0 !== e || 0 !== t ? `inset(${n}px ${i}px ${a}px ${l}px round ${r})` : "none";
+                    return {
+                        top: n,
+                        right: i,
+                        bottom: a,
+                        left: l,
+                        radius: r,
+                        clip: s
+                    }
+                });
+            il[219] !== rK ? (tg = () => rK.get().top, il[219] = rK, il[220] = tg) : tg = il[220];
+            let rV = (0, s.a)(tg);
+            il[221] !== rK ? (tv = () => rK.get().right, il[221] = rK, il[222] = tv) : tv = il[222];
+            let r$ = (0, s.a)(tv);
+            il[223] !== rK ? (tb = () => rK.get().bottom, il[223] = rK, il[224] = tb) : tb = il[224];
+            let rX = (0, s.a)(tb);
+            il[225] !== rK ? (tx = () => rK.get().left, il[225] = rK, il[226] = tx) : tx = il[226];
+            let rY = (0, s.a)(tx);
+            il[227] !== rK ? (ty = () => rK.get().radius, il[227] = rK, il[228] = ty) : ty = il[228];
+            let rZ = (0, s.a)(ty);
+            il[229] !== rK ? (tw = () => rK.get().clip, il[229] = rK, il[230] = tw) : tw = il[230];
+            let rU = (0, s.a)(tw);
+            il[231] !== ac || il[232] !== ou || il[233] !== od || il[234] !== aF ? (tS = () => {
+                if (!ac) return;
+                let e = (0, c.a)(od, +!!ou, {
+                    duration: .3 * !aF,
+                    ease: N.e
+                });
+                return () => e.stop()
+            }, tz = [ac, ou, od, aF], il[231] = ac, il[232] = ou, il[233] = od, il[234] = aF, il[235] = tS, il[236] = tz) : (tS = il[235], tz = il[236]), (0, m.useLayoutEffect)(tS, tz);
+            let rG = lp ? {
+                    top: rA + rC.height
+                } : {
+                    bottom: ra - rA
+                },
+                rQ = (0, m.useRef)({
+                    dockPosition: lh,
+                    dockThreadKey: aS,
+                    isMinimized: iP
+                });
+            il[237] !== iT ? (tj = () => {
+                iT?.(null)
+            }, il[237] = iT, il[238] = tj) : tj = il[238];
+            let rJ = (0, m.useEffectEvent)(tj),
+                r0 = (0, m.useEffectEvent)(e => {
+                    let t = (0, et.d)(e, {
+                        height: ra,
+                        width: rc
+                    }, o4, a9, 12, o1);
+                    ly.stop(), lw.stop(), ly.jump(ly.get() + t.x - ru.x), lw.jump(lw.get() + t.y - ru.y);
+                    let n = aF ? {
+                        duration: 0
+                    } : eS;
+                    (0, c.a)(ly, 0, n), (0, c.a)(lw, 0, n)
+                });
+            (0, m.useLayoutEffect)(() => {
+                let e = rQ.current;
+                if (rQ.current = {
+                        dockPosition: lh,
+                        dockThreadKey: aS,
+                        isMinimized: iP
+                    }, e.dockThreadKey !== aS) {
+                    lg.current = !0, l2.current = !0, lf.cancel(), rJ(), ly.jump(0), lw.jump(0);
+                    return
+                }
+                if (i9) {
+                    ly.jump(0), lw.jump(0);
+                    return
+                }
+                e.isMinimized !== iP && r0(e.dockPosition)
+            }, [lh, aS, lf, ly, lw, i9, iP]), il[239] !== ly || il[240] !== lw ? (tk = () => () => {
+                ly.stop(), lw.stop()
+            }, tC = [ly, lw], il[239] = ly, il[240] = lw, il[241] = tk, il[242] = tC) : (tk = il[241], tC = il[242]), (0, m.useLayoutEffect)(tk, tC);
+            let r1 = e => {
+                let t, n = {
+                    ...rP,
+                    left: rR.x + ly.get(),
+                    top: rR.y + lw.get()
+                };
+                null != iu && null == lx.current && (lx.current = lz.current?.parentElement?.getBoundingClientRect() ?? null);
+                let i = null == iu ? null : lx.current,
+                    a = {
+                        x: e.point.x - (0, k.b)(i?.left ?? 0, a_),
+                        y: e.point.y - (0, k.b)(i?.top ?? 0, a_)
+                    };
+                t = ac ? (0, et.b)(n, o4, a9, ey.filter(e => !iP || "bottom-right" === e || la && "bottom-left" === e).map(e => (0, et.f)(e, ib)), 12 * !iP, o1) : (0, et.e)({
+                    ...n,
+                    left: n.width >= a9 / 2 - 2 * rN ? a.x - n.width / 2 : n.left
+                }, o4, a9, iP);
+                let l = null == ib ? t : (0, et.f)(t, ib),
+                    o = {
+                        x: !ac || iP && la ? Math.min(a.x, a9 - a.x) : a9 - a.x,
+                        y: ac ? o4 - a.y : Math.min(a.y - o1, o4 - a.y)
+                    },
+                    r = o.x <= 16 + rC.width && o.y <= 16 + rC.height;
+                if (ac && !iP) {
+                    let e = lb.current;
+                    if (null != e) {
+                        let t = a.x - e.point.x,
+                            n = a.y - e.point.y;
+                        Math.hypot(t, n) >= 8 && (t >= 0 && n > 0 && n >= t ? e.target = "minimize" : t > 0 && t > 2 * Math.abs(n) ? e.target = null : (t < 0 || n < 0) && (e.target = null), e.point = a)
+                    }
+                    let n = a.y - lv.current.y + rP.height - o4;
+                    return {
+                        dockPosition: l,
+                        requestedDockPosition: t,
+                        isNearDock: !1,
+                        suppressEdgeDrop: r,
+                        shouldMinimize: "bottom-right" === l && e?.target === "minimize" && n >= .5 * rP.width
+                    }
+                }
+                let s = (0, et.d)(l, rP, o4, a9, 12, o1),
+                    c = !iP && "bottom-center" !== l && 16 >= Math.abs(n.left - s.x) && 16 >= Math.abs(n.top - s.y);
+                return {
+                    dockPosition: l,
+                    requestedDockPosition: t,
+                    isNearDock: c,
+                    suppressEdgeDrop: r,
+                    shouldMinimize: c && r
+                }
+            };
+            il[243] !== i4 || il[244] !== iv || il[245] !== ac || il[246] !== aS || il[247] !== iC || il[248] !== la || il[249] !== ai ? (tE = (e, t) => {
+                if (!i4) return;
+                let n = t && !la;
+                (null == iv || n) && (null != aS || ac && !n) ? (0, en.c)(ai, {
+                    threadKey: aS ?? null,
+                    minimized: n
+                }, e, iC) : ls(t => ({
+                    expanded: n ? t.expanded : e,
+                    minimized: n ? (0, et.a)(e) : t.minimized
+                }))
+            }, il[243] = i4, il[244] = iv, il[245] = ac, il[246] = aS, il[247] = iC, il[248] = la, il[249] = ai, il[250] = tE) : tE = il[250];
+            let r2 = tE,
+                r3 = (e, t, n) => {
+                    let i = void 0 === n ? rP : n,
+                        a = (0, et.d)(lh, rP, o4, a9, 12 * !iP, o1),
+                        l = {
+                            x: a.x + ly.get(),
+                            y: a.y + lw.get()
+                        },
+                        o = (0, et.d)((0, et.f)(e, ib), i, o4, a9, 12 * !iP, o1);
+                    ly.stop(), lw.stop(), ly.jump(l.x - o.x), lw.jump(l.y - o.y), t && (0, f.flushSync)(() => {
+                        r2(e, iP)
+                    });
+                    let r = ac ? {
+                            duration: .3,
+                            ease: N.e
+                        } : eS,
+                        s = aF ? {
+                            duration: 0
+                        } : r;
+                    lG(!0), Promise.all([(0, c.a)(ly, 0, s), (0, c.a)(lw, 0, s)]).then(() => {
+                        lG(0 !== ly.get() || 0 !== lw.get())
+                    })
+                },
+                r4 = (0, m.useEffectEvent)(() => {
+                    lg.current = !0, lf.cancel(), iT?.(null), r3(lh, !1), l1(null), lq(null), lZ(!1)
+                });
+            il[251] !== r4 || il[252] !== lf || il[253] !== lY ? (tM = () => {
+                if (!lY) return;
+                let e = e => {
+                        "Escape" === e.key && (e.preventDefault(), e.stopPropagation(), r4())
+                    },
+                    t = () => r4();
+                return window.addEventListener("keydown", e, !0), window.addEventListener("blur", t), window.addEventListener("pointercancel", t, !0), () => {
+                    lg.current = !0, lf.cancel(), window.removeEventListener("keydown", e, !0), window.removeEventListener("blur", t), window.removeEventListener("pointercancel", t, !0)
+                }
+            }, il[251] = r4, il[252] = lf, il[253] = lY, il[254] = tM) : tM = il[254], il[255] !== lf || il[256] !== lY ? (tP = [lf, lY], il[255] = lf, il[256] = lY, il[257] = tP) : tP = il[257], (0, m.useLayoutEffect)(tM, tP);
+            let r5 = (e, t) => {
+                    let n = ac && oQ ? 0 : (0, et.c)(lh, e, {
+                            height: ra,
+                            width: rc
+                        }, ly.get(), t.width, o4, a9, 12),
+                        i = ru.y + lw.get(),
+                        a = (0, et.d)(lh, t, o4, a9, 12, o1),
+                        l = eP(i + (lp ? 0 : ra - t.height), o1 + 10, o4 - t.height - 10);
+                    ly.stop(), lw.stop(), (0, f.flushSync)(() => {
+                        oi({
+                            height: og ? o2.height : t.height,
+                            width: t.width - 12
+                        })
+                    }), ly.jump(n), lw.jump(l - a.y)
+                },
+                r6 = e => {
+                    el(ai, {
+                        height: og ? o2.height : e.height,
+                        width: e.width - 12
+                    }, () => iq?.(lh)), r3(lh, !1, e)
+                };
+            il[258] !== ac || il[259] !== lY || il[260] !== iL || il[261] !== lF || il[262] !== l1 || il[263] !== lq ? (tR = () => {
+                lF(!1), lJ(!lY), l1(null), lq(ac ? null : {
+                    target: "minimized"
+                }), iL(!0)
+            }, il[258] = ac, il[259] = lY, il[260] = iL, il[261] = lF, il[262] = l1, il[263] = lq, il[264] = tR) : tR = il[264];
+            let r7 = tR;
+            if (il[265] !== iv || il[266] !== ac || il[267] !== i8 || il[268] !== as || il[269] !== og || il[270] !== i9 || il[271] !== iP || il[272] !== iD || il[273] !== iL || il[274] !== lT || il[275] !== i5 || il[276] !== lF || il[277] !== lD || il[278] !== lq) {
+                let e, t, n, i;
+                t_ = () => {
+                    (0, f.flushSync)(() => {
+                        lF(!1), lq(ac ? null : {
+                            target: lT
+                        }), iL(!1)
+                    }), tD()
+                }, il[286] !== og || il[287] !== lD || il[288] !== lq ? (e = () => {
+                    lq(null), lD(og ? "expanded" : "compact")
+                }, il[286] = og, il[287] = lD, il[288] = lq, il[289] = e) : e = il[289], tF = e;
+                let a = !i9 && !iP;
+                tN = a && (null != iD || !i5 && !og && !i8), il[290] !== iD || il[291] !== lD || il[292] !== lq ? (t = () => {
+                    null != iD ? iD() : (lq(null), lD("compact"))
+                }, il[290] = iD, il[291] = lD, il[292] = lq, il[293] = t) : t = il[293], tT = t, il[294] !== tN || il[295] !== a || il[296] !== tT || il[297] !== i5 ? (n = e => {
+                    if (!a || "Escape" !== e.key || e.defaultPrevented || e.nativeEvent.isComposing) return;
+                    let t = tN && !e.repeat;
+                    !t && (!i5 || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) || (e.preventDefault(), e.stopPropagation(), t && tT())
+                }, il[294] = tN, il[295] = a, il[296] = tT, il[297] = i5, il[298] = n) : n = il[298], tq = n, il[299] !== as ? (i = () => {
+                    let e = lS.current;
+                    return as ? (0, Z.a)(e) : e?.querySelector("[contenteditable='true']") ?? null
+                }, il[299] = as, il[300] = i) : i = il[300], tL = i, tD = () => {
+                    ac && null == iv && (lq(null), lD("expanded")), tL()?.focus({
+                        preventScroll: !0
+                    })
+                }, il[265] = iv, il[266] = ac, il[267] = i8, il[268] = as, il[269] = og, il[270] = i9, il[271] = iP, il[272] = iD, il[273] = iL, il[274] = lT, il[275] = i5, il[276] = lF, il[277] = lD, il[278] = lq, il[279] = tN, il[280] = tT, il[281] = tD, il[282] = tL, il[283] = tq, il[284] = t_, il[285] = tF
+            } else tN = il[279], tT = il[280], tD = il[281], tL = il[282], tq = il[283], t_ = il[284], tF = il[285];
+            let r8 = !i9 && as;
+            il[301] !== tL || il[302] !== as || il[303] !== iP ? (tI = () => {
+                if (null == lz.current || null != lz.current.closest("[hidden], [inert], [aria-hidden=true]")) return !1;
+                if (as) return iP;
+                let e = tL();
+                if (null == e) return !1;
+                let t = e.closest("[hidden], [inert], [aria-hidden=true]");
+                return null == t || !lS.current?.contains(t) || t === lS.current
+            }, il[301] = tL, il[302] = as, il[303] = iP, il[304] = tI) : tI = il[304], il[305] !== r8 || il[306] !== tI ? (tA = {
+                enabled: r8,
+                isActive: tI
+            }, il[305] = r8, il[306] = tI, il[307] = tA) : tA = il[307], (0, V.a)("focusMainChat", iP ? t_ : tD, tA), il[308] !== aD || il[309] !== og ? (tW = aD.formatMessage(og ? {
+                id: "quickChat.expandFloatingChat",
+                defaultMessage: "Expand floating chat"
+            } : {
+                id: "quickChat.showCompactFloatingChat",
+                defaultMessage: "Show compact floating chat"
+            }), il[308] = aD, il[309] = og, il[310] = tW) : tW = il[310];
+            let r9 = tW;
+            il[311] !== ob || il[312] !== r9 || il[313] !== tF ? (tH = ob ? {
+                label: r9,
+                onToggle: tF
+            } : void 0, il[311] = ob, il[312] = r9, il[313] = tF, il[314] = tH) : tH = il[314];
+            let se = tH;
+            il[315] !== aD ? (tB = aD.formatMessage({
+                id: "quickChat.resizeWidth",
+                defaultMessage: "Resize chat width"
+            }), il[315] = aD, il[316] = tB) : tB = il[316];
+            let st = tB;
+            il[317] !== aD ? (tO = aD.formatMessage({
+                id: "quickChat.resizeHeight",
+                defaultMessage: "Resize chat height"
+            }), il[317] = aD, il[318] = tO) : tO = il[318];
+            let sn = tO;
+            il[319] !== al || il[320] !== lD || il[321] !== lq ? (tK = () => {
+                lq(null), al && lD("expanded")
+            }, il[319] = al, il[320] = lD, il[321] = lq, il[322] = tK) : tK = il[322];
+            let si = (0, ex.a)(tK);
+            il[323] !== ac || il[324] !== si || il[325] !== al || il[326] !== lq ? (tV = ac || al ? si : () => lq(null), il[323] = ac, il[324] = si, il[325] = al, il[326] = lq, il[327] = tV) : tV = il[327];
+            let sa = {
+                    isCompact: ox,
+                    canShowPreviewBubble: oE,
+                    isNarrow: l9,
+                    isChromeRevealed: oS,
+                    isHeaderVisible: oz,
+                    isComposerFocused: ac ? l$ || lB : oS,
+                    isDockedTop: lp,
+                    isHidden: i9,
+                    isMinimized: ou,
+                    shouldReduceMotion: aF,
+                    onSubmitStart: tV
+                },
+                sl = {
+                    isMoving: lY || l3 || lU,
+                    composerContentHeight: l7,
+                    dockedReservePx: l5 > l7 + 6 * !!ac ? ra + 10 : 0
+                };
+            il[328] !== i9 || il[329] !== ij ? (t$ = function(e) {
+                !i9 && null != ij && (2 === e.button || 0 === e.button && e.ctrlKey) && e.target instanceof Element && (lz.current?.contains(e.target) || null != e.target.closest("[data-composer-overlay-floating-ui]")) && e.preventDefault()
+            }, il[328] = i9, il[329] = ij, il[330] = t$) : t$ = il[330];
+            let so = t$;
+            il[331] !== al ? (tX = function(e) {
+                !al && e.target instanceof Element && (!lz.current?.contains(e.target) || null != e.target.closest("[data-composer-overlay-floating-ui]")) && e.stopPropagation()
+            }, il[331] = al, il[332] = tX) : tX = il[332];
+            let sr = tX,
+                ss = ic(sa, sl),
+                sc = i5 ? "editor-only" : null;
+            il[333] !== ot ? (tY = e => {
+                lS.current = e, ot(e)
+            }, il[333] = ot, il[334] = tY) : tY = il[334], il[335] !== tD ? (tZ = e => {
+                e.target === e.currentTarget && e.currentTarget.hasPointerCapture(e.pointerId) && !l2.current && tD()
+            }, il[335] = tD, il[336] = tZ) : tZ = il[336], il[337] !== oR || il[338] !== ox || il[339] !== oy || il[340] !== oC ? (tU = oR && !oy && (!ox || oC) ? (0, i.jsx)("div", {
+                "aria-hidden": !0,
+                className: "border-t border-default"
+            }) : null, il[337] = oR, il[338] = ox, il[339] = oy, il[340] = oC, il[341] = tU) : tU = il[341], il[342] !== aX ? (tG = {
+                target: aX,
+                homeBannerPlacement: "inline"
+            }, il[342] = aX, il[343] = tG) : tG = il[343];
+            let su = (0, i.jsxs)("div", {
+                ref: tY,
+                className: (0, l.b)(D.a.floatingComposerInset, "mt-auto shrink-0", i4 && !le && "[&_[data-composer-input]:has([contenteditable=true]_[data-placeholder])]:touch-none", og && lp && "[--composer-overlay-placement:bottom]"),
+                onPointerDownCapture: so,
+                onPointerUp: tZ,
+                onContextMenu: sr,
+                children: [tU, (0, i.jsx)(em.b, {
+                    value: {
+                        ...aj,
+                        hasComposerSurface: oR,
+                        isFloatingChatSurface: !0,
+                        isFloatingTranscriptOpen: !i9 && !og && !iP,
+                        floatingChatSurfaceRef: lz,
+                        onFloatingDictationRowChange: lV,
+                        floatingComposerPresentation: sa,
+                        transcriptTarget: aZ,
+                        followLatestTranscript: ac ? ox : aj.followLatestTranscript
+                    },
+                    children: (0, i.jsx)(Y.a, {
+                        value: tN ? tT : sc,
+                        children: (0, i.jsx)(X.a, {
+                            value: tG,
+                            children: ss
+                        })
+                    })
+                })]
+            });
+            il[344] !== ox || il[345] !== r7 ? (tQ = (0, i.jsx)(ee.c, {
+                isCompact: ox,
+                onMinimize: r7
+            }), il[344] = ox, il[345] = r7, il[346] = tQ) : tQ = il[346];
+            let sd = tQ,
+                sh = ac || null != ao ? null : sd;
+            if (oj) {
+                let e, t, n;
+                il[347] !== tL || il[348] !== tF ? (e = () => {
+                    tF(), tL()?.focus({
+                        preventScroll: !0
+                    })
+                }, il[347] = tL, il[348] = tF, il[349] = e) : e = il[349], il[350] !== iX || il[351] !== aL ? (t = (0, i.jsx)("span", {
+                    id: aL,
+                    className: "min-w-0 truncate",
+                    children: iX
+                }), il[350] = iX, il[351] = aL, il[352] = t) : t = il[352], il[353] !== r9 || il[354] !== e || il[355] !== t || il[356] !== aL ? (n = (0, i.jsx)(q.a, {
+                    unstyled: !0,
+                    focusRing: "inset",
+                    className: "min-w-0 flex-1 px-2 text-start text-sm text-secondary",
+                    "aria-label": r9,
+                    "aria-describedby": aL,
+                    "data-quick-chat-drag-handle": !0,
+                    onClick: e,
+                    children: t
+                }), il[353] = r9, il[354] = e, il[355] = t, il[356] = aL, il[357] = n) : n = il[357], tJ = n
+            } else if (null != iw) {
+                let e;
+                il[358] !== sh || il[359] !== iw ? (e = iw({
+                    leadingControl: sh
+                }), il[358] = sh, il[359] = iw, il[360] = e) : e = il[360], tJ = e
+            } else {
+                let e, t, n, a, o, r;
+                il[361] !== oX || il[362] !== oZ ? (e = oX && (0, i.jsx)("span", {
+                    className: "sr-only",
+                    role: "status",
+                    "aria-label": oZ
+                }), il[361] = oX, il[362] = oZ, il[363] = e) : e = il[363], il[364] !== oO || il[365] !== oY || il[366] !== aR || il[367] !== oZ ? (t = oO && null != aR ? (0, i.jsx)("div", {
+                    className: "flex items-center justify-center",
+                    role: "status",
+                    "aria-label": "loading" === aR.type ? oY : oZ,
+                    children: (0, i.jsx)(ep.a, {
+                        statusState: aR
+                    })
+                }) : null, il[364] = oO, il[365] = oY, il[366] = aR, il[367] = oZ, il[368] = t) : t = il[368];
+                let s = oX || void 0,
+                    c = (!ac || null == iA) && "truncate";
+                il[369] !== c ? (n = (0, l.b)("group/floating-title min-w-0 text-base font-medium text-secondary", c), il[369] = c, il[370] = n) : n = il[370], il[371] !== ac || il[372] !== an || il[373] !== iI || il[374] !== iA ? (a = iA ?? (ac ? (0, i.jsx)(ee.b, {
+                    children: (0, i.jsx)(eo.a, {
+                        children: an ? iI : (0, i.jsx)(v.a, {
+                            id: "quickChat.newChatTitle",
+                            defaultMessage: "New chat"
+                        })
+                    })
+                }) : iI), il[371] = ac, il[372] = an, il[373] = iI, il[374] = iA, il[375] = a) : a = il[375], il[376] !== s || il[377] !== n || il[378] !== a || il[379] !== aL ? (o = (0, i.jsx)("h2", {
+                    id: aL,
+                    "data-unread": s,
+                    "data-dropdown-overlay-side": "auto",
+                    className: n,
+                    children: a
+                }), il[376] = s, il[377] = n, il[378] = a, il[379] = aL, il[380] = o) : o = il[380], il[381] !== sh || il[382] !== e || il[383] !== t || il[384] !== o ? (r = (0, i.jsxs)("div", {
+                    className: "flex min-w-0 flex-1 items-center gap-1",
+                    children: [sh, e, t, o]
+                }), il[381] = sh, il[382] = e, il[383] = t, il[384] = o, il[385] = r) : r = il[385], tJ = r
+            }
+            il[386] !== aO || il[387] !== ox || il[388] !== lY || il[389] !== r7 || il[390] !== ij ? (t0 = ij?.({
+                isCompact: ox,
+                isDragging: lY,
+                open: aO,
+                onMinimize: r7,
+                onOpenChange: aK
+            }), il[386] = aO, il[387] = ox, il[388] = lY, il[389] = r7, il[390] = ij, il[391] = t0) : t0 = il[391];
+            let sp = ac && null == ao && sd;
+            il[392] !== iM?.openRightPaneDisabled || il[393] !== sd || il[394] !== ao ? (t1 = null != ao && (0, i.jsx)(ee.d, {
+                minimizeButton: sd,
+                disabled: iM?.openRightPaneDisabled,
+                onOpenRightPane: ao
+            }), il[392] = iM?.openRightPaneDisabled, il[393] = sd, il[394] = ao, il[395] = t1) : t1 = il[395], il[396] !== tJ || il[397] !== t0 || il[398] !== sp || il[399] !== t1 ? (t2 = (0, i.jsxs)(i.Fragment, {
+                children: [tJ, t0, sp, t1]
+            }), il[396] = tJ, il[397] = t0, il[398] = sp, il[399] = t1, il[400] = t2) : t2 = il[400];
+            let sm = t2,
+                sf = af ? "hidden" : "contents";
+            il[401] !== i7 || il[402] !== ac || il[403] !== sm || il[404] !== i6 || il[405] !== al || il[406] !== ox || il[407] !== oz || il[408] !== iP || il[409] !== se || il[410] !== lL || il[411] !== aF || il[412] !== ow ? (t3 = ac ? (0, i.jsx)(ee.a, {
+                isCompact: al && ox,
+                isVisible: oz,
+                isDisabled: i6,
+                children: sm
+            }) : (0, i.jsx)(ee.e, {
+                expandOnClick: al,
+                animateChrome: !aF && !iP && null == lL,
+                isChromeRevealed: oz,
+                isCompact: ox,
+                isDisabled: i6,
+                reserveSpace: al && ow && !ox,
+                presentationToggle: i7 ? se : void 0,
+                children: sm
+            }), il[401] = i7, il[402] = ac, il[403] = sm, il[404] = i6, il[405] = al, il[406] = ox, il[407] = oz, il[408] = iP, il[409] = se, il[410] = lL, il[411] = aF, il[412] = ow, il[413] = t3) : t3 = il[413], il[414] !== sr || il[415] !== so || il[416] !== sf || il[417] !== t3 ? (t4 = (0, i.jsx)("div", {
+                className: sf,
+                onPointerDownCapture: so,
+                onContextMenu: sr,
+                children: t3
+            }), il[414] = sr, il[415] = so, il[416] = sf, il[417] = t3, il[418] = t4) : t4 = il[418];
+            let sg = t4,
+                sv = ac ? {
+                    top: rE.startsWith("top") ? rA : void 0,
+                    bottom: rE.startsWith("top") ? void 0 : rB.bottom,
+                    left: rI,
+                    width: rC.width,
+                    height: rC.height,
+                    opacity: od
+                } : {
+                    inset: 0
+                },
+                sb = !iP,
+                sx = iP ? az : void 0;
+            il[419] !== ac || il[420] !== ou ? (t5 = ac ? void 0 : {
+                opacity: +!!ou
+            }, il[419] = ac, il[420] = ou, il[421] = t5) : t5 = il[421];
+            let sy = !iP || void 0;
+            il[422] !== aF ? (t6 = aF ? {
+                duration: 0
+            } : {
+                duration: .3,
+                ease: N.e
+            }, il[422] = aF, il[423] = t6) : t6 = il[423];
+            let sw = iP ? "minimized" : "preview",
+                sS = iP && "pointer-events-auto";
+            il[424] !== sS ? (t7 = (0, l.b)("absolute inset-0 m-auto touch-none", sS), il[424] = sS, il[425] = t7) : t7 = il[425];
+            let sz = oK ? oU : void 0;
+            il[426] !== aD || il[427] !== iB || il[428] !== iI ? (t8 = iB ?? aD.formatMessage({
+                id: "quickChat.restoreFloatingChat",
+                defaultMessage: "Restore floating chat: {title}"
+            }, {
+                title: iI
+            }), il[426] = aD, il[427] = iB, il[428] = iI, il[429] = t8) : t8 = il[429];
+            let sj = !i9 && iP && lQ;
+            il[430] !== t_ ? (t9 = e => {
+                0 !== e.detail && l2.current || t_()
+            }, il[430] = t_, il[431] = t9) : t9 = il[431], il[432] !== ac || il[433] !== lF ? (ne = e => {
+                ac || "touch" === e.pointerType || lF(!0)
+            }, il[432] = ac, il[433] = lF, il[434] = ne) : ne = il[434], il[435] !== e5.type || il[436] !== ac || il[437] !== lF ? (nt = e => {
+                "ready" === e5.type && ("ArrowUp" === e.key || "ArrowDown" === e.key) && (e.preventDefault(), ac || (0, f.flushSync)(() => lF(!0)), lk.current?.querySelector("button")?.focus({
+                    preventScroll: !0
+                }))
+            }, il[435] = e5.type, il[436] = ac, il[437] = lF, il[438] = nt) : nt = il[438], il[439] !== le || il[440] !== r_ ? (nn = e => {
+                le || 0 !== e.button || (l2.current = !1, e.currentTarget.setPointerCapture(e.pointerId), r_(e))
+            }, il[439] = le, il[440] = r_, il[441] = nn) : nn = il[441], il[442] !== ac || il[443] !== oK || il[444] !== oL || il[445] !== iW || il[446] !== aM ? (ni = oL && null != aM && null == iW ? (0, i.jsx)(ep.a, {
+                statusState: aM,
+                size: ac ? "default" : "compact"
+            }) : (0, i.jsx)(U.a, {
+                badgeEnabled: oK,
+                children: iW ?? (0, i.jsx)(_.Jb, {})
+            }), il[442] = ac, il[443] = oK, il[444] = oL, il[445] = iW, il[446] = aM, il[447] = ni) : ni = il[447], il[448] !== sw || il[449] !== t7 || il[450] !== sz || il[451] !== t8 || il[452] !== sj || il[453] !== t9 || il[454] !== ne || il[455] !== nt || il[456] !== nn || il[457] !== ni ? (na = (0, i.jsx)(q.a, {
+                ref: lj,
+                className: t7,
+                "aria-description": sz,
+                "aria-label": t8,
+                autoFocus: sj,
+                color: "ghostSecondary",
+                size: "composer",
+                uniform: !0,
+                onClick: t9,
+                onPointerEnter: ne,
+                onKeyDown: nt,
+                onPointerDown: nn,
+                children: ni
+            }, sw), il[448] = sw, il[449] = t7, il[450] = sz, il[451] = t8, il[452] = sj, il[453] = t9, il[454] = ne, il[455] = nt, il[456] = nn, il[457] = ni, il[458] = na) : na = il[458], il[459] !== sv || il[460] !== sb || il[461] !== sx || il[462] !== t5 || il[463] !== sy || il[464] !== t6 || il[465] !== na ? (nl = (0, i.jsx)(d.a.div, {
+                ref: E.c,
+                className: "pointer-events-none absolute",
+                style: sv,
+                "aria-hidden": sb,
+                "data-pip-obstacle": sx,
+                animate: t5,
+                initial: !1,
+                inert: sy,
+                transition: t6,
+                children: na
+            }), il[459] = sv, il[460] = sb, il[461] = sx, il[462] = t5, il[463] = sy, il[464] = t6, il[465] = na, il[466] = nl) : nl = il[466];
+            let sk = nl,
+                sC = "ready" === e5.type ? (0, i.jsx)(W, {
+                    items: e5.value,
+                    availableHeight: Math.max(0, (iu?.height ?? aA) - o1 - aH - (iP ? rC.height : o8) - 32 - 12),
+                    isDockedTop: lp,
+                    shouldReduceMotion: aF
+                }) : null;
+            !ac && (no = ew, ou ? no = rO : null != lL || lY || (no = "none"));
+            let sE = null != lL || !iP;
+            il[467] !== ac || il[468] !== rg || il[469] !== rf || il[470] !== rp || il[471] !== rm || il[472] !== rZ ? (nr = ac ? {
+                x: rp,
+                y: rm,
+                width: rf,
+                height: rg,
+                borderRadius: rZ
+            } : void 0, il[467] = ac, il[468] = rg, il[469] = rf, il[470] = rp, il[471] = rm, il[472] = rZ, il[473] = nr) : nr = il[473], il[474] !== ac || il[475] !== rX || il[476] !== rY || il[477] !== rZ || il[478] !== r$ || il[479] !== rV ? (ns = ac ? {
+                top: rV,
+                right: r$,
+                bottom: rX,
+                left: rY,
+                borderRadius: rZ
+            } : void 0, il[474] = ac, il[475] = rX, il[476] = rY, il[477] = rZ, il[478] = r$, il[479] = rV, il[480] = ns) : ns = il[480], il[481] !== ra || il[482] !== rc ? (nc = {
+                height: ra,
+                width: rc
+            }, il[481] = ra, il[482] = rc, il[483] = nc) : nc = il[483];
+            let sM = ac && oQ,
+                sP = ac && !oQ ? oJ : void 0,
+                sR = ow && oz;
+            il[484] !== o5 || il[485] !== o7 ? (nu = {
+                height: o5,
+                width: o7
+            }, il[484] = o5, il[485] = o7, il[486] = nu) : nu = il[486], il[487] !== sk || il[488] !== iH ? (nd = null == iH ? sk : (0, i.jsx)(G.a, {
+                disableNative: !0,
+                items: iH,
+                children: (0, i.jsx)("div", {
+                    className: "contents",
+                    children: sk
+                })
+            }), il[487] = sk, il[488] = iH, il[489] = nd) : nd = il[489], il[490] !== rn || il[491] !== ri ? (nh = {
+                height: rn,
+                width: ri
+            }, il[490] = rn, il[491] = ri, il[492] = nh) : nh = il[492];
+            let sN = !le && !ap,
+                sT = ou || ac ? "panel" : is,
+                sD = o$ ? void 0 : iI,
+                sL = o$ ? aL : void 0,
+                sq = null != iu && void 0;
+            il[493] !== i3 || il[494] !== rr || il[495] !== aF ? (np = i3 ? {
+                opacity: +!!rr,
+                translateY: 8 * (!rr && !aF)
+            } : {}, il[493] = i3, il[494] = rr, il[495] = aF, il[496] = np) : np = il[496];
+            let s_ = ac || l0?.stage !== "approaching" ? 1 : .95;
+            il[497] !== rc || il[498] !== np || il[499] !== s_ ? (nm = {
+                ...np,
+                width: rc,
+                scale: s_
+            }, il[497] = rc, il[498] = np, il[499] = s_, il[500] = nm) : nm = il[500];
+            let sF = !!ac && void 0 !== id && !!lY || void 0,
+                sI = !ac && og || void 0,
+                sA = iP ? void 0 : az,
+                sW = !le,
+                sH = null == iu ? void 0 : {
+                    left: rq.left - rR.x,
+                    right: rq.right - rR.x,
+                    top: rq.top - rR.y,
+                    bottom: rq.bottom - rR.y
+                },
+                sB = null == iu ? void 0 : 0;
+            il[501] !== i3 || il[502] !== aF ? (nf = !!i3 && !aF && {
+                opacity: 0,
+                translateY: 8
+            }, il[501] = i3, il[502] = aF, il[503] = nf) : nf = il[503];
+            let sO = null == iu ? "dialog" : "region",
+                sK = lp ? o1 + 10 : "auto",
+                sV = lp ? "auto" : 10 + aH,
+                s$ = oQ ? "50%" : "auto";
+            il[504] !== oJ || il[505] !== oQ ? (ng = !oQ && {
+                [oJ]: 10
+            }, il[504] = oJ, il[505] = oQ, il[506] = ng) : ng = il[506];
+            let sX = oQ ? "-50% 0" : void 0,
+                sY = "bottom-center" === rE ? .5 : Number(rE.endsWith("right")),
+                sZ = +!rE.startsWith("top");
+            il[507] !== rl || il[508] !== rk || il[509] !== ly || il[510] !== lw || il[511] !== sK || il[512] !== sV || il[513] !== s$ || il[514] !== ng || il[515] !== sX || il[516] !== sY || il[517] !== sZ ? (nv = {
+                ...rk,
+                height: rl,
+                top: sK,
+                bottom: sV,
+                left: s$,
+                right: "auto",
+                ...ng,
+                translate: sX,
+                x: ly,
+                y: lw,
+                originX: sY,
+                originY: sZ
+            }, il[507] = rl, il[508] = rk, il[509] = ly, il[510] = lw, il[511] = sK, il[512] = sV, il[513] = s$, il[514] = ng, il[515] = sX, il[516] = sY, il[517] = sZ, il[518] = nv) : nv = il[518];
+            let sU = .3 * !aF;
+            il[519] !== sU ? (nb = {
+                duration: sU,
+                ease: N.e
+            }, il[519] = sU, il[520] = nb) : nb = il[520], il[521] !== rs || il[522] !== nb ? (nx = {
+                duration: rs,
+                ease: N.e,
+                scale: nb
+            }, il[521] = rs, il[522] = nb, il[523] = nx) : nx = il[523], il[524] !== ac || il[525] !== al || il[526] !== i9 || il[527] !== aq || il[528] !== lX || il[529] !== lA || il[530] !== lF || il[531] !== lD || il[532] !== lq || il[533] !== oN ? (ny = e => {
+                if (!(i9 || eM(e.currentTarget, e.relatedTarget, aq))) {
+                    if (null == e.relatedTarget) {
+                        let t = e.currentTarget;
+                        queueMicrotask(() => {
+                            t.ownerDocument.hasFocus() && eM(t, t.ownerDocument.activeElement, aq) || (lA(!1), lX(!1), lF(!1))
+                        });
+                        return
+                    }
+                    lA(!1), lX(!1), lF(!1), (!ac || al) && oN && null == e.target.closest("[inert]") && (lq(null), lD("compact"))
+                }
+            }, il[524] = ac, il[525] = al, il[526] = i9, il[527] = aq, il[528] = lX, il[529] = lA, il[530] = lF, il[531] = lD, il[532] = lq, il[533] = oN, il[534] = ny) : ny = il[534], il[535] !== ob || il[536] !== ac || il[537] !== tD || il[538] !== og || il[539] !== al || il[540] !== iP || il[541] !== lD || il[542] !== lq || il[543] !== ow || il[544] !== tF ? (nw = e => {
+                if (!(al && (0 !== e.button || e.ctrlKey) || iP || l2.current || e.defaultPrevented || !(e.target instanceof Element) || !e.currentTarget.contains(e.target) || e.target.closest("button, a, input, textarea, select, label, [contenteditable='true'], [role='button'], [role='menuitem'], [role='separator'], [data-composer-input-layout]"))) {
+                    if (og && (e.target === e.currentTarget || lS.current?.contains(e.target))) return void tD();
+                    if (al) {
+                        if (!ow || !ob) return;
+                        og && !e.currentTarget.contains(document.activeElement) && e.currentTarget.focus({
+                            preventScroll: !0
+                        }), lq(null), lD("expanded");
+                        return
+                    }
+                    if (ac) {
+                        og && ob && tD();
+                        return
+                    }
+                    ow && ob && e.target.closest("header[data-quick-chat-drag-handle]") && (og && !e.currentTarget.contains(document.activeElement) && e.currentTarget.focus({
+                        preventScroll: !0
+                    }), tF())
+                }
+            }, il[535] = ob, il[536] = ac, il[537] = tD, il[538] = og, il[539] = al, il[540] = iP, il[541] = lD, il[542] = lq, il[543] = ow, il[544] = tF, il[545] = nw) : nw = il[545], il[546] !== ac || il[547] !== o5 || il[548] !== o7 || il[549] !== rn || il[550] !== ri || il[551] !== iP || il[552] !== iq || il[553] !== ai || il[554] !== oi || il[555] !== lD || il[556] !== lq || il[557] !== r3 ? (nS = e => {
+                ac && !iP && !l2.current && !e.defaultPrevented && e.target instanceof Element && e.target.closest("header[data-quick-chat-drag-handle]") && !e.target.closest("button, a, select, [role='button'], [role='menuitem'], [role='separator']") && (lq(null), lD("expanded"), oi(null), el(ai, P, () => iq?.("bottom-right")), r3("bottom-right", !0, {
+                    height: eP(P.height, rn, o5),
+                    width: eP(P.width + 12, ri, o7)
+                }))
+            }, il[546] = ac, il[547] = o5, il[548] = o7, il[549] = rn, il[550] = ri, il[551] = iP, il[552] = iq, il[553] = ai, il[554] = oi, il[555] = lD, il[556] = lq, il[557] = r3, il[558] = nS) : nS = il[558], il[559] !== i9 ? (nz = e => {
+                !i9 && l2.current && e.detail > 0 && (e.preventDefault(), e.stopPropagation())
+            }, il[559] = i9, il[560] = nz) : nz = il[560], il[561] !== ac || il[562] !== r1 || il[563] !== l0 || il[564] !== e_ || il[565] !== iN || il[566] !== lT || il[567] !== l1 || il[568] !== lq ? (nj = (e, t) => {
+                let n = r1(t);
+                if (!iN?.(n.suppressEdgeDrop ? null : e) && null != n.dockPosition && (ac ? n.shouldMinimize : n.isNearDock)) {
+                    let e = n.shouldMinimize ? "minimized" : "approaching",
+                        t = ac ? e_ : n.dockPosition;
+                    (l0?.stage !== e || l0.dockPosition !== t) && (l1({
+                        dockPosition: t,
+                        stage: e
+                    }), (n.shouldMinimize || l0?.stage === "minimized") && lq(ac ? null : {
+                        target: n.shouldMinimize ? "minimized" : lT
+                    }))
+                } else null != l0 && "restored" !== l0.stage && (l1({
+                    ...l0,
+                    stage: "restored"
+                }), "minimized" === l0.stage && lq(ac ? null : {
+                    target: lT
+                }))
+            }, il[561] = ac, il[562] = r1, il[563] = l0, il[564] = e_, il[565] = iN, il[566] = lT, il[567] = l1, il[568] = lq, il[569] = nj) : nj = il[569], il[570] !== ac || il[571] !== ag || il[572] !== ly || il[573] !== lw || il[574] !== r1 || il[575] !== ap || il[576] !== la || il[577] !== r7 || il[578] !== l0 || il[579] !== e_ || il[580] !== iT || il[581] !== iN || il[582] !== lT || il[583] !== aa || il[584] !== r2 || il[585] !== lZ || il[586] !== l1 || il[587] !== lq || il[588] !== aF || il[589] !== r3 ? (nk = (e, t) => {
+                if (lg.current) return;
+                let n = r1(t),
+                    i = n.suppressEdgeDrop ? null : e,
+                    a = e => !!iT?.(i, e) && (ly.jump(0), lw.jump(0), l1(null), lq(null), lZ(!1), !0),
+                    l = av.current;
+                ap && ag && l && i && iN?.(i) ? function(e) {
+                    let {
+                        source: t,
+                        getTab: n,
+                        destination: i,
+                        update: a,
+                        reducedMotion: l
+                    } = e;
+                    K?.animation.skipTransition(), K?.cleanup();
+                    let o = t?.ownerDocument ?? document;
+                    if (l || null == t || "function" != typeof o.startViewTransition) return a();
+                    let r = o.documentElement,
+                        s = (0, B.a)({
+                            ...b.b,
+                            duration: 300,
+                            keyframes: [0, 1]
+                        }).toString();
+                    r.style.setProperty("--chat-pin-easing", s.slice(s.indexOf(" ") + 1)), r.classList.add(O);
+                    let c = [],
+                        u = (e, t) => {
+                            null != e && (e.classList.add(t), c.push(() => e.classList.remove(t)))
+                        },
+                        d = e => {
+                            for (let {
+                                    element: t,
+                                    className: n
+                                }
+                                of [{
+                                    element: e,
+                                    className: "surface-CrBPUX"
+                                }, {
+                                    element: e.querySelector("[data-docked-chat-toolbar] header"),
+                                    className: "header-ccGAyF"
+                                }, {
+                                    element: e.querySelector("[data-composer-surface-variant]"),
+                                    className: "composer-u_BJkO"
+                                }, {
+                                    element: e.querySelector("[data-composer-input]"),
+                                    className: "input-RmFnoM"
+                                }, {
+                                    element: e.querySelector("[data-composer-leading-controls]"),
+                                    className: "leading-Ty6zkf"
+                                }, {
+                                    element: e.querySelector("[data-composer-trailing-controls]"),
+                                    className: "trailing-RPbF6R"
+                                }]) u(t, n)
+                        },
+                        h = () => {
+                            c.splice(0).forEach(e => e())
+                        },
+                        p = !!n()?.getClientRects().length;
+                    d(t);
+                    let m = null,
+                        g = o.startViewTransition(() => {
+                            if (h(), !t.isConnected) return void g.skipTransition();
+                            if ((0, f.flushSync)(a), null == (m = i())) g.skipTransition();
+                            else {
+                                d(m), p || u(n()?.closest("[data-tab-id]") ?? null, "incomingTab-fuq1Db");
+                                let e = m.querySelector("[data-composer-surface-variant]");
+                                if (null != e) {
+                                    let t = getComputedStyle(e);
+                                    r.style.setProperty("--chat-pin-radius", t.borderRadius), r.style.setProperty("--chat-pin-background", t.backgroundColor), r.style.setProperty("--chat-pin-corner-shape", t.getPropertyValue("corner-shape"))
+                                }
+                            }
+                        }),
+                        v = () => {
+                            K?.animation === g && (h(), K = null, r.classList.remove(O), r.style.removeProperty("--chat-pin-easing"), r.style.removeProperty("--chat-pin-radius"), r.style.removeProperty("--chat-pin-background"), r.style.removeProperty("--chat-pin-corner-shape"))
+                        };
+                    K = {
+                        animation: g,
+                        cleanup: v
+                    }, g.ready.catch(() => {}), g.finished.then(v, v)
+                }({
+                    source: l,
+                    getTab: () => {
+                        let e = aa.get(S.l.tabById$, eg.a);
+                        return null == e ? null : l.ownerDocument.getElementById((0, z.a)(e.dndId))
+                    },
+                    destination: () => aa.get(eb.b),
+                    reducedMotion: aF,
+                    update: () => {
+                        !lg.current && (a("pin") || (r3(n.requestedDockPosition, !0), lZ(!1)))
+                    }
+                }) : a() || (n.shouldMinimize ? (0, f.flushSync)(() => {
+                    ac && la || r2(ac ? e_ : n.requestedDockPosition, !0), r7()
+                }) : (r3(n.requestedDockPosition, !0), null != l0 && "restored" !== l0.stage && (l1({
+                    ...l0,
+                    stage: "restored"
+                }), "minimized" === l0.stage && lq(ac ? null : {
+                    target: lT
+                }))), lZ(!1))
+            }, il[570] = ac, il[571] = ag, il[572] = ly, il[573] = lw, il[574] = r1, il[575] = ap, il[576] = la, il[577] = r7, il[578] = l0, il[579] = e_, il[580] = iT, il[581] = iN, il[582] = lT, il[583] = aa, il[584] = r2, il[585] = lZ, il[586] = l1, il[587] = lq, il[588] = aF, il[589] = r3, il[590] = nk) : nk = il[590], il[591] !== ly || il[592] !== lw || il[593] !== lZ || il[594] !== lF ? (nC = () => {
+                lF(!1), lg.current = !1, l2.current = !0, lZ(!0), ly.stop(), lw.stop()
+            }, il[591] = ly, il[592] = lw, il[593] = lZ, il[594] = lF, il[595] = nC) : nC = il[595], il[596] !== ob || il[597] !== iv || il[598] !== ac || il[599] !== al || il[600] !== lB || il[601] !== lX || il[602] !== lA || il[603] !== lD || il[604] !== lq || il[605] !== ow ? (nE = e => {
+                e.currentTarget.contains(e.target) && null != e.target.closest("[data-composer-input], [data-codex-composer-request]") ? ((!ac || al) && lA(!0), lX(!0), (al ? ow && ob : ac) && null == iv && !e.target.closest("[data-dictation-button], [data-dictation-recording-controls]") && !(e.relatedTarget instanceof Element && e.relatedTarget.closest("[data-dictation-button], [data-dictation-recording-controls]")) && !lB && null == lK.current && (lq(null), lD("expanded"))) : e.currentTarget.contains(e.target) && !lS.current?.contains(e.target) && (lX(!1), al && e.target.closest("header[data-quick-chat-drag-handle]") && lA(!0))
+            }, il[596] = ob, il[597] = iv, il[598] = ac, il[599] = al, il[600] = lB, il[601] = lX, il[602] = lA, il[603] = lD, il[604] = lq, il[605] = ow, il[606] = nE) : nE = il[606], il[607] !== lf || il[608] !== i9 ? (nM = e => {
+                i9 || "Escape" !== e.key || (l2.current = !0, lf.cancel())
+            }, il[607] = lf, il[608] = i9, il[609] = nM) : nM = il[609], il[610] !== i4 || il[611] !== i9 || il[612] !== le || il[613] !== r_ ? (nP = e => {
+                if (i9 || (l2.current = !1, le || 0 !== e.button || e.ctrlKey || !(e.target instanceof Element))) return;
+                let t = e.target.closest("[data-quick-chat-drag-handle]"),
+                    n = e.target.closest("button, a, input, textarea, select, label, [contenteditable], [role='button'], [role='menuitem'], [role='separator'], [data-composer-input-layout]"),
+                    i = lS.current,
+                    a = e.target.closest("[data-composer-input]")?.querySelector("[contenteditable='true']:has([data-placeholder])");
+                if (i4 && null != a && i?.contains(a) && (n === a || e.target.contains(a))) t = i;
+                else if (null == t || null != n && n !== t) return;
+                e.preventDefault(), t.setPointerCapture(e.pointerId), r_(e)
+            }, il[610] = i4, il[611] = i9, il[612] = le, il[613] = r_, il[614] = nP) : nP = il[614], il[615] !== lF ? (nR = () => {
+                lk.current?.contains(document.activeElement) || lF(!1)
+            }, il[615] = lF, il[616] = nR) : nR = il[616], il[617] !== lf || il[618] !== tq || il[619] !== io || il[620] !== sD || il[621] !== sL || il[622] !== sq || il[623] !== nm || il[624] !== sF || il[625] !== sI || il[626] !== sA || il[627] !== sW || il[628] !== sH || il[629] !== sB || il[630] !== nf || il[631] !== sO || il[632] !== nv || il[633] !== nx || il[634] !== ny || il[635] !== nw || il[636] !== nS || il[637] !== nz || il[638] !== nj || il[639] !== nk || il[640] !== nC || il[641] !== nE || il[642] !== nM || il[643] !== nP || il[644] !== nR ? (nN = {
+                ref: io,
+                "aria-label": sD,
+                "aria-labelledby": sL,
+                "aria-modal": sq,
+                animate: nm,
+                "data-chat-pane-dragging": sF,
+                "data-quick-chat-drag-handle": sI,
+                "data-pip-obstacle": sA,
+                "data-state": "open",
+                drag: sW,
+                dragConstraints: sH,
+                dragElastic: sB,
+                dragControls: lf,
+                dragListener: !1,
+                dragMomentum: !1,
+                initial: nf,
+                role: sO,
+                tabIndex: -1,
+                style: nv,
+                transition: nx,
+                onBlurCapture: ny,
+                onClick: nw,
+                onDoubleClick: nS,
+                onClickCapture: nz,
+                onDrag: nj,
+                onDragEnd: nk,
+                onDragStart: nC,
+                onFocusCapture: nE,
+                onKeyDown: tq,
+                onKeyDownCapture: nM,
+                onPointerDownCapture: nP,
+                onPointerLeave: nR
+            }, il[617] = lf, il[618] = tq, il[619] = io, il[620] = sD, il[621] = sL, il[622] = sq, il[623] = nm, il[624] = sF, il[625] = sI, il[626] = sA, il[627] = sW, il[628] = sH, il[629] = sB, il[630] = nf, il[631] = sO, il[632] = nv, il[633] = nx, il[634] = ny, il[635] = nw, il[636] = nS, il[637] = nz, il[638] = nj, il[639] = nk, il[640] = nC, il[641] = nE, il[642] = nM, il[643] = nP, il[644] = nR, il[645] = nN) : nN = il[645];
+            let sG = null == iu ? "floating" : "content",
+                sQ = lp ? "bottom" : "top";
+            il[646] !== ly || il[647] !== lw || il[648] !== l4 || il[649] !== lq ? (nT = e => {
+                l4(e), e && (lq(null), ly.stop(), lw.stop())
+            }, il[646] = ly, il[647] = lw, il[648] = l4, il[649] = lq, il[650] = nT) : nT = il[650], il[651] !== e5.type || il[652] !== sC || il[653] !== ac || il[654] !== oB || il[655] !== lp || il[656] !== iP || il[657] !== a8 || il[658] !== rG || il[659] !== az || il[660] !== lA ? (nD = !ac && oB && "ready" === e5.type ? (0, i.jsx)("div", {
+                ref: (0, T.a)(lk, a8, E.c),
+                className: (0, l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset)", !iP && (lp ? "top-full" : "bottom-full"), lp ? "pt-3" : "pb-3"),
+                "data-pip-obstacle": az,
+                onClickCapture: () => {
+                    (iP ? lj.current : lz.current)?.focus({
+                        preventScroll: !0
+                    }), lA(!1)
+                },
+                style: iP ? rG : void 0,
+                children: sC
+            }) : null, il[651] = e5.type, il[652] = sC, il[653] = ac, il[654] = oB, il[655] = lp, il[656] = iP, il[657] = a8, il[658] = rG, il[659] = az, il[660] = lA, il[661] = nD) : nD = il[661], il[662] !== sC || il[663] !== ac || il[664] !== oB || il[665] !== lp || il[666] !== iP || il[667] !== a8 || il[668] !== rG || il[669] !== lX || il[670] !== lA || il[671] !== aF ? (nL = ac && oB ? (0, i.jsx)(d.a.div, {
+                initial: {
+                    opacity: 0,
+                    y: 8 * !aF
+                },
+                animate: {
+                    opacity: 1,
+                    y: 0
+                },
+                exit: {
+                    opacity: 0,
+                    y: 8 * !aF
+                },
+                transition: {
+                    duration: .3 * !aF,
+                    ease: N.e
+                },
+                ref: (0, T.a)(lk, a8, E.c),
+                className: (0, l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset)", !iP && (lp ? "top-full" : "bottom-full"), iP && (lp ? "pt-1" : "pb-1")),
+                "data-pip-obstacle": "quick-chat",
+                onClickCapture: () => {
+                    (iP ? lj.current : lz.current)?.focus({
+                        preventScroll: !0
+                    }), lA(!1), lX(!1)
+                },
+                style: iP ? rG : void 0,
+                children: iP ? (0, i.jsx)(C.c, {
+                    variant: "notice",
+                    children: sC
+                }) : sC
+            }, "response-preview") : null, il[662] = sC, il[663] = ac, il[664] = oB, il[665] = lp, il[666] = iP, il[667] = a8, il[668] = rG, il[669] = lX, il[670] = lA, il[671] = aF, il[672] = nL) : nL = il[672], il[673] !== nL ? (nq = (0, i.jsx)(h.a, {
+                initial: !1,
+                children: nL
+            }), il[673] = nL, il[674] = nq) : nq = il[674], il[675] !== rx || il[676] !== ac || il[677] !== aS || il[678] !== tD || il[679] !== ox || il[680] !== oy || il[681] !== lp || il[682] !== i9 || il[683] !== iU || il[684] !== aF || il[685] !== oM ? (n_ = ac && void 0 !== iU && !i9 && !oy && (0, i.jsx)(eE, {
+                compact: ox,
+                preview: oM ? iU : null,
+                reduceMotion: aF,
+                isDockedTop: lp,
+                opacity: rx,
+                onExpand: tD
+            }, aS), il[675] = rx, il[676] = ac, il[677] = aS, il[678] = tD, il[679] = ox, il[680] = oy, il[681] = lp, il[682] = i9, il[683] = iU, il[684] = aF, il[685] = oM, il[686] = n_) : n_ = il[686];
+            let sJ = lp ? "top-full pt-2" : "bottom-full";
+            il[687] !== sJ ? (nF = (0, l.b)("pointer-events-auto absolute inset-x-(--floating-panel-inset) flex flex-col gap-3 pb-3 empty:hidden", sJ), il[687] = sJ, il[688] = nF) : nF = il[688], il[689] !== a4 || il[690] !== ou || il[691] !== nF ? (nI = (0, i.jsx)("div", {
+                ref: a4,
+                className: nF,
+                hidden: ou
+            }), il[689] = a4, il[690] = ou, il[691] = nF, il[692] = nI) : nI = il[692];
+            let s0 = 0 === o0 && "pt-2",
+                s1 = lp ? "w-full" : "w-80",
+                s2 = oQ && "left-1/2 -translate-x-1/2",
+                s3 = !oQ && (oG ? "left-0" : "right-0"),
+                s4 = ou && lY && "invisible";
+            il[693] !== s0 || il[694] !== s1 || il[695] !== s2 || il[696] !== s3 || il[697] !== s4 ? (nA = (0, l.b)(D.a.floatingComposerInset, "pointer-events-auto absolute top-full max-w-full empty:hidden", s0, s1, s2, s3, s4), il[693] = s0, il[694] = s1, il[695] = s2, il[696] = s3, il[697] = s4, il[698] = nA) : nA = il[698], il[699] !== o0 ? (nW = {
+                marginTop: o0
+            }, il[699] = o0, il[700] = nW) : nW = il[700], il[701] !== ix || il[702] !== a5 || il[703] !== az || il[704] !== nA || il[705] !== nW ? (nH = (0, i.jsx)("div", {
+                ref: a5,
+                className: nA,
+                style: nW,
+                "data-pip-obstacle": az,
+                children: ix
+            }), il[701] = ix, il[702] = a5, il[703] = az, il[704] = nA, il[705] = nW, il[706] = nH) : nH = il[706], il[707] !== no || il[708] !== ac || il[709] !== ou ? (nB = ac ? void 0 : {
+                clipPath: no,
+                opacity: +!ou
+            }, il[707] = no, il[708] = ac, il[709] = ou, il[710] = nB) : nB = il[710];
+            let s5 = !oy && "pointer-events-auto";
+            il[711] !== s5 ? (nO = (0, l.b)("relative z-0 flex min-h-0 flex-1 flex-col", s5), il[711] = s5, il[712] = nO) : nO = il[712], il[713] !== oh || il[714] !== ac || il[715] !== rU ? (nK = ac ? {
+                clipPath: rU,
+                opacity: oh
+            } : void 0, il[713] = oh, il[714] = ac, il[715] = rU, il[716] = nK) : nK = il[716];
+            let s6 = !!oy || void 0;
+            il[717] !== ac || il[718] !== lL || il[719] !== aF ? (nV = aF || !ac && null == lL ? {
+                duration: 0
+            } : {
+                duration: .3,
+                ease: N.e
+            }, il[717] = ac, il[718] = lL, il[719] = aF, il[720] = nV) : nV = il[720], il[721] !== ou || il[722] !== rO || il[723] !== lT || il[724] !== lL || il[725] !== lq ? (n$ = e => {
+                lL?.target === (ou ? "minimized" : lT) && "object" == typeof e && "clipPath" in e && e.clipPath === (ou ? rO : ew) && lq(e => e === lL ? null : e)
+            }, il[721] = ou, il[722] = rO, il[723] = lT, il[724] = lL, il[725] = lq, il[726] = n$) : n$ = il[726], il[727] !== ac || il[728] !== og || il[729] !== lp || il[730] !== r7 || il[731] !== ow ? (nX = !ac && !ow && (0, i.jsx)("div", {
+                className: (0, l.b)("minimizeButton-HmBp0q", "absolute right-2 z-10", lp ? "top-full pt-1" : "bottom-full pb-1"),
+                children: (0, i.jsx)(ee.c, {
+                    standalone: !0,
+                    isCompact: og,
+                    onMinimize: r7
+                })
+            }), il[727] = ac, il[728] = og, il[729] = lp, il[730] = r7, il[731] = ow, il[732] = nX) : nX = il[732], il[733] !== ac || il[734] !== sg || il[735] !== ox || il[736] !== lY || il[737] !== r7 || il[738] !== ij || il[739] !== ow ? (nY = (ac || ow) && (ij?.({
+                contextMenuTrigger: sg,
+                isCompact: ox,
+                isDragging: lY,
+                onMinimize: r7
+            }) ?? sg), il[733] = ac, il[734] = sg, il[735] = ox, il[736] = lY, il[737] = r7, il[738] = ij, il[739] = ow, il[740] = nY) : nY = il[740], il[741] !== ih || il[742] !== af ? (nZ = af && (0, i.jsx)(ev.a, {
+                hasPagePicker: ih
+            }), il[741] = ih, il[742] = af, il[743] = nZ) : nZ = il[743];
+            let s7 = ox && "justify-end";
+            il[744] !== s7 ? (nU = (0, l.b)("relative flex min-h-0 flex-1 flex-col", s7), il[744] = s7, il[745] = nU) : nU = il[745];
+            let s8 = ac ? ox : aj.followLatestTranscript;
+            il[746] !== aj || il[747] !== s8 ? (nG = {
+                ...aj,
+                isFloatingChatSurface: !0,
+                followLatestTranscript: s8
+            }, il[746] = aj, il[747] = s8, il[748] = nG) : nG = il[748];
+            let s9 = ac ? "absolute inset-x-0 overflow-hidden" : "contents";
+            il[749] !== l5 || il[750] !== ac || il[751] !== rb ? (nQ = ac ? {
+                bottom: l5,
+                height: rb
+            } : void 0, il[749] = l5, il[750] = ac, il[751] = rb, il[752] = nQ) : nQ = il[752], il[753] !== rx || il[754] !== ok || il[755] !== aT || il[756] !== ox || il[757] !== a2 || il[758] !== aN || il[759] !== i$ ? (nJ = ok && (0, i.jsx)(d.a.div, {
+                className: "pointer-events-none absolute inset-x-(--floating-panel-inset) bottom-0 px-4 py-3 text-sm text-default",
+                "aria-hidden": aT || !ox,
+                style: {
+                    opacity: rx
+                },
+                ref: a2,
+                children: aT ? (0, i.jsx)("span", {
+                    className: "line-clamp-2 wrap-anywhere select-none",
+                    dir: "auto",
+                    children: aN
+                }) : i$ ?? (0, i.jsx)(v.a, {
+                    id: "quickChat.responseWorking",
+                    defaultMessage: "Working…"
+                })
+            }), il[753] = rx, il[754] = ok, il[755] = aT, il[756] = ox, il[757] = a2, il[758] = aN, il[759] = i$, il[760] = nJ) : nJ = il[760];
+            let ce = !ac && (ox ? "hidden" : "flex"),
+                ct = ac && "absolute inset-x-0 bottom-0 flex",
+                cn = ac && "overflow-hidden";
+            il[761] !== ce || il[762] !== ct || il[763] !== cn ? (n0 = (0, l.b)("mx-(--floating-panel-inset) min-h-0 flex-1 flex-col", ce, ct, cn), il[761] = ce, il[762] = ct, il[763] = cn, il[764] = n0) : n0 = il[764], il[765] !== l5 || il[766] !== ac || il[767] !== rt || il[768] !== rv || il[769] !== ox || il[770] !== ap ? (n1 = ac ? {
+                height: ap ? void 0 : Math.max(0, rt - 46 - l5),
+                top: ap ? 0 : void 0,
+                opacity: ox ? 0 : rv
+            } : void 0, il[765] = l5, il[766] = ac, il[767] = rt, il[768] = rv, il[769] = ox, il[770] = ap, il[771] = n1) : n1 = il[771], il[772] !== ac || il[773] !== ay || il[774] !== ov || il[775] !== ox || il[776] !== i9 || il[777] !== ou || il[778] !== iQ || il[779] !== lD || il[780] !== lq ? (n2 = ay && (!ov || ac) ? iQ?.(() => {
+                lq(null), lD("compact")
+            }, !ox && !i9 && !ou) : null, il[772] = ac, il[773] = ay, il[774] = ov, il[775] = ox, il[776] = i9, il[777] = ou, il[778] = iQ, il[779] = lD, il[780] = lq, il[781] = n2) : n2 = il[781], il[782] !== ac || il[783] !== ax || il[784] !== ay || il[785] !== ox || il[786] !== rs ? (n3 = !ay && (0, i.jsx)(h.a, {
+                initial: !1,
+                children: (ac || !ox) && null != ax && (0, i.jsx)(d.a.div, {
+                    className: "flex min-h-0 flex-1 flex-col",
+                    initial: !ac && {
+                        opacity: 0
+                    },
+                    animate: {
+                        opacity: 1
+                    },
+                    exit: {
+                        opacity: 0
+                    },
+                    transition: {
+                        duration: rs,
+                        ease: N.e
+                    },
+                    children: ax
+                }, "empty-state")
+            }), il[782] = ac, il[783] = ax, il[784] = ay, il[785] = ox, il[786] = rs, il[787] = n3) : n3 = il[787], il[788] !== ox || il[789] !== aU || il[790] !== n0 || il[791] !== n1 || il[792] !== n2 || il[793] !== n3 ? (n4 = (0, i.jsxs)(d.a.div, {
+                ref: aU,
+                "aria-hidden": ox,
+                className: n0,
+                inert: ox,
+                style: n1,
+                children: [n2, n3]
+            }), il[788] = ox, il[789] = aU, il[790] = n0, il[791] = n1, il[792] = n2, il[793] = n3, il[794] = n4) : n4 = il[794], il[795] !== ac || il[796] !== tD || il[797] !== ok || il[798] !== ox || il[799] !== r9 || il[800] !== aN ? (n5 = ac && ox && ok && (0, i.jsx)(q.a, {
+                unstyled: !0,
+                focusRing: "inset",
+                className: "absolute inset-0",
+                "aria-label": r9,
+                "aria-description": aN ?? void 0,
+                "data-quick-chat-drag-handle": !0,
+                onClick: tD
+            }), il[795] = ac, il[796] = tD, il[797] = ok, il[798] = ox, il[799] = r9, il[800] = aN, il[801] = n5) : n5 = il[801], il[802] !== s9 || il[803] !== nQ || il[804] !== nJ || il[805] !== n4 || il[806] !== n5 ? (n6 = (0, i.jsxs)(d.a.div, {
+                className: s9,
+                style: nQ,
+                children: [nJ, n4, n5]
+            }), il[802] = s9, il[803] = nQ, il[804] = nJ, il[805] = n4, il[806] = n5, il[807] = n6) : n6 = il[807], il[808] !== nG || il[809] !== n6 ? (n7 = (0, i.jsx)(em.b, {
+                value: nG,
+                children: n6
+            }), il[808] = nG, il[809] = n6, il[810] = n7) : n7 = il[810];
+            let ci = ij?.({
+                contextMenuTrigger: su,
+                isCompact: ox,
+                isDragging: lY,
+                onMinimize: r7
+            }) ?? su;
+            il[811] !== nU || il[812] !== n7 || il[813] !== ci ? (n8 = (0, i.jsxs)("div", {
+                className: nU,
+                children: [n7, ci]
+            }), il[811] = nU, il[812] = n7, il[813] = ci, il[814] = n8) : n8 = il[814], il[815] !== lh || il[816] !== oy || il[817] !== nB || il[818] !== nO || il[819] !== nK || il[820] !== s6 || il[821] !== nV || il[822] !== n$ || il[823] !== nX || il[824] !== nY || il[825] !== nZ || il[826] !== n8 ? (n9 = (0, i.jsxs)(d.a.div, {
+                "aria-hidden": oy,
+                animate: nB,
+                className: nO,
+                "data-floating-chat-surface": !0,
+                "data-floating-chat-dock-position": lh,
+                style: nK,
+                initial: !1,
+                inert: s6,
+                transition: nV,
+                onAnimationComplete: n$,
+                children: [nX, nY, nZ, n8]
+            }), il[815] = lh, il[816] = oy, il[817] = nB, il[818] = nO, il[819] = nK, il[820] = s6, il[821] = nV, il[822] = n$, il[823] = nX, il[824] = nY, il[825] = nZ, il[826] = n8, il[827] = n9) : n9 = il[827], il[828] !== L || il[829] !== r6 || il[830] !== og || il[831] !== ou || il[832] !== rB || il[833] !== iy || il[834] !== r5 || il[835] !== sn || il[836] !== st || il[837] !== aF || il[838] !== sE || il[839] !== nr || il[840] !== ns || il[841] !== nc || il[842] !== sM || il[843] !== sP || il[844] !== sR || il[845] !== nu || il[846] !== nd || il[847] !== nh || il[848] !== sN || il[849] !== sT || il[850] !== nN || il[851] !== sG || il[852] !== sQ || il[853] !== nT || il[854] !== nD || il[855] !== nq || il[856] !== n_ || il[857] !== nI || il[858] !== nH || il[859] !== n9 ? (ie = (0, i.jsxs)(L, {
+                contentRef: av,
+                allowCompactResize: !0,
+                animateSurface: sE,
+                contentStyle: nr,
+                surfaceStyle: ns,
+                currentSize: nc,
+                heightLabel: sn,
+                resizeFromCenter: sM,
+                fixedHorizontalEdge: sP,
+                isCompact: og,
+                isCompactChromeRevealed: sR,
+                isMinimized: ou,
+                keepSurfaceInset: !0,
+                maximumSize: nu,
+                minimizedContent: nd,
+                minimizedSurfaceBounds: rB,
+                minimumSize: nh,
+                prefersCompactPresentation: !0,
+                resizable: sN,
+                background: sT,
+                sectionRef: lz,
+                sectionProps: nN,
+                shouldReduceMotion: aF,
+                variant: sG,
+                verticalResizeEdge: sQ,
+                widthLabel: st,
+                onResize: r5,
+                onResizeEnd: r6,
+                onResizingChange: nT,
+                children: [nD, nq, n_, nI, nH, n9, iy]
+            }), il[828] = L, il[829] = r6, il[830] = og, il[831] = ou, il[832] = rB, il[833] = iy, il[834] = r5, il[835] = sn, il[836] = st, il[837] = aF, il[838] = sE, il[839] = nr, il[840] = ns, il[841] = nc, il[842] = sM, il[843] = sP, il[844] = sR, il[845] = nu, il[846] = nd, il[847] = nh, il[848] = sN, il[849] = sT, il[850] = nN, il[851] = sG, il[852] = sQ, il[853] = nT, il[854] = nD, il[855] = nq, il[856] = n_, il[857] = nI, il[858] = nH, il[859] = n9, il[860] = ie) : ie = il[860];
+            let ca = ie;
+            return il[861] !== aq ? (it = {
+                id: aq
+            }, il[861] = aq, il[862] = it) : it = il[862], il[863] !== ac || il[864] !== a1 ? (ii = ac && (0, i.jsx)("div", {
+                ref: a1,
+                "aria-hidden": !0,
+                className: (0, l.b)(ef.a, "pointer-events-none invisible absolute")
+            }), il[863] = ac, il[864] = a1, il[865] = ii) : ii = il[865], il[866] !== ca || il[867] !== it || il[868] !== ii ? (ia = (0, i.jsxs)(Q.a, {
+                value: it,
+                children: [ii, ca]
+            }), il[866] = ca, il[867] = it, il[868] = ii, il[869] = ia) : ia = il[869], ia
+        }
+
+        function eC() {
+            return new Set
+        }
+
+        function eE(e) {
+            let t, n, o, r, s, c = (0, a.c)(17),
+                {
+                    compact: u,
+                    preview: p,
+                    isDockedTop: m,
+                    opacity: f,
+                    reduceMotion: g,
+                    onExpand: v
+                } = e,
+                b = m ? "top-full mt-2" : "bottom-full mb-2";
+            c[0] !== b ? (t = (0, l.b)("pointer-events-none absolute inset-x-(--floating-panel-inset) -z-1 grid grid-cols-1 items-end justify-items-start px-4", b), c[0] = b, c[1] = t) : t = c[1], c[2] !== f ? (n = {
+                opacity: f
+            }, c[2] = f, c[3] = n) : n = c[3];
+            let x = !u || !p;
+            return c[4] !== u || c[5] !== m || c[6] !== v || c[7] !== p || c[8] !== g ? (o = u && p && (0, i.jsx)(d.a.div, {
+                className: (0, l.b)("col-start-1 row-start-1 max-w-full", m ? "origin-top-left" : "origin-bottom-left"),
+                initial: !g && {
+                    y: 16,
+                    scale: .94,
+                    opacity: 0
+                },
+                animate: {
+                    y: 0,
+                    scale: 1,
+                    opacity: 1
+                },
+                exit: {
+                    opacity: 0
+                },
+                transition: g ? {
+                    duration: 0
+                } : {
+                    type: "spring",
+                    duration: .3,
+                    bounce: .16,
+                    opacity: {
+                        duration: .15
+                    }
+                },
+                children: (0, i.jsx)(q.a, {
+                    unstyled: !0,
+                    className: "pointer-events-auto max-w-full text-start",
+                    "data-quick-chat-drag-handle": !0,
+                    onClick: v,
+                    children: p.content
+                })
+            }, p.id), c[4] = u, c[5] = m, c[6] = v, c[7] = p, c[8] = g, c[9] = o) : o = c[9], c[10] !== o ? (r = (0, i.jsx)(h.a, {
+                children: o
+            }), c[10] = o, c[11] = r) : r = c[11], c[12] !== t || c[13] !== n || c[14] !== x || c[15] !== r ? (s = (0, i.jsx)(d.a.div, {
+                className: t,
+                style: n,
+                inert: x,
+                children: r
+            }), c[12] = t, c[13] = n, c[14] = x, c[15] = r, c[16] = s) : s = c[16], s
+        }
+
+        function eM(e, t, n) {
+            return t instanceof Node && (e.contains(t) || t instanceof Element && (null != t.closest("[data-composer-overlay-floating-ui], [data-content-search-bar], [data-composer-focus-target]") || null != t.closest("[data-floating-chat-annotation-layer]") || t.closest("[data-overlay-owner]")?.getAttribute("data-overlay-owner") === n))
+        }
+
+        function eP(e, t, n) {
+            return Math.max(t, Math.min(e, n))
+        }
+
+        function eR() {
+            return {
+                width: window.visualViewport?.width ?? window.innerWidth,
+                height: window.visualViewport?.height ?? window.innerHeight
+            }
+        }
+    }),
+    eeV6: (function(e, t, n) {
+        var i = n("ABep"),
+            a = n("QosV"),
+            l = n("slpy"),
+            o = n("on57"),
+            r = n("IPUh"),
+            s = n("Wf1j"),
+            c = n("Sm6l"),
+            u = n("HOLv"),
+            d = n("V8uZ"),
+            h = n("vRRZ"),
+            p = n("mG0J");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, l, r, s = (0, a.c)(12),
+                    {
+                        children: c,
+                        isCompact: u,
+                        isVisible: d,
+                        isDisabled: h
+                    } = e,
+                    p = void 0 !== u && u,
+                    m = !d || !!h || void 0,
+                    f = p ? Number(d) : "var(--quick-chat-expansion, 1)";
+                s[0] !== f ? (t = {
+                    opacity: f
+                }, s[0] = f, s[1] = t) : t = s[1];
+                let g = !d || !!h || void 0,
+                    v = p && "border-b border-default";
+                return s[2] !== v ? (n = (0, o.b)("flex h-toolbar cursor-interaction touch-none items-center justify-between px-2 select-none", v), s[2] = v, s[3] = n) : n = s[3], s[4] !== c || s[5] !== n ? (l = (0, i.jsx)("div", {
+                    className: n,
+                    children: c
+                }), s[4] = c, s[5] = n, s[6] = l) : l = s[6], s[7] !== m || s[8] !== t || s[9] !== g || s[10] !== l ? (r = (0, i.jsx)("header", {
+                    className: "absolute inset-x-0 top-0 z-10 mx-(--floating-panel-inset) h-toolbar min-h-0 shrink-0 overflow-hidden",
+                    "aria-hidden": m,
+                    style: t,
+                    "data-quick-chat-drag-handle": !0,
+                    inert: g,
+                    children: l
+                }), s[7] = m, s[8] = t, s[9] = g, s[10] = l, s[11] = r) : r = s[11], r
+            },
+            b: function(e) {
+                let t, n = (0, a.c)(2),
+                    {
+                        children: l
+                    } = e;
+                return n[0] !== l ? (t = (0, i.jsx)("span", {
+                    className: "flex button-toolbar max-w-full min-w-0 items-center gap-2 border border-transparent py-0 text-sm leading-[18px] font-normal",
+                    children: l
+                }), n[0] = l, n[1] = t) : t = n[1], t
+            },
+            c: function(e) {
+                let t, n, l, o, r = (0, a.c)(11),
+                    {
+                        isCompact: d,
+                        onMinimize: p,
+                        standalone: m
+                    } = e,
+                    f = void 0 !== m && m,
+                    g = (0, s.a)();
+                r[0] !== g ? (t = g.formatMessage({
+                    id: "quickChat.minimize",
+                    defaultMessage: "Minimize chat"
+                }), r[0] = g, r[1] = t) : t = r[1];
+                let v = f ? "outlineSurface" : "ghostSecondary",
+                    b = d ? "composer" : "toolbar";
+                return r[2] !== f ? (n = e => {
+                    f && e.preventDefault()
+                }, r[2] = f, r[3] = n) : n = r[3], r[4] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, i.jsx)(u.a, {
+                    "aria-hidden": !1,
+                    asset: h.a
+                }), r[4] = l) : l = r[4], r[5] !== p || r[6] !== t || r[7] !== v || r[8] !== b || r[9] !== n ? (o = (0, i.jsx)(c.a, {
+                    "aria-label": t,
+                    color: v,
+                    size: b,
+                    uniform: !0,
+                    onClick: p,
+                    onPointerDown: n,
+                    children: l
+                }), r[5] = p, r[6] = t, r[7] = v, r[8] = b, r[9] = n, r[10] = o) : o = r[10], o
+            },
+            d: function(e) {
+                let t, n, o, r, d, h = (0, a.c)(13),
+                    {
+                        minimizeButton: m,
+                        onOpenRightPane: f,
+                        disabled: g
+                    } = e,
+                    v = (0, s.a)();
+                h[0] !== v ? (t = v.formatMessage({
+                    id: "quickChat.dock.openInRightPanel",
+                    defaultMessage: "Open chat in right panel"
+                }), h[0] = v, h[1] = t) : t = h[1];
+                let b = t;
+                return h[2] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, i.jsx)(u.a, {
+                    className: "rotate-180",
+                    asset: p.a
+                }), h[2] = n) : n = h[2], h[3] !== g || h[4] !== b || h[5] !== f ? (o = (0, i.jsx)(c.a, {
+                    "aria-label": b,
+                    color: "ghostSecondary",
+                    disabled: g,
+                    size: "toolbar",
+                    uniform: !0,
+                    onClick: f,
+                    children: n
+                }), h[3] = g, h[4] = b, h[5] = f, h[6] = o) : o = h[6], h[7] !== b || h[8] !== o ? (r = (0, i.jsx)(l.a, {
+                    content: b,
+                    children: o
+                }), h[7] = b, h[8] = o, h[9] = r) : r = h[9], h[10] !== m || h[11] !== r ? (d = (0, i.jsxs)("div", {
+                    className: "-me-0.5 flex shrink-0 items-center [--spacing-token-button-composer:--spacing(8)]",
+                    children: [m, r]
+                }), h[10] = m, h[11] = r, h[12] = d) : d = h[12], d
+            },
+            e: function(e) {
+                let t, n, l, s, c, u, h, p = (0, a.c)(28),
+                    {
+                        animateChrome: m,
+                        expandOnClick: f,
+                        children: g,
+                        isChromeRevealed: v,
+                        isCompact: b,
+                        isDisabled: x,
+                        presentationToggle: y,
+                        reserveSpace: w
+                    } = e,
+                    S = void 0 !== f && f,
+                    z = !b && "shrink-0";
+                p[0] !== z ? (t = (0, o.b)("relative min-h-0 overflow-hidden", z), p[0] = z, p[1] = t) : t = p[1];
+                let j = !v || !!x || void 0,
+                    k = v || w ? 46 : 0,
+                    C = +!!v;
+                p[2] !== k || p[3] !== C ? (n = {
+                    height: k,
+                    opacity: C
+                }, p[2] = k, p[3] = C, p[4] = n) : n = p[4];
+                let E = !v || !!x || void 0;
+                p[5] !== m || p[6] !== S ? (l = m ? {
+                    duration: .3,
+                    ease: d.e,
+                    ...S ? {
+                        opacity: {
+                            duration: 0
+                        }
+                    } : {}
+                } : {
+                    duration: 0
+                }, p[5] = m, p[6] = S, p[7] = l) : l = p[7], p[8] !== b || p[9] !== y ? (s = null != y ? (0, i.jsx)("button", {
+                    className: "pointer-events-none absolute inset-0 rounded-[inherit] focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset",
+                    "aria-label": y.label,
+                    "aria-expanded": !b,
+                    type: "button",
+                    onClick: y.onToggle
+                }) : null, p[8] = b, p[9] = y, p[10] = s) : s = p[10];
+                let M = !S && null != y && b && "cursor-n-resize",
+                    P = !S && null != y && !b && "cursor-s-resize",
+                    R = (S || null == y) && "cursor-interaction",
+                    N = b && "mx-1.5 border-b border-default px-2",
+                    T = !b && "px-3";
+                return p[11] !== M || p[12] !== P || p[13] !== R || p[14] !== N || p[15] !== T ? (c = (0, o.b)("flex h-toolbar touch-none select-none items-center justify-between", M, P, R, N, T), p[11] = M, p[12] = P, p[13] = R, p[14] = N, p[15] = T, p[16] = c) : c = p[16], p[17] !== g || p[18] !== c ? (u = (0, i.jsx)("div", {
+                    className: c,
+                    children: g
+                }), p[17] = g, p[18] = c, p[19] = u) : u = p[19], p[20] !== s || p[21] !== u || p[22] !== t || p[23] !== j || p[24] !== n || p[25] !== E || p[26] !== l ? (h = (0, i.jsxs)(r.a.header, {
+                    className: t,
+                    "aria-hidden": j,
+                    animate: n,
+                    "data-quick-chat-drag-handle": !0,
+                    initial: !1,
+                    inert: E,
+                    transition: l,
+                    children: [s, u]
+                }), p[20] = s, p[21] = u, p[22] = t, p[23] = j, p[24] = n, p[25] = E, p[26] = l, p[27] = h) : h = p[27], h
+            }
+        })
+    }),
+    sArP: (function(e, t, n) {
+        n.d(t, {
+            a: () => h
+        });
+        var i = n("ABep"),
+            a = n("QosV"),
+            l = n("FHYD"),
+            o = n("on57"),
+            r = n("zd8w"),
+            s = n("wD9O");
+
+        function c(e) {
+            let t, n, l, c, d, h, p, m, f, g = (0, a.c)(35),
+                {
+                    edge: v,
+                    getCurrentSize: b,
+                    maximumSize: x,
+                    resizeFromCenter: y,
+                    minimumSize: w,
+                    onResizeEnd: S,
+                    onResizingChange: z,
+                    setSize: j,
+                    verticalEdge: k
+                } = e,
+                C = void 0 === v ? "left" : v,
+                E = void 0 !== y && y,
+                M = void 0 === k ? "top" : k,
+                P = (0, s.c)(),
+                R = (0, r.useRef)(null);
+            g[0] !== C || g[1] !== x || g[2] !== w || g[3] !== E || g[4] !== j || g[5] !== M || g[6] !== P ? (t = e => {
+                let t = R.current;
+                if (null == t || t.pointerId !== e.pointerId) return;
+                e.preventDefault();
+                let n = {
+                    height: u(t.startSize.height + ("top" === M ? -1 : 1) * ((0, s.b)(e.clientY, P) - t.startPointer.y), w.height, x.height),
+                    width: u(t.startSize.width + (E ? 2 : 1) * ("left" === C ? -1 : 1) * ((0, s.b)(e.clientX, P) - t.startPointer.x), w.width, x.width)
+                };
+                t.didMove || (t.didMove = n.height !== t.startSize.height || n.width !== t.startSize.width), t.lastSize = n, j(n)
+            }, g[0] = C, g[1] = x, g[2] = w, g[3] = E, g[4] = j, g[5] = M, g[6] = P, g[7] = t) : t = g[7];
+            let N = t;
+            g[8] !== S || g[9] !== z ? (n = (e, t) => {
+                let n = R.current;
+                n?.pointerId === e.pointerId && (R.current = null, z?.(!1), t && n.didMove && S?.(n.lastSize))
+            }, g[8] = S, g[9] = z, g[10] = n) : n = g[10];
+            let T = n,
+                D = "top" === M ? "top-0" : "bottom-0",
+                L = "left" === C ? "left-0" : "right-0",
+                q = "left" === C == ("top" === M) ? "cursor-nwse-resize" : "cursor-nesw-resize";
+            return g[11] !== D || g[12] !== L || g[13] !== q ? (l = (0, o.b)("group absolute z-50 flex size-4 touch-none select-none", D, L, q), g[11] = D, g[12] = L, g[13] = q, g[14] = l) : l = g[14], g[15] !== T ? (c = e => {
+                T(e, !1)
+            }, g[15] = T, g[16] = c) : c = g[16], g[17] !== N || g[18] !== T ? (d = e => {
+                N(e), T(e, !0)
+            }, g[17] = N, g[18] = T, g[19] = d) : d = g[19], g[20] !== b || g[21] !== z || g[22] !== P ? (h = e => {
+                if (0 !== e.button) return;
+                e.preventDefault(), e.currentTarget.setPointerCapture?.(e.pointerId);
+                let t = b();
+                R.current = {
+                    didMove: !1,
+                    lastSize: t,
+                    pointerId: e.pointerId,
+                    startPointer: {
+                        x: (0, s.b)(e.clientX, P),
+                        y: (0, s.b)(e.clientY, P)
+                    },
+                    startSize: t
+                }, z?.(!0)
+            }, g[20] = b, g[21] = z, g[22] = P, g[23] = h) : h = g[23], g[24] !== N || g[25] !== T ? (p = e => {
+                N(e), T(e, !0)
+            }, g[24] = N, g[25] = T, g[26] = p) : p = g[26], g[27] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, i.jsx)("div", {
+                className: "pointer-events-none m-auto h-px w-2 rotate-45 bg-text/25 opacity-0 group-hover:opacity-100 group-active:opacity-100"
+            }), g[27] = m) : m = g[27], g[28] !== N || g[29] !== c || g[30] !== d || g[31] !== h || g[32] !== p || g[33] !== l ? (f = (0, i.jsx)("div", {
+                "aria-hidden": !0,
+                className: l,
+                onLostPointerCapture: c,
+                onPointerCancel: d,
+                onPointerDown: h,
+                onPointerMove: N,
+                onPointerUp: p,
+                children: m
+            }), g[28] = N, g[29] = c, g[30] = d, g[31] = h, g[32] = p, g[33] = l, g[34] = f) : f = g[34], f
+        }
+
+        function u(e, t, n) {
+            return Math.min(Math.max(e, t), n)
+        }
+        let d = ["left", "right"];
+
+        function h(e) {
+            let t, n, o, r, s = (0, a.c)(43),
+                {
+                    currentSize: u,
+                    defaultSize: h,
+                    extendIntoToolbar: p,
+                    fixedHorizontalEdge: m,
+                    resizeFromCenter: f,
+                    heightLabel: g,
+                    maximumSize: v,
+                    minimumSize: b,
+                    onResize: x,
+                    onResizeEnd: y,
+                    onResizingChange: w,
+                    verticalEdge: S,
+                    widthLabel: z
+                } = e,
+                j = void 0 === p || p,
+                k = void 0 !== f && f,
+                C = void 0 === S ? "top" : S;
+            if (s[0] !== u || s[1] !== h || s[2] !== j || s[3] !== m || s[4] !== g || s[5] !== v || s[6] !== b || s[7] !== x || s[8] !== y || s[9] !== w || s[10] !== k || s[11] !== C || s[12] !== z) {
+                let e, a;
+                s[16] !== m ? (e = e => e !== m, s[16] = m, s[17] = e) : e = s[17];
+                let r = d.filter(e);
+                s[18] !== u || s[19] !== h || s[20] !== j || s[21] !== v || s[22] !== b || s[23] !== x || s[24] !== y || s[25] !== w || s[26] !== k || s[27] !== z ? (a = e => (0, i.jsx)(l.a, {
+                    ariaLabel: z,
+                    defaultSize: h.width,
+                    edge: e,
+                    resizeFromCenter: k,
+                    extendIntoToolbar: j,
+                    getCurrentSize: () => u.width,
+                    maximumSize: v.width,
+                    minimumSize: b.width,
+                    onResizeEnd: e => {
+                        y({
+                            ...u,
+                            width: e
+                        })
+                    },
+                    onResizingChange: w,
+                    setSize: t => {
+                        x(e, {
+                            ...u,
+                            width: t
+                        })
+                    }
+                }, e), s[18] = u, s[19] = h, s[20] = j, s[21] = v, s[22] = b, s[23] = x, s[24] = y, s[25] = w, s[26] = k, s[27] = z, s[28] = a) : a = s[28], t = r.map(a), s[29] !== u || s[30] !== h || s[31] !== g || s[32] !== v || s[33] !== b || s[34] !== x || s[35] !== y || s[36] !== w || s[37] !== C ? (n = null != C && (0, i.jsx)(l.a, {
+                    ariaLabel: g,
+                    defaultSize: h.height,
+                    edge: C,
+                    getCurrentSize: () => u.height,
+                    maximumSize: v.height,
+                    minimumSize: b.height,
+                    onResizeEnd: e => {
+                        y({
+                            ...u,
+                            height: e
+                        })
+                    },
+                    onResizingChange: w,
+                    setSize: e => {
+                        x("right", {
+                            ...u,
+                            height: e
+                        })
+                    }
+                }), s[29] = u, s[30] = h, s[31] = g, s[32] = v, s[33] = b, s[34] = x, s[35] = y, s[36] = w, s[37] = C, s[38] = n) : n = s[38], o = null != C && r.map(e => (0, i.jsx)(c, {
+                    edge: e,
+                    resizeFromCenter: k,
+                    getCurrentSize: () => u,
+                    maximumSize: v,
+                    minimumSize: b,
+                    verticalEdge: C,
+                    onResizeEnd: y,
+                    onResizingChange: w,
+                    setSize: t => {
+                        x(e, t)
+                    }
+                }, e)), s[0] = u, s[1] = h, s[2] = j, s[3] = m, s[4] = g, s[5] = v, s[6] = b, s[7] = x, s[8] = y, s[9] = w, s[10] = k, s[11] = C, s[12] = z, s[13] = t, s[14] = n, s[15] = o
+            } else t = s[13], n = s[14], o = s[15];
+            return s[39] !== t || s[40] !== n || s[41] !== o ? (r = (0, i.jsxs)(i.Fragment, {
+                children: [t, n, o]
+            }), s[39] = t, s[40] = n, s[41] = o, s[42] = r) : r = s[42], r
+        }
+    }),
+    mphG: (function(e, t, n) {
+        var i = n("ABep"),
+            a = n("QosV"),
+            l = n("jsiH");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, o = (0, a.c)(4),
+                    {
+                        children: r,
+                        className: s
+                    } = e,
+                    c = void 0 === s ? "truncate" : s;
+                return o[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, i.jsx)("span", {
+                    className: "hidden group-data-[unread=true]/floating-title:contents",
+                    children: (0, i.jsx)(l.a, {
+                        className: "bg-accent"
+                    })
+                }), o[0] = t) : t = o[0], o[1] !== r || o[2] !== c ? (n = (0, i.jsxs)("span", {
+                    className: "contents min-w-0 items-center gap-2 group-data-[unread=true]/floating-title:flex",
+                    children: [t, (0, i.jsx)("span", {
+                        className: c,
+                        children: r
+                    })]
+                }), o[1] = r, o[2] = c, o[3] = n) : n = o[3], n
+            }
+        })
+    })
+};

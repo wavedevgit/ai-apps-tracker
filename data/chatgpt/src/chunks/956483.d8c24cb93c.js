@@ -34343,6 +34343,7 @@ ${n}`
                                     if (a(t) && o(t, r, n)) return void(i(), d?.(e - u));
                                     n(t)
                                 }
+
                             function n(e) {
                                 for (let n = e; null != n && !t.has(n); n = n.parentElement) t.add(n), m.observe(n, {
                                     attributes: !0,
