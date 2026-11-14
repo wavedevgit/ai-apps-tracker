@@ -1,1 +1,184 @@
-export const __rspack_esm_ids=[709759];export const __webpack_modules__={Xcjy:(function(e,s,a){a.d(s,{a:()=>t});var r=a("jqIZ"),o=a("EkCf");let t=(0,r.hb)(o.a)}),nDjx:(function(e,s,a){e.exports=a.p+"assets/appshot-logo.f0152cb4dd.png"}),hIAo:(function(e,s,a){e.exports=a.p+"assets/codex-app-ga-logo.dfddfb85d7.png"}),OCvz:(function(e,s,a){e.exports=a.p+"assets/dictation-start.f6efcb404f.wav"}),DJ2e:(function(e,s,a){e.exports=a.p+"assets/dictation-stop.e3bc7ebc5e.wav"}),nlAI:(function(e,s,a){var r=a("ABep"),o=a("QosV"),t=a("XyTt"),f=a("zd8w"),m=a("jqIZ"),i=a("v4LA"),c=a("hZax"),n=a("AXDI");let p="1258713729",d=(0,i.a)(t.y),l=(0,i.a)(async()=>(await Promise.all([a.e(418851),a.e(109308),a.e(399565),a.e(257798),a.e(447351),a.e(617936),a.e(807489),a.e(337882),a.e(955979),a.e(646436),a.e(7078),a.e(200429),a.e(698524),a.e(956483),a.e(87162),a.e(396705),a.e(155568),a.e(731863),a.e(767086),a.e(76629),a.e(514085),a.e(226913),a.e(967847),a.e(330351),a.e(212322),a.e(261228)]).then(a.bind(a,"oWBw"))).BusinessAdsCreditPage);function j(e){let s,a=(0,o.c)(4),{link:t}=e,f=(0,c.f)(p);if((0,c.g)(p)){let e;return a[0]===Symbol.for("react.memo_cache_sentinel")?(e=(0,r.jsx)(n.b,{}),a[0]=e):e=a[0],e}return a[1]!==f||a[2]!==t?(s=f?(0,r.jsx)(l,{link:t}):(0,r.jsx)(d,{link:t}),a[1]=f,a[2]=t,a[3]=s):s=a[3],s}a.d(s,{},{a:function(e){let s,a,t,i=(0,o.c)(7),{link:c}=e,{search:p}=(0,m.Y)();i[0]!==c.isAdsCreditCampaign||i[1]!==p?(s=c.isAdsCreditCampaign&&!new URLSearchParams(p).get("promo_campaign"),i[0]=c.isAdsCreditCampaign,i[1]=p,i[2]=s):s=i[2];let l=s;return i[3]===Symbol.for("react.memo_cache_sentinel")?(a=(0,r.jsx)(n.b,{}),i[3]=a):a=i[3],i[4]!==l||i[5]!==c?(t=(0,r.jsx)(n.a,{children:(0,r.jsx)(f.Suspense,{fallback:a,children:l?(0,r.jsx)(j,{link:c}):(0,r.jsx)(d,{link:c})})}),i[4]=l,i[5]=c,i[6]=t):t=i[6],t}})}),EkCf:(function(e,s,a){var r=a("ABep"),o=a("QosV"),t=a("jqIZ"),f=a("HnGz"),m=a("hC2y"),i=a("AXDI"),c=a("NVla"),n=a("nlAI");a.d(s,{},{a:function(e){let s,a,p,d,l,j=(0,o.c)(14),{fallback:C}=e,{pathname:b}=(0,t.Y)();if(j[0]!==C||j[1]!==b){d=Symbol.for("react.early_return_sentinel");e:{let e=(0,f.g)(m.c,b);if(null==e){let e;j[6]!==b?(e=(0,c.b)(b),j[6]=b,j[7]=e):e=j[7];let s=e;if(null!=s){let e;j[8]!==s?(e=(0,r.jsx)(n.a,{link:s}),j[8]=s,j[9]=e):e=j[9],d=e;break e}}s=i.a,a=C,p=null==e?(0,r.jsx)(m.d,{}):(0,t.O)(e)}j[0]=C,j[1]=b,j[2]=s,j[3]=a,j[4]=p,j[5]=d}else s=j[2],a=j[3],p=j[4],d=j[5];return d!==Symbol.for("react.early_return_sentinel")?d:(j[10]!==s||j[11]!==a||j[12]!==p?(l=(0,r.jsx)(s,{fallback:a,children:p}),j[10]=s,j[11]=a,j[12]=p,j[13]=l):l=j[13],l)}})}),EBQV:(function(s){s.exports=e.ir("/cdn/assets/dotnet.js").then(function(e){return e})})};import{__webpack_require__ as e}from"./633146.6428a93122.js";import*as s from"./418851.3351eb0d2c.js";e.C(s);import*as a from"./109308.a4430446b5.js";e.C(a);import*as r from"./399565.6af208675d.js";e.C(r);import*as o from"./257798.13b56b362a.js";e.C(o);import*as t from"./447351.16e0481926.js";e.C(t);import*as f from"./617936.4707466a2e.js";e.C(f);import*as m from"./807489.36023b676b.js";e.C(m);import*as i from"./337882.da1b5beae8.js";e.C(i);import*as c from"./955979.48bc7ee80c.js";e.C(c);import*as n from"./646436.67f97058a6.js";e.C(n);import*as p from"./7078.c420b9a2f6.js";e.C(p);import*as d from"./200429.11007a9422.js";e.C(d);import*as l from"./698524.8f181d24a1.js";e.C(l);import*as j from"./956483.6cfec0717e.js";e.C(j);import*as C from"./87162.d101a9fdd5.js";e.C(C);import*as b from"./396705.00162c6ea9.js";e.C(b);import*as x from"./155568.36875ef56f.js";e.C(x);import*as _ from"./731863.bbf914bfbc.js";e.C(_);import*as u from"./767086.5122101cd2.js";e.C(u);import*as g from"./76629.ac20799396.js";e.C(g);import*as h from"./514085.004fb5c464.js";e.C(h);import*as k from"./226913.27c93050ff.js";e.C(k);import*as y from"./902158.5a4b6c2c66.js";e.C(y);import*as A from"./709759.6ad179f000.js";e.C(A);var v=e(e.s="Xcjy").a;export{v as default};
+export const __rspack_esm_ids = [709759];
+export const __webpack_modules__ = {
+    Xcjy: (function(e, s, a) {
+        a.d(s, {
+            a: () => t
+        });
+        var r = a("jqIZ"),
+            o = a("EkCf");
+        let t = (0, r.hb)(o.a)
+    }),
+    nDjx: (function(e, s, a) {
+        e.exports = a.p + "assets/appshot-logo.f0152cb4dd.png"
+    }),
+    hIAo: (function(e, s, a) {
+        e.exports = a.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    }),
+    OCvz: (function(e, s, a) {
+        e.exports = a.p + "assets/dictation-start.f6efcb404f.wav"
+    }),
+    DJ2e: (function(e, s, a) {
+        e.exports = a.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    nlAI: (function(e, s, a) {
+        var r = a("ABep"),
+            o = a("QosV"),
+            t = a("XyTt"),
+            f = a("zd8w"),
+            m = a("jqIZ"),
+            i = a("v4LA"),
+            c = a("hZax"),
+            n = a("AXDI");
+        let p = "1258713729",
+            d = (0, i.a)(t.y),
+            l = (0, i.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(967847), a.e(330351), a.e(212322), a.e(261228)]).then(a.bind(a, "oWBw"))).BusinessAdsCreditPage);
+
+        function j(e) {
+            let s, a = (0, o.c)(4),
+                {
+                    link: t
+                } = e,
+                f = (0, c.f)(p);
+            if ((0, c.g)(p)) {
+                let e;
+                return a[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, r.jsx)(n.b, {}), a[0] = e) : e = a[0], e
+            }
+            return a[1] !== f || a[2] !== t ? (s = f ? (0, r.jsx)(l, {
+                link: t
+            }) : (0, r.jsx)(d, {
+                link: t
+            }), a[1] = f, a[2] = t, a[3] = s) : s = a[3], s
+        }
+        a.d(s, {}, {
+            a: function(e) {
+                let s, a, t, i = (0, o.c)(7),
+                    {
+                        link: c
+                    } = e,
+                    {
+                        search: p
+                    } = (0, m.Y)();
+                i[0] !== c.isAdsCreditCampaign || i[1] !== p ? (s = c.isAdsCreditCampaign && !new URLSearchParams(p).get("promo_campaign"), i[0] = c.isAdsCreditCampaign, i[1] = p, i[2] = s) : s = i[2];
+                let l = s;
+                return i[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(n.b, {}), i[3] = a) : a = i[3], i[4] !== l || i[5] !== c ? (t = (0, r.jsx)(n.a, {
+                    children: (0, r.jsx)(f.Suspense, {
+                        fallback: a,
+                        children: l ? (0, r.jsx)(j, {
+                            link: c
+                        }) : (0, r.jsx)(d, {
+                            link: c
+                        })
+                    })
+                }), i[4] = l, i[5] = c, i[6] = t) : t = i[6], t
+            }
+        })
+    }),
+    EkCf: (function(e, s, a) {
+        var r = a("ABep"),
+            o = a("QosV"),
+            t = a("jqIZ"),
+            f = a("HnGz"),
+            m = a("hC2y"),
+            i = a("AXDI"),
+            c = a("NVla"),
+            n = a("nlAI");
+        a.d(s, {}, {
+            a: function(e) {
+                let s, a, p, d, l, j = (0, o.c)(14),
+                    {
+                        fallback: C
+                    } = e,
+                    {
+                        pathname: b
+                    } = (0, t.Y)();
+                if (j[0] !== C || j[1] !== b) {
+                    d = Symbol.for("react.early_return_sentinel");
+                    e: {
+                        let e = (0, f.g)(m.c, b);
+                        if (null == e) {
+                            let e;
+                            j[6] !== b ? (e = (0, c.b)(b), j[6] = b, j[7] = e) : e = j[7];
+                            let s = e;
+                            if (null != s) {
+                                let e;
+                                j[8] !== s ? (e = (0, r.jsx)(n.a, {
+                                    link: s
+                                }), j[8] = s, j[9] = e) : e = j[9], d = e;
+                                break e
+                            }
+                        }
+                        s = i.a,
+                        a = C,
+                        p = null == e ? (0, r.jsx)(m.d, {}) : (0, t.O)(e)
+                    }
+                    j[0] = C, j[1] = b, j[2] = s, j[3] = a, j[4] = p, j[5] = d
+                } else s = j[2], a = j[3], p = j[4], d = j[5];
+                return d !== Symbol.for("react.early_return_sentinel") ? d : (j[10] !== s || j[11] !== a || j[12] !== p ? (l = (0, r.jsx)(s, {
+                    fallback: a,
+                    children: p
+                }), j[10] = s, j[11] = a, j[12] = p, j[13] = l) : l = j[13], l)
+            }
+        })
+    }),
+    EBQV: (function(s) {
+        s.exports = e.ir("/cdn/assets/dotnet.js").then(function(e) {
+            return e
+        })
+    })
+};
+import {
+    __webpack_require__ as e
+} from "./633146.6428a93122.js";
+import * as s from "./418851.3351eb0d2c.js";
+e.C(s);
+import * as a from "./109308.a4430446b5.js";
+e.C(a);
+import * as r from "./399565.6af208675d.js";
+e.C(r);
+import * as o from "./257798.13b56b362a.js";
+e.C(o);
+import * as t from "./447351.16e0481926.js";
+e.C(t);
+import * as f from "./617936.4707466a2e.js";
+e.C(f);
+import * as m from "./807489.36023b676b.js";
+e.C(m);
+import * as i from "./337882.da1b5beae8.js";
+e.C(i);
+import * as c from "./955979.48bc7ee80c.js";
+e.C(c);
+import * as n from "./646436.67f97058a6.js";
+e.C(n);
+import * as p from "./7078.c420b9a2f6.js";
+e.C(p);
+import * as d from "./200429.11007a9422.js";
+e.C(d);
+import * as l from "./698524.8f181d24a1.js";
+e.C(l);
+import * as j from "./956483.6cfec0717e.js";
+e.C(j);
+import * as C from "./87162.d101a9fdd5.js";
+e.C(C);
+import * as b from "./396705.00162c6ea9.js";
+e.C(b);
+import * as x from "./155568.36875ef56f.js";
+e.C(x);
+import * as _ from "./731863.bbf914bfbc.js";
+e.C(_);
+import * as u from "./767086.5122101cd2.js";
+e.C(u);
+import * as g from "./76629.ac20799396.js";
+e.C(g);
+import * as h from "./514085.004fb5c464.js";
+e.C(h);
+import * as k from "./226913.27c93050ff.js";
+e.C(k);
+import * as y from "./902158.5a4b6c2c66.js";
+e.C(y);
+import * as A from "./709759.6ad179f000.js";
+e.C(A);
+var v = e(e.s = "Xcjy").a;
+export {
+    v as
+    default
+};

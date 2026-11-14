@@ -1,1 +1,103 @@
-export const __rspack_esm_ids=[869209];export const __webpack_modules__={oTYz:(function(s,o,r){r.d(o,{a:()=>f});var a=r("jqIZ"),t=r("oOby");let f=(0,a.hb)(t.c)}),oOby:(function(s,o,r){var a=r("jqIZ"),t=r("ABep"),f=r("QosV"),m=r("hC2y"),p=r("AXDI");let e=(0,a.jb)(p.b);o.c=(0,a.hb)(function(){let s,o,r=(0,f.c)(4),e=(0,a.Y)();return r[0]!==e?(s=(0,a.O)((0,a.K)(m.a,e)),r[0]=e,r[1]=s):s=r[1],r[2]!==s?(o=(0,t.jsx)(p.a,{children:s}),r[2]=s,r[3]=o):o=r[3],o}),r.d(o,{b:()=>p.c},{a:e})}),nDjx:(function(s,o,r){s.exports=r.p+"assets/appshot-logo.f0152cb4dd.png"}),hIAo:(function(s,o,r){s.exports=r.p+"assets/codex-app-ga-logo.dfddfb85d7.png"}),OCvz:(function(s,o,r){s.exports=r.p+"assets/dictation-start.f6efcb404f.wav"}),DJ2e:(function(s,o,r){s.exports=r.p+"assets/dictation-stop.e3bc7ebc5e.wav"}),EBQV:(function(o){o.exports=s.ir("/cdn/assets/dotnet.js").then(function(s){return s})})};import{__webpack_require__ as s}from"./633146.6428a93122.js";import*as o from"./418851.3351eb0d2c.js";s.C(o);import*as r from"./109308.a4430446b5.js";s.C(r);import*as a from"./399565.6af208675d.js";s.C(a);import*as t from"./257798.13b56b362a.js";s.C(t);import*as f from"./447351.16e0481926.js";s.C(f);import*as m from"./617936.4707466a2e.js";s.C(m);import*as p from"./807489.36023b676b.js";s.C(p);import*as e from"./337882.da1b5beae8.js";s.C(e);import*as c from"./955979.48bc7ee80c.js";s.C(c);import*as d from"./646436.67f97058a6.js";s.C(d);import*as i from"./7078.c420b9a2f6.js";s.C(i);import*as j from"./200429.11007a9422.js";s.C(j);import*as C from"./698524.8f181d24a1.js";s.C(C);import*as b from"./956483.6cfec0717e.js";s.C(b);import*as n from"./87162.d101a9fdd5.js";s.C(n);import*as _ from"./396705.00162c6ea9.js";s.C(_);import*as x from"./155568.36875ef56f.js";s.C(x);import*as l from"./731863.bbf914bfbc.js";s.C(l);import*as h from"./767086.5122101cd2.js";s.C(h);import*as u from"./76629.ac20799396.js";s.C(u);import*as v from"./514085.004fb5c464.js";s.C(v);import*as g from"./226913.27c93050ff.js";s.C(g);import*as w from"./902158.5a4b6c2c66.js";s.C(w);import*as I from"./869209.02946bd6d5.js";s.C(I);var O=s(s.s="oTYz").a;export{O as default};
+export const __rspack_esm_ids = [869209];
+export const __webpack_modules__ = {
+    oTYz: (function(s, o, r) {
+        r.d(o, {
+            a: () => f
+        });
+        var a = r("jqIZ"),
+            t = r("oOby");
+        let f = (0, a.hb)(t.c)
+    }),
+    oOby: (function(s, o, r) {
+        var a = r("jqIZ"),
+            t = r("ABep"),
+            f = r("QosV"),
+            m = r("hC2y"),
+            p = r("AXDI");
+        let e = (0, a.jb)(p.b);
+        o.c = (0, a.hb)(function() {
+            let s, o, r = (0, f.c)(4),
+                e = (0, a.Y)();
+            return r[0] !== e ? (s = (0, a.O)((0, a.K)(m.a, e)), r[0] = e, r[1] = s) : s = r[1], r[2] !== s ? (o = (0, t.jsx)(p.a, {
+                children: s
+            }), r[2] = s, r[3] = o) : o = r[3], o
+        }), r.d(o, {
+            b: () => p.c
+        }, {
+            a: e
+        })
+    }),
+    nDjx: (function(s, o, r) {
+        s.exports = r.p + "assets/appshot-logo.f0152cb4dd.png"
+    }),
+    hIAo: (function(s, o, r) {
+        s.exports = r.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    }),
+    OCvz: (function(s, o, r) {
+        s.exports = r.p + "assets/dictation-start.f6efcb404f.wav"
+    }),
+    DJ2e: (function(s, o, r) {
+        s.exports = r.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    EBQV: (function(o) {
+        o.exports = s.ir("/cdn/assets/dotnet.js").then(function(s) {
+            return s
+        })
+    })
+};
+import {
+    __webpack_require__ as s
+} from "./633146.6428a93122.js";
+import * as o from "./418851.3351eb0d2c.js";
+s.C(o);
+import * as r from "./109308.a4430446b5.js";
+s.C(r);
+import * as a from "./399565.6af208675d.js";
+s.C(a);
+import * as t from "./257798.13b56b362a.js";
+s.C(t);
+import * as f from "./447351.16e0481926.js";
+s.C(f);
+import * as m from "./617936.4707466a2e.js";
+s.C(m);
+import * as p from "./807489.36023b676b.js";
+s.C(p);
+import * as e from "./337882.da1b5beae8.js";
+s.C(e);
+import * as c from "./955979.48bc7ee80c.js";
+s.C(c);
+import * as d from "./646436.67f97058a6.js";
+s.C(d);
+import * as i from "./7078.c420b9a2f6.js";
+s.C(i);
+import * as j from "./200429.11007a9422.js";
+s.C(j);
+import * as C from "./698524.8f181d24a1.js";
+s.C(C);
+import * as b from "./956483.6cfec0717e.js";
+s.C(b);
+import * as n from "./87162.d101a9fdd5.js";
+s.C(n);
+import * as _ from "./396705.00162c6ea9.js";
+s.C(_);
+import * as x from "./155568.36875ef56f.js";
+s.C(x);
+import * as l from "./731863.bbf914bfbc.js";
+s.C(l);
+import * as h from "./767086.5122101cd2.js";
+s.C(h);
+import * as u from "./76629.ac20799396.js";
+s.C(u);
+import * as v from "./514085.004fb5c464.js";
+s.C(v);
+import * as g from "./226913.27c93050ff.js";
+s.C(g);
+import * as w from "./902158.5a4b6c2c66.js";
+s.C(w);
+import * as I from "./869209.02946bd6d5.js";
+s.C(I);
+var O = s(s.s = "oTYz").a;
+export {
+    O as
+    default
+};
