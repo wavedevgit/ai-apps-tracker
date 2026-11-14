@@ -1,1 +1,1824 @@
-export const __rspack_esm_ids=[454832];export const __webpack_modules__={fs8u:(function(e,t,n){var a=n("BolX"),r=n("QcW8"),l=n("ZU27"),o=n("gbrq"),i=n("tSEg"),s=n("OMIV"),u=n("SHid"),c=n("dt6g"),d=n("WwnD");let h=(0,a.c)(i.a,e=>{let{get:t}=e;return null!=t(r.gb)&&null!=t(l.l.activeTab$)&&!t(r.G)});n.d(t,{},{a:function(e,t,n){let a=(0,c.a)(e,"menu"===n?"context_menu":"tab_drag",()=>(0,d.b)(e,"chat",t));return a&&e.get(s.e,"2163293173")&&e.set(u.a,e.get(r.rb)),a&&"pin"===n&&(0,o.H)(e,!0),a},b:function(e,t,n){if(null==n||!(n instanceof MouseEvent)||"pointercancel"===n.type||null==t||null==e.get(r.gb)||null==e.get(l.l.activeTab$)||n.clientY<0||n.clientY>window.innerHeight)return null;let a=t.getBoundingClientRect();return n.clientX<=a.left+24?"left":n.clientX>=a.right-24?"right":null},c:h})}),rjva:(function(e,t,n){n.d(t,{a:()=>G});var a=n("ABep"),r=n("QosV"),l=n("l2oX"),o=n("BolX"),i=n("zd8w"),s=n("v7qY"),u=n("Wf1j"),c=n("Q2Qp"),d=n("ZU27"),h=n("wD9O"),f=n("nKJ6"),p=n("kois"),m=n("vi3X"),g=n("O9Pc"),v=n("fDIZ"),b=n("jEN2"),x=n("AKr5"),y=n("wqvF"),w=n("giDA"),C=n("fQ9c"),M=n("nb0y"),S=n("xD3Z"),k=n("Z2JT"),E=n("yC2B"),j=n("Sgih"),T=n("tSEg"),q=n("hZax"),I=n("El6m"),z=n("dN0a"),P=n("giVD");n("G7Oa");var R=n("q1q2"),O=n("VwGH"),D=n("on57"),W=n("W5pg"),B=n("IPUh"),A=n("qjLK"),K=n("I7bK");n("QcW8"),n("eFp2");var $=n("oH56");n("EpL9");var _=n("DUYS"),L=n("gbrq");n("dt6g");var F=n("bIvi");n("Vhua"),n("WwnD");var H=n("pZMh");function N(e){let t,n,l,u,c,h,f,p,m,g,v,b=(0,r.c)(33),{destination:x,direction:y,surface:w}=e,{bottomPanelTargetHeight:C,contentPaneWidthRatio:M,mainContentWidth:S}=(0,K.g)(),k=(0,i.useContext)($.a),E=(0,o.z)(H.h),j=(0,o.z)(H.m),T=w??"content",q=E?"content"===T&&k?.dragState?.draggedTab.tabId===j:"chat"===T,I=(0,i.useContext)(A.a),z=(0,o.z)(L.d),P=(0,o.z)(d.a.tabIds$),N=k?.dragState?.sourceController===d.a&&1===P.length;b[0]!==M||b[1]!==S?(t=[S,M],b[0]=M,b[1]=S,b[2]=t):t=b[2],b[3]!==q?(n=e=>{let[t,n]=e,a=Math.min(t,(0,_.f)(n,t,"unified"));return q?t-a:a},b[3]=q,b[4]=n):n=b[4];let V=(0,W.a)(t,n);b[5]===Symbol.for("react.memo_cache_sentinel")?(l={placement:"bottom-start",strategy:"fixed",middleware:[(0,R.f)(Q),(0,R.h)({apply(e){let{elements:t,rects:n}=e;Object.assign(t.floating.style,{height:`${n.reference.height}px`,width:`${n.reference.width}px`})}})],whileElementsMounted:O.b},b[5]=l):l=b[5];let{floatingStyles:X,refs:U}=(0,R.i)(l);b[6]!==U?(u=e=>{U.setReference(e)},b[6]=U,b[7]=u):u=b[7];let G=(0,F.a)(u);b[8]!==U?(c=e=>{U.setFloating(e)},b[8]=U,b[9]=c):c=b[9];let Y=(0,F.a)(c),J="bottom"===x&&"inset-x-0 bottom-0",ee="left"===x&&"inset-y-0 left-0",et="right"===x&&"inset-y-0 right-0";b[10]!==J||b[11]!==ee||b[12]!==et?(h=(0,D.b)("pointer-events-none absolute",J,ee,et),b[10]=J,b[11]=ee,b[12]=et,b[13]=h):h=b[13];let en="bottom"===x?void 0:z&&!N?I??void 0:void 0,ea="bottom"===x?C:void 0,er="bottom"===x?void 0:V;return b[14]!==en||b[15]!==ea||b[16]!==er?(f={bottom:en,height:ea,width:er},b[14]=en,b[15]=ea,b[16]=er,b[17]=f):f=b[17],b[18]!==G||b[19]!==f||b[20]!==h?(p=(0,a.jsx)(B.a.div,{ref:G,"aria-hidden":!0,className:h,dir:"ltr",style:f}),b[18]=G,b[19]=f,b[20]=h,b[21]=p):p=b[21],b[22]!==x?(m=(0,a.jsx)(Z,{destination:x}),b[22]=x,b[23]=m):m=b[23],b[24]!==x||b[25]!==y||b[26]!==X||b[27]!==Y||b[28]!==m?(g=(0,s.createPortal)((0,a.jsx)("div",{ref:Y,"aria-hidden":!0,className:"pointer-events-none z-50","data-unified-workspace-drop-indicator":x,dir:y,style:X,children:m}),document.body),b[24]=x,b[25]=y,b[26]=X,b[27]=Y,b[28]=m,b[29]=g):g=b[29],b[30]!==p||b[31]!==g?(v=(0,a.jsxs)(a.Fragment,{children:[p,g]}),b[30]=p,b[31]=g,b[32]=v):v=b[32],v}function Q(e){let{rects:t}=e;return-t.reference.height}function Z(e){let t,n,l,o=(0,r.c)(11),{destination:i}=e,s=(0,h.c)(),u="bottom"===i&&"border-t",c="left"===i&&"border-r",d="right"===i&&"border-l";o[0]!==u||o[1]!==c||o[2]!==d?(t=(0,D.b)("absolute top-0 left-0 border-default bg-codex-drop-overlay/60 select-none",u,c,d),o[0]=u,o[1]=c,o[2]=d,o[3]=t):t=o[3];let f=`calc(100% / ${s})`,p=`scale(${s})`,m=`calc(100% / ${s})`;return o[4]!==f||o[5]!==p||o[6]!==m?(n={height:f,transform:p,transformOrigin:"top left",width:m},o[4]=f,o[5]=p,o[6]=m,o[7]=n):n=o[7],o[8]!==t||o[9]!==n?(l=(0,a.jsx)("div",{className:t,style:n}),o[8]=t,o[9]=n,o[10]=l):l=o[10],l}var V=n("fs8u"),X=n("abd8"),U=n("GMTh");function G(e){let t,n,R,O,D,W,B,A=(0,r.c)(67),{children:K,composerOnly:$,forceExpanded:_,placement:L,showHeader:F,showConversationTitleMenu:H,showComposerDivider:Q,isHidden:Z,persistPresentation:G,reserveContent:J,reserveFullComposerHeight:ee,onPresentationChange:et,title:en,minimizedIcon:ea,titleContent:er,statusState:el,titleStatusState:eo,hasElicitation:ei,notifications:es,workingPreview:eu,responsePreview:ec,previewBubble:ed,renderTranscript:eh,hasTranscript:ef,pendingFormId:ep,emptyState:em}=e,eg=void 0!==$&&$,ev=void 0!==_&&_,eb=void 0===F||F,ex=void 0===Q?!eg:Q,ey=void 0===G||G,ew=void 0===ep?j.a:ep,eC=(0,o.y)(T.a),eM="pane"===(void 0===L?"floating":L),eS=(0,q.f)("2163293173"),ek=eS?em:void 0,eE=!eg||eS&&(null!=ek||(ef??null!=eh)),ej=(0,u.a)(),{isHidden:eT}=(0,U.a)(eM?"embedded":"content"),eq=void 0!==Z&&Z||eT,eI=(0,o.z)(!(void 0!==H&&H)||eM||eq?null:P.a),ez=(0,i.useContext)(c.a),eP=(0,i.useContext)(I.b),eR=(0,i.useContext)(I.a),eO=(0,i.useContext)(g.a),eD=(0,i.useContext)(v.a),eW=(0,i.useContext)(m.a),eB=(0,i.useContext)(w.a),eA=(0,h.c)(),[eK,e$]=(0,i.useState)(null),e_=!(0,o.z)(z.p),eL=(0,i.useRef)(null),eF=(0,o.z)(ew),eH=(0,o.z)(ey?k.a:void 0);eE||eb||(eH="compact");let eN=(0,o.z)(null==eF&&(ei??I.c)),eQ=(0,o.z)(d.l.activeTab$);A[0]!==eQ||A[1]!==eM?(t=eM?null:(0,f.getThreadBrowserTabIdFromPanelTab)(eQ),A[0]=eQ,A[1]=eM,A[2]=t):t=A[2];let eZ=t,eV=void 0!==ee&&ee||eQ?.tabType.kind==="latex-document"||eQ?.tabType.kind==="image-preview",[eX,eU]=(0,i.useState)(null);A[3]!==ez||A[4]!==eC?(n=e=>(0,V.b)(eC,ez,e),A[3]=ez,A[4]=eC,A[5]=n):n=A[5];let eG=n;A[6]!==eF?(R=()=>{let e=null!=eF?(0,x.a)(eL.current):eL.current?.querySelector("[contenteditable='true']");null==e||(0,b.g)(e)||e.focus({preventScroll:!0})},A[6]=eF,A[7]=R):R=A[7];let eY=R;A[8]===Symbol.for("react.memo_cache_sentinel")?(O=(0,a.jsx)("div",{ref:e=>{null!=e&&e$(e)},className:"contents"}),A[8]=O):O=A[8];let eJ=eM||eq;return A[9]!==eQ||A[10]!==eS||A[11]!==ej||A[12]!==eM||A[13]!==ez||A[14]!==eX?(D=eS||eM||null==ez||null==eX||null==eQ?null:(0,s.createPortal)((0,a.jsx)(N,{destination:eX,direction:(0,E.a)(ej.locale),surface:"chat"}),ez),A[9]=eQ,A[10]=eS,A[11]=ej,A[12]=eM,A[13]=ez,A[14]=eX,A[15]=D):D=A[15],A[16]!==eZ||A[17]!==eQ||A[18]!==eE||A[19]!==K||A[20]!==eg||A[21]!==eS||A[22]!==ek||A[23]!==eY||A[24]!==ev||A[25]!==eG||A[26]!==eN||A[27]!==ef||A[28]!==eW||A[29]!==eD||A[30]!==eB||A[31]!==eR||A[32]!==eP||A[33]!==ej||A[34]!==eq||A[35]!==e_||A[36]!==eM||A[37]!==ez||A[38]!==ea||A[39]!==es||A[40]!==et||A[41]!==eK||A[42]!==eF||A[43]!==ey||A[44]!==ed||A[45]!==eh||A[46]!==J||A[47]!==ec||A[48]!==eC||A[49]!==eV||A[50]!==ex||A[51]!==eb||A[52]!==eX||A[53]!==el||A[54]!==eH||A[55]!==eO||A[56]!==en||A[57]!==er||A[58]!==eI||A[59]!==eo||A[60]!==eA||A[61]!==eu?(W=e=>(0,a.jsx)(l.a,{transformPagePoint:e=>({x:e.x/eA,y:e.y/eA}),children:(0,a.jsx)(I.b,{value:eM?eP:{activeBrowserTabId:eZ,isInsideOverlay:!0,onAttachmentAdded:()=>{eC.get(d.l.activeTab$)?.tabId===eQ?.tabId&&(eC.get(z.k)||(0,z.i)(eC,{prefersReducedMotion:!0}),(0,b.d)())},shouldAnimate:!1},children:(0,a.jsx)(I.a,{value:eM?eR:"expanded",children:(0,a.jsx)(M.a,{preserveLayoutOnEscape:!0,onResize:e=>(0,p.n)(eC,{dockPosition:e}),contentChat:{focusComposer:eY},previewSide:eS?eX:null,dockThreadKey:X.c,canDock:eE||eb,titleContent:eI??er,minimizedIcon:ea,statusState:el,titleStatusState:eo,hasTranscript:ef,emptyState:ek,pendingFormId:eF,notifications:es,workingPreview:eu,responsePreview:ec,previewBubble:ed,containerSize:e,renderMenu:e=>(0,a.jsx)(S.a,{...e,showOptions:!eS||eE}),forceExpanded:ev||eN&&(eS||!eg),isHidden:eM||eq,isMinimized:e_,onDragOver:eE?e=>{let t=eG(e);return eU(t),null!=t}:void 0,onDragEnd:eE?(e,t)=>{eU(null);let n=eG(e);return null!=n&&(0,V.a)(eC,n,t)}:void 0,presentation:eH,showHeader:eb,showComposerDivider:ex,background:eg&&!eb?void 0:"panel",onPresentationChange:e=>{ey&&eC.set(k.a,e),et?.(e)},onMinimizedChange:e=>{(e?z.t:z.i)(eC,{prefersReducedMotion:!0})},title:en??ej.formatMessage({id:"quickChat.mainConversation",defaultMessage:"Chat"}),renderTranscript:null==eh?void 0:(e,t)=>eh({isVisible:t&&!eM&&!eq}),renderComposer:(e,t)=>(0,a.jsx)(g.a,{value:eM||null==eZ?eO:ez,children:(0,a.jsx)(y.a,{target:eM?eK:null,children:(0,a.jsx)(Y,{composerRef:eL,mainContentElement:ez,presentation:e,paneContext:eM?{transition:eP,escapeHandler:eD,bannerTarget:eW,overlayOwner:eB}:void 0,layout:t,reserveFullComposerHeight:eV,reserveContent:J??(null==eZ&&eQ?.tabType.kind!=="mcp-app"&&eQ?.tabType.kind!=="mcp-extension"),children:"function"==typeof K?K(eM?void 0:e):K})})})})})})}),A[16]=eZ,A[17]=eQ,A[18]=eE,A[19]=K,A[20]=eg,A[21]=eS,A[22]=ek,A[23]=eY,A[24]=ev,A[25]=eG,A[26]=eN,A[27]=ef,A[28]=eW,A[29]=eD,A[30]=eB,A[31]=eR,A[32]=eP,A[33]=ej,A[34]=eq,A[35]=e_,A[36]=eM,A[37]=ez,A[38]=ea,A[39]=es,A[40]=et,A[41]=eK,A[42]=eF,A[43]=ey,A[44]=ed,A[45]=eh,A[46]=J,A[47]=ec,A[48]=eC,A[49]=eV,A[50]=ex,A[51]=eb,A[52]=eX,A[53]=el,A[54]=eH,A[55]=eO,A[56]=en,A[57]=er,A[58]=eI,A[59]=eo,A[60]=eA,A[61]=eu,A[62]=W):W=A[62],A[63]!==eJ||A[64]!==D||A[65]!==W?(B=(0,a.jsxs)(a.Fragment,{children:[O,(0,a.jsx)(C.a,{isHidden:eJ,overlay:D,children:W})]}),A[63]=eJ,A[64]=D,A[65]=W,A[66]=B):B=A[66],B}function Y(e){let t,n,l,s,u,c,d,h,f,p,g,b,x,y,C,M=(0,r.c)(49),{children:S,composerRef:k,mainContentElement:E,presentation:j,paneContext:q,layout:P,reserveContent:R,reserveFullComposerHeight:O}=e,D=(0,o.y)(T.a),W=(0,i.useContext)(I.b),B=(0,i.useContext)(v.a),A=(0,i.useContext)(m.a),K=(0,i.useContext)(w.a),{activeBrowserTabId:$}=W,_=null!=q,{isCompact:L,isDockedTop:F,isHidden:H,isMinimized:N}=j,{isMoving:Q,composerContentHeight:Z,dockedReservePx:V}=P,X=!R||H||N?0:Math.max(118,L?V:0,O?Z+118-102:0),U=F&&L&&V>0?X:0,[G,Y]=(0,i.useState)(!N);(L||N)&&!N!==G&&Y(!N);let J=R&&!H&&G?z.b:0;M[0]!==$||M[1]!==k||M[2]!==_?(t=()=>{if(_||null==$)return;let e=k.current?.ownerDocument.activeElement;e instanceof HTMLElement&&k.current?.contains(e)&&e.blur()},n=[$,k,_],M[0]=$,M[1]=k,M[2]=_,M[3]=t,M[4]=n):(t=M[3],n=M[4]),(0,i.useLayoutEffect)(t,n),M[5]!==k||M[6]!==J||M[7]!==F||M[8]!==H||M[9]!==N||M[10]!==_||M[11]!==E||M[12]!==X||M[13]!==D||M[14]!==U?(l=()=>{_||null==E||(D.set(z.m,{owner:k,style:{[z.a]:F?`${J}px 0 0`:`0 0 ${J}px`,[z.c]:`${H||N||F?0:102}px`,[z.d]:`${F?0:X}px`,[z.g]:`${F?X:0}px`}}),(0,z.q)(D,F?0:X),D.set(z.n,U))},s=[k,J,_,F,H,N,E,X,D,U],M[5]=k,M[6]=J,M[7]=F,M[8]=H,M[9]=N,M[10]=_,M[11]=E,M[12]=X,M[13]=D,M[14]=U,M[15]=l,M[16]=s):(l=M[15],s=M[16]),(0,i.useLayoutEffect)(l,s),M[17]!==k||M[18]!==_||M[19]!==E||M[20]!==D?(u=()=>{if(!_&&null!=E)return()=>{let e=D.get(z.m);e?.owner===k&&(D.set(z.m,{...e,owner:null}),(0,z.q)(D,0),D.set(z.n,0))}},c=[k,_,E,D],M[17]=k,M[18]=_,M[19]=E,M[20]=D,M[21]=u,M[22]=c):(u=M[21],c=M[22]),(0,i.useLayoutEffect)(u,c);let ee=!L||N||Q||Z>102;M[23]!==k||M[24]!==ee||M[25]!==_||M[26]!==D?(d=()=>{let e=k.current;if(_||null==e)return;let t=()=>{let t=!ee&&null!=e.querySelector('[aria-haspopup="dialog"][aria-expanded="true"]');D.set(z.j,ee||t)};t();let n=ee?null:new MutationObserver(t);return n?.observe(e,{attributes:!0,attributeFilter:["aria-expanded"],childList:!0,subtree:!0}),()=>{n?.disconnect()}},h=[k,ee,_,D],M[23]=k,M[24]=ee,M[25]=_,M[26]=D,M[27]=d,M[28]=h):(d=M[27],h=M[28]),(0,i.useLayoutEffect)(d,h),M[29]!==_||M[30]!==D?(p=()=>()=>{_||D.set(z.j,!1)},f=[_,D],M[29]=_,M[30]=D,M[31]=f,M[32]=p):(f=M[31],p=M[32]),(0,i.useLayoutEffect)(p,f);let et=null==q?W:q.transition,en=null==q?B:q.escapeHandler,ea=null==q?A:q.bannerTarget,er=null==q?K:q.overlayOwner,el=_?"contents":void 0;return M[33]!==S||M[34]!==k||M[35]!==el?(g=(0,a.jsx)("div",{ref:k,className:el,"data-right-panel-composer-overlay-content":"true",children:S}),M[33]=S,M[34]=k,M[35]=el,M[36]=g):g=M[36],M[37]!==er||M[38]!==g?(b=(0,a.jsx)(w.a,{value:er,children:g}),M[37]=er,M[38]=g,M[39]=b):b=M[39],M[40]!==ea||M[41]!==b?(x=(0,a.jsx)(m.a,{value:ea,children:b}),M[40]=ea,M[41]=b,M[42]=x):x=M[42],M[43]!==en||M[44]!==x?(y=(0,a.jsx)(v.a,{value:en,children:x}),M[43]=en,M[44]=x,M[45]=y):y=M[45],M[46]!==et||M[47]!==y?(C=(0,a.jsx)(I.b,{value:et,children:y}),M[46]=et,M[47]=y,M[48]=C):C=M[48],C}}),ilLT:(function(e,t,n){var a=n("Qgfj"),r=n("bf6R"),l=n("fs8u");n.d(t,{},{a:function(e,t){return[{id:"left",icon:r.w,enabled:t,message:(0,a.e)({id:"quickChat.dock.left",defaultMessage:"Move to left pane"}),onSelect:()=>{(0,l.a)(e,"left","menu")}},{id:"right",icon:r.y,enabled:t,message:(0,a.e)({id:"quickChat.dock.right",defaultMessage:"Move to right pane"}),onSelect:()=>{(0,l.a)(e,"right","menu")}}]}})}),iaTG:(function(e,t,n){n.d(t,{a:()=>g});var a=n("i5ac"),r=n.n(a),l=n("SKhr"),o=n("L6Md");let i=Array.from("αβγδεζηθικλμνξοπρστυφχψω"),s=new Map([..."alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigma tau upsilon phi chi psi omega".split(" ").map((e,t)=>[e,i[t]]),..."nabla:∇ partial:∂ cdot:⋅ times:× div:÷ pm:± mp:∓ le:≤ leq:≤ ge:≥ geq:≥ ne:≠ neq:≠ infty:∞ sum:∑ prod:∏ int:∫ in:∈ notin:∉ to:→ rightarrow:→ leftarrow:←".split(" ").map(e=>{let[t,n]=e.split(":");return[t,n]})]),u=/^\\(?:mathbf|boldsymbol|bm|mathrm|mathit|mathsf|mathtt|mathnormal|mathbb|mathcal|mathscr|mathfrak|textbf|textit|textrm)$/,c=/^\\(?:quad|qquad|enspace|thinspace|medspace|thickspace|negthinspace|displaystyle|textstyle|scriptstyle|scriptscriptstyle|limits|nolimits|[,;:! ])$/,d=/^\\(?:left|right|middle|big|Big|bigg|Bigg|bigl|bigr|Bigl|Bigr|biggl|biggr|Biggl|Biggr)$/;function h(e){let t=Array.from(e.matchAll(/\\[a-zA-Z]+|\\[^\r\n]|[^\s]/gu),e=>({value:e[0],start:e.index,end:e.index+e[0].length})),n=[],a=[],r=0;function l(){let e=t[r]?.start;if(null==e)throw Error("Missing argument");let n=o(),a=t[r-1].end;return[{value:"argument:start",start:e,end:e},...n,{value:"argument:end",start:a,end:a}]}function o(){let e=t[r++];if(null==e||"}"===e.value)throw Error("Incomplete math");if("{"===e.value){let a=[];for(;t[r]?.value!=="}";)a.push(...o());return n.push({start:e.start,end:t[r++].end}),a}if(u.test(e.value)){let a=o();return n.push({start:e.start,end:t[r-1].end}),a}if(c.test(e.value))return[];if(d.test(e.value)){let n,l=t[r++];if(null==l)throw Error("Missing delimiter");if("\\left"===e.value)n={start:e.start,end:l.end},a.push(n);else if("\\right"===e.value){if(null==(n=a.pop()))throw Error("Unpaired delimiter");n.end=l.end}return"."===l.value?[]:[{...l,start:e.start,delimiter:n}]}if(/^\\[dt]?frac$/.test(e.value))return[{...e,value:"\\frac"},...l(),...l()];if(/^(?:[_^]|\\(?:sqrt|vec|hat|bar|overline|underline))$/.test(e.value)||e.value.startsWith("\\")&&!s.has(e.value.slice(1).replace(/^var/,"").toLowerCase())&&t[r]?.value==="{"){if(t[r]?.value==="[")throw Error("Indexed argument");return[e,...l()]}let i=e.value.replace(/^\\/,"");return i=(i=(i=s.get(i.replace(/^var/,"").toLowerCase())??e.value).replace(/[\u{1D400}-\u{1D7FF}]/gu,e=>e.normalize("NFKC")).toLowerCase()).replace(/[ϵϑϕϖϱς−·]/g,e=>"εθφπρσ-⋅"["ϵϑϕϖϱς−·".indexOf(e)]),[{...e,value:i}]}try{let e=[];for(;r<t.length;)e.push(...o());return 0===a.length?{tokens:e,groups:n}:null}catch{return null}}var f=n("agQa"),p=n("QxH2"),m=n("h8aU");function g(e){let{contextId:t,getTurns:n,hydratePersistedMatch:a,revealUnrenderedMatches:i=!1,searchPersisted:u,searchMath:c=!1,scrollAdapter:d}=e;return{domain:"conversation",contextId:t,async search(e,t){var a,i;let d,p,g=await async function(e,t,n,a){let r=e.query.trim(),i=n&&r.length>1&&r.startsWith("/")&&r.endsWith("/")?r.slice(1,-1):void 0,u=t.flatMap(e=>e.units.flatMap(t=>(t.textChunks??[t.text]).flatMap((a,r)=>{let l={turnKey:e.turnKey,unitId:t.unitId,text:n?a.replace(/\s+/g," ").trim():a,equationIndex:void 0},o=n?t.equations?.[r]:void 0;return null==o?[l]:[l,{...l,text:o,equationIndex:r}]}))),c={domain:e.domain,contextId:e.contextId,query:r,regex:i,searchMath:n||void 0,matches:[],totalMatches:0,isCapped:!1};if(!r)return c;let d=null==i?null:await (0,f.a)({query:i,texts:u.map(e=>e.text),mathTexts:u.map(e=>null!=e.equationIndex),maxMatches:250},a);if(d?.error)return{...c,error:d.error};c.totalMatches=d?.totalMatches??0;let p=new Map;for(let[t,n]of u.entries()){let a=(0,l.e)(n.turnKey,n.unitId),i=p.get(a)??0,{offsets:u,totalMatches:f}=null!=d?{offsets:d.offsets[t]??[],totalMatches:0}:(null==n.equationIndex?m.a:function(e,t,n){let a=t.trim(),r=[];if(!a)return{offsets:r,totalMatches:0};let l=h(e),i=h(s.get(a)??a);if(null==l||null==i){let t=e.toLowerCase(),l=a.toLowerCase(),i=[...e.matchAll(/\\[a-zA-Z]+/g)];for(let n=t.indexOf(l);n>=0;n=t.indexOf(l,n+l.length))i.some(e=>n>e.index&&n<e.index+e[0].length)||r.push((0,o.a)(e,{start:n,end:n+a.length}));return{offsets:r.slice(0,n),totalMatches:r.length}}let u=0;for(let e=0;i.tokens.length>0&&e<=l.tokens.length-i.tokens.length;e+=1){if(!i.tokens.every((t,n)=>t.value===l.tokens[e+n].value))continue;let t=l.tokens.slice(e,e+i.tokens.length),a=t[0].start,o=t[t.length-1].end;for(let e of t)a=Math.min(a,e.delimiter?.start??a),o=Math.max(o,e.delimiter?.end??o);for(let e of l.groups)a<e.start&&o>e.start&&o<e.end&&(o=e.end),a>e.start&&a<e.end&&o>e.end&&(a=e.start);u+=1,r.length<n&&r.push({start:a,end:o}),e+=i.tokens.length-1}return{offsets:r,totalMatches:u}})(n.text,r,250-c.matches.length);for(let[t,a]of(c.totalMatches+=f,u.entries())){let r={domain:"conversation",contextId:e.contextId,turnKey:n.turnKey,unitId:n.unitId,matchIndex:null==n.equationIndex?i+t:t,equationIndex:n.equationIndex,equationRange:null==n.equationIndex?void 0:a};c.matches.push({id:(0,l.d)(r),ordinal:c.matches.length+1,location:r})}null==n.equationIndex&&p.set(a,i+u.length)}return c.isCapped=c.totalMatches>c.matches.length,c}(e,n(),c,t?.signal);if(c||null==u)return g;let v=await u(e,t);return null==v?g:(a=g,i=v,d=new Map(a.matches.map(e=>[e.id,e])),p=r()([...i.matches.map(e=>d.get(e.id)??e),...a.matches],"id").map((e,t)=>({...e,ordinal:t+1})),{...a,matches:p,totalMatches:Math.max(p.length,a.totalMatches,i.totalMatches),isCapped:a.isCapped||i.isCapped})},async ensureVisible(e,n){if("conversation"!==e.domain||e.contextId!==t||null!=e.turnCursor&&null!=a&&!await a(e,n)||n?.signal?.aborted)return;d.onNavigate?.();let r=null!=e.turnCursor,o=d.getTurnContainer(e.turnKey),s=(0,l.d)(e),u=i&&null!=o&&null==(0,l.j)({container:o,matchId:s,includeShadowRoots:!1});if(null==o||r||u){if(n?.signal?.aborted||(n?.signal==null?await d.scrollToTurn(e.turnKey):await d.scrollToTurn(e.turnKey,{signal:n.signal}),n?.signal?.aborted))return;o=d.getTurnContainer(e.turnKey)}null!=o&&await (0,p.b)({container:o,matchId:s,includeShadowRoots:!1,signal:n?.signal})}}}}),gSdW:(function(e,t,n){var a=n("SKhr");n.d(t,{},{a:function(e){let t=new Map;for(let n of e){if("conversation"!==n.location.domain)continue;let e=(0,a.e)(n.location.turnKey,n.location.unitId),r=t.get(e)??[];r.push(n),t.set(e,r)}return t},b:function(e){let t=new Map;for(let n of e){if("diff"!==n.location.domain)continue;let e=t.get(n.location.path)??[];e.push(n),t.set(n.location.path,e)}return t}})}),l0fK:(function(e,t,n){n.d(t,{a:()=>c});var a=n("QosV"),r=n("BolX"),l=n("zd8w"),o=n("SKhr"),i=n("gSdW");function s(e){let t=[],n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT);for(let a=n.nextNode();null!=a;a=n.nextNode()){if(!(a instanceof Text)||a.parentElement?.closest(".vlist-s"))continue;let n=a.parentElement;for(;null!=n&&n!==e&&""===n.style.color;)n=n.parentElement;let r=0;for(let e of a.data)t.push({node:a,text:e,color:n?.style.color??"",offset:r}),r+=e.length}return t}var u=n("TwSq");function c(e){let t,c,m,g,v,b,x,y,w,C,M,S,k,E,j,T=(0,a.c)(29),{containerRef:q,contextId:I,onContentChange:z}=e,P=(0,r.z)(u.d),R=(0,r.z)(u.g),O=P?.contextId===I?P:null,D=null==O?null:R?.id??null,{schedule:W,cancel:B}=(S=(0,a.c)(5),k=(0,l.useRef)(null),80!==S[0]?(w=e=>{null==k.current&&(k.current=window.setTimeout(()=>{k.current=null,e()},80))},S[0]=80,S[1]=w):w=S[1],E=w,S[2]===Symbol.for("react.memo_cache_sentinel")?(C=()=>{null!=k.current&&(window.clearTimeout(k.current),k.current=null)},S[2]=C):C=S[2],j=C,S[3]!==E?(M={schedule:E,cancel:j},S[3]=E,S[4]=M):M=S[4],M);T[0]!==z?(t=()=>z?.(),T[0]=z,T[1]=t):t=T[1];let A=(0,l.useEffectEvent)(t);T[2]!==R?.location||T[3]!==I?(c=e=>{let t=R?.location;return t?.domain==="conversation"&&t.contextId===I&&(0,o.a)(e,t)},T[2]=R?.location,T[3]=I,T[4]=c):c=T[4];let K=(0,l.useEffectEvent)(c);T[5]!==D?(m=(e,t)=>{t.forEach(t=>{(0,o.o)({element:t,matchId:e}),(0,o.n)(t,e===D)})},T[5]=D,T[6]=m):m=T[6];let $=(0,l.useEffectEvent)(m);T[7]!==O||T[8]!==q||T[9]!==$?(g=async(e,t)=>{let a=q.current;if(null==a||((0,o.b)(a,{includeShadowRoots:!1}),t.takeRecords(),null==O))return;let r=(0,i.a)(O.matches),l=Array.from(a.querySelectorAll("[data-content-search-unit-key]")).flatMap(e=>{let t=r.get(e.dataset.contentSearchUnitKey??"");return null==t?[]:[{element:e,matches:t}]}),u=l.map(p),c=e=>{e.forEach((e,t)=>e.forEach((e,n)=>$(u[t].matches[n].id,e)))};if(!O.searchMath){c(u.map(e=>{let{element:t,matches:n}=e;return(0,o.l)({target:t,query:O.query,maxMatches:n.length,includeShadowRoots:!1}).matches})),t.takeRecords();return}let m=[];for(let{element:e,matches:t}of l)e.querySelectorAll("[data-math-source]").forEach((e,a)=>{let r=t.flatMap(e=>{let{id:t,location:n}=e;return"conversation"===n.domain&&n.equationIndex===a&&null!=n.equationRange?[{id:t,range:n.equationRange}]:[]});0!==r.length&&m.push((async function(e,t){let a=e.querySelector(".katex-html"),r=e.dataset.mathSource;if(null==a||null==r||0===t.length)return()=>t.map(()=>[]);let{katex:l}=await Promise.all([n.e(990054),n.e(559373)]).then(n.bind(n,"RlG8")),i=s(a),u=new Map(i.map(e=>{let{node:t}=e;return[t,t.data]})),c=new Set(i.map(e=>{let{color:t}=e;return t})),d=document.createElement("span"),h=t.map(()=>{let e,t=c.size+1;do e=`#${t.toString(16).padStart(6,"0")}`,d.style.color=e,t+=1;while(c.has(d.style.color))return c.add(d.style.color),{hex:e,css:d.style.color}});d.style.color="";let f=new Map(h.map((e,t)=>{let{css:n}=e;return[n,t]})),p=new Map,m=n=>{let a=r;for(let e of[...n].reverse()){let{start:n,end:r}=t[e];a=`${a.slice(0,n)}{\\textcolor{${h[e].hex}}{${a.slice(n,r)}}}${a.slice(r)}`}try{d.innerHTML=l.renderToString(a,{displayMode:null!=e.querySelector(".katex-display"),strict:"ignore",output:"html"})}catch{return!1}let o=s(d),u=o.length===i.length&&o.every((e,t)=>{let{text:n}=e;return n===i[t].text});return o.forEach((e,t)=>{let n=f.get(e.color);if(null==n)return;let a=i[t];if(!u){let t=i.filter(t=>{let{text:n}=t;return n===e.text});if(1!==t.length||1!==o.filter(t=>{let{text:n}=t;return n===e.text}).length)return;a=t[0]}p.set(a,n)}),!0};return m(t.map((e,t)=>t))||t.forEach((e,t)=>m([t])),()=>{let n,l=t.map(()=>[]);if(e.dataset.mathSource!==r||!e.contains(a)||[...u].some(e=>{let[t,n]=e;return!a.contains(t)||t.data!==n}))return l;let s=[];for(let e of i){let t=p.get(e);if(null==t){n=void 0;continue}let a=e.node.parentElement?.closest(".vlist > span, .base")??null;n?.index===t&&n.row===a?n.glyphs.push(e):(n={index:t,row:a,glyphs:[e]},s.push(n))}for(let{index:e,glyphs:t}of s.reverse())l[e].unshift(...function e(t){let n=t[0],a=t[t.length-1],r=document.createRange();r.setStart(n.node,n.offset),r.setEnd(a.node,a.offset+a.text.length);let l=r.commonAncestorContainer;for(;r.startContainer!==l&&0===r.startOffset;)r.setStartBefore(r.startContainer);for(;r.endContainer!==l&&r.endOffset===(r.endContainer instanceof Text?r.endContainer.length:r.endContainer.childNodes.length);)r.setEndAfter(r.endContainer);if(r.startContainer!==r.endContainer)return[...t].reverse().flatMap(t=>e([t])).reverse();let i=(0,o.g)();return r.surroundContents(i),[i]}(t));return l}})(e,r.map(f)).then(e=>()=>e().forEach((e,t)=>$(r[t].id,e))))});let[g,v]=await Promise.all([(0,o.m)(u.map(h),O.query,O.regex,e),Promise.all(m)]);e.aborted||(c(g()),v.forEach(d),t.takeRecords())},T[7]=O,T[8]=q,T[9]=$,T[10]=g):g=T[10];let _=(0,l.useEffectEvent)(g);T[11]!==O?.runId||T[12]!==K||T[13]!==_||T[14]!==B||T[15]!==q||T[16]!==A||T[17]!==W?(v=()=>{let e=q.current;if(null==e)return;let t=null,n=()=>{t?.abort(),_((t=new AbortController).signal,a)},a=new MutationObserver(e=>{if(!(0,o.p)(e))return;t?.abort();let a=()=>{A(),n()};K(e)?(B(),a()):W(a)});return O?.runId==null?void n():(a.observe(e,{childList:!0,subtree:!0,characterData:!0,attributeFilter:["hidden","inert"]}),n(),()=>{a.disconnect(),t?.abort(),B(),(0,o.b)(e,{includeShadowRoots:!1})})},T[11]=O?.runId,T[12]=K,T[13]=_,T[14]=B,T[15]=q,T[16]=A,T[17]=W,T[18]=v):v=T[18];let L=O?.runId;T[19]!==B||T[20]!==q||T[21]!==I||T[22]!==W||T[23]!==L?(b=[L,B,q,I,W],T[19]=B,T[20]=q,T[21]=I,T[22]=W,T[23]=L,T[24]=b):b=T[24],(0,l.useEffect)(v,b),T[25]!==D||T[26]!==q?(x=()=>{q.current?.querySelectorAll("mark[data-search-match]").forEach(e=>{(0,o.n)(e,e.dataset.contentSearchMatchId===D)})},y=[D,q],T[25]=D,T[26]=q,T[27]=x,T[28]=y):(x=T[27],y=T[28]),(0,l.useEffect)(x,y)}function d(e){return e()}function h(e){let{element:t,matches:n}=e;return{element:t,maxMatches:n.length}}function f(e){let{range:t}=e;return t}function p(e){let{element:t,matches:n}=e;return{element:t,matches:n.filter(m)}}function m(e){return"conversation"===e.location.domain&&null==e.location.equationIndex}}),zjpG:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("on57"),o=n("oyxz");n.d(t,{},{a:function(e){let t,n,i,s=(0,r.c)(5),{className:u}=e;return s[0]!==u?(t=(0,l.b)("last:hidden",u),s[0]=u,s[1]=t):t=s[1],s[2]===Symbol.for("react.memo_cache_sentinel")?(n=(0,a.jsx)(o.a,{id:"codex.ui.bulletSeparator",defaultMessage:"·"}),s[2]=n):n=s[2],s[3]!==t?(i=(0,a.jsx)("span",{"aria-hidden":!0,className:t,children:n}),s[3]=t,s[4]=i):i=s[4],i}})}),xD3Z:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("slpy"),o=n("BolX"),i=n("Qgfj"),s=n("Wf1j"),u=n("oyxz"),c=n("QcW8"),d=n("ZU27"),h=n("ilLT"),f=n("Sm6l"),p=n("rmk3"),m=n("bf6R"),g=n("f38C"),v=n("tSEg"),b=n("hZax"),x=n("dt6g"),y=n("WwnD");let w=(0,o.c)(v.a,e=>{let{get:t}=e;return null==t(c.gb)?"hidden":null!=t(d.l.activeTab$)?"split":"tab"});function C(e){let t,n,o,c,d,h=(0,r.c)(22),{contextMenuTrigger:v,isCompact:x,isDragging:y,items:w,open:C,onMinimize:S,onOpenChange:k,showOptions:E}=e,j=void 0===E||E,T=(0,b.f)("2163293173"),q=(0,s.a)();h[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,i.e)({id:"quickChat.dock.minimizeComposer",defaultMessage:"Minimize composer"}),h[0]=t):t=h[0],h[1]!==S?(n={id:"minimize",icon:m.Ze,message:t,onSelect:S,selectAfterClose:!0},h[1]=S,h[2]=n):n=h[2],h[3]!==w||h[4]!==n?(o=[...w,n],h[3]=w,h[4]=n,h[5]=o):o=h[5];let I=o;if(null!=v){let e,t;return j?(h[6]!==v?(e=(0,a.jsx)("div",{className:"contents",children:v}),h[6]=v,h[7]=e):e=h[7],h[8]!==I||h[9]!==e?(t=(0,a.jsx)(p.a,{disableNative:!0,items:I,children:e}),h[8]=I,h[9]=e,h[10]=t):t=h[10],t):v}return h[11]!==T||h[12]!==q||h[13]!==x||h[14]!==y||h[15]!==I||h[16]!==k||h[17]!==C||h[18]!==j?(c=j&&(0,a.jsx)(p.a,{disableNative:!0,trigger:"click",align:"end",open:C,onOpenChange:k,items:I,children:T?(0,a.jsx)(g.a,{size:"toolbar",label:q.formatMessage({id:"quickChat.moreOptions",defaultMessage:"Chat options"})}):(0,a.jsx)(l.a,{disabled:C||y,content:(0,a.jsx)(u.a,{id:"quickChat.dock.dragHint",defaultMessage:"Drag to move · Click for options"}),children:(0,a.jsx)(f.a,{className:"cursor-grab touch-none active:cursor-grabbing","aria-label":q.formatMessage({id:"quickChat.dock.menu",defaultMessage:"Dock Chat"}),color:"ghostSecondary","data-quick-chat-drag-handle":!0,size:x?"composer":"toolbar",uniform:!0,onPointerDown:M,onClick:e=>{0!==e.button||e.ctrlKey||!(e.detail>0)||e.defaultPrevented||k?.(!C)},children:(0,a.jsx)(m.$c,{})})})}),h[11]=T,h[12]=q,h[13]=x,h[14]=y,h[15]=I,h[16]=k,h[17]=C,h[18]=j,h[19]=c):c=h[19],h[20]!==c?(d=(0,a.jsx)(a.Fragment,{children:c}),h[20]=c,h[21]=d):d=h[21],d}function M(e){0!==e.button||e.ctrlKey||e.preventDefault()}n.d(t,{},{a:function(e){let t,n,l=(0,r.c)(6),s=(0,o.y)(v.a),u=(0,o.z)(w);l[0]!==u||l[1]!==s?(t="hidden"===u?[]:[{id:"full-view",icon:m.N,message:(0,i.e)({id:"quickChat.dock.openTab",defaultMessage:"Open in full view"}),onSelect:()=>{(0,x.a)(s,"context_menu",()=>(0,y.c)(s,"chat",{mode:"full"}))}},...(0,h.a)(s,"split"===u)],l[0]=u,l[1]=s,l[2]=t):t=l[2];let c=t;return l[3]!==c||l[4]!==e?(n=(0,a.jsx)(C,{...e,items:c}),l[3]=c,l[4]=e,l[5]=n):n=l[5],n},b:C})}),fQbA:(function(e,t,n){var a=n("ABep"),r=n("lIZs");n.d(t,{},{a:function(e){let t=e.findIndex(e=>"move-to-project"===e.id),n=e.findIndex(e=>"separator"===e.type),a=-1===t?n:t+1;return e.toSpliced(-1===a?e.length:a,0,{id:"open-app"})},b:function(e,t){return"open-app"===e.id?(0,a.jsx)(r.a,{onSelect:t}):void 0}})}),pDUk:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("suct"),o=n("iodE"),i=n("IPUh"),s=n("BolX"),u=n("zd8w"),c=n("I7bK"),d=n("Q2Qp"),h=n("QcW8"),f=n("wD9O"),p=n("nzx4"),m=n("eGPX"),g=n("iS3k"),v=n("KWzM");function b(e){e.target instanceof Element&&null!=e.target.closest('[data-app-shell-tab-strip-controller="right"]')&&e.preventDefault()}function x(e){let t,n,l,c,d,h,g,b,x,y,w,C=(0,r.c)(25);C[0]!==e?({animate:t,getPaneElement:c,children:n,className:l,...d}=e,C[0]=e,C[1]=t,C[2]=n,C[3]=l,C[4]=c,C[5]=d):(t=C[1],n=C[2],l=C[3],c=C[4],d=C[5]);let M=(0,o.a)(),S=(0,s.z)(m.c),k=t&&!S,E=(0,f.c)(),j=(0,u.useRef)(null),T=(0,u.useRef)(k);C[6]!==c||C[7]!==E?(h=()=>{let e=j.current,t=c();if(null==e||null==t||!T.current)return;let n=t.getBoundingClientRect(),a=e.getBoundingClientRect();e.style.clipPath=`inset(${(n.top-a.top)/E}px ${(a.right-n.right)/E}px ${(a.bottom-n.bottom)/E}px ${(n.left-a.left)/E}px)`},C[6]=c,C[7]=E,C[8]=h):h=C[8];let q=h,I=!M,z=!M;C[9]!==q?(g=()=>{T.current=!0,requestAnimationFrame(q)},C[9]=q,C[10]=g):g=C[10],C[11]===Symbol.for("react.memo_cache_sentinel")?(b=()=>{T.current=!1,j.current?.style.removeProperty("clip-path")},C[11]=b):b=C[11];let P=!!k&&v.b.hidden;return C[12]!==k?(x=k?v.a:{duration:0},C[12]=k,C[13]=x):x=C[13],C[14]!==n||C[15]!==g||C[16]!==P||C[17]!==x?(y=(0,a.jsx)(i.a.div,{onAnimationStart:g,onAnimationComplete:b,initial:P,animate:v.b.visible,exit:v.b.hidden,transition:x,children:n}),C[14]=n,C[15]=g,C[16]=P,C[17]=x,C[18]=y):y=C[18],C[19]!==l||C[20]!==d||C[21]!==I||C[22]!==z||C[23]!==y?(w=(0,a.jsx)(p.c,{...d,ref:j,className:l,forceMount:!0,"aria-hidden":I,inert:z,children:y}),C[19]=l,C[20]=d,C[21]=I,C[22]=z,C[23]=y,C[24]=w):w=C[24],w}function y(e){return e instanceof Element&&null!=e.closest('[data-app-shell-workspace-layout-toggle="right-panel"]')}n.d(t,{},{a:function(e){let t,n,o,i,s,m,v,w,C,M=(0,r.c)(37),{animate:S,children:k,floatingCardAnchor:E,isOpen:j,isSideChatSplit:T,onOpenChange:q,returnFocusId:I,shouldPreventAutoFocus:z,trigger:P}=e,R=void 0===S||S,O=void 0!==T&&T,D=void 0!==z&&z,W=(0,u.useContext)(d.a),B=(0,u.useContext)(c.c)?.chatPaneElement,[A,K]=(0,u.useState)(null),$=(0,u.useRef)(!1),_=(0,u.useRef)(j&&O),L=8*(0,f.c)();M[0]!==A?(t=()=>A?.closest("[data-thread-floating-chat-actions]")??null,M[0]=A,M[1]=t):t=M[1];let F=t;M[2]!==B||M[3]!==F||M[4]!==W?(n=function(e){let t=void 0===e?F():e;return t?.offsetParent??(void 0===B?W?.querySelector("[data-app-shell-main-content-layout]"):B)??W},M[2]=B,M[3]=F,M[4]=W,M[5]=n):n=M[5];let H=n,N=E??A??void 0;M[6]!==E||M[7]!==F||M[8]!==H||M[9]!==N||M[10]!==A?(o={contextElement:N,getBoundingClientRect(){if(E?.isConnected)return E.getBoundingClientRect();let e=F(),t=e??A?.closest("[data-app-shell-main-titlebar]")??A?.closest("[data-app-shell-header-toolbar], [data-app-shell-titlebar]"),n=(t??A)?.getBoundingClientRect()??new DOMRect,a=H(e);if(null==a)return n;let r=a.getBoundingClientRect();return new DOMRect(r.left,n.top,r.width,n.height)}},M[6]=E,M[7]=F,M[8]=H,M[9]=N,M[10]=A,M[11]=o):o=M[11];let Q=o;return M[12]!==Q?(i=(0,a.jsx)(p.b,{virtualRef:{current:Q}}),M[12]=Q,M[13]=i):i=M[13],M[14]!==j||M[15]!==P?(s=P??(0,a.jsx)(g.a.HeaderButton,{pressed:j}),M[14]=j,M[15]=P,M[16]=s):s=M[16],M[17]!==s?(m=(0,a.jsx)(p.e,{ref:K,asChild:!0,children:s}),M[17]=s,M[18]=m):m=M[18],M[19]!==R||M[20]!==k||M[21]!==E||M[22]!==H||M[23]!==j||M[24]!==O||M[25]!==L||M[26]!==I||M[27]!==D?(v=j&&(0,a.jsx)(x,{getPaneElement:H,className:"z-50 flex flex-col text-default outline-hidden",animate:R,align:"end",alignOffset:null==E?L:0,collisionPadding:L,side:"bottom",sideOffset:null==E?L:0,unstyled:!0,onOpenAutoFocus:e=>{$.current=!1,(D||_.current)&&e.preventDefault(),_.current=!1},onCloseAutoFocus:e=>{if(D)e.preventDefault();else if(!$.current&&null!=I){let t=document.getElementById(I);t?.focus({preventScroll:!0}),null!=t&&document.activeElement===t&&e.preventDefault()}},onInteractOutside:e=>{e.target instanceof Node&&E?.contains(e.target)&&e.preventDefault(),O&&y(e.target)&&e.preventDefault(),e.defaultPrevented||($.current=!0)},onFocusOutside:e=>{let t=e.detail.originalEvent.relatedTarget;O&&(null==t||y(t))&&"composer"===(0,h.r)(e.target)&&e.preventDefault(),e.target instanceof Element&&e.target.matches('[role="tabpanel"][data-app-shell-tab-panel-controller="right"]')&&e.preventDefault()},onPointerDownOutside:b,style:{maxHeight:"none",maxWidth:"none"},children:k}),M[19]=R,M[20]=k,M[21]=E,M[22]=H,M[23]=j,M[24]=O,M[25]=L,M[26]=I,M[27]=D,M[28]=v):v=M[28],M[29]!==v?(w=(0,a.jsx)(l.a,{children:v}),M[29]=v,M[30]=w):w=M[30],M[31]!==j||M[32]!==q||M[33]!==m||M[34]!==w||M[35]!==i?(C=(0,a.jsxs)(p.a,{open:j,onOpenChange:q,children:[i,m,w]}),M[31]=j,M[32]=q,M[33]=m,M[34]=w,M[35]=i,M[36]=C):C=M[36],C}})}),BdYu:(function(e,t,n){var a=n("QosV"),r=n("K45w"),l=n("p5Yg"),o=n("B7sF"),i=n("jCHb"),s=n("RgeH"),u=n("BolX"),c=n("zd8w"),d=n("I7bK"),h=n("QcW8"),f=n("gbrq"),p=n("kl6F"),m=n("eGPX"),g=n("w2yL"),v=n("KWzM"),b=n("GaCK");function x(e){return e.isPopoverOpen?{...e,isPopoverOpen:!1}:e}function y(e,t,n,a,r,l,o){return w({centeredPanelGap:o,isSummaryPanelPinned:t&&(l??(0,f.y)(!0===n?e.get(f.M):e.get(f.B,n),n)),floatingPanelWidth:r,mainContentTargetWidth:a})}function w(e){let{centeredPanelGap:t,isSummaryPanelPinned:n,floatingPanelWidth:a,mainContentTargetWidth:r}=e,l=(0,g.c)(r,a,t);return null!=a&&"overlay"===l?(0,g.b)({displayMode:(0,g.c)(r),isPinned:n}):(0,g.b)({displayMode:l,isPinned:null!=a||n,panelWidth:a})}n.d(t,{},{a:function(e){let t,n,l,o,x,C,M,S,k,E,j,T,q,I,z,P,R,O=(0,a.c)(77);O[0]!==e?(t=void 0===e?{}:e,O[0]=e,O[1]=t):t=O[1];let{centeredPanelGap:D,contentShiftResetKey:W,controlledIsOpen:B,floatingPanelWidth:A,getCurrentPinStateKey:K,isEnabled:$,pane:_,pinStateKey:L}=t,F=void 0===$||$,H=void 0===_?"chat":_,N=void 0===L||L,Q=(0,u.y)(p.a),Z=(0,u.z)(null==B&&!0===N?f.M:null),V=(0,u.x)(null==B&&!0!==N?f.B:null,!0!==N&&N);O[2]!==B||O[3]!==V||O[4]!==Z||O[5]!==N?(n=B??(0,f.y)(!0===N?Z:V,N),O[2]=B,O[3]=V,O[4]=Z,O[5]=N,O[6]=n):n=O[6];let X=n,U=(0,u.z)(f.h),G=(0,u.z)(h.I),Y=(0,u.z)(b.b),J=F&&X,ee=A??300,et=F&&null==A&&(B??(Y.isPopoverOpen||"boolean"!=typeof N&&X)),en=(0,u.z)(m.c),ea=(0,c.useContext)(d.c),er=(0,r.a)(0),el=("content"===H?ea?.contentPaneLayout?.targetWidth:ea?.mainContentTargetWidth)??er;O[7]!==D||O[8]!==A||O[9]!==J||O[10]!==el?(l=w({centeredPanelGap:D,isSummaryPanelPinned:J,floatingPanelWidth:A,mainContentTargetWidth:el.get()}),O[7]=D,O[8]=A,O[9]=J,O[10]=el,O[11]=l):l=O[11];let eo=(0,r.a)(l);O[12]!==el?(o=e=>el.on("change",e),O[12]=el,O[13]=o):o=O[13],O[14]!==D||O[15]!==el||O[16]!==ee?(x=()=>(0,g.c)(el.get(),ee,D),O[14]=D,O[15]=el,O[16]=ee,O[17]=x):x=O[17],O[18]!==o||O[19]!==x?(C={subscribe:o,getSnapshot:x},O[18]=o,O[19]=x,O[20]=C):C=O[20];let ei=C,es=(0,c.useSyncExternalStore)(ei.subscribe,ei.getSnapshot,ei.getSnapshot),eu=(0,c.useRef)(null);O[21]!==eo?(M=eo.get(),O[21]=eo,O[22]=M):M=O[22],O[23]!==el?(S=el.get(),O[23]=el,O[24]=S):S=O[24],O[25]!==M||O[26]!==S?(k={offset:M,width:S},O[25]=M,O[26]=S,O[27]=k):k=O[27];let ec=(0,c.useRef)(k),ed=(0,c.useRef)(!1),eh=(0,c.useRef)(W),ef=(0,c.useRef)(U),ep=(0,c.useRef)(G),em=J&&null==A;O[28]!==es||O[29]!==et||O[30]!==em?(E=(0,g.a)({displayMode:es,isPinned:em,isPopoverOpen:et}),O[28]=es,O[29]=et,O[30]=em,O[31]=E):E=O[31];let eg=E;O[32]!==D||O[33]!==eo||O[34]!==W||O[35]!==B||O[36]!==A||O[37]!==K||O[38]!==G||O[39]!==F||O[40]!==U||O[41]!==el||O[42]!==N||O[43]!==Q?(j=()=>{let e=ef.current!==U,t=ep.current!==G;if(!ed.current&&eh.current===W&&!e&&!t)return;ed.current=!1,eh.current=W,ef.current=U,ep.current=G;let n=y(Q,F,K?.()??N,el.get(),A,B,D);ec.current={offset:n,width:el.get()},eu.current?.(),eo.jump(n)},T=[D,eo,W,B,A,K,G,F,el,N,U,Q],O[32]=D,O[33]=eo,O[34]=W,O[35]=B,O[36]=A,O[37]=K,O[38]=G,O[39]=F,O[40]=U,O[41]=el,O[42]=N,O[43]=Q,O[44]=j,O[45]=T):(j=O[44],T=O[45]),(0,c.useLayoutEffect)(j,T);let ev=("content"===H?ea?.contentPaneLayout?.width:ea?.chatPaneWidth)??el;return O[46]!==D||O[47]!==ev||O[48]!==eo||O[49]!==B||O[50]!==A||O[51]!==K||O[52]!==F||O[53]!==el||O[54]!==N||O[55]!==Q||O[56]!==en?(q=()=>{let e=(e,t)=>{let n=y(Q,F,K?.()??N,e,A,B,D),a=ec.current,r=eo.get();if(a.offset===n&&(r===n||a.width===e&&!t))return;if(ec.current={offset:n,width:e},eu.current?.(),t||0===e||r===n)return void eo.jump(n);let l=ev.get();if(l===e){let e=(0,i.a)(eo,n,v.a),t=document.activeViewTransition;if(null!=t){e.pause();let n=()=>e.play();t.ready.then(n,n)}eu.current=()=>e.stop();return}let o=(0,s.a)([l,e],[r,n]),u=ev.on("change",e=>{let t=o(e);eo.set(t),t===n&&queueMicrotask(u)});eu.current=u};return e(el.get(),en),el.on("change",t=>{e(t,en||0===el.getPrevious()||Q.get(f.h)!==ef.current)})},O[46]=D,O[47]=ev,O[48]=eo,O[49]=B,O[50]=A,O[51]=K,O[52]=F,O[53]=el,O[54]=N,O[55]=Q,O[56]=en,O[57]=q):q=O[57],O[58]!==D||O[59]!==ev||O[60]!==eo||O[61]!==B||O[62]!==A||O[63]!==K||O[64]!==F||O[65]!==J||O[66]!==el||O[67]!==N||O[68]!==Q||O[69]!==en?(I=[D,ev,eo,B,A,K,F,J,el,N,Q,en],O[58]=D,O[59]=ev,O[60]=eo,O[61]=B,O[62]=A,O[63]=K,O[64]=F,O[65]=J,O[66]=el,O[67]=N,O[68]=Q,O[69]=en,O[70]=I):I=O[70],(0,c.useLayoutEffect)(q,I),O[71]===Symbol.for("react.memo_cache_sentinel")?(z=()=>()=>{ed.current=!0,eu.current?.()},P=[],O[71]=z,O[72]=P):(z=O[71],P=O[72]),(0,c.useLayoutEffect)(z,P),O[73]!==eo||O[74]!==es||O[75]!==eg?(R={contentShift:eo,displayMode:es,...eg},O[73]=eo,O[74]=es,O[75]=eg,O[76]=R):R=O[76],R},b:function(e,t){let n,i,s,h,p,m,v=(0,a.c)(15),y=void 0!==t&&t,w=(0,u.z)(f.h),C=(0,u.z)(f.q),M=(0,c.useContext)(d.c),S=(0,r.a)(0),k=M?.mainContentTargetWidth??S;v[0]!==y||v[1]!==k||v[2]!==e?(n=()=>{var t,n;t=e,n=y?"overlay":(0,g.c)(k.get()),t.set(b.b,e=>{let t="overlay"===n&&e.isPopoverOpen;return e.displayMode===n&&e.isPopoverOpen===t?e:{displayMode:n,isPopoverOpen:t}})},v[0]=y,v[1]=k,v[2]=e,v[3]=n):n=v[3];let E=n;v[4]!==E?(i=()=>{l.b.update(E)},v[4]=E,v[5]=i):i=v[5],(0,o.a)(k,"change",i),v[6]!==E?(s=()=>(E(),()=>(0,l.a)(E)),v[6]=E,v[7]=s):s=v[7],v[8]!==w||v[9]!==C||v[10]!==E?(h=[w,C,E],v[8]=w,v[9]=C,v[10]=E,v[11]=h):h=v[11],(0,c.useLayoutEffect)(s,h),v[12]!==e?(p=()=>()=>{e.set(b.b,x)},m=[e],v[12]=e,v[13]=p,v[14]=m):(p=v[13],m=v[14]),(0,c.useLayoutEffect)(p,m)}})}),dDDU:(function(e,t,n){var a=n("Qgfj"),r=n("Kyn2"),l=n("nnol"),o=n("QcW8"),i=n("ZU27"),s=n("gbrq"),u=n("bf6R"),c=n("GaA7"),d=n("dt6g"),h=n("Vhua"),f=n("WwnD"),p=n("NkWL"),m=n("pZMh");n.d(t,{},{a:function(e){let t=e.get(o.gb);return e.get(o.db)||t?.isVisible!==!0||"split"!==t.mode&&!e.get(p.c)?[]:function(e,t){let o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:i.l,g=e.get(i.l.activeTab$),v=e.get(m.j),b=null;o===i.a?b="bottom":"split"===v.mode&&(e.get(m.h)?(b=v.contentSide,"chat"!==t&&t.tabId===e.get(m.m)&&(b="left"===v.contentSide?"right":"left")):"chat"===t?b="left"===v.contentSide?"right":"left":t.tabId===g?.tabId&&(b=v.contentSide));let x=e.get(h.i),y=!x&&("chat"!==t||null!=g),w=[{enabled:y&&"left"!==b&&(0,f.a)(e,t,"left"),id:"unified-workspace-move-left",icon:u.w,message:(0,a.e)({id:"threadWorkspace.contextMenu.moveToLeftPane",defaultMessage:"Move to left pane"}),onSelect:()=>(0,d.a)(e,"context_menu",()=>(0,f.b)(e,t,"left",o))},{enabled:y&&"right"!==b&&(0,f.a)(e,t,"right"),id:"unified-workspace-move-right",icon:u.y,message:(0,a.e)({id:"threadWorkspace.contextMenu.moveToRightPane",defaultMessage:"Move to right pane"}),onSelect:()=>(0,d.a)(e,"context_menu",()=>(0,f.b)(e,t,"right",o))}].filter(e=>!1!==e.enabled);return!x&&o!==i.a&&e.get(s.b)&&(0,f.a)(e,t,"bottom")&&w.push({id:"unified-workspace-move-bottom",icon:u.p,message:(0,a.e)({id:"threadWorkspace.contextMenu.moveToBottomPane",defaultMessage:"Move to bottom pane"}),onSelect:()=>(0,d.a)(e,"context_menu",()=>(0,f.b)(e,t,"bottom",o))}),"chat"===t||t.isWorkspaceHome||null==t.tabType.windowTransfer||null==c.a.detachedWindows||w.push({id:"unified-workspace-move-new-window",enabled:!x&&!(0,l.c)(e,t.tabId)&&t.tabType.windowTransfer.canTransfer(e,t.props),icon:u.Mg,message:(0,a.e)({id:"threadWorkspace.contextMenu.moveToNewWindow",defaultMessage:"Move to new window"}),onSelect:()=>{(0,r.a)(e,Promise.resolve().then(n.bind(n,"K3jS")).then(n=>{let{moveTabToNewWindow:a}=n;return a(e,o,t,null)}))}}),"chat"===t&&e.get(p.c)&&w.push({id:"close-tab",icon:u.uj,message:(0,a.e)({id:"codex.tabs.contextMenu.close",defaultMessage:"Close"}),onSelect:()=>(0,p.a)(e)}),w}(e,"chat")}})}),NM5E:(function(e,t){t.a={kind:"sprite",name:"minus-sm-light-20",canvas:{width:20,height:20,viewBox:"0 0 20 20"},href:"#codex-icon-minus-sm-light-20",style:{},alignment:{authored:{x:0,y:0,overflows:!1},primary:{x:0,y:0,overflows:!1},composite:{x:0,y:0,overflows:!1}}}}),h24K:(function(e,t,n){var a=n("gPp5");class r{constructor(){this.componentControls=new Set}subscribe(e){return this.componentControls.add(e),()=>this.componentControls.delete(e)}start(e,t){this.componentControls.forEach(n=>{n.start(e.nativeEvent||e,t)})}cancel(){this.componentControls.forEach(e=>{e.cancel()})}stop(){this.componentControls.forEach(e=>{e.stop()})}}let l=()=>new r;n.d(t,{},{a:function(){return(0,a.a)(l)}})})};
+export const __rspack_esm_ids = [454832];
+export const __webpack_modules__ = {
+    fs8u: (function(e, t, n) {
+        var a = n("BolX"),
+            r = n("QcW8"),
+            l = n("ZU27"),
+            o = n("gbrq"),
+            i = n("tSEg"),
+            s = n("OMIV"),
+            u = n("SHid"),
+            c = n("dt6g"),
+            d = n("WwnD");
+        let h = (0, a.c)(i.a, e => {
+            let {
+                get: t
+            } = e;
+            return null != t(r.gb) && null != t(l.l.activeTab$) && !t(r.G)
+        });
+        n.d(t, {}, {
+            a: function(e, t, n) {
+                let a = (0, c.a)(e, "menu" === n ? "context_menu" : "tab_drag", () => (0, d.b)(e, "chat", t));
+                return a && e.get(s.e, "2163293173") && e.set(u.a, e.get(r.rb)), a && "pin" === n && (0, o.H)(e, !0), a
+            },
+            b: function(e, t, n) {
+                if (null == n || !(n instanceof MouseEvent) || "pointercancel" === n.type || null == t || null == e.get(r.gb) || null == e.get(l.l.activeTab$) || n.clientY < 0 || n.clientY > window.innerHeight) return null;
+                let a = t.getBoundingClientRect();
+                return n.clientX <= a.left + 24 ? "left" : n.clientX >= a.right - 24 ? "right" : null
+            },
+            c: h
+        })
+    }),
+    rjva: (function(e, t, n) {
+        n.d(t, {
+            a: () => G
+        });
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("l2oX"),
+            o = n("BolX"),
+            i = n("zd8w"),
+            s = n("v7qY"),
+            u = n("Wf1j"),
+            c = n("Q2Qp"),
+            d = n("ZU27"),
+            h = n("wD9O"),
+            f = n("nKJ6"),
+            p = n("kois"),
+            m = n("vi3X"),
+            g = n("O9Pc"),
+            v = n("fDIZ"),
+            b = n("jEN2"),
+            x = n("AKr5"),
+            y = n("wqvF"),
+            w = n("giDA"),
+            C = n("fQ9c"),
+            M = n("nb0y"),
+            S = n("xD3Z"),
+            k = n("Z2JT"),
+            E = n("yC2B"),
+            j = n("Sgih"),
+            T = n("tSEg"),
+            q = n("hZax"),
+            I = n("El6m"),
+            z = n("dN0a"),
+            P = n("giVD");
+        n("G7Oa");
+        var R = n("q1q2"),
+            O = n("VwGH"),
+            D = n("on57"),
+            W = n("W5pg"),
+            B = n("IPUh"),
+            A = n("qjLK"),
+            K = n("I7bK");
+        n("QcW8"), n("eFp2");
+        var $ = n("oH56");
+        n("EpL9");
+        var _ = n("DUYS"),
+            L = n("gbrq");
+        n("dt6g");
+        var F = n("bIvi");
+        n("Vhua"), n("WwnD");
+        var H = n("pZMh");
+
+        function N(e) {
+            let t, n, l, u, c, h, f, p, m, g, v, b = (0, r.c)(33),
+                {
+                    destination: x,
+                    direction: y,
+                    surface: w
+                } = e,
+                {
+                    bottomPanelTargetHeight: C,
+                    contentPaneWidthRatio: M,
+                    mainContentWidth: S
+                } = (0, K.g)(),
+                k = (0, i.useContext)($.a),
+                E = (0, o.z)(H.h),
+                j = (0, o.z)(H.m),
+                T = w ?? "content",
+                q = E ? "content" === T && k?.dragState?.draggedTab.tabId === j : "chat" === T,
+                I = (0, i.useContext)(A.a),
+                z = (0, o.z)(L.d),
+                P = (0, o.z)(d.a.tabIds$),
+                N = k?.dragState?.sourceController === d.a && 1 === P.length;
+            b[0] !== M || b[1] !== S ? (t = [S, M], b[0] = M, b[1] = S, b[2] = t) : t = b[2], b[3] !== q ? (n = e => {
+                let [t, n] = e, a = Math.min(t, (0, _.f)(n, t, "unified"));
+                return q ? t - a : a
+            }, b[3] = q, b[4] = n) : n = b[4];
+            let V = (0, W.a)(t, n);
+            b[5] === Symbol.for("react.memo_cache_sentinel") ? (l = {
+                placement: "bottom-start",
+                strategy: "fixed",
+                middleware: [(0, R.f)(Q), (0, R.h)({
+                    apply(e) {
+                        let {
+                            elements: t,
+                            rects: n
+                        } = e;
+                        Object.assign(t.floating.style, {
+                            height: `${n.reference.height}px`,
+                            width: `${n.reference.width}px`
+                        })
+                    }
+                })],
+                whileElementsMounted: O.b
+            }, b[5] = l) : l = b[5];
+            let {
+                floatingStyles: X,
+                refs: U
+            } = (0, R.i)(l);
+            b[6] !== U ? (u = e => {
+                U.setReference(e)
+            }, b[6] = U, b[7] = u) : u = b[7];
+            let G = (0, F.a)(u);
+            b[8] !== U ? (c = e => {
+                U.setFloating(e)
+            }, b[8] = U, b[9] = c) : c = b[9];
+            let Y = (0, F.a)(c),
+                J = "bottom" === x && "inset-x-0 bottom-0",
+                ee = "left" === x && "inset-y-0 left-0",
+                et = "right" === x && "inset-y-0 right-0";
+            b[10] !== J || b[11] !== ee || b[12] !== et ? (h = (0, D.b)("pointer-events-none absolute", J, ee, et), b[10] = J, b[11] = ee, b[12] = et, b[13] = h) : h = b[13];
+            let en = "bottom" === x ? void 0 : z && !N ? I ?? void 0 : void 0,
+                ea = "bottom" === x ? C : void 0,
+                er = "bottom" === x ? void 0 : V;
+            return b[14] !== en || b[15] !== ea || b[16] !== er ? (f = {
+                bottom: en,
+                height: ea,
+                width: er
+            }, b[14] = en, b[15] = ea, b[16] = er, b[17] = f) : f = b[17], b[18] !== G || b[19] !== f || b[20] !== h ? (p = (0, a.jsx)(B.a.div, {
+                ref: G,
+                "aria-hidden": !0,
+                className: h,
+                dir: "ltr",
+                style: f
+            }), b[18] = G, b[19] = f, b[20] = h, b[21] = p) : p = b[21], b[22] !== x ? (m = (0, a.jsx)(Z, {
+                destination: x
+            }), b[22] = x, b[23] = m) : m = b[23], b[24] !== x || b[25] !== y || b[26] !== X || b[27] !== Y || b[28] !== m ? (g = (0, s.createPortal)((0, a.jsx)("div", {
+                ref: Y,
+                "aria-hidden": !0,
+                className: "pointer-events-none z-50",
+                "data-unified-workspace-drop-indicator": x,
+                dir: y,
+                style: X,
+                children: m
+            }), document.body), b[24] = x, b[25] = y, b[26] = X, b[27] = Y, b[28] = m, b[29] = g) : g = b[29], b[30] !== p || b[31] !== g ? (v = (0, a.jsxs)(a.Fragment, {
+                children: [p, g]
+            }), b[30] = p, b[31] = g, b[32] = v) : v = b[32], v
+        }
+
+        function Q(e) {
+            let {
+                rects: t
+            } = e;
+            return -t.reference.height
+        }
+
+        function Z(e) {
+            let t, n, l, o = (0, r.c)(11),
+                {
+                    destination: i
+                } = e,
+                s = (0, h.c)(),
+                u = "bottom" === i && "border-t",
+                c = "left" === i && "border-r",
+                d = "right" === i && "border-l";
+            o[0] !== u || o[1] !== c || o[2] !== d ? (t = (0, D.b)("absolute top-0 left-0 border-default bg-codex-drop-overlay/60 select-none", u, c, d), o[0] = u, o[1] = c, o[2] = d, o[3] = t) : t = o[3];
+            let f = `calc(100% / ${s})`,
+                p = `scale(${s})`,
+                m = `calc(100% / ${s})`;
+            return o[4] !== f || o[5] !== p || o[6] !== m ? (n = {
+                height: f,
+                transform: p,
+                transformOrigin: "top left",
+                width: m
+            }, o[4] = f, o[5] = p, o[6] = m, o[7] = n) : n = o[7], o[8] !== t || o[9] !== n ? (l = (0, a.jsx)("div", {
+                className: t,
+                style: n
+            }), o[8] = t, o[9] = n, o[10] = l) : l = o[10], l
+        }
+        var V = n("fs8u"),
+            X = n("abd8"),
+            U = n("GMTh");
+
+        function G(e) {
+            let t, n, R, O, D, W, B, A = (0, r.c)(67),
+                {
+                    children: K,
+                    composerOnly: $,
+                    forceExpanded: _,
+                    placement: L,
+                    showHeader: F,
+                    showConversationTitleMenu: H,
+                    showComposerDivider: Q,
+                    isHidden: Z,
+                    persistPresentation: G,
+                    reserveContent: J,
+                    reserveFullComposerHeight: ee,
+                    onPresentationChange: et,
+                    title: en,
+                    minimizedIcon: ea,
+                    titleContent: er,
+                    statusState: el,
+                    titleStatusState: eo,
+                    hasElicitation: ei,
+                    notifications: es,
+                    workingPreview: eu,
+                    responsePreview: ec,
+                    previewBubble: ed,
+                    renderTranscript: eh,
+                    hasTranscript: ef,
+                    pendingFormId: ep,
+                    emptyState: em
+                } = e,
+                eg = void 0 !== $ && $,
+                ev = void 0 !== _ && _,
+                eb = void 0 === F || F,
+                ex = void 0 === Q ? !eg : Q,
+                ey = void 0 === G || G,
+                ew = void 0 === ep ? j.a : ep,
+                eC = (0, o.y)(T.a),
+                eM = "pane" === (void 0 === L ? "floating" : L),
+                eS = (0, q.f)("2163293173"),
+                ek = eS ? em : void 0,
+                eE = !eg || eS && (null != ek || (ef ?? null != eh)),
+                ej = (0, u.a)(),
+                {
+                    isHidden: eT
+                } = (0, U.a)(eM ? "embedded" : "content"),
+                eq = void 0 !== Z && Z || eT,
+                eI = (0, o.z)(!(void 0 !== H && H) || eM || eq ? null : P.a),
+                ez = (0, i.useContext)(c.a),
+                eP = (0, i.useContext)(I.b),
+                eR = (0, i.useContext)(I.a),
+                eO = (0, i.useContext)(g.a),
+                eD = (0, i.useContext)(v.a),
+                eW = (0, i.useContext)(m.a),
+                eB = (0, i.useContext)(w.a),
+                eA = (0, h.c)(),
+                [eK, e$] = (0, i.useState)(null),
+                e_ = !(0, o.z)(z.p),
+                eL = (0, i.useRef)(null),
+                eF = (0, o.z)(ew),
+                eH = (0, o.z)(ey ? k.a : void 0);
+            eE || eb || (eH = "compact");
+            let eN = (0, o.z)(null == eF && (ei ?? I.c)),
+                eQ = (0, o.z)(d.l.activeTab$);
+            A[0] !== eQ || A[1] !== eM ? (t = eM ? null : (0, f.getThreadBrowserTabIdFromPanelTab)(eQ), A[0] = eQ, A[1] = eM, A[2] = t) : t = A[2];
+            let eZ = t,
+                eV = void 0 !== ee && ee || eQ?.tabType.kind === "latex-document" || eQ?.tabType.kind === "image-preview",
+                [eX, eU] = (0, i.useState)(null);
+            A[3] !== ez || A[4] !== eC ? (n = e => (0, V.b)(eC, ez, e), A[3] = ez, A[4] = eC, A[5] = n) : n = A[5];
+            let eG = n;
+            A[6] !== eF ? (R = () => {
+                let e = null != eF ? (0, x.a)(eL.current) : eL.current?.querySelector("[contenteditable='true']");
+                null == e || (0, b.g)(e) || e.focus({
+                    preventScroll: !0
+                })
+            }, A[6] = eF, A[7] = R) : R = A[7];
+            let eY = R;
+            A[8] === Symbol.for("react.memo_cache_sentinel") ? (O = (0, a.jsx)("div", {
+                ref: e => {
+                    null != e && e$(e)
+                },
+                className: "contents"
+            }), A[8] = O) : O = A[8];
+            let eJ = eM || eq;
+            return A[9] !== eQ || A[10] !== eS || A[11] !== ej || A[12] !== eM || A[13] !== ez || A[14] !== eX ? (D = eS || eM || null == ez || null == eX || null == eQ ? null : (0, s.createPortal)((0, a.jsx)(N, {
+                destination: eX,
+                direction: (0, E.a)(ej.locale),
+                surface: "chat"
+            }), ez), A[9] = eQ, A[10] = eS, A[11] = ej, A[12] = eM, A[13] = ez, A[14] = eX, A[15] = D) : D = A[15], A[16] !== eZ || A[17] !== eQ || A[18] !== eE || A[19] !== K || A[20] !== eg || A[21] !== eS || A[22] !== ek || A[23] !== eY || A[24] !== ev || A[25] !== eG || A[26] !== eN || A[27] !== ef || A[28] !== eW || A[29] !== eD || A[30] !== eB || A[31] !== eR || A[32] !== eP || A[33] !== ej || A[34] !== eq || A[35] !== e_ || A[36] !== eM || A[37] !== ez || A[38] !== ea || A[39] !== es || A[40] !== et || A[41] !== eK || A[42] !== eF || A[43] !== ey || A[44] !== ed || A[45] !== eh || A[46] !== J || A[47] !== ec || A[48] !== eC || A[49] !== eV || A[50] !== ex || A[51] !== eb || A[52] !== eX || A[53] !== el || A[54] !== eH || A[55] !== eO || A[56] !== en || A[57] !== er || A[58] !== eI || A[59] !== eo || A[60] !== eA || A[61] !== eu ? (W = e => (0, a.jsx)(l.a, {
+                transformPagePoint: e => ({
+                    x: e.x / eA,
+                    y: e.y / eA
+                }),
+                children: (0, a.jsx)(I.b, {
+                    value: eM ? eP : {
+                        activeBrowserTabId: eZ,
+                        isInsideOverlay: !0,
+                        onAttachmentAdded: () => {
+                            eC.get(d.l.activeTab$)?.tabId === eQ?.tabId && (eC.get(z.k) || (0, z.i)(eC, {
+                                prefersReducedMotion: !0
+                            }), (0, b.d)())
+                        },
+                        shouldAnimate: !1
+                    },
+                    children: (0, a.jsx)(I.a, {
+                        value: eM ? eR : "expanded",
+                        children: (0, a.jsx)(M.a, {
+                            preserveLayoutOnEscape: !0,
+                            onResize: e => (0, p.n)(eC, {
+                                dockPosition: e
+                            }),
+                            contentChat: {
+                                focusComposer: eY
+                            },
+                            previewSide: eS ? eX : null,
+                            dockThreadKey: X.c,
+                            canDock: eE || eb,
+                            titleContent: eI ?? er,
+                            minimizedIcon: ea,
+                            statusState: el,
+                            titleStatusState: eo,
+                            hasTranscript: ef,
+                            emptyState: ek,
+                            pendingFormId: eF,
+                            notifications: es,
+                            workingPreview: eu,
+                            responsePreview: ec,
+                            previewBubble: ed,
+                            containerSize: e,
+                            renderMenu: e => (0, a.jsx)(S.a, {
+                                ...e,
+                                showOptions: !eS || eE
+                            }),
+                            forceExpanded: ev || eN && (eS || !eg),
+                            isHidden: eM || eq,
+                            isMinimized: e_,
+                            onDragOver: eE ? e => {
+                                let t = eG(e);
+                                return eU(t), null != t
+                            } : void 0,
+                            onDragEnd: eE ? (e, t) => {
+                                eU(null);
+                                let n = eG(e);
+                                return null != n && (0, V.a)(eC, n, t)
+                            } : void 0,
+                            presentation: eH,
+                            showHeader: eb,
+                            showComposerDivider: ex,
+                            background: eg && !eb ? void 0 : "panel",
+                            onPresentationChange: e => {
+                                ey && eC.set(k.a, e), et?.(e)
+                            },
+                            onMinimizedChange: e => {
+                                (e ? z.t : z.i)(eC, {
+                                    prefersReducedMotion: !0
+                                })
+                            },
+                            title: en ?? ej.formatMessage({
+                                id: "quickChat.mainConversation",
+                                defaultMessage: "Chat"
+                            }),
+                            renderTranscript: null == eh ? void 0 : (e, t) => eh({
+                                isVisible: t && !eM && !eq
+                            }),
+                            renderComposer: (e, t) => (0, a.jsx)(g.a, {
+                                value: eM || null == eZ ? eO : ez,
+                                children: (0, a.jsx)(y.a, {
+                                    target: eM ? eK : null,
+                                    children: (0, a.jsx)(Y, {
+                                        composerRef: eL,
+                                        mainContentElement: ez,
+                                        presentation: e,
+                                        paneContext: eM ? {
+                                            transition: eP,
+                                            escapeHandler: eD,
+                                            bannerTarget: eW,
+                                            overlayOwner: eB
+                                        } : void 0,
+                                        layout: t,
+                                        reserveFullComposerHeight: eV,
+                                        reserveContent: J ?? (null == eZ && eQ?.tabType.kind !== "mcp-app" && eQ?.tabType.kind !== "mcp-extension"),
+                                        children: "function" == typeof K ? K(eM ? void 0 : e) : K
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            }), A[16] = eZ, A[17] = eQ, A[18] = eE, A[19] = K, A[20] = eg, A[21] = eS, A[22] = ek, A[23] = eY, A[24] = ev, A[25] = eG, A[26] = eN, A[27] = ef, A[28] = eW, A[29] = eD, A[30] = eB, A[31] = eR, A[32] = eP, A[33] = ej, A[34] = eq, A[35] = e_, A[36] = eM, A[37] = ez, A[38] = ea, A[39] = es, A[40] = et, A[41] = eK, A[42] = eF, A[43] = ey, A[44] = ed, A[45] = eh, A[46] = J, A[47] = ec, A[48] = eC, A[49] = eV, A[50] = ex, A[51] = eb, A[52] = eX, A[53] = el, A[54] = eH, A[55] = eO, A[56] = en, A[57] = er, A[58] = eI, A[59] = eo, A[60] = eA, A[61] = eu, A[62] = W) : W = A[62], A[63] !== eJ || A[64] !== D || A[65] !== W ? (B = (0, a.jsxs)(a.Fragment, {
+                children: [O, (0, a.jsx)(C.a, {
+                    isHidden: eJ,
+                    overlay: D,
+                    children: W
+                })]
+            }), A[63] = eJ, A[64] = D, A[65] = W, A[66] = B) : B = A[66], B
+        }
+
+        function Y(e) {
+            let t, n, l, s, u, c, d, h, f, p, g, b, x, y, C, M = (0, r.c)(49),
+                {
+                    children: S,
+                    composerRef: k,
+                    mainContentElement: E,
+                    presentation: j,
+                    paneContext: q,
+                    layout: P,
+                    reserveContent: R,
+                    reserveFullComposerHeight: O
+                } = e,
+                D = (0, o.y)(T.a),
+                W = (0, i.useContext)(I.b),
+                B = (0, i.useContext)(v.a),
+                A = (0, i.useContext)(m.a),
+                K = (0, i.useContext)(w.a),
+                {
+                    activeBrowserTabId: $
+                } = W,
+                _ = null != q,
+                {
+                    isCompact: L,
+                    isDockedTop: F,
+                    isHidden: H,
+                    isMinimized: N
+                } = j,
+                {
+                    isMoving: Q,
+                    composerContentHeight: Z,
+                    dockedReservePx: V
+                } = P,
+                X = !R || H || N ? 0 : Math.max(118, L ? V : 0, O ? Z + 118 - 102 : 0),
+                U = F && L && V > 0 ? X : 0,
+                [G, Y] = (0, i.useState)(!N);
+            (L || N) && !N !== G && Y(!N);
+            let J = R && !H && G ? z.b : 0;
+            M[0] !== $ || M[1] !== k || M[2] !== _ ? (t = () => {
+                if (_ || null == $) return;
+                let e = k.current?.ownerDocument.activeElement;
+                e instanceof HTMLElement && k.current?.contains(e) && e.blur()
+            }, n = [$, k, _], M[0] = $, M[1] = k, M[2] = _, M[3] = t, M[4] = n) : (t = M[3], n = M[4]), (0, i.useLayoutEffect)(t, n), M[5] !== k || M[6] !== J || M[7] !== F || M[8] !== H || M[9] !== N || M[10] !== _ || M[11] !== E || M[12] !== X || M[13] !== D || M[14] !== U ? (l = () => {
+                _ || null == E || (D.set(z.m, {
+                    owner: k,
+                    style: {
+                        [z.a]: F ? `${J}px 0 0` : `0 0 ${J}px`,
+                        [z.c]: `${H||N||F?0:102}px`,
+                        [z.d]: `${F?0:X}px`,
+                        [z.g]: `${F?X:0}px`
+                    }
+                }), (0, z.q)(D, F ? 0 : X), D.set(z.n, U))
+            }, s = [k, J, _, F, H, N, E, X, D, U], M[5] = k, M[6] = J, M[7] = F, M[8] = H, M[9] = N, M[10] = _, M[11] = E, M[12] = X, M[13] = D, M[14] = U, M[15] = l, M[16] = s) : (l = M[15], s = M[16]), (0, i.useLayoutEffect)(l, s), M[17] !== k || M[18] !== _ || M[19] !== E || M[20] !== D ? (u = () => {
+                if (!_ && null != E) return () => {
+                    let e = D.get(z.m);
+                    e?.owner === k && (D.set(z.m, {
+                        ...e,
+                        owner: null
+                    }), (0, z.q)(D, 0), D.set(z.n, 0))
+                }
+            }, c = [k, _, E, D], M[17] = k, M[18] = _, M[19] = E, M[20] = D, M[21] = u, M[22] = c) : (u = M[21], c = M[22]), (0, i.useLayoutEffect)(u, c);
+            let ee = !L || N || Q || Z > 102;
+            M[23] !== k || M[24] !== ee || M[25] !== _ || M[26] !== D ? (d = () => {
+                let e = k.current;
+                if (_ || null == e) return;
+                let t = () => {
+                    let t = !ee && null != e.querySelector('[aria-haspopup="dialog"][aria-expanded="true"]');
+                    D.set(z.j, ee || t)
+                };
+                t();
+                let n = ee ? null : new MutationObserver(t);
+                return n?.observe(e, {
+                    attributes: !0,
+                    attributeFilter: ["aria-expanded"],
+                    childList: !0,
+                    subtree: !0
+                }), () => {
+                    n?.disconnect()
+                }
+            }, h = [k, ee, _, D], M[23] = k, M[24] = ee, M[25] = _, M[26] = D, M[27] = d, M[28] = h) : (d = M[27], h = M[28]), (0, i.useLayoutEffect)(d, h), M[29] !== _ || M[30] !== D ? (p = () => () => {
+                _ || D.set(z.j, !1)
+            }, f = [_, D], M[29] = _, M[30] = D, M[31] = f, M[32] = p) : (f = M[31], p = M[32]), (0, i.useLayoutEffect)(p, f);
+            let et = null == q ? W : q.transition,
+                en = null == q ? B : q.escapeHandler,
+                ea = null == q ? A : q.bannerTarget,
+                er = null == q ? K : q.overlayOwner,
+                el = _ ? "contents" : void 0;
+            return M[33] !== S || M[34] !== k || M[35] !== el ? (g = (0, a.jsx)("div", {
+                ref: k,
+                className: el,
+                "data-right-panel-composer-overlay-content": "true",
+                children: S
+            }), M[33] = S, M[34] = k, M[35] = el, M[36] = g) : g = M[36], M[37] !== er || M[38] !== g ? (b = (0, a.jsx)(w.a, {
+                value: er,
+                children: g
+            }), M[37] = er, M[38] = g, M[39] = b) : b = M[39], M[40] !== ea || M[41] !== b ? (x = (0, a.jsx)(m.a, {
+                value: ea,
+                children: b
+            }), M[40] = ea, M[41] = b, M[42] = x) : x = M[42], M[43] !== en || M[44] !== x ? (y = (0, a.jsx)(v.a, {
+                value: en,
+                children: x
+            }), M[43] = en, M[44] = x, M[45] = y) : y = M[45], M[46] !== et || M[47] !== y ? (C = (0, a.jsx)(I.b, {
+                value: et,
+                children: y
+            }), M[46] = et, M[47] = y, M[48] = C) : C = M[48], C
+        }
+    }),
+    ilLT: (function(e, t, n) {
+        var a = n("Qgfj"),
+            r = n("bf6R"),
+            l = n("fs8u");
+        n.d(t, {}, {
+            a: function(e, t) {
+                return [{
+                    id: "left",
+                    icon: r.w,
+                    enabled: t,
+                    message: (0, a.e)({
+                        id: "quickChat.dock.left",
+                        defaultMessage: "Move to left pane"
+                    }),
+                    onSelect: () => {
+                        (0, l.a)(e, "left", "menu")
+                    }
+                }, {
+                    id: "right",
+                    icon: r.y,
+                    enabled: t,
+                    message: (0, a.e)({
+                        id: "quickChat.dock.right",
+                        defaultMessage: "Move to right pane"
+                    }),
+                    onSelect: () => {
+                        (0, l.a)(e, "right", "menu")
+                    }
+                }]
+            }
+        })
+    }),
+    iaTG: (function(e, t, n) {
+        n.d(t, {
+            a: () => g
+        });
+        var a = n("i5ac"),
+            r = n.n(a),
+            l = n("SKhr"),
+            o = n("L6Md");
+        let i = Array.from("αβγδεζηθικλμνξοπρστυφχψω"),
+            s = new Map([..."alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigma tau upsilon phi chi psi omega".split(" ").map((e, t) => [e, i[t]]), ..."nabla:∇ partial:∂ cdot:⋅ times:× div:÷ pm:± mp:∓ le:≤ leq:≤ ge:≥ geq:≥ ne:≠ neq:≠ infty:∞ sum:∑ prod:∏ int:∫ in:∈ notin:∉ to:→ rightarrow:→ leftarrow:←".split(" ").map(e => {
+                let [t, n] = e.split(":");
+                return [t, n]
+            })]),
+            u = /^\\(?:mathbf|boldsymbol|bm|mathrm|mathit|mathsf|mathtt|mathnormal|mathbb|mathcal|mathscr|mathfrak|textbf|textit|textrm)$/,
+            c = /^\\(?:quad|qquad|enspace|thinspace|medspace|thickspace|negthinspace|displaystyle|textstyle|scriptstyle|scriptscriptstyle|limits|nolimits|[,;:! ])$/,
+            d = /^\\(?:left|right|middle|big|Big|bigg|Bigg|bigl|bigr|Bigl|Bigr|biggl|biggr|Biggl|Biggr)$/;
+
+        function h(e) {
+            let t = Array.from(e.matchAll(/\\[a-zA-Z]+|\\[^\r\n]|[^\s]/gu), e => ({
+                    value: e[0],
+                    start: e.index,
+                    end: e.index + e[0].length
+                })),
+                n = [],
+                a = [],
+                r = 0;
+
+            function l() {
+                let e = t[r]?.start;
+                if (null == e) throw Error("Missing argument");
+                let n = o(),
+                    a = t[r - 1].end;
+                return [{
+                    value: "argument:start",
+                    start: e,
+                    end: e
+                }, ...n, {
+                    value: "argument:end",
+                    start: a,
+                    end: a
+                }]
+            }
+
+            function o() {
+                let e = t[r++];
+                if (null == e || "}" === e.value) throw Error("Incomplete math");
+                if ("{" === e.value) {
+                    let a = [];
+                    for (; t[r]?.value !== "}";) a.push(...o());
+                    return n.push({
+                        start: e.start,
+                        end: t[r++].end
+                    }), a
+                }
+                if (u.test(e.value)) {
+                    let a = o();
+                    return n.push({
+                        start: e.start,
+                        end: t[r - 1].end
+                    }), a
+                }
+                if (c.test(e.value)) return [];
+                if (d.test(e.value)) {
+                    let n, l = t[r++];
+                    if (null == l) throw Error("Missing delimiter");
+                    if ("\\left" === e.value) n = {
+                        start: e.start,
+                        end: l.end
+                    }, a.push(n);
+                    else if ("\\right" === e.value) {
+                        if (null == (n = a.pop())) throw Error("Unpaired delimiter");
+                        n.end = l.end
+                    }
+                    return "." === l.value ? [] : [{
+                        ...l,
+                        start: e.start,
+                        delimiter: n
+                    }]
+                }
+                if (/^\\[dt]?frac$/.test(e.value)) return [{
+                    ...e,
+                    value: "\\frac"
+                }, ...l(), ...l()];
+                if (/^(?:[_^]|\\(?:sqrt|vec|hat|bar|overline|underline))$/.test(e.value) || e.value.startsWith("\\") && !s.has(e.value.slice(1).replace(/^var/, "").toLowerCase()) && t[r]?.value === "{") {
+                    if (t[r]?.value === "[") throw Error("Indexed argument");
+                    return [e, ...l()]
+                }
+                let i = e.value.replace(/^\\/, "");
+                return i = (i = (i = s.get(i.replace(/^var/, "").toLowerCase()) ?? e.value).replace(/[\u{1D400}-\u{1D7FF}]/gu, e => e.normalize("NFKC")).toLowerCase()).replace(/[ϵϑϕϖϱς−·]/g, e => "εθφπρσ-⋅" ["ϵϑϕϖϱς−·".indexOf(e)]), [{
+                    ...e,
+                    value: i
+                }]
+            }
+            try {
+                let e = [];
+                for (; r < t.length;) e.push(...o());
+                return 0 === a.length ? {
+                    tokens: e,
+                    groups: n
+                } : null
+            } catch {
+                return null
+            }
+        }
+        var f = n("agQa"),
+            p = n("QxH2"),
+            m = n("h8aU");
+
+        function g(e) {
+            let {
+                contextId: t,
+                getTurns: n,
+                hydratePersistedMatch: a,
+                revealUnrenderedMatches: i = !1,
+                searchPersisted: u,
+                searchMath: c = !1,
+                scrollAdapter: d
+            } = e;
+            return {
+                domain: "conversation",
+                contextId: t,
+                async search(e, t) {
+                    var a, i;
+                    let d, p, g = await async function(e, t, n, a) {
+                        let r = e.query.trim(),
+                            i = n && r.length > 1 && r.startsWith("/") && r.endsWith("/") ? r.slice(1, -1) : void 0,
+                            u = t.flatMap(e => e.units.flatMap(t => (t.textChunks ?? [t.text]).flatMap((a, r) => {
+                                let l = {
+                                        turnKey: e.turnKey,
+                                        unitId: t.unitId,
+                                        text: n ? a.replace(/\s+/g, " ").trim() : a,
+                                        equationIndex: void 0
+                                    },
+                                    o = n ? t.equations?.[r] : void 0;
+                                return null == o ? [l] : [l, {
+                                    ...l,
+                                    text: o,
+                                    equationIndex: r
+                                }]
+                            }))),
+                            c = {
+                                domain: e.domain,
+                                contextId: e.contextId,
+                                query: r,
+                                regex: i,
+                                searchMath: n || void 0,
+                                matches: [],
+                                totalMatches: 0,
+                                isCapped: !1
+                            };
+                        if (!r) return c;
+                        let d = null == i ? null : await (0, f.a)({
+                            query: i,
+                            texts: u.map(e => e.text),
+                            mathTexts: u.map(e => null != e.equationIndex),
+                            maxMatches: 250
+                        }, a);
+                        if (d?.error) return {
+                            ...c,
+                            error: d.error
+                        };
+                        c.totalMatches = d?.totalMatches ?? 0;
+                        let p = new Map;
+                        for (let [t, n] of u.entries()) {
+                            let a = (0, l.e)(n.turnKey, n.unitId),
+                                i = p.get(a) ?? 0,
+                                {
+                                    offsets: u,
+                                    totalMatches: f
+                                } = null != d ? {
+                                    offsets: d.offsets[t] ?? [],
+                                    totalMatches: 0
+                                } : (null == n.equationIndex ? m.a : function(e, t, n) {
+                                    let a = t.trim(),
+                                        r = [];
+                                    if (!a) return {
+                                        offsets: r,
+                                        totalMatches: 0
+                                    };
+                                    let l = h(e),
+                                        i = h(s.get(a) ?? a);
+                                    if (null == l || null == i) {
+                                        let t = e.toLowerCase(),
+                                            l = a.toLowerCase(),
+                                            i = [...e.matchAll(/\\[a-zA-Z]+/g)];
+                                        for (let n = t.indexOf(l); n >= 0; n = t.indexOf(l, n + l.length)) i.some(e => n > e.index && n < e.index + e[0].length) || r.push((0, o.a)(e, {
+                                            start: n,
+                                            end: n + a.length
+                                        }));
+                                        return {
+                                            offsets: r.slice(0, n),
+                                            totalMatches: r.length
+                                        }
+                                    }
+                                    let u = 0;
+                                    for (let e = 0; i.tokens.length > 0 && e <= l.tokens.length - i.tokens.length; e += 1) {
+                                        if (!i.tokens.every((t, n) => t.value === l.tokens[e + n].value)) continue;
+                                        let t = l.tokens.slice(e, e + i.tokens.length),
+                                            a = t[0].start,
+                                            o = t[t.length - 1].end;
+                                        for (let e of t) a = Math.min(a, e.delimiter?.start ?? a), o = Math.max(o, e.delimiter?.end ?? o);
+                                        for (let e of l.groups) a < e.start && o > e.start && o < e.end && (o = e.end), a > e.start && a < e.end && o > e.end && (a = e.start);
+                                        u += 1, r.length < n && r.push({
+                                            start: a,
+                                            end: o
+                                        }), e += i.tokens.length - 1
+                                    }
+                                    return {
+                                        offsets: r,
+                                        totalMatches: u
+                                    }
+                                })(n.text, r, 250 - c.matches.length);
+                            for (let [t, a] of(c.totalMatches += f, u.entries())) {
+                                let r = {
+                                    domain: "conversation",
+                                    contextId: e.contextId,
+                                    turnKey: n.turnKey,
+                                    unitId: n.unitId,
+                                    matchIndex: null == n.equationIndex ? i + t : t,
+                                    equationIndex: n.equationIndex,
+                                    equationRange: null == n.equationIndex ? void 0 : a
+                                };
+                                c.matches.push({
+                                    id: (0, l.d)(r),
+                                    ordinal: c.matches.length + 1,
+                                    location: r
+                                })
+                            }
+                            null == n.equationIndex && p.set(a, i + u.length)
+                        }
+                        return c.isCapped = c.totalMatches > c.matches.length, c
+                    }(e, n(), c, t?.signal);
+                    if (c || null == u) return g;
+                    let v = await u(e, t);
+                    return null == v ? g : (a = g, i = v, d = new Map(a.matches.map(e => [e.id, e])), p = r()([...i.matches.map(e => d.get(e.id) ?? e), ...a.matches], "id").map((e, t) => ({
+                        ...e,
+                        ordinal: t + 1
+                    })), {
+                        ...a,
+                        matches: p,
+                        totalMatches: Math.max(p.length, a.totalMatches, i.totalMatches),
+                        isCapped: a.isCapped || i.isCapped
+                    })
+                },
+                async ensureVisible(e, n) {
+                    if ("conversation" !== e.domain || e.contextId !== t || null != e.turnCursor && null != a && !await a(e, n) || n?.signal?.aborted) return;
+                    d.onNavigate?.();
+                    let r = null != e.turnCursor,
+                        o = d.getTurnContainer(e.turnKey),
+                        s = (0, l.d)(e),
+                        u = i && null != o && null == (0, l.j)({
+                            container: o,
+                            matchId: s,
+                            includeShadowRoots: !1
+                        });
+                    if (null == o || r || u) {
+                        if (n?.signal?.aborted || (n?.signal == null ? await d.scrollToTurn(e.turnKey) : await d.scrollToTurn(e.turnKey, {
+                                signal: n.signal
+                            }), n?.signal?.aborted)) return;
+                        o = d.getTurnContainer(e.turnKey)
+                    }
+                    null != o && await (0, p.b)({
+                        container: o,
+                        matchId: s,
+                        includeShadowRoots: !1,
+                        signal: n?.signal
+                    })
+                }
+            }
+        }
+    }),
+    gSdW: (function(e, t, n) {
+        var a = n("SKhr");
+        n.d(t, {}, {
+            a: function(e) {
+                let t = new Map;
+                for (let n of e) {
+                    if ("conversation" !== n.location.domain) continue;
+                    let e = (0, a.e)(n.location.turnKey, n.location.unitId),
+                        r = t.get(e) ?? [];
+                    r.push(n), t.set(e, r)
+                }
+                return t
+            },
+            b: function(e) {
+                let t = new Map;
+                for (let n of e) {
+                    if ("diff" !== n.location.domain) continue;
+                    let e = t.get(n.location.path) ?? [];
+                    e.push(n), t.set(n.location.path, e)
+                }
+                return t
+            }
+        })
+    }),
+    l0fK: (function(e, t, n) {
+        n.d(t, {
+            a: () => c
+        });
+        var a = n("QosV"),
+            r = n("BolX"),
+            l = n("zd8w"),
+            o = n("SKhr"),
+            i = n("gSdW");
+
+        function s(e) {
+            let t = [],
+                n = document.createTreeWalker(e, NodeFilter.SHOW_TEXT);
+            for (let a = n.nextNode(); null != a; a = n.nextNode()) {
+                if (!(a instanceof Text) || a.parentElement?.closest(".vlist-s")) continue;
+                let n = a.parentElement;
+                for (; null != n && n !== e && "" === n.style.color;) n = n.parentElement;
+                let r = 0;
+                for (let e of a.data) t.push({
+                    node: a,
+                    text: e,
+                    color: n?.style.color ?? "",
+                    offset: r
+                }), r += e.length
+            }
+            return t
+        }
+        var u = n("TwSq");
+
+        function c(e) {
+            let t, c, m, g, v, b, x, y, w, C, M, S, k, E, j, T = (0, a.c)(29),
+                {
+                    containerRef: q,
+                    contextId: I,
+                    onContentChange: z
+                } = e,
+                P = (0, r.z)(u.d),
+                R = (0, r.z)(u.g),
+                O = P?.contextId === I ? P : null,
+                D = null == O ? null : R?.id ?? null,
+                {
+                    schedule: W,
+                    cancel: B
+                } = (S = (0, a.c)(5), k = (0, l.useRef)(null), 80 !== S[0] ? (w = e => {
+                    null == k.current && (k.current = window.setTimeout(() => {
+                        k.current = null, e()
+                    }, 80))
+                }, S[0] = 80, S[1] = w) : w = S[1], E = w, S[2] === Symbol.for("react.memo_cache_sentinel") ? (C = () => {
+                    null != k.current && (window.clearTimeout(k.current), k.current = null)
+                }, S[2] = C) : C = S[2], j = C, S[3] !== E ? (M = {
+                    schedule: E,
+                    cancel: j
+                }, S[3] = E, S[4] = M) : M = S[4], M);
+            T[0] !== z ? (t = () => z?.(), T[0] = z, T[1] = t) : t = T[1];
+            let A = (0, l.useEffectEvent)(t);
+            T[2] !== R?.location || T[3] !== I ? (c = e => {
+                let t = R?.location;
+                return t?.domain === "conversation" && t.contextId === I && (0, o.a)(e, t)
+            }, T[2] = R?.location, T[3] = I, T[4] = c) : c = T[4];
+            let K = (0, l.useEffectEvent)(c);
+            T[5] !== D ? (m = (e, t) => {
+                t.forEach(t => {
+                    (0, o.o)({
+                        element: t,
+                        matchId: e
+                    }), (0, o.n)(t, e === D)
+                })
+            }, T[5] = D, T[6] = m) : m = T[6];
+            let $ = (0, l.useEffectEvent)(m);
+            T[7] !== O || T[8] !== q || T[9] !== $ ? (g = async (e, t) => {
+                let a = q.current;
+                if (null == a || ((0, o.b)(a, {
+                        includeShadowRoots: !1
+                    }), t.takeRecords(), null == O)) return;
+                let r = (0, i.a)(O.matches),
+                    l = Array.from(a.querySelectorAll("[data-content-search-unit-key]")).flatMap(e => {
+                        let t = r.get(e.dataset.contentSearchUnitKey ?? "");
+                        return null == t ? [] : [{
+                            element: e,
+                            matches: t
+                        }]
+                    }),
+                    u = l.map(p),
+                    c = e => {
+                        e.forEach((e, t) => e.forEach((e, n) => $(u[t].matches[n].id, e)))
+                    };
+                if (!O.searchMath) {
+                    c(u.map(e => {
+                        let {
+                            element: t,
+                            matches: n
+                        } = e;
+                        return (0, o.l)({
+                            target: t,
+                            query: O.query,
+                            maxMatches: n.length,
+                            includeShadowRoots: !1
+                        }).matches
+                    })), t.takeRecords();
+                    return
+                }
+                let m = [];
+                for (let {
+                        element: e,
+                        matches: t
+                    }
+                    of l) e.querySelectorAll("[data-math-source]").forEach((e, a) => {
+                    let r = t.flatMap(e => {
+                        let {
+                            id: t,
+                            location: n
+                        } = e;
+                        return "conversation" === n.domain && n.equationIndex === a && null != n.equationRange ? [{
+                            id: t,
+                            range: n.equationRange
+                        }] : []
+                    });
+                    0 !== r.length && m.push((async function(e, t) {
+                        let a = e.querySelector(".katex-html"),
+                            r = e.dataset.mathSource;
+                        if (null == a || null == r || 0 === t.length) return () => t.map(() => []);
+                        let {
+                            katex: l
+                        } = await Promise.all([n.e(990054), n.e(559373)]).then(n.bind(n, "RlG8")), i = s(a), u = new Map(i.map(e => {
+                            let {
+                                node: t
+                            } = e;
+                            return [t, t.data]
+                        })), c = new Set(i.map(e => {
+                            let {
+                                color: t
+                            } = e;
+                            return t
+                        })), d = document.createElement("span"), h = t.map(() => {
+                            let e, t = c.size + 1;
+                            do e = `#${t.toString(16).padStart(6,"0")}`, d.style.color = e, t += 1; while (c.has(d.style.color)) return c.add(d.style.color), {
+                                hex: e,
+                                css: d.style.color
+                            }
+                        });
+                        d.style.color = "";
+                        let f = new Map(h.map((e, t) => {
+                                let {
+                                    css: n
+                                } = e;
+                                return [n, t]
+                            })),
+                            p = new Map,
+                            m = n => {
+                                let a = r;
+                                for (let e of [...n].reverse()) {
+                                    let {
+                                        start: n,
+                                        end: r
+                                    } = t[e];
+                                    a = `${a.slice(0,n)}{\\textcolor{${h[e].hex}}{${a.slice(n,r)}}}${a.slice(r)}`
+                                }
+                                try {
+                                    d.innerHTML = l.renderToString(a, {
+                                        displayMode: null != e.querySelector(".katex-display"),
+                                        strict: "ignore",
+                                        output: "html"
+                                    })
+                                } catch {
+                                    return !1
+                                }
+                                let o = s(d),
+                                    u = o.length === i.length && o.every((e, t) => {
+                                        let {
+                                            text: n
+                                        } = e;
+                                        return n === i[t].text
+                                    });
+                                return o.forEach((e, t) => {
+                                    let n = f.get(e.color);
+                                    if (null == n) return;
+                                    let a = i[t];
+                                    if (!u) {
+                                        let t = i.filter(t => {
+                                            let {
+                                                text: n
+                                            } = t;
+                                            return n === e.text
+                                        });
+                                        if (1 !== t.length || 1 !== o.filter(t => {
+                                                let {
+                                                    text: n
+                                                } = t;
+                                                return n === e.text
+                                            }).length) return;
+                                        a = t[0]
+                                    }
+                                    p.set(a, n)
+                                }), !0
+                            };
+                        return m(t.map((e, t) => t)) || t.forEach((e, t) => m([t])), () => {
+                            let n, l = t.map(() => []);
+                            if (e.dataset.mathSource !== r || !e.contains(a) || [...u].some(e => {
+                                    let [t, n] = e;
+                                    return !a.contains(t) || t.data !== n
+                                })) return l;
+                            let s = [];
+                            for (let e of i) {
+                                let t = p.get(e);
+                                if (null == t) {
+                                    n = void 0;
+                                    continue
+                                }
+                                let a = e.node.parentElement?.closest(".vlist > span, .base") ?? null;
+                                n?.index === t && n.row === a ? n.glyphs.push(e) : (n = {
+                                    index: t,
+                                    row: a,
+                                    glyphs: [e]
+                                }, s.push(n))
+                            }
+                            for (let {
+                                    index: e,
+                                    glyphs: t
+                                }
+                                of s.reverse()) l[e].unshift(... function e(t) {
+                                let n = t[0],
+                                    a = t[t.length - 1],
+                                    r = document.createRange();
+                                r.setStart(n.node, n.offset), r.setEnd(a.node, a.offset + a.text.length);
+                                let l = r.commonAncestorContainer;
+                                for (; r.startContainer !== l && 0 === r.startOffset;) r.setStartBefore(r.startContainer);
+                                for (; r.endContainer !== l && r.endOffset === (r.endContainer instanceof Text ? r.endContainer.length : r.endContainer.childNodes.length);) r.setEndAfter(r.endContainer);
+                                if (r.startContainer !== r.endContainer) return [...t].reverse().flatMap(t => e([t])).reverse();
+                                let i = (0, o.g)();
+                                return r.surroundContents(i), [i]
+                            }(t));
+                            return l
+                        }
+                    })(e, r.map(f)).then(e => () => e().forEach((e, t) => $(r[t].id, e))))
+                });
+                let [g, v] = await Promise.all([(0, o.m)(u.map(h), O.query, O.regex, e), Promise.all(m)]);
+                e.aborted || (c(g()), v.forEach(d), t.takeRecords())
+            }, T[7] = O, T[8] = q, T[9] = $, T[10] = g) : g = T[10];
+            let _ = (0, l.useEffectEvent)(g);
+            T[11] !== O?.runId || T[12] !== K || T[13] !== _ || T[14] !== B || T[15] !== q || T[16] !== A || T[17] !== W ? (v = () => {
+                let e = q.current;
+                if (null == e) return;
+                let t = null,
+                    n = () => {
+                        t?.abort(), _((t = new AbortController).signal, a)
+                    },
+                    a = new MutationObserver(e => {
+                        if (!(0, o.p)(e)) return;
+                        t?.abort();
+                        let a = () => {
+                            A(), n()
+                        };
+                        K(e) ? (B(), a()) : W(a)
+                    });
+                return O?.runId == null ? void n() : (a.observe(e, {
+                    childList: !0,
+                    subtree: !0,
+                    characterData: !0,
+                    attributeFilter: ["hidden", "inert"]
+                }), n(), () => {
+                    a.disconnect(), t?.abort(), B(), (0, o.b)(e, {
+                        includeShadowRoots: !1
+                    })
+                })
+            }, T[11] = O?.runId, T[12] = K, T[13] = _, T[14] = B, T[15] = q, T[16] = A, T[17] = W, T[18] = v) : v = T[18];
+            let L = O?.runId;
+            T[19] !== B || T[20] !== q || T[21] !== I || T[22] !== W || T[23] !== L ? (b = [L, B, q, I, W], T[19] = B, T[20] = q, T[21] = I, T[22] = W, T[23] = L, T[24] = b) : b = T[24], (0, l.useEffect)(v, b), T[25] !== D || T[26] !== q ? (x = () => {
+                q.current?.querySelectorAll("mark[data-search-match]").forEach(e => {
+                    (0, o.n)(e, e.dataset.contentSearchMatchId === D)
+                })
+            }, y = [D, q], T[25] = D, T[26] = q, T[27] = x, T[28] = y) : (x = T[27], y = T[28]), (0, l.useEffect)(x, y)
+        }
+
+        function d(e) {
+            return e()
+        }
+
+        function h(e) {
+            let {
+                element: t,
+                matches: n
+            } = e;
+            return {
+                element: t,
+                maxMatches: n.length
+            }
+        }
+
+        function f(e) {
+            let {
+                range: t
+            } = e;
+            return t
+        }
+
+        function p(e) {
+            let {
+                element: t,
+                matches: n
+            } = e;
+            return {
+                element: t,
+                matches: n.filter(m)
+            }
+        }
+
+        function m(e) {
+            return "conversation" === e.location.domain && null == e.location.equationIndex
+        }
+    }),
+    zjpG: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("on57"),
+            o = n("oyxz");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, i, s = (0, r.c)(5),
+                    {
+                        className: u
+                    } = e;
+                return s[0] !== u ? (t = (0, l.b)("last:hidden", u), s[0] = u, s[1] = t) : t = s[1], s[2] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, a.jsx)(o.a, {
+                    id: "codex.ui.bulletSeparator",
+                    defaultMessage: "·"
+                }), s[2] = n) : n = s[2], s[3] !== t ? (i = (0, a.jsx)("span", {
+                    "aria-hidden": !0,
+                    className: t,
+                    children: n
+                }), s[3] = t, s[4] = i) : i = s[4], i
+            }
+        })
+    }),
+    xD3Z: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("slpy"),
+            o = n("BolX"),
+            i = n("Qgfj"),
+            s = n("Wf1j"),
+            u = n("oyxz"),
+            c = n("QcW8"),
+            d = n("ZU27"),
+            h = n("ilLT"),
+            f = n("Sm6l"),
+            p = n("rmk3"),
+            m = n("bf6R"),
+            g = n("f38C"),
+            v = n("tSEg"),
+            b = n("hZax"),
+            x = n("dt6g"),
+            y = n("WwnD");
+        let w = (0, o.c)(v.a, e => {
+            let {
+                get: t
+            } = e;
+            return null == t(c.gb) ? "hidden" : null != t(d.l.activeTab$) ? "split" : "tab"
+        });
+
+        function C(e) {
+            let t, n, o, c, d, h = (0, r.c)(22),
+                {
+                    contextMenuTrigger: v,
+                    isCompact: x,
+                    isDragging: y,
+                    items: w,
+                    open: C,
+                    onMinimize: S,
+                    onOpenChange: k,
+                    showOptions: E
+                } = e,
+                j = void 0 === E || E,
+                T = (0, b.f)("2163293173"),
+                q = (0, s.a)();
+            h[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, i.e)({
+                id: "quickChat.dock.minimizeComposer",
+                defaultMessage: "Minimize composer"
+            }), h[0] = t) : t = h[0], h[1] !== S ? (n = {
+                id: "minimize",
+                icon: m.Ze,
+                message: t,
+                onSelect: S,
+                selectAfterClose: !0
+            }, h[1] = S, h[2] = n) : n = h[2], h[3] !== w || h[4] !== n ? (o = [...w, n], h[3] = w, h[4] = n, h[5] = o) : o = h[5];
+            let I = o;
+            if (null != v) {
+                let e, t;
+                return j ? (h[6] !== v ? (e = (0, a.jsx)("div", {
+                    className: "contents",
+                    children: v
+                }), h[6] = v, h[7] = e) : e = h[7], h[8] !== I || h[9] !== e ? (t = (0, a.jsx)(p.a, {
+                    disableNative: !0,
+                    items: I,
+                    children: e
+                }), h[8] = I, h[9] = e, h[10] = t) : t = h[10], t) : v
+            }
+            return h[11] !== T || h[12] !== q || h[13] !== x || h[14] !== y || h[15] !== I || h[16] !== k || h[17] !== C || h[18] !== j ? (c = j && (0, a.jsx)(p.a, {
+                disableNative: !0,
+                trigger: "click",
+                align: "end",
+                open: C,
+                onOpenChange: k,
+                items: I,
+                children: T ? (0, a.jsx)(g.a, {
+                    size: "toolbar",
+                    label: q.formatMessage({
+                        id: "quickChat.moreOptions",
+                        defaultMessage: "Chat options"
+                    })
+                }) : (0, a.jsx)(l.a, {
+                    disabled: C || y,
+                    content: (0, a.jsx)(u.a, {
+                        id: "quickChat.dock.dragHint",
+                        defaultMessage: "Drag to move · Click for options"
+                    }),
+                    children: (0, a.jsx)(f.a, {
+                        className: "cursor-grab touch-none active:cursor-grabbing",
+                        "aria-label": q.formatMessage({
+                            id: "quickChat.dock.menu",
+                            defaultMessage: "Dock Chat"
+                        }),
+                        color: "ghostSecondary",
+                        "data-quick-chat-drag-handle": !0,
+                        size: x ? "composer" : "toolbar",
+                        uniform: !0,
+                        onPointerDown: M,
+                        onClick: e => {
+                            0 !== e.button || e.ctrlKey || !(e.detail > 0) || e.defaultPrevented || k?.(!C)
+                        },
+                        children: (0, a.jsx)(m.$c, {})
+                    })
+                })
+            }), h[11] = T, h[12] = q, h[13] = x, h[14] = y, h[15] = I, h[16] = k, h[17] = C, h[18] = j, h[19] = c) : c = h[19], h[20] !== c ? (d = (0, a.jsx)(a.Fragment, {
+                children: c
+            }), h[20] = c, h[21] = d) : d = h[21], d
+        }
+
+        function M(e) {
+            0 !== e.button || e.ctrlKey || e.preventDefault()
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, l = (0, r.c)(6),
+                    s = (0, o.y)(v.a),
+                    u = (0, o.z)(w);
+                l[0] !== u || l[1] !== s ? (t = "hidden" === u ? [] : [{
+                    id: "full-view",
+                    icon: m.N,
+                    message: (0, i.e)({
+                        id: "quickChat.dock.openTab",
+                        defaultMessage: "Open in full view"
+                    }),
+                    onSelect: () => {
+                        (0, x.a)(s, "context_menu", () => (0, y.c)(s, "chat", {
+                            mode: "full"
+                        }))
+                    }
+                }, ...(0, h.a)(s, "split" === u)], l[0] = u, l[1] = s, l[2] = t) : t = l[2];
+                let c = t;
+                return l[3] !== c || l[4] !== e ? (n = (0, a.jsx)(C, {
+                    ...e,
+                    items: c
+                }), l[3] = c, l[4] = e, l[5] = n) : n = l[5], n
+            },
+            b: C
+        })
+    }),
+    fQbA: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("lIZs");
+        n.d(t, {}, {
+            a: function(e) {
+                let t = e.findIndex(e => "move-to-project" === e.id),
+                    n = e.findIndex(e => "separator" === e.type),
+                    a = -1 === t ? n : t + 1;
+                return e.toSpliced(-1 === a ? e.length : a, 0, {
+                    id: "open-app"
+                })
+            },
+            b: function(e, t) {
+                return "open-app" === e.id ? (0, a.jsx)(r.a, {
+                    onSelect: t
+                }) : void 0
+            }
+        })
+    }),
+    pDUk: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("suct"),
+            o = n("iodE"),
+            i = n("IPUh"),
+            s = n("BolX"),
+            u = n("zd8w"),
+            c = n("I7bK"),
+            d = n("Q2Qp"),
+            h = n("QcW8"),
+            f = n("wD9O"),
+            p = n("nzx4"),
+            m = n("eGPX"),
+            g = n("iS3k"),
+            v = n("KWzM");
+
+        function b(e) {
+            e.target instanceof Element && null != e.target.closest('[data-app-shell-tab-strip-controller="right"]') && e.preventDefault()
+        }
+
+        function x(e) {
+            let t, n, l, c, d, h, g, b, x, y, w, C = (0, r.c)(25);
+            C[0] !== e ? ({
+                animate: t,
+                getPaneElement: c,
+                children: n,
+                className: l,
+                ...d
+            } = e, C[0] = e, C[1] = t, C[2] = n, C[3] = l, C[4] = c, C[5] = d) : (t = C[1], n = C[2], l = C[3], c = C[4], d = C[5]);
+            let M = (0, o.a)(),
+                S = (0, s.z)(m.c),
+                k = t && !S,
+                E = (0, f.c)(),
+                j = (0, u.useRef)(null),
+                T = (0, u.useRef)(k);
+            C[6] !== c || C[7] !== E ? (h = () => {
+                let e = j.current,
+                    t = c();
+                if (null == e || null == t || !T.current) return;
+                let n = t.getBoundingClientRect(),
+                    a = e.getBoundingClientRect();
+                e.style.clipPath = `inset(${(n.top-a.top)/E}px ${(a.right-n.right)/E}px ${(a.bottom-n.bottom)/E}px ${(n.left-a.left)/E}px)`
+            }, C[6] = c, C[7] = E, C[8] = h) : h = C[8];
+            let q = h,
+                I = !M,
+                z = !M;
+            C[9] !== q ? (g = () => {
+                T.current = !0, requestAnimationFrame(q)
+            }, C[9] = q, C[10] = g) : g = C[10], C[11] === Symbol.for("react.memo_cache_sentinel") ? (b = () => {
+                T.current = !1, j.current?.style.removeProperty("clip-path")
+            }, C[11] = b) : b = C[11];
+            let P = !!k && v.b.hidden;
+            return C[12] !== k ? (x = k ? v.a : {
+                duration: 0
+            }, C[12] = k, C[13] = x) : x = C[13], C[14] !== n || C[15] !== g || C[16] !== P || C[17] !== x ? (y = (0, a.jsx)(i.a.div, {
+                onAnimationStart: g,
+                onAnimationComplete: b,
+                initial: P,
+                animate: v.b.visible,
+                exit: v.b.hidden,
+                transition: x,
+                children: n
+            }), C[14] = n, C[15] = g, C[16] = P, C[17] = x, C[18] = y) : y = C[18], C[19] !== l || C[20] !== d || C[21] !== I || C[22] !== z || C[23] !== y ? (w = (0, a.jsx)(p.c, {
+                ...d,
+                ref: j,
+                className: l,
+                forceMount: !0,
+                "aria-hidden": I,
+                inert: z,
+                children: y
+            }), C[19] = l, C[20] = d, C[21] = I, C[22] = z, C[23] = y, C[24] = w) : w = C[24], w
+        }
+
+        function y(e) {
+            return e instanceof Element && null != e.closest('[data-app-shell-workspace-layout-toggle="right-panel"]')
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, o, i, s, m, v, w, C, M = (0, r.c)(37),
+                    {
+                        animate: S,
+                        children: k,
+                        floatingCardAnchor: E,
+                        isOpen: j,
+                        isSideChatSplit: T,
+                        onOpenChange: q,
+                        returnFocusId: I,
+                        shouldPreventAutoFocus: z,
+                        trigger: P
+                    } = e,
+                    R = void 0 === S || S,
+                    O = void 0 !== T && T,
+                    D = void 0 !== z && z,
+                    W = (0, u.useContext)(d.a),
+                    B = (0, u.useContext)(c.c)?.chatPaneElement,
+                    [A, K] = (0, u.useState)(null),
+                    $ = (0, u.useRef)(!1),
+                    _ = (0, u.useRef)(j && O),
+                    L = 8 * (0, f.c)();
+                M[0] !== A ? (t = () => A?.closest("[data-thread-floating-chat-actions]") ?? null, M[0] = A, M[1] = t) : t = M[1];
+                let F = t;
+                M[2] !== B || M[3] !== F || M[4] !== W ? (n = function(e) {
+                    let t = void 0 === e ? F() : e;
+                    return t?.offsetParent ?? (void 0 === B ? W?.querySelector("[data-app-shell-main-content-layout]") : B) ?? W
+                }, M[2] = B, M[3] = F, M[4] = W, M[5] = n) : n = M[5];
+                let H = n,
+                    N = E ?? A ?? void 0;
+                M[6] !== E || M[7] !== F || M[8] !== H || M[9] !== N || M[10] !== A ? (o = {
+                    contextElement: N,
+                    getBoundingClientRect() {
+                        if (E?.isConnected) return E.getBoundingClientRect();
+                        let e = F(),
+                            t = e ?? A?.closest("[data-app-shell-main-titlebar]") ?? A?.closest("[data-app-shell-header-toolbar], [data-app-shell-titlebar]"),
+                            n = (t ?? A)?.getBoundingClientRect() ?? new DOMRect,
+                            a = H(e);
+                        if (null == a) return n;
+                        let r = a.getBoundingClientRect();
+                        return new DOMRect(r.left, n.top, r.width, n.height)
+                    }
+                }, M[6] = E, M[7] = F, M[8] = H, M[9] = N, M[10] = A, M[11] = o) : o = M[11];
+                let Q = o;
+                return M[12] !== Q ? (i = (0, a.jsx)(p.b, {
+                    virtualRef: {
+                        current: Q
+                    }
+                }), M[12] = Q, M[13] = i) : i = M[13], M[14] !== j || M[15] !== P ? (s = P ?? (0, a.jsx)(g.a.HeaderButton, {
+                    pressed: j
+                }), M[14] = j, M[15] = P, M[16] = s) : s = M[16], M[17] !== s ? (m = (0, a.jsx)(p.e, {
+                    ref: K,
+                    asChild: !0,
+                    children: s
+                }), M[17] = s, M[18] = m) : m = M[18], M[19] !== R || M[20] !== k || M[21] !== E || M[22] !== H || M[23] !== j || M[24] !== O || M[25] !== L || M[26] !== I || M[27] !== D ? (v = j && (0, a.jsx)(x, {
+                    getPaneElement: H,
+                    className: "z-50 flex flex-col text-default outline-hidden",
+                    animate: R,
+                    align: "end",
+                    alignOffset: null == E ? L : 0,
+                    collisionPadding: L,
+                    side: "bottom",
+                    sideOffset: null == E ? L : 0,
+                    unstyled: !0,
+                    onOpenAutoFocus: e => {
+                        $.current = !1, (D || _.current) && e.preventDefault(), _.current = !1
+                    },
+                    onCloseAutoFocus: e => {
+                        if (D) e.preventDefault();
+                        else if (!$.current && null != I) {
+                            let t = document.getElementById(I);
+                            t?.focus({
+                                preventScroll: !0
+                            }), null != t && document.activeElement === t && e.preventDefault()
+                        }
+                    },
+                    onInteractOutside: e => {
+                        e.target instanceof Node && E?.contains(e.target) && e.preventDefault(), O && y(e.target) && e.preventDefault(), e.defaultPrevented || ($.current = !0)
+                    },
+                    onFocusOutside: e => {
+                        let t = e.detail.originalEvent.relatedTarget;
+                        O && (null == t || y(t)) && "composer" === (0, h.r)(e.target) && e.preventDefault(), e.target instanceof Element && e.target.matches('[role="tabpanel"][data-app-shell-tab-panel-controller="right"]') && e.preventDefault()
+                    },
+                    onPointerDownOutside: b,
+                    style: {
+                        maxHeight: "none",
+                        maxWidth: "none"
+                    },
+                    children: k
+                }), M[19] = R, M[20] = k, M[21] = E, M[22] = H, M[23] = j, M[24] = O, M[25] = L, M[26] = I, M[27] = D, M[28] = v) : v = M[28], M[29] !== v ? (w = (0, a.jsx)(l.a, {
+                    children: v
+                }), M[29] = v, M[30] = w) : w = M[30], M[31] !== j || M[32] !== q || M[33] !== m || M[34] !== w || M[35] !== i ? (C = (0, a.jsxs)(p.a, {
+                    open: j,
+                    onOpenChange: q,
+                    children: [i, m, w]
+                }), M[31] = j, M[32] = q, M[33] = m, M[34] = w, M[35] = i, M[36] = C) : C = M[36], C
+            }
+        })
+    }),
+    BdYu: (function(e, t, n) {
+        var a = n("QosV"),
+            r = n("K45w"),
+            l = n("p5Yg"),
+            o = n("B7sF"),
+            i = n("jCHb"),
+            s = n("RgeH"),
+            u = n("BolX"),
+            c = n("zd8w"),
+            d = n("I7bK"),
+            h = n("QcW8"),
+            f = n("gbrq"),
+            p = n("kl6F"),
+            m = n("eGPX"),
+            g = n("w2yL"),
+            v = n("KWzM"),
+            b = n("GaCK");
+
+        function x(e) {
+            return e.isPopoverOpen ? {
+                ...e,
+                isPopoverOpen: !1
+            } : e
+        }
+
+        function y(e, t, n, a, r, l, o) {
+            return w({
+                centeredPanelGap: o,
+                isSummaryPanelPinned: t && (l ?? (0, f.y)(!0 === n ? e.get(f.M) : e.get(f.B, n), n)),
+                floatingPanelWidth: r,
+                mainContentTargetWidth: a
+            })
+        }
+
+        function w(e) {
+            let {
+                centeredPanelGap: t,
+                isSummaryPanelPinned: n,
+                floatingPanelWidth: a,
+                mainContentTargetWidth: r
+            } = e, l = (0, g.c)(r, a, t);
+            return null != a && "overlay" === l ? (0, g.b)({
+                displayMode: (0, g.c)(r),
+                isPinned: n
+            }) : (0, g.b)({
+                displayMode: l,
+                isPinned: null != a || n,
+                panelWidth: a
+            })
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, l, o, x, C, M, S, k, E, j, T, q, I, z, P, R, O = (0, a.c)(77);
+                O[0] !== e ? (t = void 0 === e ? {} : e, O[0] = e, O[1] = t) : t = O[1];
+                let {
+                    centeredPanelGap: D,
+                    contentShiftResetKey: W,
+                    controlledIsOpen: B,
+                    floatingPanelWidth: A,
+                    getCurrentPinStateKey: K,
+                    isEnabled: $,
+                    pane: _,
+                    pinStateKey: L
+                } = t, F = void 0 === $ || $, H = void 0 === _ ? "chat" : _, N = void 0 === L || L, Q = (0, u.y)(p.a), Z = (0, u.z)(null == B && !0 === N ? f.M : null), V = (0, u.x)(null == B && !0 !== N ? f.B : null, !0 !== N && N);
+                O[2] !== B || O[3] !== V || O[4] !== Z || O[5] !== N ? (n = B ?? (0, f.y)(!0 === N ? Z : V, N), O[2] = B, O[3] = V, O[4] = Z, O[5] = N, O[6] = n) : n = O[6];
+                let X = n,
+                    U = (0, u.z)(f.h),
+                    G = (0, u.z)(h.I),
+                    Y = (0, u.z)(b.b),
+                    J = F && X,
+                    ee = A ?? 300,
+                    et = F && null == A && (B ?? (Y.isPopoverOpen || "boolean" != typeof N && X)),
+                    en = (0, u.z)(m.c),
+                    ea = (0, c.useContext)(d.c),
+                    er = (0, r.a)(0),
+                    el = ("content" === H ? ea?.contentPaneLayout?.targetWidth : ea?.mainContentTargetWidth) ?? er;
+                O[7] !== D || O[8] !== A || O[9] !== J || O[10] !== el ? (l = w({
+                    centeredPanelGap: D,
+                    isSummaryPanelPinned: J,
+                    floatingPanelWidth: A,
+                    mainContentTargetWidth: el.get()
+                }), O[7] = D, O[8] = A, O[9] = J, O[10] = el, O[11] = l) : l = O[11];
+                let eo = (0, r.a)(l);
+                O[12] !== el ? (o = e => el.on("change", e), O[12] = el, O[13] = o) : o = O[13], O[14] !== D || O[15] !== el || O[16] !== ee ? (x = () => (0, g.c)(el.get(), ee, D), O[14] = D, O[15] = el, O[16] = ee, O[17] = x) : x = O[17], O[18] !== o || O[19] !== x ? (C = {
+                    subscribe: o,
+                    getSnapshot: x
+                }, O[18] = o, O[19] = x, O[20] = C) : C = O[20];
+                let ei = C,
+                    es = (0, c.useSyncExternalStore)(ei.subscribe, ei.getSnapshot, ei.getSnapshot),
+                    eu = (0, c.useRef)(null);
+                O[21] !== eo ? (M = eo.get(), O[21] = eo, O[22] = M) : M = O[22], O[23] !== el ? (S = el.get(), O[23] = el, O[24] = S) : S = O[24], O[25] !== M || O[26] !== S ? (k = {
+                    offset: M,
+                    width: S
+                }, O[25] = M, O[26] = S, O[27] = k) : k = O[27];
+                let ec = (0, c.useRef)(k),
+                    ed = (0, c.useRef)(!1),
+                    eh = (0, c.useRef)(W),
+                    ef = (0, c.useRef)(U),
+                    ep = (0, c.useRef)(G),
+                    em = J && null == A;
+                O[28] !== es || O[29] !== et || O[30] !== em ? (E = (0, g.a)({
+                    displayMode: es,
+                    isPinned: em,
+                    isPopoverOpen: et
+                }), O[28] = es, O[29] = et, O[30] = em, O[31] = E) : E = O[31];
+                let eg = E;
+                O[32] !== D || O[33] !== eo || O[34] !== W || O[35] !== B || O[36] !== A || O[37] !== K || O[38] !== G || O[39] !== F || O[40] !== U || O[41] !== el || O[42] !== N || O[43] !== Q ? (j = () => {
+                    let e = ef.current !== U,
+                        t = ep.current !== G;
+                    if (!ed.current && eh.current === W && !e && !t) return;
+                    ed.current = !1, eh.current = W, ef.current = U, ep.current = G;
+                    let n = y(Q, F, K?.() ?? N, el.get(), A, B, D);
+                    ec.current = {
+                        offset: n,
+                        width: el.get()
+                    }, eu.current?.(), eo.jump(n)
+                }, T = [D, eo, W, B, A, K, G, F, el, N, U, Q], O[32] = D, O[33] = eo, O[34] = W, O[35] = B, O[36] = A, O[37] = K, O[38] = G, O[39] = F, O[40] = U, O[41] = el, O[42] = N, O[43] = Q, O[44] = j, O[45] = T) : (j = O[44], T = O[45]), (0, c.useLayoutEffect)(j, T);
+                let ev = ("content" === H ? ea?.contentPaneLayout?.width : ea?.chatPaneWidth) ?? el;
+                return O[46] !== D || O[47] !== ev || O[48] !== eo || O[49] !== B || O[50] !== A || O[51] !== K || O[52] !== F || O[53] !== el || O[54] !== N || O[55] !== Q || O[56] !== en ? (q = () => {
+                    let e = (e, t) => {
+                        let n = y(Q, F, K?.() ?? N, e, A, B, D),
+                            a = ec.current,
+                            r = eo.get();
+                        if (a.offset === n && (r === n || a.width === e && !t)) return;
+                        if (ec.current = {
+                                offset: n,
+                                width: e
+                            }, eu.current?.(), t || 0 === e || r === n) return void eo.jump(n);
+                        let l = ev.get();
+                        if (l === e) {
+                            let e = (0, i.a)(eo, n, v.a),
+                                t = document.activeViewTransition;
+                            if (null != t) {
+                                e.pause();
+                                let n = () => e.play();
+                                t.ready.then(n, n)
+                            }
+                            eu.current = () => e.stop();
+                            return
+                        }
+                        let o = (0, s.a)([l, e], [r, n]),
+                            u = ev.on("change", e => {
+                                let t = o(e);
+                                eo.set(t), t === n && queueMicrotask(u)
+                            });
+                        eu.current = u
+                    };
+                    return e(el.get(), en), el.on("change", t => {
+                        e(t, en || 0 === el.getPrevious() || Q.get(f.h) !== ef.current)
+                    })
+                }, O[46] = D, O[47] = ev, O[48] = eo, O[49] = B, O[50] = A, O[51] = K, O[52] = F, O[53] = el, O[54] = N, O[55] = Q, O[56] = en, O[57] = q) : q = O[57], O[58] !== D || O[59] !== ev || O[60] !== eo || O[61] !== B || O[62] !== A || O[63] !== K || O[64] !== F || O[65] !== J || O[66] !== el || O[67] !== N || O[68] !== Q || O[69] !== en ? (I = [D, ev, eo, B, A, K, F, J, el, N, Q, en], O[58] = D, O[59] = ev, O[60] = eo, O[61] = B, O[62] = A, O[63] = K, O[64] = F, O[65] = J, O[66] = el, O[67] = N, O[68] = Q, O[69] = en, O[70] = I) : I = O[70], (0, c.useLayoutEffect)(q, I), O[71] === Symbol.for("react.memo_cache_sentinel") ? (z = () => () => {
+                    ed.current = !0, eu.current?.()
+                }, P = [], O[71] = z, O[72] = P) : (z = O[71], P = O[72]), (0, c.useLayoutEffect)(z, P), O[73] !== eo || O[74] !== es || O[75] !== eg ? (R = {
+                    contentShift: eo,
+                    displayMode: es,
+                    ...eg
+                }, O[73] = eo, O[74] = es, O[75] = eg, O[76] = R) : R = O[76], R
+            },
+            b: function(e, t) {
+                let n, i, s, h, p, m, v = (0, a.c)(15),
+                    y = void 0 !== t && t,
+                    w = (0, u.z)(f.h),
+                    C = (0, u.z)(f.q),
+                    M = (0, c.useContext)(d.c),
+                    S = (0, r.a)(0),
+                    k = M?.mainContentTargetWidth ?? S;
+                v[0] !== y || v[1] !== k || v[2] !== e ? (n = () => {
+                    var t, n;
+                    t = e, n = y ? "overlay" : (0, g.c)(k.get()), t.set(b.b, e => {
+                        let t = "overlay" === n && e.isPopoverOpen;
+                        return e.displayMode === n && e.isPopoverOpen === t ? e : {
+                            displayMode: n,
+                            isPopoverOpen: t
+                        }
+                    })
+                }, v[0] = y, v[1] = k, v[2] = e, v[3] = n) : n = v[3];
+                let E = n;
+                v[4] !== E ? (i = () => {
+                    l.b.update(E)
+                }, v[4] = E, v[5] = i) : i = v[5], (0, o.a)(k, "change", i), v[6] !== E ? (s = () => (E(), () => (0, l.a)(E)), v[6] = E, v[7] = s) : s = v[7], v[8] !== w || v[9] !== C || v[10] !== E ? (h = [w, C, E], v[8] = w, v[9] = C, v[10] = E, v[11] = h) : h = v[11], (0, c.useLayoutEffect)(s, h), v[12] !== e ? (p = () => () => {
+                    e.set(b.b, x)
+                }, m = [e], v[12] = e, v[13] = p, v[14] = m) : (p = v[13], m = v[14]), (0, c.useLayoutEffect)(p, m)
+            }
+        })
+    }),
+    dDDU: (function(e, t, n) {
+        var a = n("Qgfj"),
+            r = n("Kyn2"),
+            l = n("nnol"),
+            o = n("QcW8"),
+            i = n("ZU27"),
+            s = n("gbrq"),
+            u = n("bf6R"),
+            c = n("GaA7"),
+            d = n("dt6g"),
+            h = n("Vhua"),
+            f = n("WwnD"),
+            p = n("NkWL"),
+            m = n("pZMh");
+        n.d(t, {}, {
+            a: function(e) {
+                let t = e.get(o.gb);
+                return e.get(o.db) || t?.isVisible !== !0 || "split" !== t.mode && !e.get(p.c) ? [] : function(e, t) {
+                    let o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i.l,
+                        g = e.get(i.l.activeTab$),
+                        v = e.get(m.j),
+                        b = null;
+                    o === i.a ? b = "bottom" : "split" === v.mode && (e.get(m.h) ? (b = v.contentSide, "chat" !== t && t.tabId === e.get(m.m) && (b = "left" === v.contentSide ? "right" : "left")) : "chat" === t ? b = "left" === v.contentSide ? "right" : "left" : t.tabId === g?.tabId && (b = v.contentSide));
+                    let x = e.get(h.i),
+                        y = !x && ("chat" !== t || null != g),
+                        w = [{
+                            enabled: y && "left" !== b && (0, f.a)(e, t, "left"),
+                            id: "unified-workspace-move-left",
+                            icon: u.w,
+                            message: (0, a.e)({
+                                id: "threadWorkspace.contextMenu.moveToLeftPane",
+                                defaultMessage: "Move to left pane"
+                            }),
+                            onSelect: () => (0, d.a)(e, "context_menu", () => (0, f.b)(e, t, "left", o))
+                        }, {
+                            enabled: y && "right" !== b && (0, f.a)(e, t, "right"),
+                            id: "unified-workspace-move-right",
+                            icon: u.y,
+                            message: (0, a.e)({
+                                id: "threadWorkspace.contextMenu.moveToRightPane",
+                                defaultMessage: "Move to right pane"
+                            }),
+                            onSelect: () => (0, d.a)(e, "context_menu", () => (0, f.b)(e, t, "right", o))
+                        }].filter(e => !1 !== e.enabled);
+                    return !x && o !== i.a && e.get(s.b) && (0, f.a)(e, t, "bottom") && w.push({
+                        id: "unified-workspace-move-bottom",
+                        icon: u.p,
+                        message: (0, a.e)({
+                            id: "threadWorkspace.contextMenu.moveToBottomPane",
+                            defaultMessage: "Move to bottom pane"
+                        }),
+                        onSelect: () => (0, d.a)(e, "context_menu", () => (0, f.b)(e, t, "bottom", o))
+                    }), "chat" === t || t.isWorkspaceHome || null == t.tabType.windowTransfer || null == c.a.detachedWindows || w.push({
+                        id: "unified-workspace-move-new-window",
+                        enabled: !x && !(0, l.c)(e, t.tabId) && t.tabType.windowTransfer.canTransfer(e, t.props),
+                        icon: u.Mg,
+                        message: (0, a.e)({
+                            id: "threadWorkspace.contextMenu.moveToNewWindow",
+                            defaultMessage: "Move to new window"
+                        }),
+                        onSelect: () => {
+                            (0, r.a)(e, Promise.resolve().then(n.bind(n, "K3jS")).then(n => {
+                                let {
+                                    moveTabToNewWindow: a
+                                } = n;
+                                return a(e, o, t, null)
+                            }))
+                        }
+                    }), "chat" === t && e.get(p.c) && w.push({
+                        id: "close-tab",
+                        icon: u.uj,
+                        message: (0, a.e)({
+                            id: "codex.tabs.contextMenu.close",
+                            defaultMessage: "Close"
+                        }),
+                        onSelect: () => (0, p.a)(e)
+                    }), w
+                }(e, "chat")
+            }
+        })
+    }),
+    NM5E: (function(e, t) {
+        t.a = {
+            kind: "sprite",
+            name: "minus-sm-light-20",
+            canvas: {
+                width: 20,
+                height: 20,
+                viewBox: "0 0 20 20"
+            },
+            href: "#codex-icon-minus-sm-light-20",
+            style: {},
+            alignment: {
+                authored: {
+                    x: 0,
+                    y: 0,
+                    overflows: !1
+                },
+                primary: {
+                    x: 0,
+                    y: 0,
+                    overflows: !1
+                },
+                composite: {
+                    x: 0,
+                    y: 0,
+                    overflows: !1
+                }
+            }
+        }
+    }),
+    h24K: (function(e, t, n) {
+        var a = n("gPp5");
+        class r {
+            constructor() {
+                this.componentControls = new Set
+            }
+            subscribe(e) {
+                return this.componentControls.add(e), () => this.componentControls.delete(e)
+            }
+            start(e, t) {
+                this.componentControls.forEach(n => {
+                    n.start(e.nativeEvent || e, t)
+                })
+            }
+            cancel() {
+                this.componentControls.forEach(e => {
+                    e.cancel()
+                })
+            }
+            stop() {
+                this.componentControls.forEach(e => {
+                    e.stop()
+                })
+            }
+        }
+        let l = () => new r;
+        n.d(t, {}, {
+            a: function() {
+                return (0, a.a)(l)
+            }
+        })
+    })
+};

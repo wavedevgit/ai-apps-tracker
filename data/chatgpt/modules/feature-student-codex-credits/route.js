@@ -1,8 +1,8 @@
 export const __rspack_esm_ids = [573324];
 export const __webpack_modules__ = {
-    yhsv: (function(e, t, s) {
-        s.d(t, {
-            a: () => d,
+    yhsv: (function(t, e, s) {
+        s.d(e, {
+            a: () => c,
             b: () => n
         });
         var o = s("jqIZ"),
@@ -19,27 +19,27 @@ export const __webpack_modules__ = {
                 defaultMessage: "Verify your student status and redeem credits."
             }
         });
-        var d = (0, o.hb)(function() {
-            let e, t, s, d, n, p, f, c, j = (0, a.c)(18),
+        var c = (0, o.hb)(function() {
+            let t, e, s, c, n, p, d, f, j = (0, a.c)(18),
                 l = (0, i.a)();
-            j[0] !== l ? (e = l.formatMessage(m.metaTitle), j[0] = l, j[1] = e) : e = j[1];
-            let g = e;
-            j[2] !== l ? (t = l.formatMessage(m.metaDescription), j[2] = l, j[3] = t) : t = j[3];
-            let C = t;
+            j[0] !== l ? (t = l.formatMessage(m.metaTitle), j[0] = l, j[1] = t) : t = j[1];
+            let g = t;
+            j[2] !== l ? (e = l.formatMessage(m.metaDescription), j[2] = l, j[3] = e) : e = j[3];
+            let C = e;
             return j[4] !== g ? (s = (0, r.jsx)("title", {
                 children: g
-            }), j[4] = g, j[5] = s) : s = j[5], j[6] !== C ? (d = (0, r.jsx)("meta", {
+            }), j[4] = g, j[5] = s) : s = j[5], j[6] !== C ? (c = (0, r.jsx)("meta", {
                 name: "description",
                 content: C
-            }), j[6] = C, j[7] = d) : d = j[7], j[8] !== g ? (n = (0, r.jsx)("meta", {
+            }), j[6] = C, j[7] = c) : c = j[7], j[8] !== g ? (n = (0, r.jsx)("meta", {
                 property: "og:title",
                 content: g
             }), j[8] = g, j[9] = n) : n = j[9], j[10] !== C ? (p = (0, r.jsx)("meta", {
                 property: "og:description",
                 content: C
-            }), j[10] = C, j[11] = p) : p = j[11], j[12] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsx)(o.m, {}), j[12] = f) : f = j[12], j[13] !== s || j[14] !== d || j[15] !== n || j[16] !== p ? (c = (0, r.jsxs)(r.Fragment, {
-                children: [s, d, n, p, f]
-            }), j[13] = s, j[14] = d, j[15] = n, j[16] = p, j[17] = c) : c = j[17], c
+            }), j[10] = C, j[11] = p) : p = j[11], j[12] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, r.jsx)(o.m, {}), j[12] = d) : d = j[12], j[13] !== s || j[14] !== c || j[15] !== n || j[16] !== p ? (f = (0, r.jsxs)(r.Fragment, {
+                children: [s, c, n, p, d]
+            }), j[13] = s, j[14] = c, j[15] = n, j[16] = p, j[17] = f) : f = j[17], f
         });
         let n = () => [{
             property: "og:site_name",
@@ -69,55 +69,55 @@ export const __webpack_modules__ = {
     })
 };
 import {
-    __webpack_require__ as e
-} from "./633146.5096fa3fd9.js";
-import * as t from "./418851.c7ca1818d5.js";
-e.C(t);
-import * as s from "./109308.e66696cd0d.js";
-e.C(s);
+    __webpack_require__ as t
+} from "./633146.6428a93122.js";
+import * as e from "./418851.3351eb0d2c.js";
+t.C(e);
+import * as s from "./109308.a4430446b5.js";
+t.C(s);
 import * as o from "./399565.6af208675d.js";
-e.C(o);
+t.C(o);
 import * as r from "./257798.13b56b362a.js";
-e.C(r);
-import * as a from "./447351.d558a44437.js";
-e.C(a);
+t.C(r);
+import * as a from "./447351.16e0481926.js";
+t.C(a);
 import * as i from "./617936.4707466a2e.js";
-e.C(i);
-import * as m from "./807489.02c4828605.js";
-e.C(m);
-import * as d from "./337882.8740501d0a.js";
-e.C(d);
-import * as n from "./955979.a7c648ac65.js";
-e.C(n);
+t.C(i);
+import * as m from "./807489.36023b676b.js";
+t.C(m);
+import * as c from "./337882.da1b5beae8.js";
+t.C(c);
+import * as n from "./955979.48bc7ee80c.js";
+t.C(n);
 import * as p from "./646436.67f97058a6.js";
-e.C(p);
-import * as f from "./7078.1e69ffb16b.js";
-e.C(f);
-import * as c from "./200429.bb053dd10b.js";
-e.C(c);
-import * as j from "./698524.21cc9159ce.js";
-e.C(j);
-import * as l from "./956483.d8c24cb93c.js";
-e.C(l);
-import * as g from "./87162.061018a33e.js";
-e.C(g);
-import * as C from "./396705.001e7c704c.js";
-e.C(C);
-import * as u from "./155568.3264e8a296.js";
-e.C(u);
-import * as b from "./731863.63f4b0e1e0.js";
-e.C(b);
-import * as _ from "./767086.348bdfe349.js";
-e.C(_);
-import * as h from "./76629.9b04d58081.js";
-e.C(h);
-import * as x from "./514085.7e2196bde7.js";
-e.C(x);
+t.C(p);
+import * as d from "./7078.c420b9a2f6.js";
+t.C(d);
+import * as f from "./200429.11007a9422.js";
+t.C(f);
+import * as j from "./698524.8f181d24a1.js";
+t.C(j);
+import * as l from "./956483.6cfec0717e.js";
+t.C(l);
+import * as g from "./87162.d101a9fdd5.js";
+t.C(g);
+import * as C from "./396705.00162c6ea9.js";
+t.C(C);
+import * as u from "./155568.36875ef56f.js";
+t.C(u);
+import * as _ from "./731863.bbf914bfbc.js";
+t.C(_);
+import * as h from "./767086.5122101cd2.js";
+t.C(h);
+import * as x from "./76629.ac20799396.js";
+t.C(x);
+import * as b from "./514085.004fb5c464.js";
+t.C(b);
 import * as y from "./226913.27c93050ff.js";
-e.C(y);
-import * as w from "./573324.048c345f72.js";
-e.C(w);
-var v = e(e.s = "yhsv"),
+t.C(y);
+import * as w from "./573324.050921afcf.js";
+t.C(w);
+var v = t(t.s = "yhsv"),
     k = v.a,
     P = v.b;
 export {

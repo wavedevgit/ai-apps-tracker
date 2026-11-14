@@ -1,14 +1,14 @@
 export const __rspack_esm_ids = [909823];
 export const __webpack_modules__ = {
-    sqBJ: (function(s, o, r) {
-        r.d(o, {
-            a: () => e,
-            b: () => m
+    sqBJ: (function(s, o, a) {
+        a.d(o, {
+            a: () => m,
+            b: () => f
         });
-        var a = r("jqIZ"),
-            t = r("oOby");
-        let e = (0, a.hb)(t.c),
-            m = s => {
+        var r = a("jqIZ"),
+            t = a("oOby");
+        let m = (0, r.hb)(t.c),
+            f = s => {
                 let {
                     matches: o
                 } = s;
@@ -18,36 +18,36 @@ export const __webpack_modules__ = {
                 }]
             }
     }),
-    oOby: (function(s, o, r) {
-        var a = r("jqIZ"),
-            t = r("ABep"),
-            e = r("QosV"),
-            m = r("hC2y"),
-            f = r("AXDI");
-        let p = (0, a.jb)(f.b);
-        o.c = (0, a.hb)(function() {
-            let s, o, r = (0, e.c)(4),
-                p = (0, a.Y)();
-            return r[0] !== p ? (s = (0, a.O)((0, a.K)(m.a, p)), r[0] = p, r[1] = s) : s = r[1], r[2] !== s ? (o = (0, t.jsx)(f.a, {
+    oOby: (function(s, o, a) {
+        var r = a("jqIZ"),
+            t = a("ABep"),
+            m = a("QosV"),
+            f = a("hC2y"),
+            e = a("AXDI");
+        let p = (0, r.jb)(e.b);
+        o.c = (0, r.hb)(function() {
+            let s, o, a = (0, m.c)(4),
+                p = (0, r.Y)();
+            return a[0] !== p ? (s = (0, r.O)((0, r.K)(f.a, p)), a[0] = p, a[1] = s) : s = a[1], a[2] !== s ? (o = (0, t.jsx)(e.a, {
                 children: s
-            }), r[2] = s, r[3] = o) : o = r[3], o
-        }), r.d(o, {
-            b: () => f.c
+            }), a[2] = s, a[3] = o) : o = a[3], o
+        }), a.d(o, {
+            b: () => e.c
         }, {
             a: p
         })
     }),
-    nDjx: (function(s, o, r) {
-        s.exports = r.p + "assets/appshot-logo.f0152cb4dd.png"
+    nDjx: (function(s, o, a) {
+        s.exports = a.p + "assets/appshot-logo.f0152cb4dd.png"
     }),
-    hIAo: (function(s, o, r) {
-        s.exports = r.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    hIAo: (function(s, o, a) {
+        s.exports = a.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
     }),
-    OCvz: (function(s, o, r) {
-        s.exports = r.p + "assets/dictation-start.f6efcb404f.wav"
+    OCvz: (function(s, o, a) {
+        s.exports = a.p + "assets/dictation-start.f6efcb404f.wav"
     }),
-    DJ2e: (function(s, o, r) {
-        s.exports = r.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    DJ2e: (function(s, o, a) {
+        s.exports = a.p + "assets/dictation-stop.e3bc7ebc5e.wav"
     }),
     EBQV: (function(o) {
         o.exports = s.ir("/cdn/assets/dotnet.js").then(function(s) {
@@ -57,54 +57,54 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as s
-} from "./633146.5096fa3fd9.js";
-import * as o from "./418851.c7ca1818d5.js";
+} from "./633146.6428a93122.js";
+import * as o from "./418851.3351eb0d2c.js";
 s.C(o);
-import * as r from "./109308.e66696cd0d.js";
-s.C(r);
-import * as a from "./399565.6af208675d.js";
+import * as a from "./109308.a4430446b5.js";
 s.C(a);
+import * as r from "./399565.6af208675d.js";
+s.C(r);
 import * as t from "./257798.13b56b362a.js";
 s.C(t);
-import * as e from "./447351.d558a44437.js";
-s.C(e);
-import * as m from "./617936.4707466a2e.js";
+import * as m from "./447351.16e0481926.js";
 s.C(m);
-import * as f from "./807489.02c4828605.js";
+import * as f from "./617936.4707466a2e.js";
 s.C(f);
-import * as p from "./337882.8740501d0a.js";
+import * as e from "./807489.36023b676b.js";
+s.C(e);
+import * as p from "./337882.da1b5beae8.js";
 s.C(p);
-import * as d from "./955979.a7c648ac65.js";
-s.C(d);
-import * as c from "./646436.67f97058a6.js";
+import * as c from "./955979.48bc7ee80c.js";
 s.C(c);
-import * as i from "./7078.1e69ffb16b.js";
+import * as d from "./646436.67f97058a6.js";
+s.C(d);
+import * as i from "./7078.c420b9a2f6.js";
 s.C(i);
-import * as j from "./200429.bb053dd10b.js";
+import * as j from "./200429.11007a9422.js";
 s.C(j);
-import * as b from "./698524.21cc9159ce.js";
-s.C(b);
-import * as C from "./956483.d8c24cb93c.js";
+import * as C from "./698524.8f181d24a1.js";
 s.C(C);
-import * as n from "./87162.061018a33e.js";
+import * as b from "./956483.6cfec0717e.js";
+s.C(b);
+import * as n from "./87162.d101a9fdd5.js";
 s.C(n);
-import * as _ from "./396705.001e7c704c.js";
+import * as _ from "./396705.00162c6ea9.js";
 s.C(_);
-import * as x from "./155568.3264e8a296.js";
+import * as x from "./155568.36875ef56f.js";
 s.C(x);
-import * as l from "./731863.63f4b0e1e0.js";
+import * as l from "./731863.bbf914bfbc.js";
 s.C(l);
-import * as u from "./767086.348bdfe349.js";
+import * as u from "./767086.5122101cd2.js";
 s.C(u);
-import * as h from "./76629.9b04d58081.js";
+import * as h from "./76629.ac20799396.js";
 s.C(h);
-import * as v from "./514085.7e2196bde7.js";
+import * as v from "./514085.004fb5c464.js";
 s.C(v);
 import * as w from "./226913.27c93050ff.js";
 s.C(w);
 import * as g from "./902158.5a4b6c2c66.js";
 s.C(g);
-import * as k from "./909823.6b446af3a2.js";
+import * as k from "./909823.a8adab7c62.js";
 s.C(k);
 var q = s(s.s = "sqBJ"),
     B = q.a,

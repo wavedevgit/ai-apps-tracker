@@ -1,106 +1,106 @@
 export const __rspack_esm_ids = [935047];
 export const __webpack_modules__ = {
-    Mv3p: (function(e, s, a) {
-        a.d(s, {
-            a: () => i,
-            b: () => n
+    Mv3p: (function(e, a, s) {
+        s.d(a, {
+            a: () => f,
+            b: () => i
         });
-        var r = a("jqIZ"),
-            t = a("ABep"),
-            o = a("QosV"),
-            f = a("zOE4"),
-            m = a("EkCf");
-        let i = (0, r.jb)(function(e) {
-            let s, a = (0, o.c)(1);
-            return a[0] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, t.jsx)(f.LoadingPage, {
+        var r = s("jqIZ"),
+            t = s("ABep"),
+            o = s("QosV"),
+            m = s("zOE4"),
+            c = s("EkCf");
+        let f = (0, r.jb)(function(e) {
+            let a, s = (0, o.c)(1);
+            return s[0] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, t.jsx)(m.LoadingPage, {
                 fillParent: !0,
                 variant: "blossom"
-            }), a[0] = s) : s = a[0], s
+            }), s[0] = a) : a = s[0], a
         });
-        var n = (0, r.hb)(function(e) {
-            let s, a = (0, o.c)(1);
-            return a[0] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, t.jsx)(m.a, {
-                fallback: (0, t.jsx)(i, {})
-            }), a[0] = s) : s = a[0], s
+        var i = (0, r.hb)(function(e) {
+            let a, s = (0, o.c)(1);
+            return s[0] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, t.jsx)(c.a, {
+                fallback: (0, t.jsx)(f, {})
+            }), s[0] = a) : a = s[0], a
         })
     }),
-    nDjx: (function(e, s, a) {
-        e.exports = a.p + "assets/appshot-logo.f0152cb4dd.png"
+    nDjx: (function(e, a, s) {
+        e.exports = s.p + "assets/appshot-logo.f0152cb4dd.png"
     }),
-    hIAo: (function(e, s, a) {
-        e.exports = a.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    hIAo: (function(e, a, s) {
+        e.exports = s.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
     }),
-    OCvz: (function(e, s, a) {
-        e.exports = a.p + "assets/dictation-start.f6efcb404f.wav"
+    OCvz: (function(e, a, s) {
+        e.exports = s.p + "assets/dictation-start.f6efcb404f.wav"
     }),
-    DJ2e: (function(e, s, a) {
-        e.exports = a.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    DJ2e: (function(e, a, s) {
+        e.exports = s.p + "assets/dictation-stop.e3bc7ebc5e.wav"
     }),
-    nlAI: (function(e, s, a) {
-        var r = a("ABep"),
-            t = a("QosV"),
-            o = a("XyTt"),
-            f = a("zd8w"),
-            m = a("jqIZ"),
-            i = a("v4LA"),
-            n = a("hZax"),
-            c = a("AXDI");
+    nlAI: (function(e, a, s) {
+        var r = s("ABep"),
+            t = s("QosV"),
+            o = s("XyTt"),
+            m = s("zd8w"),
+            c = s("jqIZ"),
+            f = s("v4LA"),
+            i = s("hZax"),
+            n = s("AXDI");
         let l = "1258713729",
-            p = (0, i.a)(o.y),
-            d = (0, i.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(967847), a.e(591350), a.e(330351), a.e(409022)]).then(a.bind(a, "H3fR"))).BusinessAdsCreditPage);
+            p = (0, f.a)(o.y),
+            d = (0, f.a)(async () => (await Promise.all([s.e(418851), s.e(109308), s.e(399565), s.e(257798), s.e(447351), s.e(617936), s.e(807489), s.e(337882), s.e(955979), s.e(646436), s.e(7078), s.e(200429), s.e(698524), s.e(956483), s.e(87162), s.e(396705), s.e(155568), s.e(731863), s.e(767086), s.e(76629), s.e(514085), s.e(226913), s.e(967847), s.e(330351), s.e(212322), s.e(261228)]).then(s.bind(s, "oWBw"))).BusinessAdsCreditPage);
 
         function j(e) {
-            let s, a = (0, t.c)(4),
+            let a, s = (0, t.c)(4),
                 {
                     link: o
                 } = e,
-                f = (0, n.f)(l);
-            if ((0, n.g)(l)) {
+                m = (0, i.f)(l);
+            if ((0, i.g)(l)) {
                 let e;
-                return a[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, r.jsx)(c.b, {}), a[0] = e) : e = a[0], e
+                return s[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, r.jsx)(n.b, {}), s[0] = e) : e = s[0], e
             }
-            return a[1] !== f || a[2] !== o ? (s = f ? (0, r.jsx)(d, {
+            return s[1] !== m || s[2] !== o ? (a = m ? (0, r.jsx)(d, {
                 link: o
             }) : (0, r.jsx)(p, {
                 link: o
-            }), a[1] = f, a[2] = o, a[3] = s) : s = a[3], s
+            }), s[1] = m, s[2] = o, s[3] = a) : a = s[3], a
         }
-        a.d(s, {}, {
+        s.d(a, {}, {
             a: function(e) {
-                let s, a, o, i = (0, t.c)(7),
+                let a, s, o, f = (0, t.c)(7),
                     {
-                        link: n
+                        link: i
                     } = e,
                     {
                         search: l
-                    } = (0, m.Y)();
-                i[0] !== n.isAdsCreditCampaign || i[1] !== l ? (s = n.isAdsCreditCampaign && !new URLSearchParams(l).get("promo_campaign"), i[0] = n.isAdsCreditCampaign, i[1] = l, i[2] = s) : s = i[2];
-                let d = s;
-                return i[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(c.b, {}), i[3] = a) : a = i[3], i[4] !== d || i[5] !== n ? (o = (0, r.jsx)(c.a, {
-                    children: (0, r.jsx)(f.Suspense, {
-                        fallback: a,
+                    } = (0, c.Y)();
+                f[0] !== i.isAdsCreditCampaign || f[1] !== l ? (a = i.isAdsCreditCampaign && !new URLSearchParams(l).get("promo_campaign"), f[0] = i.isAdsCreditCampaign, f[1] = l, f[2] = a) : a = f[2];
+                let d = a;
+                return f[3] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, r.jsx)(n.b, {}), f[3] = s) : s = f[3], f[4] !== d || f[5] !== i ? (o = (0, r.jsx)(n.a, {
+                    children: (0, r.jsx)(m.Suspense, {
+                        fallback: s,
                         children: d ? (0, r.jsx)(j, {
-                            link: n
+                            link: i
                         }) : (0, r.jsx)(p, {
-                            link: n
+                            link: i
                         })
                     })
-                }), i[4] = d, i[5] = n, i[6] = o) : o = i[6], o
+                }), f[4] = d, f[5] = i, f[6] = o) : o = f[6], o
             }
         })
     }),
-    EkCf: (function(e, s, a) {
-        var r = a("ABep"),
-            t = a("QosV"),
-            o = a("jqIZ"),
-            f = a("HnGz"),
-            m = a("hC2y"),
-            i = a("AXDI"),
-            n = a("NVla"),
-            c = a("nlAI");
-        a.d(s, {}, {
+    EkCf: (function(e, a, s) {
+        var r = s("ABep"),
+            t = s("QosV"),
+            o = s("jqIZ"),
+            m = s("HnGz"),
+            c = s("hC2y"),
+            f = s("AXDI"),
+            i = s("NVla"),
+            n = s("nlAI");
+        s.d(a, {}, {
             a: function(e) {
-                let s, a, l, p, d, j = (0, t.c)(14),
+                let a, s, l, p, d, j = (0, t.c)(14),
                     {
                         fallback: b
                     } = e,
@@ -110,88 +110,88 @@ export const __webpack_modules__ = {
                 if (j[0] !== b || j[1] !== C) {
                     p = Symbol.for("react.early_return_sentinel");
                     e: {
-                        let e = (0, f.g)(m.c, C);
+                        let e = (0, m.g)(c.c, C);
                         if (null == e) {
                             let e;
-                            j[6] !== C ? (e = (0, n.b)(C), j[6] = C, j[7] = e) : e = j[7];
-                            let s = e;
-                            if (null != s) {
+                            j[6] !== C ? (e = (0, i.b)(C), j[6] = C, j[7] = e) : e = j[7];
+                            let a = e;
+                            if (null != a) {
                                 let e;
-                                j[8] !== s ? (e = (0, r.jsx)(c.a, {
-                                    link: s
-                                }), j[8] = s, j[9] = e) : e = j[9], p = e;
+                                j[8] !== a ? (e = (0, r.jsx)(n.a, {
+                                    link: a
+                                }), j[8] = a, j[9] = e) : e = j[9], p = e;
                                 break e
                             }
                         }
-                        s = i.a,
-                        a = b,
-                        l = null == e ? (0, r.jsx)(m.d, {}) : (0, o.O)(e)
+                        a = f.a,
+                        s = b,
+                        l = null == e ? (0, r.jsx)(c.d, {}) : (0, o.O)(e)
                     }
-                    j[0] = b, j[1] = C, j[2] = s, j[3] = a, j[4] = l, j[5] = p
-                } else s = j[2], a = j[3], l = j[4], p = j[5];
-                return p !== Symbol.for("react.early_return_sentinel") ? p : (j[10] !== s || j[11] !== a || j[12] !== l ? (d = (0, r.jsx)(s, {
-                    fallback: a,
+                    j[0] = b, j[1] = C, j[2] = a, j[3] = s, j[4] = l, j[5] = p
+                } else a = j[2], s = j[3], l = j[4], p = j[5];
+                return p !== Symbol.for("react.early_return_sentinel") ? p : (j[10] !== a || j[11] !== s || j[12] !== l ? (d = (0, r.jsx)(a, {
+                    fallback: s,
                     children: l
-                }), j[10] = s, j[11] = a, j[12] = l, j[13] = d) : d = j[13], d)
+                }), j[10] = a, j[11] = s, j[12] = l, j[13] = d) : d = j[13], d)
             }
         })
     }),
-    EBQV: (function(s) {
-        s.exports = e.ir("/cdn/assets/dotnet.js").then(function(e) {
+    EBQV: (function(a) {
+        a.exports = e.ir("/cdn/assets/dotnet.js").then(function(e) {
             return e
         })
     })
 };
 import {
     __webpack_require__ as e
-} from "./633146.5096fa3fd9.js";
-import * as s from "./418851.c7ca1818d5.js";
-e.C(s);
-import * as a from "./109308.e66696cd0d.js";
+} from "./633146.6428a93122.js";
+import * as a from "./418851.3351eb0d2c.js";
 e.C(a);
+import * as s from "./109308.a4430446b5.js";
+e.C(s);
 import * as r from "./399565.6af208675d.js";
 e.C(r);
 import * as t from "./257798.13b56b362a.js";
 e.C(t);
-import * as o from "./447351.d558a44437.js";
+import * as o from "./447351.16e0481926.js";
 e.C(o);
-import * as f from "./617936.4707466a2e.js";
-e.C(f);
-import * as m from "./807489.02c4828605.js";
+import * as m from "./617936.4707466a2e.js";
 e.C(m);
-import * as i from "./337882.8740501d0a.js";
-e.C(i);
-import * as n from "./955979.a7c648ac65.js";
-e.C(n);
-import * as c from "./646436.67f97058a6.js";
+import * as c from "./807489.36023b676b.js";
 e.C(c);
-import * as l from "./7078.1e69ffb16b.js";
+import * as f from "./337882.da1b5beae8.js";
+e.C(f);
+import * as i from "./955979.48bc7ee80c.js";
+e.C(i);
+import * as n from "./646436.67f97058a6.js";
+e.C(n);
+import * as l from "./7078.c420b9a2f6.js";
 e.C(l);
-import * as p from "./200429.bb053dd10b.js";
+import * as p from "./200429.11007a9422.js";
 e.C(p);
-import * as d from "./698524.21cc9159ce.js";
+import * as d from "./698524.8f181d24a1.js";
 e.C(d);
-import * as j from "./956483.d8c24cb93c.js";
+import * as j from "./956483.6cfec0717e.js";
 e.C(j);
-import * as b from "./87162.061018a33e.js";
+import * as b from "./87162.d101a9fdd5.js";
 e.C(b);
-import * as C from "./396705.001e7c704c.js";
+import * as C from "./396705.00162c6ea9.js";
 e.C(C);
-import * as _ from "./155568.3264e8a296.js";
+import * as _ from "./155568.36875ef56f.js";
 e.C(_);
-import * as x from "./731863.63f4b0e1e0.js";
+import * as x from "./731863.bbf914bfbc.js";
 e.C(x);
-import * as u from "./767086.348bdfe349.js";
+import * as u from "./767086.5122101cd2.js";
 e.C(u);
-import * as k from "./76629.9b04d58081.js";
+import * as k from "./76629.ac20799396.js";
 e.C(k);
-import * as g from "./514085.7e2196bde7.js";
+import * as g from "./514085.004fb5c464.js";
 e.C(g);
 import * as h from "./226913.27c93050ff.js";
 e.C(h);
 import * as y from "./902158.5a4b6c2c66.js";
 e.C(y);
-import * as A from "./935047.5f0f37d7e3.js";
+import * as A from "./935047.8aeaa9a524.js";
 e.C(A);
 var v = e(e.s = "Mv3p"),
     w = v.a,
