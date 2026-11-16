@@ -1,9 +1,1 @@
-export const __rspack_esm_ids = [222773];
-export const __webpack_modules__ = {
-    R9dK: (function(_, e, o) {
-        var r = o("Rk86");
-        _.exports = function(_, e) {
-            return r(_, e, !0)
-        }
-    })
-};
+export const __rspack_esm_ids=[222773];export const __webpack_modules__={R9dK:(function(_,e,o){var r=o("Rk86");_.exports=function(_,e){return r(_,e,!0)}})};

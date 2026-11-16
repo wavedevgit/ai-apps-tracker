@@ -45,7 +45,7 @@ export const __webpack_modules__ = {
         r.d(t, {
             a: () => f,
             b: () => i,
-            c: () => c
+            c: () => d
         });
         let o = new Set(["verified", "failed", "expired", "processing", "requires_action"]);
 
@@ -53,14 +53,14 @@ export const __webpack_modules__ = {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : crypto.randomUUID(),
                 r = 0,
                 i = !1;
-            return (s, l, d, c) => {
+            return (s, l, c, d) => {
                 if (!i) {
                     i = "finish" === s, r += 1;
                     try {
-                        let i = n(d) ? d : void 0,
+                        let i = n(c) ? c : void 0,
                             f = n(i?.apiResponse) ? i.apiResponse : void 0,
                             u = i?.status,
-                            m = f?.status ?? c,
+                            m = f?.status ?? d,
                             b = i?.verification_id;
                         e({
                             "experian.attempt_id": t,
@@ -96,7 +96,7 @@ export const __webpack_modules__ = {
         let s = "on-error",
             l = () => r.e(182724).then(r.bind(r, "p0SC"));
 
-        function d() {
+        function c() {
             try {
                 window.localStorage.removeItem("connected_solutions_ee_session")
             } catch {
@@ -104,7 +104,7 @@ export const __webpack_modules__ = {
             }
         }
 
-        function c(e) {
+        function d(e) {
             let {
                 appearance: t,
                 getContainer: r,
@@ -112,14 +112,14 @@ export const __webpack_modules__ = {
                 loadSdk: i = l,
                 theme: n = "light",
                 verificationToken: a,
-                providerEnvironment: c,
+                providerEnvironment: d,
                 signal: f,
                 onDiagnosticEvent: u
             } = e;
             return new Promise(e => {
                 let l = new AbortController,
                     m = t => {
-                        l.abort(), u?.("finish", c, {
+                        l.abort(), u?.("finish", d, {
                             kind: t.kind,
                             verification_id: t.verificationId
                         }), e(t)
@@ -132,7 +132,7 @@ export const __webpack_modules__ = {
                             let o = e instanceof CustomEvent ? e.detail : void 0,
                                 i = "object" == typeof o && null != o && "experienceDetails" in o ? o.experienceDetails : void 0,
                                 n = null == i && t === s && "object" == typeof o && null != o && "data" in o && "object" == typeof o.data && null != o.data && "status" in o.data ? o.data.status : void 0;
-                            u?.(t, c, i, n), r?.(i)
+                            u?.(t, d, i, n), r?.(i)
                         }, {
                             signal: l.signal
                         })
@@ -145,7 +145,7 @@ export const __webpack_modules__ = {
                     let {
                         registerIdentityVerification: e
                     } = await i();
-                    e(), l.signal.aborted || (u?.("mount", c), (() => {
+                    e(), l.signal.aborted || (u?.("mount", d), (() => {
                         let e, i, f = r();
                         if (null === f) return b();
                         let u = document.createElement("identity-verification");
@@ -186,7 +186,7 @@ export const __webpack_modules__ = {
                                     }
                                 }
                             }
-                        }))), u.setAttribute("aria-label", o), u.setAttribute("environment", c), u.setAttribute("role", "region"), u.setAttribute("token", a), p(u, "on-load"), p(u, "on-ready"), p(u, "on-status-change"), p(u, "on-verification-complete", e => {
+                        }))), u.setAttribute("aria-label", o), u.setAttribute("environment", d), u.setAttribute("role", "region"), u.setAttribute("token", a), p(u, "on-load"), p(u, "on-ready"), p(u, "on-status-change"), p(u, "on-verification-complete", e => {
                             let t, r;
                             return m((t = !("object" != typeof e || null == e || Array.isArray(e)) && ["status", "verification_id"].every(t => {
                                 let r = Reflect.get(e, t);
@@ -217,15 +217,15 @@ export const __webpack_modules__ = {
                         }), _.observe(u, {
                             childList: !0,
                             subtree: !0
-                        }), d();
+                        }), c();
                         try {
                             f.append(u)
                         } finally {
-                            d()
+                            c()
                         }
                     })())
                 })().catch(e => {
-                    throw u?.("start_failed", c), e
+                    throw u?.("start_failed", d), e
                 }).catch(() => m({
                     kind: 2
                 })))
@@ -234,7 +234,7 @@ export const __webpack_modules__ = {
 
         function f(e) {
             let t, {
-                runVerification: r = c,
+                runVerification: r = d,
                 getContainer: o,
                 getTheme: i,
                 label: n,
@@ -268,8 +268,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.7f86ed336a.js";
-import * as t from "./418851.ac24d305cd.js";
+} from "./633146.0389b6b487.js";
+import * as t from "./418851.d159eb4416.js";
 e.C(t);
 import * as r from "./109308.c9b7701e19.js";
 e.C(r);
@@ -277,43 +277,43 @@ import * as o from "./399565.e3bd47902e.js";
 e.C(o);
 import * as i from "./257798.7e03f1e3e2.js";
 e.C(i);
-import * as n from "./447351.ec9533f9fc.js";
+import * as n from "./447351.38c6663605.js";
 e.C(n);
 import * as a from "./617936.b641c39dad.js";
 e.C(a);
-import * as s from "./807489.641526722d.js";
+import * as s from "./807489.f4f591ba36.js";
 e.C(s);
-import * as l from "./337882.c82c7eb7d0.js";
+import * as l from "./337882.ff3affb96a.js";
 e.C(l);
-import * as d from "./955979.26623eb1e8.js";
-e.C(d);
-import * as c from "./646436.6a9ea7ce2b.js";
+import * as c from "./955979.1876fabeae.js";
 e.C(c);
+import * as d from "./646436.6a9ea7ce2b.js";
+e.C(d);
 import * as f from "./7078.7ac8d1f362.js";
 e.C(f);
-import * as u from "./200429.b3f88f116c.js";
+import * as u from "./200429.4d632ba2a6.js";
 e.C(u);
-import * as m from "./698524.8e9b330e02.js";
+import * as m from "./698524.389f4a7f6b.js";
 e.C(m);
-import * as b from "./956483.dad0089cdf.js";
+import * as b from "./956483.d858d35d29.js";
 e.C(b);
-import * as p from "./87162.5235ed43cc.js";
+import * as p from "./87162.77ec984516.js";
 e.C(p);
-import * as _ from "./396705.f3e9be32ee.js";
+import * as _ from "./396705.20cd88e12f.js";
 e.C(_);
-import * as v from "./155568.f88fad6c40.js";
+import * as v from "./155568.1c3d77f567.js";
 e.C(v);
-import * as g from "./731863.70436835b9.js";
+import * as g from "./731863.01f5ca0d2b.js";
 e.C(g);
-import * as y from "./767086.dce6c25374.js";
+import * as y from "./767086.622205eb79.js";
 e.C(y);
-import * as h from "./76629.b4d403ea2d.js";
+import * as h from "./76629.38c2f40595.js";
 e.C(h);
-import * as x from "./514085.be2a492f7d.js";
+import * as x from "./514085.505cf4281f.js";
 e.C(x);
 import * as C from "./226913.dd4de34d8f.js";
 e.C(C);
-import * as j from "./839024.0c63721059.js";
+import * as j from "./839024.bdfdfd6f7c.js";
 e.C(j);
 var k = e(e.s = "QXa0").a;
 export {

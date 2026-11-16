@@ -4,6 +4,6 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as s
-} from "./633146.7f86ed336a.js";
-import * as o from "./407837.dbfa9b6f02.js";
+} from "./633146.0389b6b487.js";
+import * as o from "./407837.207083b2f2.js";
 s.C(o), s(s.s = "LiWC");

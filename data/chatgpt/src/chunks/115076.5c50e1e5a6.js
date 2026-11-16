@@ -1,0 +1,1386 @@
+export const __rspack_esm_ids = [115076];
+export const __webpack_modules__ = {
+    MhHq: (function(e, t) {
+        t.a = {
+            palette: "palette-CKhGNn",
+            fileHoverCard: "fileHoverCard-_SxMgK",
+            filePill: "filePill-w54qyB",
+            connectorIcon: "connectorIcon-XtxEBs",
+            connectorFallback: "connectorFallback-pFpRwt",
+            questionButton: "questionButton-LdbTc0"
+        }
+    }),
+    dZmL: (function(e, t, a) {
+        var n, i, o, r, s, l = ((n = {}).CHATGPT_SAFETY_LINK_INTERACTION_ACTION_TYPE_UNSPECIFIED = "CHATGPT_SAFETY_LINK_INTERACTION_ACTION_TYPE_UNSPECIFIED", n.CHATGPT_SAFETY_LINK_INTERACTION_ACTION_TYPE_SHOWN = "CHATGPT_SAFETY_LINK_INTERACTION_ACTION_TYPE_SHOWN", n.CHATGPT_SAFETY_LINK_INTERACTION_ACTION_TYPE_CLICKED = "CHATGPT_SAFETY_LINK_INTERACTION_ACTION_TYPE_CLICKED", n.UNRECOGNIZED = "UNRECOGNIZED", n),
+            T = ((i = {}).CHATGPT_SAFETY_LINK_TYPE_UNSPECIFIED = "CHATGPT_SAFETY_LINK_TYPE_UNSPECIFIED", i.CHATGPT_SAFETY_LINK_TYPE_TERMINAL_BLOCK_TRUSTED_ACCESS = "CHATGPT_SAFETY_LINK_TYPE_TERMINAL_BLOCK_TRUSTED_ACCESS", i.CHATGPT_SAFETY_LINK_TYPE_SAFETY_REVIEW_FASTER_MODEL = "CHATGPT_SAFETY_LINK_TYPE_SAFETY_REVIEW_FASTER_MODEL", i.CHATGPT_SAFETY_LINK_TYPE_SAFETY_REVIEW_LEARN_MORE = "CHATGPT_SAFETY_LINK_TYPE_SAFETY_REVIEW_LEARN_MORE", i.UNRECOGNIZED = "UNRECOGNIZED", i),
+            _ = ((o = {}).CHATGPT_SAFETY_LINK_PROTECTION_TYPE_UNSPECIFIED = "CHATGPT_SAFETY_LINK_PROTECTION_TYPE_UNSPECIFIED", o.CHATGPT_SAFETY_LINK_PROTECTION_TYPE_BIO = "CHATGPT_SAFETY_LINK_PROTECTION_TYPE_BIO", o.CHATGPT_SAFETY_LINK_PROTECTION_TYPE_CYBER = "CHATGPT_SAFETY_LINK_PROTECTION_TYPE_CYBER", o.UNRECOGNIZED = "UNRECOGNIZED", o),
+            c = ((r = {}).CHATGPT_SAFETY_LINK_SURFACE_UNSPECIFIED = "CHATGPT_SAFETY_LINK_SURFACE_UNSPECIFIED", r.CHATGPT_SAFETY_LINK_SURFACE_TEXT_CHAT = "CHATGPT_SAFETY_LINK_SURFACE_TEXT_CHAT", r.CHATGPT_SAFETY_LINK_SURFACE_INTEGRATED_VOICE = "CHATGPT_SAFETY_LINK_SURFACE_INTEGRATED_VOICE", r.UNRECOGNIZED = "UNRECOGNIZED", r),
+            d = ((s = {}).CHATGPT_SAFETY_REVIEW_FASTER_MODEL_RETRY_CONFIRMATION_ACTION_TYPE_UNSPECIFIED = "CHATGPT_SAFETY_REVIEW_FASTER_MODEL_RETRY_CONFIRMATION_ACTION_TYPE_UNSPECIFIED", s.CHATGPT_SAFETY_REVIEW_FASTER_MODEL_RETRY_CONFIRMATION_ACTION_TYPE_SHOWN = "CHATGPT_SAFETY_REVIEW_FASTER_MODEL_RETRY_CONFIRMATION_ACTION_TYPE_SHOWN", s.CHATGPT_SAFETY_REVIEW_FASTER_MODEL_RETRY_CONFIRMATION_ACTION_TYPE_CANCELLED = "CHATGPT_SAFETY_REVIEW_FASTER_MODEL_RETRY_CONFIRMATION_ACTION_TYPE_CANCELLED", s.CHATGPT_SAFETY_REVIEW_FASTER_MODEL_RETRY_CONFIRMATION_ACTION_TYPE_CONFIRMED = "CHATGPT_SAFETY_REVIEW_FASTER_MODEL_RETRY_CONFIRMATION_ACTION_TYPE_CONFIRMED", s.UNRECOGNIZED = "UNRECOGNIZED", s);
+        a.d(t, {}, {
+            a: {
+                $type: "protobuf_analytics_events.v1.ChatgptSafetyLinkInteraction"
+            },
+            b: l,
+            c: _,
+            d: c,
+            e: T,
+            f: d,
+            g: {
+                $type: "protobuf_analytics_events.v1.ChatgptSafetyReviewFasterModelRetryConfirmationInteraction"
+            }
+        })
+    }),
+    n0Mx: (function(e, t, a) {
+        var n, i, o, r, s, l, T, _ = ((n = {}).CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_UNSPECIFIED = "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_UNSPECIFIED", n.CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_IN_CHAT_DISCLAIMER = "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_IN_CHAT_DISCLAIMER", n.CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_SETTINGS = "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_SETTINGS", n.CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_PUBLIC_ACCEPT_LINK = "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_PUBLIC_ACCEPT_LINK", n.CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_PUBLIC_DECLINE_LINK = "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_PUBLIC_DECLINE_LINK", n.CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_NOTIFICATION_WARNING = "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_NOTIFICATION_WARNING", n.CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_ALERT_LINK = "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_ALERT_LINK", n.CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_UNLINKED_LINK = "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_UNLINKED_LINK", n.UNRECOGNIZED = "UNRECOGNIZED", n),
+            c = ((i = {}).CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_UNSPECIFIED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_UNSPECIFIED", i.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_INTRO = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_INTRO", i.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_CONTACT_FORM = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_CONTACT_FORM", i.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_PERSONAL_NOTE = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_PERSONAL_NOTE", i.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_CONFIRMATION = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_CONFIRMATION", i.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_NO_THANKS = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_NO_THANKS", i.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_CONTACT_UNAVAILABLE = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_CONTACT_UNAVAILABLE", i.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_ADD_NEW_CONTACT = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_ADD_NEW_CONTACT", i.UNRECOGNIZED = "UNRECOGNIZED", i),
+            d = ((o = {}).CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_UNSPECIFIED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_UNSPECIFIED", o.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_PRIMARY_CTA_CLICKED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_PRIMARY_CTA_CLICKED", o.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_ADD_CONTACT_CLICKED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_ADD_CONTACT_CLICKED", o.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_IMPORT_CONTACT_CLICKED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_IMPORT_CONTACT_CLICKED", o.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_PERSONAL_NOTE_SELECTED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_PERSONAL_NOTE_SELECTED", o.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_FORM_SUBMITTED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_FORM_SUBMITTED", o.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_NEVER_SHOW_AGAIN_CLICKED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_NEVER_SHOW_AGAIN_CLICKED", o.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_DISMISSED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_DISMISSED", o.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_BACK_CLICKED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_BACK_CLICKED", o.CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_ADD_SOMEONE_ELSE_CLICKED = "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_ACTION_ADD_SOMEONE_ELSE_CLICKED", o.UNRECOGNIZED = "UNRECOGNIZED", o),
+            C = ((r = {}).CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_UNSPECIFIED = "CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_UNSPECIFIED", r.CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_ACCEPT_CLICKED = "CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_ACCEPT_CLICKED", r.CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_DECLINE_CLICKED = "CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_DECLINE_CLICKED", r.CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_RESPONSE_SUCCEEDED = "CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_RESPONSE_SUCCEEDED", r.CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_RESPONSE_FAILED = "CHATGPT_TRUSTED_CONTACT_NOMINEE_ACTION_RESPONSE_FAILED", r.UNRECOGNIZED = "UNRECOGNIZED", r),
+            E = ((s = {}).CHATGPT_TRUSTED_CONTACT_NOMINEE_MODAL_UNSPECIFIED = "CHATGPT_TRUSTED_CONTACT_NOMINEE_MODAL_UNSPECIFIED", s.CHATGPT_TRUSTED_CONTACT_NOMINEE_MODAL_ACCEPT = "CHATGPT_TRUSTED_CONTACT_NOMINEE_MODAL_ACCEPT", s.CHATGPT_TRUSTED_CONTACT_NOMINEE_MODAL_DECLINE = "CHATGPT_TRUSTED_CONTACT_NOMINEE_MODAL_DECLINE", s.CHATGPT_TRUSTED_CONTACT_NOMINEE_MODAL_ALERT_INFO = "CHATGPT_TRUSTED_CONTACT_NOMINEE_MODAL_ALERT_INFO", s.UNRECOGNIZED = "UNRECOGNIZED", s),
+            N = ((l = {}).CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_UNSPECIFIED = "CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_UNSPECIFIED", l.CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_PAGE_VIEWED = "CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_PAGE_VIEWED", l.CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_ADD_CLICKED = "CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_ADD_CLICKED", l.CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_RESEND_NOTIFICATION_CLICKED = "CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_RESEND_NOTIFICATION_CLICKED", l.CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_CANCEL_NOMINATION_CLICKED = "CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_CANCEL_NOMINATION_CLICKED", l.CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_DELETE_TRUSTED_CONTACT_CLICKED = "CHATGPT_TRUSTED_CONTACT_SETTINGS_ACTION_DELETE_TRUSTED_CONTACT_CLICKED", l.UNRECOGNIZED = "UNRECOGNIZED", l),
+            A = ((T = {}).CHATGPT_TRUSTED_CONTACT_NOTIFICATION_WARNING_ACTION_UNSPECIFIED = "CHATGPT_TRUSTED_CONTACT_NOTIFICATION_WARNING_ACTION_UNSPECIFIED", T.CHATGPT_TRUSTED_CONTACT_NOTIFICATION_WARNING_ACTION_SEND_PERSONAL_NOTE_CLICKED = "CHATGPT_TRUSTED_CONTACT_NOTIFICATION_WARNING_ACTION_SEND_PERSONAL_NOTE_CLICKED", T.UNRECOGNIZED = "UNRECOGNIZED", T);
+        a.d(t, {}, {
+            a: d,
+            b: {
+                $type: "protobuf_analytics_events.v1.ChatgptTrustedContactEnrollmentActionTaken"
+            },
+            c: c,
+            d: {
+                $type: "protobuf_analytics_events.v1.ChatgptTrustedContactEnrollmentStepShown"
+            },
+            e: _,
+            f: C,
+            g: {
+                $type: "protobuf_analytics_events.v1.ChatgptTrustedContactNomineeActionTaken"
+            },
+            h: E,
+            i: {
+                $type: "protobuf_analytics_events.v1.ChatgptTrustedContactNomineeModalShown"
+            },
+            j: A,
+            k: {
+                $type: "protobuf_analytics_events.v1.ChatgptTrustedContactNotificationWarningActionTaken"
+            },
+            l: N,
+            m: {
+                $type: "protobuf_analytics_events.v1.ChatgptTrustedContactSettingsActionTaken"
+            }
+        })
+    }),
+    bmU4: (function(e, t, a) {
+        var n = a("iRMi"),
+            i = a("yGJW"),
+            o = a("YTYy");
+        let r = {
+            pptx: n.CodexArtifactFileActionFormat.CODEX_ARTIFACT_FILE_ACTION_FORMAT_PPTX,
+            xlsx: n.CodexArtifactFileActionFormat.CODEX_ARTIFACT_FILE_ACTION_FORMAT_XLSX,
+            csv: n.CodexArtifactFileActionFormat.CODEX_ARTIFACT_FILE_ACTION_FORMAT_CSV,
+            tsv: n.CodexArtifactFileActionFormat.CODEX_ARTIFACT_FILE_ACTION_FORMAT_TSV,
+            pdf: n.CodexArtifactFileActionFormat.CODEX_ARTIFACT_FILE_ACTION_FORMAT_PDF,
+            "native-slides": n.CodexArtifactFileActionFormat.CODEX_ARTIFACT_FILE_ACTION_FORMAT_NATIVE_SLIDES,
+            "native-sheets": n.CodexArtifactFileActionFormat.CODEX_ARTIFACT_FILE_ACTION_FORMAT_NATIVE_SHEETS
+        };
+        a.d(t, {}, {
+            a: function(e) {
+                let t = "bundleId" in e ? e.bundleId?.toLowerCase() : void 0;
+                return "com.microsoft.powerpoint" === t || "Microsoft PowerPoint" === e.label || "PowerPoint" === e.label ? n.CodexArtifactFileActionTargetApp.CODEX_ARTIFACT_FILE_ACTION_TARGET_APP_POWERPOINT : "com.microsoft.excel" === t || "Microsoft Excel" === e.label || "Excel" === e.label ? n.CodexArtifactFileActionTargetApp.CODEX_ARTIFACT_FILE_ACTION_TARGET_APP_EXCEL : "com.apple.iwork.keynote" === t || "Keynote" === e.label ? n.CodexArtifactFileActionTargetApp.CODEX_ARTIFACT_FILE_ACTION_TARGET_APP_KEYNOTE : "com.apple.iwork.numbers" === t || "Numbers" === e.label ? n.CodexArtifactFileActionTargetApp.CODEX_ARTIFACT_FILE_ACTION_TARGET_APP_NUMBERS : "org.libreoffice.script" === t || "libreoffice-calc.desktop" === t || "libreoffice-impress.desktop" === t || "LibreOffice" === e.label || "LibreOffice Calc" === e.label || "LibreOffice Impress" === e.label ? n.CodexArtifactFileActionTargetApp.CODEX_ARTIFACT_FILE_ACTION_TARGET_APP_LIBREOFFICE : "systemDefault" === e.id || "system-default" === e.id ? n.CodexArtifactFileActionTargetApp.CODEX_ARTIFACT_FILE_ACTION_TARGET_APP_SYSTEM_DEFAULT : n.CodexArtifactFileActionTargetApp.CODEX_ARTIFACT_FILE_ACTION_TARGET_APP_OTHER
+            },
+            b: function(e, t, a) {
+                let {
+                    importKind: n
+                } = e;
+                if ("pptx" !== n && "xlsx" !== n && "csv" !== n && "tsv" !== n || t?.artifactInteractionExcluded === !0 || t?.sharedConversationId != null) return null;
+                let i = t?.target,
+                    o = null != i && "fileId" in i ? i.fileId : void 0,
+                    r = a?.libraryFileId ?? (null != i && "libraryFileId" in i ? i.libraryFileId : void 0);
+                return {
+                    backing: "file",
+                    sourceFormat: n,
+                    threadId: t?.conversationId ?? e.threadId,
+                    turnId: e.originatingTurn?.turnId,
+                    fileId: null != o && /^(?:file-|file_|libfile_)[A-Za-z0-9_-]+$/.test(o) ? o : void 0,
+                    libraryFileId: null != r && /^(?:file-|file_|libfile_)[A-Za-z0-9_-]+$/.test(r) ? r : void 0
+                }
+            },
+            c: function(e, t, a, s) {
+                if (null == t) return;
+                let l = t.threadId ?? void 0;
+                (0, i.a)(e, n.CodexArtifactFileActionClicked, {
+                    artifactKind: "pptx" === t.sourceFormat || "native-slides" === t.sourceFormat ? n.CodexArtifactKind.CODEX_ARTIFACT_KIND_PRESENTATION : n.CodexArtifactKind.CODEX_ARTIFACT_KIND_SPREADSHEET,
+                    backing: {
+                        file: n.CodexArtifactFileActionBacking.CODEX_ARTIFACT_FILE_ACTION_BACKING_FILE,
+                        "native-page": n.CodexArtifactFileActionBacking.CODEX_ARTIFACT_FILE_ACTION_BACKING_NATIVE_PAGE,
+                        "artifact-session": n.CodexArtifactFileActionBacking.CODEX_ARTIFACT_FILE_ACTION_BACKING_ARTIFACT_SESSION
+                    } [t.backing],
+                    sourceFormat: r[t.sourceFormat],
+                    surface: "output-card" === t.surface ? n.CodexArtifactFileActionSurface.CODEX_ARTIFACT_FILE_ACTION_SURFACE_OUTPUT_CARD : n.CodexArtifactFileActionSurface.CODEX_ARTIFACT_FILE_ACTION_SURFACE_VIEWER,
+                    action: {
+                        download: n.CodexArtifactFileAction.CODEX_ARTIFACT_FILE_ACTION_DOWNLOAD,
+                        export: n.CodexArtifactFileAction.CODEX_ARTIFACT_FILE_ACTION_EXPORT,
+                        "open-in-app": n.CodexArtifactFileAction.CODEX_ARTIFACT_FILE_ACTION_OPEN_IN_APP
+                    } [a],
+                    targetFormat: null == s.format ? void 0 : r[s.format],
+                    targetApp: s.app,
+                    productExperience: (0, o.a)(e, l),
+                    threadId: l,
+                    turnId: t.turnId ?? void 0,
+                    pageId: t.pageId,
+                    fileId: t.fileId,
+                    libraryFileId: t.libraryFileId
+                })
+            }
+        })
+    }),
+    BAUf: (function(e, t, a) {
+        a.d(t, {
+            a: () => W
+        });
+        var n = a("ABep"),
+            i = a("QosV"),
+            o = a("n0Mx"),
+            r = a("iRMi"),
+            s = a("on57"),
+            l = a("BolX"),
+            T = a("zd8w"),
+            _ = a("oyxz"),
+            c = a("Wf1j"),
+            d = a("rEML"),
+            C = a("g2p6"),
+            E = a("Sm6l"),
+            N = a("HOLv"),
+            A = a("Bbed"),
+            u = a("X6Vn"),
+            I = a("WAdu"),
+            O = a("yGJW"),
+            p = a("OWtl"),
+            h = a("KDax"),
+            m = a("PMYZ"),
+            f = a("q0jf"),
+            R = a("J8FU"),
+            S = a("jXqC"),
+            g = a("dZmL"),
+            P = a("mEbU"),
+            b = a("Ebcs"),
+            x = a("hZax"),
+            D = a("Elta"),
+            L = a("ZhoB"),
+            y = a("dQRk");
+        let F = (0, A.a)(async () => (await Promise.all([a.e(81461), a.e(652487)]).then(a.bind(a, "n51f"))).Markdown),
+            v = {
+                p: e => {
+                    let {
+                        children: t
+                    } = e;
+                    return (0, n.jsx)("div", {
+                        children: t
+                    })
+                },
+                a: function(e) {
+                    let t, a = (0, i.c)(3),
+                        {
+                            children: o,
+                            href: r
+                        } = e;
+                    return a[0] !== o || a[1] !== r ? (t = r ? (0, n.jsx)(h.a, {
+                        href: r,
+                        className: "underline",
+                        initiator: "open_in_browser_bridge",
+                        children: o
+                    }) : o, a[0] = o, a[1] = r, a[2] = t) : t = a[2], t
+                }
+            };
+
+        function G(e) {
+            let t, a, o, r, s, c, d, C, E = (0, i.c)(70),
+                {
+                    conversationId: N,
+                    notice: A,
+                    feedbackEnabled: u
+                } = e,
+                I = (0, l.y)(p.a),
+                h = (0, l.x)(D.a, N),
+                m = u && !h,
+                {
+                    value: f
+                } = (0, x.e)("4082596618"),
+                R = A.policy?.errCode,
+                S = A.policy?.errType,
+                g = (0, T.useRef)(null);
+            E[0] !== R || E[1] !== N || E[2] !== A || E[3] !== I || E[4] !== S ? (t = () => {
+                if (null == A.policy) return;
+                let e = JSON.stringify([N, A.messageId, R, S]);
+                if (g.current === e) return;
+                g.current = e;
+                let t = I.get(y.N, N),
+                    a = I.get(y.y, N);
+                (0, L.h)(I.get(O.c).logProductEvent, {
+                    conversationId: I.get(y.j, N),
+                    isWorkConversation: null == t ? null : "tpp" === a || "flora" === a,
+                    notice: A,
+                    serverRequestId: null == A.messageId ? void 0 : t?.[A.messageId]?.message?.metadata?.request_id
+                })
+            }, E[0] = R, E[1] = N, E[2] = A, E[3] = I, E[4] = S, E[5] = t) : t = E[5];
+            let P = (0, T.useEffectEvent)(t);
+            E[6] !== P ? (a = () => {
+                P()
+            }, E[6] = P, E[7] = a) : a = E[7], E[8] !== R || E[9] !== N || E[10] !== A.messageId || E[11] !== S ? (o = [N, A.messageId, R, S], E[8] = R, E[9] = N, E[10] = A.messageId, E[11] = S, E[12] = o) : o = E[12], (0, T.useEffect)(a, o), E[13] !== f.bio_trusted_access_link ? (r = "string" == typeof f.bio_trusted_access_link ? f.bio_trusted_access_link.trim() : "", E[13] = f.bio_trusted_access_link, E[14] = r) : r = E[14];
+            let G = r;
+            E[15] !== f.cyber_trusted_access_link ? (s = "string" == typeof f.cyber_trusted_access_link ? f.cyber_trusted_access_link.trim() : "", E[15] = f.cyber_trusted_access_link, E[16] = s) : s = E[16];
+            let w = s,
+                H = "cyber_safety_content_policy" === R || "content_regurgitation" === R ? A.structuredCopy : void 0,
+                j = M;
+            if (null != H) {
+                let e, t, a, i, o, r;
+                E[17] !== H.title ? (e = (0, n.jsx)("p", {
+                    className: "font-semibold",
+                    children: H.title
+                }), E[17] = H.title, E[18] = e) : e = E[18], E[19] === Symbol.for("react.memo_cache_sentinel") ? (t = ["p", "a", "strong", "em", "br"], E[19] = t) : t = E[19];
+                let s = m ? H.feedback_prompt : null;
+                E[20] !== H.details || E[21] !== s ? (a = [s, H.details].filter(Boolean), E[20] = H.details, E[21] = s, E[22] = a) : a = E[22];
+                let l = a.join(" ");
+                return E[23] !== l ? (i = (0, n.jsx)(F, {
+                    allowedElements: t,
+                    skipHtml: !0,
+                    unwrapDisallowed: !0,
+                    urlTransform: U,
+                    components: v,
+                    children: l
+                }), E[23] = l, E[24] = i) : i = E[24], E[25] !== R || E[26] !== H.primary_action ? (o = "cyber_safety_content_policy" === R && "sign_in" === H.primary_action ? (0, n.jsx)(b.a, {
+                    size: "actionSm"
+                }) : null, E[25] = R, E[26] = H.primary_action, E[27] = o) : o = E[27], E[28] !== i || E[29] !== o || E[30] !== e ? (r = (0, n.jsxs)(n.Fragment, {
+                    children: [e, i, o]
+                }), E[28] = i, E[29] = o, E[30] = e, E[31] = r) : r = E[31], r
+            }
+            if ("content_policy" === R) {
+                let e, t, a;
+                return E[32] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)(_.a, {
+                    id: "chatgpt.moderation.policy.notice",
+                    defaultMessage: "This content may violate our <link>usage policies</link>",
+                    values: {
+                        link: e => j("https://openai.com/policies/usage-policies", e)
+                    }
+                }), E[32] = e) : e = E[32], E[33] !== u ? (t = u ? (0, n.jsx)("p", {
+                    children: (0, n.jsx)(_.a, {
+                        id: "chatgpt.moderation.policy.feedback",
+                        defaultMessage: "Did we get it wrong? Please tell us by giving this response a thumbs down."
+                    })
+                }) : null, E[33] = u, E[34] = t) : t = E[34], E[35] !== t ? (a = (0, n.jsxs)(n.Fragment, {
+                    children: [e, t]
+                }), E[35] = t, E[36] = a) : a = E[36], a
+            }
+            if ("bio_safety_content_policy" === R) {
+                let e, t, a, i, o;
+                return E[37] !== G ? (e = (0, n.jsx)("p", {
+                    className: "font-semibold",
+                    children: G ? (0, n.jsx)(_.a, {
+                        id: "chatgpt.moderation.bio.block.title",
+                        defaultMessage: "This content can’t be shown"
+                    }) : (0, n.jsx)(_.a, {
+                        id: "chatgpt.moderation.bio.flag.title",
+                        defaultMessage: "This content was flagged for possible biological safety risk"
+                    })
+                }), E[37] = G, E[38] = e) : e = E[38], E[39] !== G || E[40] !== N || E[41] !== A ? (t = G ? (0, n.jsx)(_.a, {
+                    id: "chatgpt.moderation.bio.access",
+                    defaultMessage: "We’re especially careful with requests involving biological research and applications that could pose safety risks. Eligible researchers can apply for <link>Trusted Access</link>.",
+                    values: {
+                        link: e => (0, n.jsx)(k, {
+                            conversationId: N,
+                            notice: A,
+                            href: G,
+                            protectionType: "bio",
+                            children: e
+                        })
+                    }
+                }) : null, E[39] = G, E[40] = N, E[41] = A, E[42] = t) : t = E[42], E[43] !== G || E[44] !== h ? (a = !G && h ? (0, n.jsx)(_.a, {
+                    id: "chatgpt.moderation.bio.learnMore",
+                    defaultMessage: "You can read more about our approach in our <link>blog post</link>",
+                    values: {
+                        link: e => j("https://openai.com/index/preparing-for-future-ai-capabilities-in-biology/", e)
+                    }
+                }) : null, E[43] = G, E[44] = h, E[45] = a) : a = E[45], E[46] !== G || E[47] !== u || E[48] !== h ? (i = G || h ? null : (0, n.jsx)(_.a, {
+                    id: "chatgpt.moderation.bio.textLearnMoreWithOptionalFeedback",
+                    defaultMessage: "{showFeedback, select, true {Did we get it wrong? Please tell us by giving this response a thumbs down and then try rephrasing your request. You can read more about our approach in our <link>blog post</link>.} other {Try rephrasing your request. You can read more about our approach in our <link>blog post</link>.}}",
+                    values: {
+                        showFeedback: u ? "true" : "false",
+                        link: e => j("https://openai.com/index/preparing-for-future-ai-capabilities-in-biology/", e)
+                    }
+                }), E[46] = G, E[47] = u, E[48] = h, E[49] = i) : i = E[49], E[50] !== e || E[51] !== t || E[52] !== a || E[53] !== i ? (o = (0, n.jsxs)(n.Fragment, {
+                    children: [e, t, a, i]
+                }), E[50] = e, E[51] = t, E[52] = a, E[53] = i, E[54] = o) : o = E[54], o
+            }
+            if ("cyber_safety_content_policy" === R) {
+                let e, t, a, i;
+                E[55] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)("p", {
+                    className: "font-semibold",
+                    children: (0, n.jsx)(_.a, {
+                        id: "chatgpt.moderation.cyber.title",
+                        defaultMessage: "This content can’t be shown"
+                    })
+                }), t = (0, n.jsx)("p", {
+                    children: (0, n.jsx)(_.a, {
+                        id: "chatgpt.moderation.cyber.daybreak.eligibility.body",
+                        defaultMessage: "This content was flagged for possible cybersecurity risk. You may be eligible for Daybreak Blue, which reduces refusals for authorized defensive work on supported models. Other safeguards still apply."
+                    })
+                }), E[55] = e, E[56] = t) : (e = E[55], t = E[56]);
+                let o = w || "https://chatgpt.com/cyber";
+                return E[57] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, n.jsx)(_.a, {
+                    id: "chatgpt.moderation.cyber.daybreak.learn_more.label",
+                    defaultMessage: "Learn more"
+                }), E[57] = a) : a = E[57], E[58] !== N || E[59] !== A || E[60] !== o ? (i = (0, n.jsxs)(n.Fragment, {
+                    children: [e, t, (0, n.jsx)(k, {
+                        conversationId: N,
+                        notice: A,
+                        href: o,
+                        protectionType: "cyber",
+                        children: a
+                    })]
+                }), E[58] = N, E[59] = A, E[60] = o, E[61] = i) : i = E[61], i
+            }
+            return E[62] !== R ? (c = (0, n.jsx)("p", {
+                className: "font-semibold",
+                children: "content_regurgitation" === R ? (0, n.jsx)(_.a, {
+                    id: "chatgpt.moderation.regurgitation.title",
+                    defaultMessage: "This content can’t be shown because it may conflict with our guidelines for creative content"
+                }) : (0, n.jsx)(_.a, {
+                    id: "chatgpt.moderation.safety.title",
+                    defaultMessage: "This content can’t be shown for safety reasons"
+                })
+            }), E[62] = R, E[63] = c) : c = E[63], E[64] !== R || E[65] !== m ? (d = "sensitive_conversations_content_policy" === R ? (0, n.jsx)(_.a, {
+                id: "chatgpt.moderation.wellbeing.details",
+                defaultMessage: "{showFeedback, select, true {If this seems like a mistake, give this response a thumbs down. Learn more about our <link>approach to sensitive conversations</link>.} other {Learn more about our <link>approach to sensitive conversations</link>.}}",
+                values: {
+                    showFeedback: m ? "true" : "false",
+                    link: e => j("https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/", e)
+                }
+            }) : (0, n.jsx)(_.a, {
+                id: "chatgpt.moderation.safety.details",
+                defaultMessage: "{showFeedback, select, true {If this seems like a mistake, give this response a thumbs down. Learn more about our intended model behavior in our <link>Model Spec</link>.} other {Learn more about our intended model behavior in our <link>Model Spec</link>.}}",
+                values: {
+                    showFeedback: m ? "true" : "false",
+                    link: e => j("https://model-spec.openai.com/2025-12-18.html", e)
+                }
+            }), E[64] = R, E[65] = m, E[66] = d) : d = E[66], E[67] !== c || E[68] !== d ? (C = (0, n.jsxs)(n.Fragment, {
+                children: [c, d]
+            }), E[67] = c, E[68] = d, E[69] = C) : C = E[69], C
+        }
+
+        function M(e, t) {
+            return (0, n.jsx)(h.a, {
+                href: e,
+                className: "underline",
+                initiator: "open_in_browser_bridge",
+                children: t
+            })
+        }
+
+        function U(e) {
+            try {
+                return "https:" === new URL(e).protocol ? e : ""
+            } catch {
+                return ""
+            }
+        }
+
+        function k(e) {
+            let t, a, o, r, s, _, c, d, C = (0, i.c)(23),
+                {
+                    children: E,
+                    conversationId: N,
+                    href: A,
+                    notice: u,
+                    protectionType: I
+                } = e,
+                m = (0, l.y)(p.a),
+                f = (0, l.x)(D.a, N),
+                R = (0, T.useRef)(null);
+            C[0] === Symbol.for("react.memo_cache_sentinel") ? (t = {
+                amount: .5,
+                once: !0
+            }, C[0] = t) : t = C[0];
+            let S = (0, P.a)(R, t);
+            C[1] === Symbol.for("react.memo_cache_sentinel") ? (a = new Set, C[1] = a) : a = C[1];
+            let b = (0, T.useRef)(a),
+                x = f ? "CHATGPT_SAFETY_LINK_SURFACE_INTEGRATED_VOICE" : "CHATGPT_SAFETY_LINK_SURFACE_TEXT_CHAT";
+            C[2] !== N || C[3] !== u.messageId || C[4] !== I || C[5] !== m || C[6] !== x ? (o = e => {
+                if (null == N || null == u.messageId) return;
+                let t = JSON.stringify([N, u.messageId, x, e]);
+                if (b.current.has(t)) return;
+                b.current.add(t);
+                let a = m.get(y.N, N)?.[u.messageId]?.message?.metadata?.turn_exchange_id;
+                (0, O.a)(m, g.a, {
+                    actionType: e,
+                    conversationId: N,
+                    messageId: u.messageId,
+                    linkType: "CHATGPT_SAFETY_LINK_TYPE_TERMINAL_BLOCK_TRUSTED_ACCESS",
+                    protectionType: "bio" === I ? "CHATGPT_SAFETY_LINK_PROTECTION_TYPE_BIO" : "CHATGPT_SAFETY_LINK_PROTECTION_TYPE_CYBER",
+                    surface: x,
+                    turnExchangeId: "string" == typeof a ? a : void 0
+                })
+            }, C[2] = N, C[3] = u.messageId, C[4] = I, C[5] = m, C[6] = x, C[7] = o) : o = C[7];
+            let L = o;
+            C[8] !== L ? (r = () => L("CHATGPT_SAFETY_LINK_INTERACTION_ACTION_TYPE_SHOWN"), C[8] = L, C[9] = r) : r = C[9];
+            let F = (0, T.useEffectEvent)(r);
+            return C[10] !== S || C[11] !== F ? (s = () => {
+                S && F()
+            }, C[10] = S, C[11] = F, C[12] = s) : s = C[12], C[13] !== S || C[14] !== u.messageId || C[15] !== x ? (_ = [S, u.messageId, x], C[13] = S, C[14] = u.messageId, C[15] = x, C[16] = _) : _ = C[16], (0, T.useEffect)(s, _), C[17] !== L ? (c = () => L("CHATGPT_SAFETY_LINK_INTERACTION_ACTION_TYPE_CLICKED"), C[17] = L, C[18] = c) : c = C[18], C[19] !== E || C[20] !== A || C[21] !== c ? (d = (0, n.jsx)(h.a, {
+                ref: R,
+                href: A,
+                className: "underline",
+                initiator: "open_in_browser_bridge",
+                onClickCapture: c,
+                children: E
+            }), C[19] = E, C[20] = A, C[21] = c, C[22] = d) : d = C[22], d
+        }
+        var w = a("FnQ0"),
+            H = a("XBQE"),
+            j = a("Ipg3");
+        let Y = (0, A.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(753405), a.e(585419), a.e(673131), a.e(223580), a.e(877700), a.e(353230), a.e(81461), a.e(784669), a.e(8197), a.e(328034), a.e(16910), a.e(375658), a.e(46668), a.e(909395), a.e(212487), a.e(17983), a.e(167649), a.e(46150), a.e(115734), a.e(304474)]).then(a.bind(a, "NnLI"))).ProductInterventionNotice, {
+                errorFallback: (0, n.jsx)(_.a, {
+                    id: "chatgpt.productIntervention.loadError",
+                    defaultMessage: "Unable to display this notice"
+                })
+            }),
+            K = (0, A.a)(() => Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(963703), a.e(357381), a.e(411547), a.e(603763), a.e(252401)]).then(a.bind(a, "CGZL")).then(e => e.TrustedContactEnrollment)),
+            B = {
+                a: function(e) {
+                    let t, a, o, T, _, c, d, C, E = (0, i.c)(20);
+                    if (E[0] !== e) {
+                        let {
+                            children: n,
+                            className: i,
+                            href: r,
+                            onClick: s,
+                            onClickCapture: l,
+                            rel: c,
+                            target: d,
+                            ...C
+                        } = e;
+                        t = n, a = i, o = r, T = l, _ = C, E[0] = e, E[1] = t, E[2] = a, E[3] = o, E[4] = T, E[5] = _
+                    } else t = E[1], a = E[2], o = E[3], T = E[4], _ = E[5];
+                    let N = (0, l.y)(p.a);
+                    if (null == o) {
+                        let e;
+                        return E[6] !== t ? (e = (0, n.jsx)(n.Fragment, {
+                            children: t
+                        }), E[6] = t, E[7] = e) : e = E[7], e
+                    }
+                    return E[8] !== a ? (c = (0, s.b)(a, "!text-default underline hover:!text-default hover:no-underline"), E[8] = a, E[9] = c) : c = E[9], E[10] !== o || E[11] !== T || E[12] !== N ? (d = e => {
+                        T?.(e);
+                        let t = function(e) {
+                            try {
+                                switch (new URL(e).protocol) {
+                                    case "http:":
+                                        return "http";
+                                    case "https:":
+                                        return "https";
+                                    case "sms:":
+                                        return "sms";
+                                    case "tel:":
+                                        return "tel";
+                                    default:
+                                        return null
+                                }
+                            } catch {
+                                return null
+                            }
+                        }(o);
+                        null != t && (0, O.a)(N, r.CodexDisclaimerLinkClicked, {
+                            disclaimerSource: "sh_disclaimer_notice",
+                            protocol: t,
+                            via: 0 === e.detail ? "keyboard" : "pointer"
+                        })
+                    }, E[10] = o, E[11] = T, E[12] = N, E[13] = d) : d = E[13], E[14] !== t || E[15] !== o || E[16] !== _ || E[17] !== c || E[18] !== d ? (C = (0, n.jsx)(h.a, {
+                        ..._,
+                        href: o,
+                        initiator: "markdown_link_click",
+                        isBrowserEnabled: !1,
+                        className: c,
+                        onClickCapture: d,
+                        children: t
+                    }), E[14] = t, E[15] = o, E[16] = _, E[17] = c, E[18] = d, E[19] = C) : C = E[19], C
+                }
+            };
+
+        function W(e) {
+            let t, a, o, r = (0, i.c)(20),
+                {
+                    conversationId: s,
+                    hostId: T,
+                    feedbackEnabled: _,
+                    moderationDisclaimers: d,
+                    shouldBlockExternalEgress: C
+                } = e,
+                E = void 0 !== _ && _,
+                N = (0, l.y)(p.a),
+                A = (0, c.a)();
+            if (null == d || 0 === d.length) return null;
+            let u = C ? "restricted" : "allow";
+            if (r[0] !== s || r[1] !== E || r[2] !== T || r[3] !== A || r[4] !== d || r[5] !== N || r[6] !== C) {
+                let e;
+                r[8] !== s || r[9] !== E || r[10] !== T || r[11] !== A || r[12] !== N || r[13] !== C ? (e = (e, t) => {
+                    let {
+                        disclaimers: a,
+                        disclaimerMetadata: i,
+                        disclaimerType: o
+                    } = e, r = () => {
+                        (0, R.f)(N, e)
+                    }, l = (0, f.f)(o) ? o : void 0;
+                    return [null != e.policy ? (0, n.jsx)(Z, {
+                        conversationId: s,
+                        onRendered: r,
+                        children: (0, n.jsx)(G, {
+                            conversationId: s,
+                            notice: e,
+                            feedbackEnabled: E
+                        })
+                    }, t + "-policy") : null, null == e.policy && e.modelIncompatibility ? (0, n.jsx)(Z, {
+                        content: A.formatMessage({
+                            id: "chatgpt.moderation.modelIncompatibility.notice.body",
+                            defaultMessage: "This content can’t be shown for safety reasons{paragraphBreak}Learn more about our intended model behavior in our [Model Spec]({modelSpecUrl})."
+                        }, {
+                            paragraphBreak: "\n\n",
+                            modelSpecUrl: "https://model-spec.openai.com/2025-12-18.html"
+                        }),
+                        conversationId: s,
+                        onRendered: r
+                    }, `${t}-model-incompatibility`) : null, null == e.productIntervention || C ? null : (0, n.jsx)(Y, {
+                        intervention: e.productIntervention
+                    }, `${t}-${e.productIntervention.intervention_id}`), ...a.map((e, a) => null == l ? (0, n.jsx)(Z, {
+                        className: "w-fit",
+                        components: B,
+                        content: e,
+                        conversationId: s,
+                        onRendered: r
+                    }, `${String(t)}-${String(a)}-${e}`) : (0, n.jsx)(X, {
+                        conversationId: s,
+                        disclaimerMetadata: i,
+                        disclaimerType: l,
+                        hostId: T,
+                        onRendered: r
+                    }, `${String(t)}-${String(a)}-${e}`))]
+                }, r[8] = s, r[9] = E, r[10] = T, r[11] = A, r[12] = N, r[13] = C, r[14] = e) : e = r[14], t = d.flatMap(e), r[0] = s, r[1] = E, r[2] = T, r[3] = A, r[4] = d, r[5] = N, r[6] = C, r[7] = t
+            } else t = r[7];
+            return r[15] !== t ? (a = (0, n.jsx)("div", {
+                className: "mt-3 flex flex-col gap-2",
+                children: t
+            }), r[15] = t, r[16] = a) : a = r[16], r[17] !== u || r[18] !== a ? (o = (0, n.jsx)(I.a.Provider, {
+                value: u,
+                children: a
+            }), r[17] = u, r[18] = a, r[19] = o) : o = r[19], o
+        }
+
+        function Z(e) {
+            let t, a, o, r, s, l, T, _ = (0, i.c)(21),
+                {
+                    children: c,
+                    className: d,
+                    components: C,
+                    content: E,
+                    conversationId: A,
+                    footer: u,
+                    icon: I,
+                    onRendered: O
+                } = e;
+            return _[0] !== O ? (t = e => {
+                null != e && O()
+            }, _[0] = O, _[1] = t) : t = _[1], _[2] !== I ? (a = I ?? (0, n.jsx)(N.a, {
+                className: "shrink-0 text-secondary",
+                asset: H.a,
+                "aria-hidden": !0
+            }), _[2] = I, _[3] = a) : a = _[3], _[4] !== c || _[5] !== C || _[6] !== E || _[7] !== A ? (o = c ?? (0, n.jsx)(m.ChatGptMarkdown, {
+                className: "text-sm [&>*:first-child]:mt-0 [&>*:last-child]:mb-0 [&>p:first-child]:font-semibold",
+                components: C,
+                conversationId: A,
+                cwd: null,
+                isStreaming: !1,
+                textStyle: {
+                    kind: "assistant-message"
+                },
+                children: E ?? ""
+            }), _[4] = c, _[5] = C, _[6] = E, _[7] = A, _[8] = o) : o = _[8], _[9] !== u ? (r = null == u ? null : (0, n.jsx)("div", {
+                className: "mt-3",
+                children: u
+            }), _[9] = u, _[10] = r) : r = _[10], _[11] !== o || _[12] !== r ? (s = (0, n.jsxs)("div", {
+                className: "min-w-0 grow pt-[2px]",
+                children: [o, r]
+            }), _[11] = o, _[12] = r, _[13] = s) : s = _[13], _[14] !== a || _[15] !== s ? (l = (0, n.jsxs)("div", {
+                className: "flex min-w-0 grow items-start gap-3",
+                children: [a, s]
+            }), _[14] = a, _[15] = s, _[16] = l) : l = _[16], _[17] !== d || _[18] !== t || _[19] !== l ? (T = (0, n.jsx)(S.a, {
+                ref: t,
+                className: d,
+                children: l
+            }), _[17] = d, _[18] = t, _[19] = l, _[20] = T) : T = _[20], T
+        }
+
+        function X(e) {
+            let t, a, r, s, A, I, m, R, S, g, P, b = (0, i.c)(34),
+                {
+                    conversationId: x,
+                    disclaimerMetadata: D,
+                    disclaimerType: L,
+                    hostId: y,
+                    onRendered: F
+                } = e,
+                v = (0, l.y)(p.a),
+                G = (0, c.a)(),
+                [M, U] = (0, T.useState)(!1),
+                [k, H] = (0, T.useState)(!1),
+                {
+                    data: Y
+                } = (0, l.z)(C.p),
+                W = (0, d._)();
+            if (b[0] !== D || b[1] !== L || b[2] !== G || b[3] !== M || b[4] !== Y?.trustedContactsOptedOutAt) {
+                I = Symbol.for("react.early_return_sentinel");
+                e: {
+                    var X;
+                    let e, n = (null == (X = D?.trusted_contact_name?.trim()) ? void 0 : Array.from(X, e => `&#${String(e.codePointAt(0))};`).join("")) || G.formatMessage({
+                        id: "codex.chatgpt.trustedContactDisclaimer.defaultTrustedContactName",
+                        defaultMessage: "your trusted contact"
+                    });
+                    if (b[11] !== D || b[12] !== L ? (e = "notify_trusted_contact_us5" === L ? (0, f.d)(D) : void 0, b[11] = D, b[12] = L, b[13] = e) : e = b[13], a = e, M || "notify_trusted_contact_us5" !== L && Y?.trustedContactsOptedOutAt === !0) {
+                        I = null;
+                        break e
+                    }
+                    t = Z,
+                    r = "w-full bg-surface",
+                    s = B,
+                    A = function(e) {
+                        let {
+                            disclaimerType: t,
+                            intl: a,
+                            trustedContactName: n
+                        } = e, i = e => `**${a.formatMessage({id:"codex.chatgpt.trustedContactDisclaimer.addTrustedContactTitle",defaultMessage:"Would it help to have extra support?"})}**
+
+${e}`;
+                        switch (t) {
+                            case "add_trusted_contact_us4":
+                                return i(a.formatMessage({
+                                    id: "codex.chatgpt.trustedContactDisclaimer.addTrustedContactUs4Body",
+                                    defaultMessage: "Adding a trusted contact helps make it easier to connect with someone you trust, if you ever need extra support"
+                                }));
+                            case "add_trusted_contact_us5":
+                                return i(a.formatMessage({
+                                    id: "codex.chatgpt.trustedContactDisclaimer.addTrustedContactUs5Body",
+                                    defaultMessage: "Adding a trusted contact can make it easier for someone you trust to be there for you when things feel hard"
+                                }));
+                            case "notify_trusted_contact_us5":
+                                return `**${a.formatMessage({id:"codex.chatgpt.trustedContactDisclaimer.notifyTrustedContactTitle",defaultMessage:"It might help to reach out to {trustedContactName}"},{trustedContactName:n})}**
+
+${a.formatMessage({id:"codex.chatgpt.trustedContactDisclaimer.notifyTrustedContactBody",defaultMessage:"{trustedContactName} is your trusted contact — someone you've chosen for extra support. We may send them a note to encourage them to check in with you. We recommend that you reach out to them as well."},{trustedContactName:n})}`
+                        }
+                    }({
+                        disclaimerType: L,
+                        intl: G,
+                        trustedContactName: n
+                    })
+                }
+                b[0] = D, b[1] = L, b[2] = G, b[3] = M, b[4] = Y?.trustedContactsOptedOutAt, b[5] = t, b[6] = a, b[7] = r, b[8] = s, b[9] = A, b[10] = I
+            } else t = b[5], a = b[6], r = b[7], s = b[8], A = b[9], I = b[10];
+            return I !== Symbol.for("react.early_return_sentinel") ? I : (b[14] !== L || b[15] !== y || b[16] !== a || b[17] !== v ? (m = "notify_trusted_contact_us5" === L ? null == a || null == y ? (0, n.jsx)(E.a, {
+                radius: "full",
+                disabled: !0,
+                children: (0, n.jsx)(_.a, {
+                    id: "codex.chatgpt.trustedContactDisclaimer.sendPersonalNote",
+                    defaultMessage: "Send a personal note"
+                })
+            }) : (0, n.jsx)(h.a, {
+                appearance: "button",
+                href: a,
+                initiator: "markdown_link_click",
+                isBrowserEnabled: !1,
+                originHostId: y,
+                className: "inline-flex cursor-interaction rounded-full bg-primary-solid px-4 py-1.5 text-sm leading-[18px] text-primary-solid hover:bg-primary-solid-hover",
+                onClickCapture: () => {
+                    (0, O.a)(v, o.k, {
+                        action: "CHATGPT_TRUSTED_CONTACT_NOTIFICATION_WARNING_ACTION_SEND_PERSONAL_NOTE_CLICKED",
+                        entryPoint: "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_NOTIFICATION_WARNING"
+                    })
+                },
+                children: (0, n.jsx)(_.a, {
+                    id: "codex.chatgpt.trustedContactDisclaimer.sendPersonalNote",
+                    defaultMessage: "Send a personal note"
+                })
+            }) : (0, n.jsxs)("div", {
+                className: "flex flex-wrap gap-3",
+                children: [(0, n.jsx)(E.a, {
+                    radius: "full",
+                    onClick: () => {
+                        (0, u.f)(v, K, {
+                            initialDialog: "intro",
+                            entryPoint: "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_IN_CHAT_DISCLAIMER",
+                            onSuccess: () => U(!0)
+                        })
+                    },
+                    children: (0, n.jsx)(_.a, {
+                        id: "codex.chatgpt.trustedContactDisclaimer.learnMore",
+                        defaultMessage: "Learn more"
+                    })
+                }), (0, n.jsx)(E.a, {
+                    radius: "full",
+                    color: "secondary",
+                    onClick: () => {
+                        (0, O.a)(v, o.d, {
+                            entryPoint: "CHATGPT_TRUSTED_CONTACT_ENTRY_POINT_IN_CHAT_DISCLAIMER",
+                            step: "CHATGPT_TRUSTED_CONTACT_ENROLLMENT_STEP_NO_THANKS"
+                        }), H(!0)
+                    },
+                    children: (0, n.jsx)(_.a, {
+                        id: "message.trustedContactDisclaimer.close",
+                        defaultMessage: "Close"
+                    })
+                })]
+            }), b[14] = L, b[15] = y, b[16] = a, b[17] = v, b[18] = m) : m = b[18], b[19] === Symbol.for("react.memo_cache_sentinel") ? (R = (0, n.jsx)("span", {
+                className: "flex size-8 shrink-0 items-center justify-center rounded-full bg-surface-secondary/92 text-default",
+                children: (0, n.jsx)(N.a, {
+                    asset: j.a
+                })
+            }), b[19] = R) : R = b[19], b[20] !== t || b[21] !== x || b[22] !== F || b[23] !== r || b[24] !== s || b[25] !== A || b[26] !== m ? (S = (0, n.jsx)(t, {
+                className: r,
+                components: s,
+                content: A,
+                conversationId: x,
+                onRendered: F,
+                footer: m,
+                icon: R
+            }), b[20] = t, b[21] = x, b[22] = F, b[23] = r, b[24] = s, b[25] = A, b[26] = m, b[27] = S) : S = b[27], b[28] !== k || b[29] !== W ? (g = k ? (0, n.jsx)(w.TrustedContactNoThanksDialog, {
+                open: !0,
+                onClose: () => H(!1),
+                onDone: () => {
+                    H(!1), U(!0)
+                },
+                onOpenSettings: () => {
+                    W("/settings/trusted-contact")
+                }
+            }) : null, b[28] = k, b[29] = W, b[30] = g) : g = b[30], b[31] !== S || b[32] !== g ? (P = (0, n.jsxs)(n.Fragment, {
+                children: [S, g]
+            }), b[31] = S, b[32] = g, b[33] = P) : P = b[33], P)
+        }
+    }),
+    FnQ0: (function(e, t, a) {
+        var n = a("ABep"),
+            i = a("QosV"),
+            o = a("BolX"),
+            r = a("Zqzr"),
+            s = a("zd8w"),
+            l = a("Wf1j"),
+            T = a("oyxz"),
+            _ = a("Kwur"),
+            c = a("g2p6"),
+            d = a("Sm6l"),
+            C = a("nhmq"),
+            E = a("JNtf"),
+            N = a("mUDD"),
+            A = a("SGsN"),
+            u = a("OWtl"),
+            I = a("RlnO");
+
+        function O(e) {
+            let t, a, O, h, m, f, R, S, g, P, b, x, D, L, y, F, v = (0, i.c)(49),
+                {
+                    open: G,
+                    onClose: M,
+                    onDone: U,
+                    onOpenSettings: k,
+                    dismissOnDoneWithoutOptOut: w
+                } = e,
+                H = void 0 !== w && w,
+                j = (0, o.y)(u.a),
+                Y = (0, l.a)(),
+                K = (0, s.useId)(),
+                [B, W] = (0, s.useState)(!1),
+                [Z, X] = (0, s.useState)(!1),
+                V = (0, o.z)(I.a),
+                [z] = (0, s.useState)(V);
+            v[0] !== z.accountId || v[1] !== z.status || v[2] !== z.userId || v[3] !== j ? (t = function() {
+                let e = j.get(I.a);
+                return "allowed" === z.status && "allowed" === e.status && z.userId === e.userId && z.accountId === e.accountId
+            }, v[0] = z.accountId, v[1] = z.status, v[2] = z.userId, v[3] = j, v[4] = t) : t = v[4];
+            let q = t;
+            v[5] !== M ? (a = function() {
+                W(!1), M()
+            }, v[5] = M, v[6] = a) : a = v[6];
+            let $ = a;
+            v[7] !== $ || v[8] !== H || v[9] !== B || v[10] !== Y || v[11] !== q || v[12] !== U || v[13] !== z || v[14] !== Z || v[15] !== j ? (O = async function() {
+                if (Z || !q()) return;
+                if (!B) return void(H ? U() : $());
+                if ("allowed" !== z.status) return;
+                let {
+                    accountId: e
+                } = z, t = j.query.snapshot(c.p);
+                X(!0);
+                try {
+                    if (await t.cancel(), !q()) return void X(!1);
+                    let a = null == e ? void 0 : {
+                        "ChatGPT-Account-ID": e,
+                        [r.ac]: e
+                    };
+                    if (await _.Request.safePatch("/settings/account_user_setting", {
+                            additionalHeaders: a,
+                            parameters: {
+                                query: {
+                                    feature: "trusted_contacts_opted_out_at",
+                                    value: !0
+                                }
+                            }
+                        }), !q()) {
+                        t.invalidate(), X(!1);
+                        return
+                    }
+                    t.setData(p), t.invalidate(), W(!1), U()
+                } catch {
+                    if (!q()) return void X(!1);
+                    j.get(A.f).danger(Y.formatMessage({
+                        id: "codex.chatgpt.trustedContactDisclaimer.optOutError",
+                        defaultMessage: "Could not update trusted contact settings"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "codex.chatgpt.trustedContactDisclaimer.optOutError"
+                        }
+                    })
+                }
+                X(!1)
+            }, v[7] = $, v[8] = H, v[9] = B, v[10] = Y, v[11] = q, v[12] = U, v[13] = z, v[14] = Z, v[15] = j, v[16] = O) : O = v[16];
+            let Q = O,
+                J = G && "allowed" === z.status && "allowed" === V.status && V.userId === z.userId && V.accountId === z.accountId;
+            return v[17] !== $ ? (h = e => {
+                e || $()
+            }, v[17] = $, v[18] = h) : h = v[18], v[19] !== Q ? (m = e => {
+                e.preventDefault(), Q()
+            }, v[19] = Q, v[20] = m) : m = v[20], v[21] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, n.jsx)(E.e, {
+                children: (0, n.jsx)(T.a, {
+                    id: "message.trustedContactNoThanksModal.title",
+                    defaultMessage: "Thanks for letting us know"
+                })
+            }), v[21] = f) : f = v[21], v[22] !== $ || v[23] !== k ? (R = (0, n.jsx)("p", {
+                children: (0, n.jsx)(T.a, {
+                    id: "message.trustedContactNoThanksModal.body",
+                    defaultMessage: "If you change your mind, you can add a trusted contact from your <settingsLink>settings</settingsLink>.",
+                    values: {
+                        settingsLink: e => (0, n.jsx)("button", {
+                            className: "cursor-interaction underline",
+                            type: "button",
+                            onClick: () => {
+                                $(), k()
+                            },
+                            children: e
+                        })
+                    }
+                })
+            }), v[22] = $, v[23] = k, v[24] = R) : R = v[24], v[25] !== K || v[26] !== B || v[27] !== Z ? (S = (0, n.jsx)(C.a, {
+                id: K,
+                checked: B,
+                disabled: Z,
+                onCheckedChange: W
+            }), v[25] = K, v[26] = B, v[27] = Z, v[28] = S) : S = v[28], v[29] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, n.jsx)(T.a, {
+                id: "message.trustedContactNoThanksModal.checkboxLabel",
+                defaultMessage: "Don't ask me again"
+            }), v[29] = g) : g = v[29], v[30] !== K ? (P = (0, n.jsx)("label", {
+                className: "select-none",
+                htmlFor: K,
+                children: g
+            }), v[30] = K, v[31] = P) : P = v[31], v[32] !== S || v[33] !== P ? (b = (0, n.jsxs)("div", {
+                className: "relative flex items-center gap-3",
+                children: [S, P]
+            }), v[32] = S, v[33] = P, v[34] = b) : b = v[34], v[35] !== b || v[36] !== R ? (x = (0, n.jsxs)(N.e, {
+                children: [f, R, b]
+            }), v[35] = b, v[36] = R, v[37] = x) : x = v[37], v[38] === Symbol.for("react.memo_cache_sentinel") ? (D = (0, n.jsx)(T.a, {
+                id: "message.trustedContactNoThanksModal.done",
+                defaultMessage: "Done"
+            }), v[38] = D) : D = v[38], v[39] !== Z ? (L = (0, n.jsx)(N.e, {
+                children: (0, n.jsx)(N.c, {
+                    children: (0, n.jsx)(d.a, {
+                        type: "submit",
+                        radius: "full",
+                        loading: Z,
+                        children: D
+                    })
+                })
+            }), v[39] = Z, v[40] = L) : L = v[40], v[41] !== x || v[42] !== L || v[43] !== m ? (y = (0, n.jsxs)(N.b, {
+                as: "form",
+                onSubmit: m,
+                children: [x, L]
+            }), v[41] = x, v[42] = L, v[43] = m, v[44] = y) : y = v[44], v[45] !== y || v[46] !== J || v[47] !== h ? (F = (0, n.jsx)(E.a, {
+                open: J,
+                size: "wide",
+                onOpenChange: h,
+                children: y
+            }), v[45] = y, v[46] = J, v[47] = h, v[48] = F) : F = v[48], F
+        }
+
+        function p(e) {
+            return null == e ? e : {
+                ...e,
+                trustedContactsOptedOutAt: !0
+            }
+        }
+        a.d(t, {}, {
+            TrustedContactNoThanksDialog: function(e) {
+                let t, a = (0, i.c)(2),
+                    r = (0, o.z)(I.a);
+                return e.open && "allowed" === r.status ? (a[0] !== e ? (t = (0, n.jsx)(O, {
+                    ...e
+                }), a[0] = e, a[1] = t) : t = a[1], t) : null
+            }
+        })
+    }),
+    vYmP: (function(e, t, a) {
+        var n = a("ABep"),
+            i = a("QosV"),
+            o = a("on57"),
+            r = a("zd8w"),
+            s = a("ZtSy"),
+            l = a("MhHq");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, T, _, c, d, C, E, N, A, u, I, O, p, h, m, f, R, S = (0, i.c)(43);
+                S[0] !== e ? ({
+                    ref: d,
+                    ActionWrapper: E,
+                    ariaLabel: a,
+                    icon: T,
+                    isActive: N,
+                    isTerminalInline: _,
+                    label: c,
+                    supportingCountLabel: C,
+                    testId: u,
+                    variant: A,
+                    ...t
+                } = e, S[0] = e, S[1] = t, S[2] = a, S[3] = T, S[4] = _, S[5] = c, S[6] = d, S[7] = C, S[8] = E, S[9] = N, S[10] = A, S[11] = u) : (t = S[1], a = S[2], T = S[3], _ = S[4], c = S[5], d = S[6], C = S[7], E = S[8], N = S[9], A = S[10], u = S[11]);
+                let g = void 0 === E ? r.Fragment : E,
+                    P = void 0 !== N && N,
+                    b = "file" === (void 0 === A ? "default" : A),
+                    x = "disabled" in t && t.disabled,
+                    D = x ? "cursor-default" : "group cursor-interaction",
+                    L = !b && !x && "hover:bg-secondary-soft-hover hover:text-default!",
+                    y = b && l.a.palette,
+                    F = b && l.a.filePill;
+                S[12] !== P || S[13] !== b || S[14] !== D || S[15] !== L || S[16] !== y || S[17] !== F ? (I = (0, o.b)("min-w-0 no-underline!", D, L, y, F, b ? "relative flex h-[25px] items-center justify-center gap-1 px-2 text-[10px] leading-[13px] select-none" : (0, o.b)("flex h-4.5 max-w-[15rem] overflow-hidden rounded-xl pe-2 ps-1 text-[9px] leading-none font-medium select-none", P ? "bg-secondary-soft-hover text-default!" : "bg-secondary-soft text-secondary-solid!")), S[12] = P, S[13] = b, S[14] = D, S[15] = L, S[16] = y, S[17] = F, S[18] = I) : I = S[18];
+                let v = I;
+                S[19] !== b || S[20] !== C ? (O = null == C ? null : (0, n.jsx)("span", {
+                    className: (0, o.b)("text-inherit", b ? "ms-0.5 inline-flex h-4 min-w-4 shrink-0 items-center justify-center rounded-full bg-text-tertiary/15 px-1 text-[8px] leading-none font-semibold group-hover:bg-text-tertiary/20" : "-me-1 flex h-full shrink-0 items-center px-1"),
+                    "aria-hidden": "true",
+                    children: C
+                }), S[19] = b, S[20] = C, S[21] = O) : O = S[21];
+                let G = O;
+                S[22] !== T || S[23] !== b || S[24] !== c || S[25] !== G ? (p = b ? (0, n.jsxs)(n.Fragment, {
+                    children: [T, (0, n.jsx)("span", {
+                        className: "min-w-0 flex-auto truncate",
+                        children: c
+                    }), G]
+                }) : (0, n.jsxs)("span", {
+                    className: "relative start-0 bottom-0 flex h-full w-full items-center",
+                    children: [(0, n.jsxs)("span", {
+                        className: "flex min-w-0 flex-1 items-center gap-1",
+                        children: [T, (0, n.jsx)("span", {
+                            className: "max-w-[15ch] min-w-0 grow truncate overflow-hidden text-center",
+                            children: c
+                        })]
+                    }), G]
+                }), S[22] = T, S[23] = b, S[24] = c, S[25] = G, S[26] = p) : p = S[26];
+                let M = p,
+                    U = b && "relative",
+                    k = b && _ ? "align-middle" : "relative top-[-0.094rem] translate-y-0.5";
+                return S[27] !== U || S[28] !== k ? (h = (0, o.b)("ms-1 inline-flex max-w-full min-w-0 items-center font-sans select-none", U, k), S[27] = U, S[28] = k, S[29] = h) : h = S[29], S[30] !== t || S[31] !== a || S[32] !== v || S[33] !== M || S[34] !== u ? (m = "href" in t ? (0, n.jsx)(s.a, {
+                    className: v,
+                    href: t.href,
+                    initiator: "markdown_link_click",
+                    "data-testid": u,
+                    requiresConfirmation: t.requiresConfirmation,
+                    showHoverActions: t.showHoverActions,
+                    tooltipContent: t.tooltipContent,
+                    "aria-label": a,
+                    onActivate: t.onActivate,
+                    onClick: t.onClick,
+                    onAuxClick: t.onAuxClick,
+                    onUnmodifiedClick: t.onUnmodifiedClick,
+                    children: M
+                }) : (0, n.jsx)("button", {
+                    className: v,
+                    "aria-label": a,
+                    "data-testid": u,
+                    disabled: t.disabled,
+                    type: "button",
+                    onClick: t.onClick,
+                    children: M
+                }), S[30] = t, S[31] = a, S[32] = v, S[33] = M, S[34] = u, S[35] = m) : m = S[35], S[36] !== g || S[37] !== m ? (f = (0, n.jsx)(g, {
+                    children: m
+                }), S[36] = g, S[37] = m, S[38] = f) : f = S[38], S[39] !== d || S[40] !== h || S[41] !== f ? (R = (0, n.jsx)("span", {
+                    ref: d,
+                    className: h,
+                    children: f
+                }), S[39] = d, S[40] = h, S[41] = f, S[42] = R) : R = S[42], R
+            }
+        })
+    }),
+    ePaQ: (function(e, t, a) {
+        a.d(t, {
+            a: () => A
+        });
+        var n = a("ABep"),
+            i = a("QosV"),
+            o = a("kSHG"),
+            r = a("bFOP"),
+            s = a("slpy"),
+            l = a("on57"),
+            T = a("zd8w"),
+            _ = a("KxMp"),
+            c = a("bf6R"),
+            d = a("zSQm"),
+            C = a("WAdu");
+
+        function E(e) {
+            let t, a, o, r, s, l, T, _ = (0, i.c)(21),
+                {
+                    title: c,
+                    subtitle: d,
+                    body: C,
+                    branding: E,
+                    followUp: N,
+                    actions: A
+                } = e;
+            _[0] !== C ? (t = C?.includes("\n"), _[0] = C, _[1] = t) : t = _[1];
+            let u = t;
+            return _[2] !== E ? (a = (0, n.jsx)("div", {
+                className: "branding-xlBboz",
+                children: E
+            }), _[2] = E, _[3] = a) : a = _[3], _[4] !== c ? (o = (0, n.jsx)("div", {
+                className: "title-M06RHU",
+                children: c
+            }), _[4] = c, _[5] = o) : o = _[5], _[6] !== d ? (r = null != d && (0, n.jsx)("div", {
+                className: "subtitle-gArrij",
+                children: d
+            }), _[6] = d, _[7] = r) : r = _[7], _[8] !== C || _[9] !== u || _[10] !== c ? (s = null != C && (0, n.jsx)("div", {
+                className: u ? "multilineBody-ZwAWLW" : "body-M8UobH",
+                role: "region",
+                "aria-label": c,
+                tabIndex: u ? 0 : void 0,
+                children: C
+            }), _[8] = C, _[9] = u, _[10] = c, _[11] = s) : s = _[11], _[12] !== N ? (l = null != N && (0, n.jsx)("div", {
+                className: "followUp-otVo0x",
+                children: N
+            }), _[12] = N, _[13] = l) : l = _[13], _[14] !== A || _[15] !== a || _[16] !== o || _[17] !== r || _[18] !== s || _[19] !== l ? (T = (0, n.jsxs)("div", {
+                className: "content-cuuiWn",
+                children: [a, o, r, s, A, l]
+            }), _[14] = A, _[15] = a, _[16] = o, _[17] = r, _[18] = s, _[19] = l, _[20] = T) : T = _[20], T
+        }
+        var N = a("Nfif");
+
+        function A(e) {
+            let t, a, o, l, _ = (0, i.c)(32),
+                {
+                    children: c,
+                    disabled: d,
+                    metadata: C,
+                    sourceAppId: E,
+                    followUp: N,
+                    keepOpen: A,
+                    openOnClick: O,
+                    closeOnTriggerClick: p,
+                    presentation: h,
+                    renderHoverCard: m
+                } = e,
+                f = void 0 === p || p,
+                [R, S] = (0, T.useState)(!1);
+            if (null == C.hoverCard && null == m && "file" !== h && !O && f) {
+                let e, t, a = !!A || void 0;
+                return _[0] !== c ? (e = (0, n.jsx)("span", {
+                    className: "inline-flex max-w-full",
+                    children: c
+                }), _[0] = c, _[1] = e) : e = _[1], _[2] !== d || _[3] !== C.title || _[4] !== a || _[5] !== e ? (t = (0, n.jsx)(s.a, {
+                    content: C.title,
+                    disabled: d,
+                    forceOpen: a,
+                    children: e
+                }), _[2] = d, _[3] = C.title, _[4] = a, _[5] = e, _[6] = t) : t = _[6], t
+            }
+            let g = C.title;
+            if (null != m) {
+                let e;
+                _[7] !== N || _[8] !== C || _[9] !== h || _[10] !== m || _[11] !== E ? (e = m({
+                    metadata: C,
+                    sourceAppId: E,
+                    followUp: N,
+                    presentation: h
+                }), _[7] = N, _[8] = C, _[9] = h, _[10] = m, _[11] = E, _[12] = e) : e = _[12], g = e
+            } else if (null != C.hoverCard) {
+                let e;
+                _[13] !== N || _[14] !== C || _[15] !== h || _[16] !== E ? (e = (0, n.jsx)(I, {
+                    metadata: C,
+                    sourceAppId: E,
+                    followUp: N,
+                    presentation: h
+                }), _[13] = N, _[14] = C, _[15] = h, _[16] = E, _[17] = e) : e = _[17], g = e
+            }
+            let P = !d && (A || R);
+            _[18] === Symbol.for("react.memo_cache_sentinel") ? (t = () => S(!0), _[18] = t) : t = _[18], _[19] !== c || _[20] !== f || _[21] !== O ? (a = (0, n.jsx)(u, {
+                openOnClick: O,
+                closeOnTriggerClick: f,
+                onOpen: t,
+                children: c
+            }), _[19] = c, _[20] = f, _[21] = O, _[22] = a) : a = _[22];
+            let b = "file" === h ? 344 : 320,
+                x = "file" === h ? 10 : 6;
+            return _[23] !== g || _[24] !== C.title || _[25] !== b || _[26] !== x ? (o = (0, n.jsx)(r.a.Content, {
+                "aria-label": C.title,
+                minWidth: "auto",
+                maxWidth: b,
+                align: "start",
+                side: "bottom",
+                sideOffset: x,
+                children: g
+            }), _[23] = g, _[24] = C.title, _[25] = b, _[26] = x, _[27] = o) : o = _[27], _[28] !== P || _[29] !== a || _[30] !== o ? (l = (0, n.jsxs)(r.a, {
+                showOnHover: !0,
+                open: P,
+                onOpenChange: S,
+                children: [a, o]
+            }), _[28] = P, _[29] = a, _[30] = o, _[31] = l) : l = _[31], l
+        }
+
+        function u(e) {
+            let t, a, o, s = (0, i.c)(10),
+                {
+                    children: l,
+                    openOnClick: T,
+                    closeOnTriggerClick: _,
+                    onOpen: c
+                } = e,
+                {
+                    close: d
+                } = (0, r.b)();
+            return s[0] !== d || s[1] !== _ || s[2] !== c || s[3] !== T ? (t = e => {
+                T && _ || (e.preventDefault(), T ? c() : d())
+            }, s[0] = d, s[1] = _, s[2] = c, s[3] = T, s[4] = t) : t = s[4], s[5] !== l ? (a = (0, n.jsx)("span", {
+                className: "group/mcp-source-citation inline-flex max-w-full",
+                tabIndex: -1,
+                children: l
+            }), s[5] = l, s[6] = a) : a = s[6], s[7] !== t || s[8] !== a ? (o = (0, n.jsx)(r.a.Trigger, {
+                onClick: t,
+                children: a
+            }), s[7] = t, s[8] = a, s[9] = o) : o = s[9], o
+        }
+
+        function I(e) {
+            let t, a, r, s, A, u, I, O, p = (0, i.c)(53),
+                {
+                    metadata: h,
+                    sourceAppId: m,
+                    followUp: f,
+                    presentation: R
+                } = e,
+                S = (0, T.useContext)(C.a);
+            if (p[0] !== h.icons?.[0]) {
+                let {
+                    data: e
+                } = o.v.safeParse(h.icons?.[0]), a = e?.src;
+                t = null == a ? void 0 : (0, d.b)(a), p[0] = h.icons?.[0], p[1] = t
+            } else t = p[1];
+            let g = t;
+            p[2] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, n.jsx)(c.Hi, {}), p[2] = a) : a = p[2];
+            let P = a;
+            if ("restricted" !== S) {
+                if (null != h.url) {
+                    let e;
+                    p[3] !== h.url ? (e = (0, n.jsx)(_.a, {
+                        href: h.url,
+                        className: "size-4"
+                    }), p[3] = h.url, p[4] = e) : e = p[4], P = e
+                } else if (null != g) {
+                    let e, t, a = null == m && "dark:brightness-0 dark:invert";
+                    p[5] !== a ? (e = (0, l.b)("size-4 shrink-0 rounded-sm object-contain", a), p[5] = a, p[6] = e) : e = p[6], p[7] !== g || p[8] !== e ? (t = (0, n.jsx)("img", {
+                        alt: "",
+                        className: e,
+                        draggable: !1,
+                        referrerPolicy: "no-referrer",
+                        src: g
+                    }), p[7] = g, p[8] = e, p[9] = t) : t = p[9], P = t
+                }
+            }
+            if ("file" === R && null != m) {
+                let e, t, a = h.hoverCard?.title ?? h.title,
+                    i = h.hoverCard?.subtitle,
+                    o = h.hoverCard?.body;
+                return p[10] !== m ? (e = (0, n.jsx)(N.a, {
+                    appId: m,
+                    showName: !0,
+                    presentation: "file"
+                }), p[10] = m, p[11] = e) : e = p[11], p[12] !== f || p[13] !== a || p[14] !== i || p[15] !== o || p[16] !== e ? (t = (0, n.jsx)(E, {
+                    title: a,
+                    subtitle: i,
+                    body: o,
+                    branding: e,
+                    followUp: f
+                }), p[12] = f, p[13] = a, p[14] = i, p[15] = o, p[16] = e, p[17] = t) : t = p[17], t
+            }
+            if (null != m) {
+                let e, t, a, i, o, r;
+                p[18] !== m ? (e = (0, n.jsx)("div", {
+                    className: "flex min-w-0 items-center gap-1.5 text-xs leading-4 text-secondary",
+                    children: (0, n.jsx)(N.a, {
+                        appId: m,
+                        showName: !0
+                    })
+                }), p[18] = m, p[19] = e) : e = p[19];
+                let s = h.hoverCard?.title ?? h.title;
+                return p[20] !== s ? (t = (0, n.jsx)("div", {
+                    className: "line-clamp-2 font-medium break-words",
+                    children: s
+                }), p[20] = s, p[21] = t) : t = p[21], p[22] !== h.hoverCard ? (a = h.hoverCard?.subtitle != null && (0, n.jsx)("div", {
+                    className: "line-clamp-2 break-words text-secondary",
+                    children: h.hoverCard.subtitle
+                }), p[22] = h.hoverCard, p[23] = a) : a = p[23], p[24] !== h.hoverCard || p[25] !== h.title ? (i = h.hoverCard?.body != null && (0, n.jsx)("div", {
+                    className: "max-h-48 min-h-0 overflow-y-auto break-words whitespace-pre-line text-secondary",
+                    role: "region",
+                    "aria-label": h.title,
+                    tabIndex: 0,
+                    children: h.hoverCard.body
+                }), p[24] = h.hoverCard, p[25] = h.title, p[26] = i) : i = p[26], p[27] !== f ? (o = null != f && (0, n.jsx)("div", {
+                    children: f
+                }), p[27] = f, p[28] = o) : o = p[28], p[29] !== e || p[30] !== t || p[31] !== a || p[32] !== i || p[33] !== o ? (r = (0, n.jsxs)("div", {
+                    className: "flex w-80 max-w-full min-w-0 flex-col gap-1.5 p-3 text-start text-sm leading-5 font-normal whitespace-normal text-default",
+                    children: [e, t, a, i, o]
+                }), p[29] = e, p[30] = t, p[31] = a, p[32] = i, p[33] = o, p[34] = r) : r = p[34], r
+            }
+            let b = h.hoverCard?.title ?? h.title;
+            return p[35] !== b ? (r = (0, n.jsx)("div", {
+                className: "line-clamp-2 font-medium break-words",
+                children: b
+            }), p[35] = b, p[36] = r) : r = p[36], p[37] !== h.hoverCard ? (s = h.hoverCard?.subtitle != null && (0, n.jsx)("div", {
+                className: "line-clamp-2 text-xs break-words text-secondary",
+                children: h.hoverCard.subtitle
+            }), p[37] = h.hoverCard, p[38] = s) : s = p[38], p[39] !== r || p[40] !== s ? (A = (0, n.jsxs)("div", {
+                className: "shrink-0 pb-1",
+                children: [r, s]
+            }), p[39] = r, p[40] = s, p[41] = A) : A = p[41], p[42] !== h.hoverCard || p[43] !== h.title ? (u = h.hoverCard?.body != null && (0, n.jsx)("div", {
+                className: "max-h-48 min-h-0 overflow-y-auto border-s-2 border-default ps-2 break-words whitespace-pre-wrap",
+                role: "region",
+                "aria-label": h.title,
+                tabIndex: 0,
+                children: h.hoverCard.body
+            }), p[42] = h.hoverCard, p[43] = h.title, p[44] = u) : u = p[44], p[45] !== P || p[46] !== h.hoverCard?.title || p[47] !== h.title ? (I = h.hoverCard?.title != null && (0, n.jsxs)("div", {
+                className: "flex min-w-0 shrink-0 items-center gap-2 text-secondary",
+                children: [P, (0, n.jsx)("div", {
+                    className: "min-w-0 truncate",
+                    children: h.title
+                })]
+            }), p[45] = P, p[46] = h.hoverCard?.title, p[47] = h.title, p[48] = I) : I = p[48], p[49] !== A || p[50] !== u || p[51] !== I ? (O = (0, n.jsxs)("div", {
+                className: "flex min-w-0 flex-col gap-2 p-3 text-start text-sm leading-5 font-normal whitespace-normal text-default",
+                children: [A, u, I]
+            }), p[49] = A, p[50] = u, p[51] = I, p[52] = O) : O = p[52], O
+        }
+    }),
+    JAYD: (function(e, t, a) {
+        var n = a("BolX"),
+            i = a("Zqzr"),
+            o = a("OiCI"),
+            r = a("cLdu"),
+            s = a("OWtl");
+        let l = (0, n.d)(s.a, (e, t) => {
+            let {
+                get: a
+            } = t, n = a(o.b);
+            if (null == n) return !1;
+            let s = a(r.h, {
+                accountId: n,
+                hostId: i.Xb,
+                roots: void 0,
+                productContext: "chatgpt"
+            });
+            return !s.isPending && !s.isError && s.data?.some(t => {
+                let {
+                    appIds: a,
+                    plugin: n
+                } = t;
+                return a?.includes(e) && n.installed && n.enabled && "AVAILABLE" === n.availability && null == n.disabledReason
+            }) === !0
+        });
+        a.d(t, {}, {
+            a: l
+        })
+    }),
+    Nfif: (function(e, t, a) {
+        a.d(t, {
+            a: () => u
+        });
+        var n = a("ABep"),
+            i = a("QosV"),
+            o = a("on57"),
+            r = a("Zqzr"),
+            s = a("zd8w"),
+            l = a("oyxz"),
+            T = a("BQbE"),
+            _ = a("bf6R"),
+            c = a("E6P3"),
+            d = a("zSQm"),
+            C = a("WAdu"),
+            E = a("a6Zv"),
+            N = e => (0, n.jsxs)("svg", {
+                width: 12,
+                height: 12,
+                viewBox: "0 0 20 20",
+                fill: "currentColor",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...e,
+                children: [(0, n.jsx)("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M14.4404 2.25293C16.3032 2.25306 17.8145 3.76317 17.8145 5.62598C17.8144 7.48871 16.3032 8.99889 14.4404 8.99902C13.7322 8.99896 13.0749 8.78025 12.5322 8.40723L8.39844 12.541C8.74099 13.0688 8.94043 13.698 8.94043 14.374C8.94035 16.2368 7.42929 17.7471 5.56641 17.7471C3.70368 17.7469 2.19344 16.2367 2.19336 14.374C2.19336 12.5112 3.70363 11.0012 5.56641 11.001C6.27216 11.001 6.92702 11.2183 7.46875 11.5889L11.6055 7.45215C11.2656 6.92567 11.0674 6.2992 11.0674 5.62598C11.0674 3.7632 12.5776 2.25311 14.4404 2.25293ZM5.56641 12.3311C4.43794 12.3312 3.52344 13.246 3.52344 14.374C3.52352 15.502 4.43799 16.4168 5.56641 16.417C6.69497 16.417 7.61027 15.5021 7.61035 14.374C7.61035 13.2459 6.69502 12.3311 5.56641 12.3311ZM14.4404 3.58301C13.312 3.58318 12.3975 4.49796 12.3975 5.62598C12.3975 6.75393 13.312 7.66877 14.4404 7.66895C15.5689 7.66881 16.4843 6.75395 16.4844 5.62598C16.4844 4.49793 15.5689 3.58314 14.4404 3.58301Z",
+                    fill: "currentColor"
+                }), (0, n.jsx)("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M14.4404 11.001C16.3032 11.0011 17.8145 12.5112 17.8145 14.374C17.8144 16.2368 16.3032 17.7469 14.4404 17.7471C12.5777 17.7469 11.0675 16.2367 11.0674 14.374C11.0674 12.5112 12.5776 11.0012 14.4404 11.001ZM14.4404 12.3311C13.312 12.3312 12.3975 13.246 12.3975 14.374C12.3975 15.502 13.312 16.4168 14.4404 16.417C15.5689 16.4169 16.4843 15.502 16.4844 14.374C16.4844 13.246 15.5689 12.3312 14.4404 12.3311Z",
+                    fill: "currentColor"
+                }), (0, n.jsx)("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M5.56641 2.25293C7.42934 2.25293 8.94043 3.76309 8.94043 5.62598C8.94035 7.48879 7.42929 8.99902 5.56641 8.99902C3.70368 8.99885 2.19344 7.48869 2.19336 5.62598C2.19336 3.7632 3.70363 2.25311 5.56641 2.25293ZM5.56641 3.58301C4.43794 3.58318 3.52344 4.49796 3.52344 5.62598C3.52352 6.75393 4.43799 7.66877 5.56641 7.66895C6.69497 7.66895 7.61027 6.75403 7.61035 5.62598C7.61035 4.49785 6.69502 3.58301 5.56641 3.58301Z",
+                    fill: "currentColor"
+                })]
+            }),
+            A = a("MhHq");
+
+        function u(e) {
+            let t, a, u, I, O, p, h, m = (0, i.c)(21),
+                {
+                    appId: f,
+                    showName: R,
+                    presentation: S
+                } = e,
+                g = void 0 !== R && R,
+                P = (0, s.useContext)(C.a);
+            m[0] !== f ? (t = [f], m[0] = f, m[1] = t) : t = m[1];
+            let b = "restricted" !== P;
+            m[2] !== t || m[3] !== b ? (a = {
+                appIds: t,
+                hostId: r.Xb,
+                enabled: b
+            }, m[2] = t, m[3] = b, m[4] = a) : a = m[4];
+            let {
+                data: x
+            } = (0, T.c)(a), D = x?.find(e => e.id === f), L = (0, E.a)() ? D?.iconUrlDark ?? D?.iconUrl : D?.iconUrl, y = null == L ? void 0 : (0, d.b)(L);
+            m[5] !== S ? (u = "file" === S ? (0, n.jsx)("span", {
+                className: (0, o.b)(A.a.connectorIcon, A.a.connectorFallback, "flex size-4.5 items-center justify-center text-secondary"),
+                children: (0, n.jsx)(N, {
+                    "aria-hidden": "true"
+                })
+            }) : (0, n.jsx)(_.Hi, {}), m[5] = S, m[6] = u) : u = m[6];
+            let F = u;
+            m[7] !== F || m[8] !== P || m[9] !== S || m[10] !== y ? (I = "restricted" !== P && null != y ? (0, n.jsx)(c.a, {
+                className: (0, o.b)("shrink-0", "file" === S ? [A.a.connectorIcon, "size-4.5"] : "size-4"),
+                alt: "",
+                src: y,
+                fallback: F
+            }, y) : F, m[7] = F, m[8] = P, m[9] = S, m[10] = y, m[11] = I) : I = m[11];
+            let v = I;
+            return m[12] !== v || m[13] !== S ? (O = "file" === S ? (0, n.jsx)("span", {
+                className: "size-4 shrink-0",
+                children: v
+            }) : v, m[12] = v, m[13] = S, m[14] = O) : O = m[14], m[15] !== D?.name || m[16] !== g ? (p = g && (D?.name ?? (0, n.jsx)(l.a, {
+                id: "mcpCitation.ehrSource",
+                defaultMessage: "EHR"
+            })), m[15] = D?.name, m[16] = g, m[17] = p) : p = m[17], m[18] !== O || m[19] !== p ? (h = (0, n.jsxs)(n.Fragment, {
+                children: [O, p]
+            }), m[18] = O, m[19] = p, m[20] = h) : h = m[20], h
+        }
+    })
+};
