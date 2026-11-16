@@ -3,9 +3,9 @@ export const __webpack_modules__ = {
     rni0: (function(t, e, o) {
         o.d(e, {
             a: () => i,
-            b: () => m
+            b: () => c
         });
-        var r = o("jqIZ"),
+        var r = o("rEML"),
             a = o("ABep"),
             s = o("QosV"),
             n = o("hC2y"),
@@ -16,8 +16,8 @@ export const __webpack_modules__ = {
                     children: (0, a.jsx)(n.f, {})
                 }), e[0] = t) : t = e[0], t
             });
-        let c = "https://chatgpt.com/unauth-mweb/images/share-unfurl/made-with-chatgpt-og.webp",
-            m = t => {
+        let m = "https://chatgpt.com/unauth-mweb/images/share-unfurl/made-with-chatgpt-og.webp",
+            c = t => {
                 let {
                     matches: e,
                     params: o,
@@ -41,7 +41,7 @@ export const __webpack_modules__ = {
                     content: "ChatGPT helps you get answers, find inspiration, and be more productive."
                 }, {
                     property: "og:image",
-                    content: c
+                    content: m
                 }, {
                     property: "og:image:alt",
                     content: "Preview of shared ChatGPT content"
@@ -50,7 +50,7 @@ export const __webpack_modules__ = {
                     content: "summary_large_image"
                 }, {
                     name: "twitter:image",
-                    content: c
+                    content: m
                 }] : function(t, e, o) {
                     if (t?.status !== 200 || !e) return [];
                     let r = "rendered" === new URLSearchParams(o).get("ogimg") ? `https://ogimg.chatgpt.com/?postId=${e}` : t.imageUrl,
@@ -139,58 +139,58 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as t
-} from "./633146.6428a93122.js";
-import * as e from "./418851.3351eb0d2c.js";
+} from "./633146.7affad7b5d.js";
+import * as e from "./418851.a18db97c0f.js";
 t.C(e);
-import * as o from "./109308.a4430446b5.js";
+import * as o from "./109308.c9b7701e19.js";
 t.C(o);
-import * as r from "./399565.6af208675d.js";
+import * as r from "./399565.e3bd47902e.js";
 t.C(r);
-import * as a from "./257798.13b56b362a.js";
+import * as a from "./257798.7e03f1e3e2.js";
 t.C(a);
-import * as s from "./447351.16e0481926.js";
+import * as s from "./447351.96852eb6b8.js";
 t.C(s);
-import * as n from "./617936.4707466a2e.js";
+import * as n from "./617936.b641c39dad.js";
 t.C(n);
-import * as p from "./807489.36023b676b.js";
+import * as p from "./807489.287ea00c8d.js";
 t.C(p);
-import * as i from "./337882.da1b5beae8.js";
+import * as i from "./337882.945f5227c2.js";
 t.C(i);
-import * as c from "./955979.48bc7ee80c.js";
-t.C(c);
-import * as m from "./646436.67f97058a6.js";
+import * as m from "./955979.2d3fb29684.js";
 t.C(m);
-import * as d from "./7078.c420b9a2f6.js";
+import * as c from "./646436.6a9ea7ce2b.js";
+t.C(c);
+import * as d from "./7078.b92f527b06.js";
 t.C(d);
-import * as f from "./200429.11007a9422.js";
+import * as f from "./200429.6598292931.js";
 t.C(f);
-import * as g from "./698524.8f181d24a1.js";
+import * as g from "./698524.5402dc2ea3.js";
 t.C(g);
-import * as h from "./956483.6cfec0717e.js";
+import * as h from "./956483.595b7db9a7.js";
 t.C(h);
-import * as l from "./87162.d101a9fdd5.js";
+import * as l from "./87162.d955fb8b13.js";
 t.C(l);
-import * as u from "./396705.00162c6ea9.js";
+import * as u from "./396705.47c12a5601.js";
 t.C(u);
-import * as C from "./155568.36875ef56f.js";
+import * as C from "./155568.f88fad6c40.js";
 t.C(C);
-import * as _ from "./731863.bbf914bfbc.js";
+import * as _ from "./731863.4d5b0f8b9b.js";
 t.C(_);
-import * as j from "./767086.5122101cd2.js";
-t.C(j);
-import * as y from "./76629.ac20799396.js";
-t.C(y);
-import * as w from "./514085.004fb5c464.js";
-t.C(w);
-import * as b from "./226913.27c93050ff.js";
+import * as b from "./767086.7d33efc736.js";
 t.C(b);
-import * as x from "./902158.5a4b6c2c66.js";
+import * as y from "./76629.9835d52bf1.js";
+t.C(y);
+import * as j from "./514085.4ce61adad7.js";
+t.C(j);
+import * as w from "./226913.dd4de34d8f.js";
+t.C(w);
+import * as x from "./902158.087f350eba.js";
 t.C(x);
-import * as I from "./315523.74bbf4355e.js";
-t.C(I);
-var v = t(t.s = "rni0"),
-    P = v.a,
-    G = v.b;
+import * as v from "./315523.a56c7c5a80.js";
+t.C(v);
+var I = t(t.s = "rni0"),
+    P = I.a,
+    G = I.b;
 export {
     P as
     default, G as meta

@@ -1071,6 +1071,7 @@ ${(0,r.b)(t)}`
                     replyPort: E,
                     supportsWidgetTextureReceiver: F
                 } = await
+
             function(e) {
                 let {
                     onSkybridgeCacheState: t,

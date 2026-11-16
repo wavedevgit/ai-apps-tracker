@@ -1,31 +1,31 @@
 export const __rspack_esm_ids = [487589];
 export const __webpack_modules__ = {
-    zd4v: (function(e, t, a) {
-        a.d(t, {
-            a: () => r,
-            b: () => o
+    zd4v: (function(e, t, n) {
+        n.d(t, {
+            a: () => g,
+            b: () => s
         });
-        var n = a("jqIZ"),
-            i = a("ABep"),
-            l = a("QosV"),
-            s = a("Bbed"),
-            g = a("aBxd");
-        let c = (0, s.a)(async () => (await Promise.all([a.e(680612), a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(480171), a.e(999385), a.e(184549), a.e(553028), a.e(195563), a.e(936415), a.e(154542), a.e(89598), a.e(92384)]).then(a.bind(a, "CDzG"))).SpacesPersonalRoute),
-            o = () => [{
+        var i = n("rEML"),
+            o = n("ABep"),
+            a = n("QosV"),
+            c = n("Bbed"),
+            l = n("aBxd");
+        let r = (0, c.a)(async () => (await Promise.all([n.e(680612), n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(480171), n.e(999385), n.e(184549), n.e(553028), n.e(195563), n.e(936415), n.e(154542), n.e(747001), n.e(256048)]).then(n.bind(n, "CDzG"))).SpacesPersonalRoute),
+            s = () => [{
                 title: "ChatGPT Space"
             }, {
                 property: "og:title",
                 content: "ChatGPT Space"
             }];
-        var r = (0, n.hb)(function() {
-            let e, t = (0, l.c)(3),
-                a = (0, n.fb)("space-page-layout"),
+        var g = (0, i.hb)(function() {
+            let e, t = (0, a.c)(3),
+                n = (0, i.fb)("space-page-layout"),
                 {
-                    pageId: s
-                } = (0, n.cb)();
-            return t[0] !== a?.spacePage || t[1] !== s ? (e = "personal" === s ? (0, i.jsx)(c, {}) : (0, i.jsx)(g.LazyBrowserSpacePage, {
-                spacePage: a?.spacePage ?? null
-            }), t[0] = a?.spacePage, t[1] = s, t[2] = e) : e = t[2], e
+                    pageId: c
+                } = (0, i.cb)();
+            return t[0] !== n?.spacePage || t[1] !== c ? (e = "personal" === c ? (0, o.jsx)(r, {}) : (0, o.jsx)(l.LazyBrowserSpacePage, {
+                spacePage: n?.spacePage ?? null
+            }), t[0] = n?.spacePage, t[1] = c, t[2] = e) : e = t[2], e
         })
     }),
     BmwK: (function(e) {
@@ -43,23 +43,23 @@ export const __webpack_modules__ = {
     AieS: (function(e) {
         e.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iYiIgY3g9IjE2MS44IiBjeT0iNjguOSIgcj0iOTUuNCIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtLjk1IDAgMjQ4LjgpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1vcGFjaXR5PSIwIi8+PHN0b3Agb2Zmc2V0PSIuOSIgc3RvcC1vcGFjaXR5PSIuNSIvPjxzdG9wIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImQiIGN4PSItMzQwLjMiIGN5PSI2MyIgcj0iMTQzLjIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjE1IC0uOTkgLS44IC0uMTIgMTc2LjYgLTEyNS40KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iLjgiIHN0b3Atb3BhY2l0eT0iMCIvPjxzdG9wIG9mZnNldD0iLjkiIHN0b3Atb3BhY2l0eT0iLjUiLz48c3RvcCBvZmZzZXQ9IjEiLz48L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJlIiBjeD0iMTEzLjQiIGN5PSI1NzAuMiIgcj0iMjAyLjQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLS4wNCAxIDIuMTMgLjA4IC0xMTc5LjUgLTEwNi43KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzM1YzFmMSIvPjxzdG9wIG9mZnNldD0iLjEiIHN0b3AtY29sb3I9IiMzNGMxZWQiLz48c3RvcCBvZmZzZXQ9Ii4yIiBzdG9wLWNvbG9yPSIjMmZjMmRmIi8+PHN0b3Agb2Zmc2V0PSIuMyIgc3RvcC1jb2xvcj0iIzJiYzNkMiIvPjxzdG9wIG9mZnNldD0iLjciIHN0b3AtY29sb3I9IiMzNmM3NTIiLz48L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJmIiBjeD0iMzc2LjUiIGN5PSI1NjgiIHI9Ijk3LjMiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjI4IC45NiAuNzggLS4yMyAtMzAzLjggLTE0OC41KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzY2ZWI2ZSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzY2ZWI2ZSIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjYzLjMiIHkxPSI4NCIgeDI9IjI0MS43IiB5Mj0iODQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCAyNjYpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMGM1OWE0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTE0YThiIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYyIgeDE9IjE1Ny4zIiB5MT0iMTYxLjQiIHgyPSI0NiIgeTI9IjQwLjEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCAyNjYpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWI5ZGUyIi8+PHN0b3Agb2Zmc2V0PSIuMiIgc3RvcC1jb2xvcj0iIzE1OTVkZiIvPjxzdG9wIG9mZnNldD0iLjciIHN0b3AtY29sb3I9IiMwNjgwZDciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMDc4ZDQiLz48L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cGF0aCBkPSJNMjM1LjcgMTk1LjVhOTMuNyA5My43IDAgMCAxLTEwLjYgNC43IDEwMS45IDEwMS45IDAgMCAxLTM1LjkgNi40Yy00Ny4zIDAtODguNS0zMi41LTg4LjUtNzQuM2EzMS41IDMxLjUgMCAwIDEgMTYuNC0yNy4zYy00Mi44IDEuOC01My44IDQ2LjQtNTMuOCA3Mi41IDAgNzQgNjguMSA4MS40IDgyLjggODEuNCA3LjkgMCAxOS44LTIuMyAyNy00LjZsMS4zLS40YTEyOC4zIDEyOC4zIDAgMCAwIDY2LjYtNTIuOCA0IDQgMCAwIDAtNS4zLTUuNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00LjYgLTUpIiBmaWxsPSJ1cmwoI2EpIi8+CiAgPHBhdGggZD0iTTIzNS43IDE5NS41YTkzLjcgOTMuNyAwIDAgMS0xMC42IDQuNyAxMDEuOSAxMDEuOSAwIDAgMS0zNS45IDYuNGMtNDcuMyAwLTg4LjUtMzIuNS04OC41LTc0LjNhMzEuNSAzMS41IDAgMCAxIDE2LjQtMjcuM2MtNDIuOCAxLjgtNTMuOCA0Ni40LTUzLjggNzIuNSAwIDc0IDY4LjEgODEuNCA4Mi44IDgxLjQgNy45IDAgMTkuOC0yLjMgMjctNC42bDEuMy0uNGExMjguMyAxMjguMyAwIDAgMCA2Ni42LTUyLjggNCA0IDAgMCAwLTUuMy01LjZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNC42IC01KSIgb3BhY2l0eT0iLjM1IiBmaWxsPSJ1cmwoI2IpIi8+CiAgPHBhdGggZD0iTTExMC4zIDI0Ni4zQTc5LjIgNzkuMiAwIDAgMSA4Ny42IDIyNWE4MC43IDgwLjcgMCAwIDEgMjkuNS0xMjBjMy4yLTEuNSA4LjUtNC4xIDE1LjYtNGEzMi40IDMyLjQgMCAwIDEgMjUuNyAxMyAzMS45IDMxLjkgMCAwIDEgNi4zIDE4LjdjMC0uMiAyNC41LTc5LjYtODAtNzkuNi00My45IDAtODAgNDEuNi04MCA3OC4yYTEzMC4yIDEzMC4yIDAgMCAwIDEyLjEgNTYgMTI4IDEyOCAwIDAgMCAxNTYuNCA2NyA3NS41IDc1LjUgMCAwIDEtNjIuOC04WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQuNiAtNSkiIGZpbGw9InVybCgjYykiLz4KICA8cGF0aCBkPSJNMTEwLjMgMjQ2LjNBNzkuMiA3OS4yIDAgMCAxIDg3LjYgMjI1YTgwLjcgODAuNyAwIDAgMSAyOS41LTEyMGMzLjItMS41IDguNS00LjEgMTUuNi00YTMyLjQgMzIuNCAwIDAgMSAyNS43IDEzIDMxLjkgMzEuOSAwIDAgMSA2LjMgMTguN2MwLS4yIDI0LjUtNzkuNi04MC03OS42LTQzLjkgMC04MCA0MS42LTgwIDc4LjJhMTMwLjIgMTMwLjIgMCAwIDAgMTIuMSA1NiAxMjggMTI4IDAgMCAwIDE1Ni40IDY3IDc1LjUgNzUuNSAwIDAgMS02Mi44LThaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNC42IC01KSIgb3BhY2l0eT0iLjQxIiBmaWxsPSJ1cmwoI2QpIi8+CiAgPHBhdGggZD0iTTE1NyAxNTMuOGMtLjkgMS0zLjQgMi41LTMuNCA1LjYgMCAyLjYgMS43IDUuMiA0LjggNy4zIDE0LjMgMTAgNDEuNCA4LjYgNDEuNSA4LjZhNTkuNiA1OS42IDAgMCAwIDMwLjMtOC4zIDYxLjQgNjEuNCAwIDAgMCAzMC40LTUyLjljLjMtMjIuNC04LTM3LjMtMTEuMy00My45QzIyOCAyOC44IDE4Mi4zIDUgMTMyLjYgNWExMjggMTI4IDAgMCAwLTEyOCAxMjYuMmMuNS0zNi41IDM2LjgtNjYgODAtNjYgMy41IDAgMjMuNS4zIDQyIDEwYTcyLjYgNzIuNiAwIDAgMSAzMC45IDI5LjNjNi4xIDEwLjYgNy4yIDI0LjEgNy4yIDI5LjVzLTIuNyAxMy4zLTcuOCAxOS45WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQuNiAtNSkiIGZpbGw9InVybCgjZSkiLz4KICA8cGF0aCBkPSJNMTU3IDE1My44Yy0uOSAxLTMuNCAyLjUtMy40IDUuNiAwIDIuNiAxLjcgNS4yIDQuOCA3LjMgMTQuMyAxMCA0MS40IDguNiA0MS41IDguNmE1OS42IDU5LjYgMCAwIDAgMzAuMy04LjMgNjEuNCA2MS40IDAgMCAwIDMwLjQtNTIuOWMuMy0yMi40LTgtMzcuMy0xMS4zLTQzLjlDMjI4IDI4LjggMTgyLjMgNSAxMzIuNiA1YTEyOCAxMjggMCAwIDAtMTI4IDEyNi4yYy41LTM2LjUgMzYuOC02NiA4MC02NiAzLjUgMCAyMy41LjMgNDIgMTBhNzIuNiA3Mi42IDAgMCAxIDMwLjkgMjkuM2M2LjEgMTAuNiA3LjIgMjQuMSA3LjIgMjkuNXMtMi43IDEzLjMtNy44IDE5LjlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNC42IC01KSIgZmlsbD0idXJsKCNmKSIvPgo8L3N2Zz4K"
     }),
-    KDaJ: (function(e, t, a) {
-        e.exports = a.p + "assets/brave.e24982dd90.svg"
+    KDaJ: (function(e, t, n) {
+        e.exports = n.p + "assets/brave.e24982dd90.svg"
     }),
-    OAJX: (function(e, t, a) {
-        e.exports = a.p + "assets/opera.a0154bc61b.svg"
+    OAJX: (function(e, t, n) {
+        e.exports = n.p + "assets/opera.a0154bc61b.svg"
     }),
-    OemH: (function(e, t, a) {
-        e.exports = a.p + "assets/vivaldi.b8faee54b5.svg"
+    OemH: (function(e, t, n) {
+        e.exports = n.p + "assets/vivaldi.b8faee54b5.svg"
     }),
-    dzzk: (function(e, t, a) {
-        e.exports = a.p + "assets/icon.aff51c0cba.png"
+    dzzk: (function(e, t, n) {
+        e.exports = n.p + "assets/icon.aff51c0cba.png"
     }),
-    uwxo: (function(e, t, a) {
-        e.exports = a.p + "assets/google-chrome.8fc3755ff9.svg"
+    uwxo: (function(e, t, n) {
+        e.exports = n.p + "assets/google-chrome.8fc3755ff9.svg"
     }),
-    s9Jf: (function(e, t, a) {
-        e.exports = a.p + "assets/microsoft-edge.1da72279a7.svg"
+    s9Jf: (function(e, t, n) {
+        e.exports = n.p + "assets/microsoft-edge.1da72279a7.svg"
     }),
     YUPJ: (function(e) {
         e.exports = '<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">\n<g transform="translate(-9.42969 -1.71484)">\n<path d="M9.42969 36.9148C9.42969 24.5937 9.42969 18.4331 11.8275 13.7271C13.9368 9.58749 17.3023 6.22191 21.4419 4.1127C26.148 1.71484 32.3085 1.71484 44.6297 1.71484H46.2297C58.5508 1.71484 64.7114 1.71484 69.4175 4.1127C73.557 6.22191 76.9226 9.58749 79.0318 13.7271C81.4297 18.4331 81.4297 24.5937 81.4297 36.9148V38.5148C81.4297 50.836 81.4297 56.9966 79.0318 61.7026C76.9226 65.8422 73.557 69.2078 69.4175 71.317C64.7114 73.7148 58.5508 73.7148 46.2297 73.7148H44.6297C32.3085 73.7148 26.148 73.7148 21.4419 71.317C17.3023 69.2078 13.9368 65.8422 11.8275 61.7026C9.42969 56.9966 9.42969 50.836 9.42969 38.5148V36.9148Z" fill="white"/>\n</g>\n<g transform="scale(2.25)" fill="#0D0D0D">\n<path fill-rule="evenodd" clip-rule="evenodd" d="M17.2231 3.32026C18.593 2.64654 20.2404 2.91957 21.3198 3.99897L27.9497 10.6298C29.0315 11.7117 29.3033 13.3632 28.6245 14.7343L24.4761 23.1132C23.9585 24.1586 22.9617 24.8855 21.8081 25.0585L5.46729 27.5097C5.45986 27.5108 5.45225 27.5107 5.44482 27.5117C5.42598 27.514 5.40712 27.5154 5.38818 27.5166C5.37349 27.5174 5.35889 27.5183 5.34424 27.5185C5.32564 27.5187 5.30715 27.5175 5.28857 27.5166C5.27587 27.5159 5.26312 27.5168 5.25049 27.5156C5.21804 27.5126 5.18584 27.5074 5.15381 27.5009C5.15049 27.5002 5.14735 27.4987 5.14404 27.498C5.11541 27.4919 5.08712 27.4845 5.05908 27.4755C5.0532 27.4736 5.04735 27.4717 5.0415 27.4697C4.98138 27.4491 4.92319 27.4223 4.86768 27.3886C4.86505 27.387 4.86247 27.3854 4.85986 27.3837C4.80211 27.3479 4.74689 27.3059 4.69678 27.2558C4.62347 27.1825 4.56662 27.0991 4.52393 27.0107C4.51953 27.0016 4.51531 26.9925 4.51123 26.9833C4.46017 26.8678 4.43314 26.7442 4.43311 26.6201V26.5927C4.43336 26.5839 4.43454 26.5752 4.43506 26.5664C4.43627 26.5458 4.4383 26.5253 4.44092 26.5048C4.44167 26.499 4.44201 26.4931 4.44287 26.4873L6.87061 10.1289C7.04262 8.96975 7.77321 7.96829 8.82471 7.45112L17.2231 3.32026ZM20.0474 5.27241C19.5127 4.73777 18.6966 4.60189 18.0181 4.9355L9.61963 9.06636C9.09886 9.32249 8.73712 9.81848 8.65186 10.3925L6.62256 24.0566L14.0815 16.5976C13.8812 16.2035 13.7661 15.7584 13.7661 15.2861C13.7661 13.6845 15.065 12.3858 16.6665 12.3857C18.2681 12.3857 19.5669 13.6845 19.5669 15.2861C19.5669 16.8877 18.2681 18.1865 16.6665 18.1865C16.194 18.1864 15.7492 18.0706 15.355 17.8701L7.90186 25.3232L21.5415 23.2783C22.1129 23.1925 22.6064 22.8322 22.8628 22.3144L27.0112 13.9355C27.3475 13.2564 27.213 12.4382 26.6772 11.9023L20.0474 5.27241Z" fill="#0D0D0D"/>\n</g>\n</svg>\n'
@@ -169,766 +169,812 @@ export const __webpack_modules__ = {
     qGIL: (function(e) {
         e.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHbUlEQVR4AaVXa2wcVxX+Zmaf8WPXsb1rO681KbRNoY1TqSXl0RR+UNGqIAISVSRI2yRITaEJjRBVi5JUUZAKJCmIH6hISUEEVSJJCxQQIvSRKg0SVYhoo7ZOYqeWndhee59e787OzO13Z3Z3ZnbtSk3HOp67d+695zvfedx7FTQ9mUwmbhjGZjbvVBRlrewTQqRwDQ/nj3Julk35fjEYDL7S1dU1uuiEmZmZR9PpdCaXy4n5+XlhmibFENf6yLnValVUKhWRLxQE1x6ZmpravJjy3RR7woc+luWIBGZIqTpvghWWKQcsDojjpI7p6endDZbkP4lK07TD8XgcqqouTI8QwPQ08M+XgddOA2fPAnMlftCAnjiw+jrg7i8DQ7cAn1jFbk36oGUZy7KQzWZBQ3f29fUdkj5PSWoWpVpa+94FIe7fKkRbQgg1KqEsLEF+6xgQYsujQpx/VwjJptXKiGSZLGRkvNnWF/L5RTgjpYd+LUTncipQF1fcIpoQMc7Zd0CIUslZp+nJUSdB7CCr0yfK5XKr8nxRiM2P0Kq2j6DYKwQcXirENrLBAGwGIYN8cnLyBQngbEvgycFbdwoRiFyjcg8TwU4asl2IYtEHQgakdD0c/5t+n+/7FdFHP6byugSFCPUI8fQvhSiXGjFhGqYNQCEDoqenpxGlU5lxJJbfCpQmsUh5AZYsBW5htK9IAVFmjXUeMM5QLLZlxtSkPl4NALEYsP8lZsw6ZkjA/kIACPgyjX87c3/Fl74YwEP/WEg5h3/7O8APH0amqx+jlTDmLA1rug3E1YtQsz/nqn8CKhxqogaGSNQqlaaZxo8D3cfZ19lIUR+AS7T66MS/cGpjPzaemkR8zvAr3/U4slu2YM9IL35/JoBsUdiFJKgpuP+mITx522+Riq6COv4LMuhhoc7I7L8BfYys3dBQrcIz5qR+CSjkMNYTxIF7k37av7kJVx7Yitte68MzZxTMXq3CKugwKeVcFYf/Y2HD820Y79gLq38TUcGuUVA8CiQrsyfITKWxsup1wEvpN0nfvCxXOEgAo4lwbdQSYPsWPH25G8MT5FUnM5Zpj7PFZNswMDZl4KnTEZS7fwp0RJ3VFZ+PgeJ/+a406GkAYGxieG7cWZDtYljF9gdXOh9vX4/CikE8N0yzdKlUONIc8wTy/HkL45UkrNg6F4DiAVIZ4VzdGe9zAX/P64XaYg6Iv62L45WbGDArV+DtuSi4qTnf/GHu+10oC4zmVFiRQUdpMwvVWfmPfU0A5CBhOordVBLY8d0UDC2IYES1jXY3GMUfI56mjF0hNzXv0Hpb1Vz2fABkX3CJxyhn0LlUBPs/ayLZaaG7TXUA2IIF20sI9FPcHNXKsGOE1wVSW7CnZoTiB6Dy9/r2wYblrp9NHOx/H/lgHps+zQof5BRNdSbUFcu2tDigYuONCrq1EWhzb8D31AGEWJCUYIPJBgAen3BHbA0Rhl2+7AgXyIo89o+dwEOf0TGUCnFMwNnvbVGdd0DDjcuCeGydQFzsA/Jww0T1SMcGvkOtDMiOb8R5BIx2Ot/qTNgpVsUfRl7Ec+m/4I/36djxuQD6u0OItIcQpizrDeH7d4Rw9F7gVOEowhO/s+MMaHKB1NvBQ4viGhnwMpQMdeLz/V/A69lj7DDdUiobJbLw1m8wfP0sdq29Dw8PJTGSUVkFWd6jcqUC9l89hgfnfuwq9wKQRamLCENMbTXsfvZuRnIvOFcYw9DpR1ixJmi56RQcx0eOnzWa0dmL23tvRap9hc3U+6UJvDH5JjZbb+Pw0osOcMtDvwQQoXzy72RgPdfotDvlZqTILZFH5VT9LFi1DOwb/TOeOvsMC0PBrXgNyPX0qplWqxsqzb646hJSmu763kv9wPdI8ZOMn6QdhBZTPpPNjLacQIPM0x+tvAdfWX0PJ0ZqChU3MyQrhhMXqOrOm2X4iVgaqYDuKq4HndwTEncDvY/RTV385nidRwIpWZ6bxP90Xfc5LRoI4dkbtuHr138LjDJ2aQ6QmqOc7HD3gZRWwRPdaZdyteZzaXniTqDvAJXTcjWKevAZZJYn5Mty6Kt+AHK+goFwDEfWbMPOm0lde8JJNdVbiJRGbPwkkUZYqymVK0ojZU1b/gNS/yyBLGNfO7xJV63oMvVfUGpXsRHeCeKBgO94wDgSmDcq+D8D82cXjuH45ZOMC960DL2xX6wOF3Hhust+ymN3AUt3MfBupmKentSIT7lF1mZmZ0d5FLzLNkMejxmEBxe6mIgaXXNGGe+UruLlmbdwcuocsqU00pUcjg+8jrUdHayQzIgod8C2r1LpgBPpchu3fe7uFfWLCZU/kEgkjjS+EMQeKt8dj8cIQkPzI1PU4GTdqqJs6nwbLJIGs8tATBN28NoVThYZJdSi2PY7gzWfz8v33mQyuQfNI2oXx93RaCQVYklWWWYlI62sWE72yQXYUBQpaiOCvNbKR8ZYTeRNeW9vb++h+piWy9uVK1dSvCduYIB8jT9TfMfFx7ie24CZaXy9WiwWjwwODma9Yz4AT2tKunYHvhkAAAAASUVORK5CYII="
     }),
-    F2qa: (function(e, t, a) {
-        e.exports = a.p + "assets/fallen-pet.6711e7a4c7.avif"
+    F2qa: (function(e, t, n) {
+        e.exports = n.p + "assets/fallen-pet.6711e7a4c7.avif"
     }),
-    EvH0: (function(e, t, a) {
-        e.exports = a.p + "assets/orbit-ringing.02a31cd5e8.wav"
+    EvH0: (function(e, t, n) {
+        e.exports = n.p + "assets/orbit-ringing.02a31cd5e8.wav"
     }),
-    gne8: (function(e, t, a) {
-        var n = a("ABep"),
-            i = a("Bbed"),
-            l = a("eY5e"),
-            s = a("MhZT");
-        let g = {
-                fallback: (0, n.jsx)(l.a, {}),
-                propagateLoadError: !0
-            },
-            c = (0, i.a)(async () => (await s.a.prefetch(), s.a), g);
-        a.d(t, {}, {
-            a: c,
-            b: g
+    bDc1: (function(e, t, n) {
+        var i = n("YNuJ"),
+            o = n("FIwD");
+        n.d(t, {
+            a: () => o.d,
+            b: () => o.g,
+            c: () => i.a
         })
     }),
-    aBxd: (function(e, t, a) {
-        a.r(t);
-        var n = a("Bbed"),
-            i = a("MhZT"),
-            l = a("gne8");
-        let s = (0, n.a)(async () => (i.a.prefetch().catch(() => {}), (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(300588)]).then(a.bind(a, "H04d"))).BrowserSpacePage), l.b);
-        a.d(t, {}, {
-            LazyBrowserSpacePage: s,
-            prefetchBrowserPageForCreation: async function() {
-                await Promise.all([s.prefetch(), l.a.prefetch()])
+    TGHr: (function(e, t, n) {
+        var i = n("TE73"),
+            o = n("eZy0"),
+            a = n("LpLF"),
+            c = n("TiFH"),
+            l = n("GQ93"),
+            r = n("xUWq"),
+            s = n("gcGr"),
+            g = n("vZCo"),
+            d = n("kpww"),
+            p = n("sCki"),
+            M = n("gWf7"),
+            I = n("OH6Z"),
+            j = n("FIwD"),
+            C = n("TQDJ"),
+            u = n("OGxO"),
+            h = n("yoJG"),
+            f = n("krfl"),
+            m = n("SXlx");
+        n.d(t, {}, {
+            a: function(e, t, n) {
+                if (["row", "col", "box", "grid-item"].includes(e)) {
+                    let a = "grid-item" === e && 1 === n.childCount && Object.keys(t).every(e => ["key", "span", "rowSpan"].includes(e)),
+                        c = "grid-item" === e ? {
+                            className: u.a.Item,
+                            variant: a ? "transparent" : void 0,
+                            gap: a ? 0 : t.gap,
+                            style: (0, i.g)({
+                                "grid-item-column": (0, I.a)(t.span) ?? "auto",
+                                "grid-item-row": (0, I.a)(t.rowSpan) ?? "auto"
+                            })
+                        } : {};
+                    return {
+                        tag: "div",
+                        attributes: (0, o.b)({
+                            as: "div",
+                            component: e,
+                            layout: t,
+                            ..."row" === e || "col" === e ? {
+                                direction: e
+                            } : {},
+                            ...c
+                        }, {
+                            theme: n.theme,
+                            autoSpacingDisabled: !1
+                        })
+                    }
+                }
+                if ("card" === e) return {
+                    tag: "div",
+                    attributes: (0, o.b)((0, a.b)(t), {
+                        theme: n.theme,
+                        autoSpacingDisabled: !1
+                    })
+                };
+                if ("grid" === e) return {
+                    tag: "div",
+                    attributes: (0, l.c)(t, n.breakpoints)
+                };
+                if ("flow" === e) return {
+                    tag: "div",
+                    attributes: (0, r.d)(t)
+                };
+                if ("flow-item" === e) return {
+                    tag: "div",
+                    attributes: (0, o.b)((0, r.c)(t), {
+                        theme: n.theme,
+                        autoSpacingDisabled: !1
+                    })
+                };
+                if ("divider" === e) return {
+                    tag: "div",
+                    attributes: (0, c.b)(t, n.theme)
+                };
+                if ("blockquote" === e) return {
+                    tag: "blockquote",
+                    attributes: {
+                        className: C.a.Blockquote,
+                        "data-d-component": "blockquote"
+                    }
+                };
+                if (["text", "title", "caption", "label", "bold", "italic", "underline", "strikethrough"].includes(e)) {
+                    let i = "bold" === e ? {
+                            inline: !0,
+                            strong: !0,
+                            weight: t.weight
+                        } : "italic" === e ? {
+                            inline: !0,
+                            italic: !0
+                        } : "underline" === e ? {
+                            inline: !0,
+                            underline: !0
+                        } : "strikethrough" === e ? {
+                            inline: !0,
+                            lineThrough: !0
+                        } : t,
+                        o = "title" === e ? (0, g.b)(t) : "caption" === e ? (0, d.b)(t) : "label" === e ? (0, p.b)(t) : (0, s.b)(i, n.inline);
+                    return {
+                        tag: o.as,
+                        attributes: (0, M.b)(o, n.theme)
+                    }
+                }
+                if ("code" === e) return {
+                    tag: "code",
+                    attributes: {
+                        className: f.a.Code,
+                        "data-d-component": "code"
+                    }
+                };
+                if ("link" === e) return {
+                    tag: "a",
+                    attributes: {
+                        className: m.a.Link,
+                        "data-d-component": "link",
+                        title: t.title
+                    }
+                };
+                if ("list" === e) {
+                    let e = t.marker ?? "bullet",
+                        n = (0, j.h)(t.gap ?? 0),
+                        i = "number" === e && "number" == typeof t.start && Number.isFinite(t.start) ? t.start : void 0;
+                    return {
+                        tag: "number" === e ? "ol" : "ul",
+                        attributes: {
+                            className: h.a.List,
+                            "data-d-component": "list",
+                            "data-d-marker": e,
+                            "data-d-marker-layout": "native",
+                            start: i,
+                            style: {
+                                "--d-list-row-gap": n.includes("(") ? n : n.split(/\s+/)[0],
+                                gap: n,
+                                counterReset: null == i ? void 0 : `d-list-item ${i-1}`
+                            }
+                        }
+                    }
+                }
+                return "list-item" === e ? {
+                    tag: "li",
+                    attributes: {
+                        className: h.a.Item,
+                        "data-d-component": "list-item",
+                        "data-d-marker-layout": "native"
+                    },
+                    content: {
+                        tag: "div",
+                        attributes: {
+                            className: h.a.Content
+                        },
+                        content: {
+                            tag: "div",
+                            attributes: {
+                                className: h.a.Label,
+                                "data-d-list-item-content": ""
+                            }
+                        }
+                    }
+                } : null
             }
         })
     }),
-    N8b3: (function(e, t, a) {
-        a.d(t, {
-            a: () => x,
-            b: () => m,
-            c: () => v
-        });
-        var n = a("BolX"),
-            i = a("I07G"),
-            l = a("PFjh"),
-            s = a("E8Sp"),
-            g = a("Cslg"),
-            c = a("SGsN"),
-            o = a("svjy"),
-            r = a("mNPx"),
-            M = a("e1xH"),
-            d = a("BkKO"),
-            I = a("mpAT"),
-            p = a("yGJW"),
-            C = a("H2L8"),
-            u = a("OWtl"),
-            h = a("HFSu"),
-            j = a("eShZ"),
-            f = a("NRR1"),
-            N = a("jGsJ"),
-            A = a("OoIX"),
-            y = a("HNZf"),
-            L = a("D550"),
-            w = a("PzpM");
-        let D = (0, n.v)(u.a, e => void 0),
-            x = (0, n.d)(u.a, (e, t) => {
-                let {
-                    get: a
-                } = t, n = a(D, e);
-                return n?.accountId === a(I.spaceAccountId$) && n?.userId === a(g.k) ? n : void 0
-            }),
-            m = (0, n.c)(u.a, e => {
-                let {
-                    get: t
-                } = e;
-                return t(w.c).flatMap(e => {
-                    let a = t(x, e.localPageId);
-                    return a?.response != null && "error" !== a.status ? [] : [{
-                        id: e.localPageId,
-                        name: e.name,
-                        title: e.name,
-                        backingType: e.backingType,
-                        serverSpaceId: e.space?.spaceId,
-                        status: a?.status ?? "error"
-                    }]
-                })
-            });
-
-        function v(e, t) {
-            let n, u, {
-                    name: x,
-                    createSpace: m,
-                    invitations: v = [],
-                    appearance: z,
-                    resume: T
-                } = t,
-                S = e.get(I.spaceAccountId$),
-                Z = e.get(g.k),
-                b = e.get(g.j);
-            if (null == S) throw Error("space_account_unavailable");
-            if (null != T && (T.accountId !== S || T.userId !== Z || null == T.space)) throw Error("space_setup_unavailable");
-            let E = e.get(g.m).accountUserId,
-                O = T?.localPageId ?? `local-page-${crypto.randomUUID()}`;
-            (0, w.b)(e, T ?? {
-                accountId: S,
-                userId: Z,
-                localPageId: O,
-                name: x,
-                backingType: "drive",
-                rootInitialization: "server",
-                appearance: z,
-                invitations: v.map(e => ({
-                    ...e,
-                    status: "pending"
-                }))
-            });
-            let Y = (0, L.a)((0, l.c)(e), performance.now(), "space", {
-                    surface: "browser",
-                    emit: t => (0, N.a)(e, t)
-                }),
-                k = T?.space,
-                B = !1,
-                U = new AbortController,
-                P = () => e.get(w.c).find(e => e.localPageId === O),
-                F = t => {
-                    let a = {
-                        localPageId: O,
-                        accountId: S,
-                        userId: Z,
-                        name: x,
-                        status: t,
-                        response: n,
-                        metrics: Y,
-                        retry: G
-                    };
-                    e.set(D, O, a), null != n && e.set(D, n.id, a)
-                },
-                G = () => {
-                    if (null != u) return u;
-                    if (B || U.signal.aborted) return Promise.reject(new DOMException("Space creation cancelled", "AbortError"));
-                    let t = (0, I.watchSpaceAccount)(e, S, Z, E, b),
-                        l = AbortSignal.any([U.signal, t.signal]),
-                        N = async () => {
-                            l.throwIfAborted();
-                            try {
-                                let t;
-                                null == k ? (t = await m(l, O), Y.creationRequestSucceeded()) : t = await e.get(I.createSpaceMutation$).mutateAsync({
-                                    requestBody: {
-                                        name: x
-                                    },
-                                    existingSpace: k,
-                                    signal: l
-                                }), l.throwIfAborted(), n = t, k = {
-                                    spaceId: t.id,
-                                    rootPageId: t.root_page_id
-                                }, Y.savedIdentity()
-                            } catch (a) {
-                                l.throwIfAborted(), k = (0, I.pendingSpaceInitialization)(a) ?? k;
-                                let t = P();
-                                throw null != k ? (Y.savedIdentity(), null != t && (0, w.b)(e, {
-                                    ...t,
-                                    space: k
-                                })) : a instanceof j.FetchError && a.status >= 400 && a.status < 500 && ![408, 499].includes(a.status) || (B = !0), Y.fail((0, A.d)(a)), a
-                            }
-                            let t = P(),
-                                s = null != t && !0 !== t.rootInitialized && "server" !== t.rootInitialization;
-                            null != t && (0, w.b)(e, {
-                                ...t,
-                                space: k,
-                                rootInitialized: !s
-                            }), (0, I.cacheCreatedSpace)(e, S, n), e.query.setData(I.spaceQuery$, n.id, n), s || Y.rootInitialized(n.root_page_id), await e.when(e => {
-                                let {
-                                    get: t
-                                } = e;
-                                return l.aborted || t(I.spaceAccountId$) !== S || t(g.k) !== Z || void 0 !== E && t(f.a) !== E || t(f.d) !== b || !t(M.pagesEnabled$) || t(d.b)?.some(e => e.id === n?.id) === !0
-                            }), l.throwIfAborted(), F("creating");
-                            let c = P()?.appearance,
-                                o = (0, i.Cj)(c?.emoji),
-                                r = null == o ? null : {
-                                    kind: "icon",
-                                    value: o,
-                                    color: (0, C.b)(c?.theme) ?? "black"
-                                };
-                            if (s || null != r) {
-                                let {
-                                    completeSpaceRootSetup: t
-                                } = await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(753405), a.e(193172), a.e(886482)]).then(a.bind(a, "PluF"));
-                                l.throwIfAborted();
-                                let i = await t(e, n, r, s, l);
-                                l.throwIfAborted(), n = {
-                                    ...e.query.getData(I.spaceQuery$, n.id) ?? n,
-                                    symbol: i,
-                                    can_edit_appearance: null == i && n.can_edit_appearance
-                                }, e.query.setData(I.spaceQuery$, n.id, n), (0, I.cacheCreatedSpace)(e, S, n);
-                                let g = P();
-                                null != g && (0, w.b)(e, {
-                                    ...g,
-                                    rootInitialized: !0
-                                }), s && Y.rootInitialized(n.root_page_id)
-                            }
-                            if (null == r && null != c && !0 === n.can_edit_appearance) {
-                                let t = await h.CodexRequest.safePatch("/spaces/v2/{space_id}/appearance", {
-                                    parameters: {
-                                        path: {
-                                            space_id: n.id
-                                        }
-                                    },
-                                    requestBody: c,
-                                    signal: l
-                                });
-                                l.throwIfAborted(), n = {
-                                    ...e.query.getData(I.spaceQuery$, n.id) ?? n,
-                                    appearance: t
-                                }, e.query.setData(I.spaceQuery$, n.id, n), (0, I.cacheCreatedSpace)(e, S, n)
-                            }
-                            let p = P();
-                            null != p && (0, w.b)(e, {
-                                ...p,
-                                appearance: void 0
-                            });
-                            let u = P()?.invitations ?? [],
-                                N = u.filter(e => "shared" !== e.status);
-                            if (N.length > 0) {
-                                let t = await async function(e, t, a, n, l) {
-                                    if (n.throwIfAborted(), 0 === a.length) return [];
-                                    let s = {
-                                            type: "space",
-                                            id: t
-                                        },
-                                        c = a.map(e => {
-                                            let {
-                                                recipient: t,
-                                                label: a,
-                                                secondaryLabel: n,
-                                                roleId: i
-                                            } = e;
-                                            return {
-                                                action: "invite",
-                                                target: s,
-                                                recipient: t,
-                                                roleId: i,
-                                                invitee: {
-                                                    id: (0, y.d)(t),
-                                                    label: a,
-                                                    secondaryLabel: n
-                                                }
-                                            }
-                                        }),
-                                        o = new Map,
-                                        r = new Set,
-                                        M = e => {
-                                            if (n.aborted || r.has(e)) return;
-                                            r.add(e);
-                                            let t = c.indexOf(e);
-                                            l?.(t, o.get(e) ?? a[t].recipient)
-                                        },
-                                        d = [];
-                                    if (await e.queryClient.getMutationCache().build(e.queryClient, {
-                                            mutationKey: ["space", "save-library-sharing", e.get(g.k), e.get(I.spaceAccountId$)],
-                                            networkMode: "always",
-                                            mutationFn: async t => {
-                                                let {
-                                                    changes: a
-                                                } = t;
-                                                n.throwIfAborted(), await (0, y.h)(e, a, void 0, void 0, n, (e, t) => o.set(e, t.recipient), (e, t) => {
-                                                    d.push(t.then(() => M(e), () => void 0))
-                                                }, (e, t) => {
-                                                    o.set(e, t.recipient), M(e)
-                                                })
-                                            }
-                                        }).execute({
-                                            changes: c
-                                        }), await (0, i.mf)(Promise.all(d), n), n.throwIfAborted(), r.size < c.length) try {
-                                        let t = await (0, y.c)(e, s, n, !0);
-                                        n.throwIfAborted(), (0, y.b)(t) && c.forEach((e, n) => {
-                                            let i = o.get(e) ?? a[n].recipient;
-                                            t.shares.some(e => (0, y.g)(e, i) && e.role_id === a[n].roleId) && M(e)
-                                        })
-                                    } catch {
-                                        n.throwIfAborted()
-                                    }
-                                    return a.map((e, t) => {
-                                        let a = o.get(c[t]) ?? e.recipient;
-                                        return {
-                                            ...e,
-                                            recipient: a,
-                                            status: r.has(c[t]) ? "shared" : "failed"
-                                        }
-                                    })
-                                }(e, n.id, N, l, (t, a) => {
-                                    if (l.aborted) return;
-                                    let n = P();
-                                    if (null != n) {
-                                        let i = u.indexOf(N[t]);
-                                        (0, w.b)(e, {
-                                            ...n,
-                                            invitations: n.invitations.map((e, t) => t === i ? {
-                                                ...e,
-                                                recipient: a,
-                                                status: "shared"
-                                            } : e)
-                                        })
-                                    }
-                                });
-                                l.throwIfAborted();
-                                let a = P();
-                                if (null != a && (0, w.b)(e, {
-                                        ...a,
-                                        invitations: [...u.filter(e => "shared" === e.status), ...t]
-                                    }), t.some(e => "failed" === e.status)) throw Error("space_creation_invitations_incomplete")
-                            }(0, w.a)(e, O), F("created")
-                        };
-                    return F("creating"), u = Promise.resolve().then(() => null == navigator.locks ? N() : navigator.locks.request(`space-setup:${JSON.stringify([S,Z,O])}`, {
-                        signal: l
-                    }, N)).catch(t => {
-                        if (l.aborted) throw U.abort(), e.set(D, O, void 0), null != n && e.set(D, n.id, void 0), Y.cancel("account_changed"), t;
-                        throw B ? e.set(D, O, void 0) : F("error"), (0, A.d)(t) || (0, r.d)(e.get(p.c), "pages.space.create", t), Y.fail(), (() => {
-                            let {
-                                pathname: t,
-                                search: a
-                            } = e.get(s.b);
-                            e.get(I.spaceAccountId$) === S && e.get(g.k) === Z && ("/spaces/new" !== t || new URLSearchParams(a).get("creation") !== O) && e.get(c.f).warning(e.get(o.a).formatMessage({
-                                id: "codex.space.sidebar.spaceSetupNeedsAttention",
-                                defaultMessage: "Space setup needs attention"
-                            }))
-                        })(), t
-                    }).finally(() => {
-                        t.stop(), u = void 0
-                    })
-                };
-            return G().catch(() => {}), O
-        }
+    gne8: (function(e, t, n) {
+        var i = n("ABep"),
+            o = n("Bbed"),
+            a = n("eY5e"),
+            c = n("MhZT");
+        let l = {
+                fallback: (0, i.jsx)(a.a, {}),
+                propagateLoadError: !0
+            },
+            r = (0, o.a)(async () => (await c.a.prefetch(), c.a), l);
+        n.d(t, {}, {
+            a: r,
+            b: l
+        })
     }),
-    eY5e: (function(e, t, a) {
-        var n = a("ABep"),
-            i = a("QosV"),
-            l = a("BolX"),
-            s = a("jqIZ"),
-            g = a("GKgn"),
-            c = a("zOE4"),
-            o = a("j9wQ"),
-            r = a("r1wd"),
-            M = a("JyrC"),
-            d = a("SkNj"),
-            I = a("VUkV");
+    aBxd: (function(e, t, n) {
+        n.r(t);
+        var i = n("Bbed"),
+            o = n("MhZT"),
+            a = n("gne8");
+        let c = (0, i.a)(async () => (o.a.prefetch().catch(() => {}), (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(300588)]).then(n.bind(n, "H04d"))).BrowserSpacePage), a.b);
+        n.d(t, {}, {
+            LazyBrowserSpacePage: c,
+            prefetchBrowserPageForCreation: async function() {
+                await Promise.all([c.prefetch(), a.a.prefetch()])
+            }
+        })
+    }),
+    r1wd: (function(e, t, n) {
+        var i = n("ABep"),
+            o = n("QosV"),
+            a = n("on57"),
+            c = n("BolX"),
+            l = n("X3K1"),
+            r = n("SCmN"),
+            s = n("WP5H"),
+            g = n("Ih0z"),
+            d = n("mpAT"),
+            p = n("kTTh"),
+            M = n("fAHU"),
+            I = n("i9us"),
+            j = n("GhgU"),
+            C = n("Jif0"),
+            u = n("fQMn");
 
-        function p(e) {
-            let t, a, l, s, g = (0, i.c)(14),
+        function h(e) {
+            let t, n, I, j, h, m, y, N, A, L, w, x, D = (0, o.c)(39),
                 {
-                    preview: c,
-                    onClose: d
+                    appearance: v,
+                    pageId: z,
+                    space: T,
+                    spaceId: b,
+                    title: k,
+                    symbol: Z
+                } = e;
+            D[0] === Symbol.for("react.memo_cache_sentinel") ? (t = {
+                enabled: !1
+            }, D[0] = t) : t = D[0];
+            let {
+                data: S
+            } = (0, c.x)(d.spaceQuery$, b ?? "", t), E = T ?? S, O = z ?? E?.root_page_id ?? "", Y = (0, c.x)(d.loadedSpacePageMetadata$, O), B = (0, c.x)(r.b, O), U = E?.id ?? b;
+            D[1] !== U ? (n = {
+                spaceId: U
+            }, D[1] = U, D[2] = n) : n = D[2], D[3] === Symbol.for("react.memo_cache_sentinel") ? (I = {
+                enabled: !1
+            }, D[3] = I) : I = D[3];
+            let F = (0, c.x)(g.d, n, I),
+                G = v ?? F,
+                V = null != E || null != b || null != v,
+                Q = null == Y ? E?.symbol ?? Z ?? null : Y.symbol ?? null;
+            if (V && null == Q) {
+                let e;
+                D[4] !== G ? (e = (0, g.a)(G), D[4] = G, D[5] = e) : e = D[5], Q = e
+            }
+            let P = null == E ? Y?.title ?? k : k ?? E.name;
+            if (!V && null == Q && null != P) {
+                let e;
+                D[6] !== P ? (e = (0, p.b)(P), D[6] = P, D[7] = e) : e = D[7];
+                let t = e;
+                if (P = t.title, null != t.emoji) {
+                    let e;
+                    D[8] !== t.emoji ? (e = {
+                        kind: "emoji",
+                        value: t.emoji
+                    }, D[8] = t.emoji, D[9] = e) : e = D[9], Q = e
+                }
+            }
+            B && !V && null == Q && (Q = s.b);
+            let H = null == P,
+                W = E?.id ?? b,
+                R = Y?.document_type,
+                J = Y?.namespace,
+                X = G?.theme;
+            D[10] !== V || D[11] !== Q || D[12] !== R || D[13] !== J || D[14] !== X ? (j = (0, i.jsx)(u.a, {
+                disabled: !0,
+                legacyEmoji: null,
+                documentType: R,
+                namespace: J,
+                symbol: Q,
+                space: V,
+                spaceTheme: X,
+                onChange: f
+            }), D[10] = V, D[11] = Q, D[12] = R, D[13] = J, D[14] = X, D[15] = j) : j = D[15];
+            let K = H && "w-64 max-w-full";
+            D[16] !== K ? (h = (0, a.b)("relative min-w-0", K), D[16] = K, D[17] = h) : h = D[17];
+            let _ = H ? "invisible" : void 0,
+                q = H || void 0;
+            return D[18] !== P || D[19] !== H ? (m = H ? "" : (P ?? "").replace(/[\r\n]+/g, " "), D[18] = P, D[19] = H, D[20] = m) : m = D[20], D[21] !== m ? (y = (0, i.jsx)(C.a, {
+                disabled: !0,
+                readOnly: !0,
+                value: m
+            }), D[21] = m, D[22] = y) : y = D[22], D[23] !== _ || D[24] !== q || D[25] !== y ? (N = (0, i.jsx)("div", {
+                className: _,
+                "aria-hidden": q,
+                children: y
+            }), D[23] = _, D[24] = q, D[25] = y, D[26] = N) : N = D[26], D[27] !== H ? (A = H ? (0, i.jsx)("div", {
+                className: "absolute inset-0 flex items-center",
+                children: (0, i.jsx)(l.a, {
+                    className: "w-full",
+                    size: "lg",
+                    variant: "chatgpt-project"
+                })
+            }) : null, D[27] = H, D[28] = A) : A = D[28], D[29] !== h || D[30] !== N || D[31] !== A ? (L = (0, i.jsxs)("div", {
+                className: h,
+                children: [N, A]
+            }), D[29] = h, D[30] = N, D[31] = A, D[32] = L) : L = D[32], D[33] !== L || D[34] !== j ? (w = (0, i.jsxs)("div", {
+                className: "relative flex flex-col gap-2",
+                "data-page-title": !0,
+                children: [j, L]
+            }), D[33] = L, D[34] = j, D[35] = w) : w = D[35], D[36] !== w || D[37] !== W ? (x = (0, i.jsx)(M.a, {
+                rootSpaceId: W,
+                children: w
+            }), D[36] = w, D[37] = W, D[38] = x) : x = D[38], x
+        }
+
+        function f() {}
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, l, r, s, g, p, M, C, u = (0, o.c)(28),
+                    {
+                        pageId: f,
+                        spaceId: m,
+                        title: y,
+                        symbol: N,
+                        headerOverlay: A,
+                        showComposer: L
+                    } = e,
+                    w = void 0 !== L && L;
+                u[0] === Symbol.for("react.memo_cache_sentinel") ? (t = {
+                    enabled: !1
+                }, u[0] = t) : t = u[0];
+                let {
+                    data: x
+                } = (0, c.z)(d.spacesQuery$, t);
+                u[1] !== f || u[2] !== m || u[3] !== x?.items || u[4] !== x?.items.find ? (n = x?.items.find(e => null == f ? e.id === m : e.root_page_id === f), u[1] = f, u[2] = m, u[3] = x?.items, u[4] = x?.items.find, u[5] = n) : n = u[5];
+                let D = n,
+                    v = void 0 !== A && A && "viewer-header-scroll-mask pt-[var(--viewer-header-height)]";
+                u[6] !== v ? (l = (0, a.b)("min-h-0 flex-1 scrollbar-stable overflow-y-auto", v), u[6] = v, u[7] = l) : l = u[7], u[8] !== f || u[9] !== D || u[10] !== N || u[11] !== y ? (r = (0, i.jsx)(h, {
+                    pageId: f,
+                    space: D,
+                    title: y,
+                    symbol: N
+                }), u[8] = f, u[9] = D, u[10] = N, u[11] = y, u[12] = r) : r = u[12];
+                let z = f ?? D?.root_page_id ?? m ?? "";
+                return u[13] !== z ? (s = (0, i.jsx)(j.b, {
+                    pageId: z
+                }), u[13] = z, u[14] = s) : s = u[14], u[15] !== r || u[16] !== s ? (g = (0, i.jsx)(j.a, {
+                    heading: r,
+                    children: s
+                }), u[15] = r, u[16] = s, u[17] = g) : g = u[17], u[18] !== g || u[19] !== l ? (p = (0, i.jsx)("div", {
+                    className: l,
+                    children: g
+                }), u[18] = g, u[19] = l, u[20] = p) : p = u[20], u[21] !== f || u[22] !== w || u[23] !== D?.root_page_id ? (M = w && (0, i.jsx)(I.a, {
+                    pageId: f ?? D?.root_page_id
+                }), u[21] = f, u[22] = w, u[23] = D?.root_page_id, u[24] = M) : M = u[24], u[25] !== p || u[26] !== M ? (C = (0, i.jsxs)(i.Fragment, {
+                    children: [p, M]
+                }), u[25] = p, u[26] = M, u[27] = C) : C = u[27], C
+            },
+            b: h
+        })
+    }),
+    eY5e: (function(e, t, n) {
+        var i = n("ABep"),
+            o = n("QosV"),
+            a = n("BolX"),
+            c = n("rEML"),
+            l = n("GKgn"),
+            r = n("zOE4"),
+            s = n("j9wQ"),
+            g = n("r1wd"),
+            d = n("JyrC"),
+            p = n("SkNj"),
+            M = n("VUkV");
+
+        function I(e) {
+            let t, n, a, c, l = (0, o.c)(14),
+                {
+                    preview: r,
+                    onClose: p
                 } = e,
-                p = c.title ?? "",
-                u = c.textPageCard?.symbol;
-            g[0] !== c.pageId || g[1] !== p || g[2] !== u ? (t = (0, n.jsx)(o.c, {
+                I = r.title ?? "",
+                C = r.textPageCard?.symbol;
+            l[0] !== r.pageId || l[1] !== I || l[2] !== C ? (t = (0, i.jsx)(s.c, {
                 disabled: !0,
                 variant: "dropdown",
-                children: (0, n.jsx)(I.a, {
-                    pageId: c.pageId,
-                    title: p,
-                    symbol: u,
+                children: (0, i.jsx)(M.a, {
+                    pageId: r.pageId,
+                    title: I,
+                    symbol: C,
                     documentType: "page",
-                    children: C
+                    children: j
                 })
-            }), g[0] = c.pageId, g[1] = p, g[2] = u, g[3] = t) : t = g[3], g[4] !== d || g[5] !== t ? (a = (0, n.jsx)("div", {
+            }), l[0] = r.pageId, l[1] = I, l[2] = C, l[3] = t) : t = l[3], l[4] !== p || l[5] !== t ? (n = (0, i.jsx)("div", {
                 className: "pointer-events-none absolute inset-x-0 top-0 z-30",
-                children: (0, n.jsx)(M.c, {
+                children: (0, i.jsx)(d.c, {
                     contentFade: !0,
                     inset: !0,
-                    onClose: d,
+                    onClose: p,
                     actions: null,
                     sharing: null,
                     navigation: t
                 })
-            }), g[4] = d, g[5] = t, g[6] = a) : a = g[6];
-            let h = c.textPageCard?.symbol;
-            return g[7] !== c.pageId || g[8] !== c.title || g[9] !== h ? (l = (0, n.jsx)(r.a, {
-                pageId: c.pageId,
-                title: c.title,
-                symbol: h,
+            }), l[4] = p, l[5] = t, l[6] = n) : n = l[6];
+            let u = r.textPageCard?.symbol;
+            return l[7] !== r.pageId || l[8] !== r.title || l[9] !== u ? (a = (0, i.jsx)(g.a, {
+                pageId: r.pageId,
+                title: r.title,
+                symbol: u,
                 headerOverlay: !0
-            }), g[7] = c.pageId, g[8] = c.title, g[9] = h, g[10] = l) : l = g[10], g[11] !== a || g[12] !== l ? (s = (0, n.jsxs)("section", {
+            }), l[7] = r.pageId, l[8] = r.title, l[9] = u, l[10] = a) : a = l[10], l[11] !== n || l[12] !== a ? (c = (0, i.jsxs)("section", {
                 className: "relative flex h-full min-h-0 flex-col",
-                children: [a, l]
-            }), g[11] = a, g[12] = l, g[13] = s) : s = g[13], s
+                children: [n, a]
+            }), l[11] = n, l[12] = a, l[13] = c) : c = l[13], c
         }
 
-        function C(e) {
+        function j(e) {
             let {
                 icon: t,
-                title: a
+                title: n
             } = e;
-            return (0, n.jsx)(o.s, {
+            return (0, i.jsx)(s.s, {
                 icon: t,
-                children: (0, n.jsx)("span", {
+                children: (0, i.jsx)("span", {
                     className: "max-w-42 truncate",
-                    children: a
+                    children: n
                 })
             })
         }
-        a.d(t, {}, {
-            CardLoadingShell: p,
+        n.d(t, {}, {
+            CardLoadingShell: I,
             a: function(e) {
-                let t, a, o = (0, i.c)(7),
+                let t, n, s = (0, o.c)(7),
                     {
-                        fillParent: r
+                        fillParent: g
                     } = e,
-                    M = void 0 !== r && r,
-                    I = (0, s.Y)(),
-                    C = (0, s._)(),
+                    d = void 0 !== g && g,
+                    M = (0, c.Y)(),
+                    j = (0, c._)(),
                     {
-                        pageId: u
-                    } = (0, s.cb)(),
-                    h = I.state?.pagePreview;
-                o[0] !== u || o[1] !== h ? (t = {
-                    pageId: u,
-                    preview: h
-                }, o[0] = u, o[1] = h, o[2] = t) : t = o[2];
-                let j = (0, l.x)(d.d, t);
-                return o[3] !== M || o[4] !== C || o[5] !== j ? (a = null == j ? (0, n.jsx)(c.LoadingPage, {
-                    fillParent: M,
+                        pageId: C
+                    } = (0, c.cb)(),
+                    u = M.state?.pagePreview;
+                s[0] !== C || s[1] !== u ? (t = {
+                    pageId: C,
+                    preview: u
+                }, s[0] = C, s[1] = u, s[2] = t) : t = s[2];
+                let h = (0, a.x)(p.d, t);
+                return s[3] !== d || s[4] !== j || s[5] !== h ? (n = null == h ? (0, i.jsx)(r.LoadingPage, {
+                    fillParent: d,
                     delay: !1
-                }) : (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsx)(g.a, {
+                }) : (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(l.a, {
                         layout: "custom-titlebar",
                         fallback: !0
-                    }), (0, n.jsx)(p, {
-                        preview: j,
-                        onClose: () => void C(-1)
+                    }), (0, i.jsx)(I, {
+                        preview: h,
+                        onClose: () => void j(-1)
                     })]
-                }), o[3] = M, o[4] = C, o[5] = j, o[6] = a) : a = o[6], a
+                }), s[3] = d, s[4] = j, s[5] = h, s[6] = n) : n = s[6], n
             }
         })
     }),
-    JkZJ: (function(e, t, a) {
-        var n = a("hCnj"),
-            i = a("WF9u");
-        let l = ["⁣⁣", "⁣⁤"];
-        a.d(t, {}, {
-            a: function(e, t) {
-                let a = e.formatMessage({
-                    id: "space.gettingStartedPages.starterBody.guide",
-                    defaultMessage: `> [!CALLOUT] 💡
->
-> Pages are a place for you to write, build, and collaborate with ChatGPT and your teammates. Use this page as your playground to learn the basics — and have fun!
-
-## Getting started
-
-- [ ] **Play with this page.** Type \`/\` to add headings, images, checklists, tables, and more. Try it out in the empty space below 👇
-
-- [ ] **Work with ChatGPT.** Type \`@ChatGPT\`, followed by your request, and ChatGPT will jump in to help with whatever you need.
-
-- [ ] **Get organized.** Instead of folders, organize information by nesting pages *inside of* pages. Type \`/page\` to create a page inside this one.
-
-- [ ] When your masterpiece is ready, **share** it with your teammates (using the share button in the upper-right), **collaborate**, and fiercely debate in the **comments**.
-
-## Imagine anything, and make it real
-
-Create **interactive visualizations** by typing \`/visualize\` and describing your idea, whether it’s *“Show me how my savings could grow with an interactive calculator”*, *“Simulate the solar system”*, or even *“Create a playable mini-piano.”*
-
-{savings}
-
-{solar}
-
-{piano}
-
----
-
-- [ ] Try it out yourself: In the empty space below, type \`/visualize\` and describe your idea 👇
-
----
-
-## Put ChatGPT to work
-
-You can add instructions to pages, and ChatGPT will do the work for you, like creating a self-updating to-do list or comprehensive trip planner. Here are a couple examples of pages ChatGPT can create for you.
-
-\`\`\`codex-prompt
-Create a daily list of prioritized tasks from my email, messages, and calendar, and update it every morning
-\`\`\`
-
-\`\`\`codex-prompt
-Create a new trip planner page with flight details, hotel reservations, and tour info, pulled from my emails
-\`\`\``
-                }, {
-                    savings: t?.savings == null ? "" : (0, i.b)(t.savings, e.formatMessage({
-                        id: "space.welcome.demo.savingsAlt",
-                        defaultMessage: "Savings growth calculator"
-                    })),
-                    solar: t?.solar == null ? "" : (0, i.b)(t.solar, e.formatMessage({
-                        id: "space.welcome.demo.solarAlt",
-                        defaultMessage: "Solar system explorer"
-                    })),
-                    piano: t?.piano == null ? "" : (0, i.b)(t.piano, e.formatMessage({
-                        id: "space.welcome.demo.pianoAlt",
-                        defaultMessage: "Mini Piano"
-                    }))
-                });
-                return (0, n.cc)(a).flatMap(e => e.startsWith("- [ ] ") ? [e, ""] : [e])
-            },
-            b: function(e) {
-                return e.formatMessage({
-                    id: "space.gettingStartedPages.pageTitle",
-                    defaultMessage: "Your guide to pages"
-                })
-            },
-            c: ["Welcome to Space", "🚀 Getting started with pages", "Getting started with pages"],
-            d: function(e) {
-                let t = l.find(t => e.endsWith(t));
-                return null == t ? e : e.slice(0, -t.length)
-            },
-            e: "Your guide to pages"
-        })
-    }),
-    sR1U: (function(e, t, a) {
-        var n = a("i5ac"),
-            i = a.n(n),
-            l = a("BolX"),
-            s = a("Cslg"),
-            g = a("OWtl"),
-            c = a("PVyj"),
-            o = a("v4UZ"),
-            r = a("N8b3"),
-            M = a("rpnz"),
-            d = a("e1xH"),
-            I = a("jAir"),
-            p = a("ELpK"),
-            C = a("vpOl"),
-            u = a("mpAT");
-        let h = (0, l.c)(g.a, e => {
-                let {
-                    get: t
-                } = e, a = t(u.spacePageTree$), n = t(u.spacesQuery$).data;
-                if (null == a || null == n) {
-                    let e = t(u.visibleSpacePages$)?.items.filter(e => (0, M.b)(e.page_id) && null == e.parent && "space" !== e.drive_scope && e.access.can_read && null == e.deleted_at);
-                    if (!e?.length) return;
-                    a = (0, C.a)(e, [])
+    SVco: (function(e, t, n) {
+        n.d(t, {}, {
+            a: ["black", "red", "orange", "yellow", "green", "blue", "purple", "pink"],
+            b: function(e, t) {
+                switch (t) {
+                    case "black":
+                        return e.formatMessage({
+                            id: "codex.projectAppearance.color.option.black",
+                            defaultMessage: "Default"
+                        });
+                    case "blue":
+                        return e.formatMessage({
+                            id: "codex.projectAppearance.color.option.blue",
+                            defaultMessage: "Blue"
+                        });
+                    case "green":
+                        return e.formatMessage({
+                            id: "codex.projectAppearance.color.option.green",
+                            defaultMessage: "Green"
+                        });
+                    case "orange":
+                        return e.formatMessage({
+                            id: "codex.projectAppearance.color.option.orange",
+                            defaultMessage: "Orange"
+                        });
+                    case "pink":
+                        return e.formatMessage({
+                            id: "codex.projectAppearance.color.option.pink",
+                            defaultMessage: "Pink"
+                        });
+                    case "purple":
+                        return e.formatMessage({
+                            id: "codex.projectAppearance.color.option.purple",
+                            defaultMessage: "Purple"
+                        });
+                    case "red":
+                        return e.formatMessage({
+                            id: "codex.projectAppearance.color.option.red",
+                            defaultMessage: "Red"
+                        });
+                    case "yellow":
+                        return e.formatMessage({
+                            id: "codex.projectAppearance.color.option.yellow",
+                            defaultMessage: "Yellow"
+                        })
                 }
-                let i = new Map(n?.items.map(e => [e.id, e])),
-                    l = new Set(t(r.b).map(e => e.id)),
-                    s = new Set(a.allLoosePages.map(e => e.page_id));
-                return [...a.pagesById.values()].filter(e => !l.has(e.page_id)).map(e => ({
-                    page: e,
-                    personal: s.has(e.page_id),
-                    parentSpace: [...a.spaceIdsByPageId.get(e.page_id) ?? []].map(e => i.get(e)).find(e => null != e)
-                })).sort((e, t) => Date.parse(t.page.updated_at) - Date.parse(e.page.updated_at))
-            }),
-            j = (0, l.c)(g.a, e => {
-                let {
-                    get: t
-                } = e, a = new Set(t(u.spacesQuery$).data?.items.map(e => e.root_page_id));
-                return t(h)?.filter(e => {
-                    let {
-                        page: t
-                    } = e;
-                    return !a.has(t.page_id)
-                })
-            }),
-            f = (0, l.d)(g.a, (e, t) => {
-                let {
-                    get: a
-                } = t, n = a(h);
-                if (!a(o.a).incremental_discovery) return n;
-                let l = a(p.a, e).data,
-                    g = a(u.spacesQuery$).data;
-                if (null == g || null == n && null == l) return;
-                let r = a(d.H),
-                    M = i()([...(0, I.m)(l ?? [], n?.map(e => {
-                        let {
-                            page: t
-                        } = e;
-                        return t
-                    }) ?? []), ...n?.map(e => {
-                        let {
-                            page: t
-                        } = e;
-                        return t
-                    }) ?? []], "page_id").map(e => {
-                        let t = a(u.loadedSpacePageMetadata$, e.page_id);
-                        return null != t && (!t.access.can_read || null != t.deleted_at || (0, I.j)(t, e)) ? t : e
-                    }),
-                    j = (0, C.a)((0, c.e)({
-                        items: M
-                    }, a(c.d, {
-                        accountId: a(u.spaceAccountId$),
-                        userId: a(s.k)
-                    })).items.filter(e => e.access.can_read && null == e.deleted_at && (r || null == e.site_project_id)), g.items),
-                    f = new Set(j.allLoosePages.map(e => e.page_id));
-                return [...j.pagesById.values()].map(e => ({
-                    page: e,
-                    personal: f.has(e.page_id),
-                    parentSpace: g.items.find(t => j.spaceIdsByPageId.get(e.page_id)?.has(t.id))
-                })).sort((e, t) => Date.parse(t.page.updated_at) - Date.parse(e.page.updated_at))
-            });
-        a.d(t, {}, {
-            a: f,
-            b: j,
-            c: h
+            }
         })
     }),
-    SCmN: (function(e, t, a) {
-        var n = a("QBk8"),
-            i = a("BolX"),
-            l = a("Cslg"),
-            s = a("lBzi"),
-            g = a("g2p6"),
-            c = a("e1xH"),
-            o = a("yGJW"),
-            r = a("OWtl"),
-            M = a("WFY2"),
-            d = a("kpIY"),
-            I = a("Nwp9"),
-            p = a("OHD8"),
-            C = a("mpAT"),
-            u = a("Kw4a"),
-            h = a("v5SL"),
-            j = a("JkZJ"),
-            f = a("sR1U"),
-            N = a("nndI");
-        let A = "oai/apps/hasOpenedSpaceWelcome",
-            y = "space-welcome-dismissal-v1",
-            L = (0, I.b)(y, {}),
-            w = (0, i.v)(r.a, e => !1),
-            D = (0, i.u)(r.a, () => null),
-            x = (0, i.v)(r.a, e => ({
-                visible: !1,
-                pageId: null
-            })),
-            m = (0, i.c)(r.a, e => {
-                let {
-                    get: t
-                } = e, a = t(C.spaceAccountId$), n = t(l.k);
-                return null != a && null != n && a === t(g.n) ? {
-                    accountId: a,
-                    userId: n,
-                    key: JSON.stringify([a, n])
-                } : null
-            }),
-            v = (0, i.d)(r.a, (e, t) => {
-                let {
-                    get: a
-                } = t, n = a(m);
-                return null != n && a(N.g)[n.key] === e
-            }),
-            z = (0, i.v)(r.a, e => !1),
-            T = (0, i.v)(r.a, e => "unknown"),
-            S = (0, i.d)(r.a, (e, t) => {
-                let {
-                    get: a
-                } = t, n = a(D);
-                return a(u.g) && n?.awaitingPaint === !0 && !a(h.h, n.identityKey) && n.pageId === e && n.identityKey === a(m)?.key
-            }),
-            Z = (0, i.c)(r.a, e => {
-                let {
-                    get: t
-                } = e, a = t(m);
-                if (null == a) return;
-                let n = t(L)[a.key];
-                if (null != n) return !1 !== n;
-                let i = t(g.p);
-                if (i.isSuccess && !i.isPlaceholderData) return Object.hasOwn(i.data.seenAnnouncements ?? {}, A)
-            }),
-            b = (0, i.d)(r.a, (e, t) => {
-                let {
-                    get: a
-                } = t;
-                if (!a(c.pagesEnabled$)) return null;
-                let n = a(m);
-                if (null == n) return null;
-                let i = a(x, n.key);
-                if (i.visible) return {
-                    pageId: i.pageId
-                };
-                if (!1 !== a(Z)) return null;
-                let l = a(C.spacePagesQuery$),
-                    s = a(C.spacesQuery$);
-                if (!a(C.spacePagesComplete$) || !l.isSuccess || !l.isFetched || l.isFetching || l.isPlaceholderData || !s.isSuccess || !s.isFetched || s.isFetching) return null;
-                let g = a(f.b)?.filter(e => {
-                    let {
-                        personal: t
-                    } = e;
-                    return t
-                });
-                if (null == g) return null;
-                if (0 === g.length) return {
-                    pageId: null
-                };
-                let o = g[0].page;
-                return 1 === g.length && (o.title === e || o.title === j.e || j.c.some(e => o.title === e)) ? {
-                    pageId: null
-                } : null
-            });
-        async function E(e) {
-            if (!e.get(c.pagesEnabled$)) return;
-            let t = e.get(m);
-            if (null == t || e.get(h.h, t.key) || "pending" !== e.get(L)[t.key] || e.get(w, t.key)) return;
-            let a = (0, C.watchSpaceAccount)(e, t.accountId, t.userId);
-            e.set(w, t.key, !0);
-            try {
-                if (await (0, s.a)(e, A, !1, a.signal), a.signal.throwIfAborted(), "pending" !== e.get(L)[t.key]) return;
-                (0, d.t)(y, {
-                    entries: {
-                        [t.key]: {
-                            value: "saved"
-                        }
-                    }
-                }), await e.query.snapshot(g.p).invalidate()
-            } catch {
-                a.signal.aborted || M.a.warning("Failed to save Space welcome dismissal")
-            } finally {
-                a.stop(), e.set(w, t.key, !1)
+    qlvd: (function(e, t, n) {
+        n.d(t, {
+            a: () => r
+        });
+        var i = n("Zqzr"),
+            o = n("Qgfj");
+        let a = (0, o.f)({
+            "bar-chart": {
+                id: "codex.projectAppearance.icon.option.bar_chart",
+                defaultMessage: "Bar Chart"
+            },
+            book: {
+                id: "codex.projectAppearance.icon.option.book",
+                defaultMessage: "Book"
+            },
+            brain: {
+                id: "codex.projectAppearance.icon.option.brain",
+                defaultMessage: "Brain"
+            },
+            "currency-dollar": {
+                id: "codex.projectAppearance.icon.option.currency_dollar",
+                defaultMessage: "Currency Dollar"
+            },
+            customize: {
+                id: "codex.projectAppearance.icon.option.customize",
+                defaultMessage: "Customize"
+            },
+            "desk-globe": {
+                id: "codex.projectAppearance.icon.option.desk_globe",
+                defaultMessage: "Globe Spin"
+            },
+            dumbbell: {
+                id: "codex.projectAppearance.icon.option.dumbbell",
+                defaultMessage: "Dumbbell"
+            },
+            edit: {
+                id: "codex.projectAppearance.icon.option.edit",
+                defaultMessage: "Pencil"
+            },
+            flask: {
+                id: "codex.projectAppearance.icon.option.flask",
+                defaultMessage: "Flask"
+            },
+            folder: {
+                id: "codex.projectAppearance.icon.option.folder",
+                defaultMessage: "Folder"
+            },
+            function: {
+                id: "codex.projectAppearance.icon.option.function",
+                defaultMessage: "Code Brackets"
+            },
+            globe: {
+                id: "codex.projectAppearance.icon.option.globe",
+                defaultMessage: "Globe"
+            },
+            "graduation-cap": {
+                id: "codex.projectAppearance.icon.option.graduation_cap",
+                defaultMessage: "Graduation Cap"
+            },
+            health: {
+                id: "codex.projectAppearance.icon.option.health",
+                defaultMessage: "Health"
+            },
+            heart: {
+                id: "codex.projectAppearance.icon.option.heart",
+                defaultMessage: "Heart"
+            },
+            kettlebell: {
+                id: "codex.projectAppearance.icon.option.kettlebell",
+                defaultMessage: "Kettlebell"
+            },
+            logs: {
+                id: "codex.projectAppearance.icon.option.logs",
+                defaultMessage: "Logs"
+            },
+            lotus: {
+                id: "codex.projectAppearance.icon.option.lotus",
+                defaultMessage: "Lotus"
+            },
+            music: {
+                id: "codex.projectAppearance.icon.option.music",
+                defaultMessage: "Music"
+            },
+            palette: {
+                id: "codex.projectAppearance.icon.option.palette",
+                defaultMessage: "Palette"
+            },
+            paw: {
+                id: "codex.projectAppearance.icon.option.paw",
+                defaultMessage: "Paw"
+            },
+            plane: {
+                id: "codex.projectAppearance.icon.option.plane",
+                defaultMessage: "Plane"
+            },
+            plant: {
+                id: "codex.projectAppearance.icon.option.plant",
+                defaultMessage: "Plant"
+            },
+            popcorn: {
+                id: "codex.projectAppearance.icon.option.popcorn",
+                defaultMessage: "Popcorn"
+            },
+            scale: {
+                id: "codex.projectAppearance.icon.option.scale",
+                defaultMessage: "Balancing Scale"
+            },
+            stethoscope: {
+                id: "codex.projectAppearance.icon.option.stethoscope",
+                defaultMessage: "Stethoscope"
+            },
+            suitcase: {
+                id: "codex.projectAppearance.icon.option.suitcase",
+                defaultMessage: "Suitcase"
+            },
+            terminal: {
+                id: "codex.projectAppearance.icon.option.terminal",
+                defaultMessage: "Terminal"
+            },
+            wrench: {
+                id: "codex.projectAppearance.icon.option.wrench",
+                defaultMessage: "Wrench"
+            },
+            writing: {
+                id: "codex.projectAppearance.icon.option.writing",
+                defaultMessage: "Writing"
             }
+        });
+        (0, o.e)({
+            id: "symbolPicker.icons.category.work",
+            defaultMessage: "Work"
+        }), (0, o.e)({
+            id: "symbolPicker.icons.category.learning",
+            defaultMessage: "Learning"
+        }), (0, o.e)({
+            id: "symbolPicker.icons.category.creative",
+            defaultMessage: "Creative"
+        }), (0, o.e)({
+            id: "symbolPicker.icons.category.wellbeing",
+            defaultMessage: "Health and wellbeing"
+        }), (0, o.e)({
+            id: "symbolPicker.icons.category.travel",
+            defaultMessage: "Travel and places"
+        }), (0, o.e)({
+            id: "symbolPicker.icons.category.nature",
+            defaultMessage: "Nature"
+        });
+        let c = {
+                folder: {
+                    categoryId: "work",
+                    keywords: ["files", "documents", "organize", "project", "workspace"]
+                },
+                "currency-dollar": {
+                    categoryId: "work",
+                    keywords: ["money", "finance", "budget", "bank", "payment", "business"]
+                },
+                book: {
+                    categoryId: "learning",
+                    keywords: ["reading", "study", "education", "library", "literature"]
+                },
+                "graduation-cap": {
+                    categoryId: "learning",
+                    keywords: ["school", "university", "college", "education", "degree", "study"]
+                },
+                edit: {
+                    categoryId: "creative",
+                    keywords: ["pencil", "writing", "drawing", "draft", "notes"]
+                },
+                writing: {
+                    categoryId: "creative",
+                    keywords: ["pen", "author", "journal", "essay", "story", "draft"]
+                },
+                function: {
+                    categoryId: "work",
+                    keywords: ["developer", "code", "programming", "software", "math", "formula"]
+                },
+                terminal: {
+                    categoryId: "work",
+                    keywords: ["developer", "code", "command", "console", "shell", "computer"]
+                },
+                music: {
+                    categoryId: "creative",
+                    keywords: ["audio", "sound", "song", "playlist", "instrument"]
+                },
+                popcorn: {
+                    categoryId: "creative",
+                    keywords: ["movie", "film", "cinema", "entertainment", "snack"]
+                },
+                customize: {
+                    categoryId: "creative",
+                    keywords: ["design", "drawing", "art", "tools", "pens", "personalize"]
+                },
+                palette: {
+                    categoryId: "creative",
+                    keywords: ["paint", "color", "art", "design", "drawing"]
+                },
+                stethoscope: {
+                    categoryId: "wellbeing",
+                    keywords: ["doctor", "medical", "medicine", "hospital", "care", "health"]
+                },
+                health: {
+                    categoryId: "wellbeing",
+                    keywords: ["medical", "medicine", "emergency", "ambulance", "care"]
+                },
+                lotus: {
+                    categoryId: "wellbeing",
+                    keywords: ["meditation", "mindfulness", "yoga", "calm", "relax", "wellness"]
+                },
+                suitcase: {
+                    categoryId: "travel",
+                    keywords: ["vacation", "trip", "luggage", "packing", "holiday", "business"]
+                },
+                "bar-chart": {
+                    categoryId: "work",
+                    keywords: ["analytics", "data", "statistics", "report", "growth", "business"]
+                },
+                kettlebell: {
+                    categoryId: "wellbeing",
+                    keywords: ["fitness", "exercise", "gym", "workout", "strength", "weight"]
+                },
+                dumbbell: {
+                    categoryId: "wellbeing",
+                    keywords: ["fitness", "exercise", "gym", "workout", "strength", "weight"]
+                },
+                logs: {
+                    categoryId: "work",
+                    keywords: ["notebook", "journal", "records", "notes", "list", "tracking"]
+                },
+                scale: {
+                    categoryId: "work",
+                    keywords: ["law", "legal", "justice", "balance", "decision", "weight"]
+                },
+                "desk-globe": {
+                    categoryId: "travel",
+                    keywords: ["world", "earth", "geography", "map", "countries", "explore"]
+                },
+                plane: {
+                    categoryId: "travel",
+                    keywords: ["vacation", "flight", "airport", "trip", "holiday", "airplane"]
+                },
+                globe: {
+                    categoryId: "travel",
+                    keywords: ["world", "earth", "internet", "website", "global", "language"]
+                },
+                wrench: {
+                    categoryId: "work",
+                    keywords: ["tools", "repair", "build", "maintenance", "settings", "engineering"]
+                },
+                paw: {
+                    categoryId: "nature",
+                    keywords: ["pet", "animal", "dog", "cat", "wildlife"]
+                },
+                flask: {
+                    categoryId: "learning",
+                    keywords: ["science", "chemistry", "experiment", "laboratory", "research"]
+                },
+                brain: {
+                    categoryId: "learning",
+                    keywords: ["thinking", "idea", "knowledge", "intelligence", "psychology", "mind"]
+                },
+                heart: {
+                    categoryId: "wellbeing",
+                    keywords: ["love", "care", "favorite", "relationship", "emotion"]
+                },
+                plant: {
+                    categoryId: "nature",
+                    keywords: ["garden", "growth", "leaves", "environment", "ecology", "green"]
+                }
+            },
+            l = i.hd.map(function(e) {
+                return {
+                    id: e,
+                    label: a[e],
+                    ...c[e]
+                }
+            });
+
+        function r(e, t) {
+            let n = s(e, t.locale);
+            if (0 === n.length) return l;
+            let i = n.split(" ");
+            return l.flatMap(e => {
+                let o = s(t.formatMessage(e.label), t.locale),
+                    a = s(e.id, t.locale);
+                return i.every(t => o.includes(t) || a.includes(t) || e.keywords.some(e => e.includes(t))) ? [{
+                    icon: e,
+                    score: +(o !== n && a !== n)
+                }] : []
+            }).sort((e, t) => e.score - t.score).map(e => {
+                let {
+                    icon: t
+                } = e;
+                return t
+            })
         }
-        a.d(t, {}, {
-            a: function(e, t) {
-                e.set(T, t, "unknown"), e.set(N.g, e => {
-                    let {
-                        [t]: a, ...n
-                    } = e;
-                    return n
-                }), e.set(N.c, e => {
-                    let {
-                        [t]: a, ...n
-                    } = e;
-                    return n
-                }), e.get(D)?.identityKey === t && e.set(D, null), e.set(x, t, {
-                    visible: !1,
-                    pageId: null
-                })
-            },
-            b: v,
-            c: function(e, t) {
-                let a = e.get(D);
-                if (a?.pageId !== t) return;
-                let i = e.get(m);
-                null == i || a.identityKey !== i.key || e.get(h.h, i.key) || (e.get(u.g) && (0, o.a)(e, n.CodexSpacesOnboarding, {
-                    action: n.CodexSpacesOnboardingAction.CODEX_SPACES_ONBOARDING_ACTION_WELCOME_PAGE_OPENED,
-                    item: n.CodexSpacesOnboardingItem.CODEX_SPACES_ONBOARDING_ITEM_WELCOME,
-                    pageId: t
-                }), e.get(x, i.key).visible && e.set(x, i.key, {
-                    visible: !1,
-                    pageId: t
-                }), (0, d.t)(y, {
-                    entries: {
-                        [i.key]: {
-                            value: "pending"
-                        }
-                    }
-                }), e.set(D, null), E(e))
-            },
-            d: D,
-            e: E,
-            f: T,
-            g: m,
-            h: Z,
-            i: z,
-            j: S,
-            k: function(e) {
-                return e instanceof Error && (0, p.a)(e) ? "retryable" : "failed"
-            },
-            l: x,
-            m: b
-        })
+
+        function s(e, t) {
+            return e.trim().toLocaleLowerCase(t).replace(/[\s_-]+/g, " ")
+        }
     }),
     EBQV: (function(t) {
         t.exports = e.ir("/cdn/assets/dotnet.js").then(function(e) {
@@ -965,9 +1011,9 @@ Create a new trip planner page with flight details, hotel reservations, and tour
             }
         }
     }),
-    h24K: (function(e, t, a) {
-        var n = a("gPp5");
-        class i {
+    h24K: (function(e, t, n) {
+        var i = n("gPp5");
+        class o {
             constructor() {
                 this.componentControls = new Set
             }
@@ -975,8 +1021,8 @@ Create a new trip planner page with flight details, hotel reservations, and tour
                 return this.componentControls.add(e), () => this.componentControls.delete(e)
             }
             start(e, t) {
-                this.componentControls.forEach(a => {
-                    a.start(e.nativeEvent || e, t)
+                this.componentControls.forEach(n => {
+                    n.start(e.nativeEvent || e, t)
                 })
             }
             cancel() {
@@ -990,71 +1036,97 @@ Create a new trip planner page with flight details, hotel reservations, and tour
                 })
             }
         }
-        let l = () => new i;
-        a.d(t, {}, {
+        let a = () => new o;
+        n.d(t, {}, {
             a: function() {
-                return (0, n.a)(l)
+                return (0, i.a)(a)
             }
         })
     })
 };
 import {
     __webpack_require__ as e
-} from "./633146.6428a93122.js";
-import * as t from "./418851.3351eb0d2c.js";
+} from "./633146.7affad7b5d.js";
+import * as t from "./418851.a18db97c0f.js";
 e.C(t);
-import * as a from "./109308.a4430446b5.js";
-e.C(a);
-import * as n from "./399565.6af208675d.js";
+import * as n from "./109308.c9b7701e19.js";
 e.C(n);
-import * as i from "./257798.13b56b362a.js";
+import * as i from "./399565.e3bd47902e.js";
 e.C(i);
-import * as l from "./447351.16e0481926.js";
-e.C(l);
-import * as s from "./617936.4707466a2e.js";
-e.C(s);
-import * as g from "./807489.36023b676b.js";
-e.C(g);
-import * as c from "./337882.da1b5beae8.js";
-e.C(c);
-import * as o from "./955979.48bc7ee80c.js";
+import * as o from "./257798.7e03f1e3e2.js";
 e.C(o);
-import * as r from "./646436.67f97058a6.js";
+import * as a from "./447351.96852eb6b8.js";
+e.C(a);
+import * as c from "./617936.b641c39dad.js";
+e.C(c);
+import * as l from "./807489.287ea00c8d.js";
+e.C(l);
+import * as r from "./337882.945f5227c2.js";
 e.C(r);
-import * as M from "./7078.c420b9a2f6.js";
-e.C(M);
-import * as d from "./200429.11007a9422.js";
+import * as s from "./955979.2d3fb29684.js";
+e.C(s);
+import * as g from "./646436.6a9ea7ce2b.js";
+e.C(g);
+import * as d from "./7078.b92f527b06.js";
 e.C(d);
-import * as I from "./698524.8f181d24a1.js";
-e.C(I);
-import * as p from "./956483.6cfec0717e.js";
+import * as p from "./200429.6598292931.js";
 e.C(p);
-import * as C from "./87162.d101a9fdd5.js";
-e.C(C);
-import * as u from "./396705.00162c6ea9.js";
-e.C(u);
-import * as h from "./155568.36875ef56f.js";
-e.C(h);
-import * as j from "./731863.bbf914bfbc.js";
+import * as M from "./698524.5402dc2ea3.js";
+e.C(M);
+import * as I from "./956483.595b7db9a7.js";
+e.C(I);
+import * as j from "./87162.d955fb8b13.js";
 e.C(j);
-import * as f from "./767086.5122101cd2.js";
+import * as C from "./396705.47c12a5601.js";
+e.C(C);
+import * as u from "./155568.f88fad6c40.js";
+e.C(u);
+import * as h from "./731863.4d5b0f8b9b.js";
+e.C(h);
+import * as f from "./767086.7d33efc736.js";
 e.C(f);
-import * as N from "./76629.ac20799396.js";
-e.C(N);
-import * as A from "./514085.004fb5c464.js";
-e.C(A);
-import * as y from "./226913.27c93050ff.js";
+import * as m from "./76629.9835d52bf1.js";
+e.C(m);
+import * as y from "./514085.4ce61adad7.js";
 e.C(y);
-import * as L from "./355084.1ca42ce635.js";
+import * as N from "./226913.dd4de34d8f.js";
+e.C(N);
+import * as A from "./753405.4bffba797b.js";
+e.C(A);
+import * as L from "./321957.745ede45f0.js";
 e.C(L);
-import * as w from "./352477.e923963208.js";
+import * as w from "./585419.38ade943bd.js";
 e.C(w);
-import * as D from "./487589.e4e1fcf3d3.js";
+import * as x from "./843292.e99f82cf4b.js";
+e.C(x);
+import * as D from "./353230.c6d909aef3.js";
 e.C(D);
-var x = e(e.s = "zd4v"),
-    m = x.a,
-    v = x.b;
+import * as v from "./882456.f215d0cfe3.js";
+e.C(v);
+import * as z from "./736970.7cf041e2eb.js";
+e.C(z);
+import * as T from "./355084.e36de90c0c.js";
+e.C(T);
+import * as b from "./909395.7dc04db4e2.js";
+e.C(b);
+import * as k from "./212487.9cfe25039b.js";
+e.C(k);
+import * as Z from "./17983.ceb390e8db.js";
+e.C(Z);
+import * as S from "./832107.d9d34f0ecd.js";
+e.C(S);
+import * as E from "./773363.3540ba806d.js";
+e.C(E);
+import * as O from "./311330.04ae7c1932.js";
+e.C(O);
+import * as Y from "./904869.9df66a4c7c.js";
+e.C(Y);
+import * as B from "./487589.4a1de4229b.js";
+e.C(B);
+var U = e(e.s = "zd4v"),
+    F = U.a,
+    G = U.b;
 export {
-    m as
-    default, v as meta
+    F as
+    default, G as meta
 };
