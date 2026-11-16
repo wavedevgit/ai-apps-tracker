@@ -3,26 +3,26 @@ export const __webpack_modules__ = {
     rni0: (function(t, e, o) {
         o.d(e, {
             a: () => i,
-            b: () => c
+            b: () => m
         });
         var r = o("rEML"),
-            a = o("ABep"),
-            s = o("QosV"),
+            s = o("ABep"),
+            a = o("QosV"),
             n = o("hC2y"),
             p = o("AXDI"),
             i = (0, r.hb)(function() {
-                let t, e = (0, s.c)(1);
-                return e[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(p.a, {
-                    children: (0, a.jsx)(n.f, {})
+                let t, e = (0, a.c)(1);
+                return e[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, s.jsx)(p.a, {
+                    children: (0, s.jsx)(n.f, {})
                 }), e[0] = t) : t = e[0], t
             });
-        let m = "https://chatgpt.com/unauth-mweb/images/share-unfurl/made-with-chatgpt-og.webp",
-            c = t => {
+        let c = "https://chatgpt.com/unauth-mweb/images/share-unfurl/made-with-chatgpt-og.webp",
+            m = t => {
                 let {
                     matches: e,
                     params: o,
                     loaderData: r,
-                    location: a
+                    location: s
                 } = t;
                 return [...e.flatMap(t => t.meta ?? []), ...null == r && o.postId?.startsWith("i_") ? [{
                     property: "og:site_name",
@@ -41,7 +41,7 @@ export const __webpack_modules__ = {
                     content: "ChatGPT helps you get answers, find inspiration, and be more productive."
                 }, {
                     property: "og:image",
-                    content: m
+                    content: c
                 }, {
                     property: "og:image:alt",
                     content: "Preview of shared ChatGPT content"
@@ -50,11 +50,11 @@ export const __webpack_modules__ = {
                     content: "summary_large_image"
                 }, {
                     name: "twitter:image",
-                    content: m
+                    content: c
                 }] : function(t, e, o) {
                     if (t?.status !== 200 || !e) return [];
                     let r = "rendered" === new URLSearchParams(o).get("ogimg") ? `https://ogimg.chatgpt.com/?postId=${e}` : t.imageUrl,
-                        a = [{
+                        s = [{
                             property: "og:type",
                             content: "article"
                         }, {
@@ -73,29 +73,29 @@ export const __webpack_modules__ = {
                             name: "twitter:image",
                             content: r
                         }];
-                    return null != t.width && null != t.height && a.push({
+                    return null != t.width && null != t.height && s.push({
                         property: "og:image:width",
                         content: String(t.width)
                     }, {
                         property: "og:image:height",
                         content: String(t.height)
-                    }), r.startsWith("https:") && a.push({
+                    }), r.startsWith("https:") && s.push({
                         property: "og:image:secure_url",
                         content: r
-                    }), t.title && a.push({
+                    }), t.title && s.push({
                         property: "og:title",
                         content: t.title
                     }, {
                         name: "twitter:title",
                         content: t.title
-                    }), t.description && a.push({
+                    }), t.description && s.push({
                         property: "og:description",
                         content: t.description
                     }, {
                         name: "twitter:description",
                         content: t.description
-                    }), a
-                }(r, o.postId, a.search), ...o.postId?.startsWith("cx_") ? [{
+                    }), s
+                }(r, o.postId, s.search), ...o.postId?.startsWith("cx_") ? [{
                     name: "description",
                     content: "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
                 }, {
@@ -139,54 +139,54 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as t
-} from "./633146.7affad7b5d.js";
-import * as e from "./418851.a18db97c0f.js";
+} from "./633146.7f86ed336a.js";
+import * as e from "./418851.ac24d305cd.js";
 t.C(e);
 import * as o from "./109308.c9b7701e19.js";
 t.C(o);
 import * as r from "./399565.e3bd47902e.js";
 t.C(r);
-import * as a from "./257798.7e03f1e3e2.js";
-t.C(a);
-import * as s from "./447351.96852eb6b8.js";
+import * as s from "./257798.7e03f1e3e2.js";
 t.C(s);
+import * as a from "./447351.ec9533f9fc.js";
+t.C(a);
 import * as n from "./617936.b641c39dad.js";
 t.C(n);
-import * as p from "./807489.287ea00c8d.js";
+import * as p from "./807489.641526722d.js";
 t.C(p);
-import * as i from "./337882.945f5227c2.js";
+import * as i from "./337882.c82c7eb7d0.js";
 t.C(i);
-import * as m from "./955979.2d3fb29684.js";
-t.C(m);
-import * as c from "./646436.6a9ea7ce2b.js";
+import * as c from "./955979.26623eb1e8.js";
 t.C(c);
-import * as d from "./7078.b92f527b06.js";
-t.C(d);
-import * as f from "./200429.6598292931.js";
+import * as m from "./646436.6a9ea7ce2b.js";
+t.C(m);
+import * as f from "./7078.7ac8d1f362.js";
 t.C(f);
-import * as g from "./698524.5402dc2ea3.js";
+import * as d from "./200429.b3f88f116c.js";
+t.C(d);
+import * as g from "./698524.8e9b330e02.js";
 t.C(g);
-import * as h from "./956483.595b7db9a7.js";
+import * as h from "./956483.dad0089cdf.js";
 t.C(h);
-import * as l from "./87162.d955fb8b13.js";
+import * as l from "./87162.5235ed43cc.js";
 t.C(l);
-import * as u from "./396705.47c12a5601.js";
+import * as u from "./396705.f3e9be32ee.js";
 t.C(u);
 import * as C from "./155568.f88fad6c40.js";
 t.C(C);
-import * as _ from "./731863.4d5b0f8b9b.js";
-t.C(_);
-import * as b from "./767086.7d33efc736.js";
+import * as b from "./731863.70436835b9.js";
 t.C(b);
-import * as y from "./76629.9835d52bf1.js";
+import * as _ from "./767086.dce6c25374.js";
+t.C(_);
+import * as y from "./76629.b4d403ea2d.js";
 t.C(y);
-import * as j from "./514085.4ce61adad7.js";
+import * as j from "./514085.be2a492f7d.js";
 t.C(j);
 import * as w from "./226913.dd4de34d8f.js";
 t.C(w);
 import * as x from "./902158.087f350eba.js";
 t.C(x);
-import * as v from "./315523.a56c7c5a80.js";
+import * as v from "./315523.68158cdd3e.js";
 t.C(v);
 var I = t(t.s = "rni0"),
     P = I.a,

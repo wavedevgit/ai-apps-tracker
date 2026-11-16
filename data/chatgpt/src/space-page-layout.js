@@ -1,1 +1,996 @@
-export const __rspack_esm_ids=[787702];export const __webpack_modules__={C0MU:(function(e,a,t){t.d(a,{a:()=>$,b:()=>E});var r=t("rEML"),o=t("ABep"),i=t("QosV"),s=t("BolX"),n=t("zd8w"),l=t("Cslg"),d=t("tmUE"),c=t("sSh9"),u=t("LpCf"),p=t("on57"),m=t("LPKZ"),f=t.n(m),b=t("G4E3"),h=t("oyxz"),x=t("GhgU"),v=t("e1xH"),g=t("cVcC"),C=t("mpAT"),j=t("NnV7"),_=t("dJBt"),y=t("OWtl"),w=t("bIvi"),I=t("eShZ"),k=t("WrMt"),S=t("YCKz"),O=t("FwTO");let B=()=>f(),N=()=>!1;function D(e){let a,t,c,u,m,f,b,h,x,g,j,_,k,D,M,A=(0,i.c)(63),{snapshot:G,preparation:z,enabled:P,nonblocking:T,openIdentity:L,children:Z}=e,q=void 0!==T&&T,$=(0,s.y)(y.a),E=(0,n.useId)(),[V,R]=(0,n.useState)(null),{pageId:W}=(0,r.cb)(),H=(0,s.z)(l.f),J=(0,s.z)(l.j),Q=(0,s.z)(l.k),X=(0,s.z)(l.h),Y=L??W;A[0]!==H||A[1]!==X||A[2]!==Q||A[3]!==W||A[4]!==Y||A[5]!==J?(a={openIdentity:Y,generation:0,invalidated:!1,pageId:W,accountId:H,userId:J,localUserId:Q,accountUserId:X},A[0]=H,A[1]=X,A[2]=Q,A[3]=W,A[4]=Y,A[5]=J,A[6]=a):a=A[6];let[K,ee]=(0,n.useState)(a),ea=0===K.generation?E:`${E}-${K.generation}`,et=null==L&&0===K.generation,er=(0,s.x)(S.d,ea),eo=K.pageId??"",ei=K.accountId??"",es=K.userId??"";A[7]!==ea||A[8]!==eo||A[9]!==ei||A[10]!==es?(t={mountId:ea,pageId:eo,accountId:ei,userId:es},A[7]=ea,A[8]=eo,A[9]=ei,A[10]=es,A[11]=t):t=A[11];let en=t,el=(0,s.x)(null!=G&&S.c,en),ed=null==G||K.invalidated||el?void 0:z,ec=(0,n.useSyncExternalStore)(null==ed?B:ed.subscribeInvalidation,null==ed?N:ed.isInvalidated,N),eu=(0,s.x)(null==G?null:S.e,en),ep=(0,s.x)(null!=G?C.loadedSpacePageMetadata$:void 0,W??null),em=(0,s.x)(null!=G&&v.A,en.pageId),{data:ef,error:eb}=(0,s.x)(null==G?void 0:C.spacePageQuery$,en.pageId,{enabled:!1})??{},eh=null==G||ec||!P||K.pageId!==W||K.accountId!==H||K.userId!==J||K.localUserId!==Q||K.accountUserId!==X||em||ep?.view_only===!0||ef?.metadata.view_only===!0||ep?.deleted_at!=null||ef?.metadata.deleted_at!=null||ep?.access.can_read===!1||ef?.metadata.access.can_read===!1||eb instanceof I.FetchError&&[401,403,404,410].includes(eb.status)||eu?.failed===!0;null!=L&&(K.openIdentity!==L||K.pageId!==W)?ee({openIdentity:L,generation:K.generation+1,invalidated:!1,pageId:W,accountId:H,userId:J,localUserId:Q,accountUserId:X}):eh&&!K.invalidated&&ee({...K,invalidated:!0}),A[12]!==$?(c=(e,a)=>{$.set(S.d,e,!a)},A[12]=$,A[13]=c):c=A[13];let ex=(0,w.a)(c);A[14]!==ea||A[15]!==ex?(u=e=>{null!=e&&ex(ea,null!=e.querySelector("[data-page-ssr-snapshot]"))},A[14]=ea,A[15]=ex,A[16]=u):u=A[16];let ev=(0,w.a)(u);A[17]!==ea||A[18]!==ex?(m=(0,o.jsx)(U,{mountId:ea,setClientCovered:ex,visible:!1}),A[17]=ea,A[18]=ex,A[19]=m):m=A[19];let eg=m,eC=eg;if(!K.invalidated&&!eh&&!el&&null!=G){if(q){let e,a,t;A[20]!==et||A[21]!==ea||A[22]!==ex||A[23]!==eg?(e=e=>null==e||"status"in e?eg:(0,o.jsx)(F,{mountId:ea,initialNavigation:et,snapshot:e,setClientCovered:ex}),A[20]=et,A[21]=ea,A[22]=ex,A[23]=eg,A[24]=e):e=A[24],A[25]!==G||A[26]!==e||A[27]!==eg?(a=(0,o.jsx)(r.b,{resolve:G,errorElement:eg,children:e}),A[25]=G,A[26]=e,A[27]=eg,A[28]=a):a=A[28],A[29]!==ea||A[30]!==a||A[31]!==eg?(t=(0,o.jsx)(n.Suspense,{fallback:eg,children:a},ea),A[29]=ea,A[30]=a,A[31]=eg,A[32]=t):t=A[32],eC=t}else if("html"in G){let e;A[33]!==et||A[34]!==ea||A[35]!==ex||A[36]!==G?(e=(0,o.jsx)(F,{mountId:ea,initialNavigation:et,snapshot:G,setClientCovered:ex},ea),A[33]=et,A[34]=ea,A[35]=ex,A[36]=G,A[37]=e):e=A[37],eC=e}}let ej=q&&null!=G?ev:void 0,e_=!er,ey=er?void 0:"true",ew=K.invalidated||eh||el?null:V;A[38]===Symbol.for("react.memo_cache_sentinel")?(f=(0,o.jsx)(d.a,{fillParent:!0,delay:!1,debugName:"PageEditor"}),A[38]=f):f=A[38],A[39]!==Z?(b=(0,o.jsx)(n.Suspense,{fallback:f,children:Z}),A[39]=Z,A[40]=b):b=A[40],A[41]!==ew||A[42]!==b?(h=(0,o.jsx)(S.b,{value:ew,children:b}),A[41]=ew,A[42]=b,A[43]=h):h=A[43],A[44]!==ea||A[45]!==h?(x=(0,o.jsx)(S.a,{value:ea,children:h}),A[44]=ea,A[45]=h,A[46]=x):x=A[46],A[47]!==e_||A[48]!==ey||A[49]!==x?(g=(0,o.jsx)("div",{className:"flex min-h-0 flex-1 flex-col",inert:e_,"aria-hidden":ey,children:x}),A[47]=e_,A[48]=ey,A[49]=x,A[50]=g):g=A[50];let eI=q?O.a.PageSnapshotCover:"inset-0";return A[51]!==eI?(j=(0,p.b)("pointer-events-none absolute flex min-h-0 flex-col",eI),A[51]=eI,A[52]=j):j=A[52],A[53]===Symbol.for("react.memo_cache_sentinel")?(_=(0,o.jsx)("div",{ref:R,className:"pointer-events-auto shrink-0"}),A[53]=_):_=A[53],A[54]!==eC?(k=(0,o.jsx)("div",{className:"relative min-h-0 flex-1",children:eC}),A[54]=eC,A[55]=k):k=A[55],A[56]!==j||A[57]!==k?(D=(0,o.jsxs)("div",{className:j,children:[_,k]}),A[56]=j,A[57]=k,A[58]=D):D=A[58],A[59]!==ej||A[60]!==g||A[61]!==D?(M=(0,o.jsxs)("div",{ref:ej,className:"relative flex h-full min-h-0 flex-1 flex-col",children:[g,D]}),A[59]=ej,A[60]=g,A[61]=D,A[62]=M):M=A[62],M}function U(e){let a,t,r=(0,i.c)(12),{mountId:s,initialNavigation:n,visible:l,setClientCovered:d,onRemove:c,children:u}=e,p=void 0!==n&&n;r[0]!==p||r[1]!==s||r[2]!==c||r[3]!==d||r[4]!==l?(a=e=>{if(null!=e)return d(s,l),()=>{l&&p&&(0,k.e)(),d(s,!1),l&&c?.(e)}},r[0]=p,r[1]=s,r[2]=c,r[3]=d,r[4]=l,r[5]=a):a=r[5];let m=a,f=l?"covered":"uncovered",b=!l,h=l||void 0,x=l?u:null;return r[6]!==m||r[7]!==f||r[8]!==b||r[9]!==h||r[10]!==x?(t=(0,o.jsx)("div",{ref:m,className:"pointer-events-auto absolute inset-0 overflow-auto bg-surface",hidden:b,"data-page-ssr-snapshot":h,children:x},f),r[6]=m,r[7]=f,r[8]=b,r[9]=h,r[10]=x,r[11]=t):t=r[11],t}function F(e){let a,t,d,p,m,f,v,g,C=(0,i.c)(33),{mountId:_,initialNavigation:I,snapshot:k,setClientCovered:B}=e,N=(0,s.y)(y.a),D=(0,n.useRef)(null),{pageId:F}=(0,r.cb)(),A=(0,s.z)(l.f),G=(0,s.z)(l.j);C[0]!==_||C[1]!==k.accountId||C[2]!==k.pageId||C[3]!==k.userId?(a={mountId:_,pageId:k.pageId,accountId:k.accountId,userId:k.userId},C[0]=_,C[1]=k.accountId,C[2]=k.pageId,C[3]=k.userId,C[4]=a):a=C[4];let z=(0,s.x)(S.e,a),P=F!==k.pageId||A!==k.accountId||G!==k.userId||z?.failed===!0,[T,L]=(0,n.useState)(!1),Z=null!=z&&!z.failed&&z.sequence>=k.throughSequence;!T&&Z&&L(!0);let q=!P&&!T&&!Z;C[5]!==_||C[6]!==N||C[7]!==k.accountId||C[8]!==k.pageId||C[9]!==k.throughSequence||C[10]!==k.userId?(t=e=>{let a=(0,b.d)(`page://${k.pageId}${e.ownerDocument.defaultView?.location.hash??""}`);if(a?.kind==="page"&&null!=a.blockId)return;let t=N.get(S.e,{mountId:_,pageId:k.pageId,accountId:k.accountId,userId:k.userId});!t?.failed&&null!=t&&t.sequence>=k.throughSequence&&N.get(l.f)===k.accountId&&N.get(l.j)===k.userId&&t.restoreScroll?.(e.scrollTop)},C[5]=_,C[6]=N,C[7]=k.accountId,C[8]=k.pageId,C[9]=k.throughSequence,C[10]=k.userId,C[11]=t):t=C[11];let $=(0,w.a)(t);return C[12]!==I||C[13]!==k.pageId||C[14]!==q?(d=q&&(0,o.jsx)(M,{pageId:k.pageId,content:D,initialNavigation:I}),C[12]=I,C[13]=k.pageId,C[14]=q,C[15]=d):d=C[15],C[16]!==k.title?(p=k.title||(0,o.jsx)(h.a,{...j.c.untitled}),C[16]=k.title,C[17]=p):p=C[17],C[18]!==p?(m=(0,o.jsx)("h1",{className:`${O.a.PageTitle} font-semibold break-words text-default`,children:p}),C[18]=p,C[19]=m):m=C[19],C[20]!==k.html?(f=(0,o.jsx)("div",{"data-page-document-selection":!0,className:"isolate col-[wide] min-w-0",children:(0,o.jsx)("div",{className:`${c.a.root} ${O.a.PageDocumentTheme} px-0`,style:u.a,children:(0,o.jsx)("div",{ref:D,className:`ProseMirror ${c.a.content} ${O.a.PageDocument} ${O.a.PagePreview}`,contentEditable:!1,"data-page-static-preview":!0,dangerouslySetInnerHTML:{__html:k.html}})})}),C[20]=k.html,C[21]=f):f=C[21],C[22]!==m||C[23]!==f?(v=(0,o.jsx)(x.a,{heading:m,children:f}),C[22]=m,C[23]=f,C[24]=v):v=C[24],C[25]!==I||C[26]!==_||C[27]!==$||C[28]!==B||C[29]!==d||C[30]!==v||C[31]!==q?(g=(0,o.jsxs)(U,{mountId:_,initialNavigation:I,visible:q,setClientCovered:B,onRemove:$,children:[d,v]}),C[25]=I,C[26]=_,C[27]=$,C[28]=B,C[29]=d,C[30]=v,C[31]=q,C[32]=g):g=C[32],g}function M(e){let a,t,r,s=(0,i.c)(9),{pageId:l,content:d,initialNavigation:c}=e,u=(0,n.useRef)(void 0);return s[0]!==l?(a=()=>{u.current=g.b.getDebugLoad(l)?.browserFirstContent,u.current?.observeDocumentType("page")},s[0]=l,s[1]=a):a=s[1],s[2]!==d.current||s[3]!==c||s[4]!==l?(t=()=>{if(d.current?.querySelector('[elementtiming="codex-page-ssr-content"]')==null)return;c&&(0,k.d)();let e=u.current??g.b.getDebugLoad(l)?.browserFirstContent;e?.observeDocumentType("page"),e?.contentVisible()},s[2]=d.current,s[3]=c,s[4]=l,s[5]=t):t=s[5],s[6]!==a||s[7]!==t?(r=(0,o.jsx)(_.a,{requireVisibleAtPaint:!0,onCommit:a,onPaint:t}),s[6]=a,s[7]=t,s[8]=r):r=s[8],r}var A=t("M2H2"),G=t("C8z7"),z=t("aFW8"),P=t("vnV1"),T=t("IeFV"),L=t("OMIV"),Z=t("hC2y"),q=t("AXDI"),$=(0,r.hb)(function(){let e,a,t,c,u,p,m,f,b=(0,i.c)(40),h=(0,s.y)(y.a),x=(0,r.Y)(),{pathname:g}=x,{pageId:C}=(0,r.cb)(),j=(0,r.X)(),_="inAppOpen"in j&&j.inAppOpen,w=(0,s.z)(A.a),I=(0,s.z)(l.f),k=(0,s.z)(l.j),S=(0,s.z)(l.k),O=(0,s.z)(l.h);b[0]!==I||b[1]!==O||b[2]!==S||b[3]!==k?(e=JSON.stringify([I,k,S,O]),b[0]=I,b[1]=O,b[2]=S,b[3]=k,b[4]=e):e=b[4];let B=e;b[5]!==_||b[6]!==w||b[7]!==x||b[8]!==h?(a=()=>{let e=(0,T.a)(x),a=_&&w&&null!=e?(0,G.a)(h,document,e):void 0;return{preparation:a,snapshot:a?.takeSnapshot()??null}},b[5]=_,b[6]=w,b[7]=x,b[8]=h,b[9]=a):a=b[9];let N=a;b[10]!==N||b[11]!==B||b[12]!==C?(t=()=>({pageId:C,actor:B,...N()}),b[10]=N,b[11]=B,b[12]=C,b[13]=t):t=b[13];let[U,F]=(0,n.useState)(t),M=U;if(U.pageId!==C||U.actor!==B){let e,a;b[14]!==N||b[15]!==U.pageId||b[16]!==C?(e=U.pageId!==C?N():{preparation:void 0,snapshot:null},b[14]=N,b[15]=U.pageId,b[16]=C,b[17]=e):e=b[17],b[18]!==B||b[19]!==C||b[20]!==e?(a={pageId:C,actor:B,...e},b[18]=B,b[19]=C,b[20]=e,b[21]=a):a=b[21],F(M=a)}let $=_?M.snapshot:j.spacePageSnapshot,E=_||j.nonblockingSsr,V=(0,s.x)(v.H,g),R=(0,s.z)(v.B),W=(0,s.x)(L.e,"4063423961");b[22]===Symbol.for("react.memo_cache_sentinel")?(c={enabled:!1},b[22]=c):c=b[22];let H=(0,s.z)(P.d,c);b[23]===Symbol.for("react.memo_cache_sentinel")?(u=(0,o.jsx)(d.a,{fillParent:!0,delay:!1}),b[23]=u):u=b[23],b[24]!==V?(p=(0,o.jsx)(q.a,{fallback:u,children:V?(0,o.jsx)(z.b,{children:(0,o.jsx)(r.m,{})}):(0,o.jsx)(Z.e,{allowLocal:!0})}),b[24]=V,b[25]=p):p=b[25];let J=p,Q=_?M.preparation:void 0,X=_?C:void 0;return b[26]!==W||b[27]!==_||b[28]!==w||b[29]!==x||b[30]!==R||b[31]!==H?(m=(!_||w&&null!=(0,T.a)(x))&&"disabled"!==R&&(!W||null==H.error&&H.data?.status!=="age_restricted"),b[26]=W,b[27]=_,b[28]=w,b[29]=x,b[30]=R,b[31]=H,b[32]=m):m=b[32],b[33]!==J||b[34]!==E||b[35]!==$||b[36]!==Q||b[37]!==X||b[38]!==m?(f=(0,o.jsx)(D,{snapshot:$,preparation:Q,nonblocking:E,openIdentity:X,enabled:m,children:J}),b[33]=J,b[34]=E,b[35]=$,b[36]=Q,b[37]=X,b[38]=m,b[39]=f):f=b[39],f});let E=e=>{let{currentParams:a,nextParams:t,defaultShouldRevalidate:r}=e;return a.pageId!==t.pageId||r}}),nDjx:(function(e,a,t){e.exports=t.p+"assets/appshot-logo.f0152cb4dd.png"}),hIAo:(function(e,a,t){e.exports=t.p+"assets/codex-app-ga-logo.dfddfb85d7.png"}),OCvz:(function(e,a,t){e.exports=t.p+"assets/dictation-start.f6efcb404f.wav"}),DJ2e:(function(e,a,t){e.exports=t.p+"assets/dictation-stop.e3bc7ebc5e.wav"}),LpCf:(function(e,a,t){t.d(a,{},{a:{"--oai-wb-spacing":"var(--spacing,0.25rem)","--oai-wb-text-primary":"var(--wb-text-primary,var(--color-token-text-primary,var(--text-primary,#0d0d0d)))","--oai-wb-text-secondary":"var(--wb-text-secondary,var(--color-token-text-secondary,var(--text-secondary,#5d5d5d)))","--oai-wb-text-tertiary":"var(--wb-text-tertiary,var(--color-token-text-tertiary,var(--text-tertiary,#8f8f8f)))","--oai-wb-surface-primary":"var(--wb-surface-primary,var(--color-token-main-surface-primary,var(--main-surface-primary,#fff)))","--oai-wb-surface-secondary":"var(--wb-surface-secondary,var(--color-token-bg-tertiary,var(--main-surface-secondary,#f5f5f5)))","--oai-wb-interactive-secondary-hover":"var(--wb-interactive-secondary-hover,var(--color-token-interactive-bg-secondary-hover,var(--oai-wb-surface-secondary)))","--oai-wb-border":"var(--wb-border,var(--color-token-border,var(--border-light,rgb(0 0 0/8%))))","--oai-wb-border-hover":"var(--wb-border-hover,var(--color-token-border-default,var(--border-medium,rgb(0 0 0/12%))))","--oai-wb-divider":"var(--wb-divider,var(--color-token-border-light,var(--border-light,rgb(0 0 0/5%))))","--oai-wb-focus":"var(--wb-focus,var(--color-token-focus-border,var(--border-strong,#5b9dd9)))","--oai-wb-control-border":"var(--wb-control-border,var(--interactive-border-focus,var(--oai-wb-focus)))","--oai-wb-entity-accent":"var(--wb-entity-accent,var(--theme-entity-accent,var(--oai-wb-accent)))","--oai-wb-accent":"var(--wb-accent,var(--interactive-label-accent-default,#0285ff))","--oai-wb-on-accent":"var(--wb-on-accent,var(--bg-primary,#fff))","--oai-wb-interactive-background":"var(--wb-interactive-background,var(--interactive-bg-accent-default,color-mix(in srgb,#0285ff 12%,transparent)))","--oai-wb-selection":"var(--wb-selection,var(--theme-user-selection-bg,var(--selection,#93c5fd)))","--oai-wb-radius":"var(--wb-radius,1.5rem)","--oai-wb-radius-sm":"var(--wb-radius-sm,0.5rem)","--oai-wb-shadow":"var(--wb-shadow,0 4px 80px rgb(0 0 0/2%))","--oai-wb-shadow-lg":"var(--wb-shadow-lg,0 10px 30px rgb(0 0 0/12%))","--oai-wb-font-sans":"var(--wb-font-sans,var(--font-sans,sans-serif))","--oai-wb-font-mono":"var(--wb-font-mono,var(--font-mono,monospace))","--oai-wb-font-size":"var(--wb-font-size,0.875rem)","--oai-wb-shimmer-dark-contrast":"var(--wb-shimmer-dark-contrast,var(--oai-wb-text-tertiary))","--oai-wb-shimmer-dark-secondary":"var(--wb-shimmer-dark-secondary,var(--oai-wb-text-tertiary))"}})}),rfXw:(function(e,a,t){var r=t("ABep"),o=t("QosV");a.default=e=>{let a,t,i,s,n,l,d,c,u,p,m,f,b,h,x,v,g,C,j,_,y=(0,o.c)(21);return y[0]===Symbol.for("react.memo_cache_sentinel")?(a=(0,r.jsx)("path",{d:"M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",fill:"url(#paint0_radial_8150_7076)"}),t=(0,r.jsx)("path",{d:"M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",fill:"url(#paint1_linear_8150_7076)"}),i=(0,r.jsx)("path",{d:"M12 2.125C15.2447 2.125 17.875 4.75533 17.875 8C17.875 11.2447 15.2447 13.875 12 13.875C8.75533 13.875 6.125 11.2447 6.125 8C6.125 4.75533 8.75533 2.125 12 2.125Z",stroke:"black",strokeOpacity:.1,strokeWidth:.25}),y[0]=a,y[1]=t,y[2]=i):(a=y[0],t=y[1],i=y[2]),y[3]===Symbol.for("react.memo_cache_sentinel")?(s=(0,r.jsxs)("g",{filter:"url(#filter0_i_8150_7076)",children:[(0,r.jsx)("path",{d:"M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",fill:"url(#paint2_radial_8150_7076)"}),(0,r.jsx)("path",{d:"M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",fill:"url(#paint3_linear_8150_7076)"}),(0,r.jsx)("path",{d:"M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",fill:"url(#paint4_linear_8150_7076)"})]}),n=(0,r.jsx)("path",{d:"M17.25 7.125C19.9424 7.125 22.125 9.30761 22.125 12C22.125 14.6924 19.9424 16.875 17.25 16.875C14.5576 16.875 12.375 14.6924 12.375 12C12.375 9.30761 14.5576 7.125 17.25 7.125Z",stroke:"black",strokeOpacity:.1,strokeWidth:.25}),y[3]=s,y[4]=n):(s=y[3],n=y[4]),y[5]===Symbol.for("react.memo_cache_sentinel")?(l=(0,r.jsx)("g",{filter:"url(#filter1_i_8150_7076)",children:(0,r.jsx)("path",{d:"M12.5 22C14.9853 22 17 19.9853 17 17.5C17 15.0147 14.9853 13 12.5 13C10.0147 13 8 15.0147 8 17.5C8 19.9853 10.0147 22 12.5 22Z",fill:"url(#paint5_radial_8150_7076)"})}),d=(0,r.jsx)("path",{d:"M12.5 13.125C14.9162 13.125 16.875 15.0838 16.875 17.5C16.875 19.9162 14.9162 21.875 12.5 21.875C10.0838 21.875 8.125 19.9162 8.125 17.5C8.125 15.0838 10.0838 13.125 12.5 13.125Z",stroke:"black",strokeOpacity:.1,strokeWidth:.25}),y[5]=l,y[6]=d):(l=y[5],d=y[6]),y[7]===Symbol.for("react.memo_cache_sentinel")?(c=(0,r.jsx)("g",{filter:"url(#filter2_d_8150_7076)",children:(0,r.jsx)("rect",{x:2,y:9,width:9,height:9,rx:1.75,fill:"url(#paint6_linear_8150_7076)"})}),u=(0,r.jsx)("path",{d:"M4.5 14.3421L5.46644 14.2498C5.52461 14.5684 5.64206 14.8025 5.81879 14.9519C5.99776 15.1013 6.23826 15.176 6.54027 15.176C6.86018 15.176 7.10067 15.1101 7.26174 14.9782C7.42506 14.8442 7.50671 14.6882 7.50671 14.5102C7.50671 14.396 7.47204 14.2993 7.40268 14.2202C7.33557 14.1389 7.217 14.0686 7.04698 14.0092C6.93065 13.9697 6.66555 13.8994 6.25168 13.7983C5.71924 13.6686 5.34564 13.5093 5.13087 13.3204C4.82886 13.0545 4.67785 12.7304 4.67785 12.3481C4.67785 12.102 4.74832 11.8723 4.88926 11.6592C5.03244 11.4439 5.23714 11.2802 5.50336 11.1681C5.77181 11.056 6.09508 11 6.47315 11C7.0906 11 7.55481 11.1329 7.86577 11.3988C8.17897 11.6647 8.3434 12.0196 8.35906 12.4634L7.36577 12.5063C7.32327 12.258 7.23154 12.08 7.0906 11.9723C6.9519 11.8624 6.74273 11.8075 6.46309 11.8075C6.1745 11.8075 5.94855 11.8657 5.78523 11.9822C5.68009 12.0569 5.62752 12.1569 5.62752 12.2821C5.62752 12.3964 5.67673 12.4942 5.77517 12.5755C5.90045 12.6788 6.2047 12.7864 6.68792 12.8985C7.17114 13.0105 7.52796 13.127 7.75839 13.2479C7.99105 13.3665 8.17226 13.5302 8.30201 13.739C8.434 13.9455 8.5 14.2015 8.5 14.5069C8.5 14.7838 8.4217 15.0431 8.2651 15.2848C8.1085 15.5265 7.88702 15.7067 7.60067 15.8253C7.31432 15.9418 6.95749 16 6.5302 16C5.90828 16 5.43065 15.8594 5.09732 15.5781C4.76398 15.2947 4.56488 14.8827 4.5 14.3421Z",fill:"white"}),y[7]=c,y[8]=u):(c=y[7],u=y[8]),y[9]===Symbol.for("react.memo_cache_sentinel")?(p=(0,r.jsxs)("filter",{id:"filter0_i_8150_7076",x:12.25,y:7,width:10,height:10,filterUnits:"userSpaceOnUse",colorInterpolationFilters:"sRGB",children:[(0,r.jsx)("feFlood",{floodOpacity:0,result:"BackgroundImageFix"}),(0,r.jsx)("feBlend",{mode:"normal",in:"SourceGraphic",in2:"BackgroundImageFix",result:"shape"}),(0,r.jsx)("feColorMatrix",{in:"SourceAlpha",type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",result:"hardAlpha"}),(0,r.jsx)("feOffset",{}),(0,r.jsx)("feGaussianBlur",{stdDeviation:1}),(0,r.jsx)("feComposite",{in2:"hardAlpha",operator:"arithmetic",k2:-1,k3:1}),(0,r.jsx)("feColorMatrix",{type:"matrix",values:"0 0 0 0 0 0 0 0 0 0.401818 0 0 0 0 0.294666 0 0 0 1 0"}),(0,r.jsx)("feBlend",{mode:"normal",in2:"shape",result:"effect1_innerShadow_8150_7076"})]}),y[9]=p):p=y[9],y[10]===Symbol.for("react.memo_cache_sentinel")?(m=(0,r.jsxs)("filter",{id:"filter1_i_8150_7076",x:8,y:13,width:9,height:9,filterUnits:"userSpaceOnUse",colorInterpolationFilters:"sRGB",children:[(0,r.jsx)("feFlood",{floodOpacity:0,result:"BackgroundImageFix"}),(0,r.jsx)("feBlend",{mode:"normal",in:"SourceGraphic",in2:"BackgroundImageFix",result:"shape"}),(0,r.jsx)("feColorMatrix",{in:"SourceAlpha",type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",result:"hardAlpha"}),(0,r.jsx)("feOffset",{}),(0,r.jsx)("feGaussianBlur",{stdDeviation:1}),(0,r.jsx)("feComposite",{in2:"hardAlpha",operator:"arithmetic",k2:-1,k3:1}),(0,r.jsx)("feColorMatrix",{type:"matrix",values:"0 0 0 0 0.254902 0 0 0 0 0.509804 0 0 0 0 0.584314 0 0 0 1 0"}),(0,r.jsx)("feBlend",{mode:"normal",in2:"shape",result:"effect1_innerShadow_8150_7076"})]}),y[10]=m):m=y[10],y[11]===Symbol.for("react.memo_cache_sentinel")?(f=(0,r.jsxs)("filter",{id:"filter2_d_8150_7076",x:1.5,y:8.75,width:10,height:10,filterUnits:"userSpaceOnUse",colorInterpolationFilters:"sRGB",children:[(0,r.jsx)("feFlood",{floodOpacity:0,result:"BackgroundImageFix"}),(0,r.jsx)("feColorMatrix",{in:"SourceAlpha",type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",result:"hardAlpha"}),(0,r.jsx)("feOffset",{dy:.25}),(0,r.jsx)("feGaussianBlur",{stdDeviation:.25}),(0,r.jsx)("feComposite",{in2:"hardAlpha",operator:"out"}),(0,r.jsx)("feColorMatrix",{type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"}),(0,r.jsx)("feBlend",{mode:"normal",in2:"BackgroundImageFix",result:"effect1_dropShadow_8150_7076"}),(0,r.jsx)("feBlend",{mode:"normal",in:"SourceGraphic",in2:"effect1_dropShadow_8150_7076",result:"shape"})]}),y[11]=f):f=y[11],y[12]===Symbol.for("react.memo_cache_sentinel")?(b=(0,r.jsxs)("radialGradient",{id:"paint0_radial_8150_7076",cx:0,cy:0,r:1,gradientUnits:"userSpaceOnUse",gradientTransform:"translate(15 7.5) rotate(-174.289) scale(10.0499)",children:[(0,r.jsx)("stop",{stopColor:"#26C0C7"}),(0,r.jsx)("stop",{offset:1,stopColor:"#04786A"})]}),y[12]=b):b=y[12],y[13]===Symbol.for("react.memo_cache_sentinel")?(h=(0,r.jsxs)("linearGradient",{id:"paint1_linear_8150_7076",x1:10,y1:8,x2:12,y2:14,gradientUnits:"userSpaceOnUse",children:[(0,r.jsx)("stop",{stopColor:"#0A5752",stopOpacity:0}),(0,r.jsx)("stop",{offset:1,stopColor:"#0A5752"})]}),y[13]=h):h=y[13],y[14]===Symbol.for("react.memo_cache_sentinel")?(x=(0,r.jsxs)("radialGradient",{id:"paint2_radial_8150_7076",cx:0,cy:0,r:1,gradientUnits:"userSpaceOnUse",gradientTransform:"translate(15.8864 12.4545) rotate(-20.556) scale(7.76728)",children:[(0,r.jsx)("stop",{stopColor:"#159C6F"}),(0,r.jsx)("stop",{offset:1,stopColor:"#29C7B8"})]}),y[14]=x):x=y[14],y[15]===Symbol.for("react.memo_cache_sentinel")?(v=(0,r.jsxs)("linearGradient",{id:"paint3_linear_8150_7076",x1:12.7045,y1:12,x2:18.1591,y2:12.4545,gradientUnits:"userSpaceOnUse",children:[(0,r.jsx)("stop",{offset:.0497812,stopColor:"#6FBBD4"}),(0,r.jsx)("stop",{offset:1,stopColor:"#6FBBD4",stopOpacity:0})]}),y[15]=v):v=y[15],y[16]===Symbol.for("react.memo_cache_sentinel")?(g=(0,r.jsxs)("linearGradient",{id:"paint4_linear_8150_7076",x1:17.25,y1:11.0909,x2:13.1591,y2:16.0909,gradientUnits:"userSpaceOnUse",children:[(0,r.jsx)("stop",{stopColor:"#0C6553",stopOpacity:0}),(0,r.jsx)("stop",{offset:1,stopColor:"#0C6553"})]}),y[16]=g):g=y[16],y[17]===Symbol.for("react.memo_cache_sentinel")?(C=(0,r.jsxs)("radialGradient",{id:"paint5_radial_8150_7076",cx:0,cy:0,r:1,gradientUnits:"userSpaceOnUse",gradientTransform:"translate(11.5 16.5) rotate(53.9726) scale(6.80074)",children:[(0,r.jsx)("stop",{stopColor:"#2EDED7"}),(0,r.jsx)("stop",{offset:1,stopColor:"#218097"})]}),y[17]=C):C=y[17],y[18]===Symbol.for("react.memo_cache_sentinel")?(j=(0,r.jsxs)("defs",{children:[p,m,f,b,h,x,v,g,C,(0,r.jsxs)("linearGradient",{id:"paint6_linear_8150_7076",x1:6.5,y1:9,x2:6.5,y2:18,gradientUnits:"userSpaceOnUse",children:[(0,r.jsx)("stop",{stopColor:"#33A1B5"}),(0,r.jsx)("stop",{offset:1,stopColor:"#064A66"})]})]}),y[18]=j):j=y[18],y[19]!==e?(_=(0,r.jsxs)("svg",{width:"1em",height:"1em",viewBox:"0 0 24 24",fill:"currentColor",...e,children:[a,t,i,s,n,l,d,c,u,j]}),y[19]=e,y[20]=_):_=y[20],_}}),bDc1:(function(e,a,t){var r=t("YNuJ"),o=t("FIwD");t.d(a,{a:()=>o.d,b:()=>o.g,c:()=>r.a})}),TGHr:(function(e,a,t){var r=t("TE73"),o=t("eZy0"),i=t("LpLF"),s=t("TiFH"),n=t("GQ93"),l=t("xUWq"),d=t("gcGr"),c=t("vZCo"),u=t("kpww"),p=t("sCki"),m=t("gWf7"),f=t("OH6Z"),b=t("FIwD"),h=t("TQDJ"),x=t("OGxO"),v=t("yoJG"),g=t("krfl"),C=t("SXlx");t.d(a,{},{a:function(e,a,t){if(["row","col","box","grid-item"].includes(e)){let i="grid-item"===e&&1===t.childCount&&Object.keys(a).every(e=>["key","span","rowSpan"].includes(e)),s="grid-item"===e?{className:x.a.Item,variant:i?"transparent":void 0,gap:i?0:a.gap,style:(0,r.g)({"grid-item-column":(0,f.a)(a.span)??"auto","grid-item-row":(0,f.a)(a.rowSpan)??"auto"})}:{};return{tag:"div",attributes:(0,o.b)({as:"div",component:e,layout:a,..."row"===e||"col"===e?{direction:e}:{},...s},{theme:t.theme,autoSpacingDisabled:!1})}}if("card"===e)return{tag:"div",attributes:(0,o.b)((0,i.b)(a),{theme:t.theme,autoSpacingDisabled:!1})};if("grid"===e)return{tag:"div",attributes:(0,n.c)(a,t.breakpoints)};if("flow"===e)return{tag:"div",attributes:(0,l.d)(a)};if("flow-item"===e)return{tag:"div",attributes:(0,o.b)((0,l.c)(a),{theme:t.theme,autoSpacingDisabled:!1})};if("divider"===e)return{tag:"div",attributes:(0,s.b)(a,t.theme)};if("blockquote"===e)return{tag:"blockquote",attributes:{className:h.a.Blockquote,"data-d-component":"blockquote"}};if(["text","title","caption","label","bold","italic","underline","strikethrough"].includes(e)){let r="bold"===e?{inline:!0,strong:!0,weight:a.weight}:"italic"===e?{inline:!0,italic:!0}:"underline"===e?{inline:!0,underline:!0}:"strikethrough"===e?{inline:!0,lineThrough:!0}:a,o="title"===e?(0,c.b)(a):"caption"===e?(0,u.b)(a):"label"===e?(0,p.b)(a):(0,d.b)(r,t.inline);return{tag:o.as,attributes:(0,m.b)(o,t.theme)}}if("code"===e)return{tag:"code",attributes:{className:g.a.Code,"data-d-component":"code"}};if("link"===e)return{tag:"a",attributes:{className:C.a.Link,"data-d-component":"link",title:a.title}};if("list"===e){let e=a.marker??"bullet",t=(0,b.h)(a.gap??0),r="number"===e&&"number"==typeof a.start&&Number.isFinite(a.start)?a.start:void 0;return{tag:"number"===e?"ol":"ul",attributes:{className:v.a.List,"data-d-component":"list","data-d-marker":e,"data-d-marker-layout":"native",start:r,style:{"--d-list-row-gap":t.includes("(")?t:t.split(/\s+/)[0],gap:t,counterReset:null==r?void 0:`d-list-item ${r-1}`}}}}return"list-item"===e?{tag:"li",attributes:{className:v.a.Item,"data-d-component":"list-item","data-d-marker-layout":"native"},content:{tag:"div",attributes:{className:v.a.Content},content:{tag:"div",attributes:{className:v.a.Label,"data-d-list-item-content":""}}}}:null}})}),YCKz:(function(e,a,t){var r=t("BolX"),o=t("zd8w"),i=t("OWtl");let s=(0,o.createContext)(null),n=(0,o.createContext)(null),l=(0,r.v)(i.a,e=>null,void 0,{autoDispose:!0}),d=(0,r.v)(i.a,e=>!1,void 0,{autoDispose:!0}),c=(0,r.v)(i.a,e=>null==e,void 0,{autoDispose:!0});t.d(a,{},{a:s,b:n,c:d,d:c,e:l})}),EBQV:(function(a){a.exports=e.ir("/cdn/assets/dotnet.js").then(function(e){return e})})};import{__webpack_require__ as e}from"./633146.7affad7b5d.js";import*as a from"./418851.a18db97c0f.js";e.C(a);import*as t from"./109308.c9b7701e19.js";e.C(t);import*as r from"./399565.e3bd47902e.js";e.C(r);import*as o from"./257798.7e03f1e3e2.js";e.C(o);import*as i from"./447351.96852eb6b8.js";e.C(i);import*as s from"./617936.b641c39dad.js";e.C(s);import*as n from"./807489.287ea00c8d.js";e.C(n);import*as l from"./337882.945f5227c2.js";e.C(l);import*as d from"./955979.2d3fb29684.js";e.C(d);import*as c from"./646436.6a9ea7ce2b.js";e.C(c);import*as u from"./7078.b92f527b06.js";e.C(u);import*as p from"./200429.6598292931.js";e.C(p);import*as m from"./698524.5402dc2ea3.js";e.C(m);import*as f from"./956483.595b7db9a7.js";e.C(f);import*as b from"./87162.d955fb8b13.js";e.C(b);import*as h from"./396705.47c12a5601.js";e.C(h);import*as x from"./155568.f88fad6c40.js";e.C(x);import*as v from"./731863.4d5b0f8b9b.js";e.C(v);import*as g from"./767086.7d33efc736.js";e.C(g);import*as C from"./76629.9835d52bf1.js";e.C(C);import*as j from"./514085.4ce61adad7.js";e.C(j);import*as _ from"./226913.dd4de34d8f.js";e.C(_);import*as y from"./753405.4bffba797b.js";e.C(y);import*as w from"./321957.745ede45f0.js";e.C(w);import*as I from"./585419.38ade943bd.js";e.C(I);import*as k from"./843292.e99f82cf4b.js";e.C(k);import*as S from"./353230.c6d909aef3.js";e.C(S);import*as O from"./882456.f215d0cfe3.js";e.C(O);import*as B from"./736970.7cf041e2eb.js";e.C(B);import*as N from"./909395.7dc04db4e2.js";e.C(N);import*as D from"./212487.9cfe25039b.js";e.C(D);import*as U from"./17983.ceb390e8db.js";e.C(U);import*as F from"./832107.d9d34f0ecd.js";e.C(F);import*as M from"./902158.087f350eba.js";e.C(M);import*as A from"./773363.3540ba806d.js";e.C(A);import*as G from"./311330.04ae7c1932.js";e.C(G);import*as z from"./787702.fc6329b997.js";e.C(z);var P=e(e.s="C0MU"),T=P.a,L=P.b;export{T as default,L as shouldRevalidate};
+export const __rspack_esm_ids = [787702];
+export const __webpack_modules__ = {
+    C0MU: (function(e, t, a) {
+        a.d(t, {
+            a: () => E,
+            b: () => V
+        });
+        var r = a("rEML"),
+            o = a("ABep"),
+            i = a("QosV"),
+            s = a("BolX"),
+            n = a("zd8w"),
+            l = a("Cslg"),
+            d = a("tmUE"),
+            c = a("sSh9"),
+            u = a("LpCf"),
+            f = a("on57"),
+            p = a("LPKZ"),
+            m = a.n(p),
+            b = a("G4E3"),
+            h = a("oyxz"),
+            x = a("GhgU"),
+            g = a("e1xH"),
+            v = a("cVcC"),
+            C = a("tv8P"),
+            j = a("NnV7"),
+            _ = a("dJBt"),
+            w = a("OWtl"),
+            y = a("bIvi"),
+            I = a("eShZ"),
+            k = a("WrMt"),
+            S = a("YCKz"),
+            F = a("FwTO");
+        let B = () => m(),
+            O = () => !1;
+
+        function N(e) {
+            let t, a, c, u, p, m, b, h, x, v, j, _, k, N, D, A = (0, i.c)(66),
+                {
+                    snapshot: z,
+                    preparation: P,
+                    enabled: L,
+                    nonblocking: T,
+                    openIdentity: Z,
+                    children: q
+                } = e,
+                $ = void 0 !== T && T,
+                E = (0, s.y)(w.a),
+                V = (0, n.useId)(),
+                [R, W] = (0, n.useState)(null),
+                {
+                    pageId: H
+                } = (0, r.cb)(),
+                J = (0, s.z)(l.f),
+                Q = (0, s.z)(l.j),
+                X = (0, s.z)(l.k),
+                Y = (0, s.z)(l.h);
+            A[0] !== J || A[1] !== Y || A[2] !== X || A[3] !== Z || A[4] !== H || A[5] !== Q ? (t = () => ({
+                openIdentity: Z ?? H,
+                generation: 0,
+                invalidated: !1,
+                pageId: H,
+                accountId: J,
+                userId: Q,
+                localUserId: X,
+                accountUserId: Y,
+                browserFirstContent: G(H)
+            }), A[0] = J, A[1] = Y, A[2] = X, A[3] = Z, A[4] = H, A[5] = Q, A[6] = t) : t = A[6];
+            let [K, ee] = (0, n.useState)(t), et = 0 === K.generation ? V : `${V}-${K.generation}`, ea = null == Z && 0 === K.generation, er = (0, s.x)(S.e, et), eo = K.pageId ?? "", ei = K.accountId ?? "", es = K.userId ?? "";
+            A[7] !== et || A[8] !== eo || A[9] !== ei || A[10] !== es ? (a = {
+                mountId: et,
+                pageId: eo,
+                accountId: ei,
+                userId: es
+            }, A[7] = et, A[8] = eo, A[9] = ei, A[10] = es, A[11] = a) : a = A[11];
+            let en = a,
+                el = (0, s.x)(null != z && S.d, en),
+                ed = null == z || K.invalidated || el ? void 0 : P,
+                ec = (0, n.useSyncExternalStore)(null == ed ? B : ed.subscribeInvalidation, null == ed ? O : ed.isInvalidated, O),
+                eu = (0, s.x)(null == z ? null : S.f, en),
+                ef = (0, s.x)(null != z ? C.loadedSpacePageMetadata$ : void 0, H ?? null),
+                ep = (0, s.x)(null != z && g.A, en.pageId),
+                {
+                    data: em,
+                    error: eb
+                } = (0, s.x)(null == z ? void 0 : C.spacePageQuery$, en.pageId, {
+                    enabled: !1
+                }) ?? {},
+                eh = null == z || ec || !L || K.pageId !== H || K.accountId !== J || K.userId !== Q || K.localUserId !== X || K.accountUserId !== Y || ep || ef?.view_only === !0 || em?.metadata.view_only === !0 || ef?.deleted_at != null || em?.metadata.deleted_at != null || ef?.access.can_read === !1 || em?.metadata.access.can_read === !1 || eb instanceof I.FetchError && [401, 403, 404, 410].includes(eb.status) || eu?.failed === !0;
+            null != Z && (K.openIdentity !== Z || K.pageId !== H) ? ee({
+                openIdentity: Z,
+                generation: K.generation + 1,
+                invalidated: !1,
+                pageId: H,
+                accountId: J,
+                userId: Q,
+                localUserId: X,
+                accountUserId: Y,
+                browserFirstContent: G(H)
+            }) : eh && !K.invalidated && ee({
+                ...K,
+                invalidated: !0
+            }), A[12] !== E ? (c = (e, t) => {
+                E.set(S.e, e, !t)
+            }, A[12] = E, A[13] = c) : c = A[13];
+            let ex = (0, y.a)(c);
+            A[14] !== et || A[15] !== ex ? (u = e => {
+                null != e && ex(et, null != e.querySelector("[data-page-ssr-snapshot]"))
+            }, A[14] = et, A[15] = ex, A[16] = u) : u = A[16];
+            let eg = (0, y.a)(u);
+            A[17] !== et || A[18] !== ex ? (p = (0, o.jsx)(U, {
+                mountId: et,
+                setClientCovered: ex,
+                visible: !1
+            }), A[17] = et, A[18] = ex, A[19] = p) : p = A[19];
+            let ev = p,
+                eC = ev;
+            if (!K.invalidated && !eh && !el && null != z) {
+                if ($) {
+                    let e, t, a;
+                    A[20] !== K.browserFirstContent.get || A[21] !== ea || A[22] !== et || A[23] !== ex || A[24] !== ev ? (e = e => null == e || "status" in e ? ev : (0, o.jsx)(M, {
+                        mountId: et,
+                        getBrowserFirstContent: K.browserFirstContent.get,
+                        initialNavigation: ea,
+                        snapshot: e,
+                        setClientCovered: ex
+                    }), A[20] = K.browserFirstContent.get, A[21] = ea, A[22] = et, A[23] = ex, A[24] = ev, A[25] = e) : e = A[25], A[26] !== z || A[27] !== e || A[28] !== ev ? (t = (0, o.jsx)(r.b, {
+                        resolve: z,
+                        errorElement: ev,
+                        children: e
+                    }), A[26] = z, A[27] = e, A[28] = ev, A[29] = t) : t = A[29], A[30] !== et || A[31] !== t || A[32] !== ev ? (a = (0, o.jsx)(n.Suspense, {
+                        fallback: ev,
+                        children: t
+                    }, et), A[30] = et, A[31] = t, A[32] = ev, A[33] = a) : a = A[33], eC = a
+                } else if ("html" in z) {
+                    let e;
+                    A[34] !== K.browserFirstContent.get || A[35] !== ea || A[36] !== et || A[37] !== ex || A[38] !== z ? (e = (0, o.jsx)(M, {
+                        mountId: et,
+                        getBrowserFirstContent: K.browserFirstContent.get,
+                        initialNavigation: ea,
+                        snapshot: z,
+                        setClientCovered: ex
+                    }, et), A[34] = K.browserFirstContent.get, A[35] = ea, A[36] = et, A[37] = ex, A[38] = z, A[39] = e) : e = A[39], eC = e
+                }
+            }
+            let ej = $ && null != z ? eg : void 0,
+                e_ = !er,
+                ew = er ? void 0 : "true",
+                ey = K.invalidated || eh || el ? null : R;
+            A[40] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, o.jsx)(d.a, {
+                fillParent: !0,
+                delay: !1,
+                debugName: "PageEditor"
+            }), A[40] = m) : m = A[40], A[41] !== K.browserFirstContent.capture || A[42] !== q ? (b = (0, o.jsx)(n.Suspense, {
+                fallback: m,
+                children: (0, o.jsx)(S.a, {
+                    value: K.browserFirstContent.capture,
+                    children: q
+                })
+            }), A[41] = K.browserFirstContent.capture, A[42] = q, A[43] = b) : b = A[43], A[44] !== ey || A[45] !== b ? (h = (0, o.jsx)(S.c, {
+                value: ey,
+                children: b
+            }), A[44] = ey, A[45] = b, A[46] = h) : h = A[46], A[47] !== et || A[48] !== h ? (x = (0, o.jsx)(S.b, {
+                value: et,
+                children: h
+            }), A[47] = et, A[48] = h, A[49] = x) : x = A[49], A[50] !== e_ || A[51] !== ew || A[52] !== x ? (v = (0, o.jsx)("div", {
+                className: "flex min-h-0 flex-1 flex-col",
+                inert: e_,
+                "aria-hidden": ew,
+                children: x
+            }), A[50] = e_, A[51] = ew, A[52] = x, A[53] = v) : v = A[53];
+            let eI = $ ? F.a.PageSnapshotCover : "inset-0";
+            return A[54] !== eI ? (j = (0, f.b)("pointer-events-none absolute flex min-h-0 flex-col", eI), A[54] = eI, A[55] = j) : j = A[55], A[56] === Symbol.for("react.memo_cache_sentinel") ? (_ = (0, o.jsx)("div", {
+                ref: W,
+                className: "pointer-events-auto shrink-0"
+            }), A[56] = _) : _ = A[56], A[57] !== eC ? (k = (0, o.jsx)("div", {
+                className: "relative min-h-0 flex-1",
+                children: eC
+            }), A[57] = eC, A[58] = k) : k = A[58], A[59] !== j || A[60] !== k ? (N = (0, o.jsxs)("div", {
+                className: j,
+                children: [_, k]
+            }), A[59] = j, A[60] = k, A[61] = N) : N = A[61], A[62] !== ej || A[63] !== v || A[64] !== N ? (D = (0, o.jsxs)("div", {
+                ref: ej,
+                className: "relative flex h-full min-h-0 flex-1 flex-col",
+                children: [v, N]
+            }), A[62] = ej, A[63] = v, A[64] = N, A[65] = D) : D = A[65], D
+        }
+
+        function U(e) {
+            let t, a, r = (0, i.c)(12),
+                {
+                    mountId: s,
+                    initialNavigation: n,
+                    visible: l,
+                    setClientCovered: d,
+                    onRemove: c,
+                    children: u
+                } = e,
+                f = void 0 !== n && n;
+            r[0] !== f || r[1] !== s || r[2] !== c || r[3] !== d || r[4] !== l ? (t = e => {
+                if (null != e) return d(s, l), () => {
+                    l && f && (0, k.e)(), d(s, !1), l && c?.(e)
+                }
+            }, r[0] = f, r[1] = s, r[2] = c, r[3] = d, r[4] = l, r[5] = t) : t = r[5];
+            let p = t,
+                m = l ? "covered" : "uncovered",
+                b = !l,
+                h = l || void 0,
+                x = l ? u : null;
+            return r[6] !== p || r[7] !== m || r[8] !== b || r[9] !== h || r[10] !== x ? (a = (0, o.jsx)("div", {
+                ref: p,
+                className: "pointer-events-auto absolute inset-0 overflow-auto bg-surface",
+                hidden: b,
+                "data-page-ssr-snapshot": h,
+                children: x
+            }, m), r[6] = p, r[7] = m, r[8] = b, r[9] = h, r[10] = x, r[11] = a) : a = r[11], a
+        }
+
+        function M(e) {
+            let t, a, d, f, p, m, g, v, C = (0, i.c)(33),
+                {
+                    mountId: _,
+                    getBrowserFirstContent: I,
+                    initialNavigation: k,
+                    snapshot: B,
+                    setClientCovered: O
+                } = e,
+                N = (0, s.y)(w.a),
+                M = (0, n.useRef)(null),
+                {
+                    pageId: G
+                } = (0, r.cb)(),
+                A = (0, s.z)(l.f),
+                z = (0, s.z)(l.j);
+            C[0] !== _ || C[1] !== B.accountId || C[2] !== B.pageId || C[3] !== B.userId ? (t = {
+                mountId: _,
+                pageId: B.pageId,
+                accountId: B.accountId,
+                userId: B.userId
+            }, C[0] = _, C[1] = B.accountId, C[2] = B.pageId, C[3] = B.userId, C[4] = t) : t = C[4];
+            let P = (0, s.x)(S.f, t),
+                L = G !== B.pageId || A !== B.accountId || z !== B.userId || P?.failed === !0,
+                [T, Z] = (0, n.useState)(!1),
+                q = null != P && !P.failed && P.sequence >= B.throughSequence;
+            !T && q && Z(!0);
+            let $ = !L && !T && !q;
+            C[5] !== _ || C[6] !== N || C[7] !== B.accountId || C[8] !== B.pageId || C[9] !== B.throughSequence || C[10] !== B.userId ? (a = e => {
+                let t = (0, b.d)(`page://${B.pageId}${e.ownerDocument.defaultView?.location.hash??""}`);
+                if (t?.kind === "page" && null != t.blockId) return;
+                let a = N.get(S.f, {
+                    mountId: _,
+                    pageId: B.pageId,
+                    accountId: B.accountId,
+                    userId: B.userId
+                });
+                !a?.failed && null != a && a.sequence >= B.throughSequence && N.get(l.f) === B.accountId && N.get(l.j) === B.userId && a.restoreScroll?.(e.scrollTop)
+            }, C[5] = _, C[6] = N, C[7] = B.accountId, C[8] = B.pageId, C[9] = B.throughSequence, C[10] = B.userId, C[11] = a) : a = C[11];
+            let E = (0, y.a)(a);
+            return C[12] !== I || C[13] !== k || C[14] !== $ ? (d = $ && (0, o.jsx)(D, {
+                getBrowserFirstContent: I,
+                content: M,
+                initialNavigation: k
+            }), C[12] = I, C[13] = k, C[14] = $, C[15] = d) : d = C[15], C[16] !== B.title ? (f = B.title || (0, o.jsx)(h.a, {
+                ...j.c.untitled
+            }), C[16] = B.title, C[17] = f) : f = C[17], C[18] !== f ? (p = (0, o.jsx)("h1", {
+                className: `${F.a.PageTitle} font-semibold break-words text-default`,
+                children: f
+            }), C[18] = f, C[19] = p) : p = C[19], C[20] !== B.html ? (m = (0, o.jsx)("div", {
+                "data-page-document-selection": !0,
+                className: "isolate col-[wide] min-w-0",
+                children: (0, o.jsx)("div", {
+                    className: `${c.a.root} ${F.a.PageDocumentTheme} px-0`,
+                    style: u.a,
+                    children: (0, o.jsx)("div", {
+                        ref: M,
+                        className: `ProseMirror ${c.a.content} ${F.a.PageDocument} ${F.a.PagePreview}`,
+                        contentEditable: !1,
+                        "data-page-static-preview": !0,
+                        dangerouslySetInnerHTML: {
+                            __html: B.html
+                        }
+                    })
+                })
+            }), C[20] = B.html, C[21] = m) : m = C[21], C[22] !== p || C[23] !== m ? (g = (0, o.jsx)(x.a, {
+                heading: p,
+                children: m
+            }), C[22] = p, C[23] = m, C[24] = g) : g = C[24], C[25] !== k || C[26] !== _ || C[27] !== E || C[28] !== O || C[29] !== d || C[30] !== g || C[31] !== $ ? (v = (0, o.jsxs)(U, {
+                mountId: _,
+                initialNavigation: k,
+                visible: $,
+                setClientCovered: O,
+                onRemove: E,
+                children: [d, g]
+            }), C[25] = k, C[26] = _, C[27] = E, C[28] = O, C[29] = d, C[30] = g, C[31] = $, C[32] = v) : v = C[32], v
+        }
+
+        function D(e) {
+            let t, a, r, s = (0, i.c)(9),
+                {
+                    getBrowserFirstContent: n,
+                    content: l,
+                    initialNavigation: d
+                } = e;
+            return s[0] !== n ? (t = () => {
+                n()?.observeDocumentType("page")
+            }, s[0] = n, s[1] = t) : t = s[1], s[2] !== l.current || s[3] !== n || s[4] !== d ? (a = () => {
+                if (l.current?.querySelector('[elementtiming="codex-page-ssr-content"]') == null) return;
+                d && (0, k.d)();
+                let e = n();
+                e?.observeDocumentType("page"), e?.contentVisible()
+            }, s[2] = l.current, s[3] = n, s[4] = d, s[5] = a) : a = s[5], s[6] !== t || s[7] !== a ? (r = (0, o.jsx)(_.a, {
+                requireVisibleAtPaint: !0,
+                onCommit: t,
+                onPaint: a
+            }), s[6] = t, s[7] = a, s[8] = r) : r = s[8], r
+        }
+
+        function G(e) {
+            let t = v.b.getDebugLoad(e ?? null)?.browserFirstContent;
+            return {
+                get: () => t,
+                capture: a => {
+                    a === e && null == t && (t = v.b.getDebugLoad(e ?? null)?.browserFirstContent)
+                }
+            }
+        }
+        var A = a("M2H2"),
+            z = a("C8z7"),
+            P = a("aFW8"),
+            L = a("vnV1"),
+            T = a("IeFV"),
+            Z = a("OMIV"),
+            q = a("hC2y"),
+            $ = a("AXDI"),
+            E = (0, r.hb)(function() {
+                let e, t, a, c, u, f, p, m, b = (0, i.c)(40),
+                    h = (0, s.y)(w.a),
+                    x = (0, r.Y)(),
+                    {
+                        pathname: v
+                    } = x,
+                    {
+                        pageId: C
+                    } = (0, r.cb)(),
+                    j = (0, r.X)(),
+                    _ = "inAppOpen" in j && j.inAppOpen,
+                    y = (0, s.z)(A.a),
+                    I = (0, s.z)(l.f),
+                    k = (0, s.z)(l.j),
+                    S = (0, s.z)(l.k),
+                    F = (0, s.z)(l.h);
+                b[0] !== I || b[1] !== F || b[2] !== S || b[3] !== k ? (e = JSON.stringify([I, k, S, F]), b[0] = I, b[1] = F, b[2] = S, b[3] = k, b[4] = e) : e = b[4];
+                let B = e;
+                b[5] !== _ || b[6] !== y || b[7] !== x || b[8] !== h ? (t = () => {
+                    let e = (0, T.a)(x),
+                        t = _ && y && null != e ? (0, z.a)(h, document, e) : void 0;
+                    return {
+                        preparation: t,
+                        snapshot: t?.takeSnapshot() ?? null
+                    }
+                }, b[5] = _, b[6] = y, b[7] = x, b[8] = h, b[9] = t) : t = b[9];
+                let O = t;
+                b[10] !== O || b[11] !== B || b[12] !== C ? (a = () => ({
+                    pageId: C,
+                    actor: B,
+                    ...O()
+                }), b[10] = O, b[11] = B, b[12] = C, b[13] = a) : a = b[13];
+                let [U, M] = (0, n.useState)(a), D = U;
+                if (U.pageId !== C || U.actor !== B) {
+                    let e, t;
+                    b[14] !== O || b[15] !== U.pageId || b[16] !== C ? (e = U.pageId !== C ? O() : {
+                        preparation: void 0,
+                        snapshot: null
+                    }, b[14] = O, b[15] = U.pageId, b[16] = C, b[17] = e) : e = b[17], b[18] !== B || b[19] !== C || b[20] !== e ? (t = {
+                        pageId: C,
+                        actor: B,
+                        ...e
+                    }, b[18] = B, b[19] = C, b[20] = e, b[21] = t) : t = b[21], M(D = t)
+                }
+                let G = _ ? D.snapshot : j.spacePageSnapshot,
+                    E = _ || j.nonblockingSsr,
+                    V = (0, s.x)(g.H, v),
+                    R = (0, s.z)(g.B),
+                    W = (0, s.x)(Z.e, "4063423961");
+                b[22] === Symbol.for("react.memo_cache_sentinel") ? (c = {
+                    enabled: !1
+                }, b[22] = c) : c = b[22];
+                let H = (0, s.z)(L.d, c);
+                b[23] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, o.jsx)(d.a, {
+                    fillParent: !0,
+                    delay: !1
+                }), b[23] = u) : u = b[23], b[24] !== V ? (f = (0, o.jsx)($.a, {
+                    fallback: u,
+                    children: V ? (0, o.jsx)(P.b, {
+                        children: (0, o.jsx)(r.m, {})
+                    }) : (0, o.jsx)(q.e, {
+                        allowLocal: !0
+                    })
+                }), b[24] = V, b[25] = f) : f = b[25];
+                let J = f,
+                    Q = _ ? D.preparation : void 0,
+                    X = _ ? C : void 0;
+                return b[26] !== W || b[27] !== _ || b[28] !== y || b[29] !== x || b[30] !== R || b[31] !== H ? (p = (!_ || y && null != (0, T.a)(x)) && "disabled" !== R && (!W || null == H.error && H.data?.status !== "age_restricted"), b[26] = W, b[27] = _, b[28] = y, b[29] = x, b[30] = R, b[31] = H, b[32] = p) : p = b[32], b[33] !== J || b[34] !== E || b[35] !== G || b[36] !== Q || b[37] !== X || b[38] !== p ? (m = (0, o.jsx)(N, {
+                    snapshot: G,
+                    preparation: Q,
+                    nonblocking: E,
+                    openIdentity: X,
+                    enabled: p,
+                    children: J
+                }), b[33] = J, b[34] = E, b[35] = G, b[36] = Q, b[37] = X, b[38] = p, b[39] = m) : m = b[39], m
+            });
+        let V = e => {
+            let {
+                currentParams: t,
+                nextParams: a,
+                defaultShouldRevalidate: r
+            } = e;
+            return t.pageId !== a.pageId || r
+        }
+    }),
+    nDjx: (function(e, t, a) {
+        e.exports = a.p + "assets/appshot-logo.f0152cb4dd.png"
+    }),
+    hIAo: (function(e, t, a) {
+        e.exports = a.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    }),
+    OCvz: (function(e, t, a) {
+        e.exports = a.p + "assets/dictation-start.f6efcb404f.wav"
+    }),
+    DJ2e: (function(e, t, a) {
+        e.exports = a.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    LpCf: (function(e, t, a) {
+        a.d(t, {}, {
+            a: {
+                "--oai-wb-spacing": "var(--spacing,0.25rem)",
+                "--oai-wb-text-primary": "var(--wb-text-primary,var(--color-token-text-primary,var(--text-primary,#0d0d0d)))",
+                "--oai-wb-text-secondary": "var(--wb-text-secondary,var(--color-token-text-secondary,var(--text-secondary,#5d5d5d)))",
+                "--oai-wb-text-tertiary": "var(--wb-text-tertiary,var(--color-token-text-tertiary,var(--text-tertiary,#8f8f8f)))",
+                "--oai-wb-surface-primary": "var(--wb-surface-primary,var(--color-token-main-surface-primary,var(--main-surface-primary,#fff)))",
+                "--oai-wb-surface-secondary": "var(--wb-surface-secondary,var(--color-token-bg-tertiary,var(--main-surface-secondary,#f5f5f5)))",
+                "--oai-wb-interactive-secondary-hover": "var(--wb-interactive-secondary-hover,var(--color-token-interactive-bg-secondary-hover,var(--oai-wb-surface-secondary)))",
+                "--oai-wb-border": "var(--wb-border,var(--color-token-border,var(--border-light,rgb(0 0 0/8%))))",
+                "--oai-wb-border-hover": "var(--wb-border-hover,var(--color-token-border-default,var(--border-medium,rgb(0 0 0/12%))))",
+                "--oai-wb-divider": "var(--wb-divider,var(--color-token-border-light,var(--border-light,rgb(0 0 0/5%))))",
+                "--oai-wb-focus": "var(--wb-focus,var(--color-token-focus-border,var(--border-strong,#5b9dd9)))",
+                "--oai-wb-control-border": "var(--wb-control-border,var(--interactive-border-focus,var(--oai-wb-focus)))",
+                "--oai-wb-entity-accent": "var(--wb-entity-accent,var(--theme-entity-accent,var(--oai-wb-accent)))",
+                "--oai-wb-accent": "var(--wb-accent,var(--interactive-label-accent-default,#0285ff))",
+                "--oai-wb-on-accent": "var(--wb-on-accent,var(--bg-primary,#fff))",
+                "--oai-wb-interactive-background": "var(--wb-interactive-background,var(--interactive-bg-accent-default,color-mix(in srgb,#0285ff 12%,transparent)))",
+                "--oai-wb-selection": "var(--wb-selection,var(--theme-user-selection-bg,var(--selection,#93c5fd)))",
+                "--oai-wb-radius": "var(--wb-radius,1.5rem)",
+                "--oai-wb-radius-sm": "var(--wb-radius-sm,0.5rem)",
+                "--oai-wb-shadow": "var(--wb-shadow,0 4px 80px rgb(0 0 0/2%))",
+                "--oai-wb-shadow-lg": "var(--wb-shadow-lg,0 10px 30px rgb(0 0 0/12%))",
+                "--oai-wb-font-sans": "var(--wb-font-sans,var(--font-sans,sans-serif))",
+                "--oai-wb-font-mono": "var(--wb-font-mono,var(--font-mono,monospace))",
+                "--oai-wb-font-size": "var(--wb-font-size,0.875rem)",
+                "--oai-wb-shimmer-dark-contrast": "var(--wb-shimmer-dark-contrast,var(--oai-wb-text-tertiary))",
+                "--oai-wb-shimmer-dark-secondary": "var(--wb-shimmer-dark-secondary,var(--oai-wb-text-tertiary))"
+            }
+        })
+    }),
+    rfXw: (function(e, t, a) {
+        var r = a("ABep"),
+            o = a("QosV");
+        t.default = e => {
+            let t, a, i, s, n, l, d, c, u, f, p, m, b, h, x, g, v, C, j, _, w = (0, o.c)(21);
+            return w[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, r.jsx)("path", {
+                d: "M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",
+                fill: "url(#paint0_radial_8150_7076)"
+            }), a = (0, r.jsx)("path", {
+                d: "M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",
+                fill: "url(#paint1_linear_8150_7076)"
+            }), i = (0, r.jsx)("path", {
+                d: "M12 2.125C15.2447 2.125 17.875 4.75533 17.875 8C17.875 11.2447 15.2447 13.875 12 13.875C8.75533 13.875 6.125 11.2447 6.125 8C6.125 4.75533 8.75533 2.125 12 2.125Z",
+                stroke: "black",
+                strokeOpacity: .1,
+                strokeWidth: .25
+            }), w[0] = t, w[1] = a, w[2] = i) : (t = w[0], a = w[1], i = w[2]), w[3] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, r.jsxs)("g", {
+                filter: "url(#filter0_i_8150_7076)",
+                children: [(0, r.jsx)("path", {
+                    d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
+                    fill: "url(#paint2_radial_8150_7076)"
+                }), (0, r.jsx)("path", {
+                    d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
+                    fill: "url(#paint3_linear_8150_7076)"
+                }), (0, r.jsx)("path", {
+                    d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
+                    fill: "url(#paint4_linear_8150_7076)"
+                })]
+            }), n = (0, r.jsx)("path", {
+                d: "M17.25 7.125C19.9424 7.125 22.125 9.30761 22.125 12C22.125 14.6924 19.9424 16.875 17.25 16.875C14.5576 16.875 12.375 14.6924 12.375 12C12.375 9.30761 14.5576 7.125 17.25 7.125Z",
+                stroke: "black",
+                strokeOpacity: .1,
+                strokeWidth: .25
+            }), w[3] = s, w[4] = n) : (s = w[3], n = w[4]), w[5] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, r.jsx)("g", {
+                filter: "url(#filter1_i_8150_7076)",
+                children: (0, r.jsx)("path", {
+                    d: "M12.5 22C14.9853 22 17 19.9853 17 17.5C17 15.0147 14.9853 13 12.5 13C10.0147 13 8 15.0147 8 17.5C8 19.9853 10.0147 22 12.5 22Z",
+                    fill: "url(#paint5_radial_8150_7076)"
+                })
+            }), d = (0, r.jsx)("path", {
+                d: "M12.5 13.125C14.9162 13.125 16.875 15.0838 16.875 17.5C16.875 19.9162 14.9162 21.875 12.5 21.875C10.0838 21.875 8.125 19.9162 8.125 17.5C8.125 15.0838 10.0838 13.125 12.5 13.125Z",
+                stroke: "black",
+                strokeOpacity: .1,
+                strokeWidth: .25
+            }), w[5] = l, w[6] = d) : (l = w[5], d = w[6]), w[7] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, r.jsx)("g", {
+                filter: "url(#filter2_d_8150_7076)",
+                children: (0, r.jsx)("rect", {
+                    x: 2,
+                    y: 9,
+                    width: 9,
+                    height: 9,
+                    rx: 1.75,
+                    fill: "url(#paint6_linear_8150_7076)"
+                })
+            }), u = (0, r.jsx)("path", {
+                d: "M4.5 14.3421L5.46644 14.2498C5.52461 14.5684 5.64206 14.8025 5.81879 14.9519C5.99776 15.1013 6.23826 15.176 6.54027 15.176C6.86018 15.176 7.10067 15.1101 7.26174 14.9782C7.42506 14.8442 7.50671 14.6882 7.50671 14.5102C7.50671 14.396 7.47204 14.2993 7.40268 14.2202C7.33557 14.1389 7.217 14.0686 7.04698 14.0092C6.93065 13.9697 6.66555 13.8994 6.25168 13.7983C5.71924 13.6686 5.34564 13.5093 5.13087 13.3204C4.82886 13.0545 4.67785 12.7304 4.67785 12.3481C4.67785 12.102 4.74832 11.8723 4.88926 11.6592C5.03244 11.4439 5.23714 11.2802 5.50336 11.1681C5.77181 11.056 6.09508 11 6.47315 11C7.0906 11 7.55481 11.1329 7.86577 11.3988C8.17897 11.6647 8.3434 12.0196 8.35906 12.4634L7.36577 12.5063C7.32327 12.258 7.23154 12.08 7.0906 11.9723C6.9519 11.8624 6.74273 11.8075 6.46309 11.8075C6.1745 11.8075 5.94855 11.8657 5.78523 11.9822C5.68009 12.0569 5.62752 12.1569 5.62752 12.2821C5.62752 12.3964 5.67673 12.4942 5.77517 12.5755C5.90045 12.6788 6.2047 12.7864 6.68792 12.8985C7.17114 13.0105 7.52796 13.127 7.75839 13.2479C7.99105 13.3665 8.17226 13.5302 8.30201 13.739C8.434 13.9455 8.5 14.2015 8.5 14.5069C8.5 14.7838 8.4217 15.0431 8.2651 15.2848C8.1085 15.5265 7.88702 15.7067 7.60067 15.8253C7.31432 15.9418 6.95749 16 6.5302 16C5.90828 16 5.43065 15.8594 5.09732 15.5781C4.76398 15.2947 4.56488 14.8827 4.5 14.3421Z",
+                fill: "white"
+            }), w[7] = c, w[8] = u) : (c = w[7], u = w[8]), w[9] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsxs)("filter", {
+                id: "filter0_i_8150_7076",
+                x: 12.25,
+                y: 7,
+                width: 10,
+                height: 10,
+                filterUnits: "userSpaceOnUse",
+                colorInterpolationFilters: "sRGB",
+                children: [(0, r.jsx)("feFlood", {
+                    floodOpacity: 0,
+                    result: "BackgroundImageFix"
+                }), (0, r.jsx)("feBlend", {
+                    mode: "normal",
+                    in: "SourceGraphic",
+                    in2: "BackgroundImageFix",
+                    result: "shape"
+                }), (0, r.jsx)("feColorMatrix", {
+                    in: "SourceAlpha",
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+                    result: "hardAlpha"
+                }), (0, r.jsx)("feOffset", {}), (0, r.jsx)("feGaussianBlur", {
+                    stdDeviation: 1
+                }), (0, r.jsx)("feComposite", {
+                    in2: "hardAlpha",
+                    operator: "arithmetic",
+                    k2: -1,
+                    k3: 1
+                }), (0, r.jsx)("feColorMatrix", {
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0.401818 0 0 0 0 0.294666 0 0 0 1 0"
+                }), (0, r.jsx)("feBlend", {
+                    mode: "normal",
+                    in2: "shape",
+                    result: "effect1_innerShadow_8150_7076"
+                })]
+            }), w[9] = f) : f = w[9], w[10] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsxs)("filter", {
+                id: "filter1_i_8150_7076",
+                x: 8,
+                y: 13,
+                width: 9,
+                height: 9,
+                filterUnits: "userSpaceOnUse",
+                colorInterpolationFilters: "sRGB",
+                children: [(0, r.jsx)("feFlood", {
+                    floodOpacity: 0,
+                    result: "BackgroundImageFix"
+                }), (0, r.jsx)("feBlend", {
+                    mode: "normal",
+                    in: "SourceGraphic",
+                    in2: "BackgroundImageFix",
+                    result: "shape"
+                }), (0, r.jsx)("feColorMatrix", {
+                    in: "SourceAlpha",
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+                    result: "hardAlpha"
+                }), (0, r.jsx)("feOffset", {}), (0, r.jsx)("feGaussianBlur", {
+                    stdDeviation: 1
+                }), (0, r.jsx)("feComposite", {
+                    in2: "hardAlpha",
+                    operator: "arithmetic",
+                    k2: -1,
+                    k3: 1
+                }), (0, r.jsx)("feColorMatrix", {
+                    type: "matrix",
+                    values: "0 0 0 0 0.254902 0 0 0 0 0.509804 0 0 0 0 0.584314 0 0 0 1 0"
+                }), (0, r.jsx)("feBlend", {
+                    mode: "normal",
+                    in2: "shape",
+                    result: "effect1_innerShadow_8150_7076"
+                })]
+            }), w[10] = p) : p = w[10], w[11] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, r.jsxs)("filter", {
+                id: "filter2_d_8150_7076",
+                x: 1.5,
+                y: 8.75,
+                width: 10,
+                height: 10,
+                filterUnits: "userSpaceOnUse",
+                colorInterpolationFilters: "sRGB",
+                children: [(0, r.jsx)("feFlood", {
+                    floodOpacity: 0,
+                    result: "BackgroundImageFix"
+                }), (0, r.jsx)("feColorMatrix", {
+                    in: "SourceAlpha",
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+                    result: "hardAlpha"
+                }), (0, r.jsx)("feOffset", {
+                    dy: .25
+                }), (0, r.jsx)("feGaussianBlur", {
+                    stdDeviation: .25
+                }), (0, r.jsx)("feComposite", {
+                    in2: "hardAlpha",
+                    operator: "out"
+                }), (0, r.jsx)("feColorMatrix", {
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                }), (0, r.jsx)("feBlend", {
+                    mode: "normal",
+                    in2: "BackgroundImageFix",
+                    result: "effect1_dropShadow_8150_7076"
+                }), (0, r.jsx)("feBlend", {
+                    mode: "normal",
+                    in: "SourceGraphic",
+                    in2: "effect1_dropShadow_8150_7076",
+                    result: "shape"
+                })]
+            }), w[11] = m) : m = w[11], w[12] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, r.jsxs)("radialGradient", {
+                id: "paint0_radial_8150_7076",
+                cx: 0,
+                cy: 0,
+                r: 1,
+                gradientUnits: "userSpaceOnUse",
+                gradientTransform: "translate(15 7.5) rotate(-174.289) scale(10.0499)",
+                children: [(0, r.jsx)("stop", {
+                    stopColor: "#26C0C7"
+                }), (0, r.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#04786A"
+                })]
+            }), w[12] = b) : b = w[12], w[13] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, r.jsxs)("linearGradient", {
+                id: "paint1_linear_8150_7076",
+                x1: 10,
+                y1: 8,
+                x2: 12,
+                y2: 14,
+                gradientUnits: "userSpaceOnUse",
+                children: [(0, r.jsx)("stop", {
+                    stopColor: "#0A5752",
+                    stopOpacity: 0
+                }), (0, r.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#0A5752"
+                })]
+            }), w[13] = h) : h = w[13], w[14] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, r.jsxs)("radialGradient", {
+                id: "paint2_radial_8150_7076",
+                cx: 0,
+                cy: 0,
+                r: 1,
+                gradientUnits: "userSpaceOnUse",
+                gradientTransform: "translate(15.8864 12.4545) rotate(-20.556) scale(7.76728)",
+                children: [(0, r.jsx)("stop", {
+                    stopColor: "#159C6F"
+                }), (0, r.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#29C7B8"
+                })]
+            }), w[14] = x) : x = w[14], w[15] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, r.jsxs)("linearGradient", {
+                id: "paint3_linear_8150_7076",
+                x1: 12.7045,
+                y1: 12,
+                x2: 18.1591,
+                y2: 12.4545,
+                gradientUnits: "userSpaceOnUse",
+                children: [(0, r.jsx)("stop", {
+                    offset: .0497812,
+                    stopColor: "#6FBBD4"
+                }), (0, r.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#6FBBD4",
+                    stopOpacity: 0
+                })]
+            }), w[15] = g) : g = w[15], w[16] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, r.jsxs)("linearGradient", {
+                id: "paint4_linear_8150_7076",
+                x1: 17.25,
+                y1: 11.0909,
+                x2: 13.1591,
+                y2: 16.0909,
+                gradientUnits: "userSpaceOnUse",
+                children: [(0, r.jsx)("stop", {
+                    stopColor: "#0C6553",
+                    stopOpacity: 0
+                }), (0, r.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#0C6553"
+                })]
+            }), w[16] = v) : v = w[16], w[17] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, r.jsxs)("radialGradient", {
+                id: "paint5_radial_8150_7076",
+                cx: 0,
+                cy: 0,
+                r: 1,
+                gradientUnits: "userSpaceOnUse",
+                gradientTransform: "translate(11.5 16.5) rotate(53.9726) scale(6.80074)",
+                children: [(0, r.jsx)("stop", {
+                    stopColor: "#2EDED7"
+                }), (0, r.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#218097"
+                })]
+            }), w[17] = C) : C = w[17], w[18] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, r.jsxs)("defs", {
+                children: [f, p, m, b, h, x, g, v, C, (0, r.jsxs)("linearGradient", {
+                    id: "paint6_linear_8150_7076",
+                    x1: 6.5,
+                    y1: 9,
+                    x2: 6.5,
+                    y2: 18,
+                    gradientUnits: "userSpaceOnUse",
+                    children: [(0, r.jsx)("stop", {
+                        stopColor: "#33A1B5"
+                    }), (0, r.jsx)("stop", {
+                        offset: 1,
+                        stopColor: "#064A66"
+                    })]
+                })]
+            }), w[18] = j) : j = w[18], w[19] !== e ? (_ = (0, r.jsxs)("svg", {
+                width: "1em",
+                height: "1em",
+                viewBox: "0 0 24 24",
+                fill: "currentColor",
+                ...e,
+                children: [t, a, i, s, n, l, d, c, u, j]
+            }), w[19] = e, w[20] = _) : _ = w[20], _
+        }
+    }),
+    bDc1: (function(e, t, a) {
+        var r = a("YNuJ"),
+            o = a("FIwD");
+        a.d(t, {
+            a: () => o.d,
+            b: () => o.g,
+            c: () => r.a
+        })
+    }),
+    TGHr: (function(e, t, a) {
+        var r = a("TE73"),
+            o = a("eZy0"),
+            i = a("LpLF"),
+            s = a("TiFH"),
+            n = a("GQ93"),
+            l = a("xUWq"),
+            d = a("gcGr"),
+            c = a("vZCo"),
+            u = a("kpww"),
+            f = a("sCki"),
+            p = a("gWf7"),
+            m = a("OH6Z"),
+            b = a("FIwD"),
+            h = a("TQDJ"),
+            x = a("OGxO"),
+            g = a("yoJG"),
+            v = a("krfl"),
+            C = a("SXlx");
+        a.d(t, {}, {
+            a: function(e, t, a) {
+                if (["row", "col", "box", "grid-item"].includes(e)) {
+                    let i = "grid-item" === e && 1 === a.childCount && Object.keys(t).every(e => ["key", "span", "rowSpan"].includes(e)),
+                        s = "grid-item" === e ? {
+                            className: x.a.Item,
+                            variant: i ? "transparent" : void 0,
+                            gap: i ? 0 : t.gap,
+                            style: (0, r.g)({
+                                "grid-item-column": (0, m.a)(t.span) ?? "auto",
+                                "grid-item-row": (0, m.a)(t.rowSpan) ?? "auto"
+                            })
+                        } : {};
+                    return {
+                        tag: "div",
+                        attributes: (0, o.b)({
+                            as: "div",
+                            component: e,
+                            layout: t,
+                            ..."row" === e || "col" === e ? {
+                                direction: e
+                            } : {},
+                            ...s
+                        }, {
+                            theme: a.theme,
+                            autoSpacingDisabled: !1
+                        })
+                    }
+                }
+                if ("card" === e) return {
+                    tag: "div",
+                    attributes: (0, o.b)((0, i.b)(t), {
+                        theme: a.theme,
+                        autoSpacingDisabled: !1
+                    })
+                };
+                if ("grid" === e) return {
+                    tag: "div",
+                    attributes: (0, n.c)(t, a.breakpoints)
+                };
+                if ("flow" === e) return {
+                    tag: "div",
+                    attributes: (0, l.d)(t)
+                };
+                if ("flow-item" === e) return {
+                    tag: "div",
+                    attributes: (0, o.b)((0, l.c)(t), {
+                        theme: a.theme,
+                        autoSpacingDisabled: !1
+                    })
+                };
+                if ("divider" === e) return {
+                    tag: "div",
+                    attributes: (0, s.b)(t, a.theme)
+                };
+                if ("blockquote" === e) return {
+                    tag: "blockquote",
+                    attributes: {
+                        className: h.a.Blockquote,
+                        "data-d-component": "blockquote"
+                    }
+                };
+                if (["text", "title", "caption", "label", "bold", "italic", "underline", "strikethrough"].includes(e)) {
+                    let r = "bold" === e ? {
+                            inline: !0,
+                            strong: !0,
+                            weight: t.weight
+                        } : "italic" === e ? {
+                            inline: !0,
+                            italic: !0
+                        } : "underline" === e ? {
+                            inline: !0,
+                            underline: !0
+                        } : "strikethrough" === e ? {
+                            inline: !0,
+                            lineThrough: !0
+                        } : t,
+                        o = "title" === e ? (0, c.b)(t) : "caption" === e ? (0, u.b)(t) : "label" === e ? (0, f.b)(t) : (0, d.b)(r, a.inline);
+                    return {
+                        tag: o.as,
+                        attributes: (0, p.b)(o, a.theme)
+                    }
+                }
+                if ("code" === e) return {
+                    tag: "code",
+                    attributes: {
+                        className: v.a.Code,
+                        "data-d-component": "code"
+                    }
+                };
+                if ("link" === e) return {
+                    tag: "a",
+                    attributes: {
+                        className: C.a.Link,
+                        "data-d-component": "link",
+                        title: t.title
+                    }
+                };
+                if ("list" === e) {
+                    let e = t.marker ?? "bullet",
+                        a = (0, b.h)(t.gap ?? 0),
+                        r = "number" === e && "number" == typeof t.start && Number.isFinite(t.start) ? t.start : void 0;
+                    return {
+                        tag: "number" === e ? "ol" : "ul",
+                        attributes: {
+                            className: g.a.List,
+                            "data-d-component": "list",
+                            "data-d-marker": e,
+                            "data-d-marker-layout": "native",
+                            start: r,
+                            style: {
+                                "--d-list-row-gap": a.includes("(") ? a : a.split(/\s+/)[0],
+                                gap: a,
+                                counterReset: null == r ? void 0 : `d-list-item ${r-1}`
+                            }
+                        }
+                    }
+                }
+                return "list-item" === e ? {
+                    tag: "li",
+                    attributes: {
+                        className: g.a.Item,
+                        "data-d-component": "list-item",
+                        "data-d-marker-layout": "native"
+                    },
+                    content: {
+                        tag: "div",
+                        attributes: {
+                            className: g.a.Content
+                        },
+                        content: {
+                            tag: "div",
+                            attributes: {
+                                className: g.a.Label,
+                                "data-d-list-item-content": ""
+                            }
+                        }
+                    }
+                } : null
+            }
+        })
+    }),
+    EBQV: (function(t) {
+        t.exports = e.ir("/cdn/assets/dotnet.js").then(function(e) {
+            return e
+        })
+    })
+};
+import {
+    __webpack_require__ as e
+} from "./633146.7f86ed336a.js";
+import * as t from "./418851.ac24d305cd.js";
+e.C(t);
+import * as a from "./109308.c9b7701e19.js";
+e.C(a);
+import * as r from "./399565.e3bd47902e.js";
+e.C(r);
+import * as o from "./257798.7e03f1e3e2.js";
+e.C(o);
+import * as i from "./447351.ec9533f9fc.js";
+e.C(i);
+import * as s from "./617936.b641c39dad.js";
+e.C(s);
+import * as n from "./807489.641526722d.js";
+e.C(n);
+import * as l from "./337882.c82c7eb7d0.js";
+e.C(l);
+import * as d from "./955979.26623eb1e8.js";
+e.C(d);
+import * as c from "./646436.6a9ea7ce2b.js";
+e.C(c);
+import * as u from "./7078.7ac8d1f362.js";
+e.C(u);
+import * as f from "./200429.b3f88f116c.js";
+e.C(f);
+import * as p from "./698524.8e9b330e02.js";
+e.C(p);
+import * as m from "./956483.dad0089cdf.js";
+e.C(m);
+import * as b from "./87162.5235ed43cc.js";
+e.C(b);
+import * as h from "./396705.f3e9be32ee.js";
+e.C(h);
+import * as x from "./155568.f88fad6c40.js";
+e.C(x);
+import * as g from "./731863.70436835b9.js";
+e.C(g);
+import * as v from "./767086.dce6c25374.js";
+e.C(v);
+import * as C from "./76629.b4d403ea2d.js";
+e.C(C);
+import * as j from "./514085.be2a492f7d.js";
+e.C(j);
+import * as _ from "./226913.dd4de34d8f.js";
+e.C(_);
+import * as w from "./753405.4bffba797b.js";
+e.C(w);
+import * as y from "./321957.745ede45f0.js";
+e.C(y);
+import * as I from "./585419.38ade943bd.js";
+e.C(I);
+import * as k from "./843292.e99f82cf4b.js";
+e.C(k);
+import * as S from "./353230.c6d909aef3.js";
+e.C(S);
+import * as F from "./882456.f215d0cfe3.js";
+e.C(F);
+import * as B from "./736970.7cf041e2eb.js";
+e.C(B);
+import * as O from "./909395.7dc04db4e2.js";
+e.C(O);
+import * as N from "./212487.9cfe25039b.js";
+e.C(N);
+import * as U from "./17983.ceb390e8db.js";
+e.C(U);
+import * as M from "./832107.8ef429bcae.js";
+e.C(M);
+import * as D from "./902158.087f350eba.js";
+e.C(D);
+import * as G from "./773363.71e8ffedd6.js";
+e.C(G);
+import * as A from "./311330.a295baeb50.js";
+e.C(A);
+import * as z from "./787702.aac0168f82.js";
+e.C(z);
+var P = e(e.s = "C0MU"),
+    L = P.a,
+    T = P.b;
+export {
+    L as
+    default, T as shouldRevalidate
+};

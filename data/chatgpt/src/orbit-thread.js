@@ -1,1 +1,359 @@
-export const __rspack_esm_ids=[920099];export const __webpack_modules__={Juz5:(function(e,s,a){a.d(s,{a:()=>d,b:()=>f,c:()=>p});var r=a("rEML"),t=a("ABep"),o=a("QosV"),i=a("zOE4"),l=a("YmMY"),n=a("liTb"),c=a("AXDI"),m=a("EkCf");let d=(0,r.jb)(function(){let e,s=(0,o.c)(2),{pathname:a}=(0,r.Y)();if(!(0,n.i)(a)){let e;return s[0]===Symbol.for("react.memo_cache_sentinel")?(e=(0,t.jsx)(c.b,{}),s[0]=e):e=s[0],e}return s[1]===Symbol.for("react.memo_cache_sentinel")?(e=(0,t.jsx)(l.OrbitLoadingShell,{children:(0,t.jsx)(i.LoadingPage,{fillParent:!0,delay:!1,debugName:"OrbitConversation.hydrate"})}),s[1]=e):e=s[1],e});var f=(0,r.hb)(function(){let e,s=(0,o.c)(1);return s[0]===Symbol.for("react.memo_cache_sentinel")?(e=(0,t.jsx)(m.a,{fallback:(0,t.jsx)(d,{})}),s[0]=e):e=s[0],e});let p={orbitLoadingShell:(0,t.jsx)(l.OrbitLoadingShell,{})}}),RbbP:(function(e,s){s.a={composer:"composer-ebIxkP",transcriptBackdrop:"transcriptBackdrop-I_4iC6",paused:"paused-v43S9o",uploads:"uploads-VRbiKY"}}),hxLc:(function(){}),nDjx:(function(e,s,a){e.exports=a.p+"assets/appshot-logo.f0152cb4dd.png"}),hIAo:(function(e,s,a){e.exports=a.p+"assets/codex-app-ga-logo.dfddfb85d7.png"}),OCvz:(function(e,s,a){e.exports=a.p+"assets/dictation-start.f6efcb404f.wav"}),DJ2e:(function(e,s,a){e.exports=a.p+"assets/dictation-stop.e3bc7ebc5e.wav"}),nlAI:(function(e,s,a){var r=a("ABep"),t=a("QosV"),o=a("XyTt"),i=a("zd8w"),l=a("rEML"),n=a("v4LA"),c=a("hZax"),m=a("AXDI");let d="1258713729",f=(0,n.a)(o.y),p=(0,n.a)(async()=>(await Promise.all([a.e(418851),a.e(109308),a.e(399565),a.e(257798),a.e(447351),a.e(617936),a.e(807489),a.e(337882),a.e(955979),a.e(646436),a.e(7078),a.e(200429),a.e(698524),a.e(956483),a.e(87162),a.e(396705),a.e(155568),a.e(731863),a.e(767086),a.e(76629),a.e(514085),a.e(226913),a.e(967847),a.e(330351),a.e(212322),a.e(261228)]).then(a.bind(a,"oWBw"))).BusinessAdsCreditPage);function b(e){let s,a=(0,t.c)(4),{link:o}=e,i=(0,c.f)(d);if((0,c.g)(d)){let e;return a[0]===Symbol.for("react.memo_cache_sentinel")?(e=(0,r.jsx)(m.b,{}),a[0]=e):e=a[0],e}return a[1]!==i||a[2]!==o?(s=i?(0,r.jsx)(p,{link:o}):(0,r.jsx)(f,{link:o}),a[1]=i,a[2]=o,a[3]=s):s=a[3],s}a.d(s,{},{a:function(e){let s,a,o,n=(0,t.c)(7),{link:c}=e,{search:d}=(0,l.Y)();n[0]!==c.isAdsCreditCampaign||n[1]!==d?(s=c.isAdsCreditCampaign&&!new URLSearchParams(d).get("promo_campaign"),n[0]=c.isAdsCreditCampaign,n[1]=d,n[2]=s):s=n[2];let p=s;return n[3]===Symbol.for("react.memo_cache_sentinel")?(a=(0,r.jsx)(m.b,{}),n[3]=a):a=n[3],n[4]!==p||n[5]!==c?(o=(0,r.jsx)(m.a,{children:(0,r.jsx)(i.Suspense,{fallback:a,children:p?(0,r.jsx)(b,{link:c}):(0,r.jsx)(f,{link:c})})}),n[4]=p,n[5]=c,n[6]=o):o=n[6],o}})}),EkCf:(function(e,s,a){var r=a("ABep"),t=a("QosV"),o=a("rEML"),i=a("HnGz"),l=a("hC2y"),n=a("AXDI"),c=a("NVla"),m=a("nlAI");a.d(s,{},{a:function(e){let s,a,d,f,p,b=(0,t.c)(14),{fallback:x}=e,{pathname:j}=(0,o.Y)();if(b[0]!==x||b[1]!==j){f=Symbol.for("react.early_return_sentinel");e:{let e=(0,i.g)(l.c,j);if(null==e){let e;b[6]!==j?(e=(0,c.b)(j),b[6]=j,b[7]=e):e=b[7];let s=e;if(null!=s){let e;b[8]!==s?(e=(0,r.jsx)(m.a,{link:s}),b[8]=s,b[9]=e):e=b[9],f=e;break e}}s=n.a,a=x,d=null==e?(0,r.jsx)(l.d,{}):(0,o.O)(e)}b[0]=x,b[1]=j,b[2]=s,b[3]=a,b[4]=d,b[5]=f}else s=b[2],a=b[3],d=b[4],f=b[5];return f!==Symbol.for("react.early_return_sentinel")?f:(b[10]!==s||b[11]!==a||b[12]!==d?(p=(0,r.jsx)(s,{fallback:a,children:d}),b[10]=s,b[11]=a,b[12]=d,b[13]=p):p=b[13],p)}})}),YmMY:(function(e,s,a){a.d(s,{OrbitLoadingShell:()=>h});var r=a("ABep"),t=a("QosV"),o=a("on57"),i=a("BolX"),l=a("Wf1j"),n=a("UgGw"),c=a("O5pN"),m=a("osar"),d=a("enVv"),f=a("bf6R"),p=a("X3K1"),b=a("d1ji"),x=a("KkZX"),j=a("RbbP");function h(e){let s,a,h,g,u,_,C,v,y,k,w,S,N,A,M,z,L=(0,t.c)(30),{children:B}=e,I=(0,l.a)(),P=(0,i.z)(b.d);L[0]===Symbol.for("react.memo_cache_sentinel")?(s=(0,o.b)("absolute inset-x-0 bottom-0","shell-tMaeFg"),L[0]=s):s=L[0];let O=P?"pt-0.5":"pt-1.5";return L[1]!==O?(a=(0,o.b)("relative flex justify-center px-4",O),L[1]=O,L[2]=a):a=L[2],L[3]===Symbol.for("react.memo_cache_sentinel")?(h=(0,r.jsx)("span",{className:"relative z-10 -mb-0.5 size-14",children:(0,r.jsx)("span",{className:"flex size-full items-center justify-center rounded-full bg-text/10"})}),L[3]=h):h=L[3],L[4]===Symbol.for("react.memo_cache_sentinel")?(g=(0,r.jsxs)("div",{className:"relative flex max-w-full min-w-0 flex-col items-center select-none",children:[h,(0,r.jsx)("span",{className:"flex max-w-full min-w-0 flex-col items-center px-2.5 py-1 text-[16px] leading-5 text-tertiary",children:(0,r.jsx)("span",{className:"flex h-lh items-center",children:(0,r.jsx)(p.a,{as:"span",className:"w-16 max-w-full",size:"sm"})})})]}),L[4]=g):g=L[4],L[5]!==a?(u=(0,r.jsx)("div",{className:"pointer-events-none absolute inset-x-0 top-0 z-50",children:(0,r.jsx)("div",{className:a,children:g})}),L[5]=a,L[6]=u):u=L[6],L[7]===Symbol.for("react.memo_cache_sentinel")?(_=(0,o.b)("relative",j.a.composer,x.a),L[7]=_):_=L[7],L[8]!==I?(C=I.formatMessage({id:"restricted.aeonMessaging.roomUi.messageInput",defaultMessage:"Message"}),L[8]=I,L[9]=C):C=L[9],L[10]!==I?(v=I.formatMessage({id:"restricted.aeonMessaging.roomUi.sendMessagePlaceholder",defaultMessage:"Send a message"}),L[10]=I,L[11]=v):v=L[11],L[12]!==C||L[13]!==v?(y=(0,r.jsx)(m.a.Input,{layout:"single-line",children:(0,r.jsx)(c.a,{singleLine:!0,children:(0,r.jsx)("textarea",{className:"block w-full resize-none bg-transparent text-default outline-none placeholder:text-secondary","aria-label":C,placeholder:v,rows:1,disabled:!0})})}),L[12]=C,L[13]=v,L[14]=y):y=L[14],L[15]===Symbol.for("react.memo_cache_sentinel")?(k=(0,r.jsx)(m.a.FooterActions,{children:(0,r.jsx)(n.a,{disabled:!0,onOpen:void 0})}),L[15]=k):k=L[15],L[16]===Symbol.for("react.memo_cache_sentinel")?(w=(0,r.jsx)("span",{className:"size-token-button-composer"}),L[16]=w):w=L[16],L[17]!==I?(S=I.formatMessage({id:"restricted.aeonMessaging.roomUi.send",defaultMessage:"Send"}),L[17]=I,L[18]=S):S=L[18],L[19]!==S?(N=(0,r.jsx)(m.a.FooterControls,{layout:"single-line",children:(0,r.jsxs)(m.a.FooterActions,{children:[w,(0,r.jsx)(d.a,{Icon:f.H,disabled:!0,ariaLabel:S})]})}),L[19]=S,L[20]=N):N=L[20],L[21]!==y||L[22]!==N?(A=(0,r.jsx)("div",{className:"conversation-viewport @container relative flex min-h-0 min-w-0 flex-1",children:(0,r.jsx)("div",{className:"conversation-footer",children:(0,r.jsx)("div",{className:"composer-wrap",children:(0,r.jsx)("div",{className:_,children:(0,r.jsx)(m.a,{layout:"single-line",children:(0,r.jsx)(m.a.Body,{layout:"single-line",children:(0,r.jsx)(m.a.AdaptiveFooter,{layout:"single-line",input:y,leadingControls:k,trailingControls:N})})})})})})}),L[21]=y,L[22]=N,L[23]=A):A=L[23],L[24]!==A||L[25]!==u?(M=(0,r.jsx)("div",{className:"messaging-root messaging-embedded",inert:!0,"aria-hidden":!0,children:(0,r.jsx)("div",{className:"workspace",children:(0,r.jsxs)("div",{className:"thread-pane",children:[u,A]})})}),L[24]=A,L[25]=u,L[26]=M):M=L[26],L[27]!==B||L[28]!==M?(z=(0,r.jsxs)("div",{className:s,children:[M,B]}),L[27]=B,L[28]=M,L[29]=z):z=L[29],z}a("hxLc")}),EBQV:(function(s){s.exports=e.ir("/cdn/assets/dotnet.js").then(function(e){return e})})};import{__webpack_require__ as e}from"./633146.7affad7b5d.js";import*as s from"./418851.a18db97c0f.js";e.C(s);import*as a from"./109308.c9b7701e19.js";e.C(a);import*as r from"./399565.e3bd47902e.js";e.C(r);import*as t from"./257798.7e03f1e3e2.js";e.C(t);import*as o from"./447351.96852eb6b8.js";e.C(o);import*as i from"./617936.b641c39dad.js";e.C(i);import*as l from"./807489.287ea00c8d.js";e.C(l);import*as n from"./337882.945f5227c2.js";e.C(n);import*as c from"./955979.2d3fb29684.js";e.C(c);import*as m from"./646436.6a9ea7ce2b.js";e.C(m);import*as d from"./7078.b92f527b06.js";e.C(d);import*as f from"./200429.6598292931.js";e.C(f);import*as p from"./698524.5402dc2ea3.js";e.C(p);import*as b from"./956483.595b7db9a7.js";e.C(b);import*as x from"./87162.d955fb8b13.js";e.C(x);import*as j from"./396705.47c12a5601.js";e.C(j);import*as h from"./155568.f88fad6c40.js";e.C(h);import*as g from"./731863.4d5b0f8b9b.js";e.C(g);import*as u from"./767086.7d33efc736.js";e.C(u);import*as _ from"./76629.9835d52bf1.js";e.C(_);import*as C from"./514085.4ce61adad7.js";e.C(C);import*as v from"./226913.dd4de34d8f.js";e.C(v);import*as y from"./902158.087f350eba.js";e.C(y);import*as k from"./920099.53bf383e8b.js";e.C(k);var w=e(e.s="Juz5"),S=w.a,N=w.b,A=w.c;export{S as HydrateFallback,N as default,A as handle};
+export const __rspack_esm_ids = [920099];
+export const __webpack_modules__ = {
+    Juz5: (function(e, s, a) {
+        a.d(s, {
+            a: () => d,
+            b: () => f,
+            c: () => p
+        });
+        var r = a("rEML"),
+            t = a("ABep"),
+            o = a("QosV"),
+            i = a("zOE4"),
+            l = a("YmMY"),
+            n = a("liTb"),
+            c = a("AXDI"),
+            m = a("EkCf");
+        let d = (0, r.jb)(function() {
+            let e, s = (0, o.c)(2),
+                {
+                    pathname: a
+                } = (0, r.Y)();
+            if (!(0, n.i)(a)) {
+                let e;
+                return s[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(c.b, {}), s[0] = e) : e = s[0], e
+            }
+            return s[1] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(l.OrbitLoadingShell, {
+                children: (0, t.jsx)(i.LoadingPage, {
+                    fillParent: !0,
+                    delay: !1,
+                    debugName: "OrbitConversation.hydrate"
+                })
+            }), s[1] = e) : e = s[1], e
+        });
+        var f = (0, r.hb)(function() {
+            let e, s = (0, o.c)(1);
+            return s[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(m.a, {
+                fallback: (0, t.jsx)(d, {})
+            }), s[0] = e) : e = s[0], e
+        });
+        let p = {
+            orbitLoadingShell: (0, t.jsx)(l.OrbitLoadingShell, {})
+        }
+    }),
+    RbbP: (function(e, s) {
+        s.a = {
+            composer: "composer-ebIxkP",
+            transcriptBackdrop: "transcriptBackdrop-I_4iC6",
+            paused: "paused-v43S9o",
+            uploads: "uploads-VRbiKY"
+        }
+    }),
+    hxLc: (function() {}),
+    nDjx: (function(e, s, a) {
+        e.exports = a.p + "assets/appshot-logo.f0152cb4dd.png"
+    }),
+    hIAo: (function(e, s, a) {
+        e.exports = a.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    }),
+    OCvz: (function(e, s, a) {
+        e.exports = a.p + "assets/dictation-start.f6efcb404f.wav"
+    }),
+    DJ2e: (function(e, s, a) {
+        e.exports = a.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    nlAI: (function(e, s, a) {
+        var r = a("ABep"),
+            t = a("QosV"),
+            o = a("XyTt"),
+            i = a("zd8w"),
+            l = a("rEML"),
+            n = a("v4LA"),
+            c = a("hZax"),
+            m = a("AXDI");
+        let d = "1258713729",
+            f = (0, n.a)(o.y),
+            p = (0, n.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(967847), a.e(330351), a.e(212322), a.e(261228)]).then(a.bind(a, "oWBw"))).BusinessAdsCreditPage);
+
+        function b(e) {
+            let s, a = (0, t.c)(4),
+                {
+                    link: o
+                } = e,
+                i = (0, c.f)(d);
+            if ((0, c.g)(d)) {
+                let e;
+                return a[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, r.jsx)(m.b, {}), a[0] = e) : e = a[0], e
+            }
+            return a[1] !== i || a[2] !== o ? (s = i ? (0, r.jsx)(p, {
+                link: o
+            }) : (0, r.jsx)(f, {
+                link: o
+            }), a[1] = i, a[2] = o, a[3] = s) : s = a[3], s
+        }
+        a.d(s, {}, {
+            a: function(e) {
+                let s, a, o, n = (0, t.c)(7),
+                    {
+                        link: c
+                    } = e,
+                    {
+                        search: d
+                    } = (0, l.Y)();
+                n[0] !== c.isAdsCreditCampaign || n[1] !== d ? (s = c.isAdsCreditCampaign && !new URLSearchParams(d).get("promo_campaign"), n[0] = c.isAdsCreditCampaign, n[1] = d, n[2] = s) : s = n[2];
+                let p = s;
+                return n[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(m.b, {}), n[3] = a) : a = n[3], n[4] !== p || n[5] !== c ? (o = (0, r.jsx)(m.a, {
+                    children: (0, r.jsx)(i.Suspense, {
+                        fallback: a,
+                        children: p ? (0, r.jsx)(b, {
+                            link: c
+                        }) : (0, r.jsx)(f, {
+                            link: c
+                        })
+                    })
+                }), n[4] = p, n[5] = c, n[6] = o) : o = n[6], o
+            }
+        })
+    }),
+    EkCf: (function(e, s, a) {
+        var r = a("ABep"),
+            t = a("QosV"),
+            o = a("rEML"),
+            i = a("HnGz"),
+            l = a("hC2y"),
+            n = a("AXDI"),
+            c = a("NVla"),
+            m = a("nlAI");
+        a.d(s, {}, {
+            a: function(e) {
+                let s, a, d, f, p, b = (0, t.c)(14),
+                    {
+                        fallback: x
+                    } = e,
+                    {
+                        pathname: j
+                    } = (0, o.Y)();
+                if (b[0] !== x || b[1] !== j) {
+                    f = Symbol.for("react.early_return_sentinel");
+                    e: {
+                        let e = (0, i.g)(l.c, j);
+                        if (null == e) {
+                            let e;
+                            b[6] !== j ? (e = (0, c.b)(j), b[6] = j, b[7] = e) : e = b[7];
+                            let s = e;
+                            if (null != s) {
+                                let e;
+                                b[8] !== s ? (e = (0, r.jsx)(m.a, {
+                                    link: s
+                                }), b[8] = s, b[9] = e) : e = b[9], f = e;
+                                break e
+                            }
+                        }
+                        s = n.a,
+                        a = x,
+                        d = null == e ? (0, r.jsx)(l.d, {}) : (0, o.O)(e)
+                    }
+                    b[0] = x, b[1] = j, b[2] = s, b[3] = a, b[4] = d, b[5] = f
+                } else s = b[2], a = b[3], d = b[4], f = b[5];
+                return f !== Symbol.for("react.early_return_sentinel") ? f : (b[10] !== s || b[11] !== a || b[12] !== d ? (p = (0, r.jsx)(s, {
+                    fallback: a,
+                    children: d
+                }), b[10] = s, b[11] = a, b[12] = d, b[13] = p) : p = b[13], p)
+            }
+        })
+    }),
+    YmMY: (function(e, s, a) {
+        a.d(s, {
+            OrbitLoadingShell: () => h
+        });
+        var r = a("ABep"),
+            t = a("QosV"),
+            o = a("on57"),
+            i = a("BolX"),
+            l = a("Wf1j"),
+            n = a("UgGw"),
+            c = a("O5pN"),
+            m = a("osar"),
+            d = a("enVv"),
+            f = a("bf6R"),
+            p = a("X3K1"),
+            b = a("d1ji"),
+            x = a("KkZX"),
+            j = a("RbbP");
+
+        function h(e) {
+            let s, a, h, g, u, _, C, v, y, k, w, S, N, A, M, z, L = (0, t.c)(30),
+                {
+                    children: B
+                } = e,
+                I = (0, l.a)(),
+                P = (0, i.z)(b.d);
+            L[0] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, o.b)("absolute inset-x-0 bottom-0", "shell-tMaeFg"), L[0] = s) : s = L[0];
+            let O = P ? "pt-0.5" : "pt-1.5";
+            return L[1] !== O ? (a = (0, o.b)("relative flex justify-center px-4", O), L[1] = O, L[2] = a) : a = L[2], L[3] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, r.jsx)("span", {
+                className: "relative z-10 -mb-0.5 size-14",
+                children: (0, r.jsx)("span", {
+                    className: "flex size-full items-center justify-center rounded-full bg-text/10"
+                })
+            }), L[3] = h) : h = L[3], L[4] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, r.jsxs)("div", {
+                className: "relative flex max-w-full min-w-0 flex-col items-center select-none",
+                children: [h, (0, r.jsx)("span", {
+                    className: "flex max-w-full min-w-0 flex-col items-center px-2.5 py-1 text-[16px] leading-5 text-tertiary",
+                    children: (0, r.jsx)("span", {
+                        className: "flex h-lh items-center",
+                        children: (0, r.jsx)(p.a, {
+                            as: "span",
+                            className: "w-16 max-w-full",
+                            size: "sm"
+                        })
+                    })
+                })]
+            }), L[4] = g) : g = L[4], L[5] !== a ? (u = (0, r.jsx)("div", {
+                className: "pointer-events-none absolute inset-x-0 top-0 z-50",
+                children: (0, r.jsx)("div", {
+                    className: a,
+                    children: g
+                })
+            }), L[5] = a, L[6] = u) : u = L[6], L[7] === Symbol.for("react.memo_cache_sentinel") ? (_ = (0, o.b)("relative", j.a.composer, x.a), L[7] = _) : _ = L[7], L[8] !== I ? (C = I.formatMessage({
+                id: "restricted.aeonMessaging.roomUi.messageInput",
+                defaultMessage: "Message"
+            }), L[8] = I, L[9] = C) : C = L[9], L[10] !== I ? (v = I.formatMessage({
+                id: "restricted.aeonMessaging.roomUi.sendMessagePlaceholder",
+                defaultMessage: "Send a message"
+            }), L[10] = I, L[11] = v) : v = L[11], L[12] !== C || L[13] !== v ? (y = (0, r.jsx)(m.a.Input, {
+                layout: "single-line",
+                children: (0, r.jsx)(c.a, {
+                    singleLine: !0,
+                    children: (0, r.jsx)("textarea", {
+                        className: "block w-full resize-none bg-transparent text-default outline-none placeholder:text-secondary",
+                        "aria-label": C,
+                        placeholder: v,
+                        rows: 1,
+                        disabled: !0
+                    })
+                })
+            }), L[12] = C, L[13] = v, L[14] = y) : y = L[14], L[15] === Symbol.for("react.memo_cache_sentinel") ? (k = (0, r.jsx)(m.a.FooterActions, {
+                children: (0, r.jsx)(n.a, {
+                    disabled: !0,
+                    onOpen: void 0
+                })
+            }), L[15] = k) : k = L[15], L[16] === Symbol.for("react.memo_cache_sentinel") ? (w = (0, r.jsx)("span", {
+                className: "size-token-button-composer"
+            }), L[16] = w) : w = L[16], L[17] !== I ? (S = I.formatMessage({
+                id: "restricted.aeonMessaging.roomUi.send",
+                defaultMessage: "Send"
+            }), L[17] = I, L[18] = S) : S = L[18], L[19] !== S ? (N = (0, r.jsx)(m.a.FooterControls, {
+                layout: "single-line",
+                children: (0, r.jsxs)(m.a.FooterActions, {
+                    children: [w, (0, r.jsx)(d.a, {
+                        Icon: f.H,
+                        disabled: !0,
+                        ariaLabel: S
+                    })]
+                })
+            }), L[19] = S, L[20] = N) : N = L[20], L[21] !== y || L[22] !== N ? (A = (0, r.jsx)("div", {
+                className: "conversation-viewport @container relative flex min-h-0 min-w-0 flex-1",
+                children: (0, r.jsx)("div", {
+                    className: "conversation-footer",
+                    children: (0, r.jsx)("div", {
+                        className: "composer-wrap",
+                        children: (0, r.jsx)("div", {
+                            className: _,
+                            children: (0, r.jsx)(m.a, {
+                                layout: "single-line",
+                                children: (0, r.jsx)(m.a.Body, {
+                                    layout: "single-line",
+                                    children: (0, r.jsx)(m.a.AdaptiveFooter, {
+                                        layout: "single-line",
+                                        input: y,
+                                        leadingControls: k,
+                                        trailingControls: N
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            }), L[21] = y, L[22] = N, L[23] = A) : A = L[23], L[24] !== A || L[25] !== u ? (M = (0, r.jsx)("div", {
+                className: "messaging-root messaging-embedded",
+                inert: !0,
+                "aria-hidden": !0,
+                children: (0, r.jsx)("div", {
+                    className: "workspace",
+                    children: (0, r.jsxs)("div", {
+                        className: "thread-pane",
+                        children: [u, A]
+                    })
+                })
+            }), L[24] = A, L[25] = u, L[26] = M) : M = L[26], L[27] !== B || L[28] !== M ? (z = (0, r.jsxs)("div", {
+                className: s,
+                children: [M, B]
+            }), L[27] = B, L[28] = M, L[29] = z) : z = L[29], z
+        }
+        a("hxLc")
+    }),
+    EBQV: (function(s) {
+        s.exports = e.ir("/cdn/assets/dotnet.js").then(function(e) {
+            return e
+        })
+    })
+};
+import {
+    __webpack_require__ as e
+} from "./633146.7f86ed336a.js";
+import * as s from "./418851.ac24d305cd.js";
+e.C(s);
+import * as a from "./109308.c9b7701e19.js";
+e.C(a);
+import * as r from "./399565.e3bd47902e.js";
+e.C(r);
+import * as t from "./257798.7e03f1e3e2.js";
+e.C(t);
+import * as o from "./447351.ec9533f9fc.js";
+e.C(o);
+import * as i from "./617936.b641c39dad.js";
+e.C(i);
+import * as l from "./807489.641526722d.js";
+e.C(l);
+import * as n from "./337882.c82c7eb7d0.js";
+e.C(n);
+import * as c from "./955979.26623eb1e8.js";
+e.C(c);
+import * as m from "./646436.6a9ea7ce2b.js";
+e.C(m);
+import * as d from "./7078.7ac8d1f362.js";
+e.C(d);
+import * as f from "./200429.b3f88f116c.js";
+e.C(f);
+import * as p from "./698524.8e9b330e02.js";
+e.C(p);
+import * as b from "./956483.dad0089cdf.js";
+e.C(b);
+import * as x from "./87162.5235ed43cc.js";
+e.C(x);
+import * as j from "./396705.f3e9be32ee.js";
+e.C(j);
+import * as h from "./155568.f88fad6c40.js";
+e.C(h);
+import * as g from "./731863.70436835b9.js";
+e.C(g);
+import * as u from "./767086.dce6c25374.js";
+e.C(u);
+import * as _ from "./76629.b4d403ea2d.js";
+e.C(_);
+import * as C from "./514085.be2a492f7d.js";
+e.C(C);
+import * as v from "./226913.dd4de34d8f.js";
+e.C(v);
+import * as y from "./902158.087f350eba.js";
+e.C(y);
+import * as k from "./920099.381c45362b.js";
+e.C(k);
+var w = e(e.s = "Juz5"),
+    S = w.a,
+    N = w.b,
+    A = w.c;
+export {
+    S as HydrateFallback, N as
+    default, A as handle
+};

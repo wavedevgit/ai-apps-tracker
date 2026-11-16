@@ -1,4 +1,1667 @@
-export const __rspack_esm_ids=[904869];export const __webpack_modules__={HcfL:(function(e,t){t.a={match:"match-z3yytq"}}),rfXw:(function(e,t,a){var n=a("ABep"),r=a("QosV");t.default=e=>{let t,a,i,l,o,s,c,d,u,p,h,f,g,m,v,y,b,x,w,C,_=(0,r.c)(21);return _[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,n.jsx)("path",{d:"M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",fill:"url(#paint0_radial_8150_7076)"}),a=(0,n.jsx)("path",{d:"M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",fill:"url(#paint1_linear_8150_7076)"}),i=(0,n.jsx)("path",{d:"M12 2.125C15.2447 2.125 17.875 4.75533 17.875 8C17.875 11.2447 15.2447 13.875 12 13.875C8.75533 13.875 6.125 11.2447 6.125 8C6.125 4.75533 8.75533 2.125 12 2.125Z",stroke:"black",strokeOpacity:.1,strokeWidth:.25}),_[0]=t,_[1]=a,_[2]=i):(t=_[0],a=_[1],i=_[2]),_[3]===Symbol.for("react.memo_cache_sentinel")?(l=(0,n.jsxs)("g",{filter:"url(#filter0_i_8150_7076)",children:[(0,n.jsx)("path",{d:"M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",fill:"url(#paint2_radial_8150_7076)"}),(0,n.jsx)("path",{d:"M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",fill:"url(#paint3_linear_8150_7076)"}),(0,n.jsx)("path",{d:"M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",fill:"url(#paint4_linear_8150_7076)"})]}),o=(0,n.jsx)("path",{d:"M17.25 7.125C19.9424 7.125 22.125 9.30761 22.125 12C22.125 14.6924 19.9424 16.875 17.25 16.875C14.5576 16.875 12.375 14.6924 12.375 12C12.375 9.30761 14.5576 7.125 17.25 7.125Z",stroke:"black",strokeOpacity:.1,strokeWidth:.25}),_[3]=l,_[4]=o):(l=_[3],o=_[4]),_[5]===Symbol.for("react.memo_cache_sentinel")?(s=(0,n.jsx)("g",{filter:"url(#filter1_i_8150_7076)",children:(0,n.jsx)("path",{d:"M12.5 22C14.9853 22 17 19.9853 17 17.5C17 15.0147 14.9853 13 12.5 13C10.0147 13 8 15.0147 8 17.5C8 19.9853 10.0147 22 12.5 22Z",fill:"url(#paint5_radial_8150_7076)"})}),c=(0,n.jsx)("path",{d:"M12.5 13.125C14.9162 13.125 16.875 15.0838 16.875 17.5C16.875 19.9162 14.9162 21.875 12.5 21.875C10.0838 21.875 8.125 19.9162 8.125 17.5C8.125 15.0838 10.0838 13.125 12.5 13.125Z",stroke:"black",strokeOpacity:.1,strokeWidth:.25}),_[5]=s,_[6]=c):(s=_[5],c=_[6]),_[7]===Symbol.for("react.memo_cache_sentinel")?(d=(0,n.jsx)("g",{filter:"url(#filter2_d_8150_7076)",children:(0,n.jsx)("rect",{x:2,y:9,width:9,height:9,rx:1.75,fill:"url(#paint6_linear_8150_7076)"})}),u=(0,n.jsx)("path",{d:"M4.5 14.3421L5.46644 14.2498C5.52461 14.5684 5.64206 14.8025 5.81879 14.9519C5.99776 15.1013 6.23826 15.176 6.54027 15.176C6.86018 15.176 7.10067 15.1101 7.26174 14.9782C7.42506 14.8442 7.50671 14.6882 7.50671 14.5102C7.50671 14.396 7.47204 14.2993 7.40268 14.2202C7.33557 14.1389 7.217 14.0686 7.04698 14.0092C6.93065 13.9697 6.66555 13.8994 6.25168 13.7983C5.71924 13.6686 5.34564 13.5093 5.13087 13.3204C4.82886 13.0545 4.67785 12.7304 4.67785 12.3481C4.67785 12.102 4.74832 11.8723 4.88926 11.6592C5.03244 11.4439 5.23714 11.2802 5.50336 11.1681C5.77181 11.056 6.09508 11 6.47315 11C7.0906 11 7.55481 11.1329 7.86577 11.3988C8.17897 11.6647 8.3434 12.0196 8.35906 12.4634L7.36577 12.5063C7.32327 12.258 7.23154 12.08 7.0906 11.9723C6.9519 11.8624 6.74273 11.8075 6.46309 11.8075C6.1745 11.8075 5.94855 11.8657 5.78523 11.9822C5.68009 12.0569 5.62752 12.1569 5.62752 12.2821C5.62752 12.3964 5.67673 12.4942 5.77517 12.5755C5.90045 12.6788 6.2047 12.7864 6.68792 12.8985C7.17114 13.0105 7.52796 13.127 7.75839 13.2479C7.99105 13.3665 8.17226 13.5302 8.30201 13.739C8.434 13.9455 8.5 14.2015 8.5 14.5069C8.5 14.7838 8.4217 15.0431 8.2651 15.2848C8.1085 15.5265 7.88702 15.7067 7.60067 15.8253C7.31432 15.9418 6.95749 16 6.5302 16C5.90828 16 5.43065 15.8594 5.09732 15.5781C4.76398 15.2947 4.56488 14.8827 4.5 14.3421Z",fill:"white"}),_[7]=d,_[8]=u):(d=_[7],u=_[8]),_[9]===Symbol.for("react.memo_cache_sentinel")?(p=(0,n.jsxs)("filter",{id:"filter0_i_8150_7076",x:12.25,y:7,width:10,height:10,filterUnits:"userSpaceOnUse",colorInterpolationFilters:"sRGB",children:[(0,n.jsx)("feFlood",{floodOpacity:0,result:"BackgroundImageFix"}),(0,n.jsx)("feBlend",{mode:"normal",in:"SourceGraphic",in2:"BackgroundImageFix",result:"shape"}),(0,n.jsx)("feColorMatrix",{in:"SourceAlpha",type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",result:"hardAlpha"}),(0,n.jsx)("feOffset",{}),(0,n.jsx)("feGaussianBlur",{stdDeviation:1}),(0,n.jsx)("feComposite",{in2:"hardAlpha",operator:"arithmetic",k2:-1,k3:1}),(0,n.jsx)("feColorMatrix",{type:"matrix",values:"0 0 0 0 0 0 0 0 0 0.401818 0 0 0 0 0.294666 0 0 0 1 0"}),(0,n.jsx)("feBlend",{mode:"normal",in2:"shape",result:"effect1_innerShadow_8150_7076"})]}),_[9]=p):p=_[9],_[10]===Symbol.for("react.memo_cache_sentinel")?(h=(0,n.jsxs)("filter",{id:"filter1_i_8150_7076",x:8,y:13,width:9,height:9,filterUnits:"userSpaceOnUse",colorInterpolationFilters:"sRGB",children:[(0,n.jsx)("feFlood",{floodOpacity:0,result:"BackgroundImageFix"}),(0,n.jsx)("feBlend",{mode:"normal",in:"SourceGraphic",in2:"BackgroundImageFix",result:"shape"}),(0,n.jsx)("feColorMatrix",{in:"SourceAlpha",type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",result:"hardAlpha"}),(0,n.jsx)("feOffset",{}),(0,n.jsx)("feGaussianBlur",{stdDeviation:1}),(0,n.jsx)("feComposite",{in2:"hardAlpha",operator:"arithmetic",k2:-1,k3:1}),(0,n.jsx)("feColorMatrix",{type:"matrix",values:"0 0 0 0 0.254902 0 0 0 0 0.509804 0 0 0 0 0.584314 0 0 0 1 0"}),(0,n.jsx)("feBlend",{mode:"normal",in2:"shape",result:"effect1_innerShadow_8150_7076"})]}),_[10]=h):h=_[10],_[11]===Symbol.for("react.memo_cache_sentinel")?(f=(0,n.jsxs)("filter",{id:"filter2_d_8150_7076",x:1.5,y:8.75,width:10,height:10,filterUnits:"userSpaceOnUse",colorInterpolationFilters:"sRGB",children:[(0,n.jsx)("feFlood",{floodOpacity:0,result:"BackgroundImageFix"}),(0,n.jsx)("feColorMatrix",{in:"SourceAlpha",type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",result:"hardAlpha"}),(0,n.jsx)("feOffset",{dy:.25}),(0,n.jsx)("feGaussianBlur",{stdDeviation:.25}),(0,n.jsx)("feComposite",{in2:"hardAlpha",operator:"out"}),(0,n.jsx)("feColorMatrix",{type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"}),(0,n.jsx)("feBlend",{mode:"normal",in2:"BackgroundImageFix",result:"effect1_dropShadow_8150_7076"}),(0,n.jsx)("feBlend",{mode:"normal",in:"SourceGraphic",in2:"effect1_dropShadow_8150_7076",result:"shape"})]}),_[11]=f):f=_[11],_[12]===Symbol.for("react.memo_cache_sentinel")?(g=(0,n.jsxs)("radialGradient",{id:"paint0_radial_8150_7076",cx:0,cy:0,r:1,gradientUnits:"userSpaceOnUse",gradientTransform:"translate(15 7.5) rotate(-174.289) scale(10.0499)",children:[(0,n.jsx)("stop",{stopColor:"#26C0C7"}),(0,n.jsx)("stop",{offset:1,stopColor:"#04786A"})]}),_[12]=g):g=_[12],_[13]===Symbol.for("react.memo_cache_sentinel")?(m=(0,n.jsxs)("linearGradient",{id:"paint1_linear_8150_7076",x1:10,y1:8,x2:12,y2:14,gradientUnits:"userSpaceOnUse",children:[(0,n.jsx)("stop",{stopColor:"#0A5752",stopOpacity:0}),(0,n.jsx)("stop",{offset:1,stopColor:"#0A5752"})]}),_[13]=m):m=_[13],_[14]===Symbol.for("react.memo_cache_sentinel")?(v=(0,n.jsxs)("radialGradient",{id:"paint2_radial_8150_7076",cx:0,cy:0,r:1,gradientUnits:"userSpaceOnUse",gradientTransform:"translate(15.8864 12.4545) rotate(-20.556) scale(7.76728)",children:[(0,n.jsx)("stop",{stopColor:"#159C6F"}),(0,n.jsx)("stop",{offset:1,stopColor:"#29C7B8"})]}),_[14]=v):v=_[14],_[15]===Symbol.for("react.memo_cache_sentinel")?(y=(0,n.jsxs)("linearGradient",{id:"paint3_linear_8150_7076",x1:12.7045,y1:12,x2:18.1591,y2:12.4545,gradientUnits:"userSpaceOnUse",children:[(0,n.jsx)("stop",{offset:.0497812,stopColor:"#6FBBD4"}),(0,n.jsx)("stop",{offset:1,stopColor:"#6FBBD4",stopOpacity:0})]}),_[15]=y):y=_[15],_[16]===Symbol.for("react.memo_cache_sentinel")?(b=(0,n.jsxs)("linearGradient",{id:"paint4_linear_8150_7076",x1:17.25,y1:11.0909,x2:13.1591,y2:16.0909,gradientUnits:"userSpaceOnUse",children:[(0,n.jsx)("stop",{stopColor:"#0C6553",stopOpacity:0}),(0,n.jsx)("stop",{offset:1,stopColor:"#0C6553"})]}),_[16]=b):b=_[16],_[17]===Symbol.for("react.memo_cache_sentinel")?(x=(0,n.jsxs)("radialGradient",{id:"paint5_radial_8150_7076",cx:0,cy:0,r:1,gradientUnits:"userSpaceOnUse",gradientTransform:"translate(11.5 16.5) rotate(53.9726) scale(6.80074)",children:[(0,n.jsx)("stop",{stopColor:"#2EDED7"}),(0,n.jsx)("stop",{offset:1,stopColor:"#218097"})]}),_[17]=x):x=_[17],_[18]===Symbol.for("react.memo_cache_sentinel")?(w=(0,n.jsxs)("defs",{children:[p,h,f,g,m,v,y,b,x,(0,n.jsxs)("linearGradient",{id:"paint6_linear_8150_7076",x1:6.5,y1:9,x2:6.5,y2:18,gradientUnits:"userSpaceOnUse",children:[(0,n.jsx)("stop",{stopColor:"#33A1B5"}),(0,n.jsx)("stop",{offset:1,stopColor:"#064A66"})]})]}),_[18]=w):w=_[18],_[19]!==e?(C=(0,n.jsxs)("svg",{width:"1em",height:"1em",viewBox:"0 0 24 24",fill:"currentColor",...e,children:[t,a,i,l,o,s,c,d,u,w]}),_[19]=e,_[20]=C):C=_[20],C}}),C9uP:(function(e,t,a){var n=a("Zqzr"),r=a("ASxG"),i=a("OOaz");let l=r.discriminatedUnion("kind",[r.object({kind:r.literal("local"),conversationId:r.string().transform(n.Se),hostId:r.string()}),r.object({kind:r.literal("chatgpt"),conversationId:r.string().transform(i.c),title:r.string()})]);a.d(t,{},{a:function(e,t){return null==e||null==t?e===t:e.kind===t.kind&&e.conversationId===t.conversationId&&("local"!==e.kind||"local"===t.kind&&e.hostId===t.hostId)},b:l})}),sjCL:(function(e,t,a){var n=a("BolX"),r=a("OFP1");a("njX7");var i=a("u4MG"),l=a("kois"),o=a("chkj"),s=a("kphc"),c=a("gLQa"),d=a("WVuR"),u=a("OWtl"),p=a("o4oB"),h=a("tSEg"),f=a("ndjw");a("qixt");var g=a("eviP"),m=a("YF6h");let v=(0,n.c)(u.a,e=>{let{get:t}=e;return!0}),y=(0,n.c)(u.a,e=>{let{get:t}=e;return"chat"!==t(s.b)}),b=(0,n.d)(u.a,(e,t)=>{let{get:a}=t,n=null;null!=e&&(n=(0,i.a)(e.projectId)?e.projectId:(0,c.a)(e.projectId,a(f.h),a(d.a))??null);let r=a(o.c,{enforceAccess:(0,s.g)({windowType:"browser",workModeEnabled:!0}),homeComposerMode:"work",routeProjectId:n,selectedChatGptProjectId:n,selectedWorkProject:e});return{projectId:n,runLocation:r,useAsbDirect:!1}}),x=(0,n.d)(u.a,(e,t)=>{let{get:a}=t;return"dot"===e?{}:"chatgpt"===e?{backend:"chatgpt"}:a(v)?a(b,null).useAsbDirect?{hostId:"local"}:{backend:"chatgpt"}:{}}),w=(0,n.d)(h.a,(e,t)=>{let{accountId:a,pageId:n}=e,{get:i,scope:o}=t,s=i(g.b),c=s?.getSession(o);if(null!=s&&o.value.persistentWorkspace?.key!=="/space"||c?.conversationId!=null)return!1;if(o.value.persistentWorkspace?.key==="/space"&&i(m.d,{accountId:a,pageId:n})||null!=a&&null!=(0,m.b)(o,a,n,"tpp",i(m.g))&&i(l.m)?.hasConversation)return!0;if(!i(r.u))return i(r.s);if(!i(v))return!1;let d=i(b,null==c?null:i(p.a,c.clientThreadId));return"cloud"===d.runLocation.effectiveLocation&&!d.useAsbDirect});a.d(t,{},{a:x,b:y,c:v,d:w,e:b})}),N8b3:(function(e,t,a){a.d(t,{a:()=>k,b:()=>S,c:()=>P});var n=a("BolX"),r=a("Zqzr"),i=a("PFjh"),l=a("E8Sp"),o=a("Cslg"),s=a("SGsN"),c=a("svjy"),d=a("mNPx"),u=a("e1xH"),p=a("BkKO"),h=a("mpAT"),f=a("yGJW"),g=a("H2L8"),m=a("OWtl"),v=a("HFSu"),y=a("eShZ"),b=a("NRR1"),x=a("jGsJ"),w=a("OoIX"),C=a("HNZf"),_=a("D550"),j=a("PzpM");let I=(0,n.v)(m.a,e=>void 0),k=(0,n.d)(m.a,(e,t)=>{let{get:a}=t,n=a(I,e);return n?.accountId===a(h.spaceAccountId$)&&n?.userId===a(o.k)?n:void 0}),S=(0,n.c)(m.a,e=>{let{get:t}=e;return t(j.c).flatMap(e=>{let a=t(k,e.localPageId);return a?.response!=null&&"error"!==a.status?[]:[{id:e.localPageId,name:e.name,title:e.name,backingType:e.backingType,serverSpaceId:e.space?.spaceId,status:a?.status??"error"}]})});function P(e,t){let n,m,{name:k,createSpace:S,invitations:P=[],appearance:A,resume:E}=t,O=e.get(h.spaceAccountId$),T=e.get(o.k),M=e.get(o.j);if(null==O)throw Error("space_account_unavailable");if(null!=E&&(E.accountId!==O||E.userId!==T||null==E.space))throw Error("space_setup_unavailable");let B=e.get(o.m).accountUserId,z=E?.localPageId??`local-page-${crypto.randomUUID()}`;(0,j.b)(e,E??{accountId:O,userId:T,localPageId:z,name:k,backingType:"drive",rootInitialization:"server",appearance:A,invitations:P.map(e=>({...e,status:"pending"}))});let D=(0,_.a)((0,i.c)(e),performance.now(),"space",{surface:"browser",emit:t=>(0,x.a)(e,t)}),N=E?.space,F=!1,W=new AbortController,G=()=>e.get(j.c).find(e=>e.localPageId===z),L=t=>{let a={localPageId:z,accountId:O,userId:T,name:k,status:t,response:n,metrics:D,retry:U};e.set(I,z,a),null!=n&&e.set(I,n.id,a)},U=()=>{if(null!=m)return m;if(F||W.signal.aborted)return Promise.reject(new DOMException("Space creation cancelled","AbortError"));let t=(0,h.watchSpaceAccount)(e,O,T,B,M),i=AbortSignal.any([W.signal,t.signal]),x=async()=>{i.throwIfAborted();try{let t;null==N?(t=await S(i,z),D.creationRequestSucceeded()):t=await e.get(h.createSpaceMutation$).mutateAsync({requestBody:{name:k},existingSpace:N,signal:i}),i.throwIfAborted(),n=t,N={spaceId:t.id,rootPageId:t.root_page_id},D.savedIdentity()}catch(a){i.throwIfAborted(),N=(0,h.pendingSpaceInitialization)(a)??N;let t=G();throw null!=N?(D.savedIdentity(),null!=t&&(0,j.b)(e,{...t,space:N})):a instanceof y.FetchError&&a.status>=400&&a.status<500&&![408,499].includes(a.status)||(F=!0),D.fail((0,w.d)(a)),a}let t=G(),l=null!=t&&!0!==t.rootInitialized&&"server"!==t.rootInitialization;null!=t&&(0,j.b)(e,{...t,space:N,rootInitialized:!l}),(0,h.cacheCreatedSpace)(e,O,n),e.query.setData(h.spaceQuery$,n.id,n),l||D.rootInitialized(n.root_page_id),await e.when(e=>{let{get:t}=e;return i.aborted||t(h.spaceAccountId$)!==O||t(o.k)!==T||void 0!==B&&t(b.a)!==B||t(b.d)!==M||!t(u.pagesEnabled$)||t(p.b)?.some(e=>e.id===n?.id)===!0}),i.throwIfAborted(),L("creating");let s=G()?.appearance,c=(0,r.Bj)(s?.emoji),d=null==c?null:{kind:"icon",value:c,color:(0,g.b)(s?.theme)??"black"};if(l||null!=d){let{completeSpaceRootSetup:t}=await Promise.all([a.e(418851),a.e(109308),a.e(399565),a.e(257798),a.e(447351),a.e(617936),a.e(807489),a.e(337882),a.e(955979),a.e(646436),a.e(7078),a.e(200429),a.e(698524),a.e(956483),a.e(87162),a.e(396705),a.e(155568),a.e(731863),a.e(767086),a.e(76629),a.e(514085),a.e(226913),a.e(753405),a.e(193172),a.e(886482)]).then(a.bind(a,"PluF"));i.throwIfAborted();let r=await t(e,n,d,l,i);i.throwIfAborted(),n={...e.query.getData(h.spaceQuery$,n.id)??n,symbol:r,can_edit_appearance:null==r&&n.can_edit_appearance},e.query.setData(h.spaceQuery$,n.id,n),(0,h.cacheCreatedSpace)(e,O,n);let o=G();null!=o&&(0,j.b)(e,{...o,rootInitialized:!0}),l&&D.rootInitialized(n.root_page_id)}if(null==d&&null!=s&&!0===n.can_edit_appearance){let t=await v.CodexRequest.safePatch("/spaces/v2/{space_id}/appearance",{parameters:{path:{space_id:n.id}},requestBody:s,signal:i});i.throwIfAborted(),n={...e.query.getData(h.spaceQuery$,n.id)??n,appearance:t},e.query.setData(h.spaceQuery$,n.id,n),(0,h.cacheCreatedSpace)(e,O,n)}let f=G();null!=f&&(0,j.b)(e,{...f,appearance:void 0});let m=G()?.invitations??[],x=m.filter(e=>"shared"!==e.status);if(x.length>0){let t=await async function(e,t,a,n,i){if(n.throwIfAborted(),0===a.length)return[];let l={type:"space",id:t},s=a.map(e=>{let{recipient:t,label:a,secondaryLabel:n,roleId:r}=e;return{action:"invite",target:l,recipient:t,roleId:r,invitee:{id:(0,C.d)(t),label:a,secondaryLabel:n}}}),c=new Map,d=new Set,u=e=>{if(n.aborted||d.has(e))return;d.add(e);let t=s.indexOf(e);i?.(t,c.get(e)??a[t].recipient)},p=[];if(await e.queryClient.getMutationCache().build(e.queryClient,{mutationKey:["space","save-library-sharing",e.get(o.k),e.get(h.spaceAccountId$)],networkMode:"always",mutationFn:async t=>{let{changes:a}=t;n.throwIfAborted(),await (0,C.h)(e,a,void 0,void 0,n,(e,t)=>c.set(e,t.recipient),(e,t)=>{p.push(t.then(()=>u(e),()=>void 0))},(e,t)=>{c.set(e,t.recipient),u(e)})}}).execute({changes:s}),await (0,r.kf)(Promise.all(p),n),n.throwIfAborted(),d.size<s.length)try{let t=await (0,C.c)(e,l,n,!0);n.throwIfAborted(),(0,C.b)(t)&&s.forEach((e,n)=>{let r=c.get(e)??a[n].recipient;t.shares.some(e=>(0,C.g)(e,r)&&e.role_id===a[n].roleId)&&u(e)})}catch{n.throwIfAborted()}return a.map((e,t)=>{let a=c.get(s[t])??e.recipient;return{...e,recipient:a,status:d.has(s[t])?"shared":"failed"}})}(e,n.id,x,i,(t,a)=>{if(i.aborted)return;let n=G();if(null!=n){let r=m.indexOf(x[t]);(0,j.b)(e,{...n,invitations:n.invitations.map((e,t)=>t===r?{...e,recipient:a,status:"shared"}:e)})}});i.throwIfAborted();let a=G();if(null!=a&&(0,j.b)(e,{...a,invitations:[...m.filter(e=>"shared"===e.status),...t]}),t.some(e=>"failed"===e.status))throw Error("space_creation_invitations_incomplete")}(0,j.a)(e,z),L("created")};return L("creating"),m=Promise.resolve().then(()=>null==navigator.locks?x():navigator.locks.request(`space-setup:${JSON.stringify([O,T,z])}`,{signal:i},x)).catch(t=>{if(i.aborted)throw W.abort(),e.set(I,z,void 0),null!=n&&e.set(I,n.id,void 0),D.cancel("account_changed"),t;throw F?e.set(I,z,void 0):L("error"),(0,w.d)(t)||(0,d.d)(e.get(f.c),"pages.space.create",t),D.fail(),(()=>{let{pathname:t,search:a}=e.get(l.b);e.get(h.spaceAccountId$)===O&&e.get(o.k)===T&&("/spaces/new"!==t||new URLSearchParams(a).get("creation")!==z)&&e.get(s.f).warning(e.get(c.a).formatMessage({id:"codex.space.sidebar.spaceSetupNeedsAttention",defaultMessage:"Space setup needs attention"}))})(),t}).finally(()=>{t.stop(),m=void 0})};return U().catch(()=>{}),z}}),b7SN:(function(e,t,a){a.d(t,{},{a:function(e){let{clientX:t,bounds:a,edge:n,rtl:r,zoom:i,viewport:l}=e,o=Math.max(a.left,l?.left??a.left),s=Math.min(a.right,l?.right??a.right);return Math.abs(t-("start"===n!==r?o:s))<=150*i}})}),aK2P:(function(e,t,a){var n=a("ABep"),r=a("QosV"),i=a("on57"),l=a("zd8w"),o=a("wD9O"),s=a("aAWW"),c=a("b7SN");a.d(t,{},{a:function(e){let t,a,d,u,p,h,f,g=(0,r.c)(21),{children:m,className:v,anchorSelector:y,edge:b,active:x,revealOnHover:w}=e,C=void 0===b?"start":b,_=void 0!==w&&w,j=(0,l.useRef)(null),[I,k]=(0,l.useState)(!1),S=(0,o.c)();g[0]!==C||g[1]!==S?(t=(e,t)=>{if(e.buttons>0||"touch"===e.pointerType)return;let a=t.getBoundingClientRect();k(e.clientY>=a.top&&e.clientY<=a.bottom&&(0,c.a)({clientX:e.clientX,bounds:a,edge:C,rtl:"rtl"===getComputedStyle(t).direction,zoom:S,viewport:t.closest("[data-page-block-viewport]")?.getBoundingClientRect()}))},g[0]=C,g[1]=S,g[2]=t):t=g[2];let P=(0,l.useEffectEvent)(t);g[3]!==y||g[4]!==P||g[5]!==_?(a=()=>{if(_)return;let e=j.current?.closest(y),t=e?.closest("[data-page-block-row], [data-page-edge-region]")??e?.closest("[data-page-reading-column]")?.parentElement??e;if(null==e||null==t)return;let a=t=>P(t,e),n=()=>k(!1);return t.addEventListener("pointermove",a),t.addEventListener("pointerleave",n),()=>{t.removeEventListener("pointermove",a),t.removeEventListener("pointerleave",n),n()}},g[3]=y,g[4]=P,g[5]=_,g[6]=a):a=g[6],g[7]!==y||g[8]!==_?(d=[y,_],g[7]=y,g[8]=_,g[9]=d):d=g[9],(0,l.useEffect)(a,d),g[10]!==I||g[11]!==_?(u=()=>{if(!I||_)return;let e=j.current?.ownerDocument,t=()=>{k(!1),(0,s.b)()};return e?.addEventListener("scroll",t,!0),e?.addEventListener("visibilitychange",t),e?.defaultView?.addEventListener("blur",t),()=>{e?.removeEventListener("scroll",t,!0),e?.removeEventListener("visibilitychange",t),e?.defaultView?.removeEventListener("blur",t)}},p=[I,_],g[10]=I,g[11]=_,g[12]=u,g[13]=p):(u=g[12],p=g[13]),(0,l.useEffect)(u,p);let A=_&&"[:hover>&]:pointer-events-auto [:hover>&]:opacity-100";g[14]!==v||g[15]!==A?(h=(0,i.b)("pointer-events-auto [@media(hover:hover)_and_(pointer:fine)]:pointer-events-none [@media(hover:hover)_and_(pointer:fine)]:opacity-0 data-visible:pointer-events-auto data-visible:opacity-100 data-menu-open:pointer-events-auto data-menu-open:opacity-100 focus-within:pointer-events-auto focus-within:opacity-100 [[data-state=open]>&]:pointer-events-auto [[data-state=open]>&]:opacity-100 [:focus-visible>&]:pointer-events-auto [:focus-visible>&]:opacity-100",A,v),g[14]=v,g[15]=A,g[16]=h):h=g[16];let E=!_&&(I||void 0!==x&&x)||void 0;return g[17]!==m||g[18]!==h||g[19]!==E?(f=(0,n.jsx)("span",{ref:j,className:h,"data-page-edge-controls":!0,"data-visible":E,children:m}),g[17]=m,g[18]=h,g[19]=E,g[20]=f):f=g[20],f}})}),fAHU:(function(e,t,a){a.d(t,{a:()=>i});var n=a("ABep"),r=a("QosV");function i(e){let t,a,i=(0,r.c)(5),{children:l,rootSpaceId:o}=e;return i[0]!==o?(t=null,i[0]=o,i[1]=t):t=i[1],i[2]!==l||i[3]!==t?(a=(0,n.jsxs)("div",{className:"flex min-w-0 flex-col gap-2",children:[l,t]}),i[2]=l,i[3]=t,i[4]=a):a=i[4],a}a("BolX"),a("mpAT"),a("oyQi"),a("Ko17"),a("nvO1"),a("iycc")}),i9us:(function(e,t,a){var n=a("ABep"),r=a("QosV"),i=a("LPKZ"),l=a.n(i),o=a("BolX"),s=a("oyxz"),c=a("O5pN"),d=a("osar"),u=a("Z4o7"),p=a("Sm6l"),h=a("HOLv"),f=a("bf6R"),g=a("nb0y"),m=a("NRR1"),v=a("gcWI"),y=a("GAcX"),b=a("mpAT"),x=a("JtEZ"),w=a("tSEg");a("qixt");var C=a("El6m"),_=a("eviP"),j=a("UDLZ");function I(){return null}(0,o.d)(w.a,(e,t)=>{let{get:a,scope:n}=t;return a(_.b)?.getSession(n)?.conversationId!=null||null!=e&&a(x.b,{accountId:a(m.e),pageId:e})}),a.d(t,{},{a:function(e){let t,a,i=(0,r.c)(5),{pageId:x}=e,w=(0,o.z)(m.e),_=(0,o.x)(b.loadedSpacePageMetadata$,x??null);i[0]!==w||i[1]!==x?(t={accountId:w,pageId:x},i[0]=w,i[1]=x,i[2]=t):t=i[2];let k=(0,o.x)(v.e,t),S=(0,o.z)(y.c);return k||null!=S?null:(i[3]!==_?.document_type?(a=(0,n.jsx)("div",{inert:!0,"aria-hidden":!0,children:(0,n.jsx)(C.a,{value:"expanded",children:(0,n.jsx)(g.a,{isMinimized:!1,onMinimizedChange:l(),presentation:"compact",renderTranscript:I,showHeader:!1,title:"",renderComposer:()=>(0,n.jsx)(d.a,{inert:!0,layout:"single-line",children:(0,n.jsx)(d.a.Body,{layout:"single-line",children:(0,n.jsx)(d.a.AdaptiveFooter,{layout:"single-line",leadingControls:(0,n.jsx)(p.a,{disabled:!0,color:"ghost",size:"composer",children:(0,n.jsx)(f.Eg,{})}),input:(0,n.jsx)(d.a.Input,{layout:"single-line",children:(0,n.jsx)(c.a,{singleLine:!0,children:(0,n.jsxs)("div",{className:"truncate text-secondary select-none",children:[null,(0,n.jsx)(n.Fragment,{children:(0,n.jsx)(s.a,{id:"codex.page.chat.placeholder.byDocumentType",values:{documentType:_?.document_type??"page"},defaultMessage:"{documentType, select, granola_presentation {Work with this slide…} granola_workbook {Work with this sheet…} other {Work with this page…}}"})})]})})}),trailingControls:(0,n.jsxs)(d.a.FooterActions,{children:[(0,n.jsx)(p.a,{disabled:!0,color:"ghost",size:"composer",children:(0,n.jsx)(f.dd,{})}),(0,n.jsx)(p.a,{disabled:!0,color:"ghost",size:"composer",children:(0,n.jsx)(h.a,{asset:j.a})}),(0,n.jsx)(p.a,{disabled:!0,color:"ghost",size:"composer",children:(0,n.jsx)(u.a,{})})]})})})})})})}),i[3]=_?.document_type,i[4]=a):a=i[4],a)}})}),O7mt:(function(e,t,a){let n=[["<->","↔"],["<=>","⇔"],["<-","←"],["->","→"],["=>","⇒"],["<=","≤"],[">=","≥"],["!=","≠"],["+/-","±"],["--","—"],["...","…"]];function r(e,t){let a=t;for(;a>0&&"\\"===e[a-1];)a-=1;return(t-a)%2==1}a.d(t,{},{a:function(e,t,a){if('"'===t||"'"===t)return{shortcut:t,glyph:('"'===t?"“”":"‘’")[+!(0===e.length||/[\s{[(<'"‘“]/.test(e.slice(-1)))],from:e.length,continuation:!1};if(1!==t.length||!".=>-".includes(t))return;let r=">"===t&&("<-"===a&&e.endsWith("←")||"<="===a&&e.endsWith("≤")),i=(r?a:e.slice(-2))+t,l=n.find(e=>{let[t]=e;return i.endsWith(t)});return null==l?void 0:{shortcut:l[0],glyph:l[1],from:e.length-(r?1:l[0].length-1),continuation:r}},b:function(e,t,a,n){let i;if(r(e,a)||e.includes("](")&&e.lastIndexOf("](")>e.lastIndexOf(")"))return!0;if('"'!==t){let a=e+t;if(/https?:\/\/|www\./i.test(a)){let e=/(?:^|[\s"“”])([^\s"“”]*)$/.exec(a)?.[1];if(null!=e&&/https?:\/\/|www\./i.test(e))return!0}}if(!e.includes("`"))return!1;let l=n?.parent.type.schema.marks.code,o=e;if(null!=n&&null!=l){let t=[],a=0;n.parent.nodesBetween(0,e.length,(n,r)=>{if(null==l.isInSet(n.marks))return;let i=Math.min(e.length,r+n.nodeSize);return t.push(e.slice(a,r),e.slice(r,i).replace(/`/g," ")),a=i,!1}),a>0&&(o=t.join("")+e.slice(a))}for(let e of o.matchAll(/`+/g))i===e[0]?i=void 0:null!=i||r(o,e.index)||(i=e[0]);return null!=i}})}),Jif0:(function(e,t,a){var n=a("ABep"),r=a("QosV"),i=a("CJrD"),l=a("zd8w"),o=a("Wf1j"),s=a("NnV7"),c=a("ADAj"),d=a("HgLj"),u=a("O7mt"),p=a("FwTO");a.d(t,{},{a:function(e){let t,a,h,f,g,m,v,y,b,x=(0,r.c)(26),{onHistory:w,...C}=e,_=(0,o.a)();x[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,i.a)(),x[0]=t):t=x[0];let j=(0,c.l)(t.smartPunctuationEnabled),I=(0,l.useRef)(void 0),k=(0,l.useRef)(!1),S=(0,l.useRef)(!1),P=(0,d.a)(C.ref,e=>{if(null==e||null==w)return;let t=e=>{!e.defaultPrevented&&!e.isComposing&&!S.current&&("historyUndo"===e.inputType||"historyRedo"===e.inputType)&&w("historyUndo"===e.inputType?"undo":"redo")&&e.preventDefault()};return e.addEventListener("beforeinput",t),()=>e.removeEventListener("beforeinput",t)});return x[1]!==_||x[2]!==C?(a=C["aria-label"]??_.formatMessage({id:"codex.space.page.titleLabel",defaultMessage:"Page title"}),x[1]=_,x[2]=C,x[3]=a):a=x[3],x[4]!==_?(h=_.formatMessage(s.c.untitled),x[4]=_,x[5]=h):h=x[5],x[6]!==C.onPaste?(f=e=>{I.current=void 0,function(e,t,a){a.current=!0;try{t?.(e)}finally{a.current=!1}}(e,C.onPaste,k)},x[6]=C.onPaste,x[7]=f):f=x[7],x[8]!==C?(g=e=>{C.onKeyDown?.(e);let t=e.currentTarget,a=I.current;"Backspace"===e.key&&!e.defaultPrevented&&!e.nativeEvent.isComposing&&!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!t.disabled&&!t.readOnly&&null!=a&&t.value===a.value&&t.selectionStart===a.caret&&t.selectionEnd===a.caret&&function(e,t){t.current=!0;try{return e.ownerDocument.execCommand("undo")}finally{t.current=!1}}(t,S)&&e.preventDefault()},m=e=>{let t=e.currentTarget,a=I.current;null!=a&&(t.value!==a.value||t.selectionStart!==a.caret||t.selectionEnd!==a.caret)&&(I.current=void 0),C.onSelect?.(e)},x[8]=C,x[9]=g,x[10]=m):(g=x[9],m=x[10]),x[11]!==C||x[12]!==j?(v=e=>{C.onInput?.(e);let t=e.currentTarget,a=e.nativeEvent,n=I.current;if(a instanceof InputEvent&&null!=n){if("historyUndo"===a.inputType&&t.value===n.value.slice(0,n.caret-1)+n.shortcut+n.value.slice(n.caret))return void t.setSelectionRange(t.selectionEnd,t.selectionEnd);if("historyRedo"===a.inputType&&t.value===n.value)return}if(I.current=void 0,k.current||!j||t.disabled||t.readOnly||!(a instanceof InputEvent)||a.isComposing||"insertText"!==a.inputType||a.data?.length!==1||!"\"'.=>-".includes(a.data)||t.selectionStart!==t.selectionEnd)return;let r=a.data,i=t.value,l=t.selectionStart,o=i.slice(0,l-r.length),s=(0,u.a)(o,r,n?.caret===l-1&&n.value===o+i.slice(l)?n.shortcut:void 0);null==s||(0,u.b)(o,r,s.from)||queueMicrotask(()=>{if(t.ownerDocument.activeElement===t&&!t.disabled&&!t.readOnly&&t.value===i&&t.selectionStart===l&&t.selectionEnd===l){if(t.setSelectionRange(s.from,l),s.continuation){if(!t.ownerDocument.execCommand("insertText",!1,s.shortcut)||t.value!==i.slice(0,s.from)+s.shortcut+i.slice(l))return;t.setSelectionRange(s.from,s.from+s.shortcut.length)}t.ownerDocument.execCommand("insertText",!1,s.glyph)&&(I.current={value:t.value,caret:t.selectionStart,shortcut:s.shortcut})}})},x[11]=C,x[12]=j,x[13]=v):v=x[13],x[14]!==C?(y=e=>{I.current=void 0,C.onBlur?.(e)},x[14]=C,x[15]=y):y=x[15],x[16]!==C||x[17]!==P||x[18]!==a||x[19]!==h||x[20]!==f||x[21]!==g||x[22]!==m||x[23]!==v||x[24]!==y?(b=(0,n.jsx)("textarea",{...C,ref:P,className:`${p.a.PageTitle} relative block field-sizing-content w-full min-w-0 resize-none overflow-hidden border-none bg-transparent font-semibold break-words text-default outline-none`,"aria-label":a,"aria-multiline":!1,placeholder:h,rows:1,onPaste:f,onKeyDown:g,onSelect:m,onInput:v,onBlur:y}),x[16]=C,x[17]=P,x[18]=a,x[19]=h,x[20]=f,x[21]=g,x[22]=m,x[23]=v,x[24]=y,x[25]=b):b=x[25],b}})}),fQMn:(function(e,t,a){a.d(t,{a:()=>S});var n=a("ABep"),r=a("QosV"),i=a("slpy"),l=a("on57"),o=a("BolX"),s=a("zd8w"),c=a("Wf1j"),d=a("Sm6l"),u=a("JNtf"),p=a("bf6R"),h=a("nzx4"),f=a("ibLK"),g=a("SLxa"),m=a("SVco"),v=a("FR8U"),y=a("VAbi"),b=a("TnSu"),x=a("qlvd"),w=a("aWEZ"),C=a("aK2P"),_=a("TwSq"),j=a("HcfL");function I(e){let t,a,i=(0,r.c)(11),{children:l,emoji:s,findContextId:c}=e,d=(0,o.z)(_.h),u=(0,o.z)(_.g);if(i[0]!==u?.id||i[1]!==s||i[2]!==c||i[3]!==d){let e=d?.contextId===c?d?.matches.filter(e=>{let{location:t}=e;return"page"===t.domain&&"title"===t.target&&t.from<s.length&&t.to>0}):void 0;t=e?.find(e=>{let{id:t}=e;return t===u?.id})??e?.[0],i[0]=u?.id,i[1]=s,i[2]=c,i[3]=d,i[4]=t}else t=i[4];let p=t;if(p?.location.domain!=="page"){let e;return i[5]!==l?(e=(0,n.jsx)(n.Fragment,{children:l}),i[5]=l,i[6]=e):e=i[6],e}let h=u?.id===p.id?"":void 0;return i[7]!==l||i[8]!==p.location.from||i[9]!==h?(a=(0,n.jsx)("mark",{className:`${j.a.match} inline-flex rounded-2xs text-inherit`,"data-active":h,"data-page-find-match":!0,"data-page-find-title-match":p.location.from,children:l}),i[7]=l,i[8]=p.location.from,i[9]=h,i[10]=a):a=i[10],a}var k=a("FwTO");function S(e){let t,a,_,j,S,O,T,M,B,z,D,N,F,W,G,L,U,R,$,q=(0,r.c)(88),K=(0,c.a)(),[Q,Z]=(0,s.useState)(!1),H=(0,s.useRef)(null),X=(0,s.useRef)(null),J=(0,f.a)("(max-width: 767px)");q[0]===Symbol.for("react.memo_cache_sentinel")?(t=()=>Z(!1),q[0]=t):t=q[0];let V=t,{symbol:Y,disabled:ee,space:et,spaceTheme:ea}=e,en=J&&!et,er=(0,o.x)(g.a,{documentType:et?void 0:e.documentType,namespace:et?null:e.namespace,surface:"editor"})?.[32],ei=null!=Y&&"none"!==Y.kind||null!=er,el=!ei&&!et&&(J||e.externalEditingControls||null!=e.openNativePicker),eo=e.externalEditingControls&&et&&!ei;if(q[1]===Symbol.for("react.memo_cache_sentinel")?(a=()=>()=>{X.current?.abort(),X.current=null},q[1]=a):a=q[1],q[2]!==ee||q[3]!==eo?(_=[eo,ee],q[2]=ee,q[3]=eo,q[4]=_):_=q[4],(0,s.useLayoutEffect)(a,_),(ee||eo)&&Q&&V(),eo)return null;q[5]!==el||q[6]!==K?(j=el?K.formatMessage({id:"codex.space.page.symbol.add",defaultMessage:"Add icon"}):K.formatMessage({id:"codex.space.page.symbol.change",defaultMessage:"Change icon"}),q[5]=el,q[6]=K,q[7]=j):j=q[7];let es=j;q[8]!==er?(S=null==er?(0,n.jsx)(p.fd,{}):(0,n.jsx)(er,{}),q[8]=er,q[9]=S):S=q[9];let ec=S,ed=ec;if(Y?.kind==="emoji"){let e;q[10]!==Y.value?(e=(0,n.jsx)("span",{className:"flex size-full items-center",children:(0,n.jsx)(b.a,{emoji:Y.value,size:"large"})}),q[10]=Y.value,q[11]=e):e=q[11],ed=e}else if(Y?.kind==="icon"){let e,t;q[12]!==ec||q[13]!==et?(e=et?(0,n.jsx)(p.Hc,{className:"size-12"}):ec,q[12]=ec,q[13]=et,q[14]=e):e=q[14],q[15]!==Y.color||q[16]!==Y.value||q[17]!==e?(t=(0,n.jsx)("span",{className:"flex size-full items-center",children:(0,n.jsx)(v.a,{className:"size-12",color:Y.color,defaultIcon:e,icon:Y.value})}),q[15]=Y.color,q[16]=Y.value,q[17]=e,q[18]=t):t=q[18],ed=t}if(null!=e.legacyEmoji){let t;q[19]!==ed||q[20]!==e.findContextId||q[21]!==e.legacyEmoji?(t=(0,n.jsx)(I,{emoji:e.legacyEmoji,findContextId:e.findContextId,children:ed}),q[19]=ed,q[20]=e.findContextId,q[21]=e.legacyEmoji,q[22]=t):t=q[22],ed=t}let eu=el?"iconTouch":"compact",ep=ei?"self-start":"absolute end-0 top-1/2 -translate-y-1/2",eh=el&&"max-w-(--page-control-gutter)";q[23]!==ep||q[24]!==eh?(O=(0,l.b)(ep,eh),q[23]=ep,q[24]=eh,q[25]=O):O=q[25];let ef=ei?"ghostMuted":"ghost",eg=ei?void 0:"small",em=ei?"iconLarge":eu,ev=!ei;q[26]!==ee||q[27]!==ed||q[28]!==es||q[29]!==em||q[30]!==ev||q[31]!==O||q[32]!==ef||q[33]!==eg?(T=(0,n.jsx)(d.a,{ref:H,className:O,"aria-label":es,color:ef,disabled:ee,disabledAppearance:"unchanged",onClick:E,radius:eg,size:em,uniform:ev,type:"button",children:ed}),q[26]=ee,q[27]=ed,q[28]=es,q[29]=em,q[30]=ev,q[31]=O,q[32]=ef,q[33]=eg,q[34]=T):T=q[34];let ey=T;if(ee){let e;return ei?(q[35]!==ed?(e=(0,n.jsx)("span",{className:"flex size-16 items-center justify-center border border-transparent",children:ed}),q[35]=ed,q[36]=e):e=q[36],e):null}q[37]!==ee||q[38]!==K||q[39]!==e||q[40]!==Y?(M=async function(){if(ee)return;X.current?.abort(),X.current=null;let t=H.current;if(null==e.openNativePicker||null==t)return void Z(!0);let a=function(e,t,a){let n=(0,w.d)(e.ownerDocument,e.getBoundingClientRect());if(null!=n)return{symbol:t,canRemove:null!=t&&"none"!==t.kind,icons:(0,x.a)("",a).map(e=>{let{id:t,label:n,keywords:r}=e;return{id:t,label:a.formatMessage(n),keywords:r}}),colors:m.a,anchor:n}}(t,Y,K);if(null==a)return void Z(!0);let n=new AbortController;X.current=n;let r=await e.openNativePicker(a,n.signal);if(!n.signal.aborted){if(X.current=null,"unsupported"===r.outcome||"error"===r.outcome)return void Z(!0);"handled"===r.outcome&&e.onChange(r.symbol),e.onClose?.()}},q[37]=ee,q[38]=K,q[39]=e,q[40]=Y,q[41]=M):M=q[41];let eb=M;q[42]!==e?(B=null==e.onClose?void 0:t=>{t.preventDefault(),e.onClose?.()},q[42]=e,q[43]=B):B=q[43];let ex=B,ew=et&&Y?.kind!=="emoji"?"icon":"emoji",eC=en?"sheet":"grid",e_=!en,ej=en?"calc(70dvh - 4rem - env(safe-area-inset-bottom))":void 0;q[44]!==ee||q[45]!==e.onChange||q[46]!==en||q[47]!==Y||q[48]!==ew||q[49]!==eC||q[50]!==e_||q[51]!==ej||q[52]!==ea?(z=(0,n.jsx)(y.a,{disabled:ee,value:Y,defaultColor:ea,commitColorOnSelect:en,defaultKind:ew,layout:eC,embedded:en,autoFocus:e_,availableHeight:ej,onChange:e.onChange,onSelect:V,onClear:V}),q[44]=ee,q[45]=e.onChange,q[46]=en,q[47]=Y,q[48]=ew,q[49]=eC,q[50]=e_,q[51]=ej,q[52]=ea,q[53]=z):z=q[53];let eI=z,ek=Q&&!en;q[54]!==eb?(D=e=>{e?eb():V()},q[54]=eb,q[55]=D):D=q[55],q[56]!==el||q[57]!==ei?(N=ei?"self-start":(0,l.b)(k.a.PageTitle,"absolute top-0 end-full font-semibold",!el&&"pe-2"),q[56]=el,q[57]=ei,q[58]=N):N=q[58];let eS=ei||el||Q,eP=ei?"flex":"relative inline-block h-[1cap] align-baseline";return q[59]!==ey?(F=(0,n.jsx)(h.e,{asChild:!0,children:ey}),q[59]=ey,q[60]=F):F=q[60],q[61]!==es||q[62]!==Q||q[63]!==F?(W=(0,n.jsx)(i.a,{content:es,disabled:Q,children:F}),q[61]=es,q[62]=Q,q[63]=F,q[64]=W):W=q[64],q[65]!==eP||q[66]!==W?(G=(0,n.jsx)("span",{className:eP,children:W}),q[65]=eP,q[66]=W,q[67]=G):G=q[67],q[68]!==N||q[69]!==eS||q[70]!==G?(L=(0,n.jsx)(C.a,{className:N,anchorSelector:"[data-page-title]",active:eS,children:G}),q[68]=N,q[69]=eS,q[70]=G,q[71]=L):L=q[71],q[72]!==es||q[73]!==eI||q[74]!==ex?(U=(0,n.jsx)(h.c,{className:"z-50 outline-hidden","aria-label":es,align:"center",onCloseAutoFocus:ex,onClick:A,unstyled:!0,children:eI}),q[72]=es,q[73]=eI,q[74]=ex,q[75]=U):U=q[75],q[76]!==es||q[77]!==Q||q[78]!==eI||q[79]!==ex||q[80]!==en?(R=Q&&en&&(0,n.jsxs)(u.a,{open:!0,size:"sheet",variant:"opaque",onOpenChange:e=>{e||V()},contentProps:{shouldStopPointerDownPropagation:!1,onCloseAutoFocus:ex,onOpenAutoFocus:P},children:[(0,n.jsx)(u.e,{className:"px-4 pt-4 pb-3 text-center text-base font-semibold",children:es}),eI]}),q[76]=es,q[77]=Q,q[78]=eI,q[79]=ex,q[80]=en,q[81]=R):R=q[81],q[82]!==ek||q[83]!==D||q[84]!==L||q[85]!==U||q[86]!==R?($=(0,n.jsxs)(h.a,{modal:!0,open:ek,onOpenChange:D,children:[L,U,R]}),q[82]=ek,q[83]=D,q[84]=L,q[85]=U,q[86]=R,q[87]=$):$=q[87],$}function P(e){e.preventDefault(),e.currentTarget instanceof HTMLElement&&e.currentTarget.focus()}function A(e){return e.stopPropagation()}function E(e){return e.stopPropagation()}}),zTDg:(function(e,t,a){var n=a("ABep"),r=a("QosV"),i=a("slpy"),l=a("Wf1j"),o=a("Sm6l"),s=a("j9wQ");a.d(t,{},{a:function(e){let t,a,l,c,d,u,p=(0,r.c)(14);p[0]!==e?({label:t,appearance:l,color:c,...a}=e,p[0]=e,p[1]=t,p[2]=a,p[3]=l,p[4]=c):(t=p[1],a=p[2],l=p[3],c=p[4]);let h=void 0===l?"toolbar":l,f=void 0===c?"ghostActive":c,g=!0===a["aria-expanded"];return p[5]!==h||p[6]!==f||p[7]!==t||p[8]!==a?(d="viewer"===h?(0,n.jsx)(s.g,{...a,"aria-label":t,uniform:!0}):(0,n.jsx)(o.a,{...a,"aria-label":t,color:f,size:"toolbar",uniform:!0}),p[5]=h,p[6]=f,p[7]=t,p[8]=a,p[9]=d):d=p[9],p[10]!==t||p[11]!==g||p[12]!==d?(u=(0,n.jsx)(i.a,{content:t,disabled:g,children:d}),p[10]=t,p[11]=g,p[12]=d,p[13]=u):u=p[13],u},b:function(e){let t,a,i,o,c=(0,r.c)(9);c[0]!==e?({children:t,...a}=e,c[0]=e,c[1]=t,c[2]=a):(t=c[1],a=c[2]);let d=(0,l.a)();return c[3]!==d?(i=d.formatMessage({id:"codex.space.page.header.editingTools",defaultMessage:"Page editing tools"}),c[3]=d,c[4]=i):i=c[4],c[5]!==t||c[6]!==a||c[7]!==i?(o=(0,n.jsx)(s.i,{...a,label:i,children:t}),c[5]=t,c[6]=a,c[7]=i,c[8]=o):o=c[8],o}})}),JyrC:(function(e,t,a){var n=a("ABep"),r=a("QosV"),i=a("on57"),l=a("zd8w"),o=a("v7qY"),s=a("Wf1j"),c=a("LIH9"),d=a("bUax"),u=a("hZSj"),p=a("j9wQ"),h=a("zTDg");function f(e){let t,a,l,c,u,f,m,v,y,b,x,w,C,_,j,I,k,S,P,A,E,O,T,M,B,z=(0,r.c)(78),D=(0,s.a)(),{inset:N,contentFade:F,navigation:W,actions:G,documentControlsContainers:L,saveStatus:U,people:R,automations:$,requestEditAccess:q,comments:K,meeting:Q,supplementalActions:Z,connectionStatus:H,onClose:X,tabId:J,sharing:V}=e,Y=void 0!==N&&N,ee=void 0!==F&&F;z[0]!==G||z[1]!==e.actionsGrouped?(t=e.actionsGrouped||null==G?G:(0,n.jsx)(h.b,{children:G}),z[0]=G,z[1]=e.actionsGrouped,z[2]=t):t=z[2];let et=t;z[3]!==$||z[4]!==K?(a=(0,n.jsxs)(n.Fragment,{children:[K,$]}),z[3]=$,z[4]=K,z[5]=a):a=z[5];let ea=a,en=ea;if(null==L){let e;z[6]!==$||z[7]!==K||z[8]!==D||z[9]!==ea?(e=$||K?(0,n.jsx)(p.i,{hideWhenEmpty:!0,label:D.formatMessage({id:"codex.space.page.header.panels",defaultMessage:"Page panels"}),children:ea}):null,z[6]=$,z[7]=K,z[8]=D,z[9]=ea,z[10]=e):e=z[10],en=e}z[11]!==Z?(l={id:"supplemental",content:Z,hidePriority:3},z[11]=Z,z[12]=l):l=z[12],z[13]===Symbol.for("react.memo_cache_sentinel")?(c=[{priority:5,selector:"[data-page-automation-control]"}],z[13]=c):c=z[13],z[14]!==en?(u={id:"panels",collapseSteps:c,content:en},z[14]=en,z[15]=u):u=z[15],z[16]!==Q?(f={id:"meeting",content:Q,collapsePriority:3},z[16]=Q,z[17]=f):f=z[17],z[18]!==l||z[19]!==u||z[20]!==f?(m=[l,u,f],z[18]=l,z[19]=u,z[20]=f,z[21]=m):m=z[21];let er=m;z[22]!==L||z[23]!==er?(v=L?.trailing!=null?(0,o.createPortal)((0,n.jsx)("div",{className:"flex min-w-0 items-center gap-0.5",children:er.map(g)}),L.trailing):null,z[22]=L,z[23]=er,z[24]=v):v=z[24];let ei=!Y&&"ps-[var(--window-titlebar-inset-left,0px)] pe-[var(--window-titlebar-inset-right,0px)] rtl:ps-[var(--window-titlebar-inset-right,0px)] rtl:pe-[var(--window-titlebar-inset-left,0px)]";z[25]!==ei?(y=(0,i.b)(ei,"w-full"),z[25]=ei,z[26]=y):y=z[26];let el=ee?"overlay":void 0;z[27]!==W?(b={id:"title",content:(0,n.jsx)("div",{className:"flex min-w-0 items-center",children:W}),collapsePriority:1},z[27]=W,z[28]=b):b=z[28];let eo=null==L?et:null;return z[29]!==eo?(x={id:"editing",content:eo,collapsePriority:2},z[29]=eo,z[30]=x):x=z[30],z[31]!==U?(w={id:"save-status",content:U},z[31]=U,z[32]=w):w=z[32],z[33]!==b||z[34]!==x||z[35]!==w?(C=[b,x,w],z[33]=b,z[34]=x,z[35]=w,z[36]=C):C=z[36],z[37]!==q?(_={id:"request-edit-access",content:q},z[37]=q,z[38]=_):_=z[38],z[39]!==H?(j={id:"connection-status",content:H,hidePriority:3},z[39]=H,z[40]=j):j=z[40],z[41]!==L||z[42]!==er?(I=null==L?er:[],z[41]=L,z[42]=er,z[43]=I):I=z[43],z[44]!==e.download?(k={id:"download",content:e.download},z[44]=e.download,z[45]=k):k=z[45],z[46]!==e.overflow?(S={id:"overflow",content:e.overflow},z[46]=e.overflow,z[47]=S):S=z[47],z[48]!==e.persistentActions?(P={id:"artifact-actions",content:e.persistentActions},z[48]=e.persistentActions,z[49]=P):P=z[49],z[50]!==D||z[51]!==R||z[52]!==V?(A=null==V&&null==R?null:(0,n.jsxs)(p.i,{hideWhenEmpty:!0,label:D.formatMessage({id:"codex.space.page.header.sharing",defaultMessage:"Sharing"}),children:[R,V]}),z[50]=D,z[51]=R,z[52]=V,z[53]=A):A=z[53],z[54]!==A?(E={id:"sharing",content:A,collapsePriority:4},z[54]=A,z[55]=E):E=z[55],z[56]!==X||z[57]!==J?(O={id:"window-controls",content:(0,n.jsx)(d.a,{tabId:J,onClose:X})},z[56]=X,z[57]=J,z[58]=O):O=z[58],z[59]!==_||z[60]!==j||z[61]!==I||z[62]!==k||z[63]!==S||z[64]!==P||z[65]!==E||z[66]!==O?(T=[_,j,...I,k,S,P,E,O],z[59]=_,z[60]=j,z[61]=I,z[62]=k,z[63]=S,z[64]=P,z[65]=E,z[66]=O,z[67]=T):T=z[67],z[68]!==ee||z[69]!==Y||z[70]!==y||z[71]!==el||z[72]!==C||z[73]!==T?(M=(0,n.jsx)(p.l,{"data-page-toolbar":!0,className:y,contentFade:ee,density:"surface",inset:Y,placement:el,leading:C,trailing:T}),z[68]=ee,z[69]=Y,z[70]=y,z[71]=el,z[72]=C,z[73]=T,z[74]=M):M=z[74],z[75]!==M||z[76]!==v?(B=(0,n.jsxs)("div",{className:"@container/page-toolbar w-full min-w-0",children:[v,M]}),z[75]=M,z[76]=v,z[77]=B):B=z[77],B}function g(e){return(0,n.jsx)(l.Fragment,{children:e.content},e.id)}function m(e){let t,a,l,o=(0,r.c)(16),{children:s,contentFade:d,separator:p,surface:h,overlay:f}=e,g=void 0!==d&&d,m=f??"side-panel"===h;if("window"===h||"side-panel"!==h&&(0,u.a)("/space/:pageId")){let e;return o[0]!==s||o[1]!==g||o[2]!==p?(e=(0,n.jsx)(c.a.Header,{className:"shrink-0",contentFade:g,separator:p,children:s}),o[0]=s,o[1]=g,o[2]=p,o[3]=e):e=o[3],e}if("side-panel"===h){let e,t,a=m?"absolute inset-x-0 top-0":"relative";return o[4]!==a?(e=(0,i.b)("pointer-events-none z-30 shrink-0",a),o[4]=a,o[5]=e):e=o[5],o[6]!==s||o[7]!==e?(t=(0,n.jsx)("div",{className:e,children:s}),o[6]=s,o[7]=e,o[8]=t):t=o[8],t}o[9]===Symbol.for("react.memo_cache_sentinel")?(t=(0,n.jsx)(c.a.MainContentLayout,{layout:"custom-titlebar"}),o[9]=t):t=o[9];let v=m?"absolute inset-x-0 top-0":"relative";return o[10]!==v?(a=(0,i.b)("pointer-events-none z-30 shrink-0 [--viewer-header-start-inset:var(--app-shell-titlebar-left-inset,0px)]",v),o[10]=v,o[11]=a):a=o[11],o[12]!==s||o[13]!==p||o[14]!==a?(l=(0,n.jsxs)(n.Fragment,{children:[t,(0,n.jsx)(c.a.Header,{className:a,inline:!0,separator:p,children:s})]}),o[12]=s,o[13]=p,o[14]=a,o[15]=l):l=o[15],l}a.d(t,{},{a:function(e){let t,a,i,l,o,s,c,d,p,h=(0,r.c)(19);h[0]!==e?({surface:i,contentFade:l,separator:o,overlay:a,onClose:t,...s}=e,h[0]=e,h[1]=t,h[2]=a,h[3]=i,h[4]=l,h[5]=o,h[6]=s):(t=h[1],a=h[2],i=h[3],l=h[4],o=h[5],s=h[6]);let g=void 0!==l&&l,v=void 0===o||o;h[7]!==i?(c="window"===i||"side-panel"!==i&&(0,u.a)("/space/:pageId"),h[7]=i,h[8]=c):c=h[8];let y=c,b=g&&!y,x=!y,w=y?void 0:t;return h[9]!==b||h[10]!==x||h[11]!==w||h[12]!==s?(d=(0,n.jsx)(f,{...s,contentFade:b,inset:x,onClose:w}),h[9]=b,h[10]=x,h[11]=w,h[12]=s,h[13]=d):d=h[13],h[14]!==a||h[15]!==v||h[16]!==i||h[17]!==d?(p=(0,n.jsx)(m,{surface:i,separator:v,overlay:a,children:d}),h[14]=a,h[15]=v,h[16]=i,h[17]=d,h[18]=p):p=h[18],p},b:m,c:f})}),JkZJ:(function(e,t,a){var n=a("hCnj"),r=a("WF9u");let i=["⁣⁣","⁣⁤"];a.d(t,{},{a:function(e,t){let a=e.formatMessage({id:"space.gettingStartedPages.starterBody.guide",defaultMessage:`> [!CALLOUT] 💡
+export const __rspack_esm_ids = [904869];
+export const __webpack_modules__ = {
+    HcfL: (function(e, t) {
+        t.a = {
+            match: "match-z3yytq"
+        }
+    }),
+    rfXw: (function(e, t, a) {
+        var n = a("ABep"),
+            r = a("QosV");
+        t.default = e => {
+            let t, a, i, l, o, s, c, d, u, p, h, f, g, m, v, y, b, x, w, C, _ = (0, r.c)(21);
+            return _[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, n.jsx)("path", {
+                d: "M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",
+                fill: "url(#paint0_radial_8150_7076)"
+            }), a = (0, n.jsx)("path", {
+                d: "M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",
+                fill: "url(#paint1_linear_8150_7076)"
+            }), i = (0, n.jsx)("path", {
+                d: "M12 2.125C15.2447 2.125 17.875 4.75533 17.875 8C17.875 11.2447 15.2447 13.875 12 13.875C8.75533 13.875 6.125 11.2447 6.125 8C6.125 4.75533 8.75533 2.125 12 2.125Z",
+                stroke: "black",
+                strokeOpacity: .1,
+                strokeWidth: .25
+            }), _[0] = t, _[1] = a, _[2] = i) : (t = _[0], a = _[1], i = _[2]), _[3] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, n.jsxs)("g", {
+                filter: "url(#filter0_i_8150_7076)",
+                children: [(0, n.jsx)("path", {
+                    d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
+                    fill: "url(#paint2_radial_8150_7076)"
+                }), (0, n.jsx)("path", {
+                    d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
+                    fill: "url(#paint3_linear_8150_7076)"
+                }), (0, n.jsx)("path", {
+                    d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
+                    fill: "url(#paint4_linear_8150_7076)"
+                })]
+            }), o = (0, n.jsx)("path", {
+                d: "M17.25 7.125C19.9424 7.125 22.125 9.30761 22.125 12C22.125 14.6924 19.9424 16.875 17.25 16.875C14.5576 16.875 12.375 14.6924 12.375 12C12.375 9.30761 14.5576 7.125 17.25 7.125Z",
+                stroke: "black",
+                strokeOpacity: .1,
+                strokeWidth: .25
+            }), _[3] = l, _[4] = o) : (l = _[3], o = _[4]), _[5] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, n.jsx)("g", {
+                filter: "url(#filter1_i_8150_7076)",
+                children: (0, n.jsx)("path", {
+                    d: "M12.5 22C14.9853 22 17 19.9853 17 17.5C17 15.0147 14.9853 13 12.5 13C10.0147 13 8 15.0147 8 17.5C8 19.9853 10.0147 22 12.5 22Z",
+                    fill: "url(#paint5_radial_8150_7076)"
+                })
+            }), c = (0, n.jsx)("path", {
+                d: "M12.5 13.125C14.9162 13.125 16.875 15.0838 16.875 17.5C16.875 19.9162 14.9162 21.875 12.5 21.875C10.0838 21.875 8.125 19.9162 8.125 17.5C8.125 15.0838 10.0838 13.125 12.5 13.125Z",
+                stroke: "black",
+                strokeOpacity: .1,
+                strokeWidth: .25
+            }), _[5] = s, _[6] = c) : (s = _[5], c = _[6]), _[7] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, n.jsx)("g", {
+                filter: "url(#filter2_d_8150_7076)",
+                children: (0, n.jsx)("rect", {
+                    x: 2,
+                    y: 9,
+                    width: 9,
+                    height: 9,
+                    rx: 1.75,
+                    fill: "url(#paint6_linear_8150_7076)"
+                })
+            }), u = (0, n.jsx)("path", {
+                d: "M4.5 14.3421L5.46644 14.2498C5.52461 14.5684 5.64206 14.8025 5.81879 14.9519C5.99776 15.1013 6.23826 15.176 6.54027 15.176C6.86018 15.176 7.10067 15.1101 7.26174 14.9782C7.42506 14.8442 7.50671 14.6882 7.50671 14.5102C7.50671 14.396 7.47204 14.2993 7.40268 14.2202C7.33557 14.1389 7.217 14.0686 7.04698 14.0092C6.93065 13.9697 6.66555 13.8994 6.25168 13.7983C5.71924 13.6686 5.34564 13.5093 5.13087 13.3204C4.82886 13.0545 4.67785 12.7304 4.67785 12.3481C4.67785 12.102 4.74832 11.8723 4.88926 11.6592C5.03244 11.4439 5.23714 11.2802 5.50336 11.1681C5.77181 11.056 6.09508 11 6.47315 11C7.0906 11 7.55481 11.1329 7.86577 11.3988C8.17897 11.6647 8.3434 12.0196 8.35906 12.4634L7.36577 12.5063C7.32327 12.258 7.23154 12.08 7.0906 11.9723C6.9519 11.8624 6.74273 11.8075 6.46309 11.8075C6.1745 11.8075 5.94855 11.8657 5.78523 11.9822C5.68009 12.0569 5.62752 12.1569 5.62752 12.2821C5.62752 12.3964 5.67673 12.4942 5.77517 12.5755C5.90045 12.6788 6.2047 12.7864 6.68792 12.8985C7.17114 13.0105 7.52796 13.127 7.75839 13.2479C7.99105 13.3665 8.17226 13.5302 8.30201 13.739C8.434 13.9455 8.5 14.2015 8.5 14.5069C8.5 14.7838 8.4217 15.0431 8.2651 15.2848C8.1085 15.5265 7.88702 15.7067 7.60067 15.8253C7.31432 15.9418 6.95749 16 6.5302 16C5.90828 16 5.43065 15.8594 5.09732 15.5781C4.76398 15.2947 4.56488 14.8827 4.5 14.3421Z",
+                fill: "white"
+            }), _[7] = d, _[8] = u) : (d = _[7], u = _[8]), _[9] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, n.jsxs)("filter", {
+                id: "filter0_i_8150_7076",
+                x: 12.25,
+                y: 7,
+                width: 10,
+                height: 10,
+                filterUnits: "userSpaceOnUse",
+                colorInterpolationFilters: "sRGB",
+                children: [(0, n.jsx)("feFlood", {
+                    floodOpacity: 0,
+                    result: "BackgroundImageFix"
+                }), (0, n.jsx)("feBlend", {
+                    mode: "normal",
+                    in: "SourceGraphic",
+                    in2: "BackgroundImageFix",
+                    result: "shape"
+                }), (0, n.jsx)("feColorMatrix", {
+                    in: "SourceAlpha",
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+                    result: "hardAlpha"
+                }), (0, n.jsx)("feOffset", {}), (0, n.jsx)("feGaussianBlur", {
+                    stdDeviation: 1
+                }), (0, n.jsx)("feComposite", {
+                    in2: "hardAlpha",
+                    operator: "arithmetic",
+                    k2: -1,
+                    k3: 1
+                }), (0, n.jsx)("feColorMatrix", {
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0.401818 0 0 0 0 0.294666 0 0 0 1 0"
+                }), (0, n.jsx)("feBlend", {
+                    mode: "normal",
+                    in2: "shape",
+                    result: "effect1_innerShadow_8150_7076"
+                })]
+            }), _[9] = p) : p = _[9], _[10] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, n.jsxs)("filter", {
+                id: "filter1_i_8150_7076",
+                x: 8,
+                y: 13,
+                width: 9,
+                height: 9,
+                filterUnits: "userSpaceOnUse",
+                colorInterpolationFilters: "sRGB",
+                children: [(0, n.jsx)("feFlood", {
+                    floodOpacity: 0,
+                    result: "BackgroundImageFix"
+                }), (0, n.jsx)("feBlend", {
+                    mode: "normal",
+                    in: "SourceGraphic",
+                    in2: "BackgroundImageFix",
+                    result: "shape"
+                }), (0, n.jsx)("feColorMatrix", {
+                    in: "SourceAlpha",
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+                    result: "hardAlpha"
+                }), (0, n.jsx)("feOffset", {}), (0, n.jsx)("feGaussianBlur", {
+                    stdDeviation: 1
+                }), (0, n.jsx)("feComposite", {
+                    in2: "hardAlpha",
+                    operator: "arithmetic",
+                    k2: -1,
+                    k3: 1
+                }), (0, n.jsx)("feColorMatrix", {
+                    type: "matrix",
+                    values: "0 0 0 0 0.254902 0 0 0 0 0.509804 0 0 0 0 0.584314 0 0 0 1 0"
+                }), (0, n.jsx)("feBlend", {
+                    mode: "normal",
+                    in2: "shape",
+                    result: "effect1_innerShadow_8150_7076"
+                })]
+            }), _[10] = h) : h = _[10], _[11] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, n.jsxs)("filter", {
+                id: "filter2_d_8150_7076",
+                x: 1.5,
+                y: 8.75,
+                width: 10,
+                height: 10,
+                filterUnits: "userSpaceOnUse",
+                colorInterpolationFilters: "sRGB",
+                children: [(0, n.jsx)("feFlood", {
+                    floodOpacity: 0,
+                    result: "BackgroundImageFix"
+                }), (0, n.jsx)("feColorMatrix", {
+                    in: "SourceAlpha",
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+                    result: "hardAlpha"
+                }), (0, n.jsx)("feOffset", {
+                    dy: .25
+                }), (0, n.jsx)("feGaussianBlur", {
+                    stdDeviation: .25
+                }), (0, n.jsx)("feComposite", {
+                    in2: "hardAlpha",
+                    operator: "out"
+                }), (0, n.jsx)("feColorMatrix", {
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                }), (0, n.jsx)("feBlend", {
+                    mode: "normal",
+                    in2: "BackgroundImageFix",
+                    result: "effect1_dropShadow_8150_7076"
+                }), (0, n.jsx)("feBlend", {
+                    mode: "normal",
+                    in: "SourceGraphic",
+                    in2: "effect1_dropShadow_8150_7076",
+                    result: "shape"
+                })]
+            }), _[11] = f) : f = _[11], _[12] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, n.jsxs)("radialGradient", {
+                id: "paint0_radial_8150_7076",
+                cx: 0,
+                cy: 0,
+                r: 1,
+                gradientUnits: "userSpaceOnUse",
+                gradientTransform: "translate(15 7.5) rotate(-174.289) scale(10.0499)",
+                children: [(0, n.jsx)("stop", {
+                    stopColor: "#26C0C7"
+                }), (0, n.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#04786A"
+                })]
+            }), _[12] = g) : g = _[12], _[13] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, n.jsxs)("linearGradient", {
+                id: "paint1_linear_8150_7076",
+                x1: 10,
+                y1: 8,
+                x2: 12,
+                y2: 14,
+                gradientUnits: "userSpaceOnUse",
+                children: [(0, n.jsx)("stop", {
+                    stopColor: "#0A5752",
+                    stopOpacity: 0
+                }), (0, n.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#0A5752"
+                })]
+            }), _[13] = m) : m = _[13], _[14] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, n.jsxs)("radialGradient", {
+                id: "paint2_radial_8150_7076",
+                cx: 0,
+                cy: 0,
+                r: 1,
+                gradientUnits: "userSpaceOnUse",
+                gradientTransform: "translate(15.8864 12.4545) rotate(-20.556) scale(7.76728)",
+                children: [(0, n.jsx)("stop", {
+                    stopColor: "#159C6F"
+                }), (0, n.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#29C7B8"
+                })]
+            }), _[14] = v) : v = _[14], _[15] === Symbol.for("react.memo_cache_sentinel") ? (y = (0, n.jsxs)("linearGradient", {
+                id: "paint3_linear_8150_7076",
+                x1: 12.7045,
+                y1: 12,
+                x2: 18.1591,
+                y2: 12.4545,
+                gradientUnits: "userSpaceOnUse",
+                children: [(0, n.jsx)("stop", {
+                    offset: .0497812,
+                    stopColor: "#6FBBD4"
+                }), (0, n.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#6FBBD4",
+                    stopOpacity: 0
+                })]
+            }), _[15] = y) : y = _[15], _[16] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, n.jsxs)("linearGradient", {
+                id: "paint4_linear_8150_7076",
+                x1: 17.25,
+                y1: 11.0909,
+                x2: 13.1591,
+                y2: 16.0909,
+                gradientUnits: "userSpaceOnUse",
+                children: [(0, n.jsx)("stop", {
+                    stopColor: "#0C6553",
+                    stopOpacity: 0
+                }), (0, n.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#0C6553"
+                })]
+            }), _[16] = b) : b = _[16], _[17] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, n.jsxs)("radialGradient", {
+                id: "paint5_radial_8150_7076",
+                cx: 0,
+                cy: 0,
+                r: 1,
+                gradientUnits: "userSpaceOnUse",
+                gradientTransform: "translate(11.5 16.5) rotate(53.9726) scale(6.80074)",
+                children: [(0, n.jsx)("stop", {
+                    stopColor: "#2EDED7"
+                }), (0, n.jsx)("stop", {
+                    offset: 1,
+                    stopColor: "#218097"
+                })]
+            }), _[17] = x) : x = _[17], _[18] === Symbol.for("react.memo_cache_sentinel") ? (w = (0, n.jsxs)("defs", {
+                children: [p, h, f, g, m, v, y, b, x, (0, n.jsxs)("linearGradient", {
+                    id: "paint6_linear_8150_7076",
+                    x1: 6.5,
+                    y1: 9,
+                    x2: 6.5,
+                    y2: 18,
+                    gradientUnits: "userSpaceOnUse",
+                    children: [(0, n.jsx)("stop", {
+                        stopColor: "#33A1B5"
+                    }), (0, n.jsx)("stop", {
+                        offset: 1,
+                        stopColor: "#064A66"
+                    })]
+                })]
+            }), _[18] = w) : w = _[18], _[19] !== e ? (C = (0, n.jsxs)("svg", {
+                width: "1em",
+                height: "1em",
+                viewBox: "0 0 24 24",
+                fill: "currentColor",
+                ...e,
+                children: [t, a, i, l, o, s, c, d, u, w]
+            }), _[19] = e, _[20] = C) : C = _[20], C
+        }
+    }),
+    C9uP: (function(e, t, a) {
+        var n = a("Zqzr"),
+            r = a("ASxG"),
+            i = a("OOaz");
+        let l = r.discriminatedUnion("kind", [r.object({
+            kind: r.literal("local"),
+            conversationId: r.string().transform(n.Se),
+            hostId: r.string()
+        }), r.object({
+            kind: r.literal("chatgpt"),
+            conversationId: r.string().transform(i.c),
+            title: r.string()
+        })]);
+        a.d(t, {}, {
+            a: function(e, t) {
+                return null == e || null == t ? e === t : e.kind === t.kind && e.conversationId === t.conversationId && ("local" !== e.kind || "local" === t.kind && e.hostId === t.hostId)
+            },
+            b: l
+        })
+    }),
+    sjCL: (function(e, t, a) {
+        var n = a("BolX"),
+            r = a("OFP1");
+        a("njX7");
+        var i = a("u4MG"),
+            l = a("kois"),
+            o = a("chkj"),
+            s = a("kphc"),
+            c = a("gLQa"),
+            d = a("WVuR"),
+            u = a("OWtl"),
+            p = a("o4oB"),
+            h = a("tSEg"),
+            f = a("ndjw");
+        a("qixt");
+        var g = a("eviP"),
+            m = a("YF6h");
+        let v = (0, n.c)(u.a, e => {
+                let {
+                    get: t
+                } = e;
+                return !0
+            }),
+            y = (0, n.c)(u.a, e => {
+                let {
+                    get: t
+                } = e;
+                return "chat" !== t(s.b)
+            }),
+            b = (0, n.d)(u.a, (e, t) => {
+                let {
+                    get: a
+                } = t, n = null;
+                null != e && (n = (0, i.a)(e.projectId) ? e.projectId : (0, c.a)(e.projectId, a(f.h), a(d.a)) ?? null);
+                let r = a(o.c, {
+                    enforceAccess: (0, s.g)({
+                        windowType: "browser",
+                        workModeEnabled: !0
+                    }),
+                    homeComposerMode: "work",
+                    routeProjectId: n,
+                    selectedChatGptProjectId: n,
+                    selectedWorkProject: e
+                });
+                return {
+                    projectId: n,
+                    runLocation: r,
+                    useAsbDirect: !1
+                }
+            }),
+            x = (0, n.d)(u.a, (e, t) => {
+                let {
+                    get: a
+                } = t;
+                return "dot" === e ? {} : "chatgpt" === e ? {
+                    backend: "chatgpt"
+                } : a(v) ? a(b, null).useAsbDirect ? {
+                    hostId: "local"
+                } : {
+                    backend: "chatgpt"
+                } : {}
+            }),
+            w = (0, n.d)(h.a, (e, t) => {
+                let {
+                    accountId: a,
+                    pageId: n
+                } = e, {
+                    get: i,
+                    scope: o
+                } = t, s = i(g.b), c = s?.getSession(o);
+                if (null != s && o.value.persistentWorkspace?.key !== "/space" || c?.conversationId != null) return !1;
+                if (o.value.persistentWorkspace?.key === "/space" && i(m.d, {
+                        accountId: a,
+                        pageId: n
+                    }) || null != a && null != (0, m.b)(o, a, n, "tpp", i(m.g)) && i(l.m)?.hasConversation) return !0;
+                if (!i(r.u)) return i(r.s);
+                if (!i(v)) return !1;
+                let d = i(b, null == c ? null : i(p.a, c.clientThreadId));
+                return "cloud" === d.runLocation.effectiveLocation && !d.useAsbDirect
+            });
+        a.d(t, {}, {
+            a: x,
+            b: y,
+            c: v,
+            d: w,
+            e: b
+        })
+    }),
+    N8b3: (function(e, t, a) {
+        a.d(t, {
+            a: () => k,
+            b: () => S,
+            c: () => P
+        });
+        var n = a("BolX"),
+            r = a("Zqzr"),
+            i = a("PFjh"),
+            l = a("E8Sp"),
+            o = a("Cslg"),
+            s = a("SGsN"),
+            c = a("svjy"),
+            d = a("mNPx"),
+            u = a("e1xH"),
+            p = a("BkKO"),
+            h = a("mpAT"),
+            f = a("yGJW"),
+            g = a("H2L8"),
+            m = a("OWtl"),
+            v = a("HFSu"),
+            y = a("eShZ"),
+            b = a("NRR1"),
+            x = a("jGsJ"),
+            w = a("OoIX"),
+            C = a("HNZf"),
+            _ = a("D550"),
+            j = a("PzpM");
+        let I = (0, n.v)(m.a, e => void 0),
+            k = (0, n.d)(m.a, (e, t) => {
+                let {
+                    get: a
+                } = t, n = a(I, e);
+                return n?.accountId === a(h.spaceAccountId$) && n?.userId === a(o.k) ? n : void 0
+            }),
+            S = (0, n.c)(m.a, e => {
+                let {
+                    get: t
+                } = e;
+                return t(j.c).flatMap(e => {
+                    let a = t(k, e.localPageId);
+                    return a?.response != null && "error" !== a.status ? [] : [{
+                        id: e.localPageId,
+                        name: e.name,
+                        title: e.name,
+                        backingType: e.backingType,
+                        serverSpaceId: e.space?.spaceId,
+                        status: a?.status ?? "error"
+                    }]
+                })
+            });
+
+        function P(e, t) {
+            let n, m, {
+                    name: k,
+                    createSpace: S,
+                    invitations: P = [],
+                    appearance: A,
+                    resume: E
+                } = t,
+                O = e.get(h.spaceAccountId$),
+                T = e.get(o.k),
+                M = e.get(o.j);
+            if (null == O) throw Error("space_account_unavailable");
+            if (null != E && (E.accountId !== O || E.userId !== T || null == E.space)) throw Error("space_setup_unavailable");
+            let B = e.get(o.m).accountUserId,
+                z = E?.localPageId ?? `local-page-${crypto.randomUUID()}`;
+            (0, j.b)(e, E ?? {
+                accountId: O,
+                userId: T,
+                localPageId: z,
+                name: k,
+                backingType: "drive",
+                rootInitialization: "server",
+                appearance: A,
+                invitations: P.map(e => ({
+                    ...e,
+                    status: "pending"
+                }))
+            });
+            let D = (0, _.a)((0, i.c)(e), performance.now(), "space", {
+                    surface: "browser",
+                    emit: t => (0, x.a)(e, t)
+                }),
+                N = E?.space,
+                F = !1,
+                W = new AbortController,
+                G = () => e.get(j.c).find(e => e.localPageId === z),
+                L = t => {
+                    let a = {
+                        localPageId: z,
+                        accountId: O,
+                        userId: T,
+                        name: k,
+                        status: t,
+                        response: n,
+                        metrics: D,
+                        retry: U
+                    };
+                    e.set(I, z, a), null != n && e.set(I, n.id, a)
+                },
+                U = () => {
+                    if (null != m) return m;
+                    if (F || W.signal.aborted) return Promise.reject(new DOMException("Space creation cancelled", "AbortError"));
+                    let t = (0, h.watchSpaceAccount)(e, O, T, B, M),
+                        i = AbortSignal.any([W.signal, t.signal]),
+                        x = async () => {
+                            i.throwIfAborted();
+                            try {
+                                let t;
+                                null == N ? (t = await S(i, z), D.creationRequestSucceeded()) : t = await e.get(h.createSpaceMutation$).mutateAsync({
+                                    requestBody: {
+                                        name: k
+                                    },
+                                    existingSpace: N,
+                                    signal: i
+                                }), i.throwIfAborted(), n = t, N = {
+                                    spaceId: t.id,
+                                    rootPageId: t.root_page_id
+                                }, D.savedIdentity()
+                            } catch (a) {
+                                i.throwIfAborted(), N = (0, h.pendingSpaceInitialization)(a) ?? N;
+                                let t = G();
+                                throw null != N ? (D.savedIdentity(), null != t && (0, j.b)(e, {
+                                    ...t,
+                                    space: N
+                                })) : a instanceof y.FetchError && a.status >= 400 && a.status < 500 && ![408, 499].includes(a.status) || (F = !0), D.fail((0, w.d)(a)), a
+                            }
+                            let t = G(),
+                                l = null != t && !0 !== t.rootInitialized && "server" !== t.rootInitialization;
+                            null != t && (0, j.b)(e, {
+                                ...t,
+                                space: N,
+                                rootInitialized: !l
+                            }), (0, h.cacheCreatedSpace)(e, O, n), e.query.setData(h.spaceQuery$, n.id, n), l || D.rootInitialized(n.root_page_id), await e.when(e => {
+                                let {
+                                    get: t
+                                } = e;
+                                return i.aborted || t(h.spaceAccountId$) !== O || t(o.k) !== T || void 0 !== B && t(b.a) !== B || t(b.d) !== M || !t(u.pagesEnabled$) || t(p.b)?.some(e => e.id === n?.id) === !0
+                            }), i.throwIfAborted(), L("creating");
+                            let s = G()?.appearance,
+                                c = (0, r.Bj)(s?.emoji),
+                                d = null == c ? null : {
+                                    kind: "icon",
+                                    value: c,
+                                    color: (0, g.b)(s?.theme) ?? "black"
+                                };
+                            if (l || null != d) {
+                                let {
+                                    completeSpaceRootSetup: t
+                                } = await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(753405), a.e(193172), a.e(886482)]).then(a.bind(a, "PluF"));
+                                i.throwIfAborted();
+                                let r = await t(e, n, d, l, i);
+                                i.throwIfAborted(), n = {
+                                    ...e.query.getData(h.spaceQuery$, n.id) ?? n,
+                                    symbol: r,
+                                    can_edit_appearance: null == r && n.can_edit_appearance
+                                }, e.query.setData(h.spaceQuery$, n.id, n), (0, h.cacheCreatedSpace)(e, O, n);
+                                let o = G();
+                                null != o && (0, j.b)(e, {
+                                    ...o,
+                                    rootInitialized: !0
+                                }), l && D.rootInitialized(n.root_page_id)
+                            }
+                            if (null == d && null != s && !0 === n.can_edit_appearance) {
+                                let t = await v.CodexRequest.safePatch("/spaces/v2/{space_id}/appearance", {
+                                    parameters: {
+                                        path: {
+                                            space_id: n.id
+                                        }
+                                    },
+                                    requestBody: s,
+                                    signal: i
+                                });
+                                i.throwIfAborted(), n = {
+                                    ...e.query.getData(h.spaceQuery$, n.id) ?? n,
+                                    appearance: t
+                                }, e.query.setData(h.spaceQuery$, n.id, n), (0, h.cacheCreatedSpace)(e, O, n)
+                            }
+                            let f = G();
+                            null != f && (0, j.b)(e, {
+                                ...f,
+                                appearance: void 0
+                            });
+                            let m = G()?.invitations ?? [],
+                                x = m.filter(e => "shared" !== e.status);
+                            if (x.length > 0) {
+                                let t = await async function(e, t, a, n, i) {
+                                    if (n.throwIfAborted(), 0 === a.length) return [];
+                                    let l = {
+                                            type: "space",
+                                            id: t
+                                        },
+                                        s = a.map(e => {
+                                            let {
+                                                recipient: t,
+                                                label: a,
+                                                secondaryLabel: n,
+                                                roleId: r
+                                            } = e;
+                                            return {
+                                                action: "invite",
+                                                target: l,
+                                                recipient: t,
+                                                roleId: r,
+                                                invitee: {
+                                                    id: (0, C.d)(t),
+                                                    label: a,
+                                                    secondaryLabel: n
+                                                }
+                                            }
+                                        }),
+                                        c = new Map,
+                                        d = new Set,
+                                        u = e => {
+                                            if (n.aborted || d.has(e)) return;
+                                            d.add(e);
+                                            let t = s.indexOf(e);
+                                            i?.(t, c.get(e) ?? a[t].recipient)
+                                        },
+                                        p = [];
+                                    if (await e.queryClient.getMutationCache().build(e.queryClient, {
+                                            mutationKey: ["space", "save-library-sharing", e.get(o.k), e.get(h.spaceAccountId$)],
+                                            networkMode: "always",
+                                            mutationFn: async t => {
+                                                let {
+                                                    changes: a
+                                                } = t;
+                                                n.throwIfAborted(), await (0, C.h)(e, a, void 0, void 0, n, (e, t) => c.set(e, t.recipient), (e, t) => {
+                                                    p.push(t.then(() => u(e), () => void 0))
+                                                }, (e, t) => {
+                                                    c.set(e, t.recipient), u(e)
+                                                })
+                                            }
+                                        }).execute({
+                                            changes: s
+                                        }), await (0, r.kf)(Promise.all(p), n), n.throwIfAborted(), d.size < s.length) try {
+                                        let t = await (0, C.c)(e, l, n, !0);
+                                        n.throwIfAborted(), (0, C.b)(t) && s.forEach((e, n) => {
+                                            let r = c.get(e) ?? a[n].recipient;
+                                            t.shares.some(e => (0, C.g)(e, r) && e.role_id === a[n].roleId) && u(e)
+                                        })
+                                    } catch {
+                                        n.throwIfAborted()
+                                    }
+                                    return a.map((e, t) => {
+                                        let a = c.get(s[t]) ?? e.recipient;
+                                        return {
+                                            ...e,
+                                            recipient: a,
+                                            status: d.has(s[t]) ? "shared" : "failed"
+                                        }
+                                    })
+                                }(e, n.id, x, i, (t, a) => {
+                                    if (i.aborted) return;
+                                    let n = G();
+                                    if (null != n) {
+                                        let r = m.indexOf(x[t]);
+                                        (0, j.b)(e, {
+                                            ...n,
+                                            invitations: n.invitations.map((e, t) => t === r ? {
+                                                ...e,
+                                                recipient: a,
+                                                status: "shared"
+                                            } : e)
+                                        })
+                                    }
+                                });
+                                i.throwIfAborted();
+                                let a = G();
+                                if (null != a && (0, j.b)(e, {
+                                        ...a,
+                                        invitations: [...m.filter(e => "shared" === e.status), ...t]
+                                    }), t.some(e => "failed" === e.status)) throw Error("space_creation_invitations_incomplete")
+                            }(0, j.a)(e, z), L("created")
+                        };
+                    return L("creating"), m = Promise.resolve().then(() => null == navigator.locks ? x() : navigator.locks.request(`space-setup:${JSON.stringify([O,T,z])}`, {
+                        signal: i
+                    }, x)).catch(t => {
+                        if (i.aborted) throw W.abort(), e.set(I, z, void 0), null != n && e.set(I, n.id, void 0), D.cancel("account_changed"), t;
+                        throw F ? e.set(I, z, void 0) : L("error"), (0, w.d)(t) || (0, d.d)(e.get(f.c), "pages.space.create", t), D.fail(), (() => {
+                            let {
+                                pathname: t,
+                                search: a
+                            } = e.get(l.b);
+                            e.get(h.spaceAccountId$) === O && e.get(o.k) === T && ("/spaces/new" !== t || new URLSearchParams(a).get("creation") !== z) && e.get(s.f).warning(e.get(c.a).formatMessage({
+                                id: "codex.space.sidebar.spaceSetupNeedsAttention",
+                                defaultMessage: "Space setup needs attention"
+                            }))
+                        })(), t
+                    }).finally(() => {
+                        t.stop(), m = void 0
+                    })
+                };
+            return U().catch(() => {}), z
+        }
+    }),
+    b7SN: (function(e, t, a) {
+        a.d(t, {}, {
+            a: function(e) {
+                let {
+                    clientX: t,
+                    bounds: a,
+                    edge: n,
+                    rtl: r,
+                    zoom: i,
+                    viewport: l
+                } = e, o = Math.max(a.left, l?.left ?? a.left), s = Math.min(a.right, l?.right ?? a.right);
+                return Math.abs(t - ("start" === n !== r ? o : s)) <= 150 * i
+            }
+        })
+    }),
+    aK2P: (function(e, t, a) {
+        var n = a("ABep"),
+            r = a("QosV"),
+            i = a("on57"),
+            l = a("zd8w"),
+            o = a("wD9O"),
+            s = a("aAWW"),
+            c = a("b7SN");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, d, u, p, h, f, g = (0, r.c)(21),
+                    {
+                        children: m,
+                        className: v,
+                        anchorSelector: y,
+                        edge: b,
+                        active: x,
+                        revealOnHover: w
+                    } = e,
+                    C = void 0 === b ? "start" : b,
+                    _ = void 0 !== w && w,
+                    j = (0, l.useRef)(null),
+                    [I, k] = (0, l.useState)(!1),
+                    S = (0, o.c)();
+                g[0] !== C || g[1] !== S ? (t = (e, t) => {
+                    if (e.buttons > 0 || "touch" === e.pointerType) return;
+                    let a = t.getBoundingClientRect();
+                    k(e.clientY >= a.top && e.clientY <= a.bottom && (0, c.a)({
+                        clientX: e.clientX,
+                        bounds: a,
+                        edge: C,
+                        rtl: "rtl" === getComputedStyle(t).direction,
+                        zoom: S,
+                        viewport: t.closest("[data-page-block-viewport]")?.getBoundingClientRect()
+                    }))
+                }, g[0] = C, g[1] = S, g[2] = t) : t = g[2];
+                let P = (0, l.useEffectEvent)(t);
+                g[3] !== y || g[4] !== P || g[5] !== _ ? (a = () => {
+                    if (_) return;
+                    let e = j.current?.closest(y),
+                        t = e?.closest("[data-page-block-row], [data-page-edge-region]") ?? e?.closest("[data-page-reading-column]")?.parentElement ?? e;
+                    if (null == e || null == t) return;
+                    let a = t => P(t, e),
+                        n = () => k(!1);
+                    return t.addEventListener("pointermove", a), t.addEventListener("pointerleave", n), () => {
+                        t.removeEventListener("pointermove", a), t.removeEventListener("pointerleave", n), n()
+                    }
+                }, g[3] = y, g[4] = P, g[5] = _, g[6] = a) : a = g[6], g[7] !== y || g[8] !== _ ? (d = [y, _], g[7] = y, g[8] = _, g[9] = d) : d = g[9], (0, l.useEffect)(a, d), g[10] !== I || g[11] !== _ ? (u = () => {
+                    if (!I || _) return;
+                    let e = j.current?.ownerDocument,
+                        t = () => {
+                            k(!1), (0, s.b)()
+                        };
+                    return e?.addEventListener("scroll", t, !0), e?.addEventListener("visibilitychange", t), e?.defaultView?.addEventListener("blur", t), () => {
+                        e?.removeEventListener("scroll", t, !0), e?.removeEventListener("visibilitychange", t), e?.defaultView?.removeEventListener("blur", t)
+                    }
+                }, p = [I, _], g[10] = I, g[11] = _, g[12] = u, g[13] = p) : (u = g[12], p = g[13]), (0, l.useEffect)(u, p);
+                let A = _ && "[:hover>&]:pointer-events-auto [:hover>&]:opacity-100";
+                g[14] !== v || g[15] !== A ? (h = (0, i.b)("pointer-events-auto [@media(hover:hover)_and_(pointer:fine)]:pointer-events-none [@media(hover:hover)_and_(pointer:fine)]:opacity-0 data-visible:pointer-events-auto data-visible:opacity-100 data-menu-open:pointer-events-auto data-menu-open:opacity-100 focus-within:pointer-events-auto focus-within:opacity-100 [[data-state=open]>&]:pointer-events-auto [[data-state=open]>&]:opacity-100 [:focus-visible>&]:pointer-events-auto [:focus-visible>&]:opacity-100", A, v), g[14] = v, g[15] = A, g[16] = h) : h = g[16];
+                let E = !_ && (I || void 0 !== x && x) || void 0;
+                return g[17] !== m || g[18] !== h || g[19] !== E ? (f = (0, n.jsx)("span", {
+                    ref: j,
+                    className: h,
+                    "data-page-edge-controls": !0,
+                    "data-visible": E,
+                    children: m
+                }), g[17] = m, g[18] = h, g[19] = E, g[20] = f) : f = g[20], f
+            }
+        })
+    }),
+    fAHU: (function(e, t, a) {
+        a.d(t, {
+            a: () => i
+        });
+        var n = a("ABep"),
+            r = a("QosV");
+
+        function i(e) {
+            let t, a, i = (0, r.c)(5),
+                {
+                    children: l,
+                    rootSpaceId: o
+                } = e;
+            return i[0] !== o ? (t = null, i[0] = o, i[1] = t) : t = i[1], i[2] !== l || i[3] !== t ? (a = (0, n.jsxs)("div", {
+                className: "flex min-w-0 flex-col gap-2",
+                children: [l, t]
+            }), i[2] = l, i[3] = t, i[4] = a) : a = i[4], a
+        }
+        a("BolX"), a("mpAT"), a("oyQi"), a("Ko17"), a("nvO1"), a("iycc")
+    }),
+    i9us: (function(e, t, a) {
+        var n = a("ABep"),
+            r = a("QosV"),
+            i = a("LPKZ"),
+            l = a.n(i),
+            o = a("BolX"),
+            s = a("oyxz"),
+            c = a("O5pN"),
+            d = a("osar"),
+            u = a("Z4o7"),
+            p = a("Sm6l"),
+            h = a("HOLv"),
+            f = a("bf6R"),
+            g = a("nb0y"),
+            m = a("NRR1"),
+            v = a("gcWI"),
+            y = a("GAcX"),
+            b = a("mpAT"),
+            x = a("JtEZ"),
+            w = a("tSEg");
+        a("qixt");
+        var C = a("El6m"),
+            _ = a("eviP"),
+            j = a("UDLZ");
+
+        function I() {
+            return null
+        }(0, o.d)(w.a, (e, t) => {
+            let {
+                get: a,
+                scope: n
+            } = t;
+            return a(_.b)?.getSession(n)?.conversationId != null || null != e && a(x.b, {
+                accountId: a(m.e),
+                pageId: e
+            })
+        }), a.d(t, {}, {
+            a: function(e) {
+                let t, a, i = (0, r.c)(5),
+                    {
+                        pageId: x
+                    } = e,
+                    w = (0, o.z)(m.e),
+                    _ = (0, o.x)(b.loadedSpacePageMetadata$, x ?? null);
+                i[0] !== w || i[1] !== x ? (t = {
+                    accountId: w,
+                    pageId: x
+                }, i[0] = w, i[1] = x, i[2] = t) : t = i[2];
+                let k = (0, o.x)(v.e, t),
+                    S = (0, o.z)(y.c);
+                return k || null != S ? null : (i[3] !== _?.document_type ? (a = (0, n.jsx)("div", {
+                    inert: !0,
+                    "aria-hidden": !0,
+                    children: (0, n.jsx)(C.a, {
+                        value: "expanded",
+                        children: (0, n.jsx)(g.a, {
+                            isMinimized: !1,
+                            onMinimizedChange: l(),
+                            presentation: "compact",
+                            renderTranscript: I,
+                            showHeader: !1,
+                            title: "",
+                            renderComposer: () => (0, n.jsx)(d.a, {
+                                inert: !0,
+                                layout: "single-line",
+                                children: (0, n.jsx)(d.a.Body, {
+                                    layout: "single-line",
+                                    children: (0, n.jsx)(d.a.AdaptiveFooter, {
+                                        layout: "single-line",
+                                        leadingControls: (0, n.jsx)(p.a, {
+                                            disabled: !0,
+                                            color: "ghost",
+                                            size: "composer",
+                                            children: (0, n.jsx)(f.Eg, {})
+                                        }),
+                                        input: (0, n.jsx)(d.a.Input, {
+                                            layout: "single-line",
+                                            children: (0, n.jsx)(c.a, {
+                                                singleLine: !0,
+                                                children: (0, n.jsxs)("div", {
+                                                    className: "truncate text-secondary select-none",
+                                                    children: [null, (0, n.jsx)(n.Fragment, {
+                                                        children: (0, n.jsx)(s.a, {
+                                                            id: "codex.page.chat.placeholder.byDocumentType",
+                                                            values: {
+                                                                documentType: _?.document_type ?? "page"
+                                                            },
+                                                            defaultMessage: "{documentType, select, granola_presentation {Work with this slide…} granola_workbook {Work with this sheet…} other {Work with this page…}}"
+                                                        })
+                                                    })]
+                                                })
+                                            })
+                                        }),
+                                        trailingControls: (0, n.jsxs)(d.a.FooterActions, {
+                                            children: [(0, n.jsx)(p.a, {
+                                                disabled: !0,
+                                                color: "ghost",
+                                                size: "composer",
+                                                children: (0, n.jsx)(f.dd, {})
+                                            }), (0, n.jsx)(p.a, {
+                                                disabled: !0,
+                                                color: "ghost",
+                                                size: "composer",
+                                                children: (0, n.jsx)(h.a, {
+                                                    asset: j.a
+                                                })
+                                            }), (0, n.jsx)(p.a, {
+                                                disabled: !0,
+                                                color: "ghost",
+                                                size: "composer",
+                                                children: (0, n.jsx)(u.a, {})
+                                            })]
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                }), i[3] = _?.document_type, i[4] = a) : a = i[4], a)
+            }
+        })
+    }),
+    O7mt: (function(e, t, a) {
+        let n = [
+            ["<->", "↔"],
+            ["<=>", "⇔"],
+            ["<-", "←"],
+            ["->", "→"],
+            ["=>", "⇒"],
+            ["<=", "≤"],
+            [">=", "≥"],
+            ["!=", "≠"],
+            ["+/-", "±"],
+            ["--", "—"],
+            ["...", "…"]
+        ];
+
+        function r(e, t) {
+            let a = t;
+            for (; a > 0 && "\\" === e[a - 1];) a -= 1;
+            return (t - a) % 2 == 1
+        }
+        a.d(t, {}, {
+            a: function(e, t, a) {
+                if ('"' === t || "'" === t) return {
+                    shortcut: t,
+                    glyph: ('"' === t ? "“”" : "‘’")[+!(0 === e.length || /[\s{[(<'"‘“]/.test(e.slice(-1)))],
+                    from: e.length,
+                    continuation: !1
+                };
+                if (1 !== t.length || !".=>-".includes(t)) return;
+                let r = ">" === t && ("<-" === a && e.endsWith("←") || "<=" === a && e.endsWith("≤")),
+                    i = (r ? a : e.slice(-2)) + t,
+                    l = n.find(e => {
+                        let [t] = e;
+                        return i.endsWith(t)
+                    });
+                return null == l ? void 0 : {
+                    shortcut: l[0],
+                    glyph: l[1],
+                    from: e.length - (r ? 1 : l[0].length - 1),
+                    continuation: r
+                }
+            },
+            b: function(e, t, a, n) {
+                let i;
+                if (r(e, a) || e.includes("](") && e.lastIndexOf("](") > e.lastIndexOf(")")) return !0;
+                if ('"' !== t) {
+                    let a = e + t;
+                    if (/https?:\/\/|www\./i.test(a)) {
+                        let e = /(?:^|[\s"“”])([^\s"“”]*)$/.exec(a)?.[1];
+                        if (null != e && /https?:\/\/|www\./i.test(e)) return !0
+                    }
+                }
+                if (!e.includes("`")) return !1;
+                let l = n?.parent.type.schema.marks.code,
+                    o = e;
+                if (null != n && null != l) {
+                    let t = [],
+                        a = 0;
+                    n.parent.nodesBetween(0, e.length, (n, r) => {
+                        if (null == l.isInSet(n.marks)) return;
+                        let i = Math.min(e.length, r + n.nodeSize);
+                        return t.push(e.slice(a, r), e.slice(r, i).replace(/`/g, " ")), a = i, !1
+                    }), a > 0 && (o = t.join("") + e.slice(a))
+                }
+                for (let e of o.matchAll(/`+/g)) i === e[0] ? i = void 0 : null != i || r(o, e.index) || (i = e[0]);
+                return null != i
+            }
+        })
+    }),
+    Jif0: (function(e, t, a) {
+        var n = a("ABep"),
+            r = a("QosV"),
+            i = a("CJrD"),
+            l = a("zd8w"),
+            o = a("Wf1j"),
+            s = a("NnV7"),
+            c = a("ADAj"),
+            d = a("HgLj"),
+            u = a("O7mt"),
+            p = a("FwTO");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, h, f, g, m, v, y, b, x = (0, r.c)(26),
+                    {
+                        onHistory: w,
+                        ...C
+                    } = e,
+                    _ = (0, o.a)();
+                x[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, i.a)(), x[0] = t) : t = x[0];
+                let j = (0, c.l)(t.smartPunctuationEnabled),
+                    I = (0, l.useRef)(void 0),
+                    k = (0, l.useRef)(!1),
+                    S = (0, l.useRef)(!1),
+                    P = (0, d.a)(C.ref, e => {
+                        if (null == e || null == w) return;
+                        let t = e => {
+                            !e.defaultPrevented && !e.isComposing && !S.current && ("historyUndo" === e.inputType || "historyRedo" === e.inputType) && w("historyUndo" === e.inputType ? "undo" : "redo") && e.preventDefault()
+                        };
+                        return e.addEventListener("beforeinput", t), () => e.removeEventListener("beforeinput", t)
+                    });
+                return x[1] !== _ || x[2] !== C ? (a = C["aria-label"] ?? _.formatMessage({
+                    id: "codex.space.page.titleLabel",
+                    defaultMessage: "Page title"
+                }), x[1] = _, x[2] = C, x[3] = a) : a = x[3], x[4] !== _ ? (h = _.formatMessage(s.c.untitled), x[4] = _, x[5] = h) : h = x[5], x[6] !== C.onPaste ? (f = e => {
+                    I.current = void 0,
+                        function(e, t, a) {
+                            a.current = !0;
+                            try {
+                                t?.(e)
+                            } finally {
+                                a.current = !1
+                            }
+                        }(e, C.onPaste, k)
+                }, x[6] = C.onPaste, x[7] = f) : f = x[7], x[8] !== C ? (g = e => {
+                    C.onKeyDown?.(e);
+                    let t = e.currentTarget,
+                        a = I.current;
+                    "Backspace" === e.key && !e.defaultPrevented && !e.nativeEvent.isComposing && !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && !t.disabled && !t.readOnly && null != a && t.value === a.value && t.selectionStart === a.caret && t.selectionEnd === a.caret && function(e, t) {
+                        t.current = !0;
+                        try {
+                            return e.ownerDocument.execCommand("undo")
+                        } finally {
+                            t.current = !1
+                        }
+                    }(t, S) && e.preventDefault()
+                }, m = e => {
+                    let t = e.currentTarget,
+                        a = I.current;
+                    null != a && (t.value !== a.value || t.selectionStart !== a.caret || t.selectionEnd !== a.caret) && (I.current = void 0), C.onSelect?.(e)
+                }, x[8] = C, x[9] = g, x[10] = m) : (g = x[9], m = x[10]), x[11] !== C || x[12] !== j ? (v = e => {
+                    C.onInput?.(e);
+                    let t = e.currentTarget,
+                        a = e.nativeEvent,
+                        n = I.current;
+                    if (a instanceof InputEvent && null != n) {
+                        if ("historyUndo" === a.inputType && t.value === n.value.slice(0, n.caret - 1) + n.shortcut + n.value.slice(n.caret)) return void t.setSelectionRange(t.selectionEnd, t.selectionEnd);
+                        if ("historyRedo" === a.inputType && t.value === n.value) return
+                    }
+                    if (I.current = void 0, k.current || !j || t.disabled || t.readOnly || !(a instanceof InputEvent) || a.isComposing || "insertText" !== a.inputType || a.data?.length !== 1 || !"\"'.=>-".includes(a.data) || t.selectionStart !== t.selectionEnd) return;
+                    let r = a.data,
+                        i = t.value,
+                        l = t.selectionStart,
+                        o = i.slice(0, l - r.length),
+                        s = (0, u.a)(o, r, n?.caret === l - 1 && n.value === o + i.slice(l) ? n.shortcut : void 0);
+                    null == s || (0, u.b)(o, r, s.from) || queueMicrotask(() => {
+                        if (t.ownerDocument.activeElement === t && !t.disabled && !t.readOnly && t.value === i && t.selectionStart === l && t.selectionEnd === l) {
+                            if (t.setSelectionRange(s.from, l), s.continuation) {
+                                if (!t.ownerDocument.execCommand("insertText", !1, s.shortcut) || t.value !== i.slice(0, s.from) + s.shortcut + i.slice(l)) return;
+                                t.setSelectionRange(s.from, s.from + s.shortcut.length)
+                            }
+                            t.ownerDocument.execCommand("insertText", !1, s.glyph) && (I.current = {
+                                value: t.value,
+                                caret: t.selectionStart,
+                                shortcut: s.shortcut
+                            })
+                        }
+                    })
+                }, x[11] = C, x[12] = j, x[13] = v) : v = x[13], x[14] !== C ? (y = e => {
+                    I.current = void 0, C.onBlur?.(e)
+                }, x[14] = C, x[15] = y) : y = x[15], x[16] !== C || x[17] !== P || x[18] !== a || x[19] !== h || x[20] !== f || x[21] !== g || x[22] !== m || x[23] !== v || x[24] !== y ? (b = (0, n.jsx)("textarea", {
+                    ...C,
+                    ref: P,
+                    className: `${p.a.PageTitle} relative block field-sizing-content w-full min-w-0 resize-none overflow-hidden border-none bg-transparent font-semibold break-words text-default outline-none`,
+                    "aria-label": a,
+                    "aria-multiline": !1,
+                    placeholder: h,
+                    rows: 1,
+                    onPaste: f,
+                    onKeyDown: g,
+                    onSelect: m,
+                    onInput: v,
+                    onBlur: y
+                }), x[16] = C, x[17] = P, x[18] = a, x[19] = h, x[20] = f, x[21] = g, x[22] = m, x[23] = v, x[24] = y, x[25] = b) : b = x[25], b
+            }
+        })
+    }),
+    fQMn: (function(e, t, a) {
+        a.d(t, {
+            a: () => S
+        });
+        var n = a("ABep"),
+            r = a("QosV"),
+            i = a("slpy"),
+            l = a("on57"),
+            o = a("BolX"),
+            s = a("zd8w"),
+            c = a("Wf1j"),
+            d = a("Sm6l"),
+            u = a("JNtf"),
+            p = a("bf6R"),
+            h = a("nzx4"),
+            f = a("ibLK"),
+            g = a("SLxa"),
+            m = a("SVco"),
+            v = a("FR8U"),
+            y = a("VAbi"),
+            b = a("TnSu"),
+            x = a("qlvd"),
+            w = a("aWEZ"),
+            C = a("aK2P"),
+            _ = a("TwSq"),
+            j = a("HcfL");
+
+        function I(e) {
+            let t, a, i = (0, r.c)(11),
+                {
+                    children: l,
+                    emoji: s,
+                    findContextId: c
+                } = e,
+                d = (0, o.z)(_.h),
+                u = (0, o.z)(_.g);
+            if (i[0] !== u?.id || i[1] !== s || i[2] !== c || i[3] !== d) {
+                let e = d?.contextId === c ? d?.matches.filter(e => {
+                    let {
+                        location: t
+                    } = e;
+                    return "page" === t.domain && "title" === t.target && t.from < s.length && t.to > 0
+                }) : void 0;
+                t = e?.find(e => {
+                    let {
+                        id: t
+                    } = e;
+                    return t === u?.id
+                }) ?? e?.[0], i[0] = u?.id, i[1] = s, i[2] = c, i[3] = d, i[4] = t
+            } else t = i[4];
+            let p = t;
+            if (p?.location.domain !== "page") {
+                let e;
+                return i[5] !== l ? (e = (0, n.jsx)(n.Fragment, {
+                    children: l
+                }), i[5] = l, i[6] = e) : e = i[6], e
+            }
+            let h = u?.id === p.id ? "" : void 0;
+            return i[7] !== l || i[8] !== p.location.from || i[9] !== h ? (a = (0, n.jsx)("mark", {
+                className: `${j.a.match} inline-flex rounded-2xs text-inherit`,
+                "data-active": h,
+                "data-page-find-match": !0,
+                "data-page-find-title-match": p.location.from,
+                children: l
+            }), i[7] = l, i[8] = p.location.from, i[9] = h, i[10] = a) : a = i[10], a
+        }
+        var k = a("FwTO");
+
+        function S(e) {
+            let t, a, _, j, S, O, T, M, B, z, D, N, F, W, G, L, U, R, $, q = (0, r.c)(88),
+                K = (0, c.a)(),
+                [Q, Z] = (0, s.useState)(!1),
+                H = (0, s.useRef)(null),
+                X = (0, s.useRef)(null),
+                J = (0, f.a)("(max-width: 767px)");
+            q[0] === Symbol.for("react.memo_cache_sentinel") ? (t = () => Z(!1), q[0] = t) : t = q[0];
+            let V = t,
+                {
+                    symbol: Y,
+                    disabled: ee,
+                    space: et,
+                    spaceTheme: ea
+                } = e,
+                en = J && !et,
+                er = (0, o.x)(g.a, {
+                    documentType: et ? void 0 : e.documentType,
+                    namespace: et ? null : e.namespace,
+                    surface: "editor"
+                })?.[32],
+                ei = null != Y && "none" !== Y.kind || null != er,
+                el = !ei && !et && (J || e.externalEditingControls || null != e.openNativePicker),
+                eo = e.externalEditingControls && et && !ei;
+            if (q[1] === Symbol.for("react.memo_cache_sentinel") ? (a = () => () => {
+                    X.current?.abort(), X.current = null
+                }, q[1] = a) : a = q[1], q[2] !== ee || q[3] !== eo ? (_ = [eo, ee], q[2] = ee, q[3] = eo, q[4] = _) : _ = q[4], (0, s.useLayoutEffect)(a, _), (ee || eo) && Q && V(), eo) return null;
+            q[5] !== el || q[6] !== K ? (j = el ? K.formatMessage({
+                id: "codex.space.page.symbol.add",
+                defaultMessage: "Add icon"
+            }) : K.formatMessage({
+                id: "codex.space.page.symbol.change",
+                defaultMessage: "Change icon"
+            }), q[5] = el, q[6] = K, q[7] = j) : j = q[7];
+            let es = j;
+            q[8] !== er ? (S = null == er ? (0, n.jsx)(p.fd, {}) : (0, n.jsx)(er, {}), q[8] = er, q[9] = S) : S = q[9];
+            let ec = S,
+                ed = ec;
+            if (Y?.kind === "emoji") {
+                let e;
+                q[10] !== Y.value ? (e = (0, n.jsx)("span", {
+                    className: "flex size-full items-center",
+                    children: (0, n.jsx)(b.a, {
+                        emoji: Y.value,
+                        size: "large"
+                    })
+                }), q[10] = Y.value, q[11] = e) : e = q[11], ed = e
+            } else if (Y?.kind === "icon") {
+                let e, t;
+                q[12] !== ec || q[13] !== et ? (e = et ? (0, n.jsx)(p.Hc, {
+                    className: "size-12"
+                }) : ec, q[12] = ec, q[13] = et, q[14] = e) : e = q[14], q[15] !== Y.color || q[16] !== Y.value || q[17] !== e ? (t = (0, n.jsx)("span", {
+                    className: "flex size-full items-center",
+                    children: (0, n.jsx)(v.a, {
+                        className: "size-12",
+                        color: Y.color,
+                        defaultIcon: e,
+                        icon: Y.value
+                    })
+                }), q[15] = Y.color, q[16] = Y.value, q[17] = e, q[18] = t) : t = q[18], ed = t
+            }
+            if (null != e.legacyEmoji) {
+                let t;
+                q[19] !== ed || q[20] !== e.findContextId || q[21] !== e.legacyEmoji ? (t = (0, n.jsx)(I, {
+                    emoji: e.legacyEmoji,
+                    findContextId: e.findContextId,
+                    children: ed
+                }), q[19] = ed, q[20] = e.findContextId, q[21] = e.legacyEmoji, q[22] = t) : t = q[22], ed = t
+            }
+            let eu = el ? "iconTouch" : "compact",
+                ep = ei ? "self-start" : "absolute end-0 top-1/2 -translate-y-1/2",
+                eh = el && "max-w-(--page-control-gutter)";
+            q[23] !== ep || q[24] !== eh ? (O = (0, l.b)(ep, eh), q[23] = ep, q[24] = eh, q[25] = O) : O = q[25];
+            let ef = ei ? "ghostMuted" : "ghost",
+                eg = ei ? void 0 : "small",
+                em = ei ? "iconLarge" : eu,
+                ev = !ei;
+            q[26] !== ee || q[27] !== ed || q[28] !== es || q[29] !== em || q[30] !== ev || q[31] !== O || q[32] !== ef || q[33] !== eg ? (T = (0, n.jsx)(d.a, {
+                ref: H,
+                className: O,
+                "aria-label": es,
+                color: ef,
+                disabled: ee,
+                disabledAppearance: "unchanged",
+                onClick: E,
+                radius: eg,
+                size: em,
+                uniform: ev,
+                type: "button",
+                children: ed
+            }), q[26] = ee, q[27] = ed, q[28] = es, q[29] = em, q[30] = ev, q[31] = O, q[32] = ef, q[33] = eg, q[34] = T) : T = q[34];
+            let ey = T;
+            if (ee) {
+                let e;
+                return ei ? (q[35] !== ed ? (e = (0, n.jsx)("span", {
+                    className: "flex size-16 items-center justify-center border border-transparent",
+                    children: ed
+                }), q[35] = ed, q[36] = e) : e = q[36], e) : null
+            }
+            q[37] !== ee || q[38] !== K || q[39] !== e || q[40] !== Y ? (M = async function() {
+                if (ee) return;
+                X.current?.abort(), X.current = null;
+                let t = H.current;
+                if (null == e.openNativePicker || null == t) return void Z(!0);
+                let a = function(e, t, a) {
+                    let n = (0, w.d)(e.ownerDocument, e.getBoundingClientRect());
+                    if (null != n) return {
+                        symbol: t,
+                        canRemove: null != t && "none" !== t.kind,
+                        icons: (0, x.a)("", a).map(e => {
+                            let {
+                                id: t,
+                                label: n,
+                                keywords: r
+                            } = e;
+                            return {
+                                id: t,
+                                label: a.formatMessage(n),
+                                keywords: r
+                            }
+                        }),
+                        colors: m.a,
+                        anchor: n
+                    }
+                }(t, Y, K);
+                if (null == a) return void Z(!0);
+                let n = new AbortController;
+                X.current = n;
+                let r = await e.openNativePicker(a, n.signal);
+                if (!n.signal.aborted) {
+                    if (X.current = null, "unsupported" === r.outcome || "error" === r.outcome) return void Z(!0);
+                    "handled" === r.outcome && e.onChange(r.symbol), e.onClose?.()
+                }
+            }, q[37] = ee, q[38] = K, q[39] = e, q[40] = Y, q[41] = M) : M = q[41];
+            let eb = M;
+            q[42] !== e ? (B = null == e.onClose ? void 0 : t => {
+                t.preventDefault(), e.onClose?.()
+            }, q[42] = e, q[43] = B) : B = q[43];
+            let ex = B,
+                ew = et && Y?.kind !== "emoji" ? "icon" : "emoji",
+                eC = en ? "sheet" : "grid",
+                e_ = !en,
+                ej = en ? "calc(70dvh - 4rem - env(safe-area-inset-bottom))" : void 0;
+            q[44] !== ee || q[45] !== e.onChange || q[46] !== en || q[47] !== Y || q[48] !== ew || q[49] !== eC || q[50] !== e_ || q[51] !== ej || q[52] !== ea ? (z = (0, n.jsx)(y.a, {
+                disabled: ee,
+                value: Y,
+                defaultColor: ea,
+                commitColorOnSelect: en,
+                defaultKind: ew,
+                layout: eC,
+                embedded: en,
+                autoFocus: e_,
+                availableHeight: ej,
+                onChange: e.onChange,
+                onSelect: V,
+                onClear: V
+            }), q[44] = ee, q[45] = e.onChange, q[46] = en, q[47] = Y, q[48] = ew, q[49] = eC, q[50] = e_, q[51] = ej, q[52] = ea, q[53] = z) : z = q[53];
+            let eI = z,
+                ek = Q && !en;
+            q[54] !== eb ? (D = e => {
+                e ? eb() : V()
+            }, q[54] = eb, q[55] = D) : D = q[55], q[56] !== el || q[57] !== ei ? (N = ei ? "self-start" : (0, l.b)(k.a.PageTitle, "absolute top-0 end-full font-semibold", !el && "pe-2"), q[56] = el, q[57] = ei, q[58] = N) : N = q[58];
+            let eS = ei || el || Q,
+                eP = ei ? "flex" : "relative inline-block h-[1cap] align-baseline";
+            return q[59] !== ey ? (F = (0, n.jsx)(h.e, {
+                asChild: !0,
+                children: ey
+            }), q[59] = ey, q[60] = F) : F = q[60], q[61] !== es || q[62] !== Q || q[63] !== F ? (W = (0, n.jsx)(i.a, {
+                content: es,
+                disabled: Q,
+                children: F
+            }), q[61] = es, q[62] = Q, q[63] = F, q[64] = W) : W = q[64], q[65] !== eP || q[66] !== W ? (G = (0, n.jsx)("span", {
+                className: eP,
+                children: W
+            }), q[65] = eP, q[66] = W, q[67] = G) : G = q[67], q[68] !== N || q[69] !== eS || q[70] !== G ? (L = (0, n.jsx)(C.a, {
+                className: N,
+                anchorSelector: "[data-page-title]",
+                active: eS,
+                children: G
+            }), q[68] = N, q[69] = eS, q[70] = G, q[71] = L) : L = q[71], q[72] !== es || q[73] !== eI || q[74] !== ex ? (U = (0, n.jsx)(h.c, {
+                className: "z-50 outline-hidden",
+                "aria-label": es,
+                align: "center",
+                onCloseAutoFocus: ex,
+                onClick: A,
+                unstyled: !0,
+                children: eI
+            }), q[72] = es, q[73] = eI, q[74] = ex, q[75] = U) : U = q[75], q[76] !== es || q[77] !== Q || q[78] !== eI || q[79] !== ex || q[80] !== en ? (R = Q && en && (0, n.jsxs)(u.a, {
+                open: !0,
+                size: "sheet",
+                variant: "opaque",
+                onOpenChange: e => {
+                    e || V()
+                },
+                contentProps: {
+                    shouldStopPointerDownPropagation: !1,
+                    onCloseAutoFocus: ex,
+                    onOpenAutoFocus: P
+                },
+                children: [(0, n.jsx)(u.e, {
+                    className: "px-4 pt-4 pb-3 text-center text-base font-semibold",
+                    children: es
+                }), eI]
+            }), q[76] = es, q[77] = Q, q[78] = eI, q[79] = ex, q[80] = en, q[81] = R) : R = q[81], q[82] !== ek || q[83] !== D || q[84] !== L || q[85] !== U || q[86] !== R ? ($ = (0, n.jsxs)(h.a, {
+                modal: !0,
+                open: ek,
+                onOpenChange: D,
+                children: [L, U, R]
+            }), q[82] = ek, q[83] = D, q[84] = L, q[85] = U, q[86] = R, q[87] = $) : $ = q[87], $
+        }
+
+        function P(e) {
+            e.preventDefault(), e.currentTarget instanceof HTMLElement && e.currentTarget.focus()
+        }
+
+        function A(e) {
+            return e.stopPropagation()
+        }
+
+        function E(e) {
+            return e.stopPropagation()
+        }
+    }),
+    zTDg: (function(e, t, a) {
+        var n = a("ABep"),
+            r = a("QosV"),
+            i = a("slpy"),
+            l = a("Wf1j"),
+            o = a("Sm6l"),
+            s = a("j9wQ");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, l, c, d, u, p = (0, r.c)(14);
+                p[0] !== e ? ({
+                    label: t,
+                    appearance: l,
+                    color: c,
+                    ...a
+                } = e, p[0] = e, p[1] = t, p[2] = a, p[3] = l, p[4] = c) : (t = p[1], a = p[2], l = p[3], c = p[4]);
+                let h = void 0 === l ? "toolbar" : l,
+                    f = void 0 === c ? "ghostActive" : c,
+                    g = !0 === a["aria-expanded"];
+                return p[5] !== h || p[6] !== f || p[7] !== t || p[8] !== a ? (d = "viewer" === h ? (0, n.jsx)(s.g, {
+                    ...a,
+                    "aria-label": t,
+                    uniform: !0
+                }) : (0, n.jsx)(o.a, {
+                    ...a,
+                    "aria-label": t,
+                    color: f,
+                    size: "toolbar",
+                    uniform: !0
+                }), p[5] = h, p[6] = f, p[7] = t, p[8] = a, p[9] = d) : d = p[9], p[10] !== t || p[11] !== g || p[12] !== d ? (u = (0, n.jsx)(i.a, {
+                    content: t,
+                    disabled: g,
+                    children: d
+                }), p[10] = t, p[11] = g, p[12] = d, p[13] = u) : u = p[13], u
+            },
+            b: function(e) {
+                let t, a, i, o, c = (0, r.c)(9);
+                c[0] !== e ? ({
+                    children: t,
+                    ...a
+                } = e, c[0] = e, c[1] = t, c[2] = a) : (t = c[1], a = c[2]);
+                let d = (0, l.a)();
+                return c[3] !== d ? (i = d.formatMessage({
+                    id: "codex.space.page.header.editingTools",
+                    defaultMessage: "Page editing tools"
+                }), c[3] = d, c[4] = i) : i = c[4], c[5] !== t || c[6] !== a || c[7] !== i ? (o = (0, n.jsx)(s.i, {
+                    ...a,
+                    label: i,
+                    children: t
+                }), c[5] = t, c[6] = a, c[7] = i, c[8] = o) : o = c[8], o
+            }
+        })
+    }),
+    JyrC: (function(e, t, a) {
+        var n = a("ABep"),
+            r = a("QosV"),
+            i = a("on57"),
+            l = a("zd8w"),
+            o = a("v7qY"),
+            s = a("Wf1j"),
+            c = a("LIH9"),
+            d = a("bUax"),
+            u = a("hZSj"),
+            p = a("j9wQ"),
+            h = a("zTDg");
+
+        function f(e) {
+            let t, a, l, c, u, f, m, v, y, b, x, w, C, _, j, I, k, S, P, A, E, O, T, M, B, z = (0, r.c)(78),
+                D = (0, s.a)(),
+                {
+                    inset: N,
+                    contentFade: F,
+                    navigation: W,
+                    actions: G,
+                    documentControlsContainers: L,
+                    saveStatus: U,
+                    people: R,
+                    automations: $,
+                    requestEditAccess: q,
+                    comments: K,
+                    meeting: Q,
+                    supplementalActions: Z,
+                    connectionStatus: H,
+                    onClose: X,
+                    tabId: J,
+                    sharing: V
+                } = e,
+                Y = void 0 !== N && N,
+                ee = void 0 !== F && F;
+            z[0] !== G || z[1] !== e.actionsGrouped ? (t = e.actionsGrouped || null == G ? G : (0, n.jsx)(h.b, {
+                children: G
+            }), z[0] = G, z[1] = e.actionsGrouped, z[2] = t) : t = z[2];
+            let et = t;
+            z[3] !== $ || z[4] !== K ? (a = (0, n.jsxs)(n.Fragment, {
+                children: [K, $]
+            }), z[3] = $, z[4] = K, z[5] = a) : a = z[5];
+            let ea = a,
+                en = ea;
+            if (null == L) {
+                let e;
+                z[6] !== $ || z[7] !== K || z[8] !== D || z[9] !== ea ? (e = $ || K ? (0, n.jsx)(p.i, {
+                    hideWhenEmpty: !0,
+                    label: D.formatMessage({
+                        id: "codex.space.page.header.panels",
+                        defaultMessage: "Page panels"
+                    }),
+                    children: ea
+                }) : null, z[6] = $, z[7] = K, z[8] = D, z[9] = ea, z[10] = e) : e = z[10], en = e
+            }
+            z[11] !== Z ? (l = {
+                id: "supplemental",
+                content: Z,
+                hidePriority: 3
+            }, z[11] = Z, z[12] = l) : l = z[12], z[13] === Symbol.for("react.memo_cache_sentinel") ? (c = [{
+                priority: 5,
+                selector: "[data-page-automation-control]"
+            }], z[13] = c) : c = z[13], z[14] !== en ? (u = {
+                id: "panels",
+                collapseSteps: c,
+                content: en
+            }, z[14] = en, z[15] = u) : u = z[15], z[16] !== Q ? (f = {
+                id: "meeting",
+                content: Q,
+                collapsePriority: 3
+            }, z[16] = Q, z[17] = f) : f = z[17], z[18] !== l || z[19] !== u || z[20] !== f ? (m = [l, u, f], z[18] = l, z[19] = u, z[20] = f, z[21] = m) : m = z[21];
+            let er = m;
+            z[22] !== L || z[23] !== er ? (v = L?.trailing != null ? (0, o.createPortal)((0, n.jsx)("div", {
+                className: "flex min-w-0 items-center gap-0.5",
+                children: er.map(g)
+            }), L.trailing) : null, z[22] = L, z[23] = er, z[24] = v) : v = z[24];
+            let ei = !Y && "ps-[var(--window-titlebar-inset-left,0px)] pe-[var(--window-titlebar-inset-right,0px)] rtl:ps-[var(--window-titlebar-inset-right,0px)] rtl:pe-[var(--window-titlebar-inset-left,0px)]";
+            z[25] !== ei ? (y = (0, i.b)(ei, "w-full"), z[25] = ei, z[26] = y) : y = z[26];
+            let el = ee ? "overlay" : void 0;
+            z[27] !== W ? (b = {
+                id: "title",
+                content: (0, n.jsx)("div", {
+                    className: "flex min-w-0 items-center",
+                    children: W
+                }),
+                collapsePriority: 1
+            }, z[27] = W, z[28] = b) : b = z[28];
+            let eo = null == L ? et : null;
+            return z[29] !== eo ? (x = {
+                id: "editing",
+                content: eo,
+                collapsePriority: 2
+            }, z[29] = eo, z[30] = x) : x = z[30], z[31] !== U ? (w = {
+                id: "save-status",
+                content: U
+            }, z[31] = U, z[32] = w) : w = z[32], z[33] !== b || z[34] !== x || z[35] !== w ? (C = [b, x, w], z[33] = b, z[34] = x, z[35] = w, z[36] = C) : C = z[36], z[37] !== q ? (_ = {
+                id: "request-edit-access",
+                content: q
+            }, z[37] = q, z[38] = _) : _ = z[38], z[39] !== H ? (j = {
+                id: "connection-status",
+                content: H,
+                hidePriority: 3
+            }, z[39] = H, z[40] = j) : j = z[40], z[41] !== L || z[42] !== er ? (I = null == L ? er : [], z[41] = L, z[42] = er, z[43] = I) : I = z[43], z[44] !== e.download ? (k = {
+                id: "download",
+                content: e.download
+            }, z[44] = e.download, z[45] = k) : k = z[45], z[46] !== e.overflow ? (S = {
+                id: "overflow",
+                content: e.overflow
+            }, z[46] = e.overflow, z[47] = S) : S = z[47], z[48] !== e.persistentActions ? (P = {
+                id: "artifact-actions",
+                content: e.persistentActions
+            }, z[48] = e.persistentActions, z[49] = P) : P = z[49], z[50] !== D || z[51] !== R || z[52] !== V ? (A = null == V && null == R ? null : (0, n.jsxs)(p.i, {
+                hideWhenEmpty: !0,
+                label: D.formatMessage({
+                    id: "codex.space.page.header.sharing",
+                    defaultMessage: "Sharing"
+                }),
+                children: [R, V]
+            }), z[50] = D, z[51] = R, z[52] = V, z[53] = A) : A = z[53], z[54] !== A ? (E = {
+                id: "sharing",
+                content: A,
+                collapsePriority: 4
+            }, z[54] = A, z[55] = E) : E = z[55], z[56] !== X || z[57] !== J ? (O = {
+                id: "window-controls",
+                content: (0, n.jsx)(d.a, {
+                    tabId: J,
+                    onClose: X
+                })
+            }, z[56] = X, z[57] = J, z[58] = O) : O = z[58], z[59] !== _ || z[60] !== j || z[61] !== I || z[62] !== k || z[63] !== S || z[64] !== P || z[65] !== E || z[66] !== O ? (T = [_, j, ...I, k, S, P, E, O], z[59] = _, z[60] = j, z[61] = I, z[62] = k, z[63] = S, z[64] = P, z[65] = E, z[66] = O, z[67] = T) : T = z[67], z[68] !== ee || z[69] !== Y || z[70] !== y || z[71] !== el || z[72] !== C || z[73] !== T ? (M = (0, n.jsx)(p.l, {
+                "data-page-toolbar": !0,
+                className: y,
+                contentFade: ee,
+                density: "surface",
+                inset: Y,
+                placement: el,
+                leading: C,
+                trailing: T
+            }), z[68] = ee, z[69] = Y, z[70] = y, z[71] = el, z[72] = C, z[73] = T, z[74] = M) : M = z[74], z[75] !== M || z[76] !== v ? (B = (0, n.jsxs)("div", {
+                className: "@container/page-toolbar w-full min-w-0",
+                children: [v, M]
+            }), z[75] = M, z[76] = v, z[77] = B) : B = z[77], B
+        }
+
+        function g(e) {
+            return (0, n.jsx)(l.Fragment, {
+                children: e.content
+            }, e.id)
+        }
+
+        function m(e) {
+            let t, a, l, o = (0, r.c)(16),
+                {
+                    children: s,
+                    contentFade: d,
+                    separator: p,
+                    surface: h,
+                    overlay: f
+                } = e,
+                g = void 0 !== d && d,
+                m = f ?? "side-panel" === h;
+            if ("window" === h || "side-panel" !== h && (0, u.a)("/space/:pageId")) {
+                let e;
+                return o[0] !== s || o[1] !== g || o[2] !== p ? (e = (0, n.jsx)(c.a.Header, {
+                    className: "shrink-0",
+                    contentFade: g,
+                    separator: p,
+                    children: s
+                }), o[0] = s, o[1] = g, o[2] = p, o[3] = e) : e = o[3], e
+            }
+            if ("side-panel" === h) {
+                let e, t, a = m ? "absolute inset-x-0 top-0" : "relative";
+                return o[4] !== a ? (e = (0, i.b)("pointer-events-none z-30 shrink-0", a), o[4] = a, o[5] = e) : e = o[5], o[6] !== s || o[7] !== e ? (t = (0, n.jsx)("div", {
+                    className: e,
+                    children: s
+                }), o[6] = s, o[7] = e, o[8] = t) : t = o[8], t
+            }
+            o[9] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, n.jsx)(c.a.MainContentLayout, {
+                layout: "custom-titlebar"
+            }), o[9] = t) : t = o[9];
+            let v = m ? "absolute inset-x-0 top-0" : "relative";
+            return o[10] !== v ? (a = (0, i.b)("pointer-events-none z-30 shrink-0 [--viewer-header-start-inset:var(--app-shell-titlebar-left-inset,0px)]", v), o[10] = v, o[11] = a) : a = o[11], o[12] !== s || o[13] !== p || o[14] !== a ? (l = (0, n.jsxs)(n.Fragment, {
+                children: [t, (0, n.jsx)(c.a.Header, {
+                    className: a,
+                    inline: !0,
+                    separator: p,
+                    children: s
+                })]
+            }), o[12] = s, o[13] = p, o[14] = a, o[15] = l) : l = o[15], l
+        }
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, i, l, o, s, c, d, p, h = (0, r.c)(19);
+                h[0] !== e ? ({
+                    surface: i,
+                    contentFade: l,
+                    separator: o,
+                    overlay: a,
+                    onClose: t,
+                    ...s
+                } = e, h[0] = e, h[1] = t, h[2] = a, h[3] = i, h[4] = l, h[5] = o, h[6] = s) : (t = h[1], a = h[2], i = h[3], l = h[4], o = h[5], s = h[6]);
+                let g = void 0 !== l && l,
+                    v = void 0 === o || o;
+                h[7] !== i ? (c = "window" === i || "side-panel" !== i && (0, u.a)("/space/:pageId"), h[7] = i, h[8] = c) : c = h[8];
+                let y = c,
+                    b = g && !y,
+                    x = !y,
+                    w = y ? void 0 : t;
+                return h[9] !== b || h[10] !== x || h[11] !== w || h[12] !== s ? (d = (0, n.jsx)(f, {
+                    ...s,
+                    contentFade: b,
+                    inset: x,
+                    onClose: w
+                }), h[9] = b, h[10] = x, h[11] = w, h[12] = s, h[13] = d) : d = h[13], h[14] !== a || h[15] !== v || h[16] !== i || h[17] !== d ? (p = (0, n.jsx)(m, {
+                    surface: i,
+                    separator: v,
+                    overlay: a,
+                    children: d
+                }), h[14] = a, h[15] = v, h[16] = i, h[17] = d, h[18] = p) : p = h[18], p
+            },
+            b: m,
+            c: f
+        })
+    }),
+    JkZJ: (function(e, t, a) {
+        var n = a("hCnj"),
+            r = a("WF9u");
+        let i = ["⁣⁣", "⁣⁤"];
+        a.d(t, {}, {
+            a: function(e, t) {
+                let a = e.formatMessage({
+                    id: "space.gettingStartedPages.starterBody.guide",
+                    defaultMessage: `> [!CALLOUT] 💡
 >
 > Pages are a place for you to write, build, and collaborate with ChatGPT and your teammates. Use this page as your playground to learn the basics — and have fun!
 
@@ -38,4 +1701,495 @@ Create a daily list of prioritized tasks from my email, messages, and calendar, 
 
 \`\`\`codex-prompt
 Create a new trip planner page with flight details, hotel reservations, and tour info, pulled from my emails
-\`\`\``},{savings:t?.savings==null?"":(0,r.b)(t.savings,e.formatMessage({id:"space.welcome.demo.savingsAlt",defaultMessage:"Savings growth calculator"})),solar:t?.solar==null?"":(0,r.b)(t.solar,e.formatMessage({id:"space.welcome.demo.solarAlt",defaultMessage:"Solar system explorer"})),piano:t?.piano==null?"":(0,r.b)(t.piano,e.formatMessage({id:"space.welcome.demo.pianoAlt",defaultMessage:"Mini Piano"}))});return(0,n.cc)(a).flatMap(e=>e.startsWith("- [ ] ")?[e,""]:[e])},b:function(e){return e.formatMessage({id:"space.gettingStartedPages.pageTitle",defaultMessage:"Your guide to pages"})},c:["Welcome to Space","🚀 Getting started with pages","Getting started with pages"],d:function(e){let t=i.find(t=>e.endsWith(t));return null==t?e:e.slice(0,-t.length)},e:"Your guide to pages"})}),sR1U:(function(e,t,a){var n=a("i5ac"),r=a.n(n),i=a("BolX"),l=a("Cslg"),o=a("OWtl"),s=a("PVyj"),c=a("v4UZ"),d=a("N8b3"),u=a("rpnz"),p=a("e1xH"),h=a("jAir"),f=a("ELpK"),g=a("vpOl"),m=a("mpAT");let v=(0,i.c)(o.a,e=>{let{get:t}=e,a=t(m.spacePageTree$),n=t(m.spacesQuery$).data;if(null==a||null==n){let e=t(m.visibleSpacePages$)?.items.filter(e=>(0,u.b)(e.page_id)&&null==e.parent&&"space"!==e.drive_scope&&e.access.can_read&&null==e.deleted_at);if(!e?.length)return;a=(0,g.a)(e,[])}let r=new Map(n?.items.map(e=>[e.id,e])),i=new Set(t(d.b).map(e=>e.id)),l=new Set(a.allLoosePages.map(e=>e.page_id));return[...a.pagesById.values()].filter(e=>!i.has(e.page_id)).map(e=>({page:e,personal:l.has(e.page_id),parentSpace:[...a.spaceIdsByPageId.get(e.page_id)??[]].map(e=>r.get(e)).find(e=>null!=e)})).sort((e,t)=>Date.parse(t.page.updated_at)-Date.parse(e.page.updated_at))}),y=(0,i.c)(o.a,e=>{let{get:t}=e,a=new Set(t(m.spacesQuery$).data?.items.map(e=>e.root_page_id));return t(v)?.filter(e=>{let{page:t}=e;return!a.has(t.page_id)})}),b=(0,i.d)(o.a,(e,t)=>{let{get:a}=t,n=a(v);if(!a(c.a).incremental_discovery)return n;let i=a(f.a,e).data,o=a(m.spacesQuery$).data;if(null==o||null==n&&null==i)return;let d=a(p.I),u=r()([...(0,h.p)(i??[],n?.map(e=>{let{page:t}=e;return t})??[]),...n?.map(e=>{let{page:t}=e;return t})??[]],"page_id").map(e=>{let t=a(m.loadedSpacePageMetadata$,e.page_id);return null!=t&&(!t.access.can_read||null!=t.deleted_at||(0,h.l)(t,e))?t:e}),y=(0,g.a)((0,s.e)({items:u},a(s.d,{accountId:a(m.spaceAccountId$),userId:a(l.k)})).items.filter(e=>e.access.can_read&&null==e.deleted_at&&(d||null==e.site_project_id)),o.items),b=new Set(y.allLoosePages.map(e=>e.page_id));return[...y.pagesById.values()].map(e=>({page:e,personal:b.has(e.page_id),parentSpace:o.items.find(t=>y.spaceIdsByPageId.get(e.page_id)?.has(t.id))})).sort((e,t)=>Date.parse(t.page.updated_at)-Date.parse(e.page.updated_at))});a.d(t,{},{a:b,b:y,c:v})}),SCmN:(function(e,t,a){var n=a("QBk8"),r=a("BolX"),i=a("Cslg"),l=a("lBzi"),o=a("g2p6"),s=a("e1xH"),c=a("yGJW"),d=a("OWtl"),u=a("WFY2"),p=a("kpIY"),h=a("Nwp9"),f=a("OHD8"),g=a("mpAT"),m=a("Kw4a"),v=a("v5SL"),y=a("JkZJ"),b=a("sR1U"),x=a("nndI");let w="oai/apps/hasOpenedSpaceWelcome",C="space-welcome-dismissal-v1",_=(0,h.b)(C,{}),j=(0,r.v)(d.a,e=>!1),I=(0,r.u)(d.a,()=>null),k=(0,r.v)(d.a,e=>({visible:!1,pageId:null})),S=(0,r.c)(d.a,e=>{let{get:t}=e,a=t(g.spaceAccountId$),n=t(i.k);return null!=a&&null!=n&&a===t(o.n)?{accountId:a,userId:n,key:JSON.stringify([a,n])}:null}),P=(0,r.d)(d.a,(e,t)=>{let{get:a}=t,n=a(S);return null!=n&&a(x.g)[n.key]===e}),A=(0,r.v)(d.a,e=>!1),E=(0,r.v)(d.a,e=>"unknown"),O=(0,r.d)(d.a,(e,t)=>{let{get:a}=t,n=a(I);return a(m.g)&&n?.awaitingPaint===!0&&!a(v.h,n.identityKey)&&n.pageId===e&&n.identityKey===a(S)?.key}),T=(0,r.c)(d.a,e=>{let{get:t}=e,a=t(S);if(null==a)return;let n=t(_)[a.key];if(null!=n)return!1!==n;let r=t(o.p);if(r.isSuccess&&!r.isPlaceholderData)return Object.hasOwn(r.data.seenAnnouncements??{},w)}),M=(0,r.d)(d.a,(e,t)=>{let{get:a}=t;if(!a(s.pagesEnabled$))return null;let n=a(S);if(null==n)return null;let r=a(k,n.key);if(r.visible)return{pageId:r.pageId};if(!1!==a(T))return null;let i=a(g.spacePagesQuery$),l=a(g.spacesQuery$);if(!a(g.spacePagesComplete$)||!i.isSuccess||!i.isFetched||i.isFetching||i.isPlaceholderData||!l.isSuccess||!l.isFetched||l.isFetching)return null;let o=a(b.b)?.filter(e=>{let{personal:t}=e;return t});if(null==o)return null;if(0===o.length)return{pageId:null};let c=o[0].page;return 1===o.length&&(c.title===e||c.title===y.e||y.c.some(e=>c.title===e))?{pageId:null}:null});async function B(e){if(!e.get(s.pagesEnabled$))return;let t=e.get(S);if(null==t||e.get(v.h,t.key)||"pending"!==e.get(_)[t.key]||e.get(j,t.key))return;let a=(0,g.watchSpaceAccount)(e,t.accountId,t.userId);e.set(j,t.key,!0);try{if(await (0,l.a)(e,w,!1,a.signal),a.signal.throwIfAborted(),"pending"!==e.get(_)[t.key])return;(0,p.t)(C,{entries:{[t.key]:{value:"saved"}}}),await e.query.snapshot(o.p).invalidate()}catch{a.signal.aborted||u.a.warning("Failed to save Space welcome dismissal")}finally{a.stop(),e.set(j,t.key,!1)}}a.d(t,{},{a:function(e,t){e.set(E,t,"unknown"),e.set(x.g,e=>{let{[t]:a,...n}=e;return n}),e.set(x.c,e=>{let{[t]:a,...n}=e;return n}),e.get(I)?.identityKey===t&&e.set(I,null),e.set(k,t,{visible:!1,pageId:null})},b:P,c:function(e,t){let a=e.get(I);if(a?.pageId!==t)return;let r=e.get(S);null==r||a.identityKey!==r.key||e.get(v.h,r.key)||(e.get(m.g)&&(0,c.a)(e,n.CodexSpacesOnboarding,{action:n.CodexSpacesOnboardingAction.CODEX_SPACES_ONBOARDING_ACTION_WELCOME_PAGE_OPENED,item:n.CodexSpacesOnboardingItem.CODEX_SPACES_ONBOARDING_ITEM_WELCOME,pageId:t}),e.get(k,r.key).visible&&e.set(k,r.key,{visible:!1,pageId:t}),(0,p.t)(C,{entries:{[r.key]:{value:"pending"}}}),e.set(I,null),B(e))},d:I,e:B,f:E,g:S,h:T,i:A,j:O,k:function(e){return e instanceof Error&&(0,f.a)(e)?"retryable":"failed"},l:k,m:M})}),WP5H:(function(e,t,a){var n=a("hCnj");let r={kind:"icon",value:"graduation-cap",color:"blue"};a.d(t,{},{a:async function(e,t,i){let{withPageMenuSession:l}=await Promise.all([a.e(418851),a.e(109308),a.e(399565),a.e(257798),a.e(447351),a.e(617936),a.e(807489),a.e(337882),a.e(955979),a.e(646436),a.e(7078),a.e(200429),a.e(698524),a.e(956483),a.e(87162),a.e(396705),a.e(155568),a.e(731863),a.e(767086),a.e(76629),a.e(514085),a.e(753405),a.e(193172),a.e(997919)]).then(a.bind(a,"tKju"));i()&&await l(e,t,"write",async e=>{i()&&null==e.getSymbol()&&null==(0,n.kc)(e.document.getText("title").toJSON()).emoji&&e.mutateDocument(e=>(0,n.gc)(e,r))&&await e.flush({scope:"current",timeoutMs:null})})},b:r})}),JtEZ:(function(e,t,a){var n=a("SZCv"),r=a.n(n),i=a("BolX"),l=a("ASxG"),o=a("dQRk"),s=a("C9uP"),c=a("sjCL"),d=a("YF6h"),u=a("tSEg"),p=a("kpIY"),h=a("Nwp9"),f=a("Iq2T");let g="spaces-workspace-chat-selections-v1",m=l.record(l.string(),l.object({ownerClientThreadId:l.string(),selection:s.b.nullable()}).or(l.object({ownerClientThreadId:l.string(),ownerSelected:l.boolean(),recentChats:l.array(s.b.nullable())}).transform(e=>{let{ownerClientThreadId:t,ownerSelected:a,recentChats:n}=e;return{ownerClientThreadId:t,selection:a?null:n[0]??null}})).nullable().catch(null)).catch({}),v=(0,h.b)(g,{},{coerceStoredValue:e=>m.parse(e)}),y=(0,i.c)(u.a,e=>{let{get:t}=e,a=t(f.c);if(null!=a.conversationId)return{kind:"local",conversationId:a.conversationId,hostId:a.hostId};let n=t(f.j);if(null!=n&&t(c.d,n)){let e=t(d.e,n);return null==e.conversationId?null:{kind:"chatgpt",conversationId:t(o.j,e.conversationId)??e.conversationId}}return{kind:"local-draft",clientThreadId:a.clientThreadId,hostId:a.hostId}},{isEqual:r()}),b=(0,i.c)(u.a,e=>{let{get:t}=e,a=t(y);if(a?.kind==="local")return a;let n=t(f.j);if(a?.kind!=="chatgpt"||null==n)return null;let r=t(o.j,a.conversationId);return null==r?null:{kind:"chatgpt",conversationId:r,title:t(d.e,n).title??""}},{isEqual:r()}),x=(0,i.c)(u.a,e=>{let{get:t}=e,a=t(f.c),n=t(v)[a.accountKey],r=n?.selection??null;return n?.ownerClientThreadId!==a.clientThreadId||(0,s.a)(t(b),r)?null:r},{isEqual:r()}),w=(0,i.d)(u.a,(e,t)=>{let{get:a,scope:n}=t;return(n.value.persistentWorkspace?.key!=="/space"||null==a(x))&&a(c.d,e)}),C=(0,i.c)(u.a,e=>{let{get:t}=e,a=t(x);return a?.kind==="chatgpt"?{kind:"chatgpt",conversationId:a.conversationId}:a??t(y)},{isEqual:r()});a.d(t,{},{a:function(e){let t=(0,f.a)(e);null!=t&&((0,p.t)(g,{entries:{[t.accountKey]:{value:{ownerClientThreadId:t.clientThreadId,selection:null}}},maxEntries:500}),e.set(v,(0,p.k)(g,{})))},b:w,c:x,d:C,e:b,f:y})}),iycc:(function(e,t,a){var n=a("BolX"),r=a("heYt"),i=a("e1xH"),l=a("OWtl"),o=a("nvO1");let s=(0,n.d)(l.a,(e,t)=>{let{get:a}=t;return a(o.u,e)&&a(i.pagesEnabled$)}),c=(0,n.d)(l.a,(e,t)=>{let{get:a}=t;if(!a(s,e))return{drive:!1,loading:!1,error:!1};let n=a(r.f);return{drive:"available"===n,loading:"loading"===n,error:"error"===n}});a.d(t,{},{a:function(e,t){return"drive"===e.backing_type&&!e.deleted_at&&!0===e.can_edit&&t.drive},b:c,c:s})}),Ko17:(function(e,t,a){var n=a("ABep"),r=a("QosV"),i=a("BolX"),l=a("rEML"),o=a("OWtl"),s=a("fnPc"),c=a("kfGJ");a.d(t,{},{a:function(e){let t,a,d=(0,r.c)(6),{children:u,teamId:p}=e,h=(0,i.y)(o.a),f=`/settings/teams/${encodeURIComponent(p)}`;return d[0]!==h?(t=e=>{e.defaultPrevented||0!==e.button||e.metaKey||e.altKey||e.ctrlKey||e.shiftKey||(0,s.b)(h,c.a)},d[0]=h,d[1]=t):t=d[1],d[2]!==u||d[3]!==f||d[4]!==t?(a=(0,n.jsx)(l.g,{className:"-mx-1 -my-0.5 inline-flex min-w-0 cursor-interaction items-center gap-1.5 rounded-sm px-1 py-0.5 text-inherit! no-underline select-none hover:bg-secondary-ghost-hover hover:text-default! focus:outline-none! focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0",to:f,onClick:t,children:u}),d[2]=u,d[3]=f,d[4]=t,d[5]=a):a=d[5],a}})})};
+\`\`\``
+                }, {
+                    savings: t?.savings == null ? "" : (0, r.b)(t.savings, e.formatMessage({
+                        id: "space.welcome.demo.savingsAlt",
+                        defaultMessage: "Savings growth calculator"
+                    })),
+                    solar: t?.solar == null ? "" : (0, r.b)(t.solar, e.formatMessage({
+                        id: "space.welcome.demo.solarAlt",
+                        defaultMessage: "Solar system explorer"
+                    })),
+                    piano: t?.piano == null ? "" : (0, r.b)(t.piano, e.formatMessage({
+                        id: "space.welcome.demo.pianoAlt",
+                        defaultMessage: "Mini Piano"
+                    }))
+                });
+                return (0, n.cc)(a).flatMap(e => e.startsWith("- [ ] ") ? [e, ""] : [e])
+            },
+            b: function(e) {
+                return e.formatMessage({
+                    id: "space.gettingStartedPages.pageTitle",
+                    defaultMessage: "Your guide to pages"
+                })
+            },
+            c: ["Welcome to Space", "🚀 Getting started with pages", "Getting started with pages"],
+            d: function(e) {
+                let t = i.find(t => e.endsWith(t));
+                return null == t ? e : e.slice(0, -t.length)
+            },
+            e: "Your guide to pages"
+        })
+    }),
+    sR1U: (function(e, t, a) {
+        var n = a("i5ac"),
+            r = a.n(n),
+            i = a("BolX"),
+            l = a("Cslg"),
+            o = a("OWtl"),
+            s = a("PVyj"),
+            c = a("v4UZ"),
+            d = a("N8b3"),
+            u = a("rpnz"),
+            p = a("e1xH"),
+            h = a("jAir"),
+            f = a("ELpK"),
+            g = a("vpOl"),
+            m = a("mpAT");
+        let v = (0, i.c)(o.a, e => {
+                let {
+                    get: t
+                } = e, a = t(m.spacePageTree$), n = t(m.spacesQuery$).data;
+                if (null == a || null == n) {
+                    let e = t(m.visibleSpacePages$)?.items.filter(e => (0, u.b)(e.page_id) && null == e.parent && "space" !== e.drive_scope && e.access.can_read && null == e.deleted_at);
+                    if (!e?.length) return;
+                    a = (0, g.a)(e, [])
+                }
+                let r = new Map(n?.items.map(e => [e.id, e])),
+                    i = new Set(t(d.b).map(e => e.id)),
+                    l = new Set(a.allLoosePages.map(e => e.page_id));
+                return [...a.pagesById.values()].filter(e => !i.has(e.page_id)).map(e => ({
+                    page: e,
+                    personal: l.has(e.page_id),
+                    parentSpace: [...a.spaceIdsByPageId.get(e.page_id) ?? []].map(e => r.get(e)).find(e => null != e)
+                })).sort((e, t) => Date.parse(t.page.updated_at) - Date.parse(e.page.updated_at))
+            }),
+            y = (0, i.c)(o.a, e => {
+                let {
+                    get: t
+                } = e, a = new Set(t(m.spacesQuery$).data?.items.map(e => e.root_page_id));
+                return t(v)?.filter(e => {
+                    let {
+                        page: t
+                    } = e;
+                    return !a.has(t.page_id)
+                })
+            }),
+            b = (0, i.d)(o.a, (e, t) => {
+                let {
+                    get: a
+                } = t, n = a(v);
+                if (!a(c.a).incremental_discovery) return n;
+                let i = a(f.a, e).data,
+                    o = a(m.spacesQuery$).data;
+                if (null == o || null == n && null == i) return;
+                let d = a(p.I),
+                    u = r()([...(0, h.p)(i ?? [], n?.map(e => {
+                        let {
+                            page: t
+                        } = e;
+                        return t
+                    }) ?? []), ...n?.map(e => {
+                        let {
+                            page: t
+                        } = e;
+                        return t
+                    }) ?? []], "page_id").map(e => {
+                        let t = a(m.loadedSpacePageMetadata$, e.page_id);
+                        return null != t && (!t.access.can_read || null != t.deleted_at || (0, h.l)(t, e)) ? t : e
+                    }),
+                    y = (0, g.a)((0, s.e)({
+                        items: u
+                    }, a(s.d, {
+                        accountId: a(m.spaceAccountId$),
+                        userId: a(l.k)
+                    })).items.filter(e => e.access.can_read && null == e.deleted_at && (d || null == e.site_project_id)), o.items),
+                    b = new Set(y.allLoosePages.map(e => e.page_id));
+                return [...y.pagesById.values()].map(e => ({
+                    page: e,
+                    personal: b.has(e.page_id),
+                    parentSpace: o.items.find(t => y.spaceIdsByPageId.get(e.page_id)?.has(t.id))
+                })).sort((e, t) => Date.parse(t.page.updated_at) - Date.parse(e.page.updated_at))
+            });
+        a.d(t, {}, {
+            a: b,
+            b: y,
+            c: v
+        })
+    }),
+    SCmN: (function(e, t, a) {
+        var n = a("QBk8"),
+            r = a("BolX"),
+            i = a("Cslg"),
+            l = a("lBzi"),
+            o = a("g2p6"),
+            s = a("e1xH"),
+            c = a("yGJW"),
+            d = a("OWtl"),
+            u = a("WFY2"),
+            p = a("kpIY"),
+            h = a("Nwp9"),
+            f = a("OHD8"),
+            g = a("mpAT"),
+            m = a("Kw4a"),
+            v = a("v5SL"),
+            y = a("JkZJ"),
+            b = a("sR1U"),
+            x = a("nndI");
+        let w = "oai/apps/hasOpenedSpaceWelcome",
+            C = "space-welcome-dismissal-v1",
+            _ = (0, h.b)(C, {}),
+            j = (0, r.v)(d.a, e => !1),
+            I = (0, r.u)(d.a, () => null),
+            k = (0, r.v)(d.a, e => ({
+                visible: !1,
+                pageId: null
+            })),
+            S = (0, r.c)(d.a, e => {
+                let {
+                    get: t
+                } = e, a = t(g.spaceAccountId$), n = t(i.k);
+                return null != a && null != n && a === t(o.n) ? {
+                    accountId: a,
+                    userId: n,
+                    key: JSON.stringify([a, n])
+                } : null
+            }),
+            P = (0, r.d)(d.a, (e, t) => {
+                let {
+                    get: a
+                } = t, n = a(S);
+                return null != n && a(x.g)[n.key] === e
+            }),
+            A = (0, r.v)(d.a, e => !1),
+            E = (0, r.v)(d.a, e => "unknown"),
+            O = (0, r.d)(d.a, (e, t) => {
+                let {
+                    get: a
+                } = t, n = a(I);
+                return a(m.g) && n?.awaitingPaint === !0 && !a(v.h, n.identityKey) && n.pageId === e && n.identityKey === a(S)?.key
+            }),
+            T = (0, r.c)(d.a, e => {
+                let {
+                    get: t
+                } = e, a = t(S);
+                if (null == a) return;
+                let n = t(_)[a.key];
+                if (null != n) return !1 !== n;
+                let r = t(o.p);
+                if (r.isSuccess && !r.isPlaceholderData) return Object.hasOwn(r.data.seenAnnouncements ?? {}, w)
+            }),
+            M = (0, r.d)(d.a, (e, t) => {
+                let {
+                    get: a
+                } = t;
+                if (!a(s.pagesEnabled$)) return null;
+                let n = a(S);
+                if (null == n) return null;
+                let r = a(k, n.key);
+                if (r.visible) return {
+                    pageId: r.pageId
+                };
+                if (!1 !== a(T)) return null;
+                let i = a(g.spacePagesQuery$),
+                    l = a(g.spacesQuery$);
+                if (!a(g.spacePagesComplete$) || !i.isSuccess || !i.isFetched || i.isFetching || i.isPlaceholderData || !l.isSuccess || !l.isFetched || l.isFetching) return null;
+                let o = a(b.b)?.filter(e => {
+                    let {
+                        personal: t
+                    } = e;
+                    return t
+                });
+                if (null == o) return null;
+                if (0 === o.length) return {
+                    pageId: null
+                };
+                let c = o[0].page;
+                return 1 === o.length && (c.title === e || c.title === y.e || y.c.some(e => c.title === e)) ? {
+                    pageId: null
+                } : null
+            });
+        async function B(e) {
+            if (!e.get(s.pagesEnabled$)) return;
+            let t = e.get(S);
+            if (null == t || e.get(v.h, t.key) || "pending" !== e.get(_)[t.key] || e.get(j, t.key)) return;
+            let a = (0, g.watchSpaceAccount)(e, t.accountId, t.userId);
+            e.set(j, t.key, !0);
+            try {
+                if (await (0, l.a)(e, w, !1, a.signal), a.signal.throwIfAborted(), "pending" !== e.get(_)[t.key]) return;
+                (0, p.t)(C, {
+                    entries: {
+                        [t.key]: {
+                            value: "saved"
+                        }
+                    }
+                }), await e.query.snapshot(o.p).invalidate()
+            } catch {
+                a.signal.aborted || u.a.warning("Failed to save Space welcome dismissal")
+            } finally {
+                a.stop(), e.set(j, t.key, !1)
+            }
+        }
+        a.d(t, {}, {
+            a: function(e, t) {
+                e.set(E, t, "unknown"), e.set(x.g, e => {
+                    let {
+                        [t]: a, ...n
+                    } = e;
+                    return n
+                }), e.set(x.c, e => {
+                    let {
+                        [t]: a, ...n
+                    } = e;
+                    return n
+                }), e.get(I)?.identityKey === t && e.set(I, null), e.set(k, t, {
+                    visible: !1,
+                    pageId: null
+                })
+            },
+            b: P,
+            c: function(e, t) {
+                let a = e.get(I);
+                if (a?.pageId !== t) return;
+                let r = e.get(S);
+                null == r || a.identityKey !== r.key || e.get(v.h, r.key) || (e.get(m.g) && (0, c.a)(e, n.CodexSpacesOnboarding, {
+                    action: n.CodexSpacesOnboardingAction.CODEX_SPACES_ONBOARDING_ACTION_WELCOME_PAGE_OPENED,
+                    item: n.CodexSpacesOnboardingItem.CODEX_SPACES_ONBOARDING_ITEM_WELCOME,
+                    pageId: t
+                }), e.get(k, r.key).visible && e.set(k, r.key, {
+                    visible: !1,
+                    pageId: t
+                }), (0, p.t)(C, {
+                    entries: {
+                        [r.key]: {
+                            value: "pending"
+                        }
+                    }
+                }), e.set(I, null), B(e))
+            },
+            d: I,
+            e: B,
+            f: E,
+            g: S,
+            h: T,
+            i: A,
+            j: O,
+            k: function(e) {
+                return e instanceof Error && (0, f.a)(e) ? "retryable" : "failed"
+            },
+            l: k,
+            m: M
+        })
+    }),
+    WP5H: (function(e, t, a) {
+        var n = a("hCnj");
+        let r = {
+            kind: "icon",
+            value: "graduation-cap",
+            color: "blue"
+        };
+        a.d(t, {}, {
+            a: async function(e, t, i) {
+                let {
+                    withPageMenuSession: l
+                } = await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(753405), a.e(193172), a.e(997919)]).then(a.bind(a, "tKju"));
+                i() && await l(e, t, "write", async e => {
+                    i() && null == e.getSymbol() && null == (0, n.kc)(e.document.getText("title").toJSON()).emoji && e.mutateDocument(e => (0, n.gc)(e, r)) && await e.flush({
+                        scope: "current",
+                        timeoutMs: null
+                    })
+                })
+            },
+            b: r
+        })
+    }),
+    JtEZ: (function(e, t, a) {
+        var n = a("SZCv"),
+            r = a.n(n),
+            i = a("BolX"),
+            l = a("ASxG"),
+            o = a("dQRk"),
+            s = a("C9uP"),
+            c = a("sjCL"),
+            d = a("YF6h"),
+            u = a("tSEg"),
+            p = a("kpIY"),
+            h = a("Nwp9"),
+            f = a("Iq2T");
+        let g = "spaces-workspace-chat-selections-v1",
+            m = l.record(l.string(), l.object({
+                ownerClientThreadId: l.string(),
+                selection: s.b.nullable()
+            }).or(l.object({
+                ownerClientThreadId: l.string(),
+                ownerSelected: l.boolean(),
+                recentChats: l.array(s.b.nullable())
+            }).transform(e => {
+                let {
+                    ownerClientThreadId: t,
+                    ownerSelected: a,
+                    recentChats: n
+                } = e;
+                return {
+                    ownerClientThreadId: t,
+                    selection: a ? null : n[0] ?? null
+                }
+            })).nullable().catch(null)).catch({}),
+            v = (0, h.b)(g, {}, {
+                coerceStoredValue: e => m.parse(e)
+            }),
+            y = (0, i.c)(u.a, e => {
+                let {
+                    get: t
+                } = e, a = t(f.c);
+                if (null != a.conversationId) return {
+                    kind: "local",
+                    conversationId: a.conversationId,
+                    hostId: a.hostId
+                };
+                let n = t(f.j);
+                if (null != n && t(c.d, n)) {
+                    let e = t(d.e, n);
+                    return null == e.conversationId ? null : {
+                        kind: "chatgpt",
+                        conversationId: t(o.j, e.conversationId) ?? e.conversationId
+                    }
+                }
+                return {
+                    kind: "local-draft",
+                    clientThreadId: a.clientThreadId,
+                    hostId: a.hostId
+                }
+            }, {
+                isEqual: r()
+            }),
+            b = (0, i.c)(u.a, e => {
+                let {
+                    get: t
+                } = e, a = t(y);
+                if (a?.kind === "local") return a;
+                let n = t(f.j);
+                if (a?.kind !== "chatgpt" || null == n) return null;
+                let r = t(o.j, a.conversationId);
+                return null == r ? null : {
+                    kind: "chatgpt",
+                    conversationId: r,
+                    title: t(d.e, n).title ?? ""
+                }
+            }, {
+                isEqual: r()
+            }),
+            x = (0, i.c)(u.a, e => {
+                let {
+                    get: t
+                } = e, a = t(f.c), n = t(v)[a.accountKey], r = n?.selection ?? null;
+                return n?.ownerClientThreadId !== a.clientThreadId || (0, s.a)(t(b), r) ? null : r
+            }, {
+                isEqual: r()
+            }),
+            w = (0, i.d)(u.a, (e, t) => {
+                let {
+                    get: a,
+                    scope: n
+                } = t;
+                return (n.value.persistentWorkspace?.key !== "/space" || null == a(x)) && a(c.d, e)
+            }),
+            C = (0, i.c)(u.a, e => {
+                let {
+                    get: t
+                } = e, a = t(x);
+                return a?.kind === "chatgpt" ? {
+                    kind: "chatgpt",
+                    conversationId: a.conversationId
+                } : a ?? t(y)
+            }, {
+                isEqual: r()
+            });
+        a.d(t, {}, {
+            a: function(e) {
+                let t = (0, f.a)(e);
+                null != t && ((0, p.t)(g, {
+                    entries: {
+                        [t.accountKey]: {
+                            value: {
+                                ownerClientThreadId: t.clientThreadId,
+                                selection: null
+                            }
+                        }
+                    },
+                    maxEntries: 500
+                }), e.set(v, (0, p.k)(g, {})))
+            },
+            b: w,
+            c: x,
+            d: C,
+            e: b,
+            f: y
+        })
+    }),
+    iycc: (function(e, t, a) {
+        var n = a("BolX"),
+            r = a("heYt"),
+            i = a("e1xH"),
+            l = a("OWtl"),
+            o = a("nvO1");
+        let s = (0, n.d)(l.a, (e, t) => {
+                let {
+                    get: a
+                } = t;
+                return a(o.u, e) && a(i.pagesEnabled$)
+            }),
+            c = (0, n.d)(l.a, (e, t) => {
+                let {
+                    get: a
+                } = t;
+                if (!a(s, e)) return {
+                    drive: !1,
+                    loading: !1,
+                    error: !1
+                };
+                let n = a(r.f);
+                return {
+                    drive: "available" === n,
+                    loading: "loading" === n,
+                    error: "error" === n
+                }
+            });
+        a.d(t, {}, {
+            a: function(e, t) {
+                return "drive" === e.backing_type && !e.deleted_at && !0 === e.can_edit && t.drive
+            },
+            b: c,
+            c: s
+        })
+    }),
+    Ko17: (function(e, t, a) {
+        var n = a("ABep"),
+            r = a("QosV"),
+            i = a("BolX"),
+            l = a("rEML"),
+            o = a("OWtl"),
+            s = a("fnPc"),
+            c = a("kfGJ");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, d = (0, r.c)(6),
+                    {
+                        children: u,
+                        teamId: p
+                    } = e,
+                    h = (0, i.y)(o.a),
+                    f = `/settings/teams/${encodeURIComponent(p)}`;
+                return d[0] !== h ? (t = e => {
+                    e.defaultPrevented || 0 !== e.button || e.metaKey || e.altKey || e.ctrlKey || e.shiftKey || (0, s.b)(h, c.a)
+                }, d[0] = h, d[1] = t) : t = d[1], d[2] !== u || d[3] !== f || d[4] !== t ? (a = (0, n.jsx)(l.g, {
+                    className: "-mx-1 -my-0.5 inline-flex min-w-0 cursor-interaction items-center gap-1.5 rounded-sm px-1 py-0.5 text-inherit! no-underline select-none hover:bg-secondary-ghost-hover hover:text-default! focus:outline-none! focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0",
+                    to: f,
+                    onClick: t,
+                    children: u
+                }), d[2] = u, d[3] = f, d[4] = t, d[5] = a) : a = d[5], a
+            }
+        })
+    })
+};
