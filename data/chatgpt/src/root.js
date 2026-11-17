@@ -1,1 +1,90 @@
-export const __rspack_esm_ids=[736644];export const __webpack_modules__={p75q:(function(e,n,t){e.exports=t.p+"assets/favicon-180x180.9e0103ce69.png"}),PDys:(function(e,n,t){e.exports=t.p+"assets/favicon-48x48.7d42b2e65f.png"}),CgXo:(function(e,n,t){e.exports=t.p+"assets/favicon-dark.cdf009c235.svg"}),E7my:(function(e,n,t){e.exports=t.p+"assets/favicon-light.2e21f504de.svg"}),zU1G:(function(e,n,t){e.exports=t.p+"assets/favicon.6a33781f61.svg"}),Swq6:(function(e){e.exports='// Resolve OS appearance before styles paint without a blocking network request.\n// Hydration preserves this seed until AppearanceProvider takes over.\n/** @param {string} browserThemeCacheKey */\n// oxlint-disable-next-line no-unused-vars -- The raw source is called by browser-theme-bootstrap.ts when constructing the inline script.\nfunction initializeBrowserTheme(browserThemeCacheKey) {\n  const root = document.documentElement;\n  const preference = root.dataset.appearanceMode;\n  if (preference === "light" || preference === "dark") {\n    root.dataset.theme = preference;\n  } else {\n    root.dataset.theme = window.matchMedia("(prefers-color-scheme: dark)")\n      .matches\n      ? "dark"\n      : "light";\n  }\n  try {\n    const themes = JSON.parse(\n      window.localStorage.getItem(browserThemeCacheKey),\n    );\n    const mode = themes?.[root.dataset.theme];\n    if (\n      typeof themes?.css === "string" &&\n      (typeof mode === "boolean" ||\n        (typeof mode?.preset === "string" &&\n          typeof mode.chatGpt === "boolean")) &&\n      // The origin-wide cache may belong to a different user or workspace.\n      themes.accountId === (root.dataset.themeAccountId ?? null) &&\n      themes.userId === (root.dataset.themeUserId ?? null)\n    ) {\n      document.querySelector("style[data-codex-app-themes]").textContent =\n        root.dataset.theme === themes.variant\n          ? themes.css\n          : (themes.alternateCss ?? themes.css);\n      if (typeof mode !== "boolean") {\n        root.dataset.appearancePreset = mode.preset;\n      }\n      root.classList.toggle(\n        "chatgpt-theme",\n        typeof mode === "boolean" ? mode : mode.chatGpt === true,\n      );\n    }\n  } catch {\n    // Unavailable storage or an invalid cache leaves the default palette intact.\n  }\n}\n'}),NQlU:(function(e){e.exports='// Classic inline script: install before the streamed Page content can paint.\n(() => {\n  if (window.__codexPageSsrPaint) {\n    return;\n  }\n\n  /** @type {number | null} */\n  let earliest = null;\n  let cutoff = Infinity;\n  let finished = false;\n  /** @type {PerformanceObserver | undefined} */\n  let observer;\n  /** @type {number | undefined} */\n  let timeout;\n  /** @type {number | undefined} */\n  let drainTimeout;\n  /** @type {(value: number | null) => void} */\n  let resolveResult = () => {};\n  /** @type {Promise<number | null>} */\n  const result = new Promise((resolve) => {\n    resolveResult = resolve;\n  });\n\n  /** @param {Array<PerformanceEntry & { renderTime?: number, identifier?: string, intersectionRect?: { width: number, height: number } }>} entries */\n  function collect(entries) {\n    if (finished) {\n      return;\n    }\n    for (const entry of entries) {\n      const time = entry.renderTime;\n      if (\n        entry.identifier === "codex-page-ssr-content" &&\n        typeof time === "number" &&\n        Number.isFinite(time) &&\n        time > 0 &&\n        time < cutoff &&\n        (entry.intersectionRect?.width ?? 0) > 0 &&\n        (entry.intersectionRect?.height ?? 0) > 0\n      ) {\n        earliest = earliest == null ? time : Math.min(earliest, time);\n        startDrain();\n      }\n    }\n  }\n\n  function startDrain() {\n    if (!finished && drainTimeout === undefined) {\n      // Delivery can lag paint. Later signals must not extend this window.\n      drainTimeout = window.setTimeout(finish, 100);\n    }\n  }\n\n  function finish() {\n    if (finished) {\n      return earliest != null && earliest < cutoff ? earliest : null;\n    }\n    if (observer) {\n      try {\n        collect(observer.takeRecords());\n      } catch {\n        // A failing timing API must not prevent teardown or fallback reporting.\n      }\n    }\n    finished = true;\n    try {\n      observer?.disconnect();\n    } catch {\n      // Still release the collector\'s timers, listeners and result.\n    }\n    observer = undefined;\n    window.clearTimeout(timeout);\n    window.clearTimeout(drainTimeout);\n    document.removeEventListener("visibilitychange", onVisibilityChange);\n    window.removeEventListener("pagehide", onPageHide);\n    resolveResult(earliest != null && earliest < cutoff ? earliest : null);\n    return earliest != null && earliest < cutoff ? earliest : null;\n  }\n\n  function onPageHide() {\n    cutoff = Math.min(cutoff, performance.now());\n    finish();\n  }\n\n  function onVisibilityChange() {\n    if (document.visibilityState === "hidden") {\n      onPageHide();\n    }\n  }\n\n  window.__codexPageSsrPaint = {\n    result,\n    finish() {\n      cutoff = Math.min(cutoff, performance.now());\n      return finish();\n    },\n    /** @param {number} atMs */\n    seal(atMs) {\n      // Match the owner\'s epoch clock after a fallback\'s relative-time round trip.\n      if (\n        finished ||\n        !Number.isFinite(atMs) ||\n        atMs < 0 ||\n        performance.timeOrigin + atMs >\n          performance.timeOrigin + performance.now()\n      ) {\n        return;\n      }\n      cutoff = Math.min(cutoff, atMs);\n      startDrain();\n    },\n  };\n\n  try {\n    if (\n      document.visibilityState === "hidden" ||\n      typeof PerformanceObserver === "undefined" ||\n      !PerformanceObserver.supportedEntryTypes?.includes("element")\n    ) {\n      finish();\n      return;\n    }\n    observer = new PerformanceObserver((list) => collect(list.getEntries()));\n    observer.observe({ type: "element", buffered: true });\n    document.addEventListener("visibilitychange", onVisibilityChange);\n    window.addEventListener("pagehide", onPageHide);\n    timeout = window.setTimeout(finish, 60_000);\n  } catch {\n    finish();\n  }\n})();\n'}),F2qa:(function(e,n,t){e.exports=t.p+"assets/fallen-pet.6711e7a4c7.avif"})};import{__webpack_require__ as e}from"./633146.4955a63526.js";import*as n from"./680612.3c8d72f22d.js";e.C(n);import*as t from"./418851.d8892f46a6.js";e.C(t);import*as r from"./109308.cb66ec8473.js";e.C(r);import*as s from"./399565.e3bd47902e.js";e.C(s);import*as i from"./257798.7e03f1e3e2.js";e.C(i);import*as o from"./447351.74c4243102.js";e.C(o);import*as a from"./617936.b641c39dad.js";e.C(a);import*as m from"./807489.3f6f62fc4e.js";e.C(m);import*as c from"./337882.544cd8454d.js";e.C(c);import*as f from"./955979.f6e77aea7d.js";e.C(f);import*as d from"./646436.029c782154.js";e.C(d);import*as l from"./7078.473c0dc500.js";e.C(l);import*as p from"./200429.3e7ed388fe.js";e.C(p);import*as u from"./698524.1c89d5e682.js";e.C(u);import*as h from"./956483.aae39072ae.js";e.C(h);import*as b from"./87162.70963eaac7.js";e.C(b);import*as v from"./396705.0c6f33f2fb.js";e.C(v);import*as y from"./155568.80ff0b0790.js";e.C(y);import*as w from"./731863.c47054621e.js";e.C(w);import*as g from"./767086.029c6e6cb7.js";e.C(g);import*as _ from"./76629.f2ec2ff70b.js";e.C(_);import*as C from"./514085.a7493d29eb.js";e.C(C);import*as j from"./204542.d8a33857f0.js";e.C(j);import*as x from"./226913.dd4de34d8f.js";e.C(x);import*as P from"./736644.feca70ef4e.js";e.C(P);var k=e(e.s="vYe0"),T=k.a,M=k.b,E=k.c,S=k.d,L=k.e;export{T as ErrorBoundary,M as Layout,E as clientMiddleware,S as default,L as meta};
+export const __rspack_esm_ids = [736644];
+export const __webpack_modules__ = {
+    p75q: (function(e, n, t) {
+        e.exports = t.p + "assets/favicon-180x180.9e0103ce69.png"
+    }),
+    PDys: (function(e, n, t) {
+        e.exports = t.p + "assets/favicon-48x48.7d42b2e65f.png"
+    }),
+    CgXo: (function(e, n, t) {
+        e.exports = t.p + "assets/favicon-dark.cdf009c235.svg"
+    }),
+    E7my: (function(e, n, t) {
+        e.exports = t.p + "assets/favicon-light.2e21f504de.svg"
+    }),
+    zU1G: (function(e, n, t) {
+        e.exports = t.p + "assets/favicon.6a33781f61.svg"
+    }),
+    Swq6: (function(e) {
+        e.exports = '// Resolve OS appearance before styles paint without a blocking network request.\n// Hydration preserves this seed until AppearanceProvider takes over.\n/** @param {string} browserThemeCacheKey */\n// oxlint-disable-next-line no-unused-vars -- The raw source is called by browser-theme-bootstrap.ts when constructing the inline script.\nfunction initializeBrowserTheme(browserThemeCacheKey) {\n  const root = document.documentElement;\n  const preference = root.dataset.appearanceMode;\n  if (preference === "light" || preference === "dark") {\n    root.dataset.theme = preference;\n  } else {\n    root.dataset.theme = window.matchMedia("(prefers-color-scheme: dark)")\n      .matches\n      ? "dark"\n      : "light";\n  }\n  try {\n    const themes = JSON.parse(\n      window.localStorage.getItem(browserThemeCacheKey),\n    );\n    const mode = themes?.[root.dataset.theme];\n    if (\n      typeof themes?.css === "string" &&\n      (typeof mode === "boolean" ||\n        (typeof mode?.preset === "string" &&\n          typeof mode.chatGpt === "boolean")) &&\n      // The origin-wide cache may belong to a different user or workspace.\n      themes.accountId === (root.dataset.themeAccountId ?? null) &&\n      themes.userId === (root.dataset.themeUserId ?? null)\n    ) {\n      document.querySelector("style[data-codex-app-themes]").textContent =\n        root.dataset.theme === themes.variant\n          ? themes.css\n          : (themes.alternateCss ?? themes.css);\n      if (typeof mode !== "boolean") {\n        root.dataset.appearancePreset = mode.preset;\n      }\n      root.classList.toggle(\n        "chatgpt-theme",\n        typeof mode === "boolean" ? mode : mode.chatGpt === true,\n      );\n    }\n  } catch {\n    // Unavailable storage or an invalid cache leaves the default palette intact.\n  }\n}\n'
+    }),
+    NQlU: (function(e) {
+        e.exports = '// Classic inline script: install before the streamed Page content can paint.\n(() => {\n  if (window.__codexPageSsrPaint) {\n    return;\n  }\n\n  /** @type {number | null} */\n  let earliest = null;\n  let cutoff = Infinity;\n  let finished = false;\n  /** @type {PerformanceObserver | undefined} */\n  let observer;\n  /** @type {number | undefined} */\n  let timeout;\n  /** @type {number | undefined} */\n  let drainTimeout;\n  /** @type {(value: number | null) => void} */\n  let resolveResult = () => {};\n  /** @type {Promise<number | null>} */\n  const result = new Promise((resolve) => {\n    resolveResult = resolve;\n  });\n\n  /** @param {Array<PerformanceEntry & { renderTime?: number, identifier?: string, intersectionRect?: { width: number, height: number } }>} entries */\n  function collect(entries) {\n    if (finished) {\n      return;\n    }\n    for (const entry of entries) {\n      const time = entry.renderTime;\n      if (\n        entry.identifier === "codex-page-ssr-content" &&\n        typeof time === "number" &&\n        Number.isFinite(time) &&\n        time > 0 &&\n        time < cutoff &&\n        (entry.intersectionRect?.width ?? 0) > 0 &&\n        (entry.intersectionRect?.height ?? 0) > 0\n      ) {\n        earliest = earliest == null ? time : Math.min(earliest, time);\n        startDrain();\n      }\n    }\n  }\n\n  function startDrain() {\n    if (!finished && drainTimeout === undefined) {\n      // Delivery can lag paint. Later signals must not extend this window.\n      drainTimeout = window.setTimeout(finish, 100);\n    }\n  }\n\n  function finish() {\n    if (finished) {\n      return earliest != null && earliest < cutoff ? earliest : null;\n    }\n    if (observer) {\n      try {\n        collect(observer.takeRecords());\n      } catch {\n        // A failing timing API must not prevent teardown or fallback reporting.\n      }\n    }\n    finished = true;\n    try {\n      observer?.disconnect();\n    } catch {\n      // Still release the collector\'s timers, listeners and result.\n    }\n    observer = undefined;\n    window.clearTimeout(timeout);\n    window.clearTimeout(drainTimeout);\n    document.removeEventListener("visibilitychange", onVisibilityChange);\n    window.removeEventListener("pagehide", onPageHide);\n    resolveResult(earliest != null && earliest < cutoff ? earliest : null);\n    return earliest != null && earliest < cutoff ? earliest : null;\n  }\n\n  function onPageHide() {\n    cutoff = Math.min(cutoff, performance.now());\n    finish();\n  }\n\n  function onVisibilityChange() {\n    if (document.visibilityState === "hidden") {\n      onPageHide();\n    }\n  }\n\n  window.__codexPageSsrPaint = {\n    result,\n    finish() {\n      cutoff = Math.min(cutoff, performance.now());\n      return finish();\n    },\n    /** @param {number} atMs */\n    seal(atMs) {\n      // Match the owner\'s epoch clock after a fallback\'s relative-time round trip.\n      if (\n        finished ||\n        !Number.isFinite(atMs) ||\n        atMs < 0 ||\n        performance.timeOrigin + atMs >\n          performance.timeOrigin + performance.now()\n      ) {\n        return;\n      }\n      cutoff = Math.min(cutoff, atMs);\n      startDrain();\n    },\n  };\n\n  try {\n    if (\n      document.visibilityState === "hidden" ||\n      typeof PerformanceObserver === "undefined" ||\n      !PerformanceObserver.supportedEntryTypes?.includes("element")\n    ) {\n      finish();\n      return;\n    }\n    observer = new PerformanceObserver((list) => collect(list.getEntries()));\n    observer.observe({ type: "element", buffered: true });\n    document.addEventListener("visibilitychange", onVisibilityChange);\n    window.addEventListener("pagehide", onPageHide);\n    timeout = window.setTimeout(finish, 60_000);\n  } catch {\n    finish();\n  }\n})();\n'
+    }),
+    F2qa: (function(e, n, t) {
+        e.exports = t.p + "assets/fallen-pet.6711e7a4c7.avif"
+    })
+};
+import {
+    __webpack_require__ as e
+} from "./633146.be60f96fcf.js";
+import * as n from "./680612.3c8d72f22d.js";
+e.C(n);
+import * as t from "./418851.d43ef6e51c.js";
+e.C(t);
+import * as r from "./109308.2094c16514.js";
+e.C(r);
+import * as s from "./399565.78e1c0aa0d.js";
+e.C(s);
+import * as i from "./257798.7e03f1e3e2.js";
+e.C(i);
+import * as o from "./447351.b188109392.js";
+e.C(o);
+import * as a from "./617936.fb76eb2727.js";
+e.C(a);
+import * as c from "./807489.9c1a8ccf71.js";
+e.C(c);
+import * as m from "./337882.5c43a2c90b.js";
+e.C(m);
+import * as f from "./955979.9ae2962bd4.js";
+e.C(f);
+import * as d from "./646436.b525bfd8f0.js";
+e.C(d);
+import * as l from "./7078.a82238bfec.js";
+e.C(l);
+import * as p from "./200429.3bcaa139a4.js";
+e.C(p);
+import * as u from "./698524.3de98ac6af.js";
+e.C(u);
+import * as h from "./956483.227ec74d56.js";
+e.C(h);
+import * as b from "./87162.36edabe123.js";
+e.C(b);
+import * as v from "./396705.12275a5eb6.js";
+e.C(v);
+import * as y from "./155568.b3f888f917.js";
+e.C(y);
+import * as w from "./731863.367082aec0.js";
+e.C(w);
+import * as g from "./767086.1a336b6bc5.js";
+e.C(g);
+import * as _ from "./76629.93a69b821a.js";
+e.C(_);
+import * as C from "./514085.fe0c9f50e5.js";
+e.C(C);
+import * as j from "./204542.f3712a1345.js";
+e.C(j);
+import * as x from "./226913.dd4de34d8f.js";
+e.C(x);
+import * as P from "./736644.15419923d8.js";
+e.C(P);
+var k = e(e.s = "vYe0"),
+    T = k.a,
+    M = k.b,
+    E = k.c,
+    S = k.d,
+    L = k.e;
+export {
+    T as ErrorBoundary, M as Layout, E as clientMiddleware, S as
+    default, L as meta
+};

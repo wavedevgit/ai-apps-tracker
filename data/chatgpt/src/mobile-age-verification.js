@@ -1,1 +1,30 @@
-export const __rspack_esm_ids=[594445];export const __webpack_modules__={uVLV:(function(e,r,s){function t(e){let{request:r}=e;var s=r;let t=new URL(s.url).searchParams.get("inquiry_id");if(!t)throw new Response("Missing inquiryId",{status:400});return{inquiryId:t}}s.d(r,{a:()=>t})})};import{__webpack_require__ as e}from"./633146.4955a63526.js";import*as r from"./594445.edabf25d44.js";e.C(r);var s=e(e.s="uVLV").a;export{s as clientLoader};
+export const __rspack_esm_ids = [594445];
+export const __webpack_modules__ = {
+    uVLV: (function(e, r, s) {
+        function t(e) {
+            let {
+                request: r
+            } = e;
+            var s = r;
+            let t = new URL(s.url).searchParams.get("inquiry_id");
+            if (!t) throw new Response("Missing inquiryId", {
+                status: 400
+            });
+            return {
+                inquiryId: t
+            }
+        }
+        s.d(r, {
+            a: () => t
+        })
+    })
+};
+import {
+    __webpack_require__ as e
+} from "./633146.be60f96fcf.js";
+import * as r from "./594445.6927aa3127.js";
+e.C(r);
+var s = e(e.s = "uVLV").a;
+export {
+    s as clientLoader
+};

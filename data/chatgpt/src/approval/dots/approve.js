@@ -2,40 +2,40 @@ export const __rspack_esm_ids = [487792];
 export const __webpack_modules__ = {
     UpXs: (function(s, o, e) {
         e.d(o, {
-            a: () => f
+            a: () => n
         });
-        var t = e("rEML"),
-            a = e("ABep"),
+        var a = e("rEML"),
+            t = e("ABep"),
             r = e("QosV"),
             p = e("oyxz"),
             i = e("HnGz"),
             m = e("hC2y"),
-            n = e("PTrn"),
-            f = (0, t.ib)(function() {
+            f = e("PTrn"),
+            n = (0, a.ib)(function() {
                 let s, o, e = (0, r.c)(6),
-                    f = (0, t.X)(),
+                    n = (0, a.X)(),
                     {
                         pathname: c
-                    } = (0, t.Y)();
-                if (!f) {
+                    } = (0, a.Y)();
+                if (!n) {
                     let s, o;
                     e[0] !== c ? (s = (0, i.g)(m.c, c), e[0] = c, e[1] = s) : s = e[1];
-                    let t = s ?? void 0;
-                    return e[2] !== t ? (o = (0, a.jsx)(n.b, {
-                        routeMatches: t
-                    }), e[2] = t, e[3] = o) : o = e[3], o
+                    let a = s ?? void 0;
+                    return e[2] !== a ? (o = (0, t.jsx)(f.b, {
+                        routeMatches: a
+                    }), e[2] = a, e[3] = o) : o = e[3], o
                 }
-                return e[4] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, a.jsx)("h1", {
+                return e[4] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, t.jsx)("h1", {
                     className: "text-sm font-semibold text-secondary",
-                    children: (0, a.jsx)(p.a, {
+                    children: (0, t.jsx)(p.a, {
                         id: "browser.auth.brand",
                         defaultMessage: "ChatGPT"
                     })
-                }), e[4] = s) : s = e[4], e[5] === Symbol.for("react.memo_cache_sentinel") ? (o = (0, a.jsxs)("main", {
+                }), e[4] = s) : s = e[4], e[5] === Symbol.for("react.memo_cache_sentinel") ? (o = (0, t.jsxs)("main", {
                     className: "flex flex-col gap-2 p-4",
-                    children: [s, (0, a.jsx)("p", {
+                    children: [s, (0, t.jsx)("p", {
                         className: "text-base leading-snug",
-                        children: (0, a.jsx)(p.a, {
+                        children: (0, t.jsx)(p.a, {
                             id: "elicitation.page.appleWatch.instruction",
                             defaultMessage: "Open this same link on your phone to continue"
                         })
@@ -63,56 +63,56 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as s
-} from "./633146.4955a63526.js";
-import * as o from "./418851.d8892f46a6.js";
+} from "./633146.be60f96fcf.js";
+import * as o from "./418851.d43ef6e51c.js";
 s.C(o);
-import * as e from "./109308.cb66ec8473.js";
+import * as e from "./109308.2094c16514.js";
 s.C(e);
-import * as t from "./399565.e3bd47902e.js";
-s.C(t);
-import * as a from "./257798.7e03f1e3e2.js";
+import * as a from "./399565.78e1c0aa0d.js";
 s.C(a);
-import * as r from "./447351.74c4243102.js";
+import * as t from "./257798.7e03f1e3e2.js";
+s.C(t);
+import * as r from "./447351.b188109392.js";
 s.C(r);
-import * as p from "./617936.b641c39dad.js";
+import * as p from "./617936.fb76eb2727.js";
 s.C(p);
-import * as i from "./807489.3f6f62fc4e.js";
+import * as i from "./807489.9c1a8ccf71.js";
 s.C(i);
-import * as m from "./337882.544cd8454d.js";
+import * as m from "./337882.5c43a2c90b.js";
 s.C(m);
-import * as n from "./955979.f6e77aea7d.js";
-s.C(n);
-import * as f from "./646436.029c782154.js";
+import * as f from "./955979.9ae2962bd4.js";
 s.C(f);
-import * as c from "./7078.473c0dc500.js";
+import * as n from "./646436.b525bfd8f0.js";
+s.C(n);
+import * as c from "./7078.a82238bfec.js";
 s.C(c);
-import * as d from "./200429.3e7ed388fe.js";
+import * as d from "./200429.3bcaa139a4.js";
 s.C(d);
-import * as l from "./698524.1c89d5e682.js";
+import * as l from "./698524.3de98ac6af.js";
 s.C(l);
-import * as h from "./956483.aae39072ae.js";
+import * as h from "./956483.227ec74d56.js";
 s.C(h);
-import * as j from "./87162.70963eaac7.js";
+import * as j from "./87162.36edabe123.js";
 s.C(j);
-import * as C from "./396705.0c6f33f2fb.js";
+import * as C from "./396705.12275a5eb6.js";
 s.C(C);
-import * as b from "./155568.80ff0b0790.js";
+import * as b from "./155568.b3f888f917.js";
 s.C(b);
-import * as u from "./731863.c47054621e.js";
+import * as u from "./731863.367082aec0.js";
 s.C(u);
-import * as x from "./767086.029c6e6cb7.js";
+import * as x from "./767086.1a336b6bc5.js";
 s.C(x);
-import * as _ from "./76629.f2ec2ff70b.js";
+import * as _ from "./76629.93a69b821a.js";
 s.C(_);
-import * as g from "./514085.a7493d29eb.js";
+import * as g from "./514085.fe0c9f50e5.js";
 s.C(g);
-import * as w from "./204542.d8a33857f0.js";
+import * as w from "./204542.f3712a1345.js";
 s.C(w);
 import * as v from "./226913.dd4de34d8f.js";
 s.C(v);
 import * as y from "./413109.b4bfe81a07.js";
 s.C(y);
-import * as k from "./487792.6c1fb4e369.js";
+import * as k from "./487792.5d2d45e860.js";
 s.C(k);
 var T = s(s.s = "UpXs").a;
 export {

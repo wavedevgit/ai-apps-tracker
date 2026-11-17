@@ -2,13 +2,13 @@ export const __rspack_esm_ids = [734398];
 export const __webpack_modules__ = {
     qC9I: (function(C, e, r) {
         r.d(e, {
-            a: () => s,
+            a: () => a,
             b: () => m
         });
         var t = r("rEML"),
             o = r("dgQr");
-        let s = (0, t.ib)(o.b);
-        var a = r.p + "assets/shared-canvas-og.0cabd5830b.webp";
+        let a = (0, t.ib)(o.b);
+        var s = r.p + "assets/shared-canvas-og.0cabd5830b.webp";
         let m = C => {
             let {
                 loaderData: e
@@ -26,7 +26,7 @@ export const __webpack_modules__ = {
                 content: e?.title ?? "ChatGPT"
             }, ...e?.origin == null ? [] : [{
                 property: "og:image",
-                content: new URL(a, e.origin).href
+                content: new URL(s, e.origin).href
             }], {
                 property: "twitter:card",
                 content: "summary_large_image"
@@ -42,15 +42,15 @@ export const __webpack_modules__ = {
     dgQr: (function(C, e, r) {
         var t = r("ABep"),
             o = r("QosV"),
-            s = r("AXDI");
-        let a = (0, r("v4LA").a)(async () => (await Promise.all([r.e(418851), r.e(109308), r.e(399565), r.e(257798), r.e(447351), r.e(617936), r.e(807489), r.e(337882), r.e(955979), r.e(646436), r.e(7078), r.e(200429), r.e(698524), r.e(956483), r.e(87162), r.e(396705), r.e(155568), r.e(731863), r.e(767086), r.e(76629), r.e(514085), r.e(204542), r.e(226913), r.e(514942), r.e(767724)]).then(r.bind(r, "cFu3"))).SharedCanvasPage);
+            a = r("AXDI");
+        let s = (0, r("v4LA").a)(async () => (await Promise.all([r.e(418851), r.e(109308), r.e(399565), r.e(257798), r.e(447351), r.e(617936), r.e(807489), r.e(337882), r.e(955979), r.e(646436), r.e(7078), r.e(200429), r.e(698524), r.e(956483), r.e(87162), r.e(396705), r.e(155568), r.e(731863), r.e(767086), r.e(76629), r.e(514085), r.e(204542), r.e(226913), r.e(514942), r.e(767724)]).then(r.bind(r, "cFu3"))).SharedCanvasPage);
         r.d(e, {
-            a: () => s.b
+            a: () => a.b
         }, {
             b: function() {
                 let C, e = (0, o.c)(1);
-                return e[0] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, t.jsx)(s.a, {
-                    children: (0, t.jsx)(a, {})
+                return e[0] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, t.jsx)(a.a, {
+                    children: (0, t.jsx)(s, {})
                 }), e[0] = C) : C = e[0], C
             }
         })
@@ -63,54 +63,54 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as C
-} from "./633146.4955a63526.js";
-import * as e from "./418851.d8892f46a6.js";
+} from "./633146.be60f96fcf.js";
+import * as e from "./418851.d43ef6e51c.js";
 C.C(e);
-import * as r from "./109308.cb66ec8473.js";
+import * as r from "./109308.2094c16514.js";
 C.C(r);
-import * as t from "./399565.e3bd47902e.js";
+import * as t from "./399565.78e1c0aa0d.js";
 C.C(t);
 import * as o from "./257798.7e03f1e3e2.js";
 C.C(o);
-import * as s from "./447351.74c4243102.js";
-C.C(s);
-import * as a from "./617936.b641c39dad.js";
+import * as a from "./447351.b188109392.js";
 C.C(a);
-import * as m from "./807489.3f6f62fc4e.js";
+import * as s from "./617936.fb76eb2727.js";
+C.C(s);
+import * as m from "./807489.9c1a8ccf71.js";
 C.C(m);
-import * as n from "./337882.544cd8454d.js";
+import * as n from "./337882.5c43a2c90b.js";
 C.C(n);
-import * as i from "./955979.f6e77aea7d.js";
+import * as i from "./955979.9ae2962bd4.js";
 C.C(i);
-import * as p from "./646436.029c782154.js";
-C.C(p);
-import * as f from "./7078.473c0dc500.js";
+import * as f from "./646436.b525bfd8f0.js";
 C.C(f);
-import * as L from "./200429.3e7ed388fe.js";
+import * as p from "./7078.a82238bfec.js";
+C.C(p);
+import * as L from "./200429.3bcaa139a4.js";
 C.C(L);
-import * as c from "./698524.1c89d5e682.js";
+import * as c from "./698524.3de98ac6af.js";
 C.C(c);
-import * as d from "./956483.aae39072ae.js";
+import * as d from "./956483.227ec74d56.js";
 C.C(d);
-import * as l from "./87162.70963eaac7.js";
+import * as l from "./87162.36edabe123.js";
 C.C(l);
-import * as j from "./396705.0c6f33f2fb.js";
+import * as j from "./396705.12275a5eb6.js";
 C.C(j);
-import * as b from "./155568.80ff0b0790.js";
-C.C(b);
-import * as V from "./731863.c47054621e.js";
+import * as V from "./155568.b3f888f917.js";
 C.C(V);
-import * as _ from "./767086.029c6e6cb7.js";
+import * as _ from "./731863.367082aec0.js";
 C.C(_);
-import * as g from "./76629.f2ec2ff70b.js";
+import * as b from "./767086.1a336b6bc5.js";
+C.C(b);
+import * as g from "./76629.93a69b821a.js";
 C.C(g);
-import * as h from "./514085.a7493d29eb.js";
+import * as h from "./514085.fe0c9f50e5.js";
 C.C(h);
-import * as w from "./204542.d8a33857f0.js";
+import * as w from "./204542.f3712a1345.js";
 C.C(w);
 import * as M from "./226913.dd4de34d8f.js";
 C.C(M);
-import * as Z from "./734398.9c5172591f.js";
+import * as Z from "./734398.712278f5e1.js";
 C.C(Z);
 var v = C(C.s = "qC9I"),
     x = v.a,
