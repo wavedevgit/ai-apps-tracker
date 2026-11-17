@@ -1,1 +1,117 @@
-export const __rspack_esm_ids=[790996];export const __webpack_modules__={PGBB:(function(s,o,a){a.d(o,{a:()=>e,b:()=>f,c:()=>p});var r=a("rEML"),t=a("oOby");let e=(0,r.hb)(t.b),f=a("vV6o").b,p=s=>{let{currentParams:o,nextParams:a,defaultShouldRevalidate:r}=s;return(null==o.checkoutSessionId||o.checkoutSessionId!==a.checkoutSessionId)&&r}}),oOby:(function(s,o,a){var r=a("rEML"),t=a("ABep"),e=a("QosV"),f=a("hC2y"),p=a("AXDI");let m=(0,r.jb)(p.b);o.b=(0,r.hb)(function(){let s,o,a=(0,e.c)(4),m=(0,r.Y)();return a[0]!==m?(s=(0,r.O)((0,r.K)(f.a,m)),a[0]=m,a[1]=s):s=a[1],a[2]!==s?(o=(0,t.jsx)(p.a,{children:s}),a[2]=s,a[3]=o):o=a[3],o}),a.d(o,{},{a:m})}),nDjx:(function(s,o,a){s.exports=a.p+"assets/appshot-logo.f0152cb4dd.png"}),hIAo:(function(s,o,a){s.exports=a.p+"assets/codex-app-ga-logo.dfddfb85d7.png"}),OCvz:(function(s,o,a){s.exports=a.p+"assets/dictation-start.f6efcb404f.wav"}),DJ2e:(function(s,o,a){s.exports=a.p+"assets/dictation-stop.e3bc7ebc5e.wav"}),EBQV:(function(o){o.exports=s.ir("/cdn/assets/dotnet.js").then(function(s){return s})})};import{__webpack_require__ as s}from"./633146.0389b6b487.js";import*as o from"./418851.d159eb4416.js";s.C(o);import*as a from"./109308.c9b7701e19.js";s.C(a);import*as r from"./399565.e3bd47902e.js";s.C(r);import*as t from"./257798.7e03f1e3e2.js";s.C(t);import*as e from"./447351.38c6663605.js";s.C(e);import*as f from"./617936.b641c39dad.js";s.C(f);import*as p from"./807489.f4f591ba36.js";s.C(p);import*as m from"./337882.ff3affb96a.js";s.C(m);import*as c from"./955979.1876fabeae.js";s.C(c);import*as d from"./646436.6a9ea7ce2b.js";s.C(d);import*as i from"./7078.7ac8d1f362.js";s.C(i);import*as b from"./200429.4d632ba2a6.js";s.C(b);import*as j from"./698524.389f4a7f6b.js";s.C(j);import*as C from"./956483.d858d35d29.js";s.C(C);import*as n from"./87162.77ec984516.js";s.C(n);import*as _ from"./396705.20cd88e12f.js";s.C(_);import*as l from"./155568.1c3d77f567.js";s.C(l);import*as h from"./731863.01f5ca0d2b.js";s.C(h);import*as u from"./767086.622205eb79.js";s.C(u);import*as x from"./76629.38c2f40595.js";s.C(x);import*as v from"./514085.505cf4281f.js";s.C(v);import*as k from"./226913.dd4de34d8f.js";s.C(k);import*as w from"./902158.087f350eba.js";s.C(w);import*as B from"./790996.f074a9e0b9.js";s.C(B);var g=s(s.s="PGBB"),I=g.a,O=g.b,y=g.c;export{I as default,O as handle,y as shouldRevalidate};
+export const __rspack_esm_ids = [790996];
+export const __webpack_modules__ = {
+    PGBB: (function(s, o, r) {
+        r.d(o, {
+            a: () => e,
+            b: () => f,
+            c: () => m
+        });
+        var a = r("rEML"),
+            t = r("oOby");
+        let e = (0, a.ib)(t.b),
+            f = r("vV6o").b,
+            m = s => {
+                let {
+                    currentParams: o,
+                    nextParams: r,
+                    defaultShouldRevalidate: a
+                } = s;
+                return (null == o.checkoutSessionId || o.checkoutSessionId !== r.checkoutSessionId) && a
+            }
+    }),
+    oOby: (function(s, o, r) {
+        var a = r("rEML"),
+            t = r("ABep"),
+            e = r("QosV"),
+            f = r("hC2y"),
+            m = r("AXDI");
+        let p = (0, a.kb)(m.b);
+        o.b = (0, a.ib)(function() {
+            let s, o, r = (0, e.c)(4),
+                p = (0, a.Y)();
+            return r[0] !== p ? (s = (0, a.O)((0, a.K)(f.a, p)), r[0] = p, r[1] = s) : s = r[1], r[2] !== s ? (o = (0, t.jsx)(m.a, {
+                children: s
+            }), r[2] = s, r[3] = o) : o = r[3], o
+        }), r.d(o, {}, {
+            a: p
+        })
+    }),
+    nDjx: (function(s, o, r) {
+        s.exports = r.p + "assets/appshot-logo.f0152cb4dd.png"
+    }),
+    hIAo: (function(s, o, r) {
+        s.exports = r.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    }),
+    OCvz: (function(s, o, r) {
+        s.exports = r.p + "assets/dictation-start.f6efcb404f.wav"
+    }),
+    DJ2e: (function(s, o, r) {
+        s.exports = r.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    EBQV: (function(o) {
+        o.exports = s.ir("/cdn/assets/dotnet.js").then(function(s) {
+            return s
+        })
+    })
+};
+import {
+    __webpack_require__ as s
+} from "./633146.0181f6662c.js";
+import * as o from "./418851.09486f68f7.js";
+s.C(o);
+import * as r from "./109308.cb66ec8473.js";
+s.C(r);
+import * as a from "./399565.e3bd47902e.js";
+s.C(a);
+import * as t from "./257798.7e03f1e3e2.js";
+s.C(t);
+import * as e from "./447351.74c4243102.js";
+s.C(e);
+import * as f from "./617936.b641c39dad.js";
+s.C(f);
+import * as m from "./807489.3f6f62fc4e.js";
+s.C(m);
+import * as p from "./337882.ac66e3b9e7.js";
+s.C(p);
+import * as d from "./955979.d6920ef47f.js";
+s.C(d);
+import * as c from "./646436.029c782154.js";
+s.C(c);
+import * as i from "./7078.197e9e74da.js";
+s.C(i);
+import * as b from "./200429.336016a921.js";
+s.C(b);
+import * as j from "./698524.1c89d5e682.js";
+s.C(j);
+import * as C from "./956483.aae39072ae.js";
+s.C(C);
+import * as n from "./87162.70963eaac7.js";
+s.C(n);
+import * as _ from "./396705.63a7a7138f.js";
+s.C(_);
+import * as l from "./155568.80ff0b0790.js";
+s.C(l);
+import * as u from "./731863.980fcc67e8.js";
+s.C(u);
+import * as x from "./767086.029c6e6cb7.js";
+s.C(x);
+import * as h from "./76629.f2ec2ff70b.js";
+s.C(h);
+import * as k from "./514085.a7493d29eb.js";
+s.C(k);
+import * as v from "./204542.d8a33857f0.js";
+s.C(v);
+import * as w from "./226913.dd4de34d8f.js";
+s.C(w);
+import * as B from "./413109.b4bfe81a07.js";
+s.C(B);
+import * as g from "./790996.0969e9372b.js";
+s.C(g);
+var I = s(s.s = "PGBB"),
+    O = I.a,
+    y = I.b,
+    A = I.c;
+export {
+    O as
+    default, y as handle, A as shouldRevalidate
+};

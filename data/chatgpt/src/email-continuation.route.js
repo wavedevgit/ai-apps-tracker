@@ -2,21 +2,22 @@ export const __rspack_esm_ids = [186923];
 export const __webpack_modules__ = {
     Rehp: (function(n, i, t) {
         t.d(i, {
-            a: () => r
+            a: () => h
         });
         var M = t("rEML"),
             g = t("ABep"),
             l = t("QosV"),
-            e = t("BolX"),
+            e = t("Q840"),
             c = t("oyxz"),
             a = t("ASxG"),
             I = t("Cslg"),
             o = t("EOo5"),
             C = t("gCr7"),
             s = t("zOE4"),
-            j = t("OWtl"),
-            N = t("AXDI");
-        let L = a.object({
+            j = t("kErH"),
+            N = t("OWtl"),
+            L = t("AXDI");
+        let r = a.object({
                 id: a.string(),
                 accountId: a.string(),
                 userId: a.string(),
@@ -25,7 +26,7 @@ export const __webpack_modules__ = {
                 attachmentsOmitted: a.boolean(),
                 followup: a.string().nullable()
             }),
-            A = (0, e.q)(j.a, (n, i) => {
+            A = (0, e.q)(N.a, (n, i) => {
                 let {
                     path: t,
                     accountId: M,
@@ -50,7 +51,7 @@ export const __webpack_modules__ = {
                                 signal: AbortSignal.timeout(1e4)
                             });
                             if (!i.ok) return null;
-                            let e = L.parse(await i.json());
+                            let e = r.parse(await i.json());
                             return e.accountId === M && e.userId === g ? (0, C.c)(l, e) : null
                         } catch {
                             return null
@@ -58,56 +59,56 @@ export const __webpack_modules__ = {
                     }
                 }
             });
-        var r = (0, M.hb)(function() {
+        var h = (0, M.ib)(function() {
             let n, i = (0, l.c)(1);
-            return i[0] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, g.jsx)(N.a, {
-                children: (0, g.jsx)(h, {})
+            return i[0] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, g.jsx)(L.a, {
+                children: (0, g.jsx)(d, {})
             }), i[0] = n) : n = i[0], n
         });
 
-        function h() {
-            let n, i, t, a, C, j = (0, l.c)(18),
+        function d() {
+            let n, i, t, a, C, N = (0, l.c)(18),
                 {
-                    accountId: N,
-                    userId: L,
-                    isLoading: r
+                    accountId: L,
+                    userId: r,
+                    isLoading: h
                 } = (0, o.a)(),
-                h = (0, e.z)(I.f),
-                d = (0, e.z)(I.k),
-                D = (0, M.W)(".");
-            if (j[0] !== D) {
+                d = (0, e.z)(I.f),
+                D = (0, e.z)(I.k),
+                f = (0, M.W)(".");
+            if (N[0] !== f) {
                 let i;
-                j[2] === Symbol.for("react.memo_cache_sentinel") ? (i = /\/$/, j[2] = i) : i = j[2], n = D.replace(i, ""), j[0] = D, j[1] = n
-            } else n = j[1];
-            let f = n,
-                y = null != N && null != L,
-                u = r || y && (h !== N || d !== L);
-            j[3] !== N || j[4] !== f || j[5] !== L ? (i = {
-                path: f,
-                accountId: N,
-                userId: L
-            }, j[3] = N, j[4] = f, j[5] = L, j[6] = i) : i = j[6];
-            let x = !u && y;
-            j[7] !== x ? (t = {
-                enabled: x
-            }, j[7] = x, j[8] = t) : t = j[8];
+                N[2] === Symbol.for("react.memo_cache_sentinel") ? (i = /\/$/, N[2] = i) : i = N[2], n = f.replace(i, ""), N[0] = f, N[1] = n
+            } else n = N[1];
+            let y = n,
+                u = null != L && null != r,
+                x = h || u && (d !== L || D !== r);
+            N[3] !== L || N[4] !== y || N[5] !== r ? (i = {
+                path: y,
+                accountId: L,
+                userId: r
+            }, N[3] = L, N[4] = y, N[5] = r, N[6] = i) : i = N[6];
+            let p = !x && u;
+            N[7] !== p ? (t = {
+                enabled: p
+            }, N[7] = p, N[8] = t) : t = N[8];
             let {
-                data: p,
-                isPending: w
+                data: w,
+                isPending: z
             } = (0, e.x)(A, i, t);
-            if (u || y && w) {
+            if (x || u && z) {
                 let n;
-                return j[9] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, g.jsx)(s.LoadingPage, {}), j[9] = n) : n = j[9], n
+                return N[9] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, g.jsx)(s.LoadingPage, {}), N[9] = n) : n = N[9], n
             }
-            if (null == p || !y) {
+            if (null == w || !u) {
                 let n, i;
-                return j[10] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, g.jsx)("p", {
+                return N[10] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, g.jsx)("p", {
                     role: "alert",
                     children: (0, g.jsx)(c.a, {
                         id: "chatgpt.emailContinuation.importError",
                         defaultMessage: "Couldn’t open this email conversation. Try opening the link from your email again."
                     })
-                }), j[10] = n) : n = j[10], j[11] === Symbol.for("react.memo_cache_sentinel") ? (i = (0, g.jsxs)("div", {
+                }), N[10] = n) : n = N[10], N[11] === Symbol.for("react.memo_cache_sentinel") ? (i = (0, g.jsxs)("div", {
                     className: "flex h-full flex-col items-center justify-center gap-3 p-6 text-center",
                     children: [n, (0, g.jsx)(M.g, {
                         className: "underline",
@@ -117,19 +118,19 @@ export const __webpack_modules__ = {
                             defaultMessage: "Go to ChatGPT"
                         })
                     })]
-                }), j[11] = i) : i = j[11], i
+                }), N[11] = i) : i = N[11], i
             }
-            let z = `/c/${encodeURIComponent(p)}`;
-            return j[12] !== N || j[13] !== L ? (a = {
+            let m = `/c/${encodeURIComponent(w)}`;
+            return N[12] !== L || N[13] !== r ? (a = {
                 emailContinuation: {
-                    accountId: N,
-                    userId: L
+                    accountId: L,
+                    userId: r
                 }
-            }, j[12] = N, j[13] = L, j[14] = a) : a = j[14], j[15] !== z || j[16] !== a ? (C = (0, g.jsx)(M.l, {
-                to: z,
+            }, N[12] = L, N[13] = r, N[14] = a) : a = N[14], N[15] !== m || N[16] !== a ? (C = (0, g.jsx)(j.g, {
+                to: m,
                 state: a,
                 replace: !0
-            }), j[15] = z, j[16] = a, j[17] = C) : C = j[17], C
+            }), N[15] = m, N[16] = a, N[17] = C) : C = N[17], C
         }
     }),
     BmwK: (function(n) {
@@ -275,55 +276,57 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as n
-} from "./633146.0389b6b487.js";
-import * as i from "./418851.d159eb4416.js";
+} from "./633146.0181f6662c.js";
+import * as i from "./418851.09486f68f7.js";
 n.C(i);
-import * as t from "./109308.c9b7701e19.js";
+import * as t from "./109308.cb66ec8473.js";
 n.C(t);
 import * as M from "./399565.e3bd47902e.js";
 n.C(M);
 import * as g from "./257798.7e03f1e3e2.js";
 n.C(g);
-import * as l from "./447351.38c6663605.js";
+import * as l from "./447351.74c4243102.js";
 n.C(l);
 import * as e from "./617936.b641c39dad.js";
 n.C(e);
-import * as c from "./807489.f4f591ba36.js";
+import * as c from "./807489.3f6f62fc4e.js";
 n.C(c);
-import * as a from "./337882.ff3affb96a.js";
+import * as a from "./337882.ac66e3b9e7.js";
 n.C(a);
-import * as I from "./955979.1876fabeae.js";
+import * as I from "./955979.d6920ef47f.js";
 n.C(I);
-import * as o from "./646436.6a9ea7ce2b.js";
+import * as o from "./646436.029c782154.js";
 n.C(o);
-import * as C from "./7078.7ac8d1f362.js";
+import * as C from "./7078.197e9e74da.js";
 n.C(C);
-import * as s from "./200429.4d632ba2a6.js";
+import * as s from "./200429.336016a921.js";
 n.C(s);
-import * as j from "./698524.389f4a7f6b.js";
+import * as j from "./698524.1c89d5e682.js";
 n.C(j);
-import * as N from "./956483.d858d35d29.js";
+import * as N from "./956483.aae39072ae.js";
 n.C(N);
-import * as L from "./87162.77ec984516.js";
+import * as L from "./87162.70963eaac7.js";
 n.C(L);
-import * as A from "./396705.20cd88e12f.js";
-n.C(A);
-import * as r from "./155568.1c3d77f567.js";
+import * as r from "./396705.63a7a7138f.js";
 n.C(r);
-import * as h from "./731863.01f5ca0d2b.js";
+import * as A from "./155568.80ff0b0790.js";
+n.C(A);
+import * as h from "./731863.980fcc67e8.js";
 n.C(h);
-import * as d from "./767086.622205eb79.js";
+import * as d from "./767086.029c6e6cb7.js";
 n.C(d);
-import * as D from "./76629.38c2f40595.js";
+import * as D from "./76629.f2ec2ff70b.js";
 n.C(D);
-import * as f from "./514085.505cf4281f.js";
+import * as f from "./514085.a7493d29eb.js";
 n.C(f);
-import * as y from "./226913.dd4de34d8f.js";
+import * as y from "./204542.d8a33857f0.js";
 n.C(y);
-import * as u from "./186923.6f846fde05.js";
+import * as u from "./226913.dd4de34d8f.js";
 n.C(u);
-var x = n(n.s = "Rehp").a;
+import * as x from "./186923.1535db3e8e.js";
+n.C(x);
+var p = n(n.s = "Rehp").a;
 export {
-    x as
+    p as
     default
 };
