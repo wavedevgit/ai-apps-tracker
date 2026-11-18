@@ -2,14 +2,14 @@ export const __rspack_esm_ids = [29819];
 export const __webpack_modules__ = {
     qUT6: (function(e, t, n) {
         n.d(t, {
-            a: () => g
+            a: () => C
         });
         var o = n("rEML"),
             a = n("ABep"),
-            r = n("QosV"),
-            s = n("Zqzr"),
+            s = n("QosV"),
+            r = n("UKCO"),
             i = n("zd8w"),
-            c = n("UOa8"),
+            c = n("h6fL"),
             l = n("pEfp"),
             d = n("zOE4"),
             p = n("kErH"),
@@ -17,28 +17,28 @@ export const __webpack_modules__ = {
             h = n("jZDY"),
             m = n("tZ2c"),
             f = n("pICO"),
-            g = (0, o.hb)(function() {
-                let e, t = (0, r.c)(2),
+            C = (0, o.hb)(function() {
+                let e, t = (0, s.c)(2),
                     n = (0, o.X)();
-                return t[0] !== n.key ? (e = (0, a.jsx)(w, {}, n.key), t[0] = n.key, t[1] = e) : e = t[1], e
+                return t[0] !== n.key ? (e = (0, a.jsx)(g, {}, n.key), t[0] = n.key, t[1] = e) : e = t[1], e
             });
 
-        function w() {
-            let e, t, n = (0, r.c)(10),
+        function g() {
+            let e, t, n = (0, s.c)(10),
                 c = new URLSearchParams((0, o.X)().search),
                 {
                     isMobile: l,
                     downloadPlatform: d
                 } = (0, o.W)(),
                 p = (0, h.a)(),
-                g = (0, s.og)(c),
-                w = (0, m.a)(c),
+                C = (0, r.pg)(c),
+                g = (0, m.a)(c),
                 [x, k] = (0, i.useState)(!1),
                 j = c.get("source"),
                 _ = l ? "mobile" : "opening";
             if (("cli-login" === j || "login" === j) && (_ = j), (0, i.useEffect)(() => {
-                    if (!p || l || null == g) return;
-                    if (null == w) return void window.location.assign(g);
+                    if (!p || l || null == C) return;
+                    if (null == g) return void window.location.assign(C);
                     let e = new AbortController,
                         t = () => {
                             e.abort(), k(!1)
@@ -46,34 +46,34 @@ export const __webpack_modules__ = {
                         n = () => {
                             "hidden" === document.visibilityState && t()
                         };
-                    return (0, u.a)(g, e.signal).then(o => {
+                    return (0, u.a)(C, e.signal).then(o => {
                         e.signal.aborted || "fallback" !== o || (window.addEventListener("pagehide", t), document.addEventListener("visibilitychange", n), k(!0))
-                    }, C), () => {
+                    }, w), () => {
                         e.abort(), window.removeEventListener("pagehide", t), document.removeEventListener("visibilitychange", n)
                     }
-                }, [g, w, l, p]), (x || p && l) && null != w) {
+                }, [C, g, l, p]), (x || p && l) && null != g) {
                 let e, t = c.get("account_id")?.trim();
-                return n[0] !== w || n[1] !== t ? (e = (0, a.jsx)(b, {
-                    destination: w,
+                return n[0] !== g || n[1] !== t ? (e = (0, a.jsx)(b, {
+                    destination: g,
                     accountId: t
-                }), n[0] = w, n[1] = t, n[2] = e) : e = n[2], e
+                }), n[0] = g, n[1] = t, n[2] = e) : e = n[2], e
             }
-            return n[3] !== g ? (e = () => {
-                null != g && window.location.assign(g)
-            }, n[3] = g, n[4] = e) : e = n[4], n[5] !== g || n[6] !== d || n[7] !== _ || n[8] !== e ? (t = (0, a.jsx)(f.a, {
-                deepLink: g,
+            return n[3] !== C ? (e = () => {
+                null != C && window.location.assign(C)
+            }, n[3] = C, n[4] = e) : e = n[4], n[5] !== C || n[6] !== d || n[7] !== _ || n[8] !== e ? (t = (0, a.jsx)(f.a, {
+                deepLink: C,
                 downloadPlatform: d,
                 status: _,
                 onOpen: e
-            }), n[5] = g, n[6] = d, n[7] = _, n[8] = e, n[9] = t) : t = n[9], t
+            }), n[5] = C, n[6] = d, n[7] = _, n[8] = e, n[9] = t) : t = n[9], t
         }
 
-        function C() {}
+        function w() {}
 
         function b(e) {
-            let t, n = (0, r.c)(10),
+            let t, n = (0, s.c)(10),
                 {
-                    destination: s,
+                    destination: r,
                     accountId: i
                 } = e,
                 {
@@ -99,16 +99,16 @@ export const __webpack_modules__ = {
             }
             if (i) {
                 let e;
-                return n[5] !== i || n[6] !== s ? (e = (0, a.jsx)(l.WorkspaceLinkRoute, {
+                return n[5] !== i || n[6] !== r ? (e = (0, a.jsx)(l.WorkspaceLinkRoute, {
                     accountId: i,
-                    destination: s,
+                    destination: r,
                     unavailablePath: "/"
-                }), n[5] = i, n[6] = s, n[7] = e) : e = n[7], e
+                }), n[5] = i, n[6] = r, n[7] = e) : e = n[7], e
             }
-            return n[8] !== s ? (t = (0, a.jsx)(p.g, {
-                to: s,
+            return n[8] !== r ? (t = (0, a.jsx)(p.g, {
+                to: r,
                 replace: !0
-            }), n[8] = s, n[9] = t) : t = n[9], t
+            }), n[8] = r, n[9] = t) : t = n[9], t
         }
     }),
     dzzk: (function(e, t, n) {
@@ -120,27 +120,27 @@ export const __webpack_modules__ = {
     pEfp: (function(e, t, n) {
         var o = n("ABep"),
             a = n("QosV"),
-            r = n("T0Rc"),
-            s = n("zd8w"),
+            s = n("T0Rc"),
+            r = n("zd8w"),
             i = n("rEML"),
-            c = n("ASxG"),
+            c = n("lAQI"),
             l = n("HnGz"),
             d = n("l5Vd"),
             p = n("QdUF"),
-            u = n("UOa8"),
+            u = n("h6fL"),
             h = n("Kwur"),
             m = n("zOE4"),
             f = n("uHE8"),
-            g = n("tSEg"),
-            w = n("vLpE"),
-            C = n("iPqE"),
+            C = n("tSEg"),
+            g = n("vLpE"),
+            w = n("iPqE"),
             b = n("hZax"),
             x = n("dHX4");
-        let k = c.string().regex(/^[a-zA-Z0-9_-]{1,255}$/),
-            j = c.object({
-                source: c.tuple([c.literal("codex-code-attribution")]),
-                accountId: c.tuple([k]),
-                connectorId: c.array(k).max(1)
+        let k = c.L().regex(/^[a-zA-Z0-9_-]{1,255}$/),
+            j = c.F({
+                source: c.N([c.z("codex-code-attribution")]),
+                accountId: c.N([k]),
+                connectorId: c.g(k).max(1)
             });
 
         function _(e) {
@@ -148,22 +148,22 @@ export const __webpack_modules__ = {
                 {
                     accountId: y,
                     destination: P,
-                    documentHandoff: S,
+                    documentHandoff: I,
                     reloadOnSelection: A,
-                    unavailablePath: E
+                    unavailablePath: S
                 } = e,
-                I = void 0 !== A && A,
+                E = void 0 !== A && A,
                 {
                     userId: T,
                     accountId: M
                 } = (0, u.a)(),
-                G = (0, i.X)(),
-                D = (0, s.useContext)(i.q).matches.at(-1)?.route.children,
+                D = (0, i.X)(),
+                G = (0, r.useContext)(i.q).matches.at(-1)?.route.children,
                 R = (0, i.V)(P),
-                V = (0, i.V)(S?.returnTo ?? P),
-                U = (0, i.V)(E),
+                V = (0, i.V)(I?.returnTo ?? P),
+                U = (0, i.V)(S),
                 z = (0, b.i)();
-            L[0] !== y || L[1] !== R || L[2] !== S || L[3] !== G.key || L[4] !== I || L[5] !== V || L[6] !== U || L[7] !== T ? (t = ["workspace-link-account", G.key, T, y, R, U, I, S, V], L[0] = y, L[1] = R, L[2] = S, L[3] = G.key, L[4] = I, L[5] = V, L[6] = U, L[7] = T, L[8] = t) : t = L[8], L[9] !== y || L[10] !== M || L[11] !== P || L[12] !== S || L[13] !== G.pathname || L[14] !== G.search || L[15] !== I || L[16] !== V || L[17] !== z || L[18] !== U ? (n = async e => {
+            L[0] !== y || L[1] !== R || L[2] !== I || L[3] !== D.key || L[4] !== E || L[5] !== V || L[6] !== U || L[7] !== T ? (t = ["workspace-link-account", D.key, T, y, R, U, E, I, V], L[0] = y, L[1] = R, L[2] = I, L[3] = D.key, L[4] = E, L[5] = V, L[6] = U, L[7] = T, L[8] = t) : t = L[8], L[9] !== y || L[10] !== M || L[11] !== P || L[12] !== I || L[13] !== D.pathname || L[14] !== D.search || L[15] !== E || L[16] !== V || L[17] !== z || L[18] !== U ? (n = async e => {
                 let {
                     signal: t
                 } = e, n = await h.Request.safeGet("/accounts/check/{version}", {
@@ -175,14 +175,14 @@ export const __webpack_modules__ = {
                     signal: t
                 });
                 t.throwIfAborted();
-                let o = "personal" === y && null == S ? Object.values(n.accounts).find(v) : n.accounts[y],
+                let o = "personal" === y && null == I ? Object.values(n.accounts).find(v) : n.accounts[y],
                     a = o?.account;
-                if (null == o || a?.account_id == null || !0 === a.is_deactivated) return I ? ((0, C.setAccountCookie)((0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, C.handleBrowserAccountChangeAndRefresh)(U, t), "switching") : "unavailable";
-                if (!I && M === a.account_id && !1 !== o.can_access_with_session && (null == S || (0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === a.account_id)) return null != S ? (window.location.replace("string" == typeof P ? P : (0, i.y)(P)), "switching") : "selected";
-                if (S?.attempted === "select" || S?.attempted === "authenticate" && !1 === o.can_access_with_session) return "unavailable";
-                let r = (0, i.J)(d.i, G.pathname)?.params.projectId,
-                    s = (0, d.t)(new URLSearchParams(G.search));
-                if (null != r && null != s && !1 !== o.can_access_with_session) {
+                if (null == o || a?.account_id == null || !0 === a.is_deactivated) return E ? ((0, w.setAccountCookie)((0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, w.handleBrowserAccountChangeAndRefresh)(U, t), "switching") : "unavailable";
+                if (!E && M === a.account_id && !1 !== o.can_access_with_session && (null == I || (0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === a.account_id)) return null != I ? (window.location.replace("string" == typeof P ? P : (0, i.y)(P)), "switching") : "selected";
+                if (I?.attempted === "select" || I?.attempted === "authenticate" && !1 === o.can_access_with_session) return "unavailable";
+                let s = (0, i.J)(d.i, D.pathname)?.params.projectId,
+                    r = (0, d.t)(new URLSearchParams(D.search));
+                if (null != s && null != r && !1 !== o.can_access_with_session) {
                     try {
                         await h.Request.safeGet("/websites/{project_id}/access_request", {
                             additionalHeaders: {
@@ -190,10 +190,10 @@ export const __webpack_modules__ = {
                             },
                             parameters: {
                                 path: {
-                                    project_id: r
+                                    project_id: s
                                 },
                                 query: {
-                                    token: s
+                                    token: r
                                 }
                             },
                             signal: t
@@ -204,11 +204,11 @@ export const __webpack_modules__ = {
                     t.throwIfAborted()
                 }
                 let c = V;
-                if (null != S) {
+                if (null != I) {
                     let e = new URL(V, window.location.origin);
                     e.searchParams.set("handoff_attempt", !1 === o.can_access_with_session ? "authenticate" : "select"), c = e.toString()
                 }
-                return await (0, C.switchBrowserWorkspaceAndRefresh)({
+                return await (0, w.switchBrowserWorkspaceAndRefresh)({
                     workspaceAccountId: a.account_id,
                     workspaceName: a.name ?? null,
                     workspaceImageUrl: a.profile_picture_url ?? null,
@@ -219,7 +219,7 @@ export const __webpack_modules__ = {
                     canAccessWithSession: o.can_access_with_session,
                     ssoConnectionName: o.sso_connection_name
                 }, z, c, t), "switching"
-            }, L[9] = y, L[10] = M, L[11] = P, L[12] = S, L[13] = G.pathname, L[14] = G.search, L[15] = I, L[16] = V, L[17] = z, L[18] = U, L[19] = n) : n = L[19], L[20] !== t || L[21] !== n ? (c = {
+            }, L[9] = y, L[10] = M, L[11] = P, L[12] = I, L[13] = D.pathname, L[14] = D.search, L[15] = E, L[16] = V, L[17] = z, L[18] = U, L[19] = n) : n = L[19], L[20] !== t || L[21] !== n ? (c = {
                 queryKey: t,
                 queryFn: n,
                 staleTime: 1 / 0,
@@ -231,14 +231,14 @@ export const __webpack_modules__ = {
             let {
                 data: O,
                 error: Z
-            } = (0, r.a)(c);
+            } = (0, s.a)(c);
             if (Z) throw Z;
             if ("unavailable" === O) {
                 let e;
-                return L[23] !== E ? (e = (0, o.jsx)(i.l, {
-                    to: E,
+                return L[23] !== S ? (e = (0, o.jsx)(i.l, {
+                    to: S,
                     replace: !0
-                }), L[23] = E, L[24] = e) : e = L[24], e
+                }), L[23] = S, L[24] = e) : e = L[24], e
             }
             if ("selected" === O) {
                 let e;
@@ -247,13 +247,13 @@ export const __webpack_modules__ = {
                     replace: !0
                 }), L[25] = P, L[26] = e) : e = L[26], e
             }
-            let q = w.a,
-                B = g.b,
-                W = null == D ? G.pathname : (0, l.e)(D, G.pathname);
-            return L[27] !== G || L[28] !== B || L[29] !== W ? (k = B({
-                ...G,
-                routeTemplate: W
-            }), L[27] = G, L[28] = B, L[29] = W, L[30] = k) : k = L[30], L[31] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, o.jsxs)(f.a, {
+            let q = g.a,
+                N = C.b,
+                B = null == G ? D.pathname : (0, l.e)(G, D.pathname);
+            return L[27] !== D || L[28] !== N || L[29] !== B ? (k = N({
+                ...D,
+                routeTemplate: B
+            }), L[27] = D, L[28] = N, L[29] = B, L[30] = k) : k = L[30], L[31] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, o.jsxs)(f.a, {
                 children: [(0, o.jsx)(x.b, {}), (0, o.jsx)(m.LoadingPage, {})]
             }), L[31] = j) : j = L[31], L[32] !== q || L[33] !== k ? (_ = (0, o.jsx)(q, {
                 route: k,
@@ -266,10 +266,10 @@ export const __webpack_modules__ = {
         }
         n.d(t, {}, {
             CodeAttributionConnectorAccountRoute: function() {
-                let e, t, n, r, s, c, l, d = (0, a.c)(14),
+                let e, t, n, s, r, c, l, d = (0, a.c)(14),
                     p = (0, i.X)();
                 if (d[0] !== p.search) {
-                    s = Symbol.for("react.early_return_sentinel");
+                    r = Symbol.for("react.early_return_sentinel");
                     e: {
                         let a = new URLSearchParams(p.search),
                             c = j.safeParse({
@@ -282,7 +282,7 @@ export const __webpack_modules__ = {
                             d[6] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, o.jsx)(i.l, {
                                 to: "/settings/plugins-settings",
                                 replace: !0
-                            }), d[6] = e) : e = d[6], s = e;
+                            }), d[6] = e) : e = d[6], r = e;
                             break e
                         }
                         let l = new URLSearchParams({
@@ -290,20 +290,20 @@ export const __webpack_modules__ = {
                             }),
                             u = c.data.connectorId[0];null != u && l.set("connector", u),
                         e = _,
-                        r = c.data.accountId[0],
+                        s = c.data.accountId[0],
                         t = "/settings/connectors",
                         n = l.toString()
                     }
-                    d[0] = p.search, d[1] = e, d[2] = t, d[3] = n, d[4] = r, d[5] = s
-                } else e = d[1], t = d[2], n = d[3], r = d[4], s = d[5];
-                return s !== Symbol.for("react.early_return_sentinel") ? s : (d[7] !== t || d[8] !== n ? (c = {
+                    d[0] = p.search, d[1] = e, d[2] = t, d[3] = n, d[4] = s, d[5] = r
+                } else e = d[1], t = d[2], n = d[3], s = d[4], r = d[5];
+                return r !== Symbol.for("react.early_return_sentinel") ? r : (d[7] !== t || d[8] !== n ? (c = {
                     pathname: t,
                     search: n
-                }, d[7] = t, d[8] = n, d[9] = c) : c = d[9], d[10] !== e || d[11] !== r || d[12] !== c ? (l = (0, o.jsx)(e, {
-                    accountId: r,
+                }, d[7] = t, d[8] = n, d[9] = c) : c = d[9], d[10] !== e || d[11] !== s || d[12] !== c ? (l = (0, o.jsx)(e, {
+                    accountId: s,
                     destination: c,
                     unavailablePath: "/settings/plugins-settings"
-                }), d[10] = e, d[11] = r, d[12] = c, d[13] = l) : l = d[13], l)
+                }), d[10] = e, d[11] = s, d[12] = c, d[13] = l) : l = d[13], l)
             },
             WorkspaceLinkRoute: _
         })
@@ -313,23 +313,23 @@ export const __webpack_modules__ = {
             a: () => c,
             b: () => i
         });
-        var o = n("Zqzr"),
+        var o = n("UKCO"),
             a = n("rEML"),
-            r = n("ASxG");
-        let s = [{
+            s = n("lAQI");
+        let r = [{
             path: ":locale?/codex/open-app"
         }];
 
         function i(e) {
-            if ("https://chatgpt.com" !== e.origin || null == (0, a.K)(s, e.pathname)) return null;
-            let t = (0, o.og)(e.searchParams);
+            if ("https://chatgpt.com" !== e.origin || null == (0, a.K)(r, e.pathname)) return null;
+            let t = (0, o.pg)(e.searchParams);
             return null == t ? null : new URL(t)
         }
 
         function c(e) {
             if ("cli-login" === e.get("source") || "work" !== e.get("fallback") || ["launch", "dots", "plugin"].includes(e.get("target") ?? "")) return null;
             let t = e.get("q")?.trim(),
-                n = r.uuid().safeParse(e.get("chatgpt_conversation_id")?.trim()).data;
+                n = s.S().safeParse(e.get("chatgpt_conversation_id")?.trim()).data;
             if (!t && null == n) return null;
             let o = new URLSearchParams({
                     surface: "tpp"
@@ -346,8 +346,8 @@ export const __webpack_modules__ = {
     pICO: (function(e, t, n) {
         var o = n("ABep"),
             a = n("QosV"),
-            r = n("oyxz"),
-            s = n("AlDs"),
+            s = n("oyxz"),
+            r = n("AlDs"),
             i = n("Sm6l");
 
         function c() {
@@ -367,13 +367,13 @@ export const __webpack_modules__ = {
         }
 
         function u(e) {
-            "https://chatgpt.com/download" !== e && (0, s.b)("codex-download", {
+            "https://chatgpt.com/download" !== e && (0, r.b)("codex-download", {
                 allowUnauthenticatedTracking: !0
             }), window.open(e, "_blank", "noopener,noreferrer")
         }
         n.d(t, {}, {
             a: function(e) {
-                let t, n, s, u, h, m, f, g, w, C, b, x, k, j = (0, a.c)(42),
+                let t, n, r, u, h, m, f, C, g, w, b, x, k, j = (0, a.c)(42),
                     {
                         deepLink: _,
                         downloadPlatform: v,
@@ -381,52 +381,52 @@ export const __webpack_modules__ = {
                         onOpen: y
                     } = e,
                     P = void 0 === L ? "opening" : L,
-                    S = "login" === P || "cli-login" === P;
-                return j[0] !== S ? (t = S ? (0, o.jsx)(r.a, {
+                    I = "login" === P || "cli-login" === P;
+                return j[0] !== I ? (t = I ? (0, o.jsx)(s.a, {
                     id: "browser.codexDeeplink.signedIn",
                     defaultMessage: "You’re signed in"
-                }) : null, j[0] = S, j[1] = t) : t = j[1], j[2] !== P ? (n = "mobile" === P ? (0, o.jsx)(r.a, {
+                }) : null, j[0] = I, j[1] = t) : t = j[1], j[2] !== P ? (n = "mobile" === P ? (0, o.jsx)(s.a, {
                     id: "browser.codexDeeplink.mobileTitle",
                     defaultMessage: "Open the ChatGPT desktop app on your computer"
-                }) : null, j[2] = P, j[3] = n) : n = j[3], j[4] !== P ? (s = "opening" === P ? (0, o.jsx)(r.a, {
+                }) : null, j[2] = P, j[3] = n) : n = j[3], j[4] !== P ? (r = "opening" === P ? (0, o.jsx)(s.a, {
                     id: "browser.codexDeeplink.title",
                     defaultMessage: "Opening ChatGPT…"
-                }) : null, j[4] = P, j[5] = s) : s = j[5], j[6] !== t || j[7] !== n || j[8] !== s ? (u = (0, o.jsxs)("h1", {
+                }) : null, j[4] = P, j[5] = r) : r = j[5], j[6] !== t || j[7] !== n || j[8] !== r ? (u = (0, o.jsxs)("h1", {
                     className: "text-3xl font-semibold",
-                    children: [t, n, s]
-                }), j[6] = t, j[7] = n, j[8] = s, j[9] = u) : u = j[9], j[10] !== S ? (h = S ? (0, o.jsx)("p", {
+                    children: [t, n, r]
+                }), j[6] = t, j[7] = n, j[8] = r, j[9] = u) : u = j[9], j[10] !== I ? (h = I ? (0, o.jsx)("p", {
                     className: "text-secondary",
-                    children: (0, o.jsx)(r.a, {
+                    children: (0, o.jsx)(s.a, {
                         id: "browser.codexDeeplink.signedInBody",
                         defaultMessage: "You’re signed in and may close this tab"
                     })
-                }) : null, j[10] = S, j[11] = h) : h = j[11], j[12] !== P ? (m = "opening" === P ? (0, o.jsx)("p", {
+                }) : null, j[10] = I, j[11] = h) : h = j[11], j[12] !== P ? (m = "opening" === P ? (0, o.jsx)("p", {
                     className: "text-secondary",
-                    children: (0, o.jsx)(r.a, {
+                    children: (0, o.jsx)(s.a, {
                         id: "browser.codexDeeplink.body",
                         defaultMessage: "We're trying to open ChatGPT automatically. If nothing happens, download the app and try opening it again."
                     })
-                }) : null, j[12] = P, j[13] = m) : m = j[13], j[14] !== _ || j[15] !== S ? (f = null != _ || S ? null : (0, o.jsx)("p", {
+                }) : null, j[12] = P, j[13] = m) : m = j[13], j[14] !== _ || j[15] !== I ? (f = null != _ || I ? null : (0, o.jsx)("p", {
                     role: "alert",
                     className: "text-secondary",
-                    children: (0, o.jsx)(r.a, {
+                    children: (0, o.jsx)(s.a, {
                         id: "browser.codexDeeplink.missingDetails",
                         defaultMessage: "This link is missing the chat details ChatGPT needs to reopen your work"
                     })
-                }), j[14] = _, j[15] = S, j[16] = f) : f = j[16], j[17] !== v || j[18] !== P ? (g = "opening" === P && "windows" === v ? (0, o.jsx)(i.a, {
+                }), j[14] = _, j[15] = I, j[16] = f) : f = j[16], j[17] !== v || j[18] !== P ? (C = "opening" === P && "windows" === v ? (0, o.jsx)(i.a, {
                     color: "primary",
                     size: "auth",
                     onClick: p,
-                    children: (0, o.jsx)(r.a, {
+                    children: (0, o.jsx)(s.a, {
                         id: "browser.codexDeeplink.download",
                         defaultMessage: "Download the app"
                     })
-                }) : null, j[17] = v, j[18] = P, j[19] = g) : g = j[19], j[20] !== v || j[21] !== P ? (w = "opening" === P && "mac" === v ? (0, o.jsxs)(o.Fragment, {
+                }) : null, j[17] = v, j[18] = P, j[19] = C) : C = j[19], j[20] !== v || j[21] !== P ? (g = "opening" === P && "mac" === v ? (0, o.jsxs)(o.Fragment, {
                     children: [(0, o.jsx)(i.a, {
                         color: "primary",
                         size: "auth",
                         onClick: d,
-                        children: (0, o.jsx)(r.a, {
+                        children: (0, o.jsx)(s.a, {
                             id: "browser.codexDeeplink.downloadAppleSilicon",
                             defaultMessage: "Download for Apple Silicon"
                         })
@@ -434,32 +434,32 @@ export const __webpack_modules__ = {
                         color: "outlineSurface",
                         size: "auth",
                         onClick: l,
-                        children: (0, o.jsx)(r.a, {
+                        children: (0, o.jsx)(s.a, {
                             id: "browser.codexDeeplink.downloadIntel",
                             defaultMessage: "Download for Intel Mac"
                         })
                     })]
-                }) : null, j[20] = v, j[21] = P, j[22] = w) : w = j[22], j[23] !== P ? (C = "mobile" === P ? (0, o.jsx)(i.a, {
+                }) : null, j[20] = v, j[21] = P, j[22] = g) : g = j[22], j[23] !== P ? (w = "mobile" === P ? (0, o.jsx)(i.a, {
                     color: "primary",
                     size: "auth",
                     onClick: c,
-                    children: (0, o.jsx)(r.a, {
+                    children: (0, o.jsx)(s.a, {
                         id: "browser.codexDeeplink.learnMore",
                         defaultMessage: "Learn more"
                     })
-                }) : null, j[23] = P, j[24] = C) : C = j[24], j[25] !== _ || j[26] !== v || j[27] !== S || j[28] !== y || j[29] !== P ? (b = "mobile" !== P && "cli-login" !== P ? (0, o.jsx)(i.a, {
-                    color: null == v || S ? "primary" : "outlineSurface",
+                }) : null, j[23] = P, j[24] = w) : w = j[24], j[25] !== _ || j[26] !== v || j[27] !== I || j[28] !== y || j[29] !== P ? (b = "mobile" !== P && "cli-login" !== P ? (0, o.jsx)(i.a, {
+                    color: null == v || I ? "primary" : "outlineSurface",
                     size: "auth",
                     disabled: null == _,
                     onClick: y,
-                    children: (0, o.jsx)(r.a, {
+                    children: (0, o.jsx)(s.a, {
                         id: "browser.codexDeeplink.open",
                         defaultMessage: "Open ChatGPT"
                     })
-                }) : null, j[25] = _, j[26] = v, j[27] = S, j[28] = y, j[29] = P, j[30] = b) : b = j[30], j[31] !== w || j[32] !== C || j[33] !== b || j[34] !== g ? (x = (0, o.jsxs)("div", {
+                }) : null, j[25] = _, j[26] = v, j[27] = I, j[28] = y, j[29] = P, j[30] = b) : b = j[30], j[31] !== g || j[32] !== w || j[33] !== b || j[34] !== C ? (x = (0, o.jsxs)("div", {
                     className: "flex flex-col gap-3",
-                    children: [g, w, C, b]
-                }), j[31] = w, j[32] = C, j[33] = b, j[34] = g, j[35] = x) : x = j[35], j[36] !== x || j[37] !== u || j[38] !== h || j[39] !== m || j[40] !== f ? (k = (0, o.jsx)("main", {
+                    children: [C, g, w, b]
+                }), j[31] = g, j[32] = w, j[33] = b, j[34] = C, j[35] = x) : x = j[35], j[36] !== x || j[37] !== u || j[38] !== h || j[39] !== m || j[40] !== f ? (k = (0, o.jsx)("main", {
                     className: "flex min-h-screen flex-col items-center justify-center bg-surface px-6 py-12 text-default select-none",
                     children: (0, o.jsxs)("div", {
                         className: "flex w-full max-w-md flex-col gap-5",
@@ -473,26 +473,26 @@ export const __webpack_modules__ = {
         n.d(t, {}, {
             a: async function(e, t) {
                 return t.throwIfAborted(), new Promise((n, o) => {
-                    let a, r = !1,
-                        s = !1,
+                    let a, s = !1,
+                        r = !1,
                         i = () => {
                             window.clearTimeout(a), a = void 0
                         },
                         c = () => {
-                            s = !0, i(), window.removeEventListener("focus", u), window.removeEventListener("blur", i), window.removeEventListener("pagehide", p), document.removeEventListener("visibilitychange", h), t.removeEventListener("abort", d)
+                            r = !0, i(), window.removeEventListener("focus", u), window.removeEventListener("blur", i), window.removeEventListener("pagehide", p), document.removeEventListener("visibilitychange", h), t.removeEventListener("abort", d)
                         },
                         l = e => {
-                            s || (c(), n(e))
+                            r || (c(), n(e))
                         },
                         d = () => {
-                            s || (c(), o(t.reason))
+                            r || (c(), o(t.reason))
                         },
                         p = () => {
-                            r && l("opened")
+                            s && l("opened")
                         },
                         u = () => {
-                            if (i(), !s && document.hasFocus() && "visible" === document.visibilityState && (a = window.setTimeout(() => l("fallback"), 1500), !r)) {
-                                r = !0;
+                            if (i(), !r && document.hasFocus() && "visible" === document.visibilityState && (a = window.setTimeout(() => l("fallback"), 1500), !s)) {
+                                s = !0;
                                 try {
                                     window.location.assign(e)
                                 } catch {
@@ -501,7 +501,7 @@ export const __webpack_modules__ = {
                             }
                         },
                         h = () => {
-                            r && "hidden" === document.visibilityState ? l("opened") : u()
+                            s && "hidden" === document.visibilityState ? l("opened") : u()
                         };
                     window.addEventListener("focus", u), window.addEventListener("blur", i), window.addEventListener("pagehide", p), document.addEventListener("visibilitychange", h), t.addEventListener("abort", d, {
                         once: !0
@@ -518,53 +518,55 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.332c5da428.js";
-import * as t from "./418851.3878fbfa64.js";
+} from "./633146.468d071759.js";
+import * as t from "./418851.f3d2ce19b4.js";
 e.C(t);
 import * as n from "./109308.4b30101b7c.js";
 e.C(n);
-import * as o from "./399565.de450ac543.js";
+import * as o from "./399565.7c8a3f7e95.js";
 e.C(o);
 import * as a from "./257798.b061e3b37a.js";
 e.C(a);
-import * as r from "./447351.690fba1ae5.js";
-e.C(r);
-import * as s from "./617936.c6f9e1ebfb.js";
+import * as s from "./447351.9446ee3aae.js";
 e.C(s);
-import * as i from "./807489.2ba5c6d996.js";
+import * as r from "./617936.a5a9458f41.js";
+e.C(r);
+import * as i from "./807489.503e8e46b2.js";
 e.C(i);
-import * as c from "./337882.799b00b0f3.js";
+import * as c from "./337882.42cb1bc757.js";
 e.C(c);
-import * as l from "./955979.eaf8541a67.js";
+import * as l from "./955979.7655b0fa98.js";
 e.C(l);
-import * as d from "./646436.611d2d0d1b.js";
+import * as d from "./646436.ad0e600e92.js";
 e.C(d);
-import * as p from "./7078.691a92af09.js";
+import * as p from "./7078.20ffc77da3.js";
 e.C(p);
-import * as u from "./200429.336411f62e.js";
+import * as u from "./200429.b7f8e76f67.js";
 e.C(u);
-import * as h from "./698524.e12b58b33f.js";
+import * as h from "./698524.ab39482137.js";
 e.C(h);
-import * as m from "./956483.2514992fd3.js";
+import * as m from "./956483.4dc58508d8.js";
 e.C(m);
-import * as f from "./87162.1f25d59c9c.js";
+import * as f from "./87162.6154a54863.js";
 e.C(f);
-import * as g from "./396705.3e09ec2928.js";
-e.C(g);
-import * as w from "./155568.b02a981797.js";
-e.C(w);
-import * as C from "./731863.9e2b15b813.js";
+import * as C from "./396705.cf1cfb54a0.js";
 e.C(C);
-import * as b from "./767086.6cceb40294.js";
+import * as g from "./155568.831b2b3d34.js";
+e.C(g);
+import * as w from "./731863.6fc88890bf.js";
+e.C(w);
+import * as b from "./767086.c88be6c073.js";
 e.C(b);
-import * as x from "./76629.0f65023578.js";
+import * as x from "./76629.30a094a9b3.js";
 e.C(x);
-import * as k from "./226913.c039047be5.js";
+import * as k from "./514085.037ce67b03.js";
 e.C(k);
-import * as j from "./29819.f3a8e7df93.js";
+import * as j from "./226913.a7e38eae43.js";
 e.C(j);
-var _ = e(e.s = "qUT6").a;
+import * as _ from "./29819.e61d6f7cb7.js";
+e.C(_);
+var v = e(e.s = "qUT6").a;
 export {
-    _ as
+    v as
     default
 };

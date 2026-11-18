@@ -8,7 +8,7 @@ export const __webpack_modules__ = {
         var a = i("rEML"),
             n = i("ABep"),
             r = i("QosV");
-        let s = (0, i("Qgfj").f)({
+        let s = (0, (i("Qgfj")).f)({
             pageTitle: {
                 id: "advancedAccountSecurity.pageTitle",
                 defaultMessage: "Advanced Account Security - OpenAI"
@@ -167,11 +167,11 @@ export const __webpack_modules__ = {
             l = i("oyxz"),
             d = i("Sm6l"),
             u = i("bf6R"),
-            p = i("ohSZ");
+            p = i("mGT8");
         let h = new Set(["web_homepage_beacon", "ios_app_homepage_beacon", "ios_app_settings", "android_app_homepage_beacon", "web_cyber_home"]);
 
         function f() {
-            let e, t, d, f, x, v, b, j, S, w, C, A, _, T, k, M, D, N, H, V, P, E, L, I, Z, G, B, q, O, R, U, z, Y, Q, W, F, X, J, K, $, ee, et, ei = (0, r.c)(73),
+            let e, t, d, f, x, v, b, j, S, w, C, A, _, T, k, M, D, N, H, V, P, E, L, I, G, B, Z, q, O, R, U, z, Y, Q, W, F, X, J, K, $, ee, et, ei = (0, r.c)(73),
                 ea = (0, c.a)(),
                 [en] = (0, a.gb)();
             ei[0] !== en ? (e = en.get("originator"), ei[0] = en, ei[1] = e) : e = ei[1];
@@ -203,7 +203,7 @@ export const __webpack_modules__ = {
                             getClientBootstrap: n
                         }, {
                             signInToBrowserSession: r
-                        }] = await Promise.all([Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629)]).then(i.bind(i, "M8lA")), Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(226913)]).then(i.bind(i, "jEww"))]);
+                        }] = await Promise.all([Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085)]).then(i.bind(i, "M8lA")), Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085), i.e(226913)]).then(i.bind(i, "jEww"))]);
                         if (a.aborted) return {
                             ok: !1
                         };
@@ -306,7 +306,7 @@ export const __webpack_modules__ = {
                     ...s.recoveryDescription
                 })
             }), ei[37] = P) : P = ei[37], ei[38] === Symbol.for("react.memo_cache_sentinel") ? (E = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.mh, {}),
+                icon: (0, n.jsx)(u.nh, {}),
                 title: (0, n.jsx)(l.a, {
                     ...s.trainingTitle
                 }),
@@ -329,7 +329,7 @@ export const __webpack_modules__ = {
                 children: (0, n.jsx)(l.a, {
                     ...s.loginProtectionsDescription
                 })
-            }), ei[40] = I) : I = ei[40], ei[41] === Symbol.for("react.memo_cache_sentinel") ? (Z = (0, n.jsxs)("section", {
+            }), ei[40] = I) : I = ei[40], ei[41] === Symbol.for("react.memo_cache_sentinel") ? (G = (0, n.jsxs)("section", {
                 className: "flex w-full max-w-2xl flex-col gap-6",
                 children: [H, (0, n.jsxs)("div", {
                     className: "grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6",
@@ -343,21 +343,21 @@ export const __webpack_modules__ = {
                         })
                     })]
                 })]
-            }), ei[41] = Z) : Z = ei[41], ei[42] === Symbol.for("react.memo_cache_sentinel") ? (G = (0, n.jsx)(g, {
+            }), ei[41] = G) : G = ei[41], ei[42] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, n.jsx)(g, {
                 title: (0, n.jsx)(l.a, {
                     ...s.yubikeyTitle
                 }),
                 children: (0, n.jsx)(l.a, {
                     ...s.yubikeyDescription
                 })
-            }), ei[42] = G) : G = ei[42], ei[43] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, n.jsx)(u.ld, {}), ei[43] = B) : B = ei[43], ei[44] === Symbol.for("react.memo_cache_sentinel") ? (q = (0, n.jsx)("h2", {
+            }), ei[42] = B) : B = ei[42], ei[43] === Symbol.for("react.memo_cache_sentinel") ? (Z = (0, n.jsx)(u.ld, {}), ei[43] = Z) : Z = ei[43], ei[44] === Symbol.for("react.memo_cache_sentinel") ? (q = (0, n.jsx)("h2", {
                 className: "text-base font-medium",
                 children: (0, n.jsx)(l.a, {
                     ...s.warningTitle
                 })
             }), ei[44] = q) : q = ei[44], ei[45] === Symbol.for("react.memo_cache_sentinel") ? (O = (0, n.jsxs)("section", {
                 className: "flex w-full max-w-2xl flex-col gap-6 rounded-2xl bg-surface-secondary p-6",
-                children: [B, (0, n.jsxs)("div", {
+                children: [Z, (0, n.jsxs)("div", {
                     className: "flex flex-col gap-2",
                     children: [q, (0, n.jsx)("p", {
                         className: "text-base leading-relaxed",
@@ -405,7 +405,7 @@ export const __webpack_modules__ = {
                 children: [U, Y, Q, F]
             }), ei[59] = Y, ei[60] = Q, ei[61] = F, ei[62] = X) : X = ei[62], ei[63] !== T || ei[64] !== D || ei[65] !== X ? (J = (0, n.jsxs)("main", {
                 className: "mx-auto flex w-full max-w-5xl flex-1 flex-col items-center gap-16 px-6 py-12 md:gap-24 md:py-24",
-                children: [T, k, D, N, Z, G, O, X]
+                children: [T, k, D, N, G, B, O, X]
             }), ei[63] = T, ei[64] = D, ei[65] = X, ei[66] = J) : J = ei[66], ei[67] === Symbol.for("react.memo_cache_sentinel") ? (K = (0, n.jsx)("a", {
                 className: "underline underline-offset-4",
                 href: "https://openai.com/policies/terms-of-use",
@@ -515,7 +515,7 @@ export const __webpack_modules__ = {
             return t[0] !== i.key ? (e = (0, n.jsx)(f, {}, i.key), t[0] = i.key, t[1] = e) : e = t[1], e
         })
     }),
-    ohSZ: (function(e, t, i) {
+    mGT8: (function(e, t, i) {
         var a = i("ABep");
         i("zd8w"), t.a = e => (0, a.jsxs)("svg", {
             width: 357,
@@ -555,55 +555,57 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.332c5da428.js";
-import * as t from "./418851.3878fbfa64.js";
+} from "./633146.468d071759.js";
+import * as t from "./418851.f3d2ce19b4.js";
 e.C(t);
 import * as i from "./109308.4b30101b7c.js";
 e.C(i);
-import * as a from "./399565.de450ac543.js";
+import * as a from "./399565.7c8a3f7e95.js";
 e.C(a);
 import * as n from "./257798.b061e3b37a.js";
 e.C(n);
-import * as r from "./447351.690fba1ae5.js";
+import * as r from "./447351.9446ee3aae.js";
 e.C(r);
-import * as s from "./617936.c6f9e1ebfb.js";
+import * as s from "./617936.a5a9458f41.js";
 e.C(s);
-import * as o from "./807489.2ba5c6d996.js";
+import * as o from "./807489.503e8e46b2.js";
 e.C(o);
-import * as c from "./337882.799b00b0f3.js";
+import * as c from "./337882.42cb1bc757.js";
 e.C(c);
-import * as l from "./955979.eaf8541a67.js";
+import * as l from "./955979.7655b0fa98.js";
 e.C(l);
-import * as d from "./646436.611d2d0d1b.js";
+import * as d from "./646436.ad0e600e92.js";
 e.C(d);
-import * as u from "./7078.691a92af09.js";
+import * as u from "./7078.20ffc77da3.js";
 e.C(u);
-import * as p from "./200429.336411f62e.js";
+import * as p from "./200429.b7f8e76f67.js";
 e.C(p);
-import * as h from "./698524.e12b58b33f.js";
+import * as h from "./698524.ab39482137.js";
 e.C(h);
-import * as f from "./956483.2514992fd3.js";
+import * as f from "./956483.4dc58508d8.js";
 e.C(f);
-import * as m from "./87162.1f25d59c9c.js";
+import * as m from "./87162.6154a54863.js";
 e.C(m);
-import * as g from "./396705.3e09ec2928.js";
+import * as g from "./396705.cf1cfb54a0.js";
 e.C(g);
-import * as y from "./155568.b02a981797.js";
+import * as y from "./155568.831b2b3d34.js";
 e.C(y);
-import * as x from "./731863.9e2b15b813.js";
+import * as x from "./731863.6fc88890bf.js";
 e.C(x);
-import * as v from "./767086.6cceb40294.js";
+import * as v from "./767086.c88be6c073.js";
 e.C(v);
-import * as b from "./76629.0f65023578.js";
+import * as b from "./76629.30a094a9b3.js";
 e.C(b);
-import * as j from "./226913.c039047be5.js";
+import * as j from "./514085.037ce67b03.js";
 e.C(j);
-import * as S from "./392067.4a8d433756.js";
+import * as S from "./226913.a7e38eae43.js";
 e.C(S);
-var w = e(e.s = "eses"),
-    C = w.a,
-    A = w.b;
+import * as w from "./392067.eaabb74215.js";
+e.C(w);
+var C = e(e.s = "eses"),
+    A = C.a,
+    _ = C.b;
 export {
-    C as
-    default, A as meta
+    A as
+    default, _ as meta
 };

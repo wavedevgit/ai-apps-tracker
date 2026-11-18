@@ -2,30 +2,26 @@ export const __rspack_esm_ids = [487589];
 export const __webpack_modules__ = {
     zd4v: (function(e, t, i) {
         i.d(t, {
-            a: () => r,
-            b: () => c
+            a: () => g,
+            b: () => o
         });
         var n = i("rEML"),
             a = i("ABep"),
             l = i("QosV"),
-            s = i("Bbed"),
-            o = i("aBxd");
-        let g = (0, s.a)(async () => (await Promise.all([i.e(680612), i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(480171), i.e(999385), i.e(184549), i.e(553028), i.e(195563), i.e(535952), i.e(960859), i.e(735334), i.e(3130)]).then(i.bind(i, "CDzG"))).SpacesPersonalRoute),
-            c = () => [{
-                title: "ChatGPT Space"
-            }, {
-                property: "og:title",
-                content: "ChatGPT Space"
-            }];
-        var r = (0, n.hb)(function() {
-            let e, t = (0, l.c)(3),
+            s = i("aBxd");
+        let o = () => [{
+            title: "ChatGPT Space"
+        }, {
+            property: "og:title",
+            content: "ChatGPT Space"
+        }];
+        var g = (0, n.hb)(function() {
+            let e, t = (0, l.c)(2),
                 i = (0, n.fb)("space-page-layout"),
-                {
-                    pageId: s
-                } = (0, n.cb)();
-            return t[0] !== i?.spacePage || t[1] !== s ? (e = "personal" === s ? (0, a.jsx)(g, {}) : (0, a.jsx)(o.LazyBrowserSpacePage, {
-                spacePage: i?.spacePage ?? null
-            }), t[0] = i?.spacePage, t[1] = s, t[2] = e) : e = t[2], e
+                o = i?.spacePage ?? null;
+            return t[0] !== o ? (e = (0, a.jsx)(s.LazyBrowserSpacePage, {
+                spacePage: o
+            }), t[0] = o, t[1] = e) : e = t[1], e
         })
     }),
     BmwK: (function(e) {
@@ -448,7 +444,7 @@ export const __webpack_modules__ = {
         }
     }),
     bDc1: (function(e, t, i) {
-        var n = i("uWy0"),
+        var n = i("WTLH"),
             a = i("FIwD");
         i.d(t, {
             a: () => a.d,
@@ -470,11 +466,11 @@ export const __webpack_modules__ = {
             I = i("gWf7"),
             d = i("OH6Z"),
             j = i("FIwD"),
-            p = i("W3js"),
-            h = i("jVpT"),
-            f = i("dOJ8"),
-            u = i("xzYM"),
-            N = i("DctQ");
+            p = i("MBDE"),
+            h = i("Qbhq"),
+            f = i("urXC"),
+            u = i("Vc7o"),
+            N = i("f9K9");
         i.d(t, {}, {
             a: function(e, t, i) {
                 if (["row", "col", "box", "grid-item"].includes(e)) {
@@ -637,7 +633,7 @@ export const __webpack_modules__ = {
         var n = i("Bbed"),
             a = i("MhZT"),
             l = i("gne8");
-        let s = (0, n.a)(async () => (a.a.prefetch().catch(() => {}), (await Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(300588)]).then(i.bind(i, "H04d"))).BrowserSpacePage), l.b);
+        let s = (0, n.a)(async () => (a.a.prefetch().catch(() => {}), (await Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085), i.e(300588)]).then(i.bind(i, "H04d"))).BrowserSpacePage), l.b);
         i.d(t, {}, {
             LazyBrowserSpacePage: s,
             prefetchBrowserPageForCreation: async function() {
@@ -658,7 +654,7 @@ export const __webpack_modules__ = {
             C = i("JyrC"),
             I = i("SkNj"),
             d = i("VUkV"),
-            j = i("kGAC");
+            j = i("puTD");
 
         function p(e) {
             let t, i, s, o, g, c = (0, a.c)(15),
@@ -762,7 +758,7 @@ export const __webpack_modules__ = {
             C = i("kpIY"),
             I = i("Nwp9"),
             d = i("OHD8"),
-            j = i("tv8P"),
+            j = i("hlkZ"),
             p = i("Kw4a"),
             h = i("v5SL"),
             f = i("nndI");
@@ -939,85 +935,87 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.332c5da428.js";
-import * as t from "./418851.3878fbfa64.js";
+} from "./633146.468d071759.js";
+import * as t from "./418851.f3d2ce19b4.js";
 e.C(t);
 import * as i from "./109308.4b30101b7c.js";
 e.C(i);
-import * as n from "./399565.de450ac543.js";
+import * as n from "./399565.7c8a3f7e95.js";
 e.C(n);
 import * as a from "./257798.b061e3b37a.js";
 e.C(a);
-import * as l from "./447351.690fba1ae5.js";
+import * as l from "./447351.9446ee3aae.js";
 e.C(l);
-import * as s from "./617936.c6f9e1ebfb.js";
+import * as s from "./617936.a5a9458f41.js";
 e.C(s);
-import * as o from "./807489.2ba5c6d996.js";
+import * as o from "./807489.503e8e46b2.js";
 e.C(o);
-import * as g from "./337882.799b00b0f3.js";
+import * as g from "./337882.42cb1bc757.js";
 e.C(g);
-import * as c from "./955979.eaf8541a67.js";
+import * as c from "./955979.7655b0fa98.js";
 e.C(c);
-import * as r from "./646436.611d2d0d1b.js";
+import * as r from "./646436.ad0e600e92.js";
 e.C(r);
-import * as M from "./7078.691a92af09.js";
+import * as M from "./7078.20ffc77da3.js";
 e.C(M);
-import * as C from "./200429.336411f62e.js";
+import * as C from "./200429.b7f8e76f67.js";
 e.C(C);
-import * as I from "./698524.e12b58b33f.js";
+import * as I from "./698524.ab39482137.js";
 e.C(I);
-import * as d from "./956483.2514992fd3.js";
+import * as d from "./956483.4dc58508d8.js";
 e.C(d);
-import * as j from "./87162.1f25d59c9c.js";
+import * as j from "./87162.6154a54863.js";
 e.C(j);
-import * as p from "./396705.3e09ec2928.js";
+import * as p from "./396705.cf1cfb54a0.js";
 e.C(p);
-import * as h from "./155568.b02a981797.js";
+import * as h from "./155568.831b2b3d34.js";
 e.C(h);
-import * as f from "./731863.9e2b15b813.js";
+import * as f from "./731863.6fc88890bf.js";
 e.C(f);
-import * as u from "./767086.6cceb40294.js";
+import * as u from "./767086.c88be6c073.js";
 e.C(u);
-import * as N from "./76629.0f65023578.js";
+import * as N from "./76629.30a094a9b3.js";
 e.C(N);
-import * as x from "./226913.c039047be5.js";
+import * as x from "./514085.037ce67b03.js";
 e.C(x);
-import * as L from "./753405.4bffba797b.js";
+import * as L from "./226913.a7e38eae43.js";
 e.C(L);
-import * as A from "./321957.745ede45f0.js";
+import * as A from "./753405.4bffba797b.js";
 e.C(A);
-import * as y from "./585419.38ade943bd.js";
+import * as y from "./321957.745ede45f0.js";
 e.C(y);
-import * as m from "./843292.b508aacb4d.js";
+import * as m from "./585419.38ade943bd.js";
 e.C(m);
-import * as D from "./353230.bd7d884f9e.js";
+import * as D from "./843292.b508aacb4d.js";
 e.C(D);
-import * as w from "./882456.b048d73b2c.js";
+import * as w from "./353230.bd7d884f9e.js";
 e.C(w);
-import * as v from "./266281.18571673eb.js";
+import * as v from "./882456.b048d73b2c.js";
 e.C(v);
-import * as z from "./909395.7dc04db4e2.js";
+import * as z from "./212773.81ff3b684c.js";
 e.C(z);
-import * as T from "./529755.dc056ed6ca.js";
+import * as T from "./909395.7dc04db4e2.js";
 e.C(T);
-import * as S from "./212487.9cfe25039b.js";
+import * as S from "./529755.43c172d237.js";
 e.C(S);
-import * as Z from "./17983.965f306442.js";
+import * as Z from "./212487.9cfe25039b.js";
 e.C(Z);
-import * as b from "./704809.1a3949c6ab.js";
+import * as b from "./17983.da2004b73c.js";
 e.C(b);
-import * as O from "./920484.0f476298da.js";
+import * as O from "./704809.1a3949c6ab.js";
 e.C(O);
-import * as E from "./311330.e70f02982b.js";
+import * as E from "./920484.d35490ad06.js";
 e.C(E);
-import * as k from "./352477.92f77df258.js";
+import * as k from "./311330.7e2d5d8b83.js";
 e.C(k);
-import * as B from "./487589.8921848110.js";
+import * as B from "./352477.b2e0e32e94.js";
 e.C(B);
-var Y = e(e.s = "zd4v"),
-    U = Y.a,
-    F = Y.b;
+import * as Y from "./487589.6b350888a7.js";
+e.C(Y);
+var U = e(e.s = "zd4v"),
+    F = U.a,
+    G = U.b;
 export {
-    U as
-    default, F as meta
+    F as
+    default, G as meta
 };

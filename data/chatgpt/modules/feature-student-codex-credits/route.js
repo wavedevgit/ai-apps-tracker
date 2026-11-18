@@ -1,15 +1,15 @@
 export const __rspack_esm_ids = [573324];
 export const __webpack_modules__ = {
-    yhsv: (function(t, e, s) {
-        s.d(e, {
-            a: () => n,
-            b: () => p
+    yhsv: (function(e, t, s) {
+        s.d(t, {
+            a: () => c,
+            b: () => d
         });
         var o = s("rEML"),
             r = s("ABep"),
             a = s("QosV"),
             i = s("Wf1j");
-        let m = (0, s("Qgfj").f)({
+        let m = (0, (s("Qgfj")).f)({
             metaTitle: {
                 id: "students.codexOffer.meta.title",
                 defaultMessage: "Student offer for Codex | ChatGPT"
@@ -19,29 +19,29 @@ export const __webpack_modules__ = {
                 defaultMessage: "Verify your student status and redeem credits."
             }
         });
-        var n = (0, o.hb)(function() {
-            let t, e, s, n, p, c, d, f, l = (0, a.c)(18),
-                g = (0, i.a)();
-            l[0] !== g ? (t = g.formatMessage(m.metaTitle), l[0] = g, l[1] = t) : t = l[1];
-            let j = t;
-            l[2] !== g ? (e = g.formatMessage(m.metaDescription), l[2] = g, l[3] = e) : e = l[3];
-            let b = e;
-            return l[4] !== j ? (s = (0, r.jsx)("title", {
-                children: j
-            }), l[4] = j, l[5] = s) : s = l[5], l[6] !== b ? (n = (0, r.jsx)("meta", {
+        var c = (0, o.hb)(function() {
+            let e, t, s, c, d, n, p, f, j = (0, a.c)(18),
+                l = (0, i.a)();
+            j[0] !== l ? (e = l.formatMessage(m.metaTitle), j[0] = l, j[1] = e) : e = j[1];
+            let g = e;
+            j[2] !== l ? (t = l.formatMessage(m.metaDescription), j[2] = l, j[3] = t) : t = j[3];
+            let C = t;
+            return j[4] !== g ? (s = (0, r.jsx)("title", {
+                children: g
+            }), j[4] = g, j[5] = s) : s = j[5], j[6] !== C ? (c = (0, r.jsx)("meta", {
                 name: "description",
-                content: b
-            }), l[6] = b, l[7] = n) : n = l[7], l[8] !== j ? (p = (0, r.jsx)("meta", {
+                content: C
+            }), j[6] = C, j[7] = c) : c = j[7], j[8] !== g ? (d = (0, r.jsx)("meta", {
                 property: "og:title",
-                content: j
-            }), l[8] = j, l[9] = p) : p = l[9], l[10] !== b ? (c = (0, r.jsx)("meta", {
+                content: g
+            }), j[8] = g, j[9] = d) : d = j[9], j[10] !== C ? (n = (0, r.jsx)("meta", {
                 property: "og:description",
-                content: b
-            }), l[10] = b, l[11] = c) : c = l[11], l[12] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, r.jsx)(o.m, {}), l[12] = d) : d = l[12], l[13] !== s || l[14] !== n || l[15] !== p || l[16] !== c ? (f = (0, r.jsxs)(r.Fragment, {
-                children: [s, n, p, c, d]
-            }), l[13] = s, l[14] = n, l[15] = p, l[16] = c, l[17] = f) : f = l[17], f
+                content: C
+            }), j[10] = C, j[11] = n) : n = j[11], j[12] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsx)(o.m, {}), j[12] = p) : p = j[12], j[13] !== s || j[14] !== c || j[15] !== d || j[16] !== n ? (f = (0, r.jsxs)(r.Fragment, {
+                children: [s, c, d, n, p]
+            }), j[13] = s, j[14] = c, j[15] = d, j[16] = n, j[17] = f) : f = j[17], f
         });
-        let p = () => [{
+        let d = () => [{
             property: "og:site_name",
             content: "ChatGPT"
         }, {
@@ -69,56 +69,58 @@ export const __webpack_modules__ = {
     })
 };
 import {
-    __webpack_require__ as t
-} from "./633146.332c5da428.js";
-import * as e from "./418851.3878fbfa64.js";
-t.C(e);
+    __webpack_require__ as e
+} from "./633146.468d071759.js";
+import * as t from "./418851.f3d2ce19b4.js";
+e.C(t);
 import * as s from "./109308.4b30101b7c.js";
-t.C(s);
-import * as o from "./399565.de450ac543.js";
-t.C(o);
+e.C(s);
+import * as o from "./399565.7c8a3f7e95.js";
+e.C(o);
 import * as r from "./257798.b061e3b37a.js";
-t.C(r);
-import * as a from "./447351.690fba1ae5.js";
-t.C(a);
-import * as i from "./617936.c6f9e1ebfb.js";
-t.C(i);
-import * as m from "./807489.2ba5c6d996.js";
-t.C(m);
-import * as n from "./337882.799b00b0f3.js";
-t.C(n);
-import * as p from "./955979.eaf8541a67.js";
-t.C(p);
-import * as c from "./646436.611d2d0d1b.js";
-t.C(c);
-import * as d from "./7078.691a92af09.js";
-t.C(d);
-import * as f from "./200429.336411f62e.js";
-t.C(f);
-import * as l from "./698524.e12b58b33f.js";
-t.C(l);
-import * as g from "./956483.2514992fd3.js";
-t.C(g);
-import * as j from "./87162.1f25d59c9c.js";
-t.C(j);
-import * as b from "./396705.3e09ec2928.js";
-t.C(b);
-import * as C from "./155568.b02a981797.js";
-t.C(C);
-import * as u from "./731863.9e2b15b813.js";
-t.C(u);
-import * as _ from "./767086.6cceb40294.js";
-t.C(_);
-import * as h from "./76629.0f65023578.js";
-t.C(h);
-import * as x from "./226913.c039047be5.js";
-t.C(x);
-import * as y from "./573324.583fdc8bb1.js";
-t.C(y);
-var w = t(t.s = "yhsv"),
-    v = w.a,
-    k = w.b;
+e.C(r);
+import * as a from "./447351.9446ee3aae.js";
+e.C(a);
+import * as i from "./617936.a5a9458f41.js";
+e.C(i);
+import * as m from "./807489.503e8e46b2.js";
+e.C(m);
+import * as c from "./337882.42cb1bc757.js";
+e.C(c);
+import * as d from "./955979.7655b0fa98.js";
+e.C(d);
+import * as n from "./646436.ad0e600e92.js";
+e.C(n);
+import * as p from "./7078.20ffc77da3.js";
+e.C(p);
+import * as f from "./200429.b7f8e76f67.js";
+e.C(f);
+import * as j from "./698524.ab39482137.js";
+e.C(j);
+import * as l from "./956483.4dc58508d8.js";
+e.C(l);
+import * as g from "./87162.6154a54863.js";
+e.C(g);
+import * as C from "./396705.cf1cfb54a0.js";
+e.C(C);
+import * as b from "./155568.831b2b3d34.js";
+e.C(b);
+import * as u from "./731863.6fc88890bf.js";
+e.C(u);
+import * as _ from "./767086.c88be6c073.js";
+e.C(_);
+import * as h from "./76629.30a094a9b3.js";
+e.C(h);
+import * as x from "./514085.037ce67b03.js";
+e.C(x);
+import * as y from "./226913.a7e38eae43.js";
+e.C(y);
+import * as w from "./573324.b060258cc1.js";
+e.C(w);
+var v = e(e.s = "yhsv"),
+    k = v.a,
+    M = v.b;
 export {
-    v as
-    default, k as meta
+    k as
+    default, M as meta
 };

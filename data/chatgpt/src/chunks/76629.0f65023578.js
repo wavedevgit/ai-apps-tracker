@@ -28751,6 +28751,7 @@ ${i.slice(i.indexOf("\n")+1)}`
                                 return;
                             case "open-in-browser":
                                 return void
+
                                 function(e, t, n) {
                                     let r = (0, b.b)(e) ?? e;
                                     if ((0, i.si)(r)) return window.location.assign(r);
