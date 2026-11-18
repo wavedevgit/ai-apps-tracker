@@ -11,17 +11,17 @@ export const __webpack_modules__ = {
             o = a("zd8w"),
             l = a("xvAb"),
             r = a("L10Y");
-        l.b, (0, s.ib)(function() {
+        l.b, (0, s.hb)(function() {
             let e, t = (0, n.c)(1);
             return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, i.jsx)(o.Suspense, {
                 fallback: (0, i.jsx)(l.b, {}),
                 children: (0, i.jsx)(s.m, {})
             }), t[0] = e) : e = t[0], e
-        }), (0, s.kb)(function() {
+        }), (0, s.jb)(function() {
             let e, t = (0, n.c)(1);
             return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, i.jsx)(l.b, {}), t[0] = e) : e = t[0], e
         });
-        let c = (0, s.ib)(r.a),
+        let c = (0, s.hb)(r.a),
             d = {
                 loadingPage: (0, i.jsx)(l.b, {})
             }
@@ -41,7 +41,7 @@ export const __webpack_modules__ = {
             r = a("wvhd"),
             c = a("xvAb"),
             d = a("vhdp");
-        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
+        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
             fallback: (0, s.jsx)(c.b, {}),
             errorFallback: () => (0, s.jsx)(r.a, {
                 result: void 0,
@@ -54,22 +54,22 @@ export const __webpack_modules__ = {
                 let e, t, a, l, r = (0, i.c)(8),
                     {
                         search: f
-                    } = (0, n.Y)();
+                    } = (0, n.X)();
                 if (r[0] !== f) {
                     let a = new URLSearchParams(f);
                     e = a.getAll("callback_path"), t = a.getAll("entry"), r[0] = f, r[1] = e, r[2] = t
                 } else e = r[1], t = r[2];
-                let u = t,
-                    h = 0 === u.length ? "claim" : u[0];
-                return r[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, s.jsx)(c.b, {}), r[3] = a) : a = r[3], r[4] !== e || r[5] !== u.length || r[6] !== h ? (l = (0, s.jsx)(o.a, {
+                let h = t,
+                    u = 0 === h.length ? "claim" : h[0];
+                return r[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, s.jsx)(c.b, {}), r[3] = a) : a = r[3], r[4] !== e || r[5] !== h.length || r[6] !== u ? (l = (0, s.jsx)(o.a, {
                     fallback: a,
-                    children: u.length > 1 || "claim" !== h && "verify" !== h ? (0, s.jsx)(d.a, {
+                    children: h.length > 1 || "claim" !== u && "verify" !== u ? (0, s.jsx)(d.a, {
                         children: (0, s.jsx)(d.c, {})
                     }) : (0, s.jsx)(m, {
                         callbackUrl: 1 === e.length ? e[0] ?? "" : "",
-                        entry: h
+                        entry: u
                     })
-                }), r[4] = e, r[5] = u.length, r[6] = h, r[7] = l) : l = r[7], l
+                }), r[4] = e, r[5] = h.length, r[6] = u, r[7] = l) : l = r[7], l
             }
         })
     }),
@@ -85,7 +85,7 @@ export const __webpack_modules__ = {
             m = a("vhdp"),
             f = a("XqhT");
 
-        function u(e) {
+        function h(e) {
             let t, a, n = (0, i.c)(7),
                 {
                     entry: l
@@ -93,7 +93,7 @@ export const __webpack_modules__ = {
                 {
                     pathname: r,
                     search: c
-                } = (0, o.Y)();
+                } = (0, o.X)();
             if (n[0] !== r || n[1] !== c) {
                 let e = new URLSearchParams(c);
                 if ("/auth/students" === r) {
@@ -107,27 +107,27 @@ export const __webpack_modules__ = {
                 }
                 t = e.getAll("partner_id"), n[0] = r, n[1] = c, n[2] = t
             } else t = n[2];
-            let u = t;
-            return n[4] !== l || n[5] !== u ? (a = (0, s.jsx)(m.a, {
+            let h = t;
+            return n[4] !== l || n[5] !== h ? (a = (0, s.jsx)(m.a, {
                 children: "verify" === l ? (0, s.jsx)(f.a, {
                     accountEmail: null,
-                    verificationHelpPath: `/students/2026${1===u.length&&"handshake"===u[0]?"?partner_id=handshake":""}#trigger_students-2026-faq-verification`
+                    verificationHelpPath: `/students/2026${1===h.length&&"handshake"===h[0]?"?partner_id=handshake":""}#trigger_students-2026-faq-verification`
                 }) : (0, s.jsx)(d.a, {
                     signingIn: !0
                 })
-            }), n[4] = l, n[5] = u, n[6] = a) : a = n[6], a
+            }), n[4] = l, n[5] = h, n[6] = a) : a = n[6], a
         }
 
-        function h() {
+        function u() {
             let e, t = (0, i.c)(3),
                 {
                     pathname: a,
                     search: n
-                } = (0, o.Y)(),
+                } = (0, o.X)(),
                 r = new URLSearchParams(n).getAll("entry");
             if ("logged_out" === (0, l.getClientBootstrap)().authStatus) {
                 let e, i = "/students/verify" === a.replace(/\/$/, "") || "/auth/students" === a && 1 === r.length && "verify" === r[0] ? "verify" : "claim";
-                return t[0] !== i ? (e = (0, s.jsx)(u, {
+                return t[0] !== i ? (e = (0, s.jsx)(h, {
                     entry: i
                 }), t[0] = i, t[1] = e) : e = t[1], e
             }
@@ -136,7 +136,7 @@ export const __webpack_modules__ = {
             }), t[2] = e) : e = t[2], e
         }
         a.d(t, {}, {
-            a: u,
+            a: h,
             b: function() {
                 let e, t = (0, i.c)(1);
                 if (t[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -147,7 +147,7 @@ export const __webpack_modules__ = {
                         locale: a,
                         defaultLocale: "en-US",
                         messages: (0, c.d)("72216192")?.value.enable_i18n === !0 ? (0, r.c)(a)?.messages : void 0,
-                        children: (0, s.jsx)(h, {})
+                        children: (0, s.jsx)(u, {})
                     }), t[0] = e
                 } else e = t[0];
                 return e
@@ -197,8 +197,8 @@ export const __webpack_modules__ = {
         function l(e) {
             let t, a, o, l, r, c, d, m, f = (0, i.c)(24),
                 {
-                    title: u,
-                    description: h,
+                    title: h,
+                    description: u,
                     illustration: x,
                     details: g,
                     variant: p,
@@ -221,17 +221,17 @@ export const __webpack_modules__ = {
                     "mb-4 sm:mb-8": "verified" !== b && "activated" !== b && "loading" !== b
                 }),
                 children: x
-            }) : null, f[3] = x, f[4] = b, f[5] = a) : a = f[5], f[6] !== u ? (o = (0, s.jsx)("h1", {
+            }) : null, f[3] = x, f[4] = b, f[5] = a) : a = f[5], f[6] !== h ? (o = (0, s.jsx)("h1", {
                 className: "text-3xl font-semibold",
                 "aria-live": "polite",
                 "aria-atomic": "true",
-                children: u
-            }), f[6] = u, f[7] = o) : o = f[7];
-            let _ = "activated" === b ? "mt-4 font-medium text-tertiary" : "mt-2 text-secondary";
-            f[8] !== _ ? (l = (0, n.b)("text-base", _), f[8] = _, f[9] = l) : l = f[9], f[10] !== h || f[11] !== l ? (r = (0, s.jsx)("div", {
-                className: l,
                 children: h
-            }), f[10] = h, f[11] = l, f[12] = r) : r = f[12], f[13] !== g ? (c = null != g ? (0, s.jsx)("div", {
+            }), f[6] = h, f[7] = o) : o = f[7];
+            let _ = "activated" === b ? "mt-4 font-medium text-tertiary" : "mt-2 text-secondary";
+            f[8] !== _ ? (l = (0, n.b)("text-base", _), f[8] = _, f[9] = l) : l = f[9], f[10] !== u || f[11] !== l ? (r = (0, s.jsx)("div", {
+                className: l,
+                children: u
+            }), f[10] = u, f[11] = l, f[12] = r) : r = f[12], f[13] !== g ? (c = null != g ? (0, s.jsx)("div", {
                 className: "mt-4 flex max-w-full flex-col items-center empty:hidden",
                 children: g
             }) : null, f[13] = g, f[14] = c) : c = f[14];
@@ -290,7 +290,7 @@ export const __webpack_modules__ = {
             o = a("oyxz");
         a.d(t, {}, {
             a: function(e) {
-                let t, a, l, r, c, d, m, f, u, h, x, g, p, C = (0, i.c)(26),
+                let t, a, l, r, c, d, m, f, h, u, x, g, p, C = (0, i.c)(26),
                     {
                         accountEmail: b,
                         verificationHelpPath: v,
@@ -346,13 +346,13 @@ export const __webpack_modules__ = {
                             children: m
                         })]
                     })]
-                }), C[9] = v, C[10] = f) : f = C[10], C[11] !== a || C[12] !== f ? (u = (0, s.jsxs)("section", {
+                }), C[9] = v, C[10] = f) : f = C[10], C[11] !== a || C[12] !== f ? (h = (0, s.jsxs)("section", {
                     className: "flex min-w-0 flex-col lg:flex-5",
                     children: [a, f]
-                }), C[11] = a, C[12] = f, C[13] = u) : u = C[13], C[14] !== j ? (h = j.formatMessage({
+                }), C[11] = a, C[12] = f, C[13] = h) : h = C[13], C[14] !== j ? (u = j.formatMessage({
                     id: "chatgpt.students.back_to_school_2026.embedded_verification.form.label",
                     defaultMessage: "Student verification form"
-                }), C[14] = j, C[15] = h) : h = C[15], C[16] !== _ || C[17] !== j ? (x = _ ?? (0, s.jsx)("div", {
+                }), C[14] = j, C[15] = u) : u = C[15], C[16] !== _ || C[17] !== j ? (x = _ ?? (0, s.jsx)("div", {
                     className: "min-h-24 w-full",
                     role: "status",
                     "aria-busy": "true",
@@ -360,14 +360,14 @@ export const __webpack_modules__ = {
                         id: "chatgpt.students.back_to_school_2026.embedded_verification.loading",
                         defaultMessage: "Loading student verification"
                     })
-                }), C[16] = _, C[17] = j, C[18] = x) : x = C[18], C[19] !== b || C[20] !== h || C[21] !== x ? (g = (0, s.jsxs)("section", {
+                }), C[16] = _, C[17] = j, C[18] = x) : x = C[18], C[19] !== b || C[20] !== u || C[21] !== x ? (g = (0, s.jsxs)("section", {
                     className: "min-w-0 px-8 pt-8 lg:flex-4 lg:px-0 lg:pt-0",
-                    "aria-label": h,
+                    "aria-label": u,
                     children: [b, x]
-                }), C[19] = b, C[20] = h, C[21] = x, C[22] = g) : g = C[22], C[23] !== g || C[24] !== u ? (p = (0, s.jsxs)("div", {
+                }), C[19] = b, C[20] = u, C[21] = x, C[22] = g) : g = C[22], C[23] !== g || C[24] !== h ? (p = (0, s.jsxs)("div", {
                     className: "mx-auto flex w-full max-w-7xl flex-col pb-16 lg:flex-row lg:gap-20 lg:px-10 lg:pt-20",
-                    children: [u, g]
-                }), C[23] = g, C[24] = u, C[25] = p) : p = C[25], p
+                    children: [h, g]
+                }), C[23] = g, C[24] = h, C[25] = p) : p = C[25], p
             }
         })
     }),
@@ -381,17 +381,17 @@ export const __webpack_modules__ = {
             a: function(e) {
                 let t, a, r, c, d, m, f = (0, i.c)(21),
                     {
-                        result: u,
-                        pending: h,
+                        result: h,
+                        pending: u,
                         onRetry: x,
                         validateBeforeNavigate: g,
                         pendingPage: p
                     } = e;
-                f[0] !== u || f[1] !== g ? (t = function(e) {
-                    e && u?.ok && g?.() !== !1 && window.location.replace(u.url)
-                }, f[0] = u, f[1] = g, f[2] = t) : t = f[2];
+                f[0] !== h || f[1] !== g ? (t = function(e) {
+                    e && h?.ok && g?.() !== !1 && window.location.replace(h.url)
+                }, f[0] = h, f[1] = g, f[2] = t) : t = f[2];
                 let C = t;
-                if (null != p && (h || u?.ok)) {
+                if (null != p && (u || h?.ok)) {
                     let e;
                     return f[3] !== C || f[4] !== p ? (e = (0, s.jsx)("div", {
                         className: "contents",
@@ -402,22 +402,22 @@ export const __webpack_modules__ = {
                 return f[6] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, s.jsx)(n.a, {
                     id: "browser.auth.handoff.title",
                     defaultMessage: "Continue to sign in"
-                }), f[6] = a) : a = f[6], f[7] !== C || f[8] !== u ? (r = u?.ok ? (0, s.jsx)("a", {
+                }), f[6] = a) : a = f[6], f[7] !== C || f[8] !== h ? (r = h?.ok ? (0, s.jsx)("a", {
                     ref: C,
                     className: "text-center",
-                    href: u.url,
+                    href: h.url,
                     children: (0, s.jsx)(n.a, {
                         id: "browser.auth.handoff.continue",
                         defaultMessage: "Continue"
                     })
-                }) : null, f[7] = C, f[8] = u, f[9] = r) : r = f[9], f[10] !== h || f[11] !== u?.ok ? (c = !u?.ok && h ? (0, s.jsx)("p", {
+                }) : null, f[7] = C, f[8] = h, f[9] = r) : r = f[9], f[10] !== u || f[11] !== h?.ok ? (c = !h?.ok && u ? (0, s.jsx)("p", {
                     className: "text-center",
                     role: "status",
                     children: (0, s.jsx)(n.a, {
                         id: "browser.auth.login.pending",
                         defaultMessage: "Connecting…"
                     })
-                }) : null, f[10] = h, f[11] = u?.ok, f[12] = c) : c = f[12], f[13] !== x || f[14] !== h || f[15] !== u?.ok ? (d = u?.ok || h ? null : (0, s.jsxs)(s.Fragment, {
+                }) : null, f[10] = u, f[11] = h?.ok, f[12] = c) : c = f[12], f[13] !== x || f[14] !== u || f[15] !== h?.ok ? (d = h?.ok || u ? null : (0, s.jsxs)(s.Fragment, {
                     children: [(0, s.jsx)("p", {
                         className: "text-center text-sm text-danger",
                         role: "alert",
@@ -435,7 +435,7 @@ export const __webpack_modules__ = {
                             defaultMessage: "Try again"
                         })
                     })]
-                }), f[13] = x, f[14] = h, f[15] = u?.ok, f[16] = d) : d = f[16], f[17] !== r || f[18] !== c || f[19] !== d ? (m = (0, s.jsxs)(l.a, {
+                }), f[13] = x, f[14] = u, f[15] = h?.ok, f[16] = d) : d = f[16], f[17] !== r || f[18] !== c || f[19] !== d ? (m = (0, s.jsxs)(l.a, {
                     contentAlignment: "start",
                     title: a,
                     children: [r, c, d]
@@ -446,61 +446,57 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.be60f96fcf.js";
+} from "./633146.332c5da428.js";
 import * as t from "./680612.3c8d72f22d.js";
 e.C(t);
-import * as a from "./418851.d43ef6e51c.js";
+import * as a from "./418851.3878fbfa64.js";
 e.C(a);
-import * as s from "./109308.2094c16514.js";
+import * as s from "./109308.4b30101b7c.js";
 e.C(s);
-import * as i from "./399565.78e1c0aa0d.js";
+import * as i from "./399565.de450ac543.js";
 e.C(i);
-import * as n from "./257798.7e03f1e3e2.js";
+import * as n from "./257798.b061e3b37a.js";
 e.C(n);
-import * as o from "./447351.b188109392.js";
+import * as o from "./447351.690fba1ae5.js";
 e.C(o);
-import * as l from "./617936.fb76eb2727.js";
+import * as l from "./617936.c6f9e1ebfb.js";
 e.C(l);
-import * as r from "./807489.9c1a8ccf71.js";
+import * as r from "./807489.2ba5c6d996.js";
 e.C(r);
-import * as c from "./337882.5c43a2c90b.js";
+import * as c from "./337882.799b00b0f3.js";
 e.C(c);
-import * as d from "./955979.9ae2962bd4.js";
+import * as d from "./955979.eaf8541a67.js";
 e.C(d);
-import * as m from "./646436.b525bfd8f0.js";
+import * as m from "./646436.611d2d0d1b.js";
 e.C(m);
-import * as f from "./7078.a82238bfec.js";
+import * as f from "./7078.691a92af09.js";
 e.C(f);
-import * as u from "./200429.3bcaa139a4.js";
-e.C(u);
-import * as h from "./698524.3de98ac6af.js";
+import * as h from "./200429.336411f62e.js";
 e.C(h);
-import * as x from "./956483.227ec74d56.js";
+import * as u from "./698524.e12b58b33f.js";
+e.C(u);
+import * as x from "./956483.2514992fd3.js";
 e.C(x);
-import * as g from "./87162.36edabe123.js";
+import * as g from "./87162.1f25d59c9c.js";
 e.C(g);
-import * as p from "./396705.12275a5eb6.js";
+import * as p from "./396705.3e09ec2928.js";
 e.C(p);
-import * as C from "./155568.b3f888f917.js";
+import * as C from "./155568.b02a981797.js";
 e.C(C);
-import * as b from "./731863.367082aec0.js";
+import * as b from "./731863.9e2b15b813.js";
 e.C(b);
-import * as v from "./767086.1a336b6bc5.js";
+import * as v from "./767086.6cceb40294.js";
 e.C(v);
-import * as _ from "./76629.93a69b821a.js";
+import * as _ from "./76629.0f65023578.js";
 e.C(_);
-import * as j from "./514085.fe0c9f50e5.js";
+import * as j from "./226913.c039047be5.js";
 e.C(j);
-import * as y from "./204542.f3712a1345.js";
+import * as y from "./24435.beaff0c7b3.js";
 e.C(y);
-import * as w from "./226913.dd4de34d8f.js";
-e.C(w);
-import * as k from "./24435.2f00f0bbba.js";
-e.C(k);
-var L = e(e.s = "vXZN"),
-    M = L.a,
-    S = L.b;
+var w = e(e.s = "vXZN"),
+    k = w.a,
+    L = w.b;
 export {
-    M as
-    default, S as handle
+    k as
+    default, L as handle
 };

@@ -2,17 +2,17 @@ export const __rspack_esm_ids = [96356];
 export const __webpack_modules__ = {
     SYRF: (function(e, a, C) {
         C.d(a, {
-            a: () => c.a,
+            a: () => l.a,
             b: () => m,
             c: () => i,
-            d: () => f
+            d: () => c
         });
         var r = C("rEML"),
             t = C("ABep"),
             s = C("QosV"),
             o = C("zd8w"),
             n = C("NaUD"),
-            i = (0, r.ib)(function() {
+            i = (0, r.hb)(function() {
                 let e, a = (0, s.c)(1);
                 return a[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(o.Suspense, {
                     fallback: (0, t.jsx)(n.a, {}),
@@ -31,8 +31,8 @@ export const __webpack_modules__ = {
             return await t(a), null
         }
         m.hydrate = !0;
-        var c = C("MBaW");
-        let f = () => [{
+        var l = C("MBaW");
+        let c = () => [{
             title: "ChatGPT for veterans | ChatGPT"
         }]
     }),
@@ -50,28 +50,28 @@ export const __webpack_modules__ = {
             n = C("Bbed"),
             i = C("NaUD"),
             m = C("qYd7");
-        let c = (0, n.a)(async () => (await Promise.all([C.e(418851), C.e(109308), C.e(399565), C.e(257798), C.e(447351), C.e(617936), C.e(807489), C.e(337882), C.e(955979), C.e(646436), C.e(7078), C.e(200429), C.e(698524), C.e(956483), C.e(87162), C.e(396705), C.e(155568), C.e(731863), C.e(767086), C.e(76629), C.e(514085), C.e(204542), C.e(226913), C.e(422034)]).then(C.bind(C, "ReW2"))).VeteransPromotionSignIn, {
+        let l = (0, n.a)(async () => (await Promise.all([C.e(418851), C.e(109308), C.e(399565), C.e(257798), C.e(447351), C.e(617936), C.e(807489), C.e(337882), C.e(955979), C.e(646436), C.e(7078), C.e(200429), C.e(698524), C.e(956483), C.e(87162), C.e(396705), C.e(155568), C.e(731863), C.e(767086), C.e(76629), C.e(226913), C.e(422034)]).then(C.bind(C, "ReW2"))).VeteransPromotionSignIn, {
             fallback: (0, r.jsx)(i.a, {})
         });
         C.d(a, {}, {
             a: function() {
                 let e, a, C, n = (0, t.c)(5),
                     {
-                        search: f
-                    } = (0, s.Y)();
-                if (n[0] !== f) {
-                    let a = new URLSearchParams(f).getAll("callback_path"),
+                        search: c
+                    } = (0, s.X)();
+                if (n[0] !== c) {
+                    let a = new URLSearchParams(c).getAll("callback_path"),
                         C = 1 === a.length ? a[0] ?? "" : "",
                         r = new URLSearchParams(C.split("?")[1]?.split("#")[0]);
-                    e = (0, m.a)(r), n[0] = f, n[1] = e
+                    e = (0, m.a)(r), n[0] = c, n[1] = e
                 } else e = n[1];
-                let l = e;
-                return n[2] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(i.a, {}), n[2] = a) : a = n[2], n[3] !== l ? (C = (0, r.jsx)(o.a, {
+                let f = e;
+                return n[2] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(i.a, {}), n[2] = a) : a = n[2], n[3] !== f ? (C = (0, r.jsx)(o.a, {
                     fallback: a,
-                    children: (0, r.jsx)(c, {
-                        callbackPath: l
+                    children: (0, r.jsx)(l, {
+                        callbackPath: f
                     })
-                }), n[3] = l, n[4] = C) : C = n[4], C
+                }), n[3] = f, n[4] = C) : C = n[4], C
             }
         })
     }),
@@ -111,61 +111,57 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.be60f96fcf.js";
-import * as a from "./418851.d43ef6e51c.js";
+} from "./633146.332c5da428.js";
+import * as a from "./418851.3878fbfa64.js";
 e.C(a);
-import * as C from "./109308.2094c16514.js";
+import * as C from "./109308.4b30101b7c.js";
 e.C(C);
-import * as r from "./399565.78e1c0aa0d.js";
+import * as r from "./399565.de450ac543.js";
 e.C(r);
-import * as t from "./257798.7e03f1e3e2.js";
+import * as t from "./257798.b061e3b37a.js";
 e.C(t);
-import * as s from "./447351.b188109392.js";
+import * as s from "./447351.690fba1ae5.js";
 e.C(s);
-import * as o from "./617936.fb76eb2727.js";
+import * as o from "./617936.c6f9e1ebfb.js";
 e.C(o);
-import * as n from "./807489.9c1a8ccf71.js";
+import * as n from "./807489.2ba5c6d996.js";
 e.C(n);
-import * as i from "./337882.5c43a2c90b.js";
+import * as i from "./337882.799b00b0f3.js";
 e.C(i);
-import * as m from "./955979.9ae2962bd4.js";
+import * as m from "./955979.eaf8541a67.js";
 e.C(m);
-import * as c from "./646436.b525bfd8f0.js";
-e.C(c);
-import * as f from "./7078.a82238bfec.js";
-e.C(f);
-import * as l from "./200429.3bcaa139a4.js";
+import * as l from "./646436.611d2d0d1b.js";
 e.C(l);
-import * as d from "./698524.3de98ac6af.js";
-e.C(d);
-import * as p from "./956483.227ec74d56.js";
+import * as c from "./7078.691a92af09.js";
+e.C(c);
+import * as f from "./200429.336411f62e.js";
+e.C(f);
+import * as p from "./698524.e12b58b33f.js";
 e.C(p);
-import * as L from "./87162.36edabe123.js";
+import * as d from "./956483.2514992fd3.js";
+e.C(d);
+import * as L from "./87162.1f25d59c9c.js";
 e.C(L);
-import * as _ from "./396705.12275a5eb6.js";
-e.C(_);
-import * as b from "./155568.b3f888f917.js";
+import * as b from "./396705.3e09ec2928.js";
 e.C(b);
-import * as j from "./731863.367082aec0.js";
-e.C(j);
-import * as h from "./767086.1a336b6bc5.js";
+import * as _ from "./155568.b02a981797.js";
+e.C(_);
+import * as h from "./731863.9e2b15b813.js";
 e.C(h);
-import * as V from "./76629.93a69b821a.js";
+import * as V from "./767086.6cceb40294.js";
 e.C(V);
-import * as u from "./514085.fe0c9f50e5.js";
+import * as j from "./76629.0f65023578.js";
+e.C(j);
+import * as u from "./226913.c039047be5.js";
 e.C(u);
-import * as w from "./204542.f3712a1345.js";
+import * as w from "./96356.f5b4a6c9a5.js";
 e.C(w);
-import * as x from "./226913.dd4de34d8f.js";
-e.C(x);
-import * as M from "./96356.d793e4e0b3.js";
-e.C(M);
-var g = e(e.s = "SYRF"),
-    v = g.a,
-    Z = g.b,
-    P = g.c,
-    k = g.d;
+var x = e(e.s = "SYRF"),
+    M = x.a,
+    g = x.b,
+    v = x.c,
+    Z = x.d;
 export {
-    v as VeteransPromotionAuthRoute, Z as clientLoader, P as
-    default, k as meta
+    M as VeteransPromotionAuthRoute, g as clientLoader, v as
+    default, Z as meta
 };

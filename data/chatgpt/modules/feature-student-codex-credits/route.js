@@ -1,8 +1,8 @@
 export const __rspack_esm_ids = [573324];
 export const __webpack_modules__ = {
-    yhsv: (function(e, t, s) {
-        s.d(t, {
-            a: () => d,
+    yhsv: (function(t, e, s) {
+        s.d(e, {
+            a: () => n,
             b: () => p
         });
         var o = s("rEML"),
@@ -19,27 +19,27 @@ export const __webpack_modules__ = {
                 defaultMessage: "Verify your student status and redeem credits."
             }
         });
-        var d = (0, o.ib)(function() {
-            let e, t, s, d, p, c, f, n, j = (0, a.c)(18),
-                l = (0, i.a)();
-            j[0] !== l ? (e = l.formatMessage(m.metaTitle), j[0] = l, j[1] = e) : e = j[1];
-            let C = e;
-            j[2] !== l ? (t = l.formatMessage(m.metaDescription), j[2] = l, j[3] = t) : t = j[3];
-            let g = t;
-            return j[4] !== C ? (s = (0, r.jsx)("title", {
-                children: C
-            }), j[4] = C, j[5] = s) : s = j[5], j[6] !== g ? (d = (0, r.jsx)("meta", {
+        var n = (0, o.hb)(function() {
+            let t, e, s, n, p, c, d, f, l = (0, a.c)(18),
+                g = (0, i.a)();
+            l[0] !== g ? (t = g.formatMessage(m.metaTitle), l[0] = g, l[1] = t) : t = l[1];
+            let j = t;
+            l[2] !== g ? (e = g.formatMessage(m.metaDescription), l[2] = g, l[3] = e) : e = l[3];
+            let b = e;
+            return l[4] !== j ? (s = (0, r.jsx)("title", {
+                children: j
+            }), l[4] = j, l[5] = s) : s = l[5], l[6] !== b ? (n = (0, r.jsx)("meta", {
                 name: "description",
-                content: g
-            }), j[6] = g, j[7] = d) : d = j[7], j[8] !== C ? (p = (0, r.jsx)("meta", {
+                content: b
+            }), l[6] = b, l[7] = n) : n = l[7], l[8] !== j ? (p = (0, r.jsx)("meta", {
                 property: "og:title",
-                content: C
-            }), j[8] = C, j[9] = p) : p = j[9], j[10] !== g ? (c = (0, r.jsx)("meta", {
+                content: j
+            }), l[8] = j, l[9] = p) : p = l[9], l[10] !== b ? (c = (0, r.jsx)("meta", {
                 property: "og:description",
-                content: g
-            }), j[10] = g, j[11] = c) : c = j[11], j[12] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsx)(o.m, {}), j[12] = f) : f = j[12], j[13] !== s || j[14] !== d || j[15] !== p || j[16] !== c ? (n = (0, r.jsxs)(r.Fragment, {
-                children: [s, d, p, c, f]
-            }), j[13] = s, j[14] = d, j[15] = p, j[16] = c, j[17] = n) : n = j[17], n
+                content: b
+            }), l[10] = b, l[11] = c) : c = l[11], l[12] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, r.jsx)(o.m, {}), l[12] = d) : d = l[12], l[13] !== s || l[14] !== n || l[15] !== p || l[16] !== c ? (f = (0, r.jsxs)(r.Fragment, {
+                children: [s, n, p, c, d]
+            }), l[13] = s, l[14] = n, l[15] = p, l[16] = c, l[17] = f) : f = l[17], f
         });
         let p = () => [{
             property: "og:site_name",
@@ -69,60 +69,56 @@ export const __webpack_modules__ = {
     })
 };
 import {
-    __webpack_require__ as e
-} from "./633146.be60f96fcf.js";
-import * as t from "./418851.d43ef6e51c.js";
-e.C(t);
-import * as s from "./109308.2094c16514.js";
-e.C(s);
-import * as o from "./399565.78e1c0aa0d.js";
-e.C(o);
-import * as r from "./257798.7e03f1e3e2.js";
-e.C(r);
-import * as a from "./447351.b188109392.js";
-e.C(a);
-import * as i from "./617936.fb76eb2727.js";
-e.C(i);
-import * as m from "./807489.9c1a8ccf71.js";
-e.C(m);
-import * as d from "./337882.5c43a2c90b.js";
-e.C(d);
-import * as p from "./955979.9ae2962bd4.js";
-e.C(p);
-import * as c from "./646436.b525bfd8f0.js";
-e.C(c);
-import * as f from "./7078.a82238bfec.js";
-e.C(f);
-import * as n from "./200429.3bcaa139a4.js";
-e.C(n);
-import * as j from "./698524.3de98ac6af.js";
-e.C(j);
-import * as l from "./956483.227ec74d56.js";
-e.C(l);
-import * as C from "./87162.36edabe123.js";
-e.C(C);
-import * as g from "./396705.12275a5eb6.js";
-e.C(g);
-import * as u from "./155568.b3f888f917.js";
-e.C(u);
-import * as b from "./731863.367082aec0.js";
-e.C(b);
-import * as _ from "./767086.1a336b6bc5.js";
-e.C(_);
-import * as h from "./76629.93a69b821a.js";
-e.C(h);
-import * as x from "./514085.fe0c9f50e5.js";
-e.C(x);
-import * as y from "./204542.f3712a1345.js";
-e.C(y);
-import * as w from "./226913.dd4de34d8f.js";
-e.C(w);
-import * as v from "./573324.7f5c8eb7e2.js";
-e.C(v);
-var k = e(e.s = "yhsv"),
-    M = k.a,
-    P = k.b;
+    __webpack_require__ as t
+} from "./633146.332c5da428.js";
+import * as e from "./418851.3878fbfa64.js";
+t.C(e);
+import * as s from "./109308.4b30101b7c.js";
+t.C(s);
+import * as o from "./399565.de450ac543.js";
+t.C(o);
+import * as r from "./257798.b061e3b37a.js";
+t.C(r);
+import * as a from "./447351.690fba1ae5.js";
+t.C(a);
+import * as i from "./617936.c6f9e1ebfb.js";
+t.C(i);
+import * as m from "./807489.2ba5c6d996.js";
+t.C(m);
+import * as n from "./337882.799b00b0f3.js";
+t.C(n);
+import * as p from "./955979.eaf8541a67.js";
+t.C(p);
+import * as c from "./646436.611d2d0d1b.js";
+t.C(c);
+import * as d from "./7078.691a92af09.js";
+t.C(d);
+import * as f from "./200429.336411f62e.js";
+t.C(f);
+import * as l from "./698524.e12b58b33f.js";
+t.C(l);
+import * as g from "./956483.2514992fd3.js";
+t.C(g);
+import * as j from "./87162.1f25d59c9c.js";
+t.C(j);
+import * as b from "./396705.3e09ec2928.js";
+t.C(b);
+import * as C from "./155568.b02a981797.js";
+t.C(C);
+import * as u from "./731863.9e2b15b813.js";
+t.C(u);
+import * as _ from "./767086.6cceb40294.js";
+t.C(_);
+import * as h from "./76629.0f65023578.js";
+t.C(h);
+import * as x from "./226913.c039047be5.js";
+t.C(x);
+import * as y from "./573324.583fdc8bb1.js";
+t.C(y);
+var w = t(t.s = "yhsv"),
+    v = w.a,
+    k = w.b;
 export {
-    M as
-    default, P as meta
+    v as
+    default, k as meta
 };

@@ -30,8 +30,8 @@ export const __webpack_modules__ = {
                     title: r,
                     socialTitle: a,
                     description: m,
-                    canonicalUrl: s,
-                    imageUrl: n,
+                    canonicalUrl: n,
+                    imageUrl: s,
                     richLinkRendersEnabled: p
                 } = o, i = [{
                     title: r
@@ -44,13 +44,13 @@ export const __webpack_modules__ = {
                 }, {
                     tagName: "link",
                     rel: "canonical",
-                    href: s
+                    href: n
                 }, {
                     property: "og:type",
                     content: "website"
                 }, {
                     property: "og:url",
-                    content: s
+                    content: n
                 }, {
                     property: "og:title",
                     content: a
@@ -59,7 +59,7 @@ export const __webpack_modules__ = {
                     content: m
                 }, {
                     property: "og:image",
-                    content: n
+                    content: s
                 }, {
                     name: "twitter:card",
                     content: "summary_large_image"
@@ -71,14 +71,14 @@ export const __webpack_modules__ = {
                     content: m
                 }, {
                     name: "twitter:image",
-                    content: n
+                    content: s
                 }];
                 return p && i.push({
                     property: "og:site_name",
                     content: "ChatGPT"
                 }, {
                     property: "og:image:secure_url",
-                    content: n
+                    content: s
                 }, {
                     property: "og:image:type",
                     content: "image/png"
@@ -101,58 +101,54 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as t
-} from "./633146.be60f96fcf.js";
+} from "./633146.332c5da428.js";
 import * as o from "./680612.3c8d72f22d.js";
 t.C(o);
-import * as r from "./418851.d43ef6e51c.js";
+import * as r from "./418851.3878fbfa64.js";
 t.C(r);
-import * as e from "./109308.2094c16514.js";
+import * as e from "./109308.4b30101b7c.js";
 t.C(e);
-import * as a from "./399565.78e1c0aa0d.js";
+import * as a from "./399565.de450ac543.js";
 t.C(a);
-import * as m from "./257798.7e03f1e3e2.js";
+import * as m from "./257798.b061e3b37a.js";
 t.C(m);
-import * as s from "./447351.b188109392.js";
-t.C(s);
-import * as n from "./617936.fb76eb2727.js";
+import * as n from "./447351.690fba1ae5.js";
 t.C(n);
-import * as p from "./807489.9c1a8ccf71.js";
+import * as s from "./617936.c6f9e1ebfb.js";
+t.C(s);
+import * as p from "./807489.2ba5c6d996.js";
 t.C(p);
-import * as i from "./337882.5c43a2c90b.js";
+import * as i from "./337882.799b00b0f3.js";
 t.C(i);
-import * as f from "./955979.9ae2962bd4.js";
-t.C(f);
-import * as c from "./646436.b525bfd8f0.js";
+import * as c from "./955979.eaf8541a67.js";
 t.C(c);
-import * as d from "./7078.a82238bfec.js";
-t.C(d);
-import * as C from "./200429.3bcaa139a4.js";
-t.C(C);
-import * as j from "./698524.3de98ac6af.js";
-t.C(j);
-import * as g from "./956483.227ec74d56.js";
-t.C(g);
-import * as b from "./87162.36edabe123.js";
+import * as f from "./646436.611d2d0d1b.js";
+t.C(f);
+import * as b from "./7078.691a92af09.js";
 t.C(b);
-import * as l from "./396705.12275a5eb6.js";
+import * as g from "./200429.336411f62e.js";
+t.C(g);
+import * as C from "./698524.e12b58b33f.js";
+t.C(C);
+import * as j from "./956483.2514992fd3.js";
+t.C(j);
+import * as d from "./87162.1f25d59c9c.js";
+t.C(d);
+import * as l from "./396705.3e09ec2928.js";
 t.C(l);
-import * as _ from "./155568.b3f888f917.js";
+import * as _ from "./155568.b02a981797.js";
 t.C(_);
-import * as y from "./731863.367082aec0.js";
+import * as y from "./731863.9e2b15b813.js";
 t.C(y);
-import * as u from "./767086.1a336b6bc5.js";
+import * as u from "./767086.6cceb40294.js";
 t.C(u);
-import * as w from "./76629.93a69b821a.js";
+import * as w from "./76629.0f65023578.js";
 t.C(w);
-import * as h from "./514085.fe0c9f50e5.js";
+import * as h from "./226913.c039047be5.js";
 t.C(h);
-import * as x from "./204542.f3712a1345.js";
+import * as x from "./302004.f33af44cb5.js";
 t.C(x);
-import * as k from "./226913.dd4de34d8f.js";
-t.C(k);
-import * as G from "./302004.c78c0dfa24.js";
-t.C(G);
-var P = t(t.s = "bd9D").a;
+var k = t(t.s = "bd9D").a;
 export {
-    P as meta
+    k as meta
 };

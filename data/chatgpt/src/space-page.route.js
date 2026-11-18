@@ -10,19 +10,19 @@ export const __webpack_modules__ = {
             l = i("QosV"),
             s = i("Bbed"),
             o = i("aBxd");
-        let g = (0, s.a)(async () => (await Promise.all([i.e(680612), i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085), i.e(204542), i.e(480171), i.e(999385), i.e(184549), i.e(553028), i.e(195563), i.e(535952), i.e(206816), i.e(735334), i.e(120026)]).then(i.bind(i, "CDzG"))).SpacesPersonalRoute),
+        let g = (0, s.a)(async () => (await Promise.all([i.e(680612), i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(480171), i.e(999385), i.e(184549), i.e(553028), i.e(195563), i.e(535952), i.e(960859), i.e(735334), i.e(3130)]).then(i.bind(i, "CDzG"))).SpacesPersonalRoute),
             c = () => [{
                 title: "ChatGPT Space"
             }, {
                 property: "og:title",
                 content: "ChatGPT Space"
             }];
-        var r = (0, n.ib)(function() {
+        var r = (0, n.hb)(function() {
             let e, t = (0, l.c)(3),
-                i = (0, n.gb)("space-page-layout"),
+                i = (0, n.fb)("space-page-layout"),
                 {
                     pageId: s
-                } = (0, n.db)();
+                } = (0, n.cb)();
             return t[0] !== i?.spacePage || t[1] !== s ? (e = "personal" === s ? (0, a.jsx)(g, {}) : (0, a.jsx)(o.LazyBrowserSpacePage, {
                 spacePage: i?.spacePage ?? null
             }), t[0] = i?.spacePage, t[1] = s, t[2] = e) : e = t[2], e
@@ -179,7 +179,7 @@ export const __webpack_modules__ = {
         var n = i("ABep"),
             a = i("QosV");
         t.default = e => {
-            let t, i, l, s, o, g, c, r, M, C, I, d, j, p, h, f, N, u, x, L, A = (0, a.c)(21);
+            let t, i, l, s, o, g, c, r, M, C, I, d, j, p, h, f, u, N, x, L, A = (0, a.c)(21);
             return A[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, n.jsx)("path", {
                 d: "M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",
                 fill: "url(#paint0_radial_8150_7076)"
@@ -395,7 +395,7 @@ export const __webpack_modules__ = {
                     stopColor: "#6FBBD4",
                     stopOpacity: 0
                 })]
-            }), A[15] = f) : f = A[15], A[16] === Symbol.for("react.memo_cache_sentinel") ? (N = (0, n.jsxs)("linearGradient", {
+            }), A[15] = f) : f = A[15], A[16] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, n.jsxs)("linearGradient", {
                 id: "paint4_linear_8150_7076",
                 x1: 17.25,
                 y1: 11.0909,
@@ -409,7 +409,7 @@ export const __webpack_modules__ = {
                     offset: 1,
                     stopColor: "#0C6553"
                 })]
-            }), A[16] = N) : N = A[16], A[17] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, n.jsxs)("radialGradient", {
+            }), A[16] = u) : u = A[16], A[17] === Symbol.for("react.memo_cache_sentinel") ? (N = (0, n.jsxs)("radialGradient", {
                 id: "paint5_radial_8150_7076",
                 cx: 0,
                 cy: 0,
@@ -422,8 +422,8 @@ export const __webpack_modules__ = {
                     offset: 1,
                     stopColor: "#218097"
                 })]
-            }), A[17] = u) : u = A[17], A[18] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, n.jsxs)("defs", {
-                children: [C, I, d, j, p, h, f, N, u, (0, n.jsxs)("linearGradient", {
+            }), A[17] = N) : N = A[17], A[18] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, n.jsxs)("defs", {
+                children: [C, I, d, j, p, h, f, u, N, (0, n.jsxs)("linearGradient", {
                     id: "paint6_linear_8150_7076",
                     x1: 6.5,
                     y1: 9,
@@ -448,7 +448,7 @@ export const __webpack_modules__ = {
         }
     }),
     bDc1: (function(e, t, i) {
-        var n = i("YNuJ"),
+        var n = i("uWy0"),
             a = i("FIwD");
         i.d(t, {
             a: () => a.d,
@@ -470,11 +470,11 @@ export const __webpack_modules__ = {
             I = i("gWf7"),
             d = i("OH6Z"),
             j = i("FIwD"),
-            p = i("TQDJ"),
-            h = i("OGxO"),
-            f = i("yoJG"),
-            N = i("krfl"),
-            u = i("SXlx");
+            p = i("W3js"),
+            h = i("jVpT"),
+            f = i("dOJ8"),
+            u = i("xzYM"),
+            N = i("DctQ");
         i.d(t, {}, {
             a: function(e, t, i) {
                 if (["row", "col", "box", "grid-item"].includes(e)) {
@@ -561,14 +561,14 @@ export const __webpack_modules__ = {
                 if ("code" === e) return {
                     tag: "code",
                     attributes: {
-                        className: N.a.Code,
+                        className: u.a.Code,
                         "data-d-component": "code"
                     }
                 };
                 if ("link" === e) return {
                     tag: "a",
                     attributes: {
-                        className: u.a.Link,
+                        className: N.a.Link,
                         "data-d-component": "link",
                         title: t.title
                     }
@@ -637,7 +637,7 @@ export const __webpack_modules__ = {
         var n = i("Bbed"),
             a = i("MhZT"),
             l = i("gne8");
-        let s = (0, n.a)(async () => (a.a.prefetch().catch(() => {}), (await Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085), i.e(204542), i.e(300588)]).then(i.bind(i, "H04d"))).BrowserSpacePage), l.b);
+        let s = (0, n.a)(async () => (a.a.prefetch().catch(() => {}), (await Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(300588)]).then(i.bind(i, "H04d"))).BrowserSpacePage), l.b);
         i.d(t, {}, {
             LazyBrowserSpacePage: s,
             prefetchBrowserPageForCreation: async function() {
@@ -658,7 +658,7 @@ export const __webpack_modules__ = {
             C = i("JyrC"),
             I = i("SkNj"),
             d = i("VUkV"),
-            j = i("FwTO");
+            j = i("kGAC");
 
         function p(e) {
             let t, i, s, o, g, c = (0, a.c)(15),
@@ -668,18 +668,18 @@ export const __webpack_modules__ = {
                 } = e;
             c[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, l.b)("relative flex h-full min-h-0 flex-col", j.a.PageTitlebarOverlay), c[0] = t) : t = c[0];
             let f = I.title ?? "",
-                N = I.textPageCard?.symbol;
-            c[1] !== I.pageId || c[2] !== f || c[3] !== N ? (i = (0, n.jsx)(r.c, {
+                u = I.textPageCard?.symbol;
+            c[1] !== I.pageId || c[2] !== f || c[3] !== u ? (i = (0, n.jsx)(r.c, {
                 disabled: !0,
                 variant: "dropdown",
                 children: (0, n.jsx)(d.a, {
                     pageId: I.pageId,
                     title: f,
-                    symbol: N,
+                    symbol: u,
                     documentType: "page",
                     children: h
                 })
-            }), c[1] = I.pageId, c[2] = f, c[3] = N, c[4] = i) : i = c[4], c[5] !== p || c[6] !== i ? (s = (0, n.jsx)("div", {
+            }), c[1] = I.pageId, c[2] = f, c[3] = u, c[4] = i) : i = c[4], c[5] !== p || c[6] !== i ? (s = (0, n.jsx)("div", {
                 className: "pointer-events-none absolute inset-x-0 top-0 z-30",
                 children: (0, n.jsx)(C.d, {
                     contentFade: !0,
@@ -690,13 +690,13 @@ export const __webpack_modules__ = {
                     navigation: i
                 })
             }), c[5] = p, c[6] = i, c[7] = s) : s = c[7];
-            let u = I.textPageCard?.symbol;
-            return c[8] !== I.pageId || c[9] !== I.title || c[10] !== u ? (o = (0, n.jsx)(M.a, {
+            let N = I.textPageCard?.symbol;
+            return c[8] !== I.pageId || c[9] !== I.title || c[10] !== N ? (o = (0, n.jsx)(M.a, {
                 pageId: I.pageId,
                 title: I.title,
-                symbol: u,
+                symbol: N,
                 headerOverlay: !0
-            }), c[8] = I.pageId, c[9] = I.title, c[10] = u, c[11] = o) : o = c[11], c[12] !== s || c[13] !== o ? (g = (0, n.jsxs)("section", {
+            }), c[8] = I.pageId, c[9] = I.title, c[10] = N, c[11] = o) : o = c[11], c[12] !== s || c[13] !== o ? (g = (0, n.jsxs)("section", {
                 className: t,
                 children: [s, o]
             }), c[12] = s, c[13] = o, c[14] = g) : g = c[14], g
@@ -723,11 +723,11 @@ export const __webpack_modules__ = {
                         fillParent: r
                     } = e,
                     M = void 0 !== r && r,
-                    C = (0, o.Y)(),
-                    d = (0, o.$)(),
+                    C = (0, o.X)(),
+                    d = (0, o._)(),
                     {
                         pageId: j
-                    } = (0, o.db)(),
+                    } = (0, o.cb)(),
                     h = C.state?.pagePreview;
                 l[0] !== j || l[1] !== h ? (t = {
                     pageId: j,
@@ -735,8 +735,8 @@ export const __webpack_modules__ = {
                 }, l[0] = j, l[1] = h, l[2] = t) : t = l[2];
                 let f = (0, s.x)(I.d, t);
                 return l[3] !== M || l[4] !== d || l[5] !== f ? (i = null == f ? (0, n.jsx)(c.LoadingPage, {
-                    fillParent: M,
-                    delay: !1
+                    routeFallback: !0,
+                    fillParent: M
                 }) : (0, n.jsxs)(n.Fragment, {
                     children: [(0, n.jsx)(g.a, {
                         layout: "custom-titlebar",
@@ -766,9 +766,9 @@ export const __webpack_modules__ = {
             p = i("Kw4a"),
             h = i("v5SL"),
             f = i("nndI");
-        let N = "oai/apps/hasOpenedSpaceWelcome",
-            u = "space-welcome-dismissal-v1",
-            x = (0, I.b)(u, {}),
+        let u = "oai/apps/hasOpenedSpaceWelcome",
+            N = "space-welcome-dismissal-v1",
+            x = (0, I.b)(N, {}),
             L = (0, a.v)(r.a, e => !1),
             A = (0, a.u)(r.a, () => null),
             y = (0, a.c)(r.a, e => {
@@ -803,7 +803,7 @@ export const __webpack_modules__ = {
                 let n = t(x)[i.key];
                 if (null != n) return !1 !== n;
                 let a = t(o.p);
-                if (a.isSuccess && !a.isPlaceholderData) return Object.hasOwn(a.data.seenAnnouncements ?? {}, N)
+                if (a.isSuccess && !a.isPlaceholderData) return Object.hasOwn(a.data.seenAnnouncements ?? {}, u)
             });
         async function T(e) {
             if (!e.get(g.pagesEnabled$)) return;
@@ -812,8 +812,8 @@ export const __webpack_modules__ = {
             let i = (0, j.watchSpaceAccount)(e, t.accountId, t.userId);
             e.set(L, t.key, !0);
             try {
-                if (await (0, s.a)(e, N, !1, i.signal), i.signal.throwIfAborted(), "pending" !== e.get(x)[t.key]) return;
-                (0, C.t)(u, {
+                if (await (0, s.a)(e, u, !1, i.signal), i.signal.throwIfAborted(), "pending" !== e.get(x)[t.key]) return;
+                (0, C.t)(N, {
                     entries: {
                         [t.key]: {
                             value: "saved"
@@ -849,7 +849,7 @@ export const __webpack_modules__ = {
                     action: n.CodexSpacesOnboardingAction.CODEX_SPACES_ONBOARDING_ACTION_WELCOME_PAGE_OPENED,
                     item: n.CodexSpacesOnboardingItem.CODEX_SPACES_ONBOARDING_ITEM_WELCOME,
                     pageId: t
-                }), (0, C.t)(u, {
+                }), (0, C.t)(N, {
                     entries: {
                         [a.key]: {
                             value: "pending"
@@ -939,89 +939,85 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.be60f96fcf.js";
-import * as t from "./418851.d43ef6e51c.js";
+} from "./633146.332c5da428.js";
+import * as t from "./418851.3878fbfa64.js";
 e.C(t);
-import * as i from "./109308.2094c16514.js";
+import * as i from "./109308.4b30101b7c.js";
 e.C(i);
-import * as n from "./399565.78e1c0aa0d.js";
+import * as n from "./399565.de450ac543.js";
 e.C(n);
-import * as a from "./257798.7e03f1e3e2.js";
+import * as a from "./257798.b061e3b37a.js";
 e.C(a);
-import * as l from "./447351.b188109392.js";
+import * as l from "./447351.690fba1ae5.js";
 e.C(l);
-import * as s from "./617936.fb76eb2727.js";
+import * as s from "./617936.c6f9e1ebfb.js";
 e.C(s);
-import * as o from "./807489.9c1a8ccf71.js";
+import * as o from "./807489.2ba5c6d996.js";
 e.C(o);
-import * as g from "./337882.5c43a2c90b.js";
+import * as g from "./337882.799b00b0f3.js";
 e.C(g);
-import * as c from "./955979.9ae2962bd4.js";
+import * as c from "./955979.eaf8541a67.js";
 e.C(c);
-import * as r from "./646436.b525bfd8f0.js";
+import * as r from "./646436.611d2d0d1b.js";
 e.C(r);
-import * as M from "./7078.a82238bfec.js";
+import * as M from "./7078.691a92af09.js";
 e.C(M);
-import * as C from "./200429.3bcaa139a4.js";
+import * as C from "./200429.336411f62e.js";
 e.C(C);
-import * as I from "./698524.3de98ac6af.js";
+import * as I from "./698524.e12b58b33f.js";
 e.C(I);
-import * as d from "./956483.227ec74d56.js";
+import * as d from "./956483.2514992fd3.js";
 e.C(d);
-import * as j from "./87162.36edabe123.js";
+import * as j from "./87162.1f25d59c9c.js";
 e.C(j);
-import * as p from "./396705.12275a5eb6.js";
+import * as p from "./396705.3e09ec2928.js";
 e.C(p);
-import * as h from "./155568.b3f888f917.js";
+import * as h from "./155568.b02a981797.js";
 e.C(h);
-import * as f from "./731863.367082aec0.js";
+import * as f from "./731863.9e2b15b813.js";
 e.C(f);
-import * as N from "./767086.1a336b6bc5.js";
-e.C(N);
-import * as u from "./76629.93a69b821a.js";
+import * as u from "./767086.6cceb40294.js";
 e.C(u);
-import * as x from "./514085.fe0c9f50e5.js";
+import * as N from "./76629.0f65023578.js";
+e.C(N);
+import * as x from "./226913.c039047be5.js";
 e.C(x);
-import * as L from "./204542.f3712a1345.js";
+import * as L from "./753405.4bffba797b.js";
 e.C(L);
-import * as A from "./226913.dd4de34d8f.js";
+import * as A from "./321957.745ede45f0.js";
 e.C(A);
-import * as y from "./753405.4bffba797b.js";
+import * as y from "./585419.38ade943bd.js";
 e.C(y);
-import * as m from "./321957.745ede45f0.js";
+import * as m from "./843292.b508aacb4d.js";
 e.C(m);
-import * as D from "./585419.38ade943bd.js";
+import * as D from "./353230.bd7d884f9e.js";
 e.C(D);
-import * as w from "./843292.b508aacb4d.js";
+import * as w from "./882456.b048d73b2c.js";
 e.C(w);
-import * as v from "./353230.c6d909aef3.js";
+import * as v from "./266281.18571673eb.js";
 e.C(v);
-import * as z from "./882456.524fc3f2c6.js";
+import * as z from "./909395.7dc04db4e2.js";
 e.C(z);
-import * as T from "./736970.9fcd6ddfcb.js";
+import * as T from "./529755.dc056ed6ca.js";
 e.C(T);
-import * as S from "./529755.99f88102d6.js";
+import * as S from "./212487.9cfe25039b.js";
 e.C(S);
-import * as Z from "./909395.7dc04db4e2.js";
+import * as Z from "./17983.965f306442.js";
 e.C(Z);
-import * as O from "./212487.9cfe25039b.js";
-e.C(O);
-import * as b from "./17983.7d25e2c880.js";
+import * as b from "./704809.1a3949c6ab.js";
 e.C(b);
-import * as E from "./704809.306dac010b.js";
+import * as O from "./920484.0f476298da.js";
+e.C(O);
+import * as E from "./311330.e70f02982b.js";
 e.C(E);
-import * as k from "./920484.c007caf815.js";
+import * as k from "./352477.92f77df258.js";
 e.C(k);
-import * as B from "./311330.b64a285485.js";
+import * as B from "./487589.8921848110.js";
 e.C(B);
-import * as Y from "./352477.950c6e2839.js";
-e.C(Y);
-import * as U from "./487589.cdf82a00ee.js";
-e.C(U);
-var F = e(e.s = "zd4v"),
-    G = F.a,
-    V = F.b;
+var Y = e(e.s = "zd4v"),
+    U = Y.a,
+    F = Y.b;
 export {
-    G as
-    default, V as meta
+    U as
+    default, F as meta
 };

@@ -3,45 +3,43 @@ export const __webpack_modules__ = {
     Juz5: (function(e, s, a) {
         a.d(s, {
             a: () => d,
-            b: () => f,
-            c: () => p
+            b: () => p,
+            c: () => f
         });
         var r = a("rEML"),
             t = a("ABep"),
             o = a("QosV"),
-            i = a("zOE4"),
             l = a("YmMY"),
-            n = a("liTb"),
+            i = a("liTb"),
+            n = a("qeru"),
             c = a("AXDI"),
             m = a("EkCf");
-        let d = (0, r.kb)(function() {
+        let d = (0, r.jb)(function() {
             let e, s = (0, o.c)(2),
                 {
                     pathname: a
-                } = (0, r.Y)();
-            if (!(0, n.i)(a)) {
+                } = (0, r.X)();
+            if (!(0, i.i)(a)) {
                 let e;
                 return s[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(c.b, {}), s[0] = e) : e = s[0], e
             }
             return s[1] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(l.OrbitLoadingShell, {
-                children: (0, t.jsx)(i.LoadingPage, {
-                    fillParent: !0,
-                    delay: !1,
-                    debugName: "OrbitConversation.hydrate"
+                children: (0, t.jsx)(n.d, {
+                    className: "pt-24"
                 })
             }), s[1] = e) : e = s[1], e
         });
-        var f = (0, r.ib)(function() {
+        var p = (0, r.hb)(function() {
             let e, s = (0, o.c)(1);
             return s[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(m.a, {
                 fallback: (0, t.jsx)(d, {})
             }), s[0] = e) : e = s[0], e
         });
-        let p = {
+        let f = {
             orbitLoadingShell: (0, t.jsx)(l.OrbitLoadingShell, {})
         }
     }),
-    RbbP: (function(e, s) {
+    WO9d: (function(e, s) {
         s.a = {
             composer: "composer-ebIxkP",
             transcriptBackdrop: "transcriptBackdrop-I_4iC6",
@@ -49,7 +47,7 @@ export const __webpack_modules__ = {
             uploads: "uploads-VRbiKY"
         }
     }),
-    hxLc: (function() {}),
+    vxOF: (function() {}),
     nDjx: (function(e, s, a) {
         e.exports = a.p + "assets/appshot-logo.f0152cb4dd.png"
     }),
@@ -66,30 +64,30 @@ export const __webpack_modules__ = {
         var r = a("ABep"),
             t = a("QosV"),
             o = a("XyTt"),
-            i = a("zd8w"),
-            l = a("rEML"),
+            l = a("zd8w"),
+            i = a("rEML"),
             n = a("v4LA"),
             c = a("hZax"),
             m = a("AXDI");
         let d = "1258713729",
-            f = (0, n.a)(o.z),
-            p = (0, n.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(226913), a.e(967847), a.e(330351), a.e(212322), a.e(736383)]).then(a.bind(a, "MyHG"))).BusinessAdsCreditPage);
+            p = (0, n.a)(o.z),
+            f = (0, n.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(967847), a.e(330351), a.e(212322), a.e(727318)]).then(a.bind(a, "MyHG"))).BusinessAdsCreditPage);
 
         function x(e) {
             let s, a = (0, t.c)(4),
                 {
                     link: o
                 } = e,
-                i = (0, c.f)(d);
+                l = (0, c.f)(d);
             if ((0, c.g)(d)) {
                 let e;
                 return a[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, r.jsx)(m.b, {}), a[0] = e) : e = a[0], e
             }
-            return a[1] !== i || a[2] !== o ? (s = i ? (0, r.jsx)(p, {
+            return a[1] !== l || a[2] !== o ? (s = l ? (0, r.jsx)(f, {
                 link: o
-            }) : (0, r.jsx)(f, {
+            }) : (0, r.jsx)(p, {
                 link: o
-            }), a[1] = i, a[2] = o, a[3] = s) : s = a[3], s
+            }), a[1] = l, a[2] = o, a[3] = s) : s = a[3], s
         }
         a.d(s, {}, {
             a: function(e) {
@@ -99,19 +97,19 @@ export const __webpack_modules__ = {
                     } = e,
                     {
                         search: d
-                    } = (0, l.Y)();
+                    } = (0, i.X)();
                 n[0] !== c.isAdsCreditCampaign || n[1] !== d ? (s = c.isAdsCreditCampaign && !new URLSearchParams(d).get("promo_campaign"), n[0] = c.isAdsCreditCampaign, n[1] = d, n[2] = s) : s = n[2];
-                let p = s;
-                return n[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(m.b, {}), n[3] = a) : a = n[3], n[4] !== p || n[5] !== c ? (o = (0, r.jsx)(m.a, {
-                    children: (0, r.jsx)(i.Suspense, {
+                let f = s;
+                return n[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(m.b, {}), n[3] = a) : a = n[3], n[4] !== f || n[5] !== c ? (o = (0, r.jsx)(m.a, {
+                    children: (0, r.jsx)(l.Suspense, {
                         fallback: a,
-                        children: p ? (0, r.jsx)(x, {
+                        children: f ? (0, r.jsx)(x, {
                             link: c
-                        }) : (0, r.jsx)(f, {
+                        }) : (0, r.jsx)(p, {
                             link: c
                         })
                     })
-                }), n[4] = p, n[5] = c, n[6] = o) : o = n[6], o
+                }), n[4] = f, n[5] = c, n[6] = o) : o = n[6], o
             }
         })
     }),
@@ -119,24 +117,24 @@ export const __webpack_modules__ = {
         var r = a("ABep"),
             t = a("QosV"),
             o = a("rEML"),
-            i = a("HnGz"),
-            l = a("hC2y"),
+            l = a("HnGz"),
+            i = a("hC2y"),
             n = a("AXDI"),
             c = a("NVla"),
             m = a("nlAI");
         a.d(s, {}, {
             a: function(e) {
-                let s, a, d, f, p, x = (0, t.c)(14),
+                let s, a, d, p, f, x = (0, t.c)(14),
                     {
                         fallback: b
                     } = e,
                     {
                         pathname: j
-                    } = (0, o.Y)();
+                    } = (0, o.X)();
                 if (x[0] !== b || x[1] !== j) {
-                    f = Symbol.for("react.early_return_sentinel");
+                    p = Symbol.for("react.early_return_sentinel");
                     e: {
-                        let e = (0, i.g)(l.c, j);
+                        let e = (0, l.g)(i.c, j);
                         if (null == e) {
                             let e;
                             x[6] !== j ? (e = (0, c.b)(j), x[6] = j, x[7] = e) : e = x[7];
@@ -145,20 +143,20 @@ export const __webpack_modules__ = {
                                 let e;
                                 x[8] !== s ? (e = (0, r.jsx)(m.a, {
                                     link: s
-                                }), x[8] = s, x[9] = e) : e = x[9], f = e;
+                                }), x[8] = s, x[9] = e) : e = x[9], p = e;
                                 break e
                             }
                         }
                         s = n.a,
                         a = b,
-                        d = null == e ? (0, r.jsx)(l.d, {}) : (0, o.O)(e)
+                        d = null == e ? (0, r.jsx)(i.d, {}) : (0, o.N)(e)
                     }
-                    x[0] = b, x[1] = j, x[2] = s, x[3] = a, x[4] = d, x[5] = f
-                } else s = x[2], a = x[3], d = x[4], f = x[5];
-                return f !== Symbol.for("react.early_return_sentinel") ? f : (x[10] !== s || x[11] !== a || x[12] !== d ? (p = (0, r.jsx)(s, {
+                    x[0] = b, x[1] = j, x[2] = s, x[3] = a, x[4] = d, x[5] = p
+                } else s = x[2], a = x[3], d = x[4], p = x[5];
+                return p !== Symbol.for("react.early_return_sentinel") ? p : (x[10] !== s || x[11] !== a || x[12] !== d ? (f = (0, r.jsx)(s, {
                     fallback: a,
                     children: d
-                }), x[10] = s, x[11] = a, x[12] = d, x[13] = p) : p = x[13], p)
+                }), x[10] = s, x[11] = a, x[12] = d, x[13] = f) : f = x[13], f)
             }
         })
     }),
@@ -169,58 +167,58 @@ export const __webpack_modules__ = {
         var r = a("ABep"),
             t = a("QosV"),
             o = a("on57"),
-            i = a("Q840"),
-            l = a("Wf1j"),
+            l = a("Q840"),
+            i = a("Wf1j"),
             n = a("UgGw"),
             c = a("O5pN"),
             m = a("osar"),
             d = a("enVv"),
-            f = a("bf6R"),
-            p = a("X3K1"),
+            p = a("bf6R"),
+            f = a("X3K1"),
             x = a("d1ji"),
             b = a("KkZX"),
-            j = a("RbbP");
+            j = a("WO9d");
 
         function h(e) {
-            let s, a, h, g, u, _, C, v, y, k, w, S, N, A, M, z, L = (0, t.c)(30),
+            let s, a, h, u, g, _, C, v, y, k, w, N, S, A, M, z, I = (0, t.c)(30),
                 {
-                    children: I
+                    children: L
                 } = e,
-                P = (0, l.a)(),
-                B = (0, i.z)(x.d);
-            L[0] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, o.b)("absolute inset-x-0 bottom-0", "shell-tMaeFg"), L[0] = s) : s = L[0];
-            let O = B ? "pt-0.5" : "pt-1.5";
-            return L[1] !== O ? (a = (0, o.b)("relative flex justify-center px-4", O), L[1] = O, L[2] = a) : a = L[2], L[3] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, r.jsx)("span", {
+                O = (0, i.a)(),
+                B = (0, l.z)(x.d);
+            I[0] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, o.b)("absolute inset-x-0 bottom-0", "shell-tMaeFg"), I[0] = s) : s = I[0];
+            let F = B ? "pt-0.5" : "pt-1.5";
+            return I[1] !== F ? (a = (0, o.b)("relative flex justify-center px-4", F), I[1] = F, I[2] = a) : a = I[2], I[3] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, r.jsx)("span", {
                 className: "relative z-10 -mb-0.5 size-14",
                 children: (0, r.jsx)("span", {
                     className: "flex size-full items-center justify-center rounded-full bg-text/10"
                 })
-            }), L[3] = h) : h = L[3], L[4] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, r.jsxs)("div", {
+            }), I[3] = h) : h = I[3], I[4] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, r.jsxs)("div", {
                 className: "relative flex max-w-full min-w-0 flex-col items-center select-none",
                 children: [h, (0, r.jsx)("span", {
                     className: "flex max-w-full min-w-0 flex-col items-center px-2.5 py-1 text-[16px] leading-5 text-tertiary",
                     children: (0, r.jsx)("span", {
                         className: "flex h-lh items-center",
-                        children: (0, r.jsx)(p.a, {
+                        children: (0, r.jsx)(f.a, {
                             as: "span",
                             className: "w-16 max-w-full",
                             size: "sm"
                         })
                     })
                 })]
-            }), L[4] = g) : g = L[4], L[5] !== a ? (u = (0, r.jsx)("div", {
+            }), I[4] = u) : u = I[4], I[5] !== a ? (g = (0, r.jsx)("div", {
                 className: "pointer-events-none absolute inset-x-0 top-0 z-50",
                 children: (0, r.jsx)("div", {
                     className: a,
-                    children: g
+                    children: u
                 })
-            }), L[5] = a, L[6] = u) : u = L[6], L[7] === Symbol.for("react.memo_cache_sentinel") ? (_ = (0, o.b)("relative", j.a.composer, b.a), L[7] = _) : _ = L[7], L[8] !== P ? (C = P.formatMessage({
+            }), I[5] = a, I[6] = g) : g = I[6], I[7] === Symbol.for("react.memo_cache_sentinel") ? (_ = (0, o.b)("relative", j.a.composer, b.a), I[7] = _) : _ = I[7], I[8] !== O ? (C = O.formatMessage({
                 id: "restricted.aeonMessaging.roomUi.messageInput",
                 defaultMessage: "Message"
-            }), L[8] = P, L[9] = C) : C = L[9], L[10] !== P ? (v = P.formatMessage({
+            }), I[8] = O, I[9] = C) : C = I[9], I[10] !== O ? (v = O.formatMessage({
                 id: "restricted.aeonMessaging.roomUi.sendMessagePlaceholder",
                 defaultMessage: "Send a message"
-            }), L[10] = P, L[11] = v) : v = L[11], L[12] !== C || L[13] !== v ? (y = (0, r.jsx)(m.a.Input, {
+            }), I[10] = O, I[11] = v) : v = I[11], I[12] !== C || I[13] !== v ? (y = (0, r.jsx)(m.a.Input, {
                 layout: "single-line",
                 children: (0, r.jsx)(c.a, {
                     singleLine: !0,
@@ -232,26 +230,26 @@ export const __webpack_modules__ = {
                         disabled: !0
                     })
                 })
-            }), L[12] = C, L[13] = v, L[14] = y) : y = L[14], L[15] === Symbol.for("react.memo_cache_sentinel") ? (k = (0, r.jsx)(m.a.FooterActions, {
+            }), I[12] = C, I[13] = v, I[14] = y) : y = I[14], I[15] === Symbol.for("react.memo_cache_sentinel") ? (k = (0, r.jsx)(m.a.FooterActions, {
                 children: (0, r.jsx)(n.a, {
                     disabled: !0,
                     onOpen: void 0
                 })
-            }), L[15] = k) : k = L[15], L[16] === Symbol.for("react.memo_cache_sentinel") ? (w = (0, r.jsx)("span", {
+            }), I[15] = k) : k = I[15], I[16] === Symbol.for("react.memo_cache_sentinel") ? (w = (0, r.jsx)("span", {
                 className: "size-token-button-composer"
-            }), L[16] = w) : w = L[16], L[17] !== P ? (S = P.formatMessage({
+            }), I[16] = w) : w = I[16], I[17] !== O ? (N = O.formatMessage({
                 id: "restricted.aeonMessaging.roomUi.send",
                 defaultMessage: "Send"
-            }), L[17] = P, L[18] = S) : S = L[18], L[19] !== S ? (N = (0, r.jsx)(m.a.FooterControls, {
+            }), I[17] = O, I[18] = N) : N = I[18], I[19] !== N ? (S = (0, r.jsx)(m.a.FooterControls, {
                 layout: "single-line",
                 children: (0, r.jsxs)(m.a.FooterActions, {
                     children: [w, (0, r.jsx)(d.a, {
-                        Icon: f.H,
+                        Icon: p.H,
                         disabled: !0,
-                        ariaLabel: S
+                        ariaLabel: N
                     })]
                 })
-            }), L[19] = S, L[20] = N) : N = L[20], L[21] !== y || L[22] !== N ? (A = (0, r.jsx)("div", {
+            }), I[19] = N, I[20] = S) : S = I[20], I[21] !== y || I[22] !== S ? (A = (0, r.jsx)("div", {
                 className: "conversation-viewport @container relative flex min-h-0 min-w-0 flex-1",
                 children: (0, r.jsx)("div", {
                     className: "conversation-footer",
@@ -267,14 +265,14 @@ export const __webpack_modules__ = {
                                         layout: "single-line",
                                         input: y,
                                         leadingControls: k,
-                                        trailingControls: N
+                                        trailingControls: S
                                     })
                                 })
                             })
                         })
                     })
                 })
-            }), L[21] = y, L[22] = N, L[23] = A) : A = L[23], L[24] !== A || L[25] !== u ? (M = (0, r.jsx)("div", {
+            }), I[21] = y, I[22] = S, I[23] = A) : A = I[23], I[24] !== A || I[25] !== g ? (M = (0, r.jsx)("div", {
                 className: "messaging-root messaging-embedded",
                 inert: !0,
                 "aria-hidden": !0,
@@ -282,15 +280,15 @@ export const __webpack_modules__ = {
                     className: "workspace",
                     children: (0, r.jsxs)("div", {
                         className: "thread-pane",
-                        children: [u, A]
+                        children: [g, A]
                     })
                 })
-            }), L[24] = A, L[25] = u, L[26] = M) : M = L[26], L[27] !== I || L[28] !== M ? (z = (0, r.jsxs)("div", {
+            }), I[24] = A, I[25] = g, I[26] = M) : M = I[26], I[27] !== L || I[28] !== M ? (z = (0, r.jsxs)("div", {
                 className: s,
-                children: [M, I]
-            }), L[27] = I, L[28] = M, L[29] = z) : z = L[29], z
+                children: [M, L]
+            }), I[27] = L, I[28] = M, I[29] = z) : z = I[29], z
         }
-        a("hxLc")
+        a("vxOF")
     }),
     EBQV: (function(s) {
         s.exports = e.ir("/cdn/assets/dotnet.js").then(function(e) {
@@ -300,62 +298,58 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.be60f96fcf.js";
-import * as s from "./418851.d43ef6e51c.js";
+} from "./633146.332c5da428.js";
+import * as s from "./418851.3878fbfa64.js";
 e.C(s);
-import * as a from "./109308.2094c16514.js";
+import * as a from "./109308.4b30101b7c.js";
 e.C(a);
-import * as r from "./399565.78e1c0aa0d.js";
+import * as r from "./399565.de450ac543.js";
 e.C(r);
-import * as t from "./257798.7e03f1e3e2.js";
+import * as t from "./257798.b061e3b37a.js";
 e.C(t);
-import * as o from "./447351.b188109392.js";
+import * as o from "./447351.690fba1ae5.js";
 e.C(o);
-import * as i from "./617936.fb76eb2727.js";
-e.C(i);
-import * as l from "./807489.9c1a8ccf71.js";
+import * as l from "./617936.c6f9e1ebfb.js";
 e.C(l);
-import * as n from "./337882.5c43a2c90b.js";
+import * as i from "./807489.2ba5c6d996.js";
+e.C(i);
+import * as n from "./337882.799b00b0f3.js";
 e.C(n);
-import * as c from "./955979.9ae2962bd4.js";
+import * as c from "./955979.eaf8541a67.js";
 e.C(c);
-import * as m from "./646436.b525bfd8f0.js";
+import * as m from "./646436.611d2d0d1b.js";
 e.C(m);
-import * as d from "./7078.a82238bfec.js";
+import * as d from "./7078.691a92af09.js";
 e.C(d);
-import * as f from "./200429.3bcaa139a4.js";
-e.C(f);
-import * as p from "./698524.3de98ac6af.js";
+import * as p from "./200429.336411f62e.js";
 e.C(p);
-import * as x from "./956483.227ec74d56.js";
+import * as f from "./698524.e12b58b33f.js";
+e.C(f);
+import * as x from "./956483.2514992fd3.js";
 e.C(x);
-import * as b from "./87162.36edabe123.js";
+import * as b from "./87162.1f25d59c9c.js";
 e.C(b);
-import * as j from "./396705.12275a5eb6.js";
+import * as j from "./396705.3e09ec2928.js";
 e.C(j);
-import * as h from "./155568.b3f888f917.js";
+import * as h from "./155568.b02a981797.js";
 e.C(h);
-import * as g from "./731863.367082aec0.js";
-e.C(g);
-import * as u from "./767086.1a336b6bc5.js";
+import * as u from "./731863.9e2b15b813.js";
 e.C(u);
-import * as _ from "./76629.93a69b821a.js";
+import * as g from "./767086.6cceb40294.js";
+e.C(g);
+import * as _ from "./76629.0f65023578.js";
 e.C(_);
-import * as C from "./514085.fe0c9f50e5.js";
+import * as C from "./226913.c039047be5.js";
 e.C(C);
-import * as v from "./204542.f3712a1345.js";
+import * as v from "./413109.b4bfe81a07.js";
 e.C(v);
-import * as y from "./226913.dd4de34d8f.js";
+import * as y from "./920099.dc7bc84094.js";
 e.C(y);
-import * as k from "./413109.b4bfe81a07.js";
-e.C(k);
-import * as w from "./920099.3e1b72f82b.js";
-e.C(w);
-var S = e(e.s = "Juz5"),
-    N = S.a,
-    A = S.b,
-    M = S.c;
+var k = e(e.s = "Juz5"),
+    w = k.a,
+    N = k.b,
+    S = k.c;
 export {
-    N as HydrateFallback, A as
-    default, M as handle
+    w as HydrateFallback, N as
+    default, S as handle
 };

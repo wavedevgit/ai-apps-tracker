@@ -9,7 +9,7 @@ export const __webpack_modules__ = {
             r = n("QosV"),
             s = n("Zqzr"),
             i = n("zd8w"),
-            c = n("EOo5"),
+            c = n("UOa8"),
             l = n("pEfp"),
             d = n("zOE4"),
             p = n("kErH"),
@@ -17,28 +17,28 @@ export const __webpack_modules__ = {
             h = n("jZDY"),
             m = n("tZ2c"),
             f = n("pICO"),
-            g = (0, o.ib)(function() {
+            g = (0, o.hb)(function() {
                 let e, t = (0, r.c)(2),
-                    n = (0, o.Y)();
-                return t[0] !== n.key ? (e = (0, a.jsx)(C, {}, n.key), t[0] = n.key, t[1] = e) : e = t[1], e
+                    n = (0, o.X)();
+                return t[0] !== n.key ? (e = (0, a.jsx)(w, {}, n.key), t[0] = n.key, t[1] = e) : e = t[1], e
             });
 
-        function C() {
+        function w() {
             let e, t, n = (0, r.c)(10),
-                c = new URLSearchParams((0, o.Y)().search),
+                c = new URLSearchParams((0, o.X)().search),
                 {
                     isMobile: l,
                     downloadPlatform: d
-                } = (0, o.X)(),
+                } = (0, o.W)(),
                 p = (0, h.a)(),
                 g = (0, s.og)(c),
-                C = (0, m.a)(c),
+                w = (0, m.a)(c),
                 [x, k] = (0, i.useState)(!1),
                 j = c.get("source"),
                 _ = l ? "mobile" : "opening";
             if (("cli-login" === j || "login" === j) && (_ = j), (0, i.useEffect)(() => {
                     if (!p || l || null == g) return;
-                    if (null == C) return void window.location.assign(g);
+                    if (null == w) return void window.location.assign(g);
                     let e = new AbortController,
                         t = () => {
                             e.abort(), k(!1)
@@ -48,15 +48,15 @@ export const __webpack_modules__ = {
                         };
                     return (0, u.a)(g, e.signal).then(o => {
                         e.signal.aborted || "fallback" !== o || (window.addEventListener("pagehide", t), document.addEventListener("visibilitychange", n), k(!0))
-                    }, w), () => {
+                    }, C), () => {
                         e.abort(), window.removeEventListener("pagehide", t), document.removeEventListener("visibilitychange", n)
                     }
-                }, [g, C, l, p]), (x || p && l) && null != C) {
+                }, [g, w, l, p]), (x || p && l) && null != w) {
                 let e, t = c.get("account_id")?.trim();
-                return n[0] !== C || n[1] !== t ? (e = (0, a.jsx)(b, {
-                    destination: C,
+                return n[0] !== w || n[1] !== t ? (e = (0, a.jsx)(b, {
+                    destination: w,
                     accountId: t
-                }), n[0] = C, n[1] = t, n[2] = e) : e = n[2], e
+                }), n[0] = w, n[1] = t, n[2] = e) : e = n[2], e
             }
             return n[3] !== g ? (e = () => {
                 null != g && window.location.assign(g)
@@ -68,7 +68,7 @@ export const __webpack_modules__ = {
             }), n[5] = g, n[6] = d, n[7] = _, n[8] = e, n[9] = t) : t = n[9], t
         }
 
-        function w() {}
+        function C() {}
 
         function b(e) {
             let t, n = (0, r.c)(10),
@@ -80,8 +80,8 @@ export const __webpack_modules__ = {
                     authMethod: u,
                     isLoading: h
                 } = (0, c.a)(),
-                m = (0, o.Y)(),
-                f = (0, o.W)(m);
+                m = (0, o.X)(),
+                f = (0, o.V)(m);
             if (h) {
                 let e;
                 return n[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(d.LoadingPage, {}), n[0] = e) : e = n[0], e
@@ -127,13 +127,13 @@ export const __webpack_modules__ = {
             l = n("HnGz"),
             d = n("l5Vd"),
             p = n("QdUF"),
-            u = n("EOo5"),
+            u = n("UOa8"),
             h = n("Kwur"),
             m = n("zOE4"),
             f = n("uHE8"),
             g = n("tSEg"),
-            C = n("vLpE"),
-            w = n("iPqE"),
+            w = n("vLpE"),
+            C = n("iPqE"),
             b = n("hZax"),
             x = n("dHX4");
         let k = c.string().regex(/^[a-zA-Z0-9_-]{1,255}$/),
@@ -148,22 +148,22 @@ export const __webpack_modules__ = {
                 {
                     accountId: y,
                     destination: P,
-                    documentHandoff: E,
-                    reloadOnSelection: S,
-                    unavailablePath: A
+                    documentHandoff: S,
+                    reloadOnSelection: A,
+                    unavailablePath: E
                 } = e,
-                I = void 0 !== S && S,
+                I = void 0 !== A && A,
                 {
                     userId: T,
                     accountId: M
                 } = (0, u.a)(),
-                G = (0, i.Y)(),
+                G = (0, i.X)(),
                 D = (0, s.useContext)(i.q).matches.at(-1)?.route.children,
-                R = (0, i.W)(P),
-                z = (0, i.W)(E?.returnTo ?? P),
-                U = (0, i.W)(A),
-                V = (0, b.i)();
-            L[0] !== y || L[1] !== R || L[2] !== E || L[3] !== G.key || L[4] !== I || L[5] !== z || L[6] !== U || L[7] !== T ? (t = ["workspace-link-account", G.key, T, y, R, U, I, E, z], L[0] = y, L[1] = R, L[2] = E, L[3] = G.key, L[4] = I, L[5] = z, L[6] = U, L[7] = T, L[8] = t) : t = L[8], L[9] !== y || L[10] !== M || L[11] !== P || L[12] !== E || L[13] !== G.pathname || L[14] !== G.search || L[15] !== I || L[16] !== z || L[17] !== V || L[18] !== U ? (n = async e => {
+                R = (0, i.V)(P),
+                V = (0, i.V)(S?.returnTo ?? P),
+                U = (0, i.V)(E),
+                z = (0, b.i)();
+            L[0] !== y || L[1] !== R || L[2] !== S || L[3] !== G.key || L[4] !== I || L[5] !== V || L[6] !== U || L[7] !== T ? (t = ["workspace-link-account", G.key, T, y, R, U, I, S, V], L[0] = y, L[1] = R, L[2] = S, L[3] = G.key, L[4] = I, L[5] = V, L[6] = U, L[7] = T, L[8] = t) : t = L[8], L[9] !== y || L[10] !== M || L[11] !== P || L[12] !== S || L[13] !== G.pathname || L[14] !== G.search || L[15] !== I || L[16] !== V || L[17] !== z || L[18] !== U ? (n = async e => {
                 let {
                     signal: t
                 } = e, n = await h.Request.safeGet("/accounts/check/{version}", {
@@ -175,11 +175,11 @@ export const __webpack_modules__ = {
                     signal: t
                 });
                 t.throwIfAborted();
-                let o = "personal" === y && null == E ? Object.values(n.accounts).find(v) : n.accounts[y],
+                let o = "personal" === y && null == S ? Object.values(n.accounts).find(v) : n.accounts[y],
                     a = o?.account;
-                if (null == o || a?.account_id == null || !0 === a.is_deactivated) return I ? ((0, w.setAccountCookie)((0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, w.handleBrowserAccountChangeAndRefresh)(U, t), "switching") : "unavailable";
-                if (!I && M === a.account_id && !1 !== o.can_access_with_session && (null == E || (0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === a.account_id)) return null != E ? (window.location.replace("string" == typeof P ? P : (0, i.y)(P)), "switching") : "selected";
-                if (E?.attempted === "select" || E?.attempted === "authenticate" && !1 === o.can_access_with_session) return "unavailable";
+                if (null == o || a?.account_id == null || !0 === a.is_deactivated) return I ? ((0, C.setAccountCookie)((0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, C.handleBrowserAccountChangeAndRefresh)(U, t), "switching") : "unavailable";
+                if (!I && M === a.account_id && !1 !== o.can_access_with_session && (null == S || (0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === a.account_id)) return null != S ? (window.location.replace("string" == typeof P ? P : (0, i.y)(P)), "switching") : "selected";
+                if (S?.attempted === "select" || S?.attempted === "authenticate" && !1 === o.can_access_with_session) return "unavailable";
                 let r = (0, i.J)(d.i, G.pathname)?.params.projectId,
                     s = (0, d.t)(new URLSearchParams(G.search));
                 if (null != r && null != s && !1 !== o.can_access_with_session) {
@@ -203,12 +203,12 @@ export const __webpack_modules__ = {
                     }
                     t.throwIfAborted()
                 }
-                let c = z;
-                if (null != E) {
-                    let e = new URL(z, window.location.origin);
+                let c = V;
+                if (null != S) {
+                    let e = new URL(V, window.location.origin);
                     e.searchParams.set("handoff_attempt", !1 === o.can_access_with_session ? "authenticate" : "select"), c = e.toString()
                 }
-                return await (0, w.switchBrowserWorkspaceAndRefresh)({
+                return await (0, C.switchBrowserWorkspaceAndRefresh)({
                     workspaceAccountId: a.account_id,
                     workspaceName: a.name ?? null,
                     workspaceImageUrl: a.profile_picture_url ?? null,
@@ -218,8 +218,8 @@ export const __webpack_modules__ = {
                     isFedrampCompliantWorkspace: a.is_fedramp_compliant_workspace,
                     canAccessWithSession: o.can_access_with_session,
                     ssoConnectionName: o.sso_connection_name
-                }, V, c, t), "switching"
-            }, L[9] = y, L[10] = M, L[11] = P, L[12] = E, L[13] = G.pathname, L[14] = G.search, L[15] = I, L[16] = z, L[17] = V, L[18] = U, L[19] = n) : n = L[19], L[20] !== t || L[21] !== n ? (c = {
+                }, z, c, t), "switching"
+            }, L[9] = y, L[10] = M, L[11] = P, L[12] = S, L[13] = G.pathname, L[14] = G.search, L[15] = I, L[16] = V, L[17] = z, L[18] = U, L[19] = n) : n = L[19], L[20] !== t || L[21] !== n ? (c = {
                 queryKey: t,
                 queryFn: n,
                 staleTime: 1 / 0,
@@ -235,10 +235,10 @@ export const __webpack_modules__ = {
             if (Z) throw Z;
             if ("unavailable" === O) {
                 let e;
-                return L[23] !== A ? (e = (0, o.jsx)(i.l, {
-                    to: A,
+                return L[23] !== E ? (e = (0, o.jsx)(i.l, {
+                    to: E,
                     replace: !0
-                }), L[23] = A, L[24] = e) : e = L[24], e
+                }), L[23] = E, L[24] = e) : e = L[24], e
             }
             if ("selected" === O) {
                 let e;
@@ -247,13 +247,13 @@ export const __webpack_modules__ = {
                     replace: !0
                 }), L[25] = P, L[26] = e) : e = L[26], e
             }
-            let q = C.a,
-                W = g.b,
-                B = null == D ? G.pathname : (0, l.e)(D, G.pathname);
-            return L[27] !== G || L[28] !== W || L[29] !== B ? (k = W({
+            let q = w.a,
+                B = g.b,
+                W = null == D ? G.pathname : (0, l.e)(D, G.pathname);
+            return L[27] !== G || L[28] !== B || L[29] !== W ? (k = B({
                 ...G,
-                routeTemplate: B
-            }), L[27] = G, L[28] = W, L[29] = B, L[30] = k) : k = L[30], L[31] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, o.jsxs)(f.a, {
+                routeTemplate: W
+            }), L[27] = G, L[28] = B, L[29] = W, L[30] = k) : k = L[30], L[31] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, o.jsxs)(f.a, {
                 children: [(0, o.jsx)(x.b, {}), (0, o.jsx)(m.LoadingPage, {})]
             }), L[31] = j) : j = L[31], L[32] !== q || L[33] !== k ? (_ = (0, o.jsx)(q, {
                 route: k,
@@ -267,7 +267,7 @@ export const __webpack_modules__ = {
         n.d(t, {}, {
             CodeAttributionConnectorAccountRoute: function() {
                 let e, t, n, r, s, c, l, d = (0, a.c)(14),
-                    p = (0, i.Y)();
+                    p = (0, i.X)();
                 if (d[0] !== p.search) {
                     s = Symbol.for("react.early_return_sentinel");
                     e: {
@@ -373,7 +373,7 @@ export const __webpack_modules__ = {
         }
         n.d(t, {}, {
             a: function(e) {
-                let t, n, s, u, h, m, f, g, C, w, b, x, k, j = (0, a.c)(42),
+                let t, n, s, u, h, m, f, g, w, C, b, x, k, j = (0, a.c)(42),
                     {
                         deepLink: _,
                         downloadPlatform: v,
@@ -381,11 +381,11 @@ export const __webpack_modules__ = {
                         onOpen: y
                     } = e,
                     P = void 0 === L ? "opening" : L,
-                    E = "login" === P || "cli-login" === P;
-                return j[0] !== E ? (t = E ? (0, o.jsx)(r.a, {
+                    S = "login" === P || "cli-login" === P;
+                return j[0] !== S ? (t = S ? (0, o.jsx)(r.a, {
                     id: "browser.codexDeeplink.signedIn",
                     defaultMessage: "You’re signed in"
-                }) : null, j[0] = E, j[1] = t) : t = j[1], j[2] !== P ? (n = "mobile" === P ? (0, o.jsx)(r.a, {
+                }) : null, j[0] = S, j[1] = t) : t = j[1], j[2] !== P ? (n = "mobile" === P ? (0, o.jsx)(r.a, {
                     id: "browser.codexDeeplink.mobileTitle",
                     defaultMessage: "Open the ChatGPT desktop app on your computer"
                 }) : null, j[2] = P, j[3] = n) : n = j[3], j[4] !== P ? (s = "opening" === P ? (0, o.jsx)(r.a, {
@@ -394,26 +394,26 @@ export const __webpack_modules__ = {
                 }) : null, j[4] = P, j[5] = s) : s = j[5], j[6] !== t || j[7] !== n || j[8] !== s ? (u = (0, o.jsxs)("h1", {
                     className: "text-3xl font-semibold",
                     children: [t, n, s]
-                }), j[6] = t, j[7] = n, j[8] = s, j[9] = u) : u = j[9], j[10] !== E ? (h = E ? (0, o.jsx)("p", {
+                }), j[6] = t, j[7] = n, j[8] = s, j[9] = u) : u = j[9], j[10] !== S ? (h = S ? (0, o.jsx)("p", {
                     className: "text-secondary",
                     children: (0, o.jsx)(r.a, {
                         id: "browser.codexDeeplink.signedInBody",
                         defaultMessage: "You’re signed in and may close this tab"
                     })
-                }) : null, j[10] = E, j[11] = h) : h = j[11], j[12] !== P ? (m = "opening" === P ? (0, o.jsx)("p", {
+                }) : null, j[10] = S, j[11] = h) : h = j[11], j[12] !== P ? (m = "opening" === P ? (0, o.jsx)("p", {
                     className: "text-secondary",
                     children: (0, o.jsx)(r.a, {
                         id: "browser.codexDeeplink.body",
                         defaultMessage: "We're trying to open ChatGPT automatically. If nothing happens, download the app and try opening it again."
                     })
-                }) : null, j[12] = P, j[13] = m) : m = j[13], j[14] !== _ || j[15] !== E ? (f = null != _ || E ? null : (0, o.jsx)("p", {
+                }) : null, j[12] = P, j[13] = m) : m = j[13], j[14] !== _ || j[15] !== S ? (f = null != _ || S ? null : (0, o.jsx)("p", {
                     role: "alert",
                     className: "text-secondary",
                     children: (0, o.jsx)(r.a, {
                         id: "browser.codexDeeplink.missingDetails",
                         defaultMessage: "This link is missing the chat details ChatGPT needs to reopen your work"
                     })
-                }), j[14] = _, j[15] = E, j[16] = f) : f = j[16], j[17] !== v || j[18] !== P ? (g = "opening" === P && "windows" === v ? (0, o.jsx)(i.a, {
+                }), j[14] = _, j[15] = S, j[16] = f) : f = j[16], j[17] !== v || j[18] !== P ? (g = "opening" === P && "windows" === v ? (0, o.jsx)(i.a, {
                     color: "primary",
                     size: "auth",
                     onClick: p,
@@ -421,7 +421,7 @@ export const __webpack_modules__ = {
                         id: "browser.codexDeeplink.download",
                         defaultMessage: "Download the app"
                     })
-                }) : null, j[17] = v, j[18] = P, j[19] = g) : g = j[19], j[20] !== v || j[21] !== P ? (C = "opening" === P && "mac" === v ? (0, o.jsxs)(o.Fragment, {
+                }) : null, j[17] = v, j[18] = P, j[19] = g) : g = j[19], j[20] !== v || j[21] !== P ? (w = "opening" === P && "mac" === v ? (0, o.jsxs)(o.Fragment, {
                     children: [(0, o.jsx)(i.a, {
                         color: "primary",
                         size: "auth",
@@ -439,7 +439,7 @@ export const __webpack_modules__ = {
                             defaultMessage: "Download for Intel Mac"
                         })
                     })]
-                }) : null, j[20] = v, j[21] = P, j[22] = C) : C = j[22], j[23] !== P ? (w = "mobile" === P ? (0, o.jsx)(i.a, {
+                }) : null, j[20] = v, j[21] = P, j[22] = w) : w = j[22], j[23] !== P ? (C = "mobile" === P ? (0, o.jsx)(i.a, {
                     color: "primary",
                     size: "auth",
                     onClick: c,
@@ -447,8 +447,8 @@ export const __webpack_modules__ = {
                         id: "browser.codexDeeplink.learnMore",
                         defaultMessage: "Learn more"
                     })
-                }) : null, j[23] = P, j[24] = w) : w = j[24], j[25] !== _ || j[26] !== v || j[27] !== E || j[28] !== y || j[29] !== P ? (b = "mobile" !== P && "cli-login" !== P ? (0, o.jsx)(i.a, {
-                    color: null == v || E ? "primary" : "outlineSurface",
+                }) : null, j[23] = P, j[24] = C) : C = j[24], j[25] !== _ || j[26] !== v || j[27] !== S || j[28] !== y || j[29] !== P ? (b = "mobile" !== P && "cli-login" !== P ? (0, o.jsx)(i.a, {
+                    color: null == v || S ? "primary" : "outlineSurface",
                     size: "auth",
                     disabled: null == _,
                     onClick: y,
@@ -456,10 +456,10 @@ export const __webpack_modules__ = {
                         id: "browser.codexDeeplink.open",
                         defaultMessage: "Open ChatGPT"
                     })
-                }) : null, j[25] = _, j[26] = v, j[27] = E, j[28] = y, j[29] = P, j[30] = b) : b = j[30], j[31] !== C || j[32] !== w || j[33] !== b || j[34] !== g ? (x = (0, o.jsxs)("div", {
+                }) : null, j[25] = _, j[26] = v, j[27] = S, j[28] = y, j[29] = P, j[30] = b) : b = j[30], j[31] !== w || j[32] !== C || j[33] !== b || j[34] !== g ? (x = (0, o.jsxs)("div", {
                     className: "flex flex-col gap-3",
-                    children: [g, C, w, b]
-                }), j[31] = C, j[32] = w, j[33] = b, j[34] = g, j[35] = x) : x = j[35], j[36] !== x || j[37] !== u || j[38] !== h || j[39] !== m || j[40] !== f ? (k = (0, o.jsx)("main", {
+                    children: [g, w, C, b]
+                }), j[31] = w, j[32] = C, j[33] = b, j[34] = g, j[35] = x) : x = j[35], j[36] !== x || j[37] !== u || j[38] !== h || j[39] !== m || j[40] !== f ? (k = (0, o.jsx)("main", {
                     className: "flex min-h-screen flex-col items-center justify-center bg-surface px-6 py-12 text-default select-none",
                     children: (0, o.jsxs)("div", {
                         className: "flex w-full max-w-md flex-col gap-5",
@@ -518,57 +518,53 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.be60f96fcf.js";
-import * as t from "./418851.d43ef6e51c.js";
+} from "./633146.332c5da428.js";
+import * as t from "./418851.3878fbfa64.js";
 e.C(t);
-import * as n from "./109308.2094c16514.js";
+import * as n from "./109308.4b30101b7c.js";
 e.C(n);
-import * as o from "./399565.78e1c0aa0d.js";
+import * as o from "./399565.de450ac543.js";
 e.C(o);
-import * as a from "./257798.7e03f1e3e2.js";
+import * as a from "./257798.b061e3b37a.js";
 e.C(a);
-import * as r from "./447351.b188109392.js";
+import * as r from "./447351.690fba1ae5.js";
 e.C(r);
-import * as s from "./617936.fb76eb2727.js";
+import * as s from "./617936.c6f9e1ebfb.js";
 e.C(s);
-import * as i from "./807489.9c1a8ccf71.js";
+import * as i from "./807489.2ba5c6d996.js";
 e.C(i);
-import * as c from "./337882.5c43a2c90b.js";
+import * as c from "./337882.799b00b0f3.js";
 e.C(c);
-import * as l from "./955979.9ae2962bd4.js";
+import * as l from "./955979.eaf8541a67.js";
 e.C(l);
-import * as d from "./646436.b525bfd8f0.js";
+import * as d from "./646436.611d2d0d1b.js";
 e.C(d);
-import * as p from "./7078.a82238bfec.js";
+import * as p from "./7078.691a92af09.js";
 e.C(p);
-import * as u from "./200429.3bcaa139a4.js";
+import * as u from "./200429.336411f62e.js";
 e.C(u);
-import * as h from "./698524.3de98ac6af.js";
+import * as h from "./698524.e12b58b33f.js";
 e.C(h);
-import * as m from "./956483.227ec74d56.js";
+import * as m from "./956483.2514992fd3.js";
 e.C(m);
-import * as f from "./87162.36edabe123.js";
+import * as f from "./87162.1f25d59c9c.js";
 e.C(f);
-import * as g from "./396705.12275a5eb6.js";
+import * as g from "./396705.3e09ec2928.js";
 e.C(g);
-import * as C from "./155568.b3f888f917.js";
-e.C(C);
-import * as w from "./731863.367082aec0.js";
+import * as w from "./155568.b02a981797.js";
 e.C(w);
-import * as b from "./767086.1a336b6bc5.js";
+import * as C from "./731863.9e2b15b813.js";
+e.C(C);
+import * as b from "./767086.6cceb40294.js";
 e.C(b);
-import * as x from "./76629.93a69b821a.js";
+import * as x from "./76629.0f65023578.js";
 e.C(x);
-import * as k from "./514085.fe0c9f50e5.js";
+import * as k from "./226913.c039047be5.js";
 e.C(k);
-import * as j from "./204542.f3712a1345.js";
+import * as j from "./29819.f3a8e7df93.js";
 e.C(j);
-import * as _ from "./226913.dd4de34d8f.js";
-e.C(_);
-import * as v from "./29819.e47c91c29f.js";
-e.C(v);
-var L = e(e.s = "qUT6").a;
+var _ = e(e.s = "qUT6").a;
 export {
-    L as
+    _ as
     default
 };

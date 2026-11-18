@@ -10,30 +10,30 @@ export const __webpack_modules__ = {
             f: () => f
         });
         var s = a("rEML"),
-            i = a("ABep"),
-            n = a("QosV"),
+            n = a("ABep"),
+            i = a("QosV"),
             o = a("zd8w"),
             l = a("xvAb"),
-            r = (0, s.ib)(function() {
-                let e, t = (0, n.c)(1);
-                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, i.jsx)(o.Suspense, {
-                    fallback: (0, i.jsx)(l.b, {}),
-                    children: (0, i.jsx)(s.m, {})
+            r = (0, s.hb)(function() {
+                let e, t = (0, i.c)(1);
+                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)(o.Suspense, {
+                    fallback: (0, n.jsx)(l.b, {}),
+                    children: (0, n.jsx)(s.m, {})
                 }), t[0] = e) : e = t[0], e
             });
         async function c(e) {
             let {
                 request: t,
                 serverLoader: s
-            } = e, i = await s(), {
-                enterStudentPromotion: n
-            } = await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(65057)]).then(a.bind(a, "tQoZ"));
-            return await n(t), i
+            } = e, n = await s(), {
+                enterStudentPromotion: i
+            } = await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(65057)]).then(a.bind(a, "tQoZ"));
+            return await i(t), n
         }
         c.hydrate = !0;
         var d = a("L10Y");
         let m = {
-                loadingPage: (0, i.jsx)(l.b, {})
+                loadingPage: (0, n.jsx)(l.b, {})
             },
             f = () => [{
                 title: "Student verification | ChatGPT"
@@ -50,14 +50,14 @@ export const __webpack_modules__ = {
     }),
     L10Y: (function(e, t, a) {
         var s = a("ABep"),
-            i = a("QosV"),
-            n = a("rEML"),
+            n = a("QosV"),
+            i = a("rEML"),
             o = a("AXDI"),
             l = a("Bbed"),
             r = a("wvhd"),
             c = a("xvAb"),
             d = a("vhdp");
-        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
+        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
             fallback: (0, s.jsx)(c.b, {}),
             errorFallback: () => (0, s.jsx)(r.a, {
                 result: void 0,
@@ -67,10 +67,10 @@ export const __webpack_modules__ = {
         });
         a.d(t, {}, {
             a: function() {
-                let e, t, a, l, r = (0, i.c)(8),
+                let e, t, a, l, r = (0, n.c)(8),
                     {
                         search: f
-                    } = (0, n.Y)();
+                    } = (0, i.X)();
                 if (r[0] !== f) {
                     let a = new URLSearchParams(f);
                     e = a.getAll("callback_path"), t = a.getAll("entry"), r[0] = f, r[1] = e, r[2] = t
@@ -91,8 +91,8 @@ export const __webpack_modules__ = {
     }),
     xvAb: (function(e, t, a) {
         var s = a("ABep"),
-            i = a("QosV"),
-            n = a("G8V1"),
+            n = a("QosV"),
+            i = a("G8V1"),
             o = a("rEML"),
             l = a("M8lA"),
             r = a("rHrT"),
@@ -102,15 +102,15 @@ export const __webpack_modules__ = {
             f = a("XqhT");
 
         function u(e) {
-            let t, a, n = (0, i.c)(7),
+            let t, a, i = (0, n.c)(7),
                 {
                     entry: l
                 } = e,
                 {
                     pathname: r,
                     search: c
-                } = (0, o.Y)();
-            if (n[0] !== r || n[1] !== c) {
+                } = (0, o.X)();
+            if (i[0] !== r || i[1] !== c) {
                 let e = new URLSearchParams(c);
                 if ("/auth/students" === r) {
                     let t = e.getAll("callback_path");
@@ -118,34 +118,34 @@ export const __webpack_modules__ = {
                         e = new URL(1 === t.length ? t[0] ?? "" : "", "https://chatgpt.com").searchParams
                     } catch {
                         let t;
-                        n[3] === Symbol.for("react.memo_cache_sentinel") ? (t = new URLSearchParams, n[3] = t) : t = n[3], e = t
+                        i[3] === Symbol.for("react.memo_cache_sentinel") ? (t = new URLSearchParams, i[3] = t) : t = i[3], e = t
                     }
                 }
-                t = e.getAll("partner_id"), n[0] = r, n[1] = c, n[2] = t
-            } else t = n[2];
+                t = e.getAll("partner_id"), i[0] = r, i[1] = c, i[2] = t
+            } else t = i[2];
             let u = t;
-            return n[4] !== l || n[5] !== u ? (a = (0, s.jsx)(m.a, {
+            return i[4] !== l || i[5] !== u ? (a = (0, s.jsx)(m.a, {
                 children: "verify" === l ? (0, s.jsx)(f.a, {
                     accountEmail: null,
                     verificationHelpPath: `/students/2026${1===u.length&&"handshake"===u[0]?"?partner_id=handshake":""}#trigger_students-2026-faq-verification`
                 }) : (0, s.jsx)(d.a, {
                     signingIn: !0
                 })
-            }), n[4] = l, n[5] = u, n[6] = a) : a = n[6], a
+            }), i[4] = l, i[5] = u, i[6] = a) : a = i[6], a
         }
 
         function h() {
-            let e, t = (0, i.c)(3),
+            let e, t = (0, n.c)(3),
                 {
                     pathname: a,
-                    search: n
-                } = (0, o.Y)(),
-                r = new URLSearchParams(n).getAll("entry");
+                    search: i
+                } = (0, o.X)(),
+                r = new URLSearchParams(i).getAll("entry");
             if ("logged_out" === (0, l.getClientBootstrap)().authStatus) {
-                let e, i = "/students/verify" === a.replace(/\/$/, "") || "/auth/students" === a && 1 === r.length && "verify" === r[0] ? "verify" : "claim";
-                return t[0] !== i ? (e = (0, s.jsx)(u, {
-                    entry: i
-                }), t[0] = i, t[1] = e) : e = t[1], e
+                let e, n = "/students/verify" === a.replace(/\/$/, "") || "/auth/students" === a && 1 === r.length && "verify" === r[0] ? "verify" : "claim";
+                return t[0] !== n ? (e = (0, s.jsx)(u, {
+                    entry: n
+                }), t[0] = n, t[1] = e) : e = t[1], e
             }
             return t[2] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(m.a, {
                 children: (0, s.jsx)(d.a, {})
@@ -154,12 +154,12 @@ export const __webpack_modules__ = {
         a.d(t, {}, {
             a: u,
             b: function() {
-                let e, t = (0, i.c)(1);
+                let e, t = (0, n.c)(1);
                 if (t[0] === Symbol.for("react.memo_cache_sentinel")) {
                     let {
                         locale: a
                     } = (0, l.getClientBootstrap)();
-                    e = (0, s.jsx)(n.a, {
+                    e = (0, s.jsx)(i.a, {
                         locale: a,
                         defaultLocale: "en-US",
                         messages: (0, c.d)("72216192")?.value.enable_i18n === !0 ? (0, r.c)(a)?.messages : void 0,
@@ -172,27 +172,27 @@ export const __webpack_modules__ = {
     }),
     hens: (function(e, t, a) {
         var s = a("ABep"),
-            i = a("QosV"),
-            n = a("oyxz"),
+            n = a("QosV"),
+            i = a("oyxz"),
             o = a("RNul"),
             l = a("vhdp");
         a.d(t, {}, {
             a: function(e) {
-                let t, a, r, c, d = (0, i.c)(9),
+                let t, a, r, c, d = (0, n.c)(9),
                     {
                         signingIn: m
                     } = e,
                     f = void 0 !== m && m;
-                return d[0] !== f ? (t = f ? void 0 : (0, s.jsx)(o.a, {}), d[0] = f, d[1] = t) : t = d[1], d[2] !== f ? (a = f ? (0, s.jsx)(n.a, {
+                return d[0] !== f ? (t = f ? void 0 : (0, s.jsx)(o.a, {}), d[0] = f, d[1] = t) : t = d[1], d[2] !== f ? (a = f ? (0, s.jsx)(i.a, {
                     id: "chatgpt.students.back_to_school_2026.claim.sign_in.title",
                     defaultMessage: "Redirecting to sign in"
-                }) : (0, s.jsx)(n.a, {
+                }) : (0, s.jsx)(i.a, {
                     id: "chatgpt.students.back_to_school_2026.claim.verifying.title",
                     defaultMessage: "Verifying your student status"
-                }), r = f ? (0, s.jsx)(n.a, {
+                }), r = f ? (0, s.jsx)(i.a, {
                     id: "chatgpt.students.back_to_school_2026.claim.sign_in.description",
                     defaultMessage: "Sign in to your ChatGPT account before verifying your student status."
-                }) : (0, s.jsx)(n.a, {
+                }) : (0, s.jsx)(i.a, {
                     id: "chatgpt.students.back_to_school_2026.claim.verifying.description",
                     defaultMessage: "This may take a minute. Please keep this page open."
                 }), d[2] = f, d[3] = a, d[4] = r) : (a = d[3], r = d[4]), d[5] !== t || d[6] !== a || d[7] !== r ? (c = (0, s.jsx)(l.b, {
@@ -206,23 +206,23 @@ export const __webpack_modules__ = {
     }),
     vhdp: (function(e, t, a) {
         var s = a("ABep"),
-            i = a("QosV"),
-            n = a("on57"),
+            n = a("QosV"),
+            i = a("on57"),
             o = a("oyxz");
 
         function l(e) {
-            let t, a, o, l, r, c, d, m, f = (0, i.c)(24),
+            let t, a, o, l, r, c, d, m, f = (0, n.c)(24),
                 {
                     title: u,
                     description: h,
                     illustration: x,
-                    details: p,
-                    variant: g,
+                    details: g,
+                    variant: p,
                     children: C
                 } = e,
-                b = void 0 === g ? "standard" : g;
+                b = void 0 === p ? "standard" : p;
             f[0] !== C || f[1] !== b ? (t = null != C ? (0, s.jsx)("div", {
-                className: (0, n.b)("flex w-full items-center", "recovery" === b ? "mt-10 flex-wrap justify-center gap-4 max-sm:flex-col max-sm:gap-3" : "flex-col gap-4", {
+                className: (0, i.b)("flex w-full items-center", "recovery" === b ? "mt-10 flex-wrap justify-center gap-4 max-sm:flex-col max-sm:gap-3" : "flex-col gap-4", {
                     "mt-6": "activated" === b || "confirmation" === b,
                     "mt-8": "recovery" !== b && "activated" !== b && "confirmation" !== b,
                     "max-sm:mx-auto max-sm:mt-0 max-sm:max-w-72 max-sm:flex-none max-sm:items-stretch max-sm:pt-4 max-sm:pb-[max(env(safe-area-inset-bottom),--spacing(6))]": "confirmation" !== b
@@ -231,7 +231,7 @@ export const __webpack_modules__ = {
             }) : null, f[0] = C, f[1] = b, f[2] = t) : t = f[2];
             let _ = t;
             f[3] !== x || f[4] !== b ? (a = null != x ? (0, s.jsx)("div", {
-                className: (0, n.b)("flex w-full justify-center", {
+                className: (0, i.b)("flex w-full justify-center", {
                     "mb-6 sm:mb-14": "verified" === b || "activated" === b,
                     "mb-6": "loading" === b,
                     "mb-4 sm:mb-8": "verified" !== b && "activated" !== b && "loading" !== b
@@ -244,13 +244,13 @@ export const __webpack_modules__ = {
                 children: u
             }), f[6] = u, f[7] = o) : o = f[7];
             let v = "activated" === b ? "mt-4 font-medium text-tertiary" : "mt-2 text-secondary";
-            f[8] !== v ? (l = (0, n.b)("text-base", v), f[8] = v, f[9] = l) : l = f[9], f[10] !== h || f[11] !== l ? (r = (0, s.jsx)("div", {
+            f[8] !== v ? (l = (0, i.b)("text-base", v), f[8] = v, f[9] = l) : l = f[9], f[10] !== h || f[11] !== l ? (r = (0, s.jsx)("div", {
                 className: l,
                 children: h
-            }), f[10] = h, f[11] = l, f[12] = r) : r = f[12], f[13] !== p ? (c = null != p ? (0, s.jsx)("div", {
+            }), f[10] = h, f[11] = l, f[12] = r) : r = f[12], f[13] !== g ? (c = null != g ? (0, s.jsx)("div", {
                 className: "mt-4 flex max-w-full flex-col items-center empty:hidden",
-                children: p
-            }) : null, f[13] = p, f[14] = c) : c = f[14];
+                children: g
+            }) : null, f[13] = g, f[14] = c) : c = f[14];
             let j = "confirmation" === b ? _ : null;
             f[15] !== a || f[16] !== o || f[17] !== r || f[18] !== c || f[19] !== j ? (d = (0, s.jsx)("div", {
                 className: "contents max-sm:flex max-sm:min-h-0 max-sm:w-full max-sm:flex-1 max-sm:flex-col max-sm:overflow-y-auto",
@@ -270,22 +270,22 @@ export const __webpack_modules__ = {
         }
         a.d(t, {}, {
             a: function(e) {
-                let t, a = (0, i.c)(2),
+                let t, a = (0, n.c)(2),
                     {
-                        children: n
+                        children: i
                     } = e;
-                return a[0] !== n ? (t = (0, s.jsx)("div", {
+                return a[0] !== i ? (t = (0, s.jsx)("div", {
                     className: "flex min-h-svh flex-col bg-surface text-default max-sm:h-svh",
                     "data-theme": "light",
                     children: (0, s.jsx)("main", {
                         className: "flex min-h-0 w-full flex-1 flex-col items-center max-sm:overflow-y-auto",
-                        children: n
+                        children: i
                     })
-                }), a[0] = n, a[1] = t) : t = a[1], t
+                }), a[0] = i, a[1] = t) : t = a[1], t
             },
             b: l,
             c: function() {
-                let e, t = (0, i.c)(1);
+                let e, t = (0, n.c)(1);
                 return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(l, {
                     title: (0, s.jsx)(o.a, {
                         id: "chatgpt.students.back_to_school_2026.claim.unavailable.title",
@@ -301,18 +301,18 @@ export const __webpack_modules__ = {
     }),
     XqhT: (function(e, t, a) {
         var s = a("ABep"),
-            i = a("QosV"),
-            n = a("Wf1j"),
+            n = a("QosV"),
+            i = a("Wf1j"),
             o = a("oyxz");
         a.d(t, {}, {
             a: function(e) {
-                let t, a, l, r, c, d, m, f, u, h, x, p, g, C = (0, i.c)(26),
+                let t, a, l, r, c, d, m, f, u, h, x, g, p, C = (0, n.c)(26),
                     {
                         accountEmail: b,
                         verificationHelpPath: _,
                         children: v
                     } = e,
-                    j = (0, n.a)();
+                    j = (0, i.a)();
                 return C[0] !== j ? (t = j.formatMessage({
                     id: "chatgpt.students.back_to_school_2026.embedded_verification.artwork.alt.campus_lawn",
                     defaultMessage: "Students sitting together on a college campus lawn"
@@ -376,60 +376,60 @@ export const __webpack_modules__ = {
                         id: "chatgpt.students.back_to_school_2026.embedded_verification.loading",
                         defaultMessage: "Loading student verification"
                     })
-                }), C[16] = v, C[17] = j, C[18] = x) : x = C[18], C[19] !== b || C[20] !== h || C[21] !== x ? (p = (0, s.jsxs)("section", {
+                }), C[16] = v, C[17] = j, C[18] = x) : x = C[18], C[19] !== b || C[20] !== h || C[21] !== x ? (g = (0, s.jsxs)("section", {
                     className: "min-w-0 px-8 pt-8 lg:flex-4 lg:px-0 lg:pt-0",
                     "aria-label": h,
                     children: [b, x]
-                }), C[19] = b, C[20] = h, C[21] = x, C[22] = p) : p = C[22], C[23] !== p || C[24] !== u ? (g = (0, s.jsxs)("div", {
+                }), C[19] = b, C[20] = h, C[21] = x, C[22] = g) : g = C[22], C[23] !== g || C[24] !== u ? (p = (0, s.jsxs)("div", {
                     className: "mx-auto flex w-full max-w-7xl flex-col pb-16 lg:flex-row lg:gap-20 lg:px-10 lg:pt-20",
-                    children: [u, p]
-                }), C[23] = p, C[24] = u, C[25] = g) : g = C[25], g
+                    children: [u, g]
+                }), C[23] = g, C[24] = u, C[25] = p) : p = C[25], p
             }
         })
     }),
     wvhd: (function(e, t, a) {
         var s = a("ABep"),
-            i = a("QosV"),
-            n = a("oyxz"),
+            n = a("QosV"),
+            i = a("oyxz"),
             o = a("Sm6l"),
             l = a("gLgE");
         a.d(t, {}, {
             a: function(e) {
-                let t, a, r, c, d, m, f = (0, i.c)(21),
+                let t, a, r, c, d, m, f = (0, n.c)(21),
                     {
                         result: u,
                         pending: h,
                         onRetry: x,
-                        validateBeforeNavigate: p,
-                        pendingPage: g
+                        validateBeforeNavigate: g,
+                        pendingPage: p
                     } = e;
-                f[0] !== u || f[1] !== p ? (t = function(e) {
-                    e && u?.ok && p?.() !== !1 && window.location.replace(u.url)
-                }, f[0] = u, f[1] = p, f[2] = t) : t = f[2];
+                f[0] !== u || f[1] !== g ? (t = function(e) {
+                    e && u?.ok && g?.() !== !1 && window.location.replace(u.url)
+                }, f[0] = u, f[1] = g, f[2] = t) : t = f[2];
                 let C = t;
-                if (null != g && (h || u?.ok)) {
+                if (null != p && (h || u?.ok)) {
                     let e;
-                    return f[3] !== C || f[4] !== g ? (e = (0, s.jsx)("div", {
+                    return f[3] !== C || f[4] !== p ? (e = (0, s.jsx)("div", {
                         className: "contents",
                         ref: C,
-                        children: g
-                    }), f[3] = C, f[4] = g, f[5] = e) : e = f[5], e
+                        children: p
+                    }), f[3] = C, f[4] = p, f[5] = e) : e = f[5], e
                 }
-                return f[6] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, s.jsx)(n.a, {
+                return f[6] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, s.jsx)(i.a, {
                     id: "browser.auth.handoff.title",
                     defaultMessage: "Continue to sign in"
                 }), f[6] = a) : a = f[6], f[7] !== C || f[8] !== u ? (r = u?.ok ? (0, s.jsx)("a", {
                     ref: C,
                     className: "text-center",
                     href: u.url,
-                    children: (0, s.jsx)(n.a, {
+                    children: (0, s.jsx)(i.a, {
                         id: "browser.auth.handoff.continue",
                         defaultMessage: "Continue"
                     })
                 }) : null, f[7] = C, f[8] = u, f[9] = r) : r = f[9], f[10] !== h || f[11] !== u?.ok ? (c = !u?.ok && h ? (0, s.jsx)("p", {
                     className: "text-center",
                     role: "status",
-                    children: (0, s.jsx)(n.a, {
+                    children: (0, s.jsx)(i.a, {
                         id: "browser.auth.login.pending",
                         defaultMessage: "Connecting…"
                     })
@@ -437,7 +437,7 @@ export const __webpack_modules__ = {
                     children: [(0, s.jsx)("p", {
                         className: "text-center text-sm text-danger",
                         role: "alert",
-                        children: (0, s.jsx)(n.a, {
+                        children: (0, s.jsx)(i.a, {
                             id: "browser.auth.handoff.failed",
                             defaultMessage: "We couldn’t sign you in. Please try again"
                         })
@@ -446,7 +446,7 @@ export const __webpack_modules__ = {
                         color: "primary",
                         size: "auth",
                         onClick: x,
-                        children: (0, s.jsx)(n.a, {
+                        children: (0, s.jsx)(i.a, {
                             id: "browser.auth.handoff.retry",
                             defaultMessage: "Try again"
                         })
@@ -462,65 +462,61 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.be60f96fcf.js";
+} from "./633146.332c5da428.js";
 import * as t from "./680612.3c8d72f22d.js";
 e.C(t);
-import * as a from "./418851.d43ef6e51c.js";
+import * as a from "./418851.3878fbfa64.js";
 e.C(a);
-import * as s from "./109308.2094c16514.js";
+import * as s from "./109308.4b30101b7c.js";
 e.C(s);
-import * as i from "./399565.78e1c0aa0d.js";
-e.C(i);
-import * as n from "./257798.7e03f1e3e2.js";
+import * as n from "./399565.de450ac543.js";
 e.C(n);
-import * as o from "./447351.b188109392.js";
+import * as i from "./257798.b061e3b37a.js";
+e.C(i);
+import * as o from "./447351.690fba1ae5.js";
 e.C(o);
-import * as l from "./617936.fb76eb2727.js";
+import * as l from "./617936.c6f9e1ebfb.js";
 e.C(l);
-import * as r from "./807489.9c1a8ccf71.js";
+import * as r from "./807489.2ba5c6d996.js";
 e.C(r);
-import * as c from "./337882.5c43a2c90b.js";
+import * as c from "./337882.799b00b0f3.js";
 e.C(c);
-import * as d from "./955979.9ae2962bd4.js";
+import * as d from "./955979.eaf8541a67.js";
 e.C(d);
-import * as m from "./646436.b525bfd8f0.js";
+import * as m from "./646436.611d2d0d1b.js";
 e.C(m);
-import * as f from "./7078.a82238bfec.js";
+import * as f from "./7078.691a92af09.js";
 e.C(f);
-import * as u from "./200429.3bcaa139a4.js";
+import * as u from "./200429.336411f62e.js";
 e.C(u);
-import * as h from "./698524.3de98ac6af.js";
+import * as h from "./698524.e12b58b33f.js";
 e.C(h);
-import * as x from "./956483.227ec74d56.js";
+import * as x from "./956483.2514992fd3.js";
 e.C(x);
-import * as p from "./87162.36edabe123.js";
-e.C(p);
-import * as g from "./396705.12275a5eb6.js";
+import * as g from "./87162.1f25d59c9c.js";
 e.C(g);
-import * as C from "./155568.b3f888f917.js";
+import * as p from "./396705.3e09ec2928.js";
+e.C(p);
+import * as C from "./155568.b02a981797.js";
 e.C(C);
-import * as b from "./731863.367082aec0.js";
+import * as b from "./731863.9e2b15b813.js";
 e.C(b);
-import * as _ from "./767086.1a336b6bc5.js";
+import * as _ from "./767086.6cceb40294.js";
 e.C(_);
-import * as v from "./76629.93a69b821a.js";
+import * as v from "./76629.0f65023578.js";
 e.C(v);
-import * as j from "./514085.fe0c9f50e5.js";
+import * as j from "./226913.c039047be5.js";
 e.C(j);
-import * as w from "./204542.f3712a1345.js";
+import * as w from "./596217.def9b88c47.js";
 e.C(w);
-import * as y from "./226913.dd4de34d8f.js";
-e.C(y);
-import * as k from "./596217.6cdb694760.js";
-e.C(k);
-var L = e(e.s = "z7MV"),
-    M = L.a,
-    S = L.b,
-    V = L.c,
-    N = L.d,
-    A = L.e,
-    P = L.f;
+var y = e(e.s = "z7MV"),
+    k = y.a,
+    L = y.b,
+    M = y.c,
+    S = y.d,
+    V = y.e,
+    N = y.f;
 export {
-    M as StudentPromotionAuthRoute, S as StudentPromotionStandaloneStartup, V as clientLoader, N as
-    default, A as handle, P as meta
+    k as StudentPromotionAuthRoute, L as StudentPromotionStandaloneStartup, M as clientLoader, S as
+    default, V as handle, N as meta
 };

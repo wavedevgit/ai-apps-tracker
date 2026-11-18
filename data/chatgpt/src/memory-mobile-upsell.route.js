@@ -2,7 +2,7 @@ export const __rspack_esm_ids = [326277];
 export const __webpack_modules__ = {
     d33d: (function(e, t, a) {
         a.d(t, {
-            a: () => f
+            a: () => p
         });
         var s = a("rEML"),
             r = a("ABep"),
@@ -14,15 +14,15 @@ export const __webpack_modules__ = {
             l = a("RNul");
         a("rHrT");
         var d = a("eAav"),
-            f = (0, s.ib)(function() {
-                let e, t, a, f, p, u, b, h = (0, i.c)(12),
+            p = (0, s.hb)(function() {
+                let e, t, a, p, f, u, b, h = (0, i.c)(12),
                     {
                         locale: j
                     } = (0, o.y)(d.a).value,
                     {
                         fallbackUrl: g,
                         messages: C
-                    } = (0, s.X)(),
+                    } = (0, s.W)(),
                     _ = (0, n.useRef)(!1),
                     w = (0, n.useRef)(!1);
                 return h[0] !== g ? (e = () => {
@@ -50,26 +50,26 @@ export const __webpack_modules__ = {
                     }
                 }, t = [g], h[0] = g, h[1] = e, h[2] = t) : (e = h[1], t = h[2]), (0, n.useEffect)(e, t), h[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(l.a, {
                     className: "icon-lg text-secondary"
-                }), h[3] = a) : a = h[3], h[4] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsx)("p", {
+                }), h[3] = a) : a = h[3], h[4] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsx)("p", {
                     className: "text-base",
                     children: (0, r.jsx)(m.a, {
                         id: "chatgpt.memory_mobile_upsell.deeplink_bridge.status",
                         defaultMessage: "Opening ChatGPT…"
                     })
-                }), h[4] = f) : f = h[4], h[5] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsx)(m.a, {
+                }), h[4] = p) : p = h[4], h[5] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsx)(m.a, {
                     id: "chatgpt.memory_mobile_upsell.deeplink_bridge.web_fallback_link",
                     defaultMessage: "Continue on web"
-                }), h[5] = p) : p = h[5], h[6] !== g ? (u = (0, r.jsx)("main", {
+                }), h[5] = f) : f = h[5], h[6] !== g ? (u = (0, r.jsx)("main", {
                     className: "flex min-h-screen items-center justify-center bg-surface px-6 text-default select-none",
                     children: (0, r.jsxs)("div", {
                         className: "flex max-w-sm flex-col items-center gap-3 text-center",
                         role: "status",
                         "aria-live": "polite",
                         "aria-busy": !0,
-                        children: [a, f, (0, r.jsx)("a", {
+                        children: [a, p, (0, r.jsx)("a", {
                             className: "text-sm text-secondary underline underline-offset-2",
                             href: g,
-                            children: p
+                            children: f
                         })]
                     })
                 }), h[6] = g, h[7] = u) : u = h[7], h[8] !== j || h[9] !== C || h[10] !== u ? (b = (0, r.jsx)(c.a, {
@@ -83,59 +83,55 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.be60f96fcf.js";
+} from "./633146.332c5da428.js";
 import * as t from "./680612.3c8d72f22d.js";
 e.C(t);
-import * as a from "./418851.d43ef6e51c.js";
+import * as a from "./418851.3878fbfa64.js";
 e.C(a);
-import * as s from "./109308.2094c16514.js";
+import * as s from "./109308.4b30101b7c.js";
 e.C(s);
-import * as r from "./399565.78e1c0aa0d.js";
+import * as r from "./399565.de450ac543.js";
 e.C(r);
-import * as i from "./257798.7e03f1e3e2.js";
+import * as i from "./257798.b061e3b37a.js";
 e.C(i);
-import * as o from "./447351.b188109392.js";
+import * as o from "./447351.690fba1ae5.js";
 e.C(o);
-import * as n from "./617936.fb76eb2727.js";
+import * as n from "./617936.c6f9e1ebfb.js";
 e.C(n);
-import * as m from "./807489.9c1a8ccf71.js";
+import * as m from "./807489.2ba5c6d996.js";
 e.C(m);
-import * as c from "./337882.5c43a2c90b.js";
+import * as c from "./337882.799b00b0f3.js";
 e.C(c);
-import * as l from "./955979.9ae2962bd4.js";
+import * as l from "./955979.eaf8541a67.js";
 e.C(l);
-import * as d from "./646436.b525bfd8f0.js";
+import * as d from "./646436.611d2d0d1b.js";
 e.C(d);
-import * as f from "./7078.a82238bfec.js";
-e.C(f);
-import * as p from "./200429.3bcaa139a4.js";
+import * as p from "./7078.691a92af09.js";
 e.C(p);
-import * as u from "./698524.3de98ac6af.js";
+import * as f from "./200429.336411f62e.js";
+e.C(f);
+import * as u from "./698524.e12b58b33f.js";
 e.C(u);
-import * as b from "./956483.227ec74d56.js";
+import * as b from "./956483.2514992fd3.js";
 e.C(b);
-import * as h from "./87162.36edabe123.js";
+import * as h from "./87162.1f25d59c9c.js";
 e.C(h);
-import * as j from "./396705.12275a5eb6.js";
+import * as j from "./396705.3e09ec2928.js";
 e.C(j);
-import * as g from "./155568.b3f888f917.js";
+import * as g from "./155568.b02a981797.js";
 e.C(g);
-import * as C from "./731863.367082aec0.js";
+import * as C from "./731863.9e2b15b813.js";
 e.C(C);
-import * as _ from "./767086.1a336b6bc5.js";
+import * as _ from "./767086.6cceb40294.js";
 e.C(_);
-import * as w from "./76629.93a69b821a.js";
+import * as w from "./76629.0f65023578.js";
 e.C(w);
-import * as x from "./514085.fe0c9f50e5.js";
+import * as x from "./226913.c039047be5.js";
 e.C(x);
-import * as y from "./204542.f3712a1345.js";
+import * as y from "./326277.364430cabf.js";
 e.C(y);
-import * as v from "./226913.dd4de34d8f.js";
-e.C(v);
-import * as S from "./326277.855b432f54.js";
-e.C(S);
-var T = e(e.s = "d33d").a;
+var v = e(e.s = "d33d").a;
 export {
-    T as
+    v as
     default
 };
