@@ -4,8 +4,8 @@ export const __webpack_modules__ = {
         r.d(t, {
             a: () => l
         });
-        var o = r("rEML"),
-            i = r("ABep"),
+        var i = r("rEML"),
+            o = r("ABep"),
             n = r("QosV"),
             a = r("t5jb");
 
@@ -14,27 +14,27 @@ export const __webpack_modules__ = {
             if (null == e || !t) return;
             let r = new AbortController,
                 {
-                    signal: o
+                    signal: i
                 } = r;
             return t.takeRequest().then(async r => {
-                if (o.aborted) return;
-                let i = await (0, a.c)({
+                if (i.aborted) return;
+                let o = await (0, a.c)({
                     ...r,
                     getContainer: () => e,
-                    signal: o
+                    signal: i
                 });
-                o.aborted || t.finish(i)
+                i.aborted || t.finish(o)
             }).catch(() => {
-                o.aborted || t.finish({
+                i.aborted || t.finish({
                     kind: 2
                 })
             }), () => r.abort()
         }
-        var l = (0, o.hb)(function() {
+        var l = (0, i.kb)(function() {
             let e, t = (0, n.c)(1);
-            return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, i.jsx)("div", {
+            return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, o.jsx)("div", {
                 className: "fixed inset-0 flex [scrollbar-gutter:stable_both-edges] flex-col overflow-auto bg-surface",
-                children: (0, i.jsx)("div", {
+                children: (0, o.jsx)("div", {
                     ref: s,
                     className: "m-auto w-112 max-w-full shrink-0"
                 })
@@ -44,31 +44,31 @@ export const __webpack_modules__ = {
     t5jb: (function(e, t, r) {
         r.d(t, {
             a: () => f,
-            b: () => i,
+            b: () => o,
             c: () => c
         });
-        let o = new Set(["verified", "failed", "expired", "processing", "requires_action"]);
+        let i = new Set(["verified", "failed", "expired", "processing", "requires_action"]);
 
-        function i(e) {
+        function o(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : crypto.randomUUID(),
                 r = 0,
-                i = !1;
+                o = !1;
             return (s, l, d, c) => {
-                if (!i) {
-                    i = "finish" === s, r += 1;
+                if (!o) {
+                    o = "finish" === s, r += 1;
                     try {
-                        let i = n(d) ? d : void 0,
-                            f = n(i?.apiResponse) ? i.apiResponse : void 0,
-                            u = i?.status,
+                        let o = n(d) ? d : void 0,
+                            f = n(o?.apiResponse) ? o.apiResponse : void 0,
+                            u = o?.status,
                             m = f?.status ?? c,
-                            b = i?.verification_id;
+                            b = o?.verification_id;
                         e({
                             "experian.attempt_id": t,
                             "experian.sequence": r,
                             "experian.event": s,
                             "experian.environment": "SANDBOX" === l || "PRODUCTION" === l ? l : "unknown",
-                            "experian.has_details": void 0 !== i,
-                            "experian.status": null == u ? "missing" : "string" == typeof u && o.has(u) ? u : "unrecognized",
+                            "experian.has_details": void 0 !== o,
+                            "experian.status": null == u ? "missing" : "string" == typeof u && i.has(u) ? u : "unrecognized",
                             "experian.verification_id_state": function(e) {
                                 if (null == e) return "missing";
                                 if ("string" != typeof e) return "invalid";
@@ -76,10 +76,10 @@ export const __webpack_modules__ = {
                                 return "" === t || "null" === t.toLowerCase() ? "invalid" : "valid"
                             }(b),
                             "experian.has_verification_id": "string" == typeof b && b.trim().length > 0,
-                            "experian.next_action": a(i?.next_action),
-                            "experian.code": a(f?.code ?? i?.code),
+                            "experian.next_action": a(o?.next_action),
+                            "experian.code": a(f?.code ?? o?.code),
                             "experian.http_status": "number" == typeof m && Number.isInteger(m) && m >= 100 && m <= 599 ? m : void 0,
-                            "experian.outcome": "finish" !== s ? void 0 : i?.kind === 0 ? "verified" : i?.kind === 1 ? "cancelled" : i?.kind === 2 ? "failed" : void 0
+                            "experian.outcome": "finish" !== s ? void 0 : o?.kind === 0 ? "verified" : o?.kind === 1 ? "cancelled" : o?.kind === 2 ? "failed" : void 0
                         })
                     } catch {}
                 }
@@ -108,8 +108,8 @@ export const __webpack_modules__ = {
             let {
                 appearance: t,
                 getContainer: r,
-                label: o = "Experian identity verification",
-                loadSdk: i = l,
+                label: i = "Experian identity verification",
+                loadSdk: o = l,
                 theme: n = "light",
                 verificationToken: a,
                 providerEnvironment: c,
@@ -129,10 +129,10 @@ export const __webpack_modules__ = {
                     }),
                     p = (e, t, r) => {
                         e.addEventListener(t, e => {
-                            let o = e instanceof CustomEvent ? e.detail : void 0,
-                                i = "object" == typeof o && null != o && "experienceDetails" in o ? o.experienceDetails : void 0,
-                                n = null == i && t === s && "object" == typeof o && null != o && "data" in o && "object" == typeof o.data && null != o.data && "status" in o.data ? o.data.status : void 0;
-                            u?.(t, c, i, n), r?.(i)
+                            let i = e instanceof CustomEvent ? e.detail : void 0,
+                                o = "object" == typeof i && null != i && "experienceDetails" in i ? i.experienceDetails : void 0,
+                                n = null == o && t === s && "object" == typeof i && null != i && "data" in i && "object" == typeof i.data && null != i.data && "status" in i.data ? i.data.status : void 0;
+                            u?.(t, c, o, n), r?.(o)
                         }, {
                             signal: l.signal
                         })
@@ -144,33 +144,33 @@ export const __webpack_modules__ = {
                     u?.("start", void 0);
                     let {
                         registerIdentityVerification: e
-                    } = await i();
+                    } = await o();
                     e(), l.signal.aborted || (u?.("mount", c), (() => {
-                        let e, i, f = r();
+                        let e, o, f = r();
                         if (null === f) return b();
                         let u = document.createElement("identity-verification");
                         u.style.colorScheme = "normal", u.setAttribute("appearance", JSON.stringify((e = t?.identityVerification, {
-                            ...void 0 === (i = e?.[n]) ? {} : {
+                            ...void 0 === (o = e?.[n]) ? {} : {
                                 theme: {
-                                    header_text_color: i.headingText,
-                                    panel_background_color: i.surface,
-                                    primary_color: i.buttonEnabledBg,
-                                    widget_background_color: i.sheetBg,
+                                    header_text_color: o.headingText,
+                                    panel_background_color: o.surface,
+                                    primary_color: o.buttonEnabledBg,
+                                    widget_background_color: o.sheetBg,
                                     body1: {
-                                        color: i.mutedText
+                                        color: o.mutedText
                                     },
                                     body3: {
-                                        color: i.mutedText
+                                        color: o.mutedText
                                     },
                                     primary_button: {
-                                        border_color: i.buttonEnabledBg,
-                                        button_disabled_border_color: i.buttonDisabledBg,
-                                        button_focused_border_color: i.buttonEnabledBg,
-                                        button_focused_outline: i.focusBorder,
-                                        button_hover_border_color: i.buttonEnabledHoverBg,
-                                        button_pressed_border_color: i.buttonEnabledBg
+                                        border_color: o.buttonEnabledBg,
+                                        button_disabled_border_color: o.buttonDisabledBg,
+                                        button_focused_border_color: o.buttonEnabledBg,
+                                        button_focused_outline: o.focusBorder,
+                                        button_hover_border_color: o.buttonEnabledHoverBg,
+                                        button_pressed_border_color: o.buttonEnabledBg
                                     },
-                                    widget_border_color: i.faintText,
+                                    widget_border_color: o.faintText,
                                     widget_border_weight: "0px"
                                 }
                             },
@@ -186,7 +186,7 @@ export const __webpack_modules__ = {
                                     }
                                 }
                             }
-                        }))), u.setAttribute("aria-label", o), u.setAttribute("environment", c), u.setAttribute("role", "region"), u.setAttribute("token", a), p(u, "on-load"), p(u, "on-ready"), p(u, "on-status-change"), p(u, "on-verification-complete", e => {
+                        }))), u.setAttribute("aria-label", i), u.setAttribute("environment", c), u.setAttribute("role", "region"), u.setAttribute("token", a), p(u, "on-load"), p(u, "on-ready"), p(u, "on-status-change"), p(u, "on-verification-complete", e => {
                             let t, r;
                             return m((t = !("object" != typeof e || null == e || Array.isArray(e)) && ["status", "verification_id"].every(t => {
                                 let r = Reflect.get(e, t);
@@ -235,23 +235,23 @@ export const __webpack_modules__ = {
         function f(e) {
             let t, {
                 runVerification: r = c,
-                getContainer: o,
-                getTheme: i,
+                getContainer: i,
+                getTheme: o,
                 label: n,
                 onCompleted: a
             } = e;
             return {
                 async runCreditVerification(e, a, s) {
-                    if (null != t || null == o()) return {
+                    if (null != t || null == i()) return {
                         kind: 2
                     };
                     t = new AbortController;
                     try {
                         return await r({
                             appearance: s,
-                            getContainer: o,
+                            getContainer: i,
                             label: n,
-                            theme: i(),
+                            theme: o(),
                             verificationToken: a,
                             providerEnvironment: e.environment,
                             signal: t.signal
@@ -268,55 +268,51 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.468d071759.js";
-import * as t from "./418851.f3d2ce19b4.js";
+} from "./633146.2ddddba2a5.js";
+import * as t from "./418851.f34514cc3f.js";
 e.C(t);
-import * as r from "./109308.4b30101b7c.js";
+import * as r from "./109308.8b09661749.js";
 e.C(r);
-import * as o from "./399565.7c8a3f7e95.js";
-e.C(o);
-import * as i from "./257798.b061e3b37a.js";
+import * as i from "./399565.edefe43a76.js";
 e.C(i);
-import * as n from "./447351.9446ee3aae.js";
+import * as o from "./257798.6b4268ddac.js";
+e.C(o);
+import * as n from "./447351.34d04099ca.js";
 e.C(n);
-import * as a from "./617936.a5a9458f41.js";
+import * as a from "./617936.4a1557f13c.js";
 e.C(a);
-import * as s from "./807489.503e8e46b2.js";
+import * as s from "./807489.6b5279adf3.js";
 e.C(s);
-import * as l from "./337882.42cb1bc757.js";
+import * as l from "./337882.568bafdf14.js";
 e.C(l);
-import * as d from "./955979.7655b0fa98.js";
+import * as d from "./955979.b2a7e19963.js";
 e.C(d);
-import * as c from "./646436.ad0e600e92.js";
+import * as c from "./646436.5963e38f02.js";
 e.C(c);
-import * as f from "./7078.20ffc77da3.js";
+import * as f from "./7078.0a9a41e515.js";
 e.C(f);
-import * as u from "./200429.b7f8e76f67.js";
+import * as u from "./200429.a549930e29.js";
 e.C(u);
-import * as m from "./698524.ab39482137.js";
+import * as m from "./698524.48945354c5.js";
 e.C(m);
-import * as b from "./956483.4dc58508d8.js";
+import * as b from "./956483.962c0de04b.js";
 e.C(b);
-import * as p from "./87162.6154a54863.js";
+import * as p from "./87162.e4a69efaac.js";
 e.C(p);
-import * as _ from "./396705.cf1cfb54a0.js";
+import * as _ from "./396705.51be923e43.js";
 e.C(_);
-import * as v from "./155568.831b2b3d34.js";
+import * as v from "./155568.1f7b7a00a5.js";
 e.C(v);
-import * as g from "./731863.6fc88890bf.js";
+import * as g from "./731863.5a49a2d190.js";
 e.C(g);
-import * as y from "./767086.c88be6c073.js";
+import * as y from "./767086.61b8f8fca3.js";
 e.C(y);
-import * as h from "./76629.30a094a9b3.js";
-e.C(h);
-import * as x from "./514085.037ce67b03.js";
+import * as x from "./226913.cf105b979e.js";
 e.C(x);
-import * as C from "./226913.a7e38eae43.js";
-e.C(C);
-import * as j from "./839024.1fa8049e07.js";
-e.C(j);
-var k = e(e.s = "QXa0").a;
+import * as h from "./839024.a63f4925fd.js";
+e.C(h);
+var C = e(e.s = "QXa0").a;
 export {
-    k as
+    C as
     default
 };

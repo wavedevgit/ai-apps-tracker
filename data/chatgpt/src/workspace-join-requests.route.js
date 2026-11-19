@@ -14,53 +14,53 @@ export const __webpack_modules__ = {
             u = a("h6fL"),
             d = a("pEfp"),
             p = a("Kwur"),
-            m = a("aDEf"),
-            f = a("dGxW"),
+            f = a("aDEf"),
+            m = a("dGxW"),
             h = a("H3ts"),
             C = a("v4LA"),
             _ = a("zOE4"),
             g = a("kErH"),
             y = a("OWtl"),
             b = a("jZDY");
-        let w = (0, C.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(152222), a.e(80397), a.e(238490)]).then(a.bind(a, "dna8"))).JoinRequestsReview);
-        var j = (0, n.hb)(function() {
+        let w = (0, C.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(590659), a.e(538365), a.e(697374)]).then(a.bind(a, "zo53"))).JoinRequestsReview);
+        var j = (0, n.kb)(function() {
             let e, t, a = (0, o.c)(6),
-                s = (0, n.X)();
-            return a[0] !== s.pathname || a[1] !== s.search || a[2] !== s.state?.joinApprovalEntryKey ? (e = JSON.stringify([s.pathname, s.search, s.state?.joinApprovalEntryKey]), a[0] = s.pathname, a[1] = s.search, a[2] = s.state?.joinApprovalEntryKey, a[3] = e) : e = a[3], a[4] !== e ? (t = (0, r.jsx)(v, {}, e), a[4] = e, a[5] = t) : t = a[5], t
+                s = (0, n.Z)();
+            return a[0] !== s.pathname || a[1] !== s.search || a[2] !== s.state?.joinApprovalEntryKey ? (e = JSON.stringify([s.pathname, s.search, s.state?.joinApprovalEntryKey]), a[0] = s.pathname, a[1] = s.search, a[2] = s.state?.joinApprovalEntryKey, a[3] = e) : e = a[3], a[4] !== e ? (t = (0, r.jsx)(k, {}, e), a[4] = e, a[5] = t) : t = a[5], t
         });
 
-        function v() {
-            let e, t, a, C, j, v, k, I, L, x, A, P = (0, o.c)(48),
+        function k() {
+            let e, t, a, C, j, k, v, I, L, x, A, P = (0, o.c)(48),
                 E = (0, i.y)(y.a),
                 {
                     accountId: R
-                } = (0, n.cb)(),
+                } = (0, n.eb)(),
                 S = (0, u.a)(),
-                V = (0, n.X)(),
-                q = (0, n.ab)(),
-                U = (0, n._)(),
+                q = (0, n.Z)(),
+                U = (0, n.cb)(),
+                V = (0, n.ab)(),
                 W = (0, b.a)();
-            P[0] !== R || P[1] !== V.state?.joinApprovalEntryKey || P[2] !== q || P[3] !== E ? (e = () => {
-                let e = E.get(m.a);
-                return null != e && q !== n.a.Pop && e.key === V.state?.joinApprovalEntryKey && e.accountId === R ? e : null
-            }, P[0] = R, P[1] = V.state?.joinApprovalEntryKey, P[2] = q, P[3] = E, P[4] = e) : e = P[4];
+            P[0] !== R || P[1] !== q.state?.joinApprovalEntryKey || P[2] !== U || P[3] !== E ? (e = () => {
+                let e = E.get(f.a);
+                return null != e && U !== n.a.Pop && e.key === q.state?.joinApprovalEntryKey && e.accountId === R ? e : null
+            }, P[0] = R, P[1] = q.state?.joinApprovalEntryKey, P[2] = U, P[3] = E, P[4] = e) : e = P[4];
             let [M] = (0, l.useState)(e);
-            P[5] !== V.search ? (t = new URLSearchParams(V.search).get("notification"), P[5] = V.search, P[6] = t) : t = P[6];
-            let O = t,
-                G = null != M && M.userId === S.userId || null != O,
-                K = (0, i.x)(G ? f.b : f.a, null != R && S.accountId === R ? R : null);
-            P[7] !== R || P[8] !== O || P[9] !== K ? (a = ["workspace", R, K, "join-notification", O], P[7] = R, P[8] = O, P[9] = K, P[10] = a) : a = P[10];
-            let T = null != R && null != K && null != O;
-            P[11] !== R || P[12] !== O || P[13] !== K ? (C = async e => {
+            P[5] !== q.search ? (t = new URLSearchParams(q.search).get("notification"), P[5] = q.search, P[6] = t) : t = P[6];
+            let Z = t,
+                O = null != M && M.userId === S.userId || null != Z,
+                z = (0, i.x)(O ? m.b : m.a, null != R && S.accountId === R ? R : null);
+            P[7] !== R || P[8] !== Z || P[9] !== z ? (a = ["workspace", R, z, "join-notification", Z], P[7] = R, P[8] = Z, P[9] = z, P[10] = a) : a = P[10];
+            let G = null != R && null != z && null != Z;
+            P[11] !== R || P[12] !== Z || P[13] !== z ? (C = async e => {
                 let t, {
                     signal: a
                 } = e;
-                if (!R || !K || !O) return !1;
+                if (!R || !z || !Z) return !1;
                 do {
                     let e = await p.Request.safeGet("/notifications", {
                         ...(0, h.a)({
                             accountId: R,
-                            userId: K
+                            userId: z
                         }),
                         signal: a,
                         parameters: {
@@ -72,16 +72,16 @@ export const __webpack_modules__ = {
                             }
                         }
                     });
-                    if (e.items.some(e => e.notification_id === O && "workspace_join_requested" === e.notification_kind)) return !0;
+                    if (e.items.some(e => e.notification_id === Z && "workspace_join_requested" === e.notification_kind)) return !0;
                     t = e.next_cursor ?? void 0
                 } while (t) return !1
-            }, P[11] = R, P[12] = O, P[13] = K, P[14] = C) : C = P[14], P[15] !== a || P[16] !== T || P[17] !== C ? (j = {
+            }, P[11] = R, P[12] = Z, P[13] = z, P[14] = C) : C = P[14], P[15] !== a || P[16] !== G || P[17] !== C ? (j = {
                 queryKey: a,
-                enabled: T,
+                enabled: G,
                 queryFn: C,
                 staleTime: 0
-            }, P[15] = a, P[16] = T, P[17] = C, P[18] = j) : j = P[18];
-            let z = (0, c.a)(j);
+            }, P[15] = a, P[16] = G, P[17] = C, P[18] = j) : j = P[18];
+            let K = (0, c.a)(j);
             if (!R || !/^[a-zA-Z0-9_-]{1,255}$/.test(R)) {
                 let e;
                 return P[19] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, r.jsx)(g.g, {
@@ -89,21 +89,21 @@ export const __webpack_modules__ = {
                     replace: !0
                 }), P[19] = e) : e = P[19], e
             }
-            P[20] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, r.jsxs)(r.Fragment, {
+            P[20] === Symbol.for("react.memo_cache_sentinel") ? (k = (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(s.b, {
                     name: "route content"
                 }), (0, r.jsx)(_.LoadingPage, {})]
-            }), P[20] = v) : v = P[20];
-            let D = v;
-            if (!W || S.isLoading) return D;
-            if (P[21] !== S.authMethod || P[22] !== V.pathname || P[23] !== V.search) {
+            }), P[20] = k) : k = P[20];
+            let T = k;
+            if (!W || S.isLoading) return T;
+            if (P[21] !== S.authMethod || P[22] !== q.pathname || P[23] !== q.search) {
                 I = Symbol.for("react.early_return_sentinel");
-                e: if (k = (0, n.y)({
-                        pathname: V.pathname,
-                        search: V.search
+                e: if (v = (0, n.A)({
+                        pathname: q.pathname,
+                        search: q.search
                     }), null == S.authMethod) {
                     let e, t = new URLSearchParams({
-                            next: k
+                            next: v
                         }),
                         a = `/auth/login?${t}`;
                     P[26] !== a ? (e = (0, r.jsx)(g.g, {
@@ -111,8 +111,8 @@ export const __webpack_modules__ = {
                         replace: !0
                     }), P[26] = a, P[27] = e) : e = P[27], I = e;
                     break e
-                } P[21] = S.authMethod, P[22] = V.pathname, P[23] = V.search, P[24] = k, P[25] = I
-            } else k = P[24], I = P[25];
+                } P[21] = S.authMethod, P[22] = q.pathname, P[23] = q.search, P[24] = v, P[25] = I
+            } else v = P[24], I = P[25];
             if (I !== Symbol.for("react.early_return_sentinel")) return I;
             if ("chatgpt" !== S.authMethod) {
                 let e;
@@ -123,14 +123,14 @@ export const __webpack_modules__ = {
             }
             if (S.accountId !== R) {
                 let e;
-                return P[29] !== R || P[30] !== k ? (e = (0, r.jsx)(d.WorkspaceLinkRoute, {
+                return P[29] !== R || P[30] !== v ? (e = (0, r.jsx)(d.WorkspaceLinkRoute, {
                     accountId: R,
-                    destination: k,
+                    destination: v,
                     unavailablePath: "/"
-                }), P[29] = R, P[30] = k, P[31] = e) : e = P[31], e
+                }), P[29] = R, P[30] = v, P[31] = e) : e = P[31], e
             }
-            if (void 0 === K || null != K && null != O && z.isPending) return D;
-            if (null == K || null != O && !0 !== z.data) {
+            if (void 0 === z || null != z && null != Z && K.isPending) return T;
+            if (null == z || null != Z && !0 !== K.data) {
                 let e, t;
                 P[32] !== R ? (e = new URLSearchParams({
                     account_id: R,
@@ -143,19 +143,19 @@ export const __webpack_modules__ = {
                     replace: !0
                 }), P[34] = n, P[35] = t) : t = P[35], t
             }
-            P[36] !== R || P[37] !== K ? (L = JSON.stringify([R, K]), P[36] = R, P[37] = K, P[38] = L) : L = P[38];
-            let Z = G ? "activity" : "home";
-            return P[39] !== V.state?.activityPage || P[40] !== U ? (x = () => {
-                V.state?.activityPage ? U(-1) : U("/", {
+            P[36] !== R || P[37] !== z ? (L = JSON.stringify([R, z]), P[36] = R, P[37] = z, P[38] = L) : L = P[38];
+            let D = O ? "activity" : "home";
+            return P[39] !== q.state?.activityPage || P[40] !== V ? (x = () => {
+                q.state?.activityPage ? V(-1) : V("/", {
                     replace: !0
                 })
-            }, P[39] = V.state?.activityPage, P[40] = U, P[41] = x) : x = P[41], P[42] !== R || P[43] !== K || P[44] !== x || P[45] !== L || P[46] !== Z ? (A = (0, r.jsx)(w, {
+            }, P[39] = q.state?.activityPage, P[40] = V, P[41] = x) : x = P[41], P[42] !== R || P[43] !== z || P[44] !== x || P[45] !== L || P[46] !== D ? (A = (0, r.jsx)(w, {
                 presentation: "page",
-                entry: Z,
+                entry: D,
                 accountId: R,
-                userId: K,
+                userId: z,
                 onClose: x
-            }, L), P[42] = R, P[43] = K, P[44] = x, P[45] = L, P[46] = Z, P[47] = A) : A = P[47], A
+            }, L), P[42] = R, P[43] = z, P[44] = x, P[45] = L, P[46] = D, P[47] = A) : A = P[47], A
         }
     }),
     dzzk: (function(e, t, a) {
@@ -175,8 +175,8 @@ export const __webpack_modules__ = {
             u = a("l5Vd"),
             d = a("QdUF"),
             p = a("h6fL"),
-            m = a("Kwur"),
-            f = a("zOE4"),
+            f = a("Kwur"),
+            m = a("zOE4"),
             h = a("uHE8"),
             C = a("tSEg"),
             _ = a("vLpE"),
@@ -190,8 +190,8 @@ export const __webpack_modules__ = {
                 connectorId: i.g(w).max(1)
             });
 
-        function v(e) {
-            let t, a, i, w, j, v, I = (0, r.c)(35),
+        function k(e) {
+            let t, a, i, w, j, k, I = (0, r.c)(35),
                 {
                     accountId: L,
                     destination: x,
@@ -202,18 +202,18 @@ export const __webpack_modules__ = {
                 R = void 0 !== P && P,
                 {
                     userId: S,
-                    accountId: V
+                    accountId: q
                 } = (0, p.a)(),
-                q = (0, c.X)(),
-                U = (0, s.useContext)(c.q).matches.at(-1)?.route.children,
-                W = (0, c.V)(x),
-                M = (0, c.V)(A?.returnTo ?? x),
-                O = (0, c.V)(E),
-                G = (0, y.i)();
-            I[0] !== L || I[1] !== W || I[2] !== A || I[3] !== q.key || I[4] !== R || I[5] !== M || I[6] !== O || I[7] !== S ? (t = ["workspace-link-account", q.key, S, L, W, O, R, A, M], I[0] = L, I[1] = W, I[2] = A, I[3] = q.key, I[4] = R, I[5] = M, I[6] = O, I[7] = S, I[8] = t) : t = I[8], I[9] !== L || I[10] !== V || I[11] !== x || I[12] !== A || I[13] !== q.pathname || I[14] !== q.search || I[15] !== R || I[16] !== M || I[17] !== G || I[18] !== O ? (a = async e => {
+                U = (0, c.Z)(),
+                V = (0, s.useContext)(c.r).matches.at(-1)?.route.children,
+                W = (0, c.X)(x),
+                M = (0, c.X)(A?.returnTo ?? x),
+                Z = (0, c.X)(E),
+                O = (0, y.i)();
+            I[0] !== L || I[1] !== W || I[2] !== A || I[3] !== U.key || I[4] !== R || I[5] !== M || I[6] !== Z || I[7] !== S ? (t = ["workspace-link-account", U.key, S, L, W, Z, R, A, M], I[0] = L, I[1] = W, I[2] = A, I[3] = U.key, I[4] = R, I[5] = M, I[6] = Z, I[7] = S, I[8] = t) : t = I[8], I[9] !== L || I[10] !== q || I[11] !== x || I[12] !== A || I[13] !== U.pathname || I[14] !== U.search || I[15] !== R || I[16] !== M || I[17] !== O || I[18] !== Z ? (a = async e => {
                 let {
                     signal: t
-                } = e, a = await m.Request.safeGet("/accounts/check/{version}", {
+                } = e, a = await f.Request.safeGet("/accounts/check/{version}", {
                     parameters: {
                         path: {
                             version: "v4-2023-04-27"
@@ -222,16 +222,16 @@ export const __webpack_modules__ = {
                     signal: t
                 });
                 t.throwIfAborted();
-                let n = "personal" === L && null == A ? Object.values(a.accounts).find(k) : a.accounts[L],
+                let n = "personal" === L && null == A ? Object.values(a.accounts).find(v) : a.accounts[L],
                     r = n?.account;
-                if (null == n || r?.account_id == null || !0 === r.is_deactivated) return R ? ((0, g.setAccountCookie)((0, d.readChatGptTokenClaims)((0, d.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, g.handleBrowserAccountChangeAndRefresh)(O, t), "switching") : "unavailable";
-                if (!R && V === r.account_id && !1 !== n.can_access_with_session && (null == A || (0, d.readChatGptTokenClaims)((0, d.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === r.account_id)) return null != A ? (window.location.replace("string" == typeof x ? x : (0, c.y)(x)), "switching") : "selected";
+                if (null == n || r?.account_id == null || !0 === r.is_deactivated) return R ? ((0, g.setAccountCookie)((0, d.readChatGptTokenClaims)((0, d.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, g.handleBrowserAccountChangeAndRefresh)(Z, t), "switching") : "unavailable";
+                if (!R && q === r.account_id && !1 !== n.can_access_with_session && (null == A || (0, d.readChatGptTokenClaims)((0, d.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === r.account_id)) return null != A ? (window.location.replace("string" == typeof x ? x : (0, c.A)(x)), "switching") : "selected";
                 if (A?.attempted === "select" || A?.attempted === "authenticate" && !1 === n.can_access_with_session) return "unavailable";
-                let o = (0, c.J)(u.i, q.pathname)?.params.projectId,
-                    s = (0, u.t)(new URLSearchParams(q.search));
+                let o = (0, c.L)(u.i, U.pathname)?.params.projectId,
+                    s = (0, u.t)(new URLSearchParams(U.search));
                 if (null != o && null != s && !1 !== n.can_access_with_session) {
                     try {
-                        await m.Request.safeGet("/websites/{project_id}/access_request", {
+                        await f.Request.safeGet("/websites/{project_id}/access_request", {
                             additionalHeaders: {
                                 "ChatGPT-Account-ID": r.account_id
                             },
@@ -265,8 +265,8 @@ export const __webpack_modules__ = {
                     isFedrampCompliantWorkspace: r.is_fedramp_compliant_workspace,
                     canAccessWithSession: n.can_access_with_session,
                     ssoConnectionName: n.sso_connection_name
-                }, G, i, t), "switching"
-            }, I[9] = L, I[10] = V, I[11] = x, I[12] = A, I[13] = q.pathname, I[14] = q.search, I[15] = R, I[16] = M, I[17] = G, I[18] = O, I[19] = a) : a = I[19], I[20] !== t || I[21] !== a ? (i = {
+                }, O, i, t), "switching"
+            }, I[9] = L, I[10] = q, I[11] = x, I[12] = A, I[13] = U.pathname, I[14] = U.search, I[15] = R, I[16] = M, I[17] = O, I[18] = Z, I[19] = a) : a = I[19], I[20] !== t || I[21] !== a ? (i = {
                 queryKey: t,
                 queryFn: a,
                 staleTime: 1 / 0,
@@ -276,45 +276,45 @@ export const __webpack_modules__ = {
                 refetchOnReconnect: !1
             }, I[20] = t, I[21] = a, I[22] = i) : i = I[22];
             let {
-                data: K,
-                error: T
+                data: z,
+                error: G
             } = (0, o.a)(i);
-            if (T) throw T;
-            if ("unavailable" === K) {
+            if (G) throw G;
+            if ("unavailable" === z) {
                 let e;
                 return I[23] !== E ? (e = (0, n.jsx)(c.l, {
                     to: E,
                     replace: !0
                 }), I[23] = E, I[24] = e) : e = I[24], e
             }
-            if ("selected" === K) {
+            if ("selected" === z) {
                 let e;
                 return I[25] !== x ? (e = (0, n.jsx)(c.l, {
                     to: x,
                     replace: !0
                 }), I[25] = x, I[26] = e) : e = I[26], e
             }
-            let z = _.a,
-                D = C.b,
-                Z = null == U ? q.pathname : (0, l.e)(U, q.pathname);
-            return I[27] !== q || I[28] !== D || I[29] !== Z ? (w = D({
-                ...q,
-                routeTemplate: Z
-            }), I[27] = q, I[28] = D, I[29] = Z, I[30] = w) : w = I[30], I[31] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, n.jsxs)(h.a, {
-                children: [(0, n.jsx)(b.b, {}), (0, n.jsx)(f.LoadingPage, {})]
-            }), I[31] = j) : j = I[31], I[32] !== z || I[33] !== w ? (v = (0, n.jsx)(z, {
+            let K = _.a,
+                T = C.b,
+                D = null == V ? U.pathname : (0, l.e)(V, U.pathname);
+            return I[27] !== U || I[28] !== T || I[29] !== D ? (w = T({
+                ...U,
+                routeTemplate: D
+            }), I[27] = U, I[28] = T, I[29] = D, I[30] = w) : w = I[30], I[31] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, n.jsxs)(h.a, {
+                children: [(0, n.jsx)(b.b, {}), (0, n.jsx)(m.LoadingPage, {})]
+            }), I[31] = j) : j = I[31], I[32] !== K || I[33] !== w ? (k = (0, n.jsx)(K, {
                 route: w,
                 children: j
-            }), I[32] = z, I[33] = w, I[34] = v) : v = I[34], v
+            }), I[32] = K, I[33] = w, I[34] = k) : k = I[34], k
         }
 
-        function k(e) {
+        function v(e) {
             return "personal" === e.account.structure
         }
         a.d(t, {}, {
             CodeAttributionConnectorAccountRoute: function() {
                 let e, t, a, o, s, i, l, u = (0, r.c)(14),
-                    d = (0, c.X)();
+                    d = (0, c.Z)();
                 if (u[0] !== d.search) {
                     s = Symbol.for("react.early_return_sentinel");
                     e: {
@@ -336,7 +336,7 @@ export const __webpack_modules__ = {
                                 "product-sku": "CODEX"
                             }),
                             p = i.data.connectorId[0];null != p && l.set("connector", p),
-                        e = v,
+                        e = k,
                         o = i.data.accountId[0],
                         t = "/settings/connectors",
                         a = l.toString()
@@ -352,7 +352,7 @@ export const __webpack_modules__ = {
                     unavailablePath: "/settings/plugins-settings"
                 }), u[10] = e, u[11] = o, u[12] = i, u[13] = l) : l = u[13], l)
             },
-            WorkspaceLinkRoute: v
+            WorkspaceLinkRoute: k
         })
     }),
     aDEf: (function(e, t, a) {
@@ -372,22 +372,22 @@ export const __webpack_modules__ = {
                 if (!d || u.authenticatedAccountId !== a) return !1;
                 (0, i.d)(e, "activity");
                 let p = (0, i.e)(a),
-                    m = e.get(s.f) ? e.get(s.a)?.openerKey : null;
-                m || e.set(r.f, !1);
-                let f = {
+                    f = e.get(s.f) ? e.get(s.a)?.openerKey : null;
+                f || e.set(r.a, !1);
+                let m = {
                     accountId: a,
                     userId: d,
                     key: crypto.randomUUID()
                 };
-                return e.set(l, f), t(p, {
+                return e.set(l, m), t(p, {
                     state: {
                         sidebarPrimaryContent: !0,
                         activityPage: {
-                            origin: m ?? null,
+                            origin: f ?? null,
                             pathname: p,
                             notificationId: n
                         },
-                        joinApprovalEntryKey: f.key
+                        joinApprovalEntryKey: m.key
                     }
                 }), !0
             }
@@ -406,8 +406,8 @@ export const __webpack_modules__ = {
         var u = a("OWtl"),
             d = a("OMIV"),
             p = a("UR81");
-        let m = (0, i.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(152222), a.e(80397), a.e(384437)]).then(a.bind(a, "dna8"))).JoinRequestsDialog),
-            f = !1,
+        let f = (0, i.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(590659), a.e(538365), a.e(697374), a.e(531525)]).then(a.bind(a, "zo53"))).JoinRequestsDialog),
+            m = !1,
             h = (0, n.d)(u.a, (e, t) => {
                 let {
                     get: a
@@ -436,7 +436,7 @@ export const __webpack_modules__ = {
             b: h,
             c: function(e, t, a, n) {
                 let r = e.get(C, t);
-                return !!r && ((0, l.f)(e, m, {
+                return !!r && ((0, l.f)(e, f, {
                     accountId: t,
                     userId: r,
                     initialTarget: a,
@@ -444,10 +444,10 @@ export const __webpack_modules__ = {
                 }), !0)
             },
             d: function(e, t) {
-                if (f) return;
-                f = !0;
+                if (m) return;
+                m = !0;
                 let a = performance.now(),
-                    n = m.preload();
+                    n = f.preload();
                 if (!n) return;
                 let o = (0, r.c)(e);
 
@@ -479,7 +479,7 @@ export const __webpack_modules__ = {
                     expectedIdentity: e,
                     additionalHeaders: {
                         "ChatGPT-Account-ID": e.accountId,
-                        [n.bc]: e.accountId
+                        [n.dc]: e.accountId
                     }
                 }
             }
@@ -493,55 +493,51 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.468d071759.js";
-import * as t from "./418851.f3d2ce19b4.js";
+} from "./633146.2ddddba2a5.js";
+import * as t from "./418851.f34514cc3f.js";
 e.C(t);
-import * as a from "./109308.4b30101b7c.js";
+import * as a from "./109308.8b09661749.js";
 e.C(a);
-import * as n from "./399565.7c8a3f7e95.js";
+import * as n from "./399565.edefe43a76.js";
 e.C(n);
-import * as r from "./257798.b061e3b37a.js";
+import * as r from "./257798.6b4268ddac.js";
 e.C(r);
-import * as o from "./447351.9446ee3aae.js";
+import * as o from "./447351.34d04099ca.js";
 e.C(o);
-import * as s from "./617936.a5a9458f41.js";
+import * as s from "./617936.4a1557f13c.js";
 e.C(s);
-import * as c from "./807489.503e8e46b2.js";
+import * as c from "./807489.6b5279adf3.js";
 e.C(c);
-import * as i from "./337882.42cb1bc757.js";
+import * as i from "./337882.568bafdf14.js";
 e.C(i);
-import * as l from "./955979.7655b0fa98.js";
+import * as l from "./955979.b2a7e19963.js";
 e.C(l);
-import * as u from "./646436.ad0e600e92.js";
+import * as u from "./646436.5963e38f02.js";
 e.C(u);
-import * as d from "./7078.20ffc77da3.js";
+import * as d from "./7078.0a9a41e515.js";
 e.C(d);
-import * as p from "./200429.b7f8e76f67.js";
+import * as p from "./200429.a549930e29.js";
 e.C(p);
-import * as m from "./698524.ab39482137.js";
-e.C(m);
-import * as f from "./956483.4dc58508d8.js";
+import * as f from "./698524.48945354c5.js";
 e.C(f);
-import * as h from "./87162.6154a54863.js";
+import * as m from "./956483.962c0de04b.js";
+e.C(m);
+import * as h from "./87162.e4a69efaac.js";
 e.C(h);
-import * as C from "./396705.cf1cfb54a0.js";
+import * as C from "./396705.51be923e43.js";
 e.C(C);
-import * as _ from "./155568.831b2b3d34.js";
+import * as _ from "./155568.1f7b7a00a5.js";
 e.C(_);
-import * as g from "./731863.6fc88890bf.js";
+import * as g from "./731863.5a49a2d190.js";
 e.C(g);
-import * as y from "./767086.c88be6c073.js";
+import * as y from "./767086.61b8f8fca3.js";
 e.C(y);
-import * as b from "./76629.30a094a9b3.js";
+import * as b from "./226913.cf105b979e.js";
 e.C(b);
-import * as w from "./514085.037ce67b03.js";
+import * as w from "./188556.42dbc25826.js";
 e.C(w);
-import * as j from "./226913.a7e38eae43.js";
-e.C(j);
-import * as v from "./188556.27a92496c3.js";
-e.C(v);
-var k = e(e.s = "P3fW").a;
+var j = e(e.s = "P3fW").a;
 export {
-    k as
+    j as
     default
 };

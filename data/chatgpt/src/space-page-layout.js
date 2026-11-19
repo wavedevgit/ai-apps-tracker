@@ -14,92 +14,92 @@ export const __webpack_modules__ = {
             d = a("tmUE"),
             c = a("IhXv"),
             u = a("e1xH"),
-            m = a("M2H2"),
-            p = a("C8z7"),
+            p = a("M2H2"),
+            m = a("C8z7"),
             f = a("aFW8"),
             b = a("vnV1"),
             h = a("IeFV"),
             x = a("OWtl"),
             g = a("OMIV"),
-            v = a("hC2y"),
-            C = a("AXDI"),
-            j = (0, r.hb)(function() {
-                let e, t, a, j, _, w, y, I, k = (0, i.c)(40),
+            C = a("hC2y"),
+            v = a("AXDI"),
+            j = (0, r.kb)(function() {
+                let e, t, a, j, _, y, I, k, w = (0, i.c)(40),
                     S = (0, s.y)(x.a),
-                    F = (0, r.X)(),
+                    F = (0, r.Z)(),
                     {
                         pathname: B
                     } = F,
                     {
                         pageId: O
-                    } = (0, r.cb)(),
-                    N = (0, r.W)(),
+                    } = (0, r.eb)(),
+                    N = (0, r.Y)(),
                     U = "inAppOpen" in N && N.inAppOpen,
-                    D = (0, s.z)(m.a),
+                    D = (0, s.z)(p.a),
                     M = (0, s.z)(l.f),
                     z = (0, s.z)(l.j),
                     A = (0, s.z)(l.k),
                     G = (0, s.z)(l.h);
-                k[0] !== M || k[1] !== G || k[2] !== A || k[3] !== z ? (e = JSON.stringify([M, z, A, G]), k[0] = M, k[1] = G, k[2] = A, k[3] = z, k[4] = e) : e = k[4];
-                let L = e;
-                k[5] !== U || k[6] !== D || k[7] !== F || k[8] !== S ? (t = () => {
+                w[0] !== M || w[1] !== G || w[2] !== A || w[3] !== z ? (e = JSON.stringify([M, z, A, G]), w[0] = M, w[1] = G, w[2] = A, w[3] = z, w[4] = e) : e = w[4];
+                let E = e;
+                w[5] !== U || w[6] !== D || w[7] !== F || w[8] !== S ? (t = () => {
                     let e = (0, h.a)(F),
-                        t = U && D && null != e ? (0, p.a)(S, document, e) : void 0;
+                        t = U && D && null != e ? (0, m.a)(S, document, e) : void 0;
                     return {
                         preparation: t,
                         snapshot: t?.takeSnapshot() ?? null
                     }
-                }, k[5] = U, k[6] = D, k[7] = F, k[8] = S, k[9] = t) : t = k[9];
-                let q = t;
-                k[10] !== q || k[11] !== L || k[12] !== O ? (a = () => ({
+                }, w[5] = U, w[6] = D, w[7] = F, w[8] = S, w[9] = t) : t = w[9];
+                let L = t;
+                w[10] !== L || w[11] !== E || w[12] !== O ? (a = () => ({
                     pageId: O,
-                    actor: L,
-                    ...q()
-                }), k[10] = q, k[11] = L, k[12] = O, k[13] = a) : a = k[13];
-                let [E, P] = (0, n.useState)(a), T = E;
-                if (E.pageId !== O || E.actor !== L) {
+                    actor: E,
+                    ...L()
+                }), w[10] = L, w[11] = E, w[12] = O, w[13] = a) : a = w[13];
+                let [Z, q] = (0, n.useState)(a), P = Z;
+                if (Z.pageId !== O || Z.actor !== E) {
                     let e, t;
-                    k[14] !== q || k[15] !== E.pageId || k[16] !== O ? (e = E.pageId !== O ? q() : {
+                    w[14] !== L || w[15] !== Z.pageId || w[16] !== O ? (e = Z.pageId !== O ? L() : {
                         preparation: void 0,
                         snapshot: null
-                    }, k[14] = q, k[15] = E.pageId, k[16] = O, k[17] = e) : e = k[17], k[18] !== L || k[19] !== O || k[20] !== e ? (t = {
+                    }, w[14] = L, w[15] = Z.pageId, w[16] = O, w[17] = e) : e = w[17], w[18] !== E || w[19] !== O || w[20] !== e ? (t = {
                         pageId: O,
-                        actor: L,
+                        actor: E,
                         ...e
-                    }, k[18] = L, k[19] = O, k[20] = e, k[21] = t) : t = k[21], P(T = t)
+                    }, w[18] = E, w[19] = O, w[20] = e, w[21] = t) : t = w[21], q(P = t)
                 }
-                let Z = U ? T.snapshot : N.spacePageSnapshot,
-                    V = U || N.nonblockingSsr,
-                    $ = (0, s.x)(u.H, B),
+                let T = U ? P.snapshot : N.spacePageSnapshot,
+                    $ = U || N.nonblockingSsr,
+                    V = (0, s.x)(u.H, B),
                     W = (0, s.z)(u.A),
                     R = (0, s.x)(g.e, "4063423961");
-                k[22] === Symbol.for("react.memo_cache_sentinel") ? (j = {
+                w[22] === Symbol.for("react.memo_cache_sentinel") ? (j = {
                     enabled: !1
-                }, k[22] = j) : j = k[22];
+                }, w[22] = j) : j = w[22];
                 let H = (0, s.z)(b.d, j);
-                k[23] === Symbol.for("react.memo_cache_sentinel") ? (_ = (0, o.jsx)(d.a, {
+                w[23] === Symbol.for("react.memo_cache_sentinel") ? (_ = (0, o.jsx)(d.a, {
                     routeFallback: !0,
                     fillParent: !0
-                }), k[23] = _) : _ = k[23], k[24] !== $ ? (w = (0, o.jsx)(C.a, {
+                }), w[23] = _) : _ = w[23], w[24] !== V ? (y = (0, o.jsx)(v.a, {
                     fallback: _,
-                    children: $ ? (0, o.jsx)(f.b, {
+                    children: V ? (0, o.jsx)(f.b, {
                         pageRoute: !0,
-                        children: (0, o.jsx)(r.m, {})
-                    }) : (0, o.jsx)(v.e, {
+                        children: (0, o.jsx)(r.n, {})
+                    }) : (0, o.jsx)(C.e, {
                         allowLocal: !0
                     })
-                }), k[24] = $, k[25] = w) : w = k[25];
-                let Q = w,
-                    X = U ? T.preparation : void 0,
+                }), w[24] = V, w[25] = y) : y = w[25];
+                let Q = y,
+                    X = U ? P.preparation : void 0,
                     J = U ? O : void 0;
-                return k[26] !== R || k[27] !== U || k[28] !== D || k[29] !== F || k[30] !== W || k[31] !== H ? (y = (!U || D && null != (0, h.a)(F)) && "disabled" !== W && (!R || null == H.error && H.data?.status !== "age_restricted"), k[26] = R, k[27] = U, k[28] = D, k[29] = F, k[30] = W, k[31] = H, k[32] = y) : y = k[32], k[33] !== Q || k[34] !== V || k[35] !== Z || k[36] !== X || k[37] !== J || k[38] !== y ? (I = (0, o.jsx)(c.a, {
-                    snapshot: Z,
+                return w[26] !== R || w[27] !== U || w[28] !== D || w[29] !== F || w[30] !== W || w[31] !== H ? (I = (!U || D && null != (0, h.a)(F)) && "disabled" !== W && (!R || null == H.error && H.data?.status !== "age_restricted"), w[26] = R, w[27] = U, w[28] = D, w[29] = F, w[30] = W, w[31] = H, w[32] = I) : I = w[32], w[33] !== Q || w[34] !== $ || w[35] !== T || w[36] !== X || w[37] !== J || w[38] !== I ? (k = (0, o.jsx)(c.a, {
+                    snapshot: T,
                     preparation: X,
-                    nonblocking: V,
+                    nonblocking: $,
                     openIdentity: J,
-                    enabled: y,
+                    enabled: I,
                     children: Q
-                }), k[33] = Q, k[34] = V, k[35] = Z, k[36] = X, k[37] = J, k[38] = y, k[39] = I) : I = k[39], I
+                }), w[33] = Q, w[34] = $, w[35] = T, w[36] = X, w[37] = J, w[38] = I, w[39] = k) : k = w[39], k
             });
         let _ = e => {
             let {
@@ -123,43 +123,49 @@ export const __webpack_modules__ = {
         e.exports = a.p + "assets/dictation-stop.e3bc7ebc5e.wav"
     }),
     LpCf: (function(e, t, a) {
+        let r = {
+            "--oai-wb-spacing": "var(--spacing,0.25rem)",
+            ...Object.fromEntries(Object.entries({
+                "text-primary": "var(--color-token-text-primary,var(--text-primary,#0d0d0d))",
+                "text-secondary": "var(--color-token-text-secondary,var(--text-secondary,#5d5d5d))",
+                "text-tertiary": "var(--color-token-text-tertiary,var(--text-tertiary,#8f8f8f))",
+                "surface-primary": "var(--color-token-main-surface-primary,var(--main-surface-primary,#fff))",
+                "surface-secondary": "var(--color-token-bg-tertiary,var(--main-surface-secondary,#f5f5f5))",
+                "interactive-secondary-hover": "var(--color-token-interactive-bg-secondary-hover,var(--oai-wb-surface-secondary))",
+                border: "var(--color-token-border,var(--border-light,rgb(0 0 0/8%)))",
+                "border-hover": "var(--color-token-border-default,var(--border-medium,rgb(0 0 0/12%)))",
+                divider: "var(--color-token-border-light,var(--border-light,rgb(0 0 0/5%)))",
+                focus: "var(--color-token-focus-border,var(--border-strong,#5b9dd9))",
+                "control-border": "var(--interactive-border-focus,var(--oai-wb-focus))",
+                "entity-accent": "var(--theme-entity-accent,var(--oai-wb-accent))",
+                accent: "var(--interactive-label-accent-default,#0285ff)",
+                "on-accent": "var(--bg-primary,#fff)",
+                "interactive-background": "var(--interactive-bg-accent-default,color-mix(in srgb,#0285ff 12%,transparent))",
+                selection: "var(--theme-user-selection-bg,var(--selection,#93c5fd))",
+                radius: "1.5rem",
+                "radius-sm": "0.5rem",
+                shadow: "0 4px 80px rgb(0 0 0/2%)",
+                "shadow-lg": "0 10px 30px rgb(0 0 0/12%)",
+                "font-sans": "var(--font-sans,sans-serif)",
+                "font-mono": "var(--font-mono,monospace)",
+                "font-size": "0.875rem",
+                "shimmer-dark-contrast": "var(--oai-wb-text-tertiary)",
+                "shimmer-dark-secondary": "var(--oai-wb-text-tertiary)"
+            }).map(e => {
+                let [t, a] = e;
+                return [`--oai-wb-${t}`, `var(--wb-${t},${a})`]
+            }))
+        };
         a.d(t, {}, {
-            a: {
-                "--oai-wb-spacing": "var(--spacing,0.25rem)",
-                "--oai-wb-text-primary": "var(--wb-text-primary,var(--color-token-text-primary,var(--text-primary,#0d0d0d)))",
-                "--oai-wb-text-secondary": "var(--wb-text-secondary,var(--color-token-text-secondary,var(--text-secondary,#5d5d5d)))",
-                "--oai-wb-text-tertiary": "var(--wb-text-tertiary,var(--color-token-text-tertiary,var(--text-tertiary,#8f8f8f)))",
-                "--oai-wb-surface-primary": "var(--wb-surface-primary,var(--color-token-main-surface-primary,var(--main-surface-primary,#fff)))",
-                "--oai-wb-surface-secondary": "var(--wb-surface-secondary,var(--color-token-bg-tertiary,var(--main-surface-secondary,#f5f5f5)))",
-                "--oai-wb-interactive-secondary-hover": "var(--wb-interactive-secondary-hover,var(--color-token-interactive-bg-secondary-hover,var(--oai-wb-surface-secondary)))",
-                "--oai-wb-border": "var(--wb-border,var(--color-token-border,var(--border-light,rgb(0 0 0/8%))))",
-                "--oai-wb-border-hover": "var(--wb-border-hover,var(--color-token-border-default,var(--border-medium,rgb(0 0 0/12%))))",
-                "--oai-wb-divider": "var(--wb-divider,var(--color-token-border-light,var(--border-light,rgb(0 0 0/5%))))",
-                "--oai-wb-focus": "var(--wb-focus,var(--color-token-focus-border,var(--border-strong,#5b9dd9)))",
-                "--oai-wb-control-border": "var(--wb-control-border,var(--interactive-border-focus,var(--oai-wb-focus)))",
-                "--oai-wb-entity-accent": "var(--wb-entity-accent,var(--theme-entity-accent,var(--oai-wb-accent)))",
-                "--oai-wb-accent": "var(--wb-accent,var(--interactive-label-accent-default,#0285ff))",
-                "--oai-wb-on-accent": "var(--wb-on-accent,var(--bg-primary,#fff))",
-                "--oai-wb-interactive-background": "var(--wb-interactive-background,var(--interactive-bg-accent-default,color-mix(in srgb,#0285ff 12%,transparent)))",
-                "--oai-wb-selection": "var(--wb-selection,var(--theme-user-selection-bg,var(--selection,#93c5fd)))",
-                "--oai-wb-radius": "var(--wb-radius,1.5rem)",
-                "--oai-wb-radius-sm": "var(--wb-radius-sm,0.5rem)",
-                "--oai-wb-shadow": "var(--wb-shadow,0 4px 80px rgb(0 0 0/2%))",
-                "--oai-wb-shadow-lg": "var(--wb-shadow-lg,0 10px 30px rgb(0 0 0/12%))",
-                "--oai-wb-font-sans": "var(--wb-font-sans,var(--font-sans,sans-serif))",
-                "--oai-wb-font-mono": "var(--wb-font-mono,var(--font-mono,monospace))",
-                "--oai-wb-font-size": "var(--wb-font-size,0.875rem)",
-                "--oai-wb-shimmer-dark-contrast": "var(--wb-shimmer-dark-contrast,var(--oai-wb-text-tertiary))",
-                "--oai-wb-shimmer-dark-secondary": "var(--wb-shimmer-dark-secondary,var(--oai-wb-text-tertiary))"
-            }
+            a: r
         })
     }),
     rfXw: (function(e, t, a) {
         var r = a("ABep"),
             o = a("QosV");
         t.default = e => {
-            let t, a, i, s, n, l, d, c, u, m, p, f, b, h, x, g, v, C, j, _, w = (0, o.c)(21);
-            return w[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, r.jsx)("path", {
+            let t, a, i, s, n, l, d, c, u, p, m, f, b, h, x, g, C, v, j, _, y = (0, o.c)(21);
+            return y[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, r.jsx)("path", {
                 d: "M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",
                 fill: "url(#paint0_radial_8150_7076)"
             }), a = (0, r.jsx)("path", {
@@ -170,7 +176,7 @@ export const __webpack_modules__ = {
                 stroke: "black",
                 strokeOpacity: .1,
                 strokeWidth: .25
-            }), w[0] = t, w[1] = a, w[2] = i) : (t = w[0], a = w[1], i = w[2]), w[3] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, r.jsxs)("g", {
+            }), y[0] = t, y[1] = a, y[2] = i) : (t = y[0], a = y[1], i = y[2]), y[3] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, r.jsxs)("g", {
                 filter: "url(#filter0_i_8150_7076)",
                 children: [(0, r.jsx)("path", {
                     d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
@@ -187,7 +193,7 @@ export const __webpack_modules__ = {
                 stroke: "black",
                 strokeOpacity: .1,
                 strokeWidth: .25
-            }), w[3] = s, w[4] = n) : (s = w[3], n = w[4]), w[5] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, r.jsx)("g", {
+            }), y[3] = s, y[4] = n) : (s = y[3], n = y[4]), y[5] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, r.jsx)("g", {
                 filter: "url(#filter1_i_8150_7076)",
                 children: (0, r.jsx)("path", {
                     d: "M12.5 22C14.9853 22 17 19.9853 17 17.5C17 15.0147 14.9853 13 12.5 13C10.0147 13 8 15.0147 8 17.5C8 19.9853 10.0147 22 12.5 22Z",
@@ -198,7 +204,7 @@ export const __webpack_modules__ = {
                 stroke: "black",
                 strokeOpacity: .1,
                 strokeWidth: .25
-            }), w[5] = l, w[6] = d) : (l = w[5], d = w[6]), w[7] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, r.jsx)("g", {
+            }), y[5] = l, y[6] = d) : (l = y[5], d = y[6]), y[7] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, r.jsx)("g", {
                 filter: "url(#filter2_d_8150_7076)",
                 children: (0, r.jsx)("rect", {
                     x: 2,
@@ -211,7 +217,7 @@ export const __webpack_modules__ = {
             }), u = (0, r.jsx)("path", {
                 d: "M4.5 14.3421L5.46644 14.2498C5.52461 14.5684 5.64206 14.8025 5.81879 14.9519C5.99776 15.1013 6.23826 15.176 6.54027 15.176C6.86018 15.176 7.10067 15.1101 7.26174 14.9782C7.42506 14.8442 7.50671 14.6882 7.50671 14.5102C7.50671 14.396 7.47204 14.2993 7.40268 14.2202C7.33557 14.1389 7.217 14.0686 7.04698 14.0092C6.93065 13.9697 6.66555 13.8994 6.25168 13.7983C5.71924 13.6686 5.34564 13.5093 5.13087 13.3204C4.82886 13.0545 4.67785 12.7304 4.67785 12.3481C4.67785 12.102 4.74832 11.8723 4.88926 11.6592C5.03244 11.4439 5.23714 11.2802 5.50336 11.1681C5.77181 11.056 6.09508 11 6.47315 11C7.0906 11 7.55481 11.1329 7.86577 11.3988C8.17897 11.6647 8.3434 12.0196 8.35906 12.4634L7.36577 12.5063C7.32327 12.258 7.23154 12.08 7.0906 11.9723C6.9519 11.8624 6.74273 11.8075 6.46309 11.8075C6.1745 11.8075 5.94855 11.8657 5.78523 11.9822C5.68009 12.0569 5.62752 12.1569 5.62752 12.2821C5.62752 12.3964 5.67673 12.4942 5.77517 12.5755C5.90045 12.6788 6.2047 12.7864 6.68792 12.8985C7.17114 13.0105 7.52796 13.127 7.75839 13.2479C7.99105 13.3665 8.17226 13.5302 8.30201 13.739C8.434 13.9455 8.5 14.2015 8.5 14.5069C8.5 14.7838 8.4217 15.0431 8.2651 15.2848C8.1085 15.5265 7.88702 15.7067 7.60067 15.8253C7.31432 15.9418 6.95749 16 6.5302 16C5.90828 16 5.43065 15.8594 5.09732 15.5781C4.76398 15.2947 4.56488 14.8827 4.5 14.3421Z",
                 fill: "white"
-            }), w[7] = c, w[8] = u) : (c = w[7], u = w[8]), w[9] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, r.jsxs)("filter", {
+            }), y[7] = c, y[8] = u) : (c = y[7], u = y[8]), y[9] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsxs)("filter", {
                 id: "filter0_i_8150_7076",
                 x: 12.25,
                 y: 7,
@@ -247,7 +253,7 @@ export const __webpack_modules__ = {
                     in2: "shape",
                     result: "effect1_innerShadow_8150_7076"
                 })]
-            }), w[9] = m) : m = w[9], w[10] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsxs)("filter", {
+            }), y[9] = p) : p = y[9], y[10] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, r.jsxs)("filter", {
                 id: "filter1_i_8150_7076",
                 x: 8,
                 y: 13,
@@ -283,7 +289,7 @@ export const __webpack_modules__ = {
                     in2: "shape",
                     result: "effect1_innerShadow_8150_7076"
                 })]
-            }), w[10] = p) : p = w[10], w[11] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsxs)("filter", {
+            }), y[10] = m) : m = y[10], y[11] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsxs)("filter", {
                 id: "filter2_d_8150_7076",
                 x: 1.5,
                 y: 8.75,
@@ -319,7 +325,7 @@ export const __webpack_modules__ = {
                     in2: "effect1_dropShadow_8150_7076",
                     result: "shape"
                 })]
-            }), w[11] = f) : f = w[11], w[12] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, r.jsxs)("radialGradient", {
+            }), y[11] = f) : f = y[11], y[12] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, r.jsxs)("radialGradient", {
                 id: "paint0_radial_8150_7076",
                 cx: 0,
                 cy: 0,
@@ -332,7 +338,7 @@ export const __webpack_modules__ = {
                     offset: 1,
                     stopColor: "#04786A"
                 })]
-            }), w[12] = b) : b = w[12], w[13] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, r.jsxs)("linearGradient", {
+            }), y[12] = b) : b = y[12], y[13] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, r.jsxs)("linearGradient", {
                 id: "paint1_linear_8150_7076",
                 x1: 10,
                 y1: 8,
@@ -346,7 +352,7 @@ export const __webpack_modules__ = {
                     offset: 1,
                     stopColor: "#0A5752"
                 })]
-            }), w[13] = h) : h = w[13], w[14] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, r.jsxs)("radialGradient", {
+            }), y[13] = h) : h = y[13], y[14] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, r.jsxs)("radialGradient", {
                 id: "paint2_radial_8150_7076",
                 cx: 0,
                 cy: 0,
@@ -359,7 +365,7 @@ export const __webpack_modules__ = {
                     offset: 1,
                     stopColor: "#29C7B8"
                 })]
-            }), w[14] = x) : x = w[14], w[15] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, r.jsxs)("linearGradient", {
+            }), y[14] = x) : x = y[14], y[15] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, r.jsxs)("linearGradient", {
                 id: "paint3_linear_8150_7076",
                 x1: 12.7045,
                 y1: 12,
@@ -374,7 +380,7 @@ export const __webpack_modules__ = {
                     stopColor: "#6FBBD4",
                     stopOpacity: 0
                 })]
-            }), w[15] = g) : g = w[15], w[16] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, r.jsxs)("linearGradient", {
+            }), y[15] = g) : g = y[15], y[16] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, r.jsxs)("linearGradient", {
                 id: "paint4_linear_8150_7076",
                 x1: 17.25,
                 y1: 11.0909,
@@ -388,7 +394,7 @@ export const __webpack_modules__ = {
                     offset: 1,
                     stopColor: "#0C6553"
                 })]
-            }), w[16] = v) : v = w[16], w[17] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, r.jsxs)("radialGradient", {
+            }), y[16] = C) : C = y[16], y[17] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, r.jsxs)("radialGradient", {
                 id: "paint5_radial_8150_7076",
                 cx: 0,
                 cy: 0,
@@ -401,8 +407,8 @@ export const __webpack_modules__ = {
                     offset: 1,
                     stopColor: "#218097"
                 })]
-            }), w[17] = C) : C = w[17], w[18] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, r.jsxs)("defs", {
-                children: [m, p, f, b, h, x, g, v, C, (0, r.jsxs)("linearGradient", {
+            }), y[17] = v) : v = y[17], y[18] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, r.jsxs)("defs", {
+                children: [p, m, f, b, h, x, g, C, v, (0, r.jsxs)("linearGradient", {
                     id: "paint6_linear_8150_7076",
                     x1: 6.5,
                     y1: 9,
@@ -416,14 +422,14 @@ export const __webpack_modules__ = {
                         stopColor: "#064A66"
                     })]
                 })]
-            }), w[18] = j) : j = w[18], w[19] !== e ? (_ = (0, r.jsxs)("svg", {
+            }), y[18] = j) : j = y[18], y[19] !== e ? (_ = (0, r.jsxs)("svg", {
                 width: "1em",
                 height: "1em",
                 viewBox: "0 0 24 24",
                 fill: "currentColor",
                 ...e,
                 children: [t, a, i, s, n, l, d, c, u, j]
-            }), w[19] = e, w[20] = _) : _ = w[20], _
+            }), y[19] = e, y[20] = _) : _ = y[20], _
         }
     }),
     bDc1: (function(e, t, a) {
@@ -445,15 +451,15 @@ export const __webpack_modules__ = {
             d = a("gcGr"),
             c = a("vZCo"),
             u = a("kpww"),
-            m = a("sCki"),
-            p = a("gWf7"),
+            p = a("sCki"),
+            m = a("gWf7"),
             f = a("OH6Z"),
             b = a("FIwD"),
             h = a("MBDE"),
             x = a("Qbhq"),
             g = a("urXC"),
-            v = a("Vc7o"),
-            C = a("f9K9");
+            C = a("Vc7o"),
+            v = a("f9K9");
         a.d(t, {}, {
             a: function(e, t, a) {
                 if (["row", "col", "box", "grid-item"].includes(e)) {
@@ -531,23 +537,23 @@ export const __webpack_modules__ = {
                             inline: !0,
                             lineThrough: !0
                         } : t,
-                        o = "title" === e ? (0, c.b)(t) : "caption" === e ? (0, u.b)(t) : "label" === e ? (0, m.b)(t) : (0, d.b)(r, a.inline);
+                        o = "title" === e ? (0, c.b)(t) : "caption" === e ? (0, u.b)(t) : "label" === e ? (0, p.b)(t) : (0, d.b)(r, a.inline);
                     return {
                         tag: o.as,
-                        attributes: (0, p.b)(o, a.theme)
+                        attributes: (0, m.b)(o, a.theme)
                     }
                 }
                 if ("code" === e) return {
                     tag: "code",
                     attributes: {
-                        className: v.a.Code,
+                        className: C.a.Code,
                         "data-d-component": "code"
                     }
                 };
                 if ("link" === e) return {
                     tag: "a",
                     attributes: {
-                        className: C.a.Link,
+                        className: v.a.Link,
                         "data-d-component": "link",
                         title: t.title
                     }
@@ -609,21 +615,21 @@ export const __webpack_modules__ = {
             d = a.n(l),
             c = a("Q840"),
             u = a("G4E3"),
-            m = a("zd8w"),
-            p = a("oyxz"),
+            p = a("zd8w"),
+            m = a("oyxz"),
             f = a("rEML"),
             b = a("Cslg"),
             h = a("MdAf"),
             x = a("tmUE"),
             g = a("GhgU"),
-            v = a("e1xH"),
-            C = a("cVcC"),
+            C = a("e1xH"),
+            v = a("cVcC"),
             j = a("hlkZ"),
             _ = a("NnV7"),
-            w = a("dJBt"),
-            y = a("OWtl"),
-            I = a("OMIV"),
-            k = a("TnSu"),
+            y = a("dJBt"),
+            I = a("OWtl"),
+            k = a("OMIV"),
+            w = a("TnSu"),
             S = a("bIvi"),
             F = a("eShZ"),
             B = a("WrMt"),
@@ -633,31 +639,31 @@ export const __webpack_modules__ = {
             D = () => !1;
 
         function M(e) {
-            let t, a, i, s, l, d, u, p, g, C, _, w, I, k, B, M, L, E, P = (0, o.c)(94),
+            let t, a, i, s, l, d, u, m, g, v, _, y, k, w, B, M, E, Z, q = (0, o.c)(94),
                 {
-                    snapshot: T,
-                    preparation: Z,
-                    enabled: V,
-                    nonblocking: $,
+                    snapshot: P,
+                    preparation: T,
+                    enabled: $,
+                    nonblocking: V,
                     openIdentity: W,
                     pageId: R,
                     blockId: H,
                     firstContent: Q,
                     children: X
                 } = e,
-                J = void 0 !== $ && $,
-                K = (0, c.y)(y.a),
-                Y = (0, m.useId)(),
-                [ee, et] = (0, m.useState)(null),
+                J = void 0 !== V && V,
+                K = (0, c.y)(I.a),
+                Y = (0, p.useId)(),
+                [ee, et] = (0, p.useState)(null),
                 {
                     pageId: ea
-                } = (0, f.cb)(),
+                } = (0, f.eb)(),
                 er = R ?? ea,
                 eo = (0, c.z)(b.f),
                 ei = (0, c.z)(b.j),
                 es = (0, c.z)(b.k),
                 en = (0, c.z)(b.h);
-            P[0] !== eo || P[1] !== en || P[2] !== es || P[3] !== W || P[4] !== er || P[5] !== ei ? (t = () => ({
+            q[0] !== eo || q[1] !== en || q[2] !== es || q[3] !== W || q[4] !== er || q[5] !== ei ? (t = () => ({
                 openIdentity: W ?? er,
                 generation: 0,
                 invalidated: !1,
@@ -666,30 +672,30 @@ export const __webpack_modules__ = {
                 userId: ei,
                 localUserId: es,
                 accountUserId: en,
-                browserFirstContent: q(er)
-            }), P[0] = eo, P[1] = en, P[2] = es, P[3] = W, P[4] = er, P[5] = ei, P[6] = t) : t = P[6];
-            let [el, ed] = (0, m.useState)(t), ec = 0 === el.generation ? Y : `${Y}-${el.generation}`, eu = null == W && 0 === el.generation, em = el.pageId ?? "", ep = el.accountId ?? "", ef = el.userId ?? "";
-            P[7] !== ec || P[8] !== em || P[9] !== ep || P[10] !== ef ? (a = {
+                browserFirstContent: L(er)
+            }), q[0] = eo, q[1] = en, q[2] = es, q[3] = W, q[4] = er, q[5] = ei, q[6] = t) : t = q[6];
+            let [el, ed] = (0, p.useState)(t), ec = 0 === el.generation ? Y : `${Y}-${el.generation}`, eu = null == W && 0 === el.generation, ep = el.pageId ?? "", em = el.accountId ?? "", ef = el.userId ?? "";
+            q[7] !== ec || q[8] !== ep || q[9] !== em || q[10] !== ef ? (a = {
                 mountId: ec,
-                pageId: em,
-                accountId: ep,
+                pageId: ep,
+                accountId: em,
                 userId: ef
-            }, P[7] = ec, P[8] = em, P[9] = ep, P[10] = ef, P[11] = a) : a = P[11];
+            }, q[7] = ec, q[8] = ep, q[9] = em, q[10] = ef, q[11] = a) : a = q[11];
             let eb = a,
-                eh = (0, c.x)(null != T && O.d, eb),
-                ex = null == T || el.invalidated || eh ? void 0 : Z,
-                eg = (0, m.useSyncExternalStore)(null == ex ? U : ex.subscribeInvalidation, null == ex ? D : ex.isInvalidated, D),
-                ev = (0, c.x)(null == T ? null : O.f, eb),
-                eC = (0, c.x)(null != T ? j.loadedSpacePageMetadata$ : void 0, er ?? null),
-                ej = (0, c.x)(null != T && v.z, eb.pageId),
+                eh = (0, c.x)(null != P && O.d, eb),
+                ex = null == P || el.invalidated || eh ? void 0 : T,
+                eg = (0, p.useSyncExternalStore)(null == ex ? U : ex.subscribeInvalidation, null == ex ? D : ex.isInvalidated, D),
+                eC = (0, c.x)(null == P ? null : O.f, eb),
+                ev = (0, c.x)(null != P ? j.loadedSpacePageMetadata$ : void 0, er ?? null),
+                ej = (0, c.x)(null != P && C.z, eb.pageId),
                 {
                     data: e_,
-                    error: ew
-                } = (0, c.x)(null == T ? void 0 : j.spacePageQuery$, eb.pageId, {
+                    error: ey
+                } = (0, c.x)(null == P ? void 0 : j.spacePageQuery$, eb.pageId, {
                     enabled: !1
                 }) ?? {};
-            P[12] !== eo || P[13] !== en || P[14] !== el.accountId || P[15] !== el.accountUserId || P[16] !== el.localUserId || P[17] !== el.pageId || P[18] !== el.userId || P[19] !== ev?.failed || P[20] !== V || P[21] !== ew || P[22] !== eg || P[23] !== es || P[24] !== eC || P[25] !== e_ || P[26] !== er || P[27] !== T || P[28] !== ei || P[29] !== ej ? (i = null == T || eg || !V || el.pageId !== er || el.accountId !== eo || el.userId !== ei || el.localUserId !== es || el.accountUserId !== en || ej || eC?.view_only === !0 || e_?.metadata.view_only === !0 || eC?.deleted_at != null || e_?.metadata.deleted_at != null || eC?.access.can_read === !1 || e_?.metadata.access.can_read === !1 || ew instanceof F.FetchError && [401, 403, 404, 410].includes(ew.status) || ev?.failed === !0, P[12] = eo, P[13] = en, P[14] = el.accountId, P[15] = el.accountUserId, P[16] = el.localUserId, P[17] = el.pageId, P[18] = el.userId, P[19] = ev?.failed, P[20] = V, P[21] = ew, P[22] = eg, P[23] = es, P[24] = eC, P[25] = e_, P[26] = er, P[27] = T, P[28] = ei, P[29] = ej, P[30] = i) : i = P[30];
-            let ey = i;
+            q[12] !== eo || q[13] !== en || q[14] !== el.accountId || q[15] !== el.accountUserId || q[16] !== el.localUserId || q[17] !== el.pageId || q[18] !== el.userId || q[19] !== eC?.failed || q[20] !== $ || q[21] !== ey || q[22] !== eg || q[23] !== es || q[24] !== ev || q[25] !== e_ || q[26] !== er || q[27] !== P || q[28] !== ei || q[29] !== ej ? (i = null == P || eg || !$ || el.pageId !== er || el.accountId !== eo || el.userId !== ei || el.localUserId !== es || el.accountUserId !== en || ej || ev?.view_only === !0 || e_?.metadata.view_only === !0 || ev?.deleted_at != null || e_?.metadata.deleted_at != null || ev?.access.can_read === !1 || e_?.metadata.access.can_read === !1 || ey instanceof F.FetchError && [401, 403, 404, 410].includes(ey.status) || eC?.failed === !0, q[12] = eo, q[13] = en, q[14] = el.accountId, q[15] = el.accountUserId, q[16] = el.localUserId, q[17] = el.pageId, q[18] = el.userId, q[19] = eC?.failed, q[20] = $, q[21] = ey, q[22] = eg, q[23] = es, q[24] = ev, q[25] = e_, q[26] = er, q[27] = P, q[28] = ei, q[29] = ej, q[30] = i) : i = q[30];
+            let eI = i;
             null != W && (el.openIdentity !== W || el.pageId !== er) ? ed({
                 openIdentity: W,
                 generation: el.generation + 1,
@@ -699,30 +705,30 @@ export const __webpack_modules__ = {
                 userId: ei,
                 localUserId: es,
                 accountUserId: en,
-                browserFirstContent: q(er)
-            }) : ey && !el.invalidated && ed({
+                browserFirstContent: L(er)
+            }) : eI && !el.invalidated && ed({
                 ...el,
                 invalidated: !0
-            }), P[31] !== K ? (s = (e, t) => {
+            }), q[31] !== K ? (s = (e, t) => {
                 K.set(O.e, e, !t)
-            }, P[31] = K, P[32] = s) : s = P[32];
-            let eI = (0, S.a)(s);
-            P[33] !== ec || P[34] !== eI ? (l = e => {
-                null != e && eI(ec, null != e.querySelector("[data-page-ssr-snapshot]"))
-            }, P[33] = ec, P[34] = eI, P[35] = l) : l = P[35];
-            let ek = (0, S.a)(l);
-            P[36] !== ec || P[37] !== eI ? (d = (0, r.jsx)(A, {
+            }, q[31] = K, q[32] = s) : s = q[32];
+            let ek = (0, S.a)(s);
+            q[33] !== ec || q[34] !== ek ? (l = e => {
+                null != e && ek(ec, null != e.querySelector("[data-page-ssr-snapshot]"))
+            }, q[33] = ec, q[34] = ek, q[35] = l) : l = q[35];
+            let ew = (0, S.a)(l);
+            q[36] !== ec || q[37] !== ek ? (d = (0, r.jsx)(A, {
                 mountId: ec,
-                setClientCovered: eI,
+                setClientCovered: ek,
                 visible: !1
-            }), P[36] = ec, P[37] = eI, P[38] = d) : d = P[38];
+            }), q[36] = ec, q[37] = ek, q[38] = d) : d = q[38];
             let eS = d,
-                eF = !el.invalidated && !ey && !eh && null != T,
+                eF = !el.invalidated && !eI && !eh && null != P,
                 eB = eS;
             if (eF) {
                 if (J) {
                     let e, t, a;
-                    P[39] !== el.browserFirstContent.get || P[40] !== H || P[41] !== R || P[42] !== Q || P[43] !== eu || P[44] !== ec || P[45] !== er || P[46] !== eI || P[47] !== eS ? (e = e => null == e || "status" in e ? eS : (0, r.jsx)(G, {
+                    q[39] !== el.browserFirstContent.get || q[40] !== H || q[41] !== R || q[42] !== Q || q[43] !== eu || q[44] !== ec || q[45] !== er || q[46] !== ek || q[47] !== eS ? (e = e => null == e || "status" in e ? eS : (0, r.jsx)(G, {
                         mountId: ec,
                         getBrowserFirstContent: el.browserFirstContent.get,
                         pageId: er,
@@ -730,72 +736,72 @@ export const __webpack_modules__ = {
                         firstContent: Q,
                         initialNavigation: eu,
                         snapshot: e,
-                        setClientCovered: eI
-                    }), P[39] = el.browserFirstContent.get, P[40] = H, P[41] = R, P[42] = Q, P[43] = eu, P[44] = ec, P[45] = er, P[46] = eI, P[47] = eS, P[48] = e) : e = P[48], P[49] !== T || P[50] !== e || P[51] !== eS ? (t = (0, r.jsx)(f.b, {
-                        resolve: T,
+                        setClientCovered: ek
+                    }), q[39] = el.browserFirstContent.get, q[40] = H, q[41] = R, q[42] = Q, q[43] = eu, q[44] = ec, q[45] = er, q[46] = ek, q[47] = eS, q[48] = e) : e = q[48], q[49] !== P || q[50] !== e || q[51] !== eS ? (t = (0, r.jsx)(f.b, {
+                        resolve: P,
                         errorElement: eS,
                         children: e
-                    }), P[49] = T, P[50] = e, P[51] = eS, P[52] = t) : t = P[52], P[53] !== ec || P[54] !== t || P[55] !== eS ? (a = (0, r.jsx)(m.Suspense, {
+                    }), q[49] = P, q[50] = e, q[51] = eS, q[52] = t) : t = q[52], q[53] !== ec || q[54] !== t || q[55] !== eS ? (a = (0, r.jsx)(p.Suspense, {
                         fallback: eS,
                         children: t
-                    }, ec), P[53] = ec, P[54] = t, P[55] = eS, P[56] = a) : a = P[56], eB = a
-                } else if ("html" in T) {
+                    }, ec), q[53] = ec, q[54] = t, q[55] = eS, q[56] = a) : a = q[56], eB = a
+                } else if ("html" in P) {
                     let e, t = null == R ? void 0 : H ?? null;
-                    P[57] !== el.browserFirstContent.get || P[58] !== Q || P[59] !== eu || P[60] !== ec || P[61] !== er || P[62] !== eI || P[63] !== T || P[64] !== t ? (e = (0, r.jsx)(G, {
+                    q[57] !== el.browserFirstContent.get || q[58] !== Q || q[59] !== eu || q[60] !== ec || q[61] !== er || q[62] !== ek || q[63] !== P || q[64] !== t ? (e = (0, r.jsx)(G, {
                         mountId: ec,
                         getBrowserFirstContent: el.browserFirstContent.get,
                         pageId: er,
                         blockId: t,
                         firstContent: Q,
                         initialNavigation: eu,
-                        snapshot: T,
-                        setClientCovered: eI
-                    }, ec), P[57] = el.browserFirstContent.get, P[58] = Q, P[59] = eu, P[60] = ec, P[61] = er, P[62] = eI, P[63] = T, P[64] = t, P[65] = e) : e = P[65], eB = e
+                        snapshot: P,
+                        setClientCovered: ek
+                    }, ec), q[57] = el.browserFirstContent.get, q[58] = Q, q[59] = eu, q[60] = ec, q[61] = er, q[62] = ek, q[63] = P, q[64] = t, q[65] = e) : e = q[65], eB = e
                 }
             }
-            let eO = J && null != T ? ek : void 0;
-            P[66] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, n.b)("surface-e8iyms", "relative flex h-full min-h-0 flex-1 flex-col"), P[66] = u) : u = P[66], P[67] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsx)(h.a, {
+            let eO = J && null != P ? ew : void 0;
+            q[66] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, n.b)("surface-e8iyms", "relative flex h-full min-h-0 flex-1 flex-col"), q[66] = u) : u = q[66], q[67] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, r.jsx)(h.a, {
                 "aria-hidden": "true",
                 "data-page-loading-spinner": "",
                 className: (0, n.b)("indicator-Wq6R_i", "pointer-events-none absolute inset-x-0 z-1 top-[var(--page-loading-top,0px)] bottom-0 m-auto icon-lg animate-spin text-secondary [animation-timing-function:linear] motion-reduce:[animation-play-state:paused]")
-            }), P[67] = p) : p = P[67];
-            let eN = el.invalidated || ey || eh ? null : ee;
-            P[68] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, r.jsx)(x.a, {
+            }), q[67] = m) : m = q[67];
+            let eN = el.invalidated || eI || eh ? null : ee;
+            q[68] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, r.jsx)(x.a, {
                 routeFallback: !0,
                 fillParent: !0,
                 debugName: "PageEditor"
-            }), P[68] = g) : g = P[68], P[69] !== el.browserFirstContent.capture || P[70] !== X ? (C = (0, r.jsx)(m.Suspense, {
+            }), q[68] = g) : g = q[68], q[69] !== el.browserFirstContent.capture || q[70] !== X ? (v = (0, r.jsx)(p.Suspense, {
                 fallback: g,
                 children: (0, r.jsx)(O.a, {
                     value: el.browserFirstContent.capture,
                     children: X
                 })
-            }), P[69] = el.browserFirstContent.capture, P[70] = X, P[71] = C) : C = P[71], P[72] !== eN || P[73] !== C ? (_ = (0, r.jsx)(O.c, {
+            }), q[69] = el.browserFirstContent.capture, q[70] = X, q[71] = v) : v = q[71], q[72] !== eN || q[73] !== v ? (_ = (0, r.jsx)(O.c, {
                 value: eN,
-                children: C
-            }), P[72] = eN, P[73] = C, P[74] = _) : _ = P[74], P[75] !== ec || P[76] !== _ ? (w = (0, r.jsx)(O.b, {
+                children: v
+            }), q[72] = eN, q[73] = v, q[74] = _) : _ = q[74], q[75] !== ec || q[76] !== _ ? (y = (0, r.jsx)(O.b, {
                 value: ec,
                 children: _
-            }), P[75] = ec, P[76] = _, P[77] = w) : w = P[77], P[78] !== eF || P[79] !== ec || P[80] !== w ? (I = (0, r.jsx)(z, {
+            }), q[75] = ec, q[76] = _, q[77] = y) : y = q[77], q[78] !== eF || q[79] !== ec || q[80] !== y ? (k = (0, r.jsx)(z, {
                 mountId: ec,
                 coverEligible: eF,
-                children: w
-            }), P[78] = eF, P[79] = ec, P[80] = w, P[81] = I) : I = P[81];
+                children: y
+            }), q[78] = eF, q[79] = ec, q[80] = y, q[81] = k) : k = q[81];
             let eU = J ? N.a.PageSnapshotCover : "inset-0";
-            return P[82] !== eU ? (k = (0, n.b)("pointer-events-none absolute flex min-h-0 flex-col", eU), P[82] = eU, P[83] = k) : k = P[83], P[84] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, r.jsx)("div", {
+            return q[82] !== eU ? (w = (0, n.b)("pointer-events-none absolute flex min-h-0 flex-col", eU), q[82] = eU, q[83] = w) : w = q[83], q[84] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, r.jsx)("div", {
                 ref: et,
                 className: "pointer-events-auto shrink-0"
-            }), P[84] = B) : B = P[84], P[85] !== eB ? (M = (0, r.jsx)("div", {
+            }), q[84] = B) : B = q[84], q[85] !== eB ? (M = (0, r.jsx)("div", {
                 className: "relative min-h-0 flex-1",
                 children: eB
-            }), P[85] = eB, P[86] = M) : M = P[86], P[87] !== k || P[88] !== M ? (L = (0, r.jsxs)("div", {
-                className: k,
+            }), q[85] = eB, q[86] = M) : M = q[86], q[87] !== w || q[88] !== M ? (E = (0, r.jsxs)("div", {
+                className: w,
                 children: [B, M]
-            }), P[87] = k, P[88] = M, P[89] = L) : L = P[89], P[90] !== eO || P[91] !== I || P[92] !== L ? (E = (0, r.jsxs)("div", {
+            }), q[87] = w, q[88] = M, q[89] = E) : E = q[89], q[90] !== eO || q[91] !== k || q[92] !== E ? (Z = (0, r.jsxs)("div", {
                 ref: eO,
                 className: u,
-                children: [p, I, L]
-            }), P[90] = eO, P[91] = I, P[92] = L, P[93] = E) : E = P[93], E
+                children: [m, k, E]
+            }), q[90] = eO, q[91] = k, q[92] = E, q[93] = Z) : Z = q[93], Z
         }
 
         function z(e) {
@@ -822,38 +828,38 @@ export const __webpack_modules__ = {
                     mountId: l,
                     initialNavigation: d,
                     visible: u,
-                    setClientCovered: m,
-                    onRemove: p,
+                    setClientCovered: p,
+                    onRemove: m,
                     children: f
                 } = e,
                 b = void 0 !== d && d;
-            s[0] !== b || s[1] !== l || s[2] !== p || s[3] !== m || s[4] !== u ? (t = e => {
-                if (null != e) return m(l, u), () => {
-                    u && b && (0, B.e)(), m(l, !1), u && p?.(e)
+            s[0] !== b || s[1] !== l || s[2] !== m || s[3] !== p || s[4] !== u ? (t = e => {
+                if (null != e) return p(l, u), () => {
+                    u && b && (0, B.e)(), p(l, !1), u && m?.(e)
                 }
-            }, s[0] = b, s[1] = l, s[2] = p, s[3] = m, s[4] = u, s[5] = t) : t = s[5];
+            }, s[0] = b, s[1] = l, s[2] = m, s[3] = p, s[4] = u, s[5] = t) : t = s[5];
             let h = t,
-                x = (0, c.x)(I.e, "2163293173"),
+                x = (0, c.x)(k.e, "2163293173"),
                 g = u ? "covered" : "uncovered",
-                v = x ? "[scrollbar-gutter:stable_both-edges]" : "scrollbar-stable";
-            s[6] !== v ? (a = (0, n.b)("pointer-events-auto absolute inset-0 overflow-x-hidden overflow-y-auto bg-surface scrollbar-on-hover", v), s[6] = v, s[7] = a) : a = s[7];
-            let C = !u,
+                C = x ? "[scrollbar-gutter:stable_both-edges]" : "scrollbar-stable";
+            s[6] !== C ? (a = (0, n.b)("pointer-events-auto absolute inset-0 overflow-x-hidden overflow-y-auto bg-surface scrollbar-on-hover", C), s[6] = C, s[7] = a) : a = s[7];
+            let v = !u,
                 j = u || void 0,
                 _ = u ? f : null;
-            return s[8] !== h || s[9] !== g || s[10] !== a || s[11] !== C || s[12] !== j || s[13] !== _ ? (i = (0, r.jsx)("div", {
+            return s[8] !== h || s[9] !== g || s[10] !== a || s[11] !== v || s[12] !== j || s[13] !== _ ? (i = (0, r.jsx)("div", {
                 ref: h,
                 className: a,
-                hidden: C,
+                hidden: v,
                 "data-page-ssr-snapshot": j,
                 children: _
-            }, g), s[8] = h, s[9] = g, s[10] = a, s[11] = C, s[12] = j, s[13] = _, s[14] = i) : i = s[14], i
+            }, g), s[8] = h, s[9] = g, s[10] = a, s[11] = v, s[12] = j, s[13] = _, s[14] = i) : i = s[14], i
         }
 
         function G(e) {
-            let t, a, n, l, d, f, h, x, v, C, j = (0, o.c)(40),
+            let t, a, n, l, d, f, h, x, C, v, j = (0, o.c)(40),
                 {
-                    mountId: w,
-                    getBrowserFirstContent: I,
+                    mountId: y,
+                    getBrowserFirstContent: k,
                     pageId: F,
                     blockId: B,
                     firstContent: U,
@@ -861,46 +867,46 @@ export const __webpack_modules__ = {
                     snapshot: M,
                     setClientCovered: z
                 } = e,
-                G = (0, c.y)(y.a),
-                q = (0, m.useRef)(null),
-                E = (0, c.z)(b.f),
-                P = (0, c.z)(b.j);
-            j[0] !== w || j[1] !== M.accountId || j[2] !== M.pageId || j[3] !== M.userId ? (t = {
-                mountId: w,
+                G = (0, c.y)(I.a),
+                L = (0, p.useRef)(null),
+                Z = (0, c.z)(b.f),
+                q = (0, c.z)(b.j);
+            j[0] !== y || j[1] !== M.accountId || j[2] !== M.pageId || j[3] !== M.userId ? (t = {
+                mountId: y,
                 pageId: M.pageId,
                 accountId: M.accountId,
                 userId: M.userId
-            }, j[0] = w, j[1] = M.accountId, j[2] = M.pageId, j[3] = M.userId, j[4] = t) : t = j[4];
-            let T = (0, c.x)(O.f, t),
-                Z = F !== M.pageId || E !== M.accountId || P !== M.userId || T?.failed === !0,
-                [V, $] = (0, m.useState)(!1),
-                W = null != T && !T.failed && T.sequence >= M.throughSequence;
-            !V && W && $(!0);
-            let R = !Z && !V && !W;
-            j[5] !== B || j[6] !== w || j[7] !== G || j[8] !== M.accountId || j[9] !== M.pageId || j[10] !== M.throughSequence || j[11] !== M.userId ? (a = e => {
+            }, j[0] = y, j[1] = M.accountId, j[2] = M.pageId, j[3] = M.userId, j[4] = t) : t = j[4];
+            let P = (0, c.x)(O.f, t),
+                T = F !== M.pageId || Z !== M.accountId || q !== M.userId || P?.failed === !0,
+                [$, V] = (0, p.useState)(!1),
+                W = null != P && !P.failed && P.sequence >= M.throughSequence;
+            !$ && W && V(!0);
+            let R = !T && !$ && !W;
+            j[5] !== B || j[6] !== y || j[7] !== G || j[8] !== M.accountId || j[9] !== M.pageId || j[10] !== M.throughSequence || j[11] !== M.userId ? (a = e => {
                 let t = (0, u.d)(`page://${M.pageId}${e.ownerDocument.defaultView?.location.hash??""}`);
                 if (null != B || void 0 === B && t?.kind === "page" && null != t.blockId) return;
                 let a = G.get(O.f, {
-                    mountId: w,
+                    mountId: y,
                     pageId: M.pageId,
                     accountId: M.accountId,
                     userId: M.userId
                 });
                 !a?.failed && null != a && a.sequence >= M.throughSequence && G.get(b.f) === M.accountId && G.get(b.j) === M.userId && a.restoreScroll?.(e.scrollTop)
-            }, j[5] = B, j[6] = w, j[7] = G, j[8] = M.accountId, j[9] = M.pageId, j[10] = M.throughSequence, j[11] = M.userId, j[12] = a) : a = j[12];
+            }, j[5] = B, j[6] = y, j[7] = G, j[8] = M.accountId, j[9] = M.pageId, j[10] = M.throughSequence, j[11] = M.userId, j[12] = a) : a = j[12];
             let H = (0, S.a)(a);
-            return j[13] !== U || j[14] !== I || j[15] !== D || j[16] !== R ? (n = R && (0, r.jsx)(L, {
-                getBrowserFirstContent: I,
-                content: q,
+            return j[13] !== U || j[14] !== k || j[15] !== D || j[16] !== R ? (n = R && (0, r.jsx)(E, {
+                getBrowserFirstContent: k,
+                content: L,
                 firstContent: U,
                 initialNavigation: D
-            }), j[13] = U, j[14] = I, j[15] = D, j[16] = R, j[17] = n) : n = j[17], j[18] !== M.emoji ? (l = null != M.emoji && (0, r.jsx)("span", {
+            }), j[13] = U, j[14] = k, j[15] = D, j[16] = R, j[17] = n) : n = j[17], j[18] !== M.emoji ? (l = null != M.emoji && (0, r.jsx)("span", {
                 className: "flex size-16 items-center border border-transparent",
-                children: (0, r.jsx)(k.a, {
+                children: (0, r.jsx)(w.a, {
                     emoji: M.emoji,
                     size: "large"
                 })
-            }), j[18] = M.emoji, j[19] = l) : l = j[19], j[20] !== M.title ? (d = M.title || (0, r.jsx)(p.a, {
+            }), j[18] = M.emoji, j[19] = l) : l = j[19], j[20] !== M.title ? (d = M.title || (0, r.jsx)(m.a, {
                 ..._.c.untitled
             }), j[20] = M.title, j[21] = d) : d = j[21], j[22] !== d ? (f = (0, r.jsx)("h1", {
                 className: `${N.a.PageTitle} font-semibold break-words text-default`,
@@ -915,7 +921,7 @@ export const __webpack_modules__ = {
                     className: `${i.a.root} ${N.a.PageDocumentTheme} px-0`,
                     style: s.a,
                     children: (0, r.jsx)("div", {
-                        ref: q,
+                        ref: L,
                         className: `ProseMirror ${i.a.content} ${N.a.PageDocument} ${N.a.PagePreview}`,
                         contentEditable: !1,
                         "data-page-static-preview": !0,
@@ -924,20 +930,20 @@ export const __webpack_modules__ = {
                         }
                     })
                 })
-            }), j[27] = M.html, j[28] = x) : x = j[28], j[29] !== h || j[30] !== x ? (v = (0, r.jsx)(g.a, {
+            }), j[27] = M.html, j[28] = x) : x = j[28], j[29] !== h || j[30] !== x ? (C = (0, r.jsx)(g.a, {
                 heading: h,
                 children: x
-            }), j[29] = h, j[30] = x, j[31] = v) : v = j[31], j[32] !== D || j[33] !== w || j[34] !== H || j[35] !== z || j[36] !== n || j[37] !== v || j[38] !== R ? (C = (0, r.jsxs)(A, {
-                mountId: w,
+            }), j[29] = h, j[30] = x, j[31] = C) : C = j[31], j[32] !== D || j[33] !== y || j[34] !== H || j[35] !== z || j[36] !== n || j[37] !== C || j[38] !== R ? (v = (0, r.jsxs)(A, {
+                mountId: y,
                 initialNavigation: D,
                 visible: R,
                 setClientCovered: z,
                 onRemove: H,
-                children: [n, v]
-            }), j[32] = D, j[33] = w, j[34] = H, j[35] = z, j[36] = n, j[37] = v, j[38] = R, j[39] = C) : C = j[39], C
+                children: [n, C]
+            }), j[32] = D, j[33] = y, j[34] = H, j[35] = z, j[36] = n, j[37] = C, j[38] = R, j[39] = v) : v = j[39], v
         }
 
-        function L(e) {
+        function E(e) {
             let t, a, i, s = (0, o.c)(11),
                 {
                     getBrowserFirstContent: n,
@@ -953,19 +959,19 @@ export const __webpack_modules__ = {
                 c && (0, B.d)();
                 let e = void 0 === d ? n() : d;
                 e?.observeDocumentType("page"), e?.contentVisible()
-            }, s[3] = l.current, s[4] = d, s[5] = n, s[6] = c, s[7] = a) : a = s[7], s[8] !== t || s[9] !== a ? (i = (0, r.jsx)(w.a, {
+            }, s[3] = l.current, s[4] = d, s[5] = n, s[6] = c, s[7] = a) : a = s[7], s[8] !== t || s[9] !== a ? (i = (0, r.jsx)(y.a, {
                 requireVisibleAtPaint: !0,
                 onCommit: t,
                 onPaint: a
             }), s[8] = t, s[9] = a, s[10] = i) : i = s[10], i
         }
 
-        function q(e) {
-            let t = C.b.getDebugLoad(e ?? null)?.browserFirstContent;
+        function L(e) {
+            let t = v.b.getDebugLoad(e ?? null)?.browserFirstContent;
             return {
                 get: () => t,
                 capture: a => {
-                    a === e && null == t && (t = C.b.getDebugLoad(e ?? null)?.browserFirstContent)
+                    a === e && null == t && (t = v.b.getDebugLoad(e ?? null)?.browserFirstContent)
                 }
             }
         }
@@ -978,85 +984,81 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.468d071759.js";
-import * as t from "./418851.f3d2ce19b4.js";
+} from "./633146.2ddddba2a5.js";
+import * as t from "./418851.f34514cc3f.js";
 e.C(t);
-import * as a from "./109308.4b30101b7c.js";
+import * as a from "./109308.8b09661749.js";
 e.C(a);
-import * as r from "./399565.7c8a3f7e95.js";
+import * as r from "./399565.edefe43a76.js";
 e.C(r);
-import * as o from "./257798.b061e3b37a.js";
+import * as o from "./257798.6b4268ddac.js";
 e.C(o);
-import * as i from "./447351.9446ee3aae.js";
+import * as i from "./447351.34d04099ca.js";
 e.C(i);
-import * as s from "./617936.a5a9458f41.js";
+import * as s from "./617936.4a1557f13c.js";
 e.C(s);
-import * as n from "./807489.503e8e46b2.js";
+import * as n from "./807489.6b5279adf3.js";
 e.C(n);
-import * as l from "./337882.42cb1bc757.js";
+import * as l from "./337882.568bafdf14.js";
 e.C(l);
-import * as d from "./955979.7655b0fa98.js";
+import * as d from "./955979.b2a7e19963.js";
 e.C(d);
-import * as c from "./646436.ad0e600e92.js";
+import * as c from "./646436.5963e38f02.js";
 e.C(c);
-import * as u from "./7078.20ffc77da3.js";
+import * as u from "./7078.0a9a41e515.js";
 e.C(u);
-import * as m from "./200429.b7f8e76f67.js";
-e.C(m);
-import * as p from "./698524.ab39482137.js";
+import * as p from "./200429.a549930e29.js";
 e.C(p);
-import * as f from "./956483.4dc58508d8.js";
+import * as m from "./698524.48945354c5.js";
+e.C(m);
+import * as f from "./956483.962c0de04b.js";
 e.C(f);
-import * as b from "./87162.6154a54863.js";
+import * as b from "./87162.e4a69efaac.js";
 e.C(b);
-import * as h from "./396705.cf1cfb54a0.js";
+import * as h from "./396705.51be923e43.js";
 e.C(h);
-import * as x from "./155568.831b2b3d34.js";
+import * as x from "./155568.1f7b7a00a5.js";
 e.C(x);
-import * as g from "./731863.6fc88890bf.js";
+import * as g from "./731863.5a49a2d190.js";
 e.C(g);
-import * as v from "./767086.c88be6c073.js";
-e.C(v);
-import * as C from "./76629.30a094a9b3.js";
+import * as C from "./767086.61b8f8fca3.js";
 e.C(C);
-import * as j from "./514085.037ce67b03.js";
+import * as v from "./226913.cf105b979e.js";
+e.C(v);
+import * as j from "./753405.4bffba797b.js";
 e.C(j);
-import * as _ from "./226913.a7e38eae43.js";
+import * as _ from "./321957.745ede45f0.js";
 e.C(_);
-import * as w from "./753405.4bffba797b.js";
-e.C(w);
-import * as y from "./321957.745ede45f0.js";
+import * as y from "./585419.38ade943bd.js";
 e.C(y);
-import * as I from "./585419.38ade943bd.js";
+import * as I from "./843292.f8476ea5db.js";
 e.C(I);
-import * as k from "./843292.b508aacb4d.js";
+import * as k from "./353230.bd7d884f9e.js";
 e.C(k);
-import * as S from "./353230.bd7d884f9e.js";
+import * as w from "./882456.2687d7c2f4.js";
+e.C(w);
+import * as S from "./212773.49b51fc47b.js";
 e.C(S);
-import * as F from "./882456.b048d73b2c.js";
+import * as F from "./909395.7dc04db4e2.js";
 e.C(F);
-import * as B from "./212773.81ff3b684c.js";
+import * as B from "./212487.54668c34e5.js";
 e.C(B);
-import * as O from "./909395.7dc04db4e2.js";
+import * as O from "./17983.79a6d49758.js";
 e.C(O);
-import * as N from "./212487.9cfe25039b.js";
+import * as N from "./704809.43f4c1af72.js";
 e.C(N);
-import * as U from "./17983.da2004b73c.js";
+import * as U from "./227786.748857de8d.js";
 e.C(U);
-import * as D from "./704809.1a3949c6ab.js";
+import * as D from "./920484.11e91ee9f5.js";
 e.C(D);
-import * as M from "./413109.b4bfe81a07.js";
+import * as M from "./311330.0c89fc9811.js";
 e.C(M);
-import * as z from "./920484.d35490ad06.js";
+import * as z from "./787702.d3327f6f24.js";
 e.C(z);
-import * as A from "./311330.7e2d5d8b83.js";
-e.C(A);
-import * as G from "./787702.78a4d95d6e.js";
-e.C(G);
-var L = e(e.s = "cnwD"),
-    q = L.a,
-    E = L.b;
+var A = e(e.s = "cnwD"),
+    G = A.a,
+    E = A.b;
 export {
-    q as
+    G as
     default, E as shouldRevalidate
 };

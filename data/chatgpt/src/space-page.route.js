@@ -15,9 +15,9 @@ export const __webpack_modules__ = {
             property: "og:title",
             content: "ChatGPT Space"
         }];
-        var g = (0, n.hb)(function() {
+        var g = (0, n.kb)(function() {
             let e, t = (0, l.c)(2),
-                i = (0, n.fb)("space-page-layout"),
+                i = (0, n.hb)("space-page-layout"),
                 o = i?.spacePage ?? null;
             return t[0] !== o ? (e = (0, a.jsx)(s.LazyBrowserSpacePage, {
                 spacePage: o
@@ -633,7 +633,7 @@ export const __webpack_modules__ = {
         var n = i("Bbed"),
             a = i("MhZT"),
             l = i("gne8");
-        let s = (0, n.a)(async () => (a.a.prefetch().catch(() => {}), (await Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085), i.e(300588)]).then(i.bind(i, "H04d"))).BrowserSpacePage), l.b);
+        let s = (0, n.a)(async () => (a.a.prefetch().catch(() => {}), (await Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(300588)]).then(i.bind(i, "H04d"))).BrowserSpacePage), l.b);
         i.d(t, {}, {
             LazyBrowserSpacePage: s,
             prefetchBrowserPageForCreation: async function() {
@@ -644,66 +644,63 @@ export const __webpack_modules__ = {
     eY5e: (function(e, t, i) {
         var n = i("ABep"),
             a = i("QosV"),
-            l = i("on57"),
-            s = i("Q840"),
-            o = i("rEML"),
-            g = i("GKgn"),
-            c = i("zOE4"),
-            r = i("j9wQ"),
-            M = i("r1wd"),
-            C = i("JyrC"),
-            I = i("SkNj"),
-            d = i("VUkV"),
-            j = i("puTD");
+            l = i("Q840"),
+            s = i("rEML"),
+            o = i("GKgn"),
+            g = i("zOE4"),
+            c = i("j9wQ"),
+            r = i("r1wd"),
+            M = i("JyrC"),
+            C = i("SkNj"),
+            I = i("VUkV");
 
-        function p(e) {
-            let t, i, s, o, g, c = (0, a.c)(15),
+        function d(e) {
+            let t, i, l, s, o = (0, a.c)(14),
                 {
-                    preview: I,
-                    onClose: p
-                } = e;
-            c[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, l.b)("relative flex h-full min-h-0 flex-col", j.a.PageTitlebarOverlay), c[0] = t) : t = c[0];
-            let f = I.title ?? "",
-                u = I.textPageCard?.symbol;
-            c[1] !== I.pageId || c[2] !== f || c[3] !== u ? (i = (0, n.jsx)(r.c, {
+                    preview: g,
+                    onClose: C
+                } = e,
+                d = g.title ?? "",
+                p = g.textPageCard?.symbol;
+            o[0] !== g.pageId || o[1] !== d || o[2] !== p ? (t = (0, n.jsx)(c.c, {
                 disabled: !0,
                 variant: "dropdown",
-                children: (0, n.jsx)(d.a, {
-                    pageId: I.pageId,
-                    title: f,
-                    symbol: u,
+                children: (0, n.jsx)(I.a, {
+                    pageId: g.pageId,
+                    title: d,
+                    symbol: p,
                     documentType: "page",
-                    children: h
+                    children: j
                 })
-            }), c[1] = I.pageId, c[2] = f, c[3] = u, c[4] = i) : i = c[4], c[5] !== p || c[6] !== i ? (s = (0, n.jsx)("div", {
+            }), o[0] = g.pageId, o[1] = d, o[2] = p, o[3] = t) : t = o[3], o[4] !== C || o[5] !== t ? (i = (0, n.jsx)("div", {
                 className: "pointer-events-none absolute inset-x-0 top-0 z-30",
-                children: (0, n.jsx)(C.d, {
+                children: (0, n.jsx)(M.d, {
                     contentFade: !0,
                     inset: !0,
-                    onClose: p,
+                    onClose: C,
                     actions: null,
                     sharing: null,
-                    navigation: i
+                    navigation: t
                 })
-            }), c[5] = p, c[6] = i, c[7] = s) : s = c[7];
-            let N = I.textPageCard?.symbol;
-            return c[8] !== I.pageId || c[9] !== I.title || c[10] !== N ? (o = (0, n.jsx)(M.a, {
-                pageId: I.pageId,
-                title: I.title,
-                symbol: N,
+            }), o[4] = C, o[5] = t, o[6] = i) : i = o[6];
+            let h = g.textPageCard?.symbol;
+            return o[7] !== g.pageId || o[8] !== g.title || o[9] !== h ? (l = (0, n.jsx)(r.a, {
+                pageId: g.pageId,
+                title: g.title,
+                symbol: h,
                 headerOverlay: !0
-            }), c[8] = I.pageId, c[9] = I.title, c[10] = N, c[11] = o) : o = c[11], c[12] !== s || c[13] !== o ? (g = (0, n.jsxs)("section", {
-                className: t,
-                children: [s, o]
-            }), c[12] = s, c[13] = o, c[14] = g) : g = c[14], g
+            }), o[7] = g.pageId, o[8] = g.title, o[9] = h, o[10] = l) : l = o[10], o[11] !== i || o[12] !== l ? (s = (0, n.jsxs)("section", {
+                className: "relative flex h-full min-h-0 flex-col",
+                children: [i, l]
+            }), o[11] = i, o[12] = l, o[13] = s) : s = o[13], s
         }
 
-        function h(e) {
+        function j(e) {
             let {
                 icon: t,
                 title: i
             } = e;
-            return (0, n.jsx)(r.s, {
+            return (0, n.jsx)(c.s, {
                 icon: t,
                 children: (0, n.jsx)("span", {
                     className: "max-w-42 truncate",
@@ -712,36 +709,36 @@ export const __webpack_modules__ = {
             })
         }
         i.d(t, {}, {
-            CardLoadingShell: p,
+            CardLoadingShell: d,
             a: function(e) {
-                let t, i, l = (0, a.c)(7),
+                let t, i, c = (0, a.c)(7),
                     {
                         fillParent: r
                     } = e,
                     M = void 0 !== r && r,
-                    C = (0, o.X)(),
-                    d = (0, o._)(),
+                    I = (0, s.Z)(),
+                    j = (0, s.ab)(),
                     {
-                        pageId: j
-                    } = (0, o.cb)(),
-                    h = C.state?.pagePreview;
-                l[0] !== j || l[1] !== h ? (t = {
-                    pageId: j,
+                        pageId: p
+                    } = (0, s.eb)(),
+                    h = I.state?.pagePreview;
+                c[0] !== p || c[1] !== h ? (t = {
+                    pageId: p,
                     preview: h
-                }, l[0] = j, l[1] = h, l[2] = t) : t = l[2];
-                let f = (0, s.x)(I.d, t);
-                return l[3] !== M || l[4] !== d || l[5] !== f ? (i = null == f ? (0, n.jsx)(c.LoadingPage, {
+                }, c[0] = p, c[1] = h, c[2] = t) : t = c[2];
+                let f = (0, l.x)(C.d, t);
+                return c[3] !== M || c[4] !== j || c[5] !== f ? (i = null == f ? (0, n.jsx)(g.LoadingPage, {
                     routeFallback: !0,
                     fillParent: M
                 }) : (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsx)(g.a, {
+                    children: [(0, n.jsx)(o.a, {
                         layout: "custom-titlebar",
                         fallback: !0
-                    }), (0, n.jsx)(p, {
+                    }), (0, n.jsx)(d, {
                         preview: f,
-                        onClose: () => void d(-1)
+                        onClose: () => void j(-1)
                     })]
-                }), l[3] = M, l[4] = d, l[5] = f, l[6] = i) : i = l[6], i
+                }), c[3] = M, c[4] = j, c[5] = f, c[6] = i) : i = c[6], i
             }
         })
     }),
@@ -749,7 +746,7 @@ export const __webpack_modules__ = {
         var n = i("QBk8"),
             a = i("Q840"),
             l = i("Cslg"),
-            s = i("lBzi"),
+            s = i("CKur"),
             o = i("g2p6"),
             g = i("e1xH"),
             c = i("yGJW"),
@@ -935,87 +932,83 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.468d071759.js";
-import * as t from "./418851.f3d2ce19b4.js";
+} from "./633146.2ddddba2a5.js";
+import * as t from "./418851.f34514cc3f.js";
 e.C(t);
-import * as i from "./109308.4b30101b7c.js";
+import * as i from "./109308.8b09661749.js";
 e.C(i);
-import * as n from "./399565.7c8a3f7e95.js";
+import * as n from "./399565.edefe43a76.js";
 e.C(n);
-import * as a from "./257798.b061e3b37a.js";
+import * as a from "./257798.6b4268ddac.js";
 e.C(a);
-import * as l from "./447351.9446ee3aae.js";
+import * as l from "./447351.34d04099ca.js";
 e.C(l);
-import * as s from "./617936.a5a9458f41.js";
+import * as s from "./617936.4a1557f13c.js";
 e.C(s);
-import * as o from "./807489.503e8e46b2.js";
+import * as o from "./807489.6b5279adf3.js";
 e.C(o);
-import * as g from "./337882.42cb1bc757.js";
+import * as g from "./337882.568bafdf14.js";
 e.C(g);
-import * as c from "./955979.7655b0fa98.js";
+import * as c from "./955979.b2a7e19963.js";
 e.C(c);
-import * as r from "./646436.ad0e600e92.js";
+import * as r from "./646436.5963e38f02.js";
 e.C(r);
-import * as M from "./7078.20ffc77da3.js";
+import * as M from "./7078.0a9a41e515.js";
 e.C(M);
-import * as C from "./200429.b7f8e76f67.js";
+import * as C from "./200429.a549930e29.js";
 e.C(C);
-import * as I from "./698524.ab39482137.js";
+import * as I from "./698524.48945354c5.js";
 e.C(I);
-import * as d from "./956483.4dc58508d8.js";
+import * as d from "./956483.962c0de04b.js";
 e.C(d);
-import * as j from "./87162.6154a54863.js";
+import * as j from "./87162.e4a69efaac.js";
 e.C(j);
-import * as p from "./396705.cf1cfb54a0.js";
+import * as p from "./396705.51be923e43.js";
 e.C(p);
-import * as h from "./155568.831b2b3d34.js";
+import * as h from "./155568.1f7b7a00a5.js";
 e.C(h);
-import * as f from "./731863.6fc88890bf.js";
+import * as f from "./731863.5a49a2d190.js";
 e.C(f);
-import * as u from "./767086.c88be6c073.js";
+import * as u from "./767086.61b8f8fca3.js";
 e.C(u);
-import * as N from "./76629.30a094a9b3.js";
+import * as N from "./226913.cf105b979e.js";
 e.C(N);
-import * as x from "./514085.037ce67b03.js";
+import * as x from "./753405.4bffba797b.js";
 e.C(x);
-import * as L from "./226913.a7e38eae43.js";
+import * as L from "./321957.745ede45f0.js";
 e.C(L);
-import * as A from "./753405.4bffba797b.js";
+import * as A from "./585419.38ade943bd.js";
 e.C(A);
-import * as y from "./321957.745ede45f0.js";
+import * as y from "./843292.f8476ea5db.js";
 e.C(y);
-import * as m from "./585419.38ade943bd.js";
+import * as m from "./353230.bd7d884f9e.js";
 e.C(m);
-import * as D from "./843292.b508aacb4d.js";
+import * as D from "./882456.2687d7c2f4.js";
 e.C(D);
-import * as w from "./353230.bd7d884f9e.js";
+import * as w from "./212773.49b51fc47b.js";
 e.C(w);
-import * as v from "./882456.b048d73b2c.js";
+import * as v from "./909395.7dc04db4e2.js";
 e.C(v);
-import * as z from "./212773.81ff3b684c.js";
+import * as z from "./529755.993105e2cf.js";
 e.C(z);
-import * as T from "./909395.7dc04db4e2.js";
+import * as T from "./212487.54668c34e5.js";
 e.C(T);
-import * as S from "./529755.43c172d237.js";
+import * as S from "./17983.79a6d49758.js";
 e.C(S);
-import * as Z from "./212487.9cfe25039b.js";
+import * as Z from "./704809.43f4c1af72.js";
 e.C(Z);
-import * as b from "./17983.da2004b73c.js";
+import * as b from "./920484.11e91ee9f5.js";
 e.C(b);
-import * as O from "./704809.1a3949c6ab.js";
-e.C(O);
-import * as E from "./920484.d35490ad06.js";
+import * as E from "./311330.0c89fc9811.js";
 e.C(E);
-import * as k from "./311330.7e2d5d8b83.js";
+import * as O from "./352477.a9efd42911.js";
+e.C(O);
+import * as k from "./487589.56796e9db3.js";
 e.C(k);
-import * as B from "./352477.b2e0e32e94.js";
-e.C(B);
-import * as Y from "./487589.6b350888a7.js";
-e.C(Y);
-var U = e(e.s = "zd4v"),
-    F = U.a,
-    G = U.b;
+var B = e(e.s = "zd4v"),
+    Y = B.a,
+    U = B.b;
 export {
-    F as
-    default, G as meta
+    Y as
+    default, U as meta
 };

@@ -24,7 +24,7 @@ export const __webpack_modules__ = {
             c = a("v4LA"),
             l = a("tmUE"),
             d = a("jZDY");
-        let m = (0, c.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(330351), a.e(213841)]).then(a.bind(a, "D4iP"))).ReferralInvitePage);
+        let m = (0, c.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(226913), a.e(330351), a.e(213841)]).then(a.bind(a, "D4iP"))).ReferralInvitePage);
 
         function u(e) {
             let t, a, c, u, p, f, h, C = (0, s.c)(19),
@@ -32,7 +32,7 @@ export const __webpack_modules__ = {
                     invite: b
                 } = e,
                 j = (0, o.a)(),
-                v = (0, r.X)(),
+                v = (0, r.Z)(),
                 g = (0, d.a)();
             return C[0] !== j ? (t = j.formatMessage({
                 id: "AcceptReferralPage.browserTitle",
@@ -57,7 +57,7 @@ export const __webpack_modules__ = {
                 children: [a, u, f]
             }), C[15] = a, C[16] = u, C[17] = f, C[18] = h) : h = C[18], h
         }
-        let p = (0, c.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(330351), a.e(471207)]).then(a.bind(a, "EVeX"))).WorkspaceInvitePage);
+        let p = (0, c.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(226913), a.e(330351), a.e(471207)]).then(a.bind(a, "EVeX"))).WorkspaceInvitePage);
 
         function f(e) {
             let t, a, c, m, u, f, h, C = (0, s.c)(17),
@@ -66,7 +66,7 @@ export const __webpack_modules__ = {
                 } = e,
                 j = (0, d.a)(),
                 v = (0, o.a)(),
-                g = (0, r.X)();
+                g = (0, r.Z)();
             return C[0] !== v ? (t = v.formatMessage({
                 id: "AcceptInvitePage.browserTitle",
                 defaultMessage: "Accept invite | ChatGPT"
@@ -99,7 +99,7 @@ export const __webpack_modules__ = {
             y = a("pXBt"),
             k = a("muVl"),
             L = a("AzwQ");
-        let M = (0, c.a)(() => Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(340360)]).then(a.bind(a, "s09M")).then(e => e.SharedWorkspaceInvitePage));
+        let M = (0, c.a)(() => Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(226913), a.e(340360)]).then(a.bind(a, "s09M")).then(e => e.SharedWorkspaceInvitePage));
         async function I(e) {
             let {
                 request: t,
@@ -114,7 +114,7 @@ export const __webpack_modules__ = {
             let c = "true" === n.searchParams.get("mfa_sms_enrollment");
             if (null == s || c) {
                 let e = new URL(i + "invite/sign-in", n.origin);
-                throw c && e.searchParams.set("mfa_sms_enrollment", "true"), (0, r.O)(e.href)
+                throw c && e.searchParams.set("mfa_sms_enrollment", "true"), (0, r.Q)(e.href)
             }
             let [l] = await Promise.all([(0, k.c)({
                 currentUserEmail: s,
@@ -127,7 +127,7 @@ export const __webpack_modules__ = {
 
         function S() {
             let e, t = (0, s.c)(2),
-                [a] = (0, r.gb)();
+                [a] = (0, r.jb)();
             if (!(0, x.getClientBootstrap)().session?.user?.email || "true" === a.get("mfa_sms_enrollment")) {
                 let e;
                 return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)(l.a, {}), t[0] = e) : e = t[0], e
@@ -139,7 +139,7 @@ export const __webpack_modules__ = {
 
         function P() {
             let e, t, a, o = (0, s.c)(6),
-                c = (0, r.W)(),
+                c = (0, r.Y)(),
                 [l] = (0, i.useState)(A);
             return o[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)(y.b, {}), o[0] = e) : e = o[0], o[1] !== c ? (t = (0, n.jsx)(i.Suspense, {
                 fallback: e,
@@ -178,7 +178,7 @@ export const __webpack_modules__ = {
             }), r[2] = i, r[3] = l, r[4] = d, r[5] = a) : a = r[5], a
         }
         I.hydrate = !0;
-        let V = (0, c.a)(() => Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(330351), a.e(983100)]).then(a.bind(a, "MEnV")).then(e => e.SharedWorkspaceInviteSignInRoute));
+        let V = (0, c.a)(() => Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(226913), a.e(330351), a.e(983100)]).then(a.bind(a, "MEnV")).then(e => e.SharedWorkspaceInviteSignInRoute));
 
         function T() {
             let e, t = (0, s.c)(1);
@@ -188,9 +188,9 @@ export const __webpack_modules__ = {
             }), t[0] = e) : e = t[0], e
         }
         let E = h.a;
-        var B = (0, r.hb)(function() {
+        var B = (0, r.kb)(function() {
             let e, t = (0, s.c)(4),
-                a = (0, r.W)();
+                a = (0, r.Y)();
             if ("referral" in a) {
                 let e;
                 return t[0] !== a ? (e = (0, n.jsx)(u, {
@@ -296,7 +296,7 @@ export const __webpack_modules__ = {
     AzwQ: (function(e, t, a) {
         a.d(t, {}, {
             a: function(e, t) {
-                Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(575753)]).then(a.bind(a, "KKqt")).then(a => {
+                Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(575753)]).then(a.bind(a, "KKqt")).then(a => {
                     let {
                         logRecipientAction: r
                     } = a;
@@ -415,29 +415,29 @@ export const __webpack_modules__ = {
                 R = (0, l.b)(V?.imageUrl),
                 z = (0, o.a)(),
                 G = (0, i.useId)(),
-                U = (0, i.useId)(),
                 Z = (0, i.useId)(),
+                U = (0, i.useId)(),
                 F = (0, i.useRef)(null),
                 Q = (0, i.useRef)(null),
-                q = (0, i.useRef)(!1),
-                [K, W] = (0, i.useState)(!1);
-            S[0] !== K ? (t = () => {
-                q.current && ((K ? Q : F).current?.focus({
+                Y = (0, i.useRef)(!1),
+                [q, K] = (0, i.useState)(!1);
+            S[0] !== q ? (t = () => {
+                Y.current && ((q ? Q : F).current?.focus({
                     preventScroll: !0
-                }), q.current = !1)
-            }, a = [K], S[0] = K, S[1] = t, S[2] = a) : (t = S[1], a = S[2]), (0, i.useLayoutEffect)(t, a), S[3] === Symbol.for("react.memo_cache_sentinel") ? (s = function() {
-                q.current = !0, W(b)
+                }), Y.current = !1)
+            }, a = [q], S[0] = q, S[1] = t, S[2] = a) : (t = S[1], a = S[2]), (0, i.useLayoutEffect)(t, a), S[3] === Symbol.for("react.memo_cache_sentinel") ? (s = function() {
+                Y.current = !0, K(b)
             }, S[3] = s) : s = S[3];
-            let X = s,
-                Y = K ? "back" : "front";
+            let D = s,
+                H = q ? "back" : "front";
             S[4] !== z ? (d = z.formatMessage({
                 id: "workspace.onboarding.envelope.flipToBack",
                 defaultMessage: "Flip invitation card to see the back"
             }), S[4] = z, S[5] = d) : d = S[5];
-            let D = V && G,
-                H = null != N && Z;
-            S[6] !== D || S[7] !== H || S[8] !== U ? (p = [D, U, H].filter(Boolean), S[6] = D, S[7] = H, S[8] = U, S[9] = p) : p = S[9];
-            let O = p.join(" ");
+            let J = V && G,
+                O = null != N && U;
+            S[6] !== J || S[7] !== O || S[8] !== Z ? (p = [J, Z, O].filter(Boolean), S[6] = J, S[7] = O, S[8] = Z, S[9] = p) : p = S[9];
+            let W = p.join(" ");
             S[10] !== V || S[11] !== E || S[12] !== G || S[13] !== R ? (f = null != V && (0, r.jsxs)("span", {
                 className: "sender-IzPMj1",
                 id: G,
@@ -460,27 +460,27 @@ export const __webpack_modules__ = {
                     })
                 })]
             }), S[10] = V, S[11] = E, S[12] = G, S[13] = R, S[14] = f) : f = S[14];
-            let J = P || null,
+            let X = P || null,
                 $ = B ?? null;
-            S[15] !== J || S[16] !== $ ? (h = (0, r.jsx)("span", {
+            S[15] !== X || S[16] !== $ ? (h = (0, r.jsx)("span", {
                 className: "workspaceAvatar-OEhxEA",
                 children: (0, r.jsx)(m.a, {
                     alt: "",
-                    name: J,
+                    name: X,
                     referrerPolicy: "no-referrer",
                     size: "fill",
                     src: $
                 })
-            }), S[15] = J, S[16] = $, S[17] = h) : h = S[17], S[18] !== P ? (C = P || (0, r.jsx)(c.a, {
+            }), S[15] = X, S[16] = $, S[17] = h) : h = S[17], S[18] !== P ? (C = P || (0, r.jsx)(c.a, {
                 id: "workspace.onboarding.envelope.unnamed",
                 defaultMessage: "Your workspace"
-            }), S[18] = P, S[19] = C) : C = S[19], S[20] !== C || S[21] !== U ? (g = (0, r.jsx)("span", {
+            }), S[18] = P, S[19] = C) : C = S[19], S[20] !== C || S[21] !== Z ? (g = (0, r.jsx)("span", {
                 className: "name-XjxYU5",
-                id: U,
-                children: C
-            }), S[20] = C, S[21] = U, S[22] = g) : g = S[22], S[23] !== N || S[24] !== Z ? (x = null != N && (0, r.jsx)("span", {
-                className: "members-FkMAs1",
                 id: Z,
+                children: C
+            }), S[20] = C, S[21] = Z, S[22] = g) : g = S[22], S[23] !== N || S[24] !== U ? (x = null != N && (0, r.jsx)("span", {
+                className: "members-FkMAs1",
+                id: U,
                 children: (0, r.jsx)(c.a, {
                     id: "workspace.onboarding.envelope.members",
                     defaultMessage: "{count, plural, one {# member} other {# members}}",
@@ -488,20 +488,20 @@ export const __webpack_modules__ = {
                         count: N
                     }
                 })
-            }), S[23] = N, S[24] = Z, S[25] = x) : x = S[25], S[26] !== h || S[27] !== g || S[28] !== x ? (w = (0, r.jsxs)("span", {
+            }), S[23] = N, S[24] = U, S[25] = x) : x = S[25], S[26] !== h || S[27] !== g || S[28] !== x ? (w = (0, r.jsxs)("span", {
                 className: "panel-xT333K",
                 children: [h, g, x]
-            }), S[26] = h, S[27] = g, S[28] = x, S[29] = w) : w = S[29], S[30] !== K || S[31] !== O || S[32] !== f || S[33] !== w || S[34] !== d ? (_ = (0, r.jsxs)("button", {
+            }), S[26] = h, S[27] = g, S[28] = x, S[29] = w) : w = S[29], S[30] !== q || S[31] !== W || S[32] !== f || S[33] !== w || S[34] !== d ? (_ = (0, r.jsxs)("button", {
                 ref: F,
                 type: "button",
                 className: "front-GE0Pab",
-                onClick: X,
-                inert: K,
+                onClick: D,
+                inert: q,
                 "aria-label": d,
-                "aria-describedby": O,
+                "aria-describedby": W,
                 children: [f, w]
-            }), S[30] = K, S[31] = O, S[32] = f, S[33] = w, S[34] = d, S[35] = _) : _ = S[35];
-            let ee = !K;
+            }), S[30] = q, S[31] = W, S[32] = f, S[33] = w, S[34] = d, S[35] = _) : _ = S[35];
+            let ee = !q;
             return S[36] !== z ? (y = z.formatMessage({
                 id: "workspace.onboarding.envelope.flipToFront",
                 defaultMessage: "Flip invitation card to see the front"
@@ -513,7 +513,7 @@ export const __webpack_modules__ = {
                 type: "button",
                 className: "back-plQ6Ji",
                 inert: ee,
-                onClick: X,
+                onClick: D,
                 "aria-label": y,
                 children: k
             }), S[39] = ee, S[40] = y, S[41] = L) : L = S[41], S[42] !== _ || S[43] !== L ? (M = (0, r.jsx)("div", {
@@ -522,15 +522,15 @@ export const __webpack_modules__ = {
                     className: "card-qdW7RX",
                     children: [_, L]
                 })
-            }), S[42] = _, S[43] = L, S[44] = M) : M = S[44], S[45] !== M || S[46] !== Y ? (I = (0, r.jsx)("div", {
+            }), S[42] = _, S[43] = L, S[44] = M) : M = S[44], S[45] !== M || S[46] !== H ? (I = (0, r.jsx)("div", {
                 className: "shell-_mCOyU",
-                "data-side": Y,
+                "data-side": H,
                 onPointerEnter: j,
                 onPointerMove: j,
                 onPointerLeave: v,
                 onPointerCancel: v,
                 children: M
-            }), S[45] = M, S[46] = Y, S[47] = I) : I = S[47], I
+            }), S[45] = M, S[46] = H, S[47] = I) : I = S[47], I
         }
 
         function b(e) {
@@ -747,59 +747,55 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.468d071759.js";
+} from "./633146.2ddddba2a5.js";
 import * as t from "./680612.8dcfaab02b.js";
 e.C(t);
-import * as a from "./418851.f3d2ce19b4.js";
+import * as a from "./418851.f34514cc3f.js";
 e.C(a);
-import * as r from "./109308.4b30101b7c.js";
+import * as r from "./109308.8b09661749.js";
 e.C(r);
-import * as n from "./399565.7c8a3f7e95.js";
+import * as n from "./399565.edefe43a76.js";
 e.C(n);
-import * as s from "./257798.b061e3b37a.js";
+import * as s from "./257798.6b4268ddac.js";
 e.C(s);
-import * as i from "./447351.9446ee3aae.js";
+import * as i from "./447351.34d04099ca.js";
 e.C(i);
-import * as o from "./617936.a5a9458f41.js";
+import * as o from "./617936.4a1557f13c.js";
 e.C(o);
-import * as c from "./807489.503e8e46b2.js";
+import * as c from "./807489.6b5279adf3.js";
 e.C(c);
-import * as l from "./337882.42cb1bc757.js";
+import * as l from "./337882.568bafdf14.js";
 e.C(l);
-import * as d from "./955979.7655b0fa98.js";
+import * as d from "./955979.b2a7e19963.js";
 e.C(d);
-import * as m from "./646436.ad0e600e92.js";
+import * as m from "./646436.5963e38f02.js";
 e.C(m);
-import * as u from "./7078.20ffc77da3.js";
+import * as u from "./7078.0a9a41e515.js";
 e.C(u);
-import * as p from "./200429.b7f8e76f67.js";
+import * as p from "./200429.a549930e29.js";
 e.C(p);
-import * as f from "./698524.ab39482137.js";
+import * as f from "./698524.48945354c5.js";
 e.C(f);
-import * as h from "./956483.4dc58508d8.js";
+import * as h from "./956483.962c0de04b.js";
 e.C(h);
-import * as C from "./87162.6154a54863.js";
+import * as C from "./87162.e4a69efaac.js";
 e.C(C);
-import * as b from "./396705.cf1cfb54a0.js";
+import * as b from "./396705.51be923e43.js";
 e.C(b);
-import * as j from "./155568.831b2b3d34.js";
+import * as j from "./155568.1f7b7a00a5.js";
 e.C(j);
-import * as v from "./731863.6fc88890bf.js";
+import * as v from "./731863.5a49a2d190.js";
 e.C(v);
-import * as g from "./767086.c88be6c073.js";
+import * as g from "./767086.61b8f8fca3.js";
 e.C(g);
-import * as x from "./76629.30a094a9b3.js";
+import * as x from "./226913.cf105b979e.js";
 e.C(x);
-import * as w from "./514085.037ce67b03.js";
+import * as w from "./394145.efc95f1f8b.js";
 e.C(w);
-import * as _ from "./226913.a7e38eae43.js";
-e.C(_);
-import * as y from "./394145.9836b704cf.js";
-e.C(y);
-var k = e(e.s = "V7s6"),
-    L = k.a,
-    M = k.b;
+var _ = e(e.s = "V7s6"),
+    y = _.a,
+    k = _.b;
 export {
-    L as
-    default, M as handle
+    y as
+    default, k as handle
 };
