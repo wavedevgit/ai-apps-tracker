@@ -2,11 +2,11 @@ export const __rspack_esm_ids = [363157];
 export const __webpack_modules__ = {
     oALv: (function(e, t, a) {
         a.d(t, {
-            a: () => _,
+            a: () => b,
             b: () => M
         });
-        var C = a("rEML"),
-            r = a("ABep"),
+        var r = a("rEML"),
+            C = a("ABep"),
             n = a("QosV"),
             o = a("Q840"),
             s = a("zd8w"),
@@ -14,27 +14,27 @@ export const __webpack_modules__ = {
             i = a("h6fL"),
             c = a("fEjy"),
             d = a("AfVr"),
-            f = a("DGWL"),
-            p = a("LwKq"),
+            p = a("DGWL"),
+            m = a("LwKq"),
             u = a("yXPE"),
-            m = a("Kwur"),
+            f = a("Kwur"),
             L = a("OWtl"),
             h = a("rvFo"),
             g = a("LjYy");
-        let b = {
+        let j = {
                 free: g.a.FREE,
                 go: g.a.GO,
                 plus: g.a.PLUS,
                 prolite: g.a.PROLITE,
                 pro: g.a.PRO
             },
-            j = (0, o.r)(L.a, e => {
+            x = (0, o.r)(L.a, e => {
                 let {
                     get: t
-                } = e, a = t(l.f), C = t(l.j);
+                } = e, a = t(l.f), r = t(l.j);
                 return {
-                    enabled: null != a && null != C && t(l.d) === g.a.FREE,
-                    queryKey: ["pricing-layout", a, C],
+                    enabled: null != a && null != r && t(l.d) === g.a.FREE,
+                    queryKey: ["pricing-layout", a, r],
                     networkMode: "always",
                     retry: !1,
                     refetchOnWindowFocus: !1,
@@ -43,78 +43,78 @@ export const __webpack_modules__ = {
                         let {
                             signal: t
                         } = e;
-                        if (null == a || null == C) return null;
+                        if (null == a || null == r) return null;
                         let {
-                            layout: r
-                        } = await m.Request.safeGet("/pricing_p13n", {
+                            layout: C
+                        } = await f.Request.safeGet("/pricing_p13n", {
                             additionalHeaders: {
                                 "x-openai-use-sheep": "1"
                             },
                             expectedIdentity: {
                                 accountId: a,
-                                userId: C
+                                userId: r
                             },
                             authRecovery: "passive",
                             signal: AbortSignal.any([t, AbortSignal.timeout(1e3)]),
                             retry: !1,
                             cache: "no-store"
                         });
-                        if (r?.version !== 1) return null;
-                        let n = b[r.plan_left],
-                            o = b[r.plan_right];
+                        if (C?.version !== 1) return null;
+                        let n = j[C.plan_left],
+                            o = j[C.plan_right];
                         return {
                             targets: [n, o],
-                            selectedTarget: "left" === r.selected_panel ? n : o
+                            selectedTarget: "left" === C.selected_panel ? n : o
                         }
                     }
                 }
             });
-        var x = a("hZax"),
-            V = a("AXDI"),
-            _ = (0, C.kb)(function() {
+        var V = a("hZax"),
+            _ = a("AXDI"),
+            b = (0, r.kb)(function() {
                 let e, t = (0, n.c)(1);
-                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, r.jsx)(V.a, {
-                    children: (0, r.jsx)(w, {})
+                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, C.jsx)(_.a, {
+                    children: (0, C.jsx)(w, {})
                 }), t[0] = e) : e = t[0], e
             });
 
         function w() {
             let e, t, a, o = (0, n.c)(9),
-                s = (0, C.Z)(),
-                l = (0, C.ab)(),
-                i = (0, x.h)(),
+                s = (0, r.Z)(),
+                l = (0, r.ab)(),
+                i = (0, V.h)(),
                 c = s.state;
-            o[0] !== l || o[1] !== c?.returnPath ? (e = (0, r.jsx)(d.a, {
+            o[0] !== l || o[1] !== c?.returnPath ? (e = (0, C.jsx)(d.a, {
                 live: !0,
                 onClose: () => void l(c?.returnPath ?? "/", {
                     replace: !0
                 })
             }), o[0] = l, o[1] = c?.returnPath, o[2] = e) : e = o[2];
-            let p = e;
-            o[3] !== s.search || o[4] !== i ? (t = (0, f.a)(s.search, i), o[3] = s.search, o[4] = i, o[5] = t) : t = o[5];
+            let m = e;
+            o[3] !== s.search || o[4] !== i ? (t = (0, p.a)(s.search, i), o[3] = s.search, o[4] = i, o[5] = t) : t = o[5];
             let u = t;
-            return o[6] !== u || o[7] !== p ? (a = null == u ? p : (0, r.jsx)(v, {
+            return o[6] !== u || o[7] !== m ? (a = null == u ? m : (0, C.jsx)(v, {
                 excludePricingExperiments: u,
-                loadingContent: p
-            }), o[6] = u, o[7] = p, o[8] = a) : a = o[8], a
+                loadingContent: m
+            }), o[6] = u, o[7] = m, o[8] = a) : a = o[8], a
         }
 
         function v(e) {
-            let t, a, C, d, f, m, L = (0, n.c)(19),
+            let t, a, r, d, p, f, L = (0, n.c)(19),
                 {
                     excludePricingExperiments: h,
-                    loadingContent: b
+                    loadingContent: j
                 } = e,
-                V = (0, x.h)(),
+                _ = (0, V.h)(),
                 {
-                    userId: _
+                    userId: b
                 } = (0, i.a)(),
                 w = (0, o.z)(l.d),
                 v = (0, o.z)(l.n),
                 M = !h && "chatgpt" === v.authMethod && !0 === v.hasChatGptToken && null != v.authenticatedAccountId && null != v.authenticatedUserId;
-            L[0] !== w || L[1] !== M || L[2] !== V ? (t = M && w === g.a.FREE && !V.isLoading ? V.getLayer(c.B, {
+            L[0] !== w || L[1] !== M || L[2] !== _ ? (t = M && w === g.a.FREE && !_.isLoading ? _.getLayer(c.B, {
                 disableExposureLog: !0
-            }).get("use_p13n", !1) : null, L[0] = w, L[1] = M, L[2] = V, L[3] = t) : t = L[3];
+            }).get("use_p13n", !1) : null, L[0] = w, L[1] = M, L[2] = _, L[3] = t) : t = L[3];
             let Z = t,
                 y = !0 === Z;
             L[4] !== y ? (a = {
@@ -123,18 +123,18 @@ export const __webpack_modules__ = {
             let {
                 data: E,
                 isPending: P
-            } = (0, o.z)(j, a);
-            M && (null == w && v.accountLoading && (null == v.accountId || v.accountId === v.authenticatedAccountId) || w === g.a.FREE && V.isLoading) || !0 === Z && P ? C = "pending" : null != Z && (C = Z ? E ?? null : "control"), L[6] !== h || L[7] !== V || L[8] !== _ ? (d = () => !h && (0, p.a)(V, _), L[6] = h, L[7] = V, L[8] = _, L[9] = d) : d = L[9];
+            } = (0, o.z)(x, a);
+            M && (null == w && v.accountLoading && (null == v.accountId || v.accountId === v.authenticatedAccountId) || w === g.a.FREE && _.isLoading) || !0 === Z && P ? r = "pending" : null != Z && (r = Z ? E ?? null : "control"), L[6] !== h || L[7] !== _ || L[8] !== b ? (d = () => !h && (0, m.a)(_, b), L[6] = h, L[7] = _, L[8] = b, L[9] = d) : d = L[9];
             let [A] = (0, s.useState)(d), k = A && !h, I = k ? u.a : u.b;
-            return L[10] !== I || L[11] !== h || L[12] !== C || L[13] !== b || L[14] !== k ? (f = (0, r.jsx)(I, {
+            return L[10] !== I || L[11] !== h || L[12] !== r || L[13] !== j || L[14] !== k ? (p = (0, C.jsx)(I, {
                 excludePricingExperiments: h,
                 optimizedPricing: k,
-                loadingContent: b,
-                standalonePricingLayout: C
-            }), L[10] = I, L[11] = h, L[12] = C, L[13] = b, L[14] = k, L[15] = f) : f = L[15], L[16] !== b || L[17] !== f ? (m = (0, r.jsx)(s.Suspense, {
-                fallback: b,
-                children: f
-            }), L[16] = b, L[17] = f, L[18] = m) : m = L[18], m
+                loadingContent: j,
+                standalonePricingLayout: r
+            }), L[10] = I, L[11] = h, L[12] = r, L[13] = j, L[14] = k, L[15] = p) : p = L[15], L[16] !== j || L[17] !== p ? (f = (0, C.jsx)(s.Suspense, {
+                fallback: j,
+                children: p
+            }), L[16] = j, L[17] = p, L[18] = f) : f = L[18], f
         }
         let M = e => {
             let {
@@ -160,53 +160,55 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.2ddddba2a5.js";
-import * as t from "./418851.f34514cc3f.js";
+} from "./633146.48b57020d2.js";
+import * as t from "./418851.5b0ade19b1.js";
 e.C(t);
 import * as a from "./109308.8b09661749.js";
 e.C(a);
-import * as C from "./399565.edefe43a76.js";
-e.C(C);
-import * as r from "./257798.6b4268ddac.js";
+import * as r from "./399565.edefe43a76.js";
 e.C(r);
+import * as C from "./257798.428a6bce48.js";
+e.C(C);
 import * as n from "./447351.34d04099ca.js";
 e.C(n);
-import * as o from "./617936.4a1557f13c.js";
+import * as o from "./617936.dd75fa2a89.js";
 e.C(o);
-import * as s from "./807489.6b5279adf3.js";
+import * as s from "./807489.1d24fa9988.js";
 e.C(s);
-import * as l from "./337882.568bafdf14.js";
+import * as l from "./337882.145f5ca770.js";
 e.C(l);
-import * as i from "./955979.b2a7e19963.js";
+import * as i from "./955979.fad3aa290b.js";
 e.C(i);
-import * as c from "./646436.5963e38f02.js";
+import * as c from "./646436.b50a318f52.js";
 e.C(c);
-import * as d from "./7078.0a9a41e515.js";
+import * as d from "./7078.9bac2fcc06.js";
 e.C(d);
-import * as f from "./200429.a549930e29.js";
-e.C(f);
-import * as p from "./698524.48945354c5.js";
+import * as p from "./200429.f07d17d37b.js";
 e.C(p);
-import * as u from "./956483.962c0de04b.js";
-e.C(u);
-import * as m from "./87162.e4a69efaac.js";
+import * as m from "./698524.130da41cbb.js";
 e.C(m);
-import * as L from "./396705.51be923e43.js";
+import * as u from "./956483.20ccea0970.js";
+e.C(u);
+import * as f from "./87162.4896e26514.js";
+e.C(f);
+import * as L from "./396705.e5ddd72a06.js";
 e.C(L);
-import * as h from "./155568.1f7b7a00a5.js";
+import * as h from "./155568.49e7ad46aa.js";
 e.C(h);
-import * as g from "./731863.5a49a2d190.js";
+import * as g from "./731863.3cdbbfa8f8.js";
 e.C(g);
-import * as b from "./767086.61b8f8fca3.js";
-e.C(b);
-import * as j from "./226913.cf105b979e.js";
+import * as j from "./767086.3711424c4d.js";
 e.C(j);
-import * as x from "./363157.2245ae89fd.js";
+import * as x from "./76629.15f5868e7b.js";
 e.C(x);
-var V = e(e.s = "oALv"),
-    _ = V.a,
-    w = V.b;
+import * as V from "./226913.cf105b979e.js";
+e.C(V);
+import * as _ from "./363157.378fe84a10.js";
+e.C(_);
+var b = e(e.s = "oALv"),
+    w = b.a,
+    v = b.b;
 export {
-    _ as
-    default, w as meta
+    w as
+    default, v as meta
 };

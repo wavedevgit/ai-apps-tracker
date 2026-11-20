@@ -25,7 +25,7 @@ export const __webpack_modules__ = {
             c = a("v4LA"),
             l = a("tmUE"),
             d = a("jZDY");
-        let m = (0, c.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(226913), a.e(330351), a.e(213841)]).then(a.bind(a, "D4iP"))).ReferralInvitePage);
+        let m = (0, c.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(330351), a.e(213841)]).then(a.bind(a, "D4iP"))).ReferralInvitePage);
 
         function u(e) {
             let t, a, c, u, p, f, h, C = (0, s.c)(19),
@@ -58,7 +58,7 @@ export const __webpack_modules__ = {
                 children: [a, u, f]
             }), C[15] = a, C[16] = u, C[17] = f, C[18] = h) : h = C[18], h
         }
-        let p = (0, c.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(226913), a.e(330351), a.e(471207)]).then(a.bind(a, "EVeX"))).WorkspaceInvitePage);
+        let p = (0, c.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(330351), a.e(471207)]).then(a.bind(a, "EVeX"))).WorkspaceInvitePage);
 
         function f(e) {
             let t, a, c, m, u, f, h, C = (0, s.c)(17),
@@ -100,7 +100,7 @@ export const __webpack_modules__ = {
             _ = a("pXBt"),
             k = a("muVl"),
             L = a("AzwQ");
-        let M = (0, c.a)(() => Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(226913), a.e(340360)]).then(a.bind(a, "s09M")).then(e => e.SharedWorkspaceInvitePage));
+        let M = (0, c.a)(() => Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(340360)]).then(a.bind(a, "s09M")).then(e => e.SharedWorkspaceInvitePage));
         async function I(e) {
             let {
                 request: t,
@@ -179,7 +179,7 @@ export const __webpack_modules__ = {
             }), r[2] = i, r[3] = l, r[4] = d, r[5] = a) : a = r[5], a
         }
         I.hydrate = !0;
-        let V = (0, c.a)(() => Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(226913), a.e(330351), a.e(983100)]).then(a.bind(a, "MEnV")).then(e => e.SharedWorkspaceInviteSignInRoute));
+        let V = (0, c.a)(() => Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(330351), a.e(983100)]).then(a.bind(a, "MEnV")).then(e => e.SharedWorkspaceInviteSignInRoute));
 
         function T() {
             let e, t = (0, s.c)(1);
@@ -297,7 +297,7 @@ export const __webpack_modules__ = {
     AzwQ: (function(e, t, a) {
         a.d(t, {}, {
             a: function(e, t) {
-                Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(575753)]).then(a.bind(a, "KKqt")).then(a => {
+                Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(575753)]).then(a.bind(a, "KKqt")).then(a => {
                     let {
                         logRecipientAction: r
                     } = a;
@@ -748,53 +748,55 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.2ddddba2a5.js";
+} from "./633146.48b57020d2.js";
 import * as t from "./680612.8dcfaab02b.js";
 e.C(t);
-import * as a from "./418851.f34514cc3f.js";
+import * as a from "./418851.5b0ade19b1.js";
 e.C(a);
 import * as r from "./109308.8b09661749.js";
 e.C(r);
 import * as n from "./399565.edefe43a76.js";
 e.C(n);
-import * as s from "./257798.6b4268ddac.js";
+import * as s from "./257798.428a6bce48.js";
 e.C(s);
 import * as i from "./447351.34d04099ca.js";
 e.C(i);
-import * as o from "./617936.4a1557f13c.js";
+import * as o from "./617936.dd75fa2a89.js";
 e.C(o);
-import * as c from "./807489.6b5279adf3.js";
+import * as c from "./807489.1d24fa9988.js";
 e.C(c);
-import * as l from "./337882.568bafdf14.js";
+import * as l from "./337882.145f5ca770.js";
 e.C(l);
-import * as d from "./955979.b2a7e19963.js";
+import * as d from "./955979.fad3aa290b.js";
 e.C(d);
-import * as m from "./646436.5963e38f02.js";
+import * as m from "./646436.b50a318f52.js";
 e.C(m);
-import * as u from "./7078.0a9a41e515.js";
+import * as u from "./7078.9bac2fcc06.js";
 e.C(u);
-import * as p from "./200429.a549930e29.js";
+import * as p from "./200429.f07d17d37b.js";
 e.C(p);
-import * as f from "./698524.48945354c5.js";
+import * as f from "./698524.130da41cbb.js";
 e.C(f);
-import * as h from "./956483.962c0de04b.js";
+import * as h from "./956483.20ccea0970.js";
 e.C(h);
-import * as C from "./87162.e4a69efaac.js";
+import * as C from "./87162.4896e26514.js";
 e.C(C);
-import * as b from "./396705.51be923e43.js";
+import * as b from "./396705.e5ddd72a06.js";
 e.C(b);
-import * as j from "./155568.1f7b7a00a5.js";
+import * as j from "./155568.49e7ad46aa.js";
 e.C(j);
-import * as v from "./731863.5a49a2d190.js";
+import * as v from "./731863.3cdbbfa8f8.js";
 e.C(v);
-import * as g from "./767086.61b8f8fca3.js";
+import * as g from "./767086.3711424c4d.js";
 e.C(g);
-import * as x from "./226913.cf105b979e.js";
+import * as x from "./76629.15f5868e7b.js";
 e.C(x);
-import * as w from "./174851.677fe0bdf3.js";
+import * as w from "./226913.cf105b979e.js";
 e.C(w);
-var y = e(e.s = "XV9L").a;
+import * as y from "./174851.bc1807bb5a.js";
+e.C(y);
+var _ = e(e.s = "XV9L").a;
 export {
-    y as
+    _ as
     default
 };

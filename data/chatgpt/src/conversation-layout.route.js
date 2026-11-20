@@ -16,8 +16,8 @@ export const __webpack_modules__ = {
             C = t("CKur"),
             j = t("MgyE"),
             r = t("gyrn"),
-            d = t("WF1L"),
-            L = t("mFDr"),
+            L = t("WF1L"),
+            d = t("mFDr"),
             N = t("OWtl"),
             h = t("eShZ"),
             A = t("l3Eh"),
@@ -30,7 +30,7 @@ export const __webpack_modules__ = {
                 a[0] !== I ? (n = () => {
                     if (null == I) return;
                     let n = !0;
-                    return L.a?.then(i => {
+                    return d.a?.then(i => {
                         let {
                             addBrowserDatadogRumFeatureFlagEvaluation: t
                         } = i;
@@ -53,7 +53,7 @@ export const __webpack_modules__ = {
         function f() {}
 
         function y(n) {
-            let i, t, o, L, A, u, f, y = (0, g.c)(27),
+            let i, t, o, d, A, u, f, y = (0, g.c)(27),
                 {
                     conversationId: x,
                     conversation: D
@@ -84,13 +84,13 @@ export const __webpack_modules__ = {
                 isError: v,
                 error: T
             } = (0, M.a)(w);
-            y[10] !== x || y[11] !== p ? (L = () => {
+            y[10] !== x || y[11] !== p ? (d = () => {
                 p.queryClient.prefetchQuery({
                     ...(0, C.v)(p, x),
                     staleTime: 0
                 })
-            }, y[10] = x, y[11] = p, y[12] = L) : L = y[12];
-            let m = L;
+            }, y[10] = x, y[11] = p, y[12] = d) : d = y[12];
+            let m = d;
             if (T instanceof h.FetchError && 423 === T.status) {
                 let n;
                 return y[13] !== x || y[14] !== m || y[15] !== p ? (n = (0, l.jsx)(j.a, {
@@ -99,7 +99,7 @@ export const __webpack_modules__ = {
                     }
                 }), y[13] = x, y[14] = m, y[15] = p, y[16] = n) : n = y[16], n
             }
-            return y[17] !== T ? (A = (0, h.e)(T) ? T : null, y[17] = T, y[18] = A) : A = y[18], y[19] !== v || y[20] !== m ? (u = v ? (0, l.jsx)(d.a, {
+            return y[17] !== T ? (A = (0, h.e)(T) ? T : null, y[17] = T, y[18] = A) : A = y[18], y[19] !== v || y[20] !== m ? (u = v ? (0, l.jsx)(L.a, {
                 title: (0, l.jsx)(s.a, {
                     id: "chatgptConversations.loadError",
                     defaultMessage: "Could not load this ChatGPT conversation"
@@ -278,8 +278,8 @@ export const __webpack_modules__ = {
             C = t("Wf1j"),
             j = t("UgGw"),
             r = t("O5pN"),
-            d = t("osar"),
-            L = t("jqSg"),
+            L = t("osar"),
+            d = t("jqSg"),
             N = t("enVv"),
             h = t("sIex"),
             A = t("wHPA"),
@@ -292,13 +292,13 @@ export const __webpack_modules__ = {
                     children: j,
                     conversationId: r
                 } = n,
-                d = (0, f.a)(),
-                L = (0, I.useContext)(h.b);
-            C[0] !== r || C[1] !== L ? (i = () => {
-                let n = L?.getInput();
+                L = (0, f.a)(),
+                d = (0, I.useContext)(h.b);
+            C[0] !== r || C[1] !== d ? (i = () => {
+                let n = d?.getInput();
                 return n?.dataset.conversationId === r ? n : null
-            }, C[0] = r, C[1] = L, C[2] = i) : i = C[2];
-            let [N] = (0, I.useState)(i), [A] = (0, I.useState)(!d || null != N), [y, D] = (0, I.useState)(!1), p = (0, I.useRef)(null), {
+            }, C[0] = r, C[1] = d, C[2] = i) : i = C[2];
+            let [N] = (0, I.useState)(i), [A] = (0, I.useState)(!L || null != N), [y, D] = (0, I.useState)(!1), p = (0, I.useRef)(null), {
                 key: w
             } = (0, M.Z)();
             C[3] !== y || C[4] !== r || C[5] !== A ? (t = A && !y ? (0, e.jsx)("div", {
@@ -319,14 +319,14 @@ export const __webpack_modules__ = {
                 children: [t, g]
             }), C[9] = t, C[10] = g, C[11] = a) : a = C[11];
             let z = a;
-            return C[12] !== r || C[13] !== A || C[14] !== L || C[15] !== w ? (c = A ? {
+            return C[12] !== r || C[13] !== A || C[14] !== d || C[15] !== w ? (c = A ? {
                 conversationId: r,
                 input: p,
                 locationKey: w,
                 onAdopt: () => {
-                    L?.onAdopt(), D(!0)
+                    d?.onAdopt(), D(!0)
                 }
-            } : null, C[12] = r, C[13] = A, C[14] = L, C[15] = w, C[16] = c) : c = C[16], C[17] !== z || C[18] !== c ? (o = (0, e.jsx)(h.a, {
+            } : null, C[12] = r, C[13] = A, C[14] = d, C[15] = w, C[16] = c) : c = C[16], C[17] !== z || C[18] !== c ? (o = (0, e.jsx)(h.a, {
                 value: c,
                 children: z
             }), C[17] = z, C[18] = c, C[19] = o) : o = C[19], o
@@ -339,7 +339,7 @@ export const __webpack_modules__ = {
                     conversationId: I
                 } = n,
                 h = (0, C.a)();
-            return s[0] !== h ? (i = (0, L.d)(h, "chat"), s[0] = h, s[1] = i) : i = s[1], s[2] !== I || s[3] !== o || s[4] !== i ? (t = (0, e.jsx)(d.a.Input, {
+            return s[0] !== h ? (i = (0, d.d)(h, "chat"), s[0] = h, s[1] = i) : i = s[1], s[2] !== I || s[3] !== o || s[4] !== i ? (t = (0, e.jsx)(L.a.Input, {
                 layout: "single-line",
                 children: (0, e.jsx)(r.a, {
                     singleLine: !0,
@@ -355,18 +355,18 @@ export const __webpack_modules__ = {
             }), s[6] = g) : g = s[6], s[7] !== h ? (M = h.formatMessage({
                 id: "composer.submitButtonTooltip.send",
                 defaultMessage: "Send"
-            }), s[7] = h, s[8] = M) : M = s[8], s[9] !== M ? (a = (0, e.jsx)(d.a.FooterControls, {
+            }), s[7] = h, s[8] = M) : M = s[8], s[9] !== M ? (a = (0, e.jsx)(L.a.FooterControls, {
                 layout: "single-line",
                 children: (0, e.jsx)(N.a, {
                     disabled: !0,
                     ariaLabel: M
                 })
-            }), s[9] = M, s[10] = a) : a = s[10], s[11] !== t || s[12] !== a ? (c = (0, e.jsx)(d.a, {
+            }), s[9] = M, s[10] = a) : a = s[10], s[11] !== t || s[12] !== a ? (c = (0, e.jsx)(L.a, {
                 layout: "single-line",
                 utilityBarVariant: "default",
-                children: (0, e.jsx)(d.a.Body, {
+                children: (0, e.jsx)(L.a.Body, {
                     layout: "single-line",
-                    children: (0, e.jsx)(d.a.AdaptiveFooter, {
+                    children: (0, e.jsx)(L.a.AdaptiveFooter, {
                         input: t,
                         layout: "single-line",
                         leadingControls: g,
@@ -381,12 +381,12 @@ export const __webpack_modules__ = {
                 {
                     children: r
                 } = n,
-                d = (0, M.bb)().location,
+                L = (0, M.bb)().location,
                 {
-                    conversationId: L
+                    conversationId: d
                 } = (0, M.eb)(),
-                N = (0, g.x)(a.a, L ?? null);
-            if (d?.state?.leavingDeletedChatGptConversation) {
+                N = (0, g.x)(a.a, d ?? null);
+            if (L?.state?.leavingDeletedChatGptConversation) {
                 let n;
                 return j[0] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, e.jsx)(c.LoadingPage, {}), j[0] = n) : n = j[0], n
             }
@@ -395,10 +395,10 @@ export const __webpack_modules__ = {
                 children: t
             }), j[4] = t, j[5] = I) : I = j[5];
             let h = I;
-            return j[6] !== N || j[7] !== h || j[8] !== L ? (C = null == L ? h : (0, e.jsx)(y, {
-                conversationId: L,
+            return j[6] !== N || j[7] !== h || j[8] !== d ? (C = null == d ? h : (0, e.jsx)(y, {
+                conversationId: d,
                 children: h
-            }, N ?? L), j[6] = N, j[7] = h, j[8] = L, j[9] = C) : C = j[9], C
+            }, N ?? d), j[6] = N, j[7] = h, j[8] = d, j[9] = C) : C = j[9], C
         }
     }),
     YiPf: (function(n, i, t) {
@@ -421,29 +421,29 @@ export const __webpack_modules__ = {
                     isUnavailable: C,
                     message: j,
                     homePath: r,
-                    onUnavailable: d,
-                    children: L
+                    onUnavailable: L,
+                    children: d
                 } = n,
                 N = (0, g.y)(I.a),
                 h = (0, c.ab)(),
                 A = (0, M.useRef)(!1);
-            a[0] !== r || a[1] !== j || a[2] !== h || a[3] !== d || a[4] !== N ? (i = () => {
-                d?.(), N.get(s.f).info(j, {
+            a[0] !== r || a[1] !== j || a[2] !== h || a[3] !== L || a[4] !== N ? (i = () => {
+                L?.(), N.get(s.f).info(j, {
                     id: "conversation-inaccessible",
                     duration: 5
                 }), (0, o.g)("conversation_unavailable", () => h(r, {
                     replace: !0
                 }))
-            }, a[0] = r, a[1] = j, a[2] = h, a[3] = d, a[4] = N, a[5] = i) : i = a[5];
+            }, a[0] = r, a[1] = j, a[2] = h, a[3] = L, a[4] = N, a[5] = i) : i = a[5];
             let u = (0, M.useEffectEvent)(i);
             return a[6] !== C || a[7] !== u ? (t = () => {
                 C && !A.current && (A.current = !0, u())
-            }, a[6] = C, a[7] = u, a[8] = t) : t = a[8], a[9] !== C ? (e = [C], a[9] = C, a[10] = e) : e = a[10], (0, M.useEffect)(t, e), C ? null : L
+            }, a[6] = C, a[7] = u, a[8] = t) : t = a[8], a[9] !== C ? (e = [C], a[9] = C, a[10] = e) : e = a[10], (0, M.useEffect)(t, e), C ? null : d
         }
         var j = t("IxgT"),
             r = t("yGJW"),
-            d = t("eShZ"),
-            L = t("ZhoB");
+            L = t("eShZ"),
+            d = t("ZhoB");
         let N = new WeakSet;
 
         function h(n) {
@@ -462,7 +462,7 @@ export const __webpack_modules__ = {
                 m = (0, g.z)(void 0 !== w && w && !1 === p ? j.b : null);
             if (null != m) return m;
             u[0] !== f || u[1] !== p || u[2] !== T ? (i = (n, i) => {
-                (0, L.e)(T.get(r.c).logProductEvent, {
+                (0, d.e)(T.get(r.c).logProductEvent, {
                     conversationId: f,
                     error: n,
                     isWorkConversation: p,
@@ -478,7 +478,7 @@ export const __webpack_modules__ = {
                 children: [M, v]
             }), u[12] = v, u[13] = M, u[14] = c) : c = u[14];
             let S = c;
-            return u[15] !== y ? (s = y instanceof d.FetchError && !(0, d.e)(y) && (403 === y.status || 404 === y.status), u[15] = y, u[16] = s) : s = u[16], u[17] !== y || u[18] !== Z ? (o = () => Z(y, !1), u[17] = y, u[18] = Z, u[19] = o) : o = u[19], u[20] === Symbol.for("react.memo_cache_sentinel") ? (N = (0, e.jsx)(a.a, {
+            return u[15] !== y ? (s = y instanceof L.FetchError && !(0, L.e)(y) && (403 === y.status || 404 === y.status), u[15] = y, u[16] = s) : s = u[16], u[17] !== y || u[18] !== Z ? (o = () => Z(y, !1), u[17] = y, u[18] = Z, u[19] = o) : o = u[19], u[20] === Symbol.for("react.memo_cache_sentinel") ? (N = (0, e.jsx)(a.a, {
                 id: "chatgptConversations.conversationInaccessible",
                 defaultMessage: "You don’t have access to this conversation. Make sure you’re logged in to the right account, or ask the conversation owner to send you a share link."
             }), u[20] = N) : N = u[20], u[21] !== S || u[22] !== s || u[23] !== o ? (h = (0, e.jsxs)(e.Fragment, {
@@ -506,7 +506,7 @@ export const __webpack_modules__ = {
             let I = (0, M.useEffectEvent)(i);
             return g[2] !== a || g[3] !== o || g[4] !== I ? (t = () => {
                 if (null != a) {
-                    if (I(a), (0, d.e)(a)) {
+                    if (I(a), (0, L.e)(a)) {
                         if (N.has(a)) return;
                         N.add(a)
                     }
@@ -523,51 +523,53 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as n
-} from "./633146.2ddddba2a5.js";
-import * as i from "./418851.f34514cc3f.js";
+} from "./633146.48b57020d2.js";
+import * as i from "./418851.5b0ade19b1.js";
 n.C(i);
 import * as t from "./109308.8b09661749.js";
 n.C(t);
 import * as e from "./399565.edefe43a76.js";
 n.C(e);
-import * as l from "./257798.6b4268ddac.js";
+import * as l from "./257798.428a6bce48.js";
 n.C(l);
 import * as g from "./447351.34d04099ca.js";
 n.C(g);
-import * as M from "./617936.4a1557f13c.js";
+import * as M from "./617936.dd75fa2a89.js";
 n.C(M);
-import * as a from "./807489.6b5279adf3.js";
+import * as a from "./807489.1d24fa9988.js";
 n.C(a);
-import * as c from "./337882.568bafdf14.js";
+import * as c from "./337882.145f5ca770.js";
 n.C(c);
-import * as s from "./955979.b2a7e19963.js";
+import * as s from "./955979.fad3aa290b.js";
 n.C(s);
-import * as o from "./646436.5963e38f02.js";
+import * as o from "./646436.b50a318f52.js";
 n.C(o);
-import * as I from "./7078.0a9a41e515.js";
+import * as I from "./7078.9bac2fcc06.js";
 n.C(I);
-import * as C from "./200429.a549930e29.js";
+import * as C from "./200429.f07d17d37b.js";
 n.C(C);
-import * as j from "./698524.48945354c5.js";
+import * as j from "./698524.130da41cbb.js";
 n.C(j);
-import * as r from "./956483.962c0de04b.js";
+import * as r from "./956483.20ccea0970.js";
 n.C(r);
-import * as d from "./87162.e4a69efaac.js";
-n.C(d);
-import * as L from "./396705.51be923e43.js";
+import * as L from "./87162.4896e26514.js";
 n.C(L);
-import * as N from "./155568.1f7b7a00a5.js";
+import * as d from "./396705.e5ddd72a06.js";
+n.C(d);
+import * as N from "./155568.49e7ad46aa.js";
 n.C(N);
-import * as h from "./731863.5a49a2d190.js";
+import * as h from "./731863.3cdbbfa8f8.js";
 n.C(h);
-import * as A from "./767086.61b8f8fca3.js";
+import * as A from "./767086.3711424c4d.js";
 n.C(A);
-import * as u from "./226913.cf105b979e.js";
+import * as u from "./76629.15f5868e7b.js";
 n.C(u);
-import * as f from "./708781.8c01b7b344.js";
+import * as f from "./226913.cf105b979e.js";
 n.C(f);
-var y = n(n.s = "rHYI").a;
+import * as y from "./708781.bf6150b043.js";
+n.C(y);
+var x = n(n.s = "rHYI").a;
 export {
-    y as
+    x as
     default
 };

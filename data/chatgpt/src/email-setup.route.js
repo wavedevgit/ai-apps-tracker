@@ -86,8 +86,8 @@ export const __webpack_modules__ = {
             w = t("OWtl"),
             b = t("ZEx5"),
             k = t("iPqE"),
-            _ = t("HFSu"),
-            j = t("eShZ"),
+            j = t("HFSu"),
+            _ = t("eShZ"),
             y = t("AXDI");
         let v = (0, o.q)(w.a, e => {
             let {
@@ -102,7 +102,7 @@ export const __webpack_modules__ = {
                 queryFn: async () => {
                     let e = window.__finservEmailSetupToken;
                     if (!e) return null;
-                    let s = await _.a.safeRequest("post", "/finserv-email/setup", {
+                    let s = await j.a.safeRequest("post", "/finserv-email/setup", {
                         requestBody: {
                             token: e
                         },
@@ -205,7 +205,7 @@ export const __webpack_modules__ = {
                 if (eh && X && ee.get("workspace") === X) {
                     em("working");
                     try {
-                        let e = await _.a.safeRequest("post", "/finserv-email/enroll", {
+                        let e = await j.a.safeRequest("post", "/finserv-email/enroll", {
                             requestBody: {
                                 token: eh,
                                 workspace_id: X,
@@ -224,8 +224,8 @@ export const __webpack_modules__ = {
                         em("connected")
                     } catch (e) {
                         if (A(e)) return void em("mailbox_mismatch");
-                        if (e instanceof j.FetchError && 409 === e.status && "email_workspace_changed" === e.errorCode) return void em("workspace_changed");
-                        e instanceof j.FetchError && 403 === e.status ? em("email_disabled_by_workspace_policy" === e.errorCode ? "workspace_disabled" : "unavailable") : em("error"), eb()
+                        if (e instanceof _.FetchError && 409 === e.status && "email_workspace_changed" === e.errorCode) return void em("workspace_changed");
+                        e instanceof _.FetchError && 403 === e.status ? em("email_disabled_by_workspace_policy" === e.errorCode ? "workspace_disabled" : "unavailable") : em("error"), eb()
                     }
                 }
             }, D[7] = X, D[8] = ee, D[9] = eb, D[10] = em, D[11] = p) : p = D[11];
@@ -234,7 +234,7 @@ export const __webpack_modules__ = {
                 if (eh) {
                     em("working");
                     try {
-                        await _.a.safeRequest("post", "/finserv-email/setup/resend", {
+                        await j.a.safeRequest("post", "/finserv-email/setup/resend", {
                             requestBody: {
                                 token: eh
                             },
@@ -242,11 +242,11 @@ export const __webpack_modules__ = {
                             expectedErrorStatuses: [401, 403, 409, 429]
                         }), em("resent")
                     } catch (e) {
-                        em(e instanceof j.FetchError && 403 === e.status ? "unavailable" : "error")
+                        em(e instanceof _.FetchError && 403 === e.status ? "unavailable" : "error")
                     }
                 }
             }, D[12] = em, D[13] = m) : m = D[13];
-            let e_ = m;
+            let ej = m;
             D[14] !== X || D[15] !== er || D[16] !== es || D[17] !== em || D[18] !== Q ? (g = async function(e) {
                 if (er) {
                     if (ea(e), e === X) {
@@ -265,7 +265,7 @@ export const __webpack_modules__ = {
                     }
                 }
             }, D[14] = X, D[15] = er, D[16] = es, D[17] = em, D[18] = Q, D[19] = g) : g = D[19];
-            let ej = g,
+            let e_ = g,
                 ey = async function() {
                     if (ed) {
                         em("reauthenticating");
@@ -334,7 +334,7 @@ export const __webpack_modules__ = {
                     })
                 }), D[33] = s) : s = D[33], s
             }
-            if ("unavailable" === ep || ex instanceof j.FetchError && 403 === ex.status) {
+            if ("unavailable" === ep || ex instanceof _.FetchError && 403 === ex.status) {
                 let e, s;
                 return D[34] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, i.jsx)("p", {
                     role: "alert",
@@ -350,7 +350,7 @@ export const __webpack_modules__ = {
             }
             if ("resent" === ep || eg?.status === "expired") {
                 let e, s;
-                return D[37] !== ev || D[38] !== e_ || D[39] !== ep ? (e = "resent" === ep ? (0, i.jsx)("p", {
+                return D[37] !== ev || D[38] !== ej || D[39] !== ep ? (e = "resent" === ep ? (0, i.jsx)("p", {
                     role: "status",
                     className: "text-secondary",
                     children: (0, i.jsx)(c.a, {
@@ -376,13 +376,13 @@ export const __webpack_modules__ = {
                         radius: "full",
                         disabled: ev,
                         loading: "working" === ep,
-                        onClick: () => void e_(),
+                        onClick: () => void ej(),
                         children: (0, i.jsx)(c.a, {
                             id: "chatgpt.finserv_email.setup.resend.button.label",
                             defaultMessage: "Send a new link"
                         })
                     })]
-                }), D[37] = ev, D[38] = e_, D[39] = ep, D[40] = e) : e = D[40], D[41] !== e || D[42] !== eV ? (s = (0, i.jsx)(Z, {
+                }), D[37] = ev, D[38] = ej, D[39] = ep, D[40] = e) : e = D[40], D[41] !== e || D[42] !== eV ? (s = (0, i.jsx)(Z, {
                     title: eV,
                     children: e
                 }), D[41] = e, D[42] = eV, D[43] = s) : s = D[43], s
@@ -444,7 +444,7 @@ export const __webpack_modules__ = {
                             unstyled: !0,
                             className: "flex w-full items-center gap-4 py-6 ps-5 pe-4.5 text-start text-base font-medium not-disabled:hover:bg-secondary-ghost-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ring disabled:opacity-50",
                             disabled: ev || eN,
-                            onClick: () => void ej(e.workspaceAccountId),
+                            onClick: () => void e_(e.workspaceAccountId),
                             children: [(0, i.jsx)(h.a, {
                                 alt: "",
                                 size: "row",
@@ -488,7 +488,7 @@ export const __webpack_modules__ = {
                         disabled: ev,
                         loading: "reauthenticating" === ep,
                         onClick: () => {
-                            eu ? ey() : et && ej(et)
+                            eu ? ey() : et && e_(et)
                         },
                         children: eE
                     })]
@@ -667,7 +667,7 @@ export const __webpack_modules__ = {
         }
 
         function A(e) {
-            return e instanceof j.FetchError && 403 === e.status && "email_setup_mailbox_mismatch" === e.errorCode
+            return e instanceof _.FetchError && 403 === e.status && "email_setup_mailbox_mismatch" === e.errorCode
         }
     }),
     BJA4: (function(e) {
@@ -679,49 +679,51 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.2ddddba2a5.js";
-import * as s from "./418851.f34514cc3f.js";
+} from "./633146.48b57020d2.js";
+import * as s from "./418851.5b0ade19b1.js";
 e.C(s);
 import * as t from "./109308.8b09661749.js";
 e.C(t);
 import * as a from "./399565.edefe43a76.js";
 e.C(a);
-import * as i from "./257798.6b4268ddac.js";
+import * as i from "./257798.428a6bce48.js";
 e.C(i);
 import * as r from "./447351.34d04099ca.js";
 e.C(r);
-import * as n from "./617936.4a1557f13c.js";
+import * as n from "./617936.dd75fa2a89.js";
 e.C(n);
-import * as o from "./807489.6b5279adf3.js";
+import * as o from "./807489.1d24fa9988.js";
 e.C(o);
-import * as l from "./337882.568bafdf14.js";
+import * as l from "./337882.145f5ca770.js";
 e.C(l);
-import * as c from "./955979.b2a7e19963.js";
+import * as c from "./955979.fad3aa290b.js";
 e.C(c);
-import * as d from "./646436.5963e38f02.js";
+import * as d from "./646436.b50a318f52.js";
 e.C(d);
-import * as p from "./7078.0a9a41e515.js";
+import * as p from "./7078.9bac2fcc06.js";
 e.C(p);
-import * as m from "./200429.a549930e29.js";
+import * as m from "./200429.f07d17d37b.js";
 e.C(m);
-import * as u from "./698524.48945354c5.js";
+import * as u from "./698524.130da41cbb.js";
 e.C(u);
-import * as h from "./956483.962c0de04b.js";
+import * as h from "./956483.20ccea0970.js";
 e.C(h);
-import * as f from "./87162.e4a69efaac.js";
+import * as f from "./87162.4896e26514.js";
 e.C(f);
-import * as g from "./396705.51be923e43.js";
+import * as g from "./396705.e5ddd72a06.js";
 e.C(g);
-import * as x from "./155568.1f7b7a00a5.js";
+import * as x from "./155568.49e7ad46aa.js";
 e.C(x);
-import * as C from "./731863.5a49a2d190.js";
+import * as C from "./731863.3cdbbfa8f8.js";
 e.C(C);
-import * as w from "./767086.61b8f8fca3.js";
+import * as w from "./767086.3711424c4d.js";
 e.C(w);
-import * as b from "./226913.cf105b979e.js";
+import * as b from "./76629.15f5868e7b.js";
 e.C(b);
-import * as k from "./333117.d1aa83a320.js";
+import * as k from "./226913.cf105b979e.js";
 e.C(k);
+import * as j from "./333117.a02d2e074a.js";
+e.C(j);
 var _ = e(e.s = "xIWH").a;
 export {
     _ as

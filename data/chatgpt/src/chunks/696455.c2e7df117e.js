@@ -1,0 +1,1715 @@
+export const __rspack_esm_ids = [696455];
+export const __webpack_modules__ = {
+    vSCF: (function(e, t, a) {
+        var i = a("ABep"),
+            r = a("Bbed"),
+            n = a("N55g");
+        let l = (0, r.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(753405), a.e(321957), a.e(585419), a.e(877700), a.e(843292), a.e(353230), a.e(322024), a.e(882456), a.e(212773), a.e(81461), a.e(259288), a.e(862490), a.e(456707), a.e(839342), a.e(499790), a.e(221469), a.e(909395), a.e(301030), a.e(953533), a.e(740793), a.e(587936), a.e(543588), a.e(17983), a.e(452048), a.e(684598), a.e(299268), a.e(763618), a.e(400887), a.e(433520), a.e(167649), a.e(16212), a.e(910298), a.e(722053), a.e(845033), a.e(363186), a.e(349250)]).then(a.bind(a, "XPeo"))).ChatGptDilDirectiveRenderer, {
+            errorFallback: (0, i.jsx)(n.a, {})
+        });
+        a.d(t, {}, {
+            ChatGptDilDirectiveRenderer: l
+        })
+    }),
+    greq: (function(e, t, a) {
+        a.d(t, {
+            a: () => g,
+            b: () => m,
+            c: () => p,
+            d: () => u
+        });
+        var i = a("I2Ei"),
+            r = a("zd8w"),
+            n = a("PFjh"),
+            l = a("hJIv"),
+            o = a("Q840"),
+            s = a("fVOX"),
+            d = a("OWtl");
+        a("WFY2");
+        let c = (0, o.u)(d.a, e => {
+            let {
+                scope: t
+            } = e, a = 0, r = 0, l = (e, a, i) => {
+                try {
+                    (0, n.c)(t).count("default", "chatgpt.model_written_dil.v2.startup.report_suppressed", {
+                        result: e,
+                        report_cutoff: a,
+                        reason: i,
+                        web_frontend: "codex_webview"
+                    })
+                } catch {}
+            }, o = (e, t) => a < 10 || (l(e, t, "page_report_limit"), !1);
+            return {
+                canPublish: o,
+                recordSuppression: l,
+                publish: (e, n, d) => {
+                    if (!o(n.result, n.report_cutoff)) return !1;
+                    try {
+                        let o, c = (0, i.h)(n);
+                        if (c > i.b ? o = "report_byte_limit" : r + c > 262144 && (o = "page_byte_limit"), null != o) return l(n.result, n.report_cutoff, o), !1;
+                        return a++, r += c, t.get(s.a).log({
+                            message: e,
+                            status: d ? "info" : "error",
+                            context: n
+                        }), !0
+                    } catch {
+                        return l(n.result, n.report_cutoff, "observer_error"), !1
+                    }
+                }
+            }
+        });
+
+        function u(e) {
+            let t, a = (t = (0, n.c)(e), {
+                    count: (e, a) => t.count("default", e, {
+                        ...a,
+                        web_frontend: "codex_webview"
+                    }),
+                    hist: (e, a, i) => t.hist("default", e, {
+                        ...a,
+                        web_frontend: "codex_webview"
+                    }, i)
+                }),
+                r = e.get(l.a),
+                o = e.get(c),
+                s = (0, i.e)(a, {
+                    enabled: () => r,
+                    reporting: o
+                });
+            return {
+                metrics: a,
+                diagnosticsEnabled: r,
+                render: (0, i.d)({
+                    metrics: a,
+                    diagnosticsExpected: r,
+                    startupReporting: r ? o : void 0,
+                    presentation: s
+                }),
+                presentation: s
+            }
+        }
+        let m = (0, r.createContext)(null),
+            g = (0, r.createContext)(null),
+            p = (0, r.createContext)(void 0)
+    }),
+    erFs: (function(e, t, a) {
+        a.d(t, {
+            a: () => X,
+            b: () => Z
+        });
+        var i = a("FS1B"),
+            r = a("RGCh"),
+            n = a("Cslg"),
+            l = a("X6Vn"),
+            o = a("yGJW"),
+            s = a("O666"),
+            d = a("LulU"),
+            c = a("k5RO"),
+            u = a("cQW3"),
+            m = a("Tywu"),
+            g = a("ABep"),
+            p = a("QosV");
+        let h = {
+            $type: "protobuf_analytics_events.v1.ChatgptImagegenPromptSharingAction"
+        };
+        var f = a("T0Rc"),
+            v = a("Q840"),
+            b = a("zd8w"),
+            _ = a("Wf1j"),
+            y = a("oyxz"),
+            I = a("EShr"),
+            x = a("OWtl"),
+            w = a("hZax"),
+            S = a("eShZ"),
+            E = a("CKur"),
+            j = a("r9i9"),
+            P = a("tdfh"),
+            C = a("aFoA"),
+            A = a("OOaz"),
+            T = a("dQRk"),
+            O = a("jfiJ"),
+            L = a("Sm6l"),
+            k = a("bf6R"),
+            F = a("MM0V"),
+            R = a("JNtf"),
+            M = a("mUDD");
+
+        function G(e) {
+            return !!e.title.trim() && !!e.prompt.trim() && Array.from(e.title.trim()).length <= 200 && Array.from(e.prompt).length <= 1e5
+        }
+        var N = a("zLIa");
+
+        function D(e) {
+            let t, a, i, r, n, l, o, s = (0, p.c)(19),
+                {
+                    content: d,
+                    onChange: c,
+                    disabled: u,
+                    autoFocus: m
+                } = e,
+                h = void 0 !== u && u,
+                f = void 0 !== m && m;
+            return s[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, g.jsx)("label", {
+                className: "text-sm font-medium select-none",
+                htmlFor: "image-prompt-title",
+                children: (0, g.jsx)(y.a, {
+                    id: "imagePromptShare.titleLabel",
+                    defaultMessage: "Title"
+                })
+            }), s[0] = t) : t = s[0], s[1] !== d || s[2] !== c ? (a = e => c({
+                ...d,
+                title: e.target.value
+            }), s[1] = d, s[2] = c, s[3] = a) : a = s[3], s[4] !== f || s[5] !== d.title || s[6] !== a ? (i = (0, g.jsxs)(M.f, {
+                children: [t, (0, g.jsx)(N.c, {
+                    id: "image-prompt-title",
+                    autoFocus: f,
+                    name: "title",
+                    variant: "compact",
+                    required: !0,
+                    rows: 1,
+                    maxLength: 400,
+                    value: d.title,
+                    onChange: a
+                })]
+            }), s[4] = f, s[5] = d.title, s[6] = a, s[7] = i) : i = s[7], s[8] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, g.jsx)("label", {
+                className: "text-sm font-medium select-none",
+                htmlFor: "image-prompt-text",
+                children: (0, g.jsx)(y.a, {
+                    id: "imagePromptShare.promptLabel",
+                    defaultMessage: "Prompt"
+                })
+            }), s[8] = r) : r = s[8], s[9] !== d || s[10] !== c ? (n = e => c({
+                ...d,
+                prompt: e.target.value
+            }), s[9] = d, s[10] = c, s[11] = n) : n = s[11], s[12] !== d.prompt || s[13] !== n ? (l = (0, g.jsxs)(M.f, {
+                children: [r, (0, g.jsx)(N.c, {
+                    id: "image-prompt-text",
+                    name: "prompt",
+                    variant: "compact",
+                    required: !0,
+                    rows: 2,
+                    maxLength: 2e5,
+                    value: d.prompt,
+                    onChange: n
+                })]
+            }), s[12] = d.prompt, s[13] = n, s[14] = l) : l = s[14], s[15] !== h || s[16] !== i || s[17] !== l ? (o = (0, g.jsxs)("fieldset", {
+                className: "flex min-w-0 flex-col gap-4",
+                disabled: h,
+                children: [i, l]
+            }), s[15] = h, s[16] = i, s[17] = l, s[18] = o) : o = s[18], o
+        }
+
+        function H(e) {
+            let t, a, i, r, n, l, o, s, d, c, u, m, h, f, v, I, x, w, E, j, P = (0, p.c)(54),
+                {
+                    content: C,
+                    onSave: A,
+                    onClose: T,
+                    onCloseAutoFocus: O
+                } = e,
+                N = (0, _.a)(),
+                [H, W] = (0, b.useState)(C),
+                [q, z] = (0, b.useState)(!1),
+                [B, U] = (0, b.useState)(null);
+            P[0] !== H || P[1] !== q || P[2] !== T || P[3] !== A ? (t = async function() {
+                if (!q && G(H)) {
+                    z(!0), U(null);
+                    try {
+                        await A(H), T()
+                    } catch (e) {
+                        U(e instanceof S.FetchError && "prompt_share_not_publishable" === e.errorCode ? "blocked" : "failed")
+                    }
+                    z(!1)
+                }
+            }, P[0] = H, P[1] = q, P[2] = T, P[3] = A, P[4] = t) : t = P[4];
+            let V = t,
+                Q = !q;
+            return P[5] !== O ? (a = {
+                "aria-describedby": void 0,
+                onCloseAutoFocus: O
+            }, P[5] = O, P[6] = a) : a = P[6], P[7] !== q || P[8] !== T ? (i = e => {
+                e || q || T()
+            }, P[7] = q, P[8] = T, P[9] = i) : i = P[9], P[10] !== V ? (r = e => {
+                e.preventDefault(), e.stopPropagation(), V()
+            }, P[10] = V, P[11] = r) : r = P[11], P[12] !== N ? (n = N.formatMessage({
+                id: "imagePromptShare.editBack",
+                defaultMessage: "Back"
+            }), P[12] = N, P[13] = n) : n = P[13], P[14] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, g.jsx)(k.dc, {}), P[14] = l) : l = P[14], P[15] !== q || P[16] !== T || P[17] !== n ? (o = (0, g.jsx)(L.a, {
+                color: "ghost",
+                size: "icon",
+                disabled: q,
+                "aria-label": n,
+                onClick: T,
+                children: l
+            }), P[15] = q, P[16] = T, P[17] = n, P[18] = o) : o = P[18], P[19] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, g.jsx)(M.d, {
+                title: (0, g.jsx)(R.f, {
+                    children: (0, g.jsx)(y.a, {
+                        id: "imagePromptShare.editTitle",
+                        defaultMessage: "Edit image prompt"
+                    })
+                })
+            }), P[19] = s) : s = P[19], P[20] !== o ? (d = (0, g.jsxs)("div", {
+                className: "flex items-center gap-2 pe-8",
+                children: [o, s]
+            }), P[20] = o, P[21] = d) : d = P[21], P[22] === Symbol.for("react.memo_cache_sentinel") ? (c = e => {
+                W(e), U(null)
+            }, P[22] = c) : c = P[22], P[23] !== H || P[24] !== q ? (u = (0, g.jsx)(M.e, {
+                spacing: "large",
+                children: (0, g.jsx)(D, {
+                    content: H,
+                    disabled: q,
+                    autoFocus: !0,
+                    onChange: c
+                })
+            }), P[23] = H, P[24] = q, P[25] = u) : u = P[25], P[26] !== B ? (m = null != B && (0, g.jsx)(M.e, {
+                children: (0, g.jsx)(F.a, {
+                    type: "error",
+                    role: "alert",
+                    content: "blocked" === B ? (0, g.jsx)(y.a, {
+                        id: "imagePromptShare.editBlocked",
+                        defaultMessage: "This prompt can’t be shared. Edit it and try again."
+                    }) : (0, g.jsx)(y.a, {
+                        id: "imagePromptShare.editFailed",
+                        defaultMessage: "Couldn’t save your edits. Try again."
+                    })
+                })
+            }), P[26] = B, P[27] = m) : m = P[27], P[28] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, g.jsx)(y.a, {
+                id: "imagePromptShare.editCancel",
+                defaultMessage: "Cancel"
+            }), P[28] = h) : h = P[28], P[29] !== q || P[30] !== T ? (f = (0, g.jsx)(L.a, {
+                color: "outline",
+                disabled: q,
+                onClick: T,
+                children: h
+            }), P[29] = q, P[30] = T, P[31] = f) : f = P[31], P[32] !== H || P[33] !== q ? (v = !G(H) || q, P[32] = H, P[33] = q, P[34] = v) : v = P[34], P[35] === Symbol.for("react.memo_cache_sentinel") ? (I = (0, g.jsx)(y.a, {
+                id: "imagePromptShare.editSave",
+                defaultMessage: "Save"
+            }), P[35] = I) : I = P[35], P[36] !== q || P[37] !== v ? (x = (0, g.jsx)(L.a, {
+                type: "submit",
+                color: "primary",
+                loading: q,
+                disabled: v,
+                children: I
+            }), P[36] = q, P[37] = v, P[38] = x) : x = P[38], P[39] !== f || P[40] !== x ? (w = (0, g.jsxs)(M.c, {
+                expandSingleButton: !1,
+                children: [f, x]
+            }), P[39] = f, P[40] = x, P[41] = w) : w = P[41], P[42] !== d || P[43] !== u || P[44] !== m || P[45] !== w || P[46] !== r ? (E = (0, g.jsxs)(M.b, {
+                as: "form",
+                size: "viewport",
+                onSubmit: r,
+                children: [d, u, m, w]
+            }), P[42] = d, P[43] = u, P[44] = m, P[45] = w, P[46] = r, P[47] = E) : E = P[47], P[48] !== q || P[49] !== Q || P[50] !== E || P[51] !== a || P[52] !== i ? (j = (0, g.jsx)(R.a, {
+                open: !0,
+                size: "share",
+                variant: "opaque",
+                showDialogClose: Q,
+                shouldIgnoreClickOutside: q,
+                contentProps: a,
+                onOpenChange: i,
+                children: E
+            }), P[48] = q, P[49] = Q, P[50] = E, P[51] = a, P[52] = i, P[53] = j) : j = P[53], j
+        }
+
+        function W(e) {
+            let t, a, i, r, n, l, o, s, d, c, u, m = (0, p.c)(28),
+                {
+                    content: h,
+                    previewSrc: f,
+                    alt: v,
+                    disabled: y,
+                    onSave: I
+                } = e,
+                x = (0, _.a)(),
+                [w, S] = (0, b.useState)(!1),
+                E = (0, b.useRef)(null);
+            return m[0] !== v || m[1] !== f ? (t = null != f && (0, g.jsx)("img", {
+                className: "size-20 rounded-lg object-cover",
+                alt: v,
+                src: f,
+                referrerPolicy: "no-referrer"
+            }), m[0] = v, m[1] = f, m[2] = t) : t = m[2], m[3] !== x ? (a = x.formatMessage({
+                id: "imagePromptShare.edit",
+                defaultMessage: "Edit image prompt"
+            }), m[3] = x, m[4] = a) : a = m[4], m[5] === Symbol.for("react.memo_cache_sentinel") ? (i = () => S(!0), r = (0, g.jsx)(k.cg, {}), m[5] = i, m[6] = r) : (i = m[5], r = m[6]), m[7] !== y || m[8] !== a ? (n = (0, g.jsx)(L.a, {
+                ref: E,
+                className: "ms-auto",
+                color: "ghost",
+                size: "icon",
+                disabled: y,
+                "aria-label": a,
+                onClick: i,
+                children: r
+            }), m[7] = y, m[8] = a, m[9] = n) : n = m[9], m[10] !== t || m[11] !== n ? (l = (0, g.jsxs)("div", {
+                className: "flex items-start justify-between gap-3",
+                children: [t, n]
+            }), m[10] = t, m[11] = n, m[12] = l) : l = m[12], m[13] !== h.title ? (o = (0, g.jsx)("p", {
+                className: "line-clamp-2 font-medium break-words",
+                children: h.title
+            }), m[13] = h.title, m[14] = o) : o = m[14], m[15] !== h.prompt ? (s = (0, g.jsx)("p", {
+                className: "line-clamp-4 break-words whitespace-pre-wrap text-secondary",
+                children: h.prompt
+            }), m[15] = h.prompt, m[16] = s) : s = m[16], m[17] !== l || m[18] !== o || m[19] !== s ? (d = (0, g.jsxs)("div", {
+                className: "flex flex-col gap-2 rounded-xl bg-secondary-soft p-4 text-sm text-default",
+                children: [l, o, s]
+            }), m[17] = l, m[18] = o, m[19] = s, m[20] = d) : d = m[20], m[21] !== h || m[22] !== w || m[23] !== I ? (c = w && (0, g.jsx)(H, {
+                content: h,
+                onSave: I,
+                onClose: () => S(!1),
+                onCloseAutoFocus: e => {
+                    e.preventDefault(), E.current?.focus()
+                }
+            }), m[21] = h, m[22] = w, m[23] = I, m[24] = c) : c = m[24], m[25] !== c || m[26] !== d ? (u = (0, g.jsxs)(g.Fragment, {
+                children: [d, c]
+            }), m[25] = c, m[26] = d, m[27] = u) : u = m[27], u
+        }
+        var q = a("AuIy"),
+            z = a("iqEK"),
+            B = a("ccwJ"),
+            U = a("tOYk"),
+            V = a("Kwur");
+        let Q = (0, v.v)(x.a, e => ({
+            idempotencyKey: null,
+            publication: null,
+            editedContent: null,
+            revision: 0
+        }));
+        async function K(e, t, a) {
+            J(e, t);
+            let i = t.assetPointer,
+                r = t.messageId;
+            if (null == i || null == r) throw Error("Image prompt share source unavailable");
+            let n = e.get(Q, t);
+            if (null != n.publication) return n.publication;
+            let l = n.idempotencyKey ?? crypto.randomUUID();
+            e.set(Q, t, {
+                ...n,
+                idempotencyKey: l
+            });
+            try {
+                let s = await e.queryClient.fetchQuery({
+                    queryKey: ["image-prompt-share-publication", t, l],
+                    staleTime: 1 / 0,
+                    gcTime: 1 / 0,
+                    retry: !1,
+                    queryFn: async () => {
+                        let s = await V.Request.safePost("/share/prompt-share", {
+                            isExpectedError: Y,
+                            requestBody: {
+                                idempotency_key: l,
+                                conversation_id: t.conversationId,
+                                message_id: r,
+                                output_asset_pointer: i,
+                                post_text: a.title,
+                                published_content: n.editedContent ?? void 0
+                            }
+                        });
+                        J(e, t);
+                        let d = n.editedContent ?? a;
+                        try {
+                            d.prompt !== a.prompt && (0, o.a)(e, U.a, {
+                                postId: s.post_id,
+                                field: "CHATGPT_SHARE_PROMPT_EDITED_FIELD_PROMPT"
+                            }), d.title.trim() !== a.title.trim() && (0, o.a)(e, U.a, {
+                                postId: s.post_id,
+                                field: "CHATGPT_SHARE_PROMPT_EDITED_FIELD_TITLE"
+                            })
+                        } catch {}
+                        return s
+                    }
+                });
+                return J(e, t), e.set(Q, t, e => e.publication === s ? e : {
+                    ...e,
+                    publication: s
+                }), s
+            } catch (a) {
+                throw a instanceof S.FetchError && Y(a) && e.set(Q, t, e => null == e.idempotencyKey ? e : {
+                    ...e,
+                    idempotencyKey: null
+                }), a
+            }
+        }
+
+        function J(e, t) {
+            if (null == t.accountId || null == t.userId || e.get(n.f) !== t.accountId || e.get(n.j) !== t.userId) throw Error("Image prompt share account changed")
+        }
+
+        function Y(e) {
+            return "prompt_share_not_publishable" === e.errorCode
+        }
+
+        function $(e) {
+            let t, a, i, r, l, s, d, c, u, m, L, k, F, R, M = (0, p.c)(69),
+                N = (0, v.y)(x.a),
+                D = (0, _.a)(),
+                H = (0, v.z)(n.f),
+                U = (0, v.z)(n.j);
+            M[0] !== H || M[1] !== U ? (t = {
+                accountId: H,
+                userId: U
+            }, M[0] = H, M[1] = U, M[2] = t) : t = M[2];
+            let [$] = (0, b.useState)(t), X = (0, w.f)("1939400492"), Z = (0, w.j)("250422953"), [ee, et] = (0, b.useState)("image");
+            M[3] === Symbol.for("react.memo_cache_sentinel") ? (a = {}, M[3] = a) : a = M[3];
+            let [ea] = (0, b.useState)(a), ei = e.image, er = ei?.item.isAnimated === !0, en = $.accountId === H && $.userId === U, el = null != ei && !ei.additionalImages?.length && null != H && null != U && en && !X, eo = e.mobileImagePromptShareTreatment;
+            M[4] !== el || M[5] !== Z || M[6] !== eo ? (i = el && ("prompt-with-image" === eo || null == eo && Z.get("imagegen_prompt_share_tabs_enabled", !1)), M[4] = el, M[5] = Z, M[6] = eo, M[7] = i) : i = M[7];
+            let es = i,
+                ed = ei?.item.id;
+            M[8] !== H || M[9] !== e.serverConversationId || M[10] !== ed || M[11] !== U ? (r = ["image-prompt-share-source", H, U, e.serverConversationId, ed], M[8] = H, M[9] = e.serverConversationId, M[10] = ed, M[11] = U, M[12] = r) : r = M[12], M[13] !== ei || M[14] !== e.serverConversationId || M[15] !== N ? (l = async t => {
+                let {
+                    signal: a
+                } = t;
+                if (null == ei) return null;
+                let i = (0, A.c)(e.serverConversationId),
+                    r = N.get(C.a, i) ?? i,
+                    n = () => {
+                        let e = N.get(T.N, r) ?? N.query.getData(E.chatGptConversationQueryById$, i)?.mapping;
+                        return null == e ? null : function(e, t) {
+                            let a = Object.entries(e.mapping).find(e => {
+                                let [, a] = e;
+                                return a?.message != null && (0, B.b)(a.message, {
+                                    isActiveTurn: !1,
+                                    isStreaming: !1
+                                }).some(e => e.id === t.id || e.src === t.src)
+                            });
+                            if (a?.[1]?.message == null) return null;
+                            let [, i] = a, r = a[1].message, n = (0, B.b)(r, {
+                                isActiveTurn: !1,
+                                isStreaming: !1
+                            }).find(e => e.id === t.id || e.src === t.src);
+                            if (n?.src == null || "completed" !== n.status || !(0, z.d)(n.src)) return null;
+                            let l = (0, q.b)({
+                                mapping: e.mapping,
+                                current_node: i?.parent
+                            }).find(e => "user" === e.author.role);
+                            if (null == l || (0, q.n)(l)) return null;
+                            let o = (0, q.s)(r.content),
+                                s = (Array.isArray(o?.parts) ? o.parts : []).map(q.s).find(e => e?.asset_pointer === n.src || (0, q.s)(e?.image_asset_pointer)?.asset_pointer === n.src),
+                                d = (0, q.s)(s?.image_asset_pointer) ?? s,
+                                c = (0, q.i)((0, q.s)((0, q.s)(d?.metadata)?.dalle)?.prompt) ?? (0, q.i)((0, q.e)(l)),
+                                u = (0, q.i)(r.id);
+                            return null == c || null == u ? null : {
+                                assetPointer: n.src,
+                                messageId: u,
+                                content: {
+                                    title: Array.from(n.chatGptDisplayTitle?.trim() || c).slice(0, 200).join(""),
+                                    prompt: c
+                                }
+                            }
+                        }({
+                            mapping: e
+                        }, ei.item)
+                    },
+                    l = n();
+                return null != l ? l : (await (0, O.a)(N, i, a), n())
+            }, M[13] = ei, M[14] = e.serverConversationId, M[15] = N, M[16] = l) : l = M[16], M[17] !== r || M[18] !== l || M[19] !== es ? (s = {
+                enabled: es,
+                queryKey: r,
+                staleTime: 1 / 0,
+                retry: !1,
+                queryFn: l
+            }, M[17] = r, M[18] = l, M[19] = es, M[20] = s) : s = M[20];
+            let {
+                data: ec
+            } = (0, f.a)(s), eu = ec?.messageId ?? null, em = ec?.assetPointer ?? null;
+            M[21] !== H || M[22] !== e.serverConversationId || M[23] !== eu || M[24] !== em || M[25] !== U ? (d = {
+                accountId: H,
+                userId: U,
+                conversationId: e.serverConversationId,
+                messageId: eu,
+                assetPointer: em
+            }, M[21] = H, M[22] = e.serverConversationId, M[23] = eu, M[24] = em, M[25] = U, M[26] = d) : d = M[26];
+            let eg = d,
+                {
+                    editedContent: ep,
+                    publication: eh,
+                    revision: ef
+                } = (0, v.x)(Q, eg),
+                ev = es && null != ec,
+                eb = ev && null == eo && "image_with_prompt" === Z.get("imagegen_prompt_share_label", "prompt_with_image") ? "image_with_prompt" : "prompt_with_image",
+                e_ = ev && "template" === ee;
+            M[27] !== ep || M[28] !== eh?.title || M[29] !== ec ? (c = ep ?? (null == ec ? void 0 : {
+                ...ec.content,
+                title: eh?.title ?? ec.content.title
+            }), M[27] = ep, M[28] = eh?.title, M[29] = ec, M[30] = c) : c = M[30];
+            let ey = c;
+            M[31] !== $.accountId || M[32] !== $.userId || M[33] !== N ? (u = function() {
+                if (N.get(n.f) !== $.accountId || N.get(n.j) !== $.userId) throw Error("Image prompt share account changed")
+            }, M[31] = $.accountId, M[32] = $.userId, M[33] = N, M[34] = u) : u = M[34];
+            let eI = u;
+            M[35] !== ey || M[36] !== ei || M[37] !== e.source || M[38] !== eI || M[39] !== N || M[40] !== eg || M[41] !== ec ? (m = async function(t) {
+                let a;
+                if (eI(), null == ec || null == ey || !G(ey)) throw Error("Image prompt share source unavailable or invalid");
+                try {
+                    a = await K(N, eg, ec.content)
+                } catch (e) {
+                    if (e instanceof S.FetchError && "prompt_share_not_publishable" === e.errorCode) throw new j.a;
+                    throw e
+                }
+                if (eI(), "copy" === t) {
+                    let t;
+                    "CHATGPT_SHARE_FLOW_SOURCE_IMAGE_PREVIEW_INLINE_ACTION" === e.source || "CHATGPT_SHARE_FLOW_SOURCE_IMAGE_LIBRARY_GRID" === e.source ? t = "image_inline_action" : ("CHATGPT_SHARE_FLOW_SOURCE_IMAGE_LIGHTBOX_CONVERSATION" === e.source || "CHATGPT_SHARE_FLOW_SOURCE_IMAGE_LIBRARY_LIGHTBOX" === e.source) && (t = "image_lightbox_action"), (0, o.a)(N, h, {
+                        action: "tap_send_to",
+                        entryPoint: t,
+                        tapTarget: "copy_link",
+                        shareType: "prompt_with_generated_image",
+                        promptShareId: a.prompt_share_id,
+                        originalGenerationId: ei?.item.chatGptGenerationId
+                    })
+                }
+                return {
+                    shareLinkId: a.post_id,
+                    shareLinkUrl: `https://chatgpt.com/s/${encodeURIComponent(a.post_id)}`,
+                    isWorkspaceOnly: !1,
+                    title: a.title
+                }
+            }, M[35] = ey, M[36] = ei, M[37] = e.source, M[38] = eI, M[39] = N, M[40] = eg, M[41] = ec, M[42] = m) : m = M[42];
+            let ex = m;
+            if (M[43] !== er || M[44] !== eb ? (L = er ? (0, g.jsx)(y.a, {
+                    id: "imagePromptShare.gifWithPrompt",
+                    defaultMessage: "GIF with prompt"
+                }) : "image_with_prompt" === eb ? (0, g.jsx)(y.a, {
+                    id: "imagePromptShare.imageWithPrompt",
+                    defaultMessage: "Image with prompt"
+                }) : (0, g.jsx)(y.a, {
+                    id: "imagePromptShare.template",
+                    defaultMessage: "Prompt with image"
+                }), M[43] = er, M[44] = eb, M[45] = L) : L = M[45], !en) return null;
+            let ew = e_ ? "template" : "image";
+            return M[46] !== D || M[47] !== er || M[48] !== ee || M[49] !== L || M[50] !== ev ? (k = ev ? e => (0, g.jsx)("div", {
+                className: "mx-auto w-80 max-w-full",
+                children: (0, g.jsx)(I.a, {
+                    fullWidth: !0,
+                    wrapLabels: !0,
+                    variant: "form",
+                    selectedId: ee,
+                    onSelect: et,
+                    ariaLabel: D.formatMessage({
+                        id: "imagePromptShare.mode",
+                        defaultMessage: "Share format"
+                    }),
+                    options: [{
+                        id: "image",
+                        disabled: e,
+                        label: er ? (0, g.jsx)(y.a, {
+                            id: "imagePromptShare.gifOnly",
+                            defaultMessage: "GIF only"
+                        }) : (0, g.jsx)(y.a, {
+                            id: "imagePromptShare.imageOnly",
+                            defaultMessage: "Image only"
+                        })
+                    }, {
+                        id: "template",
+                        disabled: e,
+                        label: L
+                    }]
+                })
+            }) : void 0, M[46] = D, M[47] = er, M[48] = ee, M[49] = L, M[50] = ev, M[51] = k) : k = M[51], M[52] !== ey || M[53] !== ex || M[54] !== ei?.alt || M[55] !== eI || M[56] !== ef || M[57] !== N || M[58] !== eg || M[59] !== ec || M[60] !== eb || M[61] !== e_ ? (F = e_ && null != ey ? {
+                label: eb,
+                revision: ef,
+                createLink: ex,
+                actionsDisabled: !G(ey),
+                preview: (e, t, a) => (0, g.jsx)(W, {
+                    content: ey,
+                    previewSrc: t,
+                    alt: ei?.alt ?? "",
+                    disabled: e,
+                    onSave: async e => {
+                        if (eI(), null == ec) throw Error("Image prompt share source unavailable");
+                        (e.title.trim() !== ey.title.trim() || e.prompt !== ey.prompt) && await async function(e, t, a, i) {
+                            J(e, t);
+                            let r = e.get(Q, t),
+                                n = null == r.idempotencyKey ? r.publication : await K(e, t, a),
+                                l = i;
+                            if (null != n) {
+                                let e = await V.Request.safePatch("/share/post/{post_id}/prompt-share", {
+                                    isExpectedError: Y,
+                                    parameters: {
+                                        path: {
+                                            post_id: n.post_id
+                                        }
+                                    },
+                                    requestBody: i
+                                });
+                                l = {
+                                    title: e.title,
+                                    prompt: e.prompt
+                                }
+                            }
+                            J(e, t), e.set(Q, t, e => ({
+                                ...e,
+                                editedContent: l,
+                                publication: null == e.publication ? null : {
+                                    ...e.publication,
+                                    title: l.title
+                                },
+                                revision: e.revision + 1
+                            }))
+                        }(N, eg, ec.content, {
+                            title: e.title.trim(),
+                            prompt: e.prompt
+                        }), eI(), a()
+                    }
+                })
+            } : void 0, M[52] = ey, M[53] = ex, M[54] = ei?.alt, M[55] = eI, M[56] = ef, M[57] = N, M[58] = eg, M[59] = ec, M[60] = eb, M[61] = e_, M[62] = F) : F = M[62], M[63] !== ea || M[64] !== e || M[65] !== ew || M[66] !== k || M[67] !== F ? (R = (0, g.jsx)(P.a, {
+                ...e,
+                mobileImageRowScrollPositions: ea,
+                imageShareOptions: k,
+                imagePromptTemplate: F
+            }, ew), M[63] = ea, M[64] = e, M[65] = ew, M[66] = k, M[67] = F, M[68] = R) : R = M[68], R
+        }
+
+        function X(e, t) {
+            let a, {
+                    additionalImages: d,
+                    alt: g,
+                    downloadAnalyticsImage: p,
+                    downloadIsParagen: h,
+                    image: f,
+                    isDirectLightboxShare: v,
+                    previewSrc: b,
+                    serverConversationId: _,
+                    source: y = "CHATGPT_SHARE_FLOW_SOURCE_IMAGE_PREVIEW_INLINE_ACTION",
+                    title: I
+                } = t,
+                x = crypto.randomUUID(),
+                w = {
+                    actor: "CHATGPT_SHARE_FLOW_ACTOR_SHARER",
+                    attachmentType: "CHATGPT_SHARE_FLOW_ATTACHMENT_TYPE_IMAGE_SHARE",
+                    contentType: "CHATGPT_SHARE_FLOW_CONTENT_TYPE_POST_SLICE",
+                    conversationId: _,
+                    shareSessionId: x,
+                    source: y
+                };
+            (0, o.a)(e, i.i, {
+                ...w,
+                action: "CHATGPT_SHARE_FLOW_ACTION_ENTRY_POINT_SELECTED"
+            });
+            let S = e.get(n.f),
+                E = e.get(n.j),
+                j = (0, r.d)(),
+                P = j && null != S && null != E ? (0, c.h)(e.get(s.a, c.a)?.get(c.b, "native_with_fallback")) : null,
+                C = e.get(n.e),
+                A = "loaded" === C.status && "personal" === C.structure || "loading" === C.status && "personal" === C.structureAtLogin,
+                T = null == P ? void 0 : (0, c.f)({
+                    canUseNativeShare: "function" == typeof navigator.share,
+                    experience: P,
+                    isMobileBrowser: j,
+                    isPersonalAccount: A
+                }),
+                O = () => e.get(n.f) === S && e.get(n.j) === E,
+                L = t => {
+                    !t.isWorkspaceOnly && t.shareLinkId !== a && O() && (a = t.shareLinkId, (0, o.a)(e, i.i, {
+                        ...w,
+                        action: "CHATGPT_SHARE_FLOW_ACTION_POST_LINK_PREPARED",
+                        shareId: t.shareLinkId
+                    }))
+                },
+                k = {
+                    additionalImages: d,
+                    alt: g,
+                    downloadAnalyticsImage: p,
+                    downloadIsParagen: h,
+                    isDirectLightboxShare: v,
+                    item: f,
+                    previewSrc: b
+                },
+                F = () => (0, l.f)(e, $, {
+                    currentNodeId: f.id,
+                    image: k,
+                    serverConversationId: _,
+                    shareSessionId: x,
+                    source: y,
+                    title: I,
+                    mobileImageExperience: T,
+                    mobileImagePromptShareTreatment: P?.promptShareTreatment,
+                    onImageShareLinkPrepared: null == P ? void 0 : L,
+                    trackMobileImageShareLifecycle: j && P?.kind === "native"
+                });
+            j && P?.kind === "native" && "function" == typeof navigator.share ? async function() {
+                let t = (0, u.a)(e, _, k);
+                try {
+                    let a = e.queryClient.getQueryData(t.queryKey);
+                    if (null == a) return void F();
+                    if (!O()) return;
+                    if (!A) return void F();
+                    L(a);
+                    let i = await (0, m.b)(e, a, _, x, y);
+                    if ("shared" === i || "cancelled" === i) return
+                } catch {}
+                O() && F()
+            }(): F()
+        }
+        async function Z(e, t) {
+            if (!t.src?.startsWith("data:image/gif")) return t;
+            let {
+                uploadChatGptConversationFile: i
+            } = await Promise.resolve().then(a.bind(a, "AUdp")), {
+                file: r
+            } = (0, d.a)(t.src, "animation.gif"), n = await i(e, r, {
+                storeInLibrary: !1
+            });
+            return {
+                ...t,
+                src: `sediment://${n.id}`
+            }
+        }
+    }),
+    ONnF: (function(e, t, a) {
+        var i = a("Q840"),
+            r = a("OWtl"),
+            n = a("zHp1"),
+            l = a("Kwur");
+        let o = (0, i.q)(r.a, e => {
+            let {
+                accountId: t,
+                conversationId: a,
+                fileId: i,
+                userId: r
+            } = e;
+            return {
+                queryKey: ["library-api", t, r, "generated-image-info", i, a],
+                staleTime: 3e4,
+                queryFn: e => {
+                    let {
+                        signal: r
+                    } = e;
+                    return l.Request.safeGet("/files/{file_id}/simple", {
+                        additionalHeaders: {
+                            "ChatGPT-Account-ID": t
+                        },
+                        parameters: {
+                            path: {
+                                file_id: i
+                            },
+                            query: {
+                                conversation_id: a
+                            }
+                        },
+                        signal: r
+                    })
+                },
+                refetchInterval: e => "success" === e.state.status && e.state.data?.library_file_id == null && e.state.dataUpdateCount < 6 && Math.min(2e3 * 2 ** (e.state.dataUpdateCount - 1), 8e3)
+            }
+        });
+
+        function s(e) {
+            return "completed" !== e.status || e.isPreview || null == e.src || !(0, n.h)(e.src) ? null : e.src.slice(e.src.indexOf("://") + 3)
+        }
+        a.d(t, {}, {
+            a: o,
+            b: s,
+            c: function(e, t, a) {
+                if (null == e) return;
+                let i = s(e);
+                if (null != i) return {
+                    conversationId: t,
+                    identity: {
+                        type: "file",
+                        fileId: i
+                    },
+                    mimeType: e.chatGptImageMetadata?.mimeType,
+                    name: a
+                }
+            }
+        })
+    }),
+    Tw2n: (function(e, t, a) {
+        var i = a("mBJV"),
+            r = a("Q840"),
+            n = a("Vi6J"),
+            l = a("lAQI"),
+            o = a("maWI"),
+            s = a("Cslg"),
+            d = a("yGJW"),
+            c = a("OWtl"),
+            u = a("dQRk"),
+            m = a("srYL");
+        let g = (0, r.v)(c.a, e => ({})),
+            p = l.F({
+                async_completion_id: l.L().nullish()
+            }),
+            h = l.F({
+                content_type: l.z("image_asset_pointer"),
+                asset_pointer: l.L(),
+                height: l.E(),
+                metadata: l.F({
+                    generation: l.F({
+                        height: l.E()
+                    }),
+                    is_no_auth_placeholder: l.j().nullish()
+                })
+            });
+
+        function f(e, t, a) {
+            let r, n, {
+                    element: l,
+                    isCurrentImage: c,
+                    assetPointer: u
+                } = t,
+                m = l.ownerDocument,
+                p = !1,
+                h = () => {
+                    let t;
+                    if (p || !l.isConnected || !l.complete || 0 === l.naturalWidth || !c() || null == n) return;
+                    let a = e.get(s.n),
+                        {
+                            userId: r
+                        } = a;
+                    if (a.authLoading || "chatgpt" !== a.authMethod || !r || a.authenticatedAccountId !== n.accountId) return;
+                    let {
+                        accountId: h,
+                        conversationId: v,
+                        messageId: b,
+                        asyncCompletionId: _,
+                        isDelayed: y
+                    } = n, I = null == u ? void 0 : (0, o.b)(m);
+                    if (null != I && null != u) {
+                        if ("allowed" !== e.get(d.c).getAnalyticsAdmission()) return;
+                        t = function(e, t, a, r, n, l) {
+                            let {
+                                conversationId: s,
+                                messageId: c,
+                                accountId: u,
+                                asyncCompletionId: m
+                            } = r, g = JSON.stringify([s, l, u, c, n]), p = t.firstLoads.get(g);
+                            if (null != p) return p;
+                            let h = t.loads.get(a);
+                            if (null == h || h.src !== a.src) return;
+                            let f = new Set;
+                            t.firstLoads.set(g, {
+                                status: "pending",
+                                onSettled: f
+                            });
+                            let v = r => {
+                                let n = e.get(d.c),
+                                    p = crypto.randomUUID();
+                                (0, d.a)(e, i.Pb, {
+                                    conversationId: s,
+                                    messageId: c,
+                                    asyncCompletionId: m,
+                                    resultLoadId: p,
+                                    ...h.timing
+                                }, i => {
+                                    let l = e.get(d.c);
+                                    if ("sent" !== i.status && r && l !== n && "allowed" === l.getAnalyticsAdmission() && (0, o.b)(a.ownerDocument) === t) return void v(!1);
+                                    let s = "sent" === i.status ? p : void 0;
+                                    for (let e of (null == s ? t.firstLoads.delete(g) : t.firstLoads.set(g, {
+                                            status: "sent",
+                                            id: s
+                                        }), f)) e(s);
+                                    f.clear()
+                                }, void 0, {
+                                    expectedUserId: l,
+                                    expectedAccountId: u
+                                })
+                            };
+                            return v(!0), t.firstLoads.get(g)
+                        }(e, I, l, n, u, r)
+                    }
+                    if ("visible" !== m.visibilityState) return;
+                    let x = JSON.stringify([r, h, null == _ ? "message" : "async", _ ?? b]),
+                        w = e.get(g, v)[x];
+                    if ("viewed" === w) return void f();
+                    if ("pending" === w) return;
+                    e.set(g, v, e => ({
+                        ...e,
+                        [x]: "pending"
+                    }));
+                    let S = new Date(Date.now()).toISOString(),
+                        E = t => {
+                            e.set(g, v, e => {
+                                if (t) return {
+                                    ...e,
+                                    [x]: "viewed"
+                                };
+                                let a = {
+                                    ...e
+                                };
+                                return delete a[x], a
+                            }), t && f()
+                        },
+                        j = t => {
+                            null != I && (0, o.b)(m) !== I ? E(!1) : (0, d.a)(e, i.Qb, {
+                                conversationId: v,
+                                messageId: b,
+                                asyncCompletionId: _,
+                                isDelayed: y,
+                                ...t && {
+                                    resultLoadId: t
+                                }
+                            }, e => E("sent" === e.status), void 0, null == I ? void 0 : {
+                                expectedUserId: r,
+                                expectedAccountId: h,
+                                eventCreatedAt: S
+                            })
+                        };
+                    t?.status === "pending" ? t.onSettled.add(j) : j(t?.id)
+                };
+
+            function f() {
+                p || (p = !0, r?.(), m.removeEventListener("visibilitychange", h), l.removeEventListener("load", h))
+            }
+            return m.addEventListener("visibilitychange", h), l.addEventListener("load", h), r = e.watch(e => {
+                let {
+                    get: t
+                } = e;
+                t(s.n), t(d.c), n = a(t), h()
+            }), p && r(), f
+        }
+        a.d(t, {}, {
+            a: function(e, t) {
+                let {
+                    conversationId: a,
+                    messageId: i,
+                    assetPointer: r,
+                    element: l,
+                    nativeLoad: d,
+                    isCurrentImage: c
+                } = t;
+                return d && (0, o.a)(l), f(e, {
+                    element: l,
+                    isCurrentImage: c,
+                    assetPointer: r
+                }, e => {
+                    let t = e(s.n).authenticatedAccountId,
+                        l = e(u.j, a),
+                        o = e(u.N, a)?.[i]?.message,
+                        d = e(u.ab, a),
+                        c = function(e, t) {
+                            if (e?.author.role !== "tool" || !(0, n.b)(e.author.name) || "multimodal_text" !== e.content.content_type || e.metadata?.is_visually_hidden_from_conversation) return;
+                            let a = e.metadata?.image_gen_delayed;
+                            if (null != a && !(0, m.c)(e)) return;
+                            let i = p.safeParse(e.metadata).data,
+                                r = i?.async_completion_id ?? void 0;
+                            if (e.content.parts.some(e => {
+                                    let a = h.safeParse(e);
+                                    return a.success && a.data.asset_pointer === t && !a.data.metadata.is_no_auth_placeholder && a.data.metadata.generation.height >= a.data.height
+                                })) return {
+                                asyncCompletionId: r,
+                                isDelayed: null != a
+                            }
+                        }(o, r);
+                    if (t && l && null == d && c) return {
+                        accountId: t,
+                        conversationId: l,
+                        messageId: i,
+                        ...c
+                    }
+                })
+            },
+            b: function(e, t) {
+                let {
+                    result: a,
+                    element: i,
+                    isCurrentImage: r
+                } = t;
+                return f(e, {
+                    element: i,
+                    isCurrentImage: r
+                }, () => a)
+            }
+        })
+    }),
+    tf6h: (function(e, t, a) {
+        var i = a("HFi9"),
+            r = a.n(i),
+            n = a("KUdL"),
+            l = a.n(n),
+            o = a("Q840"),
+            s = a("iqEK"),
+            d = a("Cslg"),
+            c = a("s5Ri"),
+            u = a("YITL"),
+            m = a("OWtl"),
+            g = a("tSEg"),
+            p = a("dQRk"),
+            h = a("uR23");
+        let f = (0, o.v)(g.a, e => null),
+            v = (0, o.d)(m.a, (e, t) => {
+                var a;
+                let i, {
+                    get: n
+                } = t;
+                if (null == e || !n(u.c) || null != n(p.bb, e)) return null;
+                let o = n(p.j, e),
+                    s = n(d.f),
+                    c = n(h.b);
+                if (null == o || null == s || null == c) return null;
+                let {
+                    data: m
+                } = n(h.a, {
+                    accountId: s,
+                    allowRequestUserFallback: !0,
+                    userId: c,
+                    serverConversationId: o,
+                    conversationId: e
+                });
+                return {
+                    versions: (a = m ?? [], i = l()(a.filter(I), e => Date.parse(e.record_creation_time)), new Map(Object.entries(r()(i, e => e.image_edit.source_file_id)))),
+                    listedDocuments: null == m ? void 0 : {
+                        conversationId: o,
+                        ids: new Set(m.map(e => e.id))
+                    }
+                }
+            });
+
+        function b(e, t) {
+            return null != t && t.id !== t.sourceImageId ? e.find(e => e.id === t.sourceImageId) : void 0
+        }
+
+        function _(e, t) {
+            let a = (0, s.d)(e.src ?? "");
+            return "completed" !== e.status || e.isPreview || null == a ? [] : t.get(a) ?? []
+        }
+
+        function y(e, t) {
+            return (0, c.a)(e, t.id, t.file_id, t.image_edit.snapshot_version, t.file_size_bytes, t.width ?? e.width, t.height ?? e.height)
+        }
+
+        function I(e) {
+            return "image_layers" === e.library_artifact_type && e.image_edit?.snapshot_version != null
+        }
+        a.d(t, {}, {
+            a: v,
+            b: b,
+            c: function(e, t) {
+                return e.flatMap(e => [e, ..._(e, t).map(t => y(e, t))])
+            },
+            d: function(e, t, a) {
+                if (null == t || a?.id === e.id) return e;
+                let i = _(e, t),
+                    r = i.find(e => e.id === a?.id) ?? i.at(-1);
+                return null == r ? e : y(e, r)
+            },
+            e: function(e, t, a) {
+                return null != b(e, a) || null != t && e.some(e => _(e, t).length > 0)
+            },
+            f: f
+        })
+    }),
+    umQU: (function(e, t, a) {
+        var i = a("Q840"),
+            r = a("ccwJ"),
+            n = a("Kwur"),
+            l = a("dQRk"),
+            o = a("bmqg"),
+            s = a("SGsN"),
+            d = a("urzV"),
+            c = a("svjy"),
+            u = a("tSEg"),
+            m = a("zHp1"),
+            g = a("Yscs"),
+            p = a("GDNt");
+        let h = (0, i.v)(u.a, e => null),
+            f = (0, i.j)(u.a, (e, t) => {
+                let a, {
+                        image: i,
+                        imageAssetResolver: o
+                    } = e,
+                    {
+                        signal: u,
+                        scope: f
+                    } = t,
+                    v = i?.gifPlayback?.originalSrc ?? i?.src,
+                    y = JSON.stringify([i?.id, v]),
+                    I = 0,
+                    x = Promise.resolve(),
+                    w = u({
+                        preview: null,
+                        busy: !1
+                    }, {
+                        onMount: e => {
+                            if (i?.isAnimated) return f.watch(t => {
+                                if (0 !== I) return;
+                                let a = t.get(h, y),
+                                    n = (0, r.d)(b(t, i)?.gifPlayback, a ?? void 0);
+                                (null != a || 1 !== n) && (e({
+                                    preview: null,
+                                    busy: !0
+                                }), P(n, !1))
+                            })
+                        }
+                    }),
+                    S = async e => {
+                        let t = null != e && (0, m.h)(e) && null != o ? await (0, m.a)(f.queryClient, e, o) : e,
+                            a = null == t ? null : await (0, d.a)(t);
+                        if (null == a) throw Error("GIF download unavailable");
+                        return a.blob
+                    }, E = () => (null == a && (a = S(v).catch(e => {
+                        throw a = void 0, e
+                    })), a), j = async function(e) {
+                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v,
+                            a = b(f, i),
+                            n = t === a?.watermarkedSrc ? a?.gifPlayback?.watermarkedVariants : a?.gifPlayback?.variants;
+                        if (!(0, r.a)(n).includes(e)) throw Error("GIF speed variant unavailable");
+                        let l = 1 === e ? void 0 : n?.[String(e)],
+                            o = w.get().preview;
+                        if (o?.speed === e && o.originalSrc === t && o.assetSrc === l) return o;
+                        let s = null == l && t === v ? await E() : await S(l ?? t);
+                        return {
+                            assetSrc: l,
+                            originalSrc: t ?? "",
+                            speed: e,
+                            src: await (0, g.a)(s),
+                            sizeBytes: s.size
+                        }
+                    }, P = async (e, t) => {
+                        let a = ++I;
+                        w.set(e => ({
+                            ...e,
+                            busy: !0
+                        }));
+                        try {
+                            let r = await j(e);
+                            if (a !== I) return !1;
+                            return w.set({
+                                preview: r,
+                                busy: !1
+                            }), t && (f.set(h, y, e), x = x.then(async () => {
+                                if (a !== I || "chatgpt-thread" !== f.value.routeKind || i?.chatGptMessageId == null || null == v) return;
+                                let t = f.get(l.j, f.value.conversationId);
+                                null != t && await n.Request.safePost("/image-gen/gif/select_speed", {
+                                    requestBody: {
+                                        conversation_id: t,
+                                        message_id: i.chatGptMessageId,
+                                        asset_pointer: v,
+                                        selected_speed: e
+                                    },
+                                    expectedErrorStatuses: [404, 405]
+                                })
+                            }).catch(e => {
+                                e instanceof p.a && (404 === e.status || 405 === e.status) || f.get(s.f).danger(f.get(c.a).formatMessage({
+                                    id: "gifEditor.saveSpeedFailed",
+                                    defaultMessage: "Couldn’t save GIF speed. Try again"
+                                }), {
+                                    errorAnalytics: {
+                                        toastId: "gifEditor.saveSpeedFailed"
+                                    }
+                                })
+                            })), !0
+                        } catch {
+                            return t && a === I && f.get(s.f).danger(f.get(c.a).formatMessage({
+                                id: "gifEditor.speedChangeFailed",
+                                defaultMessage: "Couldn’t change GIF speed. Try again"
+                            }), {
+                                errorAnalytics: {
+                                    toastId: "gifEditor.speedChangeFailed"
+                                }
+                            }), !1
+                        } finally {
+                            a === I && w.set(e => ({
+                                ...e,
+                                busy: !1
+                            }))
+                        }
+                    };
+                return {
+                    state$: w,
+                    loadOriginal: E,
+                    loadExport: async e => 1 === e ? E() : S((await j(e)).src),
+                    changeSpeed: e => P(e, !0),
+                    imageForExport: async function(e) {
+                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v,
+                            {
+                                forSharing: a = !1
+                            } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+                        if (!e.isAnimated || null == t) return e;
+                        let i = (0, r.d)(b(f, e)?.gifPlayback, w.get().preview?.speed ?? f.get(h, y) ?? void 0),
+                            n = {
+                                ...e,
+                                src: t,
+                                gifPlayback: {
+                                    ...e.gifPlayback,
+                                    originalSrc: t,
+                                    speed: i
+                                }
+                            };
+                        if (1 === i) return n;
+                        let l = await j(i, t);
+                        return _(n, a && null != l.assetSrc ? {
+                            ...l,
+                            src: l.assetSrc
+                        } : l)
+                    }
+                }
+            }, {
+                autoDispose: 6e4,
+                key: e => {
+                    let {
+                        image: t
+                    } = e;
+                    return JSON.stringify([t?.id, t?.gifPlayback?.originalSrc ?? t?.src, t?.gifPlayback?.variants, t?.gifPlayback?.watermarkedVariants])
+                }
+            }),
+            v = (0, i.d)(u.a, (e, t) => {
+                let {
+                    image: a,
+                    conversationId: i,
+                    imageAssetResolver: n
+                } = e, {
+                    scope: l
+                } = t, o = b(l, a, i), s = l.get(f, {
+                    image: o?.isAnimated === !0 ? o : void 0,
+                    imageAssetResolver: n
+                }), {
+                    preview: d
+                } = l.get(s.state$);
+                return {
+                    playback: s,
+                    previewSrc: null != d && (0, r.a)(o?.gifPlayback?.variants).includes(d.speed) ? d.src : void 0,
+                    image: null == o ? void 0 : _(o, d),
+                    originalSrc: o?.isAnimated === !0 ? o.gifPlayback?.originalSrc ?? o.src : o?.src,
+                    canControl: o?.isAnimated === !0 && (0, r.a)(o.gifPlayback?.variants).length > 1
+                }
+            });
+
+        function b(e, t) {
+            let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "chatgpt-thread" === e.value.routeKind ? e.value.conversationId : null;
+            return t?.isAnimated === !0 && null != a ? e.get(o.b, a)?.find(e => e.id === t.id) ?? t : t
+        }
+
+        function _(e, t) {
+            let a = (0, r.d)(e.gifPlayback),
+                i = null != e.gifPlayback && e.gifPlayback.speed !== a ? {
+                    ...e,
+                    gifPlayback: {
+                        ...e.gifPlayback,
+                        speed: a
+                    }
+                } : e;
+            return !0 === e.isAnimated && null != t && (0, r.a)(e.gifPlayback?.variants).includes(t.speed) && t.originalSrc === (e.gifPlayback?.originalSrc ?? e.src) ? {
+                ...e,
+                src: t.src,
+                sizeBytes: t.sizeBytes,
+                gifPlayback: {
+                    ...e.gifPlayback,
+                    originalSrc: t.originalSrc,
+                    speed: t.speed
+                }
+            } : i
+        }
+        a.d(t, {}, {
+            a: _,
+            b: b,
+            c: f,
+            d: v
+        })
+    }),
+    I0AH: (function(e, t, a) {
+        var i = a("ABep"),
+            r = a("QosV"),
+            n = a("on57");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, l = (0, r.c)(14),
+                    {
+                        ariaLabel: o,
+                        children: s,
+                        className: d,
+                        variant: c
+                    } = e,
+                    u = void 0 === c ? "compact" : c;
+                if ("embedded" === u) {
+                    let e, t = null == o ? void 0 : "group";
+                    return l[0] !== o || l[1] !== s || l[2] !== t ? (e = (0, i.jsx)("div", {
+                        role: t,
+                        "aria-label": o,
+                        className: "flex min-w-0 items-center",
+                        children: s
+                    }), l[0] = o, l[1] = s, l[2] = t, l[3] = e) : e = l[3], e
+                }
+                let m = null == o ? void 0 : "toolbar",
+                    g = "compact" === u ? "gap-0.5 bg-surface-tertiary/95 shadow-md ring-1 ring-border-subtle backdrop-blur-sm" : "border border-default bg-surface-elevated",
+                    p = "imageTools" === u && "gap-0 shadow-md",
+                    h = "playback" === u && "gap-2 shadow-sm";
+                return l[4] !== d || l[5] !== g || l[6] !== p || l[7] !== h ? (t = (0, n.b)("flex w-fit max-w-full select-none items-center overflow-hidden rounded-full p-0.5", g, p, h, d), l[4] = d, l[5] = g, l[6] = p, l[7] = h, l[8] = t) : t = l[8], l[9] !== o || l[10] !== s || l[11] !== m || l[12] !== t ? (a = (0, i.jsx)("div", {
+                    role: m,
+                    "aria-label": o,
+                    className: t,
+                    children: s
+                }), l[9] = o, l[10] = s, l[11] = m, l[12] = t, l[13] = a) : a = l[13], a
+            }
+        })
+    }),
+    s5Ri: (function(e, t, a) {
+        var i = a("zMIV"),
+            r = a.n(i),
+            n = a("iqEK");
+
+        function l(e, t) {
+            for (let a of e) {
+                let e = a.images.findIndex(t);
+                if (e >= 0) return {
+                    group: a,
+                    index: e,
+                    image: a.images[e]
+                }
+            }
+        }
+
+        function o(e, t, a, i, r) {
+            let n = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : e.width,
+                l = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : e.height;
+            return {
+                type: "generated-image",
+                status: "completed",
+                id: t,
+                src: s(a),
+                width: n,
+                height: l,
+                sizeBytes: r,
+                chatGptImageMetadata: {
+                    mimeType: "image/png"
+                },
+                layerRevision: {
+                    version: i,
+                    sourceImageId: e.layerRevision?.sourceImageId ?? e.id
+                }
+            }
+        }
+
+        function s(e) {
+            return e.startsWith("file-") ? `file-service://${e}` : `sediment://${e}`
+        }
+        a.d(t, {}, {
+            a: o,
+            b: function(e, t, a, i, d) {
+                let c = e.map(e => ({
+                    ...e,
+                    images: e.images.map(e => e.loading || null == e.textEditingOperationId || t.some(t => t.id === e.textEditingOperationId) ? e : r()(e, ["textEditingOperationId", "textEditingSourceImageId", "textEditingConversationImageId", "textEditingOriginalImageId", "textEditingStatus", "textEditingVersion"]))
+                }));
+                for (let e of t) {
+                    let {
+                        documentId: t,
+                        imageFileId: r
+                    } = e;
+                    if (null != t && null != d && !d.ids.has(t) && e.listedInConversationIds?.includes(d.conversationId)) continue;
+                    let u = l(c, t => t.id === e.sourceImageId) ?? l(c, t => !t.loading && (0, n.d)(t.src) === e.sourceFileId);
+                    if (null == u && e.galleryId !== a && null == r) continue;
+                    let m = null == t ? void 0 : r,
+                        g = null == t ? void 0 : l(c, e => !e.loading && (e.textEditingDocumentId === t || null != m && (0, n.d)(e.src) === m)),
+                        p = g?.image,
+                        h = null == t ? void 0 : (null == p || p.loading ? void 0 : p.textEditingVersion) ?? e.version,
+                        f = {
+                            id: e.id,
+                            textEditingOperationId: e.id,
+                            textEditingDocumentId: t,
+                            textEditingVersion: h,
+                            textEditingStatus: "snapshot" === e.kind && "loading" === e.status ? "saving" : e.status
+                        };
+                    if (null != g && null != p && !p.loading && (null == u || p.textEditingDocumentId === t)) {
+                        let t = p.textEditingOriginalImageId ?? p.id;
+                        g.group.images[g.index] = {
+                            ...p,
+                            ...f,
+                            textEditingSourceImageId: null != u && u.image !== p ? u.image.id : e.id,
+                            textEditingConversationImageId: p.textEditingConversationImageId ?? t,
+                            textEditingOriginalImageId: t
+                        };
+                        continue
+                    }
+                    if (null == u) continue;
+                    let {
+                        group: v,
+                        image: b
+                    } = u;
+                    if (b.loading) continue;
+                    let _ = null != m ? s(m) : b.src,
+                        y = "preparation" === e.kind ? i.editableCopy : i.editedCopy,
+                        I = b.sourceImage;
+                    null != I && null != t && null != m && null != h ? I = o(I, t, m, h) : null != I && (null == I.layerRevision || I.src !== _) && (I = {
+                        ...I,
+                        layerRevision: void 0,
+                        id: e.id,
+                        src: _,
+                        previewSrc: _,
+                        displayVariants: void 0,
+                        displayVariantId: void 0
+                    });
+                    let x = {
+                        ...b,
+                        ...f,
+                        src: _,
+                        previewSrc: _,
+                        alt: y,
+                        tabTitle: y,
+                        displayVariants: void 0,
+                        displayVariantId: void 0,
+                        hasPanoramaPrompt: !1,
+                        textEditingSourceImageId: b.id,
+                        textEditingConversationImageId: b.textEditingConversationImageId ?? b.id,
+                        textEditingOriginalImageId: null == p || p.loading || p.id === b.id ? void 0 : p.textEditingOriginalImageId ?? (p.id === e.id ? void 0 : p.id),
+                        sourceImage: I
+                    };
+                    for (let t of c) t.images = t.images.filter(a => a.id === e.id ? t === v : a.loading || a.id === b.id || null == m || (0, n.d)(a.src) !== m);
+                    let w = v.images.findIndex(t => t.id === e.id);
+                    if (w >= 0) v.images[w] = x;
+                    else {
+                        let e = v.images.findIndex(e => e.id === b.id);
+                        v.images.splice(e + 1, 0, x)
+                    }
+                }
+                return c.filter(e => e.images.length > 0)
+            }
+        })
+    }),
+    EQ0X: (function(e, t, a) {
+        var i = a("ABep"),
+            r = a("QosV"),
+            n = a("slpy"),
+            l = a("zd8w"),
+            o = a("Wf1j"),
+            s = a("oyxz"),
+            d = a("Sm6l"),
+            c = a("bqtn"),
+            u = a("HOLv"),
+            m = a("bf6R"),
+            g = a("UxN3"),
+            p = a("ddzD"),
+            h = a("I0AH"),
+            f = a("j9wQ"),
+            v = a("ZedP"),
+            b = a("jFtA"),
+            _ = a("yO1S");
+
+        function y(e) {
+            let t, a = (0, r.c)(3),
+                l = !0 !== e["aria-expanded"] && "true" !== e["aria-expanded"] && void 0;
+            return a[0] !== e || a[1] !== l ? (t = (0, i.jsx)(n.a, {
+                ...e,
+                forceOpen: l
+            }), a[0] = e, a[1] = l, a[2] = t) : t = a[2], t
+        }
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, n, I, x, w, S, E = (0, r.c)(53),
+                    {
+                        downloadImageCount: j,
+                        floatingToolbarVariant: P,
+                        moreActions: C,
+                        isAnimated: A,
+                        isImageActionsDisabled: T,
+                        isUnifiedViewerEnabled: O,
+                        onDownload: L,
+                        onDownloadAll: k,
+                        onDownloadMenuOpen: F,
+                        onShare: R,
+                        onShareAll: M,
+                        onShareMenuOpen: G,
+                        saveAction: N,
+                        shareImageCount: D,
+                        showShareText: H
+                    } = e,
+                    W = void 0 !== A && A,
+                    q = void 0 !== O && O,
+                    z = void 0 !== H && H,
+                    B = (0, o.a)(),
+                    [U, V] = (0, l.useState)(!1),
+                    Q = "toolbar";
+                null != P && (Q = "imageTools" === P ? "imageToolbar" : "composerSm"), E[0] !== Q || E[1] !== P || E[2] !== B || E[3] !== T || E[4] !== q || E[5] !== R || E[6] !== M || E[7] !== z ? (t = q ? (0, i.jsxs)(f.c, {
+                    "aria-label": B.formatMessage({
+                        id: "imageSidePanel.share",
+                        defaultMessage: "Share"
+                    }),
+                    disabled: T,
+                    uniform: !z,
+                    onClick: null == M ? R : void 0,
+                    children: [(0, i.jsx)(g.b, {
+                        icon: {
+                            16: m.N,
+                            20: m.O
+                        }
+                    }), z ? (0, i.jsx)(s.a, {
+                        id: "imageSidePanel.share",
+                        defaultMessage: "Share"
+                    }) : null]
+                }) : (0, i.jsx)(d.a, {
+                    color: null == P ? "primary" : "ghostActive",
+                    disabled: T,
+                    size: Q,
+                    onClick: null == M ? R : void 0,
+                    children: (0, i.jsx)(s.a, {
+                        id: "imageSidePanel.share",
+                        defaultMessage: "Share"
+                    })
+                }), E[0] = Q, E[1] = P, E[2] = B, E[3] = T, E[4] = q, E[5] = R, E[6] = M, E[7] = z, E[8] = t) : t = E[8];
+                let K = t;
+                if (null != R && null != M) {
+                    let e;
+                    E[9] !== W || E[10] !== T || E[11] !== R || E[12] !== M || E[13] !== G || E[14] !== K || E[15] !== D ? (e = (0, i.jsx)(v.a, {
+                        disabled: T,
+                        imageCount: D,
+                        isAnimated: W,
+                        onOpen: G,
+                        onShare: R,
+                        onShareAll: M,
+                        triggerButton: K
+                    }), E[9] = W, E[10] = T, E[11] = R, E[12] = M, E[13] = G, E[14] = K, E[15] = D, E[16] = e) : e = E[16], K = e
+                }
+                if (null != P) {
+                    let e;
+                    E[17] !== P || E[18] !== K ? (e = (0, i.jsx)(h.a, {
+                        variant: P,
+                        children: K
+                    }), E[17] = P, E[18] = K, E[19] = e) : e = E[19], K = e
+                }
+                E[20] === Symbol.for("react.memo_cache_sentinel") ? (a = async e => {
+                    V(!0), await e().finally(() => {
+                        V(!1)
+                    })
+                }, E[20] = a) : a = E[20];
+                let J = a;
+                E[21] !== Q || E[22] !== j || E[23] !== P || E[24] !== B || E[25] !== W || E[26] !== U || E[27] !== T || E[28] !== q || E[29] !== L || E[30] !== k || E[31] !== F || E[32] !== N ? (n = null != k && null != L ? (0, i.jsxs)(c.a, {
+                    align: "end",
+                    disabled: T || U,
+                    onOpenChange: e => {
+                        e && F?.()
+                    },
+                    triggerButton: (0, i.jsx)(y, {
+                        content: (0, i.jsx)(s.a, {
+                            ...(0, p.a)({
+                                isAnimated: W
+                            }).downloadLabel
+                        }),
+                        children: q ? (0, i.jsx)(f.c, {
+                            "aria-label": B.formatMessage((0, p.a)({
+                                isAnimated: W
+                            }).downloadLabel),
+                            disabled: T || U,
+                            loading: U,
+                            uniform: !0,
+                            children: (0, i.jsx)(g.b, {
+                                icon: {
+                                    assets: {
+                                        16: b.a,
+                                        20: _.a
+                                    }
+                                }
+                            })
+                        }) : (0, i.jsx)(d.a, {
+                            "aria-label": B.formatMessage((0, p.a)({
+                                isAnimated: W
+                            }).downloadLabel),
+                            color: null == P ? "ghost" : "ghostActive",
+                            disabled: T || U,
+                            loading: U,
+                            size: Q,
+                            uniform: !0,
+                            children: "compact" === P ? (0, i.jsx)(u.a, {
+                                asset: b.a
+                            }) : (0, i.jsx)(m.t, {})
+                        })
+                    }),
+                    children: [(0, i.jsx)(c.c.Item, {
+                        onSelect: () => void J(L),
+                        children: (0, i.jsx)(s.a, {
+                            ...(0, p.a)({
+                                isAnimated: W
+                            }).downloadMenuLabel
+                        })
+                    }), (0, i.jsx)(c.c.Item, {
+                        onSelect: () => void J(k),
+                        children: (0, i.jsx)(s.a, {
+                            id: "imagePreview.downloadSeries",
+                            defaultMessage: "Download {count} images in this series",
+                            values: {
+                                count: j
+                            }
+                        })
+                    })]
+                }) : N, E[21] = Q, E[22] = j, E[23] = P, E[24] = B, E[25] = W, E[26] = U, E[27] = T, E[28] = q, E[29] = L, E[30] = k, E[31] = F, E[32] = N, E[33] = n) : n = E[33];
+                let Y = n;
+                if (null != P && null != k && null != L) {
+                    let e;
+                    E[34] !== Y || E[35] !== P ? (e = (0, i.jsx)(h.a, {
+                        variant: P,
+                        children: Y
+                    }), E[34] = Y, E[35] = P, E[36] = e) : e = E[36], Y = e
+                }
+                let $ = null == R ? null : K;
+                E[37] !== Y || E[38] !== $ ? (I = (0, i.jsxs)(i.Fragment, {
+                    children: [Y, $]
+                }), E[37] = Y, E[38] = $, E[39] = I) : I = E[39];
+                let X = I;
+                E[40] !== P || E[41] !== C ? (x = null == C || null == P ? C : (0, i.jsx)(h.a, {
+                    variant: P,
+                    children: C
+                }), E[40] = P, E[41] = C, E[42] = x) : x = E[42];
+                let Z = x,
+                    ee = null != R || null != Y;
+                if (!q || z) {
+                    let e;
+                    return E[43] !== X || E[44] !== Z ? (e = (0, i.jsxs)(i.Fragment, {
+                        children: [X, Z]
+                    }), E[43] = X, E[44] = Z, E[45] = e) : e = E[45], e
+                }
+                return E[46] !== ee || E[47] !== B || E[48] !== X ? (w = ee ? (0, i.jsx)(f.i, {
+                    label: B.formatMessage({
+                        id: "imagePreview.headerActions",
+                        defaultMessage: "Image actions"
+                    }),
+                    children: X
+                }) : null, E[46] = ee, E[47] = B, E[48] = X, E[49] = w) : w = E[49], E[50] !== w || E[51] !== Z ? (S = (0, i.jsxs)(i.Fragment, {
+                    children: [w, Z]
+                }), E[50] = w, E[51] = Z, E[52] = S) : S = E[52], S
+            }
+        })
+    }),
+    ZedP: (function(e, t, a) {
+        var i = a("ABep"),
+            r = a("QosV"),
+            n = a("oyxz"),
+            l = a("bqtn"),
+            o = a("HOLv"),
+            s = a("ddzD"),
+            d = a("e3en"),
+            c = a("ncOG");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, u, m, g, p, h, f = (0, r.c)(19),
+                    {
+                        disabled: v,
+                        imageCount: b,
+                        isAnimated: _,
+                        onOpen: y,
+                        onShare: I,
+                        onShareAll: x,
+                        triggerButton: w
+                    } = e,
+                    S = void 0 !== _ && _;
+                return f[0] !== y ? (t = e => {
+                    e && y?.()
+                }, f[0] = y, f[1] = t) : t = f[1], f[2] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, i.jsx)(o.a, {
+                    className: "text-gray-1000",
+                    asset: d.a
+                }), f[2] = a) : a = f[2], f[3] !== S ? (u = (0, s.a)({
+                    isAnimated: S
+                }), f[3] = S, f[4] = u) : u = f[4], f[5] !== u.shareSelectionLabel ? (m = (0, i.jsx)(n.a, {
+                    ...u.shareSelectionLabel
+                }), f[5] = u.shareSelectionLabel, f[6] = m) : m = f[6], f[7] !== I || f[8] !== m ? (g = (0, i.jsx)(l.c.Item, {
+                    leftIcon: a,
+                    onSelect: I,
+                    children: m
+                }), f[7] = I, f[8] = m, f[9] = g) : g = f[9], f[10] !== b || f[11] !== x ? (p = null == x ? null : (0, i.jsx)(l.c.Item, {
+                    leftIcon: (0, i.jsx)(o.a, {
+                        className: "text-gray-1000",
+                        asset: c.a
+                    }),
+                    onSelect: x,
+                    children: (0, i.jsx)(n.a, {
+                        id: "imagePreview.shareSeries",
+                        defaultMessage: "All {imageCount, plural, one {# image} other {# images}} in this series",
+                        values: {
+                            imageCount: b
+                        }
+                    })
+                }), f[10] = b, f[11] = x, f[12] = p) : p = f[12], f[13] !== v || f[14] !== t || f[15] !== g || f[16] !== p || f[17] !== w ? (h = (0, i.jsxs)(l.a, {
+                    align: "end",
+                    disabled: v,
+                    triggerButton: w,
+                    onOpenChange: t,
+                    children: [g, p]
+                }), f[13] = v, f[14] = t, f[15] = g, f[16] = p, f[17] = w, f[18] = h) : h = f[18], h
+            }
+        })
+    })
+};

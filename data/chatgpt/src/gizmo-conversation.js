@@ -13,7 +13,7 @@ export const __webpack_modules__ = {
             c = n("kErH"),
             g = n("e6LT"),
             C = n("h6fL"),
-            d = n("mczX"),
+            d = n("YXXu"),
             u = n("OOaz"),
             p = n("dQRk"),
             I = n("gCr7"),
@@ -731,7 +731,7 @@ export const __webpack_modules__ = {
             a: () => s
         });
         let s = (0, n("Bbed").a)(async function() {
-            return (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(226913), n.e(318846), n.e(474605), n.e(749239), n.e(730558)]).then(n.bind(n, "qm1k"))).BusinessProfileShareConversationPanel
+            return (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(226913), n.e(318846), n.e(474605), n.e(749239), n.e(730558)]).then(n.bind(n, "qm1k"))).BusinessProfileShareConversationPanel
         }, {
             errorFallback: null
         })
@@ -1057,13 +1057,14 @@ export const __webpack_modules__ = {
     ggor: (function(e, t, n) {
         var s = n("UKCO"),
             i = n("Cslg"),
-            o = n("zWHk"),
-            a = n("nlNF"),
-            r = n("Kwur"),
-            l = n("Y0jW"),
-            c = n("lXWy");
+            o = n("jEN2"),
+            a = n("zWHk"),
+            r = n("nlNF"),
+            l = n("Kwur"),
+            c = n("Y0jW"),
+            g = n("lXWy");
 
-        function g(e, t) {
+        function C(e, t) {
             if ("string" != typeof e) return;
             let n = e.replace(/\b(?:https?:\/\/|www\.)\S+/giu, "").trim();
             if (n.length <= t) return n || void 0;
@@ -1093,28 +1094,28 @@ export const __webpack_modules__ = {
                 boundRevision;
                 binding = 0;
                 constructor(e, t, n, s, o) {
-                    this.scope = e, this.conversationId = t, this.profile = n, this.fallback = s, this.product = o, e.get(l.a)?.cancel(), this.originVisit = e.get(a.e), e.set(l.a, this);
-                    let r = e.watch(e => {
+                    this.scope = e, this.conversationId = t, this.profile = n, this.fallback = s, this.product = o, e.get(c.a)?.cancel(), this.originVisit = e.get(r.e), e.set(c.a, this);
+                    let a = e.watch(e => {
                         let {
                             get: s
                         } = e;
-                        if (!s(c.c) || s(i.f) !== n.accountId || s(i.k) !== n.userId) return void this.cancel();
-                        let o = s(a.e),
-                            r = s(a.c),
-                            l = r?.pathname === "/" && r.state?.initialChatGptConversationId === t && r.state.initialChatGptBusinessAgentGizmoId === n.gizmoId;
+                        if (!s(g.c) || s(i.f) !== n.accountId || s(i.k) !== n.userId) return void this.cancel();
+                        let o = s(r.e),
+                            a = s(r.c),
+                            l = a?.pathname === "/" && a.state?.initialChatGptConversationId === t && a.state.initialChatGptBusinessAgentGizmoId === n.gizmoId;
                         if (l || o !== this.originVisit || null != this.destinationVisit) {
                             if (!l) return void this.cancel();
                             this.destinationVisit = o, this.applyIfUntouched()
                         }
                     });
-                    this.lifetime.signal.aborted ? r() : (this.stopWatching = r, window.addEventListener("pagehide", this.cancel, {
+                    this.lifetime.signal.aborted ? a() : (this.stopWatching = a, window.addEventListener("pagehide", this.cancel, {
                         once: !0
                     }))
                 }
                 async generate(e) {
                     if (null == e || !this.product.title || this.lifetime.signal.aborted) return void this.cancel();
                     try {
-                        let t = await r.Request.safePost("/gizmos/business-agents/{business_agent_id}/product-card-conversation-starter", {
+                        let t = await l.Request.safePost("/gizmos/business-agents/{business_agent_id}/product-card-conversation-starter", {
                             parameters: {
                                 path: {
                                     business_agent_id: this.profile.businessAgentId
@@ -1144,15 +1145,29 @@ export const __webpack_modules__ = {
                 }
                 bind(e) {
                     if (this.lifetime.signal.aborted) return () => {};
-                    if (e.view.isDestroyed || !e.isInputActive || e.getText() !== this.fallback || null != this.editor && this.editor !== e) return this.cancel(), () => {};
+                    if (!e.view.isDestroyed && !e.isInputActive) {
+                        let t, n = ++this.binding,
+                            s = (0, o.B)(() => {
+                                e.isInputActive && (s(), t = this.bind(e))
+                            });
+                        return this.lifetime.signal.addEventListener("abort", s, {
+                            once: !0
+                        }), () => {
+                            this.lifetime.signal.removeEventListener("abort", s), s(), null != t ? t() : this.cancelIfUnbound(n)
+                        }
+                    }
+                    if (e.view.isDestroyed || e.getText() !== this.fallback || null != this.editor && this.editor !== e) return this.cancel(), () => {};
                     let t = ++this.binding;
-                    return this.editor = e, this.boundRevision = this.editOrSendRevision, null == this.stopDocument && (this.stopDocument = (0, o.b)(e.view, e => {
+                    return this.editor = e, this.boundRevision = this.editOrSendRevision, null == this.stopDocument && (this.stopDocument = (0, a.b)(e.view, e => {
                         e && this.editedOrSent()
                     })), this.applyIfUntouched(), () => {
-                        this.boundRevision = void 0, queueMicrotask(() => {
-                            this.binding === t && this.cancel()
-                        })
+                        this.boundRevision = void 0, this.cancelIfUnbound(t)
                     }
+                }
+                cancelIfUnbound(e) {
+                    queueMicrotask(() => {
+                        this.binding === e && this.cancel()
+                    })
                 }
                 promptDidChange(e) {
                     e !== this.fallback && this.editedOrSent()
@@ -1161,28 +1176,28 @@ export const __webpack_modules__ = {
                     this.editOrSendRevision++, this.cancel()
                 }
                 cancel = () => {
-                    this.lifetime.signal.aborted || (this.lifetime.abort(), this.stopDocument?.(), this.stopWatching?.(), window.removeEventListener("pagehide", this.cancel), this.scope.get(l.a) === this && this.scope.set(l.a, null))
+                    this.lifetime.signal.aborted || (this.lifetime.abort(), this.stopDocument?.(), this.stopWatching?.(), window.removeEventListener("pagehide", this.cancel), this.scope.get(c.a) === this && this.scope.set(c.a, null))
                 };
                 applyIfUntouched() {
                     let e = this.editor,
                         t = this.question;
                     if (null == e || null == t || null == this.destinationVisit || null == this.boundRevision || this.lifetime.signal.aborted) return;
-                    let n = this.scope.get(a.c),
-                        s = this.scope.get(l.a) === this && this.scope.get(c.c) && this.scope.get(i.f) === this.profile.accountId && this.scope.get(i.k) === this.profile.userId && n?.pathname === "/" && n.state?.initialChatGptConversationId === this.conversationId && n.state.initialChatGptBusinessAgentGizmoId === this.profile.gizmoId && this.scope.get(a.e) === this.destinationVisit && this.boundRevision === this.editOrSendRevision && !e.view.isDestroyed && e.isInputActive && e.getText() === this.fallback;
+                    let n = this.scope.get(r.c),
+                        s = this.scope.get(c.a) === this && this.scope.get(g.c) && this.scope.get(i.f) === this.profile.accountId && this.scope.get(i.k) === this.profile.userId && n?.pathname === "/" && n.state?.initialChatGptConversationId === this.conversationId && n.state.initialChatGptBusinessAgentGizmoId === this.profile.gizmoId && this.scope.get(r.e) === this.destinationVisit && this.boundRevision === this.editOrSendRevision && !e.view.isDestroyed && e.isInputActive && e.getText() === this.fallback;
                     this.cancel(), s && e.setText(t, "external-draft")
                 }
             },
             b: function(e) {
-                let t = g(e.title, 256) ?? "",
-                    n = g(e.description, 1200),
+                let t = C(e.title, 256) ?? "",
+                    n = C(e.description, 1200),
                     s = e.variants?.flatMap(e => {
                         let t = e.options?.find(t => t.id === e.selected_option_id),
-                            n = g(t?.label, 256);
+                            n = C(t?.label, 256);
                         if (!n) return [];
-                        let s = g(e.label, 256);
+                        let s = C(e.label, 256);
                         return [s ? `${s}: ${n}` : n]
                     }),
-                    i = g(s?.join(", "), 256) ?? g(e.selected_variant, 256);
+                    i = C(s?.join(", "), 256) ?? C(e.selected_variant, 256);
                 return {
                     title: t,
                     ...n ? {
@@ -1493,135 +1508,137 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.2ddddba2a5.js";
+} from "./633146.48b57020d2.js";
 import * as t from "./680612.8dcfaab02b.js";
 e.C(t);
-import * as n from "./418851.f34514cc3f.js";
+import * as n from "./418851.5b0ade19b1.js";
 e.C(n);
 import * as s from "./109308.8b09661749.js";
 e.C(s);
 import * as i from "./399565.edefe43a76.js";
 e.C(i);
-import * as o from "./257798.6b4268ddac.js";
+import * as o from "./257798.428a6bce48.js";
 e.C(o);
 import * as a from "./447351.34d04099ca.js";
 e.C(a);
-import * as r from "./617936.4a1557f13c.js";
+import * as r from "./617936.dd75fa2a89.js";
 e.C(r);
-import * as l from "./807489.6b5279adf3.js";
+import * as l from "./807489.1d24fa9988.js";
 e.C(l);
-import * as c from "./337882.568bafdf14.js";
+import * as c from "./337882.145f5ca770.js";
 e.C(c);
-import * as g from "./955979.b2a7e19963.js";
+import * as g from "./955979.fad3aa290b.js";
 e.C(g);
-import * as C from "./646436.5963e38f02.js";
+import * as C from "./646436.b50a318f52.js";
 e.C(C);
-import * as d from "./7078.0a9a41e515.js";
+import * as d from "./7078.9bac2fcc06.js";
 e.C(d);
-import * as u from "./200429.a549930e29.js";
+import * as u from "./200429.f07d17d37b.js";
 e.C(u);
-import * as p from "./698524.48945354c5.js";
+import * as p from "./698524.130da41cbb.js";
 e.C(p);
-import * as I from "./956483.962c0de04b.js";
+import * as I from "./956483.20ccea0970.js";
 e.C(I);
-import * as M from "./87162.e4a69efaac.js";
+import * as M from "./87162.4896e26514.js";
 e.C(M);
-import * as h from "./396705.51be923e43.js";
+import * as h from "./396705.e5ddd72a06.js";
 e.C(h);
-import * as f from "./155568.1f7b7a00a5.js";
+import * as f from "./155568.49e7ad46aa.js";
 e.C(f);
-import * as L from "./731863.5a49a2d190.js";
+import * as L from "./731863.3cdbbfa8f8.js";
 e.C(L);
-import * as m from "./767086.61b8f8fca3.js";
+import * as m from "./767086.3711424c4d.js";
 e.C(m);
-import * as j from "./226913.cf105b979e.js";
+import * as j from "./76629.15f5868e7b.js";
 e.C(j);
-import * as v from "./222773.261d06366f.js";
+import * as v from "./226913.cf105b979e.js";
 e.C(v);
-import * as A from "./207991.5e64358f40.js";
+import * as A from "./222773.261d06366f.js";
 e.C(A);
-import * as x from "./906567.b094cb6087.js";
+import * as x from "./207991.5e64358f40.js";
 e.C(x);
-import * as w from "./843292.f8476ea5db.js";
+import * as w from "./906567.b094cb6087.js";
 e.C(w);
-import * as N from "./322024.a3322d5816.js";
+import * as N from "./843292.f8476ea5db.js";
 e.C(N);
-import * as y from "./99342.6d0b120a08.js";
+import * as y from "./322024.a3322d5816.js";
 e.C(y);
-import * as D from "./862490.3df8411c2d.js";
+import * as D from "./99342.6d0b120a08.js";
 e.C(D);
-import * as T from "./839342.a9f240de51.js";
+import * as T from "./862490.3df8411c2d.js";
 e.C(T);
-import * as b from "./164460.0a6283d51c.js";
+import * as b from "./839342.f661ed8b41.js";
 e.C(b);
-import * as z from "./499790.5c185642a1.js";
+import * as z from "./164460.0a6283d51c.js";
 e.C(z);
-import * as E from "./221469.c37587422b.js";
+import * as E from "./499790.6619debd16.js";
 e.C(E);
-import * as Z from "./529755.993105e2cf.js";
+import * as Z from "./221469.984b1e9553.js";
 e.C(Z);
-import * as S from "./301030.70c025729d.js";
+import * as S from "./529755.54f7e2f69f.js";
 e.C(S);
-import * as O from "./953533.e85984dffa.js";
+import * as O from "./301030.ab56874814.js";
 e.C(O);
-import * as _ from "./690059.2c5d1e83aa.js";
+import * as _ from "./953533.149ab86afd.js";
 e.C(_);
-import * as k from "./560345.dc5deeb2cb.js";
+import * as k from "./690059.2d529e085a.js";
 e.C(k);
-import * as B from "./740793.1d51ca2dc1.js";
+import * as B from "./560345.dc5deeb2cb.js";
 e.C(B);
-import * as Y from "./587936.6a04c0dc89.js";
+import * as Y from "./740793.9882969523.js";
 e.C(Y);
-import * as V from "./452048.c7f6173be9.js";
+import * as V from "./587936.bf302830bf.js";
 e.C(V);
-import * as H from "./684598.2921b5aad8.js";
+import * as H from "./452048.9bb2de1bf9.js";
 e.C(H);
-import * as U from "./299268.f7a0a40631.js";
+import * as U from "./684598.75679c7ecc.js";
 e.C(U);
-import * as G from "./763618.973f64df0d.js";
+import * as G from "./299268.184243dbce.js";
 e.C(G);
-import * as F from "./847740.5a9a90a773.js";
+import * as F from "./763618.10dfaee6a2.js";
 e.C(F);
-import * as P from "./109131.32f8cd1a36.js";
+import * as P from "./847740.d7d7350c21.js";
 e.C(P);
-import * as R from "./400887.f03ece43d8.js";
+import * as R from "./109131.ca9b979356.js";
 e.C(R);
-import * as Q from "./899308.95ef5955ae.js";
+import * as Q from "./400887.39e1d73783.js";
 e.C(Q);
-import * as W from "./428069.bdb0740fb6.js";
+import * as W from "./428069.47bf6f5546.js";
 e.C(W);
-import * as J from "./835890.ae4ee79221.js";
+import * as J from "./899308.a9ca4c2e25.js";
 e.C(J);
-import * as X from "./895612.1c58e92e6c.js";
+import * as X from "./835890.58eaf8e232.js";
 e.C(X);
-import * as K from "./775217.c8bfddcc1a.js";
+import * as K from "./895612.03426bd1dc.js";
 e.C(K);
-import * as q from "./555504.66272e18da.js";
+import * as q from "./775217.0bd24c4fbd.js";
 e.C(q);
-import * as $ from "./433520.fd67d65a2a.js";
+import * as $ from "./555504.08f3882d7a.js";
 e.C($);
-import * as ee from "./608076.40aa04d0fe.js";
+import * as ee from "./433520.6e2a99dbc7.js";
 e.C(ee);
-import * as et from "./562115.4b5b52f4a1.js";
+import * as et from "./608076.40aa04d0fe.js";
 e.C(et);
-import * as en from "./547796.79a96581f2.js";
+import * as en from "./562115.4b5b52f4a1.js";
 e.C(en);
-import * as es from "./696455.c86dd9a36e.js";
+import * as es from "./547796.707e8b8423.js";
 e.C(es);
-import * as ei from "./537163.b9c5553ed2.js";
+import * as ei from "./696455.c2e7df117e.js";
 e.C(ei);
-import * as eo from "./308581.5e45329c35.js";
+import * as eo from "./537163.0b4ed58168.js";
 e.C(eo);
-import * as ea from "./734327.004c475d72.js";
+import * as ea from "./308581.ff303204ea.js";
 e.C(ea);
-import * as er from "./941146.e50548a05f.js";
+import * as er from "./734327.dc7042d997.js";
 e.C(er);
-import * as el from "./378544.286dbb3f4f.js";
+import * as el from "./26757.c11264211c.js";
 e.C(el);
-import * as ec from "./860004.ce70d0e31b.js";
+import * as ec from "./378544.77ad30a6f3.js";
 e.C(ec);
-var eg = e(e.s = "F0Pz").a;
+import * as eg from "./860004.eff1458482.js";
+e.C(eg);
+var eC = e(e.s = "F0Pz").a;
 export {
-    eg as
+    eC as
     default
 };

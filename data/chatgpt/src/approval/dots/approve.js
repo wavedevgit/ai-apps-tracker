@@ -1,38 +1,38 @@
 export const __rspack_esm_ids = [487792];
 export const __webpack_modules__ = {
-    UpXs: (function(s, e, o) {
-        o.d(e, {
-            a: () => f
+    UpXs: (function(s, o, e) {
+        e.d(o, {
+            a: () => d
         });
-        var t = o("rEML"),
-            a = o("ABep"),
-            r = o("QosV"),
-            p = o("oyxz"),
-            i = o("HnGz"),
-            n = o("hC2y"),
-            m = o("Kb06"),
-            f = (0, t.kb)(function() {
-                let s, e, o = (0, r.c)(6),
-                    f = (0, t.Y)(),
+        var t = e("rEML"),
+            a = e("ABep"),
+            r = e("QosV"),
+            p = e("oyxz"),
+            i = e("HnGz"),
+            m = e("hC2y"),
+            n = e("Kb06"),
+            d = (0, t.kb)(function() {
+                let s, o, e = (0, r.c)(6),
+                    d = (0, t.Y)(),
                     {
-                        pathname: d
+                        pathname: f
                     } = (0, t.Z)();
-                if (!f) {
-                    let s, e;
-                    o[0] !== d ? (s = (0, i.g)(n.c, d), o[0] = d, o[1] = s) : s = o[1];
+                if (!d) {
+                    let s, o;
+                    e[0] !== f ? (s = (0, i.g)(m.c, f), e[0] = f, e[1] = s) : s = e[1];
                     let t = s ?? void 0;
-                    return o[2] !== t ? (e = (0, a.jsx)(m.b, {
+                    return e[2] !== t ? (o = (0, a.jsx)(n.b, {
                         routeMatches: t,
-                        settingsRoutes: n.f
-                    }), o[2] = t, o[3] = e) : e = o[3], e
+                        settingsRoutes: m.f
+                    }), e[2] = t, e[3] = o) : o = e[3], o
                 }
-                return o[4] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, a.jsx)("h1", {
+                return e[4] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, a.jsx)("h1", {
                     className: "text-sm font-semibold text-secondary",
                     children: (0, a.jsx)(p.a, {
                         id: "browser.auth.brand",
                         defaultMessage: "ChatGPT"
                     })
-                }), o[4] = s) : s = o[4], o[5] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsxs)("main", {
+                }), e[4] = s) : s = e[4], e[5] === Symbol.for("react.memo_cache_sentinel") ? (o = (0, a.jsxs)("main", {
                     className: "flex flex-col gap-2 p-4",
                     children: [s, (0, a.jsx)("p", {
                         className: "text-base leading-snug",
@@ -41,76 +41,78 @@ export const __webpack_modules__ = {
                             defaultMessage: "Open this same link on your phone to continue"
                         })
                     })]
-                }), o[5] = e) : e = o[5], e
+                }), e[5] = o) : o = e[5], o
             })
     }),
-    nDjx: (function(s, e, o) {
-        s.exports = o.p + "assets/appshot-logo.f0152cb4dd.png"
+    nDjx: (function(s, o, e) {
+        s.exports = e.p + "assets/appshot-logo.f0152cb4dd.png"
     }),
-    hIAo: (function(s, e, o) {
-        s.exports = o.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    hIAo: (function(s, o, e) {
+        s.exports = e.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
     }),
-    OCvz: (function(s, e, o) {
-        s.exports = o.p + "assets/dictation-start.f6efcb404f.wav"
+    OCvz: (function(s, o, e) {
+        s.exports = e.p + "assets/dictation-start.f6efcb404f.wav"
     }),
-    DJ2e: (function(s, e, o) {
-        s.exports = o.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    DJ2e: (function(s, o, e) {
+        s.exports = e.p + "assets/dictation-stop.e3bc7ebc5e.wav"
     }),
-    EBQV: (function(e) {
-        e.exports = s.ir("/cdn/assets/dotnet.js").then(function(s) {
+    EBQV: (function(o) {
+        o.exports = s.ir("/cdn/assets/dotnet.js").then(function(s) {
             return s
         })
     })
 };
 import {
     __webpack_require__ as s
-} from "./633146.2ddddba2a5.js";
-import * as e from "./418851.f34514cc3f.js";
-s.C(e);
-import * as o from "./109308.8b09661749.js";
+} from "./633146.48b57020d2.js";
+import * as o from "./418851.5b0ade19b1.js";
 s.C(o);
+import * as e from "./109308.8b09661749.js";
+s.C(e);
 import * as t from "./399565.edefe43a76.js";
 s.C(t);
-import * as a from "./257798.6b4268ddac.js";
+import * as a from "./257798.428a6bce48.js";
 s.C(a);
 import * as r from "./447351.34d04099ca.js";
 s.C(r);
-import * as p from "./617936.4a1557f13c.js";
+import * as p from "./617936.dd75fa2a89.js";
 s.C(p);
-import * as i from "./807489.6b5279adf3.js";
+import * as i from "./807489.1d24fa9988.js";
 s.C(i);
-import * as n from "./337882.568bafdf14.js";
-s.C(n);
-import * as m from "./955979.b2a7e19963.js";
+import * as m from "./337882.145f5ca770.js";
 s.C(m);
-import * as f from "./646436.5963e38f02.js";
-s.C(f);
-import * as d from "./7078.0a9a41e515.js";
+import * as n from "./955979.fad3aa290b.js";
+s.C(n);
+import * as d from "./646436.b50a318f52.js";
 s.C(d);
-import * as c from "./200429.a549930e29.js";
+import * as f from "./7078.9bac2fcc06.js";
+s.C(f);
+import * as c from "./200429.f07d17d37b.js";
 s.C(c);
-import * as l from "./698524.48945354c5.js";
+import * as l from "./698524.130da41cbb.js";
 s.C(l);
-import * as b from "./956483.962c0de04b.js";
-s.C(b);
-import * as h from "./87162.e4a69efaac.js";
+import * as h from "./956483.20ccea0970.js";
 s.C(h);
-import * as j from "./396705.51be923e43.js";
+import * as j from "./87162.4896e26514.js";
 s.C(j);
-import * as C from "./155568.1f7b7a00a5.js";
+import * as C from "./396705.e5ddd72a06.js";
 s.C(C);
-import * as u from "./731863.5a49a2d190.js";
+import * as b from "./155568.49e7ad46aa.js";
+s.C(b);
+import * as u from "./731863.3cdbbfa8f8.js";
 s.C(u);
-import * as x from "./767086.61b8f8fca3.js";
+import * as x from "./767086.3711424c4d.js";
 s.C(x);
-import * as _ from "./226913.cf105b979e.js";
+import * as _ from "./76629.15f5868e7b.js";
 s.C(_);
-import * as g from "./227786.748857de8d.js";
+import * as g from "./226913.cf105b979e.js";
 s.C(g);
-import * as w from "./487792.d7a8040634.js";
+import * as w from "./227786.748857de8d.js";
 s.C(w);
-var k = s(s.s = "UpXs").a;
+import * as k from "./487792.12a0db9287.js";
+s.C(k);
+var v = s(s.s = "UpXs").a;
 export {
-    k as
+    v as
     default
 };
