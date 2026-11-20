@@ -1,129 +1,186 @@
 export const __rspack_esm_ids = [787702];
 export const __webpack_modules__ = {
-    cnwD: (function(e, t, a) {
-        a.d(t, {
-            a: () => j,
-            b: () => _
+    cnwD: (function(e, a, t) {
+        t.d(a, {
+            a: () => C,
+            b: () => P
         });
-        var r = a("rEML"),
-            o = a("ABep"),
-            i = a("QosV"),
-            s = a("Q840"),
-            n = a("zd8w"),
-            l = a("Cslg"),
-            d = a("tmUE"),
-            c = a("IhXv"),
-            u = a("e1xH"),
-            p = a("M2H2"),
-            m = a("C8z7"),
-            f = a("aFW8"),
-            b = a("vnV1"),
-            h = a("IeFV"),
-            x = a("OWtl"),
-            g = a("OMIV"),
-            C = a("hC2y"),
-            v = a("AXDI"),
-            j = (0, r.kb)(function() {
-                let e, t, a, j, _, y, I, k, w = (0, i.c)(40),
-                    S = (0, s.y)(x.a),
-                    F = (0, r.Z)(),
+        var n = t("rEML"),
+            r = t("ABep"),
+            o = t("QosV"),
+            i = t("Q840"),
+            l = t("zd8w"),
+            s = t("Cslg"),
+            d = t("tmUE"),
+            c = t("IhXv"),
+            u = t("e1xH"),
+            g = t("M2H2"),
+            p = t("C8z7"),
+            m = t("aFW8"),
+            f = t("vnV1"),
+            b = t("IeFV"),
+            v = t("OWtl"),
+            h = t("OMIV"),
+            x = t("hC2y"),
+            I = t("AXDI"),
+            C = (0, n.kb)(function() {
+                let e, a, t, C, P, j, w, y, _ = (0, o.c)(40),
+                    D = (0, i.y)(v.a),
+                    k = (0, n.Z)(),
                     {
-                        pathname: B
-                    } = F,
+                        pathname: S
+                    } = k,
                     {
-                        pageId: O
-                    } = (0, r.eb)(),
-                    N = (0, r.Y)(),
-                    U = "inAppOpen" in N && N.inAppOpen,
-                    D = (0, s.z)(p.a),
-                    M = (0, s.z)(l.f),
-                    z = (0, s.z)(l.j),
-                    A = (0, s.z)(l.k),
-                    G = (0, s.z)(l.h);
-                w[0] !== M || w[1] !== G || w[2] !== A || w[3] !== z ? (e = JSON.stringify([M, z, A, G]), w[0] = M, w[1] = G, w[2] = A, w[3] = z, w[4] = e) : e = w[4];
-                let E = e;
-                w[5] !== U || w[6] !== D || w[7] !== F || w[8] !== S ? (t = () => {
-                    let e = (0, h.a)(F),
-                        t = U && D && null != e ? (0, m.a)(S, document, e) : void 0;
+                        pageId: T
+                    } = (0, n.eb)(),
+                    N = (0, n.Y)(),
+                    L = "inAppOpen" in N && N.inAppOpen,
+                    F = (0, i.z)(g.a),
+                    E = (0, i.z)(s.f),
+                    z = (0, i.z)(s.j),
+                    M = (0, i.z)(s.k),
+                    q = (0, i.z)(s.h);
+                _[0] !== E || _[1] !== q || _[2] !== M || _[3] !== z ? (e = JSON.stringify([E, z, M, q]), _[0] = E, _[1] = q, _[2] = M, _[3] = z, _[4] = e) : e = _[4];
+                let R = e;
+                _[5] !== L || _[6] !== F || _[7] !== k || _[8] !== D ? (a = () => {
+                    let e = (0, b.a)(k),
+                        a = L && F && null != e ? (0, p.a)(D, document, e) : void 0;
                     return {
-                        preparation: t,
-                        snapshot: t?.takeSnapshot() ?? null
+                        preparation: a,
+                        snapshot: a?.takeSnapshot() ?? null
                     }
-                }, w[5] = U, w[6] = D, w[7] = F, w[8] = S, w[9] = t) : t = w[9];
-                let L = t;
-                w[10] !== L || w[11] !== E || w[12] !== O ? (a = () => ({
-                    pageId: O,
-                    actor: E,
-                    ...L()
-                }), w[10] = L, w[11] = E, w[12] = O, w[13] = a) : a = w[13];
-                let [Z, q] = (0, n.useState)(a), P = Z;
-                if (Z.pageId !== O || Z.actor !== E) {
-                    let e, t;
-                    w[14] !== L || w[15] !== Z.pageId || w[16] !== O ? (e = Z.pageId !== O ? L() : {
+                }, _[5] = L, _[6] = F, _[7] = k, _[8] = D, _[9] = a) : a = _[9];
+                let A = a;
+                _[10] !== A || _[11] !== R || _[12] !== T ? (t = () => ({
+                    pageId: T,
+                    actor: R,
+                    ...A()
+                }), _[10] = A, _[11] = R, _[12] = T, _[13] = t) : t = _[13];
+                let [U, W] = (0, l.useState)(t), B = U;
+                if (U.pageId !== T || U.actor !== R) {
+                    let e, a;
+                    _[14] !== A || _[15] !== U.pageId || _[16] !== T ? (e = U.pageId !== T ? A() : {
                         preparation: void 0,
                         snapshot: null
-                    }, w[14] = L, w[15] = Z.pageId, w[16] = O, w[17] = e) : e = w[17], w[18] !== E || w[19] !== O || w[20] !== e ? (t = {
-                        pageId: O,
-                        actor: E,
+                    }, _[14] = A, _[15] = U.pageId, _[16] = T, _[17] = e) : e = _[17], _[18] !== R || _[19] !== T || _[20] !== e ? (a = {
+                        pageId: T,
+                        actor: R,
                         ...e
-                    }, w[18] = E, w[19] = O, w[20] = e, w[21] = t) : t = w[21], q(P = t)
+                    }, _[18] = R, _[19] = T, _[20] = e, _[21] = a) : a = _[21], W(B = a)
                 }
-                let T = U ? P.snapshot : N.spacePageSnapshot,
-                    $ = U || N.nonblockingSsr,
-                    V = (0, s.x)(u.H, B),
-                    W = (0, s.z)(u.A),
-                    R = (0, s.x)(g.e, "4063423961");
-                w[22] === Symbol.for("react.memo_cache_sentinel") ? (j = {
+                let O = L ? B.snapshot : N.spacePageSnapshot,
+                    $ = L || N.nonblockingSsr,
+                    V = (0, i.x)(u.H, S),
+                    X = (0, i.z)(u.A),
+                    G = (0, i.x)(h.e, "4063423961");
+                _[22] === Symbol.for("react.memo_cache_sentinel") ? (C = {
                     enabled: !1
-                }, w[22] = j) : j = w[22];
-                let H = (0, s.z)(b.d, j);
-                w[23] === Symbol.for("react.memo_cache_sentinel") ? (_ = (0, o.jsx)(d.a, {
+                }, _[22] = C) : C = _[22];
+                let Q = (0, i.z)(f.d, C);
+                _[23] === Symbol.for("react.memo_cache_sentinel") ? (P = (0, r.jsx)(d.a, {
                     routeFallback: !0,
                     fillParent: !0
-                }), w[23] = _) : _ = w[23], w[24] !== V ? (y = (0, o.jsx)(v.a, {
-                    fallback: _,
-                    children: V ? (0, o.jsx)(f.b, {
+                }), _[23] = P) : P = _[23], _[24] !== V ? (j = (0, r.jsx)(I.a, {
+                    fallback: P,
+                    children: V ? (0, r.jsx)(m.b, {
                         pageRoute: !0,
-                        children: (0, o.jsx)(r.n, {})
-                    }) : (0, o.jsx)(C.e, {
+                        children: (0, r.jsx)(n.n, {})
+                    }) : (0, r.jsx)(x.e, {
                         allowLocal: !0
                     })
-                }), w[24] = V, w[25] = y) : y = w[25];
-                let Q = y,
-                    X = U ? P.preparation : void 0,
-                    J = U ? O : void 0;
-                return w[26] !== R || w[27] !== U || w[28] !== D || w[29] !== F || w[30] !== W || w[31] !== H ? (I = (!U || D && null != (0, h.a)(F)) && "disabled" !== W && (!R || null == H.error && H.data?.status !== "age_restricted"), w[26] = R, w[27] = U, w[28] = D, w[29] = F, w[30] = W, w[31] = H, w[32] = I) : I = w[32], w[33] !== Q || w[34] !== $ || w[35] !== T || w[36] !== X || w[37] !== J || w[38] !== I ? (k = (0, o.jsx)(c.a, {
-                    snapshot: T,
-                    preparation: X,
+                }), _[24] = V, _[25] = j) : j = _[25];
+                let J = j,
+                    H = L ? B.preparation : void 0,
+                    Y = L ? T : void 0;
+                return _[26] !== G || _[27] !== L || _[28] !== F || _[29] !== k || _[30] !== X || _[31] !== Q ? (w = (!L || F && null != (0, b.a)(k)) && "disabled" !== X && (!G || null == Q.error && Q.data?.status !== "age_restricted"), _[26] = G, _[27] = L, _[28] = F, _[29] = k, _[30] = X, _[31] = Q, _[32] = w) : w = _[32], _[33] !== J || _[34] !== $ || _[35] !== O || _[36] !== H || _[37] !== Y || _[38] !== w ? (y = (0, r.jsx)(c.a, {
+                    snapshot: O,
+                    preparation: H,
                     nonblocking: $,
-                    openIdentity: J,
-                    enabled: I,
-                    children: Q
-                }), w[33] = Q, w[34] = $, w[35] = T, w[36] = X, w[37] = J, w[38] = I, w[39] = k) : k = w[39], k
+                    openIdentity: Y,
+                    enabled: w,
+                    children: J
+                }), _[33] = J, _[34] = $, _[35] = O, _[36] = H, _[37] = Y, _[38] = w, _[39] = y) : y = _[39], y
             });
-        let _ = e => {
+        let P = e => {
             let {
-                currentParams: t,
-                nextParams: a,
-                defaultShouldRevalidate: r
+                currentParams: a,
+                nextParams: t,
+                defaultShouldRevalidate: n
             } = e;
-            return t.pageId !== a.pageId || r
+            return a.pageId !== t.pageId || n
         }
     }),
-    nDjx: (function(e, t, a) {
-        e.exports = a.p + "assets/appshot-logo.f0152cb4dd.png"
+    puTD: (function(e, a) {
+        a.a = {
+            PageTitlebarSingleRow: "PageTitlebarSingleRow-M8q4Ul",
+            pageTitlebarSingleRow: "PageTitlebarSingleRow-M8q4Ul",
+            PageContent: "PageContent-kBHDbu",
+            pageContent: "PageContent-kBHDbu",
+            PageDocument: "PageDocument-xcjcX8",
+            pageDocument: "PageDocument-xcjcX8",
+            PageSnapshotCover: "PageSnapshotCover-C_r466",
+            pageSnapshotCover: "PageSnapshotCover-C_r466",
+            PageReadingWidthMeasure: "PageReadingWidthMeasure-ssFuf9",
+            pageReadingWidthMeasure: "PageReadingWidthMeasure-ssFuf9",
+            PageDocumentGrid: "PageDocumentGrid-dPPMDP",
+            pageDocumentGrid: "PageDocumentGrid-dPPMDP",
+            PageDocumentEnd: "PageDocumentEnd-x1pPbt",
+            pageDocumentEnd: "PageDocumentEnd-x1pPbt",
+            PageDocumentTheme: "PageDocumentTheme-LGlBUd",
+            pageDocumentTheme: "PageDocumentTheme-LGlBUd",
+            PageImageLift: "PageImageLift-FIiTnL",
+            pageImageLift: "PageImageLift-FIiTnL",
+            PageImageLiftCrop: "PageImageLiftCrop-oM_1oS",
+            pageImageLiftCrop: "PageImageLiftCrop-oM_1oS",
+            PageCommentMentions: "PageCommentMentions-hNyDwq",
+            pageCommentMentions: "PageCommentMentions-hNyDwq",
+            PageDocumentCanvas: "PageDocumentCanvas-qNJLpk",
+            pageDocumentCanvas: "PageDocumentCanvas-qNJLpk",
+            PagePreview: "PagePreview-AZACCm",
+            pagePreview: "PagePreview-AZACCm",
+            PageThumbnail: "PageThumbnail-xJOX0t",
+            pageThumbnail: "PageThumbnail-xJOX0t",
+            PageTemplateThumbnail: "PageTemplateThumbnail-vNCuLD",
+            pageTemplateThumbnail: "PageTemplateThumbnail-vNCuLD",
+            PageTitle: "PageTitle-zNq5aq",
+            pageTitle: "PageTitle-zNq5aq",
+            "page-caret-blink": "page-caret-blink-q7Tadf",
+            pageCaretBlink: "page-caret-blink-q7Tadf",
+            PageTableFadeLeft: "PageTableFadeLeft-WeE9pg",
+            pageTableFadeLeft: "PageTableFadeLeft-WeE9pg",
+            PageTableFadeRight: "PageTableFadeRight-WbNNy_",
+            pageTableFadeRight: "PageTableFadeRight-WbNNy_",
+            PrintRoot: "PrintRoot-o2LDio",
+            printRoot: "PrintRoot-o2LDio",
+            PrintDocument: "PrintDocument-hzBPk2",
+            printDocument: "PrintDocument-hzBPk2"
+        }
     }),
-    hIAo: (function(e, t, a) {
-        e.exports = a.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    nDjx: (function(e, a, t) {
+        e.exports = t.p + "assets/appshot-logo.f0152cb4dd.png"
     }),
-    OCvz: (function(e, t, a) {
-        e.exports = a.p + "assets/dictation-start.f6efcb404f.wav"
+    hIAo: (function(e, a, t) {
+        e.exports = t.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
     }),
-    DJ2e: (function(e, t, a) {
-        e.exports = a.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    OCvz: (function(e, a, t) {
+        e.exports = t.p + "assets/dictation-start.f6efcb404f.wav"
     }),
-    LpCf: (function(e, t, a) {
-        let r = {
+    DJ2e: (function(e, a, t) {
+        e.exports = t.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    sSh9: (function(e, a, t) {
+        t.d(a, {
+            a: () => n
+        });
+        let n = {
+            content: "content-xaiQhS",
+            page: "page-g4Dmdq",
+            root: "editor-jMsqTn",
+            tableFloatingUi: "tableFloatingUi-Q6FLpM"
+        }
+    }),
+    LpCf: (function(e, a, t) {
+        let n = {
             "--oai-wb-spacing": "var(--spacing,0.25rem)",
             ...Object.fromEntries(Object.entries({
                 "text-primary": "var(--color-token-text-primary,var(--text-primary,#0d0d0d))",
@@ -152,915 +209,638 @@ export const __webpack_modules__ = {
                 "shimmer-dark-contrast": "var(--oai-wb-text-tertiary)",
                 "shimmer-dark-secondary": "var(--oai-wb-text-tertiary)"
             }).map(e => {
-                let [t, a] = e;
-                return [`--oai-wb-${t}`, `var(--wb-${t},${a})`]
+                let [a, t] = e;
+                return [`--oai-wb-${a}`, `var(--wb-${a},${t})`]
             }))
         };
-        a.d(t, {}, {
-            a: r
+        t.d(a, {}, {
+            a: n
         })
     }),
-    rfXw: (function(e, t, a) {
-        var r = a("ABep"),
-            o = a("QosV");
-        t.default = e => {
-            let t, a, i, s, n, l, d, c, u, p, m, f, b, h, x, g, C, v, j, _, y = (0, o.c)(21);
-            return y[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, r.jsx)("path", {
-                d: "M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",
-                fill: "url(#paint0_radial_8150_7076)"
-            }), a = (0, r.jsx)("path", {
-                d: "M12 14C15.3137 14 18 11.3137 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 11.3137 8.68629 14 12 14Z",
-                fill: "url(#paint1_linear_8150_7076)"
-            }), i = (0, r.jsx)("path", {
-                d: "M12 2.125C15.2447 2.125 17.875 4.75533 17.875 8C17.875 11.2447 15.2447 13.875 12 13.875C8.75533 13.875 6.125 11.2447 6.125 8C6.125 4.75533 8.75533 2.125 12 2.125Z",
-                stroke: "black",
-                strokeOpacity: .1,
-                strokeWidth: .25
-            }), y[0] = t, y[1] = a, y[2] = i) : (t = y[0], a = y[1], i = y[2]), y[3] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, r.jsxs)("g", {
-                filter: "url(#filter0_i_8150_7076)",
-                children: [(0, r.jsx)("path", {
-                    d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
-                    fill: "url(#paint2_radial_8150_7076)"
-                }), (0, r.jsx)("path", {
-                    d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
-                    fill: "url(#paint3_linear_8150_7076)"
-                }), (0, r.jsx)("path", {
-                    d: "M17.25 17C20.0114 17 22.25 14.7614 22.25 12C22.25 9.23858 20.0114 7 17.25 7C14.4886 7 12.25 9.23858 12.25 12C12.25 14.7614 14.4886 17 17.25 17Z",
-                    fill: "url(#paint4_linear_8150_7076)"
-                })]
-            }), n = (0, r.jsx)("path", {
-                d: "M17.25 7.125C19.9424 7.125 22.125 9.30761 22.125 12C22.125 14.6924 19.9424 16.875 17.25 16.875C14.5576 16.875 12.375 14.6924 12.375 12C12.375 9.30761 14.5576 7.125 17.25 7.125Z",
-                stroke: "black",
-                strokeOpacity: .1,
-                strokeWidth: .25
-            }), y[3] = s, y[4] = n) : (s = y[3], n = y[4]), y[5] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, r.jsx)("g", {
-                filter: "url(#filter1_i_8150_7076)",
-                children: (0, r.jsx)("path", {
-                    d: "M12.5 22C14.9853 22 17 19.9853 17 17.5C17 15.0147 14.9853 13 12.5 13C10.0147 13 8 15.0147 8 17.5C8 19.9853 10.0147 22 12.5 22Z",
-                    fill: "url(#paint5_radial_8150_7076)"
-                })
-            }), d = (0, r.jsx)("path", {
-                d: "M12.5 13.125C14.9162 13.125 16.875 15.0838 16.875 17.5C16.875 19.9162 14.9162 21.875 12.5 21.875C10.0838 21.875 8.125 19.9162 8.125 17.5C8.125 15.0838 10.0838 13.125 12.5 13.125Z",
-                stroke: "black",
-                strokeOpacity: .1,
-                strokeWidth: .25
-            }), y[5] = l, y[6] = d) : (l = y[5], d = y[6]), y[7] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, r.jsx)("g", {
-                filter: "url(#filter2_d_8150_7076)",
-                children: (0, r.jsx)("rect", {
-                    x: 2,
-                    y: 9,
-                    width: 9,
-                    height: 9,
-                    rx: 1.75,
-                    fill: "url(#paint6_linear_8150_7076)"
-                })
-            }), u = (0, r.jsx)("path", {
-                d: "M4.5 14.3421L5.46644 14.2498C5.52461 14.5684 5.64206 14.8025 5.81879 14.9519C5.99776 15.1013 6.23826 15.176 6.54027 15.176C6.86018 15.176 7.10067 15.1101 7.26174 14.9782C7.42506 14.8442 7.50671 14.6882 7.50671 14.5102C7.50671 14.396 7.47204 14.2993 7.40268 14.2202C7.33557 14.1389 7.217 14.0686 7.04698 14.0092C6.93065 13.9697 6.66555 13.8994 6.25168 13.7983C5.71924 13.6686 5.34564 13.5093 5.13087 13.3204C4.82886 13.0545 4.67785 12.7304 4.67785 12.3481C4.67785 12.102 4.74832 11.8723 4.88926 11.6592C5.03244 11.4439 5.23714 11.2802 5.50336 11.1681C5.77181 11.056 6.09508 11 6.47315 11C7.0906 11 7.55481 11.1329 7.86577 11.3988C8.17897 11.6647 8.3434 12.0196 8.35906 12.4634L7.36577 12.5063C7.32327 12.258 7.23154 12.08 7.0906 11.9723C6.9519 11.8624 6.74273 11.8075 6.46309 11.8075C6.1745 11.8075 5.94855 11.8657 5.78523 11.9822C5.68009 12.0569 5.62752 12.1569 5.62752 12.2821C5.62752 12.3964 5.67673 12.4942 5.77517 12.5755C5.90045 12.6788 6.2047 12.7864 6.68792 12.8985C7.17114 13.0105 7.52796 13.127 7.75839 13.2479C7.99105 13.3665 8.17226 13.5302 8.30201 13.739C8.434 13.9455 8.5 14.2015 8.5 14.5069C8.5 14.7838 8.4217 15.0431 8.2651 15.2848C8.1085 15.5265 7.88702 15.7067 7.60067 15.8253C7.31432 15.9418 6.95749 16 6.5302 16C5.90828 16 5.43065 15.8594 5.09732 15.5781C4.76398 15.2947 4.56488 14.8827 4.5 14.3421Z",
-                fill: "white"
-            }), y[7] = c, y[8] = u) : (c = y[7], u = y[8]), y[9] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsxs)("filter", {
-                id: "filter0_i_8150_7076",
-                x: 12.25,
-                y: 7,
-                width: 10,
-                height: 10,
-                filterUnits: "userSpaceOnUse",
-                colorInterpolationFilters: "sRGB",
-                children: [(0, r.jsx)("feFlood", {
-                    floodOpacity: 0,
-                    result: "BackgroundImageFix"
-                }), (0, r.jsx)("feBlend", {
-                    mode: "normal",
-                    in: "SourceGraphic",
-                    in2: "BackgroundImageFix",
-                    result: "shape"
-                }), (0, r.jsx)("feColorMatrix", {
-                    in: "SourceAlpha",
-                    type: "matrix",
-                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
-                    result: "hardAlpha"
-                }), (0, r.jsx)("feOffset", {}), (0, r.jsx)("feGaussianBlur", {
-                    stdDeviation: 1
-                }), (0, r.jsx)("feComposite", {
-                    in2: "hardAlpha",
-                    operator: "arithmetic",
-                    k2: -1,
-                    k3: 1
-                }), (0, r.jsx)("feColorMatrix", {
-                    type: "matrix",
-                    values: "0 0 0 0 0 0 0 0 0 0.401818 0 0 0 0 0.294666 0 0 0 1 0"
-                }), (0, r.jsx)("feBlend", {
-                    mode: "normal",
-                    in2: "shape",
-                    result: "effect1_innerShadow_8150_7076"
-                })]
-            }), y[9] = p) : p = y[9], y[10] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, r.jsxs)("filter", {
-                id: "filter1_i_8150_7076",
-                x: 8,
-                y: 13,
-                width: 9,
-                height: 9,
-                filterUnits: "userSpaceOnUse",
-                colorInterpolationFilters: "sRGB",
-                children: [(0, r.jsx)("feFlood", {
-                    floodOpacity: 0,
-                    result: "BackgroundImageFix"
-                }), (0, r.jsx)("feBlend", {
-                    mode: "normal",
-                    in: "SourceGraphic",
-                    in2: "BackgroundImageFix",
-                    result: "shape"
-                }), (0, r.jsx)("feColorMatrix", {
-                    in: "SourceAlpha",
-                    type: "matrix",
-                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
-                    result: "hardAlpha"
-                }), (0, r.jsx)("feOffset", {}), (0, r.jsx)("feGaussianBlur", {
-                    stdDeviation: 1
-                }), (0, r.jsx)("feComposite", {
-                    in2: "hardAlpha",
-                    operator: "arithmetic",
-                    k2: -1,
-                    k3: 1
-                }), (0, r.jsx)("feColorMatrix", {
-                    type: "matrix",
-                    values: "0 0 0 0 0.254902 0 0 0 0 0.509804 0 0 0 0 0.584314 0 0 0 1 0"
-                }), (0, r.jsx)("feBlend", {
-                    mode: "normal",
-                    in2: "shape",
-                    result: "effect1_innerShadow_8150_7076"
-                })]
-            }), y[10] = m) : m = y[10], y[11] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsxs)("filter", {
-                id: "filter2_d_8150_7076",
-                x: 1.5,
-                y: 8.75,
-                width: 10,
-                height: 10,
-                filterUnits: "userSpaceOnUse",
-                colorInterpolationFilters: "sRGB",
-                children: [(0, r.jsx)("feFlood", {
-                    floodOpacity: 0,
-                    result: "BackgroundImageFix"
-                }), (0, r.jsx)("feColorMatrix", {
-                    in: "SourceAlpha",
-                    type: "matrix",
-                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
-                    result: "hardAlpha"
-                }), (0, r.jsx)("feOffset", {
-                    dy: .25
-                }), (0, r.jsx)("feGaussianBlur", {
-                    stdDeviation: .25
-                }), (0, r.jsx)("feComposite", {
-                    in2: "hardAlpha",
-                    operator: "out"
-                }), (0, r.jsx)("feColorMatrix", {
-                    type: "matrix",
-                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                }), (0, r.jsx)("feBlend", {
-                    mode: "normal",
-                    in2: "BackgroundImageFix",
-                    result: "effect1_dropShadow_8150_7076"
-                }), (0, r.jsx)("feBlend", {
-                    mode: "normal",
-                    in: "SourceGraphic",
-                    in2: "effect1_dropShadow_8150_7076",
-                    result: "shape"
-                })]
-            }), y[11] = f) : f = y[11], y[12] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, r.jsxs)("radialGradient", {
-                id: "paint0_radial_8150_7076",
-                cx: 0,
-                cy: 0,
-                r: 1,
-                gradientUnits: "userSpaceOnUse",
-                gradientTransform: "translate(15 7.5) rotate(-174.289) scale(10.0499)",
-                children: [(0, r.jsx)("stop", {
-                    stopColor: "#26C0C7"
-                }), (0, r.jsx)("stop", {
-                    offset: 1,
-                    stopColor: "#04786A"
-                })]
-            }), y[12] = b) : b = y[12], y[13] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, r.jsxs)("linearGradient", {
-                id: "paint1_linear_8150_7076",
-                x1: 10,
-                y1: 8,
-                x2: 12,
-                y2: 14,
-                gradientUnits: "userSpaceOnUse",
-                children: [(0, r.jsx)("stop", {
-                    stopColor: "#0A5752",
-                    stopOpacity: 0
-                }), (0, r.jsx)("stop", {
-                    offset: 1,
-                    stopColor: "#0A5752"
-                })]
-            }), y[13] = h) : h = y[13], y[14] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, r.jsxs)("radialGradient", {
-                id: "paint2_radial_8150_7076",
-                cx: 0,
-                cy: 0,
-                r: 1,
-                gradientUnits: "userSpaceOnUse",
-                gradientTransform: "translate(15.8864 12.4545) rotate(-20.556) scale(7.76728)",
-                children: [(0, r.jsx)("stop", {
-                    stopColor: "#159C6F"
-                }), (0, r.jsx)("stop", {
-                    offset: 1,
-                    stopColor: "#29C7B8"
-                })]
-            }), y[14] = x) : x = y[14], y[15] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, r.jsxs)("linearGradient", {
-                id: "paint3_linear_8150_7076",
-                x1: 12.7045,
-                y1: 12,
-                x2: 18.1591,
-                y2: 12.4545,
-                gradientUnits: "userSpaceOnUse",
-                children: [(0, r.jsx)("stop", {
-                    offset: .0497812,
-                    stopColor: "#6FBBD4"
-                }), (0, r.jsx)("stop", {
-                    offset: 1,
-                    stopColor: "#6FBBD4",
-                    stopOpacity: 0
-                })]
-            }), y[15] = g) : g = y[15], y[16] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, r.jsxs)("linearGradient", {
-                id: "paint4_linear_8150_7076",
-                x1: 17.25,
-                y1: 11.0909,
-                x2: 13.1591,
-                y2: 16.0909,
-                gradientUnits: "userSpaceOnUse",
-                children: [(0, r.jsx)("stop", {
-                    stopColor: "#0C6553",
-                    stopOpacity: 0
-                }), (0, r.jsx)("stop", {
-                    offset: 1,
-                    stopColor: "#0C6553"
-                })]
-            }), y[16] = C) : C = y[16], y[17] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, r.jsxs)("radialGradient", {
-                id: "paint5_radial_8150_7076",
-                cx: 0,
-                cy: 0,
-                r: 1,
-                gradientUnits: "userSpaceOnUse",
-                gradientTransform: "translate(11.5 16.5) rotate(53.9726) scale(6.80074)",
-                children: [(0, r.jsx)("stop", {
-                    stopColor: "#2EDED7"
-                }), (0, r.jsx)("stop", {
-                    offset: 1,
-                    stopColor: "#218097"
-                })]
-            }), y[17] = v) : v = y[17], y[18] === Symbol.for("react.memo_cache_sentinel") ? (j = (0, r.jsxs)("defs", {
-                children: [p, m, f, b, h, x, g, C, v, (0, r.jsxs)("linearGradient", {
-                    id: "paint6_linear_8150_7076",
-                    x1: 6.5,
-                    y1: 9,
-                    x2: 6.5,
-                    y2: 18,
-                    gradientUnits: "userSpaceOnUse",
-                    children: [(0, r.jsx)("stop", {
-                        stopColor: "#33A1B5"
-                    }), (0, r.jsx)("stop", {
-                        offset: 1,
-                        stopColor: "#064A66"
-                    })]
-                })]
-            }), y[18] = j) : j = y[18], y[19] !== e ? (_ = (0, r.jsxs)("svg", {
-                width: "1em",
-                height: "1em",
-                viewBox: "0 0 24 24",
-                fill: "currentColor",
-                ...e,
-                children: [t, a, i, s, n, l, d, c, u, j]
-            }), y[19] = e, y[20] = _) : _ = y[20], _
-        }
-    }),
-    bDc1: (function(e, t, a) {
-        var r = a("WTLH"),
-            o = a("FIwD");
-        a.d(t, {
-            a: () => o.d,
-            b: () => o.g,
-            c: () => r.a
-        })
-    }),
-    TGHr: (function(e, t, a) {
-        var r = a("TE73"),
-            o = a("eZy0"),
-            i = a("LpLF"),
-            s = a("TiFH"),
-            n = a("GQ93"),
-            l = a("xUWq"),
-            d = a("gcGr"),
-            c = a("vZCo"),
-            u = a("kpww"),
-            p = a("sCki"),
-            m = a("gWf7"),
-            f = a("OH6Z"),
-            b = a("FIwD"),
-            h = a("MBDE"),
-            x = a("Qbhq"),
-            g = a("urXC"),
-            C = a("Vc7o"),
-            v = a("f9K9");
-        a.d(t, {}, {
-            a: function(e, t, a) {
-                if (["row", "col", "box", "grid-item"].includes(e)) {
-                    let i = "grid-item" === e && 1 === a.childCount && Object.keys(t).every(e => ["key", "span", "rowSpan"].includes(e)),
-                        s = "grid-item" === e ? {
-                            className: x.a.Item,
-                            variant: i ? "transparent" : void 0,
-                            gap: i ? 0 : t.gap,
-                            style: (0, r.g)({
-                                "grid-item-column": (0, f.a)(t.span) ?? "auto",
-                                "grid-item-row": (0, f.a)(t.rowSpan) ?? "auto"
-                            })
-                        } : {};
-                    return {
-                        tag: "div",
-                        attributes: (0, o.b)({
-                            as: "div",
-                            component: e,
-                            layout: t,
-                            ..."row" === e || "col" === e ? {
-                                direction: e
-                            } : {},
-                            ...s
-                        }, {
-                            theme: a.theme,
-                            autoSpacingDisabled: !1
-                        })
-                    }
-                }
-                if ("card" === e) return {
-                    tag: "div",
-                    attributes: (0, o.b)((0, i.b)(t), {
-                        theme: a.theme,
-                        autoSpacingDisabled: !1
-                    })
-                };
-                if ("grid" === e) return {
-                    tag: "div",
-                    attributes: (0, n.c)(t, a.breakpoints)
-                };
-                if ("flow" === e) return {
-                    tag: "div",
-                    attributes: (0, l.d)(t)
-                };
-                if ("flow-item" === e) return {
-                    tag: "div",
-                    attributes: (0, o.b)((0, l.c)(t), {
-                        theme: a.theme,
-                        autoSpacingDisabled: !1
-                    })
-                };
-                if ("divider" === e) return {
-                    tag: "div",
-                    attributes: (0, s.b)(t, a.theme)
-                };
-                if ("blockquote" === e) return {
-                    tag: "blockquote",
-                    attributes: {
-                        className: h.a.Blockquote,
-                        "data-d-component": "blockquote"
-                    }
-                };
-                if (["text", "title", "caption", "label", "bold", "italic", "underline", "strikethrough"].includes(e)) {
-                    let r = "bold" === e ? {
-                            inline: !0,
-                            strong: !0,
-                            weight: t.weight
-                        } : "italic" === e ? {
-                            inline: !0,
-                            italic: !0
-                        } : "underline" === e ? {
-                            inline: !0,
-                            underline: !0
-                        } : "strikethrough" === e ? {
-                            inline: !0,
-                            lineThrough: !0
-                        } : t,
-                        o = "title" === e ? (0, c.b)(t) : "caption" === e ? (0, u.b)(t) : "label" === e ? (0, p.b)(t) : (0, d.b)(r, a.inline);
-                    return {
-                        tag: o.as,
-                        attributes: (0, m.b)(o, a.theme)
-                    }
-                }
-                if ("code" === e) return {
-                    tag: "code",
-                    attributes: {
-                        className: C.a.Code,
-                        "data-d-component": "code"
-                    }
-                };
-                if ("link" === e) return {
-                    tag: "a",
-                    attributes: {
-                        className: v.a.Link,
-                        "data-d-component": "link",
-                        title: t.title
-                    }
-                };
-                if ("list" === e) {
-                    let e = t.marker ?? "bullet",
-                        a = (0, b.h)(t.gap ?? 0),
-                        r = "number" === e && "number" == typeof t.start && Number.isFinite(t.start) ? t.start : void 0;
-                    return {
-                        tag: "number" === e ? "ol" : "ul",
-                        attributes: {
-                            className: g.a.List,
-                            "data-d-component": "list",
-                            "data-d-marker": e,
-                            "data-d-marker-layout": "native",
-                            start: r,
-                            style: {
-                                "--d-list-row-gap": a.includes("(") ? a : a.split(/\s+/)[0],
-                                gap: a,
-                                counterReset: null == r ? void 0 : `d-list-item ${r-1}`
-                            }
-                        }
-                    }
-                }
-                return "list-item" === e ? {
-                    tag: "li",
-                    attributes: {
-                        className: g.a.Item,
-                        "data-d-component": "list-item",
-                        "data-d-marker-layout": "native"
-                    },
-                    content: {
-                        tag: "div",
-                        attributes: {
-                            className: g.a.Content
-                        },
-                        content: {
-                            tag: "div",
-                            attributes: {
-                                className: g.a.Label,
-                                "data-d-list-item-content": ""
-                            }
-                        }
-                    }
-                } : null
-            }
-        })
-    }),
-    IhXv: (function(e, t, a) {
-        a.d(t, {
-            a: () => M
+    IhXv: (function(e, a, t) {
+        t.d(a, {
+            a: () => E
         });
-        var r = a("ABep"),
-            o = a("QosV"),
-            i = a("sSh9"),
-            s = a("LpCf"),
-            n = a("on57"),
-            l = a("LPKZ"),
-            d = a.n(l),
-            c = a("Q840"),
-            u = a("G4E3"),
-            p = a("zd8w"),
-            m = a("oyxz"),
-            f = a("rEML"),
-            b = a("Cslg"),
-            h = a("MdAf"),
-            x = a("tmUE"),
-            g = a("GhgU"),
-            C = a("e1xH"),
-            v = a("cVcC"),
-            j = a("hlkZ"),
-            _ = a("NnV7"),
-            y = a("dJBt"),
-            I = a("OWtl"),
-            k = a("OMIV"),
-            w = a("TnSu"),
-            S = a("bIvi"),
-            F = a("eShZ"),
-            B = a("WrMt"),
-            O = a("YCKz"),
-            N = a("puTD");
-        let U = () => d(),
-            D = () => !1;
+        var n = t("ABep"),
+            r = t("QosV"),
+            o = t("sSh9"),
+            i = t("LpCf"),
+            l = t("on57"),
+            s = t("LPKZ"),
+            d = t.n(s),
+            c = t("Q840"),
+            u = t("G4E3"),
+            g = t("zd8w"),
+            p = t("oyxz"),
+            m = t("rEML"),
+            f = t("Cslg"),
+            b = t("MdAf"),
+            v = t("tmUE"),
+            h = t("GhgU"),
+            x = t("e1xH"),
+            I = t("cVcC"),
+            C = t("hlkZ"),
+            P = t("NnV7"),
+            j = t("dJBt"),
+            w = t("OWtl"),
+            y = t("OMIV"),
+            _ = t("TnSu"),
+            D = t("bIvi"),
+            k = t("eShZ"),
+            S = t("WrMt"),
+            T = t("YCKz"),
+            N = t("puTD");
+        let L = () => d(),
+            F = () => !1;
 
-        function M(e) {
-            let t, a, i, s, l, d, u, m, g, v, _, y, k, w, B, M, E, Z, q = (0, o.c)(94),
+        function E(e) {
+            let a, t, o, i, s, d, u, p, h, I, P, j, y, _, S, E, R, U, W = (0, r.c)(94),
                 {
-                    snapshot: P,
-                    preparation: T,
+                    snapshot: B,
+                    preparation: O,
                     enabled: $,
                     nonblocking: V,
-                    openIdentity: W,
-                    pageId: R,
-                    blockId: H,
-                    firstContent: Q,
-                    children: X
+                    openIdentity: X,
+                    pageId: G,
+                    blockId: Q,
+                    firstContent: J,
+                    children: H
                 } = e,
-                J = void 0 !== V && V,
-                K = (0, c.y)(I.a),
-                Y = (0, p.useId)(),
-                [ee, et] = (0, p.useState)(null),
+                Y = void 0 !== V && V,
+                Z = (0, c.y)(w.a),
+                K = (0, g.useId)(),
+                [ee, ea] = (0, g.useState)(null),
                 {
-                    pageId: ea
-                } = (0, f.eb)(),
-                er = R ?? ea,
-                eo = (0, c.z)(b.f),
-                ei = (0, c.z)(b.j),
-                es = (0, c.z)(b.k),
-                en = (0, c.z)(b.h);
-            q[0] !== eo || q[1] !== en || q[2] !== es || q[3] !== W || q[4] !== er || q[5] !== ei ? (t = () => ({
-                openIdentity: W ?? er,
+                    pageId: et
+                } = (0, m.eb)(),
+                en = G ?? et,
+                er = (0, c.z)(f.f),
+                eo = (0, c.z)(f.j),
+                ei = (0, c.z)(f.k),
+                el = (0, c.z)(f.h);
+            W[0] !== er || W[1] !== el || W[2] !== ei || W[3] !== X || W[4] !== en || W[5] !== eo ? (a = () => ({
+                openIdentity: X ?? en,
                 generation: 0,
                 invalidated: !1,
-                pageId: er,
-                accountId: eo,
-                userId: ei,
-                localUserId: es,
-                accountUserId: en,
-                browserFirstContent: L(er)
-            }), q[0] = eo, q[1] = en, q[2] = es, q[3] = W, q[4] = er, q[5] = ei, q[6] = t) : t = q[6];
-            let [el, ed] = (0, p.useState)(t), ec = 0 === el.generation ? Y : `${Y}-${el.generation}`, eu = null == W && 0 === el.generation, ep = el.pageId ?? "", em = el.accountId ?? "", ef = el.userId ?? "";
-            q[7] !== ec || q[8] !== ep || q[9] !== em || q[10] !== ef ? (a = {
+                pageId: en,
+                accountId: er,
+                userId: eo,
+                localUserId: ei,
+                accountUserId: el,
+                browserFirstContent: A(en)
+            }), W[0] = er, W[1] = el, W[2] = ei, W[3] = X, W[4] = en, W[5] = eo, W[6] = a) : a = W[6];
+            let [es, ed] = (0, g.useState)(a), ec = 0 === es.generation ? K : `${K}-${es.generation}`, eu = null == X && 0 === es.generation, eg = es.pageId ?? "", ep = es.accountId ?? "", em = es.userId ?? "";
+            W[7] !== ec || W[8] !== eg || W[9] !== ep || W[10] !== em ? (t = {
                 mountId: ec,
-                pageId: ep,
-                accountId: em,
-                userId: ef
-            }, q[7] = ec, q[8] = ep, q[9] = em, q[10] = ef, q[11] = a) : a = q[11];
-            let eb = a,
-                eh = (0, c.x)(null != P && O.d, eb),
-                ex = null == P || el.invalidated || eh ? void 0 : T,
-                eg = (0, p.useSyncExternalStore)(null == ex ? U : ex.subscribeInvalidation, null == ex ? D : ex.isInvalidated, D),
-                eC = (0, c.x)(null == P ? null : O.f, eb),
-                ev = (0, c.x)(null != P ? j.loadedSpacePageMetadata$ : void 0, er ?? null),
-                ej = (0, c.x)(null != P && C.z, eb.pageId),
+                pageId: eg,
+                accountId: ep,
+                userId: em
+            }, W[7] = ec, W[8] = eg, W[9] = ep, W[10] = em, W[11] = t) : t = W[11];
+            let ef = t,
+                eb = (0, c.x)(null != B && T.d, ef),
+                ev = null == B || es.invalidated || eb ? void 0 : O,
+                eh = (0, g.useSyncExternalStore)(null == ev ? L : ev.subscribeInvalidation, null == ev ? F : ev.isInvalidated, F),
+                ex = (0, c.x)(null == B ? null : T.f, ef),
+                eI = (0, c.x)(null != B ? C.loadedSpacePageMetadata$ : void 0, en ?? null),
+                eC = (0, c.x)(null != B && x.z, ef.pageId),
                 {
-                    data: e_,
-                    error: ey
-                } = (0, c.x)(null == P ? void 0 : j.spacePageQuery$, eb.pageId, {
+                    data: eP,
+                    error: ej
+                } = (0, c.x)(null == B ? void 0 : C.spacePageQuery$, ef.pageId, {
                     enabled: !1
                 }) ?? {};
-            q[12] !== eo || q[13] !== en || q[14] !== el.accountId || q[15] !== el.accountUserId || q[16] !== el.localUserId || q[17] !== el.pageId || q[18] !== el.userId || q[19] !== eC?.failed || q[20] !== $ || q[21] !== ey || q[22] !== eg || q[23] !== es || q[24] !== ev || q[25] !== e_ || q[26] !== er || q[27] !== P || q[28] !== ei || q[29] !== ej ? (i = null == P || eg || !$ || el.pageId !== er || el.accountId !== eo || el.userId !== ei || el.localUserId !== es || el.accountUserId !== en || ej || ev?.view_only === !0 || e_?.metadata.view_only === !0 || ev?.deleted_at != null || e_?.metadata.deleted_at != null || ev?.access.can_read === !1 || e_?.metadata.access.can_read === !1 || ey instanceof F.FetchError && [401, 403, 404, 410].includes(ey.status) || eC?.failed === !0, q[12] = eo, q[13] = en, q[14] = el.accountId, q[15] = el.accountUserId, q[16] = el.localUserId, q[17] = el.pageId, q[18] = el.userId, q[19] = eC?.failed, q[20] = $, q[21] = ey, q[22] = eg, q[23] = es, q[24] = ev, q[25] = e_, q[26] = er, q[27] = P, q[28] = ei, q[29] = ej, q[30] = i) : i = q[30];
-            let eI = i;
-            null != W && (el.openIdentity !== W || el.pageId !== er) ? ed({
-                openIdentity: W,
-                generation: el.generation + 1,
+            W[12] !== er || W[13] !== el || W[14] !== es.accountId || W[15] !== es.accountUserId || W[16] !== es.localUserId || W[17] !== es.pageId || W[18] !== es.userId || W[19] !== ex?.failed || W[20] !== $ || W[21] !== ej || W[22] !== eh || W[23] !== ei || W[24] !== eI || W[25] !== eP || W[26] !== en || W[27] !== B || W[28] !== eo || W[29] !== eC ? (o = null == B || eh || !$ || es.pageId !== en || es.accountId !== er || es.userId !== eo || es.localUserId !== ei || es.accountUserId !== el || eC || eI?.view_only === !0 || eP?.metadata.view_only === !0 || eI?.deleted_at != null || eP?.metadata.deleted_at != null || eI?.access.can_read === !1 || eP?.metadata.access.can_read === !1 || ej instanceof k.FetchError && [401, 403, 404, 410].includes(ej.status) || ex?.failed === !0, W[12] = er, W[13] = el, W[14] = es.accountId, W[15] = es.accountUserId, W[16] = es.localUserId, W[17] = es.pageId, W[18] = es.userId, W[19] = ex?.failed, W[20] = $, W[21] = ej, W[22] = eh, W[23] = ei, W[24] = eI, W[25] = eP, W[26] = en, W[27] = B, W[28] = eo, W[29] = eC, W[30] = o) : o = W[30];
+            let ew = o;
+            null != X && (es.openIdentity !== X || es.pageId !== en) ? ed({
+                openIdentity: X,
+                generation: es.generation + 1,
                 invalidated: !1,
-                pageId: er,
-                accountId: eo,
-                userId: ei,
-                localUserId: es,
-                accountUserId: en,
-                browserFirstContent: L(er)
-            }) : eI && !el.invalidated && ed({
-                ...el,
+                pageId: en,
+                accountId: er,
+                userId: eo,
+                localUserId: ei,
+                accountUserId: el,
+                browserFirstContent: A(en)
+            }) : ew && !es.invalidated && ed({
+                ...es,
                 invalidated: !0
-            }), q[31] !== K ? (s = (e, t) => {
-                K.set(O.e, e, !t)
-            }, q[31] = K, q[32] = s) : s = q[32];
-            let ek = (0, S.a)(s);
-            q[33] !== ec || q[34] !== ek ? (l = e => {
-                null != e && ek(ec, null != e.querySelector("[data-page-ssr-snapshot]"))
-            }, q[33] = ec, q[34] = ek, q[35] = l) : l = q[35];
-            let ew = (0, S.a)(l);
-            q[36] !== ec || q[37] !== ek ? (d = (0, r.jsx)(A, {
+            }), W[31] !== Z ? (i = (e, a) => {
+                Z.set(T.e, e, !a)
+            }, W[31] = Z, W[32] = i) : i = W[32];
+            let ey = (0, D.a)(i);
+            W[33] !== ec || W[34] !== ey ? (s = e => {
+                null != e && ey(ec, null != e.querySelector("[data-page-ssr-snapshot]"))
+            }, W[33] = ec, W[34] = ey, W[35] = s) : s = W[35];
+            let e_ = (0, D.a)(s);
+            W[36] !== ec || W[37] !== ey ? (d = (0, n.jsx)(M, {
                 mountId: ec,
-                setClientCovered: ek,
+                setClientCovered: ey,
                 visible: !1
-            }), q[36] = ec, q[37] = ek, q[38] = d) : d = q[38];
-            let eS = d,
-                eF = !el.invalidated && !eI && !eh && null != P,
-                eB = eS;
-            if (eF) {
-                if (J) {
-                    let e, t, a;
-                    q[39] !== el.browserFirstContent.get || q[40] !== H || q[41] !== R || q[42] !== Q || q[43] !== eu || q[44] !== ec || q[45] !== er || q[46] !== ek || q[47] !== eS ? (e = e => null == e || "status" in e ? eS : (0, r.jsx)(G, {
+            }), W[36] = ec, W[37] = ey, W[38] = d) : d = W[38];
+            let eD = d,
+                ek = !es.invalidated && !ew && !eb && null != B,
+                eS = eD;
+            if (ek) {
+                if (Y) {
+                    let e, a, t;
+                    W[39] !== es.browserFirstContent.get || W[40] !== Q || W[41] !== G || W[42] !== J || W[43] !== eu || W[44] !== ec || W[45] !== en || W[46] !== ey || W[47] !== eD ? (e = e => null == e || "status" in e ? eD : (0, n.jsx)(q, {
                         mountId: ec,
-                        getBrowserFirstContent: el.browserFirstContent.get,
-                        pageId: er,
-                        blockId: null == R ? void 0 : H ?? null,
-                        firstContent: Q,
+                        getBrowserFirstContent: es.browserFirstContent.get,
+                        pageId: en,
+                        blockId: null == G ? void 0 : Q ?? null,
+                        firstContent: J,
                         initialNavigation: eu,
                         snapshot: e,
-                        setClientCovered: ek
-                    }), q[39] = el.browserFirstContent.get, q[40] = H, q[41] = R, q[42] = Q, q[43] = eu, q[44] = ec, q[45] = er, q[46] = ek, q[47] = eS, q[48] = e) : e = q[48], q[49] !== P || q[50] !== e || q[51] !== eS ? (t = (0, r.jsx)(f.b, {
-                        resolve: P,
-                        errorElement: eS,
+                        setClientCovered: ey
+                    }), W[39] = es.browserFirstContent.get, W[40] = Q, W[41] = G, W[42] = J, W[43] = eu, W[44] = ec, W[45] = en, W[46] = ey, W[47] = eD, W[48] = e) : e = W[48], W[49] !== B || W[50] !== e || W[51] !== eD ? (a = (0, n.jsx)(m.b, {
+                        resolve: B,
+                        errorElement: eD,
                         children: e
-                    }), q[49] = P, q[50] = e, q[51] = eS, q[52] = t) : t = q[52], q[53] !== ec || q[54] !== t || q[55] !== eS ? (a = (0, r.jsx)(p.Suspense, {
-                        fallback: eS,
-                        children: t
-                    }, ec), q[53] = ec, q[54] = t, q[55] = eS, q[56] = a) : a = q[56], eB = a
-                } else if ("html" in P) {
-                    let e, t = null == R ? void 0 : H ?? null;
-                    q[57] !== el.browserFirstContent.get || q[58] !== Q || q[59] !== eu || q[60] !== ec || q[61] !== er || q[62] !== ek || q[63] !== P || q[64] !== t ? (e = (0, r.jsx)(G, {
+                    }), W[49] = B, W[50] = e, W[51] = eD, W[52] = a) : a = W[52], W[53] !== ec || W[54] !== a || W[55] !== eD ? (t = (0, n.jsx)(g.Suspense, {
+                        fallback: eD,
+                        children: a
+                    }, ec), W[53] = ec, W[54] = a, W[55] = eD, W[56] = t) : t = W[56], eS = t
+                } else if ("html" in B) {
+                    let e, a = null == G ? void 0 : Q ?? null;
+                    W[57] !== es.browserFirstContent.get || W[58] !== J || W[59] !== eu || W[60] !== ec || W[61] !== en || W[62] !== ey || W[63] !== B || W[64] !== a ? (e = (0, n.jsx)(q, {
                         mountId: ec,
-                        getBrowserFirstContent: el.browserFirstContent.get,
-                        pageId: er,
-                        blockId: t,
-                        firstContent: Q,
+                        getBrowserFirstContent: es.browserFirstContent.get,
+                        pageId: en,
+                        blockId: a,
+                        firstContent: J,
                         initialNavigation: eu,
-                        snapshot: P,
-                        setClientCovered: ek
-                    }, ec), q[57] = el.browserFirstContent.get, q[58] = Q, q[59] = eu, q[60] = ec, q[61] = er, q[62] = ek, q[63] = P, q[64] = t, q[65] = e) : e = q[65], eB = e
+                        snapshot: B,
+                        setClientCovered: ey
+                    }, ec), W[57] = es.browserFirstContent.get, W[58] = J, W[59] = eu, W[60] = ec, W[61] = en, W[62] = ey, W[63] = B, W[64] = a, W[65] = e) : e = W[65], eS = e
                 }
             }
-            let eO = J && null != P ? ew : void 0;
-            q[66] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, n.b)("surface-e8iyms", "relative flex h-full min-h-0 flex-1 flex-col"), q[66] = u) : u = q[66], q[67] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, r.jsx)(h.a, {
+            let eT = Y && null != B ? e_ : void 0;
+            W[66] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, l.b)("surface-e8iyms", "relative flex h-full min-h-0 flex-1 flex-col"), W[66] = u) : u = W[66], W[67] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, n.jsx)(b.a, {
                 "aria-hidden": "true",
                 "data-page-loading-spinner": "",
-                className: (0, n.b)("indicator-Wq6R_i", "pointer-events-none absolute inset-x-0 z-1 top-[var(--page-loading-top,0px)] bottom-0 m-auto icon-lg animate-spin text-secondary [animation-timing-function:linear] motion-reduce:[animation-play-state:paused]")
-            }), q[67] = m) : m = q[67];
-            let eN = el.invalidated || eI || eh ? null : ee;
-            q[68] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, r.jsx)(x.a, {
+                className: (0, l.b)("indicator-Wq6R_i", "pointer-events-none absolute inset-x-0 z-1 top-[var(--page-loading-top,0px)] bottom-0 m-auto icon-lg animate-spin text-secondary [animation-timing-function:linear] motion-reduce:[animation-play-state:paused]")
+            }), W[67] = p) : p = W[67];
+            let eN = es.invalidated || ew || eb ? null : ee;
+            W[68] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, n.jsx)(v.a, {
                 routeFallback: !0,
                 fillParent: !0,
                 debugName: "PageEditor"
-            }), q[68] = g) : g = q[68], q[69] !== el.browserFirstContent.capture || q[70] !== X ? (v = (0, r.jsx)(p.Suspense, {
-                fallback: g,
-                children: (0, r.jsx)(O.a, {
-                    value: el.browserFirstContent.capture,
-                    children: X
+            }), W[68] = h) : h = W[68], W[69] !== es.browserFirstContent.capture || W[70] !== H ? (I = (0, n.jsx)(g.Suspense, {
+                fallback: h,
+                children: (0, n.jsx)(T.a, {
+                    value: es.browserFirstContent.capture,
+                    children: H
                 })
-            }), q[69] = el.browserFirstContent.capture, q[70] = X, q[71] = v) : v = q[71], q[72] !== eN || q[73] !== v ? (_ = (0, r.jsx)(O.c, {
+            }), W[69] = es.browserFirstContent.capture, W[70] = H, W[71] = I) : I = W[71], W[72] !== eN || W[73] !== I ? (P = (0, n.jsx)(T.c, {
                 value: eN,
-                children: v
-            }), q[72] = eN, q[73] = v, q[74] = _) : _ = q[74], q[75] !== ec || q[76] !== _ ? (y = (0, r.jsx)(O.b, {
+                children: I
+            }), W[72] = eN, W[73] = I, W[74] = P) : P = W[74], W[75] !== ec || W[76] !== P ? (j = (0, n.jsx)(T.b, {
                 value: ec,
-                children: _
-            }), q[75] = ec, q[76] = _, q[77] = y) : y = q[77], q[78] !== eF || q[79] !== ec || q[80] !== y ? (k = (0, r.jsx)(z, {
+                children: P
+            }), W[75] = ec, W[76] = P, W[77] = j) : j = W[77], W[78] !== ek || W[79] !== ec || W[80] !== j ? (y = (0, n.jsx)(z, {
                 mountId: ec,
-                coverEligible: eF,
-                children: y
-            }), q[78] = eF, q[79] = ec, q[80] = y, q[81] = k) : k = q[81];
-            let eU = J ? N.a.PageSnapshotCover : "inset-0";
-            return q[82] !== eU ? (w = (0, n.b)("pointer-events-none absolute flex min-h-0 flex-col", eU), q[82] = eU, q[83] = w) : w = q[83], q[84] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, r.jsx)("div", {
-                ref: et,
+                coverEligible: ek,
+                children: j
+            }), W[78] = ek, W[79] = ec, W[80] = j, W[81] = y) : y = W[81];
+            let eL = Y ? N.a.PageSnapshotCover : "inset-0";
+            return W[82] !== eL ? (_ = (0, l.b)("pointer-events-none absolute flex min-h-0 flex-col", eL), W[82] = eL, W[83] = _) : _ = W[83], W[84] === Symbol.for("react.memo_cache_sentinel") ? (S = (0, n.jsx)("div", {
+                ref: ea,
                 className: "pointer-events-auto shrink-0"
-            }), q[84] = B) : B = q[84], q[85] !== eB ? (M = (0, r.jsx)("div", {
+            }), W[84] = S) : S = W[84], W[85] !== eS ? (E = (0, n.jsx)("div", {
                 className: "relative min-h-0 flex-1",
-                children: eB
-            }), q[85] = eB, q[86] = M) : M = q[86], q[87] !== w || q[88] !== M ? (E = (0, r.jsxs)("div", {
-                className: w,
-                children: [B, M]
-            }), q[87] = w, q[88] = M, q[89] = E) : E = q[89], q[90] !== eO || q[91] !== k || q[92] !== E ? (Z = (0, r.jsxs)("div", {
-                ref: eO,
+                children: eS
+            }), W[85] = eS, W[86] = E) : E = W[86], W[87] !== _ || W[88] !== E ? (R = (0, n.jsxs)("div", {
+                className: _,
+                children: [S, E]
+            }), W[87] = _, W[88] = E, W[89] = R) : R = W[89], W[90] !== eT || W[91] !== y || W[92] !== R ? (U = (0, n.jsxs)("div", {
+                ref: eT,
                 className: u,
-                children: [m, k, E]
-            }), q[90] = eO, q[91] = k, q[92] = E, q[93] = Z) : Z = q[93], Z
+                children: [p, y, R]
+            }), W[90] = eT, W[91] = y, W[92] = R, W[93] = U) : U = W[93], U
         }
 
         function z(e) {
-            let t, a = (0, o.c)(4),
+            let a, t = (0, r.c)(4),
                 {
-                    mountId: i,
-                    coverEligible: s,
-                    children: n
+                    mountId: o,
+                    coverEligible: i,
+                    children: l
                 } = e,
-                l = (0, c.x)(O.e, i),
-                d = s && !l,
+                s = (0, c.x)(T.e, o),
+                d = i && !s,
                 u = d ? "true" : void 0;
-            return a[0] !== n || a[1] !== d || a[2] !== u ? (t = (0, r.jsx)("div", {
+            return t[0] !== l || t[1] !== d || t[2] !== u ? (a = (0, n.jsx)("div", {
                 className: "flex min-h-0 flex-1 flex-col",
                 inert: d,
                 "aria-hidden": u,
-                children: n
-            }), a[0] = n, a[1] = d, a[2] = u, a[3] = t) : t = a[3], t
+                children: l
+            }), t[0] = l, t[1] = d, t[2] = u, t[3] = a) : a = t[3], a
         }
 
-        function A(e) {
-            let t, a, i, s = (0, o.c)(15),
+        function M(e) {
+            let a, t, o, i = (0, r.c)(15),
                 {
-                    mountId: l,
+                    mountId: s,
                     initialNavigation: d,
                     visible: u,
-                    setClientCovered: p,
-                    onRemove: m,
-                    children: f
+                    setClientCovered: g,
+                    onRemove: p,
+                    children: m
                 } = e,
-                b = void 0 !== d && d;
-            s[0] !== b || s[1] !== l || s[2] !== m || s[3] !== p || s[4] !== u ? (t = e => {
-                if (null != e) return p(l, u), () => {
-                    u && b && (0, B.e)(), p(l, !1), u && m?.(e)
+                f = void 0 !== d && d;
+            i[0] !== f || i[1] !== s || i[2] !== p || i[3] !== g || i[4] !== u ? (a = e => {
+                if (null != e) return g(s, u), () => {
+                    u && f && (0, S.e)(), g(s, !1), u && p?.(e)
                 }
-            }, s[0] = b, s[1] = l, s[2] = m, s[3] = p, s[4] = u, s[5] = t) : t = s[5];
-            let h = t,
-                x = (0, c.x)(k.e, "2163293173"),
-                g = u ? "covered" : "uncovered",
-                C = x ? "[scrollbar-gutter:stable_both-edges]" : "scrollbar-stable";
-            s[6] !== C ? (a = (0, n.b)("pointer-events-auto absolute inset-0 overflow-x-hidden overflow-y-auto bg-surface scrollbar-on-hover", C), s[6] = C, s[7] = a) : a = s[7];
-            let v = !u,
-                j = u || void 0,
-                _ = u ? f : null;
-            return s[8] !== h || s[9] !== g || s[10] !== a || s[11] !== v || s[12] !== j || s[13] !== _ ? (i = (0, r.jsx)("div", {
-                ref: h,
-                className: a,
-                hidden: v,
-                "data-page-ssr-snapshot": j,
-                children: _
-            }, g), s[8] = h, s[9] = g, s[10] = a, s[11] = v, s[12] = j, s[13] = _, s[14] = i) : i = s[14], i
+            }, i[0] = f, i[1] = s, i[2] = p, i[3] = g, i[4] = u, i[5] = a) : a = i[5];
+            let b = a,
+                v = (0, c.x)(y.e, "2163293173"),
+                h = u ? "covered" : "uncovered",
+                x = v ? "[scrollbar-gutter:stable_both-edges]" : "scrollbar-stable";
+            i[6] !== x ? (t = (0, l.b)("pointer-events-auto absolute inset-0 overflow-x-hidden overflow-y-auto bg-surface scrollbar-on-hover", x), i[6] = x, i[7] = t) : t = i[7];
+            let I = !u,
+                C = u || void 0,
+                P = u ? m : null;
+            return i[8] !== b || i[9] !== h || i[10] !== t || i[11] !== I || i[12] !== C || i[13] !== P ? (o = (0, n.jsx)("div", {
+                ref: b,
+                className: t,
+                hidden: I,
+                "data-page-ssr-snapshot": C,
+                children: P
+            }, h), i[8] = b, i[9] = h, i[10] = t, i[11] = I, i[12] = C, i[13] = P, i[14] = o) : o = i[14], o
         }
 
-        function G(e) {
-            let t, a, n, l, d, f, h, x, C, v, j = (0, o.c)(40),
+        function q(e) {
+            let a, t, l, s, d, m, b, v, x, I, C = (0, r.c)(40),
                 {
-                    mountId: y,
-                    getBrowserFirstContent: k,
-                    pageId: F,
-                    blockId: B,
-                    firstContent: U,
-                    initialNavigation: D,
-                    snapshot: M,
+                    mountId: j,
+                    getBrowserFirstContent: y,
+                    pageId: k,
+                    blockId: S,
+                    firstContent: L,
+                    initialNavigation: F,
+                    snapshot: E,
                     setClientCovered: z
                 } = e,
-                G = (0, c.y)(I.a),
-                L = (0, p.useRef)(null),
-                Z = (0, c.z)(b.f),
-                q = (0, c.z)(b.j);
-            j[0] !== y || j[1] !== M.accountId || j[2] !== M.pageId || j[3] !== M.userId ? (t = {
-                mountId: y,
-                pageId: M.pageId,
-                accountId: M.accountId,
-                userId: M.userId
-            }, j[0] = y, j[1] = M.accountId, j[2] = M.pageId, j[3] = M.userId, j[4] = t) : t = j[4];
-            let P = (0, c.x)(O.f, t),
-                T = F !== M.pageId || Z !== M.accountId || q !== M.userId || P?.failed === !0,
-                [$, V] = (0, p.useState)(!1),
-                W = null != P && !P.failed && P.sequence >= M.throughSequence;
-            !$ && W && V(!0);
-            let R = !T && !$ && !W;
-            j[5] !== B || j[6] !== y || j[7] !== G || j[8] !== M.accountId || j[9] !== M.pageId || j[10] !== M.throughSequence || j[11] !== M.userId ? (a = e => {
-                let t = (0, u.d)(`page://${M.pageId}${e.ownerDocument.defaultView?.location.hash??""}`);
-                if (null != B || void 0 === B && t?.kind === "page" && null != t.blockId) return;
-                let a = G.get(O.f, {
-                    mountId: y,
-                    pageId: M.pageId,
-                    accountId: M.accountId,
-                    userId: M.userId
+                q = (0, c.y)(w.a),
+                A = (0, g.useRef)(null),
+                U = (0, c.z)(f.f),
+                W = (0, c.z)(f.j);
+            C[0] !== j || C[1] !== E.accountId || C[2] !== E.pageId || C[3] !== E.userId ? (a = {
+                mountId: j,
+                pageId: E.pageId,
+                accountId: E.accountId,
+                userId: E.userId
+            }, C[0] = j, C[1] = E.accountId, C[2] = E.pageId, C[3] = E.userId, C[4] = a) : a = C[4];
+            let B = (0, c.x)(T.f, a),
+                O = k !== E.pageId || U !== E.accountId || W !== E.userId || B?.failed === !0,
+                [$, V] = (0, g.useState)(!1),
+                X = null != B && !B.failed && B.sequence >= E.throughSequence;
+            !$ && X && V(!0);
+            let G = !O && !$ && !X;
+            C[5] !== S || C[6] !== j || C[7] !== q || C[8] !== E.accountId || C[9] !== E.pageId || C[10] !== E.throughSequence || C[11] !== E.userId ? (t = e => {
+                let a = (0, u.d)(`page://${E.pageId}${e.ownerDocument.defaultView?.location.hash??""}`);
+                if (null != S || void 0 === S && a?.kind === "page" && null != a.blockId) return;
+                let t = q.get(T.f, {
+                    mountId: j,
+                    pageId: E.pageId,
+                    accountId: E.accountId,
+                    userId: E.userId
                 });
-                !a?.failed && null != a && a.sequence >= M.throughSequence && G.get(b.f) === M.accountId && G.get(b.j) === M.userId && a.restoreScroll?.(e.scrollTop)
-            }, j[5] = B, j[6] = y, j[7] = G, j[8] = M.accountId, j[9] = M.pageId, j[10] = M.throughSequence, j[11] = M.userId, j[12] = a) : a = j[12];
-            let H = (0, S.a)(a);
-            return j[13] !== U || j[14] !== k || j[15] !== D || j[16] !== R ? (n = R && (0, r.jsx)(E, {
-                getBrowserFirstContent: k,
-                content: L,
-                firstContent: U,
-                initialNavigation: D
-            }), j[13] = U, j[14] = k, j[15] = D, j[16] = R, j[17] = n) : n = j[17], j[18] !== M.emoji ? (l = null != M.emoji && (0, r.jsx)("span", {
+                !t?.failed && null != t && t.sequence >= E.throughSequence && q.get(f.f) === E.accountId && q.get(f.j) === E.userId && t.restoreScroll?.(e.scrollTop)
+            }, C[5] = S, C[6] = j, C[7] = q, C[8] = E.accountId, C[9] = E.pageId, C[10] = E.throughSequence, C[11] = E.userId, C[12] = t) : t = C[12];
+            let Q = (0, D.a)(t);
+            return C[13] !== L || C[14] !== y || C[15] !== F || C[16] !== G ? (l = G && (0, n.jsx)(R, {
+                getBrowserFirstContent: y,
+                content: A,
+                firstContent: L,
+                initialNavigation: F
+            }), C[13] = L, C[14] = y, C[15] = F, C[16] = G, C[17] = l) : l = C[17], C[18] !== E.emoji ? (s = null != E.emoji && (0, n.jsx)("span", {
                 className: "flex size-16 items-center border border-transparent",
-                children: (0, r.jsx)(w.a, {
-                    emoji: M.emoji,
+                children: (0, n.jsx)(_.a, {
+                    emoji: E.emoji,
                     size: "large"
                 })
-            }), j[18] = M.emoji, j[19] = l) : l = j[19], j[20] !== M.title ? (d = M.title || (0, r.jsx)(m.a, {
-                ..._.c.untitled
-            }), j[20] = M.title, j[21] = d) : d = j[21], j[22] !== d ? (f = (0, r.jsx)("h1", {
+            }), C[18] = E.emoji, C[19] = s) : s = C[19], C[20] !== E.title ? (d = E.title || (0, n.jsx)(p.a, {
+                ...P.c.untitled
+            }), C[20] = E.title, C[21] = d) : d = C[21], C[22] !== d ? (m = (0, n.jsx)("h1", {
                 className: `${N.a.PageTitle} font-semibold break-words text-default`,
                 children: d
-            }), j[22] = d, j[23] = f) : f = j[23], j[24] !== l || j[25] !== f ? (h = (0, r.jsxs)("div", {
+            }), C[22] = d, C[23] = m) : m = C[23], C[24] !== s || C[25] !== m ? (b = (0, n.jsxs)("div", {
                 className: "flex min-w-0 flex-col gap-2",
-                children: [l, f]
-            }), j[24] = l, j[25] = f, j[26] = h) : h = j[26], j[27] !== M.html ? (x = (0, r.jsx)("div", {
+                children: [s, m]
+            }), C[24] = s, C[25] = m, C[26] = b) : b = C[26], C[27] !== E.html ? (v = (0, n.jsx)("div", {
                 "data-page-document-selection": !0,
                 className: "isolate col-[wide] min-w-0",
-                children: (0, r.jsx)("div", {
-                    className: `${i.a.root} ${N.a.PageDocumentTheme} px-0`,
-                    style: s.a,
-                    children: (0, r.jsx)("div", {
-                        ref: L,
-                        className: `ProseMirror ${i.a.content} ${N.a.PageDocument} ${N.a.PagePreview}`,
+                children: (0, n.jsx)("div", {
+                    className: `${o.a.root} ${N.a.PageDocumentTheme} px-0`,
+                    style: i.a,
+                    children: (0, n.jsx)("div", {
+                        ref: A,
+                        className: `ProseMirror ${o.a.content} ${N.a.PageDocument} ${N.a.PagePreview}`,
                         contentEditable: !1,
                         "data-page-static-preview": !0,
                         dangerouslySetInnerHTML: {
-                            __html: M.html
+                            __html: E.html
                         }
                     })
                 })
-            }), j[27] = M.html, j[28] = x) : x = j[28], j[29] !== h || j[30] !== x ? (C = (0, r.jsx)(g.a, {
-                heading: h,
-                children: x
-            }), j[29] = h, j[30] = x, j[31] = C) : C = j[31], j[32] !== D || j[33] !== y || j[34] !== H || j[35] !== z || j[36] !== n || j[37] !== C || j[38] !== R ? (v = (0, r.jsxs)(A, {
-                mountId: y,
-                initialNavigation: D,
-                visible: R,
+            }), C[27] = E.html, C[28] = v) : v = C[28], C[29] !== b || C[30] !== v ? (x = (0, n.jsx)(h.a, {
+                heading: b,
+                children: v
+            }), C[29] = b, C[30] = v, C[31] = x) : x = C[31], C[32] !== F || C[33] !== j || C[34] !== Q || C[35] !== z || C[36] !== l || C[37] !== x || C[38] !== G ? (I = (0, n.jsxs)(M, {
+                mountId: j,
+                initialNavigation: F,
+                visible: G,
                 setClientCovered: z,
-                onRemove: H,
-                children: [n, C]
-            }), j[32] = D, j[33] = y, j[34] = H, j[35] = z, j[36] = n, j[37] = C, j[38] = R, j[39] = v) : v = j[39], v
+                onRemove: Q,
+                children: [l, x]
+            }), C[32] = F, C[33] = j, C[34] = Q, C[35] = z, C[36] = l, C[37] = x, C[38] = G, C[39] = I) : I = C[39], I
         }
 
-        function E(e) {
-            let t, a, i, s = (0, o.c)(11),
+        function R(e) {
+            let a, t, o, i = (0, r.c)(11),
                 {
-                    getBrowserFirstContent: n,
-                    content: l,
+                    getBrowserFirstContent: l,
+                    content: s,
                     firstContent: d,
                     initialNavigation: c
                 } = e;
-            return s[0] !== d || s[1] !== n ? (t = () => {
-                let e = void 0 === d ? n() : d;
+            return i[0] !== d || i[1] !== l ? (a = () => {
+                let e = void 0 === d ? l() : d;
                 e?.observeDocumentType("page")
-            }, s[0] = d, s[1] = n, s[2] = t) : t = s[2], s[3] !== l.current || s[4] !== d || s[5] !== n || s[6] !== c ? (a = () => {
-                if (l.current?.querySelector('[elementtiming="codex-page-ssr-content"]') == null) return;
-                c && (0, B.d)();
-                let e = void 0 === d ? n() : d;
+            }, i[0] = d, i[1] = l, i[2] = a) : a = i[2], i[3] !== s.current || i[4] !== d || i[5] !== l || i[6] !== c ? (t = () => {
+                if (s.current?.querySelector('[elementtiming="codex-page-ssr-content"]') == null) return;
+                c && (0, S.d)();
+                let e = void 0 === d ? l() : d;
                 e?.observeDocumentType("page"), e?.contentVisible()
-            }, s[3] = l.current, s[4] = d, s[5] = n, s[6] = c, s[7] = a) : a = s[7], s[8] !== t || s[9] !== a ? (i = (0, r.jsx)(y.a, {
+            }, i[3] = s.current, i[4] = d, i[5] = l, i[6] = c, i[7] = t) : t = i[7], i[8] !== a || i[9] !== t ? (o = (0, n.jsx)(j.a, {
                 requireVisibleAtPaint: !0,
-                onCommit: t,
-                onPaint: a
-            }), s[8] = t, s[9] = a, s[10] = i) : i = s[10], i
+                onCommit: a,
+                onPaint: t
+            }), i[8] = a, i[9] = t, i[10] = o) : o = i[10], o
         }
 
-        function L(e) {
-            let t = v.b.getDebugLoad(e ?? null)?.browserFirstContent;
+        function A(e) {
+            let a = I.b.getDebugLoad(e ?? null)?.browserFirstContent;
             return {
-                get: () => t,
-                capture: a => {
-                    a === e && null == t && (t = v.b.getDebugLoad(e ?? null)?.browserFirstContent)
+                get: () => a,
+                capture: t => {
+                    t === e && null == a && (a = I.b.getDebugLoad(e ?? null)?.browserFirstContent)
                 }
             }
         }
     }),
-    EBQV: (function(t) {
-        t.exports = e.ir("/cdn/assets/dotnet.js").then(function(e) {
+    GhgU: (function(e, a, t) {
+        t.d(a, {
+            a: () => f,
+            b: () => v,
+            c: () => h
+        });
+        var n = t("ABep"),
+            r = t("QosV"),
+            o = t("on57"),
+            i = t("IPUh"),
+            l = t("CJrD"),
+            s = t("zd8w"),
+            d = t("Wf1j"),
+            c = t("X3K1"),
+            u = t("ADAj"),
+            g = t("puTD");
+
+        function p() {
+            let e, a, t = (0, r.c)(2);
+            return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)("span", {
+                className: (0, o.b)(g.a.PageReadingWidthMeasure, "invisible absolute h-0 w-[min(100cqi,var(--page-default-reading-width))] overflow-clip"),
+                "data-page-comment-content-width": !0
+            }), t[0] = e) : e = t[0], t[1] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, n.jsxs)("span", {
+                "aria-hidden": !0,
+                className: "invisible absolute size-0 overflow-clip",
+                children: [e, (0, n.jsx)("span", {
+                    className: "@container relative block [inline-size:max(100cqi,var(--page-default-reading-width))]",
+                    children: (0, n.jsx)("span", {
+                        className: (0, o.b)(g.a.PageReadingWidthMeasure, "invisible absolute h-0 w-[min(100cqi,var(--page-default-reading-width))] max-w-0 overflow-clip"),
+                        "data-page-comment-minimum-width": !0
+                    })
+                })]
+            }), t[1] = a) : a = t[1], a
+        }
+
+        function m(e, a, t) {
+            if (!(a instanceof Element) || a.closest("[data-page-document-viewport]") !== e.closest("[data-page-document-viewport]")) return !1;
+            if (null != a.closest("[data-page-document-trailing-space]")) return !0;
+            if (!a.contains(e)) return !1;
+            let n = e.getBoundingClientRect();
+            return n.height > 0 && t >= n.bottom
+        }
+
+        function f(e) {
+            let a, t, i, s, d, c, g, m, f, v, h, x, I, C, P = (0, r.c)(29);
+            P[0] !== e ? ({
+                heading: t,
+                externalEditingControls: c,
+                messages: s,
+                compact: g,
+                headingOutside: m,
+                headingRef: i,
+                children: a,
+                ...d
+            } = e, P[0] = e, P[1] = a, P[2] = t, P[3] = i, P[4] = s, P[5] = d, P[6] = c, P[7] = g, P[8] = m) : (a = P[1], t = P[2], i = P[3], s = P[4], d = P[5], c = P[6], g = P[7], m = P[8]);
+            let j = void 0 !== c && c,
+                w = void 0 !== g && g,
+                y = void 0 !== m && m;
+            P[9] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, l.a)(), P[9] = f) : f = P[9];
+            let _ = (0, u.l)(f.fullWidth),
+                D = y ? "pt-4 pb-panel" : "pt-10 pb-panel",
+                k = w || j ? "py-4" : D,
+                S = _ || j || void 0;
+            P[10] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, n.jsx)(p, {}), P[10] = v) : v = P[10];
+            let T = w && "mb-4";
+            return P[11] !== T ? (h = (0, o.b)("flex flex-col gap-2 empty:hidden", T), P[11] = T, P[12] = h) : h = P[12], P[13] !== s || P[14] !== h ? (x = (0, n.jsx)("div", {
+                className: h,
+                children: s
+            }), P[13] = s, P[14] = h, P[15] = x) : x = P[15], P[16] !== t || P[17] !== i || P[18] !== x ? (I = (0, n.jsxs)("div", {
+                ref: i,
+                className: "col-[reading] flex w-full max-w-(--page-reading-width) min-w-0 flex-col gap-6",
+                "data-page-reading-column": !0,
+                children: [v, x, t]
+            }), P[16] = t, P[17] = i, P[18] = x, P[19] = I) : I = P[19], P[20] !== a || P[21] !== w || P[22] !== j || P[23] !== y || P[24] !== d || P[25] !== I || P[26] !== k || P[27] !== S ? (C = (0, n.jsxs)(b, {
+                ...d,
+                compact: w,
+                externalEditingControls: j,
+                headingOutside: y,
+                className: k,
+                "data-page-full-width": S,
+                children: [I, a]
+            }), P[20] = a, P[21] = w, P[22] = j, P[23] = y, P[24] = d, P[25] = I, P[26] = k, P[27] = S, P[28] = C) : C = P[28], C
+        }
+
+        function b(e) {
+            let a, t, l, s, d, c, u, p, m, f = (0, r.c)(22);
+            f[0] !== e ? ({
+                as: s,
+                compact: d,
+                contentAlignment: t,
+                externalEditingControls: c,
+                headingOutside: u,
+                className: a,
+                ...l
+            } = e, f[0] = e, f[1] = a, f[2] = t, f[3] = l, f[4] = s, f[5] = d, f[6] = c, f[7] = u) : (a = f[1], t = f[2], l = f[3], s = f[4], d = f[5], c = f[6], u = f[7]);
+            let b = void 0 !== d && d,
+                v = void 0 !== c && c,
+                h = void 0 !== u && u,
+                x = "section" === (void 0 === s ? "div" : s) ? i.a.section : i.a.div,
+                I = !b && !v && !l["data-page-full-width"] && "start" !== t && "[container-name:page-dil-badge-gutter]",
+                C = b || h ? "gap-y-0" : "gap-y-6",
+                P = b ? "ps-[var(--page-attribution-padding,--spacing(4))] pe-4" : "ps-[var(--page-attribution-padding,var(--page-control-gutter))] pe-(--page-control-gutter) in-[[data-page-responsive-comments=markers]]:ps-[var(--page-attribution-padding,clamp(16px,calc(100%_-_572px_-_48px),48px))]",
+                j = v ? "[--page-control-gutter:--spacing(10)] [--page-document-end-space:--spacing(16)] [--color-background-text-selection:--alpha(var(--color-text)/20%)]" : "[--page-control-gutter:--spacing(14)] [--page-document-end-space:50cqh] in-[[data-page-responsive-comments]]:[--page-control-gutter:--spacing(12)]",
+                w = "start" === t && "w-full max-w-[var(--page-content-max-width,none)]";
+            f[8] !== a || f[9] !== I || f[10] !== C || f[11] !== P || f[12] !== j || f[13] !== w ? (p = (0, o.b)(g.a.PageContent, "@container grid", I, C, P, j, w, a), f[8] = a, f[9] = I, f[10] = C, f[11] = P, f[12] = j, f[13] = w, f[14] = p) : p = f[14];
+            let y = b || void 0,
+                _ = v || void 0;
+            return f[15] !== x || f[16] !== t || f[17] !== l || f[18] !== p || f[19] !== y || f[20] !== _ ? (m = (0, n.jsx)(x, {
+                ...l,
+                className: p,
+                "data-compact": y,
+                "data-page-content-alignment": t,
+                "data-native-controls": _
+            }), f[15] = x, f[16] = t, f[17] = l, f[18] = p, f[19] = y, f[20] = _, f[21] = m) : m = f[21], m
+        }
+
+        function v(e) {
+            let a, t, o, i = (0, r.c)(7),
+                {
+                    pageId: l
+                } = e,
+                s = (0, d.a)();
+            return i[0] !== s ? (a = s.formatMessage({
+                id: "codex.space.page.contentLoading",
+                defaultMessage: "Loading page content"
+            }), i[0] = s, i[1] = a) : a = i[1], i[2] !== l ? (t = (0, n.jsx)(c.b, {
+                seed: l,
+                size: "md",
+                variant: "chatgpt-project"
+            }), i[2] = l, i[3] = t) : t = i[3], i[4] !== a || i[5] !== t ? (o = (0, n.jsx)("div", {
+                className: "col-[reading] w-full max-w-(--page-reading-width) min-w-0",
+                "aria-label": a,
+                role: "status",
+                children: t
+            }), i[4] = a, i[5] = t, i[6] = o) : o = i[6], o
+        }
+
+        function h(e) {
+            let a, t, i, l, d = (0, r.c)(10),
+                {
+                    editor: c,
+                    externalEditingControls: u,
+                    onTouch: p
+                } = e,
+                f = void 0 !== u && u,
+                b = (0, s.useRef)(null),
+                v = (0, s.useEffectEvent)(p);
+            d[0] !== c || d[1] !== v ? (a = () => {
+                let e = b.current?.closest("[data-page-document-viewport]");
+                if (null != e && null != c) return function(e, a, t) {
+                    let n = new AbortController,
+                        {
+                            signal: r
+                        } = n,
+                        o = null,
+                        i = () => {
+                            o = null
+                        };
+                    return e.addEventListener("pointerdown", e => {
+                        o = e.isPrimary && "touch" === e.pointerType && m(a, e.target, e.clientY) ? e : null
+                    }, {
+                        signal: r
+                    }), e.addEventListener("pointerup", e => {
+                        null != o && (e.pointerId !== o.pointerId || e.timeStamp - o.timeStamp >= 350 || Math.hypot(e.clientX - o.clientX, e.clientY - o.clientY) > 8) && i()
+                    }, {
+                        signal: r
+                    }), e.addEventListener("pointercancel", i, {
+                        signal: r
+                    }), e.addEventListener("contextmenu", i, {
+                        signal: r
+                    }), e.addEventListener("click", e => {
+                        let n = o?.clientY;
+                        i(), null != n && !e.defaultPrevented && m(a, e.target, n) && t()
+                    }, {
+                        signal: r
+                    }), () => n.abort()
+                }(e, c, v)
+            }, d[0] = c, d[1] = v, d[2] = a) : a = d[2], d[3] !== c ? (t = [c], d[3] = c, d[4] = t) : t = d[4], (0, s.useEffect)(a, t);
+            let h = f ? "h-16" : "h-[50cqh]";
+            d[5] !== h ? (i = (0, o.b)(g.a.PageDocumentEnd, h), d[5] = h, d[6] = i) : i = d[6];
+            let x = f || void 0;
+            return d[7] !== i || d[8] !== x ? (l = (0, n.jsx)("div", {
+                "aria-hidden": !0,
+                className: i,
+                "data-native-controls": x,
+                "data-page-document-end": !0,
+                "data-page-document-trailing-space": !0,
+                ref: b
+            }), d[7] = i, d[8] = x, d[9] = l) : l = d[9], l
+        }
+    }),
+    EBQV: (function(a) {
+        a.exports = e.ir("/cdn/assets/dotnet.js").then(function(e) {
             return e
         })
     })
 };
 import {
     __webpack_require__ as e
-} from "./633146.48b57020d2.js";
-import * as t from "./418851.5b0ade19b1.js";
-e.C(t);
-import * as a from "./109308.8b09661749.js";
+} from "./633146.286e08e471.js";
+import * as a from "./418851.b2405a4ff9.js";
 e.C(a);
-import * as r from "./399565.edefe43a76.js";
-e.C(r);
-import * as o from "./257798.428a6bce48.js";
-e.C(o);
-import * as i from "./447351.34d04099ca.js";
-e.C(i);
-import * as s from "./617936.dd75fa2a89.js";
-e.C(s);
-import * as n from "./807489.1d24fa9988.js";
+import * as t from "./109308.c704a27752.js";
+e.C(t);
+import * as n from "./399565.76c7da28d9.js";
 e.C(n);
-import * as l from "./337882.145f5ca770.js";
+import * as r from "./257798.da1bc54c05.js";
+e.C(r);
+import * as o from "./447351.34d04099ca.js";
+e.C(o);
+import * as i from "./617936.da77c6b618.js";
+e.C(i);
+import * as l from "./807489.823dbdfb5a.js";
 e.C(l);
-import * as d from "./955979.fad3aa290b.js";
+import * as s from "./337882.060a468551.js";
+e.C(s);
+import * as d from "./955979.5504cdc0ad.js";
 e.C(d);
-import * as c from "./646436.b50a318f52.js";
+import * as c from "./646436.feae78aa0d.js";
 e.C(c);
-import * as u from "./7078.9bac2fcc06.js";
+import * as u from "./7078.6f2aee03ba.js";
 e.C(u);
-import * as p from "./200429.f07d17d37b.js";
-e.C(p);
-import * as m from "./698524.130da41cbb.js";
-e.C(m);
-import * as f from "./956483.20ccea0970.js";
-e.C(f);
-import * as b from "./87162.4896e26514.js";
-e.C(b);
-import * as h from "./396705.e5ddd72a06.js";
-e.C(h);
-import * as x from "./155568.49e7ad46aa.js";
-e.C(x);
-import * as g from "./731863.3cdbbfa8f8.js";
+import * as g from "./200429.80eabab50b.js";
 e.C(g);
-import * as C from "./767086.3711424c4d.js";
-e.C(C);
-import * as v from "./76629.15f5868e7b.js";
+import * as p from "./698524.9faf81ab1c.js";
+e.C(p);
+import * as m from "./956483.db483d044c.js";
+e.C(m);
+import * as f from "./87162.313d693207.js";
+e.C(f);
+import * as b from "./396705.047d6db773.js";
+e.C(b);
+import * as v from "./155568.1d9e3b614b.js";
 e.C(v);
-import * as j from "./226913.cf105b979e.js";
-e.C(j);
-import * as _ from "./753405.4bffba797b.js";
-e.C(_);
-import * as y from "./321957.745ede45f0.js";
-e.C(y);
-import * as I from "./585419.38ade943bd.js";
+import * as h from "./731863.5760f3f335.js";
+e.C(h);
+import * as x from "./767086.ab8a876382.js";
+e.C(x);
+import * as I from "./76629.6fe0bcbf7b.js";
 e.C(I);
-import * as k from "./843292.f8476ea5db.js";
-e.C(k);
-import * as w from "./353230.bd7d884f9e.js";
-e.C(w);
-import * as S from "./882456.2687d7c2f4.js";
-e.C(S);
-import * as F from "./212773.49b51fc47b.js";
-e.C(F);
-import * as B from "./909395.7dc04db4e2.js";
-e.C(B);
-import * as O from "./543588.85314e3d42.js";
-e.C(O);
-import * as N from "./17983.fe02c7cac0.js";
-e.C(N);
-import * as U from "./704809.43f4c1af72.js";
-e.C(U);
-import * as D from "./227786.748857de8d.js";
-e.C(D);
-import * as M from "./920484.11e91ee9f5.js";
-e.C(M);
-import * as z from "./311330.0c89fc9811.js";
-e.C(z);
-import * as A from "./787702.f564cd3689.js";
-e.C(A);
-var G = e(e.s = "cnwD"),
-    E = G.a,
-    L = G.b;
+import * as C from "./226913.cf105b979e.js";
+e.C(C);
+import * as P from "./227786.748857de8d.js";
+e.C(P);
+import * as j from "./787702.cba5c82da7.js";
+e.C(j);
+var w = e(e.s = "cnwD"),
+    y = w.a,
+    _ = w.b;
 export {
-    E as
-    default, L as shouldRevalidate
+    y as
+    default, _ as shouldRevalidate
 };

@@ -6,14 +6,14 @@ export const __webpack_modules__ = {
             b: () => m
         });
         var r = o("rEML"),
-            a = o("ABep"),
-            s = o("QosV"),
+            s = o("ABep"),
+            a = o("QosV"),
             n = o("hC2y"),
             p = o("AXDI"),
             i = (0, r.kb)(function() {
-                let t, e = (0, s.c)(1);
-                return e[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(p.a, {
-                    children: (0, a.jsx)(n.g, {})
+                let t, e = (0, a.c)(1);
+                return e[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, s.jsx)(p.a, {
+                    children: (0, s.jsx)(n.g, {})
                 }), e[0] = t) : t = e[0], t
             });
         let c = "https://chatgpt.com/unauth-mweb/images/share-unfurl/made-with-chatgpt-og.webp",
@@ -22,7 +22,7 @@ export const __webpack_modules__ = {
                     matches: e,
                     params: o,
                     loaderData: r,
-                    location: a
+                    location: s
                 } = t;
                 return [...e.flatMap(t => t.meta ?? []), ...null == r && o.postId?.startsWith("i_") ? [{
                     property: "og:site_name",
@@ -54,7 +54,7 @@ export const __webpack_modules__ = {
                 }] : function(t, e, o) {
                     if (t?.status !== 200 || !e) return [];
                     let r = "rendered" === new URLSearchParams(o).get("ogimg") ? `https://ogimg.chatgpt.com/?postId=${e}` : t.imageUrl,
-                        a = [{
+                        s = [{
                             property: "og:type",
                             content: "article"
                         }, {
@@ -73,29 +73,29 @@ export const __webpack_modules__ = {
                             name: "twitter:image",
                             content: r
                         }];
-                    return null != t.width && null != t.height && a.push({
+                    return null != t.width && null != t.height && s.push({
                         property: "og:image:width",
                         content: String(t.width)
                     }, {
                         property: "og:image:height",
                         content: String(t.height)
-                    }), r.startsWith("https:") && a.push({
+                    }), r.startsWith("https:") && s.push({
                         property: "og:image:secure_url",
                         content: r
-                    }), t.title && a.push({
+                    }), t.title && s.push({
                         property: "og:title",
                         content: t.title
                     }, {
                         name: "twitter:title",
                         content: t.title
-                    }), t.description && a.push({
+                    }), t.description && s.push({
                         property: "og:description",
                         content: t.description
                     }, {
                         name: "twitter:description",
                         content: t.description
-                    }), a
-                }(r, o.postId, a.search), ...o.postId?.startsWith("cx_") ? [{
+                    }), s
+                }(r, o.postId, s.search), ...o.postId?.startsWith("cx_") ? [{
                     name: "description",
                     content: "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
                 }, {
@@ -139,52 +139,52 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as t
-} from "./633146.48b57020d2.js";
-import * as e from "./418851.5b0ade19b1.js";
+} from "./633146.286e08e471.js";
+import * as e from "./418851.b2405a4ff9.js";
 t.C(e);
-import * as o from "./109308.8b09661749.js";
+import * as o from "./109308.c704a27752.js";
 t.C(o);
-import * as r from "./399565.edefe43a76.js";
+import * as r from "./399565.76c7da28d9.js";
 t.C(r);
-import * as a from "./257798.428a6bce48.js";
-t.C(a);
-import * as s from "./447351.34d04099ca.js";
+import * as s from "./257798.da1bc54c05.js";
 t.C(s);
-import * as n from "./617936.dd75fa2a89.js";
+import * as a from "./447351.34d04099ca.js";
+t.C(a);
+import * as n from "./617936.da77c6b618.js";
 t.C(n);
-import * as p from "./807489.1d24fa9988.js";
+import * as p from "./807489.823dbdfb5a.js";
 t.C(p);
-import * as i from "./337882.145f5ca770.js";
+import * as i from "./337882.060a468551.js";
 t.C(i);
-import * as c from "./955979.fad3aa290b.js";
+import * as c from "./955979.5504cdc0ad.js";
 t.C(c);
-import * as m from "./646436.b50a318f52.js";
+import * as m from "./646436.feae78aa0d.js";
 t.C(m);
-import * as d from "./7078.9bac2fcc06.js";
+import * as d from "./7078.6f2aee03ba.js";
 t.C(d);
-import * as g from "./200429.f07d17d37b.js";
+import * as g from "./200429.80eabab50b.js";
 t.C(g);
-import * as f from "./698524.130da41cbb.js";
+import * as f from "./698524.9faf81ab1c.js";
 t.C(f);
-import * as h from "./956483.20ccea0970.js";
+import * as h from "./956483.db483d044c.js";
 t.C(h);
-import * as l from "./87162.4896e26514.js";
+import * as l from "./87162.313d693207.js";
 t.C(l);
-import * as u from "./396705.e5ddd72a06.js";
+import * as u from "./396705.047d6db773.js";
 t.C(u);
-import * as C from "./155568.49e7ad46aa.js";
+import * as C from "./155568.1d9e3b614b.js";
 t.C(C);
-import * as _ from "./731863.3cdbbfa8f8.js";
-t.C(_);
-import * as y from "./767086.3711424c4d.js";
-t.C(y);
-import * as j from "./76629.15f5868e7b.js";
-t.C(j);
-import * as w from "./226913.cf105b979e.js";
-t.C(w);
-import * as b from "./227786.748857de8d.js";
+import * as b from "./731863.5760f3f335.js";
 t.C(b);
-import * as x from "./315523.1b0f5d8d80.js";
+import * as _ from "./767086.ab8a876382.js";
+t.C(_);
+import * as y from "./76629.6fe0bcbf7b.js";
+t.C(y);
+import * as j from "./226913.cf105b979e.js";
+t.C(j);
+import * as w from "./227786.748857de8d.js";
+t.C(w);
+import * as x from "./315523.a301abc788.js";
 t.C(x);
 var v = t(t.s = "rni0"),
     I = v.a,

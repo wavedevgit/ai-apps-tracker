@@ -1,28 +1,28 @@
 export const __rspack_esm_ids = [326277];
 export const __webpack_modules__ = {
-    d33d: (function(e, t, a) {
-        a.d(t, {
+    d33d: (function(e, t, s) {
+        s.d(t, {
             a: () => p
         });
-        var s = a("rEML"),
-            r = a("ABep"),
-            i = a("QosV"),
-            o = a("Q840"),
-            n = a("zd8w"),
-            m = a("oyxz"),
-            c = a("G8V1"),
-            l = a("RNul");
-        a("rHrT");
-        var d = a("eAav"),
-            p = (0, s.kb)(function() {
-                let e, t, a, p, f, u, b, h = (0, i.c)(12),
+        var a = s("rEML"),
+            r = s("ABep"),
+            i = s("QosV"),
+            o = s("Q840"),
+            n = s("zd8w"),
+            m = s("oyxz"),
+            c = s("G8V1"),
+            l = s("RNul");
+        s("rHrT");
+        var d = s("eAav"),
+            p = (0, a.kb)(function() {
+                let e, t, s, p, f, u, b, h = (0, i.c)(12),
                     {
                         locale: j
                     } = (0, o.y)(d.a).value,
                     {
                         fallbackUrl: g,
                         messages: C
-                    } = (0, s.Y)(),
+                    } = (0, a.Y)(),
                     _ = (0, n.useRef)(!1),
                     w = (0, n.useRef)(!1);
                 return h[0] !== g ? (e = () => {
@@ -34,7 +34,7 @@ export const __webpack_modules__ = {
                             w.current = !0
                         };
                     document.addEventListener("visibilitychange", e), window.addEventListener("pagehide", t);
-                    let a = window.setTimeout(() => {
+                    let s = window.setTimeout(() => {
                         w.current || "visible" !== document.visibilityState || window.location.replace(g)
                     }, 1500);
                     if (!_.current) {
@@ -42,15 +42,15 @@ export const __webpack_modules__ = {
                         try {
                             window.location.assign("chatgpt://plus-upsell")
                         } catch {
-                            w.current = !0, window.clearTimeout(a), window.location.replace(g)
+                            w.current = !0, window.clearTimeout(s), window.location.replace(g)
                         }
                     }
                     return () => {
-                        window.clearTimeout(a), document.removeEventListener("visibilitychange", e), window.removeEventListener("pagehide", t)
+                        window.clearTimeout(s), document.removeEventListener("visibilitychange", e), window.removeEventListener("pagehide", t)
                     }
-                }, t = [g], h[0] = g, h[1] = e, h[2] = t) : (e = h[1], t = h[2]), (0, n.useEffect)(e, t), h[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(l.a, {
+                }, t = [g], h[0] = g, h[1] = e, h[2] = t) : (e = h[1], t = h[2]), (0, n.useEffect)(e, t), h[3] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, r.jsx)(l.a, {
                     className: "icon-lg text-secondary"
-                }), h[3] = a) : a = h[3], h[4] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsx)("p", {
+                }), h[3] = s) : s = h[3], h[4] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsx)("p", {
                     className: "text-base",
                     children: (0, r.jsx)(m.a, {
                         id: "chatgpt.memory_mobile_upsell.deeplink_bridge.status",
@@ -66,7 +66,7 @@ export const __webpack_modules__ = {
                         role: "status",
                         "aria-live": "polite",
                         "aria-busy": !0,
-                        children: [a, p, (0, r.jsx)("a", {
+                        children: [s, p, (0, r.jsx)("a", {
                             className: "text-sm text-secondary underline underline-offset-2",
                             href: g,
                             children: f
@@ -83,52 +83,52 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.48b57020d2.js";
+} from "./633146.286e08e471.js";
 import * as t from "./680612.8dcfaab02b.js";
 e.C(t);
-import * as a from "./418851.5b0ade19b1.js";
-e.C(a);
-import * as s from "./109308.8b09661749.js";
+import * as s from "./418851.b2405a4ff9.js";
 e.C(s);
-import * as r from "./399565.edefe43a76.js";
+import * as a from "./109308.c704a27752.js";
+e.C(a);
+import * as r from "./399565.76c7da28d9.js";
 e.C(r);
-import * as i from "./257798.428a6bce48.js";
+import * as i from "./257798.da1bc54c05.js";
 e.C(i);
 import * as o from "./447351.34d04099ca.js";
 e.C(o);
-import * as n from "./617936.dd75fa2a89.js";
+import * as n from "./617936.da77c6b618.js";
 e.C(n);
-import * as m from "./807489.1d24fa9988.js";
+import * as m from "./807489.823dbdfb5a.js";
 e.C(m);
-import * as c from "./337882.145f5ca770.js";
+import * as c from "./337882.060a468551.js";
 e.C(c);
-import * as l from "./955979.fad3aa290b.js";
+import * as l from "./955979.5504cdc0ad.js";
 e.C(l);
-import * as d from "./646436.b50a318f52.js";
+import * as d from "./646436.feae78aa0d.js";
 e.C(d);
-import * as p from "./7078.9bac2fcc06.js";
+import * as p from "./7078.6f2aee03ba.js";
 e.C(p);
-import * as f from "./200429.f07d17d37b.js";
+import * as f from "./200429.80eabab50b.js";
 e.C(f);
-import * as u from "./698524.130da41cbb.js";
+import * as u from "./698524.9faf81ab1c.js";
 e.C(u);
-import * as b from "./956483.20ccea0970.js";
+import * as b from "./956483.db483d044c.js";
 e.C(b);
-import * as h from "./87162.4896e26514.js";
+import * as h from "./87162.313d693207.js";
 e.C(h);
-import * as j from "./396705.e5ddd72a06.js";
+import * as j from "./396705.047d6db773.js";
 e.C(j);
-import * as g from "./155568.49e7ad46aa.js";
+import * as g from "./155568.1d9e3b614b.js";
 e.C(g);
-import * as C from "./731863.3cdbbfa8f8.js";
+import * as C from "./731863.5760f3f335.js";
 e.C(C);
-import * as _ from "./767086.3711424c4d.js";
+import * as _ from "./767086.ab8a876382.js";
 e.C(_);
-import * as w from "./76629.15f5868e7b.js";
+import * as w from "./76629.6fe0bcbf7b.js";
 e.C(w);
 import * as x from "./226913.cf105b979e.js";
 e.C(x);
-import * as y from "./326277.53c18a0749.js";
+import * as y from "./326277.8ab77716a3.js";
 e.C(y);
 var v = e(e.s = "d33d").a;
 export {

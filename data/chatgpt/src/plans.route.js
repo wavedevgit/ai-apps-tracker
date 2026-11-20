@@ -1,26 +1,26 @@
 export const __rspack_esm_ids = [363157];
 export const __webpack_modules__ = {
-    oALv: (function(e, t, a) {
-        a.d(t, {
-            a: () => b,
+    oALv: (function(e, t, r) {
+        r.d(t, {
+            a: () => _,
             b: () => M
         });
-        var r = a("rEML"),
-            C = a("ABep"),
-            n = a("QosV"),
-            o = a("Q840"),
-            s = a("zd8w"),
-            l = a("Cslg"),
-            i = a("h6fL"),
-            c = a("fEjy"),
-            d = a("AfVr"),
-            p = a("DGWL"),
-            m = a("LwKq"),
-            u = a("yXPE"),
-            f = a("Kwur"),
-            L = a("OWtl"),
-            h = a("rvFo"),
-            g = a("LjYy");
+        var C = r("rEML"),
+            a = r("ABep"),
+            n = r("QosV"),
+            o = r("Q840"),
+            s = r("zd8w"),
+            l = r("Cslg"),
+            i = r("h6fL"),
+            c = r("fEjy"),
+            d = r("AfVr"),
+            p = r("DGWL"),
+            m = r("LwKq"),
+            u = r("yXPE"),
+            f = r("Kwur"),
+            L = r("OWtl"),
+            h = r("rvFo"),
+            g = r("LjYy");
         let j = {
                 free: g.a.FREE,
                 go: g.a.GO,
@@ -28,13 +28,13 @@ export const __webpack_modules__ = {
                 prolite: g.a.PROLITE,
                 pro: g.a.PRO
             },
-            x = (0, o.r)(L.a, e => {
+            b = (0, o.r)(L.a, e => {
                 let {
                     get: t
-                } = e, a = t(l.f), r = t(l.j);
+                } = e, r = t(l.f), C = t(l.j);
                 return {
-                    enabled: null != a && null != r && t(l.d) === g.a.FREE,
-                    queryKey: ["pricing-layout", a, r],
+                    enabled: null != r && null != C && t(l.d) === g.a.FREE,
+                    queryKey: ["pricing-layout", r, C],
                     networkMode: "always",
                     retry: !1,
                     refetchOnWindowFocus: !1,
@@ -43,48 +43,48 @@ export const __webpack_modules__ = {
                         let {
                             signal: t
                         } = e;
-                        if (null == a || null == r) return null;
+                        if (null == r || null == C) return null;
                         let {
-                            layout: C
+                            layout: a
                         } = await f.Request.safeGet("/pricing_p13n", {
                             additionalHeaders: {
                                 "x-openai-use-sheep": "1"
                             },
                             expectedIdentity: {
-                                accountId: a,
-                                userId: r
+                                accountId: r,
+                                userId: C
                             },
                             authRecovery: "passive",
                             signal: AbortSignal.any([t, AbortSignal.timeout(1e3)]),
                             retry: !1,
                             cache: "no-store"
                         });
-                        if (C?.version !== 1) return null;
-                        let n = j[C.plan_left],
-                            o = j[C.plan_right];
+                        if (a?.version !== 1) return null;
+                        let n = j[a.plan_left],
+                            o = j[a.plan_right];
                         return {
                             targets: [n, o],
-                            selectedTarget: "left" === C.selected_panel ? n : o
+                            selectedTarget: "left" === a.selected_panel ? n : o
                         }
                     }
                 }
             });
-        var V = a("hZax"),
-            _ = a("AXDI"),
-            b = (0, r.kb)(function() {
+        var x = r("hZax"),
+            V = r("AXDI"),
+            _ = (0, C.kb)(function() {
                 let e, t = (0, n.c)(1);
-                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, C.jsx)(_.a, {
-                    children: (0, C.jsx)(w, {})
+                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(V.a, {
+                    children: (0, a.jsx)(w, {})
                 }), t[0] = e) : e = t[0], e
             });
 
         function w() {
-            let e, t, a, o = (0, n.c)(9),
-                s = (0, r.Z)(),
-                l = (0, r.ab)(),
-                i = (0, V.h)(),
+            let e, t, r, o = (0, n.c)(9),
+                s = (0, C.Z)(),
+                l = (0, C.ab)(),
+                i = (0, x.h)(),
                 c = s.state;
-            o[0] !== l || o[1] !== c?.returnPath ? (e = (0, C.jsx)(d.a, {
+            o[0] !== l || o[1] !== c?.returnPath ? (e = (0, a.jsx)(d.a, {
                 live: !0,
                 onClose: () => void l(c?.returnPath ?? "/", {
                     replace: !0
@@ -93,45 +93,45 @@ export const __webpack_modules__ = {
             let m = e;
             o[3] !== s.search || o[4] !== i ? (t = (0, p.a)(s.search, i), o[3] = s.search, o[4] = i, o[5] = t) : t = o[5];
             let u = t;
-            return o[6] !== u || o[7] !== m ? (a = null == u ? m : (0, C.jsx)(v, {
+            return o[6] !== u || o[7] !== m ? (r = null == u ? m : (0, a.jsx)(v, {
                 excludePricingExperiments: u,
                 loadingContent: m
-            }), o[6] = u, o[7] = m, o[8] = a) : a = o[8], a
+            }), o[6] = u, o[7] = m, o[8] = r) : r = o[8], r
         }
 
         function v(e) {
-            let t, a, r, d, p, f, L = (0, n.c)(19),
+            let t, r, C, d, p, f, L = (0, n.c)(19),
                 {
                     excludePricingExperiments: h,
                     loadingContent: j
                 } = e,
-                _ = (0, V.h)(),
+                V = (0, x.h)(),
                 {
-                    userId: b
+                    userId: _
                 } = (0, i.a)(),
                 w = (0, o.z)(l.d),
                 v = (0, o.z)(l.n),
                 M = !h && "chatgpt" === v.authMethod && !0 === v.hasChatGptToken && null != v.authenticatedAccountId && null != v.authenticatedUserId;
-            L[0] !== w || L[1] !== M || L[2] !== _ ? (t = M && w === g.a.FREE && !_.isLoading ? _.getLayer(c.B, {
+            L[0] !== w || L[1] !== M || L[2] !== V ? (t = M && w === g.a.FREE && !V.isLoading ? V.getLayer(c.B, {
                 disableExposureLog: !0
-            }).get("use_p13n", !1) : null, L[0] = w, L[1] = M, L[2] = _, L[3] = t) : t = L[3];
+            }).get("use_p13n", !1) : null, L[0] = w, L[1] = M, L[2] = V, L[3] = t) : t = L[3];
             let Z = t,
                 y = !0 === Z;
-            L[4] !== y ? (a = {
+            L[4] !== y ? (r = {
                 enabled: y
-            }, L[4] = y, L[5] = a) : a = L[5];
+            }, L[4] = y, L[5] = r) : r = L[5];
             let {
                 data: E,
                 isPending: P
-            } = (0, o.z)(x, a);
-            M && (null == w && v.accountLoading && (null == v.accountId || v.accountId === v.authenticatedAccountId) || w === g.a.FREE && _.isLoading) || !0 === Z && P ? r = "pending" : null != Z && (r = Z ? E ?? null : "control"), L[6] !== h || L[7] !== _ || L[8] !== b ? (d = () => !h && (0, m.a)(_, b), L[6] = h, L[7] = _, L[8] = b, L[9] = d) : d = L[9];
+            } = (0, o.z)(b, r);
+            M && (null == w && v.accountLoading && (null == v.accountId || v.accountId === v.authenticatedAccountId) || w === g.a.FREE && V.isLoading) || !0 === Z && P ? C = "pending" : null != Z && (C = Z ? E ?? null : "control"), L[6] !== h || L[7] !== V || L[8] !== _ ? (d = () => !h && (0, m.a)(V, _), L[6] = h, L[7] = V, L[8] = _, L[9] = d) : d = L[9];
             let [A] = (0, s.useState)(d), k = A && !h, I = k ? u.a : u.b;
-            return L[10] !== I || L[11] !== h || L[12] !== r || L[13] !== j || L[14] !== k ? (p = (0, C.jsx)(I, {
+            return L[10] !== I || L[11] !== h || L[12] !== C || L[13] !== j || L[14] !== k ? (p = (0, a.jsx)(I, {
                 excludePricingExperiments: h,
                 optimizedPricing: k,
                 loadingContent: j,
-                standalonePricingLayout: r
-            }), L[10] = I, L[11] = h, L[12] = r, L[13] = j, L[14] = k, L[15] = p) : p = L[15], L[16] !== j || L[17] !== p ? (f = (0, C.jsx)(s.Suspense, {
+                standalonePricingLayout: C
+            }), L[10] = I, L[11] = h, L[12] = C, L[13] = j, L[14] = k, L[15] = p) : p = L[15], L[16] !== j || L[17] !== p ? (f = (0, a.jsx)(s.Suspense, {
                 fallback: j,
                 children: p
             }), L[16] = j, L[17] = p, L[18] = f) : f = L[18], f
@@ -160,54 +160,54 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.48b57020d2.js";
-import * as t from "./418851.5b0ade19b1.js";
+} from "./633146.286e08e471.js";
+import * as t from "./418851.b2405a4ff9.js";
 e.C(t);
-import * as a from "./109308.8b09661749.js";
-e.C(a);
-import * as r from "./399565.edefe43a76.js";
+import * as r from "./109308.c704a27752.js";
 e.C(r);
-import * as C from "./257798.428a6bce48.js";
+import * as C from "./399565.76c7da28d9.js";
 e.C(C);
+import * as a from "./257798.da1bc54c05.js";
+e.C(a);
 import * as n from "./447351.34d04099ca.js";
 e.C(n);
-import * as o from "./617936.dd75fa2a89.js";
+import * as o from "./617936.da77c6b618.js";
 e.C(o);
-import * as s from "./807489.1d24fa9988.js";
+import * as s from "./807489.823dbdfb5a.js";
 e.C(s);
-import * as l from "./337882.145f5ca770.js";
+import * as l from "./337882.060a468551.js";
 e.C(l);
-import * as i from "./955979.fad3aa290b.js";
+import * as i from "./955979.5504cdc0ad.js";
 e.C(i);
-import * as c from "./646436.b50a318f52.js";
+import * as c from "./646436.feae78aa0d.js";
 e.C(c);
-import * as d from "./7078.9bac2fcc06.js";
+import * as d from "./7078.6f2aee03ba.js";
 e.C(d);
-import * as p from "./200429.f07d17d37b.js";
+import * as p from "./200429.80eabab50b.js";
 e.C(p);
-import * as m from "./698524.130da41cbb.js";
+import * as m from "./698524.9faf81ab1c.js";
 e.C(m);
-import * as u from "./956483.20ccea0970.js";
+import * as u from "./956483.db483d044c.js";
 e.C(u);
-import * as f from "./87162.4896e26514.js";
+import * as f from "./87162.313d693207.js";
 e.C(f);
-import * as L from "./396705.e5ddd72a06.js";
+import * as L from "./396705.047d6db773.js";
 e.C(L);
-import * as h from "./155568.49e7ad46aa.js";
+import * as h from "./155568.1d9e3b614b.js";
 e.C(h);
-import * as g from "./731863.3cdbbfa8f8.js";
+import * as g from "./731863.5760f3f335.js";
 e.C(g);
-import * as j from "./767086.3711424c4d.js";
+import * as j from "./767086.ab8a876382.js";
 e.C(j);
-import * as x from "./76629.15f5868e7b.js";
+import * as b from "./76629.6fe0bcbf7b.js";
+e.C(b);
+import * as x from "./226913.cf105b979e.js";
 e.C(x);
-import * as V from "./226913.cf105b979e.js";
+import * as V from "./363157.67e694f50f.js";
 e.C(V);
-import * as _ from "./363157.378fe84a10.js";
-e.C(_);
-var b = e(e.s = "oALv"),
-    w = b.a,
-    v = b.b;
+var _ = e(e.s = "oALv"),
+    w = _.a,
+    v = _.b;
 export {
     w as
     default, v as meta

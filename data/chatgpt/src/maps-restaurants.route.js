@@ -6,15 +6,15 @@ export const __webpack_modules__ = {
             b: () => n
         });
         var s = r("rEML"),
-            a = r("TfGh"),
-            o = r("EkCf");
-        let i = (0, s.kb)(o.a),
+            o = r("TfGh"),
+            a = r("EkCf");
+        let i = (0, s.kb)(a.a),
             n = e => {
                 let {
                     loaderData: t
                 } = e;
                 if (null == t) return [];
-                let r = `https://chatgpt.com${a.d}`;
+                let r = `https://chatgpt.com${o.d}`;
                 return [{
                     title: t.title
                 }, {
@@ -53,36 +53,36 @@ export const __webpack_modules__ = {
     }),
     nlAI: (function(e, t, r) {
         var s = r("ABep"),
-            a = r("QosV"),
-            o = r("XyTt"),
+            o = r("QosV"),
+            a = r("XyTt"),
             i = r("zd8w"),
             n = r("rEML"),
             p = r("v4LA"),
             m = r("hZax"),
             c = r("AXDI");
         let f = "1258713729",
-            l = (0, p.a)(o.z),
-            d = (0, p.a)(async () => (await Promise.all([r.e(418851), r.e(109308), r.e(399565), r.e(257798), r.e(447351), r.e(617936), r.e(807489), r.e(337882), r.e(955979), r.e(646436), r.e(7078), r.e(200429), r.e(698524), r.e(956483), r.e(87162), r.e(396705), r.e(155568), r.e(731863), r.e(767086), r.e(76629), r.e(226913), r.e(967847), r.e(330351), r.e(212322), r.e(359399)]).then(r.bind(r, "MyHG"))).BusinessAdsCreditPage);
+            l = (0, p.a)(a.z),
+            d = (0, p.a)(async () => (await Promise.all([r.e(418851), r.e(109308), r.e(399565), r.e(257798), r.e(447351), r.e(617936), r.e(807489), r.e(337882), r.e(955979), r.e(646436), r.e(7078), r.e(200429), r.e(698524), r.e(956483), r.e(87162), r.e(396705), r.e(155568), r.e(731863), r.e(767086), r.e(76629), r.e(226913), r.e(967847), r.e(330351), r.e(924825), r.e(359399)]).then(r.bind(r, "MyHG"))).BusinessAdsCreditPage);
 
-        function j(e) {
-            let t, r = (0, a.c)(4),
+        function b(e) {
+            let t, r = (0, o.c)(4),
                 {
-                    link: o
+                    link: a
                 } = e,
                 i = (0, m.f)(f);
             if ((0, m.g)(f)) {
                 let e;
                 return r[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(c.b, {}), r[0] = e) : e = r[0], e
             }
-            return r[1] !== i || r[2] !== o ? (t = i ? (0, s.jsx)(d, {
-                link: o
+            return r[1] !== i || r[2] !== a ? (t = i ? (0, s.jsx)(d, {
+                link: a
             }) : (0, s.jsx)(l, {
-                link: o
-            }), r[1] = i, r[2] = o, r[3] = t) : t = r[3], t
+                link: a
+            }), r[1] = i, r[2] = a, r[3] = t) : t = r[3], t
         }
         r.d(t, {}, {
             a: function(e) {
-                let t, r, o, p = (0, a.c)(7),
+                let t, r, a, p = (0, o.c)(7),
                     {
                         link: m
                     } = e,
@@ -91,23 +91,23 @@ export const __webpack_modules__ = {
                     } = (0, n.Z)();
                 p[0] !== m.isAdsCreditCampaign || p[1] !== f ? (t = m.isAdsCreditCampaign && !new URLSearchParams(f).get("promo_campaign"), p[0] = m.isAdsCreditCampaign, p[1] = f, p[2] = t) : t = p[2];
                 let d = t;
-                return p[3] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, s.jsx)(c.b, {}), p[3] = r) : r = p[3], p[4] !== d || p[5] !== m ? (o = (0, s.jsx)(c.a, {
+                return p[3] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, s.jsx)(c.b, {}), p[3] = r) : r = p[3], p[4] !== d || p[5] !== m ? (a = (0, s.jsx)(c.a, {
                     children: (0, s.jsx)(i.Suspense, {
                         fallback: r,
-                        children: d ? (0, s.jsx)(j, {
+                        children: d ? (0, s.jsx)(b, {
                             link: m
                         }) : (0, s.jsx)(l, {
                             link: m
                         })
                     })
-                }), p[4] = d, p[5] = m, p[6] = o) : o = p[6], o
+                }), p[4] = d, p[5] = m, p[6] = a) : a = p[6], a
             }
         })
     }),
     EkCf: (function(e, t, r) {
         var s = r("ABep"),
-            a = r("QosV"),
-            o = r("rEML"),
+            o = r("QosV"),
+            a = r("rEML"),
             i = r("HnGz"),
             n = r("hC2y"),
             p = r("AXDI"),
@@ -115,39 +115,39 @@ export const __webpack_modules__ = {
             c = r("nlAI");
         r.d(t, {}, {
             a: function(e) {
-                let t, r, f, l, d, j = (0, a.c)(14),
+                let t, r, f, l, d, b = (0, o.c)(14),
                     {
-                        fallback: b
+                        fallback: j
                     } = e,
                     {
                         pathname: C
-                    } = (0, o.Z)();
-                if (j[0] !== b || j[1] !== C) {
+                    } = (0, a.Z)();
+                if (b[0] !== j || b[1] !== C) {
                     l = Symbol.for("react.early_return_sentinel");
                     e: {
                         let e = (0, i.g)(n.c, C);
                         if (null == e) {
                             let e;
-                            j[6] !== C ? (e = (0, m.b)(C), j[6] = C, j[7] = e) : e = j[7];
+                            b[6] !== C ? (e = (0, m.b)(C), b[6] = C, b[7] = e) : e = b[7];
                             let t = e;
                             if (null != t) {
                                 let e;
-                                j[8] !== t ? (e = (0, s.jsx)(c.a, {
+                                b[8] !== t ? (e = (0, s.jsx)(c.a, {
                                     link: t
-                                }), j[8] = t, j[9] = e) : e = j[9], l = e;
+                                }), b[8] = t, b[9] = e) : e = b[9], l = e;
                                 break e
                             }
                         }
                         t = p.a,
-                        r = b,
-                        f = null == e ? (0, s.jsx)(n.d, {}) : (0, o.P)(e)
+                        r = j,
+                        f = null == e ? (0, s.jsx)(n.d, {}) : (0, a.P)(e)
                     }
-                    j[0] = b, j[1] = C, j[2] = t, j[3] = r, j[4] = f, j[5] = l
-                } else t = j[2], r = j[3], f = j[4], l = j[5];
-                return l !== Symbol.for("react.early_return_sentinel") ? l : (j[10] !== t || j[11] !== r || j[12] !== f ? (d = (0, s.jsx)(t, {
+                    b[0] = j, b[1] = C, b[2] = t, b[3] = r, b[4] = f, b[5] = l
+                } else t = b[2], r = b[3], f = b[4], l = b[5];
+                return l !== Symbol.for("react.early_return_sentinel") ? l : (b[10] !== t || b[11] !== r || b[12] !== f ? (d = (0, s.jsx)(t, {
                     fallback: r,
                     children: f
-                }), j[10] = t, j[11] = r, j[12] = f, j[13] = d) : d = j[13], d)
+                }), b[10] = t, b[11] = r, b[12] = f, b[13] = d) : d = b[13], d)
             }
         })
     }),
@@ -159,52 +159,52 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.48b57020d2.js";
-import * as t from "./418851.5b0ade19b1.js";
+} from "./633146.286e08e471.js";
+import * as t from "./418851.b2405a4ff9.js";
 e.C(t);
-import * as r from "./109308.8b09661749.js";
+import * as r from "./109308.c704a27752.js";
 e.C(r);
-import * as s from "./399565.edefe43a76.js";
+import * as s from "./399565.76c7da28d9.js";
 e.C(s);
-import * as a from "./257798.428a6bce48.js";
-e.C(a);
-import * as o from "./447351.34d04099ca.js";
+import * as o from "./257798.da1bc54c05.js";
 e.C(o);
-import * as i from "./617936.dd75fa2a89.js";
+import * as a from "./447351.34d04099ca.js";
+e.C(a);
+import * as i from "./617936.da77c6b618.js";
 e.C(i);
-import * as n from "./807489.1d24fa9988.js";
+import * as n from "./807489.823dbdfb5a.js";
 e.C(n);
-import * as p from "./337882.145f5ca770.js";
+import * as p from "./337882.060a468551.js";
 e.C(p);
-import * as m from "./955979.fad3aa290b.js";
+import * as m from "./955979.5504cdc0ad.js";
 e.C(m);
-import * as c from "./646436.b50a318f52.js";
+import * as c from "./646436.feae78aa0d.js";
 e.C(c);
-import * as f from "./7078.9bac2fcc06.js";
+import * as f from "./7078.6f2aee03ba.js";
 e.C(f);
-import * as l from "./200429.f07d17d37b.js";
+import * as l from "./200429.80eabab50b.js";
 e.C(l);
-import * as d from "./698524.130da41cbb.js";
+import * as d from "./698524.9faf81ab1c.js";
 e.C(d);
-import * as j from "./956483.20ccea0970.js";
-e.C(j);
-import * as b from "./87162.4896e26514.js";
+import * as b from "./956483.db483d044c.js";
 e.C(b);
-import * as C from "./396705.e5ddd72a06.js";
+import * as j from "./87162.313d693207.js";
+e.C(j);
+import * as C from "./396705.047d6db773.js";
 e.C(C);
-import * as _ from "./155568.49e7ad46aa.js";
+import * as _ from "./155568.1d9e3b614b.js";
 e.C(_);
-import * as x from "./731863.3cdbbfa8f8.js";
+import * as x from "./731863.5760f3f335.js";
 e.C(x);
-import * as u from "./767086.3711424c4d.js";
+import * as u from "./767086.ab8a876382.js";
 e.C(u);
-import * as g from "./76629.15f5868e7b.js";
+import * as g from "./76629.6fe0bcbf7b.js";
 e.C(g);
 import * as h from "./226913.cf105b979e.js";
 e.C(h);
 import * as k from "./227786.748857de8d.js";
 e.C(k);
-import * as y from "./900749.d5e80e95b4.js";
+import * as y from "./900749.aeaad1739a.js";
 e.C(y);
 var A = e(e.s = "bJhA"),
     w = A.a,

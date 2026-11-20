@@ -65,24 +65,24 @@ export const __webpack_modules__ = {
                     for (let e of (n.searchParams.set(l.a, "submit"), n.searchParams.set("skip_instant_query", "1"), Object.keys(s))) n.searchParams.set(e, s[e]);
                     return n.toString()
                 }, g[4] = r, g[5] = d, g[6] = p) : (d = g[5], p = g[6]);
-                let V = j && w;
-                g[7] !== d || g[8] !== p || g[9] !== V ? (u = {
+                let b = j && w;
+                g[7] !== d || g[8] !== p || g[9] !== b ? (u = {
                     queryKey: d,
                     queryFn: p,
-                    enabled: V,
+                    enabled: b,
                     staleTime: 1 / 0,
                     gcTime: 0,
                     retry: !1,
                     refetchOnWindowFocus: !1,
                     refetchOnReconnect: !1
-                }, g[7] = d, g[8] = p, g[9] = V, g[10] = u) : u = g[10];
+                }, g[7] = d, g[8] = p, g[9] = b, g[10] = u) : u = g[10];
                 let {
-                    data: b,
+                    data: V,
                     isError: M
                 } = (0, C.a)(u);
-                if (g[11] !== b ? (h = () => {
-                        null != b && window.location.replace(b)
-                    }, L = [b], g[11] = b, g[12] = h, g[13] = L) : (h = g[12], L = g[13]), (0, s.useEffect)(h, L), w && !j) {
+                if (g[11] !== V ? (h = () => {
+                        null != V && window.location.replace(V)
+                    }, L = [V], g[11] = V, g[12] = h, g[13] = L) : (h = g[12], L = g[13]), (0, s.useEffect)(h, L), w && !j) {
                     let e, t, o = `/paid-image-handoff?token=${encodeURIComponent(r)}`;
                     g[14] !== o ? (e = new URLSearchParams({
                         callback_path: o
@@ -140,53 +140,53 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.48b57020d2.js";
-import * as r from "./418851.5b0ade19b1.js";
+} from "./633146.286e08e471.js";
+import * as r from "./418851.b2405a4ff9.js";
 e.C(r);
-import * as t from "./109308.8b09661749.js";
+import * as t from "./109308.c704a27752.js";
 e.C(t);
-import * as a from "./399565.edefe43a76.js";
+import * as a from "./399565.76c7da28d9.js";
 e.C(a);
-import * as o from "./257798.428a6bce48.js";
+import * as o from "./257798.da1bc54c05.js";
 e.C(o);
 import * as C from "./447351.34d04099ca.js";
 e.C(C);
-import * as s from "./617936.dd75fa2a89.js";
+import * as s from "./617936.da77c6b618.js";
 e.C(s);
-import * as n from "./807489.1d24fa9988.js";
+import * as n from "./807489.823dbdfb5a.js";
 e.C(n);
-import * as i from "./337882.145f5ca770.js";
+import * as i from "./337882.060a468551.js";
 e.C(i);
-import * as l from "./955979.fad3aa290b.js";
+import * as l from "./955979.5504cdc0ad.js";
 e.C(l);
-import * as f from "./646436.b50a318f52.js";
+import * as f from "./646436.feae78aa0d.js";
 e.C(f);
-import * as m from "./7078.9bac2fcc06.js";
+import * as m from "./7078.6f2aee03ba.js";
 e.C(m);
-import * as c from "./200429.f07d17d37b.js";
+import * as c from "./200429.80eabab50b.js";
 e.C(c);
-import * as d from "./698524.130da41cbb.js";
+import * as d from "./698524.9faf81ab1c.js";
 e.C(d);
-import * as p from "./956483.20ccea0970.js";
+import * as p from "./956483.db483d044c.js";
 e.C(p);
-import * as u from "./87162.4896e26514.js";
+import * as u from "./87162.313d693207.js";
 e.C(u);
-import * as h from "./396705.e5ddd72a06.js";
+import * as h from "./396705.047d6db773.js";
 e.C(h);
-import * as L from "./155568.49e7ad46aa.js";
+import * as L from "./155568.1d9e3b614b.js";
 e.C(L);
-import * as g from "./731863.3cdbbfa8f8.js";
+import * as g from "./731863.5760f3f335.js";
 e.C(g);
-import * as _ from "./767086.3711424c4d.js";
+import * as _ from "./767086.ab8a876382.js";
 e.C(_);
-import * as w from "./76629.15f5868e7b.js";
+import * as w from "./76629.6fe0bcbf7b.js";
 e.C(w);
 import * as j from "./226913.cf105b979e.js";
 e.C(j);
-import * as V from "./741262.118793c438.js";
-e.C(V);
-var b = e(e.s = "ZjYw").a;
+import * as b from "./741262.8c9052a612.js";
+e.C(b);
+var V = e(e.s = "ZjYw").a;
 export {
-    b as
+    V as
     default
 };
