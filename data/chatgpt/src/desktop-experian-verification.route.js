@@ -1,102 +1,102 @@
 export const __rspack_esm_ids = [839024];
 export const __webpack_modules__ = {
-    QXa0: (function(e, t, r) {
-        r.d(t, {
-            a: () => l
+    QXa0: (function(a, b, c) {
+        c.d(b, {
+            a: () => i
         });
-        var o = r("rEML"),
-            i = r("ABep"),
-            n = r("QosV"),
-            a = r("t5jb");
+        var d = c("rEML"),
+            e = c("ABep"),
+            f = c("QosV"),
+            g = c("t5jb");
 
-        function s(e) {
-            let t = window.experianDesktopVerification;
-            if (null == e || !t) return;
-            let r = new AbortController,
+        function h(a) {
+            let b = window.experianDesktopVerification;
+            if (null == a || !b) return;
+            let c = new AbortController,
                 {
-                    signal: o
-                } = r;
-            return t.takeRequest().then(async r => {
-                if (o.aborted) return;
-                let i = await (0, a.c)({
-                    ...r,
-                    getContainer: () => e,
-                    signal: o
+                    signal: d
+                } = c;
+            return b.takeRequest().then(async c => {
+                if (d.aborted) return;
+                let e = await (0, g.c)({
+                    ...c,
+                    getContainer: () => a,
+                    signal: d
                 });
-                o.aborted || t.finish(i)
+                d.aborted || b.finish(e)
             }).catch(() => {
-                o.aborted || t.finish({
+                d.aborted || b.finish({
                     kind: 2
                 })
-            }), () => r.abort()
+            }), () => c.abort()
         }
-        var l = (0, o.kb)(function() {
-            let e, t = (0, n.c)(1);
-            return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, i.jsx)("div", {
+        var i = (0, d.kb)(function() {
+            let a, b = (0, f.c)(1);
+            return b[0] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, e.jsx)("div", {
                 className: "fixed inset-0 flex [scrollbar-gutter:stable_both-edges] flex-col overflow-auto bg-surface",
-                children: (0, i.jsx)("div", {
-                    ref: s,
+                children: (0, e.jsx)("div", {
+                    ref: h,
                     className: "m-auto w-112 max-w-full shrink-0"
                 })
-            }), t[0] = e) : e = t[0], e
+            }), b[0] = a) : a = b[0], a
         })
     }),
-    t5jb: (function(e, t, r) {
-        r.d(t, {
-            a: () => f,
-            b: () => i,
-            c: () => c
+    t5jb: (function(a, b, c) {
+        c.d(b, {
+            a: () => l,
+            b: () => e,
+            c: () => k
         });
-        let o = new Set(["verified", "failed", "expired", "processing", "requires_action"]);
+        let d = new Set(["verified", "failed", "expired", "processing", "requires_action"]);
 
-        function i(e) {
-            let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : crypto.randomUUID(),
-                r = 0,
-                i = !1;
-            return (s, l, d, c) => {
-                if (!i) {
-                    i = "finish" === s, r += 1;
+        function e(a) {
+            let b = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : crypto.randomUUID(),
+                c = 0,
+                e = !1;
+            return (h, i, j, k) => {
+                if (!e) {
+                    e = "finish" === h, c += 1;
                     try {
-                        let i = n(d) ? d : void 0,
-                            f = n(i?.apiResponse) ? i.apiResponse : void 0,
-                            u = i?.status,
-                            m = f?.status ?? c,
-                            b = i?.verification_id;
-                        e({
-                            "experian.attempt_id": t,
-                            "experian.sequence": r,
-                            "experian.event": s,
-                            "experian.environment": "SANDBOX" === l || "PRODUCTION" === l ? l : "unknown",
-                            "experian.has_details": void 0 !== i,
-                            "experian.status": null == u ? "missing" : "string" == typeof u && o.has(u) ? u : "unrecognized",
-                            "experian.verification_id_state": function(e) {
-                                if (null == e) return "missing";
-                                if ("string" != typeof e) return "invalid";
-                                let t = e.trim();
-                                return "" === t || "null" === t.toLowerCase() ? "invalid" : "valid"
-                            }(b),
-                            "experian.has_verification_id": "string" == typeof b && b.trim().length > 0,
-                            "experian.next_action": a(i?.next_action),
-                            "experian.code": a(f?.code ?? i?.code),
-                            "experian.http_status": "number" == typeof m && Number.isInteger(m) && m >= 100 && m <= 599 ? m : void 0,
-                            "experian.outcome": "finish" !== s ? void 0 : i?.kind === 0 ? "verified" : i?.kind === 1 ? "cancelled" : i?.kind === 2 ? "failed" : void 0
+                        let e = f(j) ? j : void 0,
+                            l = f(e?.apiResponse) ? e.apiResponse : void 0,
+                            m = e?.status,
+                            n = l?.status ?? k,
+                            o = e?.verification_id;
+                        a({
+                            "experian.attempt_id": b,
+                            "experian.sequence": c,
+                            "experian.event": h,
+                            "experian.environment": "SANDBOX" === i || "PRODUCTION" === i ? i : "unknown",
+                            "experian.has_details": void 0 !== e,
+                            "experian.status": null == m ? "missing" : "string" == typeof m && d.has(m) ? m : "unrecognized",
+                            "experian.verification_id_state": function(a) {
+                                if (null == a) return "missing";
+                                if ("string" != typeof a) return "invalid";
+                                let b = a.trim();
+                                return "" === b || "null" === b.toLowerCase() ? "invalid" : "valid"
+                            }(o),
+                            "experian.has_verification_id": "string" == typeof o && o.trim().length > 0,
+                            "experian.next_action": g(e?.next_action),
+                            "experian.code": g(l?.code ?? e?.code),
+                            "experian.http_status": "number" == typeof n && Number.isInteger(n) && n >= 100 && n <= 599 ? n : void 0,
+                            "experian.outcome": "finish" !== h ? void 0 : e?.kind === 0 ? "verified" : e?.kind === 1 ? "cancelled" : e?.kind === 2 ? "failed" : void 0
                         })
                     } catch {}
                 }
             }
         }
 
-        function n(e) {
-            return "object" == typeof e && null != e && !Array.isArray(e)
+        function f(a) {
+            return "object" == typeof a && null != a && !Array.isArray(a)
         }
 
-        function a(e) {
-            return null == e || "" === e ? "missing" : "redacted"
+        function g(a) {
+            return null == a || "" === a ? "missing" : "redacted"
         }
-        let s = "on-error",
-            l = () => r.e(182724).then(r.bind(r, "p0SC"));
+        let h = "on-error",
+            i = () => c.e(182724).then(c.bind(c, "p0SC"));
 
-        function d() {
+        function j() {
             try {
                 window.localStorage.removeItem("connected_solutions_ee_session")
             } catch {
@@ -104,73 +104,73 @@ export const __webpack_modules__ = {
             }
         }
 
-        function c(e) {
+        function k(a) {
             let {
-                appearance: t,
-                getContainer: r,
-                label: o = "Experian identity verification",
-                loadSdk: i = l,
-                theme: n = "light",
-                verificationToken: a,
-                providerEnvironment: c,
-                signal: f,
-                onDiagnosticEvent: u
-            } = e;
-            return new Promise(e => {
-                let l = new AbortController,
-                    m = t => {
-                        l.abort(), u?.("finish", c, {
-                            kind: t.kind,
-                            verification_id: t.verificationId
-                        }), e(t)
+                appearance: b,
+                getContainer: c,
+                label: d = "Experian identity verification",
+                loadSdk: e = i,
+                theme: f = "light",
+                verificationToken: g,
+                providerEnvironment: k,
+                signal: l,
+                onDiagnosticEvent: m
+            } = a;
+            return new Promise(a => {
+                let i = new AbortController,
+                    n = b => {
+                        i.abort(), m?.("finish", k, {
+                            kind: b.kind,
+                            verification_id: b.verificationId
+                        }), a(b)
                     },
-                    b = () => m({
+                    o = () => n({
                         kind: 1
                     }),
-                    p = (e, t, r) => {
-                        e.addEventListener(t, e => {
-                            let o = e instanceof CustomEvent ? e.detail : void 0,
-                                i = "object" == typeof o && null != o && "experienceDetails" in o ? o.experienceDetails : void 0,
-                                n = null == i && t === s && "object" == typeof o && null != o && "data" in o && "object" == typeof o.data && null != o.data && "status" in o.data ? o.data.status : void 0;
-                            u?.(t, c, i, n), r?.(i)
+                    p = (a, b, c) => {
+                        a.addEventListener(b, a => {
+                            let d = a instanceof CustomEvent ? a.detail : void 0,
+                                e = "object" == typeof d && null != d && "experienceDetails" in d ? d.experienceDetails : void 0,
+                                f = null == e && b === h && "object" == typeof d && null != d && "data" in d && "object" == typeof d.data && null != d.data && "status" in d.data ? d.data.status : void 0;
+                            m?.(b, k, e, f), c?.(e)
                         }, {
-                            signal: l.signal
+                            signal: i.signal
                         })
                     };
-                f.aborted ? b() : (f.addEventListener("abort", b, {
+                l.aborted ? o() : (l.addEventListener("abort", o, {
                     once: !0,
-                    signal: l.signal
+                    signal: i.signal
                 }), (async () => {
-                    u?.("start", void 0);
+                    m?.("start", void 0);
                     let {
-                        registerIdentityVerification: e
-                    } = await i();
-                    e(), l.signal.aborted || (u?.("mount", c), (() => {
-                        let e, i, f = r();
-                        if (null === f) return b();
-                        let u = document.createElement("identity-verification");
-                        u.style.colorScheme = "normal", u.setAttribute("appearance", JSON.stringify((e = t?.identityVerification, {
-                            ...void 0 === (i = e?.[n]) ? {} : {
+                        registerIdentityVerification: a
+                    } = await e();
+                    a(), i.signal.aborted || (m?.("mount", k), (() => {
+                        let a, e, l = c();
+                        if (null === l) return o();
+                        let m = document.createElement("identity-verification");
+                        m.style.colorScheme = "normal", m.setAttribute("appearance", JSON.stringify((a = b?.identityVerification, {
+                            ...void 0 === (e = a?.[f]) ? {} : {
                                 theme: {
-                                    header_text_color: i.headingText,
-                                    panel_background_color: i.surface,
-                                    primary_color: i.buttonEnabledBg,
-                                    widget_background_color: i.sheetBg,
+                                    header_text_color: e.headingText,
+                                    panel_background_color: e.surface,
+                                    primary_color: e.buttonEnabledBg,
+                                    widget_background_color: e.sheetBg,
                                     body1: {
-                                        color: i.mutedText
+                                        color: e.mutedText
                                     },
                                     body3: {
-                                        color: i.mutedText
+                                        color: e.mutedText
                                     },
                                     primary_button: {
-                                        border_color: i.buttonEnabledBg,
-                                        button_disabled_border_color: i.buttonDisabledBg,
-                                        button_focused_border_color: i.buttonEnabledBg,
-                                        button_focused_outline: i.focusBorder,
-                                        button_hover_border_color: i.buttonEnabledHoverBg,
-                                        button_pressed_border_color: i.buttonEnabledBg
+                                        border_color: e.buttonEnabledBg,
+                                        button_disabled_border_color: e.buttonDisabledBg,
+                                        button_focused_border_color: e.buttonEnabledBg,
+                                        button_focused_outline: e.focusBorder,
+                                        button_hover_border_color: e.buttonEnabledHoverBg,
+                                        button_pressed_border_color: e.buttonEnabledBg
                                     },
-                                    widget_border_color: i.faintText,
+                                    widget_border_color: e.faintText,
                                     widget_border_weight: "0px"
                                 }
                             },
@@ -180,141 +180,141 @@ export const __webpack_modules__ = {
                                         show_disclosure: !0
                                     },
                                     styles: {
-                                        color_scheme: n,
-                                        light: e?.light,
-                                        dark: e?.dark
+                                        color_scheme: f,
+                                        light: a?.light,
+                                        dark: a?.dark
                                     }
                                 }
                             }
-                        }))), u.setAttribute("aria-label", o), u.setAttribute("environment", c), u.setAttribute("role", "region"), u.setAttribute("token", a), p(u, "on-load"), p(u, "on-ready"), p(u, "on-status-change"), p(u, "on-verification-complete", e => {
-                            let t, r;
-                            return m((t = !("object" != typeof e || null == e || Array.isArray(e)) && ["status", "verification_id"].every(t => {
-                                let r = Reflect.get(e, t);
-                                return null == r || "string" == typeof r
-                            }) ? e : void 0, r = t?.verification_id, t?.status === "verified" && r ? {
+                        }))), m.setAttribute("aria-label", d), m.setAttribute("environment", k), m.setAttribute("role", "region"), m.setAttribute("token", g), p(m, "on-load"), p(m, "on-ready"), p(m, "on-status-change"), p(m, "on-verification-complete", a => {
+                            let b, c;
+                            return n((b = !("object" != typeof a || null == a || Array.isArray(a)) && ["status", "verification_id"].every(b => {
+                                let c = Reflect.get(a, b);
+                                return null == c || "string" == typeof c
+                            }) ? a : void 0, c = b?.verification_id, b?.status === "verified" && c ? {
                                 kind: 0,
-                                verificationId: r
+                                verificationId: c
                             } : {
                                 kind: 2,
-                                verificationId: t?.status === "failed" || t?.status === "expired" ? r ?? void 0 : void 0
+                                verificationId: b?.status === "failed" || b?.status === "expired" ? c ?? void 0 : void 0
                             }))
-                        }), p(u, s, () => m({
+                        }), p(m, h, () => n({
                             kind: 2
-                        })), p(u, "on-close", b);
-                        let _ = new MutationObserver(() => {
-                                let e = u.querySelector("iframe");
-                                e && (e.setAttribute("referrerpolicy", "origin"), _.disconnect())
+                        })), p(m, "on-close", o);
+                        let q = new MutationObserver(() => {
+                                let a = m.querySelector("iframe");
+                                a && (a.setAttribute("referrerpolicy", "origin"), q.disconnect())
                             }),
-                            v = () => {
-                                _.disconnect();
-                                if (u.removeAttribute("token"), "formElement" in u && u.formElement instanceof HTMLFormElement)
-                                    for (let e of u.formElement.querySelectorAll('input[name="token"]')) e.value = "", e.removeAttribute("value");
-                                "context" in u && "object" == typeof u.context && null != u.context && Reflect.deleteProperty(u.context, "authToken"), u.removeAttribute("environment"), u.remove()
+                            r = () => {
+                                q.disconnect();
+                                if (m.removeAttribute("token"), "formElement" in m && m.formElement instanceof HTMLFormElement)
+                                    for (let a of m.formElement.querySelectorAll('input[name="token"]')) a.value = "", a.removeAttribute("value");
+                                "context" in m && "object" == typeof m.context && null != m.context && Reflect.deleteProperty(m.context, "authToken"), m.removeAttribute("environment"), m.remove()
                             };
-                        if (l.signal.aborted) return v();
-                        l.signal.addEventListener("abort", v, {
+                        if (i.signal.aborted) return r();
+                        i.signal.addEventListener("abort", r, {
                             once: !0
-                        }), _.observe(u, {
+                        }), q.observe(m, {
                             childList: !0,
                             subtree: !0
-                        }), d();
+                        }), j();
                         try {
-                            f.append(u)
+                            l.append(m)
                         } finally {
-                            d()
+                            j()
                         }
                     })())
-                })().catch(e => {
-                    throw u?.("start_failed", c), e
-                }).catch(() => m({
+                })().catch(a => {
+                    throw m?.("start_failed", k), a
+                }).catch(() => n({
                     kind: 2
                 })))
             })
         }
 
-        function f(e) {
-            let t, {
-                runVerification: r = c,
-                getContainer: o,
-                getTheme: i,
-                label: n,
-                onCompleted: a
-            } = e;
+        function l(a) {
+            let b, {
+                runVerification: c = k,
+                getContainer: d,
+                getTheme: e,
+                label: f,
+                onCompleted: g
+            } = a;
             return {
-                async runCreditVerification(e, a, s) {
-                    if (null != t || null == o()) return {
+                async runCreditVerification(a, g, h) {
+                    if (null != b || null == d()) return {
                         kind: 2
                     };
-                    t = new AbortController;
+                    b = new AbortController;
                     try {
-                        return await r({
-                            appearance: s,
-                            getContainer: o,
-                            label: n,
-                            theme: i(),
-                            verificationToken: a,
-                            providerEnvironment: e.environment,
-                            signal: t.signal
+                        return await c({
+                            appearance: h,
+                            getContainer: d,
+                            label: f,
+                            theme: e(),
+                            verificationToken: g,
+                            providerEnvironment: a.environment,
+                            signal: b.signal
                         })
                     } finally {
-                        t = void 0
+                        b = void 0
                     }
                 },
-                closeCreditVerification: () => t?.abort(),
-                onCreditVerificationCompleted: a
+                closeCreditVerification: () => b?.abort(),
+                onCreditVerificationCompleted: g
             }
         }
     })
 };
 import {
-    __webpack_require__ as e
-} from "./633146.286e08e471.js";
-import * as t from "./418851.b2405a4ff9.js";
-e.C(t);
-import * as r from "./109308.c704a27752.js";
-e.C(r);
-import * as o from "./399565.76c7da28d9.js";
-e.C(o);
-import * as i from "./257798.da1bc54c05.js";
-e.C(i);
-import * as n from "./447351.34d04099ca.js";
-e.C(n);
-import * as a from "./617936.da77c6b618.js";
-e.C(a);
-import * as s from "./807489.823dbdfb5a.js";
-e.C(s);
-import * as l from "./337882.060a468551.js";
-e.C(l);
-import * as d from "./955979.5504cdc0ad.js";
-e.C(d);
-import * as c from "./646436.feae78aa0d.js";
-e.C(c);
-import * as f from "./7078.6f2aee03ba.js";
-e.C(f);
-import * as u from "./200429.80eabab50b.js";
-e.C(u);
-import * as m from "./698524.9faf81ab1c.js";
-e.C(m);
-import * as b from "./956483.db483d044c.js";
-e.C(b);
-import * as p from "./87162.313d693207.js";
-e.C(p);
-import * as _ from "./396705.047d6db773.js";
-e.C(_);
-import * as v from "./155568.1d9e3b614b.js";
-e.C(v);
-import * as g from "./731863.5760f3f335.js";
-e.C(g);
-import * as y from "./767086.ab8a876382.js";
-e.C(y);
-import * as x from "./76629.6fe0bcbf7b.js";
-e.C(x);
-import * as h from "./226913.cf105b979e.js";
-e.C(h);
-import * as C from "./839024.1bde54a597.js";
-e.C(C);
-var j = e(e.s = "QXa0").a;
+    __webpack_require__ as a
+} from "./633146.511711c8b9.js";
+import * as b from "./418851.d52a1ffc2f.js";
+a.C(b);
+import * as c from "./109308.4d55635a3c.js";
+a.C(c);
+import * as d from "./399565.700e278f2d.js";
+a.C(d);
+import * as e from "./257798.bf743d3ac4.js";
+a.C(e);
+import * as f from "./447351.05632d2214.js";
+a.C(f);
+import * as g from "./617936.a1bdaefa17.js";
+a.C(g);
+import * as h from "./807489.2515299139.js";
+a.C(h);
+import * as i from "./337882.b7027c58e4.js";
+a.C(i);
+import * as j from "./955979.17a59d5e45.js";
+a.C(j);
+import * as k from "./646436.71dd39a771.js";
+a.C(k);
+import * as l from "./7078.bd9e0604da.js";
+a.C(l);
+import * as m from "./200429.7cb44b876c.js";
+a.C(m);
+import * as n from "./698524.76d0d9fd5b.js";
+a.C(n);
+import * as o from "./956483.f7260d7dd1.js";
+a.C(o);
+import * as p from "./87162.27c50a9bde.js";
+a.C(p);
+import * as q from "./396705.2318c018fd.js";
+a.C(q);
+import * as r from "./155568.d41a363926.js";
+a.C(r);
+import * as s from "./731863.ace382bf58.js";
+a.C(s);
+import * as t from "./767086.390bf6c64e.js";
+a.C(t);
+import * as u from "./76629.a6013c50b6.js";
+a.C(u);
+import * as v from "./226913.9dca92fd99.js";
+a.C(v);
+import * as w from "./839024.f6c4d29c7d.js";
+a.C(w);
+var x = a(a.s = "QXa0").a;
 export {
-    j as
+    x as
     default
 };

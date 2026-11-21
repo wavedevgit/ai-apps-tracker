@@ -1,92 +1,92 @@
 export const __rspack_esm_ids = [517355];
 export const __webpack_modules__ = {
-    JcDD: (function(t, e, n) {
-        n.d(e, {
-            a: () => o
+    JcDD: (function(a, b, c) {
+        c.d(b, {
+            a: () => d
         });
-        let o = t => {
+        let d = a => {
             let {
-                loaderData: e
-            } = t, n = [{
+                loaderData: b
+            } = a, c = [{
                 title: "ChatGPT Maps"
             }, {
                 name: "robots",
                 content: "noindex, nofollow, noarchive"
             }];
-            if (e?.place == null) return n;
+            if (b?.place == null) return c;
             let {
-                place: o,
-                canonicalUrl: r,
-                image: a,
-                richLinkRendersEnabled: i
-            } = e, p = `${o.name} | ChatGPT Maps`, c = i ? o.name : p;
-            return n[0] = {
-                title: p
-            }, n.push({
+                place: d,
+                canonicalUrl: e,
+                image: f,
+                richLinkRendersEnabled: g
+            } = b, h = `${d.name} | ChatGPT Maps`, i = g ? d.name : h;
+            return c[0] = {
+                title: h
+            }, c.push({
                 property: "og:type",
                 content: "website"
-            }, ...i ? [{
+            }, ...g ? [{
                 property: "og:site_name",
                 content: "ChatGPT"
             }] : [], {
                 property: "og:title",
-                content: c
+                content: i
             }, {
                 property: "og:url",
-                content: r
+                content: e
             }, {
                 tagName: "link",
                 rel: "canonical",
-                href: r
+                href: e
             }, {
                 name: "twitter:title",
-                content: c
-            }), o.description && n.push({
+                content: i
+            }), d.description && c.push({
                 name: "description",
-                content: o.description
+                content: d.description
             }, {
                 property: "og:description",
-                content: o.description
+                content: d.description
             }, {
                 name: "twitter:description",
-                content: o.description
-            }), null != a && n.push({
+                content: d.description
+            }), null != f && c.push({
                 property: "og:image",
-                content: a.url
-            }, ...a.url.startsWith("https://") ? [{
+                content: f.url
+            }, ...f.url.startsWith("https://") ? [{
                 property: "og:image:secure_url",
-                content: a.url
-            }] : [], ...i ? [{
+                content: f.url
+            }] : [], ...g ? [{
                 property: "og:image:type",
                 content: "image/png"
-            }] : [], ...null != a.width && null != a.height ? [{
+            }] : [], ...null != f.width && null != f.height ? [{
                 property: "og:image:width",
-                content: a.width
+                content: f.width
             }, {
                 property: "og:image:height",
-                content: a.height
+                content: f.height
             }] : [], {
                 property: "og:image:alt",
-                content: a.alt
+                content: f.alt
             }, {
                 name: "twitter:card",
                 content: "summary_large_image"
             }, {
                 name: "twitter:image",
-                content: a.url
+                content: f.url
             }, {
                 name: "twitter:image:alt",
-                content: a.alt
-            }), n
+                content: f.alt
+            }), c
         }
     })
 };
 import {
-    __webpack_require__ as t
-} from "./633146.286e08e471.js";
-import * as e from "./517355.f6ad61a893.js";
-t.C(e);
-var n = t(t.s = "JcDD").a;
+    __webpack_require__ as a
+} from "./633146.511711c8b9.js";
+import * as b from "./517355.a505e90ea7.js";
+a.C(b);
+var c = a(a.s = "JcDD").a;
 export {
-    n as meta
+    c as meta
 };

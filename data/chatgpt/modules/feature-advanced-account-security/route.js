@@ -1,14 +1,14 @@
 export const __rspack_esm_ids = [392067];
 export const __webpack_modules__ = {
-    eses: (function(e, t, i) {
-        i.d(t, {
-            a: () => v,
-            b: () => x
+    eses: (function(a, b, c) {
+        c.d(b, {
+            a: () => t,
+            b: () => s
         });
-        var a = i("rEML"),
-            n = i("ABep"),
-            r = i("QosV");
-        let s = (0, (i("Qgfj")).f)({
+        var d = c("rEML"),
+            e = c("ABep"),
+            f = c("QosV");
+        let g = (0, (c("Qgfj")).f)({
             pageTitle: {
                 id: "advancedAccountSecurity.pageTitle",
                 defaultMessage: "Advanced Account Security - OpenAI"
@@ -31,7 +31,7 @@ export const __webpack_modules__ = {
             },
             signOutNotice: {
                 id: "advancedAccountSecurity.signOutNotice.v2",
-                defaultMessage: "Enrolling signs you out everywhere and disconnects your paired Codex devices. You’ll need to sign in and pair them again."
+                defaultMessage: "Enrolling signs you out everywhere and disconnects your paired Codex devices. You\u2019ll need to sign in and pair them again."
             },
             whyChooseTitle: {
                 id: "advancedAccountSecurity.whyChooseTitle.v3",
@@ -39,7 +39,7 @@ export const __webpack_modules__ = {
             },
             whyChooseDescription: {
                 id: "advancedAccountSecurity.whyChooseDescription.v3",
-                defaultMessage: "Advanced Account Security adds stronger defenses to stop attackers from signing in—even if someone has your password."
+                defaultMessage: "Advanced Account Security adds stronger defenses to stop attackers from signing in\u2014even if someone has your password."
             },
             heroAlt: {
                 id: "advancedAccountSecurity.heroAlt.v3",
@@ -51,7 +51,7 @@ export const __webpack_modules__ = {
             },
             whoDescription: {
                 id: "advancedAccountSecurity.whoDescription.v3",
-                defaultMessage: "For anyone who wants elevated protection against account takeover—including targeted attacks like phishing and stolen passwords. Stronger sign-in and recovery checks help reduce takeover risk, with extra verification when it matters."
+                defaultMessage: "For anyone who wants elevated protection against account takeover\u2014including targeted attacks like phishing and stolen passwords. Stronger sign-in and recovery checks help reduce takeover risk, with extra verification when it matters."
             },
             featuresTitle: {
                 id: "advancedAccountSecurity.featuresTitle.v2",
@@ -79,7 +79,7 @@ export const __webpack_modules__ = {
             },
             trainingDescription: {
                 id: "advancedAccountSecurity.trainingDescription.v4",
-                defaultMessage: "Conversations aren’t used to train OpenAI models while Advanced Account Security is enabled."
+                defaultMessage: "Conversations aren\u2019t used to train OpenAI models while Advanced Account Security is enabled."
             },
             shorterSessionsTitle: {
                 id: "advancedAccountSecurity.shorterSessionsTitle.v2",
@@ -111,7 +111,7 @@ export const __webpack_modules__ = {
             },
             yubikeyDescription: {
                 id: "advancedAccountSecurity.yubikeyDescription.v2",
-                defaultMessage: "A physical security key adds an extra layer of defense and helps protect your account even if your password is exposed. You can use any compatible FIDO® security key. During setup, you’ll also have the option to purchase a set of two best in class security keys at preferred pricing through our partnership with Yubico."
+                defaultMessage: "A physical security key adds an extra layer of defense and helps protect your account even if your password is exposed. You can use any compatible FIDO\xae security key. During setup, you\u2019ll also have the option to purchase a set of two best in class security keys at preferred pricing through our partnership with Yubico."
             },
             readyTitle: {
                 id: "advancedAccountSecurity.readyTitle.v2",
@@ -147,7 +147,7 @@ export const __webpack_modules__ = {
             },
             warningDescription: {
                 id: "advancedAccountSecurity.warningDescription.v4",
-                defaultMessage: "Turning on Advanced Account Security signs you out everywhere and disconnects your paired Codex devices. You’ll need to pair those devices again. Recovery options are more limited, which can make account recovery harder."
+                defaultMessage: "Turning on Advanced Account Security signs you out everywhere and disconnects your paired Codex devices. You\u2019ll need to pair those devices again. Recovery options are more limited, which can make account recovery harder."
             },
             terms: {
                 id: "advancedAccountSecurity.terms",
@@ -159,414 +159,414 @@ export const __webpack_modules__ = {
             },
             footerSeparator: {
                 id: "advancedAccountSecurity.footerSeparator.v2",
-                defaultMessage: "·"
+                defaultMessage: "\xb7"
             }
         });
-        var o = i("zd8w"),
-            c = i("Wf1j"),
-            l = i("oyxz"),
-            d = i("Sm6l"),
-            u = i("bf6R"),
-            p = i("mGT8");
-        let h = new Set(["web_homepage_beacon", "ios_app_homepage_beacon", "ios_app_settings", "android_app_homepage_beacon", "web_cyber_home"]);
+        var h = c("zd8w"),
+            i = c("Wf1j"),
+            j = c("oyxz"),
+            k = c("Sm6l"),
+            l = c("bf6R"),
+            m = c("mGT8");
+        let n = new Set(["web_homepage_beacon", "ios_app_homepage_beacon", "ios_app_settings", "android_app_homepage_beacon", "web_cyber_home"]);
 
-        function m() {
-            let e, t, d, m, x, v, b, j, S, w, A, _, T, k, C, D, M, N, P, E, I, L, G, q, H, O, R, B, U, z, Y, W, X, F, Q, V, Z, J, K, $, ee, et, ei = (0, r.c)(73),
-                ea = (0, c.a)(),
-                [en] = (0, a.jb)();
-            ei[0] !== en ? (e = en.get("originator"), ei[0] = en, ei[1] = e) : e = ei[1];
-            let er = e,
-                es = "web_cyber_home" === er,
-                eo = (0, a.X)("/"),
-                ec = (0, a.X)("/settings/security"),
-                el = (0, a.X)("/cyber"),
-                ed = es ? el : eo,
-                eu = (0, o.useRef)(null),
-                [ep, eh] = (0, o.useState)("idle");
-            ei[2] === Symbol.for("react.memo_cache_sentinel") ? (t = () => {
-                let e = function() {
-                        eu.current?.abort(), eu.current = null
+        function o() {
+            let a, b, k, o, s, t, u, v, w, x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, $, _, aa, ab, ac = (0, f.c)(73),
+                ad = (0, i.a)(),
+                [ae] = (0, d.jb)();
+            ac[0] !== ae ? (a = ae.get("originator"), ac[0] = ae, ac[1] = a) : a = ac[1];
+            let af = a,
+                ag = "web_cyber_home" === af,
+                ah = (0, d.X)("/"),
+                ai = (0, d.X)("/settings/security"),
+                aj = (0, d.X)("/cyber"),
+                ak = ag ? aj : ah,
+                al = (0, h.useRef)(null),
+                [am, an] = (0, h.useState)("idle");
+            ac[2] === Symbol.for("react.memo_cache_sentinel") ? (b = () => {
+                let a = function() {
+                        al.current?.abort(), al.current = null
                     },
-                    t = function(e) {
-                        e.persisted && eh("idle")
+                    b = function(a) {
+                        a.persisted && an("idle")
                     };
-                return window.addEventListener("pagehide", e), window.addEventListener("pageshow", t), () => {
-                    e(), window.removeEventListener("pagehide", e), window.removeEventListener("pageshow", t)
+                return window.addEventListener("pagehide", a), window.addEventListener("pageshow", b), () => {
+                    a(), window.removeEventListener("pagehide", a), window.removeEventListener("pageshow", b)
                 }
-            }, d = [], ei[2] = t, ei[3] = d) : (t = ei[2], d = ei[3]), (0, o.useEffect)(t, d), ei[4] !== el || ei[5] !== es || ei[6] !== er || ei[7] !== ec ? (m = async function() {
-                if (null != eu.current) return;
-                let e = new AbortController;
-                eu.current = e, eh("pending");
+            }, k = [], ac[2] = b, ac[3] = k) : (b = ac[2], k = ac[3]), (0, h.useEffect)(b, k), ac[4] !== aj || ac[5] !== ag || ac[6] !== af || ac[7] !== ai ? (o = async function() {
+                if (null != al.current) return;
+                let a = new AbortController;
+                al.current = a, an("pending");
                 try {
-                    let t = await async function(e, t, a) {
+                    let b = await async function(a, b, d) {
                         let [{
-                            getClientBootstrap: n
+                            getClientBootstrap: e
                         }, {
-                            signInToBrowserSession: r
-                        }] = await Promise.all([Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629)]).then(i.bind(i, "M8lA")), Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(226913)]).then(i.bind(i, "jEww"))]);
-                        if (a.aborted) return {
+                            signInToBrowserSession: f
+                        }] = await Promise.all([Promise.all([c.e(418851), c.e(109308), c.e(399565), c.e(257798), c.e(447351), c.e(617936), c.e(807489), c.e(337882), c.e(955979), c.e(646436), c.e(7078), c.e(200429), c.e(698524), c.e(956483), c.e(87162), c.e(396705), c.e(155568), c.e(731863), c.e(767086), c.e(76629)]).then(c.bind(c, "M8lA")), Promise.all([c.e(418851), c.e(109308), c.e(399565), c.e(257798), c.e(447351), c.e(617936), c.e(807489), c.e(337882), c.e(955979), c.e(646436), c.e(7078), c.e(200429), c.e(698524), c.e(956483), c.e(87162), c.e(396705), c.e(155568), c.e(731863), c.e(767086), c.e(76629), c.e(226913)]).then(c.bind(c, "jEww"))]);
+                        if (d.aborted) return {
                             ok: !1
                         };
-                        let s = {
-                            ...n().auth.reauthenticationParams,
+                        let g = {
+                            ...e().auth.reauthenticationParams,
                             post_login_setup_advanced_account_security: "true"
                         };
-                        return r(e, null != t && h.has(t) ? {
-                            ...s,
-                            originator: t
-                        } : s, a)
-                    }(new URL(es ? el : ec, window.location.origin).toString(), er, e.signal);
-                    if (e.signal.aborted) return;
-                    if (t.ok) return void window.location.assign(t.url)
+                        return f(a, null != b && n.has(b) ? {
+                            ...g,
+                            originator: b
+                        } : g, d)
+                    }(new URL(ag ? aj : ai, window.location.origin).toString(), af, a.signal);
+                    if (a.signal.aborted) return;
+                    if (b.ok) return void window.location.assign(b.url)
                 } catch {}
-                e.signal.aborted || (eu.current = null, eh("error"))
-            }, ei[4] = el, ei[5] = es, ei[6] = er, ei[7] = ec, ei[8] = m) : m = ei[8];
-            let em = m;
-            ei[9] !== ep ? (x = "error" === ep ? (0, n.jsx)(l.a, {
+                a.signal.aborted || (al.current = null, an("error"))
+            }, ac[4] = aj, ac[5] = ag, ac[6] = af, ac[7] = ai, ac[8] = o) : o = ac[8];
+            let ao = o;
+            ac[9] !== am ? (s = "error" === am ? (0, e.jsx)(j.a, {
                 id: "advancedAccountSecurity.enrollmentError",
-                defaultMessage: "We couldn’t start enrollment. Please try again."
-            }) : null, ei[9] = ep, ei[10] = x) : x = ei[10];
-            let ef = x;
-            ei[11] !== ea || ei[12] !== es ? (v = ea.formatMessage(es ? s.backToCyber : s.topLeftChatgptHome), ei[11] = ea, ei[12] = es, ei[13] = v) : v = ei[13], ei[14] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, n.jsx)(p.a, {
+                defaultMessage: "We couldn\u2019t start enrollment. Please try again."
+            }) : null, ac[9] = am, ac[10] = s) : s = ac[10];
+            let ap = s;
+            ac[11] !== ad || ac[12] !== ag ? (t = ad.formatMessage(ag ? g.backToCyber : g.topLeftChatgptHome), ac[11] = ad, ac[12] = ag, ac[13] = t) : t = ac[13], ac[14] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, e.jsx)(m.a, {
                 className: "h-5 w-auto",
                 "aria-hidden": "true"
-            }), ei[14] = b) : b = ei[14], ei[15] !== ed || ei[16] !== v ? (j = (0, n.jsx)("header", {
+            }), ac[14] = u) : u = ac[14], ac[15] !== ak || ac[16] !== t ? (v = (0, e.jsx)("header", {
                 className: "flex p-4",
-                children: (0, n.jsx)("a", {
+                children: (0, e.jsx)("a", {
                     className: "flex min-h-11 items-center p-2",
-                    href: ed,
-                    "aria-label": v,
-                    children: b
+                    href: ak,
+                    "aria-label": t,
+                    children: u
                 })
-            }), ei[15] = ed, ei[16] = v, ei[17] = j) : j = ei[17], ei[18] === Symbol.for("react.memo_cache_sentinel") ? (S = (0, n.jsx)("h1", {
+            }), ac[15] = ak, ac[16] = t, ac[17] = v) : v = ac[17], ac[18] === Symbol.for("react.memo_cache_sentinel") ? (w = (0, e.jsx)("h1", {
                 className: "text-4xl font-normal",
-                children: (0, n.jsx)(l.a, {
-                    ...s.title
+                children: (0, e.jsx)(j.a, {
+                    ...g.title
                 })
-            }), ei[18] = S) : S = ei[18], ei[19] === Symbol.for("react.memo_cache_sentinel") ? (w = (0, n.jsxs)("div", {
+            }), ac[18] = w) : w = ac[18], ac[19] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, e.jsxs)("div", {
                 className: "flex flex-col gap-4",
-                children: [S, (0, n.jsx)("p", {
+                children: [w, (0, e.jsx)("p", {
                     className: "text-base leading-relaxed",
-                    children: (0, n.jsx)(l.a, {
-                        ...s.subtitle
+                    children: (0, e.jsx)(j.a, {
+                        ...g.subtitle
                     })
                 })]
-            }), ei[19] = w) : w = ei[19];
-            let eg = "pending" === ep;
-            ei[20] === Symbol.for("react.memo_cache_sentinel") ? (A = (0, n.jsx)(l.a, {
-                ...s.topCta
-            }), ei[20] = A) : A = ei[20], ei[21] !== em || ei[22] !== eg ? (_ = (0, n.jsx)(f, {
-                isPending: eg,
-                onEnroll: em,
-                children: A
-            }), ei[21] = em, ei[22] = eg, ei[23] = _) : _ = ei[23], ei[24] !== ef ? (T = null != ef ? (0, n.jsx)("p", {
+            }), ac[19] = x) : x = ac[19];
+            let aq = "pending" === am;
+            ac[20] === Symbol.for("react.memo_cache_sentinel") ? (y = (0, e.jsx)(j.a, {
+                ...g.topCta
+            }), ac[20] = y) : y = ac[20], ac[21] !== ao || ac[22] !== aq ? (z = (0, e.jsx)(p, {
+                isPending: aq,
+                onEnroll: ao,
+                children: y
+            }), ac[21] = ao, ac[22] = aq, ac[23] = z) : z = ac[23], ac[24] !== ap ? (A = null != ap ? (0, e.jsx)("p", {
                 role: "alert",
                 className: "text-sm text-danger",
-                children: ef
-            }) : null, ei[24] = ef, ei[25] = T) : T = ei[25], ei[26] !== _ || ei[27] !== T ? (k = (0, n.jsxs)("section", {
+                children: ap
+            }) : null, ac[24] = ap, ac[25] = A) : A = ac[25], ac[26] !== z || ac[27] !== A ? (B = (0, e.jsxs)("section", {
                 className: "flex w-full max-w-2xl flex-col items-center gap-10 text-center",
-                children: [w, _, T]
-            }), ei[26] = _, ei[27] = T, ei[28] = k) : k = ei[28], ei[29] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, n.jsx)(g, {
-                title: (0, n.jsx)(l.a, {
-                    ...s.whyChooseTitle
+                children: [x, z, A]
+            }), ac[26] = z, ac[27] = A, ac[28] = B) : B = ac[28], ac[29] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, e.jsx)(q, {
+                title: (0, e.jsx)(j.a, {
+                    ...g.whyChooseTitle
                 }),
-                children: (0, n.jsx)(l.a, {
-                    ...s.whyChooseDescription
+                children: (0, e.jsx)(j.a, {
+                    ...g.whyChooseDescription
                 })
-            }), ei[29] = C) : C = ei[29], ei[30] !== ea ? (D = ea.formatMessage(s.heroAlt), ei[30] = ea, ei[31] = D) : D = ei[31], ei[32] !== D ? (M = (0, n.jsx)("img", {
+            }), ac[29] = C) : C = ac[29], ac[30] !== ad ? (D = ad.formatMessage(g.heroAlt), ac[30] = ad, ac[31] = D) : D = ac[31], ac[32] !== D ? (E = (0, e.jsx)("img", {
                 className: "aspect-video w-full rounded-xl border border-default",
                 src: "https://cdn.openai.com/chatgpt/advanced-account-security-hero.png",
                 alt: D
-            }), ei[32] = D, ei[33] = M) : M = ei[33], ei[34] === Symbol.for("react.memo_cache_sentinel") ? (N = (0, n.jsx)(g, {
-                title: (0, n.jsx)(l.a, {
-                    ...s.whoTitle
+            }), ac[32] = D, ac[33] = E) : E = ac[33], ac[34] === Symbol.for("react.memo_cache_sentinel") ? (F = (0, e.jsx)(q, {
+                title: (0, e.jsx)(j.a, {
+                    ...g.whoTitle
                 }),
-                children: (0, n.jsx)(l.a, {
-                    ...s.whoDescription
+                children: (0, e.jsx)(j.a, {
+                    ...g.whoDescription
                 })
-            }), ei[34] = N) : N = ei[34], ei[35] === Symbol.for("react.memo_cache_sentinel") ? (P = (0, n.jsx)("h2", {
+            }), ac[34] = F) : F = ac[34], ac[35] === Symbol.for("react.memo_cache_sentinel") ? (G = (0, e.jsx)("h2", {
                 className: "text-2xl font-normal",
-                children: (0, n.jsx)(l.a, {
-                    ...s.featuresTitle
+                children: (0, e.jsx)(j.a, {
+                    ...g.featuresTitle
                 })
-            }), ei[35] = P) : P = ei[35], ei[36] === Symbol.for("react.memo_cache_sentinel") ? (E = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.ve, {}),
-                title: (0, n.jsx)(l.a, {
-                    ...s.strongerSignInTitle
+            }), ac[35] = G) : G = ac[35], ac[36] === Symbol.for("react.memo_cache_sentinel") ? (H = (0, e.jsx)(r, {
+                icon: (0, e.jsx)(l.Be, {}),
+                title: (0, e.jsx)(j.a, {
+                    ...g.strongerSignInTitle
                 }),
-                children: (0, n.jsx)(l.a, {
-                    ...s.strongerSignInDescription
+                children: (0, e.jsx)(j.a, {
+                    ...g.strongerSignInDescription
                 })
-            }), ei[36] = E) : E = ei[36], ei[37] === Symbol.for("react.memo_cache_sentinel") ? (I = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.Ue, {}),
-                title: (0, n.jsx)(l.a, {
-                    ...s.recoveryTitle
+            }), ac[36] = H) : H = ac[36], ac[37] === Symbol.for("react.memo_cache_sentinel") ? (I = (0, e.jsx)(r, {
+                icon: (0, e.jsx)(l.Ze, {}),
+                title: (0, e.jsx)(j.a, {
+                    ...g.recoveryTitle
                 }),
-                children: (0, n.jsx)(l.a, {
-                    ...s.recoveryDescription
+                children: (0, e.jsx)(j.a, {
+                    ...g.recoveryDescription
                 })
-            }), ei[37] = I) : I = ei[37], ei[38] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.rh, {}),
-                title: (0, n.jsx)(l.a, {
-                    ...s.trainingTitle
+            }), ac[37] = I) : I = ac[37], ac[38] === Symbol.for("react.memo_cache_sentinel") ? (J = (0, e.jsx)(r, {
+                icon: (0, e.jsx)(l.wh, {}),
+                title: (0, e.jsx)(j.a, {
+                    ...g.trainingTitle
                 }),
-                children: (0, n.jsx)(l.a, {
-                    ...s.trainingDescription
+                children: (0, e.jsx)(j.a, {
+                    ...g.trainingDescription
                 })
-            }), ei[38] = L) : L = ei[38], ei[39] === Symbol.for("react.memo_cache_sentinel") ? (G = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.xc, {}),
-                title: (0, n.jsx)(l.a, {
-                    ...s.shorterSessionsTitle
+            }), ac[38] = J) : J = ac[38], ac[39] === Symbol.for("react.memo_cache_sentinel") ? (K = (0, e.jsx)(r, {
+                icon: (0, e.jsx)(l.xc, {}),
+                title: (0, e.jsx)(j.a, {
+                    ...g.shorterSessionsTitle
                 }),
-                children: (0, n.jsx)(l.a, {
-                    ...s.shorterSessionsDescription
+                children: (0, e.jsx)(j.a, {
+                    ...g.shorterSessionsDescription
                 })
-            }), ei[39] = G) : G = ei[39], ei[40] === Symbol.for("react.memo_cache_sentinel") ? (q = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.gb, {}),
-                title: (0, n.jsx)(l.a, {
-                    ...s.loginProtectionsTitle
+            }), ac[39] = K) : K = ac[39], ac[40] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, e.jsx)(r, {
+                icon: (0, e.jsx)(l.gb, {}),
+                title: (0, e.jsx)(j.a, {
+                    ...g.loginProtectionsTitle
                 }),
-                children: (0, n.jsx)(l.a, {
-                    ...s.loginProtectionsDescription
+                children: (0, e.jsx)(j.a, {
+                    ...g.loginProtectionsDescription
                 })
-            }), ei[40] = q) : q = ei[40], ei[41] === Symbol.for("react.memo_cache_sentinel") ? (H = (0, n.jsxs)("section", {
+            }), ac[40] = L) : L = ac[40], ac[41] === Symbol.for("react.memo_cache_sentinel") ? (M = (0, e.jsxs)("section", {
                 className: "flex w-full max-w-2xl flex-col gap-6",
-                children: [P, (0, n.jsxs)("div", {
+                children: [G, (0, e.jsxs)("div", {
                     className: "grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6",
-                    children: [E, I, L, G, q, (0, n.jsx)(y, {
-                        icon: (0, n.jsx)(u.rd, {}),
-                        title: (0, n.jsx)(l.a, {
-                            ...s.visibilityTitle
+                    children: [H, I, J, K, L, (0, e.jsx)(r, {
+                        icon: (0, e.jsx)(l.rd, {}),
+                        title: (0, e.jsx)(j.a, {
+                            ...g.visibilityTitle
                         }),
-                        children: (0, n.jsx)(l.a, {
-                            ...s.visibilityDescription
+                        children: (0, e.jsx)(j.a, {
+                            ...g.visibilityDescription
                         })
                     })]
                 })]
-            }), ei[41] = H) : H = ei[41], ei[42] === Symbol.for("react.memo_cache_sentinel") ? (O = (0, n.jsx)(g, {
-                title: (0, n.jsx)(l.a, {
-                    ...s.yubikeyTitle
+            }), ac[41] = M) : M = ac[41], ac[42] === Symbol.for("react.memo_cache_sentinel") ? (N = (0, e.jsx)(q, {
+                title: (0, e.jsx)(j.a, {
+                    ...g.yubikeyTitle
                 }),
-                children: (0, n.jsx)(l.a, {
-                    ...s.yubikeyDescription
+                children: (0, e.jsx)(j.a, {
+                    ...g.yubikeyDescription
                 })
-            }), ei[42] = O) : O = ei[42], ei[43] === Symbol.for("react.memo_cache_sentinel") ? (R = (0, n.jsx)(u.pd, {}), ei[43] = R) : R = ei[43], ei[44] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, n.jsx)("h2", {
+            }), ac[42] = N) : N = ac[42], ac[43] === Symbol.for("react.memo_cache_sentinel") ? (O = (0, e.jsx)(l.pd, {}), ac[43] = O) : O = ac[43], ac[44] === Symbol.for("react.memo_cache_sentinel") ? (P = (0, e.jsx)("h2", {
                 className: "text-base font-medium",
-                children: (0, n.jsx)(l.a, {
-                    ...s.warningTitle
+                children: (0, e.jsx)(j.a, {
+                    ...g.warningTitle
                 })
-            }), ei[44] = B) : B = ei[44], ei[45] === Symbol.for("react.memo_cache_sentinel") ? (U = (0, n.jsxs)("section", {
+            }), ac[44] = P) : P = ac[44], ac[45] === Symbol.for("react.memo_cache_sentinel") ? (Q = (0, e.jsxs)("section", {
                 className: "flex w-full max-w-2xl flex-col gap-6 rounded-2xl bg-surface-secondary p-6",
-                children: [R, (0, n.jsxs)("div", {
+                children: [O, (0, e.jsxs)("div", {
                     className: "flex flex-col gap-2",
-                    children: [B, (0, n.jsx)("p", {
+                    children: [P, (0, e.jsx)("p", {
                         className: "text-base leading-relaxed",
-                        children: (0, n.jsx)(l.a, {
-                            ...s.warningDescription
+                        children: (0, e.jsx)(j.a, {
+                            ...g.warningDescription
                         })
                     })]
                 })]
-            }), ei[45] = U) : U = ei[45], ei[46] === Symbol.for("react.memo_cache_sentinel") ? (z = (0, n.jsx)("h2", {
+            }), ac[45] = Q) : Q = ac[45], ac[46] === Symbol.for("react.memo_cache_sentinel") ? (R = (0, e.jsx)("h2", {
                 className: "text-2xl font-normal",
-                children: (0, n.jsx)(l.a, {
-                    ...s.readyTitle
+                children: (0, e.jsx)(j.a, {
+                    ...g.readyTitle
                 })
-            }), ei[46] = z) : z = ei[46], ei[47] === Symbol.for("react.memo_cache_sentinel") ? (Y = (0, n.jsxs)("div", {
+            }), ac[46] = R) : R = ac[46], ac[47] === Symbol.for("react.memo_cache_sentinel") ? (S = (0, e.jsxs)("div", {
                 className: "flex flex-col gap-4",
-                children: [z, (0, n.jsxs)("p", {
+                children: [R, (0, e.jsxs)("p", {
                     className: "text-base leading-relaxed",
-                    children: [(0, n.jsx)(l.a, {
-                        ...s.readyDescription
-                    }), (0, n.jsx)("br", {}), (0, n.jsx)(l.a, {
-                        ...s.readyUpdateNotice
+                    children: [(0, e.jsx)(j.a, {
+                        ...g.readyDescription
+                    }), (0, e.jsx)("br", {}), (0, e.jsx)(j.a, {
+                        ...g.readyUpdateNotice
                     })]
                 })]
-            }), ei[47] = Y) : Y = ei[47];
-            let ey = "pending" === ep;
-            return ei[48] === Symbol.for("react.memo_cache_sentinel") ? (W = (0, n.jsx)(l.a, {
-                ...s.readyButton
-            }), ei[48] = W) : W = ei[48], ei[49] !== em || ei[50] !== ey ? (X = (0, n.jsx)(f, {
-                isPending: ey,
-                onEnroll: em,
-                children: W
-            }), ei[49] = em, ei[50] = ey, ei[51] = X) : X = ei[51], ei[52] !== ef ? (F = null != ef ? (0, n.jsx)("p", {
+            }), ac[47] = S) : S = ac[47];
+            let ar = "pending" === am;
+            return ac[48] === Symbol.for("react.memo_cache_sentinel") ? (T = (0, e.jsx)(j.a, {
+                ...g.readyButton
+            }), ac[48] = T) : T = ac[48], ac[49] !== ao || ac[50] !== ar ? (U = (0, e.jsx)(p, {
+                isPending: ar,
+                onEnroll: ao,
+                children: T
+            }), ac[49] = ao, ac[50] = ar, ac[51] = U) : U = ac[51], ac[52] !== ap ? (V = null != ap ? (0, e.jsx)("p", {
                 className: "text-sm text-danger",
-                children: ef
-            }) : null, ei[52] = ef, ei[53] = F) : F = ei[53], ei[54] !== es ? (Q = es ? (0, n.jsx)(l.a, {
-                ...s.backToCyber
-            }) : (0, n.jsx)(l.a, {
-                ...s.backToChatgpt
-            }), ei[54] = es, ei[55] = Q) : Q = ei[55], ei[56] !== ed || ei[57] !== Q ? (V = (0, n.jsx)("a", {
+                children: ap
+            }) : null, ac[52] = ap, ac[53] = V) : V = ac[53], ac[54] !== ag ? (W = ag ? (0, e.jsx)(j.a, {
+                ...g.backToCyber
+            }) : (0, e.jsx)(j.a, {
+                ...g.backToChatgpt
+            }), ac[54] = ag, ac[55] = W) : W = ac[55], ac[56] !== ak || ac[57] !== W ? (X = (0, e.jsx)("a", {
                 className: "text-sm underline underline-offset-4",
-                href: ed,
-                children: Q
-            }), ei[56] = ed, ei[57] = Q, ei[58] = V) : V = ei[58], ei[59] !== X || ei[60] !== F || ei[61] !== V ? (Z = (0, n.jsxs)("section", {
+                href: ak,
+                children: W
+            }), ac[56] = ak, ac[57] = W, ac[58] = X) : X = ac[58], ac[59] !== U || ac[60] !== V || ac[61] !== X ? (Y = (0, e.jsxs)("section", {
                 className: "flex w-full max-w-2xl flex-col items-center gap-8 text-center",
-                children: [Y, X, F, V]
-            }), ei[59] = X, ei[60] = F, ei[61] = V, ei[62] = Z) : Z = ei[62], ei[63] !== k || ei[64] !== M || ei[65] !== Z ? (J = (0, n.jsxs)("main", {
+                children: [S, U, V, X]
+            }), ac[59] = U, ac[60] = V, ac[61] = X, ac[62] = Y) : Y = ac[62], ac[63] !== B || ac[64] !== E || ac[65] !== Y ? (Z = (0, e.jsxs)("main", {
                 className: "mx-auto flex w-full max-w-5xl flex-1 flex-col items-center gap-16 px-6 py-12 md:gap-24 md:py-24",
-                children: [k, C, M, N, H, O, U, Z]
-            }), ei[63] = k, ei[64] = M, ei[65] = Z, ei[66] = J) : J = ei[66], ei[67] === Symbol.for("react.memo_cache_sentinel") ? (K = (0, n.jsx)("a", {
+                children: [B, C, E, F, M, N, Q, Y]
+            }), ac[63] = B, ac[64] = E, ac[65] = Y, ac[66] = Z) : Z = ac[66], ac[67] === Symbol.for("react.memo_cache_sentinel") ? ($ = (0, e.jsx)("a", {
                 className: "underline underline-offset-4",
                 href: "https://openai.com/policies/terms-of-use",
                 target: "_blank",
                 rel: "noopener noreferrer",
-                children: (0, n.jsx)(l.a, {
-                    ...s.terms
+                children: (0, e.jsx)(j.a, {
+                    ...g.terms
                 })
-            }), ei[67] = K) : K = ei[67], ei[68] === Symbol.for("react.memo_cache_sentinel") ? ($ = (0, n.jsx)("span", {
+            }), ac[67] = $) : $ = ac[67], ac[68] === Symbol.for("react.memo_cache_sentinel") ? (_ = (0, e.jsx)("span", {
                 "aria-hidden": "true",
-                children: (0, n.jsx)(l.a, {
-                    ...s.footerSeparator
+                children: (0, e.jsx)(j.a, {
+                    ...g.footerSeparator
                 })
-            }), ei[68] = $) : $ = ei[68], ei[69] === Symbol.for("react.memo_cache_sentinel") ? (ee = (0, n.jsxs)("footer", {
+            }), ac[68] = _) : _ = ac[68], ac[69] === Symbol.for("react.memo_cache_sentinel") ? (aa = (0, e.jsxs)("footer", {
                 className: "flex justify-center gap-4 p-6 text-sm text-secondary",
-                children: [K, $, (0, n.jsx)("a", {
+                children: [$, _, (0, e.jsx)("a", {
                     className: "underline underline-offset-4",
                     href: "https://openai.com/policies/privacy-policy",
                     target: "_blank",
                     rel: "noopener noreferrer",
-                    children: (0, n.jsx)(l.a, {
-                        ...s.privacy
+                    children: (0, e.jsx)(j.a, {
+                        ...g.privacy
                     })
                 })]
-            }), ei[69] = ee) : ee = ei[69], ei[70] !== J || ei[71] !== j ? (et = (0, n.jsxs)("div", {
+            }), ac[69] = aa) : aa = ac[69], ac[70] !== Z || ac[71] !== v ? (ab = (0, e.jsxs)("div", {
                 className: "flex h-full flex-col overflow-y-auto bg-surface text-default",
-                children: [j, J, ee]
-            }), ei[70] = J, ei[71] = j, ei[72] = et) : et = ei[72], et
+                children: [v, Z, aa]
+            }), ac[70] = Z, ac[71] = v, ac[72] = ab) : ab = ac[72], ab
         }
 
-        function f(e) {
-            let t, i, a, o, c = (0, r.c)(9),
+        function p(a) {
+            let b, c, d, h, i = (0, f.c)(9),
                 {
-                    children: u,
-                    isPending: p,
-                    onEnroll: h
-                } = e;
-            return c[0] !== h ? (t = () => void h(), c[0] = h, c[1] = t) : t = c[1], c[2] !== u || c[3] !== p || c[4] !== t ? (i = (0, n.jsx)(d.a, {
+                    children: l,
+                    isPending: m,
+                    onEnroll: n
+                } = a;
+            return i[0] !== n ? (b = () => void n(), i[0] = n, i[1] = b) : b = i[1], i[2] !== l || i[3] !== m || i[4] !== b ? (c = (0, e.jsx)(k.a, {
                 className: "w-full",
                 color: "primary",
                 size: "auth",
-                disabled: p,
-                loading: p,
-                onClick: t,
-                children: u
-            }), c[2] = u, c[3] = p, c[4] = t, c[5] = i) : i = c[5], c[6] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, n.jsx)("p", {
-                className: "text-sm text-secondary",
-                children: (0, n.jsx)(l.a, {
-                    ...s.signOutNotice
-                })
-            }), c[6] = a) : a = c[6], c[7] !== i ? (o = (0, n.jsxs)("div", {
-                className: "flex w-full max-w-md flex-col items-center gap-6",
-                children: [i, a]
-            }), c[7] = i, c[8] = o) : o = c[8], o
-        }
-
-        function g(e) {
-            let t, i, a, s = (0, r.c)(7),
-                {
-                    title: o,
-                    children: c
-                } = e;
-            return s[0] !== o ? (t = (0, n.jsx)("h2", {
-                className: "text-2xl font-normal",
-                children: o
-            }), s[0] = o, s[1] = t) : t = s[1], s[2] !== c ? (i = (0, n.jsx)("p", {
-                className: "text-base leading-relaxed",
-                children: c
-            }), s[2] = c, s[3] = i) : i = s[3], s[4] !== t || s[5] !== i ? (a = (0, n.jsxs)("section", {
-                className: "flex w-full max-w-2xl flex-col gap-4",
-                children: [t, i]
-            }), s[4] = t, s[5] = i, s[6] = a) : a = s[6], a
-        }
-
-        function y(e) {
-            let t, i, a, s, o, c = (0, r.c)(12),
-                {
-                    icon: l,
-                    title: d,
-                    children: u
-                } = e;
-            return c[0] !== l ? (t = (0, n.jsx)("div", {
+                disabled: m,
+                loading: m,
+                onClick: b,
                 children: l
-            }), c[0] = l, c[1] = t) : t = c[1], c[2] !== d ? (i = (0, n.jsx)("h3", {
-                className: "text-base font-medium",
-                children: d
-            }), c[2] = d, c[3] = i) : i = c[3], c[4] !== u ? (a = (0, n.jsx)("p", {
-                className: "text-base leading-relaxed",
-                children: u
-            }), c[4] = u, c[5] = a) : a = c[5], c[6] !== i || c[7] !== a ? (s = (0, n.jsxs)("div", {
-                className: "flex flex-col gap-2",
-                children: [i, a]
-            }), c[6] = i, c[7] = a, c[8] = s) : s = c[8], c[9] !== t || c[10] !== s ? (o = (0, n.jsxs)("article", {
-                className: "flex flex-col gap-6 rounded-2xl border border-default p-6",
-                children: [t, s]
-            }), c[9] = t, c[10] = s, c[11] = o) : o = c[11], o
+            }), i[2] = l, i[3] = m, i[4] = b, i[5] = c) : c = i[5], i[6] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, e.jsx)("p", {
+                className: "text-sm text-secondary",
+                children: (0, e.jsx)(j.a, {
+                    ...g.signOutNotice
+                })
+            }), i[6] = d) : d = i[6], i[7] !== c ? (h = (0, e.jsxs)("div", {
+                className: "flex w-full max-w-md flex-col items-center gap-6",
+                children: [c, d]
+            }), i[7] = c, i[8] = h) : h = i[8], h
         }
-        let x = () => [{
-            title: s.pageTitle.defaultMessage
+
+        function q(a) {
+            let b, c, d, g = (0, f.c)(7),
+                {
+                    title: h,
+                    children: i
+                } = a;
+            return g[0] !== h ? (b = (0, e.jsx)("h2", {
+                className: "text-2xl font-normal",
+                children: h
+            }), g[0] = h, g[1] = b) : b = g[1], g[2] !== i ? (c = (0, e.jsx)("p", {
+                className: "text-base leading-relaxed",
+                children: i
+            }), g[2] = i, g[3] = c) : c = g[3], g[4] !== b || g[5] !== c ? (d = (0, e.jsxs)("section", {
+                className: "flex w-full max-w-2xl flex-col gap-4",
+                children: [b, c]
+            }), g[4] = b, g[5] = c, g[6] = d) : d = g[6], d
+        }
+
+        function r(a) {
+            let b, c, d, g, h, i = (0, f.c)(12),
+                {
+                    icon: j,
+                    title: k,
+                    children: l
+                } = a;
+            return i[0] !== j ? (b = (0, e.jsx)("div", {
+                children: j
+            }), i[0] = j, i[1] = b) : b = i[1], i[2] !== k ? (c = (0, e.jsx)("h3", {
+                className: "text-base font-medium",
+                children: k
+            }), i[2] = k, i[3] = c) : c = i[3], i[4] !== l ? (d = (0, e.jsx)("p", {
+                className: "text-base leading-relaxed",
+                children: l
+            }), i[4] = l, i[5] = d) : d = i[5], i[6] !== c || i[7] !== d ? (g = (0, e.jsxs)("div", {
+                className: "flex flex-col gap-2",
+                children: [c, d]
+            }), i[6] = c, i[7] = d, i[8] = g) : g = i[8], i[9] !== b || i[10] !== g ? (h = (0, e.jsxs)("article", {
+                className: "flex flex-col gap-6 rounded-2xl border border-default p-6",
+                children: [b, g]
+            }), i[9] = b, i[10] = g, i[11] = h) : h = i[11], h
+        }
+        let s = () => [{
+            title: g.pageTitle.defaultMessage
         }, {
             name: "description",
-            content: s.pageDescription.defaultMessage
+            content: g.pageDescription.defaultMessage
         }];
-        var v = (0, a.kb)(function() {
-            let e, t = (0, r.c)(2),
-                i = (0, a.Z)();
-            return t[0] !== i.key ? (e = (0, n.jsx)(m, {}, i.key), t[0] = i.key, t[1] = e) : e = t[1], e
+        var t = (0, d.kb)(function() {
+            let a, b = (0, f.c)(2),
+                c = (0, d.Z)();
+            return b[0] !== c.key ? (a = (0, e.jsx)(o, {}, c.key), b[0] = c.key, b[1] = a) : a = b[1], a
         })
     })
 };
 import {
-    __webpack_require__ as e
-} from "./633146.286e08e471.js";
-import * as t from "./418851.b2405a4ff9.js";
-e.C(t);
-import * as i from "./109308.c704a27752.js";
-e.C(i);
-import * as a from "./399565.76c7da28d9.js";
-e.C(a);
-import * as n from "./257798.da1bc54c05.js";
-e.C(n);
-import * as r from "./447351.34d04099ca.js";
-e.C(r);
-import * as s from "./617936.da77c6b618.js";
-e.C(s);
-import * as o from "./807489.823dbdfb5a.js";
-e.C(o);
-import * as c from "./337882.060a468551.js";
-e.C(c);
-import * as l from "./955979.5504cdc0ad.js";
-e.C(l);
-import * as d from "./646436.feae78aa0d.js";
-e.C(d);
-import * as u from "./7078.6f2aee03ba.js";
-e.C(u);
-import * as p from "./200429.80eabab50b.js";
-e.C(p);
-import * as h from "./698524.9faf81ab1c.js";
-e.C(h);
-import * as m from "./956483.db483d044c.js";
-e.C(m);
-import * as f from "./87162.313d693207.js";
-e.C(f);
-import * as g from "./396705.047d6db773.js";
-e.C(g);
-import * as y from "./155568.1d9e3b614b.js";
-e.C(y);
-import * as x from "./731863.5760f3f335.js";
-e.C(x);
-import * as v from "./767086.ab8a876382.js";
-e.C(v);
-import * as b from "./76629.6fe0bcbf7b.js";
-e.C(b);
-import * as j from "./226913.cf105b979e.js";
-e.C(j);
-import * as S from "./392067.b7e677b471.js";
-e.C(S);
-var w = e(e.s = "eses"),
-    A = w.a,
-    _ = w.b;
+    __webpack_require__ as a
+} from "./633146.511711c8b9.js";
+import * as b from "./418851.d52a1ffc2f.js";
+a.C(b);
+import * as c from "./109308.4d55635a3c.js";
+a.C(c);
+import * as d from "./399565.700e278f2d.js";
+a.C(d);
+import * as e from "./257798.bf743d3ac4.js";
+a.C(e);
+import * as f from "./447351.05632d2214.js";
+a.C(f);
+import * as g from "./617936.a1bdaefa17.js";
+a.C(g);
+import * as h from "./807489.2515299139.js";
+a.C(h);
+import * as i from "./337882.b7027c58e4.js";
+a.C(i);
+import * as j from "./955979.17a59d5e45.js";
+a.C(j);
+import * as k from "./646436.71dd39a771.js";
+a.C(k);
+import * as l from "./7078.bd9e0604da.js";
+a.C(l);
+import * as m from "./200429.7cb44b876c.js";
+a.C(m);
+import * as n from "./698524.76d0d9fd5b.js";
+a.C(n);
+import * as o from "./956483.f7260d7dd1.js";
+a.C(o);
+import * as p from "./87162.27c50a9bde.js";
+a.C(p);
+import * as q from "./396705.2318c018fd.js";
+a.C(q);
+import * as r from "./155568.d41a363926.js";
+a.C(r);
+import * as s from "./731863.ace382bf58.js";
+a.C(s);
+import * as t from "./767086.390bf6c64e.js";
+a.C(t);
+import * as u from "./76629.a6013c50b6.js";
+a.C(u);
+import * as v from "./226913.9dca92fd99.js";
+a.C(v);
+import * as w from "./392067.37c0f62305.js";
+a.C(w);
+var x = a(a.s = "eses"),
+    y = x.a,
+    z = x.b;
 export {
-    A as
-    default, _ as meta
+    y as
+    default, z as meta
 };

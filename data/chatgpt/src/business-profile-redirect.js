@@ -3,7 +3,7 @@ export const __webpack_modules__ = {
     LiWC: (function() {})
 };
 import {
-    __webpack_require__ as s
-} from "./633146.286e08e471.js";
-import * as o from "./407837.e966e4e9d1.js";
-s.C(o), s(s.s = "LiWC");
+    __webpack_require__ as a
+} from "./633146.511711c8b9.js";
+import * as b from "./407837.6ac784510f.js";
+a.C(b), a(a.s = "LiWC");

@@ -16326,6 +16326,7 @@ ${t.length>0?t.map(e=>e.trim()).join(", "):n}`).join("\n\n")
                     };
                     r[0] === e_.a && (0, ep.b)() && (null == n || e.queryClient.getQueryState(r)?.fetchStatus !== "idle") ? (0, ep.a)(e.queryClient, o) : null == n && e.queryClient.invalidateQueries(o), null != n && i(r, tj(s, t, a))
                 }
+
             function i(t, n) {
                 let a = e.queryClient.getQueryState(t);
                 a?.fetchStatus === "fetching" ? e.queryClient.invalidateQueries({
