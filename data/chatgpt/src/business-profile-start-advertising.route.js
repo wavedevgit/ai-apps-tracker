@@ -1,9 +1,1 @@
-export const __rspack_esm_ids = [767091];
-export const __webpack_modules__ = {
-    ubSC: (function() {})
-};
-import {
-    __webpack_require__ as a
-} from "./633146.511711c8b9.js";
-import * as b from "./767091.bf306762d8.js";
-a.C(b), a(a.s = "ubSC");
+export const __rspack_esm_ids=[767091];export const __webpack_modules__={ubSC:(function(){})};import{__webpack_require__ as a}from"./633146.511711c8b9.js";import*as b from"./767091.bf306762d8.js";a.C(b),a(a.s="ubSC");
