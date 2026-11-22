@@ -1,2 +1,3104 @@
 //# allFunctionsCalledOnLoad
-export const __rspack_esm_ids=[109308];export const __webpack_modules__={Q840:(function(a,b,c){c.d(b,{a:()=>W,b:()=>ac,c:()=>N.a,d:()=>g.a,e:()=>B.n,f:()=>B.o,g:()=>B.p,h:()=>e.a,i:()=>g.b,j:()=>f.b,k:()=>i.e,l:()=>B.s,m:()=>J,n:()=>G,o:()=>K,p:()=>L,q:()=>I,r:()=>H,s:()=>C.e,t:()=>d.a,u:()=>e.b,v:()=>g.c,w:()=>am,x:()=>an,y:()=>ao,z:()=>aj});var d=c("tyzk"),e=c("hffr"),f=c("Nmf8"),g=c("jwtq"),h=c("suf3"),i=c("J6iR"),j=c("rbzn"),k=c("ouEa"),l=c("iwK1"),m=c("wFEO");let n=new WeakSet;function o(a,b,c){if(n.has(c))return;n.add(c);let d=new h.a(a,{...b.options,enabled:!1,queryHash:b.queryHash,queryKey:b.queryKey}).subscribe(()=>{}),e=c,f=()=>{let a=(0,i.c)(b),c=(0,i.d)(a);null==a||a===e||"independent"!==c&&(null!=c||(0,i.f)(b))?(n.delete(e),d()):(n.delete(e),n.has(a))?d():(n.add(a),e=a,a.then(f,f))};c.then(f,f)}function p(a,b,c){let d=b.getCurrentQuery();if(!b.hasListeners()||d===c)return;let e=(0,i.c)(d),f=(0,i.d)(e);null!=e&&"independent"===f&&o(a,d,e)}var q=c("D7Ms");function r(a,b){if(null==a)return!1;let c=Object.keys(b);if(c.length!==Object.keys(a).length)return!1;for(let d of c)if(Reflect.get(a,d)!==Reflect.get(b,d))return!1;return!0}function s(a){return a.suspense&&null==a.staleTime?{...a,staleTime:1e3}:a}function t(a,b){return!!a?.suspense&&b.isEnabled&&b.isPending}function u(a,b,c){if(!c.result.isError||c.result.isFetching)return!1;let d=a.errorValidation;if(d?.observer===b&&d.query===c.query&&Object.is(d.error,c.result.error))return d.shouldThrow;let e=(0,q.t)(c.throwOnError,[c.result.error,c.query]);return a.errorValidation={error:c.result.error,observer:b,query:c.query,shouldThrow:e},e}function v(a,b,c,d){let{cacheSubscriptions:e,getEnabledReaderOptions:f,getShouldSuppressStaleFetchOnEnable:g,isEnabledReaderMounting:h,shouldRetainFetchStartedAfterUnmount:n}=d,q=(0,k.a)(0),v=(0,k.a)(0),w=new WeakSet,x=new WeakMap,y=Symbol("evicted query result"),z=(0,k.a)(a=>(0,m.a)(c(a),a)),A=(0,k.a)(()=>new WeakMap),B=new WeakMap,C=a=>{let b=a.notifyOnChangeProps;a._optimisticResults="optimistic",a.notifyOnChangeProps="all",B.set(a,b)},D=(0,k.a)(()=>new WeakMap),E=(0,k.a)(()=>{let a,b,c;return a=new WeakMap,b=new WeakSet,c=new WeakSet,{mount(d,e,f){let g=a.get(d)??0,h=b.has(d);b.add(d);let j=0!==g||c.has(d)||f||null==e||"reactive"===(0,i.d)(e)?void 0:e;return 0===g&&(c.add(d),queueMicrotask(()=>{c.delete(d)})),a.set(d,g+1),{activeFetchAtMount:j,hadMountedBefore:h}},unmount(b){let c=(a.get(b)??1)-1;0===c?a.delete(b):a.set(b,c)}}}),F=(0,k.a)(b=>{let d=b(z),e=s(c(b).defaultQueryOptions(a(b)));b(m.c)&&(e.gcTime=1/0);let f=b(A).get(d);if(C(e),null!=f){let a=d.getQueryCache().build(d,e),c=(0,i.c)(a);p(d,f,a);let j="function"==typeof e.refetchOnMount?e.refetchOnMount(a):e.refetchOnMount,k=h()&&("function"==typeof e.enabled?e.enabled(a):e.enabled)!==!1;k&&"error"===a.state.status&&void 0===a.state.data&&!1===e.retryOnMount?f.setOptions({...e,suspense:!0}):k&&g(b)&&!1===j&&void 0!==a.state.data&&f.setOptions({...e,staleTime:"static"}),f.setOptions(e);let l=(0,i.c)(f.getCurrentQuery());f.hasListeners()&&null!=l&&l!==c&&(0,i.g)(l,"reactive")}return e}),G=(0,k.a)(a=>{let b=s(c(a).defaultQueryOptions(f(a)));return C(b),b}),H=(0,k.a)(a=>{a(v);let c=a(z),d=a(A).get(c);if(null!=d)return d;let e=new b(c,a(F));return a(A).set(c,e),e}),I=(0,k.a)(a=>{let b=a(z),c=a(H),d=a(F),f=a(A),g=a(D),m=a(E);c.getOptimisticResult(d);let p=c,q=(0,k.a)(c.getCurrentResult()),r=(0,k.a)(a=>{let b=a(q);if(b===y)throw Error("Evicted query result was read");return b},(a,b,c)=>{if(c===y){p=void 0,b(q,y),b(v,a=>a+1);return}b(q,c)});return x.set(c,r),r.onMount=a=>{var c;let k=p;if(null==k||x.get(k)!==r)return;let q=k.getCurrentQuery(),s=(0,i.c)(q),t=(0,i.h)(q),{activeFetchAtMount:u,hadMountedBefore:v}=m.mount(k,s,t.hadMountedReader);(0,i.g)(u,"independent");let z=n();b.getQueryCache().get(q.queryHash)!==q&&k.setOptions(d),k.getOptimisticResult(b.defaultQueryOptions(k.options)),a(k.getCurrentResult());let A=j.a.batchCalls(a),C=k.subscribe(a=>{let b=k.options;l.a.cacheChangeProperties(a,B.has(b)?B.get(b):B.get(d)),A(a)}),D=(0,i.c)(k.getCurrentQuery());null!=D&&D!==s&&(0,i.g)(D,"reactive"),c=null!=D,v&&!c&&queueMicrotask(()=>{if(!h())return;let a=k.getCurrentQuery(),b="function"==typeof k.options.enabled?k.options.enabled(a):k.options.enabled,c="function"==typeof k.options.refetchOnMount?k.options.refetchOnMount(a):k.options.refetchOnMount,d="function"==typeof k.options.staleTime?k.options.staleTime(a):k.options.staleTime,e=void 0!==a.state.data||"error"!==a.state.status||!1!==k.options.retryOnMount,f="always"===c||!1!==c&&k.getCurrentResult().isStale;if(k.hasListeners()&&"idle"===a.state.fetchStatus&&!1!==b&&"static"!==d&&e&&f){let b=(0,i.c)(a);k.refetch();let c=(0,i.c)(k.getCurrentQuery());null!=c&&c!==b&&(0,i.g)(c,"reactive")}});let E=b.getQueryCache(),F=c=>{f.get(b)!==k||k.hasListeners()||k.getCurrentQuery()!==c||(f.delete(b),g.delete(k),a(y))},G=a=>E.get(a.queryHash)===a,H=a=>{G(a)||F(a)},I=a=>{if(w.has(a)||!G(a))return;let b=e.subscribe(E,c=>{"removed"===c.type&&c.query===a&&(b?.(),w.delete(a),F(a))});null!=b&&w.add(a)};return()=>{let a=k.getCurrentQuery(),c=(0,i.c)(a);a===q&&null!=c&&c!==s&&(0,i.g)(c,"reactive"),t.unmount(),m.unmount(k),function(a){let{activeFetchAtReaderMount:b,activeFetchAtUnmount:c,client:d,evictIfQueryRemoved:e,observer:f,queryAtUnmount:g,retainFetchStartedAfterUnmount:h,unsubscribe:j,watchForQueryRemoval:k}=a;queueMicrotask(()=>{let a=f.getCurrentQuery(),l=(0,i.c)(a),m=(0,i.d)(l),n=(0,i.f)(a),p=null!=l&&"reactive"!==m&&!n&&(a!==g||l!==c),q=h&&null!=l&&l===c&&l!==b;if(n)return void j();let r=()=>{j(),e(a)};k(a),null!=l&&(p||q||"independent"===m)&&o(d,a,l),r()})}({activeFetchAtReaderMount:s,activeFetchAtUnmount:c,client:b,evictIfQueryRemoved:H,observer:k,queryAtUnmount:a,retainFetchStartedAfterUnmount:z,unsubscribe:C,watchForQueryRemoval:I})}},r}),J=(0,k.a)(a=>(a(q),a(a(I)))),K=(a,b,c,d,e)=>{let f,g,h=B.get(c),j=c,k=b.getCurrentQuery();return l.a.createSnapshot(d,{getBehavior:a=>({suspense:e&&t(c,a),throwOnError:a.isError&&!a.isFetching&&c.throwOnError||void 0}),getCurrentResult:(d,h)=>{let l=a.defaultQueryOptions(b.options);l._optimisticResults="optimistic",l.notifyOnChangeProps="all";let m=a.getQueryCache().build(a,l),n=b.getCurrentQuery(),o=b.getCurrentResult();if(!h.connect&&d.isEnabled&&!o.isEnabled){let g=a.getQueryCache().build(a,c),i=b.getOptimisticResult(c);if(b.getOptimisticResult(l),r(d,i)&&(i=d),e&&t(c,i))throw f?.result!==i&&(f={promise:b.fetchOptimistic(c),result:i}),f.promise;if(f=void 0,u(h,b,{result:i,query:g,throwOnError:c.throwOnError}))throw i.error;return i}let q=(0,i.c)(m);h.connect&&n!==m&&p(a,b,m);let s=b.getOptimisticResult(l);if(h.connect&&n!==m){b.setOptions(l),s=b.getCurrentResult();let a=(0,i.c)(b.getCurrentQuery());b.hasListeners()&&null!=a&&a!==q&&(0,i.g)(a,"reactive")}if(r(d,s)&&(s=d),h.token===g&&l===j&&m===k&&s===d)return s;if(e&&t(l,s))throw f?.result!==s&&(f={promise:b.fetchOptimistic(l),result:s}),f.promise;if(f=void 0,u(h,b,{result:s,query:m,throwOnError:l.throwOnError}))throw s.error;return g=h.token,j=l,k=m,s},notifyOnChangeProps:h,notifyOnError:!!c.throwOnError,trackResult:a=>null==h?b.trackResult(a):a})},L=(0,k.a)(a=>K(a(z),a(H),a(F),a(J),!1));return Object.assign((0,k.a)(a=>{if(a(m.c))return a(L);let b=a(z),c=a(H),d=a(F),e=a(D),f=d,g=a(J);if(!g.isEnabled){let b=a(G),e=c.getOptimisticResult(b);c.getOptimisticResult(d),e.isEnabled&&(f=b,g=e)}let h=e.get(c);return(r(h,g)?g=h:e.set(c,g),null==h&&t(f,g))?c.fetchOptimistic(f):K(b,c,f,g,!0)},(a,b)=>{b(q,a=>a+1)}),{rawResultAtom:L})}function w(a,b,c){return v(b=>{let c={...a(b)};return(0,i.b)(c,"reactive"),c},h.a,b,c)}var x=c("CdjL");function y(a,b,c){return v(a,x.a,b,c)}class z{subscriptions=new Set;disposed=!1;subscribe(a,b){if(this.disposed)return;let c=a.subscribe(b),d=()=>{this.subscriptions.delete(d),c()};return this.subscriptions.add(d),d}dispose(){for(let a of(this.disposed=!0,this.subscriptions))a()}}var A=c("AvFJ"),B=c("fbKo"),C=c("PKjX"),D=c("m4Vs"),E=c("vMlG");function F(a,b,c,d,e){let f=new WeakMap,g=(0,B.k)("cached",a,(a,g)=>{var h;let i,j,m,n,o,p,q,r=a.queryClient;if(null==r)throw Error(`${"query"===c?"querySignal":"infiniteQuerySignal"} requires a QueryClient on Scope`);let s=f.get(a.familyBindings);null==s&&(s=new z,f.set(a.familyBindings,s));let t=(h=null==e?void 0:()=>e((0,B.h)(g,a).scope),i=(0,k.a)(!1),j=(0,k.a)(!1),m=0,n=!1,o=0,(p=(0,k.a)(a=>a(i),(a,b,c)=>{b(i,c)})).onMount=b=>{let c,d=m+=1;n=!0;let e=!1,f=()=>{e||(e=!0,c=h?.()),b(!0)};return 0===a.imperativeReadDepth?f():b(!1),queueMicrotask(()=>{m===d&&f(),queueMicrotask(()=>{m===d&&(n=!1)})}),()=>{m+=1,n=!1,b(!1),c?.()}},(q=(0,k.a)(()=>!1,(a,b,c)=>{b(j,c)})).onMount=b=>{if(a.imperativeReadDepth>0)return;let c=o+=1;return queueMicrotask(()=>{o===c&&b(!0)}),()=>{let a=o+=1;queueMicrotask(()=>{o===a&&b(!1)})}},{disabledReaderMountAtom:q,enabledReaderMountAtom:p,hasCommittedDisabledReadersAtom:j,hasEnabledReadersAtom:i,isEnabledReaderMounting:()=>n}),u=(0,D.a)(),v=(c,d)=>{let e=b((0,B.h)(g,a,c,{enabled:d},u)),f=e.enabled;return{...e,enabled:b=>!(a.imperativeReadDepth>0&&((0,C.d)(a.store)||!a.store.get(t.hasEnabledReadersAtom)))&&d&&("function"==typeof f?f(b):f??!0),refetchOnMount:e.refetchOnMount??!1}},w=d(a=>v(a,a(t.hasEnabledReadersAtom)),()=>r,{cacheSubscriptions:s,getEnabledReaderOptions:b=>v(b,0===a.imperativeReadDepth),getShouldSuppressStaleFetchOnEnable:a=>!a(t.hasCommittedDisabledReadersAtom),isEnabledReaderMounting:t.isEnabledReaderMounting,shouldRetainFetchStartedAfterUnmount:()=>a.imperativeReadDepth>0}),x=(0,k.a)(a=>(a(t.enabledReaderMountAtom),a(w))),y=(0,k.a)(a=>{a(t.disabledReaderMountAtom);let b=a(w.rawResultAtom);return b.isEnabled?l.a.createSnapshotView(b,{isEnabled:!1,isStale:!1}):b});return l.a.markAtom(w),l.a.markAtom(x),l.a.markAtom(y),(0,B.y)(a,x),(0,B.y)(a,y),{disabledReaderAtom:y,enabledReaderAtom:x,queryAtom:w}},(a,b)=>{let{queryAtom:c}=a;return(0,A.d)(b,c,"query",{debugLabel:j.debugLabel,familyMember:f.get(b.familyBindings)})}),h=a=>{let b=f.get(a.familyBindings);null!=b&&(b.dispose(),(0,A.b)(a,b))},i=d=>{let e=Object.assign((0,B.k)("cached",a,(a,b)=>{let c=g.resolve(a,b);return d?c.enabledReaderAtom:c.disabledReaderAtom}),{[E.a]:h,createSubscriberAtom:(a,b)=>l.a.createSubscriberAtom(e.resolve(a,b)),getOptions:b,queryKind:c,[E.e]:a=>d&&a.enabled?j:m});return e},j=i(!0),m=i(!1);return j}function G(a,b){return F(a,b,"infinite",y)}function H(a,b,c){return F(a,b,"query",w,c)}function I(a,b,c){let d=(0,f.b)(a,c=>{let e=H(a,a=>b(c,a));return e.debugLabel=d.debugLabel,e},{...c,autoDispose:c?.autoDispose??!0});return(0,f.a)(d)}function J(a,b,c){let d=(0,f.b)(a,c=>{let e=G(a,a=>b(c,a));return e.debugLabel=d.debugLabel,e},{...c,autoDispose:c?.autoDispose??!0});return(0,f.a)(d)}function K(a,b,c){let d=(0,f.b)(a,c=>M(a,a=>b(c,a),(a,b)=>d[E.d](a,b,c)),c);return(0,f.a)(d)}function L(a,b){return M(a,b)}function M(a,b,c){let d=(0,B.k)("cached",a,(a,e)=>{if(null==a.queryClient)throw Error("mutationSignal requires a QueryClient on Scope");let f=(0,k.a)({data:void 0,error:null,status:"idle",variables:void 0}),g=0;return(0,k.a)(h=>{let i=h(f),j=async(c,d)=>{let h,i,j=b((0,B.h)(e,a)),k={client:a.queryClient,meta:j.meta,mutationKey:j.mutationKey},l=++g;a.store.set(f,{data:void 0,error:null,status:"pending",variables:c});try{i=await j.onMutate?.(c,k),h=await j.mutationFn?.(c,k)}catch(b){throw l===g&&a.store.set(f,{data:void 0,error:b,status:"error",variables:c}),await j.onError?.(b,c,i,k),await j.onSettled?.(void 0,b,c,i,k),d?.onError?.(b,c,i,k),d?.onSettled?.(void 0,b,c,i,k),b}return l===g&&a.store.set(f,{data:h,error:null,status:"success",variables:c}),await j.onSuccess?.(h,c,i,k),await j.onSettled?.(h,null,c,i,k),d?.onSuccess?.(h,c,i,k),d?.onSettled?.(h,null,c,i,k),h},k=(b,f)=>{let g=c?.(a,e);if(null!=g&&g.value!==d)return a.store.get(g.value.resolve(a,e)).mutateAsync(b,f);let h=g?.disposal;if(null==h)return j(b,f);let i=h.retain();return j(b,f).finally(i)};return{...i,isError:"error"===i.status,isIdle:"idle"===i.status,isPending:"pending"===i.status,isSuccess:"success"===i.status,mutate:(a,b)=>{k(a,b).catch(()=>{})},mutateAsync:k}})},(a,b)=>{(0,A.d)(b,a,"mutation",{debugLabel:d.debugLabel})});return d}var N=c("UQAX"),O=c("zd8w"),P=c("ABep"),Q=c("QosV");let R=(0,O.createContext)(new Map),S=(0,O.createContext)(void 0),T=new WeakMap,U=new Map;function V(a){let b=T.get(a);return null==b&&((b=(0,O.createContext)(U)).displayName=a.__scopeBrand,T.set(a,b)),b}function W(a){let b,c=(0,Q.c)(3),{children:d,queryClient:e}=a;return c[0]!==d||c[1]!==e?(b=(0,P.jsx)(S.Provider,{value:e,children:d}),c[0]=d,c[1]=e,c[2]=b):b=c[2],b}var X=c("SZCv"),Y=c.n(X),Z=c("KoFQ"),$=c("oFsh");let _={},aa=new WeakMap,ab=0;function ac(a){let{children:b,pendingRetainedScopes:c,scope:d,value:e}=a,f=(0,O.useContext)(R),g=(0,O.useContext)(S),h=null==d.parent?void 0:f.get(d.parent.id),i=e??_,j=null==d.getKey?JSON.stringify(i):d.getKey(i),k=(0,O.useRef)(null),[,l]=(0,O.useReducer)(a=>a+1,0),m=(0,O.useRef)(null);if(null!=d.parent&&null==h)throw Error("Missing parent scope");let n=null==h?void 0:function(a){let{parentScope:b,providedValue:c,queryClient:d,scope:e,scopeKey:f,mountedEntry:g,pendingRetainedScopes:h}=a,i=b.retainedScopeEntries.get(e)?.get(f);if(null!=i)return i;if(null!=g)return g;let j=null==e.retain?void 0:h?.get(b),k=j?.get(e)?.get(f);if(null!=k)return k;let l={lastUsed:0,mountedCount:0,node:ad({parentScope:b,providedValue:c,queryClient:d,scope:e,scopeKey:f})};if(null!=e.retain&&null!=h){let a=j??new Map,c=a.get(e)??new Map;c.set(f,l),a.set(e,c),h.set(b,a)}return l}({parentScope:h,providedValue:i,queryClient:g,scope:d,scopeKey:j,pendingRetainedScopes:c,mountedEntry:null==d.retain&&k.current?.node.token===d&&Object.is(k.current.node.key,j)&&k.current.parent===h&&k.current.parentChain===f?k.current.retainedEntry:void 0}),o=null!=n&&!Y()(n.node.value,i),p=n?.node.parent,q=null!=n&&p!==h,r=q&&(null==p||aa.get(p)!==h),s=o||q,t=h?.queryClient??g,u=null!=n&&(o||n.node.queryClient!==t)?{...n.node,debugEntries:new Set,cachedBindings:o?new WeakMap:n.node.cachedBindings,queryClient:t,value:i}:n?.node;if(null!=k.current&&k.current.node.token===d&&Object.is(k.current.node.key,j)&&k.current.parent===h&&k.current.parentChain===f&&(null==n||k.current.retainedEntry===n)&&(null==u||k.current.node===u))k.current.retainedEntry=n;else{let a=u??ad({parentScope:h,providedValue:i,queryClient:g,scope:d,scopeKey:j}),b=(0,B.c)(f,d);b.set(d.id,a),k.current={chain:b,node:a,parent:h,parentChain:f,retainedEntry:n}}(null==n?function(a){let{node:b,parentScope:c,providedValue:d,queryClient:e}=a,f=!Y()(b.value,d);return b.queryClient=c?.queryClient??e,b.value=d,f}({node:k.current.node,parentScope:h,providedValue:i,queryClient:g}):s)?(null==n&&(k.current.node.cachedBindings=new WeakMap),m.current={atom:k.current.node.contextVersionAtom,store:k.current.node.store}):m.current=null;let v=k.current.retainedEntry,w=k.current.node;(0,O.useLayoutEffect)(()=>{if(w.autoDisposeScheduler.activate(),(0,A.f)(w,v?.node),null!=v&&null!=h){let a=h.retainedScopeEntries.get(d);null==a&&(a=new Map,h.retainedScopeEntries.set(d,a)),a.set(j,v);let b=v.node;b.parent=h,b!==w&&(b.cachedBindings=w.cachedBindings,b.queryClient=w.queryClient,b.value=w.value,Object.defineProperties(w,{parent:{get:Reflect.get.bind(null,b,"parent"),configurable:!0},queryClient:{get:Reflect.get.bind(null,b,"queryClient"),configurable:!0},value:{get:Reflect.get.bind(null,b,"value"),configurable:!0}}),aa.set(w,b)),r&&(k.current=null,l());return}return w.autoDisposeScheduler.cancel(w),()=>{(0,A.g)(w),w.autoDisposeScheduler.schedule(w,0,()=>{(0,B.b)(w)})}},[w,w.cachedBindings,v,r,h,d,j]),(0,O.useLayoutEffect)(()=>{let a=m.current;null!=a&&(a.store.set(a.atom,a=>a+1),m.current=null)}),(0,O.useLayoutEffect)(()=>{if(null!=v&&null!=h)return h.autoDisposeScheduler.cancel(v),v.mountedCount+=1,v.lastUsed=++ab,ae(h,d),()=>{v.mountedCount-=1,v.lastUsed=++ab,ae(h,d);let a=(0,Z.c)(d.retain?.autoDispose);1/0!==a&&0===v.mountedCount&&h.retainedScopeEntries.get(d)?.get(w.key)===v&&h.autoDisposeScheduler.schedule(v,a,()=>{let a=h.retainedScopeEntries.get(d);v.mountedCount>0||a?.get(w.key)!==v||(a.delete(w.key),0===a.size&&h.retainedScopeEntries.delete(d),(0,B.b)(v.node))})}},[w.key,v,h,d]);let x=V(d),y=(0,P.jsx)(x,{value:k.current.chain,children:b});for(let a of f.values())if(!k.current.chain.has(a.token.id)){let b=V(a.token);y=(0,P.jsx)(b,{value:U,children:y})}return(0,P.jsx)(R.Provider,{value:k.current.chain,children:y})}function ad(a){let{parentScope:b,providedValue:c,queryClient:d,scope:e,scopeKey:f}=a;return{cachedBindings:new WeakMap,contextVersionAtom:(0,k.a)(0),debugEntries:new Set,familyBindings:new Map,familyKeysByOwner:new Map,disposalLifecycles:new Set,autoDisposeScheduler:b?.autoDisposeScheduler??new Z.a({active:!1}),imperativeReadAtoms:new WeakSet,imperativeReadDepth:0,key:f,parent:b,queryClient:b?.queryClient??d,retainedScopeEntries:new Map,signalBindings:new WeakMap,store:b?.store??(0,$.a)(),token:e,value:c}}function ae(a,b){let c=null==b.retain?0:b.retain.max??1/0,d=a.retainedScopeEntries.get(b);if(null!=d){for(;d.size>c;){let b=function(a){let b=null;for(let[c,d]of a)!(d.mountedCount>0)&&(null==b||d.lastUsed<b.entry.lastUsed)&&(b={entry:d,key:c});return b}(d);if(null==b)return;d.delete(b.key),a.autoDisposeScheduler.cancel(b.entry),(0,A.g)(b.entry.node),a.autoDisposeScheduler.schedule(b.entry,0,()=>{(0,B.b)(b.entry.node)})}0===d.size&&a.retainedScopeEntries.delete(b)}}var af=c("ns1t");let ag=()=>{},ah=()=>ag,ai=[];function aj(a,b){var c,d;let e=(0,B.a)(a,b);if(c=e,(0,B.v)(c)&&"function"==typeof c.get&&"function"==typeof c.subscribe){let a=(0,O.use)(af.b);return ak((0,O.useMemo)(()=>{let b=al(a=>e.subscribe(a),a);return{...l.a.createSubscriberStore(e.atom,()=>e.store.get(e.atom),b.subscribe),prepare:b.prepare,trackLifetime:b.trackLifetime}},[e,void 0,a]),()=>(0,m.b)(e.store,e.atom))}if(!("object"==typeof(d=e)&&null!=d&&"cache"in d&&("cached"===d.cache||"signal"===d.cache)&&"scope"in d&&"resolve"in d&&"function"==typeof d.resolve)){let a=(0,O.useMemo)(()=>()=>e,[e,void 0,void 0]),b=(0,O.useSyncExternalStore)(ah,a,a);return(0,O.useInsertionEffect)(ag,[void 0]),(0,O.useLayoutEffect)(ag,[ag,void 0]),b}let f=(0,O.use)(V(e.scope)),g=(0,O.use)(af.b),h=(0,B.B)(f,e.scope),i=e.resolve(h,f);return ak((0,O.useMemo)(()=>{let a=al(a=>h.store.sub(i,a),g);return{...l.a.createSubscriberStore(i,()=>h.store.get(i),a.subscribe),prepare:a.prepare,trackLifetime:a.trackLifetime}},[h.store,i,g]),()=>(0,m.b)(h.store,i))}function ak(a,b){let c=a.createRender?.(),d=(0,O.useSyncExternalStore)(a.subscribe,c?.getSnapshot??(null==a.createRender?a.getSnapshot:()=>{if(null!=c)return c.getSnapshot();let b=a.getSnapshot();return null==(c=a.createRender?.(!0))?b:c.getSnapshot()}),b);c=c??a.createRender?.(!0);let e=c?.commit??ag,f=a.trackLifetime;return(0,O.useInsertionEffect)(f??ag,[f]),(0,O.useLayoutEffect)(()=>(e(),a.prepare()),[e,a]),null==c?d:c.track(d)}function al(a,b){let c,d,e,f=!1,g=!1,h=!1,i=!1,j=()=>{i=!0,e?.()};return{trackLifetime:b?()=>(f=!0,()=>{var a;f=!1;let b=d;d=void 0,null!=b&&(a=b,ai.push(a),1===ai.length&&queueMicrotask(()=>{for(let a of ai.splice(0))try{a()}catch(a){"function"==typeof globalThis.reportError?globalThis.reportError(a):console.error(a)}}))}):void 0,prepare:()=>{if(!h||g||null!=c||null!=d)return;let b=a(j);return c=b,()=>{c===b&&(c=void 0,b())}},subscribe:b=>{let k=h;h=!0,g=!0,e=b;let l=null!=d,m=d??c??a(j);return d=void 0,c=void 0,k&&(i||!l)&&(i=!1,b()),()=>{g=!1,e=void 0,f?d=m:m()}}}}function am(a,b){var c,d;let e,f,g;return c=a,d=b,e="object"==typeof c&&null!=c&&E.b in c?(0,O.use)(V(c.scope)):U,f=(0,O.useMemo)(()=>{if("object"==typeof c&&null!=c&&E.b in c){let a=(0,B.B)(e,c.scope),b=c[E.d](a,e,d);return()=>(null!=b.disposal&&a.store.get(b.disposal.atom)&&(b=c[E.d](a,e,d)),b)}let a={disposal:void 0,value:c};return()=>a},[e,c,d]),g=(0,O.useCallback)(a=>{let b=f().disposal?.retain()??(()=>{});return a(),b},[f]),(0,O.useLayoutEffect)(()=>g(()=>{}),[g]),(0,O.useSyncExternalStore)(g,f,f).value}function an(a,b,c){let d="object"==typeof a&&null!=a&&E.b in a?a:void 0,e=null!=d?(0,O.use)(V(d.scope)):U,f=d?.[E.d]((0,B.B)(e,d.scope),e,b),g=f?.cacheKey,h=f?.disposal==null?f?.value:void 0,i=c?.enabled,j=(0,O.useMemo)(()=>{if("object"!=typeof a||null==a||!(E.b in a))return a;if(null!=h)return h;let c=(0,B.B)(e,a.scope),d=(0,B.d)(d=>{let f=a[E.d](c,e,b,g);return null!=f.disposal&&d(f.disposal.atom),(0,B.z)(c,e,f.value,d,null==i?void 0:{enabled:i})});return{atom:d,store:c.store,get:()=>c.store.get(d),subscribe:a=>{let b=(()=>c.store.sub(d,a))();return()=>b()}}},[g,e,i,a,h]);return(0,O.useLayoutEffect)(()=>{if(null==d)return;let a=(0,B.B)(e,d.scope);return d[E.d](a,e,b,g).disposal?.retain()},[g,e,d]),aj((0,B.a)(j,c))}function ao(a){let b=(0,O.useContext)(V(a)),c=(0,B.B)(b,a),d=(0,B.i)(c),e=(0,O.useRef)(null);if(null==e.current||e.current.node!==c){let g={chain:b,getOwnValue:a=>(0,B.A)(c,g.chain,a),node:c,get queryClient(){if(null==c.queryClient)throw Error("Missing query client");return c.queryClient},scope:a,value:d};function f(a){return(0,B.F)(g,a)}g.get=function(a,b,c){if((0,B.v)(a))return(0,B.a)(a,2==arguments.length&&(0,B.t)(a)?b:void 0).get();if((0,B.t)(a)&&2==arguments.length){let c=(0,B.B)(g.chain,a.scope);return(0,B.q)(c,(0,B.a)(a,b).resolve(c,g.chain))}if(void 0!==b||arguments.length>=2){let d=(0,B.B)(g.chain,a.scope);return(0,B.w)(a)?a.read(d,g.chain,b,void 0,c):a.resolve(d,g.chain,b)}let d=(0,B.B)(g.chain,a.scope),e=a.resolve(d,g.chain);return(0,B.q)(d,e)},g.query=(0,B.j)(g),g.set=function(a,b,c){!function(a,b,c,d){if((0,B.x)(b)){let e=b.resolve(a.node,a.chain,c);(0,B.D)(e.store,e.atom,d);return}if((0,B.u)(b))return(0,B.D)(b.store,b.atom,c);let e=(0,B.C)(a.node,a.chain,b.scope);(0,B.D)(e.store,b.resolve(e,a.chain),c)}(g,a,b,c)},g.watch=f,g.when=function(a){return(0,B.E)(f,a)},e.current=g}else e.current.chain=b,e.current.value=d;return e.current}}),e9bM:(function(a,b,c){c.d(b,{a:()=>d.a,b:()=>i.a,c:()=>i.b,d:()=>h});var d=c("ns1t"),e=c("Nmf8"),f=c("vMlG"),g=c("PSDF");function h(a,b){let c=(0,e.b)(a.scope,(a,c)=>{let{signal:d}=c;return d(()=>b.read(a),{isEqual:b.isEqual,getServerSnapshot:b.getServerSnapshot})},{owner:()=>b.owner,autoDispose:b.autoDispose});function d(){return a.node.familyBindings.get(c)}return{at:b=>c.resolve(a.node,a.chain,b),publish(a){d()?.get(a)?.value.set(b.read(a))},publishAll(){for(let[a,c]of d()??[])c.value.set(b.read(a))},own:(b,e)=>Object.assign(b,{[f.a](){for(let b of(e(),d()?.keys()??[]))(0,g.e)(a.node,c,b)}})}}var i=c("PKjX");c("AvFJ")}),KoFQ:(function(a,b,c){var d=c("ouEa");c.d(b,{},{a:class{active;entries=new Map;deadlines=[];nextDeadline=1/0;timeout;idleCallback;draining=!1;constructor({active:a=!0}={}){this.active=a}activate(){this.active||(this.active=!0,this.updateTimeout())}schedule(a,b,c){if(1/0===b||this.entries.has(a))return;let d=performance.now()+Math.max(0,b),e={dispose:c,deadline:d,heapIndex:this.deadlines.length,key:a};this.entries.set(a,e),this.deadlines.push(e),this.moveDeadlineUp(e.heapIndex),d<this.nextDeadline&&this.updateTimeout()}cancel(a){let b=this.entries.get(a);if(null==b)return;let c=0===b.heapIndex;this.removeDeadline(b),c&&(0===this.entries.size||null!=this.idleCallback)&&this.updateTimeout()}updateTimeout(){let a=arguments.length>0&&void 0!==arguments[0]&&arguments[0];if(this.active&&!this.draining){if(null!=this.timeout&&(clearTimeout(this.timeout),this.timeout=void 0),this.nextDeadline=this.deadlines[0]?.deadline??1/0,null!=this.idleCallback){if(this.nextDeadline<=performance.now())return;globalThis.cancelIdleCallback(this.idleCallback),this.idleCallback=void 0}if(1/0!==this.nextDeadline){if(a&&this.nextDeadline<=performance.now()&&null!=globalThis.requestIdleCallback&&null!=globalThis.cancelIdleCallback){this.idleCallback=globalThis.requestIdleCallback(a=>{this.idleCallback=void 0,this.drain(a)},{timeout:1e3});return}this.timeout=setTimeout(()=>{this.timeout=void 0,this.drain()},Math.min(0x7fffffff,Math.max(0,this.nextDeadline-performance.now())))}}}drain(a){let b=performance.now();this.draining=!0;try{let c=this.deadlines[0];for(;null!=c&&c.deadline<=b&&!(null!=a&&!a.didTimeout&&0>=a.timeRemaining())&&(this.removeDeadline(c),c.dispose(),!(performance.now()-b>=2));){;c=this.deadlines[0]}}finally{this.draining=!1,this.updateTimeout(!0)}}removeDeadline(a){this.entries.delete(a.key);let b=this.deadlines.pop();if(null==b||b===a)return;let c=a.heapIndex;this.deadlines[c]=b,b.heapIndex=c;let d=Math.floor((c-1)/2);c>0&&b.deadline<this.deadlines[d].deadline?this.moveDeadlineUp(c):this.moveDeadlineDown(c)}moveDeadlineUp(a){let b=a;for(;b>0;){let a=Math.floor((b-1)/2);if(this.deadlines[a].deadline<=this.deadlines[b].deadline)return;this.swapDeadlines(b,a),b=a}}moveDeadlineDown(a){let b=a;for(;;){let a=2*b+1;if(a>=this.deadlines.length)return;let c=a+1,d=c<this.deadlines.length&&this.deadlines[c].deadline<this.deadlines[a].deadline?c:a;if(this.deadlines[b].deadline<=this.deadlines[d].deadline)return;this.swapDeadlines(b,d),b=d}}swapDeadlines(a,b){let c=this.deadlines[a],d=this.deadlines[b];this.deadlines[a]=d,this.deadlines[b]=c,c.heapIndex=b,d.heapIndex=a}},b:function(a,b,c,e){let f,g=(0,d.a)(!1),h=!1,i=0,j={atom:g,retain:l,dispose(){let b=arguments.length>0&&void 0!==arguments[0]&&arguments[0];!h&&(h=!0,a.autoDisposeScheduler.cancel(g),a.disposalLifecycles.delete(j),e?.children?.delete(j),c(),j.children?.forEach(a=>{a.dispose(b)}),b&&a.store.set(g,!0))}},k=()=>{0===i&&j.dispose(!0)};function l(){if(h)return;0==i++&&(0===a.imperativeReadDepth&&a.autoDisposeScheduler.cancel(g),f=e?.retain());let c=!0;return()=>{!c||(c=!1,0==--i&&(f?.(),f=void 0,h||a.autoDisposeScheduler.schedule(g,b,k)))}}return g.onMount=l,null!=e&&(e.children=e.children??new Set,e.children.add(j)),a.disposalLifecycles.add(j),a.autoDisposeScheduler.schedule(g,b,k),j},c:function(){let a=arguments.length>0&&void 0!==arguments[0]&&arguments[0];if("boolean"==typeof a)return a?0:1/0;if(!Number.isFinite(a)||a<0)throw RangeError("autoDispose must be a boolean or a finite, nonnegative delay in milliseconds");return a}})}),AvFJ:(function(a,b,c){let d=new WeakMap,e=new WeakMap,f=new WeakMap,g=new WeakMap,h=new WeakMap,i=new WeakMap,j=0;function k(a,b){let c=h.get(b),f=i.get(a.debugEntries);if(null!=c&&null!=f&&f.node!==a&&f.cachedBindings!==c.deref()||a.debugEntries.has(b)||(a.debugEntries.add(b),!e.get(a.store)?.has(a.debugEntries)))return;let g=d.get(a.store);g?.entries!=null&&(g.entries.add(b),m(g))}function l(a,b){let c=d.get(a.store),e=!1;for(let d of b)a.debugEntries.delete(d),e=(c?.entries?.delete(d)??!1)||e;e&&c?.entries!=null&&m(c)}function m(a){for(let b of(a.version+=1,a.listeners))b()}let n=new WeakMap;c.d(b,{},{a:function(a){l(a,a.debugEntries)},b:function(a,b){let c=g.get(b);if(null==c)return;g.delete(b),l(a,c);let d=a.parent?.retainedScopeEntries.get(a.token)?.get(a.key)?.node;null!=d&&d!==a&&d.familyBindings===a.familyBindings&&l(d,c)},c:function(a,b){n.get(a)?.listeners.forEach(a=>a(b))},d:function(a,b,c,d){if(d?.debugLabel==null)return;let e=f.get(b);if(null==e&&(j+=1,e={atom:b,familyKey:d.familyKey,id:j,kind:c,label:d.debugLabel,scopeKey:a.key,scopeName:a.token.__scopeBrand,writeValue:d.writeValue},f.set(b,e),("derived"===c||"external"===c||"query"===c||"mutation"===c)&&h.set(e,new WeakRef(a.cachedBindings)),null!=d.familyMember)){let a=g.get(d.familyMember);null==a&&(a=new Set,g.set(d.familyMember,a)),a.add(e)}k(a,e)},e:function(a,b){let c=g.get(b);if(null!=c)for(let b of c)k(a,b)},f:function(a){let b=arguments.length>1&&void 0!==arguments[1]?arguments[1]:a,c=function(a){let b=e.get(a);if(null!=b)return b;let c=new Set;return e.set(a,c),c}(a.store),f=d.get(a.store),g=f?.entries?.size,j=i.get(b.debugEntries)?.cachedBindings;i.set(b.debugEntries,{node:b,cachedBindings:a.cachedBindings});let k=!1;if(j!==a.cachedBindings)for(let c of b.debugEntries){let d=h.get(c);null!=d&&d.deref()!==a.cachedBindings&&(b.debugEntries.delete(c),k=(f?.entries?.delete(c)??!1)||k)}if(!c.has(a.debugEntries)){for(let d of(c.add(b.debugEntries),a.debugEntries))b.debugEntries.add(d),f?.entries?.add(d);a.debugEntries=b.debugEntries}f?.entries!=null&&(k||f.entries.size!==g)&&m(f)},g:function(a){if(e.get(a.store)?.delete(a.debugEntries)!==!0)return;i.delete(a.debugEntries);let b=d.get(a.store);if(b?.entries==null)return;let c=!1;for(let d of a.debugEntries)c=b.entries.delete(d)||c;c&&m(b)},h:function(a,b,c){a.set(b,c)}})}),UQAX:(function(a,b,c){var d=c("AvFJ"),e=c("iwK1"),f=c("fbKo"),g=c("m4Vs"),h=c("vMlG");c.d(b,{},{a:function(a,b,c){return function a(b,c,i,j){let k,l=(0,f.k)("cached",b,(a,b)=>{let d=(0,g.a)(),e=(0,f.d)(e=>c((0,f.h)(b,a,e,i,d)),j?.isEqual);return(0,f.y)(a,e),e},(a,b)=>{(0,d.d)(b,a,"derived",{debugLabel:l.debugLabel})}),m=Object.assign(l,{createSubscriberAtom:(a,b)=>e.a.createSubscriberAtom(l.resolve(a,b)),[h.e]:d=>i?.enabled===!1||d.enabled?m:(null==k&&((k=a(b,c,d,j)).debugLabel=m.debugLabel),k)});return m}(a,b,void 0,c)}})}),Nmf8:(function(a,b,c){var d=c("KoFQ"),e=c("AvFJ"),f=c("fbKo"),g=c("PSDF"),h=c("vMlG");c.d(b,{},{a:function(a){let b=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"readable-family";return Object.assign(a,{kind:b,read(b,c,d,e,g,i){let j=a[h.d](b,c,d);return null!=j.disposal&&null!=e&&e(j.disposal.atom),(0,f.z)(b,c,j.value,e,g,i)}})},b:function(a,b,c){let i=(0,d.c)(c?.autoDispose),j={[h.b](b,d,e){let h=b.token===a?b:(0,f.C)(b,d,a);return(0,g.e)(h,j,(0,f.r)(e,c))},resolve:(a,b,c)=>j[h.d](a,b,c).value,[h.d](h,k,l,m){let n=arguments.length>=4?m:(0,f.r)(l,c),o=h.token===a?h:(0,f.C)(h,k,a),p=o.familyBindings.get(j);null==p&&(p=new Map,o.familyBindings.set(j,p));let q=p.get(n);if(null!=q)return(0,e.e)(o,q.debugFamilyMember),q;let r=(0,f.c)(k,a);r.set(a.id,o);let s={},t=p,u=1/0===i?void 0:(0,d.b)(o,i,()=>{t.get(n)?.disposal===u&&(0,g.e)(o,j,n)}),v=b(l,{...(0,f.f)(o,r,l,j.debugLabel,s,u),scope:(0,f.g)(a,r,o)}),w={cacheKey:n,debugFamilyMember:s,owner:c?.owner?.(l),value:v};if(null!=u&&(w.disposal=u),p.set(n,w),null!=w.owner){let a=o.familyKeysByOwner.get(w.owner);null==a&&(a=new Map,o.familyKeysByOwner.set(w.owner,a));let b=a.get(j);null==b&&(b=new Set,a.set(j,b)),b.add(n)}return w},scope:a};return j}})}),tyzk:(function(a,b,c){var d=c("KoFQ");c.d(b,{},{a:function(a,b){return(0,d.c)(b?.retain?.autoDispose),{__scopeBrand:a,getKey:b?.key,id:Symbol(),parent:b?.parent,retain:b?.retain}}})}),jwtq:(function(a,b,c){var d=c("UQAX"),e=c("Nmf8");c.d(b,{},{a:function(a,b,c){let f=(0,e.b)(a,e=>(0,d.a)(a,a=>b(e,a),{isEqual:c?.isEqual}),{...c,autoDispose:c?.autoDispose??6e4});return(0,e.a)(f)},b:function(a,b,c,d){let f=(0,e.b)(a,(a,e)=>{let{externalSignal:f}=e;return f("function"==typeof b?c=>{let{scope:d}=c;return b(a,{get:d.get,get queryClient(){return d.queryClient},scope:d})}:b,b=>c(a,b),{isEqual:d?.isEqual})},d);return(0,e.a)(f)},c:function(a,b,c,d){let f=(0,e.b)(a,(a,d)=>{let{signal:e}=d;return e(c=>{let{scope:d}=c;return"function"==typeof b?b(a,{get:d.get,get queryClient(){return d.queryClient},scope:d}):b},c)},d);return(0,e.a)(f,"signal-family")}})}),hffr:(function(a,b,c){var d=c("AvFJ"),e=c("fbKo"),f=c("XNFm");c.d(b,{},{a:function(a,b,c,f){let g=(0,e.k)("cached",a,(d,g)=>(0,e.e)(a,d,g,a=>"function"==typeof b?b(a):b,c,f?.isEqual),(a,b)=>{(0,d.d)(b,a,"external",{debugLabel:g.debugLabel})});return g},b:function(a,b,c){let g=(0,e.k)("signal",a,(d,g)=>{let h=(0,e.m)(c=>"function"==typeof b?b((0,e.l)(a,g,d,c)):b,c?.isEqual,c?.getServerSnapshot),i=c?.onMount;return null!=i&&((0,e.y)(d,h),h.onMount=b=>(0,f.d)(d.store,()=>i(a=>{b(a)},(0,e.g)(a,g,d,{observeWatch:f.b})))??void 0),h},(a,b)=>{(0,d.d)(b,a,"signal",{debugLabel:g.debugLabel,writeValue:c=>{(0,d.h)(b.store,a,c)}})});return g}})}),J6iR:(function(a,b,c){let d=new WeakMap,e=new WeakMap,f=new WeakSet,g=new WeakMap;function h(a){return"idle"===a.state.fetchStatus?void 0:a.promise}function i(a){return(g.get(a)??0)>0}c.d(b,{},{a:function(a){null!=a&&d.set(a,"independent")},b:function(a,b){let c=a.behavior;a.behavior={onFetch(a,d){let g=b;f.has(d)?g="independent":i(d)&&(g="reactive"),c?.onFetch(a,d);let j=a.fetchFn;a.fetchFn=()=>{let a=h(d);return null!=a&&e.set(a,g),j()}}}},c:h,d:function(a){return null==a?void 0:d.get(a)},e:function(a,b){let c=a.getQueryCache().find({exact:!0,queryKey:b});if(null==c)return;let d=h(c);return null==d?void 0:e.get(d)},f:i,g:function(a,b){null==a||d.has(a)||d.set(a,b)},h:function(a){let b=g.get(a)??0;return g.set(a,b+1),{hadMountedReader:b>0,unmount(){let b=(g.get(a)??1)-1;b>0?g.set(a,b):g.delete(a)}}},i:function(a,b){let c=f.has(a);f.add(a);try{return b()}finally{c||f.delete(a)}}})}),iwK1:(function(a,b,c){let d,e;c.d(b,{a:()=>z});let f={suspense:!1,throwOnError:void 0},g=new WeakMap,h=new WeakMap,i=new WeakSet,j=new WeakMap,k=new WeakSet;function l(a){let b=!(arguments.length>1)||void 0===arguments[1]||arguments[1];if(null!=d||null!=e)return a();e=b;try{return a()}finally{d=void 0,e=void 0}}function m(a,b){if(null!=d)return a(d);if(null!=e)return b.connect=b.connect&&e,d=b,a(b);d=b;try{return a(b)}finally{d=void 0}}function n(a,b){return i.has(a)||"object"==typeof b&&null!=b&&j.get(a)?.has(b)===!0}function o(a,b){return"object"==typeof b&&null!=b&&n(a,b)?m(c=>{c.didReadQueryResult=!0;let d=g.get(b)?.getCurrentSnapshot(c);return i.has(a)||null==d||j.get(a)?.add(d),d??b},d??{connect:!0,token:{}}):b}function p(a){if("object"==typeof a&&null!=a)return g.get(a)}function q(a){j.set(a,null)}function r(a,b){"object"==typeof b&&null!=b&&g.has(b)?j.set(a,new WeakSet([b])):j.set(a,null)}function s(a,b){let c=g.get(a),d=new Proxy(c?.result??a,{get(c,d,e){if("then"!==d)return b(d),"promise"===d&&b("data"),Reflect.get(a,d,e)}});if(null!=c){let e=a,f=d;g.set(d,{...c,getCurrentSnapshot:a=>{let d=c.getCurrentSnapshot(a);return d!==e&&(e=d,f=s(d,b)),f},snapshot:d})}return d}function t(a,b){let c=h.get(a);if(null!=c)return c.value;let d="function"==typeof b?b()??"all":b;return h.set(a,{value:d}),d}var u=c("ouEa"),v=c("WWxl");function w(a,b,c,d,e,f,g){return!!a||(null==e?null!=c||!Object.is(b,d):!!(null==c||x(c,e))||c.result!==e.result&&function(a,b,c,d){if("all"===d||b.notifyOnError&&Reflect.get(a,"error")!==Reflect.get(b.result,"error"))return!0;let e=d??c;if(null==d&&0===c.size)return!0;for(let c of e)if(Reflect.get(a,c)!==Reflect.get(b.result,c))return!0;return!1}(c.result,e,f,g??e.getChangeProperties()))}function x(a,b){return a.behavior.suspense!==b.behavior.suspense||!Object.is(a.behavior.throwOnError,b.behavior.throwOnError)}class y{readAtom;currentResults;completedResults;get=a=>{if(null==this.readAtom)throw Error("Query result tracker read outside atom evaluation");let b=this.readAtom(a),c=n(a,b),d=c?o(a,b):b;return"object"==typeof d&&null!=d&&g.has(d)&&(null==this.currentResults&&(this.currentResults=new WeakMap),this.currentResults.set(d,c&&!1!==this.currentResults.get(d))),d};constructor(){k.add(this.get)}includes(a){return"object"==typeof a&&null!=a&&this.completedResults?.get(a)===!0}read(a,b){let c=this.readAtom,d=this.currentResults;this.readAtom=a,this.currentResults=void 0;try{return b(this.get)}finally{this.completedResults=this.currentResults,this.readAtom=c,null!=c&&(this.currentResults=d)}}}let z={cacheChangeProperties(a,b){t(a,b)},createAtomReadTracker:()=>new y,createSnapshot:function a(b,c){let d=c.trackResult(b),e=new Proxy(b,{get(a,b,c){if("then"!==b)return Reflect.get(d,b,c)}}),h=b,i=e;return g.set(e,{behavior:c.getBehavior?.(b)??f,getChangeProperties:()=>t(b,c.notifyOnChangeProps),getCurrentSnapshot:b=>{let d=c.getCurrentResult(h,b);return d!==h&&(h=d,i=a(d,c)),i},notifyOnError:c.notifyOnError,result:b,snapshot:e}),e},createSnapshotView:function a(b,c){let d=g.get(b);if(null==d)return{...b,...c};let e=(a,b,d)=>Reflect.has(c,b)?Reflect.get(c,b):Reflect.get(a,b,d),f=new Proxy(d.result,{get:e}),h=new Proxy(b,{get:(a,b,c)=>e(a,b,c)}),i=b,j=h;return g.set(h,{...d,getCurrentSnapshot:b=>{let e=d.getCurrentSnapshot(b);return e!==i&&(j=a(i=e,c)),j},result:f,snapshot:h}),h},createSubscriberAtom:function(a){let b=new Set,c=a=>{b.add(a)},d=(0,v.b)(a,b=>{let d=n(a,b)?p(b):void 0;return null==d?{isCurrentQueryResult:!1,value:b}:{isCurrentQueryResult:!0,value:s(d.snapshot,c)}},(a,c)=>a.isCurrentQueryResult===c.isCurrentQueryResult&&!w(!1,a.value,a.isCurrentQueryResult?p(a.value):void 0,c.value,c.isCurrentQueryResult?p(c.value):void 0,b)),e=(0,u.a)(a=>{let b=a(d);return r(e,b.isCurrentQueryResult?b.value:void 0),b.value});return q(e),e},createSubscriberStore:function(a,b,c){let d;if(!i.has(a)&&!j.has(a))return{getSnapshot:b,subscribe:c};let e=()=>{d?.()},f=()=>(function(a,b,c){let d,e,f,g,h,j,k=new Set,l={connect:!1,token:{}},q={connect:!0,token:{}},r=!1,t=!1,u=!1,v=0;function y(a){if(m(()=>z(!1),a),t)throw g;if(!r)throw Error("Missing subscriber snapshot");return f}function z(c){try{let g=o(a,b()),i=n(a,g)?p(g):void 0,l=null!=i&&(j?.result!==i.result||e?.result!==i.result),m=c&&l?i.getChangeProperties():void 0,q=c&&(u&&w(!1,h,j,g,i,k,m)||r&&w(t,d,e,g,i,k,m)||!u&&!r);return t=!1,null==i?f=g:(!r||null==e||x(e,i)||e?.result!==i.result)&&(f=i.snapshot),d=g,e=i,r=!0,q}catch(b){let a=c&&(u||!r||!t||!Object.is(g,b));return t=!0,g=b,a}}return{checkForUpdates:function(a){a||(q.token={},q.didReadQueryResult=!1,q.errorValidation=void 0);let b=m(()=>z(!0),q);return b&&(v+=1),b},createRender:function(){let b,f=arguments.length>0&&void 0!==arguments[0]&&arguments[0],g=l;if(f&&!0===g.didReadQueryResult&&(l={connect:!1,token:{}}),!i.has(a)&&(!r||null==e))return;let n={connect:!1,token:{}};f&&(n.errorValidation=g.errorValidation,q.errorValidation=g.errorValidation);let o=new Set,p=d,t=e,w=-1,x=!1,A=a=>{(x?k:o).add(a)};return{commit:()=>{let a=!1;for(let b of o)a=a||!k.has(b),k.add(b);x=!0,j=t,h=p,u=!0,n.connect=!0,m(()=>z(a),n)&&(v+=1,c())},getSnapshot:()=>(w!==v&&(b=y(n),q.errorValidation=n.errorValidation,p=d,t=e,w=v),b),track:a=>null==t?a:s(t.snapshot,A)}},getSnapshot:function(){return y(l)}}})(a,b,e),g=i.has(a)?f():void 0;return{createRender:function(){let a=arguments.length>0&&void 0!==arguments[0]&&arguments[0];return g?.createRender(a)},getSnapshot:()=>{if(null!=g)return g.getSnapshot();let c=l(b,!1);return n(a,c)?(g=f()).getSnapshot():c},subscribe:e=>{let h=a=>{(g=g??f()).checkForUpdates(a)&&e()};d=e;let i=c(()=>{let c;if(null!=g)return void h(!1);try{c=b()}catch{e();return}n(a,c)?h(!1):e()});return null!=g&&h(!0),()=>{d===e&&(d=void 0),i()}}}},getCurrentAtomValue:o,getMetadata:p,isCurrentQueryResultReader:a=>k.has(a),needsSubscriberAtom:(a,b)=>n(a,b),markDerivedAtom:q,markAtom(a){i.add(a)},recordDerivedQueryResult:r,withCurrentRead:l}}),ns1t:(function(a,b,c){var d=c("ABep"),e=c("QosV");let f=(0,c("zd8w").createContext)(!1);c.d(b,{},{a:function(a){let b,c=(0,e.c)(2),{children:g}=a;return c[0]!==g?(b=(0,d.jsx)(f,{value:!0,children:g}),c[0]=g,c[1]=b):b=c[1],b},b:f})}),PSDF:(function(a,b,c){var d=c("AvFJ"),e=c("vMlG");function f(a,b){var c;"object"==typeof(c=b)&&null!=c&&e.a in c&&"function"==typeof c[e.a]&&b[e.a](a)}function g(a,b,c){let e=a.familyBindings.get(b),g=e?.get(c);if(null==e||null==g)return!1;e.delete(c),0===e.size&&a.familyBindings.delete(b);let h=a.familyKeysByOwner.get(g.owner),i=h?.get(b);return i?.delete(c),i?.size===0&&h?.delete(b),h?.size===0&&a.familyKeysByOwner.delete(g.owner),g.disposal?.dispose(),f(a,g.value),(0,d.b)(a,g.debugFamilyMember),!0}c.d(b,{},{a:function(a,b){return null==b?0:function a(b,c){let d=0,e=b.familyKeysByOwner.get(c);if(null!=e)for(let[a,f]of e)for(let e of f)Object.is(b.familyBindings.get(a)?.get(e)?.owner,c)&&(g(b,a,e),d+=1);for(let e of b.retainedScopeEntries.values())for(let{node:b}of e.values())d+=a(b,c);return d}(a.node,b)},b:f,c:function(a,b,c){return b[e.b](a.node,a.chain,c)},d:function(a,b){let c=a.node;for(;null!=c.parent;)c=c.parent;return function a(b,c){let d=0;for(let a of b.familyBindings.keys())g(b,a,c)&&(d+=1);for(let e of b.retainedScopeEntries.values())for(let{node:b}of e.values())d+=a(b,c);return d}(c,b)},e:g})}),fbKo:(function(a,b,c){c.d(b,{a:()=>u,b:()=>function a(b){for(let a of((0,V.a)(b),(0,V.g)(b),b.disposalLifecycles))a.dispose();for(let a of b.familyBindings.values())for(let c of a.values())(0,W.b)(b,c.value);for(let c of b.retainedScopeEntries.values())for(let d of c.values())b.autoDisposeScheduler.cancel(d),a(d.node);b.retainedScopeEntries.clear()},c:()=>z,d:()=>m,e:()=>S,f:()=>ab,g:()=>N,h:()=>R,i:()=>L,j:()=>H,k:()=>Y,l:()=>Q,m:()=>l,n:()=>W.a,o:()=>W.c,p:()=>W.d,q:()=>n,r:()=>Z,s:()=>X,t:()=>t,u:()=>x,v:()=>s,w:()=>w,x:()=>y,y:()=>k,z:()=>D,A:()=>K,B:()=>B,C:()=>A,D:()=>o,E:()=>P,F:()=>O});var d=c("ouEa"),e=c("WWxl"),f=c("iwK1"),g=c("PKjX"),h=c("wFEO"),i=c("oFsh");let j=new WeakMap;function k(a,b){a.imperativeReadAtoms.add(b)}function l(a,b,c,f){let g=(0,e.a)(a),i=(0,d.a)(c??a);g.read=a=>a(h.c)?a(i):a(g);let j=function(a,b){let c;if(null!=a||null!=b)return function(d,e,f){let g=d(this),h="function"==typeof f?f(g):f;Object.is(g,h)||a?.(g,h)||(e(this,h),b?.retainOnWrite(h)?c=c??b.disposal.retain():(c?.(),c=void 0))}}(b,f);return null!=j&&(g.write=j),g}function m(a,b){let c=f.a.createAtomReadTracker();if(null==b){let b=(0,d.a)(d=>{let e=c.read(d,a);return f.a.recordDerivedQueryResult(b,c.includes(e)?e:void 0),e});return f.a.markDerivedAtom(b),b}let g=(0,d.a)(b=>{let d=c.read(b,a);return{isCurrentQueryResult:c.includes(d),value:d}}),h=(0,e.b)(g,(a,c)=>null!=c&&b(c.value,a.value)?Object.is(c.value,a.value)?c.isCurrentQueryResult===a.isCurrentQueryResult?c:a:c.isCurrentQueryResult?{isCurrentQueryResult:!1,value:c.value}:c:a),i=(0,d.a)(a=>{let b=a(h);return f.a.recordDerivedQueryResult(i,b.isCurrentQueryResult?b.value:void 0),b.value});return f.a.markDerivedAtom(i),i}function n(a,b,c){return f.a.withCurrentRead(()=>(function(a,b,c){if(null!=c){let a=c(b);return f.a.isCurrentQueryResultReader(c)?a:f.a.getCurrentAtomValue(b,a)}let d=j.get(a.store);if(!a.imperativeReadAtoms.has(b)||d?.has(b))return f.a.getCurrentAtomValue(b,a.store.get(b));null==d&&(d=new Set,j.set(a.store,d)),d.add(b);let e=[],g=a;for(;null!=g;)g.imperativeReadDepth+=1,e.push(g),g=g.parent;try{let c=(0,i.b)(a.store,b,()=>{});try{return f.a.getCurrentAtomValue(b,a.store.get(b))}finally{c()}}finally{for(let a of(d.delete(b),e))a.imperativeReadDepth-=1}})(a,b,c))}function o(a,b,c){(0,g.f)(a,b,c)}var p=c("m4Vs"),q=c("XNFm"),r=c("vMlG");function s(a){return"object"==typeof a&&null!=a&&"atom"in a&&"store"in a}function t(a){return"object"==typeof a&&null!=a&&r.e in a&&"function"==typeof a[r.e]}function u(a,b){return null!=b&&t(a)?a[r.e](b):a}function v(a,b){return a?.enabled===!1?a:b??a}function w(a){return"object"==typeof a&&null!=a&&"kind"in a&&("readable-family"===a.kind||"signal-family"===a.kind)}function x(a){return s(a)&&"set"in a}function y(a){return"object"==typeof a&&null!=a&&"kind"in a&&"signal-family"===a.kind}function z(a,b){let c=new Map,d=b.parent;for(;null!=d;){let b=a.get(d.id);if(null==b)break;c.set(d.id,b),d=d.parent}return c}function A(a,b,c){let d=a;for(;null!=d;){if(d.token===c)return d;d=d.parent}return B(b,c)}function B(a,b){let c=a.get(b.id);if(null==c)throw Error("Missing scope instance");return c}function C(a,b,c,d,e){return function(f,g,h){if(s(f))return D(b,a,f,c,v(d,2==arguments.length&&t(f)?g:void 0),e);if(t(f)&&2==arguments.length){let h=A(b,a,f.scope),i=u(f,v(d,g)),j=e?.(i,h,a,c)??i.resolve(h,a);return n(h,j,c)}if(void 0!==g||arguments.length>=2){let i=A(b,a,f.scope);if(w(f))return f.read(i,a,g,c,v(d,h),e);let j=f[r.d](i,a,g);return null!=j.disposal&&null!=c&&c(j.disposal.atom),j.value}let i=A(b,a,f.scope),j=u(f,v(d,h)),k=e?.(j,i,a,c)??j.resolve(i,a);return n(i,k,c)}}function D(a,b,c,d,e,g){if(s(c)){let h=u(c,e),i=g?.(h,a,b,d)??h.atom;if(null!=d&&h.store===a.store){let b=h[r.c];return null!=b&&d(b.atom),n(a,i,d)}return i===h.atom?h.get():f.a.getCurrentAtomValue(i,h.store.get(i))}let h=A(a,b,c.scope),i=u(c,e),j=g?.(i,h,b,d)??i.resolve(h,b);return n(h,j,d)}var E=c("NxBK"),F=c("J6iR");function G(a,b,c,d){let e,f;return"infinite"===b.queryKind?function(a,b,c,d){let e=A(a.node,a.chain,b.scope),f=z(a.chain,b.scope);if(f.set(b.scope.id,e),null==e.queryClient)throw Error("Missing query client");let g=(0,h.a)(e.queryClient,c),i=b.getOptions(R(f,e,c,{enabled:!1},d)),j=()=>{let a=g.defaultQueryOptions(i),b=g.getQueryCache().build(g,a),c="function"==typeof a.staleTime?a.staleTime(b):a.staleTime,d=b.isStaleByTime(c),e=g.fetchInfiniteQuery(i);return d&&(0,F.a)((0,F.c)(b)),e};return{queryKey:i.queryKey,async cancel(a,b){await g.cancelQueries({...a,queryKey:i.queryKey},b)},getData:()=>g.getQueryData(i.queryKey),getOptions:()=>i,fetch:j,getOrFetch:j,async invalidate(a,b){await g.invalidateQueries({...a,queryKey:i.queryKey},b)},setData:(a,b)=>g.setQueryData(i.queryKey,a,b)}}(a,b,c,d):(e=function(a,b,c,d){let e=A(a.node,a.chain,b.scope),f=z(a.chain,b.scope);if(f.set(b.scope.id,e),null==e.queryClient)throw Error("Missing query client");return{queryClient:(0,h.a)(e.queryClient,c),queryOptions:b.getOptions(R(f,e,c,{enabled:!1},d))}}(a,b,c,d),f=async()=>{let a=e.queryClient.defaultQueryOptions(e.queryOptions),b=e.queryClient.getQueryCache().build(e.queryClient,a),c="function"==typeof a.staleTime?a.staleTime(b):a.staleTime,d=b.isStaleByTime(c);(0,F.b)(a,"independent");let f=(0,F.i)(b,()=>e.queryClient.fetchQuery(a));d&&(0,F.a)((0,F.c)(b));let g=d?b.promise:void 0;for(;null!=g;)try{await g;break}catch(c){let a=b.promise;if(!(c instanceof E.a)||!c.silent||null==a||a===g)break;(0,F.a)((0,F.c)(b)),f=f.catch(b=>{if(b instanceof E.a&&b.silent)return a;throw b}),g=a}return f},{queryKey:e.queryOptions.queryKey,async cancel(a,b){await e.queryClient.cancelQueries({...a,queryKey:e.queryOptions.queryKey},b)},getData:()=>e.queryClient.getQueryData(e.queryOptions.queryKey),getOptions:()=>e.queryOptions,fetch:f,getOrFetch:f,async invalidate(a,b){await e.queryClient.invalidateQueries({...a,queryKey:e.queryOptions.queryKey},b)},setData:(a,b)=>e.queryClient.setQueryData(e.queryOptions.queryKey,a,b)})}function H(a,b,c){return{async cancel(d,e,f,g){let[h,i,j]=J(a,d,e,f,g);await G(a,h,b,c).cancel(i,j)},getData:(d,e)=>G(a,I(a,d,e),b,c).getData(),getOptions:(d,e)=>G(a,I(a,d,e),b,c).getOptions(),fetch:async(d,e)=>G(a,I(a,d,e),b,c).fetch(),getOrFetch:async(d,e)=>G(a,I(a,d,e),b,c).getOrFetch(),async invalidate(d,e,f,g){let[h,i,j]=J(a,d,e,f,g);await G(a,h,b,c).invalidate(i,j)},setData(d,e,f,g){let[h,i,j]=J(a,d,e,f,g);return G(a,h,b,c).setData(i,j)},snapshot:(d,e)=>G(a,I(a,d,e),b,c)}}function I(a,b,c){return w(b)?b.resolve(a.node,a.chain,c):b}function J(a,b,c,d,e){return w(b)?[I(a,b,c),d,e]:[I(a,b),c,d]}function K(a,b,c,d){let e=A(a,b,c);return d?.(e.contextVersionAtom),e.value}function L(a){return M(a)}function M(a){let b=null==a.parent?void 0:M(a.parent);return null==b?a.value:{...b,...a.value}}function N(a,b,c){let{readAtom:d,inheritedQueryReadOptions:e,resolveSubscriberAtom:f,observeWatch:g}=arguments.length>3&&void 0!==arguments[3]?arguments[3]:{},i=null==d?M(c):void 0,j={chain:b,get:C(b,c,d,e,f),getOwnValue:a=>K(c,b,a,d),node:c,query:H({chain:b,node:c},d,f),get queryClient(){if(null==c.queryClient)throw Error("Missing query client");return(0,h.a)(c.queryClient,d)},scope:a,get value(){return null==i&&(null!=d&&function a(b,c){null!=b.parent&&a(b.parent,c),c(b.contextVersionAtom)}(c,d),i=M(c)),i}};function k(a){return O(j,a,g)}return j.set=function(a,d,e){x(a)?o(a.store,a.atom,d):function(a,d,e){if(y(a)){let f=a.resolve(c,b,d);o(f.store,f.atom,e);return}let f=A(c,b,a.scope);o(f.store,a.resolve(f,b),d)}(a,d,e)},j.watch=k,j.when=function(a){return P(k,a)},j}function O(a,b){let c=arguments.length>2&&void 0!==arguments[2]?arguments[2]:(0,q.a)(a.node.store),d=(0,p.a)();return c(e=>b(N(a.scope,a.chain,a.node,{readAtom:e,resolveSubscriberAtom:d,observeWatch:c})),a.node.store)}function P(a,b){return new Promise(c=>{let d=null,e=!1;d=a(a=>{if(b(a)){if(c(),null==d){e=!0;return}d()}}),e&&d()})}function Q(a,b,c,d,e,f){return{get queryClient(){if(null==c.queryClient)throw Error("Missing query client");return(0,h.a)(c.queryClient,d)},scope:N(a,b,c,{readAtom:d,inheritedQueryReadOptions:e,resolveSubscriberAtom:f})}}function R(a,b,c,d,e){return Object.assign(Q(b.token,a,b,c,d,e),{get:C(a,b,c,d,e)})}function S(a,b,c,d,e,f,h){let i=l(a=>d(R(c,b,a)),f);return k(b,i),i.onMount=f=>{if(null!=h&&b.store.get(h.atom))return;let j=null==h||b.imperativeReadDepth>0?void 0:h.retain(),k=(0,p.a)(),l=(0,q.b)(h=>{let j,l=N(a,c,b,{readAtom:h,resolveSubscriberAtom:k,observeWatch:q.b}),m=!0,n={scope:l,get:l.get,get queryClient(){return l.queryClient},set:a=>{m&&((0,g.d)(b.store)?(0,g.f)(b.store,i,a):f(a))}};f(d(n));let o=e(n);return null!=o&&"then"in o?(U(o)&&(j=o),Promise.resolve(o).then(a=>{m?j=a:T(a)},a=>{m&&globalThis.dispatchEvent(new ErrorEvent("error",{cancelable:!0,error:a}))})):j=o,()=>{m&&(m=!1,T(j))}},b.store);return()=>{l(),j?.()}},i}function T(a){if(null!=a){if(U(a))return void a[Symbol.dispose]();a()}}function U(a){return null!=a&&Symbol.dispose in a}var V=c("AvFJ"),W=c("PSDF");function X(a,b,c){if(null==b.parent)return null;let d=B(a.chain,b.parent),e=d.retainedScopeEntries.get(b)?.get(c)?.node;if(null==e)return null;let f=new Map(a.chain);return f.set(b.id,e),N(b,f,e)}function Y(a,b,c,d){let e={cache:a,resolve(a,f){let g=A(a,f,b),h="signal"===e.cache?g.signalBindings:g.cachedBindings,i=h.get(e);if(void 0!==i)return d?.(i,g),i;let j=z(f,b);j.set(b.id,g);let k=c(g,j);return h.set(e,k),d?.(k,g),k},scope:b};return e}function Z(a,b){if(b?.key!=null)return b.key(a);if(!Array.isArray(a)&&!$(a))return a;let c=null!=b&&$(a)&&null!=b.excludeFieldsFromKey?new Set(b.excludeFieldsFromKey):void 0;return JSON.stringify(function a(b,c){if(Array.isArray(b))return b.map(b=>a(b));if(!$(b))return b;let d={};for(let e of Object.keys(b).sort())c?.has(e)||(d[e]=a(b[e]));return d}(a,c))}function $(a){if(null==a||"object"!=typeof a)return!1;let b=Object.getPrototypeOf(a);return b===Object.prototype||null==b}var _=c("KoFQ");function aa(a,b,c,d){return(e,f)=>{let g=(0,_.c)(f?.autoDispose),h=new Map;return i=>{let j=Z(i,f);if(h.has(j))return h.get(j);let k=1/0===g?void 0:(0,_.b)(a,g,()=>{h.delete(j)},d),l=e(i,{...ab(a,b,i,void 0,c,k??d),scope:N(a.token,b,a)});return h.set(j,l),l}}}function ab(a,b,c,d,e,g){return{derived:(h,i)=>{let j,l=n=>{let o=(0,p.a)(),q=m(d=>(null!=g&&d(g.atom),h(c=>{let e=u(c,n),f=e[r.c];return null!=f&&d(f.atom),d(o(e,a,b,d))},Object.assign(Q(a.token,b,a,d,n,o),{key:c}))),i?.isEqual);k(a,q),(0,V.d)(a,q,"family-derived",{debugLabel:d,familyKey:c,familyMember:e});let s=Object.assign(ac(a,q,g,()=>f.a.createSubscriberAtom(q)),{[r.e]:a=>n?.enabled===!1||a.enabled?s:j=j??l(a)});return s};return l()},externalSignal:(f,h,i)=>{let j=S(a.token,a,b,a=>"function"==typeof f?f(Object.assign(a,{key:c})):f,a=>h(Object.assign(a,{key:c})),i?.isEqual,g);return(0,V.d)(a,j,"family-external",{debugLabel:d,familyKey:c,familyMember:e}),ac(a,j,g)},family:aa(a,b,e,g),get:C(b,a),signal:(f,h)=>{var i,j,m;let p=h?.getServerSnapshot,s=l(d=>"function"==typeof f?f(Object.assign(Q(a.token,b,a,d),{key:c})):f,h?.isEqual,null==p?void 0:()=>p(c),null!=g&&h?.retainOnWrite!=null?{disposal:g,retainOnWrite:h.retainOnWrite}:void 0),t=h?.onMount;return null!=t&&k(a,s),(null!=t||null!=g)&&(s.onMount=d=>{let e=null==g||a.imperativeReadDepth>0?void 0:a.store.sub(g.atom,()=>{}),f=(0,q.d)(a.store,()=>t?.(d,Object.assign(N(a.token,b,a,{observeWatch:q.b}),{key:c})));if(null!=e||null!=f)return()=>{f?.(),e?.()}}),(0,V.d)(a,s,"family-signal",{debugLabel:d,familyKey:c,familyMember:e,writeValue:b=>{(0,V.h)(a.store,s,b)}}),i=a,j=s,m=g,{[r.c]:m,atom:j,get:()=>n(i,j),set(a){o(i.store,j,a)},subscribe:a=>i.store.sub(j,a),store:i.store}},signalFamily:(c,d,f)=>aa(a,b,e,g)((a,b)=>{let{signal:e}=b;return e(b=>{let{scope:d}=b;return"function"==typeof c?c(a,{scope:d,get:d.get,get queryClient(){return d.queryClient}}):c},d)},f)}}function ac(a,b,c,d){return{[r.c]:c,atom:b,createSubscriberAtom:d,get:()=>n(a,b),subscribe:c=>a.store.sub(b,c),store:a.store}}}),XNFm:(function(a,b,c){let d;c.d(b,{a:()=>o,b:()=>p,c:()=>n,d:()=>m});var e=c("ouEa"),f=c("HkKI");let g=new WeakMap;function h(a,b,c){var d,h;let j,k,l=(0,f.b)(a),m=l[1],n=(0,f.c)(l[6]),o=l[11],p=l[12],q=l[13],r=l[14],s=l[17],t=new Set,u=(0,e.a)(a=>{m.has(u)&&(t.forEach(a),v.n+=1)}),v=o(l,a,u);v.v=void 0;let w="new",x=!1,y=!1;function z(){if(null==k||c?.(z))return;let a=k;k=void 0;let b=null==c?"idle":w;w="cleanup",i(a,()=>{w=b,"idle"===b&&x&&A()})}function A(){x&&(x=!1,i(B,()=>p(l,a)))}function B(){if(!m.has(u))return;if(null!=c){if("new"!==w&&("idle"!==w||c(A))){x=!0;return}w="running"}x=!1,y=!1,t.clear();let d=!0;try{try{z()}catch(a){throw null==c||y||(x=!0),a}if(x||y)return;let e=b(b=>{if("cleanup"===w)return a.get(b);let c=r(l,a,b);if(d&&(x||y))return(0,f.d)(c);try{return(0,f.d)(c)}finally{v.d.set(b,c.n),m.get(b)?.t.add(u),d?t.add(b):m.has(b)&&(s(l,a,u),q(l,a),p(l,a))}});"function"==typeof e&&(k=e)}finally{if(d=!1,null!=c&&(w="idle"),x?C.add(B):y&&null!=k&&!m.has(u)&&C.add(z),!y){for(let b of t)v.d.set(b,o(l,a,b).n);s(l,a,u),q(l,a)}}}let C=(d=a,h=n,null!=(j=g.get(d))||(j=new Set,g.set(d,j),h.f.add(()=>{let a;for(let b of j){j.delete(b);try{b()}catch(b){(a=a??[]).push(b)}}if(null!=a)throw AggregateError(a)})),j);return n.m.add(u,()=>{C.delete(z),C.add(B)}),n.u.add(u,()=>{y=null!=c,x=!1,C.delete(B),null!=k&&C.add(z)}),n.c.add(u,()=>{l[3].delete(u),C.add(B)}),u}function i(a,b){try{a()}catch(a){try{b()}catch(b){throw AggregateError([a,b])}throw a}b()}var j=c("PKjX"),k=c("oFsh");function l(a,b){let c=d;d=a;try{return b()}finally{d=c}}function m(a,b){let c=l(a,b);return"function"==typeof c?()=>l(a,c):void 0}function n(a){return l(void 0,a)}function o(a){return d===a?p:q}function p(a,b){return(0,k.b)(b,h(b,c=>m(b,()=>a(c))),()=>{})}function q(a,b){return(0,k.b)(b,h(b,b=>n(()=>{let c=a(b);return"function"==typeof c?()=>n(c):void 0}),a=>(0,j.c)(b,a)),()=>{})}}),wFEO:(function(a,b,c){var d=c("suje"),e=c("ouEa");let f=(0,e.a)(!1),g=new WeakMap,h=(0,e.a)(()=>new WeakMap);c.d(b,{},{a:function(a,b){if(!b?.(f))return a;let c=b(h),e=c.get(a);if(null==e){let b=a.getDefaultOptions();e=new d.a({defaultOptions:{...b,queries:{...b.queries,gcTime:1/0}}}),c.set(a,e)}return e},b:function(a,b){let c=g.get(a);return null==c&&((c=(0,e.b)()).set(f,!0),g.set(a,c)),c.get(b)},c:f})}),oFsh:(function(a,b,c){c.d(b,{a:()=>i,b:()=>h});var d=c("ouEa"),e=c("PKjX"),f=c("XNFm");let g=new WeakMap;function h(a,b,c){return(g.get(a)??a.sub)(b,c)}function i(){let a=(0,d.b)(),b=a.sub;g.set(a,b);let c=new Map;return a.sub=(d,g)=>{let h,i=c.get(g);if(null==i){let b=!1,d={count:0,notify:()=>{b=!0,(0,e.c)(a,h)||h()}},h=()=>{0!==d.count&&b&&(b=!1,(0,f.c)(g))};i=d,c.set(g,i)}i.count+=1;let j=()=>{i.count-=1,0===i.count&&c.delete(g)};try{h=b(d,i.notify)}catch(a){throw j(),a}let k=!0;return()=>{k&&(k=!1,j(),h())}},a}}),PKjX:(function(a,b,c){var d=c("ouEa"),e=c("AvFJ");let f=new WeakMap;function g(a,b){let c,g=a.node.store;if(f.has(g))throw Error("Cannot start a nested Maitai signal transaction");let i=new Set,j=new Map,k=[],l=new Set,m=(0,d.a)(null,(c,d)=>{let m={callbacks:i,get:a=>c(a),isReplaying:!1,record:(a,b)=>{let d=j.get(a);if(null!=d)return void d.refresh();let e=c(a),f={hasChanged:()=>!Object.is(b,e),redo:()=>h(g,a,e),refresh:()=>{e=c(a)},undo:()=>h(g,a,b)};j.set(a,f),k.push(f)},recordMutation:a=>{m.isReplaying||k.push({...a,hasChanged:()=>!0,refresh:()=>{}})},set:(a,b)=>{(0,e.c)(g,a),d(a,b)}};f.set(g,m);try{return b(a)}catch(a){l.add(a),m.isReplaying=!0;try{for(let a of[...k].reverse())a.undo()}catch(a){l.add(a)}throw a}finally{f.delete(g)}});m.debugLabel="Maitai transaction";try{let a=g.set(m);c={changes:k.filter(a=>a.hasChanged()),value:a}}catch(a){l.add(a),c=null}for(let a of i)try{a()}catch(a){l.add(a)}if(null==c||l.size>0){if(1===l.size)throw l.values().next().value;throw AggregateError(l)}return c}function h(a,b,c){let d=f.get(a);if(null==d)return void a.set(b,c);let e=d.get(b);d.set(b,c),d.isReplaying||d.record(b,e)}c.d(b,{},{a:function a(b,c){let d=f.get(b.node.store);null==d?g(b,()=>a(b,c)):(d.recordMutation({redo:()=>a(b,c),undo:()=>a(b,{redo:c.undo,undo:c.redo})}),c.redo())},b:function(a,b){f.has(a.node.store)?b(a):g(a,b)},c:function(a,b){let c=f.get(a);return null!=c&&(c.callbacks.add(b),!0)},d:function(a){return f.has(a)},e:g,f:h})}),m4Vs:(function(a,b,c){var d=c("iwK1"),e=c("wFEO");c.d(b,{},{a:function(){let a=new WeakMap;return function(b,c,f,g){let h;if(g?.(e.c))return"atom"in b?b.atom:b.resolve(c,f);let i=a.get(b);if(null!=i)return i;let j="atom"in b?b.atom:b.resolve(c,f);if(null==b.createSubscriberAtom)return j;let k="atom"in b?b.store:c.store;try{h=k.get(j)}catch{return j}if(!d.a.needsSubscriberAtom(j,h))return j;let l="atom"in b?b.createSubscriberAtom():b.createSubscriberAtom(c,f);return a.set(b,l),l}}})}),vMlG:(function(a,b,c){c.d(b,{a:()=>h,b:()=>e,c:()=>g,d:()=>f,e:()=>d});let d=Symbol("maitai.withQueryReadOptions"),e=Symbol("maitai.evictFamilyMemberInternal"),f=Symbol("maitai.resolveFamilyMemberInternal"),g=Symbol("maitai.familyDisposalInternal"),h=Symbol("maitai.disposeFamilyValueInternal")}),Hl6a:(function(a,b,c){var d=c("tyzk"),e=c("UQAX"),f=c("hffr"),g=c("jwtq"),h=c("PKjX");c.d(b,{a:()=>e.a,b:()=>g.a,c:()=>f.a,d:()=>h.e,e:()=>d.a,f:()=>f.b,g:()=>g.c})}),wJ7T:(function(a,b,c){let d=["; wv","webview","fbav","fb_iab","fban","instagram","line/","kakaotalk","snapchat","tiktok"];c.d(b,{},{a:function(a){let b=a.trim(),c=/iPhone|iPad|iPod/.test(b)&&!/Safari/.test(b)||/Android/.test(b)&&/Version\/\d+\.\d+/.test(b)||d.some(a=>b.toLowerCase().includes(a));return/\bAndroid\b/i.test(a)&&/\bChrome\/\d/i.test(a)&&!/\b(?:EdgA|SamsungBrowser|OPR|Opera|Firefox|FxiOS|HuaweiBrowser|YaBrowser|DuckDuckGo)\//i.test(a)&&!c}})})};
+export const __rspack_esm_ids = [109308];
+export const __webpack_modules__ = {
+    Q840: (function(a, b, c) {
+        c.d(b, {
+            a: () => W,
+            b: () => ac,
+            c: () => N.a,
+            d: () => g.a,
+            e: () => B.n,
+            f: () => B.o,
+            g: () => B.p,
+            h: () => e.a,
+            i: () => g.b,
+            j: () => f.b,
+            k: () => i.e,
+            l: () => B.s,
+            m: () => J,
+            n: () => G,
+            o: () => K,
+            p: () => L,
+            q: () => I,
+            r: () => H,
+            s: () => C.e,
+            t: () => d.a,
+            u: () => e.b,
+            v: () => g.c,
+            w: () => am,
+            x: () => an,
+            y: () => ao,
+            z: () => aj
+        });
+        var d = c("tyzk"),
+            e = c("hffr"),
+            f = c("Nmf8"),
+            g = c("jwtq"),
+            h = c("suf3"),
+            i = c("J6iR"),
+            j = c("rbzn"),
+            k = c("ouEa"),
+            l = c("iwK1"),
+            m = c("wFEO");
+        let n = new WeakSet;
+
+        function o(a, b, c) {
+            if (n.has(c)) return;
+            n.add(c);
+            let d = new h.a(a, {
+                    ...b.options,
+                    enabled: !1,
+                    queryHash: b.queryHash,
+                    queryKey: b.queryKey
+                }).subscribe(() => {}),
+                e = c,
+                f = () => {
+                    let a = (0, i.c)(b),
+                        c = (0, i.d)(a);
+                    null == a || a === e || "independent" !== c && (null != c || (0, i.f)(b)) ? (n.delete(e), d()) : (n.delete(e), n.has(a)) ? d() : (n.add(a), e = a, a.then(f, f))
+                };
+            c.then(f, f)
+        }
+
+        function p(a, b, c) {
+            let d = b.getCurrentQuery();
+            if (!b.hasListeners() || d === c) return;
+            let e = (0, i.c)(d),
+                f = (0, i.d)(e);
+            null != e && "independent" === f && o(a, d, e)
+        }
+        var q = c("D7Ms");
+
+        function r(a, b) {
+            if (null == a) return !1;
+            let c = Object.keys(b);
+            if (c.length !== Object.keys(a).length) return !1;
+            for (let d of c)
+                if (Reflect.get(a, d) !== Reflect.get(b, d)) return !1;
+            return !0
+        }
+
+        function s(a) {
+            return a.suspense && null == a.staleTime ? {
+                ...a,
+                staleTime: 1e3
+            } : a
+        }
+
+        function t(a, b) {
+            return !!a?.suspense && b.isEnabled && b.isPending
+        }
+
+        function u(a, b, c) {
+            if (!c.result.isError || c.result.isFetching) return !1;
+            let d = a.errorValidation;
+            if (d?.observer === b && d.query === c.query && Object.is(d.error, c.result.error)) return d.shouldThrow;
+            let e = (0, q.t)(c.throwOnError, [c.result.error, c.query]);
+            return a.errorValidation = {
+                error: c.result.error,
+                observer: b,
+                query: c.query,
+                shouldThrow: e
+            }, e
+        }
+
+        function v(a, b, c, d) {
+            let {
+                cacheSubscriptions: e,
+                getEnabledReaderOptions: f,
+                getShouldSuppressStaleFetchOnEnable: g,
+                isEnabledReaderMounting: h,
+                shouldRetainFetchStartedAfterUnmount: n
+            } = d, q = (0, k.a)(0), v = (0, k.a)(0), w = new WeakSet, x = new WeakMap, y = Symbol("evicted query result"), z = (0, k.a)(a => (0, m.a)(c(a), a)), A = (0, k.a)(() => new WeakMap), B = new WeakMap, C = a => {
+                let b = a.notifyOnChangeProps;
+                a._optimisticResults = "optimistic", a.notifyOnChangeProps = "all", B.set(a, b)
+            }, D = (0, k.a)(() => new WeakMap), E = (0, k.a)(() => {
+                let a, b, c;
+                return a = new WeakMap, b = new WeakSet, c = new WeakSet, {
+                    mount(d, e, f) {
+                        let g = a.get(d) ?? 0,
+                            h = b.has(d);
+                        b.add(d);
+                        let j = 0 !== g || c.has(d) || f || null == e || "reactive" === (0, i.d)(e) ? void 0 : e;
+                        return 0 === g && (c.add(d), queueMicrotask(() => {
+                            c.delete(d)
+                        })), a.set(d, g + 1), {
+                            activeFetchAtMount: j,
+                            hadMountedBefore: h
+                        }
+                    },
+                    unmount(b) {
+                        let c = (a.get(b) ?? 1) - 1;
+                        0 === c ? a.delete(b) : a.set(b, c)
+                    }
+                }
+            }), F = (0, k.a)(b => {
+                let d = b(z),
+                    e = s(c(b).defaultQueryOptions(a(b)));
+                b(m.c) && (e.gcTime = 1 / 0);
+                let f = b(A).get(d);
+                if (C(e), null != f) {
+                    let a = d.getQueryCache().build(d, e),
+                        c = (0, i.c)(a);
+                    p(d, f, a);
+                    let j = "function" == typeof e.refetchOnMount ? e.refetchOnMount(a) : e.refetchOnMount,
+                        k = h() && ("function" == typeof e.enabled ? e.enabled(a) : e.enabled) !== !1;
+                    k && "error" === a.state.status && void 0 === a.state.data && !1 === e.retryOnMount ? f.setOptions({
+                        ...e,
+                        suspense: !0
+                    }) : k && g(b) && !1 === j && void 0 !== a.state.data && f.setOptions({
+                        ...e,
+                        staleTime: "static"
+                    }), f.setOptions(e);
+                    let l = (0, i.c)(f.getCurrentQuery());
+                    f.hasListeners() && null != l && l !== c && (0, i.g)(l, "reactive")
+                }
+                return e
+            }), G = (0, k.a)(a => {
+                let b = s(c(a).defaultQueryOptions(f(a)));
+                return C(b), b
+            }), H = (0, k.a)(a => {
+                a(v);
+                let c = a(z),
+                    d = a(A).get(c);
+                if (null != d) return d;
+                let e = new b(c, a(F));
+                return a(A).set(c, e), e
+            }), I = (0, k.a)(a => {
+                let b = a(z),
+                    c = a(H),
+                    d = a(F),
+                    f = a(A),
+                    g = a(D),
+                    m = a(E);
+                c.getOptimisticResult(d);
+                let p = c,
+                    q = (0, k.a)(c.getCurrentResult()),
+                    r = (0, k.a)(a => {
+                        let b = a(q);
+                        if (b === y) throw Error("Evicted query result was read");
+                        return b
+                    }, (a, b, c) => {
+                        if (c === y) {
+                            p = void 0, b(q, y), b(v, a => a + 1);
+                            return
+                        }
+                        b(q, c)
+                    });
+                return x.set(c, r), r.onMount = a => {
+                    var c;
+                    let k = p;
+                    if (null == k || x.get(k) !== r) return;
+                    let q = k.getCurrentQuery(),
+                        s = (0, i.c)(q),
+                        t = (0, i.h)(q),
+                        {
+                            activeFetchAtMount: u,
+                            hadMountedBefore: v
+                        } = m.mount(k, s, t.hadMountedReader);
+                    (0, i.g)(u, "independent");
+                    let z = n();
+                    b.getQueryCache().get(q.queryHash) !== q && k.setOptions(d), k.getOptimisticResult(b.defaultQueryOptions(k.options)), a(k.getCurrentResult());
+                    let A = j.a.batchCalls(a),
+                        C = k.subscribe(a => {
+                            let b = k.options;
+                            l.a.cacheChangeProperties(a, B.has(b) ? B.get(b) : B.get(d)), A(a)
+                        }),
+                        D = (0, i.c)(k.getCurrentQuery());
+                    null != D && D !== s && (0, i.g)(D, "reactive"), c = null != D, v && !c && queueMicrotask(() => {
+                        if (!h()) return;
+                        let a = k.getCurrentQuery(),
+                            b = "function" == typeof k.options.enabled ? k.options.enabled(a) : k.options.enabled,
+                            c = "function" == typeof k.options.refetchOnMount ? k.options.refetchOnMount(a) : k.options.refetchOnMount,
+                            d = "function" == typeof k.options.staleTime ? k.options.staleTime(a) : k.options.staleTime,
+                            e = void 0 !== a.state.data || "error" !== a.state.status || !1 !== k.options.retryOnMount,
+                            f = "always" === c || !1 !== c && k.getCurrentResult().isStale;
+                        if (k.hasListeners() && "idle" === a.state.fetchStatus && !1 !== b && "static" !== d && e && f) {
+                            let b = (0, i.c)(a);
+                            k.refetch();
+                            let c = (0, i.c)(k.getCurrentQuery());
+                            null != c && c !== b && (0, i.g)(c, "reactive")
+                        }
+                    });
+                    let E = b.getQueryCache(),
+                        F = c => {
+                            f.get(b) !== k || k.hasListeners() || k.getCurrentQuery() !== c || (f.delete(b), g.delete(k), a(y))
+                        },
+                        G = a => E.get(a.queryHash) === a,
+                        H = a => {
+                            G(a) || F(a)
+                        },
+                        I = a => {
+                            if (w.has(a) || !G(a)) return;
+                            let b = e.subscribe(E, c => {
+                                "removed" === c.type && c.query === a && (b?.(), w.delete(a), F(a))
+                            });
+                            null != b && w.add(a)
+                        };
+                    return () => {
+                        let a = k.getCurrentQuery(),
+                            c = (0, i.c)(a);
+                        a === q && null != c && c !== s && (0, i.g)(c, "reactive"), t.unmount(), m.unmount(k),
+                            function(a) {
+                                let {
+                                    activeFetchAtReaderMount: b,
+                                    activeFetchAtUnmount: c,
+                                    client: d,
+                                    evictIfQueryRemoved: e,
+                                    observer: f,
+                                    queryAtUnmount: g,
+                                    retainFetchStartedAfterUnmount: h,
+                                    unsubscribe: j,
+                                    watchForQueryRemoval: k
+                                } = a;
+                                queueMicrotask(() => {
+                                    let a = f.getCurrentQuery(),
+                                        l = (0, i.c)(a),
+                                        m = (0, i.d)(l),
+                                        n = (0, i.f)(a),
+                                        p = null != l && "reactive" !== m && !n && (a !== g || l !== c),
+                                        q = h && null != l && l === c && l !== b;
+                                    if (n) return void j();
+                                    let r = () => {
+                                        j(), e(a)
+                                    };
+                                    k(a), null != l && (p || q || "independent" === m) && o(d, a, l), r()
+                                })
+                            }({
+                                activeFetchAtReaderMount: s,
+                                activeFetchAtUnmount: c,
+                                client: b,
+                                evictIfQueryRemoved: H,
+                                observer: k,
+                                queryAtUnmount: a,
+                                retainFetchStartedAfterUnmount: z,
+                                unsubscribe: C,
+                                watchForQueryRemoval: I
+                            })
+                    }
+                }, r
+            }), J = (0, k.a)(a => (a(q), a(a(I)))), K = (a, b, c, d, e) => {
+                let f, g, h = B.get(c),
+                    j = c,
+                    k = b.getCurrentQuery();
+                return l.a.createSnapshot(d, {
+                    getBehavior: a => ({
+                        suspense: e && t(c, a),
+                        throwOnError: a.isError && !a.isFetching && c.throwOnError || void 0
+                    }),
+                    getCurrentResult: (d, h) => {
+                        let l = a.defaultQueryOptions(b.options);
+                        l._optimisticResults = "optimistic", l.notifyOnChangeProps = "all";
+                        let m = a.getQueryCache().build(a, l),
+                            n = b.getCurrentQuery(),
+                            o = b.getCurrentResult();
+                        if (!h.connect && d.isEnabled && !o.isEnabled) {
+                            let g = a.getQueryCache().build(a, c),
+                                i = b.getOptimisticResult(c);
+                            if (b.getOptimisticResult(l), r(d, i) && (i = d), e && t(c, i)) throw f?.result !== i && (f = {
+                                promise: b.fetchOptimistic(c),
+                                result: i
+                            }), f.promise;
+                            if (f = void 0, u(h, b, {
+                                    result: i,
+                                    query: g,
+                                    throwOnError: c.throwOnError
+                                })) throw i.error;
+                            return i
+                        }
+                        let q = (0, i.c)(m);
+                        h.connect && n !== m && p(a, b, m);
+                        let s = b.getOptimisticResult(l);
+                        if (h.connect && n !== m) {
+                            b.setOptions(l), s = b.getCurrentResult();
+                            let a = (0, i.c)(b.getCurrentQuery());
+                            b.hasListeners() && null != a && a !== q && (0, i.g)(a, "reactive")
+                        }
+                        if (r(d, s) && (s = d), h.token === g && l === j && m === k && s === d) return s;
+                        if (e && t(l, s)) throw f?.result !== s && (f = {
+                            promise: b.fetchOptimistic(l),
+                            result: s
+                        }), f.promise;
+                        if (f = void 0, u(h, b, {
+                                result: s,
+                                query: m,
+                                throwOnError: l.throwOnError
+                            })) throw s.error;
+                        return g = h.token, j = l, k = m, s
+                    },
+                    notifyOnChangeProps: h,
+                    notifyOnError: !!c.throwOnError,
+                    trackResult: a => null == h ? b.trackResult(a) : a
+                })
+            }, L = (0, k.a)(a => K(a(z), a(H), a(F), a(J), !1));
+            return Object.assign((0, k.a)(a => {
+                if (a(m.c)) return a(L);
+                let b = a(z),
+                    c = a(H),
+                    d = a(F),
+                    e = a(D),
+                    f = d,
+                    g = a(J);
+                if (!g.isEnabled) {
+                    let b = a(G),
+                        e = c.getOptimisticResult(b);
+                    c.getOptimisticResult(d), e.isEnabled && (f = b, g = e)
+                }
+                let h = e.get(c);
+                return (r(h, g) ? g = h : e.set(c, g), null == h && t(f, g)) ? c.fetchOptimistic(f) : K(b, c, f, g, !0)
+            }, (a, b) => {
+                b(q, a => a + 1)
+            }), {
+                rawResultAtom: L
+            })
+        }
+
+        function w(a, b, c) {
+            return v(b => {
+                let c = {
+                    ...a(b)
+                };
+                return (0, i.b)(c, "reactive"), c
+            }, h.a, b, c)
+        }
+        var x = c("CdjL");
+
+        function y(a, b, c) {
+            return v(a, x.a, b, c)
+        }
+        class z {
+            subscriptions = new Set;
+            disposed = !1;
+            subscribe(a, b) {
+                if (this.disposed) return;
+                let c = a.subscribe(b),
+                    d = () => {
+                        this.subscriptions.delete(d), c()
+                    };
+                return this.subscriptions.add(d), d
+            }
+            dispose() {
+                for (let a of (this.disposed = !0, this.subscriptions)) a()
+            }
+        }
+        var A = c("AvFJ"),
+            B = c("fbKo"),
+            C = c("PKjX"),
+            D = c("m4Vs"),
+            E = c("vMlG");
+
+        function F(a, b, c, d, e) {
+            let f = new WeakMap,
+                g = (0, B.k)("cached", a, (a, g) => {
+                    var h;
+                    let i, j, m, n, o, p, q, r = a.queryClient;
+                    if (null == r) throw Error(`${"query"===c?"querySignal":"infiniteQuerySignal"} requires a QueryClient on Scope`);
+                    let s = f.get(a.familyBindings);
+                    null == s && (s = new z, f.set(a.familyBindings, s));
+                    let t = (h = null == e ? void 0 : () => e((0, B.h)(g, a).scope), i = (0, k.a)(!1), j = (0, k.a)(!1), m = 0, n = !1, o = 0, (p = (0, k.a)(a => a(i), (a, b, c) => {
+                            b(i, c)
+                        })).onMount = b => {
+                            let c, d = m += 1;
+                            n = !0;
+                            let e = !1,
+                                f = () => {
+                                    e || (e = !0, c = h?.()), b(!0)
+                                };
+                            return 0 === a.imperativeReadDepth ? f() : b(!1), queueMicrotask(() => {
+                                m === d && f(), queueMicrotask(() => {
+                                    m === d && (n = !1)
+                                })
+                            }), () => {
+                                m += 1, n = !1, b(!1), c?.()
+                            }
+                        }, (q = (0, k.a)(() => !1, (a, b, c) => {
+                            b(j, c)
+                        })).onMount = b => {
+                            if (a.imperativeReadDepth > 0) return;
+                            let c = o += 1;
+                            return queueMicrotask(() => {
+                                o === c && b(!0)
+                            }), () => {
+                                let a = o += 1;
+                                queueMicrotask(() => {
+                                    o === a && b(!1)
+                                })
+                            }
+                        }, {
+                            disabledReaderMountAtom: q,
+                            enabledReaderMountAtom: p,
+                            hasCommittedDisabledReadersAtom: j,
+                            hasEnabledReadersAtom: i,
+                            isEnabledReaderMounting: () => n
+                        }),
+                        u = (0, D.a)(),
+                        v = (c, d) => {
+                            let e = b((0, B.h)(g, a, c, {
+                                    enabled: d
+                                }, u)),
+                                f = e.enabled;
+                            return {
+                                ...e,
+                                enabled: b => !(a.imperativeReadDepth > 0 && ((0, C.d)(a.store) || !a.store.get(t.hasEnabledReadersAtom))) && d && ("function" == typeof f ? f(b) : f ?? !0),
+                                refetchOnMount: e.refetchOnMount ?? !1
+                            }
+                        },
+                        w = d(a => v(a, a(t.hasEnabledReadersAtom)), () => r, {
+                            cacheSubscriptions: s,
+                            getEnabledReaderOptions: b => v(b, 0 === a.imperativeReadDepth),
+                            getShouldSuppressStaleFetchOnEnable: a => !a(t.hasCommittedDisabledReadersAtom),
+                            isEnabledReaderMounting: t.isEnabledReaderMounting,
+                            shouldRetainFetchStartedAfterUnmount: () => a.imperativeReadDepth > 0
+                        }),
+                        x = (0, k.a)(a => (a(t.enabledReaderMountAtom), a(w))),
+                        y = (0, k.a)(a => {
+                            a(t.disabledReaderMountAtom);
+                            let b = a(w.rawResultAtom);
+                            return b.isEnabled ? l.a.createSnapshotView(b, {
+                                isEnabled: !1,
+                                isStale: !1
+                            }) : b
+                        });
+                    return l.a.markAtom(w), l.a.markAtom(x), l.a.markAtom(y), (0, B.y)(a, x), (0, B.y)(a, y), {
+                        disabledReaderAtom: y,
+                        enabledReaderAtom: x,
+                        queryAtom: w
+                    }
+                }, (a, b) => {
+                    let {
+                        queryAtom: c
+                    } = a;
+                    return (0, A.d)(b, c, "query", {
+                        debugLabel: j.debugLabel,
+                        familyMember: f.get(b.familyBindings)
+                    })
+                }),
+                h = a => {
+                    let b = f.get(a.familyBindings);
+                    null != b && (b.dispose(), (0, A.b)(a, b))
+                },
+                i = d => {
+                    let e = Object.assign((0, B.k)("cached", a, (a, b) => {
+                        let c = g.resolve(a, b);
+                        return d ? c.enabledReaderAtom : c.disabledReaderAtom
+                    }), {
+                        [E.a]: h,
+                        createSubscriberAtom: (a, b) => l.a.createSubscriberAtom(e.resolve(a, b)),
+                        getOptions: b,
+                        queryKind: c,
+                        [E.e]: a => d && a.enabled ? j : m
+                    });
+                    return e
+                },
+                j = i(!0),
+                m = i(!1);
+            return j
+        }
+
+        function G(a, b) {
+            return F(a, b, "infinite", y)
+        }
+
+        function H(a, b, c) {
+            return F(a, b, "query", w, c)
+        }
+
+        function I(a, b, c) {
+            let d = (0, f.b)(a, c => {
+                let e = H(a, a => b(c, a));
+                return e.debugLabel = d.debugLabel, e
+            }, {
+                ...c,
+                autoDispose: c?.autoDispose ?? !0
+            });
+            return (0, f.a)(d)
+        }
+
+        function J(a, b, c) {
+            let d = (0, f.b)(a, c => {
+                let e = G(a, a => b(c, a));
+                return e.debugLabel = d.debugLabel, e
+            }, {
+                ...c,
+                autoDispose: c?.autoDispose ?? !0
+            });
+            return (0, f.a)(d)
+        }
+
+        function K(a, b, c) {
+            let d = (0, f.b)(a, c => M(a, a => b(c, a), (a, b) => d[E.d](a, b, c)), c);
+            return (0, f.a)(d)
+        }
+
+        function L(a, b) {
+            return M(a, b)
+        }
+
+        function M(a, b, c) {
+            let d = (0, B.k)("cached", a, (a, e) => {
+                if (null == a.queryClient) throw Error("mutationSignal requires a QueryClient on Scope");
+                let f = (0, k.a)({
+                        data: void 0,
+                        error: null,
+                        status: "idle",
+                        variables: void 0
+                    }),
+                    g = 0;
+                return (0, k.a)(h => {
+                    let i = h(f),
+                        j = async (c, d) => {
+                            let h, i, j = b((0, B.h)(e, a)),
+                                k = {
+                                    client: a.queryClient,
+                                    meta: j.meta,
+                                    mutationKey: j.mutationKey
+                                },
+                                l = ++g;
+                            a.store.set(f, {
+                                data: void 0,
+                                error: null,
+                                status: "pending",
+                                variables: c
+                            });
+                            try {
+                                i = await j.onMutate?.(c, k), h = await j.mutationFn?.(c, k)
+                            } catch (b) {
+                                throw l === g && a.store.set(f, {
+                                    data: void 0,
+                                    error: b,
+                                    status: "error",
+                                    variables: c
+                                }), await j.onError?.(b, c, i, k), await j.onSettled?.(void 0, b, c, i, k), d?.onError?.(b, c, i, k), d?.onSettled?.(void 0, b, c, i, k), b
+                            }
+                            return l === g && a.store.set(f, {
+                                data: h,
+                                error: null,
+                                status: "success",
+                                variables: c
+                            }), await j.onSuccess?.(h, c, i, k), await j.onSettled?.(h, null, c, i, k), d?.onSuccess?.(h, c, i, k), d?.onSettled?.(h, null, c, i, k), h
+                        }, k = (b, f) => {
+                            let g = c?.(a, e);
+                            if (null != g && g.value !== d) return a.store.get(g.value.resolve(a, e)).mutateAsync(b, f);
+                            let h = g?.disposal;
+                            if (null == h) return j(b, f);
+                            let i = h.retain();
+                            return j(b, f).finally(i)
+                        };
+                    return {
+                        ...i,
+                        isError: "error" === i.status,
+                        isIdle: "idle" === i.status,
+                        isPending: "pending" === i.status,
+                        isSuccess: "success" === i.status,
+                        mutate: (a, b) => {
+                            k(a, b).catch(() => {})
+                        },
+                        mutateAsync: k
+                    }
+                })
+            }, (a, b) => {
+                (0, A.d)(b, a, "mutation", {
+                    debugLabel: d.debugLabel
+                })
+            });
+            return d
+        }
+        var N = c("UQAX"),
+            O = c("zd8w"),
+            P = c("ABep"),
+            Q = c("QosV");
+        let R = (0, O.createContext)(new Map),
+            S = (0, O.createContext)(void 0),
+            T = new WeakMap,
+            U = new Map;
+
+        function V(a) {
+            let b = T.get(a);
+            return null == b && ((b = (0, O.createContext)(U)).displayName = a.__scopeBrand, T.set(a, b)), b
+        }
+
+        function W(a) {
+            let b, c = (0, Q.c)(3),
+                {
+                    children: d,
+                    queryClient: e
+                } = a;
+            return c[0] !== d || c[1] !== e ? (b = (0, P.jsx)(S.Provider, {
+                value: e,
+                children: d
+            }), c[0] = d, c[1] = e, c[2] = b) : b = c[2], b
+        }
+        var X = c("SZCv"),
+            Y = c.n(X),
+            Z = c("KoFQ"),
+            $ = c("oFsh");
+        let _ = {},
+            aa = new WeakMap,
+            ab = 0;
+
+        function ac(a) {
+            let {
+                children: b,
+                pendingRetainedScopes: c,
+                scope: d,
+                value: e
+            } = a, f = (0, O.useContext)(R), g = (0, O.useContext)(S), h = null == d.parent ? void 0 : f.get(d.parent.id), i = e ?? _, j = null == d.getKey ? JSON.stringify(i) : d.getKey(i), k = (0, O.useRef)(null), [, l] = (0, O.useReducer)(a => a + 1, 0), m = (0, O.useRef)(null);
+            if (null != d.parent && null == h) throw Error("Missing parent scope");
+            let n = null == h ? void 0 : function(a) {
+                    let {
+                        parentScope: b,
+                        providedValue: c,
+                        queryClient: d,
+                        scope: e,
+                        scopeKey: f,
+                        mountedEntry: g,
+                        pendingRetainedScopes: h
+                    } = a, i = b.retainedScopeEntries.get(e)?.get(f);
+                    if (null != i) return i;
+                    if (null != g) return g;
+                    let j = null == e.retain ? void 0 : h?.get(b),
+                        k = j?.get(e)?.get(f);
+                    if (null != k) return k;
+                    let l = {
+                        lastUsed: 0,
+                        mountedCount: 0,
+                        node: ad({
+                            parentScope: b,
+                            providedValue: c,
+                            queryClient: d,
+                            scope: e,
+                            scopeKey: f
+                        })
+                    };
+                    if (null != e.retain && null != h) {
+                        let a = j ?? new Map,
+                            c = a.get(e) ?? new Map;
+                        c.set(f, l), a.set(e, c), h.set(b, a)
+                    }
+                    return l
+                }({
+                    parentScope: h,
+                    providedValue: i,
+                    queryClient: g,
+                    scope: d,
+                    scopeKey: j,
+                    pendingRetainedScopes: c,
+                    mountedEntry: null == d.retain && k.current?.node.token === d && Object.is(k.current.node.key, j) && k.current.parent === h && k.current.parentChain === f ? k.current.retainedEntry : void 0
+                }),
+                o = null != n && !Y()(n.node.value, i),
+                p = n?.node.parent,
+                q = null != n && p !== h,
+                r = q && (null == p || aa.get(p) !== h),
+                s = o || q,
+                t = h?.queryClient ?? g,
+                u = null != n && (o || n.node.queryClient !== t) ? {
+                    ...n.node,
+                    debugEntries: new Set,
+                    cachedBindings: o ? new WeakMap : n.node.cachedBindings,
+                    queryClient: t,
+                    value: i
+                } : n?.node;
+            if (null != k.current && k.current.node.token === d && Object.is(k.current.node.key, j) && k.current.parent === h && k.current.parentChain === f && (null == n || k.current.retainedEntry === n) && (null == u || k.current.node === u)) k.current.retainedEntry = n;
+            else {
+                let a = u ?? ad({
+                        parentScope: h,
+                        providedValue: i,
+                        queryClient: g,
+                        scope: d,
+                        scopeKey: j
+                    }),
+                    b = (0, B.c)(f, d);
+                b.set(d.id, a), k.current = {
+                    chain: b,
+                    node: a,
+                    parent: h,
+                    parentChain: f,
+                    retainedEntry: n
+                }
+            }(null == n ? function(a) {
+                let {
+                    node: b,
+                    parentScope: c,
+                    providedValue: d,
+                    queryClient: e
+                } = a, f = !Y()(b.value, d);
+                return b.queryClient = c?.queryClient ?? e, b.value = d, f
+            }({
+                node: k.current.node,
+                parentScope: h,
+                providedValue: i,
+                queryClient: g
+            }) : s) ? (null == n && (k.current.node.cachedBindings = new WeakMap), m.current = {
+                atom: k.current.node.contextVersionAtom,
+                store: k.current.node.store
+            }) : m.current = null;
+            let v = k.current.retainedEntry,
+                w = k.current.node;
+            (0, O.useLayoutEffect)(() => {
+                if (w.autoDisposeScheduler.activate(), (0, A.f)(w, v?.node), null != v && null != h) {
+                    let a = h.retainedScopeEntries.get(d);
+                    null == a && (a = new Map, h.retainedScopeEntries.set(d, a)), a.set(j, v);
+                    let b = v.node;
+                    b.parent = h, b !== w && (b.cachedBindings = w.cachedBindings, b.queryClient = w.queryClient, b.value = w.value, Object.defineProperties(w, {
+                        parent: {
+                            get: Reflect.get.bind(null, b, "parent"),
+                            configurable: !0
+                        },
+                        queryClient: {
+                            get: Reflect.get.bind(null, b, "queryClient"),
+                            configurable: !0
+                        },
+                        value: {
+                            get: Reflect.get.bind(null, b, "value"),
+                            configurable: !0
+                        }
+                    }), aa.set(w, b)), r && (k.current = null, l());
+                    return
+                }
+                return w.autoDisposeScheduler.cancel(w), () => {
+                    (0, A.g)(w), w.autoDisposeScheduler.schedule(w, 0, () => {
+                        (0, B.b)(w)
+                    })
+                }
+            }, [w, w.cachedBindings, v, r, h, d, j]), (0, O.useLayoutEffect)(() => {
+                let a = m.current;
+                null != a && (a.store.set(a.atom, a => a + 1), m.current = null)
+            }), (0, O.useLayoutEffect)(() => {
+                if (null != v && null != h) return h.autoDisposeScheduler.cancel(v), v.mountedCount += 1, v.lastUsed = ++ab, ae(h, d), () => {
+                    v.mountedCount -= 1, v.lastUsed = ++ab, ae(h, d);
+                    let a = (0, Z.c)(d.retain?.autoDispose);
+                    1 / 0 !== a && 0 === v.mountedCount && h.retainedScopeEntries.get(d)?.get(w.key) === v && h.autoDisposeScheduler.schedule(v, a, () => {
+                        let a = h.retainedScopeEntries.get(d);
+                        v.mountedCount > 0 || a?.get(w.key) !== v || (a.delete(w.key), 0 === a.size && h.retainedScopeEntries.delete(d), (0, B.b)(v.node))
+                    })
+                }
+            }, [w.key, v, h, d]);
+            let x = V(d),
+                y = (0, P.jsx)(x, {
+                    value: k.current.chain,
+                    children: b
+                });
+            for (let a of f.values())
+                if (!k.current.chain.has(a.token.id)) {
+                    let b = V(a.token);
+                    y = (0, P.jsx)(b, {
+                        value: U,
+                        children: y
+                    })
+                } return (0, P.jsx)(R.Provider, {
+                value: k.current.chain,
+                children: y
+            })
+        }
+
+        function ad(a) {
+            let {
+                parentScope: b,
+                providedValue: c,
+                queryClient: d,
+                scope: e,
+                scopeKey: f
+            } = a;
+            return {
+                cachedBindings: new WeakMap,
+                contextVersionAtom: (0, k.a)(0),
+                debugEntries: new Set,
+                familyBindings: new Map,
+                familyKeysByOwner: new Map,
+                disposalLifecycles: new Set,
+                autoDisposeScheduler: b?.autoDisposeScheduler ?? new Z.a({
+                    active: !1
+                }),
+                imperativeReadAtoms: new WeakSet,
+                imperativeReadDepth: 0,
+                key: f,
+                parent: b,
+                queryClient: b?.queryClient ?? d,
+                retainedScopeEntries: new Map,
+                signalBindings: new WeakMap,
+                store: b?.store ?? (0, $.a)(),
+                token: e,
+                value: c
+            }
+        }
+
+        function ae(a, b) {
+            let c = null == b.retain ? 0 : b.retain.max ?? 1 / 0,
+                d = a.retainedScopeEntries.get(b);
+            if (null != d) {
+                for (; d.size > c;) {
+                    let b = function(a) {
+                        let b = null;
+                        for (let [c, d] of a) !(d.mountedCount > 0) && (null == b || d.lastUsed < b.entry.lastUsed) && (b = {
+                            entry: d,
+                            key: c
+                        });
+                        return b
+                    }(d);
+                    if (null == b) return;
+                    d.delete(b.key), a.autoDisposeScheduler.cancel(b.entry), (0, A.g)(b.entry.node), a.autoDisposeScheduler.schedule(b.entry, 0, () => {
+                        (0, B.b)(b.entry.node)
+                    })
+                }
+                0 === d.size && a.retainedScopeEntries.delete(b)
+            }
+        }
+        var af = c("ns1t");
+        let ag = () => {},
+            ah = () => ag,
+            ai = [];
+
+        function aj(a, b) {
+            var c, d;
+            let e = (0, B.a)(a, b);
+            if (c = e, (0, B.v)(c) && "function" == typeof c.get && "function" == typeof c.subscribe) {
+                let a = (0, O.use)(af.b);
+                return ak((0, O.useMemo)(() => {
+                    let b = al(a => e.subscribe(a), a);
+                    return {
+                        ...l.a.createSubscriberStore(e.atom, () => e.store.get(e.atom), b.subscribe),
+                        prepare: b.prepare,
+                        trackLifetime: b.trackLifetime
+                    }
+                }, [e, void 0, a]), () => (0, m.b)(e.store, e.atom))
+            }
+            if (!("object" == typeof(d = e) && null != d && "cache" in d && ("cached" === d.cache || "signal" === d.cache) && "scope" in d && "resolve" in d && "function" == typeof d.resolve)) {
+                let a = (0, O.useMemo)(() => () => e, [e, void 0, void 0]),
+                    b = (0, O.useSyncExternalStore)(ah, a, a);
+                return (0, O.useInsertionEffect)(ag, [void 0]), (0, O.useLayoutEffect)(ag, [ag, void 0]), b
+            }
+            let f = (0, O.use)(V(e.scope)),
+                g = (0, O.use)(af.b),
+                h = (0, B.B)(f, e.scope),
+                i = e.resolve(h, f);
+            return ak((0, O.useMemo)(() => {
+                let a = al(a => h.store.sub(i, a), g);
+                return {
+                    ...l.a.createSubscriberStore(i, () => h.store.get(i), a.subscribe),
+                    prepare: a.prepare,
+                    trackLifetime: a.trackLifetime
+                }
+            }, [h.store, i, g]), () => (0, m.b)(h.store, i))
+        }
+
+        function ak(a, b) {
+            let c = a.createRender?.(),
+                d = (0, O.useSyncExternalStore)(a.subscribe, c?.getSnapshot ?? (null == a.createRender ? a.getSnapshot : () => {
+                    if (null != c) return c.getSnapshot();
+                    let b = a.getSnapshot();
+                    return null == (c = a.createRender?.(!0)) ? b : c.getSnapshot()
+                }), b);
+            c = c ?? a.createRender?.(!0);
+            let e = c?.commit ?? ag,
+                f = a.trackLifetime;
+            return (0, O.useInsertionEffect)(f ?? ag, [f]), (0, O.useLayoutEffect)(() => (e(), a.prepare()), [e, a]), null == c ? d : c.track(d)
+        }
+
+        function al(a, b) {
+            let c, d, e, f = !1,
+                g = !1,
+                h = !1,
+                i = !1,
+                j = () => {
+                    i = !0, e?.()
+                };
+            return {
+                trackLifetime: b ? () => (f = !0, () => {
+                    var a;
+                    f = !1;
+                    let b = d;
+                    d = void 0, null != b && (a = b, ai.push(a), 1 === ai.length && queueMicrotask(() => {
+                        for (let a of ai.splice(0)) try {
+                            a()
+                        } catch (a) {
+                            "function" == typeof globalThis.reportError ? globalThis.reportError(a) : console.error(a)
+                        }
+                    }))
+                }) : void 0,
+                prepare: () => {
+                    if (!h || g || null != c || null != d) return;
+                    let b = a(j);
+                    return c = b, () => {
+                        c === b && (c = void 0, b())
+                    }
+                },
+                subscribe: b => {
+                    let k = h;
+                    h = !0, g = !0, e = b;
+                    let l = null != d,
+                        m = d ?? c ?? a(j);
+                    return d = void 0, c = void 0, k && (i || !l) && (i = !1, b()), () => {
+                        g = !1, e = void 0, f ? d = m : m()
+                    }
+                }
+            }
+        }
+
+        function am(a, b) {
+            var c, d;
+            let e, f, g;
+            return c = a, d = b, e = "object" == typeof c && null != c && E.b in c ? (0, O.use)(V(c.scope)) : U, f = (0, O.useMemo)(() => {
+                if ("object" == typeof c && null != c && E.b in c) {
+                    let a = (0, B.B)(e, c.scope),
+                        b = c[E.d](a, e, d);
+                    return () => (null != b.disposal && a.store.get(b.disposal.atom) && (b = c[E.d](a, e, d)), b)
+                }
+                let a = {
+                    disposal: void 0,
+                    value: c
+                };
+                return () => a
+            }, [e, c, d]), g = (0, O.useCallback)(a => {
+                let b = f().disposal?.retain() ?? (() => {});
+                return a(), b
+            }, [f]), (0, O.useLayoutEffect)(() => g(() => {}), [g]), (0, O.useSyncExternalStore)(g, f, f).value
+        }
+
+        function an(a, b, c) {
+            let d = "object" == typeof a && null != a && E.b in a ? a : void 0,
+                e = null != d ? (0, O.use)(V(d.scope)) : U,
+                f = d?.[E.d]((0, B.B)(e, d.scope), e, b),
+                g = f?.cacheKey,
+                h = f?.disposal == null ? f?.value : void 0,
+                i = c?.enabled,
+                j = (0, O.useMemo)(() => {
+                    if ("object" != typeof a || null == a || !(E.b in a)) return a;
+                    if (null != h) return h;
+                    let c = (0, B.B)(e, a.scope),
+                        d = (0, B.d)(d => {
+                            let f = a[E.d](c, e, b, g);
+                            return null != f.disposal && d(f.disposal.atom), (0, B.z)(c, e, f.value, d, null == i ? void 0 : {
+                                enabled: i
+                            })
+                        });
+                    return {
+                        atom: d,
+                        store: c.store,
+                        get: () => c.store.get(d),
+                        subscribe: a => {
+                            let b = (() => c.store.sub(d, a))();
+                            return () => b()
+                        }
+                    }
+                }, [g, e, i, a, h]);
+            return (0, O.useLayoutEffect)(() => {
+                if (null == d) return;
+                let a = (0, B.B)(e, d.scope);
+                return d[E.d](a, e, b, g).disposal?.retain()
+            }, [g, e, d]), aj((0, B.a)(j, c))
+        }
+
+        function ao(a) {
+            let b = (0, O.useContext)(V(a)),
+                c = (0, B.B)(b, a),
+                d = (0, B.i)(c),
+                e = (0, O.useRef)(null);
+            if (null == e.current || e.current.node !== c) {
+                let g = {
+                    chain: b,
+                    getOwnValue: a => (0, B.A)(c, g.chain, a),
+                    node: c,
+                    get queryClient() {
+                        if (null == c.queryClient) throw Error("Missing query client");
+                        return c.queryClient
+                    },
+                    scope: a,
+                    value: d
+                };
+
+                function f(a) {
+                    return (0, B.F)(g, a)
+                }
+                g.get = function(a, b, c) {
+                    if ((0, B.v)(a)) return (0, B.a)(a, 2 == arguments.length && (0, B.t)(a) ? b : void 0).get();
+                    if ((0, B.t)(a) && 2 == arguments.length) {
+                        let c = (0, B.B)(g.chain, a.scope);
+                        return (0, B.q)(c, (0, B.a)(a, b).resolve(c, g.chain))
+                    }
+                    if (void 0 !== b || arguments.length >= 2) {
+                        let d = (0, B.B)(g.chain, a.scope);
+                        return (0, B.w)(a) ? a.read(d, g.chain, b, void 0, c) : a.resolve(d, g.chain, b)
+                    }
+                    let d = (0, B.B)(g.chain, a.scope),
+                        e = a.resolve(d, g.chain);
+                    return (0, B.q)(d, e)
+                }, g.query = (0, B.j)(g), g.set = function(a, b, c) {
+                    ! function(a, b, c, d) {
+                        if ((0, B.x)(b)) {
+                            let e = b.resolve(a.node, a.chain, c);
+                            (0, B.D)(e.store, e.atom, d);
+                            return
+                        }
+                        if ((0, B.u)(b)) return (0, B.D)(b.store, b.atom, c);
+                        let e = (0, B.C)(a.node, a.chain, b.scope);
+                        (0, B.D)(e.store, b.resolve(e, a.chain), c)
+                    }(g, a, b, c)
+                }, g.watch = f, g.when = function(a) {
+                    return (0, B.E)(f, a)
+                }, e.current = g
+            } else e.current.chain = b, e.current.value = d;
+            return e.current
+        }
+    }),
+    e9bM: (function(a, b, c) {
+        c.d(b, {
+            a: () => d.a,
+            b: () => i.a,
+            c: () => i.b,
+            d: () => h
+        });
+        var d = c("ns1t"),
+            e = c("Nmf8"),
+            f = c("vMlG"),
+            g = c("PSDF");
+
+        function h(a, b) {
+            let c = (0, e.b)(a.scope, (a, c) => {
+                let {
+                    signal: d
+                } = c;
+                return d(() => b.read(a), {
+                    isEqual: b.isEqual,
+                    getServerSnapshot: b.getServerSnapshot
+                })
+            }, {
+                owner: () => b.owner,
+                autoDispose: b.autoDispose
+            });
+
+            function d() {
+                return a.node.familyBindings.get(c)
+            }
+            return {
+                at: b => c.resolve(a.node, a.chain, b),
+                publish(a) {
+                    d()?.get(a)?.value.set(b.read(a))
+                },
+                publishAll() {
+                    for (let [a, c] of d() ?? []) c.value.set(b.read(a))
+                },
+                own: (b, e) => Object.assign(b, {
+                    [f.a]() {
+                        for (let b of (e(), d()?.keys() ?? []))(0, g.e)(a.node, c, b)
+                    }
+                })
+            }
+        }
+        var i = c("PKjX");
+        c("AvFJ")
+    }),
+    KoFQ: (function(a, b, c) {
+        var d = c("ouEa");
+        c.d(b, {}, {
+            a: class {
+                active;
+                entries = new Map;
+                deadlines = [];
+                nextDeadline = 1 / 0;
+                timeout;
+                idleCallback;
+                draining = !1;
+                constructor({
+                    active: a = !0
+                } = {}) {
+                    this.active = a
+                }
+                activate() {
+                    this.active || (this.active = !0, this.updateTimeout())
+                }
+                schedule(a, b, c) {
+                    if (1 / 0 === b || this.entries.has(a)) return;
+                    let d = performance.now() + Math.max(0, b),
+                        e = {
+                            dispose: c,
+                            deadline: d,
+                            heapIndex: this.deadlines.length,
+                            key: a
+                        };
+                    this.entries.set(a, e), this.deadlines.push(e), this.moveDeadlineUp(e.heapIndex), d < this.nextDeadline && this.updateTimeout()
+                }
+                cancel(a) {
+                    let b = this.entries.get(a);
+                    if (null == b) return;
+                    let c = 0 === b.heapIndex;
+                    this.removeDeadline(b), c && (0 === this.entries.size || null != this.idleCallback) && this.updateTimeout()
+                }
+                updateTimeout() {
+                    let a = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                    if (this.active && !this.draining) {
+                        if (null != this.timeout && (clearTimeout(this.timeout), this.timeout = void 0), this.nextDeadline = this.deadlines[0]?.deadline ?? 1 / 0, null != this.idleCallback) {
+                            if (this.nextDeadline <= performance.now()) return;
+                            globalThis.cancelIdleCallback(this.idleCallback), this.idleCallback = void 0
+                        }
+                        if (1 / 0 !== this.nextDeadline) {
+                            if (a && this.nextDeadline <= performance.now() && null != globalThis.requestIdleCallback && null != globalThis.cancelIdleCallback) {
+                                this.idleCallback = globalThis.requestIdleCallback(a => {
+                                    this.idleCallback = void 0, this.drain(a)
+                                }, {
+                                    timeout: 1e3
+                                });
+                                return
+                            }
+                            this.timeout = setTimeout(() => {
+                                this.timeout = void 0, this.drain()
+                            }, Math.min(0x7fffffff, Math.max(0, this.nextDeadline - performance.now())))
+                        }
+                    }
+                }
+                drain(a) {
+                    let b = performance.now();
+                    this.draining = !0;
+                    try {
+                        let c = this.deadlines[0];
+                        for (; null != c && c.deadline <= b && !(null != a && !a.didTimeout && 0 >= a.timeRemaining()) && (this.removeDeadline(c), c.dispose(), !(performance.now() - b >= 2));) {
+                            ;
+                            c = this.deadlines[0]
+                        }
+                    } finally {
+                        this.draining = !1, this.updateTimeout(!0)
+                    }
+                }
+                removeDeadline(a) {
+                    this.entries.delete(a.key);
+                    let b = this.deadlines.pop();
+                    if (null == b || b === a) return;
+                    let c = a.heapIndex;
+                    this.deadlines[c] = b, b.heapIndex = c;
+                    let d = Math.floor((c - 1) / 2);
+                    c > 0 && b.deadline < this.deadlines[d].deadline ? this.moveDeadlineUp(c) : this.moveDeadlineDown(c)
+                }
+                moveDeadlineUp(a) {
+                    let b = a;
+                    for (; b > 0;) {
+                        let a = Math.floor((b - 1) / 2);
+                        if (this.deadlines[a].deadline <= this.deadlines[b].deadline) return;
+                        this.swapDeadlines(b, a), b = a
+                    }
+                }
+                moveDeadlineDown(a) {
+                    let b = a;
+                    for (;;) {
+                        let a = 2 * b + 1;
+                        if (a >= this.deadlines.length) return;
+                        let c = a + 1,
+                            d = c < this.deadlines.length && this.deadlines[c].deadline < this.deadlines[a].deadline ? c : a;
+                        if (this.deadlines[b].deadline <= this.deadlines[d].deadline) return;
+                        this.swapDeadlines(b, d), b = d
+                    }
+                }
+                swapDeadlines(a, b) {
+                    let c = this.deadlines[a],
+                        d = this.deadlines[b];
+                    this.deadlines[a] = d, this.deadlines[b] = c, c.heapIndex = b, d.heapIndex = a
+                }
+            },
+            b: function(a, b, c, e) {
+                let f, g = (0, d.a)(!1),
+                    h = !1,
+                    i = 0,
+                    j = {
+                        atom: g,
+                        retain: l,
+                        dispose() {
+                            let b = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                            !h && (h = !0, a.autoDisposeScheduler.cancel(g), a.disposalLifecycles.delete(j), e?.children?.delete(j), c(), j.children?.forEach(a => {
+                                a.dispose(b)
+                            }), b && a.store.set(g, !0))
+                        }
+                    },
+                    k = () => {
+                        0 === i && j.dispose(!0)
+                    };
+
+                function l() {
+                    if (h) return;
+                    0 == i++ && (0 === a.imperativeReadDepth && a.autoDisposeScheduler.cancel(g), f = e?.retain());
+                    let c = !0;
+                    return () => {
+                        !c || (c = !1, 0 == --i && (f?.(), f = void 0, h || a.autoDisposeScheduler.schedule(g, b, k)))
+                    }
+                }
+                return g.onMount = l, null != e && (e.children = e.children ?? new Set, e.children.add(j)), a.disposalLifecycles.add(j), a.autoDisposeScheduler.schedule(g, b, k), j
+            },
+            c: function() {
+                let a = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                if ("boolean" == typeof a) return a ? 0 : 1 / 0;
+                if (!Number.isFinite(a) || a < 0) throw RangeError("autoDispose must be a boolean or a finite, nonnegative delay in milliseconds");
+                return a
+            }
+        })
+    }),
+    AvFJ: (function(a, b, c) {
+        let d = new WeakMap,
+            e = new WeakMap,
+            f = new WeakMap,
+            g = new WeakMap,
+            h = new WeakMap,
+            i = new WeakMap,
+            j = 0;
+
+        function k(a, b) {
+            let c = h.get(b),
+                f = i.get(a.debugEntries);
+            if (null != c && null != f && f.node !== a && f.cachedBindings !== c.deref() || a.debugEntries.has(b) || (a.debugEntries.add(b), !e.get(a.store)?.has(a.debugEntries))) return;
+            let g = d.get(a.store);
+            g?.entries != null && (g.entries.add(b), m(g))
+        }
+
+        function l(a, b) {
+            let c = d.get(a.store),
+                e = !1;
+            for (let d of b) a.debugEntries.delete(d), e = (c?.entries?.delete(d) ?? !1) || e;
+            e && c?.entries != null && m(c)
+        }
+
+        function m(a) {
+            for (let b of (a.version += 1, a.listeners)) b()
+        }
+        let n = new WeakMap;
+        c.d(b, {}, {
+            a: function(a) {
+                l(a, a.debugEntries)
+            },
+            b: function(a, b) {
+                let c = g.get(b);
+                if (null == c) return;
+                g.delete(b), l(a, c);
+                let d = a.parent?.retainedScopeEntries.get(a.token)?.get(a.key)?.node;
+                null != d && d !== a && d.familyBindings === a.familyBindings && l(d, c)
+            },
+            c: function(a, b) {
+                n.get(a)?.listeners.forEach(a => a(b))
+            },
+            d: function(a, b, c, d) {
+                if (d?.debugLabel == null) return;
+                let e = f.get(b);
+                if (null == e && (j += 1, e = {
+                        atom: b,
+                        familyKey: d.familyKey,
+                        id: j,
+                        kind: c,
+                        label: d.debugLabel,
+                        scopeKey: a.key,
+                        scopeName: a.token.__scopeBrand,
+                        writeValue: d.writeValue
+                    }, f.set(b, e), ("derived" === c || "external" === c || "query" === c || "mutation" === c) && h.set(e, new WeakRef(a.cachedBindings)), null != d.familyMember)) {
+                    let a = g.get(d.familyMember);
+                    null == a && (a = new Set, g.set(d.familyMember, a)), a.add(e)
+                }
+                k(a, e)
+            },
+            e: function(a, b) {
+                let c = g.get(b);
+                if (null != c)
+                    for (let b of c) k(a, b)
+            },
+            f: function(a) {
+                let b = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a,
+                    c = function(a) {
+                        let b = e.get(a);
+                        if (null != b) return b;
+                        let c = new Set;
+                        return e.set(a, c), c
+                    }(a.store),
+                    f = d.get(a.store),
+                    g = f?.entries?.size,
+                    j = i.get(b.debugEntries)?.cachedBindings;
+                i.set(b.debugEntries, {
+                    node: b,
+                    cachedBindings: a.cachedBindings
+                });
+                let k = !1;
+                if (j !== a.cachedBindings)
+                    for (let c of b.debugEntries) {
+                        let d = h.get(c);
+                        null != d && d.deref() !== a.cachedBindings && (b.debugEntries.delete(c), k = (f?.entries?.delete(c) ?? !1) || k)
+                    }
+                if (!c.has(a.debugEntries)) {
+                    for (let d of (c.add(b.debugEntries), a.debugEntries)) b.debugEntries.add(d), f?.entries?.add(d);
+                    a.debugEntries = b.debugEntries
+                }
+                f?.entries != null && (k || f.entries.size !== g) && m(f)
+            },
+            g: function(a) {
+                if (e.get(a.store)?.delete(a.debugEntries) !== !0) return;
+                i.delete(a.debugEntries);
+                let b = d.get(a.store);
+                if (b?.entries == null) return;
+                let c = !1;
+                for (let d of a.debugEntries) c = b.entries.delete(d) || c;
+                c && m(b)
+            },
+            h: function(a, b, c) {
+                a.set(b, c)
+            }
+        })
+    }),
+    UQAX: (function(a, b, c) {
+        var d = c("AvFJ"),
+            e = c("iwK1"),
+            f = c("fbKo"),
+            g = c("m4Vs"),
+            h = c("vMlG");
+        c.d(b, {}, {
+            a: function(a, b, c) {
+                return function a(b, c, i, j) {
+                    let k, l = (0, f.k)("cached", b, (a, b) => {
+                            let d = (0, g.a)(),
+                                e = (0, f.d)(e => c((0, f.h)(b, a, e, i, d)), j?.isEqual);
+                            return (0, f.y)(a, e), e
+                        }, (a, b) => {
+                            (0, d.d)(b, a, "derived", {
+                                debugLabel: l.debugLabel
+                            })
+                        }),
+                        m = Object.assign(l, {
+                            createSubscriberAtom: (a, b) => e.a.createSubscriberAtom(l.resolve(a, b)),
+                            [h.e]: d => i?.enabled === !1 || d.enabled ? m : (null == k && ((k = a(b, c, d, j)).debugLabel = m.debugLabel), k)
+                        });
+                    return m
+                }(a, b, void 0, c)
+            }
+        })
+    }),
+    Nmf8: (function(a, b, c) {
+        var d = c("KoFQ"),
+            e = c("AvFJ"),
+            f = c("fbKo"),
+            g = c("PSDF"),
+            h = c("vMlG");
+        c.d(b, {}, {
+            a: function(a) {
+                let b = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "readable-family";
+                return Object.assign(a, {
+                    kind: b,
+                    read(b, c, d, e, g, i) {
+                        let j = a[h.d](b, c, d);
+                        return null != j.disposal && null != e && e(j.disposal.atom), (0, f.z)(b, c, j.value, e, g, i)
+                    }
+                })
+            },
+            b: function(a, b, c) {
+                let i = (0, d.c)(c?.autoDispose),
+                    j = {
+                        [h.b](b, d, e) {
+                            let h = b.token === a ? b : (0, f.C)(b, d, a);
+                            return (0, g.e)(h, j, (0, f.r)(e, c))
+                        },
+                        resolve: (a, b, c) => j[h.d](a, b, c).value,
+                        [h.d](h, k, l, m) {
+                            let n = arguments.length >= 4 ? m : (0, f.r)(l, c),
+                                o = h.token === a ? h : (0, f.C)(h, k, a),
+                                p = o.familyBindings.get(j);
+                            null == p && (p = new Map, o.familyBindings.set(j, p));
+                            let q = p.get(n);
+                            if (null != q) return (0, e.e)(o, q.debugFamilyMember), q;
+                            let r = (0, f.c)(k, a);
+                            r.set(a.id, o);
+                            let s = {},
+                                t = p,
+                                u = 1 / 0 === i ? void 0 : (0, d.b)(o, i, () => {
+                                    t.get(n)?.disposal === u && (0, g.e)(o, j, n)
+                                }),
+                                v = b(l, {
+                                    ...(0, f.f)(o, r, l, j.debugLabel, s, u),
+                                    scope: (0, f.g)(a, r, o)
+                                }),
+                                w = {
+                                    cacheKey: n,
+                                    debugFamilyMember: s,
+                                    owner: c?.owner?.(l),
+                                    value: v
+                                };
+                            if (null != u && (w.disposal = u), p.set(n, w), null != w.owner) {
+                                let a = o.familyKeysByOwner.get(w.owner);
+                                null == a && (a = new Map, o.familyKeysByOwner.set(w.owner, a));
+                                let b = a.get(j);
+                                null == b && (b = new Set, a.set(j, b)), b.add(n)
+                            }
+                            return w
+                        },
+                        scope: a
+                    };
+                return j
+            }
+        })
+    }),
+    tyzk: (function(a, b, c) {
+        var d = c("KoFQ");
+        c.d(b, {}, {
+            a: function(a, b) {
+                return (0, d.c)(b?.retain?.autoDispose), {
+                    __scopeBrand: a,
+                    getKey: b?.key,
+                    id: Symbol(),
+                    parent: b?.parent,
+                    retain: b?.retain
+                }
+            }
+        })
+    }),
+    jwtq: (function(a, b, c) {
+        var d = c("UQAX"),
+            e = c("Nmf8");
+        c.d(b, {}, {
+            a: function(a, b, c) {
+                let f = (0, e.b)(a, e => (0, d.a)(a, a => b(e, a), {
+                    isEqual: c?.isEqual
+                }), {
+                    ...c,
+                    autoDispose: c?.autoDispose ?? 6e4
+                });
+                return (0, e.a)(f)
+            },
+            b: function(a, b, c, d) {
+                let f = (0, e.b)(a, (a, e) => {
+                    let {
+                        externalSignal: f
+                    } = e;
+                    return f("function" == typeof b ? c => {
+                        let {
+                            scope: d
+                        } = c;
+                        return b(a, {
+                            get: d.get,
+                            get queryClient() {
+                                return d.queryClient
+                            },
+                            scope: d
+                        })
+                    } : b, b => c(a, b), {
+                        isEqual: d?.isEqual
+                    })
+                }, d);
+                return (0, e.a)(f)
+            },
+            c: function(a, b, c, d) {
+                let f = (0, e.b)(a, (a, d) => {
+                    let {
+                        signal: e
+                    } = d;
+                    return e(c => {
+                        let {
+                            scope: d
+                        } = c;
+                        return "function" == typeof b ? b(a, {
+                            get: d.get,
+                            get queryClient() {
+                                return d.queryClient
+                            },
+                            scope: d
+                        }) : b
+                    }, c)
+                }, d);
+                return (0, e.a)(f, "signal-family")
+            }
+        })
+    }),
+    hffr: (function(a, b, c) {
+        var d = c("AvFJ"),
+            e = c("fbKo"),
+            f = c("XNFm");
+        c.d(b, {}, {
+            a: function(a, b, c, f) {
+                let g = (0, e.k)("cached", a, (d, g) => (0, e.e)(a, d, g, a => "function" == typeof b ? b(a) : b, c, f?.isEqual), (a, b) => {
+                    (0, d.d)(b, a, "external", {
+                        debugLabel: g.debugLabel
+                    })
+                });
+                return g
+            },
+            b: function(a, b, c) {
+                let g = (0, e.k)("signal", a, (d, g) => {
+                    let h = (0, e.m)(c => "function" == typeof b ? b((0, e.l)(a, g, d, c)) : b, c?.isEqual, c?.getServerSnapshot),
+                        i = c?.onMount;
+                    return null != i && ((0, e.y)(d, h), h.onMount = b => (0, f.d)(d.store, () => i(a => {
+                        b(a)
+                    }, (0, e.g)(a, g, d, {
+                        observeWatch: f.b
+                    }))) ?? void 0), h
+                }, (a, b) => {
+                    (0, d.d)(b, a, "signal", {
+                        debugLabel: g.debugLabel,
+                        writeValue: c => {
+                            (0, d.h)(b.store, a, c)
+                        }
+                    })
+                });
+                return g
+            }
+        })
+    }),
+    J6iR: (function(a, b, c) {
+        let d = new WeakMap,
+            e = new WeakMap,
+            f = new WeakSet,
+            g = new WeakMap;
+
+        function h(a) {
+            return "idle" === a.state.fetchStatus ? void 0 : a.promise
+        }
+
+        function i(a) {
+            return (g.get(a) ?? 0) > 0
+        }
+        c.d(b, {}, {
+            a: function(a) {
+                null != a && d.set(a, "independent")
+            },
+            b: function(a, b) {
+                let c = a.behavior;
+                a.behavior = {
+                    onFetch(a, d) {
+                        let g = b;
+                        f.has(d) ? g = "independent" : i(d) && (g = "reactive"), c?.onFetch(a, d);
+                        let j = a.fetchFn;
+                        a.fetchFn = () => {
+                            let a = h(d);
+                            return null != a && e.set(a, g), j()
+                        }
+                    }
+                }
+            },
+            c: h,
+            d: function(a) {
+                return null == a ? void 0 : d.get(a)
+            },
+            e: function(a, b) {
+                let c = a.getQueryCache().find({
+                    exact: !0,
+                    queryKey: b
+                });
+                if (null == c) return;
+                let d = h(c);
+                return null == d ? void 0 : e.get(d)
+            },
+            f: i,
+            g: function(a, b) {
+                null == a || d.has(a) || d.set(a, b)
+            },
+            h: function(a) {
+                let b = g.get(a) ?? 0;
+                return g.set(a, b + 1), {
+                    hadMountedReader: b > 0,
+                    unmount() {
+                        let b = (g.get(a) ?? 1) - 1;
+                        b > 0 ? g.set(a, b) : g.delete(a)
+                    }
+                }
+            },
+            i: function(a, b) {
+                let c = f.has(a);
+                f.add(a);
+                try {
+                    return b()
+                } finally {
+                    c || f.delete(a)
+                }
+            }
+        })
+    }),
+    iwK1: (function(a, b, c) {
+        let d, e;
+        c.d(b, {
+            a: () => z
+        });
+        let f = {
+                suspense: !1,
+                throwOnError: void 0
+            },
+            g = new WeakMap,
+            h = new WeakMap,
+            i = new WeakSet,
+            j = new WeakMap,
+            k = new WeakSet;
+
+        function l(a) {
+            let b = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
+            if (null != d || null != e) return a();
+            e = b;
+            try {
+                return a()
+            } finally {
+                d = void 0, e = void 0
+            }
+        }
+
+        function m(a, b) {
+            if (null != d) return a(d);
+            if (null != e) return b.connect = b.connect && e, d = b, a(b);
+            d = b;
+            try {
+                return a(b)
+            } finally {
+                d = void 0
+            }
+        }
+
+        function n(a, b) {
+            return i.has(a) || "object" == typeof b && null != b && j.get(a)?.has(b) === !0
+        }
+
+        function o(a, b) {
+            return "object" == typeof b && null != b && n(a, b) ? m(c => {
+                c.didReadQueryResult = !0;
+                let d = g.get(b)?.getCurrentSnapshot(c);
+                return i.has(a) || null == d || j.get(a)?.add(d), d ?? b
+            }, d ?? {
+                connect: !0,
+                token: {}
+            }) : b
+        }
+
+        function p(a) {
+            if ("object" == typeof a && null != a) return g.get(a)
+        }
+
+        function q(a) {
+            j.set(a, null)
+        }
+
+        function r(a, b) {
+            "object" == typeof b && null != b && g.has(b) ? j.set(a, new WeakSet([b])) : j.set(a, null)
+        }
+
+        function s(a, b) {
+            let c = g.get(a),
+                d = new Proxy(c?.result ?? a, {
+                    get(c, d, e) {
+                        if ("then" !== d) return b(d), "promise" === d && b("data"), Reflect.get(a, d, e)
+                    }
+                });
+            if (null != c) {
+                let e = a,
+                    f = d;
+                g.set(d, {
+                    ...c,
+                    getCurrentSnapshot: a => {
+                        let d = c.getCurrentSnapshot(a);
+                        return d !== e && (e = d, f = s(d, b)), f
+                    },
+                    snapshot: d
+                })
+            }
+            return d
+        }
+
+        function t(a, b) {
+            let c = h.get(a);
+            if (null != c) return c.value;
+            let d = "function" == typeof b ? b() ?? "all" : b;
+            return h.set(a, {
+                value: d
+            }), d
+        }
+        var u = c("ouEa"),
+            v = c("WWxl");
+
+        function w(a, b, c, d, e, f, g) {
+            return !!a || (null == e ? null != c || !Object.is(b, d) : !!(null == c || x(c, e)) || c.result !== e.result && function(a, b, c, d) {
+                if ("all" === d || b.notifyOnError && Reflect.get(a, "error") !== Reflect.get(b.result, "error")) return !0;
+                let e = d ?? c;
+                if (null == d && 0 === c.size) return !0;
+                for (let c of e)
+                    if (Reflect.get(a, c) !== Reflect.get(b.result, c)) return !0;
+                return !1
+            }(c.result, e, f, g ?? e.getChangeProperties()))
+        }
+
+        function x(a, b) {
+            return a.behavior.suspense !== b.behavior.suspense || !Object.is(a.behavior.throwOnError, b.behavior.throwOnError)
+        }
+        class y {
+            readAtom;
+            currentResults;
+            completedResults;
+            get = a => {
+                if (null == this.readAtom) throw Error("Query result tracker read outside atom evaluation");
+                let b = this.readAtom(a),
+                    c = n(a, b),
+                    d = c ? o(a, b) : b;
+                return "object" == typeof d && null != d && g.has(d) && (null == this.currentResults && (this.currentResults = new WeakMap), this.currentResults.set(d, c && !1 !== this.currentResults.get(d))), d
+            };
+            constructor() {
+                k.add(this.get)
+            }
+            includes(a) {
+                return "object" == typeof a && null != a && this.completedResults?.get(a) === !0
+            }
+            read(a, b) {
+                let c = this.readAtom,
+                    d = this.currentResults;
+                this.readAtom = a, this.currentResults = void 0;
+                try {
+                    return b(this.get)
+                } finally {
+                    this.completedResults = this.currentResults, this.readAtom = c, null != c && (this.currentResults = d)
+                }
+            }
+        }
+        let z = {
+            cacheChangeProperties(a, b) {
+                t(a, b)
+            },
+            createAtomReadTracker: () => new y,
+            createSnapshot: function a(b, c) {
+                let d = c.trackResult(b),
+                    e = new Proxy(b, {
+                        get(a, b, c) {
+                            if ("then" !== b) return Reflect.get(d, b, c)
+                        }
+                    }),
+                    h = b,
+                    i = e;
+                return g.set(e, {
+                    behavior: c.getBehavior?.(b) ?? f,
+                    getChangeProperties: () => t(b, c.notifyOnChangeProps),
+                    getCurrentSnapshot: b => {
+                        let d = c.getCurrentResult(h, b);
+                        return d !== h && (h = d, i = a(d, c)), i
+                    },
+                    notifyOnError: c.notifyOnError,
+                    result: b,
+                    snapshot: e
+                }), e
+            },
+            createSnapshotView: function a(b, c) {
+                let d = g.get(b);
+                if (null == d) return {
+                    ...b,
+                    ...c
+                };
+                let e = (a, b, d) => Reflect.has(c, b) ? Reflect.get(c, b) : Reflect.get(a, b, d),
+                    f = new Proxy(d.result, {
+                        get: e
+                    }),
+                    h = new Proxy(b, {
+                        get: (a, b, c) => e(a, b, c)
+                    }),
+                    i = b,
+                    j = h;
+                return g.set(h, {
+                    ...d,
+                    getCurrentSnapshot: b => {
+                        let e = d.getCurrentSnapshot(b);
+                        return e !== i && (j = a(i = e, c)), j
+                    },
+                    result: f,
+                    snapshot: h
+                }), h
+            },
+            createSubscriberAtom: function(a) {
+                let b = new Set,
+                    c = a => {
+                        b.add(a)
+                    },
+                    d = (0, v.b)(a, b => {
+                        let d = n(a, b) ? p(b) : void 0;
+                        return null == d ? {
+                            isCurrentQueryResult: !1,
+                            value: b
+                        } : {
+                            isCurrentQueryResult: !0,
+                            value: s(d.snapshot, c)
+                        }
+                    }, (a, c) => a.isCurrentQueryResult === c.isCurrentQueryResult && !w(!1, a.value, a.isCurrentQueryResult ? p(a.value) : void 0, c.value, c.isCurrentQueryResult ? p(c.value) : void 0, b)),
+                    e = (0, u.a)(a => {
+                        let b = a(d);
+                        return r(e, b.isCurrentQueryResult ? b.value : void 0), b.value
+                    });
+                return q(e), e
+            },
+            createSubscriberStore: function(a, b, c) {
+                let d;
+                if (!i.has(a) && !j.has(a)) return {
+                    getSnapshot: b,
+                    subscribe: c
+                };
+                let e = () => {
+                        d?.()
+                    },
+                    f = () => (function(a, b, c) {
+                        let d, e, f, g, h, j, k = new Set,
+                            l = {
+                                connect: !1,
+                                token: {}
+                            },
+                            q = {
+                                connect: !0,
+                                token: {}
+                            },
+                            r = !1,
+                            t = !1,
+                            u = !1,
+                            v = 0;
+
+                        function y(a) {
+                            if (m(() => z(!1), a), t) throw g;
+                            if (!r) throw Error("Missing subscriber snapshot");
+                            return f
+                        }
+
+                        function z(c) {
+                            try {
+                                let g = o(a, b()),
+                                    i = n(a, g) ? p(g) : void 0,
+                                    l = null != i && (j?.result !== i.result || e?.result !== i.result),
+                                    m = c && l ? i.getChangeProperties() : void 0,
+                                    q = c && (u && w(!1, h, j, g, i, k, m) || r && w(t, d, e, g, i, k, m) || !u && !r);
+                                return t = !1, null == i ? f = g : (!r || null == e || x(e, i) || e?.result !== i.result) && (f = i.snapshot), d = g, e = i, r = !0, q
+                            } catch (b) {
+                                let a = c && (u || !r || !t || !Object.is(g, b));
+                                return t = !0, g = b, a
+                            }
+                        }
+                        return {
+                            checkForUpdates: function(a) {
+                                a || (q.token = {}, q.didReadQueryResult = !1, q.errorValidation = void 0);
+                                let b = m(() => z(!0), q);
+                                return b && (v += 1), b
+                            },
+                            createRender: function() {
+                                let b, f = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
+                                    g = l;
+                                if (f && !0 === g.didReadQueryResult && (l = {
+                                        connect: !1,
+                                        token: {}
+                                    }), !i.has(a) && (!r || null == e)) return;
+                                let n = {
+                                    connect: !1,
+                                    token: {}
+                                };
+                                f && (n.errorValidation = g.errorValidation, q.errorValidation = g.errorValidation);
+                                let o = new Set,
+                                    p = d,
+                                    t = e,
+                                    w = -1,
+                                    x = !1,
+                                    A = a => {
+                                        (x ? k : o).add(a)
+                                    };
+                                return {
+                                    commit: () => {
+                                        let a = !1;
+                                        for (let b of o) a = a || !k.has(b), k.add(b);
+                                        x = !0, j = t, h = p, u = !0, n.connect = !0, m(() => z(a), n) && (v += 1, c())
+                                    },
+                                    getSnapshot: () => (w !== v && (b = y(n), q.errorValidation = n.errorValidation, p = d, t = e, w = v), b),
+                                    track: a => null == t ? a : s(t.snapshot, A)
+                                }
+                            },
+                            getSnapshot: function() {
+                                return y(l)
+                            }
+                        }
+                    })(a, b, e),
+                    g = i.has(a) ? f() : void 0;
+                return {
+                    createRender: function() {
+                        let a = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                        return g?.createRender(a)
+                    },
+                    getSnapshot: () => {
+                        if (null != g) return g.getSnapshot();
+                        let c = l(b, !1);
+                        return n(a, c) ? (g = f()).getSnapshot() : c
+                    },
+                    subscribe: e => {
+                        let h = a => {
+                            (g = g ?? f()).checkForUpdates(a) && e()
+                        };
+                        d = e;
+                        let i = c(() => {
+                            let c;
+                            if (null != g) return void h(!1);
+                            try {
+                                c = b()
+                            } catch {
+                                e();
+                                return
+                            }
+                            n(a, c) ? h(!1) : e()
+                        });
+                        return null != g && h(!0), () => {
+                            d === e && (d = void 0), i()
+                        }
+                    }
+                }
+            },
+            getCurrentAtomValue: o,
+            getMetadata: p,
+            isCurrentQueryResultReader: a => k.has(a),
+            needsSubscriberAtom: (a, b) => n(a, b),
+            markDerivedAtom: q,
+            markAtom(a) {
+                i.add(a)
+            },
+            recordDerivedQueryResult: r,
+            withCurrentRead: l
+        }
+    }),
+    ns1t: (function(a, b, c) {
+        var d = c("ABep"),
+            e = c("QosV");
+        let f = (0, c("zd8w").createContext)(!1);
+        c.d(b, {}, {
+            a: function(a) {
+                let b, c = (0, e.c)(2),
+                    {
+                        children: g
+                    } = a;
+                return c[0] !== g ? (b = (0, d.jsx)(f, {
+                    value: !0,
+                    children: g
+                }), c[0] = g, c[1] = b) : b = c[1], b
+            },
+            b: f
+        })
+    }),
+    PSDF: (function(a, b, c) {
+        var d = c("AvFJ"),
+            e = c("vMlG");
+
+        function f(a, b) {
+            var c;
+            "object" == typeof(c = b) && null != c && e.a in c && "function" == typeof c[e.a] && b[e.a](a)
+        }
+
+        function g(a, b, c) {
+            let e = a.familyBindings.get(b),
+                g = e?.get(c);
+            if (null == e || null == g) return !1;
+            e.delete(c), 0 === e.size && a.familyBindings.delete(b);
+            let h = a.familyKeysByOwner.get(g.owner),
+                i = h?.get(b);
+            return i?.delete(c), i?.size === 0 && h?.delete(b), h?.size === 0 && a.familyKeysByOwner.delete(g.owner), g.disposal?.dispose(), f(a, g.value), (0, d.b)(a, g.debugFamilyMember), !0
+        }
+        c.d(b, {}, {
+            a: function(a, b) {
+                return null == b ? 0 : function a(b, c) {
+                    let d = 0,
+                        e = b.familyKeysByOwner.get(c);
+                    if (null != e)
+                        for (let [a, f] of e)
+                            for (let e of f) Object.is(b.familyBindings.get(a)?.get(e)?.owner, c) && (g(b, a, e), d += 1);
+                    for (let e of b.retainedScopeEntries.values())
+                        for (let {
+                                node: b
+                            }
+                            of e.values()) d += a(b, c);
+                    return d
+                }(a.node, b)
+            },
+            b: f,
+            c: function(a, b, c) {
+                return b[e.b](a.node, a.chain, c)
+            },
+            d: function(a, b) {
+                let c = a.node;
+                for (; null != c.parent;) c = c.parent;
+                return function a(b, c) {
+                    let d = 0;
+                    for (let a of b.familyBindings.keys()) g(b, a, c) && (d += 1);
+                    for (let e of b.retainedScopeEntries.values())
+                        for (let {
+                                node: b
+                            }
+                            of e.values()) d += a(b, c);
+                    return d
+                }(c, b)
+            },
+            e: g
+        })
+    }),
+    fbKo: (function(a, b, c) {
+        c.d(b, {
+            a: () => u,
+            b: () => function a(b) {
+                for (let a of ((0, V.a)(b), (0, V.g)(b), b.disposalLifecycles)) a.dispose();
+                for (let a of b.familyBindings.values())
+                    for (let c of a.values())(0, W.b)(b, c.value);
+                for (let c of b.retainedScopeEntries.values())
+                    for (let d of c.values()) b.autoDisposeScheduler.cancel(d), a(d.node);
+                b.retainedScopeEntries.clear()
+            },
+            c: () => z,
+            d: () => m,
+            e: () => S,
+            f: () => ab,
+            g: () => N,
+            h: () => R,
+            i: () => L,
+            j: () => H,
+            k: () => Y,
+            l: () => Q,
+            m: () => l,
+            n: () => W.a,
+            o: () => W.c,
+            p: () => W.d,
+            q: () => n,
+            r: () => Z,
+            s: () => X,
+            t: () => t,
+            u: () => x,
+            v: () => s,
+            w: () => w,
+            x: () => y,
+            y: () => k,
+            z: () => D,
+            A: () => K,
+            B: () => B,
+            C: () => A,
+            D: () => o,
+            E: () => P,
+            F: () => O
+        });
+        var d = c("ouEa"),
+            e = c("WWxl"),
+            f = c("iwK1"),
+            g = c("PKjX"),
+            h = c("wFEO"),
+            i = c("oFsh");
+        let j = new WeakMap;
+
+        function k(a, b) {
+            a.imperativeReadAtoms.add(b)
+        }
+
+        function l(a, b, c, f) {
+            let g = (0, e.a)(a),
+                i = (0, d.a)(c ?? a);
+            g.read = a => a(h.c) ? a(i) : a(g);
+            let j = function(a, b) {
+                let c;
+                if (null != a || null != b) return function(d, e, f) {
+                    let g = d(this),
+                        h = "function" == typeof f ? f(g) : f;
+                    Object.is(g, h) || a?.(g, h) || (e(this, h), b?.retainOnWrite(h) ? c = c ?? b.disposal.retain() : (c?.(), c = void 0))
+                }
+            }(b, f);
+            return null != j && (g.write = j), g
+        }
+
+        function m(a, b) {
+            let c = f.a.createAtomReadTracker();
+            if (null == b) {
+                let b = (0, d.a)(d => {
+                    let e = c.read(d, a);
+                    return f.a.recordDerivedQueryResult(b, c.includes(e) ? e : void 0), e
+                });
+                return f.a.markDerivedAtom(b), b
+            }
+            let g = (0, d.a)(b => {
+                    let d = c.read(b, a);
+                    return {
+                        isCurrentQueryResult: c.includes(d),
+                        value: d
+                    }
+                }),
+                h = (0, e.b)(g, (a, c) => null != c && b(c.value, a.value) ? Object.is(c.value, a.value) ? c.isCurrentQueryResult === a.isCurrentQueryResult ? c : a : c.isCurrentQueryResult ? {
+                    isCurrentQueryResult: !1,
+                    value: c.value
+                } : c : a),
+                i = (0, d.a)(a => {
+                    let b = a(h);
+                    return f.a.recordDerivedQueryResult(i, b.isCurrentQueryResult ? b.value : void 0), b.value
+                });
+            return f.a.markDerivedAtom(i), i
+        }
+
+        function n(a, b, c) {
+            return f.a.withCurrentRead(() => (function(a, b, c) {
+                if (null != c) {
+                    let a = c(b);
+                    return f.a.isCurrentQueryResultReader(c) ? a : f.a.getCurrentAtomValue(b, a)
+                }
+                let d = j.get(a.store);
+                if (!a.imperativeReadAtoms.has(b) || d?.has(b)) return f.a.getCurrentAtomValue(b, a.store.get(b));
+                null == d && (d = new Set, j.set(a.store, d)), d.add(b);
+                let e = [],
+                    g = a;
+                for (; null != g;) g.imperativeReadDepth += 1, e.push(g), g = g.parent;
+                try {
+                    let c = (0, i.b)(a.store, b, () => {});
+                    try {
+                        return f.a.getCurrentAtomValue(b, a.store.get(b))
+                    } finally {
+                        c()
+                    }
+                } finally {
+                    for (let a of (d.delete(b), e)) a.imperativeReadDepth -= 1
+                }
+            })(a, b, c))
+        }
+
+        function o(a, b, c) {
+            (0, g.f)(a, b, c)
+        }
+        var p = c("m4Vs"),
+            q = c("XNFm"),
+            r = c("vMlG");
+
+        function s(a) {
+            return "object" == typeof a && null != a && "atom" in a && "store" in a
+        }
+
+        function t(a) {
+            return "object" == typeof a && null != a && r.e in a && "function" == typeof a[r.e]
+        }
+
+        function u(a, b) {
+            return null != b && t(a) ? a[r.e](b) : a
+        }
+
+        function v(a, b) {
+            return a?.enabled === !1 ? a : b ?? a
+        }
+
+        function w(a) {
+            return "object" == typeof a && null != a && "kind" in a && ("readable-family" === a.kind || "signal-family" === a.kind)
+        }
+
+        function x(a) {
+            return s(a) && "set" in a
+        }
+
+        function y(a) {
+            return "object" == typeof a && null != a && "kind" in a && "signal-family" === a.kind
+        }
+
+        function z(a, b) {
+            let c = new Map,
+                d = b.parent;
+            for (; null != d;) {
+                let b = a.get(d.id);
+                if (null == b) break;
+                c.set(d.id, b), d = d.parent
+            }
+            return c
+        }
+
+        function A(a, b, c) {
+            let d = a;
+            for (; null != d;) {
+                if (d.token === c) return d;
+                d = d.parent
+            }
+            return B(b, c)
+        }
+
+        function B(a, b) {
+            let c = a.get(b.id);
+            if (null == c) throw Error("Missing scope instance");
+            return c
+        }
+
+        function C(a, b, c, d, e) {
+            return function(f, g, h) {
+                if (s(f)) return D(b, a, f, c, v(d, 2 == arguments.length && t(f) ? g : void 0), e);
+                if (t(f) && 2 == arguments.length) {
+                    let h = A(b, a, f.scope),
+                        i = u(f, v(d, g)),
+                        j = e?.(i, h, a, c) ?? i.resolve(h, a);
+                    return n(h, j, c)
+                }
+                if (void 0 !== g || arguments.length >= 2) {
+                    let i = A(b, a, f.scope);
+                    if (w(f)) return f.read(i, a, g, c, v(d, h), e);
+                    let j = f[r.d](i, a, g);
+                    return null != j.disposal && null != c && c(j.disposal.atom), j.value
+                }
+                let i = A(b, a, f.scope),
+                    j = u(f, v(d, h)),
+                    k = e?.(j, i, a, c) ?? j.resolve(i, a);
+                return n(i, k, c)
+            }
+        }
+
+        function D(a, b, c, d, e, g) {
+            if (s(c)) {
+                let h = u(c, e),
+                    i = g?.(h, a, b, d) ?? h.atom;
+                if (null != d && h.store === a.store) {
+                    let b = h[r.c];
+                    return null != b && d(b.atom), n(a, i, d)
+                }
+                return i === h.atom ? h.get() : f.a.getCurrentAtomValue(i, h.store.get(i))
+            }
+            let h = A(a, b, c.scope),
+                i = u(c, e),
+                j = g?.(i, h, b, d) ?? i.resolve(h, b);
+            return n(h, j, d)
+        }
+        var E = c("NxBK"),
+            F = c("J6iR");
+
+        function G(a, b, c, d) {
+            let e, f;
+            return "infinite" === b.queryKind ? function(a, b, c, d) {
+                let e = A(a.node, a.chain, b.scope),
+                    f = z(a.chain, b.scope);
+                if (f.set(b.scope.id, e), null == e.queryClient) throw Error("Missing query client");
+                let g = (0, h.a)(e.queryClient, c),
+                    i = b.getOptions(R(f, e, c, {
+                        enabled: !1
+                    }, d)),
+                    j = () => {
+                        let a = g.defaultQueryOptions(i),
+                            b = g.getQueryCache().build(g, a),
+                            c = "function" == typeof a.staleTime ? a.staleTime(b) : a.staleTime,
+                            d = b.isStaleByTime(c),
+                            e = g.fetchInfiniteQuery(i);
+                        return d && (0, F.a)((0, F.c)(b)), e
+                    };
+                return {
+                    queryKey: i.queryKey,
+                    async cancel(a, b) {
+                        await g.cancelQueries({
+                            ...a,
+                            queryKey: i.queryKey
+                        }, b)
+                    },
+                    getData: () => g.getQueryData(i.queryKey),
+                    getOptions: () => i,
+                    fetch: j,
+                    getOrFetch: j,
+                    async invalidate(a, b) {
+                        await g.invalidateQueries({
+                            ...a,
+                            queryKey: i.queryKey
+                        }, b)
+                    },
+                    setData: (a, b) => g.setQueryData(i.queryKey, a, b)
+                }
+            }(a, b, c, d) : (e = function(a, b, c, d) {
+                let e = A(a.node, a.chain, b.scope),
+                    f = z(a.chain, b.scope);
+                if (f.set(b.scope.id, e), null == e.queryClient) throw Error("Missing query client");
+                return {
+                    queryClient: (0, h.a)(e.queryClient, c),
+                    queryOptions: b.getOptions(R(f, e, c, {
+                        enabled: !1
+                    }, d))
+                }
+            }(a, b, c, d), f = async () => {
+                let a = e.queryClient.defaultQueryOptions(e.queryOptions),
+                    b = e.queryClient.getQueryCache().build(e.queryClient, a),
+                    c = "function" == typeof a.staleTime ? a.staleTime(b) : a.staleTime,
+                    d = b.isStaleByTime(c);
+                (0, F.b)(a, "independent");
+                let f = (0, F.i)(b, () => e.queryClient.fetchQuery(a));
+                d && (0, F.a)((0, F.c)(b));
+                let g = d ? b.promise : void 0;
+                for (; null != g;) try {
+                    await g;
+                    break
+                } catch (c) {
+                    let a = b.promise;
+                    if (!(c instanceof E.a) || !c.silent || null == a || a === g) break;
+                    (0, F.a)((0, F.c)(b)), f = f.catch(b => {
+                        if (b instanceof E.a && b.silent) return a;
+                        throw b
+                    }), g = a
+                }
+                return f
+            }, {
+                queryKey: e.queryOptions.queryKey,
+                async cancel(a, b) {
+                    await e.queryClient.cancelQueries({
+                        ...a,
+                        queryKey: e.queryOptions.queryKey
+                    }, b)
+                },
+                getData: () => e.queryClient.getQueryData(e.queryOptions.queryKey),
+                getOptions: () => e.queryOptions,
+                fetch: f,
+                getOrFetch: f,
+                async invalidate(a, b) {
+                    await e.queryClient.invalidateQueries({
+                        ...a,
+                        queryKey: e.queryOptions.queryKey
+                    }, b)
+                },
+                setData: (a, b) => e.queryClient.setQueryData(e.queryOptions.queryKey, a, b)
+            })
+        }
+
+        function H(a, b, c) {
+            return {
+                async cancel(d, e, f, g) {
+                    let [h, i, j] = J(a, d, e, f, g);
+                    await G(a, h, b, c).cancel(i, j)
+                },
+                getData: (d, e) => G(a, I(a, d, e), b, c).getData(),
+                getOptions: (d, e) => G(a, I(a, d, e), b, c).getOptions(),
+                fetch: async (d, e) => G(a, I(a, d, e), b, c).fetch(),
+                getOrFetch: async (d, e) => G(a, I(a, d, e), b, c).getOrFetch(),
+                async invalidate(d, e, f, g) {
+                    let [h, i, j] = J(a, d, e, f, g);
+                    await G(a, h, b, c).invalidate(i, j)
+                },
+                setData(d, e, f, g) {
+                    let [h, i, j] = J(a, d, e, f, g);
+                    return G(a, h, b, c).setData(i, j)
+                },
+                snapshot: (d, e) => G(a, I(a, d, e), b, c)
+            }
+        }
+
+        function I(a, b, c) {
+            return w(b) ? b.resolve(a.node, a.chain, c) : b
+        }
+
+        function J(a, b, c, d, e) {
+            return w(b) ? [I(a, b, c), d, e] : [I(a, b), c, d]
+        }
+
+        function K(a, b, c, d) {
+            let e = A(a, b, c);
+            return d?.(e.contextVersionAtom), e.value
+        }
+
+        function L(a) {
+            return M(a)
+        }
+
+        function M(a) {
+            let b = null == a.parent ? void 0 : M(a.parent);
+            return null == b ? a.value : {
+                ...b,
+                ...a.value
+            }
+        }
+
+        function N(a, b, c) {
+            let {
+                readAtom: d,
+                inheritedQueryReadOptions: e,
+                resolveSubscriberAtom: f,
+                observeWatch: g
+            } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, i = null == d ? M(c) : void 0, j = {
+                chain: b,
+                get: C(b, c, d, e, f),
+                getOwnValue: a => K(c, b, a, d),
+                node: c,
+                query: H({
+                    chain: b,
+                    node: c
+                }, d, f),
+                get queryClient() {
+                    if (null == c.queryClient) throw Error("Missing query client");
+                    return (0, h.a)(c.queryClient, d)
+                },
+                scope: a,
+                get value() {
+                    return null == i && (null != d && function a(b, c) {
+                        null != b.parent && a(b.parent, c), c(b.contextVersionAtom)
+                    }(c, d), i = M(c)), i
+                }
+            };
+
+            function k(a) {
+                return O(j, a, g)
+            }
+            return j.set = function(a, d, e) {
+                x(a) ? o(a.store, a.atom, d) : function(a, d, e) {
+                    if (y(a)) {
+                        let f = a.resolve(c, b, d);
+                        o(f.store, f.atom, e);
+                        return
+                    }
+                    let f = A(c, b, a.scope);
+                    o(f.store, a.resolve(f, b), d)
+                }(a, d, e)
+            }, j.watch = k, j.when = function(a) {
+                return P(k, a)
+            }, j
+        }
+
+        function O(a, b) {
+            let c = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : (0, q.a)(a.node.store),
+                d = (0, p.a)();
+            return c(e => b(N(a.scope, a.chain, a.node, {
+                readAtom: e,
+                resolveSubscriberAtom: d,
+                observeWatch: c
+            })), a.node.store)
+        }
+
+        function P(a, b) {
+            return new Promise(c => {
+                let d = null,
+                    e = !1;
+                d = a(a => {
+                    if (b(a)) {
+                        if (c(), null == d) {
+                            e = !0;
+                            return
+                        }
+                        d()
+                    }
+                }), e && d()
+            })
+        }
+
+        function Q(a, b, c, d, e, f) {
+            return {
+                get queryClient() {
+                    if (null == c.queryClient) throw Error("Missing query client");
+                    return (0, h.a)(c.queryClient, d)
+                },
+                scope: N(a, b, c, {
+                    readAtom: d,
+                    inheritedQueryReadOptions: e,
+                    resolveSubscriberAtom: f
+                })
+            }
+        }
+
+        function R(a, b, c, d, e) {
+            return Object.assign(Q(b.token, a, b, c, d, e), {
+                get: C(a, b, c, d, e)
+            })
+        }
+
+        function S(a, b, c, d, e, f, h) {
+            let i = l(a => d(R(c, b, a)), f);
+            return k(b, i), i.onMount = f => {
+                if (null != h && b.store.get(h.atom)) return;
+                let j = null == h || b.imperativeReadDepth > 0 ? void 0 : h.retain(),
+                    k = (0, p.a)(),
+                    l = (0, q.b)(h => {
+                        let j, l = N(a, c, b, {
+                                readAtom: h,
+                                resolveSubscriberAtom: k,
+                                observeWatch: q.b
+                            }),
+                            m = !0,
+                            n = {
+                                scope: l,
+                                get: l.get,
+                                get queryClient() {
+                                    return l.queryClient
+                                },
+                                set: a => {
+                                    m && ((0, g.d)(b.store) ? (0, g.f)(b.store, i, a) : f(a))
+                                }
+                            };
+                        f(d(n));
+                        let o = e(n);
+                        return null != o && "then" in o ? (U(o) && (j = o), Promise.resolve(o).then(a => {
+                            m ? j = a : T(a)
+                        }, a => {
+                            m && globalThis.dispatchEvent(new ErrorEvent("error", {
+                                cancelable: !0,
+                                error: a
+                            }))
+                        })) : j = o, () => {
+                            m && (m = !1, T(j))
+                        }
+                    }, b.store);
+                return () => {
+                    l(), j?.()
+                }
+            }, i
+        }
+
+        function T(a) {
+            if (null != a) {
+                if (U(a)) return void a[Symbol.dispose]();
+                a()
+            }
+        }
+
+        function U(a) {
+            return null != a && Symbol.dispose in a
+        }
+        var V = c("AvFJ"),
+            W = c("PSDF");
+
+        function X(a, b, c) {
+            if (null == b.parent) return null;
+            let d = B(a.chain, b.parent),
+                e = d.retainedScopeEntries.get(b)?.get(c)?.node;
+            if (null == e) return null;
+            let f = new Map(a.chain);
+            return f.set(b.id, e), N(b, f, e)
+        }
+
+        function Y(a, b, c, d) {
+            let e = {
+                cache: a,
+                resolve(a, f) {
+                    let g = A(a, f, b),
+                        h = "signal" === e.cache ? g.signalBindings : g.cachedBindings,
+                        i = h.get(e);
+                    if (void 0 !== i) return d?.(i, g), i;
+                    let j = z(f, b);
+                    j.set(b.id, g);
+                    let k = c(g, j);
+                    return h.set(e, k), d?.(k, g), k
+                },
+                scope: b
+            };
+            return e
+        }
+
+        function Z(a, b) {
+            if (b?.key != null) return b.key(a);
+            if (!Array.isArray(a) && !$(a)) return a;
+            let c = null != b && $(a) && null != b.excludeFieldsFromKey ? new Set(b.excludeFieldsFromKey) : void 0;
+            return JSON.stringify(function a(b, c) {
+                if (Array.isArray(b)) return b.map(b => a(b));
+                if (!$(b)) return b;
+                let d = {};
+                for (let e of Object.keys(b).sort()) c?.has(e) || (d[e] = a(b[e]));
+                return d
+            }(a, c))
+        }
+
+        function $(a) {
+            if (null == a || "object" != typeof a) return !1;
+            let b = Object.getPrototypeOf(a);
+            return b === Object.prototype || null == b
+        }
+        var _ = c("KoFQ");
+
+        function aa(a, b, c, d) {
+            return (e, f) => {
+                let g = (0, _.c)(f?.autoDispose),
+                    h = new Map;
+                return i => {
+                    let j = Z(i, f);
+                    if (h.has(j)) return h.get(j);
+                    let k = 1 / 0 === g ? void 0 : (0, _.b)(a, g, () => {
+                            h.delete(j)
+                        }, d),
+                        l = e(i, {
+                            ...ab(a, b, i, void 0, c, k ?? d),
+                            scope: N(a.token, b, a)
+                        });
+                    return h.set(j, l), l
+                }
+            }
+        }
+
+        function ab(a, b, c, d, e, g) {
+            return {
+                derived: (h, i) => {
+                    let j, l = n => {
+                        let o = (0, p.a)(),
+                            q = m(d => (null != g && d(g.atom), h(c => {
+                                let e = u(c, n),
+                                    f = e[r.c];
+                                return null != f && d(f.atom), d(o(e, a, b, d))
+                            }, Object.assign(Q(a.token, b, a, d, n, o), {
+                                key: c
+                            }))), i?.isEqual);
+                        k(a, q), (0, V.d)(a, q, "family-derived", {
+                            debugLabel: d,
+                            familyKey: c,
+                            familyMember: e
+                        });
+                        let s = Object.assign(ac(a, q, g, () => f.a.createSubscriberAtom(q)), {
+                            [r.e]: a => n?.enabled === !1 || a.enabled ? s : j = j ?? l(a)
+                        });
+                        return s
+                    };
+                    return l()
+                },
+                externalSignal: (f, h, i) => {
+                    let j = S(a.token, a, b, a => "function" == typeof f ? f(Object.assign(a, {
+                        key: c
+                    })) : f, a => h(Object.assign(a, {
+                        key: c
+                    })), i?.isEqual, g);
+                    return (0, V.d)(a, j, "family-external", {
+                        debugLabel: d,
+                        familyKey: c,
+                        familyMember: e
+                    }), ac(a, j, g)
+                },
+                family: aa(a, b, e, g),
+                get: C(b, a),
+                signal: (f, h) => {
+                    var i, j, m;
+                    let p = h?.getServerSnapshot,
+                        s = l(d => "function" == typeof f ? f(Object.assign(Q(a.token, b, a, d), {
+                            key: c
+                        })) : f, h?.isEqual, null == p ? void 0 : () => p(c), null != g && h?.retainOnWrite != null ? {
+                            disposal: g,
+                            retainOnWrite: h.retainOnWrite
+                        } : void 0),
+                        t = h?.onMount;
+                    return null != t && k(a, s), (null != t || null != g) && (s.onMount = d => {
+                        let e = null == g || a.imperativeReadDepth > 0 ? void 0 : a.store.sub(g.atom, () => {}),
+                            f = (0, q.d)(a.store, () => t?.(d, Object.assign(N(a.token, b, a, {
+                                observeWatch: q.b
+                            }), {
+                                key: c
+                            })));
+                        if (null != e || null != f) return () => {
+                            f?.(), e?.()
+                        }
+                    }), (0, V.d)(a, s, "family-signal", {
+                        debugLabel: d,
+                        familyKey: c,
+                        familyMember: e,
+                        writeValue: b => {
+                            (0, V.h)(a.store, s, b)
+                        }
+                    }), i = a, j = s, m = g, {
+                        [r.c]: m,
+                        atom: j,
+                        get: () => n(i, j),
+                        set(a) {
+                            o(i.store, j, a)
+                        },
+                        subscribe: a => i.store.sub(j, a),
+                        store: i.store
+                    }
+                },
+                signalFamily: (c, d, f) => aa(a, b, e, g)((a, b) => {
+                    let {
+                        signal: e
+                    } = b;
+                    return e(b => {
+                        let {
+                            scope: d
+                        } = b;
+                        return "function" == typeof c ? c(a, {
+                            scope: d,
+                            get: d.get,
+                            get queryClient() {
+                                return d.queryClient
+                            }
+                        }) : c
+                    }, d)
+                }, f)
+            }
+        }
+
+        function ac(a, b, c, d) {
+            return {
+                [r.c]: c,
+                atom: b,
+                createSubscriberAtom: d,
+                get: () => n(a, b),
+                subscribe: c => a.store.sub(b, c),
+                store: a.store
+            }
+        }
+    }),
+    XNFm: (function(a, b, c) {
+        let d;
+        c.d(b, {
+            a: () => o,
+            b: () => p,
+            c: () => n,
+            d: () => m
+        });
+        var e = c("ouEa"),
+            f = c("HkKI");
+        let g = new WeakMap;
+
+        function h(a, b, c) {
+            var d, h;
+            let j, k, l = (0, f.b)(a),
+                m = l[1],
+                n = (0, f.c)(l[6]),
+                o = l[11],
+                p = l[12],
+                q = l[13],
+                r = l[14],
+                s = l[17],
+                t = new Set,
+                u = (0, e.a)(a => {
+                    m.has(u) && (t.forEach(a), v.n += 1)
+                }),
+                v = o(l, a, u);
+            v.v = void 0;
+            let w = "new",
+                x = !1,
+                y = !1;
+
+            function z() {
+                if (null == k || c?.(z)) return;
+                let a = k;
+                k = void 0;
+                let b = null == c ? "idle" : w;
+                w = "cleanup", i(a, () => {
+                    w = b, "idle" === b && x && A()
+                })
+            }
+
+            function A() {
+                x && (x = !1, i(B, () => p(l, a)))
+            }
+
+            function B() {
+                if (!m.has(u)) return;
+                if (null != c) {
+                    if ("new" !== w && ("idle" !== w || c(A))) {
+                        x = !0;
+                        return
+                    }
+                    w = "running"
+                }
+                x = !1, y = !1, t.clear();
+                let d = !0;
+                try {
+                    try {
+                        z()
+                    } catch (a) {
+                        throw null == c || y || (x = !0), a
+                    }
+                    if (x || y) return;
+                    let e = b(b => {
+                        if ("cleanup" === w) return a.get(b);
+                        let c = r(l, a, b);
+                        if (d && (x || y)) return (0, f.d)(c);
+                        try {
+                            return (0, f.d)(c)
+                        } finally {
+                            v.d.set(b, c.n), m.get(b)?.t.add(u), d ? t.add(b) : m.has(b) && (s(l, a, u), q(l, a), p(l, a))
+                        }
+                    });
+                    "function" == typeof e && (k = e)
+                } finally {
+                    if (d = !1, null != c && (w = "idle"), x ? C.add(B) : y && null != k && !m.has(u) && C.add(z), !y) {
+                        for (let b of t) v.d.set(b, o(l, a, b).n);
+                        s(l, a, u), q(l, a)
+                    }
+                }
+            }
+            let C = (d = a, h = n, null != (j = g.get(d)) || (j = new Set, g.set(d, j), h.f.add(() => {
+                let a;
+                for (let b of j) {
+                    j.delete(b);
+                    try {
+                        b()
+                    } catch (b) {
+                        (a = a ?? []).push(b)
+                    }
+                }
+                if (null != a) throw AggregateError(a)
+            })), j);
+            return n.m.add(u, () => {
+                C.delete(z), C.add(B)
+            }), n.u.add(u, () => {
+                y = null != c, x = !1, C.delete(B), null != k && C.add(z)
+            }), n.c.add(u, () => {
+                l[3].delete(u), C.add(B)
+            }), u
+        }
+
+        function i(a, b) {
+            try {
+                a()
+            } catch (a) {
+                try {
+                    b()
+                } catch (b) {
+                    throw AggregateError([a, b])
+                }
+                throw a
+            }
+            b()
+        }
+        var j = c("PKjX"),
+            k = c("oFsh");
+
+        function l(a, b) {
+            let c = d;
+            d = a;
+            try {
+                return b()
+            } finally {
+                d = c
+            }
+        }
+
+        function m(a, b) {
+            let c = l(a, b);
+            return "function" == typeof c ? () => l(a, c) : void 0
+        }
+
+        function n(a) {
+            return l(void 0, a)
+        }
+
+        function o(a) {
+            return d === a ? p : q
+        }
+
+        function p(a, b) {
+            return (0, k.b)(b, h(b, c => m(b, () => a(c))), () => {})
+        }
+
+        function q(a, b) {
+            return (0, k.b)(b, h(b, b => n(() => {
+                let c = a(b);
+                return "function" == typeof c ? () => n(c) : void 0
+            }), a => (0, j.c)(b, a)), () => {})
+        }
+    }),
+    wFEO: (function(a, b, c) {
+        var d = c("suje"),
+            e = c("ouEa");
+        let f = (0, e.a)(!1),
+            g = new WeakMap,
+            h = (0, e.a)(() => new WeakMap);
+        c.d(b, {}, {
+            a: function(a, b) {
+                if (!b?.(f)) return a;
+                let c = b(h),
+                    e = c.get(a);
+                if (null == e) {
+                    let b = a.getDefaultOptions();
+                    e = new d.a({
+                        defaultOptions: {
+                            ...b,
+                            queries: {
+                                ...b.queries,
+                                gcTime: 1 / 0
+                            }
+                        }
+                    }), c.set(a, e)
+                }
+                return e
+            },
+            b: function(a, b) {
+                let c = g.get(a);
+                return null == c && ((c = (0, e.b)()).set(f, !0), g.set(a, c)), c.get(b)
+            },
+            c: f
+        })
+    }),
+    oFsh: (function(a, b, c) {
+        c.d(b, {
+            a: () => i,
+            b: () => h
+        });
+        var d = c("ouEa"),
+            e = c("PKjX"),
+            f = c("XNFm");
+        let g = new WeakMap;
+
+        function h(a, b, c) {
+            return (g.get(a) ?? a.sub)(b, c)
+        }
+
+        function i() {
+            let a = (0, d.b)(),
+                b = a.sub;
+            g.set(a, b);
+            let c = new Map;
+            return a.sub = (d, g) => {
+                let h, i = c.get(g);
+                if (null == i) {
+                    let b = !1,
+                        d = {
+                            count: 0,
+                            notify: () => {
+                                b = !0, (0, e.c)(a, h) || h()
+                            }
+                        },
+                        h = () => {
+                            0 !== d.count && b && (b = !1, (0, f.c)(g))
+                        };
+                    i = d, c.set(g, i)
+                }
+                i.count += 1;
+                let j = () => {
+                    i.count -= 1, 0 === i.count && c.delete(g)
+                };
+                try {
+                    h = b(d, i.notify)
+                } catch (a) {
+                    throw j(), a
+                }
+                let k = !0;
+                return () => {
+                    k && (k = !1, j(), h())
+                }
+            }, a
+        }
+    }),
+    PKjX: (function(a, b, c) {
+        var d = c("ouEa"),
+            e = c("AvFJ");
+        let f = new WeakMap;
+
+        function g(a, b) {
+            let c, g = a.node.store;
+            if (f.has(g)) throw Error("Cannot start a nested Maitai signal transaction");
+            let i = new Set,
+                j = new Map,
+                k = [],
+                l = new Set,
+                m = (0, d.a)(null, (c, d) => {
+                    let m = {
+                        callbacks: i,
+                        get: a => c(a),
+                        isReplaying: !1,
+                        record: (a, b) => {
+                            let d = j.get(a);
+                            if (null != d) return void d.refresh();
+                            let e = c(a),
+                                f = {
+                                    hasChanged: () => !Object.is(b, e),
+                                    redo: () => h(g, a, e),
+                                    refresh: () => {
+                                        e = c(a)
+                                    },
+                                    undo: () => h(g, a, b)
+                                };
+                            j.set(a, f), k.push(f)
+                        },
+                        recordMutation: a => {
+                            m.isReplaying || k.push({
+                                ...a,
+                                hasChanged: () => !0,
+                                refresh: () => {}
+                            })
+                        },
+                        set: (a, b) => {
+                            (0, e.c)(g, a), d(a, b)
+                        }
+                    };
+                    f.set(g, m);
+                    try {
+                        return b(a)
+                    } catch (a) {
+                        l.add(a), m.isReplaying = !0;
+                        try {
+                            for (let a of [...k].reverse()) a.undo()
+                        } catch (a) {
+                            l.add(a)
+                        }
+                        throw a
+                    } finally {
+                        f.delete(g)
+                    }
+                });
+            m.debugLabel = "Maitai transaction";
+            try {
+                let a = g.set(m);
+                c = {
+                    changes: k.filter(a => a.hasChanged()),
+                    value: a
+                }
+            } catch (a) {
+                l.add(a), c = null
+            }
+            for (let a of i) try {
+                a()
+            } catch (a) {
+                l.add(a)
+            }
+            if (null == c || l.size > 0) {
+                if (1 === l.size) throw l.values().next().value;
+                throw AggregateError(l)
+            }
+            return c
+        }
+
+        function h(a, b, c) {
+            let d = f.get(a);
+            if (null == d) return void a.set(b, c);
+            let e = d.get(b);
+            d.set(b, c), d.isReplaying || d.record(b, e)
+        }
+        c.d(b, {}, {
+            a: function a(b, c) {
+                let d = f.get(b.node.store);
+                null == d ? g(b, () => a(b, c)) : (d.recordMutation({
+                    redo: () => a(b, c),
+                    undo: () => a(b, {
+                        redo: c.undo,
+                        undo: c.redo
+                    })
+                }), c.redo())
+            },
+            b: function(a, b) {
+                f.has(a.node.store) ? b(a) : g(a, b)
+            },
+            c: function(a, b) {
+                let c = f.get(a);
+                return null != c && (c.callbacks.add(b), !0)
+            },
+            d: function(a) {
+                return f.has(a)
+            },
+            e: g,
+            f: h
+        })
+    }),
+    m4Vs: (function(a, b, c) {
+        var d = c("iwK1"),
+            e = c("wFEO");
+        c.d(b, {}, {
+            a: function() {
+                let a = new WeakMap;
+                return function(b, c, f, g) {
+                    let h;
+                    if (g?.(e.c)) return "atom" in b ? b.atom : b.resolve(c, f);
+                    let i = a.get(b);
+                    if (null != i) return i;
+                    let j = "atom" in b ? b.atom : b.resolve(c, f);
+                    if (null == b.createSubscriberAtom) return j;
+                    let k = "atom" in b ? b.store : c.store;
+                    try {
+                        h = k.get(j)
+                    } catch {
+                        return j
+                    }
+                    if (!d.a.needsSubscriberAtom(j, h)) return j;
+                    let l = "atom" in b ? b.createSubscriberAtom() : b.createSubscriberAtom(c, f);
+                    return a.set(b, l), l
+                }
+            }
+        })
+    }),
+    vMlG: (function(a, b, c) {
+        c.d(b, {
+            a: () => h,
+            b: () => e,
+            c: () => g,
+            d: () => f,
+            e: () => d
+        });
+        let d = Symbol("maitai.withQueryReadOptions"),
+            e = Symbol("maitai.evictFamilyMemberInternal"),
+            f = Symbol("maitai.resolveFamilyMemberInternal"),
+            g = Symbol("maitai.familyDisposalInternal"),
+            h = Symbol("maitai.disposeFamilyValueInternal")
+    }),
+    Hl6a: (function(a, b, c) {
+        var d = c("tyzk"),
+            e = c("UQAX"),
+            f = c("hffr"),
+            g = c("jwtq"),
+            h = c("PKjX");
+        c.d(b, {
+            a: () => e.a,
+            b: () => g.a,
+            c: () => f.a,
+            d: () => h.e,
+            e: () => d.a,
+            f: () => f.b,
+            g: () => g.c
+        })
+    }),
+    wJ7T: (function(a, b, c) {
+        let d = ["; wv", "webview", "fbav", "fb_iab", "fban", "instagram", "line/", "kakaotalk", "snapchat", "tiktok"];
+        c.d(b, {}, {
+            a: function(a) {
+                let b = a.trim(),
+                    c = /iPhone|iPad|iPod/.test(b) && !/Safari/.test(b) || /Android/.test(b) && /Version\/\d+\.\d+/.test(b) || d.some(a => b.toLowerCase().includes(a));
+                return /\bAndroid\b/i.test(a) && /\bChrome\/\d/i.test(a) && !/\b(?:EdgA|SamsungBrowser|OPR|Opera|Firefox|FxiOS|HuaweiBrowser|YaBrowser|DuckDuckGo)\//i.test(a) && !c
+            }
+        })
+    })
+};
