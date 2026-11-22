@@ -1,13 +1,13 @@
 export const __rspack_esm_ids = [333117];
 export const __webpack_modules__ = {
-    xIWH: (function(a, b, c) {
+    AP7E: (function(a, b, c) {
         c.d(b, {
             a: () => A
         });
         var d = c("rEML"),
             e = c("ABep"),
             f = c("QosV");
-        let g = (0, (c("ESTr")).a)({
+        let g = (0, (c("gdLt")).a)({
             name: "at-sign-light-32",
             canvas: {
                 width: 32,
@@ -457,7 +457,7 @@ export const __webpack_modules__ = {
                                     id: "chatgpt.finserv_email.setup.unnamed_workspace",
                                     defaultMessage: "Untitled workspace"
                                 })
-                            }), (0, e.jsx)(r.fc, {
+                            }), (0, e.jsx)(r.kc, {
                                 className: "text-tertiary"
                             })]
                         }, a.workspaceAccountId))
@@ -502,7 +502,7 @@ export const __webpack_modules__ = {
             W[67] === Symbol.for("react.memo_cache_sentinel") ? (y = (0, e.jsx)(j.a, {
                 id: "chatgpt.finserv_email.setup.introduction",
                 defaultMessage: "Once enabled, you\u2019ll be able to delegate work to ChatGPT via email. Here\u2019s how it works:"
-            }), W[67] = y) : y = W[67], W[68] === Symbol.for("react.memo_cache_sentinel") ? (A = (0, e.jsx)(r.jd, {}), W[68] = A) : A = W[68], W[69] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, e.jsxs)("div", {
+            }), W[67] = y) : y = W[67], W[68] === Symbol.for("react.memo_cache_sentinel") ? (A = (0, e.jsx)(r.od, {}), W[68] = A) : A = W[68], W[69] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, e.jsxs)("div", {
                 className: "flex items-start gap-3",
                 children: [A, (0, e.jsx)("p", {
                     children: (0, e.jsx)(j.a, {
@@ -513,7 +513,7 @@ export const __webpack_modules__ = {
                         }
                     })
                 })]
-            }), W[69] = B) : B = W[69], W[70] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, e.jsx)(r.Sh, {}), W[70] = C) : C = W[70], W[71] !== ak.workspaceName ? (J = (0, e.jsxs)("div", {
+            }), W[69] = B) : B = W[69], W[70] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, e.jsx)(r.Xh, {}), W[70] = C) : C = W[70], W[71] !== ak.workspaceName ? (J = (0, e.jsxs)("div", {
                 className: "flex items-start gap-3",
                 children: [C, (0, e.jsx)("p", {
                     children: (0, e.jsx)(j.a, {
@@ -525,7 +525,7 @@ export const __webpack_modules__ = {
                         }
                     })
                 })]
-            }), W[71] = ak.workspaceName, W[72] = J) : J = W[72], W[73] === Symbol.for("react.memo_cache_sentinel") ? (K = (0, e.jsx)(r.lg, {}), W[73] = K) : K = W[73], W[74] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, e.jsxs)("div", {
+            }), W[71] = ak.workspaceName, W[72] = J) : J = W[72], W[73] === Symbol.for("react.memo_cache_sentinel") ? (K = (0, e.jsx)(r.qg, {}), W[73] = K) : K = W[73], W[74] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, e.jsxs)("div", {
                 className: "flex items-start gap-3",
                 children: [K, (0, e.jsx)("p", {
                     children: (0, e.jsx)(j.a, {
@@ -679,52 +679,52 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as a
-} from "./633146.511711c8b9.js";
-import * as b from "./418851.d52a1ffc2f.js";
+} from "./633146.a2b944e28c.js";
+import * as b from "./418851.feebe49851.js";
 a.C(b);
-import * as c from "./109308.4d55635a3c.js";
+import * as c from "./109308.ef36e8e103.js";
 a.C(c);
 import * as d from "./399565.700e278f2d.js";
 a.C(d);
-import * as e from "./257798.bf743d3ac4.js";
+import * as e from "./257798.0472ef88ab.js";
 a.C(e);
 import * as f from "./447351.05632d2214.js";
 a.C(f);
-import * as g from "./617936.a1bdaefa17.js";
+import * as g from "./617936.c58ffaf8f8.js";
 a.C(g);
-import * as h from "./807489.2515299139.js";
+import * as h from "./807489.bd02d1078c.js";
 a.C(h);
-import * as i from "./337882.b7027c58e4.js";
+import * as i from "./337882.6eaaa20d94.js";
 a.C(i);
-import * as j from "./955979.17a59d5e45.js";
+import * as j from "./955979.f6d70005ed.js";
 a.C(j);
-import * as k from "./646436.71dd39a771.js";
+import * as k from "./646436.cd723778fa.js";
 a.C(k);
-import * as l from "./7078.bd9e0604da.js";
+import * as l from "./7078.3ccac69f94.js";
 a.C(l);
-import * as m from "./200429.7cb44b876c.js";
+import * as m from "./200429.4ada6a3235.js";
 a.C(m);
-import * as n from "./698524.76d0d9fd5b.js";
+import * as n from "./698524.120a8c303c.js";
 a.C(n);
-import * as o from "./956483.f7260d7dd1.js";
+import * as o from "./956483.adb6c94dd2.js";
 a.C(o);
-import * as p from "./87162.27c50a9bde.js";
+import * as p from "./87162.dcb505cf37.js";
 a.C(p);
-import * as q from "./396705.2318c018fd.js";
+import * as q from "./396705.2143b6a0d3.js";
 a.C(q);
-import * as r from "./155568.d41a363926.js";
+import * as r from "./155568.7de38fe652.js";
 a.C(r);
-import * as s from "./731863.ace382bf58.js";
+import * as s from "./731863.afd8a296c2.js";
 a.C(s);
-import * as t from "./767086.390bf6c64e.js";
+import * as t from "./767086.5a3a18f32d.js";
 a.C(t);
-import * as u from "./76629.a6013c50b6.js";
+import * as u from "./76629.6724f3e1eb.js";
 a.C(u);
-import * as v from "./226913.9dca92fd99.js";
+import * as v from "./226913.9e6c932018.js";
 a.C(v);
-import * as w from "./333117.6a5db36469.js";
+import * as w from "./333117.d91e40e26c.js";
 a.C(w);
-var x = a(a.s = "xIWH").a;
+var x = a(a.s = "AP7E").a;
 export {
     x as
     default

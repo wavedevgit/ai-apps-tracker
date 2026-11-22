@@ -70,8 +70,8 @@ export const __webpack_modules__ = {
                 }
                 let R = G ? Q.snapshot : F.spacePageSnapshot,
                     S = G || F.nonblockingSsr,
-                    T = (0, g.x)(l.H, D),
-                    U = (0, g.z)(l.A),
+                    T = (0, g.x)(l.G, D),
+                    U = (0, g.z)(l.z),
                     V = (0, g.x)(s.e, "4063423961");
                 A[22] === Symbol.for("react.memo_cache_sentinel") ? (v = {
                     enabled: !1
@@ -302,7 +302,7 @@ export const __webpack_modules__ = {
                 as = (0, m.useSyncExternalStore)(null == ar ? G : ar.subscribeInvalidation, null == ar ? H : ar.isInvalidated, H),
                 at = (0, k.x)(null == Q ? null : E.f, ap),
                 au = (0, k.x)(null != Q ? v.loadedSpacePageMetadata$ : void 0, ad ?? null),
-                av = (0, k.x)(null != Q && t.z, ap.pageId),
+                av = (0, k.x)(null != Q && t.y, ap.pageId),
                 {
                     data: aw,
                     error: ax
@@ -471,91 +471,94 @@ export const __webpack_modules__ = {
         }
 
         function L(a) {
-            let b, c, h, i, j, o, q, r, t, u, v = (0, e.c)(40),
+            let b, c, h, i, j, o, q, r, t, u, v, x = (0, e.c)(43),
                 {
-                    mountId: x,
-                    getBrowserFirstContent: z,
-                    pageId: C,
-                    blockId: D,
-                    firstContent: G,
-                    initialNavigation: H,
-                    snapshot: I,
-                    setClientCovered: J
+                    mountId: z,
+                    getBrowserFirstContent: C,
+                    pageId: D,
+                    blockId: G,
+                    firstContent: H,
+                    initialNavigation: I,
+                    snapshot: J,
+                    setClientCovered: L
                 } = a,
-                L = (0, k.y)(y.a),
-                N = (0, m.useRef)(null),
-                O = (0, k.z)(p.f),
-                P = (0, k.z)(p.j);
-            v[0] !== x || v[1] !== I.accountId || v[2] !== I.pageId || v[3] !== I.userId ? (b = {
-                mountId: x,
-                pageId: I.pageId,
-                accountId: I.accountId,
-                userId: I.userId
-            }, v[0] = x, v[1] = I.accountId, v[2] = I.pageId, v[3] = I.userId, v[4] = b) : b = v[4];
-            let Q = (0, k.x)(E.f, b),
-                R = C !== I.pageId || O !== I.accountId || P !== I.userId || Q?.failed === !0,
-                [S, T] = (0, m.useState)(!1),
-                U = null != Q && !Q.failed && Q.sequence >= I.throughSequence;
-            !S && U && T(!0);
-            let V = !R && !S && !U;
-            v[5] !== D || v[6] !== x || v[7] !== L || v[8] !== I.accountId || v[9] !== I.pageId || v[10] !== I.throughSequence || v[11] !== I.userId ? (c = a => {
-                let b = (0, l.d)(`page://${I.pageId}${a.ownerDocument.defaultView?.location.hash??""}`);
-                if (null != D || void 0 === D && b?.kind === "page" && null != b.blockId) return;
-                let c = L.get(E.f, {
-                    mountId: x,
-                    pageId: I.pageId,
-                    accountId: I.accountId,
-                    userId: I.userId
+                N = (0, k.y)(y.a),
+                O = (0, m.useRef)(null),
+                P = (0, k.z)(p.f),
+                Q = (0, k.z)(p.j);
+            x[0] !== z || x[1] !== J.accountId || x[2] !== J.pageId || x[3] !== J.userId ? (b = {
+                mountId: z,
+                pageId: J.pageId,
+                accountId: J.accountId,
+                userId: J.userId
+            }, x[0] = z, x[1] = J.accountId, x[2] = J.pageId, x[3] = J.userId, x[4] = b) : b = x[4];
+            let R = (0, k.x)(E.f, b),
+                S = D !== J.pageId || P !== J.accountId || Q !== J.userId || R?.failed === !0,
+                [T, U] = (0, m.useState)(!1),
+                V = null != R && !R.failed && R.sequence >= J.throughSequence;
+            !T && V && U(!0);
+            let W = !S && !T && !V;
+            x[5] !== G || x[6] !== z || x[7] !== N || x[8] !== J.accountId || x[9] !== J.pageId || x[10] !== J.throughSequence || x[11] !== J.userId ? (c = a => {
+                let b = (0, l.d)(`page://${J.pageId}${a.ownerDocument.defaultView?.location.hash??""}`);
+                if (null != G || void 0 === G && b?.kind === "page" && null != b.blockId) return;
+                let c = N.get(E.f, {
+                    mountId: z,
+                    pageId: J.pageId,
+                    accountId: J.accountId,
+                    userId: J.userId
                 });
-                !c?.failed && null != c && c.sequence >= I.throughSequence && L.get(p.f) === I.accountId && L.get(p.j) === I.userId && c.restoreScroll?.(a.scrollTop)
-            }, v[5] = D, v[6] = x, v[7] = L, v[8] = I.accountId, v[9] = I.pageId, v[10] = I.throughSequence, v[11] = I.userId, v[12] = c) : c = v[12];
-            let W = (0, B.a)(c);
-            return v[13] !== G || v[14] !== z || v[15] !== H || v[16] !== V ? (h = V && (0, d.jsx)(M, {
-                getBrowserFirstContent: z,
-                content: N,
-                firstContent: G,
-                initialNavigation: H
-            }), v[13] = G, v[14] = z, v[15] = H, v[16] = V, v[17] = h) : h = v[17], v[18] !== I.emoji ? (i = null != I.emoji && (0, d.jsx)("span", {
+                !c?.failed && null != c && c.sequence >= J.throughSequence && N.get(p.f) === J.accountId && N.get(p.j) === J.userId && c.restoreScroll?.(a.scrollTop)
+            }, x[5] = G, x[6] = z, x[7] = N, x[8] = J.accountId, x[9] = J.pageId, x[10] = J.throughSequence, x[11] = J.userId, x[12] = c) : c = x[12];
+            let X = (0, B.a)(c);
+            return x[13] !== H || x[14] !== C || x[15] !== I || x[16] !== W ? (h = W && (0, d.jsx)(M, {
+                getBrowserFirstContent: C,
+                content: O,
+                firstContent: H,
+                initialNavigation: I
+            }), x[13] = H, x[14] = C, x[15] = I, x[16] = W, x[17] = h) : h = x[17], x[18] !== J.emoji ? (i = null != J.emoji && (0, d.jsx)("span", {
                 className: "flex size-16 items-center border border-transparent",
                 children: (0, d.jsx)(A.a, {
-                    emoji: I.emoji,
+                    emoji: J.emoji,
                     size: "large"
                 })
-            }), v[18] = I.emoji, v[19] = i) : i = v[19], v[20] !== I.title ? (j = I.title || (0, d.jsx)(n.a, {
+            }), x[18] = J.emoji, x[19] = i) : i = x[19], x[20] !== J.title ? (j = J.title || (0, d.jsx)(n.a, {
                 ...w.c.untitled
-            }), v[20] = I.title, v[21] = j) : j = v[21], v[22] !== j ? (o = (0, d.jsx)("h1", {
+            }), x[20] = J.title, x[21] = j) : j = x[21], x[22] !== j ? (o = (0, d.jsx)("h1", {
                 className: `${F.a.PageTitle} font-semibold break-words text-default`,
                 children: j
-            }), v[22] = j, v[23] = o) : o = v[23], v[24] !== i || v[25] !== o ? (q = (0, d.jsxs)("div", {
+            }), x[22] = j, x[23] = o) : o = x[23], x[24] !== J.reserveSpaceBreadcrumb ? (q = J.reserveSpaceBreadcrumb && (0, d.jsx)("div", {
+                "aria-hidden": "true",
+                className: "h-lh text-sm"
+            }), x[24] = J.reserveSpaceBreadcrumb, x[25] = q) : q = x[25], x[26] !== i || x[27] !== o || x[28] !== q ? (r = (0, d.jsxs)("div", {
                 className: "flex min-w-0 flex-col gap-2",
-                children: [i, o]
-            }), v[24] = i, v[25] = o, v[26] = q) : q = v[26], v[27] !== I.html ? (r = (0, d.jsx)("div", {
+                children: [i, o, q]
+            }), x[26] = i, x[27] = o, x[28] = q, x[29] = r) : r = x[29], x[30] !== J.html ? (t = (0, d.jsx)("div", {
                 "data-page-document-selection": !0,
                 className: "isolate col-[wide] min-w-0",
                 children: (0, d.jsx)("div", {
                     className: `${f.a.root} ${F.a.PageDocumentTheme} px-0`,
                     style: g.a,
                     children: (0, d.jsx)("div", {
-                        ref: N,
+                        ref: O,
                         className: `ProseMirror ${f.a.content} ${F.a.PageDocument} ${F.a.PagePreview}`,
                         contentEditable: !1,
                         "data-page-static-preview": !0,
                         dangerouslySetInnerHTML: {
-                            __html: I.html
+                            __html: J.html
                         }
                     })
                 })
-            }), v[27] = I.html, v[28] = r) : r = v[28], v[29] !== q || v[30] !== r ? (t = (0, d.jsx)(s.a, {
-                heading: q,
-                children: r
-            }), v[29] = q, v[30] = r, v[31] = t) : t = v[31], v[32] !== H || v[33] !== x || v[34] !== W || v[35] !== J || v[36] !== h || v[37] !== t || v[38] !== V ? (u = (0, d.jsxs)(K, {
-                mountId: x,
-                initialNavigation: H,
-                visible: V,
-                setClientCovered: J,
-                onRemove: W,
-                children: [h, t]
-            }), v[32] = H, v[33] = x, v[34] = W, v[35] = J, v[36] = h, v[37] = t, v[38] = V, v[39] = u) : u = v[39], u
+            }), x[30] = J.html, x[31] = t) : t = x[31], x[32] !== r || x[33] !== t ? (u = (0, d.jsx)(s.a, {
+                heading: r,
+                children: t
+            }), x[32] = r, x[33] = t, x[34] = u) : u = x[34], x[35] !== I || x[36] !== z || x[37] !== X || x[38] !== L || x[39] !== u || x[40] !== h || x[41] !== W ? (v = (0, d.jsxs)(K, {
+                mountId: z,
+                initialNavigation: I,
+                visible: W,
+                setClientCovered: L,
+                onRemove: X,
+                children: [h, u]
+            }), x[35] = I, x[36] = z, x[37] = X, x[38] = L, x[39] = u, x[40] = h, x[41] = W, x[42] = v) : v = x[42], v
         }
 
         function M(a) {
@@ -676,7 +679,7 @@ export const __webpack_modules__ = {
         }
 
         function q(a) {
-            let b, c, h, i, j, k, l, n, o, p = (0, e.c)(23);
+            let b, c, h, i, j, k, l, n, o, p = (0, e.c)(24);
             p[0] !== a ? ({
                 as: i,
                 compact: j,
@@ -693,19 +696,20 @@ export const __webpack_modules__ = {
                 u = !q && !r && !h["data-page-full-width"] && "start" !== c && "[container-name:page-dil-badge-gutter]",
                 v = q || s ? "gap-y-0" : "gap-y-6",
                 w = q ? "ps-[var(--page-attribution-padding,--spacing(4))] pe-4" : "ps-[var(--page-attribution-padding,var(--page-control-gutter))] pe-(--page-control-gutter) in-[[data-page-responsive-comments=markers]]:ps-[var(--page-attribution-padding,clamp(16px,calc(100%_-_572px_-_48px),48px))]",
-                x = r ? "[--page-control-gutter:--spacing(10)] [--page-document-end-space:--spacing(16)] [--color-background-text-selection:--alpha(var(--color-text)/20%)]" : "[--page-control-gutter:--spacing(14)] [--page-document-end-space:50cqh] in-[[data-page-responsive-comments]]:[--page-control-gutter:--spacing(12)]",
-                y = !q && "in-[[data-mobile-page-platform]]:[--page-control-gutter:--spacing(7)]! in-[[data-mobile-page-platform]]:ps-[var(--page-attribution-padding,var(--page-control-gutter))]!",
-                z = "start" === c && "w-full max-w-[var(--page-content-max-width,none)]";
-            p[8] !== b || p[9] !== z || p[10] !== u || p[11] !== v || p[12] !== w || p[13] !== x || p[14] !== y ? (n = (0, f.b)(m.a.PageContent, "@container grid", u, v, w, x, y, z, b), p[8] = b, p[9] = z, p[10] = u, p[11] = v, p[12] = w, p[13] = x, p[14] = y, p[15] = n) : n = p[15];
-            let A = q || void 0,
-                B = r || void 0;
-            return p[16] !== t || p[17] !== c || p[18] !== h || p[19] !== n || p[20] !== A || p[21] !== B ? (o = (0, d.jsx)(t, {
+                x = !q && "in-data-[page-comments-docked]:pe-[clamp(0px,calc(100%_-_--spacing(80)),var(--page-control-gutter))]",
+                y = r ? "[--page-control-gutter:--spacing(10)] [--page-document-end-space:--spacing(16)] [--color-background-text-selection:--alpha(var(--color-text)/20%)]" : "[--page-control-gutter:--spacing(14)] [--page-document-end-space:50cqh] in-[[data-page-responsive-comments]]:[--page-control-gutter:--spacing(12)]",
+                z = !q && "in-[[data-mobile-page-platform]]:[--page-control-gutter:--spacing(7)]! in-[[data-mobile-page-platform]]:ps-[var(--page-attribution-padding,var(--page-control-gutter))]!",
+                A = "start" === c && "w-full max-w-[var(--page-content-max-width,none)]";
+            p[8] !== b || p[9] !== z || p[10] !== A || p[11] !== u || p[12] !== v || p[13] !== w || p[14] !== x || p[15] !== y ? (n = (0, f.b)(m.a.PageContent, "@container grid", u, v, w, x, y, z, A, b), p[8] = b, p[9] = z, p[10] = A, p[11] = u, p[12] = v, p[13] = w, p[14] = x, p[15] = y, p[16] = n) : n = p[16];
+            let B = q || void 0,
+                C = r || void 0;
+            return p[17] !== t || p[18] !== c || p[19] !== h || p[20] !== n || p[21] !== B || p[22] !== C ? (o = (0, d.jsx)(t, {
                 ...h,
                 className: n,
-                "data-compact": A,
+                "data-compact": B,
                 "data-page-content-alignment": c,
-                "data-native-controls": B
-            }), p[16] = t, p[17] = c, p[18] = h, p[19] = n, p[20] = A, p[21] = B, p[22] = o) : o = p[22], o
+                "data-native-controls": C
+            }), p[17] = t, p[18] = c, p[19] = h, p[20] = n, p[21] = B, p[22] = C, p[23] = o) : o = p[23], o
         }
 
         function r(a) {
@@ -791,52 +795,52 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as a
-} from "./633146.511711c8b9.js";
-import * as b from "./418851.d52a1ffc2f.js";
+} from "./633146.a2b944e28c.js";
+import * as b from "./418851.feebe49851.js";
 a.C(b);
-import * as c from "./109308.4d55635a3c.js";
+import * as c from "./109308.ef36e8e103.js";
 a.C(c);
 import * as d from "./399565.700e278f2d.js";
 a.C(d);
-import * as e from "./257798.bf743d3ac4.js";
+import * as e from "./257798.0472ef88ab.js";
 a.C(e);
 import * as f from "./447351.05632d2214.js";
 a.C(f);
-import * as g from "./617936.a1bdaefa17.js";
+import * as g from "./617936.c58ffaf8f8.js";
 a.C(g);
-import * as h from "./807489.2515299139.js";
+import * as h from "./807489.bd02d1078c.js";
 a.C(h);
-import * as i from "./337882.b7027c58e4.js";
+import * as i from "./337882.6eaaa20d94.js";
 a.C(i);
-import * as j from "./955979.17a59d5e45.js";
+import * as j from "./955979.f6d70005ed.js";
 a.C(j);
-import * as k from "./646436.71dd39a771.js";
+import * as k from "./646436.cd723778fa.js";
 a.C(k);
-import * as l from "./7078.bd9e0604da.js";
+import * as l from "./7078.3ccac69f94.js";
 a.C(l);
-import * as m from "./200429.7cb44b876c.js";
+import * as m from "./200429.4ada6a3235.js";
 a.C(m);
-import * as n from "./698524.76d0d9fd5b.js";
+import * as n from "./698524.120a8c303c.js";
 a.C(n);
-import * as o from "./956483.f7260d7dd1.js";
+import * as o from "./956483.adb6c94dd2.js";
 a.C(o);
-import * as p from "./87162.27c50a9bde.js";
+import * as p from "./87162.dcb505cf37.js";
 a.C(p);
-import * as q from "./396705.2318c018fd.js";
+import * as q from "./396705.2143b6a0d3.js";
 a.C(q);
-import * as r from "./155568.d41a363926.js";
+import * as r from "./155568.7de38fe652.js";
 a.C(r);
-import * as s from "./731863.ace382bf58.js";
+import * as s from "./731863.afd8a296c2.js";
 a.C(s);
-import * as t from "./767086.390bf6c64e.js";
+import * as t from "./767086.5a3a18f32d.js";
 a.C(t);
-import * as u from "./76629.a6013c50b6.js";
+import * as u from "./76629.6724f3e1eb.js";
 a.C(u);
-import * as v from "./226913.9dca92fd99.js";
+import * as v from "./226913.9e6c932018.js";
 a.C(v);
 import * as w from "./227786.952cdb546b.js";
 a.C(w);
-import * as x from "./787702.3b26a92d20.js";
+import * as x from "./787702.ba3277b7e9.js";
 a.C(x);
 var y = a(a.s = "cnwD"),
     z = y.a,

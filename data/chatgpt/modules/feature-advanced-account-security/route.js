@@ -290,7 +290,7 @@ export const __webpack_modules__ = {
                     ...g.featuresTitle
                 })
             }), ac[35] = G) : G = ac[35], ac[36] === Symbol.for("react.memo_cache_sentinel") ? (H = (0, e.jsx)(r, {
-                icon: (0, e.jsx)(l.Be, {}),
+                icon: (0, e.jsx)(l.Ge, {}),
                 title: (0, e.jsx)(j.a, {
                     ...g.strongerSignInTitle
                 }),
@@ -298,7 +298,7 @@ export const __webpack_modules__ = {
                     ...g.strongerSignInDescription
                 })
             }), ac[36] = H) : H = ac[36], ac[37] === Symbol.for("react.memo_cache_sentinel") ? (I = (0, e.jsx)(r, {
-                icon: (0, e.jsx)(l.Ze, {}),
+                icon: (0, e.jsx)(l.cf, {}),
                 title: (0, e.jsx)(j.a, {
                     ...g.recoveryTitle
                 }),
@@ -306,7 +306,7 @@ export const __webpack_modules__ = {
                     ...g.recoveryDescription
                 })
             }), ac[37] = I) : I = ac[37], ac[38] === Symbol.for("react.memo_cache_sentinel") ? (J = (0, e.jsx)(r, {
-                icon: (0, e.jsx)(l.wh, {}),
+                icon: (0, e.jsx)(l.Bh, {}),
                 title: (0, e.jsx)(j.a, {
                     ...g.trainingTitle
                 }),
@@ -314,7 +314,7 @@ export const __webpack_modules__ = {
                     ...g.trainingDescription
                 })
             }), ac[38] = J) : J = ac[38], ac[39] === Symbol.for("react.memo_cache_sentinel") ? (K = (0, e.jsx)(r, {
-                icon: (0, e.jsx)(l.xc, {}),
+                icon: (0, e.jsx)(l.Cc, {}),
                 title: (0, e.jsx)(j.a, {
                     ...g.shorterSessionsTitle
                 }),
@@ -334,7 +334,7 @@ export const __webpack_modules__ = {
                 children: [G, (0, e.jsxs)("div", {
                     className: "grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6",
                     children: [H, I, J, K, L, (0, e.jsx)(r, {
-                        icon: (0, e.jsx)(l.rd, {}),
+                        icon: (0, e.jsx)(l.wd, {}),
                         title: (0, e.jsx)(j.a, {
                             ...g.visibilityTitle
                         }),
@@ -350,7 +350,7 @@ export const __webpack_modules__ = {
                 children: (0, e.jsx)(j.a, {
                     ...g.yubikeyDescription
                 })
-            }), ac[42] = N) : N = ac[42], ac[43] === Symbol.for("react.memo_cache_sentinel") ? (O = (0, e.jsx)(l.pd, {}), ac[43] = O) : O = ac[43], ac[44] === Symbol.for("react.memo_cache_sentinel") ? (P = (0, e.jsx)("h2", {
+            }), ac[42] = N) : N = ac[42], ac[43] === Symbol.for("react.memo_cache_sentinel") ? (O = (0, e.jsx)(l.ud, {}), ac[43] = O) : O = ac[43], ac[44] === Symbol.for("react.memo_cache_sentinel") ? (P = (0, e.jsx)("h2", {
                 className: "text-base font-medium",
                 children: (0, e.jsx)(j.a, {
                     ...g.warningTitle
@@ -518,50 +518,50 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as a
-} from "./633146.511711c8b9.js";
-import * as b from "./418851.d52a1ffc2f.js";
+} from "./633146.a2b944e28c.js";
+import * as b from "./418851.feebe49851.js";
 a.C(b);
-import * as c from "./109308.4d55635a3c.js";
+import * as c from "./109308.ef36e8e103.js";
 a.C(c);
 import * as d from "./399565.700e278f2d.js";
 a.C(d);
-import * as e from "./257798.bf743d3ac4.js";
+import * as e from "./257798.0472ef88ab.js";
 a.C(e);
 import * as f from "./447351.05632d2214.js";
 a.C(f);
-import * as g from "./617936.a1bdaefa17.js";
+import * as g from "./617936.c58ffaf8f8.js";
 a.C(g);
-import * as h from "./807489.2515299139.js";
+import * as h from "./807489.bd02d1078c.js";
 a.C(h);
-import * as i from "./337882.b7027c58e4.js";
+import * as i from "./337882.6eaaa20d94.js";
 a.C(i);
-import * as j from "./955979.17a59d5e45.js";
+import * as j from "./955979.f6d70005ed.js";
 a.C(j);
-import * as k from "./646436.71dd39a771.js";
+import * as k from "./646436.cd723778fa.js";
 a.C(k);
-import * as l from "./7078.bd9e0604da.js";
+import * as l from "./7078.3ccac69f94.js";
 a.C(l);
-import * as m from "./200429.7cb44b876c.js";
+import * as m from "./200429.4ada6a3235.js";
 a.C(m);
-import * as n from "./698524.76d0d9fd5b.js";
+import * as n from "./698524.120a8c303c.js";
 a.C(n);
-import * as o from "./956483.f7260d7dd1.js";
+import * as o from "./956483.adb6c94dd2.js";
 a.C(o);
-import * as p from "./87162.27c50a9bde.js";
+import * as p from "./87162.dcb505cf37.js";
 a.C(p);
-import * as q from "./396705.2318c018fd.js";
+import * as q from "./396705.2143b6a0d3.js";
 a.C(q);
-import * as r from "./155568.d41a363926.js";
+import * as r from "./155568.7de38fe652.js";
 a.C(r);
-import * as s from "./731863.ace382bf58.js";
+import * as s from "./731863.afd8a296c2.js";
 a.C(s);
-import * as t from "./767086.390bf6c64e.js";
+import * as t from "./767086.5a3a18f32d.js";
 a.C(t);
-import * as u from "./76629.a6013c50b6.js";
+import * as u from "./76629.6724f3e1eb.js";
 a.C(u);
-import * as v from "./226913.9dca92fd99.js";
+import * as v from "./226913.9e6c932018.js";
 a.C(v);
-import * as w from "./392067.37c0f62305.js";
+import * as w from "./392067.7c29dc3dee.js";
 a.C(w);
 var x = a(a.s = "eses"),
     y = x.a,
