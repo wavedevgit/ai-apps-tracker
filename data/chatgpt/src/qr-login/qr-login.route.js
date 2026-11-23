@@ -1,1 +1,9 @@
-export const __rspack_esm_ids=[95310];export const __webpack_modules__={KnaS:(function(){})};import{__webpack_require__ as a}from"./633146.a2b944e28c.js";import*as b from"./95310.a9e0300c10.js";a.C(b),a(a.s="KnaS");
+export const __rspack_esm_ids = [95310];
+export const __webpack_modules__ = {
+    KnaS: (function() {})
+};
+import {
+    __webpack_require__ as a
+} from "./633146.a2b944e28c.js";
+import * as b from "./95310.a9e0300c10.js";
+a.C(b), a(a.s = "KnaS");
