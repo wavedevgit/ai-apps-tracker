@@ -14958,6 +14958,7 @@ export const __webpack_modules__ = {
             a: p,
             b: async function(a, b) {
                 return await
+
                 function(a, b) {
                     let c = q(a, b);
                     if (null != c && (0, k.a)(b)) return a.queryClient.prefetchQuery({
@@ -33868,6 +33869,7 @@ ${" ".repeat(b.length)}${c}`));
                     x = null != w && w.length > 0 && w.every(a => "page_write_forbidden" === a || "write-access-denied" === a);
                 if (("pages.realtime.notice" === b || "pages.realtime.recovery" === b || b.startsWith("pages.realtime.recovery.")) && (u?.pagesErrorCode == null || "page_write_forbidden" === u.pagesErrorCode || "write-access-denied" === u.pagesErrorCode) && (v?.localSaveStatus !== "blocked" || "write_access_denied" === v.noticeReason) && (v?.noticeReason == null || "write_access_denied" === v.noticeReason || "recovery_drafts" === v.noticeReason) && (null == c || c instanceof f.a && "write-access-denied" === c.code || c instanceof j.FetchError && "page_write_forbidden" === c.errorCode) && (null == w || 0 === w.length || x) && (u?.errorUiType === d.CodexPagesErrorUiType.CODEX_PAGES_ERROR_UI_TYPE_WRITE_ACCESS_DENIED || v?.noticeReason === "write_access_denied" || x) || c instanceof g.a && !0 === c.silent && (u?.errorUiType == null || u.errorUiType === d.CodexPagesErrorUiType.CODEX_PAGES_ERROR_UI_TYPE_NONE)) return;
                 if (!(h?.nativeDocumentType != null || u?.documentType != null && "page" !== u.documentType || b.startsWith("pages.native.") || b.startsWith("pages.artifact.") || b.startsWith("pages.presentation.") || "pages.file.preview.presentation-import" === b || "pages.file.preview.workbook-import" === b || "pages.document.import" === b || "pages.catalog.recover" === b && null == h || "pages.companion.persist" === b && u?.documentType == null) && (null == h || null != h.isOfflineEngine)) return void
+
                 function(a, b, c, f, g) {
                     let h, n = r(b, c);
                     try {
