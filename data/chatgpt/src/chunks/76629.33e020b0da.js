@@ -30659,6 +30659,7 @@ ${g.slice(g.indexOf("\n")+1)}`
                                 return;
                             case "open-in-browser":
                                 return void
+
                                 function(a, b, c) {
                                     let d = (0, u.b)(a) ?? a;
                                     if ((0, h.xi)(d)) return window.location.assign(d);
