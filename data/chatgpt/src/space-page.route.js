@@ -199,6 +199,39 @@ export const __webpack_modules__ = {
             }
         })
     }),
+    YYrt: (function(a, b, c) {
+        var d = c("ABep"),
+            e = c("oK94"),
+            f = c("BAXF");
+        c("hZSj");
+        var g = c("Wj4L"),
+            h = c("l3dN");
+        let i = {
+            granola_presentation: "presentation",
+            granola_workbook: "spreadsheet"
+        };
+        c.d(b, {}, {
+            a: "[--page-header-clearance:var(--viewer-header-height)]",
+            b: function(a, b) {
+                let c = "toolbar" !== b,
+                    j = (0, g.c)(a) ? i[a] : null,
+                    k = null != j && "overlay" === (0, f.a)(j).placement;
+                return {
+                    inTitlebar: c,
+                    nativeKind: j,
+                    nativeOverlay: k,
+                    textPageClassName: "page" === a && c && h.a.PageTitlebarSingleRow,
+                    titlebar: (0, d.jsx)(e.a, {
+                        toolbarLocation: b,
+                        scrollingDocument: "page" === a || k
+                    })
+                }
+            },
+            c: function(a) {
+                return "inline" !== a
+            }
+        })
+    }),
     r1wd: (function(a, b, c) {
         var d = c("ABep"),
             e = c("QosV"),
@@ -424,7 +457,7 @@ export const __webpack_modules__ = {
             i = c("v7qY"),
             j = c("Wf1j"),
             k = c("uorG"),
-            l = c("va0r"),
+            l = c("MCtJ"),
             m = c("I7bK"),
             n = c("b4XH"),
             o = c("oK94"),
@@ -438,7 +471,7 @@ export const __webpack_modules__ = {
         function u(a) {
             let b, c, h, k, l, m, q = (0, e.c)(47),
                 u = (0, j.a)(),
-                v = (0, n.b)(a.tabId),
+                v = (0, n.c)(a.tabId),
                 {
                     inset: w,
                     contentFade: x,
@@ -641,7 +674,7 @@ export const __webpack_modules__ = {
                     y = void 0 === i || i,
                     z = void 0 === j ? k : j,
                     A = (0, h.useContext)(m.c)?.hasPageSurface,
-                    B = (0, n.b)(l.tabId),
+                    B = (0, n.c)(l.tabId),
                     C = (A || B) && void 0 !== z;
                 w[9] !== f ? (o = "window" === f || "side-panel" !== f && (0, q.a)("/space/:pageId"), w[9] = f, w[10] = o) : o = w[10];
                 let D = o,
@@ -692,63 +725,70 @@ export const __webpack_modules__ = {
     eY5e: (function(a, b, c) {
         var d = c("ABep"),
             e = c("QosV"),
-            f = c("Q840"),
-            g = c("rEML"),
-            h = c("GKgn"),
-            i = c("zOE4"),
-            j = c("j9wQ"),
-            k = c("r1wd"),
-            l = c("JyrC"),
-            m = c("SkNj"),
-            n = c("VUkV");
+            f = c("on57"),
+            g = c("Q840"),
+            h = c("rEML"),
+            i = c("GKgn"),
+            j = c("b4XH"),
+            k = c("zOE4"),
+            l = c("j9wQ"),
+            m = c("YYrt"),
+            n = c("r1wd"),
+            o = c("JyrC"),
+            p = c("SkNj");
+        c("hZSj");
+        var q = c("VUkV");
 
-        function o(a) {
-            let b, c, f, g, h = (0, e.c)(14),
+        function r(a) {
+            let b, c, g, h, i, k, p = (0, e.c)(20),
                 {
-                    preview: i,
-                    onClose: m
+                    preview: r,
+                    onClose: t
                 } = a,
-                o = i.title ?? "",
-                q = i.textPageCard?.symbol;
-            h[0] !== i.pageId || h[1] !== o || h[2] !== q ? (b = (0, d.jsx)(j.c, {
+                u = (0, j.b)(!0);
+            p[0] !== u ? (b = (0, m.b)("page", u), c = (0, f.b)("relative flex h-full min-h-0 flex-col", b.textPageClassName), p[0] = u, p[1] = b, p[2] = c) : (b = p[1], c = p[2]);
+            let v = r.title ?? "",
+                w = r.textPageCard?.symbol;
+            p[3] !== r.pageId || p[4] !== v || p[5] !== w ? (g = (0, d.jsx)(l.c, {
                 disabled: !0,
                 variant: "dropdown",
-                children: (0, d.jsx)(n.a, {
-                    pageId: i.pageId,
-                    title: o,
-                    symbol: q,
+                children: (0, d.jsx)(q.a, {
+                    pageId: r.pageId,
+                    title: v,
+                    symbol: w,
                     documentType: "page",
-                    children: p
+                    children: s
                 })
-            }), h[0] = i.pageId, h[1] = o, h[2] = q, h[3] = b) : b = h[3], h[4] !== m || h[5] !== b ? (c = (0, d.jsx)("div", {
+            }), p[3] = r.pageId, p[4] = v, p[5] = w, p[6] = g) : g = p[6], p[7] !== t || p[8] !== g || p[9] !== u ? (h = (0, d.jsx)("div", {
                 className: "pointer-events-none absolute inset-x-0 top-0 z-30",
-                children: (0, d.jsx)(l.d, {
+                children: (0, d.jsx)(o.d, {
+                    toolbarLocation: u,
                     contentFade: !0,
                     inset: !0,
-                    onClose: m,
+                    onClose: t,
                     actions: null,
                     sharing: null,
-                    navigation: b
+                    navigation: g
                 })
-            }), h[4] = m, h[5] = b, h[6] = c) : c = h[6];
-            let r = i.textPageCard?.symbol;
-            return h[7] !== i.pageId || h[8] !== i.title || h[9] !== r ? (f = (0, d.jsx)(k.a, {
-                pageId: i.pageId,
-                title: i.title,
-                symbol: r,
+            }), p[7] = t, p[8] = g, p[9] = u, p[10] = h) : h = p[10];
+            let x = r.textPageCard?.symbol;
+            return p[11] !== r.pageId || p[12] !== r.title || p[13] !== x ? (i = (0, d.jsx)(n.a, {
+                pageId: r.pageId,
+                title: r.title,
+                symbol: x,
                 headerOverlay: !0
-            }), h[7] = i.pageId, h[8] = i.title, h[9] = r, h[10] = f) : f = h[10], h[11] !== c || h[12] !== f ? (g = (0, d.jsxs)("section", {
-                className: "relative flex h-full min-h-0 flex-col",
-                children: [c, f]
-            }), h[11] = c, h[12] = f, h[13] = g) : g = h[13], g
+            }), p[11] = r.pageId, p[12] = r.title, p[13] = x, p[14] = i) : i = p[14], p[15] !== b.titlebar || p[16] !== c || p[17] !== h || p[18] !== i ? (k = (0, d.jsxs)("section", {
+                className: c,
+                children: [b.titlebar, h, i]
+            }), p[15] = b.titlebar, p[16] = c, p[17] = h, p[18] = i, p[19] = k) : k = p[19], k
         }
 
-        function p(a) {
+        function s(a) {
             let {
                 icon: b,
                 title: c
             } = a;
-            return (0, d.jsx)(j.s, {
+            return (0, d.jsx)(l.s, {
                 icon: b,
                 children: (0, d.jsx)("span", {
                     className: "max-w-42 truncate",
@@ -757,155 +797,48 @@ export const __webpack_modules__ = {
             })
         }
         c.d(b, {}, {
-            CardLoadingShell: o,
+            CardLoadingShell: r,
             a: function(a) {
-                let b, c, j = (0, e.c)(7),
+                let b, c, f = (0, e.c)(7),
                     {
-                        fillParent: k
+                        fillParent: j
                     } = a,
-                    l = void 0 !== k && k,
-                    n = (0, g.Z)(),
-                    p = (0, g.ab)(),
+                    l = void 0 !== j && j,
+                    m = (0, h.Z)(),
+                    n = (0, h.ab)(),
                     {
-                        pageId: q
-                    } = (0, g.eb)(),
-                    r = n.state?.pagePreview;
-                j[0] !== q || j[1] !== r ? (b = {
-                    pageId: q,
-                    preview: r
-                }, j[0] = q, j[1] = r, j[2] = b) : b = j[2];
-                let s = (0, f.x)(m.d, b);
-                return j[3] !== l || j[4] !== p || j[5] !== s ? (c = null == s ? (0, d.jsx)(i.LoadingPage, {
+                        pageId: o
+                    } = (0, h.eb)(),
+                    q = m.state?.pagePreview;
+                f[0] !== o || f[1] !== q ? (b = {
+                    pageId: o,
+                    preview: q
+                }, f[0] = o, f[1] = q, f[2] = b) : b = f[2];
+                let s = (0, g.x)(p.d, b);
+                return f[3] !== l || f[4] !== n || f[5] !== s ? (c = null == s ? (0, d.jsx)(k.LoadingPage, {
                     routeFallback: !0,
                     fillParent: l
                 }) : (0, d.jsxs)(d.Fragment, {
-                    children: [(0, d.jsx)(h.a, {
+                    children: [(0, d.jsx)(i.a, {
                         layout: "custom-titlebar",
                         fallback: !0
-                    }), (0, d.jsx)(o, {
+                    }), (0, d.jsx)(r, {
                         preview: s,
-                        onClose: () => void p(-1)
+                        onClose: () => void n(-1)
                     })]
-                }), j[3] = l, j[4] = p, j[5] = s, j[6] = c) : c = j[6], c
+                }), f[3] = l, f[4] = n, f[5] = s, f[6] = c) : c = f[6], c
             }
         })
     }),
-    SCmN: (function(a, b, c) {
-        var d = c("QBk8"),
-            e = c("Q840"),
-            f = c("Cslg"),
-            g = c("CKur"),
-            h = c("g2p6"),
-            i = c("e1xH"),
-            j = c("yGJW"),
-            k = c("OWtl"),
-            l = c("WFY2"),
-            m = c("kpIY"),
-            n = c("Nwp9"),
-            o = c("OHD8"),
-            p = c("hlkZ"),
-            q = c("v5SL"),
-            r = c("nndI");
-        let s = "oai/apps/hasOpenedSpaceWelcome",
-            t = "space-welcome-dismissal-v1",
-            u = (0, n.b)(t, {}),
-            v = (0, e.v)(k.a, a => !1),
-            w = (0, e.u)(k.a, () => null),
-            x = (0, e.c)(k.a, a => {
-                let {
-                    get: b
-                } = a, c = b(p.spaceAccountId$), d = b(f.k);
-                return null != c && null != d && c === b(h.n) ? {
-                    accountId: c,
-                    userId: d,
-                    key: JSON.stringify([c, d])
-                } : null
-            }),
-            y = (0, e.d)(k.a, (a, b) => {
-                let {
-                    get: c
-                } = b, d = c(x);
-                return null != d && c(r.g)[d.key] === a
-            }),
-            z = (0, e.v)(k.a, a => !1),
-            A = (0, e.v)(k.a, a => "unknown"),
-            B = (0, e.d)(k.a, (a, b) => {
-                let {
-                    get: c
-                } = b, d = c(w);
-                return c(i.pagesEnabled$) && d?.awaitingPaint === !0 && !c(q.h, d.identityKey) && d.pageId === a && d.identityKey === c(x)?.key
-            }),
-            C = (0, e.c)(k.a, a => {
-                let {
-                    get: b
-                } = a, c = b(x);
-                if (null == c) return;
-                let d = b(u)[c.key];
-                if (null != d) return !1 !== d;
-                let e = b(h.p);
-                if (e.isSuccess && !e.isPlaceholderData) return Object.hasOwn(e.data.seenAnnouncements ?? {}, s)
-            });
-        async function D(a) {
-            if (!a.get(i.pagesEnabled$)) return;
-            let b = a.get(x);
-            if (null == b || a.get(q.h, b.key) || "pending" !== a.get(u)[b.key] || a.get(v, b.key)) return;
-            let c = (0, p.watchSpaceAccount)(a, b.accountId, b.userId);
-            a.set(v, b.key, !0);
-            try {
-                if (await (0, g.a)(a, s, !1, c.signal), c.signal.throwIfAborted(), "pending" !== a.get(u)[b.key]) return;
-                (0, m.t)(t, {
-                    entries: {
-                        [b.key]: {
-                            value: "saved"
-                        }
-                    }
-                }), await a.query.snapshot(h.p).invalidate()
-            } catch {
-                c.signal.aborted || l.a.warning("Failed to save Space welcome dismissal")
-            } finally {
-                c.stop(), a.set(v, b.key, !1)
-            }
-        }
+    BAXF: (function(a, b, c) {
+        var d = c("Nwab");
         c.d(b, {}, {
-            a: function(a, b) {
-                a.set(A, b, "unknown"), a.set(r.g, a => {
-                    let {
-                        [b]: c, ...d
-                    } = a;
-                    return d
-                }), a.set(r.c, a => {
-                    let {
-                        [b]: c, ...d
-                    } = a;
-                    return d
-                }), a.get(w)?.identityKey === b && a.set(w, null)
-            },
-            b: y,
-            c: function(a, b) {
-                let c = a.get(w);
-                if (c?.pageId !== b || !a.get(i.pagesEnabled$)) return;
-                let e = a.get(x);
-                null == e || c.identityKey !== e.key || a.get(q.h, e.key) || ((0, j.a)(a, d.CodexSpacesOnboarding, {
-                    action: d.CodexSpacesOnboardingAction.CODEX_SPACES_ONBOARDING_ACTION_WELCOME_PAGE_OPENED,
-                    item: d.CodexSpacesOnboardingItem.CODEX_SPACES_ONBOARDING_ITEM_WELCOME,
-                    pageId: b
-                }), (0, m.t)(t, {
-                    entries: {
-                        [e.key]: {
-                            value: "pending"
-                        }
-                    }
-                }), a.set(w, null), D(a))
-            },
-            d: w,
-            e: D,
-            f: A,
-            g: x,
-            h: C,
-            i: z,
-            j: B,
-            k: function(a) {
-                return a instanceof Error && (0, o.a)(a) ? "retryable" : "failed"
+            a: function(a) {
+                let b = "presentation" === a ? "pptx" : "xlsx";
+                return {
+                    extension: b,
+                    placement: (0, d.a)(b)
+                }
             }
         })
     }),
@@ -914,7 +847,7 @@ export const __webpack_modules__ = {
             return a
         })
     }),
-    SECa: (function(a, b) {
+    IBKv: (function(a, b) {
         b.a = {
             kind: "sprite",
             name: "minus-sm-light-20",
@@ -979,56 +912,56 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as a
-} from "./633146.44c41f9881.js";
+} from "./633146.081bb74af2.js";
 import * as b from "./680612.f818e16290.js";
 a.C(b);
-import * as c from "./418851.d461b09398.js";
+import * as c from "./418851.3dd531d98c.js";
 a.C(c);
 import * as d from "./109308.6f7ef1dfb7.js";
 a.C(d);
-import * as e from "./399565.04d51b97fa.js";
+import * as e from "./399565.9b329429cf.js";
 a.C(e);
-import * as f from "./257798.9ecf4d3ec0.js";
+import * as f from "./257798.b2cef8ee58.js";
 a.C(f);
 import * as g from "./447351.7cc0e9b0b6.js";
 a.C(g);
-import * as h from "./617936.83eea6e593.js";
+import * as h from "./617936.6949aaf4ba.js";
 a.C(h);
-import * as i from "./807489.7aa67edeba.js";
+import * as i from "./807489.f042062875.js";
 a.C(i);
-import * as j from "./337882.219e3ada84.js";
+import * as j from "./337882.4e42e1acb1.js";
 a.C(j);
-import * as k from "./955979.a3e9dd394b.js";
+import * as k from "./955979.d9b13c3bd6.js";
 a.C(k);
-import * as l from "./646436.82a6afd168.js";
+import * as l from "./646436.734338f386.js";
 a.C(l);
-import * as m from "./7078.3a7ae651f9.js";
+import * as m from "./7078.03de8482f4.js";
 a.C(m);
-import * as n from "./200429.41df82824c.js";
+import * as n from "./200429.fd25f0d445.js";
 a.C(n);
-import * as o from "./698524.d1d668b037.js";
+import * as o from "./698524.97e67971eb.js";
 a.C(o);
-import * as p from "./956483.3a192f7957.js";
+import * as p from "./956483.288de823d1.js";
 a.C(p);
-import * as q from "./87162.b7af17491f.js";
+import * as q from "./87162.5da55a22c4.js";
 a.C(q);
-import * as r from "./396705.1cd3df2a36.js";
+import * as r from "./396705.dfb062b590.js";
 a.C(r);
-import * as s from "./155568.ea2903d980.js";
+import * as s from "./155568.4b5e04f855.js";
 a.C(s);
-import * as t from "./731863.77eaa985c3.js";
+import * as t from "./731863.bcf69f255b.js";
 a.C(t);
-import * as u from "./767086.b48caf5564.js";
+import * as u from "./767086.1be20c2e57.js";
 a.C(u);
-import * as v from "./76629.c55b0947a1.js";
+import * as v from "./76629.aab019665f.js";
 a.C(v);
-import * as w from "./226913.336cc1ac6c.js";
+import * as w from "./226913.52b9bcbf34.js";
 a.C(w);
-import * as x from "./529755.4e8cd34728.js";
+import * as x from "./529755.a1432ab76d.js";
 a.C(x);
-import * as y from "./374847.c48fdc512f.js";
+import * as y from "./834028.0842ea112a.js";
 a.C(y);
-import * as z from "./487589.1ed1e0bfc4.js";
+import * as z from "./487589.14ce3657bf.js";
 a.C(z);
 var A = a(a.s = "NM2O"),
     B = A.a,
