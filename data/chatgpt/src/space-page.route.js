@@ -1,6 +1,6 @@
 export const __rspack_esm_ids = [487589];
 export const __webpack_modules__ = {
-    zd4v: (function(a, b, c) {
+    NM2O: (function(a, b, c) {
         c.d(b, {
             a: () => i,
             b: () => h
@@ -191,12 +191,175 @@ export const __webpack_modules__ = {
         var d = c("Bbed"),
             e = c("MhZT"),
             f = c("gne8");
-        let g = (0, d.a)(async () => (e.a.prefetch().catch(() => {}), (await Promise.all([c.e(418851), c.e(109308), c.e(399565), c.e(257798), c.e(447351), c.e(617936), c.e(807489), c.e(337882), c.e(955979), c.e(646436), c.e(7078), c.e(200429), c.e(698524), c.e(956483), c.e(87162), c.e(396705), c.e(155568), c.e(731863), c.e(767086), c.e(76629), c.e(300588)]).then(c.bind(c, "H04d"))).BrowserSpacePage), f.b);
+        let g = (0, d.a)(async () => (e.a.prefetch().catch(() => {}), (await Promise.all([c.e(418851), c.e(109308), c.e(399565), c.e(257798), c.e(447351), c.e(617936), c.e(807489), c.e(337882), c.e(955979), c.e(646436), c.e(7078), c.e(200429), c.e(698524), c.e(956483), c.e(87162), c.e(396705), c.e(155568), c.e(731863), c.e(767086), c.e(76629), c.e(300588)]).then(() => c("H04d"))).BrowserSpacePage), f.b);
         c.d(b, {}, {
             LazyBrowserSpacePage: g,
             prefetchBrowserPageForCreation: async function() {
                 await Promise.all([g.prefetch(), f.a.prefetch()])
             }
+        })
+    }),
+    r1wd: (function(a, b, c) {
+        var d = c("ABep"),
+            e = c("QosV"),
+            f = c("on57"),
+            g = c("Q840"),
+            h = c("X3K1"),
+            i = c("SCmN"),
+            j = c("WP5H"),
+            k = c("Ih0z"),
+            l = c("hlkZ"),
+            m = c("kTTh"),
+            n = c("OMIV"),
+            o = c("fAHU"),
+            p = c("i9us"),
+            q = c("nkrL"),
+            r = c("GhgU"),
+            s = c("Jif0"),
+            t = c("fQMn");
+
+        function u(a) {
+            let b, c, n, p, r, u, w, x, y, z, A, B, C, D = (0, e.c)(40),
+                {
+                    appearance: E,
+                    pageId: F,
+                    space: G,
+                    spaceId: H,
+                    title: I,
+                    symbol: J
+                } = a;
+            D[0] === Symbol.for("react.memo_cache_sentinel") ? (b = {
+                enabled: !1
+            }, D[0] = b) : b = D[0];
+            let {
+                data: K
+            } = (0, g.x)(l.spaceQuery$, H ?? "", b), L = G ?? K, M = F ?? L?.root_page_id ?? "", N = (0, g.x)(l.loadedSpacePageMetadata$, M);
+            D[1] === Symbol.for("react.memo_cache_sentinel") ? (c = {
+                enabled: !1
+            }, D[1] = c) : c = D[1];
+            let O = (0, g.x)(q.d, M, c),
+                P = (0, g.x)(i.b, M),
+                Q = L?.id ?? H;
+            D[2] !== Q ? (n = {
+                spaceId: Q
+            }, D[2] = Q, D[3] = n) : n = D[3], D[4] === Symbol.for("react.memo_cache_sentinel") ? (p = {
+                enabled: !1
+            }, D[4] = p) : p = D[4];
+            let R = (0, g.x)(k.f, n, p),
+                S = E ?? R,
+                T = null != L || null != H || null != E,
+                U = null == N ? L?.symbol ?? J ?? null : N.symbol ?? null;
+            if (T && null == U) {
+                let a;
+                D[5] !== S ? (a = (0, k.b)(S), D[5] = S, D[6] = a) : a = D[6], U = a
+            }
+            let V = void 0 === O ? N?.title : O ?? "",
+                W = null == L ? V ?? I : I ?? L.name;
+            if (!T && null == U && null != W) {
+                let a;
+                D[7] !== W ? (a = (0, m.b)(W), D[7] = W, D[8] = a) : a = D[8];
+                let b = a;
+                if (W = b.title, null != b.emoji) {
+                    let a;
+                    D[9] !== b.emoji ? (a = {
+                        kind: "emoji",
+                        value: b.emoji
+                    }, D[9] = b.emoji, D[10] = a) : a = D[10], U = a
+                }
+            }
+            P && !T && null == U && (U = j.b);
+            let X = null == W,
+                Y = L?.id ?? H,
+                Z = N?.document_type,
+                $ = N?.namespace,
+                _ = S?.theme;
+            D[11] !== T || D[12] !== U || D[13] !== Z || D[14] !== $ || D[15] !== _ ? (r = (0, d.jsx)(t.a, {
+                disabled: !0,
+                legacyEmoji: null,
+                documentType: Z,
+                namespace: $,
+                symbol: U,
+                space: T,
+                spaceTheme: _,
+                onChange: v
+            }), D[11] = T, D[12] = U, D[13] = Z, D[14] = $, D[15] = _, D[16] = r) : r = D[16];
+            let aa = X && "w-64 max-w-full";
+            D[17] !== aa ? (u = (0, f.b)("relative min-w-0", aa), D[17] = aa, D[18] = u) : u = D[18];
+            let ab = X ? "invisible" : void 0,
+                ac = X || void 0;
+            return D[19] !== W || D[20] !== X ? (w = X ? "" : (W ?? "").replace(/[\r\n]+/g, " "), D[19] = W, D[20] = X, D[21] = w) : w = D[21], D[22] !== w ? (x = (0, d.jsx)(s.a, {
+                disabled: !0,
+                readOnly: !0,
+                value: w
+            }), D[22] = w, D[23] = x) : x = D[23], D[24] !== ab || D[25] !== ac || D[26] !== x ? (y = (0, d.jsx)("div", {
+                className: ab,
+                "aria-hidden": ac,
+                children: x
+            }), D[24] = ab, D[25] = ac, D[26] = x, D[27] = y) : y = D[27], D[28] !== X ? (z = X ? (0, d.jsx)("div", {
+                className: "absolute inset-0 flex items-center",
+                children: (0, d.jsx)(h.a, {
+                    className: "w-full",
+                    size: "lg",
+                    variant: "chatgpt-project"
+                })
+            }) : null, D[28] = X, D[29] = z) : z = D[29], D[30] !== u || D[31] !== y || D[32] !== z ? (A = (0, d.jsxs)("div", {
+                className: u,
+                children: [y, z]
+            }), D[30] = u, D[31] = y, D[32] = z, D[33] = A) : A = D[33], D[34] !== r || D[35] !== A ? (B = (0, d.jsxs)("div", {
+                className: "relative flex flex-col gap-2",
+                "data-page-title": !0,
+                children: [r, A]
+            }), D[34] = r, D[35] = A, D[36] = B) : B = D[36], D[37] !== B || D[38] !== Y ? (C = (0, d.jsx)(o.a, {
+                rootSpaceId: Y,
+                children: B
+            }), D[37] = B, D[38] = Y, D[39] = C) : C = D[39], C
+        }
+
+        function v() {}
+        c.d(b, {}, {
+            a: function(a) {
+                let b, c, h, i, j, k, m, o, q, s = (0, e.c)(29),
+                    {
+                        pageId: t,
+                        spaceId: v,
+                        title: w,
+                        symbol: x,
+                        headerOverlay: y,
+                        showComposer: z
+                    } = a,
+                    A = void 0 !== z && z;
+                s[0] === Symbol.for("react.memo_cache_sentinel") ? (b = {
+                    enabled: !1
+                }, s[0] = b) : b = s[0];
+                let {
+                    data: B
+                } = (0, g.z)(l.spacesQuery$, b), C = (0, g.x)(n.e, "2163293173");
+                s[1] !== t || s[2] !== v || s[3] !== B?.items || s[4] !== B?.items.find ? (c = B?.items.find(a => null == t ? a.id === v : a.root_page_id === t), s[1] = t, s[2] = v, s[3] = B?.items, s[4] = B?.items.find, s[5] = c) : c = s[5];
+                let D = c,
+                    E = C ? "[scrollbar-gutter:stable_both-edges]" : "scrollbar-stable",
+                    F = void 0 !== y && y && "viewer-header-scroll-mask pt-[var(--viewer-header-height)]";
+                s[6] !== E || s[7] !== F ? (h = (0, f.b)("min-h-0 flex-1 scrollbar-on-hover overflow-y-auto", E, F), s[6] = E, s[7] = F, s[8] = h) : h = s[8], s[9] !== t || s[10] !== D || s[11] !== x || s[12] !== w ? (i = (0, d.jsx)(u, {
+                    pageId: t,
+                    space: D,
+                    title: w,
+                    symbol: x
+                }), s[9] = t, s[10] = D, s[11] = x, s[12] = w, s[13] = i) : i = s[13];
+                let G = t ?? D?.root_page_id ?? v ?? "";
+                return s[14] !== G ? (j = (0, d.jsx)(r.b, {
+                    pageId: G
+                }), s[14] = G, s[15] = j) : j = s[15], s[16] !== j || s[17] !== i ? (k = (0, d.jsx)(r.a, {
+                    heading: i,
+                    children: j
+                }), s[16] = j, s[17] = i, s[18] = k) : k = s[18], s[19] !== k || s[20] !== h ? (m = (0, d.jsx)("div", {
+                    className: h,
+                    children: k
+                }), s[19] = k, s[20] = h, s[21] = m) : m = s[21], s[22] !== t || s[23] !== A || s[24] !== D?.root_page_id ? (o = A && (0, d.jsx)(p.a, {
+                    pageId: t ?? D?.root_page_id
+                }), s[22] = t, s[23] = A, s[24] = D?.root_page_id, s[25] = o) : o = s[25], s[26] !== m || s[27] !== o ? (q = (0, d.jsxs)(d.Fragment, {
+                    children: [m, o]
+                }), s[26] = m, s[27] = o, s[28] = q) : q = s[28], q
+            },
+            b: u
         })
     }),
     zTDg: (function(a, b, c) {
@@ -263,155 +426,155 @@ export const __webpack_modules__ = {
             k = c("uorG"),
             l = c("va0r"),
             m = c("I7bK"),
-            n = c("Vtmv"),
-            o = c("hZSj"),
-            p = c("AQ4m"),
-            q = c("cXiB"),
+            n = c("b4XH"),
+            o = c("oK94"),
+            p = c("Vtmv"),
+            q = c("hZSj"),
             r = c("j9wQ"),
             s = c("Zr80");
         c("Wj4L");
         var t = c("zTDg");
 
         function u(a) {
-            let b, c, h, k, l, m, o, u, v, w, x, y, z, A, B, C, D, E, F, G, H, I, J, K = (0, e.c)(79),
-                L = (0, j.a)(),
-                M = (0, q.b)(a.tabId),
+            let b, c, h, k, l, m, q = (0, e.c)(47),
+                u = (0, j.a)(),
+                v = (0, n.b)(a.tabId),
                 {
-                    inset: N,
-                    contentFade: O,
-                    density: P,
-                    navigation: Q,
-                    titlePlacement: R,
-                    actions: S,
-                    documentControlsContainers: T,
-                    download: U,
-                    saveStatus: V,
-                    people: W,
-                    automations: X,
-                    requestEditAccess: Y,
-                    comments: Z,
-                    meeting: $,
-                    supplementalActions: _,
-                    connectionStatus: aa,
-                    onClose: ab,
-                    tabId: ac,
-                    sharing: ad
+                    inset: w,
+                    contentFade: x,
+                    density: y,
+                    navigation: z,
+                    toolbarLocation: A,
+                    actions: B,
+                    documentControlsContainers: C,
+                    download: D,
+                    saveStatus: E,
+                    people: F,
+                    automations: G,
+                    requestEditAccess: H,
+                    comments: I,
+                    meeting: J,
+                    supplementalActions: K,
+                    connectionStatus: L,
+                    onClose: M,
+                    tabId: N,
+                    sharing: O
                 } = a,
-                ae = void 0 !== N && N,
-                af = void 0 !== O && O,
-                ag = void 0 === P ? "surface" : P,
-                ah = void 0 === R ? "toolbar" : R;
-            K[0] !== a.toolsMenu ? (b = a.toolsMenu && (0, d.jsx)(s.a, {
+                P = void 0 !== w && w,
+                Q = void 0 !== x && x,
+                R = void 0 === y ? "surface" : y,
+                S = void 0 === A ? "toolbar" : A;
+            q[0] !== a.toolsMenu ? (b = a.toolsMenu && (0, d.jsx)(s.a, {
                 value: !0,
                 children: a.toolsMenu
-            }), K[0] = a.toolsMenu, K[1] = b) : b = K[1];
-            let ai = b;
-            K[2] !== S || K[3] !== a.actionsGrouped ? (c = a.actionsGrouped || null == S ? S : (0, d.jsx)(t.b, {
-                children: S
-            }), K[2] = S, K[3] = a.actionsGrouped, K[4] = c) : c = K[4];
-            let aj = c;
-            if (null != T) {
+            }), q[0] = a.toolsMenu, q[1] = b) : b = q[1];
+            let T = b;
+            q[2] !== B || q[3] !== a.actionsGrouped ? (c = a.actionsGrouped || null == B ? B : (0, d.jsx)(t.b, {
+                children: B
+            }), q[2] = B, q[3] = a.actionsGrouped, q[4] = c) : c = q[4];
+            let U = c;
+            if (null != C) {
                 let b;
-                return K[5] !== X || K[6] !== Z || K[7] !== T.trailing || K[8] !== $ || K[9] !== a.overflow || K[10] !== _ || K[11] !== ai ? (b = null == T.trailing ? null : (0, i.createPortal)((0, d.jsxs)("div", {
+                return q[5] !== G || q[6] !== I || q[7] !== C.trailing || q[8] !== J || q[9] !== a.overflow || q[10] !== K || q[11] !== T ? (b = null == C.trailing ? null : (0, i.createPortal)((0, d.jsxs)("div", {
                     className: "flex min-w-0 items-center gap-0.5",
-                    children: [_, Z, X, ai ?? a.overflow, $]
-                }), T.trailing), K[5] = X, K[6] = Z, K[7] = T.trailing, K[8] = $, K[9] = a.overflow, K[10] = _, K[11] = ai, K[12] = b) : b = K[12], b
+                    children: [K, I, G, T ?? a.overflow, J]
+                }), C.trailing), q[5] = G, q[6] = I, q[7] = C.trailing, q[8] = J, q[9] = a.overflow, q[10] = K, q[11] = T, q[12] = b) : b = q[12], b
             }
-            K[13] !== X || K[14] !== Z || K[15] !== U || K[16] !== L ? (h = Z || X || U ? (0, d.jsx)(r.i, {
+            q[13] !== G || q[14] !== I || q[15] !== D || q[16] !== u ? (h = I || G || D ? (0, d.jsx)(r.i, {
                 hideWhenEmpty: !0,
-                label: L.formatMessage({
+                label: u.formatMessage({
                     id: "codex.space.page.header.tools",
                     defaultMessage: "Page tools"
                 }),
                 children: (0, d.jsxs)(f.a.DefaultsProvider, {
                     side: "bottom",
-                    children: [Z, X, U]
+                    children: [I, G, D]
                 })
-            }) : null, K[13] = X, K[14] = Z, K[15] = U, K[16] = L, K[17] = h) : h = K[17];
-            let ak = h,
-                al = "toolbar" !== ah,
-                am = !ae && !al && "ps-[var(--window-titlebar-inset-left,0px)] pe-[var(--window-titlebar-inset-right,0px)] rtl:ps-[var(--window-titlebar-inset-right,0px)] rtl:pe-[var(--window-titlebar-inset-left,0px)]";
-            K[18] !== am ? (k = (0, g.b)(am, "@container/page-toolbar w-full"), K[18] = am, K[19] = k) : k = K[19];
-            let an = af && !al,
-                ao = al ? "compact" : ag,
-                ap = al || "compact" !== ag ? void 0 : "wrap-leading",
-                aq = ae && !al,
-                ar = af && !al ? "overlay" : void 0,
-                as = M ? null : Q;
-            return K[20] !== as ? (l = {
-                id: "title",
-                content: as,
-                allowShrink: !0,
-                collapsePriority: 1
-            }, K[20] = as, K[21] = l) : l = K[21], K[22] !== aj ? (m = {
-                id: "editing",
-                content: aj,
-                collapsePriority: 2
-            }, K[22] = aj, K[23] = m) : m = K[23], K[24] !== V ? (o = {
-                id: "save-status",
-                content: V
-            }, K[24] = V, K[25] = o) : o = K[25], K[26] !== l || K[27] !== m || K[28] !== o ? (u = [l, m, o], K[26] = l, K[27] = m, K[28] = o, K[29] = u) : u = K[29], K[30] !== Y ? (v = {
-                id: "request-edit-access",
-                content: Y
-            }, K[30] = Y, K[31] = v) : v = K[31], K[32] !== aa ? (w = {
-                id: "connection-status",
-                content: aa,
-                hidePriority: 3
-            }, K[32] = aa, K[33] = w) : w = K[33], K[34] !== a.persistentActions ? (x = {
-                id: "artifact-actions",
-                content: a.persistentActions
-            }, K[34] = a.persistentActions, K[35] = x) : x = K[35], K[36] !== _ ? (y = {
-                id: "supplemental",
-                content: _,
-                hidePriority: 3
-            }, K[36] = _, K[37] = y) : y = K[37], K[38] === Symbol.for("react.memo_cache_sentinel") ? (z = [{
-                priority: 5,
-                selector: "[data-page-automation-control]"
-            }], K[38] = z) : z = K[38], K[39] !== ak ? (A = {
-                id: "page-tools",
-                collapseSteps: z,
-                content: ak
-            }, K[39] = ak, K[40] = A) : A = K[40], K[41] !== ai ? (B = {
-                id: "tools-menu",
-                content: ai
-            }, K[41] = ai, K[42] = B) : B = K[42], K[43] !== $ ? (C = {
-                id: "meeting",
-                content: $,
-                collapsePriority: 3
-            }, K[43] = $, K[44] = C) : C = K[44], K[45] !== L || K[46] !== W || K[47] !== ad ? (D = null == ad && null == W ? null : (0, d.jsxs)(r.i, {
-                hideWhenEmpty: !0,
-                label: L.formatMessage({
-                    id: "codex.space.page.header.sharing",
-                    defaultMessage: "Sharing"
-                }),
-                children: [W, ad]
-            }), K[45] = L, K[46] = W, K[47] = ad, K[48] = D) : D = K[48], K[49] !== D ? (E = {
-                id: "sharing",
-                content: D,
-                collapsePriority: 4
-            }, K[49] = D, K[50] = E) : E = K[50], K[51] !== a.overflow ? (F = {
-                id: "overflow",
-                content: a.overflow
-            }, K[51] = a.overflow, K[52] = F) : F = K[52], K[53] !== ab || K[54] !== ac ? (G = {
-                id: "window-controls",
-                content: (0, d.jsx)(n.a, {
-                    tabId: ac,
-                    onClose: ab
-                })
-            }, K[53] = ab, K[54] = ac, K[55] = G) : G = K[55], K[56] !== v || K[57] !== w || K[58] !== x || K[59] !== y || K[60] !== A || K[61] !== B || K[62] !== C || K[63] !== E || K[64] !== F || K[65] !== G ? (H = [v, w, x, y, A, B, C, E, F, G], K[56] = v, K[57] = w, K[58] = x, K[59] = y, K[60] = A, K[61] = B, K[62] = C, K[63] = E, K[64] = F, K[65] = G, K[66] = H) : H = K[66], K[67] !== ao || K[68] !== ap || K[69] !== aq || K[70] !== ar || K[71] !== u || K[72] !== H || K[73] !== k || K[74] !== an ? (I = (0, d.jsx)(r.l, {
+            }) : null, q[13] = G, q[14] = I, q[15] = D, q[16] = u, q[17] = h) : h = q[17];
+            let V = h;
+            q[18] !== L || q[19] !== U || q[20] !== u || q[21] !== J || q[22] !== z || q[23] !== M || q[24] !== V || q[25] !== F || q[26] !== a.overflow || q[27] !== a.persistentActions || q[28] !== H || q[29] !== E || q[30] !== O || q[31] !== K || q[32] !== N || q[33] !== v || q[34] !== T ? (k = b => (0, d.jsx)(r.l, {
+                ...b,
                 "data-page-toolbar": !0,
-                className: k,
-                contentFade: an,
-                density: ao,
-                layout: ap,
-                inset: aq,
-                placement: ar,
-                leading: u,
-                trailing: H
-            }), K[67] = ao, K[68] = ap, K[69] = aq, K[70] = ar, K[71] = u, K[72] = H, K[73] = k, K[74] = an, K[75] = I) : I = K[75], K[76] !== I || K[77] !== ah ? (J = (0, d.jsx)(p.b, {
-                placement: ah,
-                children: I
-            }), K[76] = I, K[77] = ah, K[78] = J) : J = K[78], J
+                className: (0, g.b)("@container/page-toolbar w-full", b.className),
+                leading: [{
+                    id: "title",
+                    content: v ? null : z,
+                    allowShrink: !0,
+                    collapsePriority: 1
+                }, {
+                    id: "editing",
+                    content: U,
+                    collapsePriority: 2
+                }, {
+                    id: "save-status",
+                    content: E
+                }],
+                trailing: [{
+                    id: "request-edit-access",
+                    content: H
+                }, {
+                    id: "connection-status",
+                    content: L,
+                    hidePriority: 3
+                }, {
+                    id: "artifact-actions",
+                    content: a.persistentActions
+                }, {
+                    id: "supplemental",
+                    content: K,
+                    hidePriority: 3
+                }, {
+                    id: "page-tools",
+                    collapseSteps: [{
+                        priority: 5,
+                        selector: "[data-page-automation-control]"
+                    }],
+                    content: V
+                }, {
+                    id: "tools-menu",
+                    content: T
+                }, {
+                    id: "meeting",
+                    content: J,
+                    collapsePriority: 3
+                }, {
+                    id: "sharing",
+                    content: null == O && null == F ? null : (0, d.jsxs)(r.i, {
+                        hideWhenEmpty: !0,
+                        label: u.formatMessage({
+                            id: "codex.space.page.header.sharing",
+                            defaultMessage: "Sharing"
+                        }),
+                        children: [F, O]
+                    }),
+                    collapsePriority: 4
+                }, {
+                    id: "overflow",
+                    content: a.overflow
+                }, {
+                    id: "window-controls",
+                    content: (0, d.jsx)(p.a, {
+                        tabId: N,
+                        onClose: M
+                    })
+                }]
+            }), q[18] = L, q[19] = U, q[20] = u, q[21] = J, q[22] = z, q[23] = M, q[24] = V, q[25] = F, q[26] = a.overflow, q[27] = a.persistentActions, q[28] = H, q[29] = E, q[30] = O, q[31] = K, q[32] = N, q[33] = v, q[34] = T, q[35] = k) : k = q[35];
+            let W = k,
+                X = P ? void 0 : "ps-[var(--window-titlebar-inset-left,0px)] pe-[var(--window-titlebar-inset-right,0px)] rtl:ps-[var(--window-titlebar-inset-right,0px)] rtl:pe-[var(--window-titlebar-inset-left,0px)]",
+                Y = "compact" === R ? "wrap-leading" : void 0,
+                Z = Q ? "overlay" : void 0;
+            return q[36] !== Q || q[37] !== R || q[38] !== P || q[39] !== Z || q[40] !== X || q[41] !== Y ? (l = {
+                className: X,
+                contentFade: Q,
+                density: R,
+                inset: P,
+                layout: Y,
+                placement: Z
+            }, q[36] = Q, q[37] = R, q[38] = P, q[39] = Z, q[40] = X, q[41] = Y, q[42] = l) : l = q[42], q[43] !== W || q[44] !== l || q[45] !== S ? (m = (0, d.jsx)(o.b, {
+                toolbarLocation: S,
+                paneLayout: l,
+                children: W
+            }), q[43] = W, q[44] = l, q[45] = S, q[46] = m) : m = q[46], m
         }
 
         function v(a) {
@@ -422,8 +585,8 @@ export const __webpack_modules__ = {
                     contentFade: l,
                     separator: m,
                     surface: n,
-                    overlay: p,
-                    titlePlacement: q
+                    overlay: o,
+                    toolbarLocation: p
                 } = a,
                 r = void 0 !== l && l;
             if (void 0 !== j && j || "inline" === n) {
@@ -432,8 +595,8 @@ export const __webpack_modules__ = {
                     children: i
                 }), h[0] = i, h[1] = a) : a = h[1], a
             }
-            let s = p ?? "side-panel" === n;
-            if ("window" === n || "side-panel" !== n && (0, o.a)("/space/:pageId")) {
+            let s = o ?? "side-panel" === n;
+            if ("window" === n || "side-panel" !== n && (0, q.a)("/space/:pageId")) {
                 let a;
                 return h[2] !== i || h[3] !== r || h[4] !== m ? (a = (0, d.jsx)(k.a.Header, {
                     contentFade: r,
@@ -441,7 +604,7 @@ export const __webpack_modules__ = {
                     children: i
                 }), h[2] = i, h[3] = r, h[4] = m, h[5] = a) : a = h[5], a
             }
-            if ("side-panel" === n || "route-titlebar" === (void 0 === q ? "toolbar" : q)) {
+            if ("side-panel" === n || "route-titlebar" === (void 0 === p ? "toolbar" : p)) {
                 let a, b, c = s ? "absolute inset-x-0 top-0" : "relative";
                 return h[6] !== c ? (a = (0, g.b)("pointer-events-none z-30 shrink-0", c), h[6] = c, h[7] = a) : a = h[7], h[8] !== i || h[9] !== a ? (b = (0, d.jsx)("div", {
                     className: a,
@@ -463,7 +626,7 @@ export const __webpack_modules__ = {
         }
         c.d(b, {}, {
             a: function(a) {
-                let b, c, f, g, i, j, k, l, n, p, r, t, w = (0, e.c)(28);
+                let b, c, f, g, i, j, k, l, o, p, r, t, w = (0, e.c)(28);
                 w[0] !== a ? ({
                     surface: f,
                     contentFade: g,
@@ -478,10 +641,10 @@ export const __webpack_modules__ = {
                     y = void 0 === i || i,
                     z = void 0 === j ? k : j,
                     A = (0, h.useContext)(m.c)?.hasPageSurface,
-                    B = (0, q.b)(l.tabId),
+                    B = (0, n.b)(l.tabId),
                     C = (A || B) && void 0 !== z;
-                w[9] !== f ? (n = "window" === f || "side-panel" !== f && (0, o.a)("/space/:pageId"), w[9] = f, w[10] = n) : n = w[10];
-                let D = n,
+                w[9] !== f ? (o = "window" === f || "side-panel" !== f && (0, q.a)("/space/:pageId"), w[9] = f, w[10] = o) : o = w[10];
+                let D = o,
                     E = C ? null : k ?? l.navigation;
                 w[11] !== l.persistentActions || w[12] !== C || w[13] !== z ? (p = C ? (0, d.jsxs)(d.Fragment, {
                     children: [(0, d.jsx)(s.a, {
@@ -499,13 +662,13 @@ export const __webpack_modules__ = {
                     contentFade: F,
                     inset: G,
                     onClose: H
-                }), w[15] = E, w[16] = p, w[17] = F, w[18] = G, w[19] = H, w[20] = l, w[21] = r) : r = w[21], w[22] !== c || w[23] !== y || w[24] !== f || w[25] !== r || w[26] !== l.titlePlacement ? (t = (0, d.jsx)(v, {
+                }), w[15] = E, w[16] = p, w[17] = F, w[18] = G, w[19] = H, w[20] = l, w[21] = r) : r = w[21], w[22] !== c || w[23] !== y || w[24] !== f || w[25] !== r || w[26] !== l.toolbarLocation ? (t = (0, d.jsx)(v, {
                     surface: f,
                     separator: y,
                     overlay: c,
-                    titlePlacement: l.titlePlacement,
+                    toolbarLocation: l.toolbarLocation,
                     children: r
-                }), w[22] = c, w[23] = y, w[24] = f, w[25] = r, w[26] = l.titlePlacement, w[27] = t) : t = w[27], t
+                }), w[22] = c, w[23] = y, w[24] = f, w[25] = r, w[26] = l.toolbarLocation, w[27] = t) : t = w[27], t
             },
             b: v,
             c: function(a) {
@@ -816,58 +979,58 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as a
-} from "./633146.192293cdfd.js";
-import * as b from "./680612.78d390493a.js";
+} from "./633146.44c41f9881.js";
+import * as b from "./680612.f818e16290.js";
 a.C(b);
-import * as c from "./418851.373d5e7c7d.js";
+import * as c from "./418851.d461b09398.js";
 a.C(c);
 import * as d from "./109308.6f7ef1dfb7.js";
 a.C(d);
-import * as e from "./399565.61ce507128.js";
+import * as e from "./399565.04d51b97fa.js";
 a.C(e);
-import * as f from "./257798.18e3fd1164.js";
+import * as f from "./257798.9ecf4d3ec0.js";
 a.C(f);
-import * as g from "./447351.05632d2214.js";
+import * as g from "./447351.7cc0e9b0b6.js";
 a.C(g);
-import * as h from "./617936.82c33d1781.js";
+import * as h from "./617936.83eea6e593.js";
 a.C(h);
-import * as i from "./807489.80226d951f.js";
+import * as i from "./807489.7aa67edeba.js";
 a.C(i);
-import * as j from "./337882.c48859a67a.js";
+import * as j from "./337882.219e3ada84.js";
 a.C(j);
-import * as k from "./955979.3817544990.js";
+import * as k from "./955979.a3e9dd394b.js";
 a.C(k);
-import * as l from "./646436.8f73ec6517.js";
+import * as l from "./646436.82a6afd168.js";
 a.C(l);
-import * as m from "./7078.fb59bca78c.js";
+import * as m from "./7078.3a7ae651f9.js";
 a.C(m);
-import * as n from "./200429.7f45d5c86a.js";
+import * as n from "./200429.41df82824c.js";
 a.C(n);
-import * as o from "./698524.906978efe4.js";
+import * as o from "./698524.d1d668b037.js";
 a.C(o);
-import * as p from "./956483.b7886e0470.js";
+import * as p from "./956483.3a192f7957.js";
 a.C(p);
-import * as q from "./87162.563f0c8e80.js";
+import * as q from "./87162.b7af17491f.js";
 a.C(q);
-import * as r from "./396705.5e3411e749.js";
+import * as r from "./396705.1cd3df2a36.js";
 a.C(r);
-import * as s from "./155568.5b6ea1007a.js";
+import * as s from "./155568.ea2903d980.js";
 a.C(s);
-import * as t from "./731863.5065e21881.js";
+import * as t from "./731863.77eaa985c3.js";
 a.C(t);
-import * as u from "./767086.2154dca9c8.js";
+import * as u from "./767086.b48caf5564.js";
 a.C(u);
-import * as v from "./76629.6adf997716.js";
+import * as v from "./76629.c55b0947a1.js";
 a.C(v);
-import * as w from "./226913.748570e15f.js";
+import * as w from "./226913.336cc1ac6c.js";
 a.C(w);
-import * as x from "./529755.aaab8ac3cb.js";
+import * as x from "./529755.4e8cd34728.js";
 a.C(x);
-import * as y from "./227233.77330f9227.js";
+import * as y from "./374847.c48fdc512f.js";
 a.C(y);
-import * as z from "./487589.9ae8b0a3fc.js";
+import * as z from "./487589.1ed1e0bfc4.js";
 a.C(z);
-var A = a(a.s = "zd4v"),
+var A = a(a.s = "NM2O"),
     B = A.a,
     C = A.b;
 export {

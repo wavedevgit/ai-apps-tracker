@@ -1,6 +1,6 @@
 export const __rspack_esm_ids = [333117];
 export const __webpack_modules__ = {
-    AP7E: (function(a, b, c) {
+    YjPt: (function(a, b, c) {
         c.d(b, {
             a: () => A
         });
@@ -125,90 +125,92 @@ export const __webpack_modules__ = {
         function B() {
             let a, b = (0, f.c)(11),
                 c = (0, d.X)("/email/setup"),
+                [g] = (0, d.jb)(),
+                i = g.get("workspace"),
                 {
-                    accountId: g,
-                    userId: i,
-                    isLoading: j
+                    accountId: j,
+                    userId: k,
+                    isLoading: n
                 } = (0, m.a)(),
-                k = (0, h.z)(l.f),
-                n = (0, h.z)(l.k);
-            if (j) {
+                o = (0, h.z)(l.f),
+                p = (0, h.z)(l.k);
+            if (n) {
                 let a;
                 return b[0] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, e.jsx)(s.a, {
                     fillParent: !0,
                     debugName: "EmailSetup"
                 }), b[0] = a) : a = b[0], a
             }
-            if (!i) {
-                let a, f;
-                b[1] !== c ? (a = new URLSearchParams({
-                    next: c
-                }), b[1] = c, b[2] = a) : a = b[2];
-                let g = `/auth/login?${a}`;
-                return b[3] !== g ? (f = (0, e.jsx)(d.l, {
-                    to: g,
+            if (!k) {
+                let a, f, g = i ? `${c}?${new URLSearchParams({workspace:i})}` : c;
+                b[1] !== g ? (a = new URLSearchParams({
+                    next: g
+                }), b[1] = g, b[2] = a) : a = b[2];
+                let h = `/auth/login?${a}`;
+                return b[3] !== h ? (f = (0, e.jsx)(d.l, {
+                    to: h,
                     replace: !0
-                }), b[3] = g, b[4] = f) : f = b[4], f
+                }), b[3] = h, b[4] = f) : f = b[4], f
             }
-            let o = `${i}:${g}`,
-                p = j || k !== g || n !== i;
-            return b[5] !== g || b[6] !== c || b[7] !== o || b[8] !== p || b[9] !== i ? (a = (0, e.jsx)(C, {
+            let q = `${k}:${j}`,
+                r = n || o !== j || p !== k;
+            return b[5] !== j || b[6] !== c || b[7] !== q || b[8] !== r || b[9] !== k ? (a = (0, e.jsx)(C, {
                 setupHref: c,
-                accountId: g,
-                userId: i,
-                loading: p
-            }, o), b[5] = g, b[6] = c, b[7] = o, b[8] = p, b[9] = i, b[10] = a) : a = b[10], a
+                accountId: j,
+                userId: k,
+                loading: r
+            }, q), b[5] = j, b[6] = c, b[7] = q, b[8] = r, b[9] = k, b[10] = a) : a = b[10], a
         }
 
         function C(a) {
-            let b, c, g, l, m, q, s, t, y, A, B, C, J, K, L, M, N, O, P, Q, R, S, T, U, V, W = (0, f.c)(108),
+            let b, c, g, l, m, q, s, t, y, A, B, C, J, K, L, M, N, O, P, Q, R, S, T, U = (0, f.c)(109),
                 {
-                    setupHref: X,
-                    accountId: Y,
-                    userId: Z,
-                    loading: $
+                    setupHref: V,
+                    accountId: W,
+                    userId: X,
+                    loading: Y
                 } = a,
-                _ = (0, d.X)("/auth/login"),
-                [aa, ab] = (0, d.jb)(),
-                [ac, ad] = (0, i.useState)(null),
+                Z = (0, d.X)("/auth/login"),
+                [$, _] = (0, d.jb)(),
+                [aa, ab] = (0, i.useState)(null),
                 {
-                    data: ae
+                    data: ac
                 } = (0, n.f)(),
                 {
-                    data: af,
-                    isLoading: ag,
-                    isError: ah,
-                    refetch: ai
+                    data: ad,
+                    isLoading: ae,
+                    isError: af,
+                    refetch: ag
                 } = (0, n.c)(),
-                aj = (0, v.getCurrentSessionWorkspaces)(af).filter(G);
-            W[0] !== Y ? (b = a => a.workspaceAccountId === Y, W[0] = Y, W[1] = b) : b = W[1];
-            let ak = aj.find(b),
-                [al, am] = (0, i.useState)("idle"),
-                an = "workspace_changed" === al || "reauthenticating" === al,
-                ao = window.__finservEmailSetupToken;
-            W[2] !== Y || W[3] !== Z ? (c = {
-                userId: Z,
-                accountId: Y
-            }, W[2] = Y, W[3] = Z, W[4] = c) : c = W[4];
-            let ap = !$ && !!ao && !!Z && !!Y && "working" !== al && "connected" !== al && "resent" !== al;
-            W[5] !== ap ? (g = {
-                enabled: ap
-            }, W[5] = ap, W[6] = g) : g = W[6];
+                ah = (0, v.getCurrentSessionWorkspaces)(ad).filter(G);
+            U[0] !== W ? (b = a => a.workspaceAccountId === W, U[0] = W, U[1] = b) : b = U[1];
+            let ai = ah.find(b),
+                [aj, ak] = (0, i.useState)("idle"),
+                [al, am] = (0, i.useState)(!1),
+                an = window.__finservEmailSetupToken;
+            U[2] !== W || U[3] !== X ? (c = {
+                userId: X,
+                accountId: W
+            }, U[2] = W, U[3] = X, U[4] = c) : c = U[4];
+            let ao = !Y && !!an && !!X && !!W && "working" !== aj && "connected" !== aj && "resent" !== aj;
+            U[5] !== ao ? (g = {
+                enabled: ao
+            }, U[5] = ao, U[6] = g) : g = U[6];
             let {
-                data: aq,
-                error: ar,
-                isPending: as,
-                isError: at,
-                refetch: au
+                data: ap,
+                error: aq,
+                isPending: ar,
+                isError: as,
+                refetch: at
             } = (0, h.x)(z, c, g);
-            W[7] !== Y || W[8] !== aa || W[9] !== au || W[10] !== am ? (l = async function() {
-                if (ao && Y && aa.get("workspace") === Y) {
-                    am("working");
+            U[7] !== W || U[8] !== $ || U[9] !== at || U[10] !== ak ? (l = async function() {
+                if (an && W && $.get("workspace") === W) {
+                    ak("working");
                     try {
                         let a = await w.a.safeRequest("post", "/finserv-email/enroll", {
                             requestBody: {
-                                token: ao,
-                                workspace_id: Y,
+                                token: an,
+                                workspace_id: W,
                                 consent_version: "v1",
                                 confirm: !0
                             },
@@ -221,108 +223,106 @@ export const __webpack_modules__ = {
                         try {
                             sessionStorage.removeItem("finserv-email-setup")
                         } catch {}
-                        am("connected")
+                        ak("connected")
                     } catch (a) {
-                        if (I(a)) return void am("mailbox_mismatch");
-                        if (a instanceof x.FetchError && 409 === a.status && "email_workspace_changed" === a.errorCode) return void am("workspace_changed");
-                        a instanceof x.FetchError && 403 === a.status ? am("email_disabled_by_workspace_policy" === a.errorCode ? "workspace_disabled" : "unavailable") : am("error"), au()
+                        if (I(a)) return void ak("mailbox_mismatch");
+                        if (a instanceof x.FetchError && 409 === a.status && "email_workspace_changed" === a.errorCode) {
+                            am(!0), ak("workspace_changed");
+                            return
+                        }
+                        a instanceof x.FetchError && 403 === a.status ? "email_disabled_by_workspace_policy" === a.errorCode ? ak("workspace_disabled") : "email_workspace_ineligible" === a.errorCode ? ak("workspace_ineligible") : ak("unavailable") : ak("error"), at()
                     }
                 }
-            }, W[7] = Y, W[8] = aa, W[9] = au, W[10] = am, W[11] = l) : l = W[11];
-            let av = l;
-            W[12] !== am ? (m = async function() {
-                if (ao) {
-                    am("working");
+            }, U[7] = W, U[8] = $, U[9] = at, U[10] = ak, U[11] = l) : l = U[11];
+            let au = l;
+            U[12] !== ak ? (m = async function() {
+                if (an) {
+                    ak("working");
                     try {
                         await w.a.safeRequest("post", "/finserv-email/setup/resend", {
                             requestBody: {
-                                token: ao
+                                token: an
                             },
                             retry: "never",
                             expectedErrorStatuses: [401, 403, 409, 429]
-                        }), am("resent")
+                        }), ak("resent")
                     } catch (a) {
-                        am(a instanceof x.FetchError && 403 === a.status ? "unavailable" : "error")
+                        ak(a instanceof x.FetchError && 403 === a.status ? "unavailable" : "error")
                     }
                 }
-            }, W[12] = am, W[13] = m) : m = W[13];
-            let aw = m;
-            W[14] !== Y || W[15] !== af || W[16] !== ab || W[17] !== am || W[18] !== X ? (q = async function(a) {
-                if (af) {
-                    if (ad(a), a === Y) {
-                        ab({
+            }, U[12] = ak, U[13] = m) : m = U[13];
+            let av = m,
+                aw = async function(a) {
+                    if (ad) {
+                        if (ab(a), a === W) return al ? void await async function() {
+                            if (ai) {
+                                ak("reauthenticating");
+                                try {
+                                    await (0, v.reauthenticateBrowserWorkspace)(ai, "document-bootstrap", `${V}?${new URLSearchParams({workspace:ai.workspaceAccountId})}`)
+                                } catch {
+                                    ak("workspace_changed")
+                                }
+                            }
+                        }(): (_({
                             workspace: a
                         }, {
                             replace: !0
-                        }), am("idle");
-                        return
-                    }
-                    am("switching");
-                    try {
-                        await (0, v.switchBrowserWorkspaceForLink)(af, a, "document-bootstrap", `${X}?${new URLSearchParams({workspace:a})}`)
-                    } catch {
-                        am("switch_failed")
-                    }
-                }
-            }, W[14] = Y, W[15] = af, W[16] = ab, W[17] = am, W[18] = X, W[19] = q) : q = W[19];
-            let ax = q,
-                ay = async function() {
-                    if (ak) {
-                        am("reauthenticating");
+                        }), void ak("idle"));
+                        ak("switching");
                         try {
-                            await (0, v.reauthenticateBrowserWorkspace)(ak, "document-bootstrap", `${X}?${new URLSearchParams({workspace:ak.workspaceAccountId})}`)
+                            await (0, v.switchBrowserWorkspaceForLink)(ad, a, "document-bootstrap", `${V}?${new URLSearchParams({workspace:a})}`)
                         } catch {
-                            am("workspace_changed")
+                            ak("switch_failed")
                         }
                     }
-                }, az = $ || "working" === al || "switching" === al || "reauthenticating" === al, aA = !az && !ag && !ah && !!ak && !an && !as && aq?.status === "ready" && !!ao && ae?.id === Y, aB = ak && aa.get("workspace") === Y, aC = "switch_failed" === al || an, aD = an ? ak : aj.find(a => a.workspaceAccountId === ac);
-            W[20] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, e.jsx)(j.a, {
+                }, ax = "switching" === aj || "reauthenticating" === aj, ay = Y || "working" === aj || ax, az = !ay && !ae && !af && !!ai && !al && !ar && ap?.status === "ready" && !!an && ac?.id === W, aA = ai && $.get("workspace") === W, aB = "switch_failed" === aj || "workspace_changed" === aj, aC = "switch_failed" === aj ? ah.find(a => a.workspaceAccountId === aa) : ai;
+            U[14] === Symbol.for("react.memo_cache_sentinel") ? (q = (0, e.jsx)(j.a, {
                 id: "chatgpt.finserv_email.setup.try_again",
                 defaultMessage: "Try again"
-            }), W[20] = s) : s = W[20];
-            let aE = s;
-            W[21] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, e.jsx)(j.a, {
+            }), U[14] = q) : q = U[14];
+            let aD = q;
+            U[15] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, e.jsx)(j.a, {
                 id: "chatgpt.finserv_email.setup.title",
                 defaultMessage: "Set up email with ChatGPT"
-            }), W[21] = t) : t = W[21];
-            let aF = t;
-            if ("mailbox_mismatch" === al || I(ar)) {
+            }), U[15] = s) : s = U[15];
+            let aE = s;
+            if ("mailbox_mismatch" === aj || I(aq)) {
                 let a, b, c, d, f, g;
-                W[22] === Symbol.for("react.memo_cache_sentinel") ? (a = new URLSearchParams({
+                U[16] === Symbol.for("react.memo_cache_sentinel") ? (a = new URLSearchParams({
                     account_switch: "true",
                     account_switch_login: "add_account"
-                }), W[22] = a) : a = W[22];
-                let h = `${X}?${a}`;
-                W[23] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, e.jsx)("p", {
+                }), U[16] = a) : a = U[16];
+                let h = `${V}?${a}`;
+                U[17] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, e.jsx)("p", {
                     role: "alert",
                     className: "text-secondary",
                     children: (0, e.jsx)(j.a, {
                         id: "chatgpt.finserv_email.setup.mailbox_mismatch",
                         defaultMessage: "Sign in with the email address you used to send your request."
                     })
-                }), W[23] = b) : b = W[23], W[24] !== h ? (c = new URLSearchParams({
+                }), U[17] = b) : b = U[17], U[18] !== h ? (c = new URLSearchParams({
                     next: h
-                }), W[24] = h, W[25] = c) : c = W[25];
-                let i = `${_}?${c}`;
-                return W[26] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, e.jsx)(j.a, {
+                }), U[18] = h, U[19] = c) : c = U[19];
+                let i = `${Z}?${c}`;
+                return U[20] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, e.jsx)(j.a, {
                     id: "chatgpt.finserv_email.setup.switch_account",
                     defaultMessage: "Sign in with another account"
-                }), W[26] = d) : d = W[26], W[27] !== i ? (f = (0, e.jsx)(p.b, {
+                }), U[20] = d) : d = U[20], U[21] !== i ? (f = (0, e.jsx)(p.b, {
                     size: "setupAction",
                     radius: "full",
                     href: i,
                     children: d
-                }), W[27] = i, W[28] = f) : f = W[28], W[29] !== f || W[30] !== aF ? (g = (0, e.jsxs)(H, {
-                    title: aF,
+                }), U[21] = i, U[22] = f) : f = U[22], U[23] !== f || U[24] !== aE ? (g = (0, e.jsxs)(H, {
+                    title: aE,
                     children: [b, f]
-                }), W[29] = f, W[30] = aF, W[31] = g) : g = W[31], g
+                }), U[23] = f, U[24] = aE, U[25] = g) : g = U[25], g
             }
-            if ("connected" === al) {
+            if ("connected" === aj) {
                 let a, b;
-                return W[32] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, e.jsx)(j.a, {
+                return U[26] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, e.jsx)(j.a, {
                     id: "chatgpt.finserv_email.setup.success.title",
                     defaultMessage: "Email access is enabled"
-                }), W[32] = a) : a = W[32], W[33] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, e.jsx)(H, {
+                }), U[26] = a) : a = U[26], U[27] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, e.jsx)(H, {
                     title: a,
                     children: (0, e.jsx)("p", {
                         role: "status",
@@ -332,25 +332,25 @@ export const __webpack_modules__ = {
                             defaultMessage: "We\u2019ll process your original request and email you the response. You can close this page."
                         })
                     })
-                }), W[33] = b) : b = W[33], b
+                }), U[27] = b) : b = U[27], b
             }
-            if ("unavailable" === al || ar instanceof x.FetchError && 403 === ar.status) {
+            if ("unavailable" === aj || aq instanceof x.FetchError && 403 === aq.status) {
                 let a, b;
-                return W[34] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, e.jsx)("p", {
+                return U[28] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, e.jsx)("p", {
                     role: "alert",
                     className: "text-secondary",
                     children: (0, e.jsx)(j.a, {
                         id: "chatgpt.finserv_email.setup.unavailable",
                         defaultMessage: "Email setup is unavailable. Send a new email to restart setup. If the problem continues, contact your workspace admin."
                     })
-                }), W[34] = a) : a = W[34], W[35] !== aF ? (b = (0, e.jsx)(H, {
-                    title: aF,
+                }), U[28] = a) : a = U[28], U[29] !== aE ? (b = (0, e.jsx)(H, {
+                    title: aE,
                     children: a
-                }), W[35] = aF, W[36] = b) : b = W[36], b
+                }), U[29] = aE, U[30] = b) : b = U[30], b
             }
-            if ("resent" === al || aq?.status === "expired") {
+            if ("resent" === aj || ap?.status === "expired") {
                 let a, b;
-                return W[37] !== az || W[38] !== aw || W[39] !== al ? (a = "resent" === al ? (0, e.jsx)("p", {
+                return U[31] !== ay || U[32] !== av || U[33] !== aj ? (a = "resent" === aj ? (0, e.jsx)("p", {
                     role: "status",
                     className: "text-secondary",
                     children: (0, e.jsx)(j.a, {
@@ -364,7 +364,7 @@ export const __webpack_modules__ = {
                             id: "chatgpt.finserv_email.setup.expired.description",
                             defaultMessage: "This setup link has expired"
                         })
-                    }), "error" === al && (0, e.jsx)("p", {
+                    }), "error" === aj && (0, e.jsx)("p", {
                         role: "alert",
                         className: "text-secondary",
                         children: (0, e.jsx)(j.a, {
@@ -374,22 +374,22 @@ export const __webpack_modules__ = {
                     }), (0, e.jsx)(p.a, {
                         size: "setupAction",
                         radius: "full",
-                        disabled: az,
-                        loading: "working" === al,
-                        onClick: () => void aw(),
+                        disabled: ay,
+                        loading: "working" === aj,
+                        onClick: () => void av(),
                         children: (0, e.jsx)(j.a, {
                             id: "chatgpt.finserv_email.setup.resend.button.label",
                             defaultMessage: "Send a new link"
                         })
                     })]
-                }), W[37] = az, W[38] = aw, W[39] = al, W[40] = a) : a = W[40], W[41] !== a || W[42] !== aF ? (b = (0, e.jsx)(H, {
-                    title: aF,
+                }), U[31] = ay, U[32] = av, U[33] = aj, U[34] = a) : a = U[34], U[35] !== a || U[36] !== aE ? (b = (0, e.jsx)(H, {
+                    title: aE,
                     children: a
-                }), W[41] = a, W[42] = aF, W[43] = b) : b = W[43], b
+                }), U[35] = a, U[36] = aE, U[37] = b) : b = U[37], b
             }
-            if (!ao || at || ah) {
+            if (!an || as || af) {
                 let a, b;
-                return W[44] !== ah || W[45] !== ag || W[46] !== az || W[47] !== at || W[48] !== as || W[49] !== au || W[50] !== ai || W[51] !== aE ? (a = ao ? (0, e.jsxs)(e.Fragment, {
+                return U[38] !== af || U[39] !== ae || U[40] !== ay || U[41] !== as || U[42] !== ar || U[43] !== at || U[44] !== ag || U[45] !== aD ? (a = an ? (0, e.jsxs)(e.Fragment, {
                     children: [(0, e.jsx)("p", {
                         role: "alert",
                         className: "text-secondary",
@@ -400,11 +400,11 @@ export const __webpack_modules__ = {
                     }), (0, e.jsx)(p.a, {
                         size: "setupAction",
                         radius: "full",
-                        disabled: az || ag || as,
+                        disabled: ay || ae || ar,
                         onClick: () => {
-                            ah && ai(), at && au()
+                            af && ag(), as && at()
                         },
-                        children: aE
+                        children: aD
                     })]
                 }) : (0, e.jsx)("p", {
                     className: "text-secondary",
@@ -412,25 +412,56 @@ export const __webpack_modules__ = {
                         id: "chatgpt.emailSetup.missingLink",
                         defaultMessage: "To connect, open the setup link from your email"
                     })
-                }), W[44] = ah, W[45] = ag, W[46] = az, W[47] = at, W[48] = as, W[49] = au, W[50] = ai, W[51] = aE, W[52] = a) : a = W[52], W[53] !== a || W[54] !== aF ? (b = (0, e.jsx)(H, {
-                    title: aF,
+                }), U[38] = af, U[39] = ae, U[40] = ay, U[41] = as, U[42] = ar, U[43] = at, U[44] = ag, U[45] = aD, U[46] = a) : a = U[46], U[47] !== a || U[48] !== aE ? (b = (0, e.jsx)(H, {
+                    title: aE,
                     children: a
-                }), W[53] = a, W[54] = aF, W[55] = b) : b = W[55], b
+                }), U[47] = a, U[48] = aE, U[49] = b) : b = U[49], b
             }
-            if (!aB || aC || "switching" === al) {
+            if ("workspace_ineligible" === aj || "workspace_disabled" === aj) {
+                let a, b, c;
+                return U[50] !== aj ? (a = (0, e.jsx)("p", {
+                    role: "alert",
+                    className: "text-secondary",
+                    children: "workspace_disabled" === aj ? (0, e.jsx)(j.a, {
+                        id: "chatgpt.finserv_email.setup.workspace_disabled",
+                        defaultMessage: "Email access is disabled for you in this workspace. Contact your workspace admin to enable it."
+                    }) : (0, e.jsx)(j.a, {
+                        id: "chatgpt.finserv_email.setup.workspace_ineligible.description",
+                        defaultMessage: "Email isn\u2019t available in this workspace. Choose another workspace to continue."
+                    })
+                }), U[50] = aj, U[51] = a) : a = U[51], U[52] !== _ || U[53] !== ak || U[54] !== aj ? (b = "workspace_ineligible" === aj && (0, e.jsx)(p.a, {
+                    type: "button",
+                    color: "primary",
+                    size: "setupAction",
+                    radius: "full",
+                    onClick: () => {
+                        _({}, {
+                            replace: !0
+                        }), ak("idle")
+                    },
+                    children: (0, e.jsx)(j.a, {
+                        id: "chatgpt.finserv_email.setup.workspace_ineligible.button.label",
+                        defaultMessage: "Choose another workspace"
+                    })
+                }), U[52] = _, U[53] = ak, U[54] = aj, U[55] = b) : b = U[55], U[56] !== b || U[57] !== a || U[58] !== aE ? (c = (0, e.jsxs)(H, {
+                    title: aE,
+                    children: [a, b]
+                }), U[56] = b, U[57] = a, U[58] = aE, U[59] = c) : c = U[59], c
+            }
+            if (!aA || aB || ax) {
                 let a, b, c, d;
-                W[56] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, e.jsx)(j.a, {
+                U[60] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, e.jsx)(j.a, {
                     id: "chatgpt.finserv_email.setup.choose_workspace",
                     defaultMessage: "Choose a workspace"
-                }), W[56] = a) : a = W[56], W[57] !== ag ? (b = ag && (0, e.jsx)("p", {
+                }), U[60] = a) : a = U[60], U[61] !== ae ? (b = ae && (0, e.jsx)("p", {
                     role: "status",
                     className: "text-secondary",
                     children: (0, e.jsx)(j.a, {
                         id: "chatgpt.finserv_email.setup.workspace.loading",
                         defaultMessage: "Loading workspaces\u2026"
                     })
-                }), W[57] = ag, W[58] = b) : b = W[58];
-                let f = !ag && 0 === aj.length && (0, e.jsx)("p", {
+                }), U[61] = ae, U[62] = b) : b = U[62];
+                let f = !ae && 0 === ah.length && (0, e.jsx)("p", {
                         role: "alert",
                         className: "text-secondary",
                         children: (0, e.jsx)(j.a, {
@@ -438,13 +469,13 @@ export const __webpack_modules__ = {
                             defaultMessage: "You need a workspace to enable email access."
                         })
                     }),
-                    g = !ag && aj.length > 0 && (0, e.jsx)(u.a, {
+                    g = !ae && ah.length > 0 && (0, e.jsx)(u.a, {
                         variant: "rows",
-                        children: aj.map(a => (0, e.jsxs)(p.a, {
+                        children: ah.map(a => (0, e.jsxs)(p.a, {
                             unstyled: !0,
                             className: "flex w-full items-center gap-4 py-6 ps-5 pe-4.5 text-start text-base font-medium not-disabled:hover:bg-secondary-ghost-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ring disabled:opacity-50",
-                            disabled: az || aC,
-                            onClick: () => void ax(a.workspaceAccountId),
+                            disabled: ay,
+                            onClick: () => void aw(a.workspaceAccountId),
                             children: [(0, e.jsx)(o.a, {
                                 alt: "",
                                 size: "row",
@@ -462,49 +493,37 @@ export const __webpack_modules__ = {
                             })]
                         }, a.workspaceAccountId))
                     });
-                W[59] !== al ? (c = "switching" === al && (0, e.jsx)("p", {
+                U[63] !== ax ? (c = ax && (0, e.jsx)("p", {
                     role: "status",
                     className: "text-secondary",
                     children: (0, e.jsx)(j.a, {
                         id: "chatgpt.finserv_email.setup.switching",
                         defaultMessage: "Connecting to your workspace\u2026"
                     })
-                }), W[59] = al, W[60] = c) : c = W[60];
-                let h = aC && (0, e.jsxs)("div", {
-                    className: "flex flex-col items-center gap-4",
-                    children: [(0, e.jsx)("p", {
-                        role: "alert",
-                        className: "text-secondary",
-                        children: (0, e.jsx)(j.a, {
-                            id: "chatgpt.finserv_email.setup.switch_failed",
-                            defaultMessage: "We couldn\u2019t connect to {workspaceName}",
-                            values: {
-                                workspaceName: aD?.workspaceName ?? ""
-                            }
-                        })
-                    }), (0, e.jsx)(p.a, {
-                        size: "setupAction",
-                        radius: "full",
-                        disabled: az,
-                        loading: "reauthenticating" === al,
-                        onClick: () => {
-                            an ? ay() : ac && ax(ac)
-                        },
-                        children: aE
-                    })]
+                }), U[63] = ax, U[64] = c) : c = U[64];
+                let h = aB && (0, e.jsx)("p", {
+                    role: "alert",
+                    className: "text-secondary",
+                    children: (0, e.jsx)(j.a, {
+                        id: "chatgpt.finserv_email.setup.switch_failed",
+                        defaultMessage: "We couldn\u2019t connect to {workspaceName}. Please try again.",
+                        values: {
+                            workspaceName: aC?.workspaceName ?? ""
+                        }
+                    })
                 });
-                return W[61] !== b || W[62] !== f || W[63] !== g || W[64] !== c || W[65] !== h ? (d = (0, e.jsxs)(H, {
+                return U[65] !== b || U[66] !== f || U[67] !== g || U[68] !== c || U[69] !== h ? (d = (0, e.jsxs)(H, {
                     showIcon: !1,
                     title: a,
                     children: [b, f, g, c, h]
-                }), W[61] = b, W[62] = f, W[63] = g, W[64] = c, W[65] = h, W[66] = d) : d = W[66], d
+                }), U[65] = b, U[66] = f, U[67] = g, U[68] = c, U[69] = h, U[70] = d) : d = U[70], d
             }
-            W[67] === Symbol.for("react.memo_cache_sentinel") ? (y = (0, e.jsx)(j.a, {
+            U[71] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, e.jsx)(j.a, {
                 id: "chatgpt.finserv_email.setup.introduction",
                 defaultMessage: "Once enabled, you\u2019ll be able to delegate work to ChatGPT via email. Here\u2019s how it works:"
-            }), W[67] = y) : y = W[67], W[68] === Symbol.for("react.memo_cache_sentinel") ? (A = (0, e.jsx)(r.pd, {}), W[68] = A) : A = W[68], W[69] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, e.jsxs)("div", {
+            }), U[71] = t) : t = U[71], U[72] === Symbol.for("react.memo_cache_sentinel") ? (y = (0, e.jsx)(r.pd, {}), U[72] = y) : y = U[72], U[73] === Symbol.for("react.memo_cache_sentinel") ? (A = (0, e.jsxs)("div", {
                 className: "flex items-start gap-3",
-                children: [A, (0, e.jsx)("p", {
+                children: [y, (0, e.jsx)("p", {
                     children: (0, e.jsx)(j.a, {
                         id: "chatgpt.finserv_email.setup.send_tasks",
                         defaultMessage: "Send tasks to ChatGPT via <strong>email@chatgpt.com</strong>",
@@ -513,21 +532,21 @@ export const __webpack_modules__ = {
                         }
                     })
                 })]
-            }), W[69] = B) : B = W[69], W[70] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, e.jsx)(r.Yh, {}), W[70] = C) : C = W[70], W[71] !== ak.workspaceName ? (J = (0, e.jsxs)("div", {
+            }), U[73] = A) : A = U[73], U[74] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, e.jsx)(r.Yh, {}), U[74] = B) : B = U[74], U[75] !== ai.workspaceName ? (C = (0, e.jsxs)("div", {
                 className: "flex items-start gap-3",
-                children: [C, (0, e.jsx)("p", {
+                children: [B, (0, e.jsx)("p", {
                     children: (0, e.jsx)(j.a, {
                         id: "chatgpt.finserv_email.setup.workspace_consent",
                         defaultMessage: "ChatGPT will do work for you in the <strong>{workspaceName}</strong> workspace.",
                         values: {
-                            workspaceName: ak.workspaceName,
+                            workspaceName: ai.workspaceName,
                             strong: E
                         }
                     })
                 })]
-            }), W[71] = ak.workspaceName, W[72] = J) : J = W[72], W[73] === Symbol.for("react.memo_cache_sentinel") ? (K = (0, e.jsx)(r.rg, {}), W[73] = K) : K = W[73], W[74] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, e.jsxs)("div", {
+            }), U[75] = ai.workspaceName, U[76] = C) : C = U[76], U[77] === Symbol.for("react.memo_cache_sentinel") ? (J = (0, e.jsx)(r.rg, {}), U[77] = J) : J = U[77], U[78] === Symbol.for("react.memo_cache_sentinel") ? (K = (0, e.jsxs)("div", {
                 className: "flex items-start gap-3",
-                children: [K, (0, e.jsx)("p", {
+                children: [J, (0, e.jsx)("p", {
                     children: (0, e.jsx)(j.a, {
                         id: "chatgpt.finserv_email.setup.sender_only",
                         defaultMessage: "Responses are sent <strong>only to you</strong> \u2014 you\u2019ll receive responses and attachments as direct replies.",
@@ -536,72 +555,65 @@ export const __webpack_modules__ = {
                         }
                     })
                 })]
-            }), W[74] = L) : L = W[74], W[75] !== J ? (M = (0, e.jsx)("div", {
+            }), U[78] = K) : K = U[78], U[79] !== C ? (L = (0, e.jsx)("div", {
                 className: "rounded-2xl ring-1 ring-border",
                 children: (0, e.jsxs)("div", {
                     className: "flex flex-col gap-6 p-5 text-start",
-                    children: [B, J, L]
+                    children: [A, C, K]
                 })
-            }), W[75] = J, W[76] = M) : M = W[76], W[77] !== al ? (N = "workspace_disabled" === al && (0, e.jsx)("p", {
-                role: "alert",
-                className: "text-secondary",
-                children: (0, e.jsx)(j.a, {
-                    id: "chatgpt.finserv_email.setup.workspace_disabled",
-                    defaultMessage: "Email access is disabled for you in this workspace. Contact your workspace admin to enable it."
-                })
-            }), W[77] = al, W[78] = N) : N = W[78], W[79] !== al ? (O = "error" === al && (0, e.jsx)("p", {
+            }), U[79] = C, U[80] = L) : L = U[80], U[81] !== aj ? (M = "error" === aj && (0, e.jsx)("p", {
                 role: "alert",
                 className: "text-secondary",
                 children: (0, e.jsx)(j.a, {
                     id: "chatgpt.finserv_email.setup.error.description",
                     defaultMessage: "We couldn\u2019t enable email. Please try again."
                 })
-            }), W[79] = al, W[80] = O) : O = W[80], W[81] !== av ? (P = a => {
-                a.preventDefault(), av()
-            }, W[81] = av, W[82] = P) : P = W[82];
-            let aG = "working" === al,
-                aH = !aA;
-            W[83] !== al ? (Q = "working" === al && (0, e.jsx)(j.a, {
+            }), U[81] = aj, U[82] = M) : M = U[82], U[83] !== au ? (N = a => {
+                a.preventDefault(), au()
+            }, U[83] = au, U[84] = N) : N = U[84];
+            let aF = "working" === aj,
+                aG = !az;
+            U[85] !== aj ? (O = "working" === aj && (0, e.jsx)(j.a, {
                 id: "chatgpt.finserv_email.setup.enable.pending",
                 defaultMessage: "Enabling\u2026"
-            }), W[83] = al, W[84] = Q) : Q = W[84];
-            let aI = "error" === al && aE;
-            return W[85] !== al ? (R = "working" !== al && "error" !== al && (0, e.jsx)(j.a, {
+            }), U[85] = aj, U[86] = O) : O = U[86];
+            let aH = "error" === aj && aD;
+            return U[87] !== aj ? (P = "working" !== aj && "error" !== aj && (0, e.jsx)(j.a, {
                 id: "chatgpt.emailSetup.enable",
                 defaultMessage: "Enable email"
-            }), W[85] = al, W[86] = R) : R = W[86], W[87] !== aG || W[88] !== aH || W[89] !== Q || W[90] !== aI || W[91] !== R ? (S = (0, e.jsxs)(p.a, {
+            }), U[87] = aj, U[88] = P) : P = U[88], U[89] !== aF || U[90] !== aG || U[91] !== O || U[92] !== aH || U[93] !== P ? (Q = (0, e.jsxs)(p.a, {
                 className: "w-70 max-w-full",
                 type: "submit",
                 color: "primary",
                 size: "setupAction",
                 radius: "full",
-                loading: aG,
-                disabled: aH,
-                children: [Q, aI, R]
-            }), W[87] = aG, W[88] = aH, W[89] = Q, W[90] = aI, W[91] = R, W[92] = S) : S = W[92], W[93] !== az || W[94] !== ab || W[95] !== am || W[96] !== al ? (T = "error" !== al && (0, e.jsx)(p.a, {
+                loading: aF,
+                disabled: aG,
+                children: [O, aH, P]
+            }), U[89] = aF, U[90] = aG, U[91] = O, U[92] = aH, U[93] = P, U[94] = Q) : Q = U[94], U[95] !== ay || U[96] !== _ || U[97] !== ak || U[98] !== aj ? (R = "error" !== aj && (0, e.jsx)(p.a, {
                 type: "button",
                 size: "dialogAction",
                 radius: "full",
                 color: "ghostActive",
-                disabled: az,
+                disabled: ay,
                 onClick: () => {
-                    ab({}, {
+                    _({}, {
                         replace: !0
-                    }), am("idle")
+                    }), ak("idle")
                 },
                 children: (0, e.jsx)(j.a, {
                     id: "chatgpt.finserv_email.setup.go_back",
                     defaultMessage: "Go back"
                 })
-            }), W[93] = az, W[94] = ab, W[95] = am, W[96] = al, W[97] = T) : T = W[97], W[98] !== P || W[99] !== S || W[100] !== T ? (U = (0, e.jsxs)("form", {
+            }), U[95] = ay, U[96] = _, U[97] = ak, U[98] = aj, U[99] = R) : R = U[99], U[100] !== N || U[101] !== Q || U[102] !== R ? (S = (0, e.jsxs)("form", {
                 className: "flex flex-col items-center gap-4",
-                onSubmit: P,
-                children: [S, T]
-            }), W[98] = P, W[99] = S, W[100] = T, W[101] = U) : U = W[101], W[102] !== M || W[103] !== N || W[104] !== O || W[105] !== U || W[106] !== aF ? (V = (0, e.jsxs)(H, {
-                title: aF,
-                description: y,
-                children: [M, N, O, U]
-            }), W[102] = M, W[103] = N, W[104] = O, W[105] = U, W[106] = aF, W[107] = V) : V = W[107], V
+                onSubmit: N,
+                children: [Q, R]
+            }), U[100] = N, U[101] = Q, U[102] = R, U[103] = S) : S = U[103], U[104] !== L || U[105] !== M || U[106] !== S || U[107] !== aE ? (T = (0, e.jsxs)(H, {
+                title: aE,
+                description: t,
+                children: [L, M, S]
+            }), U[104] = L, U[105] = M, U[106] = S, U[107] = aE, U[108] = T) : T = U[108], T
         }
 
         function D(a) {
@@ -679,52 +691,52 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as a
-} from "./633146.192293cdfd.js";
-import * as b from "./418851.373d5e7c7d.js";
+} from "./633146.44c41f9881.js";
+import * as b from "./418851.d461b09398.js";
 a.C(b);
 import * as c from "./109308.6f7ef1dfb7.js";
 a.C(c);
-import * as d from "./399565.61ce507128.js";
+import * as d from "./399565.04d51b97fa.js";
 a.C(d);
-import * as e from "./257798.18e3fd1164.js";
+import * as e from "./257798.9ecf4d3ec0.js";
 a.C(e);
-import * as f from "./447351.05632d2214.js";
+import * as f from "./447351.7cc0e9b0b6.js";
 a.C(f);
-import * as g from "./617936.82c33d1781.js";
+import * as g from "./617936.83eea6e593.js";
 a.C(g);
-import * as h from "./807489.80226d951f.js";
+import * as h from "./807489.7aa67edeba.js";
 a.C(h);
-import * as i from "./337882.c48859a67a.js";
+import * as i from "./337882.219e3ada84.js";
 a.C(i);
-import * as j from "./955979.3817544990.js";
+import * as j from "./955979.a3e9dd394b.js";
 a.C(j);
-import * as k from "./646436.8f73ec6517.js";
+import * as k from "./646436.82a6afd168.js";
 a.C(k);
-import * as l from "./7078.fb59bca78c.js";
+import * as l from "./7078.3a7ae651f9.js";
 a.C(l);
-import * as m from "./200429.7f45d5c86a.js";
+import * as m from "./200429.41df82824c.js";
 a.C(m);
-import * as n from "./698524.906978efe4.js";
+import * as n from "./698524.d1d668b037.js";
 a.C(n);
-import * as o from "./956483.b7886e0470.js";
+import * as o from "./956483.3a192f7957.js";
 a.C(o);
-import * as p from "./87162.563f0c8e80.js";
+import * as p from "./87162.b7af17491f.js";
 a.C(p);
-import * as q from "./396705.5e3411e749.js";
+import * as q from "./396705.1cd3df2a36.js";
 a.C(q);
-import * as r from "./155568.5b6ea1007a.js";
+import * as r from "./155568.ea2903d980.js";
 a.C(r);
-import * as s from "./731863.5065e21881.js";
+import * as s from "./731863.77eaa985c3.js";
 a.C(s);
-import * as t from "./767086.2154dca9c8.js";
+import * as t from "./767086.b48caf5564.js";
 a.C(t);
-import * as u from "./76629.6adf997716.js";
+import * as u from "./76629.c55b0947a1.js";
 a.C(u);
-import * as v from "./226913.748570e15f.js";
+import * as v from "./226913.336cc1ac6c.js";
 a.C(v);
-import * as w from "./333117.5a5be84f3c.js";
+import * as w from "./333117.b60c5c5250.js";
 a.C(w);
-var x = a(a.s = "AP7E").a;
+var x = a(a.s = "YjPt").a;
 export {
     x as
     default

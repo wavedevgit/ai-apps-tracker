@@ -1,9 +1,9 @@
 export const __rspack_esm_ids = [55397];
 export const __webpack_modules__ = {
-    RPc1: (function() {})
+    LBiG: (function() {})
 };
 import {
     __webpack_require__ as a
-} from "./633146.192293cdfd.js";
-import * as b from "./55397.b347269be7.js";
-a.C(b), a(a.s = "RPc1");
+} from "./633146.44c41f9881.js";
+import * as b from "./55397.bc0870ab36.js";
+a.C(b), a(a.s = "LBiG");
