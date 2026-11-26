@@ -14,7 +14,7 @@ export const __webpack_modules__ = {
             j = c("tmUE"),
             k = c("IhXv"),
             l = c("e1xH"),
-            m = c("M2H2"),
+            m = c("XqlA"),
             n = c("C8z7"),
             o = c("aFW8"),
             p = c("vnV1"),
@@ -70,8 +70,8 @@ export const __webpack_modules__ = {
                 }
                 let R = G ? Q.snapshot : F.spacePageSnapshot,
                     S = G || F.nonblockingSsr,
-                    T = (0, g.x)(l.G, D),
-                    U = (0, g.z)(l.z),
+                    T = (0, g.x)(l.I, D),
+                    U = (0, g.z)(l.B),
                     V = (0, g.x)(s.e, "4063423961");
                 A[22] === Symbol.for("react.memo_cache_sentinel") ? (v = {
                     enabled: !1
@@ -219,44 +219,111 @@ export const __webpack_modules__ = {
             a: d
         })
     }),
+    sfQF: (function(a, b, c) {
+        var d = c("ABep"),
+            e = c("QosV"),
+            f = c("sSh9"),
+            g = c("LpCf"),
+            h = c("TnSu"),
+            i = c("xg5g"),
+            j = c("JZmT"),
+            k = c("l3dN");
+        c.d(b, {}, {
+            a: function(a) {
+                let b, c, l, m, n, o, p, q, r, s = (0, e.c)(24),
+                    {
+                        snapshot: t,
+                        contentRef: u,
+                        fullWidth: v,
+                        externalEditingControls: w,
+                        untitled: x
+                    } = a,
+                    y = void 0 !== w && w;
+                s[0] !== y || s[1] !== v ? (b = (0, j.a)({
+                    externalEditingControls: y,
+                    fullWidth: v,
+                    padded: !0
+                }), s[0] = y, s[1] = v, s[2] = b) : b = s[2], s[3] !== t.emoji ? (c = null != t.emoji && (0, d.jsx)("span", {
+                    className: "flex size-16 items-center border border-transparent",
+                    children: (0, d.jsx)(h.a, {
+                        emoji: t.emoji,
+                        size: "large"
+                    })
+                }), s[3] = t.emoji, s[4] = c) : c = s[4];
+                let z = t.title || x;
+                return s[5] !== z ? (l = (0, d.jsx)("h1", {
+                    className: `${k.a.PageTitle} min-h-lh font-semibold break-words text-default`,
+                    children: z
+                }), s[5] = z, s[6] = l) : l = s[6], s[7] !== t.reserveSpaceBreadcrumb ? (m = t.reserveSpaceBreadcrumb && (0, d.jsx)("div", {
+                    "aria-hidden": "true",
+                    className: "h-lh text-sm"
+                }), s[7] = t.reserveSpaceBreadcrumb, s[8] = m) : m = s[8], s[9] !== c || s[10] !== l || s[11] !== m ? (n = (0, d.jsxs)("div", {
+                    className: "flex min-w-0 flex-col gap-2",
+                    children: [c, l, m]
+                }), s[9] = c, s[10] = l, s[11] = m, s[12] = n) : n = s[12], s[13] !== t.html ? (o = {
+                    __html: t.html
+                }, s[13] = t.html, s[14] = o) : o = s[14], s[15] !== u || s[16] !== o ? (p = (0, d.jsx)("div", {
+                    "data-page-document-selection": !0,
+                    className: "isolate col-[wide] min-w-0",
+                    children: (0, d.jsx)("div", {
+                        className: `${f.a.root} ${k.a.PageDocumentTheme} px-0`,
+                        style: g.a,
+                        children: (0, d.jsx)("div", {
+                            ref: u,
+                            className: `ProseMirror ${f.a.content} ${k.a.PageDocument} ${k.a.PagePreview}`,
+                            contentEditable: !1,
+                            "data-page-static-preview": !0,
+                            dangerouslySetInnerHTML: o
+                        })
+                    })
+                }), s[15] = u, s[16] = o, s[17] = p) : p = s[17], s[18] !== n || s[19] !== p ? (q = (0, d.jsx)(i.a, {
+                    heading: n,
+                    children: p
+                }), s[18] = n, s[19] = p, s[20] = q) : q = s[20], s[21] !== q || s[22] !== b ? (r = (0, d.jsx)("div", {
+                    ...b,
+                    children: q
+                }), s[21] = q, s[22] = b, s[23] = r) : r = s[23], r
+            }
+        })
+    }),
     IhXv: (function(a, b, c) {
         c.d(b, {
             a: () => I
         });
         var d = c("ABep"),
             e = c("QosV"),
-            f = c("sSh9"),
-            g = c("LpCf"),
-            h = c("on57"),
-            i = c("LPKZ"),
-            j = c.n(i),
-            k = c("Q840"),
-            l = c("G4E3"),
-            m = c("zd8w"),
-            n = c("oyxz"),
-            o = c("rEML"),
-            p = c("Cslg"),
-            q = c("cYil"),
-            r = c("tmUE"),
-            s = c("GhgU"),
-            t = c("e1xH"),
-            u = c("cVcC"),
-            v = c("hlkZ"),
-            w = c("NnV7"),
-            x = c("dJBt"),
-            y = c("OWtl"),
-            z = c("OMIV"),
-            A = c("TnSu"),
-            B = c("bIvi"),
-            C = c("eShZ"),
-            D = c("WrMt"),
-            E = c("YCKz"),
+            f = c("on57"),
+            g = c("LPKZ"),
+            h = c.n(g),
+            i = c("Q840"),
+            j = c("G4E3"),
+            k = c("CJrD"),
+            l = c("zd8w"),
+            m = c("oyxz"),
+            n = c("rEML"),
+            o = c("Cslg"),
+            p = c("cYil"),
+            q = c("tmUE"),
+            r = c("e1xH"),
+            s = c("cVcC"),
+            t = c("hlkZ"),
+            u = c("NnV7"),
+            v = c("dJBt"),
+            w = c("OWtl"),
+            x = c("ADAj"),
+            y = c("OMIV"),
+            z = c("bIvi"),
+            A = c("eShZ"),
+            B = c("WrMt"),
+            C = c("YCKz"),
+            D = c("sfQF"),
+            E = c("V2r5"),
             F = c("l3dN");
-        let G = () => j(),
+        let G = () => h(),
             H = () => !1;
 
         function I(a) {
-            let b, c, f, g, i, j, l, n, s, u, w, x, z, A, D, I, M, O, P = (0, e.c)(94),
+            let b, c, g, h, j, k, m, s, u, v, x, y, B, D, E, I, M, O, P = (0, e.c)(94),
                 {
                     snapshot: Q,
                     preparation: R,
@@ -269,17 +336,17 @@ export const __webpack_modules__ = {
                     children: Y
                 } = a,
                 Z = void 0 !== T && T,
-                $ = (0, k.y)(y.a),
-                _ = (0, m.useId)(),
-                [aa, ab] = (0, m.useState)(null),
+                $ = (0, i.y)(w.a),
+                _ = (0, l.useId)(),
+                [aa, ab] = (0, l.useState)(null),
                 {
                     pageId: ac
-                } = (0, o.eb)(),
+                } = (0, n.eb)(),
                 ad = V ?? ac,
-                ae = (0, k.z)(p.f),
-                af = (0, k.z)(p.j),
-                ag = (0, k.z)(p.k),
-                ah = (0, k.z)(p.h);
+                ae = (0, i.z)(o.f),
+                af = (0, i.z)(o.j),
+                ag = (0, i.z)(o.k),
+                ah = (0, i.z)(o.h);
             P[0] !== ae || P[1] !== ah || P[2] !== ag || P[3] !== U || P[4] !== ad || P[5] !== af ? (b = () => ({
                 openIdentity: U ?? ad,
                 generation: 0,
@@ -291,7 +358,7 @@ export const __webpack_modules__ = {
                 accountUserId: ah,
                 browserFirstContent: N(ad)
             }), P[0] = ae, P[1] = ah, P[2] = ag, P[3] = U, P[4] = ad, P[5] = af, P[6] = b) : b = P[6];
-            let [ai, aj] = (0, m.useState)(b), ak = 0 === ai.generation ? _ : `${_}-${ai.generation}`, al = null == U && 0 === ai.generation, am = ai.pageId ?? "", an = ai.accountId ?? "", ao = ai.userId ?? "";
+            let [ai, aj] = (0, l.useState)(b), ak = 0 === ai.generation ? _ : `${_}-${ai.generation}`, al = null == U && 0 === ai.generation, am = ai.pageId ?? "", an = ai.accountId ?? "", ao = ai.userId ?? "";
             P[7] !== ak || P[8] !== am || P[9] !== an || P[10] !== ao ? (c = {
                 mountId: ak,
                 pageId: am,
@@ -299,20 +366,20 @@ export const __webpack_modules__ = {
                 userId: ao
             }, P[7] = ak, P[8] = am, P[9] = an, P[10] = ao, P[11] = c) : c = P[11];
             let ap = c,
-                aq = (0, k.x)(null != Q && E.d, ap),
+                aq = (0, i.x)(null != Q && C.d, ap),
                 ar = null == Q || ai.invalidated || aq ? void 0 : R,
-                as = (0, m.useSyncExternalStore)(null == ar ? G : ar.subscribeInvalidation, null == ar ? H : ar.isInvalidated, H),
-                at = (0, k.x)(null == Q ? null : E.f, ap),
-                au = (0, k.x)(null != Q ? v.loadedSpacePageMetadata$ : void 0, ad ?? null),
-                av = (0, k.x)(null != Q && t.y, ap.pageId),
+                as = (0, l.useSyncExternalStore)(null == ar ? G : ar.subscribeInvalidation, null == ar ? H : ar.isInvalidated, H),
+                at = (0, i.x)(null == Q ? null : C.f, ap),
+                au = (0, i.x)(null != Q ? t.loadedSpacePageMetadata$ : void 0, ad ?? null),
+                av = (0, i.x)(null != Q && r.A, ap.pageId),
                 {
                     data: aw,
                     error: ax
-                } = (0, k.x)(null == Q ? void 0 : v.spacePageQuery$, ap.pageId, {
+                } = (0, i.x)(null == Q ? void 0 : t.spacePageQuery$, ap.pageId, {
                     enabled: !1
                 }) ?? {};
-            P[12] !== ae || P[13] !== ah || P[14] !== ai.accountId || P[15] !== ai.accountUserId || P[16] !== ai.localUserId || P[17] !== ai.pageId || P[18] !== ai.userId || P[19] !== at?.failed || P[20] !== S || P[21] !== ax || P[22] !== as || P[23] !== ag || P[24] !== au || P[25] !== aw || P[26] !== ad || P[27] !== Q || P[28] !== af || P[29] !== av ? (f = null == Q || as || !S || ai.pageId !== ad || ai.accountId !== ae || ai.userId !== af || ai.localUserId !== ag || ai.accountUserId !== ah || av || au?.view_only === !0 || aw?.metadata.view_only === !0 || au?.deleted_at != null || aw?.metadata.deleted_at != null || au?.access.can_read === !1 || aw?.metadata.access.can_read === !1 || ax instanceof C.FetchError && [401, 403, 404, 410].includes(ax.status) || at?.failed === !0, P[12] = ae, P[13] = ah, P[14] = ai.accountId, P[15] = ai.accountUserId, P[16] = ai.localUserId, P[17] = ai.pageId, P[18] = ai.userId, P[19] = at?.failed, P[20] = S, P[21] = ax, P[22] = as, P[23] = ag, P[24] = au, P[25] = aw, P[26] = ad, P[27] = Q, P[28] = af, P[29] = av, P[30] = f) : f = P[30];
-            let ay = f;
+            P[12] !== ae || P[13] !== ah || P[14] !== ai.accountId || P[15] !== ai.accountUserId || P[16] !== ai.localUserId || P[17] !== ai.pageId || P[18] !== ai.userId || P[19] !== at?.failed || P[20] !== S || P[21] !== ax || P[22] !== as || P[23] !== ag || P[24] !== au || P[25] !== aw || P[26] !== ad || P[27] !== Q || P[28] !== af || P[29] !== av ? (g = null == Q || as || !S || ai.pageId !== ad || ai.accountId !== ae || ai.userId !== af || ai.localUserId !== ag || ai.accountUserId !== ah || av || au?.view_only === !0 || aw?.metadata.view_only === !0 || au?.deleted_at != null || aw?.metadata.deleted_at != null || au?.access.can_read === !1 || aw?.metadata.access.can_read === !1 || ax instanceof A.FetchError && [401, 403, 404, 410].includes(ax.status) || at?.failed === !0, P[12] = ae, P[13] = ah, P[14] = ai.accountId, P[15] = ai.accountUserId, P[16] = ai.localUserId, P[17] = ai.pageId, P[18] = ai.userId, P[19] = at?.failed, P[20] = S, P[21] = ax, P[22] = as, P[23] = ag, P[24] = au, P[25] = aw, P[26] = ad, P[27] = Q, P[28] = af, P[29] = av, P[30] = g) : g = P[30];
+            let ay = g;
             null != U && (ai.openIdentity !== U || ai.pageId !== ad) ? aj({
                 openIdentity: U,
                 generation: ai.generation + 1,
@@ -326,20 +393,20 @@ export const __webpack_modules__ = {
             }) : ay && !ai.invalidated && aj({
                 ...ai,
                 invalidated: !0
-            }), P[31] !== $ ? (g = (a, b) => {
-                $.set(E.e, a, !b)
-            }, P[31] = $, P[32] = g) : g = P[32];
-            let az = (0, B.a)(g);
-            P[33] !== ak || P[34] !== az ? (i = a => {
+            }), P[31] !== $ ? (h = (a, b) => {
+                $.set(C.e, a, !b)
+            }, P[31] = $, P[32] = h) : h = P[32];
+            let az = (0, z.a)(h);
+            P[33] !== ak || P[34] !== az ? (j = a => {
                 null != a && az(ak, null != a.querySelector("[data-page-ssr-snapshot]"))
-            }, P[33] = ak, P[34] = az, P[35] = i) : i = P[35];
-            let aA = (0, B.a)(i);
-            P[36] !== ak || P[37] !== az ? (j = (0, d.jsx)(K, {
+            }, P[33] = ak, P[34] = az, P[35] = j) : j = P[35];
+            let aA = (0, z.a)(j);
+            P[36] !== ak || P[37] !== az ? (k = (0, d.jsx)(K, {
                 mountId: ak,
                 setClientCovered: az,
                 visible: !1
-            }), P[36] = ak, P[37] = az, P[38] = j) : j = P[38];
-            let aB = j,
+            }), P[36] = ak, P[37] = az, P[38] = k) : k = P[38];
+            let aB = k,
                 aC = !ai.invalidated && !ay && !aq && null != Q,
                 aD = aB;
             if (aC) {
@@ -354,11 +421,11 @@ export const __webpack_modules__ = {
                         initialNavigation: al,
                         snapshot: a,
                         setClientCovered: az
-                    }), P[39] = ai.browserFirstContent.get, P[40] = W, P[41] = V, P[42] = X, P[43] = al, P[44] = ak, P[45] = ad, P[46] = az, P[47] = aB, P[48] = a) : a = P[48], P[49] !== Q || P[50] !== a || P[51] !== aB ? (b = (0, d.jsx)(o.b, {
+                    }), P[39] = ai.browserFirstContent.get, P[40] = W, P[41] = V, P[42] = X, P[43] = al, P[44] = ak, P[45] = ad, P[46] = az, P[47] = aB, P[48] = a) : a = P[48], P[49] !== Q || P[50] !== a || P[51] !== aB ? (b = (0, d.jsx)(n.b, {
                         resolve: Q,
                         errorElement: aB,
                         children: a
-                    }), P[49] = Q, P[50] = a, P[51] = aB, P[52] = b) : b = P[52], P[53] !== ak || P[54] !== b || P[55] !== aB ? (c = (0, d.jsx)(m.Suspense, {
+                    }), P[49] = Q, P[50] = a, P[51] = aB, P[52] = b) : b = P[52], P[53] !== ak || P[54] !== b || P[55] !== aB ? (c = (0, d.jsx)(l.Suspense, {
                         fallback: aB,
                         children: b
                     }, ak), P[53] = ak, P[54] = b, P[55] = aB, P[56] = c) : c = P[56], aD = c
@@ -377,48 +444,48 @@ export const __webpack_modules__ = {
                 }
             }
             let aE = Z && null != Q ? aA : void 0;
-            P[66] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, h.b)("surface-e8iyms", "relative flex h-full min-h-0 flex-1 flex-col"), P[66] = l) : l = P[66], P[67] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, d.jsx)(q.a, {
+            P[66] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, f.b)("surface-e8iyms", "relative flex h-full min-h-0 flex-1 flex-col"), P[66] = m) : m = P[66], P[67] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, d.jsx)(p.a, {
                 "aria-hidden": "true",
                 "data-page-loading-spinner": "",
-                className: (0, h.b)("indicator-Wq6R_i", "pointer-events-none absolute inset-x-0 z-1 top-[var(--page-loading-top,0px)] bottom-0 m-auto icon-lg animate-spin text-secondary [animation-timing-function:linear] motion-reduce:[animation-play-state:paused]")
-            }), P[67] = n) : n = P[67];
+                className: (0, f.b)("indicator-Wq6R_i", "pointer-events-none absolute inset-x-0 z-1 top-[var(--page-loading-top,0px)] bottom-0 m-auto icon-lg animate-spin text-secondary [animation-timing-function:linear] motion-reduce:[animation-play-state:paused]")
+            }), P[67] = s) : s = P[67];
             let aF = ai.invalidated || ay || aq ? null : aa;
-            P[68] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, d.jsx)(r.a, {
+            P[68] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, d.jsx)(q.a, {
                 routeFallback: !0,
                 fillParent: !0,
                 debugName: "PageEditor"
-            }), P[68] = s) : s = P[68], P[69] !== ai.browserFirstContent.capture || P[70] !== Y ? (u = (0, d.jsx)(m.Suspense, {
-                fallback: s,
-                children: (0, d.jsx)(E.a, {
+            }), P[68] = u) : u = P[68], P[69] !== ai.browserFirstContent.capture || P[70] !== Y ? (v = (0, d.jsx)(l.Suspense, {
+                fallback: u,
+                children: (0, d.jsx)(C.a, {
                     value: ai.browserFirstContent.capture,
                     children: Y
                 })
-            }), P[69] = ai.browserFirstContent.capture, P[70] = Y, P[71] = u) : u = P[71], P[72] !== aF || P[73] !== u ? (w = (0, d.jsx)(E.c, {
+            }), P[69] = ai.browserFirstContent.capture, P[70] = Y, P[71] = v) : v = P[71], P[72] !== aF || P[73] !== v ? (x = (0, d.jsx)(C.c, {
                 value: aF,
-                children: u
-            }), P[72] = aF, P[73] = u, P[74] = w) : w = P[74], P[75] !== ak || P[76] !== w ? (x = (0, d.jsx)(E.b, {
+                children: v
+            }), P[72] = aF, P[73] = v, P[74] = x) : x = P[74], P[75] !== ak || P[76] !== x ? (y = (0, d.jsx)(C.b, {
                 value: ak,
-                children: w
-            }), P[75] = ak, P[76] = w, P[77] = x) : x = P[77], P[78] !== aC || P[79] !== ak || P[80] !== x ? (z = (0, d.jsx)(J, {
+                children: x
+            }), P[75] = ak, P[76] = x, P[77] = y) : y = P[77], P[78] !== aC || P[79] !== ak || P[80] !== y ? (B = (0, d.jsx)(J, {
                 mountId: ak,
                 coverEligible: aC,
-                children: x
-            }), P[78] = aC, P[79] = ak, P[80] = x, P[81] = z) : z = P[81];
+                children: y
+            }), P[78] = aC, P[79] = ak, P[80] = y, P[81] = B) : B = P[81];
             let aG = Z ? F.a.PageSnapshotCover : "inset-0";
-            return P[82] !== aG ? (A = (0, h.b)("pointer-events-none absolute flex min-h-0 flex-col", aG), P[82] = aG, P[83] = A) : A = P[83], P[84] === Symbol.for("react.memo_cache_sentinel") ? (D = (0, d.jsx)("div", {
+            return P[82] !== aG ? (D = (0, f.b)("pointer-events-none absolute flex min-h-0 flex-col", aG), P[82] = aG, P[83] = D) : D = P[83], P[84] === Symbol.for("react.memo_cache_sentinel") ? (E = (0, d.jsx)("div", {
                 ref: ab,
                 className: "pointer-events-auto shrink-0"
-            }), P[84] = D) : D = P[84], P[85] !== aD ? (I = (0, d.jsx)("div", {
+            }), P[84] = E) : E = P[84], P[85] !== aD ? (I = (0, d.jsx)("div", {
                 className: "relative min-h-0 flex-1",
                 children: aD
-            }), P[85] = aD, P[86] = I) : I = P[86], P[87] !== A || P[88] !== I ? (M = (0, d.jsxs)("div", {
-                className: A,
-                children: [D, I]
-            }), P[87] = A, P[88] = I, P[89] = M) : M = P[89], P[90] !== aE || P[91] !== z || P[92] !== M ? (O = (0, d.jsxs)("div", {
+            }), P[85] = aD, P[86] = I) : I = P[86], P[87] !== D || P[88] !== I ? (M = (0, d.jsxs)("div", {
+                className: D,
+                children: [E, I]
+            }), P[87] = D, P[88] = I, P[89] = M) : M = P[89], P[90] !== aE || P[91] !== B || P[92] !== M ? (O = (0, d.jsxs)("div", {
                 ref: aE,
-                className: l,
-                children: [n, z, M]
-            }), P[90] = aE, P[91] = z, P[92] = M, P[93] = O) : O = P[93], O
+                className: m,
+                children: [s, B, M]
+            }), P[90] = aE, P[91] = B, P[92] = M, P[93] = O) : O = P[93], O
         }
 
         function J(a) {
@@ -428,139 +495,113 @@ export const __webpack_modules__ = {
                     coverEligible: g,
                     children: h
                 } = a,
-                i = (0, k.x)(E.e, f),
-                j = g && !i,
-                l = j ? "true" : void 0;
-            return c[0] !== h || c[1] !== j || c[2] !== l ? (b = (0, d.jsx)("div", {
+                j = (0, i.x)(C.e, f),
+                k = g && !j,
+                l = k ? "true" : void 0;
+            return c[0] !== h || c[1] !== k || c[2] !== l ? (b = (0, d.jsx)("div", {
                 className: "flex min-h-0 flex-1 flex-col",
-                inert: j,
+                inert: k,
                 "aria-hidden": l,
                 children: h
-            }), c[0] = h, c[1] = j, c[2] = l, c[3] = b) : b = c[3], b
+            }), c[0] = h, c[1] = k, c[2] = l, c[3] = b) : b = c[3], b
         }
 
         function K(a) {
-            let b, c, f, g = (0, e.c)(15),
+            let b, c, g, h = (0, e.c)(15),
                 {
-                    mountId: i,
-                    initialNavigation: j,
+                    mountId: j,
+                    initialNavigation: k,
                     visible: l,
                     setClientCovered: m,
                     onRemove: n,
                     children: o
                 } = a,
-                p = void 0 !== j && j;
-            g[0] !== p || g[1] !== i || g[2] !== n || g[3] !== m || g[4] !== l ? (b = a => {
-                if (null != a) return m(i, l), () => {
-                    l && p && (0, D.e)(), m(i, !1), l && n?.(a)
+                p = void 0 !== k && k;
+            h[0] !== p || h[1] !== j || h[2] !== n || h[3] !== m || h[4] !== l ? (b = a => {
+                if (null != a) return m(j, l), () => {
+                    l && p && (0, B.e)(), m(j, !1), l && n?.(a)
                 }
-            }, g[0] = p, g[1] = i, g[2] = n, g[3] = m, g[4] = l, g[5] = b) : b = g[5];
+            }, h[0] = p, h[1] = j, h[2] = n, h[3] = m, h[4] = l, h[5] = b) : b = h[5];
             let q = b,
-                r = (0, k.x)(z.e, "2163293173"),
+                r = (0, i.x)(y.e, "2163293173"),
                 s = l ? "covered" : "uncovered",
                 t = r ? "[scrollbar-gutter:stable_both-edges]" : "scrollbar-stable";
-            g[6] !== t ? (c = (0, h.b)("pointer-events-auto absolute inset-0 overflow-x-hidden overflow-y-auto bg-surface scrollbar-on-hover", t), g[6] = t, g[7] = c) : c = g[7];
+            h[6] !== t ? (c = (0, f.b)("pointer-events-auto absolute inset-0 overflow-x-hidden overflow-y-auto bg-surface scrollbar-on-hover", t), h[6] = t, h[7] = c) : c = h[7];
             let u = !l,
                 v = l || void 0,
                 w = l ? o : null;
-            return g[8] !== q || g[9] !== s || g[10] !== c || g[11] !== u || g[12] !== v || g[13] !== w ? (f = (0, d.jsx)("div", {
+            return h[8] !== q || h[9] !== s || h[10] !== c || h[11] !== u || h[12] !== v || h[13] !== w ? (g = (0, d.jsx)("div", {
                 ref: q,
                 className: c,
                 hidden: u,
                 "data-page-ssr-snapshot": v,
                 children: w
-            }, s), g[8] = q, g[9] = s, g[10] = c, g[11] = u, g[12] = v, g[13] = w, g[14] = f) : f = g[14], f
+            }, s), h[8] = q, h[9] = s, h[10] = c, h[11] = u, h[12] = v, h[13] = w, h[14] = g) : g = h[14], g
         }
 
         function L(a) {
-            let b, c, h, i, j, o, q, r, t, u, v, x = (0, e.c)(43),
+            let b, c, f, g, h, n, p, q, r = (0, e.c)(31),
                 {
-                    mountId: z,
-                    getBrowserFirstContent: C,
-                    pageId: D,
-                    blockId: G,
-                    firstContent: H,
-                    initialNavigation: I,
-                    snapshot: J,
-                    setClientCovered: L
+                    mountId: s,
+                    getBrowserFirstContent: t,
+                    pageId: v,
+                    blockId: y,
+                    firstContent: A,
+                    initialNavigation: B,
+                    snapshot: F,
+                    setClientCovered: G
                 } = a,
-                N = (0, k.y)(y.a),
-                O = (0, m.useRef)(null),
-                P = (0, k.z)(p.f),
-                Q = (0, k.z)(p.j);
-            x[0] !== z || x[1] !== J.accountId || x[2] !== J.pageId || x[3] !== J.userId ? (b = {
-                mountId: z,
-                pageId: J.pageId,
-                accountId: J.accountId,
-                userId: J.userId
-            }, x[0] = z, x[1] = J.accountId, x[2] = J.pageId, x[3] = J.userId, x[4] = b) : b = x[4];
-            let R = (0, k.x)(E.f, b),
-                S = D !== J.pageId || P !== J.accountId || Q !== J.userId || R?.failed === !0,
-                [T, U] = (0, m.useState)(!1),
-                V = null != R && !R.failed && R.sequence >= J.throughSequence;
-            !T && V && U(!0);
-            let W = !S && !T && !V;
-            x[5] !== G || x[6] !== z || x[7] !== N || x[8] !== J.accountId || x[9] !== J.pageId || x[10] !== J.throughSequence || x[11] !== J.userId ? (c = a => {
-                let b = (0, l.d)(`page://${J.pageId}${a.ownerDocument.defaultView?.location.hash??""}`);
-                if (null != G || void 0 === G && b?.kind === "page" && null != b.blockId) return;
-                let c = N.get(E.f, {
-                    mountId: z,
-                    pageId: J.pageId,
-                    accountId: J.accountId,
-                    userId: J.userId
+                H = (0, i.y)(w.a);
+            r[0] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, k.a)(), r[0] = b) : b = r[0];
+            let I = (0, x.l)(b.fullWidth),
+                J = (0, l.useRef)(null),
+                L = (0, i.z)(o.f),
+                N = (0, i.z)(o.j);
+            r[1] !== s || r[2] !== F.accountId || r[3] !== F.pageId || r[4] !== F.userId ? (c = {
+                mountId: s,
+                pageId: F.pageId,
+                accountId: F.accountId,
+                userId: F.userId
+            }, r[1] = s, r[2] = F.accountId, r[3] = F.pageId, r[4] = F.userId, r[5] = c) : c = r[5];
+            let O = (0, i.x)(C.f, c),
+                P = v !== F.pageId || L !== F.accountId || N !== F.userId || O?.failed === !0,
+                [Q, R] = (0, l.useState)(!1);
+            r[6] !== O || r[7] !== F ? (f = (0, E.b)(F, O), r[6] = O, r[7] = F, r[8] = f) : f = r[8];
+            let S = f;
+            !Q && S && R(!0);
+            let T = !P && !Q && !S;
+            r[9] !== y || r[10] !== s || r[11] !== H || r[12] !== F ? (g = a => {
+                let b = (0, j.d)(`page://${F.pageId}${a.ownerDocument.defaultView?.location.hash??""}`);
+                if (null != y || void 0 === y && b?.kind === "page" && null != b.blockId) return;
+                let c = H.get(C.f, {
+                    mountId: s,
+                    pageId: F.pageId,
+                    accountId: F.accountId,
+                    userId: F.userId
                 });
-                !c?.failed && null != c && c.sequence >= J.throughSequence && N.get(p.f) === J.accountId && N.get(p.j) === J.userId && c.restoreScroll?.(a.scrollTop)
-            }, x[5] = G, x[6] = z, x[7] = N, x[8] = J.accountId, x[9] = J.pageId, x[10] = J.throughSequence, x[11] = J.userId, x[12] = c) : c = x[12];
-            let X = (0, B.a)(c);
-            return x[13] !== H || x[14] !== C || x[15] !== I || x[16] !== W ? (h = W && (0, d.jsx)(M, {
-                getBrowserFirstContent: C,
-                content: O,
-                firstContent: H,
-                initialNavigation: I
-            }), x[13] = H, x[14] = C, x[15] = I, x[16] = W, x[17] = h) : h = x[17], x[18] !== J.emoji ? (i = null != J.emoji && (0, d.jsx)("span", {
-                className: "flex size-16 items-center border border-transparent",
-                children: (0, d.jsx)(A.a, {
-                    emoji: J.emoji,
-                    size: "large"
-                })
-            }), x[18] = J.emoji, x[19] = i) : i = x[19], x[20] !== J.title ? (j = J.title || (0, d.jsx)(n.a, {
-                ...w.c.untitled
-            }), x[20] = J.title, x[21] = j) : j = x[21], x[22] !== j ? (o = (0, d.jsx)("h1", {
-                className: `${F.a.PageTitle} font-semibold break-words text-default`,
-                children: j
-            }), x[22] = j, x[23] = o) : o = x[23], x[24] !== J.reserveSpaceBreadcrumb ? (q = J.reserveSpaceBreadcrumb && (0, d.jsx)("div", {
-                "aria-hidden": "true",
-                className: "h-lh text-sm"
-            }), x[24] = J.reserveSpaceBreadcrumb, x[25] = q) : q = x[25], x[26] !== i || x[27] !== o || x[28] !== q ? (r = (0, d.jsxs)("div", {
-                className: "flex min-w-0 flex-col gap-2",
-                children: [i, o, q]
-            }), x[26] = i, x[27] = o, x[28] = q, x[29] = r) : r = x[29], x[30] !== J.html ? (t = (0, d.jsx)("div", {
-                "data-page-document-selection": !0,
-                className: "isolate col-[wide] min-w-0",
-                children: (0, d.jsx)("div", {
-                    className: `${f.a.root} ${F.a.PageDocumentTheme} px-0`,
-                    style: g.a,
-                    children: (0, d.jsx)("div", {
-                        ref: O,
-                        className: `ProseMirror ${f.a.content} ${F.a.PageDocument} ${F.a.PagePreview}`,
-                        contentEditable: !1,
-                        "data-page-static-preview": !0,
-                        dangerouslySetInnerHTML: {
-                            __html: J.html
-                        }
-                    })
-                })
-            }), x[30] = J.html, x[31] = t) : t = x[31], x[32] !== r || x[33] !== t ? (u = (0, d.jsx)(s.a, {
-                heading: r,
-                children: t
-            }), x[32] = r, x[33] = t, x[34] = u) : u = x[34], x[35] !== I || x[36] !== z || x[37] !== X || x[38] !== L || x[39] !== u || x[40] !== h || x[41] !== W ? (v = (0, d.jsxs)(K, {
-                mountId: z,
-                initialNavigation: I,
-                visible: W,
-                setClientCovered: L,
-                onRemove: X,
-                children: [h, u]
-            }), x[35] = I, x[36] = z, x[37] = X, x[38] = L, x[39] = u, x[40] = h, x[41] = W, x[42] = v) : v = x[42], v
+                (0, E.b)(F, c) && H.get(o.f) === F.accountId && H.get(o.j) === F.userId && c.restoreScroll?.(a.scrollTop)
+            }, r[9] = y, r[10] = s, r[11] = H, r[12] = F, r[13] = g) : g = r[13];
+            let U = (0, z.a)(g);
+            return r[14] !== A || r[15] !== t || r[16] !== B || r[17] !== T ? (h = T && (0, d.jsx)(M, {
+                getBrowserFirstContent: t,
+                content: J,
+                firstContent: A,
+                initialNavigation: B
+            }), r[14] = A, r[15] = t, r[16] = B, r[17] = T, r[18] = h) : h = r[18], r[19] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, d.jsx)(m.a, {
+                ...u.c.untitled
+            }), r[19] = n) : n = r[19], r[20] !== I || r[21] !== F ? (p = (0, d.jsx)(D.a, {
+                snapshot: F,
+                fullWidth: I,
+                contentRef: J,
+                untitled: n
+            }), r[20] = I, r[21] = F, r[22] = p) : p = r[22], r[23] !== B || r[24] !== s || r[25] !== U || r[26] !== G || r[27] !== h || r[28] !== p || r[29] !== T ? (q = (0, d.jsxs)(K, {
+                mountId: s,
+                initialNavigation: B,
+                visible: T,
+                setClientCovered: G,
+                onRemove: U,
+                children: [h, p]
+            }), r[23] = B, r[24] = s, r[25] = U, r[26] = G, r[27] = h, r[28] = p, r[29] = T, r[30] = q) : q = r[30], q
         }
 
         function M(a) {
@@ -576,10 +617,10 @@ export const __webpack_modules__ = {
                 a?.observeDocumentType("page")
             }, g[0] = j, g[1] = h, g[2] = b) : b = g[2], g[3] !== i.current || g[4] !== j || g[5] !== h || g[6] !== k ? (c = () => {
                 if (i.current?.querySelector('[elementtiming="codex-page-ssr-content"]') == null) return;
-                k && (0, D.d)();
+                k && (0, B.d)();
                 let a = void 0 === j ? h() : j;
                 a?.observeDocumentType("page"), a?.contentVisible()
-            }, g[3] = i.current, g[4] = j, g[5] = h, g[6] = k, g[7] = c) : c = g[7], g[8] !== b || g[9] !== c ? (f = (0, d.jsx)(x.a, {
+            }, g[3] = i.current, g[4] = j, g[5] = h, g[6] = k, g[7] = c) : c = g[7], g[8] !== b || g[9] !== c ? (f = (0, d.jsx)(v.a, {
                 requireVisibleAtPaint: !0,
                 onCommit: b,
                 onPaint: c
@@ -587,36 +628,53 @@ export const __webpack_modules__ = {
         }
 
         function N(a) {
-            let b = u.b.getDebugLoad(a ?? null)?.browserFirstContent;
+            let b = s.b.getDebugLoad(a ?? null)?.browserFirstContent;
             return {
                 get: () => b,
                 capture: c => {
-                    c === a && null == b && (b = u.b.getDebugLoad(a ?? null)?.browserFirstContent)
+                    c === a && null == b && (b = s.b.getDebugLoad(a ?? null)?.browserFirstContent)
                 }
             }
         }
     }),
-    GhgU: (function(a, b, c) {
+    JZmT: (function(a, b, c) {
+        var d = c("on57"),
+            e = c("l3dN");
+        c.d(b, {}, {
+            a: function(a) {
+                let {
+                    compact: b = !1,
+                    externalEditingControls: c = !1,
+                    headingOutside: f = !1,
+                    contentAlignment: g,
+                    fullWidth: h,
+                    padded: i,
+                    className: j
+                } = a, k = i ? h || c || void 0 : h;
+                return {
+                    "data-compact": b || void 0,
+                    "data-page-content-alignment": g,
+                    "data-native-controls": c || void 0,
+                    "data-page-full-width": k,
+                    className: (0, d.b)(e.a.PageContent, "@container grid", !b && !c && !k && "start" !== g && "[container-name:page-dil-badge-gutter]", b || f ? "gap-y-0" : "gap-y-6", b ? "ps-[var(--page-attribution-padding,--spacing(4))] pe-4" : "ps-[var(--page-attribution-padding,var(--page-control-gutter))] pe-(--page-control-gutter) in-[[data-page-responsive-comments=markers]]:ps-[var(--page-attribution-padding,clamp(16px,calc(100%_-_572px_-_48px),48px))]", !b && "in-data-[page-comments-docked]:pe-[clamp(0px,calc(100%_-_--spacing(80)),var(--page-control-gutter))]", c ? "[--page-control-gutter:--spacing(10)] [--page-document-end-space:--spacing(16)] [--color-background-text-selection:--alpha(var(--color-text)/20%)]" : "[--page-control-gutter:--spacing(14)] [--page-document-end-space:50cqh] in-[[data-page-responsive-comments]]:[--page-control-gutter:--spacing(12)]", !b && "in-[[data-mobile-page-platform]]:[--page-control-gutter:--spacing(7)]! in-[[data-mobile-page-platform]]:ps-[var(--page-attribution-padding,var(--page-control-gutter))]!", "start" === g && "w-full max-w-[var(--page-content-max-width,none)]", i ? b || c ? "py-4" : f ? "pt-4 pb-panel" : "pt-10 pb-panel" : j)
+                }
+            }
+        })
+    }),
+    xg5g: (function(a, b, c) {
         c.d(b, {
-            a: () => p,
-            b: () => r,
-            c: () => s
+            a: () => i,
+            b: () => j
         });
         var d = c("ABep"),
             e = c("QosV"),
             f = c("on57"),
-            g = c("IPUh"),
-            h = c("CJrD"),
-            i = c("zd8w"),
-            j = c("Wf1j"),
-            k = c("X3K1"),
-            l = c("ADAj"),
-            m = c("l3dN");
+            g = c("l3dN");
 
-        function n() {
+        function h() {
             let a, b, c = (0, e.c)(2);
             return c[0] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, d.jsx)("span", {
-                className: (0, f.b)(m.a.PageReadingWidthMeasure, "invisible absolute h-0 w-[min(100cqi,var(--page-default-reading-width))] overflow-clip"),
+                className: (0, f.b)(g.a.PageReadingWidthMeasure, "invisible absolute h-0 w-[min(100cqi,var(--page-default-reading-width))] overflow-clip"),
                 "data-page-comment-content-width": !0
             }), c[0] = a) : a = c[0], c[1] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, d.jsxs)("span", {
                 "aria-hidden": !0,
@@ -624,169 +682,54 @@ export const __webpack_modules__ = {
                 children: [a, (0, d.jsx)("span", {
                     className: "@container relative block [inline-size:max(100cqi,var(--page-default-reading-width))]",
                     children: (0, d.jsx)("span", {
-                        className: (0, f.b)(m.a.PageReadingWidthMeasure, "invisible absolute h-0 w-[min(100cqi,var(--page-default-reading-width))] max-w-0 overflow-clip"),
+                        className: (0, f.b)(g.a.PageReadingWidthMeasure, "invisible absolute h-0 w-[min(100cqi,var(--page-default-reading-width))] max-w-0 overflow-clip"),
                         "data-page-comment-minimum-width": !0
                     })
                 })]
             }), c[1] = b) : b = c[1], b
         }
 
-        function o(a, b, c) {
-            if (!(b instanceof Element) || b.closest("[data-page-document-viewport]") !== a.closest("[data-page-document-viewport]")) return !1;
-            if (null != b.closest("[data-page-document-trailing-space]")) return !0;
-            if (!b.contains(a)) return !1;
-            let d = a.getBoundingClientRect();
-            return d.height > 0 && c >= d.bottom
-        }
-
-        function p(a) {
-            let b, c, g, i, j, k, m, o, p, r, s, t, u, v, w = (0, e.c)(29);
-            w[0] !== a ? ({
-                heading: c,
-                externalEditingControls: k,
-                messages: i,
-                compact: m,
-                headingOutside: o,
-                headingRef: g,
-                children: b,
-                ...j
-            } = a, w[0] = a, w[1] = b, w[2] = c, w[3] = g, w[4] = i, w[5] = j, w[6] = k, w[7] = m, w[8] = o) : (b = w[1], c = w[2], g = w[3], i = w[4], j = w[5], k = w[6], m = w[7], o = w[8]);
-            let x = void 0 !== k && k,
-                y = void 0 !== m && m,
-                z = void 0 !== o && o;
-            w[9] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, h.a)(), w[9] = p) : p = w[9];
-            let A = (0, l.l)(p.fullWidth),
-                B = z ? "pt-4 pb-panel" : "pt-10 pb-panel",
-                C = y || x ? "py-4" : B,
-                D = A || x || void 0;
-            w[10] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, d.jsx)(n, {}), w[10] = r) : r = w[10];
-            let E = y && "mb-4";
-            return w[11] !== E ? (s = (0, f.b)("flex flex-col gap-2 empty:hidden", E), w[11] = E, w[12] = s) : s = w[12], w[13] !== i || w[14] !== s ? (t = (0, d.jsx)("div", {
-                className: s,
-                children: i
-            }), w[13] = i, w[14] = s, w[15] = t) : t = w[15], w[16] !== c || w[17] !== g || w[18] !== t ? (u = (0, d.jsxs)("div", {
-                ref: g,
+        function i(a) {
+            let b, c, g, i, j, k = (0, e.c)(13),
+                {
+                    heading: l,
+                    headingRef: m,
+                    messages: n,
+                    compact: o,
+                    children: p
+                } = a;
+            k[0] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, d.jsx)(h, {}), k[0] = b) : b = k[0];
+            let q = o && "mb-4";
+            return k[1] !== q ? (c = (0, f.b)("flex flex-col gap-2 empty:hidden", q), k[1] = q, k[2] = c) : c = k[2], k[3] !== n || k[4] !== c ? (g = (0, d.jsx)("div", {
+                className: c,
+                children: n
+            }), k[3] = n, k[4] = c, k[5] = g) : g = k[5], k[6] !== l || k[7] !== m || k[8] !== g ? (i = (0, d.jsxs)("div", {
+                ref: m,
                 className: "col-[reading] flex w-full max-w-(--page-reading-width) min-w-0 flex-col gap-6",
                 "data-page-reading-column": !0,
-                children: [r, t, c]
-            }), w[16] = c, w[17] = g, w[18] = t, w[19] = u) : u = w[19], w[20] !== b || w[21] !== y || w[22] !== x || w[23] !== z || w[24] !== j || w[25] !== u || w[26] !== C || w[27] !== D ? (v = (0, d.jsxs)(q, {
-                ...j,
-                compact: y,
-                externalEditingControls: x,
-                headingOutside: z,
-                className: C,
-                "data-page-full-width": D,
-                children: [u, b]
-            }), w[20] = b, w[21] = y, w[22] = x, w[23] = z, w[24] = j, w[25] = u, w[26] = C, w[27] = D, w[28] = v) : v = w[28], v
+                children: [b, g, l]
+            }), k[6] = l, k[7] = m, k[8] = g, k[9] = i) : i = k[9], k[10] !== p || k[11] !== i ? (j = (0, d.jsxs)(d.Fragment, {
+                children: [i, p]
+            }), k[10] = p, k[11] = i, k[12] = j) : j = k[12], j
         }
 
-        function q(a) {
-            let b, c, h, i, j, k, l, n, o, p = (0, e.c)(24);
-            p[0] !== a ? ({
-                as: i,
-                compact: j,
-                contentAlignment: c,
-                externalEditingControls: k,
-                headingOutside: l,
-                className: b,
-                ...h
-            } = a, p[0] = a, p[1] = b, p[2] = c, p[3] = h, p[4] = i, p[5] = j, p[6] = k, p[7] = l) : (b = p[1], c = p[2], h = p[3], i = p[4], j = p[5], k = p[6], l = p[7]);
-            let q = void 0 !== j && j,
-                r = void 0 !== k && k,
-                s = void 0 !== l && l,
-                t = "section" === (void 0 === i ? "div" : i) ? g.a.section : g.a.div,
-                u = !q && !r && !h["data-page-full-width"] && "start" !== c && "[container-name:page-dil-badge-gutter]",
-                v = q || s ? "gap-y-0" : "gap-y-6",
-                w = q ? "ps-[var(--page-attribution-padding,--spacing(4))] pe-4" : "ps-[var(--page-attribution-padding,var(--page-control-gutter))] pe-(--page-control-gutter) in-[[data-page-responsive-comments=markers]]:ps-[var(--page-attribution-padding,clamp(16px,calc(100%_-_572px_-_48px),48px))]",
-                x = !q && "in-data-[page-comments-docked]:pe-[clamp(0px,calc(100%_-_--spacing(80)),var(--page-control-gutter))]",
-                y = r ? "[--page-control-gutter:--spacing(10)] [--page-document-end-space:--spacing(16)] [--color-background-text-selection:--alpha(var(--color-text)/20%)]" : "[--page-control-gutter:--spacing(14)] [--page-document-end-space:50cqh] in-[[data-page-responsive-comments]]:[--page-control-gutter:--spacing(12)]",
-                z = !q && "in-[[data-mobile-page-platform]]:[--page-control-gutter:--spacing(7)]! in-[[data-mobile-page-platform]]:ps-[var(--page-attribution-padding,var(--page-control-gutter))]!",
-                A = "start" === c && "w-full max-w-[var(--page-content-max-width,none)]";
-            p[8] !== b || p[9] !== z || p[10] !== A || p[11] !== u || p[12] !== v || p[13] !== w || p[14] !== x || p[15] !== y ? (n = (0, f.b)(m.a.PageContent, "@container grid", u, v, w, x, y, z, A, b), p[8] = b, p[9] = z, p[10] = A, p[11] = u, p[12] = v, p[13] = w, p[14] = x, p[15] = y, p[16] = n) : n = p[16];
-            let B = q || void 0,
-                C = r || void 0;
-            return p[17] !== t || p[18] !== c || p[19] !== h || p[20] !== n || p[21] !== B || p[22] !== C ? (o = (0, d.jsx)(t, {
-                ...h,
-                className: n,
-                "data-compact": B,
-                "data-page-content-alignment": c,
-                "data-native-controls": C
-            }), p[17] = t, p[18] = c, p[19] = h, p[20] = n, p[21] = B, p[22] = C, p[23] = o) : o = p[23], o
-        }
-
-        function r(a) {
-            let b, c, f, g = (0, e.c)(7),
+        function j(a) {
+            let b, c, h = (0, e.c)(6),
                 {
-                    pageId: h
+                    externalEditingControls: i,
+                    ref: j
                 } = a,
-                i = (0, j.a)();
-            return g[0] !== i ? (b = i.formatMessage({
-                id: "codex.space.page.contentLoading",
-                defaultMessage: "Loading page content"
-            }), g[0] = i, g[1] = b) : b = g[1], g[2] !== h ? (c = (0, d.jsx)(k.b, {
-                seed: h,
-                size: "md",
-                variant: "chatgpt-project"
-            }), g[2] = h, g[3] = c) : c = g[3], g[4] !== b || g[5] !== c ? (f = (0, d.jsx)("div", {
-                className: "col-[reading] w-full max-w-(--page-reading-width) min-w-0",
-                "aria-label": b,
-                role: "status",
-                children: c
-            }), g[4] = b, g[5] = c, g[6] = f) : f = g[6], f
-        }
-
-        function s(a) {
-            let b, c, g, h, j = (0, e.c)(10),
-                {
-                    editor: k,
-                    externalEditingControls: l,
-                    onTouch: n
-                } = a,
-                p = void 0 !== l && l,
-                q = (0, i.useRef)(null),
-                r = (0, i.useEffectEvent)(n);
-            j[0] !== k || j[1] !== r ? (b = () => {
-                let a = q.current?.closest("[data-page-document-viewport]");
-                if (null != a && null != k) return function(a, b, c) {
-                    let d = new AbortController,
-                        {
-                            signal: e
-                        } = d,
-                        f = null,
-                        g = () => {
-                            f = null
-                        };
-                    return a.addEventListener("pointerdown", a => {
-                        f = a.isPrimary && "touch" === a.pointerType && o(b, a.target, a.clientY) ? a : null
-                    }, {
-                        signal: e
-                    }), a.addEventListener("pointerup", a => {
-                        null != f && (a.pointerId !== f.pointerId || a.timeStamp - f.timeStamp >= 350 || Math.hypot(a.clientX - f.clientX, a.clientY - f.clientY) > 8) && g()
-                    }, {
-                        signal: e
-                    }), a.addEventListener("pointercancel", g, {
-                        signal: e
-                    }), a.addEventListener("contextmenu", g, {
-                        signal: e
-                    }), a.addEventListener("click", a => {
-                        let d = f?.clientY;
-                        g(), null != d && !a.defaultPrevented && o(b, a.target, d) && c()
-                    }, {
-                        signal: e
-                    }), () => d.abort()
-                }(a, k, r)
-            }, j[0] = k, j[1] = r, j[2] = b) : b = j[2], j[3] !== k ? (c = [k], j[3] = k, j[4] = c) : c = j[4], (0, i.useEffect)(b, c);
-            let s = p ? "h-16" : "h-[50cqh]";
-            j[5] !== s ? (g = (0, f.b)(m.a.PageDocumentEnd, s), j[5] = s, j[6] = g) : g = j[6];
-            let t = p || void 0;
-            return j[7] !== g || j[8] !== t ? (h = (0, d.jsx)("div", {
+                k = i ? "h-16" : "h-[50cqh]";
+            h[0] !== k ? (b = (0, f.b)(g.a.PageDocumentEnd, k), h[0] = k, h[1] = b) : b = h[1];
+            let l = i || void 0;
+            return h[2] !== j || h[3] !== b || h[4] !== l ? (c = (0, d.jsx)("div", {
                 "aria-hidden": !0,
-                className: g,
-                "data-native-controls": t,
+                className: b,
+                "data-native-controls": l,
                 "data-page-document-end": !0,
                 "data-page-document-trailing-space": !0,
-                ref: q
-            }), j[7] = g, j[8] = t, j[9] = h) : h = j[9], h
+                ref: j
+            }), h[2] = j, h[3] = b, h[4] = l, h[5] = c) : c = h[5], c
         }
     }),
     EBQV: (function(b) {
@@ -797,54 +740,54 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as a
-} from "./633146.081bb74af2.js";
+} from "./633146.fc4344fd4e.js";
 import * as b from "./680612.f818e16290.js";
 a.C(b);
-import * as c from "./418851.3dd531d98c.js";
+import * as c from "./418851.7489c77aa2.js";
 a.C(c);
 import * as d from "./109308.6f7ef1dfb7.js";
 a.C(d);
 import * as e from "./399565.9b329429cf.js";
 a.C(e);
-import * as f from "./257798.b2cef8ee58.js";
+import * as f from "./257798.4288e75d31.js";
 a.C(f);
 import * as g from "./447351.7cc0e9b0b6.js";
 a.C(g);
-import * as h from "./617936.6949aaf4ba.js";
+import * as h from "./617936.161c7c6e6d.js";
 a.C(h);
-import * as i from "./807489.f042062875.js";
+import * as i from "./807489.fe22b9e578.js";
 a.C(i);
-import * as j from "./337882.4e42e1acb1.js";
+import * as j from "./337882.0272c6a778.js";
 a.C(j);
-import * as k from "./955979.d9b13c3bd6.js";
+import * as k from "./955979.c209a5d466.js";
 a.C(k);
-import * as l from "./646436.734338f386.js";
+import * as l from "./646436.c251af92a0.js";
 a.C(l);
-import * as m from "./7078.03de8482f4.js";
+import * as m from "./7078.16371f0bee.js";
 a.C(m);
-import * as n from "./200429.fd25f0d445.js";
+import * as n from "./200429.4605170080.js";
 a.C(n);
-import * as o from "./698524.97e67971eb.js";
+import * as o from "./698524.70931f0a68.js";
 a.C(o);
-import * as p from "./956483.288de823d1.js";
+import * as p from "./956483.bcbfc29b82.js";
 a.C(p);
-import * as q from "./87162.5da55a22c4.js";
+import * as q from "./87162.548d9be3b1.js";
 a.C(q);
-import * as r from "./396705.dfb062b590.js";
+import * as r from "./396705.8c13004614.js";
 a.C(r);
-import * as s from "./155568.4b5e04f855.js";
+import * as s from "./155568.edc1b83d08.js";
 a.C(s);
-import * as t from "./731863.bcf69f255b.js";
+import * as t from "./731863.f9a145cb61.js";
 a.C(t);
-import * as u from "./767086.1be20c2e57.js";
+import * as u from "./767086.c9b0416973.js";
 a.C(u);
-import * as v from "./76629.aab019665f.js";
+import * as v from "./76629.9d18312d19.js";
 a.C(v);
 import * as w from "./226913.52b9bcbf34.js";
 a.C(w);
 import * as x from "./227786.952cdb546b.js";
 a.C(x);
-import * as y from "./787702.bb6d792dcd.js";
+import * as y from "./787702.042549fbeb.js";
 a.C(y);
 var z = a(a.s = "Qtyt"),
     A = z.a,
