@@ -30930,6 +30930,7 @@ ${g.slice(g.indexOf("\n")+1)}`
                                 return;
                             case "open-in-browser":
                                 return void
+
                                 function(a, b, c) {
                                     let d = (0, v.b)(a) ?? a;
                                     if ((0, h.Ai)(d)) return window.location.assign(d);

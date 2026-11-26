@@ -36192,6 +36192,7 @@ ${e.body}`
                                     if (e(b) && f(b, d, c)) return void(h(), l?.(a - k));
                                     c(b)
                                 }
+
                             function c(a) {
                                 for (let c = a; null != c && !b.has(c); c = c.parentElement) b.add(c), n.observe(c, {
                                     attributes: !0,
