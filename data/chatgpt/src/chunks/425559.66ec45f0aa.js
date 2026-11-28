@@ -1,0 +1,1446 @@
+export const __rspack_esm_ids = [425559];
+export const __webpack_modules__ = {
+    vSCF: (function(a, b, c) {
+        var d = c("ABep"),
+            e = c("Bbed"),
+            f = c("N55g");
+        let g = (0, e.a)(async () => (await Promise.all([c.e(418851), c.e(109308), c.e(399565), c.e(257798), c.e(447351), c.e(617936), c.e(807489), c.e(337882), c.e(955979), c.e(646436), c.e(7078), c.e(200429), c.e(698524), c.e(956483), c.e(87162), c.e(396705), c.e(155568), c.e(731863), c.e(767086), c.e(76629), c.e(226913), c.e(753405), c.e(321957), c.e(585419), c.e(877700), c.e(843292), c.e(353230), c.e(745756), c.e(81461), c.e(557325), c.e(259288), c.e(311116), c.e(595833), c.e(139244), c.e(288998), c.e(839342), c.e(221469), c.e(499790), c.e(301030), c.e(953533), c.e(778901), c.e(383559), c.e(587936), c.e(909395), c.e(848904), c.e(452048), c.e(684598), c.e(681678), c.e(5636), c.e(50536), c.e(543588), c.e(167649), c.e(17983), c.e(236145), c.e(33190), c.e(16212), c.e(722053), c.e(612129), c.e(199547)]).then(() => c("dzCf"))).ChatGptDilDirectiveRenderer, {
+            errorFallback: (0, d.jsx)(f.a, {})
+        });
+        c.d(b, {}, {
+            ChatGptDilDirectiveRenderer: g
+        })
+    }),
+    greq: (function(a, b, c) {
+        c.d(b, {
+            a: () => n,
+            b: () => m,
+            c: () => o,
+            d: () => l
+        });
+        var d = c("XtHz"),
+            e = c("zd8w"),
+            f = c("PFjh"),
+            g = c("hJIv"),
+            h = c("Q840"),
+            i = c("fVOX"),
+            j = c("OWtl");
+        c("WFY2");
+        let k = (0, h.u)(j.a, a => {
+            let {
+                scope: b
+            } = a, c = 0, e = 0, g = (a, c, d) => {
+                try {
+                    (0, f.c)(b).count("default", "chatgpt.model_written_dil.v2.startup.report_suppressed", {
+                        result: a,
+                        report_cutoff: c,
+                        reason: d,
+                        web_frontend: "codex_webview"
+                    })
+                } catch {}
+            }, h = (a, b) => c < 10 || (g(a, b, "page_report_limit"), !1);
+            return {
+                canPublish: h,
+                recordSuppression: g,
+                publish: (a, f, j) => {
+                    if (!h(f.result, f.report_cutoff)) return !1;
+                    try {
+                        let h, k = (0, d.h)(f);
+                        if (k > d.b ? h = "report_byte_limit" : e + k > 262144 && (h = "page_byte_limit"), null != h) return g(f.result, f.report_cutoff, h), !1;
+                        return c++, e += k, b.get(i.a).log({
+                            message: a,
+                            status: j ? "info" : "error",
+                            context: f
+                        }), !0
+                    } catch {
+                        return g(f.result, f.report_cutoff, "observer_error"), !1
+                    }
+                }
+            }
+        });
+
+        function l(a) {
+            let b, c = (b = (0, f.c)(a), {
+                    count: (a, c) => b.count("default", a, {
+                        ...c,
+                        web_frontend: "codex_webview"
+                    }),
+                    hist: (a, c, d) => b.hist("default", a, {
+                        ...c,
+                        web_frontend: "codex_webview"
+                    }, d)
+                }),
+                e = a.get(g.a),
+                h = a.get(k),
+                i = (0, d.e)(c, {
+                    enabled: () => e,
+                    reporting: h
+                });
+            return {
+                metrics: c,
+                diagnosticsEnabled: e,
+                render: (0, d.d)({
+                    metrics: c,
+                    diagnosticsExpected: e,
+                    startupReporting: e ? h : void 0,
+                    presentation: i
+                }),
+                presentation: i
+            }
+        }
+        let m = (0, e.createContext)(null),
+            n = (0, e.createContext)(null),
+            o = (0, e.createContext)(void 0)
+    }),
+    s60H: (function(a, b, c) {
+        c("QdUF"), c("M8lA"), c("bWX0"), c.d(b, {}, {
+            a: function(a) {}
+        })
+    }),
+    erFs: (function(a, b, c) {
+        c.d(b, {
+            a: () => $,
+            b: () => _
+        });
+        var d = c("FS1B"),
+            e = c("gIcl"),
+            f = c("Cslg"),
+            g = c("X6Vn"),
+            h = c("yGJW"),
+            i = c("O666"),
+            j = c("LulU"),
+            k = c("k5RO"),
+            l = c("cQW3"),
+            m = c("Tywu"),
+            n = c("ABep"),
+            o = c("QosV");
+        let p = {
+            $type: "protobuf_analytics_events.v1.ChatgptImagegenPromptSharingAction"
+        };
+        var q = c("T0Rc"),
+            r = c("Q840"),
+            s = c("zd8w"),
+            t = c("Wf1j"),
+            u = c("oyxz"),
+            v = c("EShr"),
+            w = c("OWtl"),
+            x = c("hZax"),
+            y = c("eShZ"),
+            z = c("CKur"),
+            A = c("r9i9"),
+            B = c("NGN7"),
+            C = c("aFoA"),
+            D = c("OOaz"),
+            E = c("dQRk"),
+            F = c("jfiJ"),
+            G = c("Sm6l"),
+            H = c("bf6R"),
+            I = c("MM0V"),
+            J = c("JNtf"),
+            K = c("mUDD");
+
+        function L(a) {
+            return !!a.title.trim() && !!a.prompt.trim() && Array.from(a.title.trim()).length <= 200 && Array.from(a.prompt).length <= 1e5
+        }
+        var M = c("zLIa");
+
+        function N(a) {
+            let b, c, d, e, f, g, h, i = (0, o.c)(19),
+                {
+                    content: j,
+                    onChange: k,
+                    disabled: l,
+                    autoFocus: m
+                } = a,
+                p = void 0 !== l && l,
+                q = void 0 !== m && m;
+            return i[0] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, n.jsx)("label", {
+                className: "text-sm font-medium select-none",
+                htmlFor: "image-prompt-title",
+                children: (0, n.jsx)(u.a, {
+                    id: "imagePromptShare.titleLabel",
+                    defaultMessage: "Title"
+                })
+            }), i[0] = b) : b = i[0], i[1] !== j || i[2] !== k ? (c = a => k({
+                ...j,
+                title: a.target.value
+            }), i[1] = j, i[2] = k, i[3] = c) : c = i[3], i[4] !== q || i[5] !== j.title || i[6] !== c ? (d = (0, n.jsxs)(K.f, {
+                children: [b, (0, n.jsx)(M.c, {
+                    id: "image-prompt-title",
+                    autoFocus: q,
+                    name: "title",
+                    variant: "compact",
+                    required: !0,
+                    rows: 1,
+                    maxLength: 400,
+                    value: j.title,
+                    onChange: c
+                })]
+            }), i[4] = q, i[5] = j.title, i[6] = c, i[7] = d) : d = i[7], i[8] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)("label", {
+                className: "text-sm font-medium select-none",
+                htmlFor: "image-prompt-text",
+                children: (0, n.jsx)(u.a, {
+                    id: "imagePromptShare.promptLabel",
+                    defaultMessage: "Prompt"
+                })
+            }), i[8] = e) : e = i[8], i[9] !== j || i[10] !== k ? (f = a => k({
+                ...j,
+                prompt: a.target.value
+            }), i[9] = j, i[10] = k, i[11] = f) : f = i[11], i[12] !== j.prompt || i[13] !== f ? (g = (0, n.jsxs)(K.f, {
+                children: [e, (0, n.jsx)(M.c, {
+                    id: "image-prompt-text",
+                    name: "prompt",
+                    variant: "compact",
+                    required: !0,
+                    rows: 2,
+                    maxLength: 2e5,
+                    value: j.prompt,
+                    onChange: f
+                })]
+            }), i[12] = j.prompt, i[13] = f, i[14] = g) : g = i[14], i[15] !== p || i[16] !== d || i[17] !== g ? (h = (0, n.jsxs)("fieldset", {
+                className: "flex min-w-0 flex-col gap-4",
+                disabled: p,
+                children: [d, g]
+            }), i[15] = p, i[16] = d, i[17] = g, i[18] = h) : h = i[18], h
+        }
+
+        function O(a) {
+            let b, c, d, e, f, g, h, i, j, k, l, m, p, q, r, v, w, x, z, A, B = (0, o.c)(54),
+                {
+                    content: C,
+                    onSave: D,
+                    onClose: E,
+                    onCloseAutoFocus: F
+                } = a,
+                M = (0, t.a)(),
+                [O, P] = (0, s.useState)(C),
+                [Q, R] = (0, s.useState)(!1),
+                [S, T] = (0, s.useState)(null);
+            B[0] !== O || B[1] !== Q || B[2] !== E || B[3] !== D ? (b = async function() {
+                if (!Q && L(O)) {
+                    R(!0), T(null);
+                    try {
+                        await D(O), E()
+                    } catch (a) {
+                        T(a instanceof y.FetchError && "prompt_share_not_publishable" === a.errorCode ? "blocked" : "failed")
+                    }
+                    R(!1)
+                }
+            }, B[0] = O, B[1] = Q, B[2] = E, B[3] = D, B[4] = b) : b = B[4];
+            let U = b,
+                V = !Q;
+            return B[5] !== F ? (c = {
+                "aria-describedby": void 0,
+                onCloseAutoFocus: F
+            }, B[5] = F, B[6] = c) : c = B[6], B[7] !== Q || B[8] !== E ? (d = a => {
+                a || Q || E()
+            }, B[7] = Q, B[8] = E, B[9] = d) : d = B[9], B[10] !== U ? (e = a => {
+                a.preventDefault(), a.stopPropagation(), U()
+            }, B[10] = U, B[11] = e) : e = B[11], B[12] !== M ? (f = M.formatMessage({
+                id: "imagePromptShare.editBack",
+                defaultMessage: "Back"
+            }), B[12] = M, B[13] = f) : f = B[13], B[14] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, n.jsx)(H.jc, {}), B[14] = g) : g = B[14], B[15] !== Q || B[16] !== E || B[17] !== f ? (h = (0, n.jsx)(G.a, {
+                color: "ghost",
+                size: "icon",
+                disabled: Q,
+                "aria-label": f,
+                onClick: E,
+                children: g
+            }), B[15] = Q, B[16] = E, B[17] = f, B[18] = h) : h = B[18], B[19] === Symbol.for("react.memo_cache_sentinel") ? (i = (0, n.jsx)(K.d, {
+                title: (0, n.jsx)(J.f, {
+                    children: (0, n.jsx)(u.a, {
+                        id: "imagePromptShare.editTitle",
+                        defaultMessage: "Edit image prompt"
+                    })
+                })
+            }), B[19] = i) : i = B[19], B[20] !== h ? (j = (0, n.jsxs)("div", {
+                className: "flex items-center gap-2 pe-8",
+                children: [h, i]
+            }), B[20] = h, B[21] = j) : j = B[21], B[22] === Symbol.for("react.memo_cache_sentinel") ? (k = a => {
+                P(a), T(null)
+            }, B[22] = k) : k = B[22], B[23] !== O || B[24] !== Q ? (l = (0, n.jsx)(K.e, {
+                spacing: "large",
+                children: (0, n.jsx)(N, {
+                    content: O,
+                    disabled: Q,
+                    autoFocus: !0,
+                    onChange: k
+                })
+            }), B[23] = O, B[24] = Q, B[25] = l) : l = B[25], B[26] !== S ? (m = null != S && (0, n.jsx)(K.e, {
+                children: (0, n.jsx)(I.a, {
+                    type: "error",
+                    role: "alert",
+                    content: "blocked" === S ? (0, n.jsx)(u.a, {
+                        id: "imagePromptShare.editBlocked",
+                        defaultMessage: "This prompt can\u2019t be shared. Edit it and try again."
+                    }) : (0, n.jsx)(u.a, {
+                        id: "imagePromptShare.editFailed",
+                        defaultMessage: "Couldn\u2019t save your edits. Try again."
+                    })
+                })
+            }), B[26] = S, B[27] = m) : m = B[27], B[28] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, n.jsx)(u.a, {
+                id: "imagePromptShare.editCancel",
+                defaultMessage: "Cancel"
+            }), B[28] = p) : p = B[28], B[29] !== Q || B[30] !== E ? (q = (0, n.jsx)(G.a, {
+                color: "outline",
+                disabled: Q,
+                onClick: E,
+                children: p
+            }), B[29] = Q, B[30] = E, B[31] = q) : q = B[31], B[32] !== O || B[33] !== Q ? (r = !L(O) || Q, B[32] = O, B[33] = Q, B[34] = r) : r = B[34], B[35] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, n.jsx)(u.a, {
+                id: "imagePromptShare.editSave",
+                defaultMessage: "Save"
+            }), B[35] = v) : v = B[35], B[36] !== Q || B[37] !== r ? (w = (0, n.jsx)(G.a, {
+                type: "submit",
+                color: "primary",
+                loading: Q,
+                disabled: r,
+                children: v
+            }), B[36] = Q, B[37] = r, B[38] = w) : w = B[38], B[39] !== q || B[40] !== w ? (x = (0, n.jsxs)(K.c, {
+                expandSingleButton: !1,
+                children: [q, w]
+            }), B[39] = q, B[40] = w, B[41] = x) : x = B[41], B[42] !== j || B[43] !== l || B[44] !== m || B[45] !== x || B[46] !== e ? (z = (0, n.jsxs)(K.b, {
+                as: "form",
+                size: "viewport",
+                onSubmit: e,
+                children: [j, l, m, x]
+            }), B[42] = j, B[43] = l, B[44] = m, B[45] = x, B[46] = e, B[47] = z) : z = B[47], B[48] !== Q || B[49] !== V || B[50] !== z || B[51] !== c || B[52] !== d ? (A = (0, n.jsx)(J.a, {
+                open: !0,
+                size: "share",
+                variant: "opaque",
+                showDialogClose: V,
+                shouldIgnoreClickOutside: Q,
+                contentProps: c,
+                onOpenChange: d,
+                children: z
+            }), B[48] = Q, B[49] = V, B[50] = z, B[51] = c, B[52] = d, B[53] = A) : A = B[53], A
+        }
+
+        function P(a) {
+            let b, c, d, e, f, g, h, i, j, k, l, m = (0, o.c)(28),
+                {
+                    content: p,
+                    previewSrc: q,
+                    alt: r,
+                    disabled: u,
+                    onSave: v
+                } = a,
+                w = (0, t.a)(),
+                [x, y] = (0, s.useState)(!1),
+                z = (0, s.useRef)(null);
+            return m[0] !== r || m[1] !== q ? (b = null != q && (0, n.jsx)("img", {
+                className: "size-20 rounded-lg object-cover",
+                alt: r,
+                src: q,
+                referrerPolicy: "no-referrer"
+            }), m[0] = r, m[1] = q, m[2] = b) : b = m[2], m[3] !== w ? (c = w.formatMessage({
+                id: "imagePromptShare.edit",
+                defaultMessage: "Edit image prompt"
+            }), m[3] = w, m[4] = c) : c = m[4], m[5] === Symbol.for("react.memo_cache_sentinel") ? (d = () => y(!0), e = (0, n.jsx)(H.ng, {}), m[5] = d, m[6] = e) : (d = m[5], e = m[6]), m[7] !== u || m[8] !== c ? (f = (0, n.jsx)(G.a, {
+                ref: z,
+                className: "ms-auto",
+                color: "ghost",
+                size: "icon",
+                disabled: u,
+                "aria-label": c,
+                onClick: d,
+                children: e
+            }), m[7] = u, m[8] = c, m[9] = f) : f = m[9], m[10] !== b || m[11] !== f ? (g = (0, n.jsxs)("div", {
+                className: "flex items-start justify-between gap-3",
+                children: [b, f]
+            }), m[10] = b, m[11] = f, m[12] = g) : g = m[12], m[13] !== p.title ? (h = (0, n.jsx)("p", {
+                className: "line-clamp-2 font-medium break-words",
+                children: p.title
+            }), m[13] = p.title, m[14] = h) : h = m[14], m[15] !== p.prompt ? (i = (0, n.jsx)("p", {
+                className: "line-clamp-4 break-words whitespace-pre-wrap text-secondary",
+                children: p.prompt
+            }), m[15] = p.prompt, m[16] = i) : i = m[16], m[17] !== g || m[18] !== h || m[19] !== i ? (j = (0, n.jsxs)("div", {
+                className: "flex flex-col gap-2 rounded-xl bg-secondary-soft p-4 text-sm text-default",
+                children: [g, h, i]
+            }), m[17] = g, m[18] = h, m[19] = i, m[20] = j) : j = m[20], m[21] !== p || m[22] !== x || m[23] !== v ? (k = x && (0, n.jsx)(O, {
+                content: p,
+                onSave: v,
+                onClose: () => y(!1),
+                onCloseAutoFocus: a => {
+                    a.preventDefault(), z.current?.focus()
+                }
+            }), m[21] = p, m[22] = x, m[23] = v, m[24] = k) : k = m[24], m[25] !== k || m[26] !== j ? (l = (0, n.jsxs)(n.Fragment, {
+                children: [j, k]
+            }), m[25] = k, m[26] = j, m[27] = l) : l = m[27], l
+        }
+        var Q = c("AuIy"),
+            R = c("iqEK"),
+            S = c("ccwJ"),
+            T = c("tOYk"),
+            U = c("Kwur");
+        let V = (0, r.v)(w.a, a => ({
+            idempotencyKey: null,
+            publication: null,
+            editedContent: null,
+            revision: 0
+        }));
+        async function W(a, b, c) {
+            X(a, b);
+            let d = b.assetPointer,
+                e = b.messageId;
+            if (null == d || null == e) throw Error("Image prompt share source unavailable");
+            let f = a.get(V, b);
+            if (null != f.publication) return f.publication;
+            let g = f.idempotencyKey ?? crypto.randomUUID();
+            a.set(V, b, {
+                ...f,
+                idempotencyKey: g
+            });
+            try {
+                let i = await a.queryClient.fetchQuery({
+                    queryKey: ["image-prompt-share-publication", b, g],
+                    staleTime: 1 / 0,
+                    gcTime: 1 / 0,
+                    retry: !1,
+                    queryFn: async () => {
+                        let i = await U.Request.safePost("/share/prompt-share", {
+                            isExpectedError: Y,
+                            requestBody: {
+                                idempotency_key: g,
+                                conversation_id: b.conversationId,
+                                message_id: e,
+                                output_asset_pointer: d,
+                                post_text: c.title,
+                                published_content: f.editedContent ?? void 0
+                            }
+                        });
+                        X(a, b);
+                        let j = f.editedContent ?? c;
+                        try {
+                            j.prompt !== c.prompt && (0, h.a)(a, T.a, {
+                                postId: i.post_id,
+                                field: "CHATGPT_SHARE_PROMPT_EDITED_FIELD_PROMPT"
+                            }), j.title.trim() !== c.title.trim() && (0, h.a)(a, T.a, {
+                                postId: i.post_id,
+                                field: "CHATGPT_SHARE_PROMPT_EDITED_FIELD_TITLE"
+                            })
+                        } catch {}
+                        return i
+                    }
+                });
+                return X(a, b), a.set(V, b, a => a.publication === i ? a : {
+                    ...a,
+                    publication: i
+                }), i
+            } catch (c) {
+                throw c instanceof y.FetchError && Y(c) && a.set(V, b, a => null == a.idempotencyKey ? a : {
+                    ...a,
+                    idempotencyKey: null
+                }), c
+            }
+        }
+
+        function X(a, b) {
+            if (null == b.accountId || null == b.userId || a.get(f.f) !== b.accountId || a.get(f.j) !== b.userId) throw Error("Image prompt share account changed")
+        }
+
+        function Y(a) {
+            return "prompt_share_not_publishable" === a.errorCode
+        }
+
+        function Z(a) {
+            let b, c, d, e, g, i, j, k, l, m, G, H, I, J, K = (0, o.c)(69),
+                M = (0, r.y)(w.a),
+                N = (0, t.a)(),
+                O = (0, r.z)(f.f),
+                T = (0, r.z)(f.j);
+            K[0] !== O || K[1] !== T ? (b = {
+                accountId: O,
+                userId: T
+            }, K[0] = O, K[1] = T, K[2] = b) : b = K[2];
+            let [Z] = (0, s.useState)(b), $ = (0, x.f)("1939400492"), _ = (0, x.j)("250422953"), [aa, ab] = (0, s.useState)("image");
+            K[3] === Symbol.for("react.memo_cache_sentinel") ? (c = {}, K[3] = c) : c = K[3];
+            let [ac] = (0, s.useState)(c), ad = a.image, ae = ad?.item.isAnimated === !0, af = Z.accountId === O && Z.userId === T, ag = null != ad && !ad.additionalImages?.length && null != O && null != T && af && !$, ah = a.mobileImagePromptShareTreatment;
+            K[4] !== ag || K[5] !== _ || K[6] !== ah ? (d = ag && ("prompt-with-image" === ah || null == ah && _.get("imagegen_prompt_share_tabs_enabled", !1)), K[4] = ag, K[5] = _, K[6] = ah, K[7] = d) : d = K[7];
+            let ai = d,
+                aj = ad?.item.id;
+            K[8] !== O || K[9] !== a.serverConversationId || K[10] !== aj || K[11] !== T ? (e = ["image-prompt-share-source", O, T, a.serverConversationId, aj], K[8] = O, K[9] = a.serverConversationId, K[10] = aj, K[11] = T, K[12] = e) : e = K[12], K[13] !== ad || K[14] !== a.serverConversationId || K[15] !== M ? (g = async b => {
+                let {
+                    signal: c
+                } = b;
+                if (null == ad) return null;
+                let d = (0, D.c)(a.serverConversationId),
+                    e = M.get(C.a, d) ?? d,
+                    f = () => {
+                        let a = M.get(E.N, e) ?? M.query.getData(z.chatGptConversationQueryById$, d)?.mapping;
+                        return null == a ? null : function(a, b) {
+                            let c = Object.entries(a.mapping).find(a => {
+                                let [, c] = a;
+                                return c?.message != null && (0, S.b)(c.message, {
+                                    isActiveTurn: !1,
+                                    isStreaming: !1
+                                }).some(a => a.id === b.id || a.src === b.src)
+                            });
+                            if (c?.[1]?.message == null) return null;
+                            let [, d] = c, e = c[1].message, f = (0, S.b)(e, {
+                                isActiveTurn: !1,
+                                isStreaming: !1
+                            }).find(a => a.id === b.id || a.src === b.src);
+                            if (f?.src == null || "completed" !== f.status || !(0, R.d)(f.src)) return null;
+                            let g = (0, Q.b)({
+                                mapping: a.mapping,
+                                current_node: d?.parent
+                            }).find(a => "user" === a.author.role);
+                            if (null == g || (0, Q.n)(g)) return null;
+                            let h = (0, Q.s)(e.content),
+                                i = (Array.isArray(h?.parts) ? h.parts : []).map(Q.s).find(a => a?.asset_pointer === f.src || (0, Q.s)(a?.image_asset_pointer)?.asset_pointer === f.src),
+                                j = (0, Q.s)(i?.image_asset_pointer) ?? i,
+                                k = (0, Q.i)((0, Q.s)((0, Q.s)(j?.metadata)?.dalle)?.prompt) ?? (0, Q.i)((0, Q.e)(g)),
+                                l = (0, Q.i)(e.id);
+                            return null == k || null == l ? null : {
+                                assetPointer: f.src,
+                                messageId: l,
+                                content: {
+                                    title: Array.from(f.chatGptDisplayTitle?.trim() || k).slice(0, 200).join(""),
+                                    prompt: k
+                                }
+                            }
+                        }({
+                            mapping: a
+                        }, ad.item)
+                    },
+                    g = f();
+                return null != g ? g : (await (0, F.a)(M, d, c), f())
+            }, K[13] = ad, K[14] = a.serverConversationId, K[15] = M, K[16] = g) : g = K[16], K[17] !== e || K[18] !== g || K[19] !== ai ? (i = {
+                enabled: ai,
+                queryKey: e,
+                staleTime: 1 / 0,
+                retry: !1,
+                queryFn: g
+            }, K[17] = e, K[18] = g, K[19] = ai, K[20] = i) : i = K[20];
+            let {
+                data: ak
+            } = (0, q.a)(i), al = ak?.messageId ?? null, am = ak?.assetPointer ?? null;
+            K[21] !== O || K[22] !== a.serverConversationId || K[23] !== al || K[24] !== am || K[25] !== T ? (j = {
+                accountId: O,
+                userId: T,
+                conversationId: a.serverConversationId,
+                messageId: al,
+                assetPointer: am
+            }, K[21] = O, K[22] = a.serverConversationId, K[23] = al, K[24] = am, K[25] = T, K[26] = j) : j = K[26];
+            let an = j,
+                {
+                    editedContent: ao,
+                    publication: ap,
+                    revision: aq
+                } = (0, r.x)(V, an),
+                ar = ai && null != ak,
+                as = ar && null == ah && "image_with_prompt" === _.get("imagegen_prompt_share_label", "prompt_with_image") ? "image_with_prompt" : "prompt_with_image",
+                at = ar && "template" === aa;
+            K[27] !== ao || K[28] !== ap?.title || K[29] !== ak ? (k = ao ?? (null == ak ? void 0 : {
+                ...ak.content,
+                title: ap?.title ?? ak.content.title
+            }), K[27] = ao, K[28] = ap?.title, K[29] = ak, K[30] = k) : k = K[30];
+            let au = k;
+            K[31] !== Z.accountId || K[32] !== Z.userId || K[33] !== M ? (l = function() {
+                if (M.get(f.f) !== Z.accountId || M.get(f.j) !== Z.userId) throw Error("Image prompt share account changed")
+            }, K[31] = Z.accountId, K[32] = Z.userId, K[33] = M, K[34] = l) : l = K[34];
+            let av = l;
+            K[35] !== au || K[36] !== ad || K[37] !== a.source || K[38] !== av || K[39] !== M || K[40] !== an || K[41] !== ak ? (m = async function(b) {
+                let c;
+                if (av(), null == ak || null == au || !L(au)) throw Error("Image prompt share source unavailable or invalid");
+                try {
+                    c = await W(M, an, ak.content)
+                } catch (a) {
+                    if (a instanceof y.FetchError && "prompt_share_not_publishable" === a.errorCode) throw new A.a;
+                    throw a
+                }
+                if (av(), "copy" === b) {
+                    let b;
+                    "CHATGPT_SHARE_FLOW_SOURCE_IMAGE_PREVIEW_INLINE_ACTION" === a.source || "CHATGPT_SHARE_FLOW_SOURCE_IMAGE_LIBRARY_GRID" === a.source ? b = "image_inline_action" : ("CHATGPT_SHARE_FLOW_SOURCE_IMAGE_LIGHTBOX_CONVERSATION" === a.source || "CHATGPT_SHARE_FLOW_SOURCE_IMAGE_LIBRARY_LIGHTBOX" === a.source) && (b = "image_lightbox_action"), (0, h.a)(M, p, {
+                        action: "tap_send_to",
+                        entryPoint: b,
+                        tapTarget: "copy_link",
+                        shareType: "prompt_with_generated_image",
+                        promptShareId: c.prompt_share_id,
+                        originalGenerationId: ad?.item.chatGptGenerationId
+                    })
+                }
+                return {
+                    shareLinkId: c.post_id,
+                    shareLinkUrl: `https://chatgpt.com/s/${encodeURIComponent(c.post_id)}`,
+                    isWorkspaceOnly: !1,
+                    title: c.title
+                }
+            }, K[35] = au, K[36] = ad, K[37] = a.source, K[38] = av, K[39] = M, K[40] = an, K[41] = ak, K[42] = m) : m = K[42];
+            let aw = m;
+            if (K[43] !== ae || K[44] !== as ? (G = ae ? (0, n.jsx)(u.a, {
+                    id: "imagePromptShare.gifWithPrompt",
+                    defaultMessage: "GIF with prompt"
+                }) : "image_with_prompt" === as ? (0, n.jsx)(u.a, {
+                    id: "imagePromptShare.imageWithPrompt",
+                    defaultMessage: "Image with prompt"
+                }) : (0, n.jsx)(u.a, {
+                    id: "imagePromptShare.template",
+                    defaultMessage: "Prompt with image"
+                }), K[43] = ae, K[44] = as, K[45] = G) : G = K[45], !af) return null;
+            let ax = at ? "template" : "image";
+            return K[46] !== N || K[47] !== ae || K[48] !== aa || K[49] !== G || K[50] !== ar ? (H = ar ? a => (0, n.jsx)("div", {
+                className: "mx-auto w-80 max-w-full",
+                children: (0, n.jsx)(v.a, {
+                    fullWidth: !0,
+                    wrapLabels: !0,
+                    variant: "form",
+                    selectedId: aa,
+                    onSelect: ab,
+                    ariaLabel: N.formatMessage({
+                        id: "imagePromptShare.mode",
+                        defaultMessage: "Share format"
+                    }),
+                    options: [{
+                        id: "image",
+                        disabled: a,
+                        label: ae ? (0, n.jsx)(u.a, {
+                            id: "imagePromptShare.gifOnly",
+                            defaultMessage: "GIF only"
+                        }) : (0, n.jsx)(u.a, {
+                            id: "imagePromptShare.imageOnly",
+                            defaultMessage: "Image only"
+                        })
+                    }, {
+                        id: "template",
+                        disabled: a,
+                        label: G
+                    }]
+                })
+            }) : void 0, K[46] = N, K[47] = ae, K[48] = aa, K[49] = G, K[50] = ar, K[51] = H) : H = K[51], K[52] !== au || K[53] !== aw || K[54] !== ad?.alt || K[55] !== av || K[56] !== aq || K[57] !== M || K[58] !== an || K[59] !== ak || K[60] !== as || K[61] !== at ? (I = at && null != au ? {
+                label: as,
+                revision: aq,
+                createLink: aw,
+                actionsDisabled: !L(au),
+                preview: (a, b, c) => (0, n.jsx)(P, {
+                    content: au,
+                    previewSrc: b,
+                    alt: ad?.alt ?? "",
+                    disabled: a,
+                    onSave: async a => {
+                        if (av(), null == ak) throw Error("Image prompt share source unavailable");
+                        (a.title.trim() !== au.title.trim() || a.prompt !== au.prompt) && await async function(a, b, c, d) {
+                            X(a, b);
+                            let e = a.get(V, b),
+                                f = null == e.idempotencyKey ? e.publication : await W(a, b, c),
+                                g = d;
+                            if (null != f) {
+                                let a = await U.Request.safePatch("/share/post/{post_id}/prompt-share", {
+                                    isExpectedError: Y,
+                                    parameters: {
+                                        path: {
+                                            post_id: f.post_id
+                                        }
+                                    },
+                                    requestBody: d
+                                });
+                                g = {
+                                    title: a.title,
+                                    prompt: a.prompt
+                                }
+                            }
+                            X(a, b), a.set(V, b, a => ({
+                                ...a,
+                                editedContent: g,
+                                publication: null == a.publication ? null : {
+                                    ...a.publication,
+                                    title: g.title
+                                },
+                                revision: a.revision + 1
+                            }))
+                        }(M, an, ak.content, {
+                            title: a.title.trim(),
+                            prompt: a.prompt
+                        }), av(), c()
+                    }
+                })
+            } : void 0, K[52] = au, K[53] = aw, K[54] = ad?.alt, K[55] = av, K[56] = aq, K[57] = M, K[58] = an, K[59] = ak, K[60] = as, K[61] = at, K[62] = I) : I = K[62], K[63] !== ac || K[64] !== a || K[65] !== ax || K[66] !== H || K[67] !== I ? (J = (0, n.jsx)(B.a, {
+                ...a,
+                mobileImageRowScrollPositions: ac,
+                imageShareOptions: H,
+                imagePromptTemplate: I
+            }, ax), K[63] = ac, K[64] = a, K[65] = ax, K[66] = H, K[67] = I, K[68] = J) : J = K[68], J
+        }
+
+        function $(a, b) {
+            let c, {
+                    additionalImages: j,
+                    alt: n,
+                    downloadAnalyticsImage: o,
+                    downloadIsParagen: p,
+                    image: q,
+                    isDirectLightboxShare: r,
+                    previewSrc: s,
+                    serverConversationId: t,
+                    source: u = "CHATGPT_SHARE_FLOW_SOURCE_IMAGE_PREVIEW_INLINE_ACTION",
+                    title: v
+                } = b,
+                w = crypto.randomUUID(),
+                x = {
+                    actor: "CHATGPT_SHARE_FLOW_ACTOR_SHARER",
+                    attachmentType: "CHATGPT_SHARE_FLOW_ATTACHMENT_TYPE_IMAGE_SHARE",
+                    contentType: "CHATGPT_SHARE_FLOW_CONTENT_TYPE_POST_SLICE",
+                    conversationId: t,
+                    shareSessionId: w,
+                    source: u
+                };
+            (0, h.a)(a, d.i, {
+                ...x,
+                action: "CHATGPT_SHARE_FLOW_ACTION_ENTRY_POINT_SELECTED"
+            });
+            let y = a.get(f.f),
+                z = a.get(f.j),
+                A = (0, e.d)(),
+                B = A && null != y && null != z ? (0, k.h)(a.get(i.a, k.a)?.get(k.b, "native_with_fallback")) : null,
+                C = a.get(f.e),
+                D = "loaded" === C.status && "personal" === C.structure || "loading" === C.status && "personal" === C.structureAtLogin,
+                E = null == B ? void 0 : (0, k.f)({
+                    canUseNativeShare: "function" == typeof navigator.share,
+                    experience: B,
+                    isMobileBrowser: A,
+                    isPersonalAccount: D
+                }),
+                F = () => a.get(f.f) === y && a.get(f.j) === z,
+                G = b => {
+                    !b.isWorkspaceOnly && b.shareLinkId !== c && F() && (c = b.shareLinkId, (0, h.a)(a, d.i, {
+                        ...x,
+                        action: "CHATGPT_SHARE_FLOW_ACTION_POST_LINK_PREPARED",
+                        shareId: b.shareLinkId
+                    }))
+                },
+                H = {
+                    additionalImages: j,
+                    alt: n,
+                    downloadAnalyticsImage: o,
+                    downloadIsParagen: p,
+                    isDirectLightboxShare: r,
+                    item: q,
+                    previewSrc: s
+                },
+                I = () => (0, g.f)(a, Z, {
+                    currentNodeId: q.id,
+                    image: H,
+                    serverConversationId: t,
+                    shareSessionId: w,
+                    source: u,
+                    title: v,
+                    mobileImageExperience: E,
+                    mobileImagePromptShareTreatment: B?.promptShareTreatment,
+                    onImageShareLinkPrepared: null == B ? void 0 : G,
+                    trackMobileImageShareLifecycle: A && B?.kind === "native"
+                });
+            A && B?.kind === "native" && "function" == typeof navigator.share ? async function() {
+                let b = (0, l.a)(a, t, H);
+                try {
+                    let c = a.queryClient.getQueryData(b.queryKey);
+                    if (null == c) return void I();
+                    if (!F()) return;
+                    if (!D) return void I();
+                    G(c);
+                    let d = await (0, m.b)(a, c, t, w, u);
+                    if ("shared" === d || "cancelled" === d) return
+                } catch {}
+                F() && I()
+            }(): I()
+        }
+        async function _(a, b) {
+            if (!b.src?.startsWith("data:image/gif")) return b;
+            let {
+                uploadChatGptConversationFile: d
+            } = await Promise.resolve().then(() => c("AUdp")), {
+                file: e
+            } = (0, j.a)(b.src, "animation.gif"), f = await d(a, e, {
+                storeInLibrary: !1
+            });
+            return {
+                ...b,
+                src: `sediment://${f.id}`
+            }
+        }
+    }),
+    PxnS: (function(a, b, c) {
+        var d = c("EA6X"),
+            e = c("lSdY"),
+            f = c("Q840"),
+            g = c("aiHW"),
+            h = c("yGJW"),
+            i = c("OWtl"),
+            j = c("xsLm"),
+            k = c("HgLj"),
+            l = c("XW2n");
+        let m = (0, f.u)(i.a, () => new WeakMap),
+            n = (0, f.d)(i.a, (a, b) => {
+                let {
+                    widgetType: c,
+                    turnMessageId: d,
+                    sourceMessageId: f
+                } = a, {
+                    get: g
+                } = b, h = g(l.b);
+                if (h?.productExperience !== e.a.CHATGPT_PRODUCT_EXPERIENCE_DOTS) return;
+                let i = f ?? d,
+                    j = null != d && h.messageIds.has(d) ? d : void 0;
+                if (null != i && (h.messageIds.has(i) || null != j)) return {
+                    widgetType: c,
+                    messageId: i,
+                    assistantMessageId: j
+                }
+            });
+
+        function o(a, b, c, e) {
+            (0, h.a)(a, d.j, {
+                ...b,
+                actionType: c,
+                widgetActionTarget: e,
+                surfaceLocation: d.b.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE,
+                isGenui: "model_written_dil" === b.widgetType || void 0
+            })
+        }
+        c.d(b, {}, {
+            a: function(a, b, c, d) {
+                return (0, k.a)(d, c => {
+                    if (!b || !c) return;
+                    let d = a.get(m);
+                    if (d.get(c) !== b.messageId) return (0, j.a)(c, () => {
+                        for (let a = (0, g.a)(c); a; a = (0, g.a)(a))
+                            if (a.hasAttribute("data-shared-answer-widget-shell")) return !0;
+                        return d.set(c, b.messageId), o(a, b, "CHATGPT_ENGAGEMENT_ACTION_TYPE_VIEWPORT_IMPRESSION", "widget_container"), !0
+                    }, {
+                        threshold: .01
+                    })
+                })(c)
+            },
+            b: function(a, b, c) {
+                b && o(a, b, "CHATGPT_ENGAGEMENT_ACTION_TYPE_CLICKED", c)
+            },
+            c: n
+        })
+    }),
+    umQU: (function(a, b, c) {
+        var d = c("Q840"),
+            e = c("ccwJ"),
+            f = c("Kwur"),
+            g = c("dQRk"),
+            h = c("bmqg"),
+            i = c("SGsN"),
+            j = c("urzV"),
+            k = c("svjy"),
+            l = c("tSEg"),
+            m = c("zHp1"),
+            n = c("Yscs"),
+            o = c("GDNt");
+        let p = (0, d.v)(l.a, a => null),
+            q = (0, d.j)(l.a, (a, b) => {
+                let c, {
+                        image: d,
+                        imageAssetResolver: h
+                    } = a,
+                    {
+                        signal: l,
+                        scope: q
+                    } = b,
+                    r = d?.gifPlayback?.originalSrc ?? d?.src,
+                    u = JSON.stringify([d?.id, r]),
+                    v = 0,
+                    w = Promise.resolve(),
+                    x = l({
+                        preview: null,
+                        busy: !1
+                    }, {
+                        onMount: a => {
+                            if (d?.isAnimated) return q.watch(b => {
+                                if (0 !== v) return;
+                                let c = b.get(p, u),
+                                    f = (0, e.d)(s(b, d)?.gifPlayback, c ?? void 0);
+                                (null != c || 1 !== f) && (a({
+                                    preview: null,
+                                    busy: !0
+                                }), B(f, !1))
+                            })
+                        }
+                    }),
+                    y = async a => {
+                        let b = null != a && (0, m.i)(a) && null != h ? await (0, m.a)(q.queryClient, a, h) : a,
+                            c = null == b ? null : await (0, j.a)(b);
+                        if (null == c) throw Error("GIF download unavailable");
+                        return c.blob
+                    }, z = () => (null == c && (c = y(r).catch(a => {
+                        throw c = void 0, a
+                    })), c), A = async function(a) {
+                        let b = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
+                            c = s(q, d),
+                            f = b === c?.watermarkedSrc ? c?.gifPlayback?.watermarkedVariants : c?.gifPlayback?.variants;
+                        if (!(0, e.a)(f).includes(a)) throw Error("GIF speed variant unavailable");
+                        let g = 1 === a ? void 0 : f?.[String(a)],
+                            h = x.get().preview;
+                        if (h?.speed === a && h.originalSrc === b && h.assetSrc === g) return h;
+                        let i = null == g && b === r ? await z() : await y(g ?? b);
+                        return {
+                            assetSrc: g,
+                            originalSrc: b ?? "",
+                            speed: a,
+                            src: await (0, n.a)(i),
+                            sizeBytes: i.size
+                        }
+                    }, B = async (a, b) => {
+                        let c = ++v;
+                        x.set(a => ({
+                            ...a,
+                            busy: !0
+                        }));
+                        try {
+                            let e = await A(a);
+                            if (c !== v) return !1;
+                            return x.set({
+                                preview: e,
+                                busy: !1
+                            }), b && (q.set(p, u, a), w = w.then(async () => {
+                                if (c !== v || "chatgpt-thread" !== q.value.routeKind || d?.chatGptMessageId == null || null == r) return;
+                                let b = q.get(g.j, q.value.conversationId);
+                                null != b && await f.Request.safePost("/image-gen/gif/select_speed", {
+                                    requestBody: {
+                                        conversation_id: b,
+                                        message_id: d.chatGptMessageId,
+                                        asset_pointer: r,
+                                        selected_speed: a
+                                    },
+                                    expectedErrorStatuses: [404, 405]
+                                })
+                            }).catch(a => {
+                                a instanceof o.a && (404 === a.status || 405 === a.status) || q.get(i.f).danger(q.get(k.a).formatMessage({
+                                    id: "gifEditor.saveSpeedFailed",
+                                    defaultMessage: "Couldn\u2019t save GIF speed. Try again"
+                                }), {
+                                    errorAnalytics: {
+                                        toastId: "gifEditor.saveSpeedFailed"
+                                    }
+                                })
+                            })), !0
+                        } catch {
+                            return b && c === v && q.get(i.f).danger(q.get(k.a).formatMessage({
+                                id: "gifEditor.speedChangeFailed",
+                                defaultMessage: "Couldn\u2019t change GIF speed. Try again"
+                            }), {
+                                errorAnalytics: {
+                                    toastId: "gifEditor.speedChangeFailed"
+                                }
+                            }), !1
+                        } finally {
+                            c === v && x.set(a => ({
+                                ...a,
+                                busy: !1
+                            }))
+                        }
+                    };
+                return {
+                    state$: x,
+                    loadOriginal: z,
+                    loadExport: async a => 1 === a ? z() : y((await A(a)).src),
+                    changeSpeed: a => B(a, !0),
+                    imageForExport: async function(a) {
+                        let b = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
+                            {
+                                forSharing: c = !1
+                            } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+                        if (!a.isAnimated || null == b) return a;
+                        let d = (0, e.d)(s(q, a)?.gifPlayback, x.get().preview?.speed ?? q.get(p, u) ?? void 0),
+                            f = {
+                                ...a,
+                                src: b,
+                                gifPlayback: {
+                                    ...a.gifPlayback,
+                                    originalSrc: b,
+                                    speed: d
+                                }
+                            };
+                        if (1 === d) return f;
+                        let g = await A(d, b);
+                        return t(f, c && null != g.assetSrc ? {
+                            ...g,
+                            src: g.assetSrc
+                        } : g)
+                    }
+                }
+            }, {
+                autoDispose: 6e4,
+                key: a => {
+                    let {
+                        image: b
+                    } = a;
+                    return JSON.stringify([b?.id, b?.gifPlayback?.originalSrc ?? b?.src, b?.gifPlayback?.variants, b?.gifPlayback?.watermarkedVariants])
+                }
+            }),
+            r = (0, d.d)(l.a, (a, b) => {
+                let {
+                    image: c,
+                    conversationId: d,
+                    imageAssetResolver: f
+                } = a, {
+                    scope: g
+                } = b, h = s(g, c, d), i = g.get(q, {
+                    image: h?.isAnimated === !0 ? h : void 0,
+                    imageAssetResolver: f
+                }), {
+                    preview: j
+                } = g.get(i.state$);
+                return {
+                    playback: i,
+                    previewSrc: null != j && (0, e.a)(h?.gifPlayback?.variants).includes(j.speed) ? j.src : void 0,
+                    image: null == h ? void 0 : t(h, j),
+                    originalSrc: h?.isAnimated === !0 ? h.gifPlayback?.originalSrc ?? h.src : h?.src,
+                    canControl: h?.isAnimated === !0 && (0, e.a)(h.gifPlayback?.variants).length > 1
+                }
+            });
+
+        function s(a, b) {
+            let c = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "chatgpt-thread" === a.value.routeKind ? a.value.conversationId : null;
+            return b?.isAnimated === !0 && null != c ? a.get(h.b, c)?.find(a => a.id === b.id) ?? b : b
+        }
+
+        function t(a, b) {
+            let c = (0, e.d)(a.gifPlayback),
+                d = null != a.gifPlayback && a.gifPlayback.speed !== c ? {
+                    ...a,
+                    gifPlayback: {
+                        ...a.gifPlayback,
+                        speed: c
+                    }
+                } : a;
+            return !0 === a.isAnimated && null != b && (0, e.a)(a.gifPlayback?.variants).includes(b.speed) && b.originalSrc === (a.gifPlayback?.originalSrc ?? a.src) ? {
+                ...a,
+                src: b.src,
+                sizeBytes: b.sizeBytes,
+                gifPlayback: {
+                    ...a.gifPlayback,
+                    originalSrc: b.originalSrc,
+                    speed: b.speed
+                }
+            } : d
+        }
+        c.d(b, {}, {
+            a: t,
+            b: s,
+            c: q,
+            d: r
+        })
+    }),
+    I0AH: (function(a, b, c) {
+        var d = c("ABep"),
+            e = c("QosV"),
+            f = c("on57");
+        c.d(b, {}, {
+            a: function(a) {
+                let b, c, g = (0, e.c)(14),
+                    {
+                        ariaLabel: h,
+                        children: i,
+                        className: j,
+                        variant: k
+                    } = a,
+                    l = void 0 === k ? "compact" : k;
+                if ("embedded" === l) {
+                    let a, b = null == h ? void 0 : "group";
+                    return g[0] !== h || g[1] !== i || g[2] !== b ? (a = (0, d.jsx)("div", {
+                        role: b,
+                        "aria-label": h,
+                        className: "flex min-w-0 items-center",
+                        children: i
+                    }), g[0] = h, g[1] = i, g[2] = b, g[3] = a) : a = g[3], a
+                }
+                let m = null == h ? void 0 : "toolbar",
+                    n = "compact" === l ? "gap-0.5 bg-surface-tertiary/95 shadow-md ring-1 ring-border-subtle backdrop-blur-sm" : "border border-default bg-surface-elevated",
+                    o = "imageTools" === l && "gap-0 shadow-md",
+                    p = "playback" === l && "gap-2 shadow-sm";
+                return g[4] !== j || g[5] !== n || g[6] !== o || g[7] !== p ? (b = (0, f.b)("flex w-fit max-w-full select-none items-center overflow-hidden rounded-full p-0.5", n, o, p, j), g[4] = j, g[5] = n, g[6] = o, g[7] = p, g[8] = b) : b = g[8], g[9] !== h || g[10] !== i || g[11] !== m || g[12] !== b ? (c = (0, d.jsx)("div", {
+                    role: m,
+                    "aria-label": h,
+                    className: b,
+                    children: i
+                }), g[9] = h, g[10] = i, g[11] = m, g[12] = b, g[13] = c) : c = g[13], c
+            }
+        })
+    }),
+    VhaM: (function(a, b, c) {
+        c.d(b, {
+            a: () => z
+        });
+        var d = c("ABep"),
+            e = c("QosV"),
+            f = c("ZDhX"),
+            g = c("Q840"),
+            h = c("zd8w"),
+            i = c("Wf1j"),
+            j = c("oyxz"),
+            k = c("IDNd"),
+            l = c("Sm6l"),
+            m = c("bqtn"),
+            n = c("HOLv"),
+            o = c("bf6R"),
+            p = c("UxN3"),
+            q = c("aXWg"),
+            r = c("ddzD"),
+            s = c("I0AH"),
+            t = c("hZax"),
+            u = c("j9wQ"),
+            v = c("I76Q"),
+            w = c("ZedP"),
+            x = c("K45M"),
+            y = c("nEMm");
+
+        function z(a) {
+            let b, c, f, z, B, C, D, E, F, G, H, I, J = (0, e.c)(101),
+                {
+                    downloadImageCount: K,
+                    floatingToolbarVariant: L,
+                    moreActions: M,
+                    isAnimated: N,
+                    isStillImage: O,
+                    isImageActionsDisabled: P,
+                    isUnifiedViewerEnabled: Q,
+                    onDownload: R,
+                    onDownloadAll: S,
+                    onDownloadMenuOpen: T,
+                    onShare: U,
+                    onShareAll: V,
+                    onShareMenuOpen: W,
+                    saveAction: X,
+                    renderPrimarySaveAction: Y,
+                    renderLayout: Z,
+                    shareImageCount: $,
+                    showShareText: _
+                } = a,
+                aa = void 0 !== N && N,
+                ab = void 0 !== Q && Q,
+                ac = void 0 !== _ && _,
+                ad = (0, i.a)(),
+                {
+                    client: ae,
+                    getLayer: af,
+                    isLoading: ag
+                } = (0, t.h)(),
+                ah = (0, h.useContext)(k.b),
+                ai = (0, g.z)(q.a),
+                {
+                    userID: aj
+                } = (0, t.l)(),
+                ak = ah && ai && !ag && null != Y && null != R && null != U && !aa && void 0 !== O && O && !P;
+            J[0] !== ae || J[1] !== ak || J[2] !== af ? (b = function(a, b) {
+                let c = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : a.getLayer;
+                return null == window.DesktopHostGateway && a.getContext().user.userID && b && a instanceof v.a ? a.captureLayerBoolean("2201381595", "image_lightbox_download_primary_enabled", c) : null
+            }(ae, ak, af), J[0] = ae, J[1] = ak, J[2] = af, J[3] = b) : b = J[3];
+            let al = b,
+                am = al?.value ?? !1;
+            J[4] !== al || J[5] !== ae || J[6] !== ak || J[7] !== aj ? (c = () => {
+                ak && "visible" === document.visibilityState && ae.getContext().user.userID === aj && al?.expose()
+            }, f = [al, ae, ak, aj], J[4] = al, J[5] = ae, J[6] = ak, J[7] = aj, J[8] = c, J[9] = f) : (c = J[8], f = J[9]), (0, h.useEffect)(c, f);
+            let [an, ao] = (0, h.useState)(!1), ap = "toolbar";
+            null != L && (ap = "imageTools" === L ? "imageToolbar" : "composerSm");
+            let aq = null == L ? "primary" : "ghostActive",
+                ar = null == L ? "ghost" : "ghostActive";
+            J[10] !== L ? (z = "compact" === L ? (0, d.jsx)(n.a, {
+                asset: x.a
+            }) : (0, d.jsx)(o.t, {}), J[10] = L, J[11] = z) : z = J[11];
+            let as = z;
+            J[12] !== ap || J[13] !== am || J[14] !== ad || J[15] !== P || J[16] !== ab || J[17] !== U || J[18] !== V || J[19] !== aq || J[20] !== ac ? (B = ab ? (0, d.jsxs)(u.c, {
+                "aria-label": ad.formatMessage({
+                    id: "imageSidePanel.share",
+                    defaultMessage: "Share"
+                }),
+                disabled: P,
+                uniform: am || !ac,
+                onClick: null == V ? U : void 0,
+                children: [(0, d.jsx)(p.b, {
+                    icon: {
+                        16: o.N,
+                        20: o.O
+                    }
+                }), !am && ac ? (0, d.jsx)(j.a, {
+                    id: "imageSidePanel.share",
+                    defaultMessage: "Share"
+                }) : null]
+            }) : (0, d.jsx)(l.a, {
+                "aria-label": ad.formatMessage({
+                    id: "imageSidePanel.share",
+                    defaultMessage: "Share"
+                }),
+                color: am ? "ghostActive" : aq,
+                uniform: am,
+                disabled: P,
+                size: ap,
+                onClick: null == V ? U : void 0,
+                children: am ? (0, d.jsx)(o.O, {}) : (0, d.jsx)(j.a, {
+                    id: "imageSidePanel.share",
+                    defaultMessage: "Share"
+                })
+            }), J[12] = ap, J[13] = am, J[14] = ad, J[15] = P, J[16] = ab, J[17] = U, J[18] = V, J[19] = aq, J[20] = ac, J[21] = B) : B = J[21];
+            let at = B;
+            if (null != U && null != V) {
+                let a;
+                J[22] !== aa || J[23] !== P || J[24] !== U || J[25] !== V || J[26] !== W || J[27] !== at || J[28] !== $ ? (a = (0, d.jsx)(w.a, {
+                    disabled: P,
+                    imageCount: $,
+                    isAnimated: aa,
+                    onOpen: W,
+                    onShare: U,
+                    onShareAll: V,
+                    triggerButton: at
+                }), J[22] = aa, J[23] = P, J[24] = U, J[25] = V, J[26] = W, J[27] = at, J[28] = $, J[29] = a) : a = J[29], at = a
+            }
+            if (null != L) {
+                let a;
+                J[30] !== L || J[31] !== at ? (a = (0, d.jsx)(s.a, {
+                    variant: L,
+                    children: at
+                }), J[30] = L, J[31] = at, J[32] = a) : a = J[32], at = a
+            }
+            J[33] === Symbol.for("react.memo_cache_sentinel") ? (C = async a => {
+                ao(!0), await a().finally(() => {
+                    ao(!1)
+                })
+            }, J[33] = C) : C = J[33];
+            let au = C;
+            J[34] !== am || J[35] !== Y || J[36] !== X ? (D = am ? Y?.() : X, J[34] = am, J[35] = Y, J[36] = X, J[37] = D) : D = J[37];
+            let av = D;
+            if (null != S && null != R) {
+                let a, b, c, e, f, g, h, i, k, n, o, q, s, t = P || an;
+                J[38] !== T ? (a = a => {
+                    a && T?.()
+                }, J[38] = T, J[39] = a) : a = J[39], J[40] !== aa ? (b = (0, r.a)({
+                    isAnimated: aa
+                }), J[40] = aa, J[41] = b) : b = J[41], J[42] !== b.downloadLabel ? (c = (0, d.jsx)(j.a, {
+                    ...b.downloadLabel
+                }), J[42] = b.downloadLabel, J[43] = c) : c = J[43], J[44] !== ap || J[45] !== ar || J[46] !== as || J[47] !== am || J[48] !== ad || J[49] !== aa || J[50] !== an || J[51] !== P || J[52] !== ab ? (e = ab ? (0, d.jsxs)(u.c, {
+                    "aria-label": ad.formatMessage((0, r.a)({
+                        isAnimated: aa
+                    }).downloadLabel),
+                    disabled: P || an,
+                    loading: an,
+                    uniform: !am,
+                    children: [(0, d.jsx)(p.b, {
+                        icon: {
+                            assets: {
+                                16: x.a,
+                                20: y.a
+                            }
+                        }
+                    }), am ? (0, d.jsx)(j.a, {
+                        ...(0, r.a)({
+                            isAnimated: aa
+                        }).downloadLabel
+                    }) : null]
+                }) : (0, d.jsxs)(l.a, {
+                    "aria-label": ad.formatMessage((0, r.a)({
+                        isAnimated: aa
+                    }).downloadLabel),
+                    color: ar,
+                    disabled: P || an,
+                    loading: an,
+                    size: ap,
+                    uniform: !am,
+                    children: [as, am ? (0, d.jsx)(j.a, {
+                        ...(0, r.a)({
+                            isAnimated: aa
+                        }).downloadLabel
+                    }) : null]
+                }), J[44] = ap, J[45] = ar, J[46] = as, J[47] = am, J[48] = ad, J[49] = aa, J[50] = an, J[51] = P, J[52] = ab, J[53] = e) : e = J[53], J[54] !== c || J[55] !== e ? (f = (0, d.jsx)(A, {
+                    content: c,
+                    children: e
+                }), J[54] = c, J[55] = e, J[56] = f) : f = J[56], J[57] !== R ? (g = () => void au(R), J[57] = R, J[58] = g) : g = J[58], J[59] !== aa ? (h = (0, r.a)({
+                    isAnimated: aa
+                }), J[59] = aa, J[60] = h) : h = J[60], J[61] !== h.downloadMenuLabel ? (i = (0, d.jsx)(j.a, {
+                    ...h.downloadMenuLabel
+                }), J[61] = h.downloadMenuLabel, J[62] = i) : i = J[62], J[63] !== g || J[64] !== i ? (k = (0, d.jsx)(m.c.Item, {
+                    onSelect: g,
+                    children: i
+                }), J[63] = g, J[64] = i, J[65] = k) : k = J[65], J[66] !== S ? (n = () => void au(S), J[66] = S, J[67] = n) : n = J[67], J[68] !== K ? (o = (0, d.jsx)(j.a, {
+                    id: "imagePreview.downloadSeries",
+                    defaultMessage: "Download {count} images in this series",
+                    values: {
+                        count: K
+                    }
+                }), J[68] = K, J[69] = o) : o = J[69], J[70] !== n || J[71] !== o ? (q = (0, d.jsx)(m.c.Item, {
+                    onSelect: n,
+                    children: o
+                }), J[70] = n, J[71] = o, J[72] = q) : q = J[72], J[73] !== t || J[74] !== a || J[75] !== f || J[76] !== k || J[77] !== q ? (s = (0, d.jsxs)(m.a, {
+                    align: "end",
+                    disabled: t,
+                    onOpenChange: a,
+                    triggerButton: f,
+                    children: [k, q]
+                }), J[73] = t, J[74] = a, J[75] = f, J[76] = k, J[77] = q, J[78] = s) : s = J[78], av = s
+            }
+            if (null != L && null != S && null != R) {
+                let a;
+                J[79] !== av || J[80] !== L ? (a = (0, d.jsx)(s.a, {
+                    variant: L,
+                    children: av
+                }), J[79] = av, J[80] = L, J[81] = a) : a = J[81], av = a
+            }
+            let aw = null == U ? null : at;
+            J[82] !== av || J[83] !== aw ? (E = (0, d.jsxs)(d.Fragment, {
+                children: [av, aw]
+            }), J[82] = av, J[83] = aw, J[84] = E) : E = J[84];
+            let ax = E;
+            J[85] !== L || J[86] !== M ? (F = null == M || null == L ? M : (0, d.jsx)(s.a, {
+                variant: L,
+                children: M
+            }), J[85] = L, J[86] = M, J[87] = F) : F = J[87];
+            let ay = F,
+                az = null != U || null != av;
+            J[88] !== az || J[89] !== ad || J[90] !== ab || J[91] !== ax || J[92] !== ac || J[93] !== ay ? (G = !ab || ac ? (0, d.jsxs)(d.Fragment, {
+                children: [ax, ay]
+            }) : (0, d.jsxs)(d.Fragment, {
+                children: [az ? (0, d.jsx)(u.i, {
+                    label: ad.formatMessage({
+                        id: "imagePreview.headerActions",
+                        defaultMessage: "Image actions"
+                    }),
+                    children: ax
+                }) : null, ay]
+            }), J[88] = az, J[89] = ad, J[90] = ab, J[91] = ax, J[92] = ac, J[93] = ay, J[94] = G) : G = J[94];
+            let aA = G;
+            return J[95] !== aA || J[96] !== am || J[97] !== Z ? (H = null == Z ? aA : Z(aA, am), J[95] = aA, J[96] = am, J[97] = Z, J[98] = H) : H = J[98], J[99] !== H ? (I = (0, d.jsx)(d.Fragment, {
+                children: H
+            }), J[99] = H, J[100] = I) : I = J[100], I
+        }
+
+        function A(a) {
+            let b, c = (0, e.c)(3),
+                g = !0 !== a["aria-expanded"] && "true" !== a["aria-expanded"] && void 0;
+            return c[0] !== a || c[1] !== g ? (b = (0, d.jsx)(f.a, {
+                ...a,
+                forceOpen: g
+            }), c[0] = a, c[1] = g, c[2] = b) : b = c[2], b
+        }
+    }),
+    ZedP: (function(a, b, c) {
+        var d = c("ABep"),
+            e = c("QosV"),
+            f = c("oyxz"),
+            g = c("bqtn"),
+            h = c("HOLv"),
+            i = c("ddzD"),
+            j = c("LMQC"),
+            k = c("S44i");
+        c.d(b, {}, {
+            a: function(a) {
+                let b, c, l, m, n, o, p, q = (0, e.c)(19),
+                    {
+                        disabled: r,
+                        imageCount: s,
+                        isAnimated: t,
+                        onOpen: u,
+                        onShare: v,
+                        onShareAll: w,
+                        triggerButton: x
+                    } = a,
+                    y = void 0 !== t && t;
+                return q[0] !== u ? (b = a => {
+                    a && u?.()
+                }, q[0] = u, q[1] = b) : b = q[1], q[2] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, d.jsx)(h.a, {
+                    className: "text-gray-1000",
+                    asset: j.a
+                }), q[2] = c) : c = q[2], q[3] !== y ? (l = (0, i.a)({
+                    isAnimated: y
+                }), q[3] = y, q[4] = l) : l = q[4], q[5] !== l.shareSelectionLabel ? (m = (0, d.jsx)(f.a, {
+                    ...l.shareSelectionLabel
+                }), q[5] = l.shareSelectionLabel, q[6] = m) : m = q[6], q[7] !== v || q[8] !== m ? (n = (0, d.jsx)(g.c.Item, {
+                    leftIcon: c,
+                    onSelect: v,
+                    children: m
+                }), q[7] = v, q[8] = m, q[9] = n) : n = q[9], q[10] !== s || q[11] !== w ? (o = null == w ? null : (0, d.jsx)(g.c.Item, {
+                    leftIcon: (0, d.jsx)(h.a, {
+                        className: "text-gray-1000",
+                        asset: k.a
+                    }),
+                    onSelect: w,
+                    children: (0, d.jsx)(f.a, {
+                        id: "imagePreview.shareSeries",
+                        defaultMessage: "All {imageCount, plural, one {# image} other {# images}} in this series",
+                        values: {
+                            imageCount: s
+                        }
+                    })
+                }), q[10] = s, q[11] = w, q[12] = o) : o = q[12], q[13] !== r || q[14] !== b || q[15] !== n || q[16] !== o || q[17] !== x ? (p = (0, d.jsxs)(g.a, {
+                    align: "end",
+                    disabled: r,
+                    triggerButton: x,
+                    onOpenChange: b,
+                    children: [n, o]
+                }), q[13] = r, q[14] = b, q[15] = n, q[16] = o, q[17] = x, q[18] = p) : p = q[18], p
+            }
+        })
+    }),
+    RiLw: (function(a, b, c) {
+        var d = c("ABep"),
+            e = c("QosV"),
+            f = c("on57"),
+            g = c("Wf1j"),
+            h = c("oyxz"),
+            i = c("bf6R"),
+            j = c("syEl"),
+            k = c("UxN3"),
+            l = c("Y3Vu"),
+            m = c("GTkP");
+        let n = (0, d.jsx)(k.b, {
+            className: m.a.shareIcon,
+            icon: {
+                16: i.N,
+                20: i.O
+            }
+        });
+        c.d(b, {}, {
+            a: function(a) {
+                let b, c, i, k, o, p, q, r, s = (0, e.c)(24);
+                s[0] !== a ? ({
+                    children: b,
+                    className: c,
+                    facepile: i,
+                    iconOnly: o,
+                    leading: p,
+                    ...k
+                } = a, s[0] = a, s[1] = b, s[2] = c, s[3] = i, s[4] = k, s[5] = o, s[6] = p) : (b = s[1], c = s[2], i = s[3], k = s[4], o = s[5], p = s[6]);
+                let t = void 0 !== o && o,
+                    u = void 0 === p ? n : p,
+                    v = (0, g.a)();
+                if (t) {
+                    let a, b, e;
+                    s[7] !== v ? (a = v.formatMessage({
+                        id: "artifactViewer.share",
+                        defaultMessage: "Share"
+                    }), s[7] = v, s[8] = a) : a = s[8];
+                    let g = a;
+                    return s[9] !== c || s[10] !== i || s[11] !== g || s[12] !== k ? (b = a => (0, d.jsxs)(l.a, {
+                        focusRing: "inset",
+                        ...k,
+                        ...a,
+                        className: (0, f.b)(c, null != i && m.a.iconShareWithFacepile),
+                        uniform: null == i,
+                        "aria-label": g,
+                        children: [i, n]
+                    }), s[9] = c, s[10] = i, s[11] = g, s[12] = k, s[13] = b) : b = s[13], s[14] !== g || s[15] !== b ? (e = (0, d.jsx)(j.b, {
+                        content: g,
+                        describeTrigger: !1,
+                        children: b
+                    }), s[14] = g, s[15] = b, s[16] = e) : e = s[16], e
+                }
+                return s[17] === Symbol.for("react.memo_cache_sentinel") ? (q = (0, d.jsx)("span", {
+                    "data-page-share-label": !0,
+                    "data-tooltip-visibility-target": !0,
+                    "data-tooltip-enablement-target": !0,
+                    "data-viewer-header-collapsible": !0,
+                    className: "overflow-hidden whitespace-nowrap",
+                    children: (0, d.jsx)(h.a, {
+                        id: "artifactViewer.share",
+                        defaultMessage: "Share"
+                    })
+                }), s[17] = q) : q = s[17], s[18] !== b || s[19] !== c || s[20] !== i || s[21] !== u || s[22] !== k ? (r = (0, d.jsxs)(l.a, {
+                    focusRing: "inset",
+                    className: c,
+                    ...k,
+                    children: [u, i, q, b]
+                }), s[18] = b, s[19] = c, s[20] = i, s[21] = u, s[22] = k, s[23] = r) : r = s[23], r
+            }
+        })
+    })
+};

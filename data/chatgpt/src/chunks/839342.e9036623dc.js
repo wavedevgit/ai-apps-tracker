@@ -264,6 +264,7 @@ export const __webpack_modules__ = {
                 ports: d,
                 replyPort: e
             } = "iframe" in a ? await
+
             function(a) {
                 let {
                     iframe: b,
